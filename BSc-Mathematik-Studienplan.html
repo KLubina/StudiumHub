@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BSc Mathematik Studienplan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #fff;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 30px;
+            font-size: 18px;
+            font-weight: normal;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .studienplan {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .farben-legende {
+            width: 250px;
+            margin-left: 40px;
+        }
+
+        .jahr {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+            /* von 40px auf 20px reduziert */
+        }
+
+        .jahr-titel {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .module-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2px;
+            min-height: auto;
+        }
+
+        .modul {
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+            text-align: center;
+            color: white;
+            box-sizing: border-box;
+            margin: 1px;
+            border-radius: 2px;
+        }
+
+        .modul-titel {
+            font-weight: bold;
+            margin: 2px 0;
+            /* initial default, wird durch JS angepasst */
+            font-size: 14px;
+            line-height: 1.1;
+            width: 100%;
+            text-align: center;
+            word-break: break-word;
+            overflow: hidden;
+        }
+
+        .modul-kp {
+            font-size: 14px;
+            margin: 2px 0;
+            width: 100%;
+            text-align: center;
+            overflow: hidden;
+            line-height: 1.1;
+        }
+
+        /* Modul-Kategorien und Farben */
+        .obligatorisch {
+            background-color: #0D5B8C;
+        }
+
+        .ergaenzung {
+            background-color: #00A0E3;
+        }
+
+        .wahl {
+            background-color: #F2B48F;
+            color: black;
+        }
+
+        .kern {
+            background-color: #4CA64C;
+        }
+
+        .wahlpflicht {
+            background-color: #DD98DD;
+            color: black;
+        }
+
+        .wissenschaft {
+            background-color: #888888;
+        }
+
+        /* Legende */
+        .legende-titel {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .legende-item {
+            margin-bottom: 2px;
+            padding: 10px;
+            color: white;
+            text-align: center;
+        }
+
+        /* Fachgebiete */
+        .fachgebiet {
+            font-size: 12px;
+            text-align: center;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .fachgebiet-column {
+            width: auto;
+            min-width: 250px;
+            margin-right: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>BSc Mathematik</h1>
+    <h2>mind. 180 KP insgesamt</h2>
+
+    <div class="container">
+        <div class="studienplan" id="studienplan">
+            <!-- JavaScript wird hier die Jahre und Module einfügen -->
+        </div>
+
+        <!-- Farben-Legende -->
+        <div class="farben-legende">
+            <div class="legende-titel">Farben-Legende</div>
+            <div id="legende">
+                <!-- JavaScript wird hier die Legende einfügen -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Definition der Moduldaten
+        const daten = [
+            { jahr: 1, semester: 1, name: "Analysis I: eine Variable", kp: 10, kategorie: "Obligatorische Fächer" },
+            { jahr: 1, semester: 1, name: "Lineare Algebra I", kp: 7, kategorie: "Obligatorische Fächer" },
+            { jahr: 1, semester: 1, name: "Physik I", kp: 7, kategorie: "Obligatorische Fächer" },
+            { jahr: 1, semester: 1, name: "Informatik", kp: 5, kategorie: "Obligatorische Fächer" },
+
+            { jahr: 1, semester: 2, name: "Analysis II: mehrere Variablen", kp: 10, kategorie: "Obligatorische Fächer" },
+            { jahr: 1, semester: 2, name: "Lineare Algebra II", kp: 7, kategorie: "Obligatorische Fächer" },
+            { jahr: 1, semester: 2, name: "Grundstrukturen", kp: 5, kategorie: "Obligatorische Fächer" },
+            { jahr: 1, semester: 2, name: "Datenstrukturen & Algorithmen", kp: 8, kategorie: "Ergänzungsfächer" },
+            { jahr: 1, semester: 2, name: "Physik II", kp: 7, kategorie: "Ergänzungsfächer" },
+
+            { jahr: 2, semester: 1, name: "Funktionentheorie", kp: 6, kategorie: "Obligatorische Fächer" },
+            { jahr: 2, semester: 1, name: "Analysis III (Maßtheorie)", kp: 6, kategorie: "Obligatorische Fächer" },
+            { jahr: 2, semester: 1, name: "Algebra I", kp: 7, kategorie: "Obligatorische Fächer" },
+            { jahr: 2, semester: 1, name: "Numerische Mathematik I", kp: 7, kategorie: "Obligatorische Fächer" },
+            { jahr: 2, semester: 1, name: "Geometrie", kp: 6, kategorie: "Wahlpflichtfächer" },
+
+            { jahr: 2, semester: 2, name: "Analysis IV", kp: 6, kategorie: "Obligatorische Fächer" },
+            { jahr: 2, semester: 2, name: "Topologie", kp: 7, kategorie: "Obligatorische Fächer" },
+            { jahr: 2, semester: 2, name: "Wahrscheinlichkeit und Statistik", kp: 8, kategorie: "Obligatorische Fächer" },
+            { jahr: 2, semester: 2, name: "Semesterarbeit", kp: 2, kategorie: "Wissenschaftliche Arbeit" },
+
+            { jahr: 3, semester: 1, name: "Time Series Analysis", kp: 4, kategorie: "Wahlfächer", fachgebiet: "" },
+            { jahr: 3, semester: 1, name: "Applied Statistical Regression", kp: 5, kategorie: "Wahlfächer", fachgebiet: "" },
+            { jahr: 3, semester: 1, name: "Markov Processes", kp: 3, kategorie: "Wahlfächer", fachgebiet: "" },
+
+            { jahr: 3, semester: 1, name: "Computational Statistics", kp: 8, kategorie: "Kernfächer", fachgebiet: "Angewandte Mathematik" },
+            { jahr: 3, semester: 1, name: "Probability Theory", kp: 9, kategorie: "Kernfächer", fachgebiet: "Angewandte Mathematik" },
+            { jahr: 3, semester: 1, name: "Number Theory", kp: 7, kategorie: "Kernfächer", fachgebiet: "Reine Mathematik" },
+            { jahr: 3, semester: 1, name: "Algebraic Geometry", kp: 9, kategorie: "Kernfächer", fachgebiet: "Reine Mathematik" },
+
+            { jahr: 3, semester: 1, name: "Numerical Analysis II", kp: 6, kategorie: "Wahlpflichtfächer", fachgebiet: "" },
+
+            { jahr: 3, semester: 2, name: "Wissenschaft im Kontext", kp: 6, kategorie: "Wissenschaftliche Arbeit" },
+            { jahr: 3, semester: 2, name: "Seminar", kp: 2, kategorie: "Wissenschaftliche Arbeit" },
+            { jahr: 3, semester: 2, name: "Bachelorarbeit", kp: 16, kategorie: "Wissenschaftliche Arbeit" }
+        ];
+
+        // Mapping der Kategorienamen zu CSS-Klassen
+        const kategorieZuKlasse = {
+            "Obligatorische Fächer": "obligatorisch",
+            "Ergänzungsfächer": "ergaenzung",
+            "Wahlfächer": "wahl",
+            "Kernfächer": "kern",
+            "Wahlpflichtfächer": "wahlpflicht",
+            "Wissenschaftliche Arbeit": "wissenschaft"
+        };
+
+        // Kategorie-Liste für die Legende (in der Reihenfolge wie im Screenshot)
+        const kategorien = [
+            "Obligatorische Fächer",
+            "Ergänzungsfächer",
+            "Wahlfächer",
+            "Kernfächer",
+            "Wahlpflichtfächer",
+            "Wissenschaftliche Arbeit"
+        ];
+
+        // Verbesserte Hilfsfunktion: schrumpft Text, bis er genau in die Box passt
+        function fitText(container, selector) {
+            const node = container.querySelector(selector);
+            if (!node) return;
+
+            // Startgröße festlegen
+            let fs = 16; // Start mit größerer Schrift
+            node.style.fontSize = fs + "px";
+
+            // Box-Dimensionen erfassen
+            const containerWidth = container.clientWidth;
+            const containerHeight = container.clientHeight / 2; // Etwa die Hälfte für Titel/KP
+
+            // Solange verkleinern bis Text passt
+            while ((node.scrollWidth > containerWidth || node.scrollHeight > containerHeight) && fs > 6) {
+                fs--;
+                node.style.fontSize = fs + "px";
+            }
+
+            // Für sehr kleine Texte zusätzliche Anpassungen
+            if (fs <= 8) {
+                node.style.lineHeight = "1";
+                if (selector === ".modul-titel") {
+                    node.style.margin = "1px 0";
+                    // In extremen Fällen Abschneiden mit Ellipsis
+                    if (fs === 6) {
+                        node.style.textOverflow = "ellipsis";
+                        node.style.whiteSpace = "nowrap";
+                    }
+                }
+            }
+        }
+
+        // Funktion zum Erstellen der Legende
+        function erstelleLegende() {
+            const legendeElement = document.getElementById("legende");
+
+            kategorien.forEach(kategorie => {
+                const div = document.createElement("div");
+                div.classList.add("legende-item");
+                div.classList.add(kategorieZuKlasse[kategorie]);
+                div.textContent = kategorie;
+                legendeElement.appendChild(div);
+            });
+        }
+
+        // Verbesserte Funktion zur Erstellung eines Moduls mit strenger Proportionalität
+        function erstelleModul(modul, container) {
+            const div = document.createElement("div");
+            div.classList.add("modul");
+            div.classList.add(kategorieZuKlasse[modul.kategorie]);
+
+            // Vollständig proportionales Design basierend auf ECTS-Punkten
+            // Basiseinheit für die Flächenberechnung
+            const flächenBasis = 2500; // Flächenbasis pro ECTS-Punkt
+            
+            // Gesamtfläche proportional zu ECTS-Punkten
+            const fläche = modul.kp * flächenBasis;
+            
+            // Bestimme das Seitenverhältnis - machen wir Module etwas breiter als hoch
+            let seitenVerhältnis = 1.5; // Verhältnis Breite:Höhe
+            
+            // Passe Seitenverhältnis für spezielle Module an
+            if (modul.name.includes("Analysis") || 
+                modul.name.includes("Algebra") || 
+                modul.name.includes("Datenstrukturen") ||
+                modul.name.includes("Computational") ||
+                modul.name.includes("Probability Theory") ||
+                modul.name.includes("Algebraic Geometry")) {
+                seitenVerhältnis = 2.0; // Breitere Module für lange Namen
+            }
+            
+            // Für Bachelorarbeit besonders breites Format
+            if (modul.name === "Bachelorarbeit") {
+                seitenVerhältnis = 2.5;
+            }
+            
+            // Berechne Breite und Höhe basierend auf Fläche und Seitenverhältnis
+            // Fläche = Breite * Höhe, daher Breite = √(Fläche * Seitenverhältnis)
+            const breite = Math.sqrt(fläche * seitenVerhältnis);
+            const höhe = fläche / breite;
+            
+            div.style.width = `${Math.round(breite)}px`;
+            div.style.height = `${Math.round(höhe)}px`;
+
+            // Inhalt des Moduls
+            const kpDiv = document.createElement("div");
+            kpDiv.classList.add("modul-kp");
+            kpDiv.textContent = `${modul.kp} KP`;
+
+            const titelDiv = document.createElement("div");
+            titelDiv.classList.add("modul-titel");
+            titelDiv.textContent = modul.name;
+
+            // Bestimmte Reihenfolge - KP oben, Titel darunter
+            div.appendChild(kpDiv);
+            div.appendChild(titelDiv);
+
+            container.appendChild(div);
+
+            // Nachjustierung für bessere Darstellung
+            setTimeout(() => {
+                // KP und Titel anpassen
+                fitText(div, ".modul-kp");
+                fitText(div, ".modul-titel");
+
+                // Bei sehr kleinen Modulen Speziallösung
+                if (modul.kp <= 3) {
+                    const kp = div.querySelector(".modul-kp");
+                    const titel = div.querySelector(".modul-titel");
+                    if (kp && titel) {
+                        kp.style.marginBottom = "0";
+                        kp.style.marginTop = "0";
+                        titel.style.marginTop = "0";
+                        titel.style.marginBottom = "0";
+                    }
+                }
+            }, 0);
+
+            return div;
+        }
+
+        // Hauptfunktion zum Erstellen des Studienplans
+        function erstelleStudienplan() {
+            const container = document.getElementById("studienplan");
+
+            // Erstelle die drei Jahre, von 1 nach 3 (aufsteigend)
+            for (let j = 1; j <= 3; j++) {
+                const jahr = document.createElement("div");
+                jahr.classList.add("jahr");
+
+                const jahrTitel = document.createElement("div");
+                jahrTitel.classList.add("jahr-titel");
+                jahrTitel.textContent = `${j}. Jahr`;
+                jahrTitel.style.marginBottom = "5px"; // Einheitlicher Abstand
+                jahr.appendChild(jahrTitel);
+
+                // Filterung der Module für dieses Jahr
+                const moduleDesJahres = daten.filter(m => m.jahr === j);
+
+                // Spezielle Behandlung für das 3. Jahr
+                if (j === 3) {
+                    // 1. Semester Container
+                    const semester1Container = document.createElement("div");
+                    semester1Container.classList.add("module-container");
+                    semester1Container.style.marginBottom = "15px";
+                    
+                    // Angewandte Mathematik Abschnitt
+                    const angewandteColumn = document.createElement("div");
+                    angewandteColumn.classList.add("fachgebiet-column");
+
+                    const angewandteTitle = document.createElement("div");
+                    angewandteTitle.classList.add("fachgebiet");
+                    angewandteTitle.textContent = "Angewandte Mathematik";
+                    angewandteColumn.appendChild(angewandteTitle);
+
+                    // Angewandte Module
+                    const angewandteModule = moduleDesJahres.filter(m => m.fachgebiet === "Angewandte Mathematik");
+                    angewandteModule.forEach(m => {
+                        erstelleModul(m, angewandteColumn);
+                    });
+
+                    semester1Container.appendChild(angewandteColumn);
+
+                    // Reine Mathematik Abschnitt
+                    const reineColumn = document.createElement("div");
+                    reineColumn.classList.add("fachgebiet-column");
+
+                    const reineTitle = document.createElement("div");
+                    reineTitle.classList.add("fachgebiet");
+                    reineTitle.textContent = "Reine Mathematik";
+                    reineColumn.appendChild(reineTitle);
+
+                    // Reine Module
+                    const reineModule = moduleDesJahres.filter(m => m.fachgebiet === "Reine Mathematik");
+                    reineModule.forEach(m => {
+                        erstelleModul(m, reineColumn);
+                    });
+
+                    semester1Container.appendChild(reineColumn);
+
+                    // Module ohne spezifisches Fachgebiet (1. Semester)
+                    const semester1Module = moduleDesJahres.filter(m =>
+                        m.fachgebiet === "" &&
+                        m.semester === 1 &&
+                        m.kategorie !== "Wissenschaftliche Arbeit"
+                    );
+
+                    semester1Module.forEach(m => erstelleModul(m, semester1Container));
+                    
+                    // 2. Semester Container (mit Wissenschaftlicher Arbeit)
+                    const semester2Container = document.createElement("div");
+                    semester2Container.classList.add("module-container");
+                    
+                    // Wissenschaftliche Arbeit-Module
+                    const wissenschaftModules = moduleDesJahres.filter(m => 
+                        m.kategorie === "Wissenschaftliche Arbeit" && 
+                        m.semester === 2
+                    );
+                    
+                    // Sortieren: zuerst "Wissenschaft im Kontext", dann "Seminar", dann "Bachelorarbeit"
+                    wissenschaftModules.sort((a, b) => {
+                        if (a.name === "Bachelorarbeit") return 1;
+                        if (b.name === "Bachelorarbeit") return -1;
+                        if (a.name === "Seminar") return 1;
+                        if (b.name === "Seminar") return -1;
+                        return 0;
+                    });
+                    
+                    wissenschaftModules.forEach(m => erstelleModul(m, semester2Container));
+
+                    jahr.appendChild(semester1Container);
+                    jahr.appendChild(semester2Container);
+                }
+                // Jahr 1 und 2 einheitlich behandeln
+                else {
+                    // 1. Semester (oben)
+                    const semester1Container = document.createElement("div");
+                    semester1Container.classList.add("module-container");
+                    semester1Container.style.marginBottom = "5px"; // Einheitlicher Abstand
+                    
+                    // 2. Semester (unten)
+                    const semester2Container = document.createElement("div");
+                    semester2Container.classList.add("module-container");
+
+                    const semester1Module = moduleDesJahres.filter(m => m.semester === 1);
+                    const semester2Module = moduleDesJahres.filter(m => m.semester === 2);
+
+                    // Module einfügen
+                    semester1Module.forEach(m => erstelleModul(m, semester1Container));
+                    semester2Module.forEach(m => erstelleModul(m, semester2Container));
+
+                    // Container anhängen
+                    jahr.appendChild(semester1Container);
+                    jahr.appendChild(semester2Container);
+                }
+
+                // Jahr zum Hauptcontainer hinzufügen
+                container.appendChild(jahr);
+            }
+        }
+
+        // Initialisierung
+        window.onload = function () {
+            erstelleLegende();
+            erstelleStudienplan();
+        };
+    </script>
+</body>
+
+</html>

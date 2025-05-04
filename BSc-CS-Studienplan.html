@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BSc Informatik Studienplan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #fff;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 30px;
+            font-size: 18px;
+            font-weight: normal;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .studienplan {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .farben-legende {
+            width: 280px;
+            margin-left: 20px;
+            margin-top: 415px; /* Positioniere die Legende im unteren Bereich wie im Screenshot */
+        }
+
+        .jahr {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        .jahr-titel {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            margin-left: 10px;
+        }
+
+        .module-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2px;
+            min-height: auto; /* Reduzierte Mindesthöhe für bessere Proportionalität */
+        }
+
+        .modul {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            text-align: center;
+            color: white;
+            box-sizing: border-box;
+            border: none;
+            overflow: hidden;
+            padding: 5px;
+            margin: 1px;
+        }
+
+        .modul-titel {
+            font-weight: bold;
+            margin: 2px 0;
+            font-size: 14px;
+            line-height: 1.2;
+            width: 100%;
+            text-align: center;
+            word-break: break-word;
+        }
+
+        .modul-kp {
+            font-size: 14px;
+            margin: 2px 0;
+            width: 100%;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .bullet-list {
+            text-align: left;
+            margin: 5px 0;
+            padding-left: 25px;
+            list-style-type: disc;
+            width: 100%;
+        }
+
+        .bullet-list li {
+            margin-bottom: 5px;
+            line-height: 1.2;
+        }
+
+        .spezialisierung-titel {
+            font-weight: bold;
+            margin: 5px 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Modul-Kategorien und Farben, basierend auf dem Screenshot */
+        .math {
+            background-color: #0066b3; /* Dunkelblau für Mathematik-Module */
+            color: white;
+        }
+
+        .cs-pure {
+            background-color: #7cc623; /* Hellgrün für reine CS-Module */
+            color: black;
+        }
+
+        .cs-cse {
+            background-color: #4aa147; /* Dunkelgrün für CS und CSE-Module */
+            color: white;
+        }
+
+        .cs-cse-wahl {
+            background-color: #9ed897; /* Sehr helles Grün für CS und CSE-Wahlmodule */
+            color: black;
+        }
+
+        .wahlpflicht {
+            background-color: #7cc623; /* Hellgrün */
+            color: black;
+        }
+
+        .wahlfaecher {
+            background-color: #4aa147; /* Dunkelgrün */
+            color: white;
+        }
+
+        .wissenschaft {
+            background-color: #888888; /* Grau */
+            color: white;
+        }
+
+        .algo {
+            background-color: #c6e48b; /* Sehr helles Grün für Algorithmen */
+            color: black;
+        }
+
+        .spezialisierung {
+            background-color: #002654; /* Sehr dunkles Blau für Spezialisierung */
+            color: white;
+        }
+
+        .ergaenzung {
+            background-color: #c0c0c0; /* Hellgrau für Ergänzung */
+            color: black;
+        }
+
+        /* Legende */
+        .legende-titel {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .legende-item {
+            margin-bottom: 5px;
+            padding: 10px;
+            color: white;
+            text-align: center;
+        }
+
+        .legende-beschreibung {
+            background-color: #f9f9f9;
+            font-size: 14px;
+            padding: 5px;
+            text-align: center;
+            color: black;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>BSc Informatik</h1>
+    <h2>mind. 180 KP insgesamt</h2>
+
+    <div class="container">
+        <div class="studienplan" id="studienplan">
+            <!-- JavaScript wird hier die Jahre und Module einfügen -->
+        </div>
+
+        <!-- Farben-Legende -->
+        <div class="farben-legende">
+            <div class="legende-titel">Farben-Legende</div>
+            <div id="legende">
+                <!-- JavaScript wird hier die Legende einfügen -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Definition der Moduldaten mit angepassten Kategorien gemäß Screenshot
+        const daten = [
+            { jahr: 1, semester: 1, name: "Einführung in die Programmierung", kp: 7, kategorie: "cs-pure" },
+            { jahr: 1, semester: 1, name: "Lineare Algebra", kp: 7, kategorie: "math" },
+            { jahr: 1, semester: 1, name: "Datenstrukturen und Algorithmen", kp: 7, kategorie: "cs-cse" },
+            { jahr: 1, semester: 1, name: "Diskrete Mathematik", kp: 7, kategorie: "math" },
+
+            { jahr: 1, semester: 2, name: "Analysis I", kp: 7, kategorie: "math" },
+            { jahr: 1, semester: 2, name: "Parallele Programmierung", kp: 7, kategorie: "cs-cse" },
+            { jahr: 1, semester: 2, name: "Digital Design and Computer Architecture", kp: 7, kategorie: "cs-pure" },
+            { jahr: 1, semester: 2, name: "Algorithmen und Wahrscheinlichkeit", kp: 4, kategorie: "algo" },
+
+            { jahr: 2, semester: 1, name: "Numerische Methoden für CSE", kp: 8, kategorie: "cs-cse" },
+            { jahr: 2, semester: 1, name: "Analysis II", kp: 5, kategorie: "math" },
+            { jahr: 2, semester: 1, name: "Theoretische Informatik", kp: 7, kategorie: "cs-pure" },
+            { jahr: 2, semester: 1, name: "Systemnahe Programmierung und Rechnerarchitektur", kp: 7, kategorie: "cs-cse" },
+
+            { jahr: 2, semester: 2, name: "Wahrscheinlichkeit und Statistik", kp: 5, kategorie: "math" },
+            { jahr: 2, semester: 2, name: "Computernetzwerke", kp: 7, kategorie: "cs-cse-wahl" },
+            { jahr: 2, semester: 2, name: "Datenmodellierung und Datenbanken", kp: 7, kategorie: "cs-cse-wahl" },
+            { jahr: 2, semester: 2, name: "Formale Methoden und Funktionale Programmierung", kp: 7, kategorie: "cs-cse-wahl" },
+            { jahr: 2, semester: 2, name: "Ergänzung", kp: 5, kategorie: "ergaenzung" },
+            { jahr: 2, semester: 2, name: "Wissenschaft im Kontext", kp: 6, kategorie: "wissenschaft" },
+
+            { jahr: 3, semester: 0, name: "Spezialisierung", kp: 32, kategorie: "spezialisierung", inhalt: ["Software & Systems Engineering", "Information & Data Processing", "Theoretical Computer Science"] },
+            { jahr: 3, semester: 0, name: "Wahlfächer", kp: 12, kategorie: "wahlfaecher" },
+            { jahr: 3, semester: 0, name: "Bachelorarbeit", kp: 10, kategorie: "wissenschaft" },            
+            { jahr: 3, semester: 0, name: "Seminar", kp: 2, kategorie: "wissenschaft" }
+        ];
+
+        // Kategorie-Liste für die Legende (in der Reihenfolge wie im Screenshot)
+        const kategorien = [
+            { name: "Pure CS-Module", klasse: "cs-pure" },
+            { name: "CS und CSE-Module", klasse: "cs-cse" },
+            { name: "CS und CSE-Module aufgrund von CSE-Wahlmodule", klasse: "cs-cse-wahl" },
+            { name: "Gemeinsame Mathematik-Module", klasse: "math" }
+        ];
+
+        // Funktion zum Erstellen der Legende
+        function erstelleLegende() {
+            const legendeElement = document.getElementById("legende");
+
+            kategorien.forEach(kategorie => {
+                const div = document.createElement("div");
+                div.classList.add("legende-item");
+                div.classList.add(kategorie.klasse);
+                div.textContent = kategorie.name;
+                legendeElement.appendChild(div);
+            });
+        }
+
+        // Verbesserte Hilfsfunktion für Textanpassung
+        function fitText(container, selector) {
+            const node = container.querySelector(selector);
+            if (!node) return;
+
+            // Startgröße festlegen
+            let fs = 14; // Startgröße
+            node.style.fontSize = fs + "px";
+
+            // Box-Dimensionen erfassen
+            const containerWidth = container.clientWidth - 10; // Padding berücksichtigen
+            const containerHeight = container.clientHeight / 2 - 10; // Etwa die Hälfte für Titel/KP
+
+            // Solange verkleinern bis Text passt
+            while ((node.scrollWidth > containerWidth || node.scrollHeight > containerHeight) && fs > 6) {
+                fs--;
+                node.style.fontSize = fs + "px";
+            }
+
+            // Für sehr kleine Texte zusätzliche Anpassungen
+            if (fs <= 8) {
+                node.style.lineHeight = "1";
+                if (selector === ".modul-titel") {
+                    node.style.margin = "1px 0";
+                    // In extremen Fällen Abschneiden mit Ellipsis
+                    if (fs === 6) {
+                        node.style.textOverflow = "ellipsis";
+                        node.style.whiteSpace = "nowrap";
+                    }
+                }
+            }
+        }
+
+        // Funktion zur Erstellung eines Moduls mit strenger Proportionalität
+        function erstelleModul(modul, container) {
+            const div = document.createElement("div");
+            div.classList.add("modul");
+            div.classList.add(modul.kategorie);
+
+            // Vollständig proportionales Design basierend auf ECTS-Punkten
+            // Basiseinheit für die Flächenberechnung
+            const flächenBasis = 2500; // Flächenbasis pro ECTS-Punkt
+            
+            // Gesamtfläche proportional zu ECTS-Punkten
+            const fläche = modul.kp * flächenBasis;
+            
+            // Bestimme das Seitenverhältnis - machen wir Module etwas breiter als hoch
+            let seitenVerhältnis = 1.5; // Verhältnis Breite:Höhe
+            
+            // Passe Seitenverhältnis für spezielle Module an
+            if (modul.name.includes("Spezialisierung")) {
+                seitenVerhältnis = 3.0; // Breiteres Modul für Spezialisierung mit Liste
+            } else if (modul.name.includes("Datenstrukturen") || 
+                modul.name.includes("Diskrete Mathematik") || 
+                modul.name.includes("Formale Methoden") || 
+                modul.name.includes("Systemnahe") || 
+                modul.name.includes("Computer Architecture")) {
+                seitenVerhältnis = 2.0; // Breitere Module für lange Namen
+            }
+            
+            // Berechne Breite und Höhe basierend auf Fläche und Seitenverhältnis
+            // Fläche = Breite * Höhe, daher Breite = √(Fläche * Seitenverhältnis)
+            const breite = Math.sqrt(fläche * seitenVerhältnis);
+            const höhe = fläche / breite;
+            
+            div.style.width = `${Math.round(breite)}px`;
+            div.style.height = `${Math.round(höhe)}px`;
+
+            // KP oben anzeigen
+            const kpDiv = document.createElement("div");
+            kpDiv.classList.add("modul-kp");
+            kpDiv.textContent = `${modul.kp} KP`;
+            div.appendChild(kpDiv);
+
+            // Spezielle Formatierung für das Spezialisierungsmodul
+            if (modul.name === "Spezialisierung") {
+                const spezTitel = document.createElement("div");
+                spezTitel.classList.add("spezialisierung-titel");
+                spezTitel.textContent = "Eine Spezialisierung auswählen:";
+                div.appendChild(spezTitel);
+
+                // Bullet-List für Spezialisierungsoptionen
+                const bulletList = document.createElement("ul");
+                bulletList.classList.add("bullet-list");
+                
+                modul.inhalt.forEach(option => {
+                    const listItem = document.createElement("li");
+                    listItem.textContent = option;
+                    bulletList.appendChild(listItem);
+                });
+                
+                div.appendChild(bulletList);
+            } else {
+                // Standardmodultitel für alle anderen Module
+                const titelDiv = document.createElement("div");
+                titelDiv.classList.add("modul-titel");
+                titelDiv.textContent = modul.name;
+                div.appendChild(titelDiv);
+            }
+
+            container.appendChild(div);
+            
+            // Textgrößenanpassung
+            setTimeout(() => {
+                // KP und Titel anpassen
+                fitText(div, ".modul-kp");
+                fitText(div, ".modul-titel");
+
+                // Bei sehr kleinen Modulen Speziallösung
+                if (modul.kp <= 3) {
+                    const kp = div.querySelector(".modul-kp");
+                    const titel = div.querySelector(".modul-titel");
+                    if (kp && titel) {
+                        kp.style.marginBottom = "0";
+                        kp.style.marginTop = "0";
+                        titel.style.marginTop = "0";
+                        titel.style.marginBottom = "0";
+                    }
+                }
+            }, 0);
+            
+            return div;
+        }
+
+        // Verbesserte Funktion zur Erstellung des Studienplans
+        function erstelleStudienplan() {
+            const container = document.getElementById("studienplan");
+
+            // Erstelle die drei Jahre, von 1 nach 3 (aufsteigend)
+            for (let j = 1; j <= 3; j++) {
+                const jahr = document.createElement("div");
+                jahr.classList.add("jahr");
+
+                const jahrTitel = document.createElement("div");
+                jahrTitel.classList.add("jahr-titel");
+                jahrTitel.textContent = `${j}. Jahr`;
+                jahr.appendChild(jahrTitel);
+
+                // Filterung der Module für dieses Jahr
+                const moduleDesJahres = daten.filter(m => m.jahr === j);
+
+                // Spezielle Behandlung für das 3. Jahr (Bachelor-Jahr)
+                if (j === 3) {
+                    const moduleContainer = document.createElement("div");
+                    moduleContainer.classList.add("module-container");
+                    
+                    // Layout für 3. Jahr
+                    // Erst Spezialisierung, dann Wahlfächer, dann Bachelorarbeit und Seminar zum Schluss
+                    const spezialisierung = moduleDesJahres.find(m => m.name === "Spezialisierung");
+                    const wahlfaecher = moduleDesJahres.find(m => m.name === "Wahlfächer");
+                    const bachelorarbeit = moduleDesJahres.find(m => m.name === "Bachelorarbeit");
+                    const seminar = moduleDesJahres.find(m => m.name === "Seminar");
+                    
+                    if (spezialisierung) {
+                        erstelleModul(spezialisierung, moduleContainer);
+                    }
+                    
+                    if (wahlfaecher) {
+                        erstelleModul(wahlfaecher, moduleContainer);
+                    }
+                    
+                    // Gruppe für Bachelorarbeit und Seminar
+                    const baGroup = document.createElement("div");
+                    baGroup.style.display = "flex";
+                    baGroup.style.flexDirection = "column";
+                    
+                    if (bachelorarbeit) {
+                        erstelleModul(bachelorarbeit, baGroup);
+                    }
+                    
+                    if (seminar) {
+                        erstelleModul(seminar, baGroup);
+                    }
+                    
+                    moduleContainer.appendChild(baGroup);
+
+                    jahr.appendChild(moduleContainer);
+                }
+                // Jahre 1 und 2 werden anders behandelt
+                else {
+                    // 1. Semester (oben)
+                    const semester1Container = document.createElement("div");
+                    semester1Container.classList.add("module-container");
+                    semester1Container.style.marginBottom = "5px";
+                    
+                    // 2. Semester (unten)
+                    const semester2Container = document.createElement("div");
+                    semester2Container.classList.add("module-container");
+                    
+                    const semester1Module = moduleDesJahres.filter(m => m.semester === 1);
+                    const semester2Module = moduleDesJahres.filter(m => m.semester === 2);
+                    
+                    // Module einfügen
+                    semester1Module.forEach(m => erstelleModul(m, semester1Container));
+                    semester2Module.forEach(m => erstelleModul(m, semester2Container));
+                    
+                    // Container anhängen
+                    jahr.appendChild(semester1Container);
+                    jahr.appendChild(semester2Container);
+                }
+
+                // Jahr zum Hauptcontainer hinzufügen
+                container.appendChild(jahr);
+            }
+        }
+
+        // Initialisierung
+        window.onload = function() {
+            erstelleLegende();
+            erstelleStudienplan();
+            
+            // Zweiter Durchlauf, um sicherzustellen, dass Texte korrekt angepasst sind
+            setTimeout(() => {
+                document.querySelectorAll('.modul').forEach(modul => {
+                    fitText(modul, '.modul-kp');
+                    fitText(modul, '.modul-titel');
+                });
+            }, 100);
+        };
+    </script>
+</body>
+
+</html>

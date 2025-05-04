@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BSc CSE Studienplan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #fff;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 30px;
+            font-size: 18px;
+            font-weight: normal;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .studienplan {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .farben-legende {
+            width: 300px;
+            margin-left: 20px;
+        }
+
+        .jahr {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 30px;
+        }
+
+        .jahr-titel {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            margin-left: 10px;
+        }
+
+        .bereich-titel {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px 0;
+            margin-left: 10px;
+        }
+
+        .module-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            min-height: auto;
+            margin-bottom: 25px;
+            padding: 10px;
+        }
+
+        .modul {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            text-align: center;
+            color: white;
+            box-sizing: border-box;
+            border: none;
+            overflow: hidden;
+            padding: 5px;
+            margin: 1px;
+        }
+
+        .modul-titel {
+            font-weight: bold;
+            margin: 2px 0;
+            font-size: 14px;
+            line-height: 1.2;
+            width: 100%;
+            text-align: center;
+            word-break: break-word;
+        }
+
+        .modul-kp {
+            font-size: 14px;
+            margin: 2px 0;
+            width: 100%;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        /* Prüfungsblock Farben */
+        .basis1 {
+            background-color: #8064A2; /* Lila */
+            color: white;
+        }
+
+        .basis2 {
+            background-color: #1F77B4; /* Blau */
+            color: white;
+        }
+
+        .block-g1 {
+            background-color: #8DC63F; /* Grün */
+            color: black;
+        }
+
+        .block-g2 {
+            background-color: #E671B8; /* Pink */
+            color: white;
+        }
+
+        .block-g3 {
+            background-color: #4CAF50; /* Grün */
+            color: white;
+        }
+
+        .block-g4 {
+            background-color: #D32F2F; /* Rot */
+            color: white;
+        }
+
+        /* Andere Kategorien */
+        .wissenschaftliche-arbeit {
+            background-color: #5D3A8E; /* Dunkel-Lila */
+            color: white;
+        }
+
+        .kern {
+            background-color: #9BBB59; /* Hellgrün */
+            color: black;
+        }
+
+        .wahl {
+            background-color: #F2B48F; /* Hellrot */
+            color: black;
+        }
+
+        .vertiefung {
+            background-color: #DD98DD; /* Helllila */
+            color: black;
+        }
+
+        /* Legende */
+        .legende-titel {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .legende-item {
+            margin-bottom: 15px;
+            padding: 10px;
+            border-radius: 5px;
+            color: white;
+        }
+
+        .legende-item-titel {
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 8px;
+            text-align: center;
+        }
+
+        .legende-item-inhalt {
+            font-size: 12px;
+            line-height: 1.4;
+        }
+
+        .legende-modul {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>BSc Computational Science and Engineering (CSE)</h1>
+    <h2>mind. 180 KP insgesamt</h2>
+
+    <div class="container">
+        <div class="studienplan" id="studienplan">
+            <!-- JavaScript wird hier die Jahre und Module einfügen -->
+        </div>
+
+        <!-- Farben-Legende mit Prüfungsblöcken -->
+        <div class="farben-legende">
+            <div class="legende-titel">Farben-Legende</div>
+            <div id="legende">
+                <!-- JavaScript wird hier die Legende einfügen -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Definition der Prüfungsblöcke
+        const pruefungsbloecke = [
+            {
+                name: "Prüfungsblock G1",
+                module: [
+                    { name: "Analysis III", ng: 1 },
+                    { name: "Introduction to Mathematical Optimization", ng: 1 },
+                    { name: "Numerische Methoden für CSE", ng: 2 }
+                ],
+                cssClass: "block-g1"
+            },
+            {
+                name: "Prüfungsblock G2",
+                module: [
+                    { name: "Programmiertechniken für physikalische Simulationen", ng: 1 },
+                    { name: "Systems Programming and Computer Architecture", ng: 1 }
+                ],
+                cssClass: "block-g2"
+            },
+            {
+                name: "Prüfungsblock G3",
+                module: [
+                    { name: "Numerical Methods for Partial Differential Equations", ng: 2 },
+                    { name: "Stochastik", ng: 1 }
+                ],
+                cssClass: "block-g3"
+            },
+            {
+                name: "Prüfungsblock G4",
+                module: [
+                    { name: "Fluiddynamik I", ng: 1 },
+                    { name: "Molekulare Quantenmechanik", ng: 1 },
+                    { name: "Physikalische Chemie III", ng: 1 },
+                    { name: "Statistische Physik und Computer Simulation", ng: 1 }
+                ],
+                cssClass: "block-g4"
+            },
+            {
+                name: "Basisprüfungsblock 2",
+                module: [
+                    { name: "Analysis I und II", ng: 3 },
+                    { name: "Physik I und II", ng: 2 },
+                    { name: "Komplexe Analysis", ng: 1 },
+                    { name: "Datenstrukturen und Algorithmen", ng: 2 },
+                    { name: "Chemie", ng: 1 }
+                ],
+                cssClass: "basis2"
+            },
+            {
+                name: "Basisprüfungsblock 1",
+                module: [
+                    { name: "Lineare Algebra", ng: 1 },
+                    { name: "Informatik", ng: 1 },
+                    { name: "Diskrete Mathematik", ng: 1 }
+                ],
+                cssClass: "basis1"
+            }
+        ];
+
+        // Definition der Moduldaten für das CSE Studium
+        const daten = [
+            // 1. Jahr
+            { jahr: 1, semester: 1, name: "Physik I", kp: 4, pruefungsblock: "Basisprüfungsblock 2", ng: 2 },
+            { jahr: 1, semester: 1, name: "Informatik", kp: 4, pruefungsblock: "Basisprüfungsblock 1", ng: 1 },
+            { jahr: 1, semester: 1, name: "Lineare Algebra", kp: 5, pruefungsblock: "Basisprüfungsblock 1", ng: 1 },
+            { jahr: 1, semester: 1, name: "Diskrete Mathematik", kp: 7, pruefungsblock: "Basisprüfungsblock 1", ng: 1 },
+            { jahr: 1, semester: 1, name: "Analysis I", kp: 8, pruefungsblock: "Basisprüfungsblock 2", ng: 3 },
+
+            { jahr: 1, semester: 2, name: "Physik II", kp: 4, pruefungsblock: "Basisprüfungsblock 2", ng: 2 },
+            { jahr: 1, semester: 2, name: "Komplexe Analysis", kp: 4, pruefungsblock: "Basisprüfungsblock 2", ng: 1 },
+            { jahr: 1, semester: 2, name: "Chemie", kp: 4, pruefungsblock: "Basisprüfungsblock 2", ng: 1 },
+            { jahr: 1, semester: 2, name: "Analysis II", kp: 8, pruefungsblock: "Basisprüfungsblock 2", ng: 3 },
+            { jahr: 1, semester: 2, name: "Datenstrukturen und Algorithmen", kp: 8, pruefungsblock: "Basisprüfungsblock 2", ng: 2 },
+
+            // 2. Jahr - ohne Semesterunterscheidung
+            { jahr: 2, name: "Analysis III", kp: 4, pruefungsblock: "Prüfungsblock G1", ng: 1 },
+            { jahr: 2, name: "Introduction to Mathematical Optimization", kp: 5, pruefungsblock: "Prüfungsblock G1", ng: 1 },
+            { jahr: 2, name: "Numerische Methoden für CSE", kp: 9, pruefungsblock: "Prüfungsblock G1", ng: 2 },
+            { jahr: 2, name: "Stochastik", kp: 4, pruefungsblock: "Prüfungsblock G3", ng: 1 },
+            { jahr: 2, name: "Numerical Methods for Partial Differential Equations", kp: 10, pruefungsblock: "Prüfungsblock G3", ng: 2 },
+            { jahr: 2, name: "Programmiertechniken für physikalische Simulationen", kp: 5, pruefungsblock: "Prüfungsblock G2", ng: 1 },
+            { jahr: 2, name: "Systems Programming and Computer Architecture", kp: 7, pruefungsblock: "Prüfungsblock G2", ng: 1 },
+            { jahr: 2, name: "Wissenschaft im Kontext", kp: 6, kategorie: "wissenschaftliche-arbeit" },
+            { jahr: 2, name: "Fluiddynamik I", kp: 6, pruefungsblock: "Prüfungsblock G4", ng: 1 },
+            { jahr: 2, name: "Molekulare Quantenmechanik", kp: 4, pruefungsblock: "Prüfungsblock G4", ng: 1 },
+            { jahr: 2, name: "Physikalische Chemie III", kp: 4, pruefungsblock: "Prüfungsblock G4", ng: 1 },
+            { jahr: 2, name: "Statistische Physik und Computer Simulation", kp: 5, pruefungsblock: "Prüfungsblock G4", ng: 1 },
+
+            // 3. Jahr - Kernfächer
+            { jahr: 3, semester: 0, bereich: "Kernfächer", name: "Software Engineering", kp: 6, kategorie: "kern" },
+            { jahr: 3, semester: 0, bereich: "Kernfächer", name: "Design of High Performance Computing", kp: 6, kategorie: "kern" },
+            { jahr: 3, semester: 0, bereich: "Kernfächer", name: "Introduction into Machine Learning", kp: 8, kategorie: "kern" },
+
+            // 3. Jahr - Vertiefungsgebiet
+            { jahr: 3, semester: 0, bereich: "Vertiefungsgebiet", name: "Atmosphäre", kp: 3, kategorie: "vertiefung" },
+            { jahr: 3, semester: 0, bereich: "Vertiefungsgebiet", name: "Weather and Climate Modeling", kp: 4, kategorie: "vertiefung" },
+
+            // 3. Jahr - Wahlfächer
+            { jahr: 3, semester: 0, bereich: "Wahlfächer", name: "Information Systems for Engineers", kp: 5, kategorie: "wahl" },
+            { jahr: 3, semester: 0, bereich: "Wahlfächer", name: "Communication Networks", kp: 6, kategorie: "wahl" },
+
+            // 3. Jahr - Abschluss
+            { jahr: 3, semester: 0, bereich: "Abschluss", name: "Fallstudien", kp: 6, kategorie: "wissenschaftliche-arbeit" },
+            { jahr: 3, semester: 0, bereich: "Abschluss", name: "Bachelorarbeit", kp: 14, kategorie: "wissenschaftliche-arbeit" }
+        ];
+
+        // Kategorie-Liste für weitere Legende
+        const kategorien = [
+            { name: "Wissenschaftliche Arbeit", klasse: "wissenschaftliche-arbeit" },
+            { name: "Kernfächer", klasse: "kern", info: "3 von 4 möglichen auswählen" },
+            { name: "Wahlfächer", klasse: "wahl", info: "mind. zwei Module" },
+            { name: "Vertiefungsgebiet", klasse: "vertiefung", info: "2 Module auswählen (Atmosphärenphysik)" }
+        ];
+
+        // Funktion zum Erstellen der Legende mit Prüfungsblöcken
+        function erstelleLegende() {
+            const legendeElement = document.getElementById("legende");
+
+            // Zuerst die Prüfungsblöcke hinzufügen
+            pruefungsbloecke.forEach(block => {
+                const div = document.createElement("div");
+                div.classList.add("legende-item");
+                div.classList.add(block.cssClass);
+                
+                const titelDiv = document.createElement("div");
+                titelDiv.classList.add("legende-item-titel");
+                titelDiv.textContent = block.name;
+                div.appendChild(titelDiv);
+                
+                const inhaltDiv = document.createElement("div");
+                inhaltDiv.classList.add("legende-item-inhalt");
+                
+                block.module.forEach(modul => {
+                    const modulDiv = document.createElement("div");
+                    modulDiv.classList.add("legende-modul");
+                    modulDiv.textContent = `${modul.name}, NG: ${modul.ng}`;
+                    inhaltDiv.appendChild(modulDiv);
+                });
+                
+                div.appendChild(inhaltDiv);
+                legendeElement.appendChild(div);
+            });
+
+            // Danach die anderen Kategorien
+            kategorien.forEach(kategorie => {
+                const div = document.createElement("div");
+                div.classList.add("legende-item");
+                div.classList.add(kategorie.klasse);
+                
+                // Container für Name und Info erstellen
+                const contentContainer = document.createElement("div");
+                contentContainer.style.display = "flex";
+                contentContainer.style.flexDirection = "column";
+                
+                // Name hinzufügen
+                const nameSpan = document.createElement("span");
+                nameSpan.textContent = kategorie.name;
+                nameSpan.style.fontWeight = "bold";
+                contentContainer.appendChild(nameSpan);
+                
+                // Info hinzufügen, falls vorhanden
+                if (kategorie.info) {
+                    const infoSpan = document.createElement("span");
+                    infoSpan.textContent = kategorie.info;
+                    infoSpan.style.fontStyle = "italic";
+                    infoSpan.style.fontSize = "12px";
+                    infoSpan.style.marginTop = "5px";
+                    contentContainer.appendChild(infoSpan);
+                }
+                
+                div.appendChild(contentContainer);
+                legendeElement.appendChild(div);
+            });
+        }
+
+        // Hilfsfunktion für Textanpassung
+        function fitText(container, selector) {
+            const node = container.querySelector(selector);
+            if (!node) return;
+
+            // Startgröße festlegen
+            let fs = 14; // Startgröße
+            node.style.fontSize = fs + "px";
+
+            // Box-Dimensionen erfassen
+            const containerWidth = container.clientWidth - 10; // Padding berücksichtigen
+            const containerHeight = container.clientHeight / 2 - 10; // Etwa die Hälfte für Titel/KP
+
+            // Solange verkleinern bis Text passt
+            while ((node.scrollWidth > containerWidth || node.scrollHeight > containerHeight) && fs > 6) {
+                fs--;
+                node.style.fontSize = fs + "px";
+            }
+
+            // Für sehr kleine Texte zusätzliche Anpassungen
+            if (fs <= 8) {
+                node.style.lineHeight = "1";
+                if (selector === ".modul-titel") {
+                    node.style.margin = "1px 0";
+                    // In extremen Fällen Abschneiden mit Ellipsis
+                    if (fs === 6) {
+                        node.style.textOverflow = "ellipsis";
+                        node.style.whiteSpace = "nowrap";
+                    }
+                }
+            }
+        }
+
+        // Funktion zum Bestimmen der CSS-Klasse basierend auf dem Prüfungsblock
+        function getCssClassForPruefungsblock(pruefungsblock) {
+            if (!pruefungsblock) return "";
+            
+            const block = pruefungsbloecke.find(b => b.name === pruefungsblock);
+            return block ? block.cssClass : "";
+        }
+
+        // Funktion zur Erstellung eines Moduls
+        function erstelleModul(modul, container) {
+            const div = document.createElement("div");
+            div.classList.add("modul");
+            
+            // Färbung nach Prüfungsblock für Jahr 1 und 2
+            if (modul.jahr <= 2 && modul.pruefungsblock) {
+                const cssClass = getCssClassForPruefungsblock(modul.pruefungsblock);
+                if (cssClass) {
+                    div.classList.add(cssClass);
+                }
+            } else {
+                // Für Jahr 3 und andere Module ohne Prüfungsblock
+                div.classList.add(modul.kategorie);
+            }
+
+            // Standardbreite basierend auf Kategorie und KP
+            let breite;
+            
+            if (modul.name.length > 30) {
+                breite = 200; // Für sehr lange Modulnamen
+            } else if (modul.name.length > 20) {
+                breite = 180; // Für mittellange Modulnamen
+            } else {
+                breite = 160; // Für kürzere Modulnamen
+            }
+            
+            div.style.width = `${breite}px`;
+            
+            // Strikt proportionale Höhe basierend auf ECTS-Credits
+            // Fester Faktor: 10px pro ECTS-Credit
+            const basisHoeheProKP = 10;
+            const hoehe = modul.kp * basisHoeheProKP;
+            
+            div.style.height = `${hoehe}px`;
+
+            // ECTS-Credits oben anzeigen
+            const kpDiv = document.createElement("div");
+            kpDiv.classList.add("modul-kp");
+            kpDiv.textContent = `${modul.kp} KP`;
+            div.appendChild(kpDiv);
+
+            // Modultitel
+            const titelDiv = document.createElement("div");
+            titelDiv.classList.add("modul-titel");
+            titelDiv.textContent = modul.name;
+            div.appendChild(titelDiv);
+
+            // Info hinzufügen falls vorhanden (aber keine NG)
+            if (modul.info) {
+                const infoDiv = document.createElement("div");
+                infoDiv.style.fontSize = "10px";
+                infoDiv.style.fontStyle = "italic";
+                infoDiv.style.marginTop = "5px";
+                infoDiv.textContent = modul.info;
+                div.appendChild(infoDiv);
+            }
+
+            container.appendChild(div);
+            
+            // Textgrößenanpassung
+            setTimeout(() => {
+                fitText(div, ".modul-kp");
+                fitText(div, ".modul-titel");
+            }, 0);
+            
+            return div;
+        }
+
+        // Funktion zur Erstellung des Studienplans
+        function erstelleStudienplan() {
+            const container = document.getElementById("studienplan");
+            
+            // 1. Jahr mit Semesterunterteilung
+            const jahr1 = document.createElement("div");
+            jahr1.classList.add("jahr");
+            
+            const jahr1Titel = document.createElement("div");
+            jahr1Titel.classList.add("jahr-titel");
+            jahr1Titel.textContent = "1. Jahr";
+            jahr1.appendChild(jahr1Titel);
+            
+            // 1. Semester
+            const semester1Titel = document.createElement("div");
+            semester1Titel.classList.add("bereich-titel");
+            semester1Titel.textContent = "1. Semester";
+            jahr1.appendChild(semester1Titel);
+            
+            const semester1Container = document.createElement("div");
+            semester1Container.classList.add("module-container");
+            
+            // 2. Semester
+            const semester2Titel = document.createElement("div");
+            semester2Titel.classList.add("bereich-titel");
+            semester2Titel.textContent = "2. Semester";
+            
+            const semester2Container = document.createElement("div");
+            semester2Container.classList.add("module-container");
+            
+            // Module für 1. Jahr einfügen
+            const semester1Module = daten.filter(m => m.jahr === 1 && m.semester === 1);
+            const semester2Module = daten.filter(m => m.jahr === 1 && m.semester === 2);
+            
+            semester1Module.forEach(m => erstelleModul(m, semester1Container));
+            semester2Module.forEach(m => erstelleModul(m, semester2Container));
+            
+            jahr1.appendChild(semester1Container);
+            jahr1.appendChild(semester2Titel);
+            jahr1.appendChild(semester2Container);
+            
+            container.appendChild(jahr1);
+            
+            // 2. Jahr ohne Semesterunterteilung
+            const jahr2 = document.createElement("div");
+            jahr2.classList.add("jahr");
+            
+            const jahr2Titel = document.createElement("div");
+            jahr2Titel.classList.add("jahr-titel");
+            jahr2Titel.textContent = "2. Jahr";
+            jahr2.appendChild(jahr2Titel);
+            
+            const jahr2Container = document.createElement("div");
+            jahr2Container.classList.add("module-container");
+            
+            // Module für 2. Jahr einfügen
+            const jahr2Module = daten.filter(m => m.jahr === 2);
+            jahr2Module.forEach(m => erstelleModul(m, jahr2Container));
+            
+            jahr2.appendChild(jahr2Container);
+            container.appendChild(jahr2);
+            
+            // 3. Jahr
+            const jahr3 = document.createElement("div");
+            jahr3.classList.add("jahr");
+            
+            const jahr3Titel = document.createElement("div");
+            jahr3Titel.classList.add("jahr-titel");
+            jahr3Titel.textContent = "3. Jahr";
+            jahr3.appendChild(jahr3Titel);
+            
+            // Module nach Bereichen gruppieren
+            const modulbereiche = ["Kernfächer", "Vertiefungsgebiet", "Wahlfächer", "Abschluss"];
+            
+            modulbereiche.forEach(bereich => {
+                const bereichModule = daten.filter(m => m.jahr === 3 && m.bereich === bereich);
+                
+                if (bereichModule.length > 0) {
+                    const bereichTitel = document.createElement("div");
+                    bereichTitel.classList.add("bereich-titel");
+                    bereichTitel.textContent = bereich;
+                    jahr3.appendChild(bereichTitel);
+                    
+                    const bereichContainer = document.createElement("div");
+                    bereichContainer.classList.add("module-container");
+                    
+                    bereichModule.forEach(m => erstelleModul(m, bereichContainer));
+                    
+                    jahr3.appendChild(bereichContainer);
+                }
+            });
+            
+            container.appendChild(jahr3);
+        }
+
+        // Initialisierung
+        window.onload = function() {
+            erstelleLegende();
+            erstelleStudienplan();
+            
+            // Zweiter Durchlauf für Textanpassungen
+            setTimeout(() => {
+                document.querySelectorAll('.modul').forEach(modul => {
+                    fitText(modul, '.modul-kp');
+                    fitText(modul, '.modul-titel');
+                });
+            }, 100);
+        };
+    </script>
+</body>
+
+</html>
