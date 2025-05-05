@@ -212,6 +212,38 @@
         .vertiefungsgebiete-liste li {
             padding: 2px 0;
         }
+        
+        /* Tooltip Style für Wahlfächer */
+        .wahlfaecher-liste {
+            max-height: 600px;
+            overflow-y: auto;
+            padding-right: 10px;
+        }
+        
+        .wahlfaecher-liste h3 {
+            text-align: center;
+            margin-top: 0;
+            border-bottom: 2px solid #F2B48F;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+        }
+        
+        .wahlfaecher-liste h4 {
+            margin: 15px 0 8px 0;
+            padding: 3px 8px;
+            background-color: #F2B48F;
+            color: black;
+            border-radius: 4px;
+        }
+        
+        .wahlfaecher-liste ul {
+            margin: 5px 0;
+            padding-left: 20px;
+        }
+        
+        .wahlfaecher-liste li {
+            padding: 2px 0;
+        }
 
         /* Prüfungsblock Farben */
         .basis1 {
@@ -547,6 +579,76 @@
                 </ul>
             </div>
         `;
+        
+        // Detaillierte Informationen zu Wahlfächern
+        const wahlfaecherDetails = `
+            <div class="wahlfaecher-liste">
+                <h3>Wahlfächer</h3>
+                
+                <h4>Frühlingssemester 2025</h4>
+                <ul>
+                    <li>Product Development and Engineering Design – 4 ECTS</li>
+                    <li>Optimization and Machine Learning – 4 ECTS</li>
+                    <li>Visualization, Simulation and Interaction - Virtual Reality I – 4 ECTS</li>
+                    <li>Informationstechnologien im digitalen Produkt – 4 ECTS</li>
+                    <li>Biofluiddynamics – 4 ECTS</li>
+                    <li>Introduction to Finite Element Analysis – 4 ECTS</li>
+                    <li>Nonlinear FEA – 4 ECTS</li>
+                    <li>Elektromagnetische Felder und Wellen – 4 ECTS</li>
+                    <li>Algebra and Error Correcting Codes – 6 ECTS</li>
+                    <li>Information Theory II – 6 ECTS</li>
+                    <li>Communication and Detection Theory – 6 ECTS</li>
+                    <li>Communication Networks – 6 ECTS</li>
+                    <li>Principles of Distributed Computing – 7 ECTS</li>
+                    <li>Information Security – 8 ECTS</li>
+                    <li>Applied Cryptography – 8 ECTS</li>
+                    <li>Game Programming Laboratory – 10 ECTS</li>
+                    <li>Shape Modeling and Geometry Processing – 8 ECTS</li>
+                    <li>Big Data for Engineers – 6 ECTS</li>
+                    <li>Mobile Health and Activity Monitoring – 6 ECTS</li>
+                    <li>Machine Learning for Health Care – 5 ECTS</li>
+                    <li>Chemometrics and Machine Learning for Chemical Engineers – 4 ECTS</li>
+                    <li>Neuromorphic Engineering II – 6 ECTS</li>
+                    <li>Computational Vision (UZH) – 6 ECTS</li>
+                    <li>Computational Models of Motion – 8 ECTS</li>
+                    <li>Statistical Methods in Experimental Physics – 10 ECTS</li>
+                    <li>Computational Systems Biology: Stochastic Approaches – 4 ECTS</li>
+                    <li>Klimasysteme – 3 ECTS</li>
+                    <li>Mathematical Optimization Lab – 5 ECTS</li>
+                    <li>Network & Integer Optimization – 5 ECTS</li>
+                    <li>Convex Optimization – 5 ECTS</li>
+                    <li>High-Dimensional Statistics – 4 ECTS</li>
+                    <li>Physikalische Chemie III: Molekulare Quantenmechanik – 4 ECTS</li>
+                    <li>Soccer Analytics – 3 ECTS</li>
+                </ul>
+                
+                <h4>Herbstsemester 2024</h4>
+                <ul>
+                    <li>Visualization, Simulation and Interaction - Virtual Reality II – 4 ECTS</li>
+                    <li>Applied Finite Element Analysis – 4 ECTS</li>
+                    <li>Nonlinear FEA – 4 ECTS</li>
+                    <li>Design of Parallel and High-Performance Computing – 9 ECTS</li>
+                    <li>Discrete Event Systems – 6 ECTS</li>
+                    <li>VLSI 1: HDL Based Design for FPGAs – 6 ECTS</li>
+                    <li>VLSI 3: Full-Custom Digital Circuit Design – 6 ECTS</li>
+                    <li>Information Theory I – 6 ECTS</li>
+                    <li>Computational Psychiatry – 3 ECTS</li>
+                    <li>Algorithms, Probability, and Computing – 8 ECTS</li>
+                    <li>Visual Computing – 8 ECTS</li>
+                    <li>Computer Graphics – 8 ECTS</li>
+                    <li>Physically-Based Simulation in Computer Graphics – 5 ECTS</li>
+                    <li>Information Systems for Engineers – 4 ECTS</li>
+                    <li>High-Dimensional Statistics – 4 ECTS</li>
+                    <li>Time Series Analysis – 4 ECTS</li>
+                    <li>Linear & Combinatorial Optimization – 10 ECTS</li>
+                    <li>Allgemeine Mechanik – 7 ECTS</li>
+                    <li>Neuromorphic Engineering I – 6 ECTS</li>
+                    <li>Angewandte Computer Architektur – 6 ECTS</li>
+                    <li>Responsible Machine Learning with Insurance Applications – 4 ECTS</li>
+                    <li>Causality – 5 ECTS</li>
+                </ul>
+            </div>
+        `;
 
         // Detaillierte Modul-Beschreibungen
         const modulDetails = {
@@ -797,11 +899,36 @@
                         }
                     });
                 }
+                
+                // Wenn es sich um Wahlfächer handelt, füge Hover-Effekt hinzu
+                if (kategorie.klasse === "wahl") {
+                    div.addEventListener('mouseenter', (event) => {
+                        zeigeWahlfaecherTooltip(event);
+                    });
+                    
+                    div.addEventListener('mouseleave', () => {
+                        if (!isWahlfaecherTooltipLocked) {
+                            verbergeTooltip();
+                        }
+                    });
+                    
+                    div.addEventListener('click', (event) => {
+                        isWahlfaecherTooltipLocked = !isWahlfaecherTooltipLocked;
+                        if (isWahlfaecherTooltipLocked) {
+                            zeigeWahlfaecherTooltip(event);
+                        } else {
+                            verbergeTooltip();
+                        }
+                    });
+                }
             });
         }
         
         // Variable, um zu verfolgen, ob der Vertiefungsgebiete-Tooltip gesperrt ist
         let isVertiefungsgebieteTooltipLocked = false;
+        
+        // Variable, um zu verfolgen, ob der Wahlfächer-Tooltip gesperrt ist
+        let isWahlfaecherTooltipLocked = false;
         
         // Funktion zum Anzeigen des Vertiefungsgebiete-Tooltips
         function zeigeVertiefungsgebieteTooltip(event) {
@@ -832,6 +959,42 @@
             tooltipEl.style.left = (windowWidth - tooltipWidth - 100) + "px";
             
             // Tooltipbreite für die Vertiefungsgebiete-Liste etwas vergrößern
+            tooltipEl.style.maxWidth = tooltipWidth + "px";
+            tooltipEl.style.width = tooltipWidth + "px";
+            
+            // Anzeigen
+            tooltipEl.style.display = "block";
+        }
+        
+        // Funktion zum Anzeigen des Wahlfächer-Tooltips
+        function zeigeWahlfaecherTooltip(event) {
+            // Tooltipelement holen oder erstellen
+            if (!tooltipEl) {
+                tooltipEl = document.getElementById("tooltip");
+            }
+            
+            // Inhalt leeren und neu befüllen
+            tooltipEl.innerHTML = wahlfaecherDetails;
+            
+            // Schließen-Button hinzufügen
+            const closeBtn = document.createElement("div");
+            closeBtn.classList.add("close-btn");
+            closeBtn.textContent = "×";
+            closeBtn.addEventListener("click", function(e) {
+                e.stopPropagation(); // Verhindert Bubble-up des Events
+                isWahlfaecherTooltipLocked = false;
+                verbergeTooltip();
+            });
+            tooltipEl.appendChild(closeBtn);
+            
+            // Tooltip positionieren - etwas nach links versetzt für bessere Lesbarkeit
+            const windowWidth = window.innerWidth;
+            const tooltipWidth = 500; // Maximale Breite des Tooltips
+            
+            tooltipEl.style.top = "100px";
+            tooltipEl.style.left = (windowWidth - tooltipWidth - 100) + "px";
+            
+            // Tooltipbreite für die Wahlfächer-Liste etwas vergrößern
             tooltipEl.style.maxWidth = tooltipWidth + "px";
             tooltipEl.style.width = tooltipWidth + "px";
             
@@ -957,27 +1120,31 @@
         // Event-Listener für Klicks außerhalb des Tooltips
         document.addEventListener("click", function(event) {
             if (tooltipEl && event.target !== tooltipEl && !tooltipEl.contains(event.target)) {
-                // Prüft, ob das geklickte Element ein Modul oder die Vertiefungsgebiete-Legende ist
+                // Prüft, ob das geklickte Element ein Modul oder die Vertiefungs-/Wahlfächer-Legende ist
                 let isModulClick = false;
                 let isVertiefungsgebietClick = false;
+                let isWahlfaecherClick = false;
                 let target = event.target;
                 
                 // Nach oben durch die DOM-Hierarchie gehen
-                while (target && !isModulClick && !isVertiefungsgebietClick) {
+                while (target && !isModulClick && !isVertiefungsgebietClick && !isWahlfaecherClick) {
                     if (target.classList) {
                         if (target.classList.contains("modul")) {
                             isModulClick = true;
                         } else if (target.classList.contains("vertiefung")) {
                             isVertiefungsgebietClick = true;
+                        } else if (target.classList.contains("wahl")) {
+                            isWahlfaecherClick = true;
                         }
                     }
                     target = target.parentElement;
                 }
                 
-                // Wenn das geklickte Element weder ein Modul noch die Vertiefungsgebiete-Legende ist,
-                // und der Vertiefungsgebiete-Tooltip nicht gesperrt ist, Tooltip schließen
-                if (!isModulClick && !isVertiefungsgebietClick) {
+                // Wenn das geklickte Element weder ein Modul noch die Vertiefungs-/Wahlfächer-Legende ist,
+                // Tooltip schließen und Lock-Status zurücksetzen
+                if (!isModulClick && !isVertiefungsgebietClick && !isWahlfaecherClick) {
                     isVertiefungsgebieteTooltipLocked = false;
+                    isWahlfaecherTooltipLocked = false;
                     verbergeTooltip();
                 }
             }
