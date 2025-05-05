@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSc MTEC Studienplan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #fff;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 30px;
+            font-size: 18px;
+            font-weight: normal;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .studienplan {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .farben-legende {
+            width: 250px;
+            margin-left: 40px;
+        }
+
+        .jahr {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        .jahr-titel {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .module-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2px;
+            min-height: auto;
+        }
+
+        .modul {
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+            text-align: center;
+            color: white;
+            box-sizing: border-box;
+            margin: 1px;
+            border-radius: 2px;
+        }
+
+        .modul-titel {
+            font-weight: bold;
+            margin: 2px 0;
+            font-size: 14px;
+            line-height: 1.1;
+            width: 100%;
+            text-align: center;
+            word-break: break-word;
+            overflow: hidden;
+        }
+
+        .modul-kp {
+            font-size: 14px;
+            margin: 2px 0;
+            width: 100%;
+            text-align: center;
+            overflow: hidden;
+            line-height: 1.1;
+        }
+
+        /* Modul-Kategorien und Farben */
+        .core {
+            background-color: #0D5B8C;
+        }
+
+        .elective {
+            background-color: #00A0E3;
+        }
+
+        .supplementary {
+            background-color: #F2B48F;
+            color: black;
+        }
+
+        .thesis {
+            background-color: #4CA64C;
+        }
+
+        .internship {
+            background-color: #DD98DD;
+            color: black;
+        }
+
+        /* Legende */
+        .legende-titel {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .legende-item {
+            margin-bottom: 2px;
+            padding: 10px;
+            color: white;
+            text-align: center;
+        }
+
+        .legende-description {
+            font-size: 12px;
+            margin-top: 5px;
+            color: #333;
+        }
+
+        /* Fachgebiete */
+        .fachgebiet {
+            font-size: 12px;
+            text-align: center;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .fachgebiet-column {
+            width: auto;
+            min-width: 250px;
+            margin-right: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>MSc Management, Technology, and Economics (MTEC)</h1>
+    <h2>mind. 120 KP insgesamt</h2>
+
+    <div class="container">
+        <div class="studienplan" id="studienplan">
+            <!-- JavaScript wird hier die Module einfügen -->
+        </div>
+
+        <!-- Farben-Legende -->
+        <div class="farben-legende">
+            <div class="legende-titel">Farben-Legende & Anforderungen</div>
+            <div id="legende">
+                <!-- JavaScript wird hier die Legende einfügen -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Definition der Moduldaten - ohne Jahr/Semester-Einteilung
+        const daten = [
+            // Core Courses: 1. General Management and Human Resource Management
+            { name: "Introduction to Management", kp: 3, kategorie: "Core Courses", fachgebiet: "1. General Management and Human Resource Management" },
+            { name: "Human Resource Management: Leading Teams", kp: 3, kategorie: "Core Courses", fachgebiet: "1. General Management and Human Resource Management" },
+            { name: "Responsible Leadership", kp: 3, kategorie: "Core Courses", fachgebiet: "1. General Management and Human Resource Management" },
+            
+            // Core Courses: 2. Strategy, Markets and Technology
+            { name: "Strategic Management", kp: 3, kategorie: "Core Courses", fachgebiet: "2. Strategy, Markets and Technology" },
+            { name: "Corporate Sustainability", kp: 3, kategorie: "Core Courses", fachgebiet: "2. Strategy, Markets and Technology" },
+            { name: "Technology and Innovation Management", kp: 3, kategorie: "Core Courses", fachgebiet: "2. Strategy, Markets and Technology" },
+            { name: "Introduction to Marketing", kp: 3, kategorie: "Core Courses", fachgebiet: "2. Strategy, Markets and Technology" },
+            { name: "Entrepreneurship", kp: 3, kategorie: "Core Courses", fachgebiet: "2. Strategy, Markets and Technology" },
+            
+            // Core Courses: 3. Information Management and Operations Management
+            { name: "Management of Digital Transformation", kp: 3, kategorie: "Core Courses", fachgebiet: "3. Information Management and Operations Management" },
+            { name: "Production and Operations Management", kp: 3, kategorie: "Core Courses", fachgebiet: "3. Information Management and Operations Management" },
+            { name: "Strategic Supply Chain Management", kp: 3, kategorie: "Core Courses", fachgebiet: "3. Information Management and Operations Management" },
+            
+            // Core Courses: 4. Quantitative and Qualitative Methods
+            { name: "Operations Research", kp: 3, kategorie: "Core Courses", fachgebiet: "4. Quantitative and Qualitative Methods" },
+            { name: "Economic Dynamics and Complexity", kp: 3, kategorie: "Core Courses", fachgebiet: "4. Quantitative and Qualitative Methods" },
+            { name: "Empirical Methods in Management", kp: 3, kategorie: "Core Courses", fachgebiet: "4. Quantitative and Qualitative Methods" },
+            { name: "Principles of Econometrics", kp: 3, kategorie: "Core Courses", fachgebiet: "4. Quantitative and Qualitative Methods" },
+            
+            // Core Courses: 5. Micro and Macroeconomics
+            { name: "Principles of Macroeconomics", kp: 3, kategorie: "Core Courses", fachgebiet: "5. Micro and Macroeconomics" },
+            { name: "Principles of Microeconomics", kp: 3, kategorie: "Core Courses", fachgebiet: "5. Micro and Macroeconomics" },
+            { name: "Sustainability Economics", kp: 3, kategorie: "Core Courses", fachgebiet: "5. Micro and Macroeconomics" },
+            { name: "Economic Growth, Cycles and Policy", kp: 3, kategorie: "Core Courses", fachgebiet: "5. Micro and Macroeconomics" },
+            { name: "Markets and Games", kp: 3, kategorie: "Core Courses", fachgebiet: "5. Micro and Macroeconomics" },
+            
+            // Core Courses: 6. Financial Management
+            { name: "Accounting for Managers", kp: 3, kategorie: "Core Courses", fachgebiet: "6. Financial Management" },
+            { name: "Introduction to Finance", kp: 3, kategorie: "Core Courses", fachgebiet: "6. Financial Management" },
+            { name: "Advanced Finance", kp: 3, kategorie: "Core Courses", fachgebiet: "6. Financial Management" },
+            
+            // Elective courses
+            { name: "Social Data Science", kp: 2, kategorie: "Elective Courses", fachgebiet: "Systems Design and Risks" },
+            { name: "Semester Project Small", kp: 3, kategorie: "Elective Courses", fachgebiet: "Additional Courses" },
+            { name: "Semester Project Large", kp: 6, kategorie: "Elective Courses", fachgebiet: "Additional Courses" },
+            { name: "Risk and Insurance Economics", kp: 3, kategorie: "Elective Courses", fachgebiet: "Systems Design and Risks" },
+            
+            // Supplementary courses
+            { name: "Supplementary Courses", kp: 12, kategorie: "Supplementary Courses", fachgebiet: "" },
+            
+            // Master's Thesis and Internship
+            { name: "Master's Thesis", kp: 30, kategorie: "Master's Thesis", fachgebiet: "" },
+            { name: "Internship", kp: 6, kategorie: "Internship", fachgebiet: "" }
+        ];
+
+        // Mapping der Kategorienamen zu CSS-Klassen
+        const kategorieZuKlasse = {
+            "Core Courses": "core",
+            "Elective Courses": "elective",
+            "Supplementary Courses": "supplementary",
+            "Master's Thesis": "thesis",
+            "Internship": "internship"
+        };
+
+        // Kategorie-Liste für die Legende
+        const kategorien = [
+            "Core Courses",
+            "Elective Courses",
+            "Supplementary Courses",
+            "Master's Thesis",
+            "Internship"
+        ];
+
+        // ECTS-Anforderungen und Beschreibungen für jede Kategorie
+        const kpAnforderungen = {
+            "Core Courses": "mind. 51 KP - Pflichtmodule aus Management, Wirtschaft, Strategie, Technologie",
+            "Elective Courses": "mind. 10 KP - Wahlmodule aus D-MTEC Forschungsgruppen, definieren die Spezialisierung",
+            "Supplementary Courses": "mind. 12 KP - Ergänzungsmodule aus anderen ETH-Departementen",
+            "Master's Thesis": "30 KP - Abschlussarbeit zu einem Forschungsthema in MTEC",
+            "Internship": "6 KP - Pflichtpraktikum in der Wirtschaft oder Forschung"
+        };
+
+        // Hilfsfunktion: schrumpft Text, bis er genau in die Box passt
+        function fitText(container, selector) {
+            const node = container.querySelector(selector);
+            if (!node) return;
+
+            // Startgröße festlegen
+            let fs = 16; // Start mit größerer Schrift
+            node.style.fontSize = fs + "px";
+
+            // Box-Dimensionen erfassen
+            const containerWidth = container.clientWidth;
+            const containerHeight = container.clientHeight / 2; // Etwa die Hälfte für Titel/KP
+
+            // Solange verkleinern bis Text passt
+            while ((node.scrollWidth > containerWidth || node.scrollHeight > containerHeight) && fs > 6) {
+                fs--;
+                node.style.fontSize = fs + "px";
+            }
+
+            // Für sehr kleine Texte zusätzliche Anpassungen
+            if (fs <= 8) {
+                node.style.lineHeight = "1";
+                if (selector === ".modul-titel") {
+                    node.style.margin = "1px 0";
+                    // In extremen Fällen Abschneiden mit Ellipsis
+                    if (fs === 6) {
+                        node.style.textOverflow = "ellipsis";
+                        node.style.whiteSpace = "nowrap";
+                    }
+                }
+            }
+        }
+
+        // Funktion zum Erstellen der Legende
+        function erstelleLegende() {
+            const legendeElement = document.getElementById("legende");
+
+            kategorien.forEach(kategorie => {
+                const div = document.createElement("div");
+                div.classList.add("legende-item");
+                div.classList.add(kategorieZuKlasse[kategorie]);
+                div.textContent = kategorie;
+                
+                // Anforderungen hinzufügen
+                if (kpAnforderungen[kategorie]) {
+                    const anforderung = document.createElement("div");
+                    anforderung.classList.add("legende-description");
+                    anforderung.textContent = kpAnforderungen[kategorie];
+                    div.appendChild(anforderung);
+                }
+                
+                legendeElement.appendChild(div);
+            });
+        }
+
+        // Funktion zur Erstellung eines Moduls
+        function erstelleModul(modul, container) {
+            const div = document.createElement("div");
+            div.classList.add("modul");
+            div.classList.add(kategorieZuKlasse[modul.kategorie]);
+
+            // Streng flächenproportionale Darstellung der Module basierend auf ECTS-Punkten
+            const flächenBasis = 2500; // Flächenbasis pro ECTS-Punkt
+            
+            // Gesamtfläche streng proportional zu ECTS-Punkten
+            const fläche = modul.kp * flächenBasis;
+            
+            // Standardverhältnis für alle Module - Quadratische Grundform
+            const seitenVerhältnis = 1.2; // Leicht breiter als hoch für bessere Lesbarkeit
+            
+            // Berechne Breite und Höhe basierend auf Fläche und Seitenverhältnis
+            // STRENG proportional zur Fläche, die wiederum streng proportional zu ECTS ist
+            const breite = Math.sqrt(fläche * seitenVerhältnis);
+            const höhe = fläche / breite;
+            
+            div.style.width = `${Math.round(breite)}px`;
+            div.style.height = `${Math.round(höhe)}px`;
+
+            // Inhalt des Moduls
+            const kpDiv = document.createElement("div");
+            kpDiv.classList.add("modul-kp");
+            kpDiv.textContent = `${modul.kp} KP`;
+
+            const titelDiv = document.createElement("div");
+            titelDiv.classList.add("modul-titel");
+            titelDiv.textContent = modul.name;
+
+            // KP oben, Titel darunter
+            div.appendChild(kpDiv);
+            div.appendChild(titelDiv);
+
+            container.appendChild(div);
+
+            // Nachjustierung für bessere Darstellung
+            setTimeout(() => {
+                fitText(div, ".modul-kp");
+                fitText(div, ".modul-titel");
+
+                // Bei sehr kleinen Modulen Speziallösung
+                if (modul.kp <= 3) {
+                    const kp = div.querySelector(".modul-kp");
+                    const titel = div.querySelector(".modul-titel");
+                    if (kp && titel) {
+                        kp.style.marginBottom = "0";
+                        kp.style.marginTop = "0";
+                        titel.style.marginTop = "0";
+                        titel.style.marginBottom = "0";
+                    }
+                }
+            }, 0);
+
+            return div;
+        }
+
+        // Hauptfunktion zum Erstellen des Studienplans
+        function erstelleStudienplan() {
+            const container = document.getElementById("studienplan");
+
+            // Überschriften für die Modulkategorien
+            const kategorien = [
+                "Core Courses",
+                "Elective Courses",
+                "Supplementary Courses", 
+                "Master's Thesis",
+                "Internship"
+            ];
+
+            // Für jede Kategorie einen Block erstellen
+            kategorien.forEach(kategorie => {
+                const kategorieContainer = document.createElement("div");
+                kategorieContainer.classList.add("jahr"); // Wiederverwendung der Jahr-Klasse für das Layout
+                
+                const kategorieTitel = document.createElement("div");
+                kategorieTitel.classList.add("jahr-titel");
+                kategorieTitel.textContent = kategorie;
+                kategorieTitel.style.marginBottom = "5px";
+                kategorieContainer.appendChild(kategorieTitel);
+                
+                // Container für Module
+                const moduleContainer = document.createElement("div");
+                moduleContainer.classList.add("module-container");
+                
+                // Filter Module nach Kategorie
+                const moduleNachKategorie = daten.filter(m => m.kategorie === kategorie);
+                
+                // Gruppieren nach Fachgebieten, falls vorhanden
+                const fachgebiete = [...new Set(moduleNachKategorie.filter(m => m.fachgebiet).map(m => m.fachgebiet))];
+                
+                if (fachgebiete.length > 0) {
+                    fachgebiete.forEach(fachgebiet => {
+                        const fachgebietContainer = document.createElement("div");
+                        fachgebietContainer.classList.add("fachgebiet-column");
+                        
+                        const fachgebietTitle = document.createElement("div");
+                        fachgebietTitle.classList.add("fachgebiet");
+                        fachgebietTitle.textContent = fachgebiet;
+                        fachgebietContainer.appendChild(fachgebietTitle);
+                        
+                        const fachgebietModule = moduleNachKategorie.filter(m => m.fachgebiet === fachgebiet);
+                        fachgebietModule.forEach(m => {
+                            erstelleModul(m, fachgebietContainer);
+                        });
+                        
+                        moduleContainer.appendChild(fachgebietContainer);
+                    });
+                    
+                    // Module ohne spezifisches Fachgebiet
+                    const ohneGebiet = moduleNachKategorie.filter(m => !m.fachgebiet);
+                    ohneGebiet.forEach(m => erstelleModul(m, moduleContainer));
+                } else {
+                    // Keine Fachgebiete, zeige alle Module direkt
+                    moduleNachKategorie.forEach(m => erstelleModul(m, moduleContainer));
+                }
+                
+                kategorieContainer.appendChild(moduleContainer);
+                container.appendChild(kategorieContainer);
+                
+                // Abstand zwischen den Kategorien
+                if (kategorie !== kategorien[kategorien.length - 1]) {
+                    const spacer = document.createElement("div");
+                    spacer.style.height = "30px";
+                    container.appendChild(spacer);
+                }
+            });
+        }
+
+        // Initialisierung
+        window.onload = function () {
+            erstelleLegende();
+            erstelleStudienplan();
+        };
+    </script>
+</body>
+
+</html>
