@@ -180,6 +180,38 @@
         .tooltip-container li {
             margin-bottom: 3px;
         }
+        
+        /* Tooltip Style für Vertiefungsgebiete */
+        .vertiefungsgebiete-liste {
+            max-height: 600px;
+            overflow-y: auto;
+            padding-right: 10px;
+        }
+        
+        .vertiefungsgebiete-liste h3 {
+            text-align: center;
+            margin-top: 0;
+            border-bottom: 2px solid #DD98DD;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+        }
+        
+        .vertiefungsgebiete-liste h4 {
+            margin: 15px 0 8px 0;
+            padding: 3px 8px;
+            background-color: #DD98DD;
+            color: black;
+            border-radius: 4px;
+        }
+        
+        .vertiefungsgebiete-liste ul {
+            margin: 5px 0;
+            padding-left: 20px;
+        }
+        
+        .vertiefungsgebiete-liste li {
+            padding: 2px 0;
+        }
 
         /* Prüfungsblock Farben */
         .basis1 {
@@ -417,6 +449,104 @@
             { name: "Wahlfächer", klasse: "wahl", info: "mind. zwei Module" },
             { name: "Vertiefungsgebiet", klasse: "vertiefung", info: "2 Module auswählen (Atmosphärenphysik)" }
         ];
+        
+        // Detaillierte Informationen zu Vertiefungsgebieten
+        const vertiefungsgebieteDetails = `
+            <div class="vertiefungsgebiete-liste">
+                <h3>Vertiefungsgebiete</h3>
+                
+                <h4>Astrophysik</h4>
+                <ul>
+                    <li>Theoretical Astrophysics – 10 ECTS</li>
+                    <li>Theoretical Cosmology – 10 ECTS</li>
+                    <li>Computational Astrophysics – 6 ECTS</li>
+                </ul>
+                
+                <h4>Atmosphärenphysik</h4>
+                <ul>
+                    <li>Atmosphäre – 3 ECTS</li>
+                    <li>Weather and Climate Models – 4 ECTS</li>
+                </ul>
+                
+                <h4>Chemie</h4>
+                <ul>
+                    <li>Classical Simulation of (Biol)Molecular Systems – 6 ECTS</li>
+                    <li>Quantenchemie – 6 ECTS</li>
+                    <li>Molecular and Materials Modelling – 4 ECTS</li>
+                </ul>
+                
+                <h4>Fluiddynamik</h4>
+                <ul>
+                    <li>Fluiddynamik II – 3 ECTS</li>
+                    <li>Computational Methods for Flow, Heat and Mass Transfer Problems – 4 ECTS</li>
+                </ul>
+                
+                <h4>Systems and Control</h4>
+                <ul>
+                    <li>Control Systems I (Regelsysteme) – 6 ECTS</li>
+                    <li>Control Systems II – 6 ECTS</li>
+                    <li>Signal- und Systemtheorie I – 4 ECTS</li>
+                    <li>Signal- und Systemtheorie II – 4 ECTS</li>
+                </ul>
+                
+                <h4>Robotik</h4>
+                <ul>
+                    <li>Theory of Robotics and Mechatronics – 4 ECTS</li>
+                    <li>Autonomous Mobile Robots – 5 ECTS</li>
+                    <li>Introduction to Machine Learning – 8 ECTS</li>
+                    <li>Probabilistic Artificial Intelligence – 8 ECTS</li>
+                    <li>Deep Learning – 8 ECTS</li>
+                    <li>Computer Vision – 8 ECTS</li>
+                    <li>Image Analysis and Computer Vision – 6 ECTS</li>
+                    <li>Dynamic Programming and Optimal Control – 4 ECTS</li>
+                    <li>Recursive Estimation – 4 ECTS</li>
+                    <li>Robot Dynamics – 4 ECTS</li>
+                    <li>Advanced Machine Learning – 10 ECTS</li>
+                    <li>3D Vision – 4 ECTS</li>
+                    <li>Seminar in Robotics for CSE – 4 ECTS</li>
+                </ul>
+                
+                <h4>Physik</h4>
+                <ul>
+                    <li>Introduction to Computational Physics – 8 ECTS</li>
+                    <li>Computational Statistical Physics – 8 ECTS</li>
+                    <li>Computational Quantum Physics – 8 ECTS</li>
+                    <li>Molecular and Materials Modelling – 4 ECTS</li>
+                </ul>
+                
+                <h4>Computational Finance</h4>
+                <ul>
+                    <li>Mathematical Foundations for Finance – 4 ECTS</li>
+                    <li>Computational Methods for Quantitative Finance – Monte Carlo and Sampling Methods – 6 ECTS</li>
+                </ul>
+                
+                <h4>Electromagnetics</h4>
+                <ul>
+                    <li>Physical Modelling and Simulation – 6 ECTS</li>
+                    <li>Optimization Methods for Engineers – 3 ECTS</li>
+                </ul>
+                
+                <h4>Geophysik</h4>
+                <ul>
+                    <li>Continuum Mechanics – 3 ECTS</li>
+                    <li>Numerical Modelling I and II – 6 ECTS</li>
+                    <li>Dynamics of the Mantle and Lithosphere – 3 ECTS</li>
+                    <li>Numerical Modelling for Applied Geophysics – 4 ECTS</li>
+                    <li>Tomographic Imaging – 3 ECTS</li>
+                    <li>Seismology of the Spherical Earth – 3 ECTS</li>
+                    <li>Inverse Theory I+II – 6 ECTS</li>
+                    <li>Numerical Modelling in Fortran – 3 ECTS</li>
+                </ul>
+                
+                <h4>Biologie</h4>
+                <ul>
+                    <li>Computational Systems Biology – 6 ECTS</li>
+                    <li>Statistical Models in Computational Biology – 6 ECTS</li>
+                    <li>Spatio-Temporal Modelling in Biology – 4 ECTS</li>
+                    <li>Introduction to Neuroinformatics – 6 ECTS</li>
+                </ul>
+            </div>
+        `;
 
         // Detaillierte Modul-Beschreibungen
         const modulDetails = {
@@ -645,7 +775,68 @@
                 
                 div.appendChild(contentContainer);
                 legendeElement.appendChild(div);
+                
+                // Wenn es sich um das Vertiefungsgebiet handelt, füge Hover-Effekt hinzu
+                if (kategorie.klasse === "vertiefung") {
+                    div.addEventListener('mouseenter', (event) => {
+                        zeigeVertiefungsgebieteTooltip(event);
+                    });
+                    
+                    div.addEventListener('mouseleave', () => {
+                        if (!isVertiefungsgebieteTooltipLocked) {
+                            verbergeTooltip();
+                        }
+                    });
+                    
+                    div.addEventListener('click', (event) => {
+                        isVertiefungsgebieteTooltipLocked = !isVertiefungsgebieteTooltipLocked;
+                        if (isVertiefungsgebieteTooltipLocked) {
+                            zeigeVertiefungsgebieteTooltip(event);
+                        } else {
+                            verbergeTooltip();
+                        }
+                    });
+                }
             });
+        }
+        
+        // Variable, um zu verfolgen, ob der Vertiefungsgebiete-Tooltip gesperrt ist
+        let isVertiefungsgebieteTooltipLocked = false;
+        
+        // Funktion zum Anzeigen des Vertiefungsgebiete-Tooltips
+        function zeigeVertiefungsgebieteTooltip(event) {
+            // Tooltipelement holen oder erstellen
+            if (!tooltipEl) {
+                tooltipEl = document.getElementById("tooltip");
+            }
+            
+            // Inhalt leeren und neu befüllen
+            tooltipEl.innerHTML = vertiefungsgebieteDetails;
+            
+            // Schließen-Button hinzufügen
+            const closeBtn = document.createElement("div");
+            closeBtn.classList.add("close-btn");
+            closeBtn.textContent = "×";
+            closeBtn.addEventListener("click", function(e) {
+                e.stopPropagation(); // Verhindert Bubble-up des Events
+                isVertiefungsgebieteTooltipLocked = false;
+                verbergeTooltip();
+            });
+            tooltipEl.appendChild(closeBtn);
+            
+            // Tooltip positionieren - etwas nach links versetzt für bessere Lesbarkeit
+            const windowWidth = window.innerWidth;
+            const tooltipWidth = 500; // Maximale Breite des Tooltips
+            
+            tooltipEl.style.top = "100px";
+            tooltipEl.style.left = (windowWidth - tooltipWidth - 100) + "px";
+            
+            // Tooltipbreite für die Vertiefungsgebiete-Liste etwas vergrößern
+            tooltipEl.style.maxWidth = tooltipWidth + "px";
+            tooltipEl.style.width = tooltipWidth + "px";
+            
+            // Anzeigen
+            tooltipEl.style.display = "block";
         }
 
         // Funktion zum Erstellen des Tooltip-Inhalts
@@ -766,20 +957,27 @@
         // Event-Listener für Klicks außerhalb des Tooltips
         document.addEventListener("click", function(event) {
             if (tooltipEl && event.target !== tooltipEl && !tooltipEl.contains(event.target)) {
-                // Prüft, ob das geklickte Element ein Modul ist
+                // Prüft, ob das geklickte Element ein Modul oder die Vertiefungsgebiete-Legende ist
                 let isModulClick = false;
+                let isVertiefungsgebietClick = false;
                 let target = event.target;
                 
-                // Nach oben durch die DOM-Hierarchie gehen, um zu prüfen, ob ein .modul geklickt wurde
-                while (target && !isModulClick) {
-                    if (target.classList && target.classList.contains("modul")) {
-                        isModulClick = true;
+                // Nach oben durch die DOM-Hierarchie gehen
+                while (target && !isModulClick && !isVertiefungsgebietClick) {
+                    if (target.classList) {
+                        if (target.classList.contains("modul")) {
+                            isModulClick = true;
+                        } else if (target.classList.contains("vertiefung")) {
+                            isVertiefungsgebietClick = true;
+                        }
                     }
                     target = target.parentElement;
                 }
                 
-                // Wenn das geklickte Element kein Modul ist, Tooltip schließen
-                if (!isModulClick) {
+                // Wenn das geklickte Element weder ein Modul noch die Vertiefungsgebiete-Legende ist,
+                // und der Vertiefungsgebiete-Tooltip nicht gesperrt ist, Tooltip schließen
+                if (!isModulClick && !isVertiefungsgebietClick) {
+                    isVertiefungsgebieteTooltipLocked = false;
                     verbergeTooltip();
                 }
             }
