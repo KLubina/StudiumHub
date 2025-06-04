@@ -1,0 +1,335 @@
+/* ==== STUDIENPLAN BASE CSS ==== */
+/* Gemeinsame Basis-Styles für alle Studiengänge */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #fff;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.studienplan {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.farben-legende {
+    width: 280px;
+    margin-left: 20px;
+}
+
+.jahr {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.jahr-titel {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.bereich-titel {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+    margin-left: 10px;
+}
+
+.module-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    min-height: auto;
+    margin-bottom: 15px;
+}
+
+/* ==== BASE MODUL STYLES ==== */
+.modul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    color: white;
+    box-sizing: border-box;
+    border: none;
+    overflow: hidden;
+    padding: 5px;
+    margin: 1px;
+    position: relative;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.modul:hover {
+    transform: scale(1.02);
+    z-index: 100;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.modul-titel {
+    font-weight: bold;
+    margin: 2px 0;
+    font-size: 14px;
+    line-height: 1.2;
+    width: 100%;
+    text-align: center;
+    word-break: break-word;
+    overflow: hidden;
+}
+
+.modul-kp {
+    font-size: 14px;
+    margin: 2px 0;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    overflow: hidden;
+    line-height: 1.1;
+}
+
+/* ==== LEGENDE BASE STYLES ==== */
+.legende-titel {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.legende-item {
+    margin-bottom: 5px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.legende-item-titel {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.legende-item-inhalt {
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.legende-modul {
+    margin-bottom: 5px;
+}
+
+.legende-description {
+    font-size: 12px;
+    margin-top: 5px;
+    color: #333;
+}
+
+/* ==== FACHGEBIETE ==== */
+.fachgebiet {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.fachgebiet-column {
+    width: auto;
+    min-width: 250px;
+    margin-right: 15px;
+}
+
+/* ==== TOOLTIP STYLES ==== */
+.tooltip-container {
+    position: fixed;
+    max-width: 500px;
+    width: 350px;
+    background-color: #fff;
+    color: #333;
+    text-align: left;
+    border-radius: 6px;
+    padding: 10px 15px;
+    z-index: 1000;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    font-size: 13px;
+    line-height: 1.4;
+    overflow-y: auto;
+    max-height: 400px;
+    display: none;
+    pointer-events: auto;
+}
+
+.close-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    color: #666;
+}
+
+.close-btn:hover {
+    background-color: #ddd;
+    color: #333;
+}
+
+.tooltip-container h3 {
+    margin: 0 0 8px 0;
+    font-size: 16px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.tooltip-container h4 {
+    margin: 12px 0 5px 0;
+    font-size: 14px;
+}
+
+.tooltip-container p {
+    margin: 5px 0;
+    font-size: 13px;
+}
+
+.tooltip-container ul {
+    margin: 5px 0;
+    padding-left: 20px;
+}
+
+.tooltip-container li {
+    margin-bottom: 3px;
+}
+
+/* ==== BULLET LISTS ==== */
+.bullet-list {
+    text-align: left;
+    margin: 5px 0;
+    padding-left: 25px;
+    list-style-type: disc;
+    width: 100%;
+}
+
+.bullet-list li {
+    margin-bottom: 5px;
+    line-height: 1.2;
+}
+
+.spezialisierung-titel {
+    font-weight: bold;
+    margin: 5px 0;
+    width: 100%;
+    text-align: center;
+}
+
+/* ==== RESPONSIVE DESIGN ==== */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .farben-legende {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    
+    .module-container {
+        gap: 5px;
+    }
+    
+    .modul {
+        margin: 2px;
+    }
+}
+
+/* ==== UTILITY CLASSES ==== */
+.text-center {
+    text-align: center;
+}
+
+.mb-small {
+    margin-bottom: 5px;
+}
+
+.mb-medium {
+    margin-bottom: 15px;
+}
+
+.mb-large {
+    margin-bottom: 30px;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.font-italic {
+    font-style: italic;
+}
+
+/* ==== LAYOUT VARIATIONS ==== */
+.layout-semester .module-container {
+    margin-bottom: 5px;
+}
+
+.layout-bereich .module-container {
+    margin-bottom: 25px;
+    padding: 10px;
+}
+
+.layout-compact .jahr {
+    margin-bottom: 15px;
+}
+
+.layout-compact .modul {
+    margin: 0.5px;
+}
+
+/* ==== SPECIAL MODULE TYPES ==== */
+.modul.large-module {
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.modul.small-module {
+    border-radius: 4px;
+}
+
+.modul.clickable {
+    cursor: pointer;
+}
+
+.modul.hover-enabled:hover {
+    transform: scale(1.05);
+    z-index: 100;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Studienplan</title>
+    
+    <!-- Base CSS -->
+    <link rel="stylesheet" href="css/studienplan-base.css">
+    
+    <!-- Theme-specific CSS (wird dynamisch geladen) -->
+    <link rel="stylesheet" id="theme-css" href="">
+    
+    <!-- Studiengang-spezifische CSS (optional) -->
+    <link rel="stylesheet" id="custom-css" href="">
+</head>
+
+<body>
+    <h1 id="studienplan-title">Studienplan</h1>
+    <h2 id="studienplan-subtitle">mind. 180 KP insgesamt</h2>
+
+    <div class="container">
+        <div class="studienplan" id="studienplan">
+            <!-- JavaScript wird hier die Jahre und Module einfügen -->
+        </div>
+
+        <!-- Farben-Legende -->
+        <div class="farben-legende">
+            <div class="legende-titel" id="legende-titel">Farben-Legende</div>
+            <div id="legende">
+                <!-- JavaScript wird hier die Legende einfügen -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Tooltip-Container (für Studiengänge mit Tooltips) -->
+    <div id="tooltip" class="tooltip-container" style="display: none;"></div>
+
+    <!-- Base JavaScript -->
+    <script src="js/studienplan-base.js"></script>
+    
+    <!-- Studiengang-spezifische Konfiguration -->
+    <script id="config-script" src=""></script>
+    
+    <!-- Initialization Script -->
+    <script>
+        // URL Parameter auslesen um Studiengang zu bestimmen
+        const urlParams = new URLSearchParams(window.location.search);
+        const studiengang = urlParams.get('studiengang') || 'cs'; // Default: Computer Science
+        
+        // Dynamisches Laden der Konfiguration
+        loadStudiengangConfig(studiengang);
+        
+        function loadStudiengangConfig(studiengang) {
+            // Konfigurationsdatei laden
+            const configScript = document.getElementById('config-script');
+            configScript.src = `configs/${studiengang}-config.js`;
+            
+            // Theme CSS laden
+            const themeCSS = document.getElementById('theme-css');
+            themeCSS.href = `css/themes/${studiengang}-theme.css`;
+            
+            // Optional: Custom CSS laden
+            const customCSS = document.getElementById('custom-css');
+            customCSS.href = `css/custom/${studiengang}-custom.css`;
+            
+            // Warten bis Konfiguration geladen ist
+            configScript.onload = function() {
+                if (window.StudiengangConfig) {
+                    initializeStudienplan(window.StudiengangConfig);
+                } else {
+                    console.error('Konfiguration nicht gefunden für:', studiengang);
+                }
+            };
+            
+            configScript.onerror = function() {
+                console.error('Fehler beim Laden der Konfiguration für:', studiengang);
+            };
+        }
+    </script>
+</body>
+
+</html>

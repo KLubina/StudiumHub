@@ -1,0 +1,115 @@
+/* ==== MTEC THEME CSS ==== */
+/* Spezifische Farben und Styles für den MTEC Studiengang */
+
+/* ==== MODUL-KATEGORIEN UND FARBEN ==== */
+.core {
+    background-color: #0D5B8C;
+    color: white;
+}
+
+.elective {
+    background-color: #00A0E3;
+    color: white;
+}
+
+.supplementary {
+    background-color: #F2B48F;
+    color: black;
+}
+
+.thesis {
+    background-color: #4CA64C;
+    color: white;
+}
+
+.internship {
+    background-color: #DD98DD;
+    color: black;
+}
+
+/* ==== HOVER EFFECTS ==== */
+.modul.core:hover {
+    background-color: #1a6ea3;
+}
+
+.modul.elective:hover {
+    background-color: #1ab0fa;
+}
+
+.modul.supplementary:hover {
+    background-color: #f9c4a6;
+}
+
+.modul.thesis:hover {
+    background-color: #5db563;
+}
+
+.modul.internship:hover {
+    background-color: #e4a8e4;
+}
+
+/* ==== LEGENDE THEME ==== */
+.legende-item.core {
+    background-color: #0D5B8C;
+    color: white;
+}
+
+.legende-item.elective {
+    background-color: #00A0E3;
+    color: white;
+}
+
+.legende-item.supplementary {
+    background-color: #F2B48F;
+    color: black;
+}
+
+.legende-item.thesis {
+    background-color: #4CA64C;
+    color: white;
+}
+
+.legende-item.internship {
+    background-color: #DD98DD;
+    color: black;
+}
+
+/* ==== LAYOUT ANPASSUNGEN ==== */
+.farben-legende {
+    width: 250px;
+    margin-left: 40px;
+}
+
+.fachgebiet-column {
+    width: auto;
+    min-width: 250px;
+    margin-right: 15px;
+}
+
+.legende-description {
+    font-size: 12px;
+    margin-top: 5px;
+    color: #333;
+}
+
+/* ==== SPEZIELLE MODUL-GRÖSSEN ==== */
+.modul.large-module {
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* ==== RESPONSIVE ANPASSUNGEN ==== */
+@media (max-width: 768px) {
+    .farben-legende {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    
+    .fachgebiet-column {
+        width: 100%;
+        min-width: auto;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}

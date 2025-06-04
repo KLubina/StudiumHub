@@ -51,6 +51,7 @@
         .subtitle {
             font-size: 1.2rem;
             opacity: 0.9;
+            margin-bottom: 1rem;
         }
 
         .description {
@@ -59,6 +60,19 @@
             max-width: 800px;
             margin-left: auto;
             margin-right: auto;
+        }
+
+        .info-box {
+            background-color: #e8f4f8;
+            border-left: 4px solid var(--secondary-color);
+            padding: 1rem;
+            margin-bottom: 2rem;
+            border-radius: 4px;
+        }
+
+        .info-box h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
         }
 
         .cards-container {
@@ -86,7 +100,6 @@
 
         .card-header {
             padding: 1.5rem;
-            background-color: var(--primary-color);
             color: white;
         }
 
@@ -157,6 +170,18 @@
             transform: scale(1.05);
         }
 
+        .legacy-link {
+            display: inline-block;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+
+        .legacy-link:hover {
+            text-decoration: underline;
+        }
+
         footer {
             background-color: var(--primary-color);
             color: white;
@@ -169,6 +194,10 @@
             .cards-container {
                 grid-template-columns: 1fr;
             }
+            
+            h1 {
+                font-size: 2rem;
+            }
         }
     </style>
 </head>
@@ -176,13 +205,18 @@
     <header>
         <div class="container">
             <h1>Studienplan Hub</h1>
-            <p class="subtitle">Übersicht aller Bachelor- und Master-Studiengänge</p>
+            <p class="subtitle">Modulares System für alle Bachelor- und Master-Studiengänge</p>
         </div>
     </header>
 
     <div class="container">
         <div class="description">
-            <p>Willkommen auf dem Studienplan Hub! Hier findest du eine Übersicht aller Bachelor- und Master-Studienpläne mit detaillierten Modulbeschreibungen, Kreditpunkten und Farbkodierungen für verschiedene Fachbereiche.</p>
+            <p>Willkommen im neuen modularen Studienplan Hub! Das System wurde komplett überarbeitet für bessere Wartbarkeit und einfachere Erweiterung. Jeder Studiengang nutzt nun die gleiche Basis-Technologie mit individuellen Konfigurationen.</p>
+        </div>
+
+        <div class="info-box">
+            <h3>🆕 Neue modulare Architektur</h3>
+            <p>Alle Studiengänge nutzen jetzt ein gemeinsames, modulares System. Das bedeutet konsistente Performance, einheitliche Features und einfache Wartung. Neue Studiengänge können in Minuten hinzugefügt werden!</p>
         </div>
 
         <div class="cards-container">
@@ -198,23 +232,27 @@
                     </p>
                 </div>
                 <div class="card-footer">
-                    <a href="BSc-Mathematik-Studienplan.html" class="btn">Zum Studienplan</a>
+                    <a href="studienplan-template.html?studiengang=math" class="btn">Zum Studienplan</a>
+                    <br>
+                    <a href="legacy/BSc-Mathematik-Studienplan.html" class="legacy-link">Legacy Version</a>
                 </div>
             </div>
 
             <!-- Card for CSE -->
             <div class="card cse">
                 <div class="card-header">
-                    <h2 class="card-title">BSc CSE (ETH) (+ Hoover)</h2>
+                    <h2 class="card-title">BSc CSE (ETH)</h2>
                     <p class="card-subtitle">Computational Science and Engineering</p>
                 </div>
                 <div class="card-body">
                     <p class="card-text">
-                        Studienplan für den interdisziplinären Bachelor in Computational Science and Engineering mit Fokus auf wissenschaftlichem Rechnen.
+                        Studienplan für den interdisziplinären Bachelor in Computational Science and Engineering mit Fokus auf wissenschaftlichem Rechnen. Inklusive Hover-Tooltips und Prüfungsblock-System.
                     </p>
                 </div>
                 <div class="card-footer">
-                    <a href="BSc-RW-Studienplan.html" class="btn">Zum Studienplan</a>
+                    <a href="studienplan-template.html?studiengang=cse" class="btn">Zum Studienplan</a>
+                    <br>
+                    <a href="legacy/BSc-RW-Studienplan.html" class="legacy-link">Legacy Version</a>
                 </div>
             </div>
 
@@ -230,7 +268,9 @@
                     </p>
                 </div>
                 <div class="card-footer">
-                    <a href="BA-HSG-Studienplan.html" class="btn">Zum Studienplan</a>
+                    <a href="studienplan-template.html?studiengang=bwl" class="btn">Zum Studienplan</a>
+                    <br>
+                    <a href="legacy/BA-HSG-Studienplan.html" class="legacy-link">Legacy Version</a>
                 </div>
             </div>
 
@@ -246,7 +286,9 @@
                     </p>
                 </div>
                 <div class="card-footer">
-                    <a href="BSc-CS-Studienplan.html" class="btn">Zum Studienplan</a>
+                    <a href="studienplan-template.html?studiengang=cs" class="btn">Zum Studienplan</a>
+                    <br>
+                    <a href="legacy/BSc-CS-Studienplan.html" class="legacy-link">Legacy Version</a>
                 </div>
             </div>
 
@@ -262,11 +304,13 @@
                     </p>
                 </div>
                 <div class="card-footer">
-                    <a href="BSc-ITET-Studienplan.html" class="btn">Zum Studienplan</a>
+                    <a href="studienplan-template.html?studiengang=itet" class="btn">Zum Studienplan</a>
+                    <br>
+                    <a href="legacy/BSc-ITET-Studienplan.html" class="legacy-link">Legacy Version</a>
                 </div>
             </div>
 
-            <!-- New Card for MTEC -->
+            <!-- Card for MTEC -->
             <div class="card mtec">
                 <div class="card-header">
                     <h2 class="card-title">MSc MTEC (ETH)</h2>
@@ -278,7 +322,9 @@
                     </p>
                 </div>
                 <div class="card-footer">
-                    <a href="MSc-MTEC-Studienplan.html" class="btn">Zum Studienplan</a>
+                    <a href="studienplan-template.html?studiengang=mtec" class="btn">Zum Studienplan</a>
+                    <br>
+                    <a href="legacy/MSc-MTEC-Studienplan.html" class="legacy-link">Legacy Version</a>
                 </div>
             </div>
         </div>
@@ -286,14 +332,25 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Studienplan Hub | Alle Studienpläne in einem Überblick</p>
+            <p>&copy; 2025 Studienplan Hub | Modulares System für alle Studiengänge</p>
+            <p style="font-size: 0.9rem; margin-top: 0.5rem; opacity: 0.8;">
+                Powered by modularer Architektur - Ein Code, alle Studiengänge
+            </p>
         </div>
     </footer>
 
     <script>
         // Add any JavaScript functionality here if needed
         document.addEventListener('DOMContentLoaded', function() {
-            console.log('Studienplan Hub loaded successfully!');
+            console.log('Modularer Studienplan Hub loaded successfully!');
+            
+            // Optional: Track clicks for analytics
+            document.querySelectorAll('.btn').forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    const studiengang = new URL(this.href).searchParams.get('studiengang');
+                    console.log('Studiengang aufgerufen:', studiengang);
+                });
+            });
         });
     </script>
 </body>

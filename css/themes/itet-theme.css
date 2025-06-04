@@ -1,0 +1,128 @@
+/* ==== ITET THEME CSS ==== */
+/* Spezifische Farben und Styles für den ITET Studiengang */
+
+/* ==== MODUL-KATEGORIEN UND FARBEN ==== */
+.obligatorisch {
+    background-color: #0D5B8C;
+    color: white;
+}
+
+.obligatorisch-praktikum {
+    background-color: #00A0E3;
+    color: white;
+}
+
+.wahl-praktika-projekte {
+    background-color: #4CA64C;
+    color: white;
+}
+
+.kern {
+    background-color: #DD98DD;
+    color: black;
+}
+
+.wahl {
+    background-color: #F2B48F;
+    color: black;
+}
+
+.wissenschaft {
+    background-color: #888888;
+    color: white;
+}
+
+.weitere-wahl-grundlagen {
+    background-color: #FFD700;
+    color: black;
+}
+
+/* ==== HOVER EFFECTS ==== */
+.modul.obligatorisch:hover {
+    background-color: #1a6ea3;
+}
+
+.modul.obligatorisch-praktikum:hover {
+    background-color: #1ab0fa;
+}
+
+.modul.wahl-praktika-projekte:hover {
+    background-color: #5db563;
+}
+
+.modul.kern:hover {
+    background-color: #e4a8e4;
+}
+
+.modul.wahl:hover {
+    background-color: #f9c4a6;
+}
+
+.modul.wissenschaft:hover {
+    background-color: #999999;
+}
+
+.modul.weitere-wahl-grundlagen:hover {
+    background-color: #ffe533;
+}
+
+/* ==== LEGENDE THEME ==== */
+.legende-item.obligatorisch {
+    background-color: #0D5B8C;
+    color: white;
+}
+
+.legende-item.obligatorisch-praktikum {
+    background-color: #00A0E3;
+    color: white;
+}
+
+.legende-item.wahl-praktika-projekte {
+    background-color: #4CA64C;
+    color: white;
+}
+
+.legende-item.kern {
+    background-color: #DD98DD;
+    color: black;
+}
+
+.legende-item.wahl {
+    background-color: #F2B48F;
+    color: black;
+}
+
+.legende-item.wissenschaft {
+    background-color: #888888;
+    color: white;
+}
+
+.legende-item.weitere-wahl-grundlagen {
+    background-color: #FFD700;
+    color: black;
+}
+
+/* ==== LAYOUT ANPASSUNGEN ==== */
+.farben-legende {
+    width: 250px;
+    margin-left: 40px;
+}
+
+.fachgebiet-column {
+    width: 200px;
+}
+
+/* ==== RESPONSIVE ANPASSUNGEN ==== */
+@media (max-width: 768px) {
+    .farben-legende {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    
+    .fachgebiet-column {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
