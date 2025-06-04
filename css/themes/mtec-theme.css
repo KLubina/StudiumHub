@@ -88,21 +88,42 @@
     font-size: 18px;
 }
 
-/* ==== OPTIMIERTE FACHGEBIET-DARSTELLUNG ==== */
+/* ==== KOMPAKTE FACHGEBIET-DARSTELLUNG ==== */
 .fachgebiet-column {
     width: auto;
     min-width: 200px; /* Schmalere Spalten */
-    margin-right: 10px; /* Weniger Abstand zwischen Spalten */
-    margin-bottom: 10px;
+    margin-right: 8px; /* Weniger Abstand zwischen Spalten */
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: column;
 }
 
 .fachgebiet {
     font-size: 11px; /* Kleinere Schrift für Fachgebiete */
-    margin: 3px 0; /* Weniger Margin */
-    padding: 2px 5px;
-    background-color: rgba(0,0,0,0.1);
+    margin: 2px 0 5px 0; /* Weniger Margin */
+    padding: 3px 8px;
+    background-color: rgba(13, 91, 140, 0.2); /* Transparentes Core-Blau */
     border-radius: 3px;
     text-align: center;
+    font-weight: bold;
+    color: #0D5B8C;
+    border: 1px solid rgba(13, 91, 140, 0.3);
+}
+
+/* ==== KOMPAKTE FACHGEBIET-MODULE ==== */
+.fachgebiet-column .modul {
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 2px;
+    flex-shrink: 0;
+}
+
+/* ==== CORE COURSES SPEZIELLE BEHANDLUNG ==== */
+.jahr.core-courses .module-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: flex-start;
 }
 
 /* ==== KOMPAKTE MODULE ==== */
@@ -151,11 +172,20 @@
     margin-bottom: 15px; /* Weniger Abstand zwischen Kategorien */
 }
 
-/* ==== FACHGEBIET-OPTIMIERUNGEN ==== */
-.fachgebiet-column .modul {
-    width: 100%;
-    max-width: 190px;
-    margin-bottom: 2px;
+/* ==== KOMPAKTE MODULE MIT FACHGEBIETEN ==== */
+.module-container {
+    gap: 8px; /* Etwas mehr Platz für Fachgebiete */
+    margin-bottom: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+/* ==== SPEZIELLE BEHANDLUNG FÜR KATEGORIEN MIT FACHGEBIETEN ==== */
+.jahr:has(.fachgebiet-column) .module-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
 }
 
 /* ==== SPEZIELLE BEHANDLUNG FÜR THESIS UND INTERNSHIP ==== */
@@ -178,15 +208,25 @@
         min-width: auto;
         margin-right: 0;
         margin-bottom: 10px;
+        display: block; /* Zurück zu normaler Darstellung auf mobil */
+    }
+    
+    .fachgebiet {
+        margin-bottom: 8px;
+        text-align: center;
+        writing-mode: horizontal-tb;
     }
     
     .module-container {
         gap: 5px;
+        display: flex !important; /* Override grid auf mobil */
+        flex-wrap: wrap;
     }
     
     .modul {
         margin: 2px;
         max-width: none;
+        flex: 0 0 auto;
     }
 }
 
@@ -195,24 +235,39 @@
     max-width: 1400px; /* Mehr Platz nutzen */
 }
 
-/* Fachgebiete in Reihen anzeigen statt Spalten für bessere Nutzung des Platzes */
-.jahr .module-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 5px;
-    align-items: start;
+/* ==== RESPONSIVE FACHGEBIET-BEHANDLUNG ==== */
+@media (min-width: 1200px) {
+    /* Für große Bildschirme: Fachgebiete nebeneinander */
+    .jahr .module-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        align-items: flex-start;
+    }
 }
 
-/* Core Courses spezielle Behandlung - kompaktere Anordnung */
-.core .module-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    gap: 3px;
-}
-
-/* Für Kategorien ohne Fachgebiete - horizontale Anordnung */
-.jahr:not(.has-fachgebiet) .module-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
+@media (max-width: 1199px) {
+    /* Für kleinere Bildschirme: Kompakte Grid-Darstellung */
+    .jahr .module-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        gap: 5px;
+        align-items: start;
+    }
+    
+    .fachgebiet-column {
+        grid-column: 1 / -1; /* Nimmt volle Breite ein */
+        display: grid;
+        grid-template-columns: auto repeat(auto-fit, minmax(160px, 1fr));
+        gap: 5px;
+        align-items: start;
+        margin-bottom: 10px;
+    }
+    
+    .fachgebiet {
+        grid-column: 1;
+        align-self: center;
+        writing-mode: horizontal-tb;
+        margin-right: 10px;
+    }
 }
