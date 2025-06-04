@@ -7,11 +7,12 @@ window.StudiengangConfig = {
     legendTitle: "Farben-Legende & Anforderungen",
     creditUnit: "KP",
     
-    // Layout-Konfiguration - OPTIMIERT
+    // Layout-Konfiguration - OPTIMIERT FÜR HORIZONTAL
     layout: "categories",
-    moduleSizing: "fixed", // Geändert zu fixed für kompaktere Darstellung
+    moduleSizing: "fixed", 
     baseWidth: 160,
-    baseHeight: 70, // Reduzierte Höhe für kompaktere Module
+    baseHeight: 70, 
+    layoutClass: "horizontal-fachgebiete", // Spezielle Layout-Klasse
     
     // Features
     enableTooltips: false,
@@ -157,5 +158,52 @@ window.StudiengangConfig = {
             return name.substring(0, 32) + "...";
         }
         return name;
+    }
+};
+
+/* ==== MTEC-SPEZIFISCHE LAYOUT-KLASSE ==== */
+window.StudiengangClass = class MTECStudienplan extends StudienplanBase {
+    constructor(config) {
+        super(config);
+    }
+    
+    // Überschreibe die Fachgebiet-Layout-Erstellung für horizontale Darstellung
+    createFachgebietLayout(container, modules) {
+        const fachgebiete = [...new Set(modules.map(m => m.fachgebiet).filter(f => f))];
+        
+        fachgebiete.forEach(fachgebiet => {
+            // Fachgebiet-Label
+            const fachgebietLabel = document.createElement('div');
+            fachgebietLabel.classList.add('fachgebiet');
+            fachgebietLabel.textContent = fachgebiet;
+            container.appendChild(fachgebietLabel);
+            
+            // Module horizontal in Container
+            const moduleContainer = document.createElement('div');
+            moduleContainer.classList.add('module-container');
+            moduleContainer.style.display = 'flex';
+            moduleContainer.style.flexWrap = 'wrap';
+            moduleContainer.style.gap = '5px';
+            moduleContainer.style.marginBottom = '15px';
+            
+            const fachgebietModules = modules.filter(m => m.fachgebiet === fachgebiet);
+            fachgebietModules.forEach(m => this.createModule(m, moduleContainer));
+            
+            container.appendChild(moduleContainer);
+        });
+        
+        // Module ohne Fachgebiet
+        const ohneGebiet = modules.filter(m => !m.fachgebiet);
+        if (ohneGebiet.length > 0) {
+            const moduleContainer = document.createElement('div');
+            moduleContainer.classList.add('module-container');
+            moduleContainer.style.display = 'flex';
+            moduleContainer.style.flexWrap = 'wrap';
+            moduleContainer.style.gap = '5px';
+            moduleContainer.style.marginBottom = '15px';
+            
+            ohneGebiet.forEach(m => this.createModule(m, moduleContainer));
+            container.appendChild(moduleContainer);
+        }
     }
 };

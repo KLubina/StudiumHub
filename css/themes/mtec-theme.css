@@ -88,57 +88,45 @@
     font-size: 18px;
 }
 
-/* ==== KOMPAKTE FACHGEBIET-DARSTELLUNG ==== */
-.fachgebiet-column {
-    width: auto;
-    min-width: 200px; /* Schmalere Spalten */
-    margin-right: 8px; /* Weniger Abstand zwischen Spalten */
-    margin-bottom: 8px;
-    display: flex;
-    flex-direction: column;
-}
-
+/* ==== HORIZONTALE FACHGEBIET-DARSTELLUNG ==== */
 .fachgebiet {
-    font-size: 11px; /* Kleinere Schrift für Fachgebiete */
-    margin: 2px 0 5px 0; /* Weniger Margin */
-    padding: 3px 8px;
-    background-color: rgba(13, 91, 140, 0.2); /* Transparentes Core-Blau */
-    border-radius: 3px;
-    text-align: center;
+    font-size: 10px;
     font-weight: bold;
-    color: #0D5B8C;
-    border: 1px solid rgba(13, 91, 140, 0.3);
+    color: #555;
+    margin: 15px 0 5px 0;
+    padding: 2px 6px;
+    background-color: #f0f0f0;
+    border-radius: 3px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
-/* ==== KOMPAKTE FACHGEBIET-MODULE ==== */
-.fachgebiet-column .modul {
-    width: 100%;
-    max-width: 200px;
-    margin-bottom: 2px;
-    flex-shrink: 0;
+/* Erste Fachgebiet-Überschrift hat weniger Top-Margin */
+.fachgebiet:first-of-type {
+    margin-top: 8px;
 }
 
-/* ==== CORE COURSES SPEZIELLE BEHANDLUNG ==== */
-.jahr.core-courses .module-container {
+/* ==== HORIZONTALES MODUL-LAYOUT ==== */
+.module-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 5px;
+    margin-bottom: 10px;
     align-items: flex-start;
+}
+
+/* Module direkt nach Fachgebiet-Überschrift */
+.fachgebiet + .modul {
+    margin-left: 0;
 }
 
 /* ==== KOMPAKTE MODULE ==== */
-.module-container {
-    gap: 3px; /* Sehr kleine Abstände zwischen Modulen */
-    margin-bottom: 8px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-}
-
 .modul {
-    margin: 1px; /* Minimale Margins */
+    margin: 2px;
     border-radius: 4px;
-    max-width: 180px; /* Begrenzte Modulbreite */
+    max-width: 180px;
+    min-width: 160px;
 }
 
 /* ==== OPTIMIERTE FARBEN-LEGENDE ==== */
@@ -167,28 +155,15 @@
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
-/* ==== KATEGORIEN KOMPAKTER MACHEN ==== */
-.studienplan .jahr:not(:last-child) {
-    margin-bottom: 15px; /* Weniger Abstand zwischen Kategorien */
+/* ==== MODULE STANDARDGRÖSSEN ==== */
+.modul {
+    margin: 2px;
+    border-radius: 4px;
+    max-width: 180px;
+    min-width: 160px;
 }
 
-/* ==== KOMPAKTE MODULE MIT FACHGEBIETEN ==== */
-.module-container {
-    gap: 8px; /* Etwas mehr Platz für Fachgebiete */
-    margin-bottom: 8px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-}
-
-/* ==== SPEZIELLE BEHANDLUNG FÜR KATEGORIEN MIT FACHGEBIETEN ==== */
-.jahr:has(.fachgebiet-column) .module-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-}
-
-/* ==== SPEZIELLE BEHANDLUNG FÜR THESIS UND INTERNSHIP ==== */
+/* ==== SPEZIELLE BEHANDLUNG FÜR GROSSE MODULE ==== */
 .modul.thesis,
 .modul.internship {
     min-width: 150px;
@@ -203,30 +178,26 @@
         margin-top: 15px;
     }
     
-    .fachgebiet-column {
-        width: 100%;
-        min-width: auto;
-        margin-right: 0;
-        margin-bottom: 10px;
-        display: block; /* Zurück zu normaler Darstellung auf mobil */
-    }
-    
     .fachgebiet {
-        margin-bottom: 8px;
-        text-align: center;
-        writing-mode: horizontal-tb;
+        margin: 10px 0 8px 0;
+        font-size: 11px;
     }
     
-    .module-container {
-        gap: 5px;
-        display: flex !important; /* Override grid auf mobil */
-        flex-wrap: wrap;
+    .studienplan .module-container {
+        gap: 3px;
+        margin-bottom: 10px;
     }
     
     .modul {
-        margin: 2px;
+        margin: 1px;
+        min-width: 140px;
         max-width: none;
         flex: 0 0 auto;
+    }
+    
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
     }
 }
 
@@ -235,39 +206,21 @@
     max-width: 1400px; /* Mehr Platz nutzen */
 }
 
-/* ==== RESPONSIVE FACHGEBIET-BEHANDLUNG ==== */
-@media (min-width: 1200px) {
-    /* Für große Bildschirme: Fachgebiete nebeneinander */
-    .jahr .module-container {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-        align-items: flex-start;
-    }
+/* ==== STANDARD HORIZONTALES LAYOUT ==== */
+.studienplan .module-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 15px;
 }
 
-@media (max-width: 1199px) {
-    /* Für kleinere Bildschirme: Kompakte Grid-Darstellung */
-    .jahr .module-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-        gap: 5px;
-        align-items: start;
-    }
-    
-    .fachgebiet-column {
-        grid-column: 1 / -1; /* Nimmt volle Breite ein */
-        display: grid;
-        grid-template-columns: auto repeat(auto-fit, minmax(160px, 1fr));
-        gap: 5px;
-        align-items: start;
-        margin-bottom: 10px;
-    }
-    
-    .fachgebiet {
-        grid-column: 1;
-        align-self: center;
-        writing-mode: horizontal-tb;
-        margin-right: 10px;
-    }
+/* ==== KOMPAKTE KATEGORIE-ABSTÄNDE ==== */
+.jahr {
+    margin-bottom: 20px;
+}
+
+.jahr-titel {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
 }
