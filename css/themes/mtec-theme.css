@@ -1,4 +1,4 @@
-/* ==== MTEC THEME CSS ==== */
+/* ==== MTEC THEME CSS - OPTIMIERT UND KOMPAKT ==== */
 /* Spezifische Farben und Styles für den MTEC Studiengang */
 
 /* ==== MODUL-KATEGORIEN UND FARBEN ==== */
@@ -74,28 +74,95 @@
     color: black;
 }
 
-/* ==== LAYOUT ANPASSUNGEN ==== */
-.farben-legende {
-    width: 250px;
-    margin-left: 40px;
+/* ==== KOMPAKTE LAYOUT ANPASSUNGEN ==== */
+.studienplan {
+    gap: 15px; /* Reduzierte Abstände zwischen Kategorien */
 }
 
+.jahr {
+    margin-bottom: 10px; /* Weniger Abstand zwischen Bereichen */
+}
+
+.jahr-titel {
+    margin-bottom: 8px; /* Kompaktere Titel */
+    font-size: 18px;
+}
+
+/* ==== OPTIMIERTE FACHGEBIET-DARSTELLUNG ==== */
 .fachgebiet-column {
     width: auto;
-    min-width: 250px;
-    margin-right: 15px;
+    min-width: 200px; /* Schmalere Spalten */
+    margin-right: 10px; /* Weniger Abstand zwischen Spalten */
+    margin-bottom: 10px;
+}
+
+.fachgebiet {
+    font-size: 11px; /* Kleinere Schrift für Fachgebiete */
+    margin: 3px 0; /* Weniger Margin */
+    padding: 2px 5px;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 3px;
+    text-align: center;
+}
+
+/* ==== KOMPAKTE MODULE ==== */
+.module-container {
+    gap: 3px; /* Sehr kleine Abstände zwischen Modulen */
+    margin-bottom: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.modul {
+    margin: 1px; /* Minimale Margins */
+    border-radius: 4px;
+    max-width: 180px; /* Begrenzte Modulbreite */
+}
+
+/* ==== OPTIMIERTE FARBEN-LEGENDE ==== */
+.farben-legende {
+    width: 300px;
+    margin-left: 20px;
+    margin-top: 0; /* Legende oben positionieren */
+}
+
+.legende-item {
+    margin-bottom: 3px; /* Kompaktere Legende */
+    padding: 8px;
+    font-size: 12px;
 }
 
 .legende-description {
-    font-size: 12px;
-    margin-top: 5px;
+    font-size: 10px;
+    margin-top: 3px;
     color: #333;
+    line-height: 1.2;
 }
 
-/* ==== SPEZIELLE MODUL-GRÖSSEN ==== */
+/* ==== SPEZIELLE ANPASSUNGEN FÜR GROSSE MODULE ==== */
 .modul.large-module {
-    border-radius: 8px;
+    border-radius: 6px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* ==== KATEGORIEN KOMPAKTER MACHEN ==== */
+.studienplan .jahr:not(:last-child) {
+    margin-bottom: 15px; /* Weniger Abstand zwischen Kategorien */
+}
+
+/* ==== FACHGEBIET-OPTIMIERUNGEN ==== */
+.fachgebiet-column .modul {
+    width: 100%;
+    max-width: 190px;
+    margin-bottom: 2px;
+}
+
+/* ==== SPEZIELLE BEHANDLUNG FÜR THESIS UND INTERNSHIP ==== */
+.modul.thesis,
+.modul.internship {
+    min-width: 150px;
+    max-width: 200px;
 }
 
 /* ==== RESPONSIVE ANPASSUNGEN ==== */
@@ -103,13 +170,49 @@
     .farben-legende {
         width: 100%;
         margin-left: 0;
-        margin-top: 20px;
+        margin-top: 15px;
     }
     
     .fachgebiet-column {
         width: 100%;
         min-width: auto;
         margin-right: 0;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     }
+    
+    .module-container {
+        gap: 5px;
+    }
+    
+    .modul {
+        margin: 2px;
+        max-width: none;
+    }
+}
+
+/* ==== WEITERE KOMPAKT-OPTIMIERUNGEN ==== */
+.container {
+    max-width: 1400px; /* Mehr Platz nutzen */
+}
+
+/* Fachgebiete in Reihen anzeigen statt Spalten für bessere Nutzung des Platzes */
+.jahr .module-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 5px;
+    align-items: start;
+}
+
+/* Core Courses spezielle Behandlung - kompaktere Anordnung */
+.core .module-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 3px;
+}
+
+/* Für Kategorien ohne Fachgebiete - horizontale Anordnung */
+.jahr:not(.has-fachgebiet) .module-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
 }
