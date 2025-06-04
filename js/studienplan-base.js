@@ -13,15 +13,34 @@ class StudienplanBase {
 
     /* ==== INITIALIZATION ==== */
     initialize() {
-        this.setPageInfo();
-        this.createLegend();
-        this.createStudienplan();
-        this.setupEventListeners();
+        console.log('[STUDIENPLAN] StudienplanBase.initialize() gestartet');
+        console.log('[STUDIENPLAN] Config Titel:', this.config.title);
+        console.log('[STUDIENPLAN] Anzahl Module:', this.config.daten ? this.config.daten.length : 'keine Daten');
         
-        // Text-fitting nach dem Rendern
-        setTimeout(() => {
-            this.adjustAllText();
-        }, 100);
+        try {
+            this.setPageInfo();
+            console.log('[STUDIENPLAN] Page Info gesetzt');
+            
+            this.createLegend();
+            console.log('[STUDIENPLAN] Legende erstellt');
+            
+            this.createStudienplan();
+            console.log('[STUDIENPLAN] Studienplan erstellt');
+            
+            this.setupEventListeners();
+            console.log('[STUDIENPLAN] Event Listeners eingerichtet');
+            
+            // Text-fitting nach dem Rendern
+            setTimeout(() => {
+                console.log('[STUDIENPLAN] Text-Anpassung gestartet');
+                this.adjustAllText();
+                console.log('[STUDIENPLAN] Text-Anpassung abgeschlossen');
+            }, 100);
+            
+        } catch (error) {
+            console.error('[STUDIENPLAN] Fehler in initialize():', error);
+            throw error;
+        }
     }
 
     setPageInfo() {
@@ -136,14 +155,35 @@ class StudienplanBase {
 
     /* ==== MODULE CREATION ==== */
     createStudienplan() {
+        console.log('[STUDIENPLAN] createStudienplan() gestartet');
         const container = document.getElementById('studienplan');
+        
+        if (!container) {
+            console.error('[STUDIENPLAN] Container #studienplan nicht gefunden!');
+            return;
+        }
+        
         container.innerHTML = '';
+        console.log('[STUDIENPLAN] Container geleert');
+        
+        if (!this.config.daten || this.config.daten.length === 0) {
+            console.error('[STUDIENPLAN] Keine Moduldaten gefunden!');
+            container.innerHTML = '<div style="text-align: center; color: red; padding: 50px;">Keine Moduldaten gefunden!</div>';
+            return;
+        }
+        
+        console.log('[STUDIENPLAN] Layout:', this.config.layout);
+        console.log('[STUDIENPLAN] Anzahl Module zu rendern:', this.config.daten.length);
 
         if (this.config.layout === 'categories') {
+            console.log('[STUDIENPLAN] Erstelle kategorie-basiertes Layout');
             this.createCategoryBasedLayout(container);
         } else {
+            console.log('[STUDIENPLAN] Erstelle jahr-basiertes Layout');
             this.createYearBasedLayout(container); // Default
         }
+        
+        console.log('[STUDIENPLAN] createStudienplan() abgeschlossen');
     }
 
     createYearBasedLayout(container) {
@@ -765,13 +805,41 @@ class StudienplanBase {
 
 /* ==== GLOBAL INITIALIZATION FUNCTION ==== */
 function initializeStudienplan(config) {
-    // Prüfe ob eine spezielle Klasse definiert ist
-    const StudiengangClass = window.StudiengangClass || StudienplanBase;
-    const studienplan = new StudiengangClass(config);
-    studienplan.initialize();
+    console.log('[STUDIENPLAN] Initialisierung gestartet');
+    console.log('[STUDIENPLAN] Config:', config);
     
-    // Global verfügbar machen für eventuelle Erweiterungen
-    window.currentStudienplan = studienplan;
+    try {
+        // Loading message entfernen
+        const loadingMsg = document.getElementById('loading-message');
+        if (loadingMsg) {
+            loadingMsg.style.display = 'none';
+        }
+        
+        // Prüfe ob eine spezielle Klasse definiert ist
+        const StudiengangClass = window.StudiengangClass || StudienplanBase;
+        console.log('[STUDIENPLAN] Verwende Klasse:', StudiengangClass.name);
+        
+        const studienplan = new StudiengangClass(config);
+        studienplan.initialize();
+        
+        // Global verfügbar machen für eventuelle Erweiterungen
+        window.currentStudienplan = studienplan;
+        
+        console.log('[STUDIENPLAN] Initialisierung erfolgreich abgeschlossen');
+        
+    } catch (error) {
+        console.error('[STUDIENPLAN] Fehler bei Initialisierung:', error);
+        const loadingMsg = document.getElementById('loading-message');
+        if (loadingMsg) {
+            loadingMsg.innerHTML = `
+                <div style="color: red; text-align: center;">
+                    <h3>Fehler beim Initialisieren</h3>
+                    <p>${error.message}</p>
+                    <button onclick="window.location.href='index.html'">Zurück zum Hub</button>
+                </div>
+            `;
+        }
+    }
 }
 
 /* ==== POLYFILLS ==== */

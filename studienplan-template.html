@@ -22,7 +22,9 @@
 
     <div class="container">
         <div class="studienplan" id="studienplan">
-            <!-- JavaScript wird hier die Jahre und Module einfügen -->
+            <div id="loading-message" style="text-align: center; padding: 50px; font-size: 18px; color: #666;">
+                Studienplan wird geladen...
+            </div>
         </div>
 
         <!-- Farben-Legende -->
@@ -37,46 +39,112 @@
     <!-- Tooltip-Container (für Studiengänge mit Tooltips) -->
     <div id="tooltip" class="tooltip-container" style="display: none;"></div>
 
+    <!-- Debug-Konsole -->
+    <div id="debug-info" style="display: none; position: fixed; top: 10px; right: 10px; background: #f0f0f0; padding: 10px; border: 1px solid #ccc; font-family: monospace; font-size: 12px; max-width: 300px; z-index: 9999;">
+        <div id="debug-content"></div>
+    </div>
+
     <!-- Base JavaScript -->
     <script src="js/studienplan-base.js"></script>
     
-    <!-- Studiengang-spezifische Konfiguration -->
-    <script id="config-script" src=""></script>
-    
     <!-- Initialization Script -->
     <script>
-        // URL Parameter auslesen um Studiengang zu bestimmen
+        // Debug-Funktionen
+        function debugLog(message) {
+            console.log('[STUDIENPLAN DEBUG]', message);
+            const debugInfo = document.getElementById('debug-info');
+            const debugContent = document.getElementById('debug-content');
+            if (debugInfo && debugContent) {
+                debugContent.innerHTML += '<div>' + new Date().toLocaleTimeString() + ': ' + message + '</div>';
+                debugInfo.style.display = 'block';
+            }
+        }
+
+        function showError(message) {
+            console.error('[STUDIENPLAN ERROR]', message);
+            const loadingMsg = document.getElementById('loading-message');
+            if (loadingMsg) {
+                loadingMsg.innerHTML = `
+                    <div style="color: red; border: 2px solid red; padding: 20px; border-radius: 5px;">
+                        <h3>Fehler beim Laden</h3>
+                        <p>${message}</p>
+                        <p><strong>Debug-Info:</strong></p>
+                        <p>URL: ${window.location.href}</p>
+                        <p>Studiengang: ${urlParams.get('studiengang') || 'nicht gefunden'}</p>
+                        <button onclick="window.location.href='index.html'" style="margin-top: 10px; padding: 5px 10px;">
+                            Zurück zum Hub
+                        </button>
+                    </div>
+                `;
+            }
+        }
+
+        // URL Parameter auslesen
         const urlParams = new URLSearchParams(window.location.search);
         const studiengang = urlParams.get('studiengang') || 'cs'; // Default: Computer Science
+        
+        debugLog('URL Parameter erkannt: ' + studiengang);
         
         // Dynamisches Laden der Konfiguration
         loadStudiengangConfig(studiengang);
         
         function loadStudiengangConfig(studiengang) {
-            // Konfigurationsdatei laden
-            const configScript = document.getElementById('config-script');
-            configScript.src = `configs/${studiengang}-config.js`;
+            debugLog('Lade Konfiguration für: ' + studiengang);
+            
+            // Pfade definieren
+            const configPath = `configs/${studiengang}-config.js`;
+            const themePath = `css/themes/${studiengang}-theme.css`;
+            const customPath = `css/custom/${studiengang}-custom.css`;
+            
+            debugLog('Config Pfad: ' + configPath);
+            debugLog('Theme Pfad: ' + themePath);
             
             // Theme CSS laden
             const themeCSS = document.getElementById('theme-css');
-            themeCSS.href = `css/themes/${studiengang}-theme.css`;
+            themeCSS.href = themePath;
             
             // Optional: Custom CSS laden
             const customCSS = document.getElementById('custom-css');
-            customCSS.href = `css/custom/${studiengang}-custom.css`;
+            customCSS.href = customPath;
             
-            // Warten bis Konfiguration geladen ist
+            // Konfigurationsdatei laden
+            const configScript = document.createElement('script');
+            configScript.src = configPath;
+            configScript.id = 'config-script';
+            
             configScript.onload = function() {
+                debugLog('Config-Script geladen');
                 if (window.StudiengangConfig) {
-                    initializeStudienplan(window.StudiengangConfig);
+                    debugLog('StudiengangConfig gefunden');
+                    debugLog('Titel: ' + window.StudiengangConfig.title);
+                    debugLog('Module: ' + window.StudiengangConfig.daten.length);
+                    
+                    // Kleine Verzögerung für CSS-Loading
+                    setTimeout(() => {
+                        initializeStudienplan(window.StudiengangConfig);
+                    }, 100);
                 } else {
-                    console.error('Konfiguration nicht gefunden für:', studiengang);
+                    showError('StudiengangConfig nicht gefunden in ' + configPath);
                 }
             };
             
             configScript.onerror = function() {
-                console.error('Fehler beim Laden der Konfiguration für:', studiengang);
+                showError('Fehler beim Laden der Konfigurationsdatei: ' + configPath);
             };
+            
+            // Script zum Head hinzufügen
+            document.head.appendChild(configScript);
+        }
+
+        // Globale Fehlerbehandlung
+        window.addEventListener('error', function(event) {
+            showError('JavaScript Fehler: ' + event.message + ' in ' + event.filename + ':' + event.lineno);
+        });
+
+        // Debug aktivieren wenn URL ?debug=1 enthält
+        if (urlParams.get('debug') === '1') {
+            debugLog('Debug-Modus aktiviert');
+            document.getElementById('debug-info').style.display = 'block';
         }
     </script>
 </body>
