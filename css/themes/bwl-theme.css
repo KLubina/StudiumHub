@@ -1,4 +1,4 @@
-/* ==== BWL HSG THEME CSS - VERBESSERTE SCHRIFTGRÖSSEN ==== */
+/* ==== BWL HSG THEME CSS ==== */
 /* Spezifische Farben und Styles für den BWL Studiengang */
 
 /* ==== VERBESSERTE MODUL-STYLES ==== */
@@ -18,7 +18,6 @@
     box-shadow: 0 3px 6px rgba(0,0,0,0.3);
 }
 
-/* ==== VERBESSERTE SCHRIFTGRÖSSEN ==== */
 .modul-titel {
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -26,36 +25,12 @@
     overflow: hidden;
     max-height: 70%;
     padding: 0 4px;
-    font-size: 16px !important; /* Größere Basis-Schriftgröße */
-    min-height: auto;
-    line-height: 1.3 !important;
 }
 
 .modul-kp {
-    font-size: 18px !important; /* Größere KP-Anzeige */
+    font-size: 16px;
     margin: 4px 0;
     font-weight: bold;
-    line-height: 1.2 !important;
-}
-
-/* ==== SPEZIELLE BEHANDLUNG FÜR KLEINE MODULE ==== */
-.modul.small-module .modul-titel {
-    font-size: 14px !important;
-    line-height: 1.2 !important;
-}
-
-.modul.small-module .modul-kp {
-    font-size: 16px !important;
-}
-
-/* ==== SPEZIELLE BEHANDLUNG FÜR GROSSE MODULE ==== */
-.modul.large-module .modul-titel {
-    font-size: 18px !important;
-    line-height: 1.4 !important;
-}
-
-.modul.large-module .modul-kp {
-    font-size: 20px !important;
 }
 
 /* ==== MODUL-KATEGORIEN UND FARBEN ==== */
@@ -146,7 +121,6 @@
 
 .modul {
     margin: 4px;
-    min-height: 80px; /* Mindesthöhe für bessere Lesbarkeit */
 }
 
 /* ==== RESPONSIVE ANPASSUNGEN ==== */
@@ -163,23 +137,5 @@
     
     .modul {
         margin: 2px;
-        min-height: 70px;
-    }
-    
-    /* Mobile Schriftgrößen anpassen */
-    .modul-titel {
-        font-size: 15px !important;
-    }
-    
-    .modul-kp {
-        font-size: 17px !important;
-    }
-    
-    .modul.small-module .modul-titel {
-        font-size: 13px !important;
-    }
-    
-    .modul.small-module .modul-kp {
-        font-size: 15px !important;
     }
 }
