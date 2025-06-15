@@ -1,4 +1,4 @@
-/* ==== STUDIENPLAN BASE JAVASCRIPT ==== */
+/* ==== STUDIENPLAN BASE JAVASCRIPT - VERBESSERTE TEXTANPASSUNG ==== */
 /* Gemeinsame Basis-Funktionalität für alle Studiengänge */
 
 class StudienplanBase {
@@ -384,15 +384,15 @@ class StudienplanBase {
         const titel = div.querySelector('.modul-titel');
         
         if (kp) {
-            kp.style.fontSize = '15px';
+            kp.style.fontSize = '16px'; // Erhöht von 15px
             kp.style.fontWeight = 'bold';
             kp.style.marginTop = '2px';
             kp.style.marginBottom = '2px';
         }
         
         if (titel) {
-            titel.style.fontSize = '12px';
-            titel.style.lineHeight = '1.1';
+            titel.style.fontSize = '13px'; // Erhöht von 12px
+            titel.style.lineHeight = '1.2';
             titel.style.marginTop = '1px';
             
             // Bei sehr langen Titeln in kleinen Modulen kürzen
@@ -472,7 +472,7 @@ class StudienplanBase {
         if (this.config.useEctsBasedSizing) {
             const baseWidthForCategory = this.getBaseWidthForCategory(modul);
             width = Math.max(baseWidthForCategory, Math.sqrt(modul.kp) * 80);
-            height = Math.max(45, modul.kp * 25);
+            height = Math.max(60, modul.kp * 25); // Erhöht die Mindesthöhe von 45 auf 60
         }
         
         div.style.width = `${width}px`;
@@ -567,31 +567,45 @@ class StudienplanBase {
         }
     }
 
-    /* ==== TEXT FITTING ==== */
+    /* ==== VERBESSERTE TEXT FITTING FUNKTION ==== */
     fitText(container, selector) {
         const node = container.querySelector(selector);
         if (!node) return;
 
-        let fs = 16;
+        // Höhere Basis-Schriftgröße für bessere Lesbarkeit
+        let fs = selector === '.modul-kp' ? 18 : 16;
         node.style.fontSize = fs + 'px';
 
-        const containerWidth = container.clientWidth - 10;
+        const containerWidth = container.clientWidth - 12; // Mehr Padding
         const containerHeight = selector === '.modul-titel' 
-            ? container.clientHeight * 0.7 - 10 
-            : container.clientHeight * 0.3 - 5;
+            ? container.clientHeight * 0.65 - 10  // Weniger Platz für Titel, mehr für KP
+            : container.clientHeight * 0.35 - 5;
 
-        while ((node.scrollWidth > containerWidth || node.scrollHeight > containerHeight) && fs > 6) {
+        // ERHÖHTE MINDESTSCHRIFTGRÖSSEN - Das ist der wichtigste Teil!
+        const minFontSize = selector === '.modul-kp' ? 12 : 10; // Mindestens 12px für KP, 10px für Titel
+
+        while ((node.scrollWidth > containerWidth || node.scrollHeight > containerHeight) && fs > minFontSize) {
             fs--;
             node.style.fontSize = fs + 'px';
         }
 
-        if (fs <= 8) {
-            node.style.lineHeight = '1';
+        // Spezielle Anpassungen für sehr kleine Schriftgrößen
+        if (fs <= 11) {
+            node.style.lineHeight = selector === '.modul-kp' ? '1.1' : '1.2';
             if (selector === '.modul-titel') {
                 node.style.margin = '1px 0';
-                if (fs === 6) {
-                    node.style.textOverflow = 'ellipsis';
-                    node.style.whiteSpace = 'nowrap';
+                // Nur bei wirklich kleiner Schrift Text kürzen
+                if (fs === minFontSize && node.scrollWidth > containerWidth) {
+                    const originalText = node.textContent;
+                    let shortenedText = originalText;
+                    while (node.scrollWidth > containerWidth && shortenedText.length > 10) {
+                        shortenedText = shortenedText.substring(0, shortenedText.length - 4) + '...';
+                        node.textContent = shortenedText;
+                    }
+                    // Tooltip mit vollem Text hinzufügen
+                    if (shortenedText !== originalText) {
+                        container.title = originalText;
+                    }
                 }
             }
         }
