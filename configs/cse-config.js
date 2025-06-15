@@ -29,7 +29,16 @@ window.StudiengangConfig = {
     
     // Prüfungsblöcke (spezifisch für CSE)
     pruefungsbloecke: [
-                {
+                        {
+            name: "Basisprüfungsblock 1",
+            module: [
+                { name: "Lineare Algebra", ng: 1 },
+                { name: "Informatik", ng: 1 },
+                { name: "Diskrete Mathematik", ng: 1 }
+            ],
+            cssClass: "basis1"
+        },
+        {
             name: "Basisprüfungsblock 2",
             module: [
                 { name: "Analysis I und II", ng: 3 },
@@ -39,15 +48,6 @@ window.StudiengangConfig = {
                 { name: "Chemie", ng: 1 }
             ],
             cssClass: "basis2"
-        },
-        {
-            name: "Basisprüfungsblock 1",
-            module: [
-                { name: "Lineare Algebra", ng: 1 },
-                { name: "Informatik", ng: 1 },
-                { name: "Diskrete Mathematik", ng: 1 }
-            ],
-            cssClass: "basis1"
         },
         {
             name: "Prüfungsblock G1",
