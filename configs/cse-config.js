@@ -148,134 +148,373 @@ window.StudiengangConfig = {
         { jahr: 3, semester: 0, bereich: "Abschluss", name: "Bachelorarbeit", kp: 14, kategorie: "wissenschaftliche-arbeit" }
     ],
     
-    // Modul-Details für Tooltips
-    modulDetails: {
-        "Analysis I": {
-            kurzbeschreibung: "• Reelle und komplexe Zahlen\n• Grenzwerte\n• Folgen\n• Reihen\n• Potenzreihen\n• stetige Abbildungen\n• Differential- und Integralrechnung einer Variablen\n• Einführung in gewöhnliche Differentialgleichungen",
-            lernziel: "Einführung in die Grundlagen der Analysis",
-            inhalt: ""
-        },
-        "Analysis II": {
-            kurzbeschreibung: "Einführung in die mehrdimensionale Differential- und Integralrechung.",
-            lernziel: "Einführung in die Grundlagen der Analysis",
-            inhalt: "• Differenzierbare Abbildungen\n• Maxima und Minima\n• der Satz ueber implizite Funktionen\n• mehrfache Integrale\n• Integration ueber Untermannigfaltigkeiten\n• die Saetze von Gauss und Stokes"
-        },
-        "Analysis III": {
-            kurzbeschreibung: "In this lecture we treat problems in applied analysis. The focus lies on the solution of quasilinear first order PDEs with the method of characteristics, and on the study of three fundamental types of partial differential equations of second order: • the Laplace equation\n• the heat equation\n• the wave equation",
-            lernziel: "The aim of this class is to provide students with a general overview of first and second order PDEs, and teach them how to solve some of these equations using characteristics and/or separation of variables.",
-            inhalt: "1. General introduction to PDEs and their classification \n• linear\n• quasilinear\n• semilinear\n• nonlinear \n• elliptic\n• parabolic\n• hyperbolic\n2. Quasilinear first order PDEs\n• Solution with the method of characteristics\n• Conservation laws\n3. Hyperbolic PDEs\n• wave equation\n• d'Alembert formula in (1+1)-dimensions\n• method of separation of variables\n4. Parabolic PDEs\n• heat equation\n• maximum principle\n• method of separation of variables\n5. Elliptic PDEs\n• Laplace equation\n• maximum principle\n• method of separation of variables\n• variational method"
-        },
-        "Physik I": {
-            kurzbeschreibung: "Einführung in die Denk- und Arbeitsweise in der Physik unter Zuhilfenahme von Demonstrationsexperimenten: \n• Mechanik von Massenpunkten und starren Körpern\n• Schwingungen und Wellen",
-            lernziel: "Vermittlung der physikalischen Denk- und Arbeitsweise und Einführung in die Methoden in einer experimentellen Wissenschaft. \nDie Studenten und Tarentine soll lernen, physicalist Fragestellungen im eigenen Wissenschaftsbereich zu identifizieren, zu kommunizieren und zu lösen.",
-            inhalt: "• Mechanik (Bewegung, Newtonsche Axiome, Arbeit und Energie, Impulserhaltung, Drehbewegungen, Gravitation, deformierbare Körper)\n• Schwingungen und Wellen (Schwingungen, mechanische Wellen, Akustik)"
-        },
-        "Physik II": {
-            kurzbeschreibung: "Einführung in die Denk- und Arbeitsweise in der Physik unter Zuhilfenahme von Demonstrationsexperimenten: \n• Elektrizität und Magnetismus\n• Licht\n• Einführung in die Moderne Physik",
-            lernziel: "Vermittlung der physikalischen Denk- und Arbeitsweise und Einführung in die Methoden in einer experimentellen Wissenschaft. \nDer Studenten/in soll lernen physikalische Fragestellungen im eigenen Wissenschaftsbereich zu identifizieren, zu kommunizieren und zu lösen.",
-            inhalt: ""
-        },
-        "Komplexe Analysis": {
-            kurzbeschreibung: "• Grundlagen der Komplexen Analysis in Theorie und Anwendung, insbesondere globale Eigenschaften analytischer Funktionen. \n• Einführung in die Integraltransformationen und Beschreibung einiger Anwendungen.",
-            lernziel: "Erwerb von einigen grundlegenden Werkzeugen der komplexen Analysis, sowie Verständnis und Anwendung Fourier- und Laplacetransformationen.",
-            inhalt: "• Beispiele analytischer Funktionen\n• Cauchyscher Integralsatz\n• Taylor- und Laurententwicklungen\n• Singularitäten analytischer Funktionen\n• Residuenkalkül\n• Fourierreihen und Fourier-Transformation\n• Laplace-Transformation"
-        },
-        "Chemie": {
-            kurzbeschreibung: "Einführung in die Chemie mit Aspekten aus der anorganischen, organischen und physikalischen Chemie.",
-            lernziel: "• Einfache Modelle der chemischen Bindung und der dreidimensionalen Struktur von Molekülen verstehen\n• Ausgewählte chemische Systeme anhand von Reaktionsgleichungen und Gleichgewichtsrechnungen beschreiben und quantitativ erfassen\n• Grundlegende Begriffe der chemischen Kinetik (z. B. Reaktionsordnung, Geschwindigkeitsgesetz und -konstante) verstehen und anwenden.",
-            inhalt: "• Periodisches System der Elemente\n• chemische Bindung (LCAO-MO)\n• molekulare Struktur (VSEPR)\n• Reaktionen\n• Gleichgewicht\n• chemische Kinetik."
-        },
-        "Datenstrukturen und Algorithmen": {
-            kurzbeschreibung: "• Der Kurs vermittelt die Grundlagen für den Entwurf und die Analyse von Algorithmen.\n• Anhand klassischer Probleme werden gängige Datenstrukturen, Algorithmen und Paradigmen für den Algorithmenentwurf diskutiert.\n• Der Kurs umfasst auch eine Einführung in die parallele und nebenläufige Programmierung und das Programmiermodell von C++ wird eingehend diskutiert.",
-            lernziel: "Verständnis des Entwurfs und der Analyse grundlegender Algorithmen und Datenstrukturen. \nWissen um die Chancen, Probleme und Grenzen der parallelen und nebenläufigen Programmierung. \nVertiefter Einblick in ein modernes Programmiermodell anhand der Prorgammiersprache C++.",
-            inhalt: "Datenstrukturen und Algorithmen: \n• Mathematische Tools für die Analyse von Algorithmen (asymptotisches Funktionenwachstum, Rekursionsgleichungen, Rekursionsbäume)\n• informelle Beweise für die Korrektheit von Algorithmen (Invarianten und Codetransformation)\n• Entwurfsparadigmen für die Entwicklung von Algorithmen (Induktion, Divide-and-Conquer, Sweep-Line-Methode, Backtracking und dynamische Programmierung)\n• klassische algorithmische Probleme (Suche, Auswahl und Sortierung), Datenstrukturen für verschiedene Zwecke (verkettete Listen, Hash-Tabellen, balancierte Suchbäume, Quad-Trees, Heaps, Union-Find)\n• weitere Tools für die Laufzeitanalyse (z.B. amortisierte Analyse)\n\nDie Beziehung und enge Kopplung zwischen Algorithmen und Datenstrukturen wird anhand von geometrischen Problemen (konvexe Hülle, Linienschnitte, dichteste Punktepaare) und Graphenalgorithmen (Traversierungen, topologische Sortierung, transitive Hülle, kürzeste Pfade, minimale Spannbäume, maximaler Fluss) illustriert.\n\nProgrammiermodell von C++:\n• korrekte und effiziente Speicherbehandlung\n• generische Programmierung mit Templates\n• funktionale Ansätze mit Funktoren und Lambda-Ausdrücken\n\nParallele Programmierung: \n• Konzepte der parallelen Programmierung (Amdahl/Gustavson, Task/Daten-Parallelität, Scheduling)\n• Probleme der Nebenläufigkeit (data races, bad interleavings, memory reordering)\n• Prozess-Synchronisation und Kommunikation in einem Shared-Memory-System (Mutual Exclusion, Semaphoren, Monitore, Condition-Variablen)\n• Fortschrittsbedingungen (Deadlock-Freiheit, Starvation)."
-        },
-        "Informatik": {
-            kurzbeschreibung: "Die Vorlesung bietet eine Einführung in das Programmieren mit einem Fokus auf systematischem algorithmischem Problemlösen.\nLehrsprache ist C++. \nEs wird keine Programmiererfahrung vorausgesetzt.",
-            lernziel: "Primäres Lernziel der Vorlesung ist die Befähigung zum Programmieren mit C++. Studenten beherrschen nach erfolgreichem Abschluss der Vorlesung die Mechanismen zum Erstellen eines Programms.\nSie kennen \n• die fundamentalen Kontrollstrukturen\n• Datenstrukturen \n• verstehen wie man ein algorithmisches Problem in ein Programm abbildet. \nSie haben eine Vorstellung davon, was \"hinter den Kulissen\" passiert, wenn ein Programm übersetzt und ausgeführt wird.\n\nSekundäre Lernziele der Vorlesung sind\n• das Computer-basierte, algorithmische Denken\n• Verständnis der Möglichkeiten und der Grenzen der Programmierung \n• die Vermittlung der Denkart eines Computerwissenschaftlers",
-            inhalt: "Wir behandeln \n• fundamentale Datentypen\n• Ausdrücke und Anweisungen\n• (Grenzen der) Computerarithmetik\n• Kontrollanweisungen\n• Funktionen\n• Felder\n• zusammengesetze Strukturen \n• Zeiger\nIm Teil zur Objektorientierung werden Klassen, Vererbung und Polymorhpie behandelt, es werden exemplarisch einfache dynamische Datentypen eingeführt.\nDie Konzepte der Vorlesung werden jeweils durch Algorithmen und Anwendungen motiviert und illustriert."
-        },
-        "Diskrete Mathematik": {
-            kurzbeschreibung: "Inhalt: \n• Mathematisches Denken und Beweise\n• Abstraktion\n• Mengen\n• Relationen (z.B. Aequivalenz- und Ordnungsrelationen)\n• Funktionen\n• (Un-)abzählbarkeit\n• Zahlentheorie\n• Algebra (Gruppen, Ringe, Körper, Polynome, Unteralgebren, Morphismen)\n• Logik (Aussagen- und Prädikatenlogik, Beweiskalküle).",
-            lernziel: "Hauptziele der Vorlesung sind\n• die Einführung der wichtigsten Grundbegriffe der diskreten Mathematik\n• das Verständnis der Rolle von Abstraktion und von Beweisen \n• die Diskussion einiger Anwendungen, z.B. aus der Kryptographie, Codierungstheorie und Algorithmentheorie",
-            inhalt: ""
-        },
-        "Lineare Algebra": {
-            kurzbeschreibung: "Inhalt: \n• Lineare Gleichungssysteme - der Algorithmus von Gauss\n• Matrizen - LR-Zerlegung\n• Determinanten\n• Vektorräume\n• Ausgleichsrechnung - QR-Zerlegung\n• Lineare Abbildungen\n• Eigenwertproblem\n• Normalformen - Singulärwertzerlegung; numerische Aspekte",
-            lernziel: "Sie können:\n• lineare Gleichungssysteme mit dem Gauss-Algorithmus lösen;\n• die Grundoperationen mit Vektoren und Matrizen anwenden und geometrisch interpretieren;\n• verschiedene Matrizenzerlegungen berechnen und passend anwenden;\n• Eigenwerte, Eigenvektoren und Determinanten von Matrizen berechnen;\n• Eigenschaften von Vektorräumen und lineraren Abbildungen verwenden;\n• lineare Ausgleichsprobleme formulieren und mit geeigneten Methoden lösen;\n• die Singularwertzerlegung verstehen und anwenden.",
-            inhalt: "• Lineare Gleichungsysteme, Matrizen, Gauss-Elimination, LU- und QR-Zerlegungen\n• Lineare Räume, Fundamentalsatz der linearen Algebra - Teil I, Basiswahl und Basiswechsel\n• Lineare Abbildungen und Abbildungsmatrix bei Koordinatentransformationen\n• Norm und Skalarprodukt in linearen Räumen, Gram-Schmidt-Algorithmus, Projektoren\n• Lineare Ausgleichsrechnung\n• Determinanten\n• Eigenwerte und Eigenvektoren, Symmetrische Matrizen\n• Singulärwertzerlegung und Fundamentalsatz der linearen Algebra, Anwendungen"
-        },
-        "Numerical Methods for Partial Differential Equations": {
-            kurzbeschreibung: "Derivation, properties, and implementation of fundamental numerical methods for a few key partial differential equations: \n• convection-diffusion\n• heat equation\n• wave equation\n• conservation laws\nImplementation in C++ based on a finite element library.",
-            lernziel: "Main skills to be acquired in this course:\n• Ability to implement fundamental numerical methods for the solution of partial differential equations efficiently.\n• Ability to modify and adapt numerical algorithms guided by awareness of their mathematical foundations.\n• Ability to select and assess numerical methods in light of the predictions of theory\n• Ability to identify features of a PDE (= partial differential equation) based model that are relevant for the selection and performance of a numerical algorithm.\n• Ability to understand research publications on theoretical and practical aspects of numerical methods for partial differential equations.\n• Skills in the efficient implementation of finite element methods on unstructured meshes.\nThis course is neither a course on the mathematical foundations and numerical analysis of methods nor an course that merely teaches recipes and how to apply software packages.",
-            inhalt: "• Second-order scalar elliptic boundary value problems\n• Finite-element methods (FEM)\n• FEM: Convergence and Accuracy\n• Beyond FEM: Alternative Discretizations\n• Non-linear elliptic boundary value problems\n• Second-order linear evolution problems\n• Convection-diffusion problems\n• Finite Elements for the Stokes Equation"
-        },
-        "Stochastik": {
-            kurzbeschreibung: "Wahrscheinlichkeitsmodelle und Anwendungen, Einführung in Schätztheorie und statistische Testtheorie",
-            lernziel: "Fähigkeit, die behandelten wahrscheinlichkeitstheoretischen Methoden und Modelle zu verstehen und anzuwenden. \nFähigkeit, einfache statistische Tests selbst durchzuführen und die Resultate zu interpretieren.",
-            inhalt: "Der Begriff Wahrscheinlichkeitsraum und einige klassische Modelle: \n• Axiome von Kolmogorov\n• einfache Folgerungen\n• diskrete Modelle\n• Dichtefunktionen\n• Produktmodelle\n• Zusammenhang zwischen den bisher betrachteten Modellen\n• Verteilungsfunktionen\n• Transformation von Wahrscheinlichkeitsverteilungen. \n\nBedingte Wahrscheinlichkeiten: \n• Definition und Beispiele\n• Berechnung von absoluten aus bedingten Wahrscheinlichkeiten\n• Bayes'sche Regel\n• Anwendung auf Nachrichtenquellen\n• bedingte Verteilungen\n• Erwartungswert einer Zufallsvariablen\n• Varianz\n• Kovarianz und Korrelation\n• lineare Prognosen\n• Gesetz der grossen Zahlen\n• zentraler Grenzwertsatz\n\nEinführung in die Statistik:\n• Schätzung von Parametern\n• Tests"
-        },
-        "Fluiddynamik I": {
-            kurzbeschreibung: "An introduction to the physical and mathematical foundations of fluid dynamics is given. \nTopics include:\n• dimensional analysis\n• integral and differential conservation laws\n• inviscid and viscous flows\n• Navier-Stokes equations\n• boundary layers\n• turbulence\n• potential flows\n• unsteady flows\n• aerodynamic concepts\n• vorticity dynamics\n• compressible flows",
-            lernziel: "Introduction to the physical and mathematical principles of fluid dynamics. \nFundamental terminology/principles and their application to simple problems. \nConcepts, phenomena and quantitative description of potential, rotational, and one-dimensional compressible flows.",
-            inhalt: "• Dimensional analysis\n• integral and differential conservation laws\n• inviscid and viscous flows\n• Navier-Stokes equations\n• boundary layers, turbulence\n• potential flows\n• unsteady flows\n• aerodynamic concepts\n• vorticity dynamics\n• compressible flows"
-        },
-        "Statistische Physik und Computer Simulation": {
-            kurzbeschreibung: "• Prinzipien und Anwendungen der statistischen Mechanik und Gleichgewichts-Molekulardynamik\n• Monte-Carlo-Verfahren\n• stochastischen Dynamik \n• freien Energie-Rechnung\nDie Übungen verwenden ein Computersimulationsprogramm, um Ensembles zu generieren und danach Ensembledurchschnitte zu berechnen.",
-            lernziel: "• Einführung in die statistische Mechanik mit Hilfe von Computersimulationen\n• Erwerben der Fertigkeit, Computersimulationen durchzuführen und die Resultate zu interpretieren.",
-            inhalt: "• Prinzipien und Anwendungen der statistischen Mechanik und Gleichgewichts-Molekulardynamik\n• Monte-Carlo-Verfahren\n• stochastischen Dynamik und freien Energie-Rechnung\nDie Übungen verwenden ein Computersimulationsprogramm, um Ensembles zu generieren und danach Ensembledurchschnitte zu berechnen."
-        },
-        "Introduction to Mathematical Optimization": {
-            kurzbeschreibung: "Introduction to basic techniques and problems in mathematical optimization, and their applications to a variety of problems in engineering.",
-            lernziel: "The goal of the course is to obtain a good understanding of some of the most fundamental mathematical optimization techniques used to solve linear programs and basic combinatorial optimization problems. The students will also practice applying the learned models to problems in engineering.",
-            inhalt: "Topics covered in this course include:\n• Linear programming (simplex method, duality theory, shadow prices, ...).\n• Basic combinatorial optimization problems (spanning trees, shortest paths, network flows, ...).\n• Modelling with mathematical optimization: applications of mathematical programming in engineering."
-        },
-        "Numerische Methoden für CSE": {
-            kurzbeschreibung: "The course gives an introduction into fundamental techniques and algorithms of numerical mathematics which play a central role in numerical simulations in science and technology. The course focuses on fundamental ideas and algorithmic aspects of numerical methods. The exercises involve actual implementation of numerical methods in C++.",
-            lernziel: "• Knowledge of the fundamental algorithms in numerical mathematics\n• Knowledge of the essential terms in numerical mathematics and the techniques used for the analysis of numerical algorithms\n• Ability to choose the appropriate numerical method for concrete problems\n• Ability to interpret numerical results\n• Ability to implement numerical algorithms afficiently",
-            inhalt: "• Computing with Matrices and Vectors\n• Direct Methods for linear systems of equations\n• Least Squares Techniques\n• Data Interpolation and Fitting\n• Iterative Methods for non-linear systems of equations\n• Filtering Algorithms\n• Approximation of Functions\n• Numerical Quadrature"
-        },
-        "Programmiertechniken für physikalische Simulationen": {
-            kurzbeschreibung: "This lecture provides an overview of programming techniques for scientific simulations. The focus is on basic and advanced C++ programming techniques and scientific software libraries. Based on an overview over the hardware components of PCs and supercomputer, optimization methods for scientific simulation codes are explained.",
-            lernziel: "The goal of the course is that students learn basic and advanced programming techniques and scientific software libraries as used and applied for scientific simulations.",
-            inhalt: ""
-        },
-        "Systems Programming and Computer Architecture": {
-            kurzbeschreibung: "Introduction to systems programming. C and assembly language, floating point arithmetic, basic translation of C into assembler, compiler optimizations, manual optimizations.\n\nHow hardware features like superscalar architecture, exceptions and interrupts, caches, virtual memory, multicore processors, devices, and memory systems function and affect correctness, performance, and optimization.",
-            lernziel: "The course objectives are for students to:\n1. Develop a deep understanding of, and intuition about, the execution of all the layers (compiler, runtime, OS, etc.) between programs in high-level languages and the underlying hardware: the impact of compiler decisions, the role of the operating system, the effects of hardware on code performance and scalability, etc.\n2. Be able to write correct, efficient programs on modern hardware, not only in C but high-level languages as well.\n3. Understand Systems Programming as a complement to other disciplines within Computer Science and other forms of software development.\nThis course does not cover how to design or build a processor or computer.",
-            inhalt: "1. This course provides an overview of \"computers\" as a platform for the execution of (compiled) computer programs. \n2. This course provides a programmer's view of how computer systems execute programs, store information, and communicate. \n3. The course introduces the major computer architecture structures that have direct influence on the execution of programs (processors with registers, caches, other levels of the memory hierarchy, supervisor/kernel mode, and I/O structures) and covers implementation and representation issues only to the extend that they are necessary to understand the structure and operation of a computer system.\nThe course attempts to expose students to the practical issues that affect performance, portability, security, robustness, and extensibility. \nThis course provides a foundation for subsequent courses on operating systems, networks, compilers and many other courses that require an understanding of the system-level issues. \n\nTopics covered include: \n• machine-level code and its generation by optimizing compilers\n• address translation\n• input and output\n• trap/event handlers\n• performance evaluation and optimization (with a focus on the practical aspects of data collection and analysis)"
-        },
-        "Software Engineering": {
-            kurzbeschreibung: "This course introduces both theoretical and practical aspects of software engineering, all of which are applied in a substantial team project.",
-            lernziel: "The course has two main objectives:\n• Obtain an end-to-end (both, theoretical and practical) understanding of the core techniques used for building quality software.\n• Be able to apply these techniques in practice.",
-            inhalt: "This course introduces theoretical and applied aspects of software engineering, including: \n• requirements\n• specifications and documentation\n• formal and informal modelling\n• modularity\n• testing and concolic execution.\nThe theoretical foundations provided in the lecture, from understanding requirements over design and implementation to deployment and change requests, will be applied by the students in a mandatory project that spans the whole semester: developing, as a team, a small multiplayer game with graphical user interface and network support.\n\nLectures and project use C++, and we expect knowledge corresponding to lecture 252-0856 Computer Science."
-        },
-        "Design of High Performance Computing": {
-            kurzbeschreibung: "Advanced topics in parallel and high-performance computing.",
-            lernziel: "Understand concurrency paradigms and models from a higher perspective and acquire skills for designing, structuring and developing possibly large parallel high-performance software systems. \n\nBecome able to distinguish parallelism in problem space and in machine space. Become familiar with important technical concepts and with concurrency folklore.",
-            inhalt: "We will cover all aspects of high-performance computing ranging from architecture through programming up to algorithms. \nWe will start with a discussion of caches and cache coherence in practical computer systems. \nWe will dive into parallel programming concepts such as memory models, locks, and lock-free. \nWe will cover performance modeling and parallel design principles as well as basic parallel algorithms."
-        },
-        "Introduction into Machine Learning": {
-            kurzbeschreibung: "The course introduces the foundations of learning and making predictions based on data.",
-            lernziel: "The course will introduce the foundations of learning and making predictions from data. We will study basic concepts such as trading goodness of fit and model complexitiy. We will discuss important machine learning algorithms used in practice, and provide hands-on experience in a course project.",
-            inhalt: "• Linear regression (overfitting, cross-validation/bootstrap, model selection, regularization, [stochastic] gradient descent)\n• Linear classification: Logistic regression (feature selection, sparsity, multi-class)\n• Kernels and the kernel trick (Properties of kernels; applications to linear and logistic regression); k-nearest neighbor\n• Neural networks (backpropagation, regularization, convolutional neural networks)\n• Unsupervised learning (k-means, PCA, neural network autoencoders)\n• The statistical perspective (regularization as prior; loss as likelihood; learning as MAP inference)\n• Statistical decision theory (decision making based on statistical models and utility functions)\n• Discriminative vs. generative modeling (benefits and challenges in modeling joint vy. conditional distributions)\n• Bayes' classifiers (Naive Bayes, Gaussian Bayes; MLE)\n• Bayesian approaches to unsupervised learning (Gaussian mixtures, EM)"
-        },
-        "Wissenschaft im Kontext": {
-            kurzbeschreibung: "Wissenschaftliches Arbeiten und Methodenkompetenz",
-            lernziel: "Erlangung von Methodenkompetenzen für wissenschaftliches Arbeiten im Studium und in der beruflichen Praxis",
-            inhalt: "Wissenschaftliche Methoden, Recherche, wissenschaftliches Schreiben"
-        },
-        "Fallstudien": {
-            kurzbeschreibung: "Praktische Anwendung der im Studium erlernten Fähigkeiten in einem Praxisprojekt",
-            lernziel: "Fähigkeit zum selbständigen Bearbeiten einer Aufgabenstellung aus der Praxis",
-            inhalt: "Projektarbeit in Teams an realen Problemstellungen"
-        },
-        "Bachelorarbeit": {
-            kurzbeschreibung: "Selbständige Bearbeitung eines wissenschaftlichen Themas",
-            lernziel: "Erlernen und Anwenden wissenschaftlicher Methoden, selbstständiges Bearbeiten einer wissenschaftlichen Fragestellung",
-            inhalt: "Individuell definiertes wissenschaftliches Projekt"
-        }
-    }
+ // Modul-Details für Tooltips
+const modulDetails = {
+  "Analysis I": {
+    kurzbeschreibung: "Einführung in die Grundlagen der Analysis",
+    inhalt:
+      "• Reelle und komplexe Zahlen\n" +
+      "• Grenzwerte\n" +
+      "• Folgen\n" +
+      "• Reihen\n" +
+      "• Potenzreihen\n" +
+      "• Stetige Abbildungen\n" +
+      "• Differential- und Integralrechnung einer Variablen\n" +
+      "• Einführung in gewöhnliche Differentialgleichungen"
+  },
+  "Analysis II": {
+    kurzbeschreibung: "Einführung in die mehrdimensionale Differential- und Integralrechnung",
+    inhalt:
+      "• Differenzierbare Abbildungen\n" +
+      "• Maxima und Minima\n" +
+      "• der Satz über implizite Funktionen\n" +
+      "• Mehrfache Integrale\n" +
+      "• Integration über Untermannigfaltigkeiten\n" +
+      "• Sätze von Gauss und Stokes"
+  },
+  "Analysis III": {
+    kurzbeschreibung: "In this lecture we treat problems in applied analysis. The focus lies on the solution of quasilinear first order PDEs with the method of characteristics, and on the study of three fundamental types of partial differential equations of second order.",
+    inhalt:
+      "General introduction to PDEs and their classification:\n" +
+      "• linear\n" +
+      "• quasilinear\n" +
+      "• semilinear\n" +
+      "• nonlinear\n" +
+      "• elliptic\n" +
+      "• parabolic\n" +
+      "• hyperbolic\n" +
+      "Quasilinear first order PDEs:\n" +
+      "• Solution with the method of characteristics\n" +
+      "• Conservation laws\n" +
+      "Hyperbolic PDEs:\n" +
+      "• wave equation\n" +
+      "• d'Alembert formula in (1+1)-dimensions\n" +
+      "• method of separation of variables\n" +
+      "Parabolic PDEs:\n" +
+      "• heat equation\n" +
+      "• maximum principle\n" +
+      "• method of separation of variables\n" +
+      "Elliptic PDEs:\n" +
+      "• Laplace equation\n" +
+      "• maximum principle\n" +
+      "• method of separation of variables\n" +
+      "• variational method"
+  },
+  "Physik I": {
+    kurzbeschreibung: "Einführung in die Denk- und Arbeitsweise in der Physik unter Zuhilfenahme von Demonstrationsexperimenten.",
+    inhalt:
+      "Mechanik:\n" +
+      "• Bewegung\n" +
+      "• Newtonsche Axiome\n" +
+      "• Arbeit und Energie\n" +
+      "• Impulserhaltung\n" +
+      "• Drehbewegungen\n" +
+      "• Gravitation\n" +
+      "• deformierbare Körper\n" +
+      "Schwingungen und Wellen:\n" +
+      "• Schwingungen\n" +
+      "• mechanische Wellen\n" +
+      "• Akustik"
+  },
+  "Physik II": {
+    kurzbeschreibung: "Einführung in die Denk- und Arbeitsweise in der Physik unter Zuhilfenahme von Demonstrationsexperimenten.",
+    inhalt:
+      "• Elektrizität und Magnetismus\n" +
+      "• Licht\n" +
+      "• Einführung in die Moderne Physik"
+  },
+  "Komplexe Analysis": {
+    kurzbeschreibung: "Erwerb von einigen grundlegenden Werkzeugen der komplexen Analysis, sowie Verständnis und Anwendung Fourier- und Laplacetransformationen.",
+    inhalt:
+      "• Beispiele analytischer Funktionen\n" +
+      "• Cauchyscher Integralsatz\n" +
+      "• Taylor- und Laurententwicklungen\n" +
+      "• Singularitäten analytischer Funktionen\n" +
+      "• Residuenkalkül\n" +
+      "• Fourierreihen und Fourier-Transformation\n" +
+      "• Laplace-Transformation"
+  },
+  "Chemie": {
+    kurzbeschreibung: "Einführung in die Chemie mit Aspekten aus der anorganischen, organischen und physikalischen Chemie.",
+    inhalt:
+      "• Periodisches System der Elemente\n" +
+      "• chemische Bindung (LCAO-MO)\n" +
+      "• molekulare Struktur (VSEPR)\n" +
+      "• Reaktionen\n" +
+      "• Gleichgewicht\n" +
+      "• chemische Kinetik\n" +
+      "  - Reaktionsordnung\n" +
+      "  - Geschwindigkeitsgesetz und -konstante"
+  },
+  "Datenstrukturen und Algorithmen": {
+    kurzbeschreibung: "Der Kurs vermittelt die Grundlagen für den Entwurf und die Analyse von Algorithmen. Anhand klassischer Probleme werden gängige Datenstrukturen, Algorithmen und Paradigmen für den Algorithmenentwurf diskutiert. Der Kurs umfasst auch eine Einführung in die parallele und nebenläufige Programmierung und das Programmiermodell von C++ wird eingehend diskutiert.",
+    inhalt:
+      "Mathematische Tools für die Analyse von Algorithmen:\n" +
+      "• asymptotisches Funktionenwachstum\n" +
+      "• Rekursionsgleichungen\n" +
+      "• Rekursionsbäume\n" +
+      "Informelle Beweise für die Korrektheit von Algorithmen:\n" +
+      "• Invarianten\n" +
+      "• Codetransformation\n" +
+      "Entwurfsparadigmen für die Entwicklung von Algorithmen:\n" +
+      "• Induktion\n" +
+      "• Divide-and-Conquer\n" +
+      "• Sweep-Line-Methode\n" +
+      "• Backtracking\n" +
+      "• dynamische Programmierung\n" +
+      "Klassische algorithmische Probleme:\n" +
+      "• Suche\n" +
+      "• Auswahl\n" +
+      "• Sortierung\n" +
+      "Datenstrukturen für verschiedene Zwecke:\n" +
+      "• verkettete Listen\n" +
+      "• Hash-Tabellen\n" +
+      "• balancierte Suchbäume\n" +
+      "• Quad-Trees\n" +
+      "• Heaps\n" +
+      "• Union-Find\n" +
+      "Geometrische Probleme:\n" +
+      "• konvexe Hülle\n" +
+      "• Linienschnitte\n" +
+      "• dichteste Punktepaare\n" +
+      "Graphenalgorithmen:\n" +
+      "• Traversierungen\n" +
+      "• topologische Sortierung\n" +
+      "• transitive Hülle\n" +
+      "• kürzeste Pfade\n" +
+      "• minimale Spannbäume\n" +
+      "• maximaler Fluss\n" +
+      "Programmiermodell von C++:\n" +
+      "• korrekte und effiziente Speicherbehandlung\n" +
+      "• generische Programmierung mit Templates\n" +
+      "• funktionale Ansätze mit Funktoren und Lambda-Ausdrücken\n" +
+      "Parallele Programmierung:\n" +
+      "• Konzepte der parallelen Programmierung\n" +
+      "• Probleme der Nebenläufigkeit\n" +
+      "• Prozess-Synchronisation und Kommunikation"
+  },
+  "Informatik": {
+    kurzbeschreibung: "Die Vorlesung bietet eine Einführung in das Programmieren mit einem Fokus auf systematischem algorithmischem Problemlösen. Lehrsprache ist C++.",
+    inhalt:
+      "Einführung:\n" +
+      "• fundamentale Datentypen\n" +
+      "• Ausdrücke und Anweisungen\n" +
+      "• (Grenzen der) Computerarithmetik\n" +
+      "• Kontrollanweisungen\n" +
+      "• Funktionen\n" +
+      "• Felder\n" +
+      "• zusammengesetzte Strukturen\n" +
+      "• Zeiger\n" +
+      "Objektorientierung:\n" +
+      "• Klassen\n" +
+      "• Vererbung\n" +
+      "• Polymorphie\n" +
+      "• dynamische Datentypen"
+  },
+  "Diskrete Mathematik": {
+    kurzbeschreibung: "Ziel ist die Einführung in die wichtigsten Grundbegriffe der diskreten Mathematik, das Verständnis der Rolle von Abstraktion und Beweisen sowie die Auseinandersetzung mit Anwendungen, etwa aus der Kryptographie, Codierungstheorie und Algorithmentheorie.",
+    inhalt:
+      "• Mathematisches Denken und Beweise\n" +
+      "• Abstraktion\n" +
+      "• Mengen\n" +
+      "• Relationen (z.B. Äquivalenz- und Ordnungsrelationen)\n" +
+      "• Funktionen\n" +
+      "• (Un-)abzählbarkeit\n" +
+      "• Zahlentheorie\n" +
+      "Algebra:\n" +
+      "• Gruppen\n" +
+      "• Ringe\n" +
+      "• Körper\n" +
+      "• Polynome\n" +
+      "• Unteralgebren\n" +
+      "• Morphismen\n" +
+      "Logik:\n" +
+      "• Aussagen- und Prädikatenlogik\n" +
+      "• Beweiskalküle"
+  },
+  "Lineare Algebra": {
+    kurzbeschreibung: "Ziel ist der sichere Umgang mit grundlegenden Verfahren der linearen Algebra, insbesondere das Lösen linearer Gleichungssysteme, das Verständnis und die Anwendung von Vektor- und Matrixoperationen sowie die Nutzung von Zerlegungen, Eigenwertmethoden und linearen Abbildungen zur Analyse und Lösung mathematischer und technischer Probleme.",
+    inhalt:
+      "• Lineare Gleichungssysteme, Matrizen, Gauss-Elimination, LU- und QR-Zerlegungen\n" +
+      "• Lineare Räume, Fundamentalsatz der linearen Algebra - Teil I, Basiswahl und Basiswechsel\n" +
+      "• Lineare Abbildungen und Abbildungsmatrix bei Koordinatentransformationen\n" +
+      "• Norm und Skalarprodukt in linearen Räumen, Gram-Schmidt-Algorithmus, Projektoren\n" +
+      "• Lineare Ausgleichsrechnung\n" +
+      "• Determinanten\n" +
+      "• Eigenwerte und Eigenvektoren, Symmetrische Matrizen\n" +
+      "• Singulärwertzerlegung und Fundamentalsatz der linearen Algebra, Anwendungen"
+  },
+  "Numerical Methods for Partial Differential Equations": {
+    kurzbeschreibung: "This course covers the derivation, properties, and practical implementation of fundamental numerical methods for solving key partial differential equations, including convection-diffusion, heat, and wave equations, as well as conservation laws. Emphasis is placed on efficient implementation in C++ using a finite element library, with a strong focus on understanding the mathematical foundations and selecting appropriate methods based on the characteristics of the PDE models.",
+    inhalt:
+      "• Second-order scalar elliptic boundary value problems\n" +
+      "• Finite-element methods (FEM)\n" +
+      "• FEM: Convergence and Accuracy\n" +
+      "• Beyond FEM: Alternative Discretizations\n" +
+      "• Non-linear elliptic boundary value problems\n" +
+      "• Second-order linear evolution problems\n" +
+      "• Convection-diffusion problems\n" +
+      "• Finite Elements for the Stokes Equation"
+  },
+  "Stochastik": {
+    kurzbeschreibung: "Wahrscheinlichkeitsmodelle und Anwendungen, Einführung in Schätztheorie und statistische Testtheorie",
+    inhalt:
+      "Der Begriff Wahrscheinlichkeitsraum und einige klassische Modelle:\n" +
+      "• Axiome von Kolmogorov\n" +
+      "• einfache Folgerungen\n" +
+      "• diskrete Modelle\n" +
+      "• Dichtefunktionen\n" +
+      "• Produktmodelle\n" +
+      "• Zusammenhang zwischen den bisher betrachteten Modellen\n" +
+      "• Verteilungsfunktionen\n" +
+      "• Transformation von Wahrscheinlichkeitsverteilungen\n" +
+      "Bedingte Wahrscheinlichkeiten:\n" +
+      "• Definition und Beispiele\n" +
+      "• Berechnung von absoluten aus bedingten Wahrscheinlichkeiten\n" +
+      "• Bayes'sche Regel\n" +
+      "• Anwendung auf Nachrichtenquellen\n" +
+      "• bedingte Verteilungen\n" +
+      "• Erwartungswert eine Zufallsvariable\n" +
+      "• Varianz\n" +
+      "• Kovarianz und Korrelation\n" +
+      "• lineare Prognosen\n" +
+      "• Gesetz der grossen Zahlen\n" +
+      "• zentraler Grenzwertsatz\n" +
+      "Einführung in die Statistik:\n" +
+      "• Schätzung von Parametern\n" +
+      "• Tests"
+  },
+  "Fluiddynamik I": {
+    kurzbeschreibung: "An introduction to the physical and mathematical foundations of fluid dynamics is given.",
+    inhalt:
+      "• Dimensional analysis\n" +
+      "• integral and differential conservation laws\n" +
+      "• inviscid and viscous flows\n" +
+      "• Navier-Stokes equations\n" +
+      "• boundary layers, turbulence\n" +
+      "• potential flows\n" +
+      "• unsteady flows\n" +
+      "• aerodynamic concepts\n" +
+      "• vorticity dynamics\n" +
+      "• compressible flows"
+  },
+  "Statistische Physik und Computer Simulation": {
+    kurzbeschreibung: "Der Kurs vermittelt zentrale Prinzipien und Anwendungen der statistischen Mechanik, einschließlich Gleichgewichts-Molekulardynamik, Monte-Carlo-Verfahren, stochastischer Dynamik und Methoden zur Berechnung freier Energien. In den begleitenden Übungen werden Computersimulationsprogramme eingesetzt, um Ensembles zu erzeugen und statistische Mittelwerte zu bestimmen.",
+    inhalt:
+      "• Prinzipien und Anwendungen der statistischen Mechanik und Gleichgewichts-Molekulardynamik\n" +
+      "• Monte-Carlo-Verfahren\n" +
+      "• stochastische Dynamik und freien Energie-Rechnung"
+  },
+  "Introduction to Mathematical Optimization": {
+    kurzbeschreibung: "Introduction to basic techniques and problems in mathematical optimization, and their applications to a variety of problems in engineering.",
+    inhalt:
+      "• Linear programming (simplex method, duality theory, shadow prices, ...)\n" +
+      "• Basic combinatorial optimization problems (spanning trees, shortest paths, network flows, ...)\n" +
+      "• Modelling with mathematical optimization: applications of mathematical programming in engineering"
+  },
+  "Numerische Methoden für CSE": {
+    kurzbeschreibung: "The course gives an introduction into fundamental techniques and algorithms of numerical mathematics which play a central role in numerical simulations in science and technology. The course focuses on fundamental ideas and algorithmic aspects of numerical methods. The exercises involve actual implementation of numerical methods in C++.",
+    inhalt:
+      "• Computing with Matrices and Vectors\n" +
+      "• Direct Methods for linear systems of equations\n" +
+      "• Least Squares Techniques\n" +
+      "• Data Interpolation and Fitting\n" +
+      "• Iterative Methods for non-linear systems of equations\n" +
+      "• Filtering Algorithms\n" +
+      "• Approximation of Functions\n" +
+      "• Numerical Quadrature"
+  },
+  "Programmiertechniken für physikalische Simulationen": {
+    kurzbeschreibung: "This lecture provides an overview of programming techniques for scientific simulations. The focus is on basic and advanced C++ programming techniques and scientific software libraries. Based on an overview over the hardware components of PCs and supercomputer, optimization methods for scientific simulation codes are explained.",
+    inhalt:
+      "• Basic and advanced C++ programming techniques\n" +
+      "• Scientific software libraries\n" +
+      "• Hardware components of PCs and supercomputers\n" +
+      "• Optimization methods for scientific simulation codes"
+  },
+  "Systems Programming and Computer Architecture": {
+    kurzbeschreibung: "Introduction to systems programming. C and assembly language, floating point arithmetic, basic translation of C into assembler, compiler optimizations, manual optimizations. How hardware features like superscalar architecture, exceptions and interrupts, caches, virtual memory, multicore processors, devices, and memory systems function and affect correctness, performance, and optimization.",
+    inhalt:
+      "Overview of modern computer systems as platforms for executing compiled programs\n" +
+      "Programmer's perspective on:\n" +
+      "• Program execution\n" +
+      "• Memory storage and management\n" +
+      "• System-level communication\n" +
+      "Introduction to key architectural components:\n" +
+      "• Processors and registers\n" +
+      "• Cache memory and memory hierarchy\n" +
+      "• Virtual memory systems\n" +
+      "• Supervisor/kernel mode\n" +
+      "• Input/output structures\n" +
+      "Understanding the impact of:\n" +
+      "• Compiler optimizations\n" +
+      "• Operating system behavior\n" +
+      "• Hardware features on performance, scalability, and correctness\n" +
+      "Exposure to practical system-level issues:\n" +
+      "• Performance tuning and profiling\n" +
+      "• Portability and security\n" +
+      "• Robustness and extensibility of code\n" +
+      "Topics covered include:\n" +
+      "• Machine-level code and its generation by optimizing compilers\n" +
+      "• Address translation techniques\n" +
+      "• Input and output mechanisms\n" +
+      "• Trap and event handling\n" +
+      "• Performance evaluation and optimization"
+  },
+  "Software Engineering": {
+    kurzbeschreibung: "This course introduces both theoretical and practical aspects of software engineering, all of which are applied in a substantial team project.",
+    inhalt:
+      "• requirements\n" +
+      "• specifications and documentation\n" +
+      "• formal and informal modelling\n" +
+      "• modularity\n" +
+      "• testing and concolic execution"
+  },
+  "Design of High Performance Computing": {
+    kurzbeschreibung: "Advanced topics in parallel and high-performance computing.",
+    inhalt:
+      "• Comprehensive overview of high-performance computing (HPC) from hardware architecture to programming and algorithms\n" +
+      "Introduction to:\n" +
+      "• Cache architectures and cache coherence in real-world systems\n" +
+      "Parallel programming concepts, including:\n" +
+      "• Memory models\n" +
+      "• Locks and lock-free programming techniques\n" +
+      "• Performance modeling techniques\n" +
+      "• Principles of parallel software design\n" +
+      "• Fundamental parallel algorithms"
+  },
+  "Introduction into Machine Learning": {
+    kurzbeschreibung: "The course introduces the foundations of learning and making predictions based on data.",
+    inhalt:
+      "• Linear regression (overfitting, cross-validation/bootstrap, model selection, regularization, [stochastic] gradient descent)\n" +
+      "• Linear classification: Logistic regression (feature selection, sparsity, multi-class)\n" +
+      "• Kernels and the kernel trick (Properties of kernels; applications to linear and logistic regression); k-nearest neighbor\n" +
+      "• Neural networks (backpropagation, regularization, convolutional neural networks)\n" +
+      "• Unsupervised learning (k-means, PCA, neural network autoencoders)\n" +
+      "• The statistical perspective (regularization as prior; loss as likelihood; learning as MAP inference)\n" +
+      "• Statistical decision theory (decision making based on statistical models and utility functions)\n" +
+      "• Discriminative vs. generative modeling (benefits and challenges in modeling joint vs. conditional distributions)\n" +
+      "• Bayes' classifiers (Naive Bayes, Gaussian Bayes; MLE)\n" +
+      "• Bayesian approaches to unsupervised learning (Gaussian mixtures, EM)"
+  },
+  "Wissenschaft im Kontext": {
+    kurzbeschreibung: "Wissenschaftliches Arbeiten und Methodenkompetenz",
+    inhalt:
+      "• Wissenschaftliche Methoden\n" +
+      "• Recherche\n" +
+      "• wissenschaftliches Schreiben"
+  },
+  "Fallstudien": {
+    kurzbeschreibung: "Praktische Anwendung der im Studium erlernten Fähigkeiten in einem Praxisprojekt",
+    inhalt:
+      "• Projektarbeit in Teams an realen Problemstellungen"
+  },
+  "Bachelorarbeit": {
+    kurzbeschreibung: "Selbständige Bearbeitung eines wissenschaftlichen Themas",
+    inhalt:
+      "• Individuell definiertes wissenschaftliches Projekt"
+  }
+}
 };
 
 /* ==== CSE-SPEZIFISCHE ERWEITERUNGEN ==== */
