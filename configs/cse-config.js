@@ -91,7 +91,7 @@ window.StudiengangConfig = {
         { name: "Wissenschaftliche Arbeit", klasse: "wissenschaftliche-arbeit" },
         { name: "Kernfächer", klasse: "kern", info: "3 von 4 möglichen auswählen" },
         { name: "Wahlfächer", klasse: "wahl", info: "mind. zwei Module", hasTooltip: true },
-        { name: "Vertiefungsgebiet", klasse: "vertiefung", info: "2 Module auswählen (Atmosphärenphysik)", hasTooltip: true }
+        { name: "Vertiefungsgebiet", klasse: "vertiefung", info: "2 Module auswählen (Robotik)", hasTooltip: true }
     ],
     
     kategorieZuKlasse: {
@@ -136,8 +136,8 @@ window.StudiengangConfig = {
         { jahr: 3, semester: 0, bereich: "Kernfächer", name: "Introduction into Machine Learning", kp: 8, kategorie: "kern" },
 
         // 3. Jahr - Vertiefungsgebiet
-        { jahr: 3, semester: 0, bereich: "Vertiefungsgebiet", name: "Atmosphäre", kp: 3, kategorie: "vertiefung" },
-        { jahr: 3, semester: 0, bereich: "Vertiefungsgebiet", name: "Weather and Climate Modeling", kp: 4, kategorie: "vertiefung" },
+        { jahr: 3, semester: 0, bereich: "Vertiefungsgebiet", name: "3D Vision", kp: 4, kategorie: "vertiefung" },
+        { jahr: 3, semester: 0, bereich: "Vertiefungsgebiet", name: "Image Analysis and Computer Vision", kp: 6, kategorie: "vertiefung" },
 
         // 3. Jahr - Wahlfächer
         { jahr: 3, semester: 0, bereich: "Wahlfächer", name: "Information Systems for Engineers", kp: 5, kategorie: "wahl" },
