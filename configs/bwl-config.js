@@ -81,13 +81,13 @@ window.StudiengangConfig = {
         { jahr: 2, semester: 0, bereich: "Bachelor", name: "Bachelor-Arbeit", kp: 12.00, kategorie: "bachelor" },
         
         // Kontextstudium - Fokusbereich Geschichte
-        { jahr: 2, semester: 0, bereich: "Kontextstudium", name: "Geschichte/History: Dark Continent - A History of Europe, 1914-present", kp: 3.00, kategorie: "kontext" },
-        { jahr: 2, semester: 0, bereich: "Kontextstudium", name: "Geschichte/History: Grundzüge der Unternehmensgeschichte (19.-20. Jahrhundert)", kp: 3.00, kategorie: "kontext" },
-        { jahr: 2, semester: 0, bereich: "Kontextstudium", name: "Geschichte/History: Die Geopolitik ist zurück auf dem Balkan - historische Voraussetzungen und künftige Risiken für Europa", kp: 3.00, kategorie: "kontext" },
-        { jahr: 2, semester: 0, bereich: "Kontextstudium", name: "Geschichte/History: Unternehmer-Biographien - ein Schlüssel zur Wirtschaftsgeschichte", kp: 6.00, kategorie: "kontext" },
-        { jahr: 2, semester: 0, bereich: "Kontextstudium", name: "Geschichte/History: Direkte Demokratie - ein politisches Erfolgsmodell? Seine Geschichte und Grenzen", kp: 3.00, kategorie: "kontext" },
-        { jahr: 2, semester: 0, bereich: "Kontextstudium", name: "Geschichte/History: Pulverfass Balkan - Kleinstaatenpolitik und Grossmachtrivalität vor und während des Ersten Weltkriegs", kp: 3.00, kategorie: "kontext" },
-        { jahr: 2, semester: 0, bereich: "Kontextstudium", name: "Gesellschaft/Society: Increasing Racial and Ethnic Equity in Switzerland", kp: 3.00, kategorie: "kontext" },
+        { jahr: 2, semester: 0, bereich: "Kontextstudium", name: "Dark Continent - A History of Europe, 1914-present", kp: 3.00, kategorie: "kontext" },
+        { jahr: 2, semester: 0, bereich: "Kontextstudium", name: "Grundzüge der Unternehmensgeschichte (19.-20. Jahrhundert)", kp: 3.00, kategorie: "kontext" },
+        { jahr: 2, semester: 0, bereich: "Kontextstudium", name: "Die Geopolitik ist zurück auf dem Balkan - historische Voraussetzungen und künftige Risiken für Europa", kp: 3.00, kategorie: "kontext" },
+        { jahr: 2, semester: 0, bereich: "Kontextstudium", name: "Unternehmer-Biographien - ein Schlüssel zur Wirtschaftsgeschichte", kp: 6.00, kategorie: "kontext" },
+        { jahr: 2, semester: 0, bereich: "Kontextstudium", name: "Direkte Demokratie - ein politisches Erfolgsmodell? Seine Geschichte und Grenzen", kp: 3.00, kategorie: "kontext" },
+        { jahr: 2, semester: 0, bereich: "Kontextstudium", name: "Pulverfass Balkan - Kleinstaatenpolitik und Grossmachtrivalität vor und während des Ersten Weltkriegs", kp: 3.00, kategorie: "kontext" },
+        { jahr: 2, semester: 0, bereich: "Kontextstudium", name: "Increasing Racial and Ethnic Equity in Switzerland", kp: 3.00, kategorie: "kontext" },
         
         // Pflichtwahlbereich
         { jahr: 2, semester: 0, bereich: "Pflichtwahlbereich", name: "Business-to-IT-Innovation: Was (zukünftige) Managerinnen und Manager wissen sollten", kp: 4.00, kategorie: "kernfach" },
