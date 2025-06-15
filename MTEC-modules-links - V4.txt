@@ -1,0 +1,511 @@
+# ETH Course Catalog Data - Management & Economics Programs
+
+## Course Overview Summary
+
+This document contains detailed catalog data scraped from 19 ETH courses across management, economics, and related disciplines.
+
+---
+
+## 1. Introduction to Management (363-0341-00L)
+**Semester:** Autumn Semester 2025  
+**Language:** English  
+**Periodicity:** Yearly recurring course
+
+**Abstract:** This course is an introduction to general management. This course follows a systemic view of organizations and adopts the congruence model as a framework to analyze the critical, interconnected elements of organizations.
+
+**Learning Objectives:**
+- Analyze organizations as open systems, and describe their critical elements
+- Apply conceptual tools and methods that help to analyze or approach the critical elements
+- Compare different notions of organizational performance, and explain why they matter
+- Discuss the relationships that connect the critical elements of an organization on the basis of real cases
+- Explain how change, internally or externally initiated, impact such relationships
+
+**Content:** Introduces critical elements including input (from external environment), strategy, people, work, formal and informal structure of the organization, and its outputs using the congruence model framework.
+
+**Literature:** Dess, G., McNamara, G., Eisner, A., & Lee, SH. 2018. Strategic Management: Text and Cases. McGraw Hill.
+
+---
+
+## 2. Human Resource Management: Leading Teams (363-0302-00L)
+**Semester:** Spring Semester 2025  
+**Language:** English
+
+**Abstract:** The basic processes of human resource management are discussed (selection, reward systems, performance evaluation, career development) and embedded in the broader context of leadership in teams.
+
+**Learning Objectives:**
+- Understand basic HRM functions and their relationship to leadership
+- Know instruments for selection, performance appraisal, compensation, and development
+- Understand leadership requirements and success factors in leadership
+- Know fundamental processes in teams
+- Apply and expand theoretical knowledge on a specific topic in self-guided learning
+- Manage team processes and diversity
+
+**Content:** Covers HRM policies, practices, and systems that influence employees' behavior, attitudes, and performance. Includes concepts and instruments for employee selection, performance management, and personnel development. Features company projects applying HRM instruments in real contexts.
+
+---
+
+## 3. Responsible Leadership (363-1080-00L)
+**Semester:** Spring Semester 2025  
+**Language:** English
+
+**Abstract:** Students will learn about different leadership styles and how power and leadership play out in social interactions. Emphasis is placed on personal development and the implementation and application of topics to the workplace context.
+
+**Learning Objectives:** Enhance understanding of hierarchical relationships in the workplace, analyze elements that make a good leader, evaluate social and emotional skills related to leadership, and address integrity and ethics in leadership.
+
+**Content:** Covers leadership styles and theories, communication and interpersonal skills, agility in teams, power abuses and ethics, diversity and discrimination, and leadership and innovation.
+
+**Literature:** 
+- Riggio & Reichard (2008). The emotional and social intelligences of effective leadership
+- Jost et al. (2009). The existence of implicit bias is beyond reasonable doubt
+
+---
+
+## 4. Strategic Management (363-0392-00L)
+**Semester:** Spring Semester 2025  
+**Language:** English
+
+**Abstract:** This course introduces key competences, frameworks and methods for designing, implementing and executing strategy.
+
+**Learning Objectives:** Equips future leaders and strategy professionals with solid foundation for analyzing and developing strategy through critical analysis of cases and exposure to contemporary challenges of strategizing.
+
+**Content:** Covers core strategy concepts, strategy and industry evolution, technology dynamics, resource-based view of the firm, and knowledge-based view of the firm. Features case-based problem solving and testimonials from executives.
+
+---
+
+## 5. Corporate Sustainability (363-0387-00L)
+**Semester:** Autumn Semester 2025  
+**Language:** English
+
+**Abstract:** The lecture explores current challenges of corporate sustainability and prepares students to become champions for sustainable business practices.
+
+**Learning Objectives:**
+- Describe the role, potential, and limits of corporate sustainability for sustainable development
+- Assess and critically evaluate the sustainability framework conditions of a specific company
+- Design and present concrete, actionable solutions for addressing sustainability challenges
+- Make informed decisions and develop strategic recommendations in collaboration with peers
+
+**Content:** Uses constructive alignment with case-based experiential learning, reflective thinking and blended learning. Students work in groups on sustainability challenges with mandatory sessions on October 15, 22, November 12, and December 3.
+
+---
+
+## 6. Technology and Innovation Management (363-0389-00L)
+**Semester:** Autumn Semester 2025  
+**Language:** English
+
+**Abstract:** This course focuses on the sources of innovation (with a specific focus on digital technologies), the tools and techniques that organizations deploy to innovate routinely, and the strategic implications of technical change.
+
+**Learning Objectives:**
+- Acquire basic jargon, concepts and methods necessary to discuss innovation processes
+- Analyze differences between individual and organizational decision processes
+- Evaluate critically the potential of different digital technologies to impact business organizations
+
+**Content:** Focuses on how organizations allocate resources between well-known tasks and exploring new ways. Covers management skills and tools for decision-making in volatile environments through lectures, case discussions, and guest speakers.
+
+---
+
+## 7. Introduction to Marketing (363-0403-00L)
+**Semester:** Autumn Semester 2025  
+**Language:** English
+
+**Abstract:** This course provides an overview on essential perspectives of marketing and how marketing adds value to a business. It will teach concepts, frameworks and methods for marketing decision making.
+
+**Learning Objectives:**
+- Understand how marketing adds value to a business
+- Provide overview of key concepts in marketing applicable to any business
+- Understand consumer behavior and its impact on marketing
+- Learn how analytics and quantitative methods can improve marketing decision making
+- Know elements that shape marketing strategy and tactics
+
+**Content:** Centers on marketing as value-creating activity. Covers role of marketing within business, strategic marketing management decisions, marketing mix elements (product, price, promotion, place), specific marketing contexts, and data-driven techniques.
+
+**Literature:** Kotler, Philip and Gary Armstrong (2021). Principles of Marketing (18th Global Edition), Pearson.
+
+---
+
+## 8. Entrepreneurship (363-1077-00L)
+**Semester:** Spring Semester 2025  
+**Language:** English
+
+**Abstract:** This course introduces the various elements important to start an innovative business including technology context, assessing opportunities, protecting ideas, market testing, team formation, and raising investment.
+
+**Learning Objectives:**
+- Understand how technologies develop from science to commercial products
+- Understand entrepreneurial opportunities emerging from this cycle
+- Learn how assumptions are tested in the market and evolve into business plans
+- Understand importance of founding teams and how they fit together
+- Learn how to raise money from various sources
+- Develop business cases and negotiate funding deals
+
+**Content:** Structured in 7 sessions covering science to technology commercialization, market research and design thinking, appropriability and value flow, HR and team composition, capital raising, legal aspects and pitching, culminating in a Dragon's Den presentation.
+
+**Literature:** Clarysse, B. & S. Kiefer The Smart Entrepreneur (Elliott & Thompson, 2011)
+
+---
+
+## 9. Principles of Macroeconomics (363-0565-00L)
+**Semester:** Autumn Semester 2025  
+**Language:** English
+
+**Abstract:** This course examines the behaviour of macroeconomic variables, such as gross domestic product, unemployment and inflation rates.
+
+**Learning Objectives:** Introduce fundamentals of macroeconomic theory and explain their relevance to every-day economic problems.
+
+**Content:** Helps understand the world through macroeconomic questions about living standards, inflation, government policy, taxation, free trade, and budget deficits. Addresses burdens of taxation, effects of free trade, and government budget deficit impacts.
+
+**Literature:** N. Gregory Mankiw and Mark P. Taylor (2023), Economics, Cengage Learning, 6th Edition.
+
+---
+
+## 10. Introduction to Finance (363-0560-00L)
+**Semester:** Autumn Semester 2025  
+**Language:** English
+
+**Abstract:** The course explores fundamental financial decisions encountered by corporate managers and demonstrates how financial theory can be applied to address practical, real-world challenges.
+
+**Learning Objectives:**
+- Analyze how organizations make investment and financing decisions
+- Apply various valuation techniques to assess business opportunities
+- Evaluate limitations of financial tools and theories
+- Critically examine corporate policies
+- Assess interplay between sustainability and finance
+
+**Content:** Structured in six parts covering value (time value of money, bond/stock valuation, NPV), risk and return, capital budgeting, corporate financing options and behavioral finance, capital structure and payout policies, and corporate objectives and governance.
+
+**Literature:** Richard Brealey, Stewart Myers, Franklin Allen and Alex Edmans: Principles of Corporate Finance, 14th Edition
+
+---
+
+## 11. Advanced Finance (363-0561-00L)
+**Semester:** Spring Semester 2025  
+**Language:** English  
+**Prerequisites:** Recommended to have taken Introduction to Finance
+
+**Abstract:** The course explores advanced financial decisions encountered by corporate managers and demonstrates how financial theory can be applied to address practical, real-world challenges.
+
+**Learning Objectives:**
+- Analyze and evaluate corporate financial decisions using advanced financial theories
+- Assess financial risks and implement risk management strategies
+- Conduct financial planning and working capital management
+- Integrate sustainability principles into financial decision-making
+- Explore emerging trends in finance such as fintech innovations
+
+**Content:** Six parts covering options valuation, debt financing and credit risk, risk management with derivatives, financial planning and working capital management, mergers and corporate restructuring, and additional topics including fintech, sustainable finance, and financial crises.
+
+---
+
+## 12. Operations Research (363-1004-00L)
+**Semester:** Autumn Semester 2025  
+**Language:** English  
+**Prerequisites:** Undergraduate calculus, linear algebra, probability and statistics
+
+**Abstract:** This course provides an introduction to operations research methods in the fields of management science and economics. Requisite mathematical concepts are introduced with a practical, problem-solving perspective.
+
+**Learning Objectives:**
+- Introduction to building and using quantitative models in business/industrial environment
+- Introduction to basic optimization techniques
+- Understanding integration of quantitative models into managerial decision process
+
+**Content:** Covers system modeling, linear programming, duality theory and shadow prices, integer programming, and dynamic optimization with applications in inventory management. Applications include production planning, supply chain management, transportation networks, and revenue management.
+
+---
+
+## 13. Social Data Science (363-1091-00L)
+**Semester:** Spring Semester 2025  
+**Language:** English  
+**Prerequisites:** Basic background in statistics and programming recommended
+
+**Abstract:** Social Data Science is introduced as a set of techniques to analyze human behaviour and social interaction through digital traces.
+
+**Learning Objectives:**
+- Understand techniques to retrieve digital trace data from online sources
+- Store, process, and summarize online data for quantitative analysis
+- Perform statistical analyses to test hypotheses and derive insights
+- Interpret results with respect to theoretical principles of human behavior
+- Understand limitations of observational data analysis
+
+**Content:** Integrates data retrieval and processing, statistical analysis methods, and interpretation of results. Covers collective behavior, sentiment analysis, and social network analysis. Includes search trends, popularity analysis, sentiment analysis techniques, and Twitter network analysis.
+
+---
+
+## 14. Management of Digital Transformation (363-0421-00L)
+**Semester:** Autumn Semester 2025  
+**Language:** English
+
+**Abstract:** This course provides an overview of Digital Transformation within organizations, the opportunities that come with it, but also the issues managers face transforming their organizations into the digital age.
+
+**Learning Objectives:** After completing 4 core learning blocks, students will understand, analyze and critically question organization's digital transformation processes while learning frameworks and tools used by organizations.
+
+**Content:** Four learning blocks covering:
+1. Digital transformation strategies (business model patterns, platform companies, subscription models)
+2. Organizing the digital transformation (towards agile organization)
+3. Digital transformation and technology (future-proof infrastructure)
+4. Digital transformation within industries (healthcare, automotive)
+
+---
+
+## 15. Production and Operations Management (363-0445-00L)
+**Semester:** Autumn Semester 2025  
+**Language:** English
+
+**Abstract:** This core course provides insights into the basic theories, principles, concepts, and techniques used to design, analyze, and improve the operational capabilities of an organization.
+
+**Learning Objectives:** Students can apply key POM concepts, conduct forecasting and capacity planning, perform process mapping analysis, design information and material flows, design performance management systems, and use problem-solving tools.
+
+**Content:** Covers fundamental strategic and tactical concepts in production and operations management. Topics include manufacturing strategy, forecasting and capacity, process design, layout, Industry 4.0, information flow, material flow, logistics/SCM, performance management, and quality management.
+
+**Literature:** Baudin and Netland (2022) Introduction to Manufacturing: An Industrial Engineering and Management Perspective, 1st Ed. Routledge.
+
+---
+
+## 16. Principles of Microeconomics (363-0503-00L)
+**Semester:** Autumn Semester 2025  
+**Language:** English
+
+**Abstract:** The course introduces basic principles, problems and approaches of microeconomics. This provides students with reflective and contextual knowledge on how societies use scarce resources.
+
+**Learning Objectives:**
+- Discuss basic principles, problems and approaches in microeconomics
+- Analyze and explain simple economic principles using supply and demand graphs
+- Contrast different market structures and describe firm and consumer behaviour
+- Identify market failures such as externalities
+- Recognize behavioural failures and discuss basic concepts in behavioural economics
+- Apply simple mathematical concepts to economic problems
+
+**Content:** Deals with behavior of consumers and firms in different market forms. Topics include supply and demand, consumer demand (neoclassical and behavioral perspectives), cost of production, welfare economics, governmental policies, market failures, public goods, tax systems, market forms, and international trade.
+
+**Literature:** N. Gregory Mankiw and Mark P. Taylor (2023), "Economics" or "Microeconomics", 6th edition, South-Western Cengage Learning.
+
+---
+
+## 17. Principles of Econometrics (363-0570-00L)
+**Semester:** Spring Semester 2025  
+**Language:** English  
+**Prerequisites:** Introductory course in economics recommended
+
+**Abstract:** This course introduces the fundamentals of econometrics. We cover simple and multiple regression analysis using different data formats with emphasis on hypothesis testing and interpretation.
+
+**Learning Objectives:**
+- Understand different forms of data and their strengths/weaknesses
+- Translate economic policy questions into testable research hypotheses
+- Apply theoretical knowledge using STATA software
+- Identify potential threats for causal interpretations and address them
+
+**Content:** Covers application of statistical methods to economics, starting from simple regression analysis. Focuses on hypothesis testing using multiple regressions, model fitting, reliability of estimates, prediction precision, and crucial assumptions for causal effects.
+
+**Literature:** Wooldridge, Jeffrey M. (2025) Introductory Econometrics: A Modern Approach. 8th ed.
+
+---
+
+## 18. Accounting for Managers (363-0711-00L)
+**Semester:** Autumn Semester 2025  
+**Language:** English  
+**Prerequisites:** Prerequisite for Financial Management course
+
+**Abstract:** The course offers an introduction to financial and managerial accounting, especially for students who aspire for a career in business and management with a science or engineering background.
+
+**Learning Objectives:**
+- Understand the accounting system and reporting process
+- Feel comfortable reading and using information in companies' annual reports
+- Understand cost concepts and conduct cost analyses
+- Become familiar with classic decisions using managerial accounting information
+- Comment on current events related to these topics
+
+**Content:** Divided into two parts: financial reporting (basic accounting concepts, accounting cycle, financial statements, revenues, expenses, assets, liabilities, equities) and managerial accounting (cost behavior, cost estimation, CVP analyses, relevant costing, budgeting, standard costing).
+
+---
+
+## 19. Sustainability Economics (363-0537-00L)
+**Semester:** Spring Semester 2025  
+**Language:** English  
+**Prerequisites:** Introductory micro- and macroeconomics highly recommended
+
+**Abstract:** This course presents an economic perspective and core tools relevant to the private and public management of sustainability covering dynamic systems, core trade-offs, and essential tools for business and policy.
+
+**Learning Objectives:**
+- Understand standard definitions of sustainability
+- Understand core trade-offs and challenges in achieving sustainability
+- Have basic competency in modeling dynamic systems
+- Understand options for quantifying consumer demand for environmental goods
+- Understand costs and benefits of investing in sustainability
+- Understand challenges and methods for valuing environmental systems
+- Think critically about sustainability in future organizations
+
+**Content:** Reviews conceptual foundations and presents tools for private and public sustainability management. Covers definitions and measurement, dynamic economic and environmental systems, trade-offs, roles of private vs. public sector, innovation's role, consumer demand quantification, environmental goods valuation, and cost-benefit analysis. Applications include energy resources, climate change, biodiversity, and air pollution.
+
+---
+
+## Course Distribution by Semester
+
+**Autumn Semester 2025 (10 courses):**
+- Introduction to Management
+- Corporate Sustainability  
+- Technology and Innovation Management
+- Introduction to Marketing
+- Principles of Macroeconomics
+- Introduction to Finance
+- Operations Research
+- Management of Digital Transformation
+- Production and Operations Management
+- Principles of Microeconomics
+- Accounting for Managers
+
+**Spring Semester 2025 (8 courses):**
+- Human Resource Management: Leading Teams
+- Responsible Leadership
+- Strategic Management
+- Entrepreneurship
+- Advanced Finance
+- Social Data Science
+- Principles of Econometrics
+- Sustainability Economics
+
+---
+
+## Subject Areas Covered
+
+**Management & Leadership:** Introduction to Management, HRM, Responsible Leadership, Strategic Management
+
+**Finance & Accounting:** Introduction to Finance, Advanced Finance, Accounting for Managers
+
+**Economics:** Principles of Macroeconomics, Principles of Microeconomics, Principles of Econometrics, Sustainability Economics
+
+**Innovation & Technology:** Technology and Innovation Management, Management of Digital Transformation, Social Data Science
+
+**Operations & Analytics:** Production and Operations Management, Operations Research
+
+**Sustainability & Ethics:** Corporate Sustainability, Sustainability Economics
+
+**Marketing & Entrepreneurship:** Introduction to Marketing, Entrepreneurship
+
+---
+
+## 20. Strategic Supply Chain Management (363-0453-00L)
+**Semester:** Autumn Semester 2025  
+**Language:** English  
+**Prerequisites:** MS Excel and Excel Solver required for exercises
+
+**Abstract:** The course offers an introduction to the theory and practice of supply chain management. Students will learn how to develop supply chain strategies and supply chain networks based on firms competitive strategies and marketing priorities.
+
+**Learning Objectives:**
+- Explain the importance of supply chain management for a firm's strategy and success
+- Apply tools and methods used to optimize supply chain structure
+- Differentiate supply chain network designs and their applicability in specific settings
+- Describe and evaluate fundamental logistics and supply chain concepts
+- Explain elements of supply chain structure and their importance for strategy
+- Understand current developments and trends in supply chain practices
+
+**Content:** Covers modern supply chain management theory and practice, starting with corporate strategy alignment. Students learn about trade-offs between efficiency and responsiveness, supply chain structure development including logistical elements (facilities, inventory management, transportation), cross-functional aspects (information infrastructure, sourcing decisions, pricing), forecasting methods, and network design modeling.
+
+**Literature:** 
+- Chopra, Sunil (2019): Supply chain management: Strategy, planning, and operation, 7th ed.
+- Hopp, Wallace J. (2008): Supply chain science, McGraw-Hill/Irwin
+
+---
+
+## 21. Economic Dynamics and Complexity (363-0541-00L)
+**Semester:** Autumn Semester 2025  
+**Language:** English  
+**Prerequisites:** Linear algebra and basic Python programming; familiarity with core economic concepts helpful
+
+**Abstract:** What drives systemic risk in financial markets? How do global supply networks shape trade? We address these questions through the lens of complex networks, examining how interactions among firms, institutions, and countries create emergent macroeconomic behavior.
+
+**Learning Objectives:**
+- Understand basic concepts of complex networks and their relevance in economics
+- Use network analysis to characterize resilience, power, and vulnerability
+- Simulate and interpret dynamic processes on networks (contagion, diffusion, growth)
+- Evaluate policy implications and systemic risks using network-based perspective
+
+**Content:** Covers foundations of network theory, network metrics and economic interpretation, modeling economic systems as networks (input-output, financial, trade networks), game theory and strategic interactions on networks, and dynamic processes and resilience. Students complete coding and data analysis assignments using Python with real-world economic datasets.
+
+---
+
+## 22. Empirical Methods in Management (363-0305-00L)
+**Semester:** Autumn Semester 2025  
+**Language:** English
+
+**Abstract:** In this class, students learn how to understand and conduct empirical research. It will enable them to manage a business based on evident-based decision-making. The class includes assignments related to the lecture content.
+
+**Learning Objectives:** Enable students to understand basic principles of empirical studies, formulate research questions, design empirical studies, and analyze data using basic statistical approaches.
+
+**Content:** Introduces problems and key concepts of empirical research (qualitative and quantitative). Covers conducting and evaluating interviews, measurement and scaling methods, experiments, basic statistical analyses (variance analysis), and using statistical software (SPSS or R). Includes individual assignments and non-mandatory online exercises.
+
+**Literature:** Handbook of Good Research by Jürgen Brock and Florian von Wangenheim
+
+---
+
+## 23. Economic Growth, Cycles and Policy (363-0575-00L)
+**Semester:** Spring Semester 2025  
+**Language:** English  
+**Prerequisites:** Must have attended "Principles of Macroeconomics" (363-0565-00L)
+
+**Abstract:** This intermediate course focuses on the core thinking devices and foundations in macroeconomics and monetary economics, and uses these devices to understand economic growth, business cycles, crises as well as how to conduct monetary and fiscal policies.
+
+**Learning Objectives:**
+- Fundamental knowledge about drivers of economic growth in short and long run
+- Understanding of key macroeconomic variables and observed patterns in developed countries
+- Comprehensive understanding of core macroeconomic frameworks and thinking devices
+
+**Content:** Two parts: Basics (Introduction, IS-LM Model, Schools of Thought, Consumption and Investment, Solow Growth Model) and Special Themes (Money Holding/Inflation/Monetary Policy, Crises in Market Economies, Open Economy, Exchange Rate Theories).
+
+**Literature:** Manfred Gärtner (2009), Macroeconomics, Third Edition, Prentice Hall
+
+---
+
+## 24. Markets and Games (363-0515-00L)
+**Semester:** Spring Semester 2025  
+**Language:** English  
+**Prerequisites:** Undergraduate course in economics principles and multivariate calculus
+
+**Abstract:** The course provides an introduction to the foundations of microeconomics: markets and game theory. Game theory is a set of theoretical tools for analyzing strategic behavior applied to industrial organization, markets, and firm behavior.
+
+**Learning Objectives:**
+- Understand and analyze strategic interactions using formal tools from game theory
+- Use existing models to make predictions of firm and market behavior
+- Use existing models to understand benefits and costs of market regulations and competition laws
+
+**Content:** Covers game theory (normal-form games, extensive-form games) and markets (monopoly firm behavior, market competition models, collusion/mergers, competition law, market competition with innovation/R&D, market competition with advertising). Predominately theoretical with mathematical notation but includes relevant market applications.
+
+**Literature:** 
+- Gibbons, R. (1992). Game theory for applied economists
+- Cabral, L.M. (2017). Introduction to industrial organization
+- Tirole J. (1988). The theory of industrial organization
+
+---
+
+## 25. Risk and Insurance Economics (363-1017-00L)
+**Semester:** Autumn Semester 2025  
+**Language:** English  
+**Periodicity:** Yearly recurring course
+
+**Abstract:** Everyday, individuals make decisions under uncertainty. This course covers individual decision-making under risk, models of insurance demand and supply, information issues in insurance markets, topics in behavioral economics, and the macroeconomic role of insurers and insurance regulation.
+
+**Learning Objectives:** Introduces students to basic microeconomic models of risk attitudes and highlights the role insurance can – or cannot – play for individuals facing risks.
+
+**Content:** Covers risk-based decision making, Expected Utility theory vs. empirically observed behavior, rationale for insurance purchase and provision, optimal insurance demand levels, consequences of information asymmetries in insurance markets, and refinements in decision theory accounting for behavioral economics applications.
+
+**Literature:** 
+- Zweifel, P., & Eisen, R. (2012). Insurance Economics. Springer
+- Handbook of the Economics of Risk and Uncertainty, Volume 1
+- Dionne, G. (Ed.). (2013). Handbook of Insurance (2nd ed.). Springer
+
+---
+
+## 26. Semester Project Small (363-0881-00L)
+**Semester:** Autumn Semester 2025  
+**Workload:** 90 hours
+
+**Abstract:** The semester project is designed to train students in the solution of specific engineering problems. This makes use of the technical and social skills acquired during the master's program.
+
+**Learning Objectives:** Train students in solving specific engineering problems using technical and social skills from the master's program. Tutors propose subjects, elaborate project plans, define roadmaps with students, and monitor execution.
+
+---
+
+## 27. Semester Project Large (363-0883-00L)
+**Semester:** Autumn Semester 2025  
+**Workload:** 180 hours
+
+**Abstract:** The semester project is designed to train students in the solution of specific engineering problems. This makes use of the technical and social skills acquired during the master's program.
+
+**Learning Objectives:** Train students in solving specific engineering problems using technical and social skills from the master's program. Tutors propose subjects, elaborate project plans, define roadmaps with students, and monitor execution.
+
+---
