@@ -9,9 +9,9 @@ window.StudiengangConfig = {
     
     // Layout-Konfiguration - OPTIMIERT FÜR HORIZONTAL
     layout: "categories",
-    moduleSizing: "fixed", 
-    baseWidth: 160,
-    baseHeight: 70, 
+    moduleSizing: "proportional", 
+    basisArea: 3700, // Angepasst so dass 3 KP Module ~160x70 bleiben
+    defaultAspectRatio: 2.3, // Breiter für kompaktere Darstellung
     layoutClass: "horizontal-fachgebiete", // Spezielle Layout-Klasse
     
     // Features

@@ -498,7 +498,12 @@ class StudienplanBase {
         return this.config.defaultAspectRatio || 1.5;
     }
 
-    checkCondition(modul, condition) {
+checkCondition(modul, condition) {
+        // Direkte Modulnamen prüfen
+        if (modul.name === condition) {
+            return true;
+        }
+        
         if (condition === 'longName') {
             return modul.name.length > 30;
         }
