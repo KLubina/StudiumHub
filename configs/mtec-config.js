@@ -7,11 +7,11 @@ window.StudiengangConfig = {
     legendTitle: "Farben-Legende & Anforderungen",
     creditUnit: "KP",
     
-    // Layout-Konfiguration - OPTIMIERT FÜR HORIZONTAL
+// Layout-Konfiguration - PROPORTIONAL OPTIMIERT
     layout: "categories",
     moduleSizing: "proportional", 
-    basisArea: 3700, // Angepasst so dass 3 KP Module ~160x70 bleiben
-    defaultAspectRatio: 2.3, // Breiter für kompaktere Darstellung
+    basisArea: 2800, // Reduziert für bessere Proportionalität
+    defaultAspectRatio: 2.2, // Breiter für kompaktere Darstellung
     layoutClass: "horizontal-fachgebiete", // Spezielle Layout-Klasse
     
     // Features
