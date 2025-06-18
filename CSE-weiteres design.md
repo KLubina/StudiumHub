@@ -40,14 +40,14 @@
 
 # 3. Jahr
 ### INFORMATIK
-Software Engineering
-Design of High Performance Computing
-Introduction into Machine Learning
-3D Vision
-Image Analysis and Computer Vision
-Information Systems for Engineers
-Communication Networks
+* Software Engineering
+* Design of High Performance Computing
+* Introduction into Machine Learning
+* 3D Vision
+* Image Analysis and Computer Vision
+* Information Systems for Engineers
+* Communication Networks
 ### SONSTIGES
-Wahlfächer
-Fallstudien
-Bachelorarbeit
+* Wahlfächer
+* Fallstudien
+* Bachelorarbeit
