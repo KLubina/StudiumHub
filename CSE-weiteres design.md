@@ -1,45 +1,45 @@
 # 1. Semester
-## PHYSIK
+### PHYSIK
 Physik I
-## INFORMATIK
+### INFORMATIK
 Informatik
-## MATHEMATIK
+### MATHEMATIK
 Lineare Algebra
 Diskrete Mathematik
 Analysis I
 
 # 2. Semester
-## PHYSIK
+### PHYSIK
 Physik II
-## MATHEMATIK
+### MATHEMATIK
 Komplexe Analysis
 Analysis II
-## CHEMIE
+### CHEMIE
 Chemie
-## INFORMATIK
+### INFORMATIK
 Datenstrukturen und Algorithmen
 
 # 2. Jahr
-## MATHEMATIK
+### MATHEMATIK
 Analysis III
 Introduction to Mathematical Optimization
 Stochastik
-## INFORMATIK
+### INFORMATIK
 Numerische Methoden für CSE
 Numerical Methods for Partial Differential Equations
 Programmiertechniken für physikalische Simulationen
 Systems Programming and Computer Architecture
 Statistische Physik und Computer Simulation
-## PHYSIK
+### PHYSIK
 Fluiddynamik I
 Molekulare Quantenmechanik
-## CHEMIE
+### CHEMIE
 Physikalische Chemie III
-## SONSTIGES
+### SONSTIGES
 Wissenschaft im Kontext
 
 # 3. Jahr
-## INFORMATIK
+### INFORMATIK
 Software Engineering
 Design of High Performance Computing
 Introduction into Machine Learning
@@ -47,7 +47,7 @@ Introduction into Machine Learning
 Image Analysis and Computer Vision
 Information Systems for Engineers
 Communication Networks
-## SONSTIGES
+### SONSTIGES
 Wahlfächer
 Fallstudien
 Bachelorarbeit
