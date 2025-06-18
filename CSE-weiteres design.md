@@ -1,12 +1,12 @@
 # 1. Semester
 ### PHYSIK
-Physik I
+. Physik I
 ### INFORMATIK
-Informatik
+. Informatik
 ### MATHEMATIK
-Lineare Algebra
-Diskrete Mathematik
-Analysis I
+. Lineare Algebra
+. Diskrete Mathematik
+. Analysis I
 
 # 2. Semester
 ### PHYSIK
