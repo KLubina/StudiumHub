@@ -27,3 +27,5 @@ https://www.berufsberatung.ch/dyn/show/16729
 - Hochschule Luzern
 - OST - Ostschweizer Fachhochschule
 - Zürcher Hochschule für Angewandte Wissenschaften ZHAW
+
+https://www.swissuniversities.ch/themen/lehre-studium/akkreditierte-schweizer-hochschulen
