@@ -1,5 +1,6 @@
-/* ==== CSE EXTENSIONS ==== /
-/ Spezielle Funktionalitäten und erweiterte Klasse für den CSE Studiengang */
+/* ==== CSE EXTENSIONS ==== */
+/* Spezielle Funktionalitäten und erweiterte Klasse für den CSE Studiengang */
+
 /* ==== CSE-SPEZIFISCHE ERWEITERUNGEN ==== */
 // Erweiterte Klasse für CSE-spezifische Features
 window.StudiengangCustomClass = class CSEStudienplan extends StudienplanBase {
@@ -56,9 +57,18 @@ window.StudiengangCustomClass = class CSEStudienplan extends StudienplanBase {
 
   updateModuleColors() {
     // Alle Module neu färben basierend auf dem gewählten Modus
-    document.querySelectorAll(".modul").forEach((modulEl, index) => {
-      const modul = this.config.daten[index];
-      if (!modul) return;
+    document.querySelectorAll(".modul").forEach((modulEl) => {
+      // Modulname aus dem Element extrahieren
+      const modulNameElement = modulEl.querySelector('.modul-name') || modulEl;
+      const modulName = modulNameElement.textContent.trim();
+      
+      // Entsprechendes Modul in den Daten finden
+      const modul = this.config.daten.find(m => m.name === modulName);
+      
+      if (!modul) {
+        console.warn(`Modul nicht gefunden: ${modulName}`);
+        return;
+      }
 
       // Alte CSS-Klassen entfernen
       this.removeColorClasses(modulEl);
@@ -67,6 +77,9 @@ window.StudiengangCustomClass = class CSEStudienplan extends StudienplanBase {
       const cssClass = this.getModuleCssClass(modul);
       if (cssClass) {
         modulEl.classList.add(cssClass);
+        console.log(`Angewendete Klasse für ${modulName}: ${cssClass}`);
+      } else {
+        console.warn(`Keine CSS-Klasse für Modul: ${modulName}, Themenbereich: ${modul.themenbereich}`);
       }
     });
   }
@@ -75,7 +88,7 @@ window.StudiengangCustomClass = class CSEStudienplan extends StudienplanBase {
     // Alle Farbklassen entfernen
     const colorClasses = [
       "basis1",
-      "basis2",
+      "basis2", 
       "block-g1",
       "block-g2",
       "block-g3",
@@ -96,7 +109,10 @@ window.StudiengangCustomClass = class CSEStudienplan extends StudienplanBase {
 
   getModuleCssClass(modul) {
     if (this.coloringMode === "themenbereich") {
-      return modul.themenbereich || modul.kategorie;
+      // Zuerst themenbereich prüfen, dann kategorie als Fallback
+      const themenbereich = modul.themenbereich || modul.kategorie;
+      console.log(`Modul: ${modul.name}, Themenbereich: ${themenbereich}`);
+      return themenbereich;
     } else {
       // Standard Prüfungsblock-Logik
       if (modul.pruefungsblock && this.config.pruefungsbloecke) {
