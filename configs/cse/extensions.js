@@ -56,19 +56,40 @@ window.StudiengangCustomClass = class CSEStudienplan extends StudienplanBase {
   }
 
   updateModuleColors() {
+    console.log("=== UPDATE MODULE COLORS ===");
+    console.log("Coloring Mode:", this.coloringMode);
+    
     // Alle Module neu färben basierend auf dem gewählten Modus
-    document.querySelectorAll(".modul").forEach((modulEl) => {
-      // Modulname aus dem Element extrahieren
-      const modulNameElement = modulEl.querySelector('.modul-name') || modulEl;
-      const modulName = modulNameElement.textContent.trim();
+    const moduleElements = document.querySelectorAll(".modul");
+    console.log("Gefundene Module Elemente:", moduleElements.length);
+    
+    moduleElements.forEach((modulEl, index) => {
+      // Verschiedene Methoden zum Extrahieren des Modulnamens
+      let modulName = "";
+      
+      // Methode 1: Suche nach .modul-name
+      const modulNameElement = modulEl.querySelector('.modul-name');
+      if (modulNameElement) {
+        modulName = modulNameElement.textContent.trim();
+      } else {
+        // Methode 2: Verwende den gesamten Text des Elements
+        modulName = modulEl.textContent.trim();
+        // Entferne KP-Angaben (z.B. "4 KP" am Anfang)
+        modulName = modulName.replace(/^\d+\s*KP\s*/i, '').trim();
+      }
+      
+      console.log(`Element ${index}: "${modulName}"`);
       
       // Entsprechendes Modul in den Daten finden
       const modul = this.config.daten.find(m => m.name === modulName);
       
       if (!modul) {
-        console.warn(`Modul nicht gefunden: ${modulName}`);
+        console.warn(`Modul nicht gefunden: "${modulName}"`);
+        console.log("Verfügbare Module:", this.config.daten.map(m => m.name));
         return;
       }
+
+      console.log(`Gefundenes Modul:`, modul);
 
       // Alte CSS-Klassen entfernen
       this.removeColorClasses(modulEl);
@@ -77,11 +98,30 @@ window.StudiengangCustomClass = class CSEStudienplan extends StudienplanBase {
       const cssClass = this.getModuleCssClass(modul);
       if (cssClass) {
         modulEl.classList.add(cssClass);
-        console.log(`Angewendete Klasse für ${modulName}: ${cssClass}`);
+        console.log(`✓ Angewendete Klasse für "${modulName}": ${cssClass}`);
+        
+        // Versuche auch, Inline-Styles zu setzen zur Sicherheit
+        if (this.coloringMode === "themenbereich") {
+          const colorMap = {
+            'physik': '#2196F3',
+            'informatik': '#4CAF50', 
+            'mathematik': '#FF9800',
+            'chemie': '#9C27B0',
+            'sonstiges': '#795548'
+          };
+          
+          if (colorMap[cssClass]) {
+            modulEl.style.backgroundColor = colorMap[cssClass];
+            modulEl.style.color = 'white';
+            console.log(`✓ Inline style gesetzt: ${colorMap[cssClass]}`);
+          }
+        }
       } else {
-        console.warn(`Keine CSS-Klasse für Modul: ${modulName}, Themenbereich: ${modul.themenbereich}`);
+        console.warn(`Keine CSS-Klasse für Modul: "${modulName}", Themenbereich: ${modul.themenbereich}, Kategorie: ${modul.kategorie}`);
       }
     });
+    
+    console.log("=== ENDE UPDATE MODULE COLORS ===");
   }
 
   removeColorClasses(element) {
@@ -108,24 +148,41 @@ window.StudiengangCustomClass = class CSEStudienplan extends StudienplanBase {
   }
 
   getModuleCssClass(modul) {
+    console.log(`getModuleCssClass für "${modul.name}"`);
+    console.log(`- Coloring Mode: ${this.coloringMode}`);
+    console.log(`- Themenbereich: ${modul.themenbereich}`);
+    console.log(`- Kategorie: ${modul.kategorie}`);
+    console.log(`- Prüfungsblock: ${modul.pruefungsblock}`);
+    
     if (this.coloringMode === "themenbereich") {
       // Zuerst themenbereich prüfen, dann kategorie als Fallback
-      const themenbereich = modul.themenbereich || modul.kategorie;
-      console.log(`Modul: ${modul.name}, Themenbereich: ${themenbereich}`);
-      return themenbereich;
+      let result = modul.themenbereich || modul.kategorie;
+      
+      // Spezielle Zuordnungen für Kategorien zu Themenbereichen
+      if (!result || result === "wissenschaftliche-arbeit") {
+        result = "sonstiges";
+      }
+      
+      console.log(`- Ergebnis: ${result}`);
+      return result;
     } else {
       // Standard Prüfungsblock-Logik
       if (modul.pruefungsblock && this.config.pruefungsbloecke) {
         const block = this.config.pruefungsbloecke.find(
           (b) => b.name === modul.pruefungsblock
         );
-        return block ? block.cssClass : null;
+        const result = block ? block.cssClass : null;
+        console.log(`- Prüfungsblock Ergebnis: ${result}`);
+        return result;
       }
 
       if (modul.kategorie && this.config.kategorieZuKlasse) {
-        return this.config.kategorieZuKlasse[modul.kategorie];
+        const result = this.config.kategorieZuKlasse[modul.kategorie];
+        console.log(`- Kategorie Ergebnis: ${result}`);
+        return result;
       }
 
+      console.log(`- Fallback Ergebnis: ${modul.kategorie}`);
       return modul.kategorie;
     }
   }
