@@ -123,6 +123,81 @@ window.StudiengangModuleDetails = {
             "• Macroeconomic indicators and their interpretation\n" +
             "• Economic policy analysis"
     },
+    "Principles of Microeconomics": {
+        kurzbeschreibung: "Basic principles, problems and approaches of microeconomics providing reflective and contextual knowledge on resource allocation",
+        inhalt:
+            "• Supply and demand analysis\n" +
+            "• Consumer demand (neoclassical and behavioral perspectives)\n" +
+            "• Cost of production\n" +
+            "• Welfare economics\n" +
+            "• Governmental policies analysis\n" +
+            "• Market failures and externalities\n" +
+            "• Public goods and tax systems\n" +
+            "• Market forms and structures\n" +
+            "• Firm and consumer behavior\n" +
+            "• Behavioral economics concepts\n" +
+            "• International trade\n" +
+            "• Mathematical applications to economic problems"
+    },
+    "Sustainability Economics": {
+        kurzbeschreibung: "Economic perspective and core tools for private and public sustainability management covering dynamic systems, trade-offs, and business/policy tools",
+        inhalt:
+            "• Standard sustainability definitions and measurement\n" +
+            "• Core trade-offs and sustainability challenges\n" +
+            "• Dynamic systems modeling\n" +
+            "• Consumer demand quantification for environmental goods\n" +
+            "• Sustainability investment costs and benefits\n" +
+            "• Environmental systems valuation methods\n" +
+            "• Cost-benefit analysis for sustainability\n" +
+            "• Private vs. public sector roles\n" +
+            "• Innovation's role in sustainability\n" +
+            "• Energy resources, climate change, biodiversity\n" +
+            "• Air pollution economics"
+    },
+    "Economic Growth, Cycles and Policy": {
+        kurzbeschreibung: "Core thinking devices and foundations in macroeconomics and monetary economics for understanding growth, cycles, crises and policy conduct",
+        inhalt:
+            "• IS-LM Model applications\n" +
+            "• Macroeconomic schools of thought\n" +
+            "• Consumption and investment analysis\n" +
+            "• Solow Growth Model\n" +
+            "• Money holding, inflation, and monetary policy\n" +
+            "• Market economy crises\n" +
+            "• Open economy analysis\n" +
+            "• Exchange rate theories\n" +
+            "• Economic growth drivers (short and long run)\n" +
+            "• Key macroeconomic variables and patterns\n" +
+            "• Fiscal policy conduct"
+    },
+    "Markets and Games": {
+        kurzbeschreibung: "Foundations of microeconomics covering markets and game theory with theoretical tools for analyzing strategic behavior in industrial organization",
+        inhalt:
+            "• Normal-form games\n" +
+            "• Extensive-form games\n" +
+            "• Strategic interactions analysis\n" +
+            "• Monopoly firm behavior\n" +
+            "• Market competition models\n" +
+            "• Collusion and mergers\n" +
+            "• Competition law applications\n" +
+            "• Market competition with innovation/R&D\n" +
+            "• Market competition with advertising\n" +
+            "• Firm and market behavior predictions\n" +
+            "• Market regulations benefits and costs"
+    },
+    "Accounting for Managers": {
+        kurzbeschreibung: "Introduction to financial and managerial accounting for students aspiring for business and management careers",
+        inhalt:
+            "• Basic accounting concepts and systems\n" +
+            "• Accounting cycle and reporting process\n" +
+            "• Financial statements analysis\n" +
+            "• Revenues, expenses, assets, liabilities, equities\n" +
+            "• Cost behavior and estimation\n" +
+            "• Cost-Volume-Profit (CVP) analyses\n" +
+            "• Relevant costing techniques\n" +
+            "• Budgeting processes\n" +
+            "• Standard costing systems\n" +
+            "• Managerial accounting decision-making"
+    },
     "Introduction to Finance": {
         kurzbeschreibung: "Fundamental financial decisions encountered by corporate managers and application of financial theory to real-world challenges",
         inhalt:
@@ -151,6 +226,50 @@ window.StudiengangModuleDetails = {
             "• Advanced financial risk assessment\n" +
             "• Integration of sustainability in financial decisions"
     },
+    "Management of Digital Transformation": {
+        kurzbeschreibung: "Overview of digital transformation within organizations, opportunities and management challenges in transforming to the digital age",
+        inhalt:
+            "• Digital transformation strategies\n" +
+            "• Business model patterns and platform companies\n" +
+            "• Subscription models\n" +
+            "• Organizing for digital transformation\n" +
+            "• Agile organization development\n" +
+            "• Digital transformation and technology\n" +
+            "• Future-proof infrastructure\n" +
+            "• Industry-specific digital transformation\n" +
+            "• Healthcare digital transformation\n" +
+            "• Automotive industry digitalization"
+    },
+    "Production and Operations Management": {
+        kurzbeschreibung: "Basic theories, principles, concepts, and techniques to design, analyze, and improve organizational operational capabilities",
+        inhalt:
+            "• Manufacturing strategy development\n" +
+            "• Forecasting and capacity planning\n" +
+            "• Process design and mapping analysis\n" +
+            "• Layout design and optimization\n" +
+            "• Industry 4.0 concepts\n" +
+            "• Information flow design\n" +
+            "• Material flow management\n" +
+            "• Logistics and supply chain management\n" +
+            "• Performance management systems\n" +
+            "• Quality management\n" +
+            "• Problem-solving tools and techniques"
+    },
+    "Strategic Supply Chain Management": {
+        kurzbeschreibung: "Theory and practice of supply chain management with development of supply chain strategies and networks based on competitive strategies",
+        inhalt:
+            "• Supply chain management importance for strategy\n" +
+            "• Supply chain optimization tools and methods\n" +
+            "• Supply chain network designs\n" +
+            "• Fundamental logistics and supply chain concepts\n" +
+            "• Trade-offs between efficiency and responsiveness\n" +
+            "• Facilities and inventory management\n" +
+            "• Transportation and logistics\n" +
+            "• Information infrastructure\n" +
+            "• Sourcing decisions and pricing\n" +
+            "• Forecasting methods\n" +
+            "• Network design modeling"
+    },
     "Operations Research": {
         kurzbeschreibung: "Introduction to operations research methods in management science and economics with practical, problem-solving perspective",
         inhalt:
@@ -166,6 +285,48 @@ window.StudiengangModuleDetails = {
             "• Revenue management\n" +
             "• Quantitative model integration in managerial decisions"
     },
+    "Economic Dynamics and Complexity": {
+        kurzbeschreibung: "Complex networks examination of systemic risk in financial markets and global supply networks through interactions among firms, institutions, and countries",
+        inhalt:
+            "• Complex networks foundations and economic relevance\n" +
+            "• Network metrics and economic interpretation\n" +
+            "• Economic systems as networks (input-output, financial, trade)\n" +
+            "• Game theory and strategic interactions on networks\n" +
+            "• Dynamic processes and resilience\n" +
+            "• Systemic risk characterization\n" +
+            "• Power, vulnerability, and resilience analysis\n" +
+            "• Contagion, diffusion, and growth simulation\n" +
+            "• Policy implications and network-based perspective\n" +
+            "• Python coding and real-world economic datasets"
+    },
+    "Empirical Methods in Management": {
+        kurzbeschreibung: "Understanding and conducting empirical research enabling evidence-based business management decision-making",
+        inhalt:
+            "• Basic principles of empirical studies\n" +
+            "• Research question formulation\n" +
+            "• Empirical study design\n" +
+            "• Qualitative and quantitative research methods\n" +
+            "• Interview conducting and evaluation\n" +
+            "• Measurement and scaling methods\n" +
+            "• Experimental design\n" +
+            "• Variance analysis\n" +
+            "• Statistical software usage (SPSS or R)\n" +
+            "• Data analysis using basic statistical approaches"
+    },
+    "Principles of Econometrics": {
+        kurzbeschreibung: "Fundamentals of econometrics covering simple and multiple regression analysis with emphasis on hypothesis testing and interpretation",
+        inhalt:
+            "• Different forms of data and their strengths/weaknesses\n" +
+            "• Economic policy questions into testable research hypotheses\n" +
+            "• STATA software applications\n" +
+            "• Threats to causal interpretations\n" +
+            "• Simple regression analysis\n" +
+            "• Multiple regression techniques\n" +
+            "• Hypothesis testing methods\n" +
+            "• Model fitting and reliability\n" +
+            "• Prediction precision\n" +
+            "• Assumptions for causal effects"
+    },
     "Social Data Science": {
         kurzbeschreibung: "Techniques to analyze human behavior and social interaction through digital traces with data retrieval, processing, and analysis",
         inhalt:
@@ -180,19 +341,42 @@ window.StudiengangModuleDetails = {
             "• Search trends and popularity analysis\n" +
             "• Twitter network analysis"
     },
-    "Management of Digital Transformation": {
-        kurzbeschreibung: "Overview of digital transformation within organizations, opportunities and management challenges in transforming to the digital age",
+    "Risk and Insurance Economics": {
+        kurzbeschreibung: "Individual decision-making under uncertainty covering risk attitudes, insurance demand and supply, information issues, and macroeconomic role of insurers",
         inhalt:
-            "• Digital transformation strategies\n" +
-            "• Business model patterns and platform companies\n" +
-            "• Subscription models\n" +
-            "• Organizing for digital transformation\n" +
-            "• Agile organization development\n" +
-            "• Digital transformation and technology\n" +
-            "• Future-proof infrastructure\n" +
-            "• Industry-specific digital transformation\n" +
-            "• Healthcare digital transformation\n" +
-            "• Automotive industry digitalization"
+            "• Risk-based decision making\n" +
+            "• Expected Utility theory vs. empirical behavior\n" +
+            "• Insurance purchase and provision rationale\n" +
+            "• Optimal insurance demand levels\n" +
+            "• Information asymmetries in insurance markets\n" +
+            "• Behavioral economics applications\n" +
+            "• Insurance regulation\n" +
+            "• Macroeconomic role of insurers\n" +
+            "• Decision theory refinements\n" +
+            "• Individual uncertainty decision-making"
+    },
+    "Semester Project Small": {
+        kurzbeschreibung: "Training in solution of specific engineering problems using technical and social skills from the master's program",
+        inhalt:
+            "• Specific engineering problem solving\n" +
+            "• Technical skills application\n" +
+            "• Social skills integration\n" +
+            "• Project planning and execution\n" +
+            "• Tutor guidance and mentoring\n" +
+            "• Roadmap development with students\n" +
+            "• Execution monitoring and evaluation"
+    },
+    "Semester Project Large": {
+        kurzbeschreibung: "Comprehensive training in solution of complex engineering problems using advanced technical and social skills from the master's program",
+        inhalt:
+            "• Complex engineering problem solving\n" +
+            "• Advanced technical skills application\n" +
+            "• Enhanced social skills integration\n" +
+            "• Extended project planning and execution\n" +
+            "• Comprehensive tutor guidance\n" +
+            "• Detailed roadmap development\n" +
+            "• Intensive execution monitoring\n" +
+            "• Advanced evaluation methodologies"
     },
     "Supplementary Courses": {
         kurzbeschreibung: "Complementary courses from various fields to broaden knowledge base and enhance interdisciplinary understanding",
