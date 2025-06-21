@@ -45,38 +45,44 @@
     <!-- Base JavaScript -->
     <script src="js/studienplan-base.js"></script>
     
+    <!-- Modularer Config Loader -->
+    <script src="js/modular-config-loader.js"></script>
+    
     <!-- Initialization Script -->
     <script>
         // URL Parameter auslesen um Studiengang zu bestimmen
         const urlParams = new URLSearchParams(window.location.search);
         const studiengang = urlParams.get('studiengang') || 'cs'; // Default: Computer Science
         
-        // Dynamisches Laden der Konfiguration
-        loadStudiengangConfig(studiengang);
+        console.log(`🎯 Studiengang aus URL: ${studiengang}`);
         
-        function loadStudiengangConfig(studiengang) {
-            // Konfigurationsdatei laden
-            const configScript = document.createElement('script');
-            configScript.src = `configs/${studiengang}-config.js`;
+        // Theme CSS laden
+        const themeCSS = document.getElementById('theme-css');
+        themeCSS.href = `css/themes/${studiengang}-theme.css`;
+        
+        // Optional: Custom CSS laden
+        const customCSS = document.getElementById('custom-css');
+        customCSS.href = `css/custom/${studiengang}-custom.css`;
+        
+        // Warten bis DOM geladen ist
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('📄 DOM geladen, starte Config-Loading...');
             
-            // Theme CSS laden
-            const themeCSS = document.getElementById('theme-css');
-            themeCSS.href = `css/themes/${studiengang}-theme.css`;
-            
-            // Optional: Custom CSS laden
-            const customCSS = document.getElementById('custom-css');
-            customCSS.href = `css/custom/${studiengang}-custom.css`;
-            
-            // Warten bis Konfiguration geladen ist
-            configScript.onload = function() {
-                if (window.StudiengangConfig) {
-                    initializeStudienplan(window.StudiengangConfig);
-                }
-            };
-            
-            // Script zum Head hinzufügen
-            document.head.appendChild(configScript);
-        }
+            // Modulare Konfiguration laden
+            if (typeof window.loadStudiengangConfig === 'function') {
+                window.loadStudiengangConfig(studiengang).then(config => {
+                    if (config) {
+                        console.log(`✅ Konfiguration für ${studiengang} erfolgreich geladen`);
+                    } else {
+                        console.error(`❌ Konfiguration für ${studiengang} konnte nicht geladen werden`);
+                    }
+                }).catch(error => {
+                    console.error(`💥 Fehler beim Laden der Konfiguration für ${studiengang}:`, error);
+                });
+            } else {
+                console.error('❌ loadStudiengangConfig Funktion nicht gefunden!');
+            }
+        });
     </script>
 </body>
 
