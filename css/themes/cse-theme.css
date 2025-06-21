@@ -3,53 +3,94 @@
 
 /* ==== PRÜFUNGSBLOCK FARBEN ==== */
 .basis1 {
-    background-color: #8064A2; /* Lila */
+    background-color: #8064A2;
+    /* Lila */
     color: white;
 }
 
 .basis2 {
-    background-color: #1F77B4; /* Blau */
+    background-color: #1F77B4;
+    /* Blau */
     color: white;
 }
 
 .block-g1 {
-    background-color: #8DC63F; /* Grün */
+    background-color: #8DC63F;
+    /* Grün */
     color: black;
 }
 
 .block-g2 {
-    background-color: #E671B8; /* Pink */
+    background-color: #E671B8;
+    /* Pink */
     color: white;
 }
 
 .block-g3 {
-    background-color: #4CAF50; /* Grün */
+    background-color: #4CAF50;
+    /* Grün */
     color: white;
 }
 
 .block-g4 {
-    background-color: #D32F2F; /* Rot */
+    background-color: #D32F2F;
+    /* Rot */
+    color: white;
+}
+
+/* ==== THEMENBEREICH FARBEN ==== */
+.physik {
+    background-color: #2196F3;
+    /* Blau für Physik */
+    color: white;
+}
+
+.informatik {
+    background-color: #4CAF50;
+    /* Grün für Informatik */
+    color: white;
+}
+
+.mathematik {
+    background-color: #FF9800;
+    /* Orange für Mathematik */
+    color: white;
+}
+
+.chemie {
+    background-color: #9C27B0;
+    /* Lila für Chemie */
+    color: white;
+}
+
+.sonstiges {
+    background-color: #795548;
+    /* Braun für Sonstiges */
     color: white;
 }
 
 /* ==== ANDERE KATEGORIEN ==== */
 .wissenschaftliche-arbeit {
-    background-color: #5D3A8E; /* Dunkel-Lila */
+    background-color: #5D3A8E;
+    /* Dunkel-Lila */
     color: white;
 }
 
 .kern {
-    background-color: #9BBB59; /* Hellgrün */
+    background-color: #9BBB59;
+    /* Hellgrün */
     color: black;
 }
 
 .wahl {
-    background-color: #F2B48F; /* Hellrot */
+    background-color: #F2B48F;
+    /* Hellrot */
     color: black;
 }
 
 .vertiefung {
-    background-color: #DD98DD; /* Helllila */
+    background-color: #DD98DD;
+    /* Helllila */
     color: black;
 }
 
@@ -171,7 +212,7 @@
         margin-left: 0;
         margin-top: 20px;
     }
-    
+
     .tooltip-container {
         width: 90%;
         max-width: 90%;
