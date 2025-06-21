@@ -93,6 +93,10 @@ window.StudiengangCustomClass = class CSEStudienplan extends StudienplanBase {
 
       // Alte CSS-Klassen entfernen
       this.removeColorClasses(modulEl);
+      
+      // WICHTIG: Inline-Styles auch entfernen!
+      modulEl.style.backgroundColor = '';
+      modulEl.style.color = '';
 
       // Neue CSS-Klasse hinzufügen
       const cssClass = this.getModuleCssClass(modul);
@@ -100,7 +104,7 @@ window.StudiengangCustomClass = class CSEStudienplan extends StudienplanBase {
         modulEl.classList.add(cssClass);
         console.log(`✓ Angewendete Klasse für "${modulName}": ${cssClass}`);
         
-        // Versuche auch, Inline-Styles zu setzen zur Sicherheit
+        // Nur im Themenbereich-Modus Inline-Styles als Backup setzen
         if (this.coloringMode === "themenbereich") {
           const colorMap = {
             'physik': '#2196F3',
