@@ -104,8 +104,8 @@ window.StudiengangCustomClass = class CSEStudienplan extends StudienplanBase {
         if (this.coloringMode === "themenbereich") {
           const colorMap = {
             'physik': '#2196F3',
-            'informatik': '#4CAF50', 
-            'mathematik': '#FF9800',
+            'informatik': '#2600ff', 
+            'mathematik': '#00a99d',
             'chemie': '#9C27B0',
             'sonstiges': '#795548'
           };
