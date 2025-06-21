@@ -99,7 +99,7 @@ window.StudiengangModuleDetails = {
             "  - Geschwindigkeitsgesetz und -konstante"
     },
     "Datenstrukturen und Algorithmen": {
-        kurzbeschreibung: "Der Kurs vermittelt die Grundlagen für den Entwurf und die Analyse von Algorithmen. Anhand klassischer Probleme werden gängige Datenstrukturen, Algorithmen und Paradigmen für den Algorithmenentwurf diskutiert.",
+        kurzbeschreibung: "Der Kurs vermittelt die Grundlagen für den Entwurf und die Analyse von Algorithmen. Anhand klassischer Probleme werden gängige Datenstrukturen, Algorithmen und Paradigmen für den Algorithmenentwurf diskutiert. Der Kurs umfasst auch eine Einführung in die parallele und nebenläufige Programmierung und das Programmiermodell von C++ wird eingehend diskutiert.",
         inhalt:
             "Mathematische Tools für die Analyse von Algorithmen:\n" +
             "• asymptotisches Funktionenwachstum\n" +
@@ -124,7 +124,26 @@ window.StudiengangModuleDetails = {
             "• balancierte Suchbäume\n" +
             "• Quad-Trees\n" +
             "• Heaps\n" +
-            "• Union-Find"
+            "• Union-Find\n" +
+            "Geometrische Probleme:\n" +
+            "• konvexe Hülle\n" +
+            "• Linienschnitte\n" +
+            "• dichteste Punktepaare\n" +
+            "Graphenalgorithmen:\n" +
+            "• Traversierungen\n" +
+            "• topologische Sortierung\n" +
+            "• transitive Hülle\n" +
+            "• kürzeste Pfade\n" +
+            "• minimale Spannbäume\n" +
+            "• maximaler Fluss\n" +
+            "Programmiermodell von C++:\n" +
+            "• korrekte und effiziente Speicherbehandlung\n" +
+            "• generische Programmierung mit Templates\n" +
+            "• funktionale Ansätze mit Funktoren und Lambda-Ausdrücken\n" +
+            "Parallele Programmierung:\n" +
+            "• Konzepte der parallelen Programmierung\n" +
+            "• Probleme der Nebenläufigkeit\n" +
+            "• Prozess-Synchronisation und Kommunikation"
     },
     "Informatik": {
         kurzbeschreibung: "Die Vorlesung bietet eine Einführung in das Programmieren mit einem Fokus auf systematischem algorithmischem Problemlösen. Lehrsprache ist C++.",
@@ -145,7 +164,7 @@ window.StudiengangModuleDetails = {
             "• dynamische Datentypen"
     },
     "Diskrete Mathematik": {
-        kurzbeschreibung: "Ziel ist die Einführung in die wichtigsten Grundbegriffe der diskreten Mathematik, das Verständnis der Rolle von Abstraktion und Beweisen sowie die Auseinandersetzung mit Anwendungen.",
+        kurzbeschreibung: "Ziel ist die Einführung in die wichtigsten Grundbegriffe der diskreten Mathematik, das Verständnis der Rolle von Abstraktion und Beweisen sowie die Auseinandersetzung mit Anwendungen, etwa aus der Kryptographie, Codierungstheorie und Algorithmentheorie.",
         inhalt:
             "• Mathematisches Denken und Beweise\n" +
             "• Abstraktion\n" +
@@ -166,7 +185,7 @@ window.StudiengangModuleDetails = {
             "• Beweiskalküle"
     },
     "Lineare Algebra": {
-        kurzbeschreibung: "Ziel ist der sichere Umgang mit grundlegenden Verfahren der linearen Algebra, insbesondere das Lösen linearer Gleichungssysteme.",
+        kurzbeschreibung: "Ziel ist der sichere Umgang mit grundlegenden Verfahren der linearen Algebra, insbesondere das Lösen linearer Gleichungssysteme, das Verständnis und die Anwendung von Vektor- und Matrixoperationen sowie die Nutzung von Zerlegungen, Eigenwertmethoden und linearen Abbildungen zur Analyse und Lösung mathematischer und technischer Probleme.",
         inhalt:
             "• Lineare Gleichungssysteme, Matrizen, Gauss-Elimination, LU- und QR-Zerlegungen\n" +
             "• Lineare Räume, Fundamentalsatz der linearen Algebra - Teil I, Basiswahl und Basiswechsel\n" +
@@ -178,7 +197,7 @@ window.StudiengangModuleDetails = {
             "• Singulärwertzerlegung und Fundamentalsatz der linearen Algebra, Anwendungen"
     },
     "Numerical Methods for Partial Differential Equations": {
-        kurzbeschreibung: "This course covers the derivation, properties, and practical implementation of fundamental numerical methods for solving key partial differential equations.",
+        kurzbeschreibung: "This course covers the derivation, properties, and practical implementation of fundamental numerical methods for solving key partial differential equations, including convection-diffusion, heat, and wave equations, as well as conservation laws. Emphasis is placed on efficient implementation in C++ using a finite element library, with a strong focus on understanding the mathematical foundations and selecting appropriate methods based on the characteristics of the PDE models.",
         inhalt:
             "• Second-order scalar elliptic boundary value problems\n" +
             "• Finite-element methods (FEM)\n" +
@@ -198,6 +217,9 @@ window.StudiengangModuleDetails = {
             "• diskrete Modelle\n" +
             "• Dichtefunktionen\n" +
             "• Produktmodelle\n" +
+            "• Zusammenhang zwischen den bisher betrachteten Modellen\n" +
+            "• Verteilungsfunktionen\n" +
+            "• Transformation von Wahrscheinlichkeitsverteilungen\n" +
             "Bedingte Wahrscheinlichkeiten:\n" +
             "• Definition und Beispiele\n" +
             "• Berechnung von absoluten aus bedingten Wahrscheinlichkeiten\n" +
@@ -229,7 +251,7 @@ window.StudiengangModuleDetails = {
             "• compressible flows"
     },
     "Statistische Physik und Computer Simulation": {
-        kurzbeschreibung: "Der Kurs vermittelt zentrale Prinzipien und Anwendungen der statistischen Mechanik, einschließlich Gleichgewichts-Molekulardynamik, Monte-Carlo-Verfahren, stochastischer Dynamik und Methoden zur Berechnung freier Energien.",
+        kurzbeschreibung: "Der Kurs vermittelt zentrale Prinzipien und Anwendungen der statistischen Mechanik, einschließlich Gleichgewichts-Molekulardynamik, Monte-Carlo-Verfahren, stochastischer Dynamik und Methoden zur Berechnung freier Energien. In den begleitenden Übungen werden Computersimulationsprogramme eingesetzt, um Ensembles zu erzeugen und statistische Mittelwerte zu bestimmen.",
         inhalt:
             "• Prinzipien und Anwendungen der statistischen Mechanik und Gleichgewichts-Molekulardynamik\n" +
             "• Monte-Carlo-Verfahren\n" +
@@ -243,7 +265,7 @@ window.StudiengangModuleDetails = {
             "• Modelling with mathematical optimization: applications of mathematical programming in engineering"
     },
     "Numerische Methoden für CSE": {
-        kurzbeschreibung: "The course gives an introduction into fundamental techniques and algorithms of numerical mathematics which play a central role in numerical simulations in science and technology.",
+        kurzbeschreibung: "The course gives an introduction into fundamental techniques and algorithms of numerical mathematics which play a central role in numerical simulations in science and technology. The course focuses on fundamental ideas and algorithmic aspects of numerical methods. The exercises involve actual implementation of numerical methods in C++.",
         inhalt:
             "• Computing with Matrices and Vectors\n" +
             "• Direct Methods for linear systems of equations\n" +
@@ -255,7 +277,7 @@ window.StudiengangModuleDetails = {
             "• Numerical Quadrature"
     },
     "Programmiertechniken für physikalische Simulationen": {
-        kurzbeschreibung: "This lecture provides an overview of programming techniques for scientific simulations. The focus is on basic and advanced C++ programming techniques and scientific software libraries.",
+        kurzbeschreibung: "This lecture provides an overview of programming techniques for scientific simulations. The focus is on basic and advanced C++ programming techniques and scientific software libraries. Based on an overview over the hardware components of PCs and supercomputer, optimization methods for scientific simulation codes are explained.",
         inhalt:
             "• Basic and advanced C++ programming techniques\n" +
             "• Scientific software libraries\n" +
@@ -263,7 +285,7 @@ window.StudiengangModuleDetails = {
             "• Optimization methods for scientific simulation codes"
     },
     "Systems Programming and Computer Architecture": {
-        kurzbeschreibung: "Introduction to systems programming. C and assembly language, floating point arithmetic, basic translation of C into assembler, compiler optimizations, manual optimizations.",
+        kurzbeschreibung: "Introduction to systems programming. C and assembly language, floating point arithmetic, basic translation of C into assembler, compiler optimizations, manual optimizations. How hardware features like superscalar architecture, exceptions and interrupts, caches, virtual memory, multicore processors, devices, and memory systems function and affect correctness, performance, and optimization.",
         inhalt:
             "Overview of modern computer systems as platforms for executing compiled programs\n" +
             "Programmer's perspective on:\n" +
@@ -275,7 +297,21 @@ window.StudiengangModuleDetails = {
             "• Cache memory and memory hierarchy\n" +
             "• Virtual memory systems\n" +
             "• Supervisor/kernel mode\n" +
-            "• Input/output structures"
+            "• Input/output structures\n" +
+            "Understanding the impact of:\n" +
+            "• Compiler optimizations\n" +
+            "• Operating system behavior\n" +
+            "• Hardware features on performance, scalability, and correctness\n" +
+            "Exposure to practical system-level issues:\n" +
+            "• Performance tuning and profiling\n" +
+            "• Portability and security\n" +
+            "• Robustness and extensibility of code\n" +
+            "Topics covered include:\n" +
+            "• Machine-level code and its generation by optimizing compilers\n" +
+            "• Address translation techniques\n" +
+            "• Input and output mechanisms\n" +
+            "• Trap and event handling\n" +
+            "• Performance evaluation and optimization"
     },
     "Software Engineering": {
         kurzbeschreibung: "This course introduces both theoretical and practical aspects of software engineering, all of which are applied in a substantial team project.",
