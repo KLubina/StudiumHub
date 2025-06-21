@@ -1,9 +1,8 @@
 /* ==== CSE THEME CSS ==== /
-/ Spezifische Farben und Styles für den CSE Studiengang */
-/* ==== PRÜFUNGSBLOCK FARBEN ==== /
+/* Spezifische Farben und Styles für den CSE Studiengang */
+/* ==== PRÜFUNGSBLOCK FARBEN ==== */
 .basis1 {
 background-color: #8064A2;
-/ Lila */
 color: white;
 }
 
@@ -37,10 +36,9 @@ color: white;
     color: white;
 }
 
-/* ==== THEMENBEREICH FARBEN ==== /
+/* ==== THEMENBEREICH FARBEN ==== */
 .physik {
 background-color: #2196F3;
-/ Blau für Physik */
 color: white;
 }
 
