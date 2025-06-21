@@ -223,6 +223,53 @@ color: white;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
+/* ==== THEMENBEREICH FARBEN FÜR LEGENDE - EXAKT GLEICHE FARBEN WIE MODULE ==== */
+.legende-item.physik {
+    background-color: #2196F3 !important;
+    color: white !important;
+}
+
+.legende-item.informatik {
+    background-color: #2600ff !important;
+    color: white !important;
+}
+
+.legende-item.mathematik {
+    background-color: #00a99d !important;
+    color: white !important;
+}
+
+.legende-item.chemie {
+    background-color: #9C27B0 !important;
+    color: white !important;
+}
+
+.legende-item.sonstiges {
+    background-color: #795548 !important;
+    color: white !important;
+}
+
+/* ==== LEGENDE FARBEN FÜR ANDERE KATEGORIEN ==== */
+.legende-item.wissenschaftliche-arbeit {
+    background-color: #5D3A8E !important;
+    color: white !important;
+}
+
+.legende-item.kern {
+    background-color: #9BBB59 !important;
+    color: black !important;
+}
+
+.legende-item.wahl {
+    background-color: #F2B48F !important;
+    color: black !important;
+}
+
+.legende-item.vertiefung {
+    background-color: #DD98DD !important;
+    color: black !important;
+}
+
 /* ==== RESPONSIVE ANPASSUNGEN ==== */
 @media (max-width: 768px) {
     .farben-legende {
