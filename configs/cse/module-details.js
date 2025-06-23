@@ -34,18 +34,18 @@ window.StudiengangModuleDetails = {
             "• nonlinear\n" +
             "• elliptic\n" +
             "• parabolic\n" +
-            "• hyperbolic\r\n\r\n\" +
+            "• hyperbolic\r\n\r\n" +
             "Quasilinear first order PDEs:\n" +
             "• Solution with the method of characteristics\n" +
-            "• Conservation laws\r\n\r\n\" +
+            "• Conservation laws\r\n\r\n" +
             "Hyperbolic PDEs:\n" +
             "• wave equation\n" +
             "• d'Alembert formula in (1+1)-dimensions\n" +
-            "• method of separation of variables\r\n\r\n\" +
+            "• method of separation of variables\r\n\r\n" +
             "Parabolic PDEs:\n" +
             "• heat equation\n" +
             "• maximum principle\n" +
-            "• method of separation of variables\r\n\r\n\" +
+            "• method of separation of variables\r\n\r\n" +
             "Elliptic PDEs:\n" +
             "• Laplace equation\n" +
             "• maximum principle\n" +
