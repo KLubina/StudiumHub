@@ -62,7 +62,7 @@ window.StudiengangModuleDetails = {
             "• Impulserhaltung\n" +
             "• Drehbewegungen\n" +
             "• Gravitation\n" +
-            "• deformierbare Körper\r\n\r\n\" +
+            "• deformierbare Körper\r\n\r\n" +
             "Schwingungen und Wellen:\n" +
             "• Schwingungen\n" +
             "• mechanische Wellen\n" +
