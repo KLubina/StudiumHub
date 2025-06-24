@@ -1,0 +1,199 @@
+/* ==== COMPUTER ENGINEERING THEME CSS ==== */
+/* Spezifische Farben und Styles für den Computer Engineering B.Sc. Studiengang (Aspira) */
+
+/* ==== MODUL-KATEGORIEN UND FARBEN ==== */
+.foundations {
+    background-color: #1F4E79;
+    color: white;
+}
+
+.programming {
+    background-color: #D83B01;
+    color: white;
+}
+
+.systems {
+    background-color: #038387;
+    color: white;
+}
+
+.webmobile {
+    background-color: #8764B8;
+    color: white;
+}
+
+.security {
+    background-color: #CA5010;
+    color: white;
+}
+
+.professional {
+    background-color: #486860;
+    color: white;
+}
+
+.project {
+    background-color: #0F3A4B;
+    color: white;
+}
+
+/* ==== HOVER EFFECTS ==== */
+.modul.foundations:hover {
+    background-color: #2f5f8a;
+}
+
+.modul.programming:hover {
+    background-color: #e94c12;
+}
+
+.modul.systems:hover {
+    background-color: #149498;
+}
+
+.modul.webmobile:hover {
+    background-color: #9775c9;
+}
+
+.modul.security:hover {
+    background-color: #db6121;
+}
+
+.modul.professional:hover {
+    background-color: #597971;
+}
+
+.modul.project:hover {
+    background-color: #204b5c;
+}
+
+/* ==== LEGENDE THEME ==== */
+.legende-item.foundations {
+    background-color: #1F4E79;
+    color: white;
+}
+
+.legende-item.programming {
+    background-color: #D83B01;
+    color: white;
+}
+
+.legende-item.systems {
+    background-color: #038387;
+    color: white;
+}
+
+.legende-item.webmobile {
+    background-color: #8764B8;
+    color: white;
+}
+
+.legende-item.security {
+    background-color: #CA5010;
+    color: white;
+}
+
+.legende-item.professional {
+    background-color: #486860;
+    color: white;
+}
+
+.legende-item.project {
+    background-color: #0F3A4B;
+    color: white;
+}
+
+/* ==== LAYOUT ANPASSUNGEN ==== */
+.farben-legende {
+    width: 380px;
+    margin-left: 20px;
+}
+
+.module-container {
+    gap: 3px;
+    min-height: auto;
+    margin-bottom: 15px;
+}
+
+.modul {
+    margin: 3px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* ==== SPEZIELLE MODULE ==== */
+.modul.large-module {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.25);
+}
+
+/* Final Project besonders hervorheben */
+.modul.project {
+    border: 2px solid rgba(255,255,255,0.3);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* Web & Mobile Module hervorheben */
+.modul.webmobile {
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+/* ==== SEMESTER-TITEL ANPASSUNGEN ==== */
+.jahr-titel {
+    color: #1F4E79;
+    border-bottom: 3px solid #038387;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* ==== ASPIRA UNIVERSITÄT SPEZIFISCHE ANPASSUNGEN ==== */
+h1 {
+    color: #1F4E79;
+}
+
+h2 {
+    color: #486860;
+}
+
+/* ==== RESPONSIVE ANPASSUNGEN ==== */
+@media (max-width: 768px) {
+    .farben-legende {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    
+    .module-container {
+        gap: 5px;
+    }
+    
+    .modul {
+        margin: 2px;
+    }
+}
+
+/* ==== SPEZIELLE TEXTBEHANDLUNG ==== */
+.modul-titel {
+    font-weight: 600;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    line-height: 1.1;
+}
+
+.modul-kp {
+    font-weight: 700;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+/* ==== UNIVERSITY BRANDING ==== */
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-top: 50px solid #038387;
+    opacity: 0.1;
+    pointer-events: none;
+}
