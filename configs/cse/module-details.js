@@ -34,18 +34,18 @@ window.StudiengangModuleDetails = {
             "• nonlinear\n" +
             "• elliptic\n" +
             "• parabolic\n" +
-            "• hyperbolic\n" +
+            "• hyperbolic\r\n\r\n" +
             "Quasilinear first order PDEs:\n" +
             "• Solution with the method of characteristics\n" +
-            "• Conservation laws\n" +
+            "• Conservation laws\r\n\r\n" +
             "Hyperbolic PDEs:\n" +
             "• wave equation\n" +
             "• d'Alembert formula in (1+1)-dimensions\n" +
-            "• method of separation of variables\n" +
+            "• method of separation of variables\r\n\r\n" +
             "Parabolic PDEs:\n" +
             "• heat equation\n" +
             "• maximum principle\n" +
-            "• method of separation of variables\n" +
+            "• method of separation of variables\r\n\r\n" +
             "Elliptic PDEs:\n" +
             "• Laplace equation\n" +
             "• maximum principle\n" +
@@ -62,7 +62,7 @@ window.StudiengangModuleDetails = {
             "• Impulserhaltung\n" +
             "• Drehbewegungen\n" +
             "• Gravitation\n" +
-            "• deformierbare Körper\n" +
+            "• deformierbare Körper\r\n\r\n" +
             "Schwingungen und Wellen:\n" +
             "• Schwingungen\n" +
             "• mechanische Wellen\n" +
@@ -104,42 +104,42 @@ window.StudiengangModuleDetails = {
             "Mathematische Tools für die Analyse von Algorithmen:\n" +
             "• asymptotisches Funktionenwachstum\n" +
             "• Rekursionsgleichungen\n" +
-            "• Rekursionsbäume\n" +
+            "• Rekursionsbäume\r\n\r\n" +
             "Informelle Beweise für die Korrektheit von Algorithmen:\n" +
             "• Invarianten\n" +
-            "• Codetransformation\n" +
+            "• Codetransformation\r\n\r\n" +
             "Entwurfsparadigmen für die Entwicklung von Algorithmen:\n" +
             "• Induktion\n" +
             "• Divide-and-Conquer\n" +
             "• Sweep-Line-Methode\n" +
             "• Backtracking\n" +
-            "• dynamische Programmierung\n" +
+            "• dynamische Programmierung\r\n\r\n" +
             "Klassische algorithmische Probleme:\n" +
             "• Suche\n" +
             "• Auswahl\n" +
-            "• Sortierung\n" +
+            "• Sortierung\r\n\r\n" +
             "Datenstrukturen für verschiedene Zwecke:\n" +
             "• verkettete Listen\n" +
             "• Hash-Tabellen\n" +
             "• balancierte Suchbäume\n" +
             "• Quad-Trees\n" +
             "• Heaps\n" +
-            "• Union-Find\n" +
+            "• Union-Find\r\n\r\n" +
             "Geometrische Probleme:\n" +
             "• konvexe Hülle\n" +
             "• Linienschnitte\n" +
-            "• dichteste Punktepaare\n" +
+            "• dichteste Punktepaare\r\n\r\n" +
             "Graphenalgorithmen:\n" +
             "• Traversierungen\n" +
             "• topologische Sortierung\n" +
             "• transitive Hülle\n" +
             "• kürzeste Pfade\n" +
             "• minimale Spannbäume\n" +
-            "• maximaler Fluss\n" +
+            "• maximaler Fluss\r\n\r\n" +
             "Programmiermodell von C++:\n" +
             "• korrekte und effiziente Speicherbehandlung\n" +
             "• generische Programmierung mit Templates\n" +
-            "• funktionale Ansätze mit Funktoren und Lambda-Ausdrücken\n" +
+            "• funktionale Ansätze mit Funktoren und Lambda-Ausdrücken\r\n\r\n" +
             "Parallele Programmierung:\n" +
             "• Konzepte der parallelen Programmierung\n" +
             "• Probleme der Nebenläufigkeit\n" +
@@ -156,7 +156,7 @@ window.StudiengangModuleDetails = {
             "• Funktionen\n" +
             "• Felder\n" +
             "• zusammengesetzte Strukturen\n" +
-            "• Zeiger\n" +
+            "• Zeiger\r\n\r\n" +
             "Objektorientierung:\n" +
             "• Klassen\n" +
             "• Vererbung\n" +
@@ -172,14 +172,14 @@ window.StudiengangModuleDetails = {
             "• Relationen (z.B. Äquivalenz- und Ordnungsrelationen)\n" +
             "• Funktionen\n" +
             "• (Un-)abzählbarkeit\n" +
-            "• Zahlentheorie\n" +
+            "• Zahlentheorie\r\n\r\n" +
             "Algebra:\n" +
             "• Gruppen\n" +
             "• Ringe\n" +
             "• Körper\n" +
             "• Polynome\n" +
             "• Unteralgebren\n" +
-            "• Morphismen\n" +
+            "• Morphismen\r\n\r\n" +
             "Logik:\n" +
             "• Aussagen- und Prädikatenlogik\n" +
             "• Beweiskalküle"
@@ -219,7 +219,7 @@ window.StudiengangModuleDetails = {
             "• Produktmodelle\n" +
             "• Zusammenhang zwischen den bisher betrachteten Modellen\n" +
             "• Verteilungsfunktionen\n" +
-            "• Transformation von Wahrscheinlichkeitsverteilungen\n" +
+            "• Transformation von Wahrscheinlichkeitsverteilungen\r\n\r\n" +
             "Bedingte Wahrscheinlichkeiten:\n" +
             "• Definition und Beispiele\n" +
             "• Berechnung von absoluten aus bedingten Wahrscheinlichkeiten\n" +
@@ -231,7 +231,7 @@ window.StudiengangModuleDetails = {
             "• Kovarianz und Korrelation\n" +
             "• lineare Prognosen\n" +
             "• Gesetz der grossen Zahlen\n" +
-            "• zentraler Grenzwertsatz\n" +
+            "• zentraler Grenzwertsatz\r\n\r\n" +
             "Einführung in die Statistik:\n" +
             "• Schätzung von Parametern\n" +
             "• Tests"
@@ -287,25 +287,25 @@ window.StudiengangModuleDetails = {
     "Systems Programming and Computer Architecture": {
         kurzbeschreibung: "Introduction to systems programming. C and assembly language, floating point arithmetic, basic translation of C into assembler, compiler optimizations, manual optimizations. How hardware features like superscalar architecture, exceptions and interrupts, caches, virtual memory, multicore processors, devices, and memory systems function and affect correctness, performance, and optimization.",
         inhalt:
-            "Overview of modern computer systems as platforms for executing compiled programs\n" +
+            "Overview of modern computer systems as platforms for executing compiled programs\r\n\r\n" +
             "Programmer's perspective on:\n" +
             "• Program execution\n" +
             "• Memory storage and management\n" +
-            "• System-level communication\n" +
+            "• System-level communication\r\n\r\n" +
             "Introduction to key architectural components:\n" +
             "• Processors and registers\n" +
             "• Cache memory and memory hierarchy\n" +
             "• Virtual memory systems\n" +
             "• Supervisor/kernel mode\n" +
-            "• Input/output structures\n" +
+            "• Input/output structures\r\n\r\n" +
             "Understanding the impact of:\n" +
             "• Compiler optimizations\n" +
             "• Operating system behavior\n" +
-            "• Hardware features on performance, scalability, and correctness\n" +
+            "• Hardware features on performance, scalability, and correctness\r\n\r\n" +
             "Exposure to practical system-level issues:\n" +
             "• Performance tuning and profiling\n" +
             "• Portability and security\n" +
-            "• Robustness and extensibility of code\n" +
+            "• Robustness and extensibility of code\r\n\r\n" +
             "Topics covered include:\n" +
             "• Machine-level code and its generation by optimizing compilers\n" +
             "• Address translation techniques\n" +
@@ -325,9 +325,9 @@ window.StudiengangModuleDetails = {
     "Design of High Performance Computing": {
         kurzbeschreibung: "Advanced topics in parallel and high-performance computing.",
         inhalt:
-            "• Comprehensive overview of high-performance computing (HPC) from hardware architecture to programming and algorithms\n" +
+            "• Comprehensive overview of high-performance computing (HPC) from hardware architecture to programming and algorithms\r\n\r\n" +
             "Introduction to:\n" +
-            "• Cache architectures and cache coherence in real-world systems\n" +
+            "• Cache architectures and cache coherence in real-world systems\r\n\r\n" +
             "Parallel programming concepts, including:\n" +
             "• Memory models\n" +
             "• Locks and lock-free programming techniques\n" +
