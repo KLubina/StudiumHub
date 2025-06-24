@@ -2,7 +2,11 @@ https://raw.githack.com/KLubina/StudiumHub/main/index.html
 
 # TODO
 
-Alle Informatik-FH-Studiengänge
+### Index-Seite verbesseren
+
+### Projekt-Struktur verbessern
+
+### Alle staatlichen Informatik-FH-Studiengänge
 https://www.berufsberatung.ch/dyn/show/16535
 - Berner Fachhochschule
 - Fachhochschule Graubünden
@@ -11,7 +15,7 @@ https://www.berufsberatung.ch/dyn/show/16535
 - OST - Ostschweizer Fachhochschule
 - Zürcher Hochschule für Angewandte Wissenschaften ZHAW
 
-Alle BWL-UH-Studiengänge
+### Alle staatlichen BWL-UH-Studiengänge
 https://www.berufsberatung.ch/dyn/show/210656
 - Uni Basel
 - Uni Bern
@@ -20,7 +24,7 @@ https://www.berufsberatung.ch/dyn/show/210656
 - Uni Neuenburg
 - Uni St.Gallen
 
-Alle Wirtschaftsinformatik-FH-Studiengänge
+### Alle staatlichen Wirtschaftsinformatik-FH-Studiengänge
 https://www.berufsberatung.ch/dyn/show/16729
 - Berner Fachhochschule
 - Fachhochschule Nordwestschweiz
