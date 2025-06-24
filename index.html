@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -117,6 +118,10 @@
             background-color: #2E86AB;
         }
 
+        .ce .card-header {
+            background-color: #1F4E79;
+        }
+
         .card-title {
             font-size: 1.5rem;
             margin-bottom: 0.5rem;
@@ -172,13 +177,14 @@
             .cards-container {
                 grid-template-columns: 1fr;
             }
-            
+
             h1 {
                 font-size: 2rem;
             }
         }
     </style>
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -189,7 +195,9 @@
 
     <div class="container">
         <div class="description">
-            <p>Willkommen auf dem Studienplan Hub! Hier findest du eine Übersicht aller Bachelor- und Master-Studienpläne mit detaillierten Modulbeschreibungen, Kreditpunkten und Farbkodierungen für verschiedene Fachbereiche.</p>
+            <p>Willkommen auf dem Studienplan Hub! Hier findest du eine Übersicht aller Bachelor- und
+                Master-Studienpläne mit detaillierten Modulbeschreibungen, Kreditpunkten und Farbkodierungen für
+                verschiedene Fachbereiche.</p>
         </div>
 
         <div class="cards-container">
@@ -201,7 +209,8 @@
                 </div>
                 <div class="card-body">
                     <p class="card-text">
-                        Studienplan für den Bachelor-Studiengang in Mathematik mit Modulen in Analysis, Algebra, Wahrscheinlichkeitstheorie und mehr.
+                        Studienplan für den Bachelor-Studiengang in Mathematik mit Modulen in Analysis, Algebra,
+                        Wahrscheinlichkeitstheorie und mehr.
                     </p>
                 </div>
                 <div class="card-footer">
@@ -217,7 +226,8 @@
                 </div>
                 <div class="card-body">
                     <p class="card-text">
-                        Studienplan für den interdisziplinären Bachelor in Computational Science and Engineering mit Fokus auf wissenschaftlichem Rechnen.
+                        Studienplan für den interdisziplinären Bachelor in Computational Science and Engineering mit
+                        Fokus auf wissenschaftlichem Rechnen.
                     </p>
                 </div>
                 <div class="card-footer">
@@ -233,7 +243,8 @@
                 </div>
                 <div class="card-body">
                     <p class="card-text">
-                        Studienplan für den Bachelor in Betriebswirtschaftslehre an der Universität St. Gallen (HSG) mit Management, Finanzen und mehr.
+                        Studienplan für den Bachelor in Betriebswirtschaftslehre an der Universität St. Gallen (HSG) mit
+                        Management, Finanzen und mehr.
                     </p>
                 </div>
                 <div class="card-footer">
@@ -249,7 +260,8 @@
                 </div>
                 <div class="card-body">
                     <p class="card-text">
-                        Studienplan für den Bachelor in Informatik mit Schwerpunkten in Algorithmen, Datenstrukturen, Software Engineering und mehr.
+                        Studienplan für den Bachelor in Informatik mit Schwerpunkten in Algorithmen, Datenstrukturen,
+                        Software Engineering und mehr.
                     </p>
                 </div>
                 <div class="card-footer">
@@ -265,7 +277,8 @@
                 </div>
                 <div class="card-body">
                     <p class="card-text">
-                        Studienplan für den Bachelor in Informationstechnologie und Elektrotechnik mit Modulen in Elektronik, Signalverarbeitung und mehr.
+                        Studienplan für den Bachelor in Informationstechnologie und Elektrotechnik mit Modulen in
+                        Elektronik, Signalverarbeitung und mehr.
                     </p>
                 </div>
                 <div class="card-footer">
@@ -281,17 +294,15 @@
                 </div>
                 <div class="card-body">
                     <p class="card-text">
-                        Studienplan für den Master in Management, Technology and Economics mit Modulen in Management, Strategie, Technologie, Finanzen und Wirtschaft.
+                        Studienplan für den Master in Management, Technology and Economics mit Modulen in Management,
+                        Strategie, Technologie, Finanzen und Wirtschaft.
                     </p>
                 </div>
                 <div class="card-footer">
                     <a href="studienplan-template.html?studiengang=mtec" class="btn">Zum Studienplan</a>
                 </div>
             </div>
-        </div>
-    </div>
-
-    <!-- Card for IT - Neue Karte hinzufügen nach MTEC und vor dem schließenden </div> Tag -->
+            <!-- Card for IT - Neue Karte hinzufügen nach MTEC und vor dem schließenden </div> Tag -->
             <div class="card it">
                 <div class="card-header">
                     <h2 class="card-title">BSc Information Technology</h2>
@@ -299,7 +310,8 @@
                 </div>
                 <div class="card-body">
                     <p class="card-text">
-                        Studienplan für den Bachelor in Information Technology mit Schwerpunkt Data Science, Programmierung, Software Engineering und mehr.
+                        Studienplan für den Bachelor in Information Technology mit Schwerpunkt Data Science,
+                        Programmierung, Software Engineering und mehr.
                     </p>
                 </div>
                 <div class="card-footer">
@@ -307,6 +319,24 @@
                 </div>
             </div>
 
+            <!-- Card for Computer Engineering (Aspira) - Nach IT hinzufügen -->
+            <div class="card ce">
+                <div class="card-header">
+                    <h2 class="card-title">BSc Computer Engineering (Aspira)</h2>
+                    <p class="card-subtitle">Bachelor of Science in Computer Engineering</p>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">
+                        Studienplan für den Bachelor in Computer Engineering der Aspira Universität mit Fokus auf
+                        Programmierung, Systeme, Web-Entwicklung und IT-Sicherheit.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <a href="studienplan-template.html?studiengang=ce" class="btn">Zum Studienplan</a>
+                </div>
+            </div>
+        </div>
+    </div>
     <footer>
         <div class="container">
             <p>&copy; 2025 Studienplan Hub | Alle Studienpläne in einem Überblick</p>
@@ -314,9 +344,10 @@
     </footer>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             console.log('Studienplan Hub loaded successfully!');
         });
     </script>
 </body>
+
 </html>
