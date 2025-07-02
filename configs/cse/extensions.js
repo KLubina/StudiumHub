@@ -187,13 +187,13 @@ window.StudiengangCustomClass = class CSEStudienplan extends StudienplanBase {
                 <div class="block-section" style="margin-bottom: 20px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
                     <h4 style="margin: 0 0 10px 0; color: #8064A2;">Basisprüfungsblock 1</h4>
                     <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 10px; align-items: center;">
-                        <label>Lineare Algebra:</label>
+                        <label>Lineare Algebra (33%):</label>
                         <input type="number" id="la" min="1" max="6" step="0.1" placeholder="Note" style="padding: 5px; border: 1px solid #ddd; border-radius: 4px;">
                         
-                        <label>Informatik:</label>
+                        <label>Informatik (33%):</label>
                         <input type="number" id="inf" min="1" max="6" step="0.1" placeholder="Note" style="padding: 5px; border: 1px solid #ddd; border-radius: 4px;">
                         
-                        <label>Diskrete Mathematik:</label>
+                        <label>Diskrete Mathematik (33%):</label>
                         <input type="number" id="dm" min="1" max="6" step="0.1" placeholder="Note" style="padding: 5px; border: 1px solid #ddd; border-radius: 4px;">
                     </div>
                     <div style="margin-top: 10px; font-weight: bold; color: #8064A2;">
@@ -205,25 +205,25 @@ window.StudiengangCustomClass = class CSEStudienplan extends StudienplanBase {
                 <div class="block-section" style="margin-bottom: 20px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
                     <h4 style="margin: 0 0 10px 0; color: #1F77B4;">Basisprüfungsblock 2</h4>
                     <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 10px; align-items: center;">
-                        <label>Analysis I:</label>
+                        <label>Analysis I (16%):</label>
                         <input type="number" id="ai" min="1" max="6" step="0.1" placeholder="Note" style="padding: 5px; border: 1px solid #ddd; border-radius: 4px;">
                         
-                        <label>Analysis II:</label>
+                        <label>Analysis II (16%):</label>
                         <input type="number" id="aii" min="1" max="6" step="0.1" placeholder="Note" style="padding: 5px; border: 1px solid #ddd; border-radius: 4px;">
                         
-                        <label>Physik I:</label>
+                        <label>Physik I (11%):</label>
                         <input type="number" id="phyi" min="1" max="6" step="0.1" placeholder="Note" style="padding: 5px; border: 1px solid #ddd; border-radius: 4px;">
                         
-                        <label>Physik II:</label>
+                        <label>Physik II (11%):</label>
                         <input type="number" id="phyii" min="1" max="6" step="0.1" placeholder="Note" style="padding: 5px; border: 1px solid #ddd; border-radius: 4px;">
                         
-                        <label>Komplexe Analysis:</label>
+                        <label>Komplexe Analysis (11%):</label>
                         <input type="number" id="ka" min="1" max="6" step="0.1" placeholder="Note" style="padding: 5px; border: 1px solid #ddd; border-radius: 4px;">
                         
-                        <label>Datenstrukturen & Algorithmen:</label>
+                        <label>Datenstrukturen & Algorithmen (22%):</label>
                         <input type="number" id="dsa" min="1" max="6" step="0.1" placeholder="Note" style="padding: 5px; border: 1px solid #ddd; border-radius: 4px;">
                         
-                        <label>Chemie:</label>
+                        <label>Chemie (11%):</label>
                         <input type="number" id="chem" min="1" max="6" step="0.1" placeholder="Note" style="padding: 5px; border: 1px solid #ddd; border-radius: 4px;">
                     </div>
                     <div style="margin-top: 10px; font-weight: bold; color: #1F77B4;">
@@ -235,13 +235,13 @@ window.StudiengangCustomClass = class CSEStudienplan extends StudienplanBase {
                 <div class="block-section" style="margin-bottom: 20px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
                     <h4 style="margin: 0 0 10px 0; color: #8DC63F;">Prüfungsblock G1</h4>
                     <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 10px; align-items: center;">
-                        <label>Analysis III:</label>
+                        <label>Analysis III (25%):</label>
                         <input type="number" id="aiii" min="1" max="6" step="0.1" placeholder="Note" style="padding: 5px; border: 1px solid #ddd; border-radius: 4px;">
                         
-                        <label>Mathematical Optimization:</label>
+                        <label>Mathematical Optimization (25%):</label>
                         <input type="number" id="mo" min="1" max="6" step="0.1" placeholder="Note" style="padding: 5px; border: 1px solid #ddd; border-radius: 4px;">
                         
-                        <label>Numerische Methoden CSE:</label>
+                        <label>Numerische Methoden CSE (50%):</label>
                         <input type="number" id="nmcse" min="1" max="6" step="0.1" placeholder="Note" style="padding: 5px; border: 1px solid #ddd; border-radius: 4px;">
                     </div>
                     <div style="margin-top: 10px; font-weight: bold; color: #8DC63F;">
@@ -253,10 +253,10 @@ window.StudiengangCustomClass = class CSEStudienplan extends StudienplanBase {
                 <div class="block-section" style="margin-bottom: 20px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
                     <h4 style="margin: 0 0 10px 0; color: #E671B8;">Prüfungsblock G2</h4>
                     <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 10px; align-items: center;">
-                        <label>Programmiertechniken phys. Sim.:</label>
+                        <label>Programmiertechniken phys. Sim. (50%):</label>
                         <input type="number" id="ps" min="1" max="6" step="0.1" placeholder="Note" style="padding: 5px; border: 1px solid #ddd; border-radius: 4px;">
                         
-                        <label>Systems Programming & CA:</label>
+                        <label>Systems Programming & CA (50%):</label>
                         <input type="number" id="spca" min="1" max="6" step="0.1" placeholder="Note" style="padding: 5px; border: 1px solid #ddd; border-radius: 4px;">
                     </div>
                     <div style="margin-top: 10px; font-weight: bold; color: #E671B8;">
@@ -268,10 +268,10 @@ window.StudiengangCustomClass = class CSEStudienplan extends StudienplanBase {
                 <div class="block-section" style="margin-bottom: 20px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
                     <h4 style="margin: 0 0 10px 0; color: #4CAF50;">Prüfungsblock G3</h4>
                     <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 10px; align-items: center;">
-                        <label>Numerical Methods PDE:</label>
+                        <label>Numerical Methods PDE (66%):</label>
                         <input type="number" id="nmpde" min="1" max="6" step="0.1" placeholder="Note" style="padding: 5px; border: 1px solid #ddd; border-radius: 4px;">
                         
-                        <label>Stochastik:</label>
+                        <label>Stochastik (33%):</label>
                         <input type="number" id="stoch" min="1" max="6" step="0.1" placeholder="Note" style="padding: 5px; border: 1px solid #ddd; border-radius: 4px;">
                     </div>
                     <div style="margin-top: 10px; font-weight: bold; color: #4CAF50;">
@@ -283,16 +283,16 @@ window.StudiengangCustomClass = class CSEStudienplan extends StudienplanBase {
                 <div class="block-section" style="margin-bottom: 20px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
                     <h4 style="margin: 0 0 10px 0; color: #D32F2F;">Prüfungsblock G4</h4>
                     <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 10px; align-items: center;">
-                        <label>Fluiddynamik I:</label>
+                        <label>Fluiddynamik I (25%):</label>
                         <input type="number" id="fdi" min="1" max="6" step="0.1" placeholder="Note" style="padding: 5px; border: 1px solid #ddd; border-radius: 4px;">
                         
-                        <label>Molekulare Quantenmechanik:</label>
+                        <label>Molekulare Quantenmechanik (25%):</label>
                         <input type="number" id="mq" min="1" max="6" step="0.1" placeholder="Note" style="padding: 5px; border: 1px solid #ddd; border-radius: 4px;">
                         
-                        <label>Physikalische Chemie III:</label>
+                        <label>Physikalische Chemie III (25%):</label>
                         <input type="number" id="pc" min="1" max="6" step="0.1" placeholder="Note" style="padding: 5px; border: 1px solid #ddd; border-radius: 4px;">
                         
-                        <label>Statistische Physik & CS:</label>
+                        <label>Statistische Physik & CS (25%):</label>
                         <input type="number" id="spcs" min="1" max="6" step="0.1" placeholder="Note" style="padding: 5px; border: 1px solid #ddd; border-radius: 4px;">
                     </div>
                     <div style="margin-top: 10px; font-weight: bold; color: #D32F2F;">
