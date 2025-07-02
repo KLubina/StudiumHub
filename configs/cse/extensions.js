@@ -317,26 +317,6 @@ window.StudiengangCustomClass = class CSEStudienplan extends StudienplanBase {
                     </div>
                 </div>
 
-                <div style="padding: 15px; background: #e8f5e8; border-radius: 8px; margin-bottom: 20px;">
-                    <h4 style="margin: 0 0 10px 0; color: #2e7d32;">💡 Tipps & Hinweise</h4>
-                    <ul style="margin: 0; padding-left: 20px; font-size: 14px;">
-                        <li>Noten zwischen 1.0 und 6.0 eingeben</li>
-                        <li>Leere Felder werden bei der Berechnung ignoriert</li>
-                        <li>Alle Module eines Blocks müssen bestanden sein</li>
-                        <li>Die Gewichtung entspricht den offiziellen ETH-Richtlinien</li>
-                    </ul>
-                </div>
-
-                <div style="padding: 15px; background: #fff3e0; border-radius: 8px; margin-bottom: 20px;">
-                    <h4 style="margin: 0 0 10px 0; color: #f57c00;">🎯 Schnell-Szenarien</h4>
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
-                        <button onclick="this.parentElement.parentElement.parentElement.parentElement.parentElement.querySelector('.cse-grade-calculator').fillScenario('good')" style="padding: 8px; background: #4caf50; color: white; border: none; border-radius: 4px; cursor: pointer;">Gute Noten (5.0)</button>
-                        <button onclick="this.parentElement.parentElement.parentElement.parentElement.parentElement.querySelector('.cse-grade-calculator').fillScenario('average')" style="padding: 8px; background: #ff9800; color: white; border: none; border-radius: 4px; cursor: pointer;">Durchschnitt (4.0)</button>
-                        <button onclick="this.parentElement.parentElement.parentElement.parentElement.parentElement.querySelector('.cse-grade-calculator').fillScenario('passing')" style="padding: 8px; background: #f44336; color: white; border: none; border-radius: 4px; cursor: pointer;">Grenzwertig (4.0)</button>
-                        <button onclick="this.parentElement.parentElement.parentElement.parentElement.parentElement.querySelector('.cse-grade-calculator').clearAll()" style="padding: 8px; background: #757575; color: white; border: none; border-radius: 4px; cursor: pointer;">Alles löschen</button>
-                    </div>
-                </div>
-
                 <div style="padding: 15px; background: #f3e5f5; border-radius: 8px;">
                     <h4 style="margin: 0 0 10px 0; color: #7b1fa2;">📊 Berechnungsformeln</h4>
                     <div style="font-size: 12px; font-family: monospace; line-height: 1.5;">
