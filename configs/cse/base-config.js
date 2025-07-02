@@ -51,7 +51,7 @@ window.StudiengangBaseConfig = {
             cssClass: "basis2"
         },
         {
-            name: "Prüfungsblock G1 (CSE)",
+            name: "Prüfungsblock G1",
             module: [
                 { name: "Analysis III", ng: 1 },
                 { name: "Introduction to Mathematical Optimization", ng: 1 },
@@ -60,7 +60,7 @@ window.StudiengangBaseConfig = {
             cssClass: "block-g1"
         },
         {
-            name: "Prüfungsblock G2 (CS)", 
+            name: "Prüfungsblock G2", 
             module: [
                 { name: "Programmiertechniken für physikalische Simulationen", ng: 1 },
                 { name: "Systems Programming and Computer Architecture", ng: 1 }
@@ -68,7 +68,7 @@ window.StudiengangBaseConfig = {
             cssClass: "block-g2"
         },
         {
-            name: "Prüfungsblock G3 (CSE)",
+            name: "Prüfungsblock G3",
             module: [
                 { name: "Numerical Methods for Partial Differential Equations", ng: 2 },
                 { name: "Stochastik", ng: 1 }
@@ -76,7 +76,7 @@ window.StudiengangBaseConfig = {
             cssClass: "block-g3"
         },
         {
-            name: "Prüfungsblock G4 (Physik und Chemie)",
+            name: "Prüfungsblock G4",
             module: [
                 { name: "Fluiddynamik I", ng: 1 },
                 { name: "Molekulare Quantenmechanik", ng: 1 },
