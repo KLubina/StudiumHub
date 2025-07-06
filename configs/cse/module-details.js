@@ -236,7 +236,7 @@ window.StudiengangModuleDetails = {
             "• Schätzung von Parametern\n" +
             "• Tests"
     },
-    "Fluiddynamik I": {
+    "Fluid Dynamics": {
         kurzbeschreibung: "An introduction to the physical and mathematical foundations of fluid dynamics is given.",
         inhalt:
             "• Dimensional analysis\n" +
@@ -404,23 +404,5 @@ window.StudiengangModuleDetails = {
             "• Routing algorithms\n" +
             "• Network security\n" +
             "• Quality of service"
-    },
-    "Molekulare Quantenmechanik": {
-        kurzbeschreibung: "Quantenmechanische Beschreibung molekularer Systeme",
-        inhalt:
-            "• Grundlagen der Quantenmechanik für Moleküle\n" +
-            "• Schrödinger-Gleichung für molekulare Systeme\n" +
-            "• Born-Oppenheimer-Näherung\n" +
-            "• Molekülorbitale\n" +
-            "• Elektronische Struktur von Molekülen"
-    },
-    "Physikalische Chemie III": {
-        kurzbeschreibung: "Vertiefung in die physikalische Chemie mit Fokus auf molekulare Quantenmechanik",
-        inhalt:
-            "• Quantenchemische Methoden\n" +
-            "• Molekulare Spektroskopie\n" +
-            "• Chemische Bindungstheorie\n" +
-            "• Reaktionskinetik\n" +
-            "• Thermodynamik molekularer Systeme"
     }
 };
