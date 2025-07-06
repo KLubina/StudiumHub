@@ -78,9 +78,7 @@ window.StudiengangBaseConfig = {
         {
             name: "Prüfungsblock G4",
             module: [
-                { name: "Fluiddynamik I", ng: 1 },
-                { name: "Molekulare Quantenmechanik", ng: 1 },
-                { name: "Physikalische Chemie III", ng: 1 },
+                { name: "Fluid Dynamics", ng: 1 },
                 { name: "Statistische Physik und Computer Simulation", ng: 1 }
             ],
             cssClass: "block-g4"

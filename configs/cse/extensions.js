@@ -283,16 +283,10 @@ window.StudiengangCustomClass = class CSEStudienplan extends StudienplanBase {
                 <div class="block-section" style="margin-bottom: 20px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
                     <h4 style="margin: 0 0 10px 0; color: #D32F2F;">Prüfungsblock G4</h4>
                     <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 10px; align-items: center;">
-                        <label>Fluiddynamik I (25%):</label>
+                        <label>Fluiddynamik I (50%):</label>
                         <input type="number" id="fdi" min="1" max="6" step="0.1" placeholder="Note" style="padding: 5px; border: 1px solid #ddd; border-radius: 4px;">
                         
-                        <label>Molekulare Quantenmechanik (25%):</label>
-                        <input type="number" id="mq" min="1" max="6" step="0.1" placeholder="Note" style="padding: 5px; border: 1px solid #ddd; border-radius: 4px;">
-                        
-                        <label>Physikalische Chemie III (25%):</label>
-                        <input type="number" id="pc" min="1" max="6" step="0.1" placeholder="Note" style="padding: 5px; border: 1px solid #ddd; border-radius: 4px;">
-                        
-                        <label>Statistische Physik & CS (25%):</label>
+                        <label>Statistische Physik & CS (50%):</label>
                         <input type="number" id="spcs" min="1" max="6" step="0.1" placeholder="Note" style="padding: 5px; border: 1px solid #ddd; border-radius: 4px;">
                     </div>
                     <div style="margin-top: 10px; font-weight: bold; color: #D32F2F;">
