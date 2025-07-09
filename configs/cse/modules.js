@@ -160,7 +160,7 @@ window.StudiengangModules = [
     },
     {
         jahr: 2,
-        name: "Fluid Dynamics",
+        name: "Fluid Dynamics I",
         kp: 8,
         pruefungsblock: "Prüfungsblock G4",
         ng: 1,
