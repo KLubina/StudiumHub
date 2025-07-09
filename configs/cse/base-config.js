@@ -44,7 +44,7 @@ window.StudiengangBaseConfig = {
             module: [
                 { name: "Analysis I und II", ng: 3 },
                 { name: "Physik I und II", ng: 2 },
-                { name: "Komplexe Analysis", ng: 1 },
+                { name: "Mathematische Methoden (ehem. Komplexe Analysis)", ng: 1 },
                 { name: "Datenstrukturen und Algorithmen", ng: 2 },
                 { name: "Chemie", ng: 1 }
             ],
@@ -71,14 +71,14 @@ window.StudiengangBaseConfig = {
             name: "Prüfungsblock G3",
             module: [
                 { name: "Numerical Methods for Partial Differential Equations", ng: 2 },
-                { name: "Stochastik", ng: 1 }
+                { name: "Wahrscheinlichkeitstheorie und Statistik (ehem. Stochastik)", ng: 1 }
             ],
             cssClass: "block-g3"
         },
         {
             name: "Prüfungsblock G4",
             module: [
-                { name: "Fluid Dynamics", ng: 1 },
+                { name: "Fluid Dynamics I", ng: 1 },
                 { name: "Statistische Physik und Computer Simulation", ng: 1 }
             ],
             cssClass: "block-g4"
