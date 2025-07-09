@@ -75,7 +75,7 @@ window.StudiengangModuleDetails = {
             "• Licht\n" +
             "• Einführung in die Moderne Physik"
     },
-    "Komplexe Analysis": {
+    "Mathematische Methoden (ehem. Komplexe Analysis)": {
         kurzbeschreibung: "Erwerb von einigen grundlegenden Werkzeugen der komplexen Analysis, sowie Verständnis und Anwendung Fourier- und Laplacetransformationen.",
         inhalt:
             "• Beispiele analytischer Funktionen\n" +
@@ -208,7 +208,7 @@ window.StudiengangModuleDetails = {
             "• Convection-diffusion problems\n" +
             "• Finite Elements for the Stokes Equation"
     },
-    "Stochastik": {
+    "Wahrscheinlichkeitstheorie und Statistik (ehem. Stochastik)": {
         kurzbeschreibung: "Wahrscheinlichkeitsmodelle und Anwendungen, Einführung in Schätztheorie und statistische Testtheorie",
         inhalt:
             "Der Begriff Wahrscheinlichkeitsraum und einige klassische Modelle:\n" +
@@ -236,7 +236,7 @@ window.StudiengangModuleDetails = {
             "• Schätzung von Parametern\n" +
             "• Tests"
     },
-    "Fluid Dynamics": {
+    "Fluid Dynamics I": {
         kurzbeschreibung: "An introduction to the physical and mathematical foundations of fluid dynamics is given.",
         inhalt:
             "• Dimensional analysis\n" +
