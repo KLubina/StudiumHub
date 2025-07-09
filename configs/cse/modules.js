@@ -60,7 +60,7 @@ window.StudiengangModules = [
     {
         jahr: 1,
         semester: 2,
-        name: "Komplexe Analysis",
+        name: "Mathematische Methoden (ehem. Komplexe Analysis)",
         kp: 4,
         pruefungsblock: "Basisprüfungsblock 2",
         ng: 1,
@@ -121,7 +121,7 @@ window.StudiengangModules = [
     },
     {
         jahr: 2,
-        name: "Stochastik",
+        name: "Wahrscheinlichkeitstheorie und Statistik (ehem. Stochastik)",
         kp: 4,
         pruefungsblock: "Prüfungsblock G3",
         ng: 1,
