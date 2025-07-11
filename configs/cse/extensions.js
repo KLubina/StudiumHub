@@ -16,26 +16,6 @@ window.StudiengangCustomClass = class CSEStudienplan extends StudienplanBase {
     this.addColoringModeControls();
   }
 
-  createTooltipContent(modulName) {
-    const fragment = super.createTooltipContent(modulName);
-    const details = this.config.moduleDetails[modulName];
-    if (details.vorlesungslink) {
-      const linkTitle = document.createElement("h4");
-      linkTitle.textContent = "Vorlesungsaufzeichnung";
-      fragment.appendChild(linkTitle);
-      const linkContainer = document.createElement("p");
-      const link = document.createElement("a");
-      link.href = details.vorlesungslink;
-      link.target = "_blank";
-      link.textContent = "Zur Vorlesung im ETH Videoportal";
-      link.style.color = "#0066cc";
-      link.style.textDecoration = "underline";
-      linkContainer.appendChild(link);
-      fragment.appendChild(linkContainer);
-    }
-    return fragment;
-  }
-
   addColoringModeControls() {
     // Radio Buttons für Färbung-Modus hinzufügen
     const legendContainer = document.querySelector(".farben-legende");
@@ -70,9 +50,7 @@ window.StudiengangCustomClass = class CSEStudienplan extends StudienplanBase {
     calculatorButton.style.textAlign = "center";
     calculatorButton.style.fontWeight = "bold";
     calculatorButton.innerHTML = "📊 Block-Prüfungen-Rechner";
-    calculatorButton.addEventListener("click", () =>
-      this.showGradeCalculator()
-    );
+    calculatorButton.addEventListener("click", () => this.showGradeCalculator());
     coloringControls.appendChild(calculatorButton);
 
     // Controls vor der Legende einfügen
@@ -94,37 +72,34 @@ window.StudiengangCustomClass = class CSEStudienplan extends StudienplanBase {
   updateModuleColors() {
     console.log("=== UPDATE MODULE COLORS ===");
     console.log("Coloring Mode:", this.coloringMode);
-
+    
     // Alle Module neu färben basierend auf dem gewählten Modus
     const moduleElements = document.querySelectorAll(".modul");
     console.log("Gefundene Module Elemente:", moduleElements.length);
-
+    
     moduleElements.forEach((modulEl, index) => {
       // Verschiedene Methoden zum Extrahieren des Modulnamens
       let modulName = "";
-
+      
       // Methode 1: Suche nach .modul-name
-      const modulNameElement = modulEl.querySelector(".modul-name");
+      const modulNameElement = modulEl.querySelector('.modul-name');
       if (modulNameElement) {
         modulName = modulNameElement.textContent.trim();
       } else {
         // Methode 2: Verwende den gesamten Text des Elements
         modulName = modulEl.textContent.trim();
         // Entferne KP-Angaben (z.B. "4 KP" am Anfang)
-        modulName = modulName.replace(/^\d+\s*KP\s*/i, "").trim();
+        modulName = modulName.replace(/^\d+\s*KP\s*/i, '').trim();
       }
-
+      
       console.log(`Element ${index}: "${modulName}"`);
-
+      
       // Entsprechendes Modul in den Daten finden
-      const modul = this.config.daten.find((m) => m.name === modulName);
-
+      const modul = this.config.daten.find(m => m.name === modulName);
+      
       if (!modul) {
         console.warn(`Modul nicht gefunden: "${modulName}"`);
-        console.log(
-          "Verfügbare Module:",
-          this.config.daten.map((m) => m.name)
-        );
+        console.log("Verfügbare Module:", this.config.daten.map(m => m.name));
         return;
       }
 
@@ -132,40 +107,38 @@ window.StudiengangCustomClass = class CSEStudienplan extends StudienplanBase {
 
       // Alte CSS-Klassen entfernen
       this.removeColorClasses(modulEl);
-
+      
       // WICHTIG: Inline-Styles auch entfernen!
-      modulEl.style.backgroundColor = "";
-      modulEl.style.color = "";
+      modulEl.style.backgroundColor = '';
+      modulEl.style.color = '';
 
       // Neue CSS-Klasse hinzufügen
       const cssClass = this.getModuleCssClass(modul);
       if (cssClass) {
         modulEl.classList.add(cssClass);
         console.log(`✓ Angewendete Klasse für "${modulName}": ${cssClass}`);
-
+        
         // Nur im Themenbereich-Modus Inline-Styles als Backup setzen
         if (this.coloringMode === "themenbereich") {
           const colorMap = {
-            physik: "#2196F3",
-            informatik: "#2600ff",
-            mathematik: "#00a99d",
-            chemie: "#9C27B0",
-            sonstiges: "#795548",
+            'physik': '#2196F3',
+            'informatik': '#2600ff', 
+            'mathematik': '#00a99d',
+            'chemie': '#9C27B0',
+            'sonstiges': '#795548'
           };
-
+          
           if (colorMap[cssClass]) {
             modulEl.style.backgroundColor = colorMap[cssClass];
-            modulEl.style.color = "white";
+            modulEl.style.color = 'white';
             console.log(`✓ Inline style gesetzt: ${colorMap[cssClass]}`);
           }
         }
       } else {
-        console.warn(
-          `Keine CSS-Klasse für Modul: "${modulName}", Themenbereich: ${modul.themenbereich}, Kategorie: ${modul.kategorie}`
-        );
+        console.warn(`Keine CSS-Klasse für Modul: "${modulName}", Themenbereich: ${modul.themenbereich}, Kategorie: ${modul.kategorie}`);
       }
     });
-
+    
     console.log("=== ENDE UPDATE MODULE COLORS ===");
   }
 
@@ -357,55 +330,55 @@ window.StudiengangCustomClass = class CSEStudienplan extends StudienplanBase {
     document.body.appendChild(modal);
 
     // Calculator-Klasse für einfachere Referenz
-    modal.classList.add("cse-grade-calculator");
+    modal.classList.add('cse-grade-calculator');
 
     // Event-Listener
     this.setupCalculatorEvents(modal);
 
     // Schließen-Funktionalität
-    const closeBtn = modal.querySelector("#close-calculator");
-    closeBtn.addEventListener("click", () => modal.remove());
-
-    modal.addEventListener("click", (e) => {
+    const closeBtn = modal.querySelector('#close-calculator');
+    closeBtn.addEventListener('click', () => modal.remove());
+    
+    modal.addEventListener('click', (e) => {
       if (e.target === modal) modal.remove();
     });
 
     // ESC-Taste zum Schließen
     const escHandler = (e) => {
-      if (e.key === "Escape") {
+      if (e.key === 'Escape') {
         modal.remove();
-        document.removeEventListener("keydown", escHandler);
+        document.removeEventListener('keydown', escHandler);
       }
     };
-    document.addEventListener("keydown", escHandler);
+    document.addEventListener('keydown', escHandler);
   }
 
   setupCalculatorEvents(modal) {
     // Alle Input-Felder
     const inputs = modal.querySelectorAll('input[type="number"]');
-
-    inputs.forEach((input) => {
-      input.addEventListener("input", () => this.calculateGrades(modal));
-      input.addEventListener("change", () => this.calculateGrades(modal));
+    
+    inputs.forEach(input => {
+      input.addEventListener('input', () => this.calculateGrades(modal));
+      input.addEventListener('change', () => this.calculateGrades(modal));
     });
 
     // Szenario-Funktionen
     modal.fillScenario = (type) => {
       const values = {
-        good: 5.0,
-        average: 4.0,
-        passing: 4.0,
+        'good': 5.0,
+        'average': 4.0,
+        'passing': 4.0
       };
-
-      inputs.forEach((input) => {
-        input.value = values[type] || "";
+      
+      inputs.forEach(input => {
+        input.value = values[type] || '';
       });
-
+      
       this.calculateGrades(modal);
     };
 
     modal.clearAll = () => {
-      inputs.forEach((input) => (input.value = ""));
+      inputs.forEach(input => input.value = '');
       this.calculateGrades(modal);
     };
   }
@@ -420,113 +393,99 @@ window.StudiengangCustomClass = class CSEStudienplan extends StudienplanBase {
 
     // Hilfsfunktion zum Formatieren von Ergebnissen
     const formatResult = (result) => {
-      if (result === null) return "-";
+      if (result === null) return '-';
       const formatted = result.toFixed(2);
-      const color =
-        result >= 5.5 ? "#2e7d32" : result >= 4.0 ? "#f57c00" : "#d32f2f";
+      const color = result >= 5.5 ? '#2e7d32' : result >= 4.0 ? '#f57c00' : '#d32f2f';
       return `<span style="color: ${color}; font-weight: bold;">${formatted}</span>`;
     };
 
     // BP1 Berechnung: ((1 x LA) + (1 x Inf) + (1 x DM))/3
-    const la = getValue("la");
-    const inf = getValue("inf");
-    const dm = getValue("dm");
-
+    const la = getValue('la');
+    const inf = getValue('inf');
+    const dm = getValue('dm');
+    
     let bp1 = null;
     if (la !== null && inf !== null && dm !== null) {
       bp1 = (la + inf + dm) / 3;
     }
 
     // BP2 Berechnung: (((AI + AII)/2) x 0.33) + (((PHYI + PHYII)/2) x 0.22) + (KA x 0.11) + (DSA x 0.22) + (Chem x 0.11)
-    const ai = getValue("ai");
-    const aii = getValue("aii");
-    const phyi = getValue("phyi");
-    const phyii = getValue("phyii");
-    const ka = getValue("ka");
-    const dsa = getValue("dsa");
-    const chem = getValue("chem");
+    const ai = getValue('ai');
+    const aii = getValue('aii');
+    const phyi = getValue('phyi');
+    const phyii = getValue('phyii');
+    const ka = getValue('ka');
+    const dsa = getValue('dsa');
+    const chem = getValue('chem');
 
     let bp2 = null;
-    if (
-      ai !== null &&
-      aii !== null &&
-      phyi !== null &&
-      phyii !== null &&
-      ka !== null &&
-      dsa !== null &&
-      chem !== null
-    ) {
+    if (ai !== null && aii !== null && phyi !== null && phyii !== null && ka !== null && dsa !== null && chem !== null) {
       const analysisAvg = (ai + aii) / 2;
       const physikAvg = (phyi + phyii) / 2;
-      bp2 =
-        analysisAvg * 0.33 +
-        physikAvg * 0.22 +
-        ka * 0.11 +
-        dsa * 0.22 +
-        chem * 0.11;
+      bp2 = (analysisAvg * 0.33) + (physikAvg * 0.22) + (ka * 0.11) + (dsa * 0.22) + (chem * 0.11);
     }
 
     // PB-G1 Berechnung: (AIII x 0.25) + (MO x 0.25) + (NM CSE x 0.5)
-    const aiii = getValue("aiii");
-    const mo = getValue("mo");
-    const nmcse = getValue("nmcse");
+    const aiii = getValue('aiii');
+    const mo = getValue('mo');
+    const nmcse = getValue('nmcse');
 
     let pbg1 = null;
     if (aiii !== null && mo !== null && nmcse !== null) {
-      pbg1 = aiii * 0.25 + mo * 0.25 + nmcse * 0.5;
+      pbg1 = (aiii * 0.25) + (mo * 0.25) + (nmcse * 0.5);
     }
 
     // PB-G2 Berechnung: (PS x 0.5) + (SPCA x 0.5)
-    const ps = getValue("ps");
-    const spca = getValue("spca");
+    const ps = getValue('ps');
+    const spca = getValue('spca');
 
     let pbg2 = null;
     if (ps !== null && spca !== null) {
-      pbg2 = ps * 0.5 + spca * 0.5;
+      pbg2 = (ps * 0.5) + (spca * 0.5);
     }
 
     // PB-G3 Berechnung: (NM PDE x 0.66) + (Stochastik x 0.33)
-    const nmpde = getValue("nmpde");
-    const stoch = getValue("stoch");
+    const nmpde = getValue('nmpde');
+    const stoch = getValue('stoch');
 
     let pbg3 = null;
     if (nmpde !== null && stoch !== null) {
-      pbg3 = nmpde * 0.66 + stoch * 0.33;
+      pbg3 = (nmpde * 0.66) + (stoch * 0.33);
     }
 
     // PB-G4 Berechnung: (FDI x 0.25) + (MQ x 0.25) + (PC x 0.25) + (SPCS x 0.25)
-    const fdi = getValue("fdi");
-    const mq = getValue("mq");
-    const pc = getValue("pc");
-    const spcs = getValue("spcs");
+    const fdi = getValue('fdi');
+    const mq = getValue('mq');
+    const pc = getValue('pc');
+    const spcs = getValue('spcs');
 
     let pbg4 = null;
     if (fdi !== null && mq !== null && pc !== null && spcs !== null) {
-      pbg4 = fdi * 0.25 + mq * 0.25 + pc * 0.25 + spcs * 0.25;
+      pbg4 = (fdi * 0.25) + (mq * 0.25) + (pc * 0.25) + (spcs * 0.25);
     }
 
     // Ergebnisse anzeigen
-    modal.querySelector("#bp1-result").innerHTML = formatResult(bp1);
-    modal.querySelector("#bp2-result").innerHTML = formatResult(bp2);
-    modal.querySelector("#pbg1-result").innerHTML = formatResult(pbg1);
-    modal.querySelector("#pbg2-result").innerHTML = formatResult(pbg2);
-    modal.querySelector("#pbg3-result").innerHTML = formatResult(pbg3);
-    modal.querySelector("#pbg4-result").innerHTML = formatResult(pbg4);
+    modal.querySelector('#bp1-result').innerHTML = formatResult(bp1);
+    modal.querySelector('#bp2-result').innerHTML = formatResult(bp2);
+    modal.querySelector('#pbg1-result').innerHTML = formatResult(pbg1);
+    modal.querySelector('#pbg2-result').innerHTML = formatResult(pbg2);
+    modal.querySelector('#pbg3-result').innerHTML = formatResult(pbg3);
+    modal.querySelector('#pbg4-result').innerHTML = formatResult(pbg4);
 
     // Gesamtübersicht
-    modal.querySelector("#display-bp1").innerHTML = formatResult(bp1);
-    modal.querySelector("#display-bp2").innerHTML = formatResult(bp2);
-    modal.querySelector("#display-pbg1").innerHTML = formatResult(pbg1);
-    modal.querySelector("#display-pbg2").innerHTML = formatResult(pbg2);
-    modal.querySelector("#display-pbg3").innerHTML = formatResult(pbg3);
-    modal.querySelector("#display-pbg4").innerHTML = formatResult(pbg4);
+    modal.querySelector('#display-bp1').innerHTML = formatResult(bp1);
+    modal.querySelector('#display-bp2').innerHTML = formatResult(bp2);
+    modal.querySelector('#display-pbg1').innerHTML = formatResult(pbg1);
+    modal.querySelector('#display-pbg2').innerHTML = formatResult(pbg2);
+    modal.querySelector('#display-pbg3').innerHTML = formatResult(pbg3);
+    modal.querySelector('#display-pbg4').innerHTML = formatResult(pbg4);
   }
 
   removeColorClasses(element) {
     // Alle Farbklassen entfernen
     const colorClasses = [
       "basis1",
-      "basis2",
+      "basis2", 
       "block-g1",
       "block-g2",
       "block-g3",
@@ -551,16 +510,16 @@ window.StudiengangCustomClass = class CSEStudienplan extends StudienplanBase {
     console.log(`- Themenbereich: ${modul.themenbereich}`);
     console.log(`- Kategorie: ${modul.kategorie}`);
     console.log(`- Prüfungsblock: ${modul.pruefungsblock}`);
-
+    
     if (this.coloringMode === "themenbereich") {
       // Zuerst themenbereich prüfen, dann kategorie als Fallback
       let result = modul.themenbereich || modul.kategorie;
-
+      
       // Spezielle Zuordnungen für Kategorien zu Themenbereichen
       if (!result || result === "wissenschaftliche-arbeit") {
         result = "sonstiges";
       }
-
+      
       console.log(`- Ergebnis: ${result}`);
       return result;
     } else {
