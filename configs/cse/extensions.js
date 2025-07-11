@@ -4,34 +4,104 @@
 /* ==== CSE-SPEZIFISCHE ERWEITERUNGEN ==== */
 // Erweiterte Klasse für CSE-spezifische Features
 window.StudiengangCustomClass = class CSEStudienplan extends StudienplanBase {
+  // Fügen Sie diese Eigenschaft zur CSEStudienplan-Klasse hinzu
   constructor(config) {
     super(config);
     this.isVertiefungsgebieteTooltipLocked = false;
     this.isWahlfaecherTooltipLocked = false;
-    this.coloringMode = "pruefungsblock"; // 'pruefungsblock' oder 'themenbereich'
+    this.isModuleTooltipLocked = false; // Neue Eigenschaft für Module-Tooltips
+    this.lockedModuleName = null; // Speichert den Namen des fixierten Moduls
+    this.coloringMode = "pruefungsblock";
   }
 
+  // Ersetzen Sie die showTooltip-Methode durch diese erweiterte Version
+  showTooltip(modulName, event) {
+    // Wenn ein anderer Modul-Tooltip fixiert ist und wir über ein neues Modul hovern
+    if (this.isModuleTooltipLocked && this.lockedModuleName !== modulName) {
+      return; // Nicht anzeigen, da ein anderer Tooltip fixiert ist
+    }
+
+    super.showTooltip(modulName, event);
+    const details = this.config.moduleDetails[modulName];
+    if (details && details.vorlesungslink) {
+      const tooltip = document.querySelector(".tooltip-content");
+
+      // Prüfen, ob der Vorlesungslink-Header bereits existiert
+      if (!tooltip.querySelector(".vorlesungslink-header")) {
+        const h4 = document.createElement("h4");
+        h4.className = "vorlesungslink-header";
+        h4.textContent = "Vorlesungsaufzeichnung";
+        const p = document.createElement("p");
+        const a = document.createElement("a");
+        a.href = details.vorlesungslink;
+        a.target = "_blank";
+        a.textContent = "Zur Vorlesung im ETH Videoportal";
+        p.appendChild(a);
+        tooltip.appendChild(h4);
+        tooltip.appendChild(p);
+      }
+    }
+  }
+
+  // Fügen Sie diese neue Methode zur CSEStudienplan-Klasse hinzu
   initialize() {
     super.initialize();
     this.addColoringModeControls();
+    this.addModuleClickEvents(); // Neue Methode aufrufen
   }
 
-  showTooltip(modulName, event){
-    super.showTooltip(modulName, event);
-    const details = this.config.moduleDetails[modulName];
-    if(details && details.vorlesungslink){
-      const tooltip = document.querySelector('.tooltip-content');
-      const h4 = document.createElement('h4');
-      h4.textContent = 'Vorlesungsaufzeichnung';
-      const p  = document.createElement('p');
-      const a  = document.createElement('a');
-      a.href   = details.vorlesungslink;
-      a.target = '_blank';
-      a.textContent = 'Zur Vorlesung im ETH Videoportal';
-      p.appendChild(a);
-      tooltip.appendChild(h4);
-      tooltip.appendChild(p);
-    }
+  // Neue Methode, um Klick-Events zu den Modulen hinzuzufügen
+  addModuleClickEvents() {
+    const moduleElements = document.querySelectorAll(".modul");
+    moduleElements.forEach((modulEl) => {
+      modulEl.addEventListener("click", (event) => {
+        // Modulname ermitteln
+        let modulName = "";
+        const modulNameElement = modulEl.querySelector(".modul-name");
+        if (modulNameElement) {
+          modulName = modulNameElement.textContent.trim();
+        } else {
+          modulName = modulEl.textContent.trim();
+          modulName = modulName.replace(/^\d+\s*KP\s*/i, "").trim();
+        }
+
+        // Tooltip-Status umschalten
+        if (this.isModuleTooltipLocked && this.lockedModuleName === modulName) {
+          this.isModuleTooltipLocked = false;
+          this.lockedModuleName = null;
+          this.hideTooltip();
+        } else {
+          this.isModuleTooltipLocked = true;
+          this.lockedModuleName = modulName;
+          this.showTooltip(modulName, event);
+
+          // Tooltip-Position anpassen
+          const tooltip = document.querySelector(".tooltip");
+          if (tooltip) {
+            // Optional: Positionierung anpassen, damit der Tooltip besser sichtbar ist
+            tooltip.style.position = "fixed";
+            tooltip.style.top = event.clientY + 10 + "px";
+            tooltip.style.left = event.clientX + 10 + "px";
+          }
+        }
+
+        // Event-Propagation stoppen
+        event.stopPropagation();
+      });
+    });
+
+    // Klick auf Dokument zum Schließen des fixierten Tooltips
+    document.addEventListener("click", (event) => {
+      if (
+        this.isModuleTooltipLocked &&
+        !event.target.closest(".modul") &&
+        !event.target.closest(".tooltip")
+      ) {
+        this.isModuleTooltipLocked = false;
+        this.lockedModuleName = null;
+        this.hideTooltip();
+      }
+    });
   }
 
   addColoringModeControls() {
