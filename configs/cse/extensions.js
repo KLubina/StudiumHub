@@ -16,24 +16,22 @@ window.StudiengangCustomClass = class CSEStudienplan extends StudienplanBase {
     this.addColoringModeControls();
   }
 
-  createTooltipContent(modulName) {
-    const fragment = super.createTooltipContent(modulName);
+  showTooltip(modulName, event){
+    super.showTooltip(modulName, event);
     const details = this.config.moduleDetails[modulName];
-    if (details.vorlesungslink) {
-      const linkTitle = document.createElement("h4");
-      linkTitle.textContent = "Vorlesungsaufzeichnung";
-      fragment.appendChild(linkTitle);
-      const linkContainer = document.createElement("p");
-      const link = document.createElement("a");
-      link.href = details.vorlesungslink;
-      link.target = "_blank";
-      link.textContent = "Zur Vorlesung im ETH Videoportal";
-      link.style.color = "#0066cc";
-      link.style.textDecoration = "underline";
-      linkContainer.appendChild(link);
-      fragment.appendChild(linkContainer);
+    if(details && details.vorlesungslink){
+      const tooltip = document.querySelector('.tooltip-content');
+      const h4 = document.createElement('h4');
+      h4.textContent = 'Vorlesungsaufzeichnung';
+      const p  = document.createElement('p');
+      const a  = document.createElement('a');
+      a.href   = details.vorlesungslink;
+      a.target = '_blank';
+      a.textContent = 'Zur Vorlesung im ETH Videoportal';
+      p.appendChild(a);
+      tooltip.appendChild(h4);
+      tooltip.appendChild(p);
     }
-    return fragment;
   }
 
   addColoringModeControls() {
