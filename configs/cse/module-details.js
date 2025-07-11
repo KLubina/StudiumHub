@@ -12,7 +12,8 @@ window.StudiengangModuleDetails = {
             "• Potenzreihen\n" +
             "• Stetige Abbildungen\n" +
             "• Differential- und Integralrechnung einer Variablen\n" +
-            "• Einführung in gewöhnliche Differentialgleichungen"
+            "• Einführung in gewöhnliche Differentialgleichungen",
+        vorlesungslink: "https://video.ethz.ch/lectures/d-math/2016/autumn/401-1261-07L/a65b10a4-c135-3bca-a4f5-c37d9f8b0913.html"
     },
     "Analysis II": {
         kurzbeschreibung: "Einführung in die mehrdimensionale Differential- und Integralrechnung",
@@ -22,7 +23,8 @@ window.StudiengangModuleDetails = {
             "• der Satz über implizite Funktionen\n" +
             "• Mehrfache Integrale\n" +
             "• Integration über Untermannigfaltigkeiten\n" +
-            "• Sätze von Gauss und Stokes"
+            "• Sätze von Gauss und Stokes",
+        vorlesungslink: "https://video.ethz.ch/lectures/d-math/2016/spring/401-1262-07L/e9902307-e2b7-44f3-8feb-115773280c13.html"
     },
     "Analysis III": {
         kurzbeschreibung: "In this lecture we treat problems in applied analysis. The focus lies on the solution of quasilinear first order PDEs with the method of characteristics, and on the study of three fundamental types of partial differential equations of second order.",
@@ -50,7 +52,8 @@ window.StudiengangModuleDetails = {
             "• Laplace equation\n" +
             "• maximum principle\n" +
             "• method of separation of variables\n" +
-            "• variational method"
+            "• variational method",
+        vorlesungslink: "https://video.ethz.ch/lectures/d-math/2015/autumn/401-0363-10L/a36b37a3-3ac0-4e47-8310-b79347db3717.html"
     },
     "Physik I": {
         kurzbeschreibung: "Einführung in die Denk- und Arbeitsweise in der Physik unter Zuhilfenahme von Demonstrationsexperimenten.",
@@ -66,14 +69,16 @@ window.StudiengangModuleDetails = {
             "Schwingungen und Wellen:\n" +
             "• Schwingungen\n" +
             "• mechanische Wellen\n" +
-            "• Akustik"
+            "• Akustik",
+        vorlesungslink: "https://video.ethz.ch/lectures/d-phys/2023/autumn/402-0083-00L.html"
     },
     "Physik II": {
         kurzbeschreibung: "Einführung in die Denk- und Arbeitsweise in der Physik unter Zuhilfenahme von Demonstrationsexperimenten.",
         inhalt:
             "• Elektrizität und Magnetismus\n" +
             "• Licht\n" +
-            "• Einführung in die Moderne Physik"
+            "• Einführung in die Moderne Physik",
+        vorlesungslink: "https://video.ethz.ch/lectures/d-phys/2017/spring/402-1782-00L.html"
     },
     "Mathematische Methoden (ehem. Komplexe Analysis)": {
         kurzbeschreibung: "Erwerb von einigen grundlegenden Werkzeugen der komplexen Analysis, sowie Verständnis und Anwendung Fourier- und Laplacetransformationen.",
@@ -161,7 +166,8 @@ window.StudiengangModuleDetails = {
             "• Klassen\n" +
             "• Vererbung\n" +
             "• Polymorphie\n" +
-            "• dynamische Datentypen"
+            "• dynamische Datentypen",
+        vorlesungslink: "https://video.ethz.ch/lectures/d-infk/2016/autumn/252-0847-00L.html"
     },
     "Diskrete Mathematik": {
         kurzbeschreibung: "Ziel ist die Einführung in die wichtigsten Grundbegriffe der diskreten Mathematik, das Verständnis der Rolle von Abstraktion und Beweisen sowie die Auseinandersetzung mit Anwendungen, etwa aus der Kryptographie, Codierungstheorie und Algorithmentheorie.",
@@ -194,7 +200,8 @@ window.StudiengangModuleDetails = {
             "• Lineare Ausgleichsrechnung\n" +
             "• Determinanten\n" +
             "• Eigenwerte und Eigenvektoren, Symmetrische Matrizen\n" +
-            "• Singulärwertzerlegung und Fundamentalsatz der linearen Algebra, Anwendungen"
+            "• Singulärwertzerlegung und Fundamentalsatz der linearen Algebra, Anwendungen",
+        vorlesungslink: "https://video.ethz.ch/lectures/d-math/2015/autumn/401-1151-00L/1707a212-2905-448f-b042-6eca940f6c93.html"
     },
     "Numerical Methods for Partial Differential Equations": {
         kurzbeschreibung: "This course covers the derivation, properties, and practical implementation of fundamental numerical methods for solving key partial differential equations, including convection-diffusion, heat, and wave equations, as well as conservation laws. Emphasis is placed on efficient implementation in C++ using a finite element library, with a strong focus on understanding the mathematical foundations and selecting appropriate methods based on the characteristics of the PDE models.",
@@ -206,7 +213,8 @@ window.StudiengangModuleDetails = {
             "• Non-linear elliptic boundary value problems\n" +
             "• Second-order linear evolution problems\n" +
             "• Convection-diffusion problems\n" +
-            "• Finite Elements for the Stokes Equation"
+            "• Finite Elements for the Stokes Equation",
+        vorlesungslink: "https://video.ethz.ch/lectures/d-math/2016/spring/401-0674-00L/09474fe0-ce1b-457c-8db7-fe94a77cf785.html"
     },
     "Wahrscheinlichkeitstheorie und Statistik (ehem. Stochastik)": {
         kurzbeschreibung: "Wahrscheinlichkeitsmodelle und Anwendungen, Einführung in Schätztheorie und statistische Testtheorie",
@@ -274,7 +282,8 @@ window.StudiengangModuleDetails = {
             "• Iterative Methods for non-linear systems of equations\n" +
             "• Filtering Algorithms\n" +
             "• Approximation of Functions\n" +
-            "• Numerical Quadrature"
+            "• Numerical Quadrature",
+        vorlesungslink: "https://video.ethz.ch/lectures/d-math/2016/autumn/401-0663-00L/1e9ea34b-4fc6-4dab-8e3b-dd21bfb732df.html"
     },
     "Programmiertechniken für physikalische Simulationen": {
         kurzbeschreibung: "This lecture provides an overview of programming techniques for scientific simulations. The focus is on basic and advanced C++ programming techniques and scientific software libraries. Based on an overview over the hardware components of PCs and supercomputer, optimization methods for scientific simulation codes are explained.",
@@ -282,7 +291,8 @@ window.StudiengangModuleDetails = {
             "• Basic and advanced C++ programming techniques\n" +
             "• Scientific software libraries\n" +
             "• Hardware components of PCs and supercomputers\n" +
-            "• Optimization methods for scientific simulation codes"
+            "• Optimization methods for scientific simulation codes",
+        vorlesungslink: "https://video.ethz.ch/lectures/d-phys/2012/autumn/402-0811-00L/3c96dea3-c234-4551-9770-9b6390661ebe.html"
     },
     "Systems Programming and Computer Architecture": {
         kurzbeschreibung: "Introduction to systems programming. C and assembly language, floating point arithmetic, basic translation of C into assembler, compiler optimizations, manual optimizations. How hardware features like superscalar architecture, exceptions and interrupts, caches, virtual memory, multicore processors, devices, and memory systems function and affect correctness, performance, and optimization.",
