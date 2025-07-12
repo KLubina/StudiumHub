@@ -528,6 +528,16 @@ checkCondition(modul, condition) {
     }
 
     createModuleContent(div, modul) {
+        // Video-Indikator hinzufügen, wenn Vorlesung verfügbar
+        const details = this.config.modulDetails && this.config.modulDetails[modul.name];
+        if (details && details.vorlesungslink) {
+            const videoIndicator = document.createElement('div');
+            videoIndicator.classList.add('video-indicator');
+            videoIndicator.innerHTML = '🎥';
+            videoIndicator.title = 'Vorlesungsvideo verfügbar';
+            div.appendChild(videoIndicator);
+        }
+        
         // KP/ECTS anzeigen
         const kpDiv = document.createElement('div');
         kpDiv.classList.add('modul-kp');
