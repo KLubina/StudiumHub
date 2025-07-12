@@ -679,6 +679,23 @@ checkCondition(modul, condition) {
                 inhalt.innerHTML = details.inhalt.replace(/\n/g, '<br>');
                 fragment.appendChild(inhalt);
             }
+            
+            // NEU: Vorlesungslink hinzufügen
+            if (details.vorlesungslink) {
+                const linkTitle = document.createElement('h4');
+                linkTitle.textContent = 'Vorlesungsaufzeichnung';
+                fragment.appendChild(linkTitle);
+                
+                const linkContainer = document.createElement('p');
+                const link = document.createElement('a');
+                link.href = details.vorlesungslink;
+                link.target = '_blank';
+                link.textContent = 'Zur Vorlesung auf video.ethz.ch';
+                link.style.color = '#0066cc';
+                link.style.textDecoration = 'underline';
+                linkContainer.appendChild(link);
+                fragment.appendChild(linkContainer);
+            }
         } else {
             const title = document.createElement('h3');
             title.textContent = modul.name;

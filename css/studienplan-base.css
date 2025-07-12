@@ -379,3 +379,31 @@ h2 {
     z-index: 100;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
+
+/* ==== VORLESUNGSLINK STYLES ==== */
+
+.tooltip-container a {
+    color: #0066cc;
+    text-decoration: underline;
+    transition: all 0.3s ease;
+}
+
+.tooltip-container a:hover {
+    color: #0052a3;
+    text-decoration: none;
+    background-color: rgba(0, 102, 204, 0.1);
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+.tooltip-container a:active {
+    color: #003d7a;
+}
+
+/* Icon für externe Links */
+.tooltip-container a::after {
+    content: " ↗";
+    font-size: 0.8em;
+    vertical-align: super;
+    opacity: 0.7;
+}
