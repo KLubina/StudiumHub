@@ -1,0 +1,128 @@
+/* ==== RIG THEME CSS ==== */
+/* Spezifische Farben und Styles für den Raumbezogene Ingenieurwissenschaften Studiengang */
+
+/* ==== MODUL-KATEGORIEN UND FARBEN basierend auf PDF ==== */
+.grundlagen {
+    background-color: #87CEEB;
+    color: black;
+}
+
+.obligatorisch {
+    background-color: #DC143C;
+    color: white;
+}
+
+.wahlmodule {
+    background-color: #FF6B6B;
+    color: white;
+}
+
+.freie-wahl {
+    background-color: #90EE90;
+    color: black;
+}
+
+.selbstaendig {
+    background-color: #696969;
+    color: white;
+}
+
+/* ==== HOVER EFFECTS ==== */
+.modul.grundlagen:hover {
+    background-color: #98d8fb;
+}
+
+.modul.obligatorisch:hover {
+    background-color: #e6244c;
+}
+
+.modul.wahlmodule:hover {
+    background-color: #ff7b7b;
+}
+
+.modul.freie-wahl:hover {
+    background-color: #a0f0a0;
+}
+
+.modul.selbstaendig:hover {
+    background-color: #797979;
+}
+
+/* ==== LEGENDE THEME ==== */
+.legende-item.grundlagen {
+    background-color: #87CEEB;
+    color: black;
+}
+
+.legende-item.obligatorisch {
+    background-color: #DC143C;
+    color: white;
+}
+
+.legende-item.wahlmodule {
+    background-color: #FF6B6B;
+    color: white;
+}
+
+.legende-item.freie-wahl {
+    background-color: #90EE90;
+    color: black;
+}
+
+.legende-item.selbstaendig {
+    background-color: #696969;
+    color: white;
+}
+
+/* ==== LAYOUT ANPASSUNGEN ==== */
+.farben-legende {
+    width: 350px;
+    margin-left: 20px;
+}
+
+.module-container {
+    gap: 3px;
+    min-height: auto;
+    margin-bottom: 15px;
+}
+
+.modul {
+    margin: 3px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+
+/* ==== SEMESTER-TITEL ANPASSUNGEN ==== */
+.jahr-titel {
+    color: #DC143C;
+    border-bottom: 3px solid #90EE90;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* ==== ETH ZÜRICH SPEZIFISCHE ANPASSUNGEN ==== */
+h1 {
+    color: #DC143C;
+}
+
+h2 {
+    color: #90EE90;
+}
+
+/* ==== RESPONSIVE ANPASSUNGEN ==== */
+@media (max-width: 768px) {
+    .farben-legende {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    
+    .module-container {
+        gap: 5px;
+    }
+    
+    .modul {
+        margin: 2px;
+    }
+}
