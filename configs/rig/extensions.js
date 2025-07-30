@@ -41,16 +41,16 @@ window.StudiengangCustomClass = class RIGStudienplan extends StudienplanBase {
                 <h4>Geodäsie und Satellitennavigation</h4>
                 <ul>
                     <li>Physikalische und kinematische Geodäsie – 6 KP</li>
-                    <li>Geodätische Messtechnik und Laserscanning – 6 KP</li>
-                    <li>Bildverarbeitung – 3 KP</li>
                     <li>Globale Satellitennavigationssysteme – 3 KP</li>
+                    <li>Geodätische Datenanalyse – 3 KP</li>
                     <li>Navigation – 3 KP</li>
                 </ul>
                 
                 <h4>Digitalisierung und 3D-Modellierung</h4>
                 <ul>
                     <li>Photogrammetrie – 6 KP</li>
-                    <li>Geodätische Datenanalyse – 3 KP</li>
+                    <li>Bildverarbeitung – 3 KP</li>
+                    <li>Geodätische Messtechnik und Laserscanning – 6 KP</li>
                 </ul>
                 
                 <h4>GIS und Kartografie</h4>
