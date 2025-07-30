@@ -49,23 +49,23 @@ window.StudiengangCustomClass = class RIGStudienplan extends StudienplanBase {
                 <h4>Digitalisierung und 3D-Modellierung</h4>
                 <ul>
                     <li>Photogrammetrie – 6 KP</li>
-                    <li>Bildverarbeitung – 3 KP</li>
                     <li>Geodätische Messtechnik und Laserscanning – 6 KP</li>
+                    <li>Bildverarbeitung – 3 KP</li>
                 </ul>
                 
                 <h4>GIS und Kartografie</h4>
                 <ul>
+                    <li>Kartografie II – 6 KP</li>
                     <li>Geoinformationstechnologien und -analysen – 6 KP</li>
                     <li>Projekt GIS & Kartografie – 3 KP</li>
-                    <li>Kartografie II – 6 KP</li>
                 </ul>
                 
                 <h4>Raum- und Umweltplanung</h4>
                 <ul>
-                    <li>Integrierte Raumentwicklung in Städten und Quartieren – 6 KP</li>
-                    <li>Angewandte Planung zur nachhaltigen Siedlungsentwicklung – 3 KP</li>
                     <li>Umweltplanung – 3 KP</li>
                     <li>Umweltverträglichkeitsprüfung – 3 KP</li>
+                    <li>Integrierte Raumentwicklung in Städten und Quartieren – 6 KP</li>
+                    <li>Angewandte Planung zur nachhaltigen Siedlungsentwicklung – 3 KP</li>
                 </ul>
                 
                 <h4>Verkehrssysteme</h4>
