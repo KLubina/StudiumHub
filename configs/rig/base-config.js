@@ -15,7 +15,7 @@ window.StudiengangBaseConfig = {
     defaultAspectRatio: 1.4,
     
     // Features
-    enableTooltips: false,
+    enableTooltips: true,  // Aktiviert für Wahlmodule-Tooltips
     enableHover: true,
     
     // Aspekt-Verhältnisse für verschiedene Module
@@ -29,7 +29,7 @@ window.StudiengangBaseConfig = {
     kategorien: [
         { name: "Grundlagenfächer Basisprüfung", klasse: "grundlagen" },
         { name: "Obligatorische Fächer, Prüfungsblöcke 1-3", klasse: "obligatorisch" },
-        { name: "Wahlmodule (3 aus 6)", klasse: "wahlmodule" },
+        { name: "Wahlmodule (3 aus 6)", klasse: "wahlmodule", hasTooltip: true },
         { name: "Freie Wahl + SIP", klasse: "freie-wahl" },
         { name: "Selbständige Arbeiten", klasse: "selbstaendig" }
     ],

@@ -125,4 +125,52 @@ h2 {
     .modul {
         margin: 2px;
     }
+
+    .tooltip-container {
+        width: 90%;
+        max-width: 90%;
+    }
+}
+
+/* ==== WAHLMODULE TOOLTIP STYLES ==== */
+.wahlmodule-liste {
+    max-height: 600px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.wahlmodule-liste h3 {
+    text-align: center;
+    margin-top: 0;
+    border-bottom: 2px solid #FF6B6B;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+.wahlmodule-liste h4 {
+    margin: 15px 0 8px 0;
+    padding: 3px 8px;
+    background-color: #FF6B6B;
+    color: white;
+    border-radius: 4px;
+}
+
+.wahlmodule-liste ul {
+    margin: 5px 0;
+    padding-left: 20px;
+}
+
+.wahlmodule-liste li {
+    padding: 2px 0;
+}
+
+/* ==== LEGENDE INTERAKTIVITÄT ==== */
+.legende-item.wahlmodule {
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+.legende-item.wahlmodule:hover {
+    transform: scale(1.02);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
