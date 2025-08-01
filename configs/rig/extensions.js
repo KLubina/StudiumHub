@@ -1,17 +1,14 @@
-/* ==== RIG DRAG & DROP EXTENSIONS ==== */
-/* Erweiterte Funktionalitäten für interaktive Studienplangestaltung */
+/* ==== RIG LEGENDE DRAG & DROP EXTENSIONS ==== */
+/* Drag & Drop direkt aus der Legende in die Wahlmodule-Boxen */
 
-/* ==== RIG-SPEZIFISCHE ERWEITERUNGEN MIT DRAG & DROP ==== */
 window.StudiengangCustomClass = class RIGStudienplan extends StudienplanBase {
     constructor(config) {
         super(config);
         this.isWahlmoduleTooltipLocked = false;
-        this.isDragDropMode = false;
-        this.selectedModules = this.loadSelectedModules();
-        this.maxKpPerSemester = 30;
-        this.semesterKpCounts = {};
+        this.selectedWahlmodule = this.loadSelectedWahlmodule();
+        this.maxWahlmoduleKp = { 4: 18, 5: 15, 6: 12 }; // Pro Semester
         
-        // Definiere verfügbare Wahlmodule basierend auf den Bereichen
+        // Definiere verfügbare Wahlmodule
         this.wahlmoduleBereiche = {
             "Geodäsie und Satellitennavigation": [
                 { name: "Physikalische und kinematische Geodäsie", kp: 6, kategorie: "wahlmodule" },
@@ -49,589 +46,400 @@ window.StudiengangCustomClass = class RIGStudienplan extends StudienplanBase {
                 { name: "Perspekt. auf Landschaft und urbane Transf. II", kp: 2, kategorie: "wahlmodule" }
             ]
         };
-        
-        // Freie Wahl Module Beispiele
-        this.freieWahlModule = [
-            { name: "Fremdsprachen", kp: 3, kategorie: "freie-wahl" },
-            { name: "Science in Perspective I", kp: 2, kategorie: "freie-wahl" },
-            { name: "Science in Perspective II", kp: 3, kategorie: "freie-wahl" },
-            { name: "Entrepreneurship", kp: 2, kategorie: "freie-wahl" },
-            { name: "Zusatzmodul Mathematik", kp: 4, kategorie: "freie-wahl" },
-            { name: "Wissenschaftliches Schreiben", kp: 2, kategorie: "freie-wahl" }
-        ];
     }
 
     initialize() {
         super.initialize();
-        this.addDragDropControls();
-        this.updateKpCounts();
+        this.makeWahlmoduleDroppable();
+        this.updateWahlmoduleDisplay();
+        this.addWahlmoduleControls();
     }
 
-    addDragDropControls() {
-        // Toggle Button für Drag & Drop Modus
+    addWahlmoduleControls() {
+        // Kontrollen für Wahlmodule-Management
         const legendContainer = document.querySelector(".farben-legende");
-
-        const dragDropControls = document.createElement("div");
-        dragDropControls.style.marginBottom = "20px";
-        dragDropControls.style.padding = "15px";
-        dragDropControls.style.backgroundColor = "#f8f9fa";
-        dragDropControls.style.borderRadius = "8px";
-        dragDropControls.style.border = "2px solid #DC143C";
         
-        dragDropControls.innerHTML = `
-            <div style="text-align: center; margin-bottom: 15px;">
-                <h3 style="margin: 0 0 10px 0; color: #DC143C;">🎯 Studienplan Designer</h3>
-                <button id="toggle-dragdrop" style="
-                    background: #DC143C; 
-                    color: white; 
-                    border: none; 
-                    padding: 10px 20px; 
-                    border-radius: 5px; 
-                    cursor: pointer;
-                    font-weight: bold;
-                    font-size: 14px;
-                ">
-                    📝 Meinen Studienplan erstellen
-                </button>
-            </div>
-            
-            <div id="dragdrop-info" style="display: none; font-size: 12px; color: #666; text-align: center;">
-                <p style="margin: 5px 0;">
-                    💡 <strong>Ziehe Module per Drag & Drop in deinen Studienplan!</strong><br>
-                    📊 Wahlmodule: <span id="selected-wahlmodule">0</span> von 3 Bereichen<br>
-                    📚 Freie Wahl: <span id="selected-freie-wahl">0</span> KP von 15 KP
-                </p>
-                <div style="margin-top: 10px;">
-                    <button id="save-plan" style="background: #28a745; color: white; border: none; padding: 5px 15px; border-radius: 3px; cursor: pointer; margin-right: 5px;">💾 Speichern</button>
-                    <button id="load-plan" style="background: #007bff; color: white; border: none; padding: 5px 15px; border-radius: 3px; cursor: pointer; margin-right: 5px;">📂 Laden</button>
-                    <button id="reset-plan" style="background: #dc3545; color: white; border: none; padding: 5px 15px; border-radius: 3px; cursor: pointer;">🔄 Reset</button>
+        const wahlmoduleControls = document.createElement("div");
+        wahlmoduleControls.style.marginBottom = "15px";
+        wahlmoduleControls.style.padding = "10px";
+        wahlmoduleControls.style.backgroundColor = "#fff8f8";
+        wahlmoduleControls.style.borderRadius = "5px";
+        wahlmoduleControls.style.border = "2px solid #FF6B6B";
+        
+        wahlmoduleControls.innerHTML = `
+            <div style="text-align: center; margin-bottom: 10px;">
+                <h4 style="margin: 0 0 8px 0; color: #DC143C;">🎯 Wahlmodule Designer</h4>
+                <div style="font-size: 12px; color: #666;">
+                    💡 <strong>Ziehe Module aus der Legende direkt in deine Wahlmodule-Boxen!</strong><br>
+                    📊 Gewählte Bereiche: <span id="selected-bereiche-count">0</span> von 3<br>
+                    📚 Gewählte KP: <span id="selected-kp-count">0</span> von 45 KP
+                </div>
+                <div style="margin-top: 8px;">
+                    <button id="save-wahlmodule" style="background: #28a745; color: white; border: none; padding: 5px 12px; border-radius: 3px; cursor: pointer; margin-right: 5px; font-size: 11px;">💾 Speichern</button>
+                    <button id="reset-wahlmodule" style="background: #dc3545; color: white; border: none; padding: 5px 12px; border-radius: 3px; cursor: pointer; font-size: 11px;">🔄 Reset</button>
                 </div>
             </div>
         `;
 
-        legendContainer.insertBefore(dragDropControls, legendContainer.firstChild);
+        legendContainer.insertBefore(wahlmoduleControls, legendContainer.firstChild);
 
         // Event Listeners
-        document.getElementById('toggle-dragdrop').addEventListener('click', () => {
-            this.toggleDragDropMode();
+        document.getElementById('save-wahlmodule').addEventListener('click', () => {
+            this.exportWahlmodule();
         });
 
-        document.getElementById('save-plan').addEventListener('click', () => {
-            this.saveStudienplan();
-        });
-
-        document.getElementById('load-plan').addEventListener('click', () => {
-            this.loadStudienplan();
-        });
-
-        document.getElementById('reset-plan').addEventListener('click', () => {
-            this.resetStudienplan();
+        document.getElementById('reset-wahlmodule').addEventListener('click', () => {
+            this.resetWahlmodule();
         });
     }
 
-    toggleDragDropMode() {
-        this.isDragDropMode = !this.isDragDropMode;
-        const button = document.getElementById('toggle-dragdrop');
-        const info = document.getElementById('dragdrop-info');
-        
-        if (this.isDragDropMode) {
-            button.textContent = '👁️ Normale Ansicht';
-            button.style.background = '#28a745';
-            info.style.display = 'block';
-            this.showDragDropInterface();
-        } else {
-            button.textContent = '📝 Meinen Studienplan erstellen';
-            button.style.background = '#DC143C';
-            info.style.display = 'none';
-            this.showNormalInterface();
-        }
+    makeWahlmoduleDroppable() {
+        // Finde alle Wahlmodule-Boxen im Studienplan
+        const wahlmoduleBoxes = document.querySelectorAll('.modul').forEach(modulEl => {
+            const modulName = this.getModuleName(modulEl);
+            if (modulName === 'Wahlmodule') {
+                this.setupWahlmoduleDropZone(modulEl);
+            }
+        });
     }
 
-    showDragDropInterface() {
-        const container = document.getElementById('studienplan');
-        container.innerHTML = '';
+    setupWahlmoduleDropZone(wahlmoduleBox) {
+        wahlmoduleBox.style.position = 'relative';
+        wahlmoduleBox.classList.add('wahlmodule-dropzone');
         
-        // Zwei-Spalten Layout
-        const mainContainer = document.createElement('div');
-        mainContainer.style.display = 'flex';
-        mainContainer.style.gap = '20px';
-        mainContainer.style.height = '80vh';
-        
-        // Linke Spalte: Verfügbare Module
-        const availableSection = document.createElement('div');
-        availableSection.style.flex = '1';
-        availableSection.style.overflowY = 'auto';
-        availableSection.style.border = '2px solid #90EE90';
-        availableSection.style.borderRadius = '8px';
-        availableSection.style.padding = '15px';
-        availableSection.style.backgroundColor = '#f8fff8';
-        
-        const availableTitle = document.createElement('h3');
-        availableTitle.textContent = '📚 Verfügbare Module';
-        availableTitle.style.margin = '0 0 15px 0';
-        availableTitle.style.color = '#2d5a2d';
-        availableSection.appendChild(availableTitle);
-        
-        this.createAvailableModules(availableSection);
-        
-        // Rechte Spalte: Mein Studienplan
-        const planSection = document.createElement('div');
-        planSection.style.flex = '1';
-        planSection.style.overflowY = 'auto';
-        planSection.style.border = '2px solid #DC143C';
-        planSection.style.borderRadius = '8px';
-        planSection.style.padding = '15px';
-        planSection.style.backgroundColor = '#fff8f8';
-        
-        const planTitle = document.createElement('h3');
-        planTitle.textContent = '🎯 Mein Studienplan';
-        planTitle.style.margin = '0 0 15px 0';
-        planTitle.style.color = '#8B0000';
-        planSection.appendChild(planTitle);
-        
-        this.createMyStudienplan(planSection);
-        
-        mainContainer.appendChild(availableSection);
-        mainContainer.appendChild(planSection);
-        container.appendChild(mainContainer);
-        
-        this.updateKpCounts();
-    }
-
-    createAvailableModules(container) {
-        // Wahlmodule Bereiche
-        const wahlmoduleTitle = document.createElement('h4');
-        wahlmoduleTitle.textContent = '🔧 Wahlmodule (wähle 3 aus 6 Bereichen)';
-        wahlmoduleTitle.style.color = '#FF6B6B';
-        container.appendChild(wahlmoduleTitle);
-        
-        Object.entries(this.wahlmoduleBereiche).forEach(([bereich, module]) => {
-            const bereichDiv = document.createElement('div');
-            bereichDiv.style.marginBottom = '15px';
-            bereichDiv.style.padding = '10px';
-            bereichDiv.style.backgroundColor = '#fff';
-            bereichDiv.style.borderRadius = '5px';
-            bereichDiv.style.border = '1px solid #ddd';
-            
-            const bereichTitle = document.createElement('h5');
-            bereichTitle.textContent = bereich;
-            bereichTitle.style.margin = '0 0 8px 0';
-            bereichTitle.style.color = '#333';
-            bereichDiv.appendChild(bereichTitle);
-            
-            const moduleContainer = document.createElement('div');
-            moduleContainer.style.display = 'flex';
-            moduleContainer.style.flexWrap = 'wrap';
-            moduleContainer.style.gap = '5px';
-            
-            module.forEach(modul => {
-                if (!this.isModuleSelected(modul.name)) {
-                    const modulDiv = this.createDraggableModule(modul, 'available');
-                    moduleContainer.appendChild(modulDiv);
-                }
-            });
-            
-            bereichDiv.appendChild(moduleContainer);
-            container.appendChild(bereichDiv);
+        // Drop Events
+        wahlmoduleBox.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            wahlmoduleBox.style.borderColor = '#28a745';
+            wahlmoduleBox.style.backgroundColor = 'rgba(40, 167, 69, 0.1)';
+            wahlmoduleBox.style.transform = 'scale(1.05)';
         });
         
-        // Freie Wahl Module
-        const freieWahlTitle = document.createElement('h4');
-        freieWahlTitle.textContent = '🌟 Freie Wahl + SIP (15 KP total)';
-        freieWahlTitle.style.color = '#90EE90';
-        freieWahlTitle.style.marginTop = '20px';
-        container.appendChild(freieWahlTitle);
-        
-        const freieWahlContainer = document.createElement('div');
-        freieWahlContainer.style.display = 'flex';
-        freieWahlContainer.style.flexWrap = 'wrap';
-        freieWahlContainer.style.gap = '5px';
-        freieWahlContainer.style.padding = '10px';
-        freieWahlContainer.style.backgroundColor = '#fff';
-        freieWahlContainer.style.borderRadius = '5px';
-        freieWahlContainer.style.border = '1px solid #ddd';
-        
-        this.freieWahlModule.forEach(modul => {
-            if (!this.isModuleSelected(modul.name)) {
-                const modulDiv = this.createDraggableModule(modul, 'available');
-                freieWahlContainer.appendChild(modulDiv);
+        wahlmoduleBox.addEventListener('dragleave', (e) => {
+            if (!wahlmoduleBox.contains(e.relatedTarget)) {
+                this.resetWahlmoduleBoxStyle(wahlmoduleBox);
             }
         });
         
-        container.appendChild(freieWahlContainer);
-    }
-
-    createMyStudienplan(container) {
-        // Obligatorische Module zuerst anzeigen (nicht verschiebbar)
-        const obligatorischTitle = document.createElement('h4');
-        obligatorischTitle.textContent = '✅ Obligatorische Module (fest)';
-        obligatorischTitle.style.color = '#666';
-        container.appendChild(obligatorischTitle);
-        
-        const obligatorischContainer = document.createElement('div');
-        obligatorischContainer.style.display = 'flex';
-        obligatorischContainer.style.flexWrap = 'wrap';
-        obligatorischContainer.style.gap = '3px';
-        obligatorischContainer.style.marginBottom = '20px';
-        obligatorischContainer.style.padding = '10px';
-        obligatorischContainer.style.backgroundColor = '#f5f5f5';
-        obligatorischContainer.style.borderRadius = '5px';
-        obligatorischContainer.style.border = '1px solid #ccc';
-        
-        const obligatorischeModule = this.config.daten.filter(m => 
-            m.kategorie === 'grundlagen' || m.kategorie === 'obligatorisch' || m.kategorie === 'selbstaendig'
-        );
-        
-        obligatorischeModule.forEach(modul => {
-            const modulDiv = this.createStaticModule(modul);
-            obligatorischContainer.appendChild(modulDiv);
-        });
-        
-        container.appendChild(obligatorischContainer);
-        
-        // Semester für flexible Module
-        for (let semester = 3; semester <= 6; semester++) {
-            const semesterDiv = document.createElement('div');
-            semesterDiv.className = 'semester-dropzone';
-            semesterDiv.dataset.semester = semester;
-            semesterDiv.style.marginBottom = '15px';
-            semesterDiv.style.padding = '10px';
-            semesterDiv.style.border = '2px dashed #ccc';
-            semesterDiv.style.borderRadius = '8px';
-            semesterDiv.style.minHeight = '80px';
-            semesterDiv.style.backgroundColor = '#fafafa';
-            
-            const semesterTitle = document.createElement('h5');
-            semesterTitle.textContent = `${semester}. Semester`;
-            semesterTitle.style.margin = '0 0 10px 0';
-            semesterDiv.appendChild(semesterTitle);
-            
-            const kpDisplay = document.createElement('div');
-            kpDisplay.className = 'kp-display';
-            kpDisplay.style.fontSize = '12px';
-            kpDisplay.style.color = '#666';
-            kpDisplay.style.marginBottom = '8px';
-            semesterDiv.appendChild(kpDisplay);
-            
-            const moduleContainer = document.createElement('div');
-            moduleContainer.className = 'semester-modules';
-            moduleContainer.style.display = 'flex';
-            moduleContainer.style.flexWrap = 'wrap';
-            moduleContainer.style.gap = '5px';
-            
-            // Bereits ausgewählte Module für dieses Semester anzeigen
-            this.getSelectedModulesForSemester(semester).forEach(modul => {
-                const modulDiv = this.createDraggableModule(modul, 'selected');
-                moduleContainer.appendChild(modulDiv);
-            });
-            
-            semesterDiv.appendChild(moduleContainer);
-            container.appendChild(semesterDiv);
-            
-            this.makeSemesterDroppable(semesterDiv);
-        }
-    }
-
-    createDraggableModule(modul, type) {
-        const div = document.createElement('div');
-        div.className = `draggable-module ${type}`;
-        div.draggable = true;
-        div.dataset.moduleName = modul.name;
-        div.dataset.modulKp = modul.kp;
-        div.dataset.modulKategorie = modul.kategorie;
-        
-        // Styling basierend auf Kategorie
-        const cssClass = this.getModuleCssClass(modul);
-        if (cssClass) {
-            div.classList.add(cssClass);
-        }
-        
-        div.style.padding = '8px';
-        div.style.borderRadius = '4px';
-        div.style.cursor = 'grab';
-        div.style.userSelect = 'none';
-        div.style.minWidth = '120px';
-        div.style.textAlign = 'center';
-        div.style.fontSize = '12px';
-        div.style.border = '1px solid rgba(0,0,0,0.1)';
-        
-        // KP anzeigen
-        const kpSpan = document.createElement('div');
-        kpSpan.style.fontWeight = 'bold';
-        kpSpan.style.fontSize = '10px';
-        kpSpan.textContent = `${modul.kp} KP`;
-        div.appendChild(kpSpan);
-        
-        // Modulname
-        const nameSpan = document.createElement('div');
-        nameSpan.style.fontSize = '11px';
-        nameSpan.style.lineHeight = '1.2';
-        nameSpan.style.marginTop = '2px';
-        nameSpan.textContent = modul.name;
-        div.appendChild(nameSpan);
-        
-        // Drag Events
-        div.addEventListener('dragstart', (e) => {
-            e.dataTransfer.setData('text/plain', JSON.stringify(modul));
-            div.style.opacity = '0.5';
-        });
-        
-        div.addEventListener('dragend', (e) => {
-            div.style.opacity = '1';
-        });
-        
-        // Entfernen-Button für ausgewählte Module
-        if (type === 'selected') {
-            const removeBtn = document.createElement('span');
-            removeBtn.textContent = '×';
-            removeBtn.style.position = 'absolute';
-            removeBtn.style.top = '-8px';
-            removeBtn.style.right = '-8px';
-            removeBtn.style.background = '#dc3545';
-            removeBtn.style.color = 'white';
-            removeBtn.style.borderRadius = '50%';
-            removeBtn.style.width = '16px';
-            removeBtn.style.height = '16px';
-            removeBtn.style.fontSize = '12px';
-            removeBtn.style.display = 'flex';
-            removeBtn.style.alignItems = 'center';
-            removeBtn.style.justifyContent = 'center';
-            removeBtn.style.cursor = 'pointer';
-            
-            div.style.position = 'relative';
-            div.appendChild(removeBtn);
-            
-            removeBtn.addEventListener('click', (e) => {
-                e.stopPropagation();
-                this.removeModuleFromPlan(modul);
-            });
-        }
-        
-        return div;
-    }
-
-    createStaticModule(modul) {
-        const div = document.createElement('div');
-        div.className = 'static-module';
-        
-        const cssClass = this.getModuleCssClass(modul);
-        if (cssClass) {
-            div.classList.add(cssClass);
-        }
-        
-        div.style.padding = '6px';
-        div.style.borderRadius = '3px';
-        div.style.minWidth = '100px';
-        div.style.textAlign = 'center';
-        div.style.fontSize = '11px';
-        div.style.opacity = '0.7';
-        div.style.border = '1px solid rgba(0,0,0,0.1)';
-        
-        const kpSpan = document.createElement('div');
-        kpSpan.style.fontWeight = 'bold';
-        kpSpan.style.fontSize = '9px';
-        kpSpan.textContent = `${modul.kp} KP`;
-        div.appendChild(kpSpan);
-        
-        const nameSpan = document.createElement('div');
-        nameSpan.style.fontSize = '10px';
-        nameSpan.style.lineHeight = '1.1';
-        nameSpan.textContent = modul.name.length > 20 ? modul.name.substring(0, 17) + '...' : modul.name;
-        nameSpan.title = modul.name;
-        div.appendChild(nameSpan);
-        
-        return div;
-    }
-
-    makeSemesterDroppable(semesterDiv) {
-        semesterDiv.addEventListener('dragover', (e) => {
+        wahlmoduleBox.addEventListener('drop', (e) => {
             e.preventDefault();
-            semesterDiv.style.backgroundColor = '#e8f5e8';
-            semesterDiv.style.borderColor = '#28a745';
-        });
-        
-        semesterDiv.addEventListener('dragleave', (e) => {
-            if (!semesterDiv.contains(e.relatedTarget)) {
-                semesterDiv.style.backgroundColor = '#fafafa';
-                semesterDiv.style.borderColor = '#ccc';
-            }
-        });
-        
-        semesterDiv.addEventListener('drop', (e) => {
-            e.preventDefault();
+            this.resetWahlmoduleBoxStyle(wahlmoduleBox);
+            
             const modulData = JSON.parse(e.dataTransfer.getData('text/plain'));
-            const semester = parseInt(semesterDiv.dataset.semester);
+            const semester = this.getSemesterFromBox(wahlmoduleBox);
             
-            semesterDiv.style.backgroundColor = '#fafafa';
-            semesterDiv.style.borderColor = '#ccc';
-            
-            this.addModuleToPlan(modulData, semester);
+            this.addWahlmodulToBox(modulData, semester, wahlmoduleBox);
         });
+
+        // Zeige bereits ausgewählte Module
+        this.updateWahlmoduleBoxContent(wahlmoduleBox);
     }
 
-    addModuleToPlan(modul, semester) {
-        // Prüfe KP-Limit
-        const currentKp = this.getSemesterKp(semester);
-        if (currentKp + modul.kp > this.maxKpPerSemester) {
-            alert(`⚠️ Zu viele KP! Semester ${semester} hätte ${currentKp + modul.kp} KP (Maximum: ${this.maxKpPerSemester} KP)`);
+    getSemesterFromBox(wahlmoduleBox) {
+        // Finde heraus in welchem Semester die Box ist
+        const container = wahlmoduleBox.closest('.jahr');
+        if (!container) return 4; // Default
+
+        const title = container.querySelector('.jahr-titel')?.textContent || '';
+        if (title.includes('2.')) return 4; // 4. Semester
+        if (title.includes('3.')) return 5; // 5. Semester
+        return 6; // 6. Semester
+    }
+
+    addWahlmodulToBox(modul, semester, wahlmoduleBox) {
+        // Prüfe KP-Limit für dieses Semester
+        const currentKp = this.getWahlmoduleKpForSemester(semester);
+        const maxKp = this.maxWahlmoduleKp[semester] || 15;
+        
+        if (currentKp + modul.kp > maxKp) {
+            this.showMessage(`⚠️ Zu viele KP! Semester ${semester} hätte ${currentKp + modul.kp} KP (Max: ${maxKp} KP)`, 'warning');
             return;
         }
-        
-        // Füge zur Auswahl hinzu
-        if (!this.selectedModules[semester]) {
-            this.selectedModules[semester] = [];
-        }
-        
+
         // Prüfe ob schon ausgewählt
-        if (this.selectedModules[semester].some(m => m.name === modul.name)) {
+        if (this.isWahlmodulSelected(modul.name, semester)) {
+            this.showMessage(`ℹ️ "${modul.name}" ist bereits in Semester ${semester} ausgewählt`, 'info');
             return;
         }
+
+        // Füge zur Auswahl hinzu
+        if (!this.selectedWahlmodule[semester]) {
+            this.selectedWahlmodule[semester] = [];
+        }
         
-        this.selectedModules[semester].push({...modul, semester});
+        this.selectedWahlmodule[semester].push({...modul, semester});
+        this.saveSelectedWahlmodule();
         
-        // Speichere Auswahl
-        this.saveSelectedModules();
-        
-        // Aktualisiere Interface
-        this.showDragDropInterface();
+        // Aktualisiere UI
+        this.updateWahlmoduleBoxContent(wahlmoduleBox);
+        this.updateWahlmoduleDisplay();
+        this.showMessage(`✅ "${modul.name}" zu Semester ${semester} hinzugefügt`, 'success');
     }
 
-    removeModuleFromPlan(modul) {
-        Object.keys(this.selectedModules).forEach(semester => {
-            this.selectedModules[semester] = this.selectedModules[semester].filter(m => m.name !== modul.name);
-        });
-        
-        this.saveSelectedModules();
-        this.showDragDropInterface();
+    updateWahlmoduleBoxContent(wahlmoduleBox) {
+        const semester = this.getSemesterFromBox(wahlmoduleBox);
+        const selectedModules = this.selectedWahlmodule[semester] || [];
+        const currentKp = this.getWahlmoduleKpForSemester(semester);
+        const maxKp = this.maxWahlmoduleKp[semester] || 15;
+
+        // Entferne alte Module-Liste
+        const existingList = wahlmoduleBox.querySelector('.wahlmodule-list');
+        if (existingList) {
+            existingList.remove();
+        }
+
+        // Erstelle neue Module-Liste
+        if (selectedModules.length > 0) {
+            const moduleList = document.createElement('div');
+            moduleList.className = 'wahlmodule-list';
+            moduleList.style.fontSize = '10px';
+            moduleList.style.marginTop = '5px';
+            moduleList.style.maxHeight = '60px';
+            moduleList.style.overflowY = 'auto';
+
+            selectedModules.forEach(modul => {
+                const modulDiv = document.createElement('div');
+                modulDiv.className = 'selected-wahlmodul';
+                modulDiv.style.display = 'flex';
+                modulDiv.style.justifyContent = 'space-between';
+                modulDiv.style.alignItems = 'center';
+                modulDiv.style.padding = '2px 4px';
+                modulDiv.style.marginBottom = '2px';
+                modulDiv.style.backgroundColor = 'rgba(255,255,255,0.8)';
+                modulDiv.style.borderRadius = '3px';
+                modulDiv.style.border = '1px solid #ddd';
+
+                const nameSpan = document.createElement('span');
+                nameSpan.textContent = modul.name.length > 20 ? modul.name.substring(0, 17) + '...' : modul.name;
+                nameSpan.title = modul.name;
+                nameSpan.style.fontSize = '9px';
+                nameSpan.style.flex = '1';
+
+                const kpSpan = document.createElement('span');
+                kpSpan.textContent = `${modul.kp}KP`;
+                kpSpan.style.fontSize = '8px';
+                kpSpan.style.fontWeight = 'bold';
+                kpSpan.style.marginLeft = '4px';
+
+                const removeBtn = document.createElement('span');
+                removeBtn.textContent = '×';
+                removeBtn.style.cursor = 'pointer';
+                removeBtn.style.color = '#dc3545';
+                removeBtn.style.fontWeight = 'bold';
+                removeBtn.style.marginLeft = '4px';
+                removeBtn.style.fontSize = '10px';
+                removeBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    this.removeWahlmodul(modul, semester, wahlmoduleBox);
+                });
+
+                modulDiv.appendChild(nameSpan);
+                modulDiv.appendChild(kpSpan);
+                modulDiv.appendChild(removeBtn);
+                moduleList.appendChild(modulDiv);
+            });
+
+            wahlmoduleBox.appendChild(moduleList);
+        }
+
+        // Aktualisiere KP-Anzeige in der Box
+        const kpDisplay = wahlmoduleBox.querySelector('.modul-kp');
+        if (kpDisplay) {
+            kpDisplay.textContent = `${currentKp}/${maxKp} KP`;
+            kpDisplay.style.color = currentKp > maxKp ? '#dc3545' : '#28a745';
+        }
     }
 
-    getSemesterKp(semester) {
-        if (!this.selectedModules[semester]) return 0;
-        return this.selectedModules[semester].reduce((sum, m) => sum + m.kp, 0);
+    removeWahlmodul(modul, semester, wahlmoduleBox) {
+        this.selectedWahlmodule[semester] = this.selectedWahlmodule[semester].filter(m => m.name !== modul.name);
+        this.saveSelectedWahlmodule();
+        this.updateWahlmoduleBoxContent(wahlmoduleBox);
+        this.updateWahlmoduleDisplay();
+        this.showMessage(`🗑️ "${modul.name}" entfernt`, 'info');
     }
 
-    getSelectedModulesForSemester(semester) {
-        return this.selectedModules[semester] || [];
+    getWahlmoduleKpForSemester(semester) {
+        const modules = this.selectedWahlmodule[semester] || [];
+        return modules.reduce((sum, m) => sum + m.kp, 0);
     }
 
-    isModuleSelected(moduleName) {
-        return Object.values(this.selectedModules).some(semesterModules => 
-            semesterModules.some(m => m.name === moduleName)
+    isWahlmodulSelected(modulName, semester = null) {
+        if (semester) {
+            return (this.selectedWahlmodule[semester] || []).some(m => m.name === modulName);
+        }
+        return Object.values(this.selectedWahlmodule).some(semesterModules => 
+            semesterModules.some(m => m.name === modulName)
         );
     }
 
-    updateKpCounts() {
-        // Update Wahlmodule Count
+    updateWahlmoduleDisplay() {
+        // Update Bereiche Count
         const selectedBereiche = new Set();
-        Object.values(this.selectedModules).flat().forEach(modul => {
+        Object.values(this.selectedWahlmodule).flat().forEach(modul => {
             Object.entries(this.wahlmoduleBereiche).forEach(([bereich, module]) => {
                 if (module.some(m => m.name === modul.name)) {
                     selectedBereiche.add(bereich);
                 }
             });
         });
-        
-        const wahlmoduleDisplay = document.getElementById('selected-wahlmodule');
-        if (wahlmoduleDisplay) {
-            wahlmoduleDisplay.textContent = selectedBereiche.size;
-            wahlmoduleDisplay.style.color = selectedBereiche.size >= 3 ? '#28a745' : '#dc3545';
+
+        const bereicheDisplay = document.getElementById('selected-bereiche-count');
+        if (bereicheDisplay) {
+            bereicheDisplay.textContent = selectedBereiche.size;
+            bereicheDisplay.style.color = selectedBereiche.size >= 3 ? '#28a745' : '#dc3545';
         }
-        
-        // Update Freie Wahl KP
-        const freieWahlKp = Object.values(this.selectedModules).flat()
-            .filter(m => m.kategorie === 'freie-wahl')
-            .reduce((sum, m) => sum + m.kp, 0);
-        
-        const freieWahlDisplay = document.getElementById('selected-freie-wahl');
-        if (freieWahlDisplay) {
-            freieWahlDisplay.textContent = freieWahlKp;
-            freieWahlDisplay.style.color = freieWahlKp >= 15 ? '#28a745' : '#dc3545';
+
+        // Update Total KP
+        const totalKp = Object.values(this.selectedWahlmodule).flat().reduce((sum, m) => sum + m.kp, 0);
+        const kpDisplay = document.getElementById('selected-kp-count');
+        if (kpDisplay) {
+            kpDisplay.textContent = totalKp;
+            kpDisplay.style.color = totalKp >= 45 ? '#28a745' : '#dc3545';
         }
+    }
+
+    resetWahlmoduleBoxStyle(box) {
+        box.style.borderColor = '';
+        box.style.backgroundColor = '';
+        box.style.transform = '';
+    }
+
+    getModuleName(modulEl) {
+        const nameEl = modulEl.querySelector('.modul-titel');
+        return nameEl ? nameEl.textContent.trim() : '';
+    }
+
+    showMessage(message, type = 'info') {
+        // Einfache Toast-Nachricht
+        const toast = document.createElement('div');
+        toast.style.position = 'fixed';
+        toast.style.top = '20px';
+        toast.style.right = '20px';
+        toast.style.padding = '10px 15px';
+        toast.style.borderRadius = '5px';
+        toast.style.zIndex = '9999';
+        toast.style.fontSize = '12px';
+        toast.style.fontWeight = 'bold';
+        toast.textContent = message;
+
+        const colors = {
+            success: { bg: '#28a745', color: 'white' },
+            warning: { bg: '#ffc107', color: 'black' },
+            info: { bg: '#17a2b8', color: 'white' },
+            error: { bg: '#dc3545', color: 'white' }
+        };
+
+        const style = colors[type] || colors.info;
+        toast.style.backgroundColor = style.bg;
+        toast.style.color = style.color;
+
+        document.body.appendChild(toast);
+
+        setTimeout(() => {
+            toast.remove();
+        }, 3000);
+    }
+
+    // Überschreibe Wahlmodule Tooltip um draggable Module zu zeigen
+    showWahlmoduleTooltip(event) {
+        const content = this.createDraggableWahlmoduleTooltip();
+        this.showCustomTooltip(content, event);
+    }
+
+    createDraggableWahlmoduleTooltip() {
+        let content = `
+            <div class="wahlmodule-liste">
+                <h3>🎯 Wahlmodule-Bereiche per Drag & Drop</h3>
+                <p style="font-size: 11px; color: #666; margin-bottom: 15px;">
+                    💡 <strong>Ziehe Module direkt in deine Wahlmodule-Boxen im Studienplan!</strong>
+                </p>
+        `;
+
+        Object.entries(this.wahlmoduleBereiche).forEach(([bereich, module]) => {
+            content += `
+                <div class="wahlbereich-section" style="margin-bottom: 15px;">
+                    <h4 style="margin: 10px 0 8px 0; padding: 3px 8px; background-color: #FF6B6B; color: white; border-radius: 4px; font-size: 12px;">
+                        ${bereich}
+                    </h4>
+                    <div style="display: flex; flex-wrap: wrap; gap: 4px;">
+            `;
+
+            module.forEach(modul => {
+                const isSelected = this.isWahlmodulSelected(modul.name);
+                const opacity = isSelected ? '0.5' : '1';
+                const cursor = isSelected ? 'not-allowed' : 'grab';
+                const title = isSelected ? 'Bereits ausgewählt' : 'Ziehe mich in eine Wahlmodule-Box';
+
+                content += `
+                    <div class="draggable-wahlmodul" 
+                         draggable="${!isSelected}" 
+                         data-modul='${JSON.stringify(modul)}'
+                         style="
+                            padding: 4px 8px; 
+                            background: linear-gradient(135deg, #FF6B6B, #FF8E8E);
+                            color: white; 
+                            border-radius: 12px; 
+                            font-size: 9px; 
+                            cursor: ${cursor};
+                            opacity: ${opacity};
+                            margin: 2px;
+                            border: 1px solid rgba(255,255,255,0.3);
+                            transition: transform 0.2s ease;
+                            user-select: none;
+                         "
+                         title="${title}">
+                        <div style="font-weight: bold;">${modul.kp} KP</div>
+                        <div style="font-size: 8px; line-height: 1;">${modul.name}</div>
+                    </div>
+                `;
+            });
+
+            content += `
+                    </div>
+                </div>
+            `;
+        });
+
+        content += `</div>`;
+
+        // Nach dem Erstellen des Tooltips, füge Drag-Events hinzu
+        setTimeout(() => {
+            this.addDragEventsToTooltipModules();
+        }, 10);
+
+        return content;
+    }
+
+    addDragEventsToTooltipModules() {
+        const draggableModules = document.querySelectorAll('.draggable-wahlmodul[draggable="true"]');
         
-        // Update Semester KP Displays
-        document.querySelectorAll('.kp-display').forEach(display => {
-            const semesterDiv = display.closest('.semester-dropzone');
-            if (semesterDiv) {
-                const semester = parseInt(semesterDiv.dataset.semester);
-                const currentKp = this.getSemesterKp(semester);
-                display.textContent = `KP: ${currentKp}/${this.maxKpPerSemester}`;
-                display.style.color = currentKp > this.maxKpPerSemester ? '#dc3545' : '#28a745';
-            }
+        draggableModules.forEach(modulEl => {
+            modulEl.addEventListener('dragstart', (e) => {
+                const modulData = JSON.parse(modulEl.dataset.modul);
+                e.dataTransfer.setData('text/plain', JSON.stringify(modulData));
+                modulEl.style.transform = 'scale(0.8)';
+                modulEl.style.opacity = '0.5';
+            });
+
+            modulEl.addEventListener('dragend', (e) => {
+                modulEl.style.transform = '';
+                modulEl.style.opacity = '';
+            });
+
+            modulEl.addEventListener('mouseenter', () => {
+                if (modulEl.draggable) {
+                    modulEl.style.transform = 'scale(1.05)';
+                }
+            });
+
+            modulEl.addEventListener('mouseleave', () => {
+                if (modulEl.draggable) {
+                    modulEl.style.transform = '';
+                }
+            });
         });
     }
 
-    showNormalInterface() {
-        // Zurück zur normalen Ansicht
-        this.createStudienplan();
-    }
-
-    saveSelectedModules() {
-        localStorage.setItem('rig-selected-modules', JSON.stringify(this.selectedModules));
-    }
-
-    loadSelectedModules() {
-        const saved = localStorage.getItem('rig-selected-modules');
-        return saved ? JSON.parse(saved) : {};
-    }
-
-    saveStudienplan() {
-        const planData = {
-            selectedModules: this.selectedModules,
-            timestamp: new Date().toISOString(),
-            version: '1.0'
-        };
-        
-        const dataStr = JSON.stringify(planData, null, 2);
-        const dataBlob = new Blob([dataStr], {type: 'application/json'});
-        const url = URL.createObjectURL(dataBlob);
-        
-        const link = document.createElement('a');
-        link.href = url;
-        link.download = 'rig-studienplan.json';
-        link.click();
-        
-        URL.revokeObjectURL(url);
-        
-        alert('📁 Studienplan als JSON-Datei heruntergeladen!');
-    }
-
-    loadStudienplan() {
-        const input = document.createElement('input');
-        input.type = 'file';
-        input.accept = '.json';
-        
-        input.onchange = (e) => {
-            const file = e.target.files[0];
-            if (!file) return;
-            
-            const reader = new FileReader();
-            reader.onload = (e) => {
-                try {
-                    const planData = JSON.parse(e.target.result);
-                    this.selectedModules = planData.selectedModules || {};
-                    this.saveSelectedModules();
-                    this.showDragDropInterface();
-                    alert('📂 Studienplan erfolgreich geladen!');
-                } catch (error) {
-                    alert('❌ Fehler beim Laden der Datei!');
-                }
-            };
-            reader.readAsText(file);
-        };
-        
-        input.click();
-    }
-
-    resetStudienplan() {
-        if (confirm('🔄 Wirklich alle Auswahlmodule zurücksetzen?')) {
-            this.selectedModules = {};
-            this.saveSelectedModules();
-            this.showDragDropInterface();
-            alert('✅ Studienplan zurückgesetzt!');
-        }
-    }
-
-    // Überschreibe addLegendTooltipEvents für Wahlmodule-Tooltips
     addLegendTooltipEvents(div, kategorie) {
         if (kategorie.klasse === "wahlmodule") {
             div.addEventListener("mouseenter", (event) => {
@@ -655,60 +463,61 @@ window.StudiengangCustomClass = class RIGStudienplan extends StudienplanBase {
         }
     }
 
-    showWahlmoduleTooltip(event) {
-        const content = `
-            <div class="wahlmodule-liste">
-                <h3>Wahlmodule-Bereiche (3 aus 6 auswählen)</h3>
-                
-                <h4>Geodäsie und Satellitennavigation</h4>
-                <ul>
-                    <li>Physikalische und kinematische Geodäsie – 6 KP</li>
-                    <li>Globale Satellitennavigationssysteme – 3 KP</li>
-                    <li>Geodätische Datenanalyse – 3 KP</li>
-                    <li>Navigation – 3 KP</li>
-                </ul>
-                
-                <h4>Digitalisierung und 3D-Modellierung</h4>
-                <ul>
-                    <li>Photogrammetrie – 6 KP</li>
-                    <li>Geodätische Messtechnik und Laserscanning – 6 KP</li>
-                    <li>Bildverarbeitung – 3 KP</li>
-                </ul>
-                
-                <h4>GIS und Kartografie</h4>
-                <ul>
-                    <li>Kartografie II – 6 KP</li>
-                    <li>Geoinformationstechnologien und -analysen – 6 KP</li>
-                    <li>Projekt GIS & Kartografie – 3 KP</li>
-                </ul>
-                
-                <h4>Raum- und Umweltplanung</h4>
-                <ul>
-                    <li>Umweltplanung – 3 KP</li>
-                    <li>Umweltverträglichkeitsprüfung – 3 KP</li>
-                    <li>Integrierte Raumentwicklung in Städten und Quartieren – 6 KP</li>
-                    <li>Angewandte Planung zur nachhaltigen Siedlungsentwicklung – 3 KP</li>
-                </ul>
-                
-                <h4>Verkehrssysteme</h4>
-                <ul>
-                    <li>Verkehrsplanung – 3 KP</li>
-                    <li>Projektübung Verkehr – 6 KP</li>
-                    <li>Public transport and railways – 3 KP</li>
-                    <li>Road Transport Systems – 3 KP</li>
-                </ul>
-                
-                <h4>Netzinfrastrukturen</h4>
-                <ul>
-                    <li>Einführung in elektrische Energiesysteme – 2 KP</li>
-                    <li>Siedlungswasserwirtschaft GZ – 6 KP</li>
-                    <li>Strasseninfrastruktur – 3 KP</li>
-                    <li>Bahninfrastrukturen 1 – 2 KP</li>
-                    <li>Perspekt. auf Landschaft und urbane Transf. II – 2 KP</li>
-                </ul>
-            </div>
-        `;
-        this.showCustomTooltip(content, event);
+    exportWahlmodule() {
+        const exportData = {
+            selectedWahlmodule: this.selectedWahlmodule,
+            timestamp: new Date().toISOString(),
+            totalKp: Object.values(this.selectedWahlmodule).flat().reduce((sum, m) => sum + m.kp, 0),
+            bereiche: this.getSelectedBereiche()
+        };
+
+        const dataStr = JSON.stringify(exportData, null, 2);
+        const dataBlob = new Blob([dataStr], {type: 'application/json'});
+        const url = URL.createObjectURL(dataBlob);
+        
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = 'rig-wahlmodule.json';
+        link.click();
+        
+        URL.revokeObjectURL(url);
+        this.showMessage('📁 Wahlmodule als JSON-Datei gespeichert!', 'success');
+    }
+
+    resetWahlmodule() {
+        if (confirm('🔄 Wirklich alle Wahlmodule zurücksetzen?')) {
+            this.selectedWahlmodule = {};
+            this.saveSelectedWahlmodule();
+            
+            // Aktualisiere alle Wahlmodule-Boxen
+            document.querySelectorAll('.wahlmodule-dropzone').forEach(box => {
+                this.updateWahlmoduleBoxContent(box);
+            });
+            
+            this.updateWahlmoduleDisplay();
+            this.showMessage('✅ Alle Wahlmodule zurückgesetzt!', 'success');
+        }
+    }
+
+    getSelectedBereiche() {
+        const bereiche = new Set();
+        Object.values(this.selectedWahlmodule).flat().forEach(modul => {
+            Object.entries(this.wahlmoduleBereiche).forEach(([bereich, module]) => {
+                if (module.some(m => m.name === modul.name)) {
+                    bereiche.add(bereich);
+                }
+            });
+        });
+        return Array.from(bereiche);
+    }
+
+    saveSelectedWahlmodule() {
+        localStorage.setItem('rig-selected-wahlmodule', JSON.stringify(this.selectedWahlmodule));
+    }
+
+    loadSelectedWahlmodule() {
+        const saved = localStorage.getItem('rig-selected-wahlmodule');
+        return saved ? JSON.parse(saved) : {};
     }
 
     hideTooltip() {
