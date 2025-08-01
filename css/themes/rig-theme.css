@@ -174,3 +174,172 @@ h2 {
     transform: scale(1.02);
     box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
+
+/* ==== DRAG & DROP ERWEITERUNGEN ==== */
+/* Hinzugefügt für RIG Studienplan Designer Feature */
+
+/* Draggable Module Styles */
+.draggable-module {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 2px;
+    position: relative;
+    cursor: grab;
+}
+
+.draggable-module:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.draggable-module:active {
+    cursor: grabbing;
+    transform: scale(0.95);
+}
+
+.draggable-module.available {
+    border: 2px solid #28a745;
+    background-color: rgba(40, 167, 69, 0.1) !important;
+}
+
+.draggable-module.selected {
+    border: 2px solid #dc3545;
+    background-color: rgba(220, 53, 69, 0.1) !important;
+}
+
+/* Semester Dropzones */
+.semester-dropzone {
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.semester-dropzone:hover {
+    border-color: #28a745 !important;
+    background-color: #f8fff8 !important;
+}
+
+.semester-dropzone.drag-over {
+    border-color: #28a745 !important;
+    background-color: #e8f5e8 !important;
+    transform: scale(1.02);
+}
+
+.semester-modules {
+    min-height: 40px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+/* KP Display */
+.kp-display {
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 12px;
+    background-color: rgba(255,255,255,0.8);
+    display: inline-block;
+    border: 1px solid #ddd;
+}
+
+.kp-warning {
+    color: #dc3545 !important;
+    font-weight: bold;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+.kp-success {
+    color: #28a745 !important;
+    font-weight: bold;
+}
+
+/* Static Module */
+.static-module {
+    pointer-events: none;
+    filter: brightness(0.9);
+}
+
+/* Drag & Drop Controls */
+.dragdrop-controls button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.dragdrop-controls button:active {
+    transform: translateY(0);
+}
+
+/* Semester Titel */
+.semester-dropzone h5 {
+    background: linear-gradient(90deg, #DC143C, #FF6B6B);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Animationen */
+@keyframes moduleAdded {
+    0% {
+        opacity: 0;
+        transform: scale(0.8) rotateZ(-5deg);
+    }
+    50% {
+        transform: scale(1.1) rotateZ(2deg);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) rotateZ(0deg);
+    }
+}
+
+.module-added {
+    animation: moduleAdded 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 0.3s ease-in;
+}
+
+/* Active Dropzone */
+.active-dropzone {
+    box-shadow: 0 0 20px rgba(40, 167, 69, 0.4);
+    border-color: #28a745 !important;
+    background-color: rgba(40, 167, 69, 0.1) !important;
+}
+
+/* Responsive Drag & Drop */
+@media (max-width: 768px) {
+    .draggable-module {
+        min-width: 100px;
+        font-size: 10px;
+    }
+    
+    .semester-dropzone {
+        margin-bottom: 10px;
+        padding: 8px;
+    }
+    
+    /* Stack columns on mobile */
+    .main-container {
+        flex-direction: column !important;
+        height: auto !important;
+    }
+    
+    .main-container > div {
+        flex: none !important;
+        max-height: 400px;
+    }
+}
