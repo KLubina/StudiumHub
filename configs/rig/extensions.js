@@ -1,5 +1,5 @@
-/* ==== RIG LEGENDE DRAG & DROP EXTENSIONS ==== */
-/* Drag & Drop direkt aus der Legende in die Wahlmodule-Boxen */
+/* ==== RIG LEGENDE DRAG & DROP EXTENSIONS - VERBESSERT ==== */
+/* Drag & Drop direkt aus der Legende in die Wahlmodule-Boxen mit KP-proportionaler Größe */
 
 window.StudiengangCustomClass = class RIGStudienplan extends StudienplanBase {
     constructor(config) {
@@ -182,64 +182,10 @@ window.StudiengangCustomClass = class RIGStudienplan extends StudienplanBase {
         const currentKp = this.getWahlmoduleKpForSemester(semester);
         const maxKp = this.maxWahlmoduleKp[semester] || 15;
 
-        // Entferne alte Module-Liste
-        const existingList = wahlmoduleBox.querySelector('.wahlmodule-list');
-        if (existingList) {
-            existingList.remove();
-        }
-
-        // Erstelle neue Module-Liste
-        if (selectedModules.length > 0) {
-            const moduleList = document.createElement('div');
-            moduleList.className = 'wahlmodule-list';
-            moduleList.style.fontSize = '10px';
-            moduleList.style.marginTop = '5px';
-            moduleList.style.maxHeight = '60px';
-            moduleList.style.overflowY = 'auto';
-
-            selectedModules.forEach(modul => {
-                const modulDiv = document.createElement('div');
-                modulDiv.className = 'selected-wahlmodul';
-                modulDiv.style.display = 'flex';
-                modulDiv.style.justifyContent = 'space-between';
-                modulDiv.style.alignItems = 'center';
-                modulDiv.style.padding = '2px 4px';
-                modulDiv.style.marginBottom = '2px';
-                modulDiv.style.backgroundColor = 'rgba(255,255,255,0.8)';
-                modulDiv.style.borderRadius = '3px';
-                modulDiv.style.border = '1px solid #ddd';
-
-                const nameSpan = document.createElement('span');
-                nameSpan.textContent = modul.name.length > 20 ? modul.name.substring(0, 17) + '...' : modul.name;
-                nameSpan.title = modul.name;
-                nameSpan.style.fontSize = '9px';
-                nameSpan.style.flex = '1';
-
-                const kpSpan = document.createElement('span');
-                kpSpan.textContent = `${modul.kp}KP`;
-                kpSpan.style.fontSize = '8px';
-                kpSpan.style.fontWeight = 'bold';
-                kpSpan.style.marginLeft = '4px';
-
-                const removeBtn = document.createElement('span');
-                removeBtn.textContent = '×';
-                removeBtn.style.cursor = 'pointer';
-                removeBtn.style.color = '#dc3545';
-                removeBtn.style.fontWeight = 'bold';
-                removeBtn.style.marginLeft = '4px';
-                removeBtn.style.fontSize = '10px';
-                removeBtn.addEventListener('click', (e) => {
-                    e.stopPropagation();
-                    this.removeWahlmodul(modul, semester, wahlmoduleBox);
-                });
-
-                modulDiv.appendChild(nameSpan);
-                modulDiv.appendChild(kpSpan);
-                modulDiv.appendChild(removeBtn);
-                moduleList.appendChild(modulDiv);
-            });
-
-            wahlmoduleBox.appendChild(moduleList);
+        // Entferne alte Module-Container
+        const existingContainer = wahlmoduleBox.querySelector('.wahlmodule-container');
+        if (existingContainer) {
+            existingContainer.remove();
         }
 
         // Aktualisiere KP-Anzeige in der Box
@@ -248,6 +194,166 @@ window.StudiengangCustomClass = class RIGStudienplan extends StudienplanBase {
             kpDisplay.textContent = `${currentKp}/${maxKp} KP`;
             kpDisplay.style.color = currentKp > maxKp ? '#dc3545' : '#28a745';
         }
+
+        // Erstelle neuen Module-Container mit echten Modulen
+        if (selectedModules.length > 0) {
+            const moduleContainer = document.createElement('div');
+            moduleContainer.className = 'wahlmodule-container';
+            moduleContainer.style.position = 'absolute';
+            moduleContainer.style.top = '0';
+            moduleContainer.style.left = '0';
+            moduleContainer.style.width = '100%';
+            moduleContainer.style.height = '100%';
+            moduleContainer.style.display = 'flex';
+            moduleContainer.style.flexWrap = 'wrap';
+            moduleContainer.style.gap = '2px';
+            moduleContainer.style.padding = '20px 5px 5px 5px'; // Platz für KP-Anzeige oben
+            moduleContainer.style.boxSizing = 'border-box';
+            moduleContainer.style.overflow = 'hidden';
+
+            selectedModules.forEach(modul => {
+                this.createDroppedModule(modul, moduleContainer, semester, wahlmoduleBox);
+            });
+
+            wahlmoduleBox.appendChild(moduleContainer);
+        }
+    }
+
+    createDroppedModule(modul, container, semester, wahlmoduleBox) {
+        const div = document.createElement('div');
+        div.classList.add('dropped-modul');
+        div.classList.add('wahlmodule'); // Für Styling
+        
+        // Größe proportional zu KP berechnen - angepasst für kleineren Container
+        this.setDroppedModuleSize(div, modul, container);
+        
+        // Inhalt erstellen
+        this.createDroppedModuleContent(div, modul, semester, wahlmoduleBox);
+        
+        // Hover-Effekte
+        div.addEventListener('mouseenter', () => {
+            div.style.transform = 'scale(1.05)';
+            div.style.zIndex = '10';
+        });
+        
+        div.addEventListener('mouseleave', () => {
+            div.style.transform = 'scale(1)';
+            div.style.zIndex = '1';
+        });
+        
+        container.appendChild(div);
+        
+        // Text-Anpassung nach dem Rendern
+        setTimeout(() => {
+            this.fitText(div, '.dropped-modul-kp');
+            this.fitText(div, '.dropped-modul-titel');
+        }, 0);
+        
+        return div;
+    }
+
+    setDroppedModuleSize(div, modul, container) {
+        // Basis-Größe kleiner für Container
+        const baseArea = 800; // Kleinere Basis-Area für bessere Passung
+        const aspectRatio = 1.3;
+        
+        const area = modul.kp * baseArea;
+        const width = Math.sqrt(area * aspectRatio);
+        const height = area / width;
+        
+        // Mindest- und Maximal-Größen
+        const minWidth = 80;
+        const maxWidth = 160;
+        const minHeight = 50;
+        const maxHeight = 100;
+        
+        const finalWidth = Math.max(minWidth, Math.min(maxWidth, width));
+        const finalHeight = Math.max(minHeight, Math.min(maxHeight, height));
+        
+        div.style.width = `${Math.round(finalWidth)}px`;
+        div.style.height = `${Math.round(finalHeight)}px`;
+        div.style.position = 'relative';
+        div.style.borderRadius = '4px';
+        div.style.border = '1px solid rgba(255,255,255,0.3)';
+        div.style.boxShadow = '0 2px 4px rgba(0,0,0,0.2)';
+        div.style.display = 'flex';
+        div.style.flexDirection = 'column';
+        div.style.justifyContent = 'space-between';
+        div.style.alignItems = 'center';
+        div.style.padding = '3px';
+        div.style.margin = '1px';
+        div.style.overflow = 'hidden';
+        div.style.transition = 'transform 0.2s ease';
+    }
+
+    createDroppedModuleContent(div, modul, semester, wahlmoduleBox) {
+        // KP-Anzeige
+        const kpDiv = document.createElement('div');
+        kpDiv.classList.add('dropped-modul-kp');
+        kpDiv.textContent = `${modul.kp} KP`;
+        kpDiv.style.fontSize = '11px';
+        kpDiv.style.fontWeight = 'bold';
+        kpDiv.style.color = 'white';
+        kpDiv.style.textAlign = 'center';
+        kpDiv.style.textShadow = '0 1px 2px rgba(0,0,0,0.5)';
+        div.appendChild(kpDiv);
+        
+        // Modultitel
+        const titleDiv = document.createElement('div');
+        titleDiv.classList.add('dropped-modul-titel');
+        titleDiv.textContent = modul.name.length > 30 ? modul.name.substring(0, 27) + '...' : modul.name;
+        titleDiv.title = modul.name; // Vollständiger Name als Tooltip
+        titleDiv.style.fontSize = '9px';
+        titleDiv.style.color = 'white';
+        titleDiv.style.textAlign = 'center';
+        titleDiv.style.lineHeight = '1.1';
+        titleDiv.style.textShadow = '0 1px 2px rgba(0,0,0,0.5)';
+        titleDiv.style.flex = '1';
+        titleDiv.style.display = 'flex';
+        titleDiv.style.alignItems = 'center';
+        titleDiv.style.justifyContent = 'center';
+        titleDiv.style.wordBreak = 'break-word';
+        titleDiv.style.overflow = 'hidden';
+        div.appendChild(titleDiv);
+        
+        // Remove-Button
+        const removeBtn = document.createElement('div');
+        removeBtn.innerHTML = '×';
+        removeBtn.style.position = 'absolute';
+        removeBtn.style.top = '2px';
+        removeBtn.style.right = '2px';
+        removeBtn.style.width = '16px';
+        removeBtn.style.height = '16px';
+        removeBtn.style.backgroundColor = 'rgba(220, 53, 69, 0.8)';
+        removeBtn.style.color = 'white';
+        removeBtn.style.borderRadius = '50%';
+        removeBtn.style.display = 'flex';
+        removeBtn.style.alignItems = 'center';
+        removeBtn.style.justifyContent = 'center';
+        removeBtn.style.cursor = 'pointer';
+        removeBtn.style.fontSize = '12px';
+        removeBtn.style.fontWeight = 'bold';
+        removeBtn.style.transition = 'all 0.2s ease';
+        removeBtn.style.opacity = '0.7';
+        
+        removeBtn.addEventListener('mouseenter', () => {
+            removeBtn.style.opacity = '1';
+            removeBtn.style.transform = 'scale(1.1)';
+            removeBtn.style.backgroundColor = '#dc3545';
+        });
+        
+        removeBtn.addEventListener('mouseleave', () => {
+            removeBtn.style.opacity = '0.7';
+            removeBtn.style.transform = 'scale(1)';
+            removeBtn.style.backgroundColor = 'rgba(220, 53, 69, 0.8)';
+        });
+        
+        removeBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            this.removeWahlmodul(modul, semester, wahlmoduleBox);
+        });
+        
+        div.appendChild(removeBtn);
     }
 
     removeWahlmodul(modul, semester, wahlmoduleBox) {

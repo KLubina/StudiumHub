@@ -175,22 +175,259 @@ h2 {
     box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
-/* ==== RIG LEGENDE DRAG & DROP CSS ==== */
-/* Styles für Drag & Drop aus der Legende in Wahlmodule-Boxen */
+/* ==== RIG THEME CSS - VERBESSERT ==== */
+/* Spezifische Farben und Styles für den Raumbezogene Ingenieurwissenschaften Studiengang */
 
-/* Wahlmodule Dropzone Styles */
+/* ==== MODUL-KATEGORIEN UND FARBEN basierend auf PDF ==== */
+.grundlagen {
+    background-color: #87CEEB;
+    color: black;
+}
+
+.obligatorisch {
+    background-color: #DC143C;
+    color: white;
+}
+
+.wahlmodule {
+    background-color: #FF6B6B;
+    color: white;
+}
+
+.freie-wahl {
+    background-color: #90EE90;
+    color: black;
+}
+
+.selbstaendig {
+    background-color: #696969;
+    color: white;
+}
+
+/* ==== HOVER EFFECTS ==== */
+.modul.grundlagen:hover {
+    background-color: #98d8fb;
+}
+
+.modul.obligatorisch:hover {
+    background-color: #e6244c;
+}
+
+.modul.wahlmodule:hover {
+    background-color: #ff7b7b;
+}
+
+.modul.freie-wahl:hover {
+    background-color: #a0f0a0;
+}
+
+.modul.selbstaendig:hover {
+    background-color: #797979;
+}
+
+/* ==== DROPPED MODULE STYLES ==== */
+.dropped-modul {
+    background-color: #FF6B6B !important;
+    color: white !important;
+    border: 1px solid rgba(255,255,255,0.3) !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2) !important;
+    transition: all 0.2s ease !important;
+    position: relative !important;
+    overflow: hidden !important;
+    cursor: default !important;
+}
+
+.dropped-modul:hover {
+    background-color: #ff7b7b !important;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3) !important;
+}
+
+.dropped-modul-kp {
+    font-weight: bold !important;
+    color: white !important;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.5) !important;
+    margin: 0 !important;
+    padding: 2px !important;
+}
+
+.dropped-modul-titel {
+    color: white !important;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.5) !important;
+    word-break: break-word !important;
+    overflow: hidden !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    line-height: 1.1 !important;
+    margin: 0 !important;
+    padding: 2px !important;
+}
+
+/* ==== WAHLMODULE CONTAINER ==== */
+.wahlmodule-container {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border-radius: 4px !important;
+    backdrop-filter: blur(2px) !important;
+}
+
+/* ==== WAHLMODULE DROPZONE VERBESSERUNGEN ==== */
 .wahlmodule-dropzone {
-    transition: all 0.3s ease;
-    position: relative;
+    position: relative !important;
+    overflow: visible !important;
+}
+
+.wahlmodule-dropzone .modul-kp {
+    position: relative !important;
+    z-index: 5 !important;
+    background-color: rgba(255, 107, 107, 0.9) !important;
+    padding: 3px 6px !important;
+    border-radius: 3px !important;
+    margin: 2px !important;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2) !important;
+}
+
+/* ==== LEGENDE THEME ==== */
+.legende-item.grundlagen {
+    background-color: #87CEEB;
+    color: black;
+}
+
+.legende-item.obligatorisch {
+    background-color: #DC143C;
+    color: white;
+}
+
+.legende-item.wahlmodule {
+    background-color: #FF6B6B;
+    color: white;
+}
+
+.legende-item.freie-wahl {
+    background-color: #90EE90;
+    color: black;
+}
+
+.legende-item.selbstaendig {
+    background-color: #696969;
+    color: white;
+}
+
+/* ==== LAYOUT ANPASSUNGEN ==== */
+.farben-legende {
+    width: 350px;
+    margin-left: 20px;
+}
+
+.module-container {
+    gap: 3px;
+    min-height: auto;
+    margin-bottom: 15px;
+}
+
+.modul {
+    margin: 3px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+
+/* ==== SEMESTER-TITEL ANPASSUNGEN ==== */
+.jahr-titel {
+    color: #DC143C;
+    border-bottom: 3px solid #90EE90;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* ==== ETH ZÜRICH SPEZIFISCHE ANPASSUNGEN ==== */
+h1 {
+    color: #DC143C;
+}
+
+h2 {
+    color: #90EE90;
+}
+
+/* ==== RESPONSIVE ANPASSUNGEN ==== */
+@media (max-width: 768px) {
+    .farben-legende {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    
+    .module-container {
+        gap: 5px;
+    }
+    
+    .modul {
+        margin: 2px;
+    }
+
+    .tooltip-container {
+        width: 90%;
+        max-width: 90%;
+    }
+
+    .dropped-modul {
+        min-width: 60px !important;
+        min-height: 40px !important;
+    }
+
+    .dropped-modul-kp {
+        font-size: 9px !important;
+    }
+
+    .dropped-modul-titel {
+        font-size: 8px !important;
+    }
+}
+
+/* ==== WAHLMODULE TOOLTIP STYLES ==== */
+.wahlmodule-liste {
+    max-height: 600px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.wahlmodule-liste h3 {
+    text-align: center;
+    margin-top: 0;
+    border-bottom: 2px solid #FF6B6B;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+.wahlmodule-liste h4 {
+    margin: 15px 0 8px 0;
+    padding: 3px 8px;
+    background-color: #FF6B6B;
+    color: white;
+    border-radius: 4px;
+}
+
+.wahlmodule-liste ul {
+    margin: 5px 0;
+    padding-left: 20px;
+}
+
+.wahlmodule-liste li {
+    padding: 2px 0;
+}
+
+/* ==== LEGENDE INTERAKTIVITÄT ==== */
+.legende-item.wahlmodule {
     cursor: pointer;
+    transition: transform 0.1s;
 }
 
-.wahlmodule-dropzone:hover {
+.legende-item.wahlmodule:hover {
     transform: scale(1.02);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
-/* Drag Over Effekt für Wahlmodule-Boxen */
+/* ==== DRAG & DROP VISUAL FEEDBACK ==== */
 .wahlmodule-dropzone.drag-over {
     border-color: #28a745 !important;
     background-color: rgba(40, 167, 69, 0.1) !important;
@@ -198,40 +435,7 @@ h2 {
     box-shadow: 0 0 20px rgba(40, 167, 69, 0.4) !important;
 }
 
-/* Wahlmodule Liste in den Boxen */
-.wahlmodule-list {
-    background-color: rgba(255,255,255,0.9);
-    border-radius: 4px;
-    border: 1px solid #ddd;
-    margin-top: 5px;
-    padding: 2px;
-}
-
-.wahlmodule-list::-webkit-scrollbar {
-    width: 4px;
-}
-
-.wahlmodule-list::-webkit-scrollbar-thumb {
-    background: #ccc;
-    border-radius: 2px;
-}
-
-/* Einzelne ausgewählte Wahlmodule */
-.selected-wahlmodul {
-    transition: all 0.2s ease;
-}
-
-.selected-wahlmodul:hover {
-    background-color: rgba(220, 53, 69, 0.1) !important;
-    transform: translateX(2px);
-}
-
-.selected-wahlmodul:hover .remove-btn {
-    color: #dc3545 !important;
-    font-weight: bold;
-}
-
-/* Draggable Module im Tooltip */
+/* ==== DRAGGABLE MODULE STYLES ==== */
 .draggable-wahlmodul {
     transition: all 0.2s ease !important;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -252,7 +456,7 @@ h2 {
     cursor: not-allowed !important;
 }
 
-/* Wahlbereich Sections im Tooltip */
+/* ==== WAHLBEREICH SECTIONS ==== */
 .wahlbereich-section {
     background-color: rgba(255,255,255,0.05);
     border-radius: 8px;
@@ -266,7 +470,7 @@ h2 {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-/* Toast Nachrichten */
+/* ==== TOAST MESSAGES ==== */
 .toast-message {
     animation: slideInRight 0.3s ease-out;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
@@ -283,7 +487,7 @@ h2 {
     }
 }
 
-/* Wahlmodule Controls */
+/* ==== WAHLMODULE CONTROLS ==== */
 .wahlmodule-controls {
     backdrop-filter: blur(5px);
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -298,16 +502,46 @@ h2 {
     transform: translateY(0);
 }
 
-/* KP Display in Wahlmodule-Boxen */
-.wahlmodule-dropzone .modul-kp {
-    transition: color 0.3s ease;
-    font-weight: bold;
+/* ==== SPECIAL ANIMATIONS ==== */
+@keyframes moduleAddedToBox {
+    0% {
+        opacity: 0;
+        transform: scale(0.8) rotateZ(-5deg);
+        background-color: #28a745;
+    }
+    50% {
+        transform: scale(1.1) rotateZ(2deg);
+        background-color: #34ce57;
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) rotateZ(0deg);
+        background-color: #FF6B6B;
+    }
 }
 
-.wahlmodule-dropzone .modul-kp[style*="color: rgb(220, 53, 69)"] {
-    animation: warningPulse 1s infinite;
+.module-added-to-box {
+    animation: moduleAddedToBox 0.6s ease-out;
 }
 
+@keyframes moduleRemovedFromBox {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+        background-color: #dc3545;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.8) rotateZ(5deg);
+        background-color: #f87c7c;
+    }
+}
+
+.module-removed-from-box {
+    animation: moduleRemovedFromBox 0.4s ease-in forwards;
+}
+
+/* ==== KP WARNING ANIMATION ==== */
 @keyframes warningPulse {
     0%, 100% { 
         opacity: 1; 
@@ -319,12 +553,16 @@ h2 {
     }
 }
 
-/* Erfolgreiche KP-Anzeige */
+.wahlmodule-dropzone .modul-kp[style*="color: rgb(220, 53, 69)"] {
+    animation: warningPulse 1s infinite;
+}
+
+/* ==== SUCCESS KP DISPLAY ==== */
 .wahlmodule-dropzone .modul-kp[style*="color: rgb(40, 167, 69)"] {
     text-shadow: 0 1px 2px rgba(0,0,0,0.1);
 }
 
-/* Legende Interaktivität verstärkt */
+/* ==== VERBESSERTE LEGENDE INTERAKTIVITÄT ==== */
 .legende-item.wahlmodule {
     background: linear-gradient(135deg, #FF6B6B, #FF8E8E) !important;
     border: 2px solid rgba(255,255,255,0.3);
@@ -354,53 +592,19 @@ h2 {
     transform: scale(0.98);
 }
 
-/* Module-Added Animation */
-@keyframes moduleAddedToBox {
-    0% {
-        opacity: 0;
-        transform: scale(0.8) rotateZ(-5deg);
-        background-color: #28a745;
-    }
-    50% {
-        transform: scale(1.1) rotateZ(2deg);
-        background-color: #34ce57;
-    }
-    100% {
-        opacity: 1;
-        transform: scale(1) rotateZ(0deg);
-        background-color: initial;
-    }
+/* ==== COUNTER BADGES ==== */
+#selected-bereiche-count,
+#selected-kp-count {
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.2);
+    font-weight: bold;
+    min-width: 20px;
+    text-align: center;
 }
 
-.module-added-to-box {
-    animation: moduleAddedToBox 0.6s ease-out;
-}
-
-/* Module-Removed Animation */
-@keyframes moduleRemovedFromBox {
-    0% {
-        opacity: 1;
-        transform: scale(1);
-        background-color: #dc3545;
-    }
-    100% {
-        opacity: 0;
-        transform: scale(0.8) rotateZ(5deg);
-        background-color: #f87c7c;
-    }
-}
-
-.module-removed-from-box {
-    animation: moduleRemovedFromBox 0.4s ease-in forwards;
-}
-
-/* Verbesserte Tooltip Darstellung */
-.tooltip-container .wahlmodule-liste {
-    max-height: 70vh;
-    overflow-y: auto;
-    padding-right: 8px;
-}
-
+/* ==== SCROLLBAR STYLING ==== */
 .tooltip-container .wahlmodule-liste::-webkit-scrollbar {
     width: 6px;
 }
@@ -419,71 +623,7 @@ h2 {
     background: rgba(255,255,255,0.5);
 }
 
-/* Counter Badges */
-#selected-bereiche-count,
-#selected-kp-count {
-    display: inline-block;
-    padding: 2px 6px;
-    border-radius: 10px;
-    background-color: rgba(255,255,255,0.2);
-    font-weight: bold;
-    min-width: 20px;
-    text-align: center;
-}
-
-/* Drag Visual Feedback */
-.drag-active .wahlmodule-dropzone {
-    border: 3px dashed #28a745 !important;
-    background-color: rgba(40, 167, 69, 0.05) !important;
-}
-
-.drag-active .wahlmodule-dropzone::after {
-    content: '📍 Hier ablegen';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 10px;
-    color: #28a745;
-    font-weight: bold;
-    background: rgba(255,255,255,0.9);
-    padding: 2px 6px;
-    border-radius: 10px;
-    border: 1px solid #28a745;
-    z-index: 10;
-}
-
-/* Responsive Anpassungen */
-@media (max-width: 768px) {
-    .draggable-wahlmodul {
-        font-size: 8px !important;
-        padding: 3px 6px !important;
-    }
-    
-    .wahlmodule-list {
-        max-height: 40px;
-    }
-    
-    .selected-wahlmodul {
-        padding: 1px 3px !important;
-    }
-    
-    .wahlmodule-controls {
-        padding: 8px !important;
-    }
-    
-    .wahlmodule-controls button {
-        padding: 4px 8px !important;
-        font-size: 10px !important;
-    }
-    
-    .wahlbereich-section {
-        padding: 6px !important;
-        margin-bottom: 8px !important;
-    }
-}
-
-/* Accessibility Verbesserungen */
+/* ==== ACCESSIBILITY ==== */
 .draggable-wahlmodul:focus {
     outline: 2px solid #fff;
     outline-offset: 2px;
@@ -494,7 +634,7 @@ h2 {
     outline-offset: 2px;
 }
 
-/* High Contrast Mode Support */
+/* ==== HIGH CONTRAST MODE ==== */
 @media (prefers-contrast: high) {
     .draggable-wahlmodul {
         border: 2px solid currentColor !important;
@@ -502,5 +642,9 @@ h2 {
     
     .wahlmodule-dropzone {
         border: 3px solid currentColor !important;
+    }
+    
+    .dropped-modul {
+        border: 2px solid white !important;
     }
 }
