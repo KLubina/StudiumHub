@@ -136,16 +136,52 @@ window.StudiengangCustomClass = class RIGStudienplan extends StudienplanBase {
     }
 
 getSemesterFromBox(wahlmoduleBox) {
+    // Methode 1: Über Container-Klassen oder IDs
     const container = wahlmoduleBox.closest('.jahr');
-    if (!container) return 4; // Fallback
-
-    const title = container.querySelector('.jahr-titel')?.textContent || '';
-    const match = title.match(/(\d+)\. Semester/);
-    if (match) {
-        return parseInt(match[1]);
+    if (container) {
+        // Suche nach Semester-Hinweisen in Klassen oder IDs
+        const className = container.className || '';
+        const id = container.id || '';
+        
+        // Verschiedene Muster probieren
+        let match = className.match(/semester-?(\d+)/i) || id.match(/semester-?(\d+)/i);
+        if (match) return parseInt(match[1]);
+        
+        match = className.match(/s(\d+)/i) || id.match(/s(\d+)/i);
+        if (match) return parseInt(match[1]);
     }
-
-    return 4; // Fallback
+    
+    // Methode 2: Über Jahr-Titel (verbessert)
+    const title = container?.querySelector('.jahr-titel')?.textContent || '';
+    console.log('Titel gefunden:', title); // Debug
+    
+    // Alle möglichen Semester-Formate probieren
+    let match = title.match(/(\d+)\.\s*Semester/i);
+    if (match) return parseInt(match[1]);
+    
+    match = title.match(/Semester\s*(\d+)/i);
+    if (match) return parseInt(match[1]);
+    
+    match = title.match(/S(\d+)/i);
+    if (match) return parseInt(match[1]);
+    
+    // Methode 3: Position in der Seite
+    const allWahlmoduleBoxes = Array.from(document.querySelectorAll('.modul')).filter(el => 
+        this.getModuleName(el).includes('Wahlmodule')
+    );
+    
+    const position = allWahlmoduleBoxes.indexOf(wahlmoduleBox);
+    if (position >= 0) {
+        return 4 + position; // 1. Box = Semester 4, 2. Box = Semester 5, etc.
+    }
+    
+    // Methode 4: Notfall - frage den Benutzer
+    const userChoice = prompt(`Semester-Erkennung fehlgeschlagen!\nIn welches Semester gehört diese Wahlmodule-Box?\n\n4 = 4. Semester\n5 = 5. Semester\n6 = 6. Semester`);
+    if (userChoice && ['4', '5', '6'].includes(userChoice)) {
+        return parseInt(userChoice);
+    }
+    
+    return 4; // Absoluter Fallback
 }
 
 
