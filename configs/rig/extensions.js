@@ -135,16 +135,19 @@ window.StudiengangCustomClass = class RIGStudienplan extends StudienplanBase {
         this.updateWahlmoduleBoxContent(wahlmoduleBox);
     }
 
-    getSemesterFromBox(wahlmoduleBox) {
-        // Finde heraus in welchem Semester die Box ist
-        const container = wahlmoduleBox.closest('.jahr');
-        if (!container) return 4; // Default
+getSemesterFromBox(wahlmoduleBox) {
+    const container = wahlmoduleBox.closest('.jahr');
+    if (!container) return 4; // Fallback
 
-        const title = container.querySelector('.jahr-titel')?.textContent || '';
-        if (title.includes('2.')) return 4; // 4. Semester
-        if (title.includes('3.')) return 5; // 5. Semester
-        return 6; // 6. Semester
+    const title = container.querySelector('.jahr-titel')?.textContent || '';
+    const match = title.match(/(\d+)\. Semester/);
+    if (match) {
+        return parseInt(match[1]);
     }
+
+    return 4; // Fallback
+}
+
 
     addWahlmodulToBox(modul, semester, wahlmoduleBox) {
         // Prüfe KP-Limit für dieses Semester
