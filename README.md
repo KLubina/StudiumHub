@@ -32,4 +32,12 @@ https://www.berufsberatung.ch/dyn/show/16729
 - OST - Ostschweizer Fachhochschule
 - Zürcher Hochschule für Angewandte Wissenschaften ZHAW
 
+### Alle staatlichen UH und FH ITET-Studiengänge
+https://www.berufsberatung.ch/dyn/show/19998
+- ETHZ
+
+- Berner Fachhochschule
+- Hochschule Luzern
+- OST - Ostschweizer Fachhochschule
+
 https://www.swissuniversities.ch/themen/lehre-studium/akkreditierte-schweizer-hochschulen
