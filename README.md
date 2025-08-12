@@ -37,7 +37,10 @@ https://www.berufsberatung.ch/dyn/show/19998
 - ETHZ
 
 - Berner Fachhochschule
+  - https://www.berufsberatung.ch/dyn/show/4009?id=800
 - Hochschule Luzern
+  - https://www.berufsberatung.ch/dyn/show/4009?id=4114
 - OST - Ostschweizer Fachhochschule
+  - https://www.berufsberatung.ch/dyn/show/4009?id=13852
 
 https://www.swissuniversities.ch/themen/lehre-studium/akkreditierte-schweizer-hochschulen
