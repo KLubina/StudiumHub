@@ -24,9 +24,9 @@ window.StudiengangModules = [
     { jahr: 2, semester: 1, name: "Physik II", kp: 8, kategorie: "Obligatorische Fächer" },
     { jahr: 2, semester: 1, name: "Signal- und Systemtheorie I", kp: 4, kategorie: "Obligatorische Fächer" },
     { jahr: 2, semester: 1, name: "Informatik II", kp: 4, kategorie: "Obligatorische Fächer" },
-    { jahr: 2, semester: 1, name: "HalbleiterSchaltungstechnik", kp: 4, kategorie: "Obligatorische Fächer" },
+    { jahr: 2, semester: 1, name: "Halbleiter-Schaltungstechnik", kp: 4, kategorie: "Obligatorische Fächer" },
     { jahr: 2, semester: 1, name: "Diskrete Mathematik", kp: 4, kategorie: "Obligatorische Fächer" },
-    { jahr: 2, semester: 1, name: "HalbleiterSchaltungstechnik Praktikum", kp: 1, kategorie: "Obligatorische Praktikum" },
+    { jahr: 2, semester: 1, name: "Halbleiter-Schaltungstechnik Praktikum", kp: 1, kategorie: "Obligatorische Praktikum" },
     
     // 2. Jahr, 2. Semester
     { jahr: 2, semester: 2, name: "Technische Informatik", kp: 4, kategorie: "Obligatorische Fächer" },
