@@ -15,7 +15,7 @@ window.StudiengangBaseConfig = {
     defaultAspectRatio: 1.5,
     
     // Features
-    enableTooltips: false,
+    enableTooltips: true,
     enableHover: true,
     
     // Aspekt-Verhältnisse für verschiedene Module
