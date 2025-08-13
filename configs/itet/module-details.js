@@ -288,7 +288,7 @@ window.StudiengangModuleDetails = {
             "• Graphentheorie: Eigenschaften, Arten (Netzwerke, Bäume, ...), Einfärbung, Flüsse & Schnitte, und Matchings\n" +
             "• Algebra: Elementare Zahlentheorie (Teilbarkeit, Kongruenz, ...), Einführung in die Kryptographie, Gruppen, Körper, und Ringe"
     },
-    "HalbleiterSchaltungstechnik": {
+    "Halbleiter-Schaltungstechnik": {
         kurzbeschreibung: "Einführungsvorlesung in die Halbleiter-Schaltungstechnik. Der Transistor als aktives Bauelement. Analyse und Entwurf transistorbasierter elektronischer Schaltungen wie Verstärker und Filter; Operationsverstärker und darauf basierende Schaltungen",
         lernziel: "Moderne elektronische Schaltungen auf Transistorbasis haben unser Leben verändert und spielen in unserer Wirtschaft seit einem halben Jahrhundert eine Schlüsselrolle. Das Hauptziel dieser Vorlesung ist es, den Studenten das Konzept des aktiven Bauteils näher zu bringen. Dies beinhaltet Operationsverstärker und deren Anwendung für Verstärkerschaltungen, für Signalaufbereitung, Schaltfunktionen und Filter",
         inhalt:
@@ -304,7 +304,7 @@ window.StudiengangModuleDetails = {
             "• Filter höherer Ordnung, Realisierung mit biquadratischen Stufen und mit Leiterstruktur\n" +
             "• Switched-Cap-Filter"
     },
-    "HalbleiterSchaltungstechnik Praktikum": {
+    "Halbleiter-Schaltungstechnik Praktikum": {
         kurzbeschreibung: "Praktikum mit grundlegenden Versuchsschaltungen auf der Basis von Transistoren und Operationsverstärkern",
         lernziel: "Kennenlernen und Verstehen von grundsätzlichen Transistor- und Operationsverstärkerschaltungen. Selbständiger Aufbau und Inbetriebnahme von einfachen Schaltungen inkl. Speisungsentkopplung. Durchführen und Verstehen verschiedener, grundsätzlicher Messmethoden",
         inhalt:
