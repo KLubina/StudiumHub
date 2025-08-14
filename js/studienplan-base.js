@@ -1,4 +1,4 @@
-/* ==== STUDIENPLAN BASE JAVASCRIPT ==== */
+/* ==== STUDIENPLAN BASE JAVASCRIPT - FIXED ==== */
 /* Gemeinsame Basis-Funktionalität für alle Studiengänge */
 
 class StudienplanBase {
@@ -795,15 +795,53 @@ checkCondition(modul, condition) {
     }
 }
 
-/* ==== GLOBAL INITIALIZATION FUNCTION ==== */
+/* ==== GLOBAL INITIALIZATION FUNCTION - ERWEITERT ==== */
 function initializeStudienplan(config) {
+    console.log('🎯 initializeStudienplan aufgerufen!');
+    
     // Prüfe ob eine spezielle Klasse definiert ist
-    const StudiengangClass = window.StudiengangClass || StudienplanBase;
+    let StudiengangClass = window.StudiengangClass || window.StudiengangCustomClass;
+    
+    // DEBUG: Zeige verfügbare Klassen
+    console.log('🔍 Verfügbare Klassen:');
+    console.log('- StudiengangClass:', typeof window.StudiengangClass);
+    console.log('- StudiengangCustomClass:', typeof window.StudiengangCustomClass);
+    console.log('- ITETStudienplan:', typeof window.ITETStudienplan);
+    console.log('- CSEStudienplan:', typeof window.CSEStudienplan);
+    console.log('- RIGStudienplan:', typeof window.RIGStudienplan);
+    
+    // Spezielle Behandlung für bekannte Custom Classes
+    if (!StudiengangClass && window.ITETStudienplan) {
+        StudiengangClass = window.ITETStudienplan;
+        console.log('✅ ITET-Klasse gefunden und wird verwendet');
+    }
+    if (!StudiengangClass && window.CSEStudienplan) {
+        StudiengangClass = window.CSEStudienplan;
+        console.log('✅ CSE-Klasse gefunden und wird verwendet');
+    }
+    if (!StudiengangClass && window.RIGStudienplan) {
+        StudiengangClass = window.RIGStudienplan;
+        console.log('✅ RIG-Klasse gefunden und wird verwendet');
+    }
+    if (!StudiengangClass && window.MTECStudienplan) {
+        StudiengangClass = window.MTECStudienplan;
+        console.log('✅ MTEC-Klasse gefunden und wird verwendet');
+    }
+    
+    // Fallback auf StudienplanBase
+    if (!StudiengangClass) {
+        StudiengangClass = StudienplanBase;
+        console.log('ℹ️ Fallback: StudienplanBase wird verwendet');
+    }
+    
+    console.log(`🏗️ Erstelle Instanz von: ${StudiengangClass.name}`);
     const studienplan = new StudiengangClass(config);
     studienplan.initialize();
     
     // Global verfügbar machen für eventuelle Erweiterungen
     window.currentStudienplan = studienplan;
+    
+    console.log('✅ Studienplan initialisiert:', studienplan);
 }
 
 /* ==== POLYFILLS ==== */
