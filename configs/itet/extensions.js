@@ -1,169 +1,147 @@
-/* ==== ITET SICHTBARER DEBUG ==== */
-/* Erstellt garantiert sichtbare Debug-Ausgaben */
+/* ==== ITET EXTENSIONS - ROBUSTER MODULARER LOADER ==== */
+/* Lädt die modularen Extensions zuverlässig */
 
-console.log('🚀 ITET DEBUG - START');
-alert('ITET Debug gestartet!'); // Popup um sicherzustellen dass es läuft
+console.log('🚀 ITET Extensions - Robuster Loader startet...');
 
-// Erstelle sofort ein sichtbares Debug-Panel
-function createDebugPanel() {
-    const panel = document.createElement('div');
-    panel.id = 'itet-debug-panel';
-    panel.style.cssText = `
-        position: fixed;
-        top: 10px;
-        right: 10px;
-        width: 350px;
-        max-height: 90vh;
-        background: red;
-        color: white;
-        padding: 10px;
-        border: 5px solid yellow;
-        z-index: 999999;
-        font-family: monospace;
-        font-size: 12px;
-        overflow-y: auto;
-        box-shadow: 0 0 30px black;
-    `;
+(function() {
+    'use strict';
     
-    panel.innerHTML = '<h2>🚨 ITET DEBUG</h2><div id="debug-log">Initialisiere...</div>';
-    document.body.appendChild(panel);
+    // Absolute Pfade konstruieren basierend auf aktueller URL
+    const basePath = window.location.href.split('/').slice(0, -1).join('/') + '/';
     
-    return panel;
-}
-
-// Log-Funktion die sowohl Console als auch Panel updated
-function debugLog(message) {
-    console.log(message);
+    const modules = [
+        'configs/itet/extensions/itet-main-class.js',
+        'configs/itet/extensions/ui-helpers.js',
+        'configs/itet/extensions/data-persistence.js', 
+        'configs/itet/extensions/kp-counter.js',
+        'configs/itet/extensions/praktika-system.js'
+    ];
     
-    const logDiv = document.getElementById('debug-log');
-    if (logDiv) {
-        logDiv.innerHTML += '<div>' + message + '</div>';
-        logDiv.scrollTop = logDiv.scrollHeight;
+    let loadedModules = 0;
+    const totalModules = modules.length;
+    
+    function loadModuleSync(url) {
+        return new Promise((resolve, reject) => {
+            console.log(`📦 Lade Modul: ${url}`);
+            
+            const script = document.createElement('script');
+            script.src = basePath + url;
+            script.async = false; // Synchron laden
+            
+            script.onload = () => {
+                loadedModules++;
+                console.log(`✅ Modul geladen (${loadedModules}/${totalModules}): ${url.split('/').pop()}`);
+                resolve();
+            };
+            
+            script.onerror = (error) => {
+                console.error(`❌ Modul-Fehler: ${url.split('/').pop()}`, error);
+                console.log(`🔍 Versuchte URL: ${script.src}`);
+                reject(new Error(`Failed to load ${url}`));
+            };
+            
+            // Script zum DOM hinzufügen
+            document.head.appendChild(script);
+            
+            // Backup: Timeout nach 5 Sekunden
+            setTimeout(() => {
+                if (loadedModules < totalModules) {
+                    console.warn(`⏰ Timeout für Modul: ${url.split('/').pop()}`);
+                    reject(new Error(`Timeout loading ${url}`));
+                }
+            }, 5000);
+        });
     }
-}
-
-// Panel sofort erstellen
-const debugPanel = createDebugPanel();
-debugLog('✅ Debug Panel erstellt');
-
-// Teste Basis-Funktionalität
-debugLog('🔍 Teste StudienplanBase: ' + (typeof StudienplanBase));
-debugLog('🔍 Teste ITETStudienplan: ' + (typeof window.ITETStudienplan));
-debugLog('🔍 Teste CustomClass: ' + (typeof window.StudiengangCustomClass));
-
-// Warte auf DOM Ready
-if (document.readyState === 'loading') {
-    debugLog('⏳ Warte auf DOM...');
-    document.addEventListener('DOMContentLoaded', startTests);
-} else {
-    debugLog('✅ DOM bereits bereit');
-    startTests();
-}
-
-function startTests() {
-    debugLog('🧪 Starte Tests...');
     
-    // Test 1: Prüfe ob Config geladen wird
-    setTimeout(() => {
-        debugLog('🔍 Config: ' + (window.StudiengangConfig ? 'Vorhanden' : 'FEHLT'));
-        debugLog('🔍 Studienplan-Instanz: ' + (window.currentStudienplan ? 'Vorhanden' : 'FEHLT'));
-        
-        // Test 2: Prüfe DOM
-        const legende = document.querySelector('.farben-legende');
-        debugLog('🔍 Legende gefunden: ' + (legende ? 'JA' : 'NEIN'));
-        
-        const studienplan = document.querySelector('#studienplan');
-        debugLog('🔍 Studienplan gefunden: ' + (studienplan ? 'JA' : 'NEIN'));
-        
-        const module = document.querySelectorAll('.modul');
-        debugLog('🔍 Module gefunden: ' + module.length);
-        
-        // Test 3: Versuche ITET Features manuell zu erstellen
-        if (legende) {
-            debugLog('🛠️ Versuche KP-Counter manuell zu erstellen...');
-            createManualKPCounter(legende);
-        }
-        
-    }, 2000);
-}
-
-function createManualKPCounter(legende) {
-    try {
-        const kpDiv = document.createElement('div');
-        kpDiv.style.cssText = `
-            background: green;
-            color: white;
-            padding: 10px;
-            margin: 10px 0;
-            border-radius: 5px;
-        `;
-        kpDiv.innerHTML = '<h3>📊 MANUELLER KP-COUNTER</h3><p>Test erfolgreich!</p>';
-        
-        legende.insertBefore(kpDiv, legende.firstChild);
-        debugLog('✅ Manueller KP-Counter erstellt!');
-        
-    } catch (error) {
-        debugLog('❌ Fehler beim manuellen KP-Counter: ' + error.message);
-    }
-}
-
-// Überwache alle wichtigen Funktionen
-const originalInit = window.initializeStudienplan;
-if (originalInit) {
-    window.initializeStudienplan = function(config) {
-        debugLog('🚀 initializeStudienplan aufgerufen!');
-        debugLog('📋 Config: ' + JSON.stringify(config).substring(0, 100) + '...');
+    async function loadAllModules() {
+        console.log(`📋 Lade ${modules.length} ITET Module...`);
         
         try {
-            const result = originalInit.call(this, config);
-            debugLog('✅ Initialisierung erfolgreich');
+            // Module sequenziell laden (wichtig für Abhängigkeiten)
+            for (const module of modules) {
+                await loadModuleSync(module);
+                
+                // Kurze Pause zwischen Modulen
+                await new Promise(resolve => setTimeout(resolve, 50));
+            }
             
-            // Nach Initialisierung prüfen
-            setTimeout(() => {
-                const instanz = window.currentStudienplan;
-                if (instanz) {
-                    debugLog('✅ Instanz erstellt: ' + instanz.constructor.name);
-                    
-                    if (instanz instanceof window.ITETStudienplan) {
-                        debugLog('✅ Ist ITET Instanz!');
-                        
-                        // Prüfe ob ITET Methoden aufgerufen werden
-                        if (typeof instanz.initializeKPCounter === 'function') {
-                            debugLog('🧪 Teste KP-Counter...');
-                            try {
-                                instanz.initializeKPCounter();
-                                debugLog('✅ KP-Counter initialisiert');
-                            } catch (error) {
-                                debugLog('❌ KP-Counter Fehler: ' + error.message);
-                            }
-                        }
-                        
-                    } else {
-                        debugLog('❌ NICHT ITET Instanz: ' + instanz.constructor.name);
-                    }
-                } else {
-                    debugLog('❌ Keine Instanz gefunden');
-                }
-            }, 500);
+            console.log('🎉 Alle Module erfolgreich geladen!');
             
-            return result;
+            // Prüfe ob alles verfügbar ist
+            setTimeout(verifyModules, 100);
+            
         } catch (error) {
-            debugLog('❌ Initialisierung fehlgeschlagen: ' + error.message);
-            throw error;
+            console.error('❌ Fehler beim Laden der Module:', error);
+            console.log('🔄 Versuche Fallback...');
+            
+            // Fallback: Lade über XMLHttpRequest und eval
+            tryFallbackLoading();
         }
-    };
-} else {
-    debugLog('❌ initializeStudienplan nicht gefunden');
-}
+    }
+    
+    function verifyModules() {
+        console.log('🔍 Verifiziere geladene Module...');
+        
+        const checks = {
+            ITETStudienplan: typeof window.ITETStudienplan,
+            StudiengangCustomClass: typeof window.StudiengangCustomClass,
+            // Prüfe ob Methoden existieren
+            showMessage: window.ITETStudienplan && typeof window.ITETStudienplan.prototype.showMessage,
+            initializeKPCounter: window.ITETStudienplan && typeof window.ITETStudienplan.prototype.initializeKPCounter
+        };
+        
+        console.log('📊 Verification Results:', checks);
+        
+        // Setze Custom Class falls nicht bereits gesetzt
+        if (window.ITETStudienplan && !window.StudiengangCustomClass) {
+            window.StudiengangCustomClass = window.ITETStudienplan;
+            console.log('✅ StudiengangCustomClass manuell gesetzt');
+        }
+        
+        if (checks.ITETStudienplan === 'function') {
+            console.log('🎉 ITET Extensions erfolgreich verfügbar!');
+        } else {
+            console.error('❌ ITET Extensions nicht vollständig geladen');
+        }
+    }
+    
+    function tryFallbackLoading() {
+        console.log('🔄 Starte Fallback-Loading...');
+        
+        // Versuche Module per fetch + eval zu laden
+        modules.forEach((moduleUrl, index) => {
+            fetch(basePath + moduleUrl)
+                .then(response => {
+                    if (response.ok) {
+                        return response.text();
+                    }
+                    throw new Error(`HTTP ${response.status}`);
+                })
+                .then(code => {
+                    console.log(`📦 Fallback-Loading: ${moduleUrl.split('/').pop()}`);
+                    
+                    // Code ausführen
+                    try {
+                        eval(code);
+                        console.log(`✅ Fallback erfolgreich: ${moduleUrl.split('/').pop()}`);
+                    } catch (error) {
+                        console.error(`❌ Fallback-Eval Fehler: ${moduleUrl.split('/').pop()}`, error);
+                    }
+                    
+                    // Nach dem letzten Modul verifizieren
+                    if (index === modules.length - 1) {
+                        setTimeout(verifyModules, 500);
+                    }
+                })
+                .catch(error => {
+                    console.error(`❌ Fallback-Fetch Fehler: ${moduleUrl.split('/').pop()}`, error);
+                });
+        });
+    }
+    
+    // Starte das Laden
+    loadAllModules();
+    
+})();
 
-// Close Button für Debug Panel
-setTimeout(() => {
-    const closeBtn = document.createElement('button');
-    closeBtn.textContent = '❌ Schließen';
-    closeBtn.style.cssText = 'position: absolute; top: 5px; right: 5px; background: black; color: white; border: none; padding: 5px; cursor: pointer;';
-    closeBtn.onclick = () => debugPanel.remove();
-    debugPanel.appendChild(closeBtn);
-}, 1000);
-
-debugLog('✅ ITET Sichtbarer Debug aktiv');
-console.log('🏁 ITET Debug Setup abgeschlossen');
+console.log('✅ ITET Robuster Loader initialisiert');
