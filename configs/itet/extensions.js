@@ -1,147 +1,201 @@
-/* ==== ITET EXTENSIONS - ROBUSTER MODULARER LOADER ==== */
-/* Lädt die modularen Extensions zuverlässig */
+/* ==== MODULARER CONFIG LOADER - ERWEITERT FÜR UNTERORDNER ==== */
+/* Lädt und kombiniert alle Konfigurationsteile für einen Studiengang */
 
-console.log('🚀 ITET Extensions - Robuster Loader startet...');
-
-(function() {
-    'use strict';
-    
-    // Absolute Pfade konstruieren basierend auf aktueller URL
-    const basePath = window.location.href.split('/').slice(0, -1).join('/') + '/';
-    
-    const modules = [
-        'configs/itet/extensions/itet-main-class.js',
-        'configs/itet/extensions/ui-helpers.js',
-        'configs/itet/extensions/data-persistence.js', 
-        'configs/itet/extensions/kp-counter.js',
-        'configs/itet/extensions/praktika-system.js'
-    ];
-    
-    let loadedModules = 0;
-    const totalModules = modules.length;
-    
-    function loadModuleSync(url) {
-        return new Promise((resolve, reject) => {
-            console.log(`📦 Lade Modul: ${url}`);
-            
-            const script = document.createElement('script');
-            script.src = basePath + url;
-            script.async = false; // Synchron laden
-            
-            script.onload = () => {
-                loadedModules++;
-                console.log(`✅ Modul geladen (${loadedModules}/${totalModules}): ${url.split('/').pop()}`);
-                resolve();
-            };
-            
-            script.onerror = (error) => {
-                console.error(`❌ Modul-Fehler: ${url.split('/').pop()}`, error);
-                console.log(`🔍 Versuchte URL: ${script.src}`);
-                reject(new Error(`Failed to load ${url}`));
-            };
-            
-            // Script zum DOM hinzufügen
-            document.head.appendChild(script);
-            
-            // Backup: Timeout nach 5 Sekunden
-            setTimeout(() => {
-                if (loadedModules < totalModules) {
-                    console.warn(`⏰ Timeout für Modul: ${url.split('/').pop()}`);
-                    reject(new Error(`Timeout loading ${url}`));
-                }
-            }, 5000);
-        });
+class StudiengangConfigLoader {
+    constructor(studiengang) {
+        this.studiengang = studiengang;
+        this.config = {};
+        this.loadedModules = new Set();
     }
-    
-    async function loadAllModules() {
-        console.log(`📋 Lade ${modules.length} ITET Module...`);
+
+    async loadConfig() {
+        const configPath = `configs/${this.studiengang}`;
         
         try {
-            // Module sequenziell laden (wichtig für Abhängigkeiten)
-            for (const module of modules) {
-                await loadModuleSync(module);
-                
-                // Kurze Pause zwischen Modulen
-                await new Promise(resolve => setTimeout(resolve, 50));
+            // 1. Basis-Konfiguration laden
+            await this.loadModule(`${configPath}/base-config.js`);
+            
+            // 2. Module-Daten laden
+            await this.loadModule(`${configPath}/modules.js`);
+            
+            // 3. Module-Details laden (falls vorhanden)
+            await this.loadOptionalModule(`${configPath}/module-details.js`);
+            
+            // 4. Erweiterungen laden (falls vorhanden)
+            await this.loadOptionalModule(`${configPath}/extensions.js`);
+            
+            // 5. SPEZIELLE BEHANDLUNG FÜR ITET EXTENSIONS UNTERORDNER
+            if (this.studiengang === 'itet') {
+                await this.loadITETExtensions();
             }
             
-            console.log('🎉 Alle Module erfolgreich geladen!');
+            // 6. Alles zusammenfügen
+            this.mergeConfigs();
             
-            // Prüfe ob alles verfügbar ist
-            setTimeout(verifyModules, 100);
-            
+            return this.config;
         } catch (error) {
-            console.error('❌ Fehler beim Laden der Module:', error);
-            console.log('🔄 Versuche Fallback...');
-            
-            // Fallback: Lade über XMLHttpRequest und eval
-            tryFallbackLoading();
+            console.error(`Fehler beim Laden der modularen Konfiguration für ${this.studiengang}:`, error);
+            // Fallback: Versuche alte monolithische Config zu laden
+            return this.loadFallbackConfig();
         }
     }
-    
-    function verifyModules() {
-        console.log('🔍 Verifiziere geladene Module...');
+
+    // NEUE METHODE: Spezielle ITET Extensions Laden
+    async loadITETExtensions() {
+        console.log('🔧 Lade ITET Extensions Module...');
         
-        const checks = {
-            ITETStudienplan: typeof window.ITETStudienplan,
-            StudiengangCustomClass: typeof window.StudiengangCustomClass,
-            // Prüfe ob Methoden existieren
-            showMessage: window.ITETStudienplan && typeof window.ITETStudienplan.prototype.showMessage,
-            initializeKPCounter: window.ITETStudienplan && typeof window.ITETStudienplan.prototype.initializeKPCounter
-        };
+        const extensionModules = [
+            'configs/itet/extensions/itet-main-class.js',
+            'configs/itet/extensions/ui-helpers.js',
+            'configs/itet/extensions/data-persistence.js',
+            'configs/itet/extensions/kp-counter.js',
+            'configs/itet/extensions/praktika-system.js'
+        ];
         
-        console.log('📊 Verification Results:', checks);
-        
-        // Setze Custom Class falls nicht bereits gesetzt
-        if (window.ITETStudienplan && !window.StudiengangCustomClass) {
-            window.StudiengangCustomClass = window.ITETStudienplan;
-            console.log('✅ StudiengangCustomClass manuell gesetzt');
-        }
-        
-        if (checks.ITETStudienplan === 'function') {
-            console.log('🎉 ITET Extensions erfolgreich verfügbar!');
-        } else {
-            console.error('❌ ITET Extensions nicht vollständig geladen');
+        for (const module of extensionModules) {
+            try {
+                await this.loadModule(module);
+                console.log(`✅ ITET Extension geladen: ${module.split('/').pop()}`);
+            } catch (error) {
+                console.warn(`⚠️ ITET Extension nicht gefunden: ${module.split('/').pop()}`);
+            }
         }
     }
-    
-    function tryFallbackLoading() {
-        console.log('🔄 Starte Fallback-Loading...');
-        
-        // Versuche Module per fetch + eval zu laden
-        modules.forEach((moduleUrl, index) => {
-            fetch(basePath + moduleUrl)
-                .then(response => {
-                    if (response.ok) {
-                        return response.text();
-                    }
-                    throw new Error(`HTTP ${response.status}`);
-                })
-                .then(code => {
-                    console.log(`📦 Fallback-Loading: ${moduleUrl.split('/').pop()}`);
-                    
-                    // Code ausführen
-                    try {
-                        eval(code);
-                        console.log(`✅ Fallback erfolgreich: ${moduleUrl.split('/').pop()}`);
-                    } catch (error) {
-                        console.error(`❌ Fallback-Eval Fehler: ${moduleUrl.split('/').pop()}`, error);
-                    }
-                    
-                    // Nach dem letzten Modul verifizieren
-                    if (index === modules.length - 1) {
-                        setTimeout(verifyModules, 500);
-                    }
-                })
-                .catch(error => {
-                    console.error(`❌ Fallback-Fetch Fehler: ${moduleUrl.split('/').pop()}`, error);
-                });
+
+    async loadModule(url) {
+        return new Promise((resolve, reject) => {
+            // Prüfe ob bereits geladen
+            if (this.loadedModules.has(url)) {
+                resolve();
+                return;
+            }
+
+            const script = document.createElement('script');
+            script.src = url;
+            script.onload = () => {
+                this.loadedModules.add(url);
+                console.log(`✅ Geladen: ${url}`);
+                resolve();
+            };
+            script.onerror = () => {
+                console.error(`❌ Fehler beim Laden: ${url}`);
+                reject(new Error(`Fehler beim Laden von ${url}`));
+            };
+            document.head.appendChild(script);
         });
     }
-    
-    // Starte das Laden
-    loadAllModules();
-    
-})();
 
-console.log('✅ ITET Robuster Loader initialisiert');
+    async loadOptionalModule(url) {
+        try {
+            await this.loadModule(url);
+        } catch (error) {
+            console.log(`ℹ️ Optionales Modul ${url} nicht gefunden - wird übersprungen`);
+        }
+    }
+
+    mergeConfigs() {
+        console.log('🔄 Füge Konfiguration zusammen...');
+        
+        // Basis-Konfiguration als Grundlage
+        if (window.StudiengangBaseConfig) {
+            this.config = { ...window.StudiengangBaseConfig };
+            console.log('✅ Base Config geladen');
+        } else {
+            console.error('❌ StudiengangBaseConfig fehlt!');
+        }
+
+        // Module-Daten hinzufügen
+        if (window.StudiengangModules) {
+            this.config.daten = window.StudiengangModules;
+            console.log(`✅ ${window.StudiengangModules.length} Module geladen`);
+        } else {
+            console.error('❌ StudiengangModules fehlt!');
+        }
+
+        // Module-Details hinzufügen
+        if (window.StudiengangModuleDetails) {
+            this.config.modulDetails = window.StudiengangModuleDetails;
+            const detailCount = Object.keys(window.StudiengangModuleDetails).length;
+            console.log(`✅ ${detailCount} Modul-Details geladen`);
+        }
+
+        // Erweiterungen hinzufügen
+        if (window.StudiengangExtensions) {
+            Object.assign(this.config, window.StudiengangExtensions);
+            console.log('✅ Extensions geladen');
+        }
+
+        // WICHTIG: Spezielle Klasse hinzufügen (falls definiert)
+        if (window.StudiengangCustomClass) {
+            window.StudiengangClass = window.StudiengangCustomClass;
+            console.log('✅ Custom Class gesetzt:', window.StudiengangCustomClass.name);
+        } else if (window.ITETStudienplan) {
+            // Fallback für ITET
+            window.StudiengangClass = window.ITETStudienplan;
+            window.StudiengangCustomClass = window.ITETStudienplan;
+            console.log('✅ ITET Class als Custom Class gesetzt');
+        }
+
+        // Für Kompatibilität: Globale Variable setzen
+        window.StudiengangConfig = this.config;
+        
+        console.log('✅ Konfiguration zusammengeführt:', this.config);
+        
+        // DEBUG für ITET
+        if (this.studiengang === 'itet') {
+            console.log('🔍 ITET Debug - Verfügbare Klassen:');
+            console.log('- StudienplanBase:', typeof StudienplanBase);
+            console.log('- ITETStudienplan:', typeof window.ITETStudienplan);
+            console.log('- StudiengangCustomClass:', typeof window.StudiengangCustomClass);
+            console.log('- StudiengangClass:', typeof window.StudiengangClass);
+        }
+    }
+
+    async loadFallbackConfig() {
+        console.log(`🔄 Lade Fallback-Konfiguration für ${this.studiengang}`);
+        return new Promise((resolve, reject) => {
+            const script = document.createElement('script');
+            script.src = `configs/${this.studiengang}-config.js`;
+            script.onload = () => {
+                console.log('✅ Fallback-Konfiguration geladen');
+                resolve(window.StudiengangConfig);
+            };
+            script.onerror = () => {
+                console.error('❌ Auch Fallback-Konfiguration nicht gefunden');
+                reject(new Error(`Fallback-Konfiguration für ${this.studiengang} nicht gefunden`));
+            };
+            document.head.appendChild(script);
+        });
+    }
+
+    // Hilfsfunktion zum Aufräumen geladener Scripts
+    cleanup() {
+        this.loadedModules.forEach(url => {
+            const scripts = document.querySelectorAll(`script[src="${url}"]`);
+            scripts.forEach(script => script.remove());
+        });
+    }
+}
+
+// Globale Funktion für einfache Nutzung
+window.loadStudiengangConfig = async function(studiengang) {
+    console.log(`🚀 Lade Konfiguration für Studiengang: ${studiengang}`);
+    
+    const loader = new StudiengangConfigLoader(studiengang);
+    
+    try {
+        const config = await loader.loadConfig();
+        
+        if (config && typeof initializeStudienplan === 'function') {
+            console.log('🎯 Initialisiere Studienplan...');
+            initializeStudienplan(config);
+        } else {
+            console.error('❌ Konfiguration konnte nicht geladen werden oder initializeStudienplan ist nicht verfügbar');
+        }
+        
+        return config;
+    } catch (error) {
+        console.error('💥 Fehler beim Laden der Konfiguration:', error);
+        return null;
+    }
+};
