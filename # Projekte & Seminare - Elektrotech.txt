@@ -1,0 +1,68 @@
+# Projekte & Seminare - Elektrotechnik und Informationstechnologie Bachelor
+
+| Modul | ECTS |
+|-------|------|
+| Amateurfunk-Kurs | 1.5 KP |
+| COMSOL Design Tool – Design of Optical Components | 3 KP |
+| Microcontrollers for Sensors and the Internet of Things | 4 KP |
+| FPGA in Quantum Computing with Superconducting Qubits | 3 KP |
+| Neural Network on Low Power FPGA: A Practical Approach | 2 KP |
+| Bluetooth Low Energy Programming for IoT Sensing System | 3 KP |
+| Spiking Neural Network on Neuromorphic Processors | 3 KP |
+| Electronic Circuits & Signals Exploration Laboratory | 2 KP |
+| Assembling and Controlling a Tuning-Fork AFM | 3 KP |
+| Technical and Economic Aspects of Renewable Energy Supply | 3 KP |
+| Python for Engineers - Get Productive in the Classroom, in the Lab and at Home | 3 KP |
+| Machine Learning for Brain-Computer Interfaces | 3 KP |
+| Bau eines drahtlosen Infrarot-Kopfhörers | 2 KP |
+| Bits on Air | 2 KP |
+| Software Defined Radio | 3 KP |
+| Quad-Rotors: Control and Estimation | 2 KP |
+| RoboCup: Learning and Control | 3 KP |
+| Magnetresonanz: Vom Spektrum zum Bild | 1 KP |
+| Biosignal Acquisition and Processing for IoT Wearable Devices | 3 KP |
+| Android Application Development (AAD) | 4 KP |
+| iCEBreaker FPGA For IoT Sensing Systems | 3 KP |
+| Embedded Deep Learning with Huawei Atlas 200 AI Dev Kit | 3 KP |
+| Vision Goes Vegas | 2 KP |
+| Magnetische Felder im Alltag | 3 KP |
+| Accelerating Genome Analysis with FPGAs, GPUs, and New Execution Paradigms | 3 KP |
+| Exploration of Emerging Memory Systems | 3 KP |
+| FPGA-based Exploration of DRAM and RowHammer | 3 KP |
+| Genome Sequencing on Mobile Devices | 3 KP |
+| Memory-Centric Computing | 3 KP |
+| Controlling Biological Neuronal Networks Using Machine Learning | 4 KP |
+| Python for Science & Machine Learning | 3 KP |
+| Memory Design: From Architecture down to Basic Cells | 3 KP |
+| Building a receive coil for MRI | 1.5 KP |
+| Clean Room Technology – Fabrication and Characterization of Photonic Materials | 3 KP |
+| Understanding and Designing Modern SSDs (Solid-State Drives) | 3 KP |
+| Robotic Maze Solving with a TI-RSLK Robot (RMaze) | 3 KP |
+| Embedded Systems With Drones | 4 KP |
+| Machine Learning on Smart Phone | 3 KP |
+| Introduction to Program Nao Robots for Robocup Competition | 3 KP |
+| Smart Patch Projects | 4 KP |
+| Programming Heterogeneous Computing Systems with GPUs and other Accelerators | 3 KP |
+| Optics and Spectroscopy Lab | 3 KP |
+| Our Daily Exposure to Electromagnetic Radiation | 3 KP |
+| Intelligent Architectures via Hardware/Software Cooperation | 3 KP |
+| Wearable Ultrasound: Tools and Technologies | 3 KP |
+| Autonomous Cars and Robots | 4 KP |
+| Erneuerbare Energien und Netto-Null-Emissions-Ziel in der Schweiz | 2 KP |
+| Enabling Smart and Low Power IoT Sensor Nodes | 4 KP |
+| Gibbs? Clifford! | 2 KP |
+| Image-guided digital twinning of cardiac anatomy and function | 2 KP |
+| Coding Algorithms for a Scavenger Hunt | 1 KP |
+| Clinical Genomics | 4 KP |
+| Digital Audio | 4 KP |
+| Let's make ITET green! | 3 KP |
+| Echoes in Action: Designing, Simulating, and Measuring Piezoelectric Transducers | 2 KP |
+| Radio Frequency Electromagnetic Fields in our daily Life | 3 KP |
+| Capture the Flag – Introduction to Cybersecurity | 3 KP |
+| Exploration Project | 3 KP |
+| Mission impossible: CartPole4.0 | 2 KP |
+| Audio Electronics and Music Production Technology | 1 KP |
+| From Software Applications to FPGA Designs | 3 KP |
+| Practical Antenna Design, Implementation, and Measurement | 3 KP |
+| Hands-On Deep Learning | 2 KP |
+| Applied Circuit and PCB-Design | 2 KP |
