@@ -1,215 +1,169 @@
-/* ==== ITET RUNTIME DEBUG ==== */
-/* Da die Module geladen sind, debuggen wir die Laufzeit-Probleme */
+/* ==== ITET SICHTBARER DEBUG ==== */
+/* Erstellt garantiert sichtbare Debug-Ausgaben */
 
-console.log('🔍 ITET Runtime Debug - Module sind geladen, prüfe Funktionalität...');
+console.log('🚀 ITET DEBUG - START');
+alert('ITET Debug gestartet!'); // Popup um sicherzustellen dass es läuft
 
-// 1. Prüfe ob die Klasse richtig funktioniert
-function testITETClass() {
-    console.log('🧪 Teste ITET Klasse...');
+// Erstelle sofort ein sichtbares Debug-Panel
+function createDebugPanel() {
+    const panel = document.createElement('div');
+    panel.id = 'itet-debug-panel';
+    panel.style.cssText = `
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        width: 350px;
+        max-height: 90vh;
+        background: red;
+        color: white;
+        padding: 10px;
+        border: 5px solid yellow;
+        z-index: 999999;
+        font-family: monospace;
+        font-size: 12px;
+        overflow-y: auto;
+        box-shadow: 0 0 30px black;
+    `;
     
-    if (typeof window.ITETStudienplan !== 'function') {
-        console.error('❌ ITETStudienplan ist keine Funktion:', typeof window.ITETStudienplan);
-        return false;
-    }
+    panel.innerHTML = '<h2>🚨 ITET DEBUG</h2><div id="debug-log">Initialisiere...</div>';
+    document.body.appendChild(panel);
     
-    // Teste ob wir eine Instanz erstellen können
-    try {
-        const testConfig = { title: 'Test', daten: [] };
-        const testInstance = new window.ITETStudienplan(testConfig);
-        console.log('✅ ITET Instanz erstellt:', testInstance);
-        
-        // Teste verfügbare Methoden
-        const methods = Object.getOwnPropertyNames(Object.getPrototypeOf(testInstance));
-        console.log('📋 Verfügbare Methoden:', methods);
-        
-        // Teste spezifische ITET Methoden
-        const itetMethods = ['initializeKPCounter', 'initializePraktikaSystem', 'showMessage'];
-        itetMethods.forEach(method => {
-            if (typeof testInstance[method] === 'function') {
-                console.log(`✅ ${method} verfügbar`);
-            } else {
-                console.error(`❌ ${method} fehlt`);
-            }
-        });
-        
-        return true;
-    } catch (error) {
-        console.error('❌ Fehler beim Erstellen der ITET Instanz:', error);
-        return false;
-    }
+    return panel;
 }
 
-// 2. Prüfe die aktuelle Studienplan-Instanz
-function checkCurrentStudienplan() {
-    console.log('🧪 Prüfe aktuelle Studienplan-Instanz...');
+// Log-Funktion die sowohl Console als auch Panel updated
+function debugLog(message) {
+    console.log(message);
     
-    if (window.currentStudienplan) {
-        console.log('✅ Aktuelle Instanz vorhanden:', window.currentStudienplan);
-        console.log('📋 Instanz-Typ:', window.currentStudienplan.constructor.name);
-        
-        // Prüfe ob es eine ITET Instanz ist
-        if (window.currentStudienplan instanceof window.ITETStudienplan) {
-            console.log('✅ Ist ITET Instanz');
-            
-            // Prüfe ITET-spezifische Properties
-            const properties = ['kpCounter', 'selectedPraktika', 'praktikaModule'];
-            properties.forEach(prop => {
-                if (prop in window.currentStudienplan) {
-                    console.log(`✅ ${prop}:`, window.currentStudienplan[prop]);
-                } else {
-                    console.error(`❌ ${prop} fehlt`);
-                }
-            });
-            
-        } else {
-            console.error('❌ Ist KEINE ITET Instanz, sondern:', window.currentStudienplan.constructor.name);
-        }
-    } else {
-        console.error('❌ Keine aktuelle Studienplan-Instanz gefunden');
+    const logDiv = document.getElementById('debug-log');
+    if (logDiv) {
+        logDiv.innerHTML += '<div>' + message + '</div>';
+        logDiv.scrollTop = logDiv.scrollHeight;
     }
 }
 
-// 3. Prüfe DOM-Elemente
-function checkDOMElements() {
-    console.log('🧪 Prüfe DOM-Elemente...');
-    
-    const elementsToCheck = [
-        '#kp-counter',
-        '.praktika-dropzone', 
-        '.farben-legende',
-        '#studienplan',
-        '.modul'
-    ];
-    
-    elementsToCheck.forEach(selector => {
-        const elements = document.querySelectorAll(selector);
-        if (elements.length > 0) {
-            console.log(`✅ ${selector}: ${elements.length} Elemente gefunden`);
-        } else {
-            console.error(`❌ ${selector}: Keine Elemente gefunden`);
-        }
-    });
+// Panel sofort erstellen
+const debugPanel = createDebugPanel();
+debugLog('✅ Debug Panel erstellt');
+
+// Teste Basis-Funktionalität
+debugLog('🔍 Teste StudienplanBase: ' + (typeof StudienplanBase));
+debugLog('🔍 Teste ITETStudienplan: ' + (typeof window.ITETStudienplan));
+debugLog('🔍 Teste CustomClass: ' + (typeof window.StudiengangCustomClass));
+
+// Warte auf DOM Ready
+if (document.readyState === 'loading') {
+    debugLog('⏳ Warte auf DOM...');
+    document.addEventListener('DOMContentLoaded', startTests);
+} else {
+    debugLog('✅ DOM bereits bereit');
+    startTests();
 }
 
-// 4. Prüfe Initialisierung
-function checkInitialization() {
-    console.log('🧪 Prüfe Initialisierung...');
+function startTests() {
+    debugLog('🧪 Starte Tests...');
     
-    // Überwache initializeStudienplan Funktion
-    if (typeof window.initializeStudienplan === 'function') {
-        console.log('✅ initializeStudienplan Funktion verfügbar');
-        
-        // Wrap die Funktion um sie zu überwachen
-        const originalInit = window.initializeStudienplan;
-        window.initializeStudienplan = function(config) {
-            console.log('🚀 initializeStudienplan aufgerufen mit:', config);
-            
-            try {
-                const result = originalInit.call(this, config);
-                console.log('✅ initializeStudienplan erfolgreich');
-                
-                // Prüfe was erstellt wurde
-                setTimeout(() => {
-                    console.log('🔍 Nach Initialisierung:');
-                    checkCurrentStudienplan();
-                    checkDOMElements();
-                }, 500);
-                
-                return result;
-            } catch (error) {
-                console.error('❌ Fehler in initializeStudienplan:', error);
-                throw error;
-            }
-        };
-    } else {
-        console.error('❌ initializeStudienplan Funktion nicht verfügbar');
-    }
-}
-
-// 5. Prüfe Config Loading
-function checkConfigLoading() {
-    console.log('🧪 Prüfe Config Loading...');
-    
-    if (typeof window.loadStudiengangConfig === 'function') {
-        console.log('✅ loadStudiengangConfig verfügbar');
-        
-        // Überwache auch diese Funktion
-        const originalLoad = window.loadStudiengangConfig;
-        window.loadStudiengangConfig = function(studiengang) {
-            console.log('🚀 loadStudiengangConfig aufgerufen für:', studiengang);
-            
-            return originalLoad.call(this, studiengang).then(config => {
-                console.log('✅ Config geladen:', config);
-                
-                // Prüfe ob die richtige Klasse verwendet wird
-                if (window.StudiengangCustomClass === window.ITETStudienplan) {
-                    console.log('✅ ITET Custom Class ist gesetzt');
-                } else {
-                    console.error('❌ Falsche Custom Class:', window.StudiengangCustomClass);
-                }
-                
-                return config;
-            }).catch(error => {
-                console.error('❌ Fehler beim Config laden:', error);
-                throw error;
-            });
-        };
-    } else {
-        console.error('❌ loadStudiengangConfig nicht verfügbar');
-    }
-}
-
-// 6. Console Fehler abfangen
-function setupErrorHandling() {
-    console.log('🧪 Setup Error Handling...');
-    
-    // Original console.error überschreiben
-    const originalError = console.error;
-    console.error = function(...args) {
-        // Prüfe auf ITET-relevante Fehler
-        const message = args.join(' ');
-        if (message.includes('ITET') || message.includes('praktika') || message.includes('kp-counter')) {
-            console.log('🚨 ITET-relevanter Fehler gefunden:', args);
-        }
-        
-        return originalError.apply(console, args);
-    };
-    
-    // Unhandled errors abfangen
-    window.addEventListener('error', (event) => {
-        console.log('🚨 JavaScript Fehler:', event.error);
-        console.log('🚨 Stack:', event.error?.stack);
-    });
-}
-
-// Alle Tests ausführen
-function runAllTests() {
-    console.log('🔬 Starte vollständige ITET Runtime Diagnose...');
-    
-    setupErrorHandling();
-    
-    const results = {
-        classTest: testITETClass(),
-        currentStudienplan: checkCurrentStudienplan(),
-        initialization: checkInitialization(),
-        configLoading: checkConfigLoading()
-    };
-    
-    console.log('📊 Test-Ergebnisse:', results);
-    
-    // DOM Tests nach einer kurzen Verzögerung
+    // Test 1: Prüfe ob Config geladen wird
     setTimeout(() => {
-        checkDOMElements();
+        debugLog('🔍 Config: ' + (window.StudiengangConfig ? 'Vorhanden' : 'FEHLT'));
+        debugLog('🔍 Studienplan-Instanz: ' + (window.currentStudienplan ? 'Vorhanden' : 'FEHLT'));
         
-        // Final-Report nach 2 Sekunden
-        setTimeout(() => {
-            console.log('🏁 ITET Runtime Diagnose abgeschlossen');
-            console.log('🔍 Wenn noch Probleme bestehen, prüfe die Console auf Fehler');
-        }, 2000);
-    }, 1000);
+        // Test 2: Prüfe DOM
+        const legende = document.querySelector('.farben-legende');
+        debugLog('🔍 Legende gefunden: ' + (legende ? 'JA' : 'NEIN'));
+        
+        const studienplan = document.querySelector('#studienplan');
+        debugLog('🔍 Studienplan gefunden: ' + (studienplan ? 'JA' : 'NEIN'));
+        
+        const module = document.querySelectorAll('.modul');
+        debugLog('🔍 Module gefunden: ' + module.length);
+        
+        // Test 3: Versuche ITET Features manuell zu erstellen
+        if (legende) {
+            debugLog('🛠️ Versuche KP-Counter manuell zu erstellen...');
+            createManualKPCounter(legende);
+        }
+        
+    }, 2000);
 }
 
-// Tests starten
-runAllTests();
+function createManualKPCounter(legende) {
+    try {
+        const kpDiv = document.createElement('div');
+        kpDiv.style.cssText = `
+            background: green;
+            color: white;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        `;
+        kpDiv.innerHTML = '<h3>📊 MANUELLER KP-COUNTER</h3><p>Test erfolgreich!</p>';
+        
+        legende.insertBefore(kpDiv, legende.firstChild);
+        debugLog('✅ Manueller KP-Counter erstellt!');
+        
+    } catch (error) {
+        debugLog('❌ Fehler beim manuellen KP-Counter: ' + error.message);
+    }
+}
 
-console.log('✅ ITET Runtime Debug aktiv');
+// Überwache alle wichtigen Funktionen
+const originalInit = window.initializeStudienplan;
+if (originalInit) {
+    window.initializeStudienplan = function(config) {
+        debugLog('🚀 initializeStudienplan aufgerufen!');
+        debugLog('📋 Config: ' + JSON.stringify(config).substring(0, 100) + '...');
+        
+        try {
+            const result = originalInit.call(this, config);
+            debugLog('✅ Initialisierung erfolgreich');
+            
+            // Nach Initialisierung prüfen
+            setTimeout(() => {
+                const instanz = window.currentStudienplan;
+                if (instanz) {
+                    debugLog('✅ Instanz erstellt: ' + instanz.constructor.name);
+                    
+                    if (instanz instanceof window.ITETStudienplan) {
+                        debugLog('✅ Ist ITET Instanz!');
+                        
+                        // Prüfe ob ITET Methoden aufgerufen werden
+                        if (typeof instanz.initializeKPCounter === 'function') {
+                            debugLog('🧪 Teste KP-Counter...');
+                            try {
+                                instanz.initializeKPCounter();
+                                debugLog('✅ KP-Counter initialisiert');
+                            } catch (error) {
+                                debugLog('❌ KP-Counter Fehler: ' + error.message);
+                            }
+                        }
+                        
+                    } else {
+                        debugLog('❌ NICHT ITET Instanz: ' + instanz.constructor.name);
+                    }
+                } else {
+                    debugLog('❌ Keine Instanz gefunden');
+                }
+            }, 500);
+            
+            return result;
+        } catch (error) {
+            debugLog('❌ Initialisierung fehlgeschlagen: ' + error.message);
+            throw error;
+        }
+    };
+} else {
+    debugLog('❌ initializeStudienplan nicht gefunden');
+}
+
+// Close Button für Debug Panel
+setTimeout(() => {
+    const closeBtn = document.createElement('button');
+    closeBtn.textContent = '❌ Schließen';
+    closeBtn.style.cssText = 'position: absolute; top: 5px; right: 5px; background: black; color: white; border: none; padding: 5px; cursor: pointer;';
+    closeBtn.onclick = () => debugPanel.remove();
+    debugPanel.appendChild(closeBtn);
+}, 1000);
+
+debugLog('✅ ITET Sichtbarer Debug aktiv');
+console.log('🏁 ITET Debug Setup abgeschlossen');
