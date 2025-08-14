@@ -1,215 +1,215 @@
-/* ==== ITET EXTENSIONS - DEBUG VERSION ==== */
-/* Zeigt alle Fehler und Probleme an */
+/* ==== ITET RUNTIME DEBUG ==== */
+/* Da die Module geladen sind, debuggen wir die Laufzeit-Probleme */
 
-console.log('🚀 ITET Extensions - DEBUG MODE GESTARTET');
-console.log('📍 Aktueller Pfad:', window.location.href);
-console.log('📁 Base URL:', window.location.origin + window.location.pathname);
+console.log('🔍 ITET Runtime Debug - Module sind geladen, prüfe Funktionalität...');
 
-// Debug-Informationen sammeln
-const debugInfo = {
-    timestamp: new Date().toISOString(),
-    userAgent: navigator.userAgent,
-    currentURL: window.location.href,
-    baseURL: window.location.origin + window.location.pathname,
-    studienplanBase: typeof StudienplanBase,
-    scripts: Array.from(document.scripts).map(s => s.src || s.innerHTML.substring(0, 50))
-};
-
-console.log('🔍 Debug Info:', debugInfo);
-
-// Teste ob die Dateien existieren
-const modulesToTest = [
-    'configs/itet/extensions/itet-main-class.js',
-    'configs/itet/extensions/ui-helpers.js', 
-    'configs/itet/extensions/data-persistence.js',
-    'configs/itet/extensions/kp-counter.js',
-    'configs/itet/extensions/praktika-system.js'
-];
-
-console.log('📋 Module zum Testen:', modulesToTest);
-
-function testFileExists(url) {
-    return new Promise((resolve) => {
-        const startTime = performance.now();
+// 1. Prüfe ob die Klasse richtig funktioniert
+function testITETClass() {
+    console.log('🧪 Teste ITET Klasse...');
+    
+    if (typeof window.ITETStudienplan !== 'function') {
+        console.error('❌ ITETStudienplan ist keine Funktion:', typeof window.ITETStudienplan);
+        return false;
+    }
+    
+    // Teste ob wir eine Instanz erstellen können
+    try {
+        const testConfig = { title: 'Test', daten: [] };
+        const testInstance = new window.ITETStudienplan(testConfig);
+        console.log('✅ ITET Instanz erstellt:', testInstance);
         
-        fetch(url, { method: 'HEAD' })
-            .then(response => {
-                const endTime = performance.now();
-                const result = {
-                    url: url,
-                    exists: response.ok,
-                    status: response.status,
-                    statusText: response.statusText,
-                    loadTime: `${(endTime - startTime).toFixed(2)}ms`,
-                    contentType: response.headers.get('content-type')
-                };
-                
-                if (response.ok) {
-                    console.log(`✅ Datei existiert: ${url.split('/').pop()}`, result);
+        // Teste verfügbare Methoden
+        const methods = Object.getOwnPropertyNames(Object.getPrototypeOf(testInstance));
+        console.log('📋 Verfügbare Methoden:', methods);
+        
+        // Teste spezifische ITET Methoden
+        const itetMethods = ['initializeKPCounter', 'initializePraktikaSystem', 'showMessage'];
+        itetMethods.forEach(method => {
+            if (typeof testInstance[method] === 'function') {
+                console.log(`✅ ${method} verfügbar`);
+            } else {
+                console.error(`❌ ${method} fehlt`);
+            }
+        });
+        
+        return true;
+    } catch (error) {
+        console.error('❌ Fehler beim Erstellen der ITET Instanz:', error);
+        return false;
+    }
+}
+
+// 2. Prüfe die aktuelle Studienplan-Instanz
+function checkCurrentStudienplan() {
+    console.log('🧪 Prüfe aktuelle Studienplan-Instanz...');
+    
+    if (window.currentStudienplan) {
+        console.log('✅ Aktuelle Instanz vorhanden:', window.currentStudienplan);
+        console.log('📋 Instanz-Typ:', window.currentStudienplan.constructor.name);
+        
+        // Prüfe ob es eine ITET Instanz ist
+        if (window.currentStudienplan instanceof window.ITETStudienplan) {
+            console.log('✅ Ist ITET Instanz');
+            
+            // Prüfe ITET-spezifische Properties
+            const properties = ['kpCounter', 'selectedPraktika', 'praktikaModule'];
+            properties.forEach(prop => {
+                if (prop in window.currentStudienplan) {
+                    console.log(`✅ ${prop}:`, window.currentStudienplan[prop]);
                 } else {
-                    console.error(`❌ Datei nicht gefunden: ${url.split('/').pop()}`, result);
+                    console.error(`❌ ${prop} fehlt`);
                 }
-                
-                resolve(result);
-            })
-            .catch(error => {
-                const endTime = performance.now();
-                const result = {
-                    url: url,
-                    exists: false,
-                    error: error.message,
-                    loadTime: `${(endTime - startTime).toFixed(2)}ms`
-                };
-                
-                console.error(`💥 Fehler beim Prüfen: ${url.split('/').pop()}`, result);
-                resolve(result);
             });
+            
+        } else {
+            console.error('❌ Ist KEINE ITET Instanz, sondern:', window.currentStudienplan.constructor.name);
+        }
+    } else {
+        console.error('❌ Keine aktuelle Studienplan-Instanz gefunden');
+    }
+}
+
+// 3. Prüfe DOM-Elemente
+function checkDOMElements() {
+    console.log('🧪 Prüfe DOM-Elemente...');
+    
+    const elementsToCheck = [
+        '#kp-counter',
+        '.praktika-dropzone', 
+        '.farben-legende',
+        '#studienplan',
+        '.modul'
+    ];
+    
+    elementsToCheck.forEach(selector => {
+        const elements = document.querySelectorAll(selector);
+        if (elements.length > 0) {
+            console.log(`✅ ${selector}: ${elements.length} Elemente gefunden`);
+        } else {
+            console.error(`❌ ${selector}: Keine Elemente gefunden`);
+        }
     });
 }
 
-async function debugModules() {
-    console.log('🔍 Teste Dateien...');
+// 4. Prüfe Initialisierung
+function checkInitialization() {
+    console.log('🧪 Prüfe Initialisierung...');
     
-    const results = [];
-    
-    for (const module of modulesToTest) {
-        const result = await testFileExists(module);
-        results.push(result);
+    // Überwache initializeStudienplan Funktion
+    if (typeof window.initializeStudienplan === 'function') {
+        console.log('✅ initializeStudienplan Funktion verfügbar');
+        
+        // Wrap die Funktion um sie zu überwachen
+        const originalInit = window.initializeStudienplan;
+        window.initializeStudienplan = function(config) {
+            console.log('🚀 initializeStudienplan aufgerufen mit:', config);
+            
+            try {
+                const result = originalInit.call(this, config);
+                console.log('✅ initializeStudienplan erfolgreich');
+                
+                // Prüfe was erstellt wurde
+                setTimeout(() => {
+                    console.log('🔍 Nach Initialisierung:');
+                    checkCurrentStudienplan();
+                    checkDOMElements();
+                }, 500);
+                
+                return result;
+            } catch (error) {
+                console.error('❌ Fehler in initializeStudienplan:', error);
+                throw error;
+            }
+        };
+    } else {
+        console.error('❌ initializeStudienplan Funktion nicht verfügbar');
     }
+}
+
+// 5. Prüfe Config Loading
+function checkConfigLoading() {
+    console.log('🧪 Prüfe Config Loading...');
+    
+    if (typeof window.loadStudiengangConfig === 'function') {
+        console.log('✅ loadStudiengangConfig verfügbar');
+        
+        // Überwache auch diese Funktion
+        const originalLoad = window.loadStudiengangConfig;
+        window.loadStudiengangConfig = function(studiengang) {
+            console.log('🚀 loadStudiengangConfig aufgerufen für:', studiengang);
+            
+            return originalLoad.call(this, studiengang).then(config => {
+                console.log('✅ Config geladen:', config);
+                
+                // Prüfe ob die richtige Klasse verwendet wird
+                if (window.StudiengangCustomClass === window.ITETStudienplan) {
+                    console.log('✅ ITET Custom Class ist gesetzt');
+                } else {
+                    console.error('❌ Falsche Custom Class:', window.StudiengangCustomClass);
+                }
+                
+                return config;
+            }).catch(error => {
+                console.error('❌ Fehler beim Config laden:', error);
+                throw error;
+            });
+        };
+    } else {
+        console.error('❌ loadStudiengangConfig nicht verfügbar');
+    }
+}
+
+// 6. Console Fehler abfangen
+function setupErrorHandling() {
+    console.log('🧪 Setup Error Handling...');
+    
+    // Original console.error überschreiben
+    const originalError = console.error;
+    console.error = function(...args) {
+        // Prüfe auf ITET-relevante Fehler
+        const message = args.join(' ');
+        if (message.includes('ITET') || message.includes('praktika') || message.includes('kp-counter')) {
+            console.log('🚨 ITET-relevanter Fehler gefunden:', args);
+        }
+        
+        return originalError.apply(console, args);
+    };
+    
+    // Unhandled errors abfangen
+    window.addEventListener('error', (event) => {
+        console.log('🚨 JavaScript Fehler:', event.error);
+        console.log('🚨 Stack:', event.error?.stack);
+    });
+}
+
+// Alle Tests ausführen
+function runAllTests() {
+    console.log('🔬 Starte vollständige ITET Runtime Diagnose...');
+    
+    setupErrorHandling();
+    
+    const results = {
+        classTest: testITETClass(),
+        currentStudienplan: checkCurrentStudienplan(),
+        initialization: checkInitialization(),
+        configLoading: checkConfigLoading()
+    };
     
     console.log('📊 Test-Ergebnisse:', results);
     
-    // Zeige Zusammenfassung
-    const existing = results.filter(r => r.exists);
-    const missing = results.filter(r => !r.exists);
-    
-    console.log(`✅ Existierende Dateien: ${existing.length}/${results.length}`);
-    console.log(`❌ Fehlende Dateien: ${missing.length}/${results.length}`);
-    
-    if (missing.length > 0) {
-        console.error('💥 PROBLEM GEFUNDEN: Fehlende Dateien:', missing.map(m => m.url));
-    }
-    
-    // Teste Script-Loading
-    if (existing.length > 0) {
-        console.log('🧪 Teste Script-Loading...');
-        await testScriptLoading(existing[0].url);
-    }
-    
-    // Teste StudienplanBase
-    console.log('🧪 Teste StudienplanBase Verfügbarkeit...');
-    console.log('StudienplanBase verfügbar:', typeof StudienplanBase !== 'undefined');
-    
-    if (typeof StudienplanBase !== 'undefined') {
-        console.log('StudienplanBase Methoden:', Object.getOwnPropertyNames(StudienplanBase.prototype));
-    }
-    
-    // Erstelle Debug-Report
-    createDebugReport(results);
-}
-
-function testScriptLoading(url) {
-    return new Promise((resolve) => {
-        console.log(`🧪 Teste Script-Loading für: ${url}`);
+    // DOM Tests nach einer kurzen Verzögerung
+    setTimeout(() => {
+        checkDOMElements();
         
-        const script = document.createElement('script');
-        script.src = url;
-        
-        const startTime = performance.now();
-        
-        script.onload = () => {
-            const endTime = performance.now();
-            console.log(`✅ Script erfolgreich geladen: ${url.split('/').pop()} (${(endTime - startTime).toFixed(2)}ms)`);
-            
-            // Prüfe was das Script erstellt hat
-            setTimeout(() => {
-                console.log('📦 Nach Script-Loading verfügbar:');
-                console.log('- window.ITETStudienplan:', typeof window.ITETStudienplan);
-                console.log('- window.StudiengangCustomClass:', typeof window.StudiengangCustomClass);
-                resolve(true);
-            }, 100);
-        };
-        
-        script.onerror = (error) => {
-            const endTime = performance.now();
-            console.error(`❌ Script-Loading Fehler: ${url.split('/').pop()} (${(endTime - startTime).toFixed(2)}ms)`, error);
-            resolve(false);
-        };
-        
-        document.head.appendChild(script);
-        
-        // Timeout nach 5 Sekunden
+        // Final-Report nach 2 Sekunden
         setTimeout(() => {
-            console.warn(`⏰ Script-Loading Timeout: ${url.split('/').pop()}`);
-            resolve(false);
-        }, 5000);
-    });
+            console.log('🏁 ITET Runtime Diagnose abgeschlossen');
+            console.log('🔍 Wenn noch Probleme bestehen, prüfe die Console auf Fehler');
+        }, 2000);
+    }, 1000);
 }
 
-function createDebugReport(results) {
-    const report = {
-        timestamp: new Date().toISOString(),
-        browser: navigator.userAgent,
-        url: window.location.href,
-        moduleTests: results,
-        globals: {
-            StudienplanBase: typeof StudienplanBase,
-            ITETStudienplan: typeof window.ITETStudienplan,
-            StudiengangCustomClass: typeof window.StudiengangCustomClass,
-            StudiengangConfig: typeof window.StudiengangConfig
-        },
-        domState: {
-            scripts: document.scripts.length,
-            stylesheets: document.styleSheets.length,
-            elements: document.getElementsByTagName('*').length
-        }
-    };
-    
-    console.log('📋 VOLLSTÄNDIGER DEBUG-REPORT:');
-    console.log(JSON.stringify(report, null, 2));
-    
-    // Erstelle HTML Debug-Ausgabe
-    const debugDiv = document.createElement('div');
-    debugDiv.id = 'itet-debug-output';
-    debugDiv.style.cssText = `
-        position: fixed; top: 10px; left: 10px; width: 400px; max-height: 80vh;
-        background: white; border: 2px solid red; padding: 10px; overflow-y: auto;
-        z-index: 10000; font-family: monospace; font-size: 10px;
-        box-shadow: 0 0 20px rgba(0,0,0,0.5);
-    `;
-    
-    debugDiv.innerHTML = `
-        <h3 style="color: red; margin: 0 0 10px 0;">🚨 ITET DEBUG REPORT</h3>
-        <div><strong>Zeit:</strong> ${report.timestamp}</div>
-        <div><strong>URL:</strong> ${report.url}</div>
-        <hr>
-        <h4>📁 Modul-Tests:</h4>
-        ${results.map(r => `
-            <div style="color: ${r.exists ? 'green' : 'red'};">
-                ${r.exists ? '✅' : '❌'} ${r.url.split('/').pop()} 
-                ${r.status ? `(${r.status})` : ''}
-                ${r.error ? `- ${r.error}` : ''}
-            </div>
-        `).join('')}
-        <hr>
-        <h4>🌐 Globale Objekte:</h4>
-        ${Object.entries(report.globals).map(([key, value]) => `
-            <div style="color: ${value === 'undefined' ? 'red' : 'green'};">
-                ${value === 'undefined' ? '❌' : '✅'} ${key}: ${value}
-            </div>
-        `).join('')}
-        <hr>
-        <button onclick="this.parentElement.remove()" style="background: red; color: white; border: none; padding: 5px 10px; cursor: pointer;">Schließen</button>
-    `;
-    
-    document.body.appendChild(debugDiv);
-}
+// Tests starten
+runAllTests();
 
-// Starte Debug-Tests
-debugModules().then(() => {
-    console.log('🏁 Debug-Tests abgeschlossen');
-}).catch(error => {
-    console.error('💥 Debug-Test Fehler:', error);
-});
-
-console.log('✅ ITET Debug Mode aktiv - siehe Console und Debug-Fenster');
+console.log('✅ ITET Runtime Debug aktiv');
