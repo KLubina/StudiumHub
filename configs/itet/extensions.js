@@ -1,48 +1,72 @@
-/* ==== ITET EXTENSIONS - VEREINFACHT ==== */
-/* Lädt die modularen Extensions aus dem extensions/ Unterordner */
+/* ==== ITET EXTENSIONS - MINIMAL FIX ==== */
+/* Minimale Änderung für modulare Extensions */
 
 (function() {
     'use strict';
     
     console.log('🚀 Lade ITET Extensions (modular)...');
     
-    // Pfad zu den modularen Extensions
-    const extensionsPath = 'configs/itet/extensions/index.js';
+    // Module in der korrekten Reihenfolge laden
+    const modules = [
+        'configs/itet/extensions/itet-main-class.js',
+        'configs/itet/extensions/ui-helpers.js', 
+        'configs/itet/extensions/data-persistence.js',
+        'configs/itet/extensions/kp-counter.js',
+        'configs/itet/extensions/praktika-system.js'
+    ];
     
-    // Script dynamisch laden
-    const script = document.createElement('script');
-    script.src = extensionsPath;
+    let loadedCount = 0;
+    const totalModules = modules.length;
     
-    script.onload = function() {
-        console.log('✅ ITET Extensions erfolgreich geladen');
-        
-        // Bestätige dass die Klasse verfügbar ist
-        if (window.ITETStudienplan && window.StudiengangCustomClass) {
-            console.log('✅ ITETStudienplan Klasse verfügbar');
-        } else {
-            console.warn('⚠️ ITETStudienplan Klasse nicht gefunden');
+    function loadScript(src) {
+        return new Promise((resolve, reject) => {
+            // Prüfen ob bereits geladen
+            if (document.querySelector(`script[src="${src}"]`)) {
+                console.log(`ℹ️ ${src} bereits geladen`);
+                resolve();
+                return;
+            }
+            
+            const script = document.createElement('script');
+            script.src = src;
+            script.onload = () => {
+                loadedCount++;
+                console.log(`✅ ${src} geladen (${loadedCount}/${totalModules})`);
+                resolve();
+            };
+            script.onerror = () => {
+                console.error(`❌ Fehler beim Laden: ${src}`);
+                reject(new Error(`Fehler beim Laden von ${src}`));
+            };
+            document.head.appendChild(script);
+        });
+    }
+    
+    // Alle Module sequenziell laden
+    async function loadAllModules() {
+        try {
+            for (const module of modules) {
+                await loadScript(module);
+            }
+            
+            console.log('🎉 Alle ITET Extension Module erfolgreich geladen');
+            
+            // Bestätige dass die Klasse verfügbar ist
+            if (window.ITETStudienplan && window.StudiengangCustomClass) {
+                console.log('✅ ITETStudienplan Klasse verfügbar');
+            } else {
+                console.warn('⚠️ ITETStudienplan Klasse nicht gefunden');
+            }
+            
+        } catch (error) {
+            console.error('❌ Fehler beim Laden der ITET Extensions:', error);
+            
+            // Fallback Log
+            console.log('🔄 Modulare Extensions fehlgeschlagen, prüfe Pfade...');
         }
-    };
+    }
     
-    script.onerror = function() {
-        console.error('❌ Fehler beim Laden der ITET Extensions');
-        
-        // Fallback: Versuche alte extensions.js zu laden
-        console.log('🔄 Versuche Fallback...');
-        const fallbackScript = document.createElement('script');
-        fallbackScript.src = 'configs/itet/extensions-backup.js';
-        
-        fallbackScript.onload = () => {
-            console.log('✅ Fallback Extensions geladen');
-        };
-        
-        fallbackScript.onerror = () => {
-            console.error('❌ Auch Fallback fehlgeschlagen');
-            console.error('💥 ITET Extensions komplett nicht verfügbar!');
-        };
-        
-        document.head.appendChild(fallbackScript);
-    };
+    // Starte das Laden
+    loadAllModules();
     
-    document.head.appendChild(script);
 })();
