@@ -43,7 +43,6 @@ window.StudiengangModules = [
     { jahr: 3, semester: 0, name: "Diskrete Ereignissysteme", kp: 6, kategorie: "Kernfächer nach Schwerpunkt", fachgebiet: "Computer und Netzwerk" },
     { jahr: 3, semester: 0, name: "Kommunikationssysteme", kp: 6, kategorie: "Kernfächer nach Schwerpunkt", fachgebiet: "Computer und Netzwerk" },
     { jahr: 3, semester: 0, name: "Eingebettete Systeme", kp: 6, kategorie: "Kernfächer nach Schwerpunkt", fachgebiet: "Computer und Netzwerk" },
-    { jahr: 3, semester: 0, name: "Communication and Detection Theory", kp: 6, kategorie: "Kernfächer nach Schwerpunkt", fachgebiet: "Computer und Netzwerk" },
     { jahr: 3, semester: 0, name: "Communication Networks", kp: 6, kategorie: "Kernfächer nach Schwerpunkt", fachgebiet: "Computer und Netzwerk" },
     { jahr: 3, semester: 0, name: "Fundamentals of Computer Architecture", kp: 6, kategorie: "Kernfächer nach Schwerpunkt", fachgebiet: "Computer und Netzwerk" },
     { jahr: 3, semester: 0, name: "Python for Science & Machine Learning", kp: 3, kategorie: "Wahl Praktika-Projekte-Seminare" },
