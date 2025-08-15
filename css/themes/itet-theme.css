@@ -137,13 +137,24 @@
     width: 200px;
 }
 
-/* ==== HORIZONTALES MODUL-LAYOUT (wie MTEC) ==== */
+/* ==== LAYOUT ANPASSUNGEN ==== */
+.farben-legende {
+    width: 250px;
+    margin-left: 40px;
+}
+
+.fachgebiet-column {
+    width: 200px;
+}
+
+/* ==== HORIZONTALES MODUL-LAYOUT (wie MTEC) - AGGRESSIV ==== */
 .module-container {
     display: flex !important;
     flex-wrap: wrap !important;
     gap: 5px !important;
     margin-bottom: 15px !important;
     align-items: flex-start !important;
+    flex-direction: row !important;
 }
 
 /* Spezifisch für ITET Module */
@@ -152,8 +163,24 @@
     flex-wrap: wrap !important;
     gap: 5px !important;
     margin-bottom: 15px !important;
+    flex-direction: row !important;
+}
+
+/* Alle Container im ITET */
+body .container .studienplan .module-container {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
 }
 
 .modul {
     margin: 3px !important;
+    display: inline-block !important;
+}
+
+/* Falls es spezielle ITET Container gibt */
+.jahr .module-container {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
 }
