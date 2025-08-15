@@ -44,15 +44,15 @@ window.StudiengangModules = [
     { jahr: 3, semester: 0, name: "Communication Networks", kp: 6, kategorie: "Kernfächer nach Schwerpunkt", fachgebiet: "Computer und Netzwerk" },
     { jahr: 3, semester: 0, name: "Fundamentals of Computer Architecture", kp: 6, kategorie: "Kernfächer nach Schwerpunkt", fachgebiet: "Computer und Netzwerk" },
     
+    { jahr: 3, semester: 0, name: "Computational Thinking", kp: 4, kategorie: "Weitere Wahl-Grundlagenfächer" },
+    { jahr: 3, semester: 0, name: "High-Frequency Design Techniques", kp: 4, kategorie: "Weitere Wahl-Grundlagenfächer" },
+
     // PLATZHALTER für dynamische Praktika (wird durch Extensions ersetzt)
     { jahr: 3, semester: 0, name: "Wahl Praktika-Projekte-Seminare", kp: 0, kategorie: "Wahl Praktika-Projekte-Seminare", isPlaceholder: true },
     
-    { jahr: 3, semester: 0, name: "Bachelorarbeit", kp: 12, kategorie: "Wissenschaftliche Arbeit" },
-    { jahr: 3, semester: 0, name: "Science in Perspective", kp: 6, kategorie: "Wissenschaftliche Arbeit" },
-
     { jahr: 3, semester: 0, name: "Managerial Economics", kp: 4, kategorie: "Wahlfächer" },
     { jahr: 3, semester: 0, name: "Einführung in die Mikroökonomie", kp: 3, kategorie: "Wahlfächer" },
-    
-    { jahr: 3, semester: 0, name: "Computational Thinking", kp: 4, kategorie: "Weitere Wahl-Grundlagenfächer" },
-    { jahr: 3, semester: 0, name: "High-Frequency Design Techniques", kp: 4, kategorie: "Weitere Wahl-Grundlagenfächer" }
+
+    { jahr: 3, semester: 0, name: "Bachelorarbeit", kp: 12, kategorie: "Wissenschaftliche Arbeit" },
+    { jahr: 3, semester: 0, name: "Science in Perspective", kp: 6, kategorie: "Wissenschaftliche Arbeit" }
 ];
