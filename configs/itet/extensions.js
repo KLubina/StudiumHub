@@ -1,7 +1,7 @@
-/* ==== ITET EXTENSIONS - VEREINFACHT UND FUNKTIONAL ==== */
-/* Alle ITET-spezifischen Funktionen in einer Datei */
+/* ==== ITET EXTENSIONS - ERWEITERT MIT DYNAMISCHEN MODULEN ==== */
+/* Alle ITET-spezifischen Funktionen mit dynamischer Praktika-Integration */
 
-// ITET Studienplan Klasse mit Praktika-System
+// ITET Studienplan Klasse mit Praktika-System UND dynamischer Integration
 window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
     constructor(config) {
         super(config);
@@ -14,83 +14,119 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
         this.showDetailedBreakdown = false;
         this.updateTimeout = null;
         
-        // Verfügbare Praktika, Projekte und Seminare
+        // Verfügbare Praktika, Projekte und Seminare (aus der ursprünglichen Liste)
         this.praktikaModule = [
-            { name: "Amateurfunk-Kurs", kp: 1.5, kategorie: "wahl-praktika-projekte" },
-            { name: "COMSOL Design Tool – Design of Optical Components", kp: 3, kategorie: "wahl-praktika-projekte" },
-            { name: "Microcontrollers for Sensors and the Internet of Things", kp: 4, kategorie: "wahl-praktika-projekte" },
-            { name: "FPGA in Quantum Computing with Superconducting Qubits", kp: 3, kategorie: "wahl-praktika-projekte" },
-            { name: "Neural Network on Low Power FPGA", kp: 2, kategorie: "wahl-praktika-projekte" },
-            { name: "Bluetooth Low Energy Programming for IoT Sensing System", kp: 3, kategorie: "wahl-praktika-projekte" },
-            { name: "Spiking Neural Network on Neuromorphic Processors", kp: 3, kategorie: "wahl-praktika-projekte" },
-            { name: "Electronic Circuits & Signals Exploration Laboratory", kp: 2, kategorie: "wahl-praktika-projekte" },
-            { name: "Assembling and Controlling a Tuning-Fork AFM", kp: 3, kategorie: "wahl-praktika-projekte" },
-            { name: "Technical and Economic Aspects of Renewable Energy Supply", kp: 3, kategorie: "wahl-praktika-projekte" },
-            { name: "Python for Engineers", kp: 3, kategorie: "wahl-praktika-projekte" },
-            { name: "Machine Learning for Brain-Computer Interfaces", kp: 3, kategorie: "wahl-praktika-projekte" },
-            { name: "Bau eines drahtlosen Infrarot-Kopfhörers", kp: 2, kategorie: "wahl-praktika-projekte" },
-            { name: "Bits on Air", kp: 2, kategorie: "wahl-praktika-projekte" },
-            { name: "Software Defined Radio", kp: 3, kategorie: "wahl-praktika-projekte" },
-            { name: "Quad-Rotors: Control and Estimation", kp: 2, kategorie: "wahl-praktika-projekte" },
-            { name: "RoboCup: Learning and Control", kp: 3, kategorie: "wahl-praktika-projekte" },
-            { name: "Magnetresonanz: Vom Spektrum zum Bild", kp: 1, kategorie: "wahl-praktika-projekte" },
-            { name: "Biosignal Acquisition and Processing for IoT Wearable Devices", kp: 3, kategorie: "wahl-praktika-projekte" },
-            { name: "Android Application Development (AAD)", kp: 4, kategorie: "wahl-praktika-projekte" },
-            { name: "iCEBreaker FPGA For IoT Sensing Systems", kp: 3, kategorie: "wahl-praktika-projekte" },
-            { name: "Embedded Deep Learning with Huawei Atlas 200 AI Dev Kit", kp: 3, kategorie: "wahl-praktika-projekte" },
-            { name: "Vision Goes Vegas", kp: 2, kategorie: "wahl-praktika-projekte" },
-            { name: "Magnetische Felder im Alltag", kp: 3, kategorie: "wahl-praktika-projekte" },
-            { name: "Accelerating Genome Analysis with FPGAs, GPUs", kp: 3, kategorie: "wahl-praktika-projekte" },
-            { name: "Exploration of Emerging Memory Systems", kp: 3, kategorie: "wahl-praktika-projekte" },
-            { name: "FPGA-based Exploration of DRAM and RowHammer", kp: 3, kategorie: "wahl-praktika-projekte" },
-            { name: "Genome Sequencing on Mobile Devices", kp: 3, kategorie: "wahl-praktika-projekte" },
-            { name: "Memory-Centric Computing", kp: 3, kategorie: "wahl-praktika-projekte" },
-            { name: "Controlling Biological Neuronal Networks Using Machine Learning", kp: 4, kategorie: "wahl-praktika-projekte" },
-            { name: "Python for Science & Machine Learning", kp: 3, kategorie: "wahl-praktika-projekte" },
-            { name: "Memory Design: From Architecture down to Basic Cells", kp: 3, kategorie: "wahl-praktika-projekte" },
-            { name: "Building a receive coil for MRI", kp: 1.5, kategorie: "wahl-praktika-projekte" },
-            { name: "Clean Room Technology – Fabrication and Characterization", kp: 3, kategorie: "wahl-praktika-projekte" },
-            { name: "Understanding and Designing Modern SSDs", kp: 3, kategorie: "wahl-praktika-projekte" },
-            { name: "Robotic Maze Solving with a TI-RSLK Robot", kp: 3, kategorie: "wahl-praktika-projekte" },
-            { name: "Embedded Systems With Drones", kp: 4, kategorie: "wahl-praktika-projekte" },
-            { name: "Machine Learning on Smart Phone", kp: 3, kategorie: "wahl-praktika-projekte" },
-            { name: "Introduction to Program Nao Robots for Robocup", kp: 3, kategorie: "wahl-praktika-projekte" },
-            { name: "Smart Patch Projects", kp: 4, kategorie: "wahl-praktika-projekte" },
-            { name: "Programming Heterogeneous Computing Systems", kp: 3, kategorie: "wahl-praktika-projekte" },
-            { name: "Optics and Spectroscopy Lab", kp: 3, kategorie: "wahl-praktika-projekte" },
-            { name: "Our Daily Exposure to Electromagnetic Radiation", kp: 3, kategorie: "wahl-praktika-projekte" },
-            { name: "Intelligent Architectures via Hardware/Software Cooperation", kp: 3, kategorie: "wahl-praktika-projekte" },
-            { name: "Wearable Ultrasound: Tools and Technologies", kp: 3, kategorie: "wahl-praktika-projekte" },
-            { name: "Autonomous Cars and Robots", kp: 4, kategorie: "wahl-praktika-projekte" },
-            { name: "Erneuerbare Energien und Netto-Null-Emissions-Ziel", kp: 2, kategorie: "wahl-praktika-projekte" },
-            { name: "Enabling Smart and Low Power IoT Sensor Nodes", kp: 4, kategorie: "wahl-praktika-projekte" },
-            { name: "Gibbs? Clifford!", kp: 2, kategorie: "wahl-praktika-projekte" },
-            { name: "Image-guided digital twinning of cardiac anatomy", kp: 2, kategorie: "wahl-praktika-projekte" },
-            { name: "Coding Algorithms for a Scavenger Hunt", kp: 1, kategorie: "wahl-praktika-projekte" },
-            { name: "Clinical Genomics", kp: 4, kategorie: "wahl-praktika-projekte" },
-            { name: "Digital Audio", kp: 4, kategorie: "wahl-praktika-projekte" },
-            { name: "Let's make ITET green!", kp: 3, kategorie: "wahl-praktika-projekte" },
-            { name: "Echoes in Action: Designing Piezoelectric Transducers", kp: 2, kategorie: "wahl-praktika-projekte" },
-            { name: "Radio Frequency Electromagnetic Fields", kp: 3, kategorie: "wahl-praktika-projekte" },
-            { name: "Capture the Flag – Introduction to Cybersecurity", kp: 3, kategorie: "wahl-praktika-projekte" },
-            { name: "Exploration Project", kp: 3, kategorie: "wahl-praktika-projekte" },
-            { name: "Mission impossible: CartPole4.0", kp: 2, kategorie: "wahl-praktika-projekte" },
-            { name: "Audio Electronics and Music Production Technology", kp: 1, kategorie: "wahl-praktika-projekte" },
-            { name: "From Software Applications to FPGA Designs", kp: 3, kategorie: "wahl-praktika-projekte" },
-            { name: "Practical Antenna Design, Implementation, and Measurement", kp: 3, kategorie: "wahl-praktika-projekte" },
-            { name: "Hands-On Deep Learning", kp: 2, kategorie: "wahl-praktika-projekte" },
-            { name: "Applied Circuit and PCB-Design", kp: 2, kategorie: "wahl-praktika-projekte" }
+            { name: "Amateurfunk-Kurs", kp: 1.5, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "COMSOL Design Tool – Design of Optical Components", kp: 3, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "Microcontrollers for Sensors and the Internet of Things", kp: 4, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "FPGA in Quantum Computing with Superconducting Qubits", kp: 3, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "Neural Network on Low Power FPGA", kp: 2, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "Bluetooth Low Energy Programming for IoT Sensing System", kp: 3, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "Spiking Neural Network on Neuromorphic Processors", kp: 3, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "Electronic Circuits & Signals Exploration Laboratory", kp: 2, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "Assembling and Controlling a Tuning-Fork AFM", kp: 3, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "Technical and Economic Aspects of Renewable Energy Supply", kp: 3, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "Python for Engineers", kp: 3, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "Machine Learning for Brain-Computer Interfaces", kp: 3, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "Bau eines drahtlosen Infrarot-Kopfhörers", kp: 2, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "Bits on Air", kp: 2, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "Software Defined Radio", kp: 3, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "Quad-Rotors: Control and Estimation", kp: 2, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "RoboCup: Learning and Control", kp: 3, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "Magnetresonanz: Vom Spektrum zum Bild", kp: 1, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "Biosignal Acquisition and Processing for IoT Wearable Devices", kp: 3, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "Android Application Development (AAD)", kp: 4, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "iCEBreaker FPGA For IoT Sensing Systems", kp: 3, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "Embedded Deep Learning with Huawei Atlas 200 AI Dev Kit", kp: 3, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "Vision Goes Vegas", kp: 2, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "Magnetische Felder im Alltag", kp: 3, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "Accelerating Genome Analysis with FPGAs, GPUs", kp: 3, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "Exploration of Emerging Memory Systems", kp: 3, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "FPGA-based Exploration of DRAM and RowHammer", kp: 3, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "Genome Sequencing on Mobile Devices", kp: 3, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "Memory-Centric Computing", kp: 3, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "Controlling Biological Neuronal Networks Using Machine Learning", kp: 4, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "Python for Science & Machine Learning", kp: 3, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "Memory Design: From Architecture down to Basic Cells", kp: 3, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "Building a receive coil for MRI", kp: 1.5, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "Clean Room Technology – Fabrication and Characterization", kp: 3, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "Understanding and Designing Modern SSDs", kp: 3, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "Robotic Maze Solving with a TI-RSLK Robot", kp: 3, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "Embedded Systems With Drones", kp: 4, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "Machine Learning on Smart Phone", kp: 3, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "Introduction to Program Nao Robots for Robocup", kp: 3, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "Smart Patch Projects", kp: 4, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "Programming Heterogeneous Computing Systems", kp: 3, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "Optics and Spectroscopy Lab", kp: 3, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "Our Daily Exposure to Electromagnetic Radiation", kp: 3, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "Intelligent Architectures via Hardware/Software Cooperation", kp: 3, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "Wearable Ultrasound: Tools and Technologies", kp: 3, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "Autonomous Cars and Robots", kp: 4, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "Erneuerbare Energien und Netto-Null-Emissions-Ziel", kp: 2, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "Enabling Smart and Low Power IoT Sensor Nodes", kp: 4, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "Gibbs? Clifford!", kp: 2, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "Image-guided digital twinning of cardiac anatomy", kp: 2, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "Coding Algorithms for a Scavenger Hunt", kp: 1, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "Clinical Genomics", kp: 4, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "Digital Audio", kp: 4, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "Let's make ITET green!", kp: 3, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "Echoes in Action: Designing Piezoelectric Transducers", kp: 2, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "Radio Frequency Electromagnetic Fields", kp: 3, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "Capture the Flag – Introduction to Cybersecurity", kp: 3, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "Exploration Project", kp: 3, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "Mission impossible: CartPole4.0", kp: 2, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "Audio Electronics and Music Production Technology", kp: 1, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "From Software Applications to FPGA Designs", kp: 3, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "Practical Antenna Design, Implementation, and Measurement", kp: 3, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "Hands-On Deep Learning", kp: 2, kategorie: "Wahl Praktika-Projekte-Seminare" },
+            { name: "Applied Circuit and PCB-Design", kp: 2, kategorie: "Wahl Praktika-Projekte-Seminare" }
         ];
     }
 
     initialize() {
+        // WICHTIG: Zuerst die Moduldaten um ausgewählte Praktika erweitern
+        this.integrateSelectedPraktikaIntoConfig();
+        
+        // Dann normales Initialize aufrufen
         super.initialize();
+        
+        // ITET-spezifische UI hinzufügen
         this.addKPCounter();
         this.addPraktikaControls();
-        this.makePraktikaDroppable();
         this.updateKPDisplay();
         this.updatePraktikaDisplay();
-        console.log('✅ ITET Studienplan initialisiert');
+        
+        console.log('✅ ITET Studienplan mit dynamischen Praktika initialisiert');
+    }
+
+    /* ==== DYNAMISCHE PRAKTIKA-INTEGRATION ==== */
+    integrateSelectedPraktikaIntoConfig() {
+        console.log('🔄 Integriere ausgewählte Praktika in Konfiguration...');
+        
+        // Finde den Platzhalter
+        const placeholderIndex = this.config.daten.findIndex(m => m.isPlaceholder);
+        
+        if (placeholderIndex !== -1) {
+            // Entferne den Platzhalter
+            this.config.daten.splice(placeholderIndex, 1);
+            console.log('✅ Platzhalter entfernt');
+        }
+        
+        // Füge alle ausgewählten Praktika hinzu
+        const selectedModules = Object.values(this.selectedPraktika).flat();
+        selectedModules.forEach(modul => {
+            // Füge Jahr 3, semester 0 hinzu wenn nicht vorhanden
+            const moduleCopy = {
+                ...modul,
+                jahr: 3,
+                semester: 0,
+                isDynamic: true // Markierung für dynamische Module
+            };
+            
+            this.config.daten.push(moduleCopy);
+        });
+        
+        console.log(`✅ ${selectedModules.length} ausgewählte Praktika hinzugefügt`);
     }
 
     /* ==== KP-COUNTER SYSTEM ==== */
@@ -110,7 +146,7 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
             <div style="text-align: center; margin-bottom: 15px;">
                 <h3 style="margin: 0 0 5px 0; color: #0D5B8C; font-size: 18px;">📊 KP-Übersicht</h3>
                 <div style="font-size: 12px; color: #666;">
-                    Automatische Zählung aller angezeigten Module
+                    Automatische Zählung aller Module
                 </div>
             </div>
             
@@ -202,50 +238,36 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
             byCategory: {},
             byYear: {},
             moduleCount: 0,
-            praktikaKP: 0
+            praktikaKP: 0,
+            dynamicKP: 0 // Neu: KP von dynamischen Modulen
         };
         
-        // Standard Module analysieren
-        const moduleElements = document.querySelectorAll('.modul');
-        
-        moduleElements.forEach(moduleEl => {
-            const modulName = this.getModuleName(moduleEl);
-            const modul = this.config.daten.find(m => m.name === modulName);
-            
-            if (modul) {
-                breakdown.total += modul.kp;
-                breakdown.moduleCount++;
-                
-                const kategorie = modul.kategorie || 'Unbekannt';
-                if (!breakdown.byCategory[kategorie]) {
-                    breakdown.byCategory[kategorie] = { kp: 0, count: 0 };
-                }
-                breakdown.byCategory[kategorie].kp += modul.kp;
-                breakdown.byCategory[kategorie].count++;
-                
-                const jahr = modul.jahr || 'Unbekannt';
-                if (!breakdown.byYear[jahr]) {
-                    breakdown.byYear[jahr] = { kp: 0, count: 0 };
-                }
-                breakdown.byYear[jahr].kp += modul.kp;
-                breakdown.byYear[jahr].count++;
-            }
-        });
-        
-        // Hinzugefügte Praktika analysieren
-        const praktikaModules = Object.values(this.selectedPraktika).flat();
-        praktikaModules.forEach(modul => {
+        // Alle Module analysieren (inkl. dynamische)
+        this.config.daten.forEach(modul => {
             breakdown.total += modul.kp;
             breakdown.moduleCount++;
-            breakdown.praktikaKP += modul.kp;
             
-            const kategorie = 'Wahl Praktika-Projekte-Seminare';
+            // Markiere dynamische Module
+            if (modul.isDynamic) {
+                breakdown.dynamicKP += modul.kp;
+            }
+            
+            const kategorie = modul.kategorie || 'Unbekannt';
             if (!breakdown.byCategory[kategorie]) {
                 breakdown.byCategory[kategorie] = { kp: 0, count: 0 };
             }
             breakdown.byCategory[kategorie].kp += modul.kp;
             breakdown.byCategory[kategorie].count++;
+            
+            const jahr = modul.jahr || 'Unbekannt';
+            if (!breakdown.byYear[jahr]) {
+                breakdown.byYear[jahr] = { kp: 0, count: 0 };
+            }
+            breakdown.byYear[jahr].kp += modul.kp;
+            breakdown.byYear[jahr].count++;
         });
+        
+        breakdown.praktikaKP = breakdown.dynamicKP; // Für Kompatibilität
         
         return breakdown;
     }
@@ -258,7 +280,7 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
                 <strong>📋 Zusammenfassung:</strong><br>
                 <span style="color: #0D5B8C;">▶ ${breakdown.moduleCount} Module insgesamt</span><br>
                 <span style="color: #00A0E3;">▶ ${breakdown.total} KP Gesamtsumme</span>
-                ${breakdown.praktikaKP > 0 ? `<br><span style="color: #4CA64C;">▶ ${breakdown.praktikaKP} KP aus Praktika</span>` : ''}
+                ${breakdown.dynamicKP > 0 ? `<br><span style="color: #4CA64C;">▶ ${breakdown.dynamicKP} KP aus gewählten Praktika</span>` : ''}
             </div>
         `;
         
@@ -326,13 +348,14 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
             summary: {
                 totalKP: breakdown.total,
                 moduleCount: breakdown.moduleCount,
+                dynamicKP: breakdown.dynamicKP,
                 targetKP: 180,
                 status: breakdown.total >= 180 ? 'Erfüllt' : `${180 - breakdown.total} KP fehlen`
             },
             byCategory: breakdown.byCategory,
             byYear: breakdown.byYear,
             selectedPraktika: this.selectedPraktika,
-            version: '1.0'
+            version: '2.0'
         };
         
         const filename = `itet-kp-breakdown-${new Date().toISOString().split('T')[0]}.json`;
@@ -361,7 +384,8 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
                 <div style="margin-top: 8px;">
                     <button id="show-praktika-list" style="background: #4CA64C; color: white; border: none; padding: 5px 12px; border-radius: 3px; cursor: pointer; margin-right: 5px; font-size: 11px;">📋 Module zeigen</button>
                     <button id="save-praktika" style="background: #28a745; color: white; border: none; padding: 5px 12px; border-radius: 3px; cursor: pointer; margin-right: 5px; font-size: 11px;">💾 Speichern</button>
-                    <button id="reset-praktika" style="background: #dc3545; color: white; border: none; padding: 5px 12px; border-radius: 3px; cursor: pointer; font-size: 11px;">🔄 Reset</button>
+                    <button id="refresh-studienplan" style="background: #007bff; color: white; border: none; padding: 5px 12px; border-radius: 3px; cursor: pointer; margin-right: 5px; font-size: 11px;">🔄 Neu laden</button>
+                    <button id="reset-praktika" style="background: #dc3545; color: white; border: none; padding: 5px 12px; border-radius: 3px; cursor: pointer; font-size: 11px;">🗑️ Reset</button>
                 </div>
             </div>
         `;
@@ -377,30 +401,100 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
             this.exportPraktika();
         });
 
+        document.getElementById('refresh-studienplan').addEventListener('click', () => {
+            this.refreshStudienplan();
+        });
+
         document.getElementById('reset-praktika').addEventListener('click', () => {
             this.resetPraktika();
         });
     }
 
-    makePraktikaDroppable() {
-        // Vereinfachte Version - macht alle Praktika-Module als Buttons verfügbar
-        const praktikaModules = this.config.daten.filter(m => 
-            m.kategorie === 'wahl-praktika-projekte' || 
-            m.name.includes('Android Application Development') ||
-            m.name.includes('Python for Engineers') ||
-            m.name.includes('Hands-On Deep Learning')
-        );
+    refreshStudienplan() {
+        this.showMessage('🔄 Lade Studienplan neu...', 'info');
         
-        praktikaModules.forEach(modulEl => {
-            const moduleElement = document.querySelector(`.modul .modul-titel[title="${modulEl.name}"]`);
-            if (moduleElement) {
-                const moduleDiv = moduleElement.closest('.modul');
-                moduleDiv.style.cursor = 'pointer';
-                moduleDiv.addEventListener('click', () => {
-                    this.togglePraktikaSelection(modulEl);
-                });
-            }
+        // Entferne alte dynamische Module
+        this.config.daten = this.config.daten.filter(m => !m.isDynamic);
+        
+        // Füge aktuelle Auswahl hinzu
+        this.integrateSelectedPraktikaIntoConfig();
+        
+        // Neuaufbau des Studienplans
+        this.createStudienplan();
+        this.updateKPDisplay();
+        this.updatePraktikaDisplay();
+        
+        this.showMessage('✅ Studienplan aktualisiert!', 'success');
+    }
+
+    updatePraktikaDisplay() {
+        const totalKp = Object.values(this.selectedPraktika).flat().reduce((sum, m) => sum + m.kp, 0);
+        const kpDisplay = document.getElementById('selected-praktika-kp');
+        
+        if (kpDisplay) {
+            kpDisplay.textContent = totalKp;
+            kpDisplay.style.color = totalKp > 0 ? '#28a745' : '#dc3545';
+            kpDisplay.style.fontWeight = 'bold';
+        }
+    }
+
+    showPraktikaTooltip(event) {
+        const content = this.createPraktikaTooltip();
+        this.showCustomTooltip(content, event);
+    }
+
+    createPraktikaTooltip() {
+        let content = `
+            <div class="praktika-liste">
+                <h3>🎯 Verfügbare Praktika, Projekte & Seminare</h3>
+                <p style="font-size: 11px; color: #666; margin-bottom: 15px;">
+                    💡 <strong>Klicke auf Module um sie auszuwählen!</strong><br>
+                    📊 Gewählte Module werden dynamisch im Studienplan angezeigt.
+                </p>
+                <div style="max-height: 400px; overflow-y: auto; display: grid; grid-template-columns: 1fr; gap: 2px;">
+        `;
+
+        this.praktikaModule.forEach(modul => {
+            const isSelected = this.isPraktikaSelected(modul.name);
+            const bgColor = isSelected ? '#d4edda' : '#f8f9fa';
+            const textColor = isSelected ? '#155724' : '#333';
+            const buttonText = isSelected ? '✓ Gewählt' : 'Wählen';
+            const buttonColor = isSelected ? '#28a745' : '#4CA64C';
+
+            content += `
+                <div style="padding: 8px; background: ${bgColor}; color: ${textColor}; border-radius: 4px; margin: 2px; border: 1px solid #ddd; display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <div style="font-weight: bold; font-size: 10px;">${modul.kp} KP</div>
+                        <div style="font-size: 9px; line-height: 1.2;">${modul.name}</div>
+                    </div>
+                    <button onclick="window.currentStudienplan.togglePraktikaFromTooltip('${modul.name}')" 
+                            style="background: ${buttonColor}; color: white; border: none; padding: 3px 6px; border-radius: 3px; cursor: pointer; font-size: 8px;">
+                        ${buttonText}
+                    </button>
+                </div>
+            `;
         });
+
+        content += `
+                </div>
+                <div style="margin-top: 15px; padding: 10px; background-color: #e7f3ff; border-radius: 5px; border: 1px solid #b3d7ff;">
+                    <strong>💡 Hinweis:</strong> Nach der Auswahl klicke auf "🔄 Neu laden" um die Module im Studienplan zu sehen!
+                </div>
+            </div>
+        `;
+        return content;
+    }
+
+    togglePraktikaFromTooltip(modulName) {
+        const modul = this.praktikaModule.find(m => m.name === modulName);
+        if (modul) {
+            this.togglePraktikaSelection(modul);
+            // Tooltip neu laden
+            setTimeout(() => {
+                const event = { clientX: 100, clientY: 100 };
+                this.showPraktikaTooltip(event);
+            }, 100);
+        }
     }
 
     togglePraktikaSelection(modul) {
@@ -439,75 +533,12 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
         );
     }
 
-    updatePraktikaDisplay() {
-        const totalKp = Object.values(this.selectedPraktika).flat().reduce((sum, m) => sum + m.kp, 0);
-        const kpDisplay = document.getElementById('selected-praktika-kp');
-        
-        if (kpDisplay) {
-            kpDisplay.textContent = totalKp;
-            kpDisplay.style.color = totalKp > 0 ? '#28a745' : '#dc3545';
-            kpDisplay.style.fontWeight = 'bold';
-        }
-    }
-
-    showPraktikaTooltip(event) {
-        const content = this.createPraktikaTooltip();
-        this.showCustomTooltip(content, event);
-    }
-
-    createPraktikaTooltip() {
-        let content = `
-            <div class="praktika-liste">
-                <h3>🎯 Verfügbare Praktika, Projekte & Seminare</h3>
-                <p style="font-size: 11px; color: #666; margin-bottom: 15px;">
-                    💡 <strong>Wähle aus ${this.praktikaModule.length} verfügbaren Modulen!</strong>
-                </p>
-                <div style="max-height: 400px; overflow-y: auto; display: grid; grid-template-columns: 1fr; gap: 2px;">
-        `;
-
-        this.praktikaModule.forEach(modul => {
-            const isSelected = this.isPraktikaSelected(modul.name);
-            const bgColor = isSelected ? '#d4edda' : '#f8f9fa';
-            const textColor = isSelected ? '#155724' : '#333';
-            const buttonText = isSelected ? '✓ Gewählt' : 'Wählen';
-            const buttonColor = isSelected ? '#28a745' : '#4CA64C';
-
-            content += `
-                <div style="padding: 8px; background: ${bgColor}; color: ${textColor}; border-radius: 4px; margin: 2px; border: 1px solid #ddd; display: flex; justify-content: space-between; align-items: center;">
-                    <div>
-                        <div style="font-weight: bold; font-size: 10px;">${modul.kp} KP</div>
-                        <div style="font-size: 9px; line-height: 1.2;">${modul.name}</div>
-                    </div>
-                    <button onclick="window.currentStudienplan.togglePraktikaFromTooltip('${modul.name}')" 
-                            style="background: ${buttonColor}; color: white; border: none; padding: 3px 6px; border-radius: 3px; cursor: pointer; font-size: 8px;">
-                        ${buttonText}
-                    </button>
-                </div>
-            `;
-        });
-
-        content += `</div></div>`;
-        return content;
-    }
-
-    togglePraktikaFromTooltip(modulName) {
-        const modul = this.praktikaModule.find(m => m.name === modulName);
-        if (modul) {
-            this.togglePraktikaSelection(modul);
-            // Tooltip neu laden
-            setTimeout(() => {
-                const event = { clientX: 100, clientY: 100 };
-                this.showPraktikaTooltip(event);
-            }, 100);
-        }
-    }
-
     resetPraktika() {
         if (confirm('🔄 Wirklich alle Praktika zurücksetzen?')) {
             this.selectedPraktika = {};
             this.saveSelectedPraktika();
             this.updatePraktikaDisplay();
-            this.updateKPDisplay();
+            this.refreshStudienplan(); // Automatisch neu laden
             this.showMessage('✅ Alle Praktika zurückgesetzt!', 'success');
         }
     }
@@ -518,7 +549,7 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
             selectedPraktika: this.selectedPraktika,
             timestamp: new Date().toISOString(),
             totalKp: Object.values(this.selectedPraktika).flat().reduce((sum, m) => sum + m.kp, 0),
-            version: '1.0'
+            version: '2.0'
         };
 
         this.downloadJSON(exportData, 'itet-praktika.json');
@@ -593,11 +624,6 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
         }, 3000);
     }
 
-    getModuleName(modulEl) {
-        const nameEl = modulEl.querySelector('.modul-titel');
-        return nameEl ? nameEl.textContent.trim() : '';
-    }
-
     downloadJSON(data, filename) {
         const dataStr = JSON.stringify(data, null, 2);
         const dataBlob = new Blob([dataStr], { type: 'application/json' });
@@ -634,4 +660,4 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
     }
 };
 
-console.log('✅ ITET Extensions - Vereinfacht und Funktional - geladen');
+console.log('✅ ITET Extensions - Erweitert mit dynamischen Modulen - geladen');
