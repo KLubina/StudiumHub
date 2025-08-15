@@ -1,8 +1,5 @@
+Grundlagefächer des 3. Jahres
 
-Elektrotechnik und Informationstechnologie Bachelor Information
- 5. Semester: Weitere Grundlagefächer des 3. Jahres
-Studierende absolvieren mindestens zwei der zur Auswahl stehenden Weiteren Grundlagefächer. Empfehlungen zur Fächerwahl sind vorhanden unter Link
-Nummer	Titel	Typ	ECTS	Umfang	Dozierende
-227-0014-20L	Computational Thinking Information	W	4 KP	2V + 1U	R. Wattenhofer
-227-0053-00L	High-Frequency Design Techniques Information	W	4 KP	2V + 2U	C. Bolognesi, T. Popovic
-227-0122-00L	Introduction to Electric Power Transmission: System & Technology	W	4 KP	4G	C. Franck, G. Hug
+Computational Thinking -	4 KP
+High-Frequency Design Techniques	-	4 KP
+Introduction to Electric Power Transmission: System & Technology	-	4 KP
