@@ -115,7 +115,7 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
         this.createCategoryBasedThirdYear(thirdYearContainer);
     }
     
-    createCategoryBasedThirdYear(container) {
+createCategoryBasedThirdYear(container) {
         // Alle Module des 3. Jahres finden
         const thirdYearModules = this.config.daten.filter(m => m.jahr === 3);
         
@@ -142,10 +142,20 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
             const kategorieModules = thirdYearModules.filter(m => m.kategorie === kategorie);
             if (kategorieModules.length === 0) return;
             
+            // Finde die Kategorie-Konfiguration
+            const kategorieConfig = this.config.kategorien.find(k => k.name === kategorie);
+            
             // Kategorie-Titel erstellen (wie bei MTEC)
             const kategorieTitle = document.createElement('div');
             kategorieTitle.classList.add('bereich-titel');
-            kategorieTitle.textContent = kategorie;
+            
+            // Füge die Mindestanzahl an KP hinzu, wenn verfügbar
+            if (kategorieConfig && kategorieConfig.minKp) {
+                kategorieTitle.textContent = `${kategorie} (mind. ${kategorieConfig.minKp} KP)`;
+            } else {
+                kategorieTitle.textContent = kategorie;
+            }
+            
             container.appendChild(kategorieTitle);
             
             // Module-Container für diese Kategorie

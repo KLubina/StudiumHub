@@ -148,18 +148,20 @@
 }
 
 /* ==== KATEGORIE-BASIERTE GRUPPIERUNG ==== */
+/* ==== KATEGORIE-BASIERTE GRUPPIERUNG ==== */
 .bereich-titel {
-    font-size: 10px;
+    font-size: 12px;
     font-weight: bold;
-    color: #555;
+    color: #333;
     margin: 15px 0 5px 0;
-    padding: 2px 6px;
+    padding: 5px 10px;
     background-color: #e8f4fd;
-    border-radius: 3px;
+    border-radius: 5px;
     display: inline-block;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     border-left: 3px solid #0D5B8C;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 
 /* Erste Kategorie hat weniger Top-Margin */
