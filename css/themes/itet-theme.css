@@ -1,4 +1,4 @@
-/* ==== ITET THEME CSS ==== */
+/* ==== ITET THEME CSS - VERBESSERT FÜR HORIZONTALES LAYOUT ==== */
 /* Spezifische Farben und Styles für den ITET Studiengang */
 
 /* ==== MODUL-KATEGORIEN UND FARBEN ==== */
@@ -102,14 +102,110 @@
     color: black;
 }
 
-/* ==== LAYOUT ANPASSUNGEN ==== */
-.farben-legende {
-    width: 250px;
-    margin-left: 40px;
+/* ==== HORIZONTALES LAYOUT WIE MTEC - AGGRESSIV ANGEWENDET ==== */
+
+/* Alle Module-Container im ITET horizontal machen */
+.studienplan .module-container {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 5px !important;
+    margin-bottom: 15px !important;
+    align-items: flex-start !important;
+    flex-direction: row !important;
+    min-height: auto !important;
 }
 
-.fachgebiet-column {
-    width: 200px;
+/* Spezifisch für 3. Jahr Container */
+.jahr:last-child .module-container {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+    margin-bottom: 20px !important;
+    align-items: flex-start !important;
+}
+
+/* Alle Module inline-block machen */
+.modul {
+    margin: 3px !important;
+    display: inline-block !important;
+    vertical-align: top !important;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+
+/* ==== FACHGEBIET STYLING WIE BEI MTEC ==== */
+.fachgebiet {
+    font-size: 10px;
+    font-weight: bold;
+    color: #555;
+    margin: 15px 0 5px 0;
+    padding: 2px 6px;
+    background-color: #f0f0f0;
+    border-radius: 3px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* ==== KATEGORIE-BASIERTE GRUPPIERUNG ==== */
+.bereich-titel {
+    font-size: 10px;
+    font-weight: bold;
+    color: #555;
+    margin: 15px 0 5px 0;
+    padding: 2px 6px;
+    background-color: #e8f4fd;
+    border-radius: 3px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-left: 3px solid #0D5B8C;
+}
+
+/* Erste Kategorie hat weniger Top-Margin */
+.bereich-titel:first-of-type {
+    margin-top: 8px;
+}
+
+/* ==== KOMPAKTE MODULE WIE BEI MTEC ==== */
+.modul {
+    margin: 2px !important;
+    border-radius: 4px;
+    max-width: 180px;
+    min-width: 140px;
+}
+
+/* ==== OPTIMIERTE FARBEN-LEGENDE ==== */
+.farben-legende {
+    width: 300px;
+    margin-left: 20px;
+    margin-top: 0; /* Legende oben positionieren wie bei MTEC */
+}
+
+.legende-item {
+    margin-bottom: 3px; /* Kompaktere Legende */
+    padding: 8px;
+    font-size: 12px;
+}
+
+/* ==== SPEZIELLE ANPASSUNGEN FÜR 3. JAHR ==== */
+/* Das 3. Jahr soll wie eine Kategorie-Ansicht aussehen */
+.jahr:last-child {
+    margin-bottom: 20px;
+}
+
+.jahr:last-child .jahr-titel {
+    color: #0D5B8C;
+    border-bottom: 3px solid #4CA64C;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Module nach Kategorie gruppiert darstellen */
+.jahr:last-child .module-container {
+    clear: both;
+    width: 100%;
 }
 
 /* ==== RESPONSIVE ANPASSUNGEN ==== */
@@ -120,67 +216,91 @@
         margin-top: 20px;
     }
     
-    .fachgebiet-column {
-        width: 100%;
-        margin-right: 0;
-        margin-bottom: 15px;
+    .studienplan .module-container {
+        gap: 3px !important;
+        margin-bottom: 10px !important;
+    }
+    
+    .modul {
+        margin: 1px !important;
+        min-width: 120px;
+        max-width: none;
+        flex: 0 0 auto;
     }
 }
 
-/* ==== LAYOUT ANPASSUNGEN ==== */
-.farben-legende {
-    width: 250px;
-    margin-left: 40px;
+/* ==== SPEZIELLE MTEC-STYLE VERBESSERUNGEN ==== */
+.container {
+    max-width: 1400px; /* Mehr Platz nutzen wie bei MTEC */
 }
 
-.fachgebiet-column {
-    width: 200px;
+/* ==== JAHR-TITEL ANPASSUNGEN ==== */
+.jahr-titel {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
-/* ==== LAYOUT ANPASSUNGEN ==== */
-.farben-legende {
-    width: 250px;
-    margin-left: 40px;
+/* ==== WISSENSCHAFTLICHE ARBEIT UND KERNFÄCHER HERVORHEBEN ==== */
+.modul.wissenschaft {
+    border: 2px solid rgba(255,255,255,0.3);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.25);
 }
 
-.fachgebiet-column {
-    width: 200px;
+.modul.kern {
+    border: 1px solid rgba(255,255,255,0.2);
 }
 
-/* ==== HORIZONTALES MODUL-LAYOUT (wie MTEC) - AGGRESSIV ==== */
-.module-container {
-    display: flex !important;
-    flex-wrap: wrap !important;
-    gap: 5px !important;
-    margin-bottom: 15px !important;
-    align-items: flex-start !important;
-    flex-direction: row !important;
+/* ==== PRAKTIKA CONTAINER SPEZIALBEHANDLUNG ==== */
+.modul.wahl-praktika-projekte {
+    min-width: 160px;
+    position: relative;
 }
 
-/* Spezifisch für ITET Module */
-.studienplan .module-container {
-    display: flex !important;
-    flex-wrap: wrap !important;
-    gap: 5px !important;
-    margin-bottom: 15px !important;
-    flex-direction: row !important;
-}
-
-/* Alle Container im ITET */
-body .container .studienplan .module-container {
-    display: flex !important;
-    flex-direction: row !important;
-    flex-wrap: wrap !important;
-}
-
-.modul {
-    margin: 3px !important;
+/* ==== DROPPED MODULE STYLES (für Drag & Drop) ==== */
+.dropped-modul {
+    background-color: #4CA64C !important;
+    color: white !important;
+    border: 1px solid rgba(255,255,255,0.3) !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2) !important;
+    transition: all 0.2s ease !important;
+    position: relative !important;
+    overflow: hidden !important;
+    cursor: default !important;
+    margin: 1px !important;
     display: inline-block !important;
 }
 
-/* Falls es spezielle ITET Container gibt */
-.jahr .module-container {
+.dropped-modul:hover {
+    background-color: #5db563 !important;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3) !important;
+}
+
+/* ==== WAHLMODULE CONTAINER ==== */
+.wahlmodule-container {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border-radius: 4px !important;
+    backdrop-filter: blur(2px) !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 2px !important;
+}
+
+/* ==== FORCE HORIZONTAL LAYOUT FÜR ALLE ITET MODULE ==== */
+body .studienplan .jahr .module-container {
     display: flex !important;
     flex-direction: row !important;
     flex-wrap: wrap !important;
+    gap: 5px !important;
+    align-items: flex-start !important;
+}
+
+/* Überschreibe jegliche andere Layout-Regeln */
+.studienplan .jahr:not(:first-child):not(:nth-child(2)) .module-container {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    gap: 8px !important;
 }

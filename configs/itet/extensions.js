@@ -1,7 +1,5 @@
-/* ==== ITET EXTENSIONS - ERWEITERT MIT DYNAMISCHEN MODULEN ==== */
-/* Alle ITET-spezifischen Funktionen mit dynamischer Praktika-Integration */
+/* ==== ITET EXTENSIONS - VERBESSERT MIT 3. JAHR LAYOUT ==== */
 
-// ITET Studienplan Klasse mit Praktika-System UND dynamischer Integration
 window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
     constructor(config) {
         super(config);
@@ -14,7 +12,7 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
         this.showDetailedBreakdown = false;
         this.updateTimeout = null;
         
-        // Verfügbare Praktika, Projekte und Seminare (aus der ursprünglichen Liste)
+        // Verfügbare Praktika, Projekte und Seminare
         this.praktikaModule = [
             { name: "Amateurfunk-Kurs", kp: 1.5, kategorie: "Wahl Praktika-Projekte-Seminare" },
             { name: "COMSOL Design Tool – Design of Optical Components", kp: 3, kategorie: "Wahl Praktika-Projekte-Seminare" },
@@ -96,7 +94,106 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
         this.updateKPDisplay();
         this.updatePraktikaDisplay();
         
-        console.log('✅ ITET Studienplan mit dynamischen Praktika initialisiert');
+        // Spezielle Behandlung für 3. Jahr Layout
+        this.improveThirdYearLayout();
+        
+        console.log('✅ ITET Studienplan mit verbessertem 3. Jahr Layout initialisiert');
+    }
+
+    /* ==== VERBESSERTES 3. JAHR LAYOUT ==== */
+    improveThirdYearLayout() {
+        console.log('🎨 Verbessere 3. Jahr Layout...');
+        
+        // Finde das 3. Jahr Container
+        const thirdYearContainer = document.querySelector('.jahr:last-child');
+        if (!thirdYearContainer) {
+            console.log('⚠️ 3. Jahr Container nicht gefunden');
+            return;
+        }
+        
+        // Gruppiere Module nach Kategorien im 3. Jahr
+        this.createCategoryBasedThirdYear(thirdYearContainer);
+    }
+    
+    createCategoryBasedThirdYear(container) {
+        // Alle Module des 3. Jahres finden
+        const thirdYearModules = this.config.daten.filter(m => m.jahr === 3);
+        
+        // Nach Kategorien gruppieren
+        const kategorien = [...new Set(thirdYearModules.map(m => m.kategorie))];
+        
+        // Container leeren (außer Titel)
+        const title = container.querySelector('.jahr-titel');
+        container.innerHTML = '';
+        if (title) {
+            container.appendChild(title);
+        }
+        
+        // Kategorien in definierter Reihenfolge
+        const reihenfolge = [
+            "Kernfächer nach Schwerpunkt",
+            "Wahl Praktika-Projekte-Seminare", 
+            "Wissenschaftliche Arbeit",
+            "Wahlfächer",
+            "Weitere Wahl-Grundlagenfächer"
+        ];
+        
+        reihenfolge.forEach(kategorie => {
+            const kategorieModules = thirdYearModules.filter(m => m.kategorie === kategorie);
+            if (kategorieModules.length === 0) return;
+            
+            // Kategorie-Titel erstellen (wie bei MTEC)
+            const kategorieTitle = document.createElement('div');
+            kategorieTitle.classList.add('bereich-titel');
+            kategorieTitle.textContent = kategorie;
+            container.appendChild(kategorieTitle);
+            
+            // Module-Container für diese Kategorie
+            const moduleContainer = document.createElement('div');
+            moduleContainer.classList.add('module-container');
+            moduleContainer.style.display = 'flex';
+            moduleContainer.style.flexWrap = 'wrap';
+            moduleContainer.style.gap = '8px';
+            moduleContainer.style.marginBottom = '20px';
+            moduleContainer.style.alignItems = 'flex-start';
+            
+            // Module zu diesem Container hinzufügen
+            kategorieModules.forEach(modul => {
+                this.createModule(modul, moduleContainer);
+            });
+            
+            container.appendChild(moduleContainer);
+        });
+        
+        console.log('✅ 3. Jahr Layout verbessert - kategoriebasiert wie MTEC');
+    }
+
+    /* ==== ÜBERSCHREIBE JAHR-SECTION ERSTELLUNG FÜR 3. JAHR ==== */
+    createYearSection(year) {
+        if (year === 3) {
+            // Spezielle Behandlung für 3. Jahr
+            return this.createThirdYearSection();
+        }
+        
+        // Standard Verhalten für andere Jahre
+        return super.createYearSection(year);
+    }
+    
+    createThirdYearSection() {
+        const yearDiv = document.createElement('div');
+        yearDiv.classList.add('jahr');
+        
+        const yearTitle = document.createElement('div');
+        yearTitle.classList.add('jahr-titel');
+        yearTitle.textContent = '3. Jahr';
+        yearDiv.appendChild(yearTitle);
+        
+        // Direkt kategoriebasiertes Layout anwenden
+        setTimeout(() => {
+            this.createCategoryBasedThirdYear(yearDiv);
+        }, 100);
+        
+        return yearDiv;
     }
 
     /* ==== DYNAMISCHE PRAKTIKA-INTEGRATION ==== */
@@ -239,7 +336,7 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
             byYear: {},
             moduleCount: 0,
             praktikaKP: 0,
-            dynamicKP: 0 // Neu: KP von dynamischen Modulen
+            dynamicKP: 0
         };
         
         // Alle Module analysieren (inkl. dynamische)
@@ -267,7 +364,7 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
             breakdown.byYear[jahr].count++;
         });
         
-        breakdown.praktikaKP = breakdown.dynamicKP; // Für Kompatibilität
+        breakdown.praktikaKP = breakdown.dynamicKP;
         
         return breakdown;
     }
@@ -421,6 +518,12 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
         
         // Neuaufbau des Studienplans
         this.createStudienplan();
+        
+        // 3. Jahr Layout verbessern
+        setTimeout(() => {
+            this.improveThirdYearLayout();
+        }, 100);
+        
         this.updateKPDisplay();
         this.updatePraktikaDisplay();
         
@@ -538,7 +641,7 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
             this.selectedPraktika = {};
             this.saveSelectedPraktika();
             this.updatePraktikaDisplay();
-            this.refreshStudienplan(); // Automatisch neu laden
+            this.refreshStudienplan();
             this.showMessage('✅ Alle Praktika zurückgesetzt!', 'success');
         }
     }
@@ -660,4 +763,4 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
     }
 };
 
-console.log('✅ ITET Extensions - Erweitert mit dynamischen Modulen - geladen');
+console.log('✅ ITET Extensions - Mit verbessertem 3. Jahr Layout - geladen');
