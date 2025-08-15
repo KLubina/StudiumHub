@@ -807,17 +807,19 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
       });
 
     // *** NEUE EVENT LISTENERS ***
-    document
-      .getElementById("show-kernfaecher-list")
-      .addEventListener("click", (e) => {
-        this.showKernfaecherTooltip(e);
-      });
+document
+  .getElementById("show-kernfaecher-list")
+  .addEventListener("click", (e) => {
+    e.preventDefault();
+    this.showKernfaecherTooltip(e);
+  });
 
-    document
-      .getElementById("show-wahlfaecher-list")
-      .addEventListener("click", (e) => {
-        this.showWahlfaecherTooltip(e);
-      });
+document
+  .getElementById("show-wahlfaecher-list")
+  .addEventListener("click", (e) => {
+    e.preventDefault();
+    this.showWahlfaecherTooltip(e);
+  });
 
     document.getElementById("save-praktika").addEventListener("click", () => {
       this.exportPraktika();
