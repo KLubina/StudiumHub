@@ -93,11 +93,12 @@ h2 {
 }
 
 .module-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2px;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 5px !important;
     min-height: auto;
-    margin-bottom: 15px;
+    margin-bottom: 15px !important;
+    flex-direction: row !important;
 }
 
 /* ==== BASE MODUL STYLES ==== */
