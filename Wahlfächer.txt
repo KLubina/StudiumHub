@@ -1,87 +1,37 @@
+Wahlfächer – Elektrotechnik und Informationstechnologie (ETH Bachelor)
 
-Elektrotechnik und Informationstechnologie Bachelor Information
- Wahlfächer
-Dies ist nur eine kleine Auswahl. Als Wahlfächer können aber auch weitere Fächer aus dem Angebot der ETH belegt werden, siehe dazu die "Richtlinien zu Projekten, Praktika, Seminare", Link.
-  Wirtschafts-, Rechts und Managementwissenschaftliche Wahlfächer
-Momentan werden in diesem Abschnitt keine Fächer angeboten. Grundsätzlich sind Fächer dieses Abschnitts besonders geeignet bei einem geplanten Übertritt in den Masterstudiengang Energy Science and Technology (MSc EST) oder Management, Technologie und Ökonomie (MSc MTEC).
-  Ingenieurswissenschaftliche Wahlfächer
-Nummer	Titel	Typ	ECTS	Umfang	Dozierende
-» Auch weitere Kernfächer des 3. Studienjahres sind als Wahlfach anrechenbar.
-227-0110-00L	Electromagnetic Waves: Materials, Effects, and Antennas	W	6 KP	4G	U. Koch
-227-0123-00L	Mechatronik	W	6 KP	4G	T. M. Gempp
-227-0147-00L	VLSI 2: From Netlist to Complete System on Chip Information Belegung eingeschränkt - Details anzeigen	W	6 KP	5G	F. K. Gürkaynak, L. Benini
-227-0216-00L	Computational Control	W	6 KP	2V + 2U	S. Bolognani
-227-0518-10L	Design and Control of Electric Machines Information	W	6 KP	4G	D. Bortis
-227-0669-00L	Chemistry of Devices and Technologies Belegung eingeschränkt - Details anzeigen
-Findet dieses Semester nicht statt.
-W	4 KP	1V + 2U	M. Yarema
-227-0945-11L	Cell and Molecular Biology for Engineers
-Students who have taken the semester course 227-0945-00L Cell and Molecular Biology for Engineers I, 227-0945-10L Cell and Molecular Biology for Engineers II or the year-long course before FS23 cannot earn credit points for this course.
-W	6 KP	4G	C. Frei
-227-2211-00L	Seminar in Computer Architecture Information Belegung eingeschränkt - Details anzeigen
-The deadline for deregistering expires at the end of the second week of the semester. Students who are still registered after that date, but do not attend the seminar, will officially fail the seminar.
-W	2 KP	2S	O. Mutlu, S. Sadrosadati, K. Koliogeorgi
-252-0220-00L	Introduction to Machine Learning Information Belegung eingeschränkt - Details anzeigen
-Preference is given to students in programmes in which the course is being offered. All other students will be waitlisted. Please do not contact the lecturers for any questions in this regard. If necessary, please contact studiensekretariat@inf.ethz.ch
-W	8 KP	4V + 2U + 1A	A. Krause, F. Yang
-252-3800-00L	Adaptive User Interfaces through Machine Learning Information Belegung eingeschränkt - Details anzeigen
-The deadline for deregistering expires at the end of the second week of the semester. Students who are still registered after that date, but do not attend the seminar, will officially fail the seminar.
-W	2 KP	2S	C. Holz
-376-0022-00L	Imaging and Computing in Medicine Information	W	6 KP	4G	R. Müller, C. Jutzeler
-  Mensch-Technik-Umwelt Wahlfächer (MTU)
-Nummer	Titel	Typ	ECTS	Umfang	Dozierende
-151-0228-00L	Management & Sustainability of Air Transport	W	4 KP	3G	P. Wild, R. McKenna
-363-1191-00L	#AI4Impact: Machine Learning for Social Impact Information Belegung eingeschränkt - Details anzeigen
-Findet dieses Semester nicht statt.
-W	3 KP	2G	
+Ingenieurswissenschaftliche Wahlfächer
+- Electromagnetic Waves: Materials, Effects, and Antennas – 6 KP
+- Mechatronik – 6 KP
+- VLSI 2: From Netlist to Complete System on Chip – 6 KP
+- Computational Control – 6 KP
+- Design and Control of Electric Machines – 6 KP
+- Chemistry of Devices and Technologies – 4 KP
+- Cell and Molecular Biology for Engineers – 6 KP
+- Seminar in Computer Architecture – 2 KP
+- Introduction to Machine Learning – 8 KP
+- Adaptive User Interfaces through Machine Learning – 2 KP
+- Imaging and Computing in Medicine – 6 KP
+- Qubits, Electrons, Photons – 6 KP
+- Single Molecule Biosensors – 6 KP
+- Fundamentals of Electric Machines – 6 KP
+- Computer Security – 4 KP
+- Maxwell, Einstein, and the GPS – 6 KP
+- Digital Creativity for Circular Construction – 8 KP
+- Manufacturing of Electronic Devices – 4 KP
+- Microsystems I: Process Technology and Integration – 6 KP
+- Information Systems for Engineers – 4 KP
+- Materials and Mechanics in Medicine – 4 KP
 
+Wirtschafts-, Rechts- und Managementwissenschaftliche Wahlfächer
+- Managerial Economics – 4 KP
+- Einführung in die Mikroökonomie – 3 KP
+- Grundzüge des Rechts – 2 KP
+- Startups und Recht – 2 KP
+- Die Rolle des Geistigen Eigentums im Ingenieurwesen – 2 KP
 
-Elektrotechnik und Informationstechnologie Bachelor Information
- Wahlfächer
-Dies ist nur eine kleine Auswahl. Als Wahlfächer können aber auch weitere Fächer aus dem Angebot der ETH belegt werden, siehe dazu die "Richtlinien zu Projekten, Praktika, Seminare"Link
-  Wirtschafts-, Rechts und Managementwissenschaftliche Wahlfächer
-Diese Fächer sind besonders geeignet bei einem geplanten Übertritt in den Masterstudiengang Energy Science and Technology (MSc EST) oder Management, Technologie und Ökonomie (MSc MTEC).
-Nummer	Titel	Typ	ECTS	Umfang	Dozierende
-351-0511-00L	Managerial Economics
-Not for MSc students belonging to D-MTEC!
-W	4 KP	3V	O. Krebs, P. Egger, M. Köthenbürger
-351-1109-00L	Einführung in die Mikroökonomie
-GESS (Science in Perspective): Diese Lehrveranstaltung ist nur für Bachelorstudierende.
-Masterstudierende können die LE 363-0503-00L „Principles of Microeconomics“ belegen.
-
-Hinweis für D-MAVT Studierende: Sollten Sie bereits «363-0503-00L Principles of Microeconomics» erfolgreich absolviert haben, dann dürfen Sie diese Lehrveranstaltung nicht mehr belegen.
-W	3 KP	2G	M. Wörter, M. D. König
-851-0703-00L	Grundzüge des Rechts	W	2 KP	2V	O.  Streiff Gnöpff
-851-0735-10L	Startups und Recht Belegung eingeschränkt - Details anzeigen
-Besonders geeignet für Studierende D-ITET, D-MAVT.
-W	2 KP	2V	P. Peyrot
-851-0738-01L	Die Rolle des Geistigen Eigentums im Ingenieurwesen und den technischen Wissenschaften Belegung eingeschränkt - Details anzeigen
-Besonders geeignet für Studierende D-BAUG, D-BIOL, D-BSSE, D-CHAB, D-ITET, D-MAVT.
-W	2 KP	2V	K. Houshang Pour Islam
-  Ingenieurswissenschaftliche Wahlfächer
-Nummer	Titel	Typ	ECTS	Umfang	Dozierende
-227-0311-00L	Qubits, Electrons, Photons	W	6 KP	3V + 2U	T. Zambelli
-227-0401-00L	Single Molecule Biosensors	W	6 KP	2G + 1P + 2A	M. Aramesh
-227-0517-10L	Fundamentals of Electric Machines Information	W	6 KP	4G	D. Bortis
-227-0591-00L	Computer Security Belegung eingeschränkt - Details anzeigen	W	4 KP	3G	A. Hajiabadi
-227-0652-00L	Maxwell, Einstein, and the GPS	W	6 KP	2V + 2U	T. Zambelli
-227-2211-00L	Seminar in Computer Architecture Information Belegung eingeschränkt - Details anzeigen
-The deadline for deregistering expires at the end of the second week of the semester. Students who are still registered after that date, but do not attend the seminar, will officially fail the seminar.
-W	2 KP	2S	K. Koliogeorgi, O. Mutlu, S. Sadrosadati
-101-0531-00L	Digital Creativity for Circular Construction Belegung eingeschränkt - Details anzeigen
-Findet dieses Semester nicht statt.
-All students who register go on a waiting list until 11.09.2024. To register:
-1. Enroll before 05.09.2024
-2. Send a short motivation letter (max. 300 words) and a 1-page CV to cea-course@ibi.baug.ethz.ch by 05.09.2024
-3. MIBS students: This course is mandatory and there is no need to send your application documents
-
-Please only register for the course if you really intend to participate on all course dates (see course catalog), otherwise, you will deprive someone else of a place.
-W	8 KP	7.5P	C. De Wolf
-151-0723-00L	Manufacturing of Electronic Devices Information	W	4 KP	3G	A. Kunz, R.‑D. Moryson, F. Reichert
-151-0621-00L	Microsystems I: Process Technology and Integration	W	6 KP	3V + 2U	M. Haluska, C. Hierold
-252-0834-00L	Information Systems for Engineers Information	W	4 KP	2V + 1U	G. Fourny
-376-0021-00L	Materials and Mechanics in Medicine	W	4 KP	3G	M. Zenobi-Wong, J. G. Snedeker
-  Mensch-Technik-Umwelt Wahlfächer (MTU)
-Nummer	Titel	Typ	ECTS	Umfang	Dozierende
-151-0227-00L	Basics of Air Transport (Aviation I)	W	4 KP	3G	P. Wild
-402-0368-07L	Lecture Series: Space Research and Exploration	W	1 KP	2V	S. P. Quanz
+Mensch-Technik-Umwelt Wahlfächer (MTU)
+- Management & Sustainability of Air Transport – 4 KP
+- #AI4Impact: Machine Learning for Social Impact – 3 KP
+- Basics of Air Transport (Aviation I) – 4 KP
+- Lecture Series: Space Research and Exploration – 1 KP
