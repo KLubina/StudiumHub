@@ -1,5 +1,5 @@
-/* ==== ITET BASE CONFIG - KATEGORIE FIX ==== */
-/* Ersetze die kategorien Array in configs/itet/base-config.js */
+/* ==== ITET BASE CONFIGURATION ==== */
+/* Grundlegende Konfiguration für den ITET Studiengang */
 
 window.StudiengangBaseConfig = {
     // Grundlegende Informationen
@@ -23,15 +23,15 @@ window.StudiengangBaseConfig = {
         "longModuleName": 2.0
     },
     
-    // GEÄNDERT: Kategorien als Objekte mit hasTooltip flag
+    // Kategorien und ihre CSS-Klassen - OBJEKT FORMAT für Drag & Drop
     kategorien: [
         { name: "Obligatorische Fächer", klasse: "obligatorisch" },
         { name: "Obligatorische Praktikum", klasse: "obligatorisch-praktikum" },
         { 
             name: "Wahl Praktika-Projekte-Seminare", 
             klasse: "wahl-praktika-projekte",
-            hasTooltip: true,  // WICHTIG: Aktiviert Drag & Drop Tooltip
-            info: "Ziehe Module aus der Liste in deine Praktika-Boxen"
+            hasTooltip: true,  // WICHTIG: Aktiviert Drag & Drop
+            info: "💡 Ziehe Module aus der Liste!"
         },
         { name: "Kernfächer nach Schwerpunkt", klasse: "kern" },
         { name: "Wahlfächer", klasse: "wahl" },
@@ -40,12 +40,12 @@ window.StudiengangBaseConfig = {
     ],
     
     kategorieZuKlasse: {
-        "obligatorisch": "obligatorisch",
-        "obligatorisch-praktikum": "obligatorisch-praktikum",
-        "wahl-praktika-projekte": "wahl-praktika-projekte",
-        "kern": "kern",
-        "wahl": "wahl",
-        "wissenschaft": "wissenschaft",
-        "weitere-wahl-grundlagen": "weitere-wahl-grundlagen"
+        "Obligatorische Fächer": "obligatorisch",
+        "Obligatorische Praktikum": "obligatorisch-praktikum",
+        "Wahl Praktika-Projekte-Seminare": "wahl-praktika-projekte",
+        "Kernfächer nach Schwerpunkt": "kern",
+        "Wahlfächer": "wahl",
+        "Wissenschaftliche Arbeit": "wissenschaft",
+        "Weitere Wahl-Grundlagenfächer": "weitere-wahl-grundlagen"
     }
 };
