@@ -1,57 +1,39 @@
+Biomedizinische Technik
+Introduction to Estimation and Machine Learning – 6 KP
+Biomedical Imaging – 6 KP
+Biomedical Engineering – 4 KP
+Bioelectronics and Biosensors – 6 KP
+Introduction to Neuroinformatics – 6 KP
 
-Elektrotechnik und Informationstechnologie Bachelor Information
- 5. Semester: Kernfächer des 3. Jahres
-Kurswahl kann frei zusammengestellt werden, eine Liste mit detaillierten Empfehlungen findet sich unter Link
-  Vertiefung: Biomedizinische Technik
-Diese Kernfächer werden insbesondere für den Bereich "Biomedizinische Technik" empfohlen, aber die Studierenden können Kernfächer aus allen Bereichen frei wählen.
-Nummer	Titel	Typ	ECTS	Umfang	Dozierende
-227-0105-00L	Introduction to Estimation and Machine Learning Information Belegung eingeschränkt - Details anzeigen	W	6 KP	4G	H.‑A. Loeliger
-227-0385-10L	Biomedical Imaging	W	6 KP	5G	S. Kozerke, K. P. Prüssmann
-227-0386-00L	Biomedical Engineering Information	W	4 KP	3G	J. Vörös, S. J. Ferguson, S. Kozerke, M. P. Wolf, M. Zenobi-Wong
-227-0393-10L	Bioelectronics and Biosensors Information	W	6 KP	2V + 2U	J. Vörös, M. F. Yanik
-227-1037-00L	Introduction to Neuroinformatics Information	W	6 KP	2V + 1U + 1A	V. Mante, B. Grewe, G. Indiveri
-  Vertiefung: Computer und Netzwerke
-Diese Kernfächer werden insbesondere für den Bereich "Computer und Netzwerke" empfohlen, aber die Studierenden können Kernfächer aus allen Bereichen frei wählen.
-Nummer	Titel	Typ	ECTS	Umfang	Dozierende
-227-0102-00L	Discrete Event Systems Information
-Findet dieses Semester nicht statt.
-W	6 KP	4G	L. Vanbever, L. Josipovic, R. Wattenhofer
-227-0121-00L	Communication Systems Information	W	6 KP	4G	C. Studer, S. M. Moser
-227-0124-00L	Embedded Systems Information Belegung eingeschränkt - Details anzeigen	W	6 KP	4G	M. Magno
-  Vertiefung: Elektrische Energietechnik
-Diese Kernfächer werden insbesondere für den Bereich "Elektrische Energietechnik" empfohlen, aber die Studierenden können Kernfächer aus allen Bereichen frei wählen.
-Nummer	Titel	Typ	ECTS	Umfang	Dozierende
-227-0103-00L	Control Systems Information	W	6 KP	2V + 2U	F. Dörfler
-227-0113-00L	Leistungselektronik Information	W	6 KP	4G	J. Huber
-  Vertiefung: Elektronik und Photonik
-Diese Kernfächer werden insbesondere für den Bereich "Elektronik und Photonik" empfohlen, aber die Studierenden können Kernfächer aus allen Bereichen frei wählen.
-Nummer	Titel	Typ	ECTS	Umfang	Dozierende
-227-0116-00L	VLSI 1: HDL Based Design for FPGAs Information	W	6 KP	5G	L. Benini, F. K. Gürkaynak
-227-0124-00L	Embedded Systems Information Belegung eingeschränkt - Details anzeigen		6 KP	4G	M. Magno
-227-0145-00L	Solid State Electronics and Optics Information	W	6 KP	4G	N. Yazdani, V. Wood
-227-0166-00L	Analog Integrated Circuits Information	W	6 KP	4G	T. Jang
-  Vertiefung: Kommunikation, Regelung und Signalverarbeitung
-Diese Kernfächer werden insbesondere für den Bereich "Kommunikation, Regelung und Signalverarbeitung" empfohlen, aber die Studierenden können Kernfächer aus allen Bereichen frei wählen.
-Nummer	Titel	Typ	ECTS	Umfang	Dozierende
-227-0101-00L	Discrete-Time and Statistical Signal Processing Information	W	6 KP	4G	H.‑A. Loeliger
-227-0103-00L	Control Systems Information	W	6 KP	2V + 2U	F. Dörfler
-227-0105-00L	Introduction to Estimation and Machine Learning Information Belegung eingeschränkt - Details anzeigen	W	6 KP	4G	H.‑A. Loeliger
-227-0121-00L	Communication Systems Information	W	6 KP	4G	C. Studer, S. M. Moser
+Computer und Netzwerke
+Discrete Event Systems – 6 KP (findet dieses Semester nicht statt)
+Communication Systems – 6 KP
+Embedded Systems – 6 KP
 
-Elektrotechnik und Informationstechnologie Bachelor Information
- 6. Semester: Kernfächer des 3. Jahres
-Kurswahl kann frei zusammengestellt werden, eine Liste von Empfehlungen findet sich unter www.ee.ethz.ch/bachelor-kernfaecher
-Nummer	Titel	Typ	ECTS	Umfang	Dozierende
-227-0104-00L	Communication and Detection Theory Information	W	6 KP	4G	A. Lapidoth
-227-0111-00L	Radio-Frequency Electronics I
-Formerly "Communication Electronics I"
-W	6 KP	2V + 2U	H. Wang
-227-0112-00L	High-Speed Signal Propagation Information	W	6 KP	2V + 2U	C. Bolognesi, T. Popovic
-227-0117-10L	Mess- und Versuchstechnik Belegung eingeschränkt - Details anzeigen	W	6 KP	4G	C. Franck, P. Simka
-227-0120-00L	Communication Networks Information	W	6 KP	4G	L. Vanbever
-227-0125-00L	Optics and Photonics	W	6 KP	2V + 2U	J. Leuthold
-227-0152-00L	Fundamentals of Computer Architecture	W	6 KP	3G + 1A	O. Mutlu, S. Sadrosadati
-227-0156-00L	Power Semiconductors	W	6 KP	4G	U. Grossner, M. Belanche Guadas, H. Goncalves de Medeiros, P. Natzke
-227-0160-00L	Fundamentals of Physical Modeling and Simulations	W	6 KP	2V + 2U + 1P	J. Smajic
-227-0395-00L	Neural Systems	W	6 KP	2V + 1U + 1A	B. Grewe, M. F. Yanik
+Elektrische Energietechnik
+Control Systems – 6 KP
+Leistungselektronik – 6 KP
 
+Elektronik und Photonik
+VLSI 1: HDL Based Design for FPGAs – 6 KP
+Embedded Systems – 6 KP (auch hier gelistet)
+Solid State Electronics and Optics – 6 KP
+Analog Integrated Circuits – 6 KP
+
+Kommunikation, Regelung und Signalverarbeitung
+Discrete-Time and Statistical Signal Processing – 6 KP
+Control Systems – 6 KP (auch hier gelistet)
+Introduction to Estimation and Machine Learning – 6 KP (auch hier gelistet)
+Communication Systems – 6 KP (auch hier gelistet)
+
+6. Semester – Kernfächer
+Communication and Detection Theory – 6 KP
+Radio-Frequency Electronics I – 6 KP
+High-Speed Signal Propagation – 6 KP
+Mess- und Versuchstechnik – 6 KP
+Communication Networks – 6 KP
+Optics and Photonics – 6 KP
+Fundamentals of Computer Architecture – 6 KP
+Power Semiconductors – 6 KP
+Fundamentals of Physical Modeling and Simulations – 6 KP
+Neural Systems – 6 KP
