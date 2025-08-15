@@ -48,8 +48,7 @@ window.StudiengangBaseConfig = {
             klasse: "wahl-praktika-projekte",
             hasTooltip: true,  // WICHTIG: Aktiviert Drag & Drop
             info: "💡 Ziehe Module aus der Liste!",
-            description: "Wählbare Praktika und Projekte",
-            minKp: 0, // Platzhalter, wird dynamisch ersetzt
+            description: "Wählbare Praktika und Projekte"
         },
         { 
             name: "Kernfächer nach Schwerpunkt", 
@@ -66,8 +65,7 @@ window.StudiengangBaseConfig = {
         { 
             name: "Wissenschaftliche Arbeit", 
             klasse: "wissenschaft",
-            description: "Bachelorarbeit und SIP",
-            minKp: 18
+            description: "Bachelorarbeit und SIP"
         },
         { 
             name: "Weitere Wahl-Grundlagenfächer", 
