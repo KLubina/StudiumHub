@@ -38,8 +38,6 @@ window.StudiengangModules = [
     
     // 3. Jahr - NUR Platzhalter für dynamische Module
     // Schwerpunkt Computer und Netzwerk
-    { jahr: 3, semester: 0, name: "Diskrete Ereignissysteme", kp: 6, kategorie: "Kernfächer nach Schwerpunkt", fachgebiet: "Computer und Netzwerk" },
-    { jahr: 3, semester: 0, name: "Kommunikationssysteme", kp: 6, kategorie: "Kernfächer nach Schwerpunkt", fachgebiet: "Computer und Netzwerk" },
     { jahr: 3, semester: 0, name: "Eingebettete Systeme", kp: 6, kategorie: "Kernfächer nach Schwerpunkt", fachgebiet: "Computer und Netzwerk" },
     { jahr: 3, semester: 0, name: "Communication Networks", kp: 6, kategorie: "Kernfächer nach Schwerpunkt", fachgebiet: "Computer und Netzwerk" },
     { jahr: 3, semester: 0, name: "Fundamentals of Computer Architecture", kp: 6, kategorie: "Kernfächer nach Schwerpunkt", fachgebiet: "Computer und Netzwerk" },
