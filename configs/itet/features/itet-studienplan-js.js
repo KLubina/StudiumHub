@@ -62,8 +62,10 @@ window.ITETStudienplan = class ITETStudienplan extends StudienplanBase {
   }
 
   initialize() {
-    // Module integrieren
-    this.integrateSelectedPraktikaIntoConfig();
+    console.log('🚀 ITET Studienplan wird initialisiert...');
+    
+    // Zuerst ausgewählte Module in Config integrieren
+    this.integrateSelectedModulesIntoConfig();
 
     // Base initialize
     super.initialize();
@@ -89,34 +91,66 @@ window.ITETStudienplan = class ITETStudienplan extends StudienplanBase {
     console.log("✅ ITET Studienplan modularisiert initialisiert");
   }
 
-  // Integration der Module
-  integrateSelectedPraktikaIntoConfig() {
-    console.log("🔄 Integriere alle ausgewählten Module...");
+  // Aktualisierte Methode: Alle ausgewählten Module in Config integrieren
+  integrateSelectedModulesIntoConfig() {
+    console.log('📦 Integriere ausgewählte Module in Config...');
+    
+    // Zähle Module vor Integration
+    const beforeCount = this.config.daten.length;
 
-    // Entferne Platzhalter
-    const placeholderIndex = this.config.daten.findIndex(m => m.isPlaceholder);
-    if (placeholderIndex !== -1) {
-      this.config.daten.splice(placeholderIndex, 1);
-    }
-
-    // Alle ausgewählten Module hinzufügen
+    // Alle ausgewählten Module sammeln
     const allSelectedModules = [
       ...Object.values(this.selectedPraktika).flat(),
-      ...Object.values(this.selectedKernfaecher).flat(),
+      ...Object.values(this.selectedKernfaecher).flat(), 
       ...Object.values(this.selectedWahlfaecher).flat()
     ];
 
-    allSelectedModules.forEach(modul => {
+    console.log(`Found ${allSelectedModules.length} selected modules:`, allSelectedModules);
+
+    // Module zum dritten Jahr hinzufügen
+    allSelectedModules.forEach((modul, index) => {
       const moduleCopy = {
         ...modul,
-        jahr: 3,
-        semester: 0,
-        isDynamic: true
+        jahr: 3, // Drittes Jahr
+        semester: (index % 2) + 1, // Abwechselnd Semester 1 und 2
+        isDynamic: true // Markiere als dynamisch hinzugefügtes Modul
       };
       this.config.daten.push(moduleCopy);
     });
 
-    console.log(`✅ ${allSelectedModules.length} Module hinzugefügt`);
+    const afterCount = this.config.daten.length;
+    console.log(`✅ Module integriert: ${beforeCount} -> ${afterCount} (${allSelectedModules.length} hinzugefügt)`);
+  }
+
+  // Integration der Module (aktualisierte Version)
+  integrateSelectedModulesIntoConfig() {
+    console.log('� Integriere ausgewählte Module in Config...');
+    
+    // Zähle Module vor Integration
+    const beforeCount = this.config.daten.length;
+
+    // Alle ausgewählten Module sammeln
+    const allSelectedModules = [
+      ...Object.values(this.selectedPraktika).flat(),
+      ...Object.values(this.selectedKernfaecher).flat(), 
+      ...Object.values(this.selectedWahlfaecher).flat()
+    ];
+
+    console.log(`Found ${allSelectedModules.length} selected modules:`, allSelectedModules);
+
+    // Module zum dritten Jahr hinzufügen
+    allSelectedModules.forEach((modul, index) => {
+      const moduleCopy = {
+        ...modul,
+        jahr: 3, // Drittes Jahr
+        semester: (index % 2) + 1, // Abwechselnd Semester 1 und 2
+        isDynamic: true // Markiere als dynamisch hinzugefügtes Modul
+      };
+      this.config.daten.push(moduleCopy);
+    });
+
+    const afterCount = this.config.daten.length;
+    console.log(`✅ Module integriert: ${beforeCount} -> ${afterCount} (${allSelectedModules.length} hinzugefügt)`);
   }
 
   // UI Controls
@@ -236,31 +270,86 @@ window.ITETStudienplan = class ITETStudienplan extends StudienplanBase {
   }
 
   // Actions
-  refreshStudienplan() {
-    this.utils.showMessage("🔄 Lade Studienplan neu...", "info");
-
-    this.config.daten = this.config.daten.filter(m => !m.isDynamic);
-    this.integrateSelectedPraktikaIntoConfig();
-    this.createStudienplan();
-
-    setTimeout(() => {
-      this.layoutManager.improveThirdYearLayout();
-    }, 100);
-
-    this.updateKPDisplay();
-    this.updatePraktikaDisplay();
-
-    this.utils.showMessage("✅ Studienplan aktualisiert!", "success");
-  }
 
   resetPraktika() {
-    if (confirm("🔄 Wirklich alle Praktika zurücksetzen?")) {
+    if (confirm("Alle ausgewählten Module zurücksetzen? Diese Aktion kann nicht rückgängig gemacht werden.")) {
       this.selectedPraktika = {};
-      this.saveSelectedPraktika();
+      this.selectedKernfaecher = {};
+      this.selectedWahlfaecher = {};
+      
+      // Storage löschen
+      localStorage.removeItem("itet-selected-praktika");
+      localStorage.removeItem("itet-selected-kernfaecher");
+      localStorage.removeItem("itet-selected-wahlfaecher");
+      
+      // UI aktualisieren
       this.updatePraktikaDisplay();
+      this.updateKPDisplay();
       this.refreshStudienplan();
-      this.utils.showMessage("✅ Alle Praktika zurückgesetzt!", "success");
+      
+      this.utils.showMessage("🗑️ Alle Module zurückgesetzt!", "success");
     }
+  }
+
+  // WICHTIGE METHODE: Studienplan mit ausgewählten Modulen neu laden
+  refreshStudienplan() {
+    console.log('🔄 Refreshing Studienplan...');
+    
+    // Entferne alle dynamisch hinzugefügten Module
+    this.config.daten = this.config.daten.filter(modul => !modul.isDynamic);
+    
+    // Alle ausgewählten Module hinzufügen
+    const allSelectedModules = [
+      ...Object.values(this.selectedPraktika).flat(),
+      ...Object.values(this.selectedKernfaecher).flat(),
+      ...Object.values(this.selectedWahlfaecher).flat()
+    ];
+
+    console.log(`📦 Füge ${allSelectedModules.length} Module hinzu:`, allSelectedModules);
+
+    // Module zum dritten Jahr hinzufügen (Jahr 3, verschiedene Semester)
+    allSelectedModules.forEach((modul, index) => {
+      const moduleCopy = {
+        ...modul,
+        jahr: 3, // Drittes Jahr
+        semester: (index % 2) + 1, // Verteile zwischen Semester 1 und 2
+        isDynamic: true // Markiere als dynamisch hinzugefügtes Modul
+      };
+      this.config.daten.push(moduleCopy);
+    });
+
+    // UI neu rendern
+    if (this.layoutManager && this.layoutManager.rerenderStudienplan) {
+      this.layoutManager.rerenderStudienplan();
+    } else {
+      // Fallback: Seite neu laden
+      console.log('⚠️ LayoutManager nicht verfügbar, verwende Fallback');
+      this.renderStudienplan();
+    }
+
+    // KP-Counter und Display aktualisieren
+    this.updateKPDisplay();
+    
+    console.log('✅ Studienplan aktualisiert');
+    this.utils.showMessage(`🔄 Studienplan aktualisiert - ${allSelectedModules.length} Module angezeigt`, "success");
+  }
+
+  exportPraktika() {
+    const data = {
+      praktika: this.selectedPraktika,
+      kernfaecher: this.selectedKernfaecher,
+      wahlfaecher: this.selectedWahlfaecher,
+      generatedOn: new Date().toISOString()
+    };
+    
+    this.utils.downloadJSON(data, "itet-module-auswahl.json");
+    this.utils.showMessage("📁 Modulauswahl exportiert!", "success");
+  }
+
+  exportKPBreakdown() {
+    const breakdown = this.kpCounter.calculateKPBreakdown();
+    this.utils.downloadJSON(breakdown, "itet-kp-breakdown.json");
+    this.utils.showMessage("📁 KP-Aufschlüsselung exportiert!", "success");
   }
 
   exportPraktika() {
