@@ -39,26 +39,29 @@ window.StudiengangBaseConfig = {
     ],
     
     // Kategorien basierend auf dem ITET Studienplan - OBJEKT FORMAT für Drag & Drop
-// Kategorien basierend auf dem ITET Studienplan - OBJEKT FORMAT für Drag & Drop
     kategorien: [
         { name: "Obligatorische Fächer", klasse: "obligatorisch" },
         { name: "Obligatorische Praktikum", klasse: "obligatorisch-praktikum" },
         { 
             name: "Wahl Praktika-Projekte-Seminare", 
             klasse: "wahl-praktika-projekte",
-            hasTooltip: true,  // WICHTIG: Aktiviert Drag & Drop
+            hasTooltip: true,  // WICHTIG: Aktiviert Tooltips
             info: "💡 Ziehe Module aus der Liste!",
             description: "Wählbare Praktika und Projekte"
         },
         { 
             name: "Kernfächer nach Schwerpunkt", 
             klasse: "kern",
+            hasTooltip: true,  // WICHTIG: Aktiviert Tooltips
+            info: "💡 Wähle deine Kernfächer!",
             description: "Computer und Netzwerk Schwerpunkt",
             minKp: 18
         },
         { 
             name: "Wahlfächer", 
             klasse: "wahl",
+            hasTooltip: true,  // WICHTIG: Aktiviert Tooltips
+            info: "💡 Wähle deine Wahlfächer!",
             description: "Frei wählbare Module",
             minKp: 6
         },
@@ -70,6 +73,8 @@ window.StudiengangBaseConfig = {
         { 
             name: "Weitere Wahl-Grundlagenfächer", 
             klasse: "weitere-wahl-grundlagen",
+            hasTooltip: true,  // WICHTIG: Aktiviert Tooltips
+            info: "💡 Wähle zusätzliche Grundlagen!",
             description: "Zusätzliche Grundlagenfächer",
             minKp: 8
         }

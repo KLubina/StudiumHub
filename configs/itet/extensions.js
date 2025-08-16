@@ -484,18 +484,35 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
   integrateSelectedPraktikaIntoConfig() {
     console.log("🔄 Integriere alle ausgewählten Module in Konfiguration...");
 
+    // *** WICHTIG: Erst ALLE dynamischen Module entfernen ***
+    this.config.daten = this.config.daten.filter(m => !m.isDynamic);
+
     // Finde und entferne Platzhalter
     const placeholderIndex = this.config.daten.findIndex(
       (m) => m.isPlaceholder
     );
     if (placeholderIndex !== -1) {
       this.config.daten.splice(placeholderIndex, 1);
+      console.log('✅ Platzhalter entfernt');
     }
 
-    // Entferne alle bisherigen dynamischen Module
-    this.config.daten = this.config.daten.filter(m => !m.isDynamic);
+    // *** ENTFERNE AUCH STATISCHE MODULE DIE DURCH DYNAMISCHE ERSETZT WERDEN SOLLEN ***
+    // Entferne vorhandene Kernfächer, Wahlfächer die ersetzt werden sollen
+    this.config.daten = this.config.daten.filter(m => {
+      // Behalte obligatorische Module aus Jahr 1 und 2
+      if (m.jahr <= 2) return true;
+      
+      // Entferne Kernfächer und Wahlfächer aus Jahr 3 (werden durch Auswahl ersetzt)
+      if (m.kategorie === "Kernfächer nach Schwerpunkt" || 
+          m.kategorie === "Wahlfächer") {
+        console.log(`⚠️ Entferne statisches Modul: ${m.name}`);
+        return false;
+      }
+      
+      // Behalte alle anderen Module
+      return true;
+    });
 
-    // *** ERWEITERT: Alle Modul-Kategorien hinzufügen ***
     let totalAdded = 0;
     
     // Praktika hinzufügen
@@ -535,6 +552,7 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
     });
 
     console.log(`✅ ${totalAdded} ausgewählte Module hinzugefügt`);
+    console.log(`📊 Gesamt Module nach Integration: ${this.config.daten.length}`);
   }
 
   /* ==== KP-COUNTER SYSTEM ==== */
@@ -825,18 +843,20 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
       document.getElementById("kp-counter").nextSibling
     );
 
-    // *** ERWEITERTE EVENT LISTENERS ***
+    // *** ERWEITERTE EVENT LISTENERS MIT DEBUG ***
     document
       .getElementById("show-praktika-list")
       .addEventListener("click", (e) => {
+        console.log('🎯 Praktika Button geklickt');
         this.showPraktikaTooltip(e);
       });
 
-    // *** NEUE EVENT LISTENERS ***
+    // *** NEUE EVENT LISTENERS MIT DEBUG ***
     document
       .getElementById("show-kernfaecher-list")
       .addEventListener("click", (e) => {
         e.preventDefault();
+        console.log('🎯 Kernfächer Button geklickt');
         this.showKernfaecherTooltip(e);
       });
 
@@ -844,6 +864,7 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
       .getElementById("show-wahlfaecher-list")
       .addEventListener("click", (e) => {
         e.preventDefault();
+        console.log('🎯 Wahlfächer Button geklickt');
         this.showWahlfaecherTooltip(e);
       });
 
@@ -1290,20 +1311,29 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
 
   /* ==== LEGENDE TOOLTIP EVENTS ==== */
   addLegendTooltipEvents(div, kategorie) {
-    if (kategorie.klasse === "wahl-praktika-projekte") {
-      div.style.cursor = "pointer";
-      div.style.position = "relative";
+    // Prüfe ob Kategorie Tooltips aktiviert hat
+    const hasTooltip = kategorie.hasTooltip || false;
+    
+    if (!hasTooltip) return;
+    
+    div.style.cursor = "pointer";
+    div.style.position = "relative";
 
-      // Icon hinzufügen
-      const icon = document.createElement("span");
-      icon.innerHTML = " 🎯";
-      icon.style.position = "absolute";
-      icon.style.top = "5px";
-      icon.style.right = "5px";
-      icon.style.fontSize = "12px";
-      icon.style.opacity = "0.7";
-      div.appendChild(icon);
+    // Icon hinzufügen
+    const icon = document.createElement("span");
+    icon.innerHTML = " 🎯";
+    icon.style.position = "absolute";
+    icon.style.top = "5px";
+    icon.style.right = "5px";
+    icon.style.fontSize = "12px";
+    icon.style.opacity = "0.7";
+    div.appendChild(icon);
 
+    // Event-Handler basierend auf Kategorie-Klasse
+    const kategorieKlasse = kategorie.klasse;
+    
+    if (kategorieKlasse === "wahl-praktika-projekte") {
+      // Praktika-Events
       div.addEventListener("mouseenter", (event) => {
         this.showPraktikaTooltip(event);
       });
@@ -1321,6 +1351,54 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
         } else {
           this.hideTooltip();
         }
+      });
+      
+    } else if (kategorieKlasse === "kern") {
+      // Kernfächer-Events
+      div.addEventListener("mouseenter", (event) => {
+        this.showKernfaecherTooltip(event);
+      });
+
+      div.addEventListener("mouseleave", () => {
+        if (!this.isKernfaecherTooltipLocked) {
+          this.hideTooltip();
+        }
+      });
+
+      div.addEventListener("click", (event) => {
+        this.isKernfaecherTooltipLocked = !this.isKernfaecherTooltipLocked;
+        if (this.isKernfaecherTooltipLocked) {
+          this.showKernfaecherTooltip(event);
+        } else {
+          this.hideTooltip();
+        }
+      });
+      
+    } else if (kategorieKlasse === "wahl") {
+      // Wahlfächer-Events
+      div.addEventListener("mouseenter", (event) => {
+        this.showWahlfaecherTooltip(event);
+      });
+
+      div.addEventListener("mouseleave", () => {
+        if (!this.isWahlfaecherTooltipLocked) {
+          this.hideTooltip();
+        }
+      });
+
+      div.addEventListener("click", (event) => {
+        this.isWahlfaecherTooltipLocked = !this.isWahlfaecherTooltipLocked;
+        if (this.isWahlfaecherTooltipLocked) {
+          this.showWahlfaecherTooltip(event);
+        } else {
+          this.hideTooltip();
+        }
+      });
+      
+    } else if (kategorieKlasse === "weitere-wahl-grundlagen") {
+      // Weitere Wahl-Grundlagenfächer können hier implementiert werden
+      div.addEventListener("click", (event) => {
+        this.showMessage("⚠️ Weitere Wahl-Grundlagenfächer: Diese Funktion ist noch nicht implementiert", "info");
       });
     }
   }
@@ -1541,256 +1619,6 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
         { name: "Startups und Recht", kp: 2, kategorie: "Wahlfächer" },
       ],
     };
-  }
-  // ============================================================================
-  // KERNFÄCHER UND WAHLFÄCHER TOOLTIPS - ANS ENDE COPY-PASTEN
-  // ============================================================================
-
-  showKernfaecherTooltip(event) {
-    const content = this.createKernfaecherTooltip();
-    this.showCustomTooltip(content, event);
-  }
-
-  showWahlfaecherTooltip(event) {
-    const content = this.createWahlfaecherTooltip();
-    this.showCustomTooltip(content, event);
-  }
-
-  createKernfaecherTooltip() {
-    let content = `
-        <div class="kernfaecher-liste">
-            <h3>📚 Kernfächer nach Schwerpunkt</h3>
-            <p style="font-size: 11px; color: #666; margin-bottom: 15px;">
-                💡 <strong>Klicke auf Module um sie auszuwählen!</strong><br>
-                ⚠️ Du musst mindestens 18 KP aus Kernfächern wählen.
-            </p>
-    `;
-
-    Object.entries(this.kernfaecherSchwerpunkte).forEach(
-      ([schwerpunkt, module]) => {
-        content += `
-            <div style="margin-bottom: 15px;">
-                <h4 style="margin: 10px 0 8px 0; padding: 3px 8px; background-color: #DD98DD; color: black; border-radius: 4px; font-size: 12px;">
-                    ${schwerpunkt}
-                </h4>
-                <div style="display: grid; grid-template-columns: 1fr; gap: 2px;">
-        `;
-
-        module.forEach((modul) => {
-          const isSelected = this.isModulSelected(modul.name, "kernfaecher");
-          const bgColor = isSelected ? "#d4edda" : "#f8f9fa";
-          const textColor = isSelected ? "#155724" : "#333";
-          const buttonText = isSelected ? "✓ Gewählt" : "Wählen";
-          const buttonColor = isSelected ? "#28a745" : "#DD98DD";
-
-          content += `
-                <div style="padding: 6px; background: ${bgColor}; color: ${textColor}; border-radius: 4px; margin: 2px; border: 1px solid #ddd; display: flex; justify-content: space-between; align-items: center;">
-                    <div>
-                        <div style="font-weight: bold; font-size: 10px;">${
-                          modul.kp
-                        } KP</div>
-                        <div style="font-size: 9px; line-height: 1.2;">${
-                          modul.name
-                        }</div>
-                    </div>
-                    <button onclick="window.currentStudienplan.toggleModulFromTooltip('${
-                      modul.name
-                    }', 'kernfaecher')" 
-                            style="background: ${buttonColor}; color: ${
-            isSelected ? "white" : "black"
-          }; border: none; padding: 3px 6px; border-radius: 3px; cursor: pointer; font-size: 8px;">
-                        ${buttonText}
-                    </button>
-                </div>
-            `;
-        });
-
-        content += `</div></div>`;
-      }
-    );
-
-    content += `</div>`;
-    return content;
-  }
-
-  createWahlfaecherTooltip() {
-    let content = `
-        <div class="wahlfaecher-liste">
-            <h3>🎓 Wahlfächer</h3>
-            <p style="font-size: 11px; color: #666; margin-bottom: 15px;">
-                💡 <strong>Klicke auf Module um sie auszuwählen!</strong><br>
-                ℹ️ Freie Auswahl zusätzlicher Module.
-            </p>
-    `;
-
-    Object.entries(this.wahlfaecherBereiche).forEach(([bereich, module]) => {
-      content += `
-            <div style="margin-bottom: 15px;">
-                <h4 style="margin: 10px 0 8px 0; padding: 3px 8px; background-color: #F2B48F; color: black; border-radius: 4px; font-size: 12px;">
-                    ${bereich}
-                </h4>
-                <div style="display: grid; grid-template-columns: 1fr; gap: 2px;">
-        `;
-
-      module.forEach((modul) => {
-        const isSelected = this.isModulSelected(modul.name, "wahlfaecher");
-        const bgColor = isSelected ? "#d4edda" : "#f8f9fa";
-        const textColor = isSelected ? "#155724" : "#333";
-        const buttonText = isSelected ? "✓ Gewählt" : "Wählen";
-        const buttonColor = isSelected ? "#28a745" : "#F2B48F";
-
-        content += `
-                <div style="padding: 6px; background: ${bgColor}; color: ${textColor}; border-radius: 4px; margin: 2px; border: 1px solid #ddd; display: flex; justify-content: space-between; align-items: center;">
-                    <div>
-                        <div style="font-weight: bold; font-size: 10px;">${modul.kp} KP</div>
-                        <div style="font-size: 9px; line-height: 1.2;">${modul.name}</div>
-                    </div>
-                    <button onclick="window.currentStudienplan.toggleModulFromTooltip('${modul.name}', 'wahlfaecher')" 
-                            style="background: ${buttonColor}; color: black; border: none; padding: 3px 6px; border-radius: 3px; cursor: pointer; font-size: 8px;">
-                        ${buttonText}
-                    </button>
-                </div>
-            `;
-      });
-
-      content += `</div></div>`;
-    });
-
-    content += `</div>`;
-    return content;
-  }
-
-  /* ==== WICHTIGE FEHLENDE METHODEN ==== */
-  
-  showCustomTooltip(content, event) {
-    // Entferne existierendes Tooltip
-    this.hideTooltip();
-    
-    const tooltip = document.createElement('div');
-    tooltip.id = 'custom-tooltip';
-    tooltip.innerHTML = content;
-    
-    // Styling für das Tooltip
-    tooltip.style.position = 'fixed';
-    tooltip.style.backgroundColor = 'white';
-    tooltip.style.border = '2px solid #0D5B8C';
-    tooltip.style.borderRadius = '8px';
-    tooltip.style.padding = '15px';
-    tooltip.style.maxWidth = '600px';
-    tooltip.style.maxHeight = '70vh';
-    tooltip.style.overflowY = 'auto';
-    tooltip.style.zIndex = '10000';
-    tooltip.style.boxShadow = '0 4px 12px rgba(0,0,0,0.15)';
-    tooltip.style.fontSize = '12px';
-    
-    // Position berechnen
-    let x = event.clientX || 100;
-    let y = event.clientY || 100;
-    
-    // Stelle sicher, dass das Tooltip auf dem Bildschirm bleibt
-    const maxX = window.innerWidth - 620;
-    const maxY = window.innerHeight - 400;
-    x = Math.min(x, maxX);
-    y = Math.min(y, maxY);
-    
-    tooltip.style.left = x + 'px';
-    tooltip.style.top = y + 'px';
-    
-    document.body.appendChild(tooltip);
-    
-    // Close Button hinzufügen
-    const closeBtn = document.createElement('button');
-    closeBtn.innerHTML = '✕';
-    closeBtn.style.position = 'absolute';
-    closeBtn.style.top = '5px';
-    closeBtn.style.right = '5px';
-    closeBtn.style.background = '#dc3545';
-    closeBtn.style.color = 'white';
-    closeBtn.style.border = 'none';
-    closeBtn.style.borderRadius = '50%';
-    closeBtn.style.width = '20px';
-    closeBtn.style.height = '20px';
-    closeBtn.style.cursor = 'pointer';
-    closeBtn.style.fontSize = '10px';
-    
-    closeBtn.addEventListener('click', () => {
-      this.hideTooltip();
-    });
-    
-    tooltip.appendChild(closeBtn);
-  }
-  
-  hideTooltip() {
-    const existingTooltip = document.getElementById('custom-tooltip');
-    if (existingTooltip) {
-      existingTooltip.remove();
-    }
-  }
-  
-  createModule(modul, container) {
-    // Erstelle ein Modul-Element
-    const moduleDiv = document.createElement('div');
-    moduleDiv.classList.add('modul');
-    
-    // Kategorie-spezifische CSS Klassen hinzufügen
-    const kategorieKlasse = this.config.kategorieZuKlasse[modul.kategorie] || 'default';
-    moduleDiv.classList.add(kategorieKlasse);
-    
-    // Modul-Inhalt
-    const title = document.createElement('div');
-    title.classList.add('modul-titel');
-    title.textContent = modul.name;
-    
-    const kp = document.createElement('div');
-    kp.classList.add('modul-kp');
-    kp.textContent = `${modul.kp} KP`;
-    
-    moduleDiv.appendChild(title);
-    moduleDiv.appendChild(kp);
-    
-    // Custom Sizing anwenden
-    if (this.config.customSizing) {
-      this.config.customSizing.call(this.config, moduleDiv, modul);
-    }
-    
-    // Zum Container hinzufügen
-    container.appendChild(moduleDiv);
-    
-    return moduleDiv;
-  }
-  
-  createStudienplan() {
-    // Finde das Hauptcontainer Element
-    const mainContainer = document.querySelector('.studienplan-container') || 
-                         document.querySelector('#studienplan') ||
-                         document.body;
-    
-    // Leere den Container (außer Titel und Legende)
-    const title = mainContainer.querySelector('h1');
-    const legend = mainContainer.querySelector('.farben-legende');
-    
-    mainContainer.innerHTML = '';
-    
-    if (title) mainContainer.appendChild(title);
-    if (legend) mainContainer.appendChild(legend);
-    
-    // Jahre erstellen
-    const years = [...new Set(this.config.daten.map(m => m.jahr))].sort();
-    
-    years.forEach(year => {
-      const yearSection = this.createYearSection(year);
-      mainContainer.appendChild(yearSection);
-      
-      // Module für dieses Jahr hinzufügen
-      const yearModules = this.config.daten.filter(m => m.jahr === year);
-      const moduleContainer = yearSection.querySelector('.module-container') || yearSection;
-      
-      yearModules.forEach(modul => {
-        if (!modul.isPlaceholder) {
-          this.createModule(modul, moduleContainer);
-        }
-      });
-    });
   }
 };
 
