@@ -42,9 +42,8 @@ window.StudiengangModules = [
     { jahr: 3, semester: 0, name: "Communication Networks", kp: 6, kategorie: "Kernfächer nach Schwerpunkt", fachgebiet: "Computer und Netzwerk" },
     { jahr: 3, semester: 0, name: "Fundamentals of Computer Architecture", kp: 6, kategorie: "Kernfächer nach Schwerpunkt", fachgebiet: "Computer und Netzwerk" },
     
-    { jahr: 3, semester: 0, name: "Weitere Wahl-Grundlagenfächer", kp: 0, kategorie: "Weitere Wahl-Grundlagenfächer" },
-
-    // PLATZHALTER für dynamische Praktika (wird durch Extensions ersetzt)
+    // PLATZHALTER für dynamische Module (wird durch Extensions ersetzt)
+    { jahr: 3, semester: 0, name: "Weitere Wahl-Grundlagenfächer", kp: 0, kategorie: "Weitere Wahl-Grundlagenfächer", isPlaceholder: true },
     { jahr: 3, semester: 0, name: "Wahl Praktika-Projekte-Seminare", kp: 0, kategorie: "Wahl Praktika-Projekte-Seminare", isPlaceholder: true },
     
     { jahr: 3, semester: 0, name: "Managerial Economics", kp: 4, kategorie: "Wahlfächer" },

@@ -489,14 +489,14 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
     // *** WICHTIG: Erst ALLE dynamischen Module entfernen ***
     this.config.daten = this.config.daten.filter(m => !m.isDynamic);
 
-    // Finde und entferne Platzhalter
-    const placeholderIndex = this.config.daten.findIndex(
-      (m) => m.isPlaceholder
-    );
-    if (placeholderIndex !== -1) {
-      this.config.daten.splice(placeholderIndex, 1);
-      console.log('✅ Platzhalter entfernt');
-    }
+    // Finde und entferne ALLE Platzhalter
+    this.config.daten = this.config.daten.filter(m => {
+      if (m.isPlaceholder) {
+        console.log(`✅ Platzhalter entfernt: ${m.name}`);
+        return false;
+      }
+      return true;
+    });
 
     // *** ENTFERNE AUCH STATISCHE MODULE DIE DURCH DYNAMISCHE ERSETZT WERDEN SOLLEN ***
     // Entferne vorhandene Kernfächer, Wahlfächer die ersetzt werden sollen
