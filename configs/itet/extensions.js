@@ -1567,11 +1567,6 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
     this.kernfaecherSchwerpunkte = {
       "Biomedizinische Technik": [
         {
-          name: "Introduction to Estimation and Machine Learning",
-          kp: 6,
-          kategorie: "Kernfächer nach Schwerpunkt",
-        },
-        {
           name: "Biomedical Imaging",
           kp: 6,
           kategorie: "Kernfächer nach Schwerpunkt",
@@ -1591,15 +1586,25 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
           kp: 6,
           kategorie: "Kernfächer nach Schwerpunkt",
         },
+        {
+          name: "Neural Systems",
+          kp: 6,
+          kategorie: "Kernfächer nach Schwerpunkt",
+        },
       ],
       "Computer und Netzwerke": [
         {
-          name: "Communication Systems",
+          name: "Discrete Event Systems",
           kp: 6,
           kategorie: "Kernfächer nach Schwerpunkt",
         },
         {
           name: "Embedded Systems",
+          kp: 6,
+          kategorie: "Kernfächer nach Schwerpunkt",
+        },
+        {
+          name: "Communication Networks",
           kp: 6,
           kategorie: "Kernfächer nach Schwerpunkt",
         },
@@ -1611,12 +1616,17 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
       ],
       "Elektrische Energietechnik": [
         {
-          name: "Control Systems",
+          name: "Leistungselektronik",
           kp: 6,
           kategorie: "Kernfächer nach Schwerpunkt",
         },
         {
-          name: "Leistungselektronik",
+          name: "Power Semiconductors",
+          kp: 6,
+          kategorie: "Kernfächer nach Schwerpunkt",
+        },
+        {
+          name: "Control Systems",
           kp: 6,
           kategorie: "Kernfächer nach Schwerpunkt",
         },
@@ -1624,11 +1634,6 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
       "Elektronik und Photonik": [
         {
           name: "VLSI 1: HDL Based Design for FPGAs",
-          kp: 6,
-          kategorie: "Kernfächer nach Schwerpunkt",
-        },
-        {
-          name: "Embedded Systems",
           kp: 6,
           kategorie: "Kernfächer nach Schwerpunkt",
         },
@@ -1642,6 +1647,26 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
           kp: 6,
           kategorie: "Kernfächer nach Schwerpunkt",
         },
+        {
+          name: "Radio-Frequency Electronics I",
+          kp: 6,
+          kategorie: "Kernfächer nach Schwerpunkt",
+        },
+        {
+          name: "High-Speed Signal Propagation",
+          kp: 6,
+          kategorie: "Kernfächer nach Schwerpunkt",
+        },
+        {
+          name: "Optics and Photonics",
+          kp: 6,
+          kategorie: "Kernfächer nach Schwerpunkt",
+        },
+        {
+          name: "Mess- und Versuchstechnik",
+          kp: 6,
+          kategorie: "Kernfächer nach Schwerpunkt",
+        },
       ],
       "Kommunikation, Regelung und Signalverarbeitung": [
         {
@@ -1650,17 +1675,22 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
           kategorie: "Kernfächer nach Schwerpunkt",
         },
         {
-          name: "Control Systems",
+          name: "Communication Systems",
+          kp: 6,
+          kategorie: "Kernfächer nach Schwerpunkt",
+        },
+        {
+          name: "Communication and Detection Theory",
+          kp: 6,
+          kategorie: "Kernfächer nach Schwerpunkt",
+        },
+        {
+          name: "Fundamentals of Physical Modeling and Simulations",
           kp: 6,
           kategorie: "Kernfächer nach Schwerpunkt",
         },
         {
           name: "Introduction to Estimation and Machine Learning",
-          kp: 6,
-          kategorie: "Kernfächer nach Schwerpunkt",
-        },
-        {
-          name: "Communication Systems",
           kp: 6,
           kategorie: "Kernfächer nach Schwerpunkt",
         },

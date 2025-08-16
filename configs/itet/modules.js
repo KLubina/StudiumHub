@@ -36,13 +36,8 @@ window.StudiengangModules = [
     { jahr: 2, semester: 2, name: "Halbleiterelemente", kp: 4, kategorie: "Obligatorische Fächer" },
     { jahr: 2, semester: 2, name: "Wahrscheinlichkeitstheorie und Statistik", kp: 4, kategorie: "Obligatorische Fächer" },
     
-    // 3. Jahr - NUR Platzhalter für dynamische Module
-    // Schwerpunkt Computer und Netzwerk
-    { jahr: 3, semester: 0, name: "Eingebettete Systeme", kp: 6, kategorie: "Kernfächer nach Schwerpunkt", fachgebiet: "Computer und Netzwerk" },
-    { jahr: 3, semester: 0, name: "Communication Networks", kp: 6, kategorie: "Kernfächer nach Schwerpunkt", fachgebiet: "Computer und Netzwerk" },
-    { jahr: 3, semester: 0, name: "Fundamentals of Computer Architecture", kp: 6, kategorie: "Kernfächer nach Schwerpunkt", fachgebiet: "Computer und Netzwerk" },
-    
     // PLATZHALTER für dynamische Module (wird durch Extensions ersetzt)
+    { jahr: 3, semester: 0, name: "Kernfächer nach Schwerpunkt", kp: 0, kategorie: "Kernfächer nach Schwerpunkt", isPlaceholder: true },
     { jahr: 3, semester: 0, name: "Weitere Wahl-Grundlagenfächer", kp: 0, kategorie: "Weitere Wahl-Grundlagenfächer", isPlaceholder: true },
     { jahr: 3, semester: 0, name: "Wahl Praktika-Projekte-Seminare", kp: 0, kategorie: "Wahl Praktika-Projekte-Seminare", isPlaceholder: true },
 
