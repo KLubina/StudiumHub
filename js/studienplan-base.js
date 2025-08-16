@@ -690,7 +690,24 @@ checkCondition(modul, condition) {
                 fragment.appendChild(inhalt);
             }
             
-            // NEU: Vorlesungslink hinzufügen
+            // NEU: Links hinzufügen (VVZ, Vorlesungsaufzeichnungen, etc.)
+            if (details.link) {
+                const linkTitle = document.createElement('h4');
+                linkTitle.textContent = 'Weitere Informationen';
+                fragment.appendChild(linkTitle);
+                
+                const linkContainer = document.createElement('p');
+                const link = document.createElement('a');
+                link.href = details.link;
+                link.target = '_blank';
+                link.textContent = 'Zum Vorlesungsverzeichnis (VVZ)';
+                link.style.color = '#0066cc';
+                link.style.textDecoration = 'underline';
+                linkContainer.appendChild(link);
+                fragment.appendChild(linkContainer);
+            }
+            
+            // Backwards Compatibility: Vorlesungslink
             if (details.vorlesungslink) {
                 const linkTitle = document.createElement('h4');
                 linkTitle.textContent = 'Vorlesungsaufzeichnung';
