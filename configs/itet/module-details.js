@@ -339,7 +339,8 @@ window.StudiengangModuleDetails = {
             "• DC- und AC-Analyse\n" +
             "• Messungen im Zeit- und Frequenzbereich\n" +
             "• Impedanzmessungen\n" +
-            "• Messung der Transfercharakteristik"
+            "• Messung der Transfercharakteristik",
+        link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=192771&lang=de"
     },
     "Informatik II": {
         kurzbeschreibung: "Der Kurs behandelt die Grundlagen des Entwurfs und der Analyse von Algorithmen und Datenstrukturen, einschliesslich Graphentheorie und -problemen. Er bietet eine Einführung in generisches, sowie paralleles, Programmieren",
