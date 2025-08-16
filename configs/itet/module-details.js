@@ -236,7 +236,8 @@ window.StudiengangModuleDetails = {
             "• Laplace equation\n" +
             "• Maximum principle\n" +
             "• Method of separation of variables\n" +
-            "• Variational method"
+            "• Variational method",
+        link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193965&lang=de"
     },
     "Physik II": {
         kurzbeschreibung: "The goal of the Physics II class is an introduction to quantum mechanics",
@@ -251,7 +252,8 @@ window.StudiengangModuleDetails = {
             "• Quantum statistics\n" +
             "• Approximation Methods\n" +
             "• Applications in Engineering\n" +
-            "• Entanglement and superposition"
+            "• Entanglement and superposition",
+        link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193671&lang=de"
     },
     "Signal- und Systemtheorie I": {
         kurzbeschreibung: "Signaltheorie und Systemtheorie (zeitkontinuierlich und zeitdiskret): Signalanalyse im Zeit- und Frequenzbereich, Signalräume, Hilberträume, verallgemeinerte Funktionen, lineare zeitinvariante Systeme, Abtasttheoreme, zeitdiskrete Signale und Systeme, digitale Filterstrukturen, diskrete Fourier-Transformation (DFT), endlich-dimensionale Signale und Systeme, schnelle Fouriertransformation (FFT)",
@@ -267,7 +269,8 @@ window.StudiengangModuleDetails = {
             "• Digitale Filterstrukturen\n" +
             "• Diskrete Fourier-Transformation (DFT)\n" +
             "• Endlich-dimensionale Signale und Systeme\n" +
-            "• Schnelle Fouriertransformation (FFT)"
+            "• Schnelle Fouriertransformation (FFT)",
+        link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193407&lang=de"
     },
     "Signal- und Systemtheorie II": {
         kurzbeschreibung: "Zeitkontinuierliche und zeitdiskrete lineare Systemtheorie, Zustandsraummethoden, Frequenzbereichmethoden, Steuerbarkeit, Beobachtbarkeit, Stabilität",
@@ -283,7 +286,8 @@ window.StudiengangModuleDetails = {
             "• Nichtlineare Systeme\n" +
             "• Chaos\n" +
             "• Diskrete Ereignissysteme\n" +
-            "• Hybride Systeme"
+            "• Hybride Systeme",
+        link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=187298&lang=de"
     },
     "Diskrete Mathematik": {
         kurzbeschreibung: "Einführung in die Grundlagen der diskreten Mathematik: Mengenlehre, Kombinatorik, Graphentheorie und Algebra. Die Grundlagen werden mit Anwendungen aus der Informationstechnologie veranschaulicht",
@@ -299,7 +303,8 @@ window.StudiengangModuleDetails = {
             "• Mengenlehre\n" +
             "• Kombinatorik: Elementare Zählformen, Zählprinzipien, und spezielle Zählprobleme\n" +
             "• Graphentheorie: Eigenschaften, Arten (Netzwerke, Bäume, ...), Einfärbung, Flüsse & Schnitte, und Matchings\n" +
-            "• Algebra: Elementare Zahlentheorie (Teilbarkeit, Kongruenz, ...), Einführung in die Kryptographie, Gruppen, Körper, und Ringe"
+            "• Algebra: Elementare Zahlentheorie (Teilbarkeit, Kongruenz, ...), Einführung in die Kryptographie, Gruppen, Körper, und Ringe",
+        link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=194088&lang=de"
     },
     "Halbleiter-Schaltungstechnik": {
         kurzbeschreibung: "Einführungsvorlesung in die Halbleiter-Schaltungstechnik. Der Transistor als aktives Bauelement. Analyse und Entwurf transistorbasierter elektronischer Schaltungen wie Verstärker und Filter; Operationsverstärker und darauf basierende Schaltungen",
@@ -315,7 +320,8 @@ window.StudiengangModuleDetails = {
             "• Transimpedanzverstärker\n" +
             "• Aktive Filter: einfache aktive Filter, Filter mit biquadratischen Stufen\n" +
             "• Filter höherer Ordnung, Realisierung mit biquadratischen Stufen und mit Leiterstruktur\n" +
-            "• Switched-Cap-Filter"
+            "• Switched-Cap-Filter",
+        link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193624&lang=de"
     },
     "Halbleiter-Schaltungstechnik Praktikum": {
         kurzbeschreibung: "Praktikum mit grundlegenden Versuchsschaltungen auf der Basis von Transistoren und Operationsverstärkern",
@@ -346,7 +352,8 @@ window.StudiengangModuleDetails = {
             "• Problemlösungsstrategien als Entwurfsmuster für Algorithmen, z.B. Induktion, Divide-and-Conquer, Backtracking, dynamische Programmierung\n" +
             "• Generisches Programmieren: C++-Templates, Funktionen höherer Ordnung, Lambdas, Closures\n" +
             "• Paralleles Programmieren: (Un)abhängigkeit von Berechnungen, Parallelität und Nebenläufigkeit, geteilter Speicher, Wettlaufsituationen, wechselseitiger Ausschluss, Kommunikation und Synchronisation\n\n" +
-            "Im Übungsbetrieb wird das Verständnis durch theoretische und/oder Programmieraufgaben (C++, Code Expert) vertieft"
+            "Im Übungsbetrieb wird das Verständnis durch theoretische und/oder Programmieraufgaben (C++, Code Expert) vertieft",
+        link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193493&lang=de"
     },
     "Technische Informatik": {
         kurzbeschreibung: "The course provides knowledge on the inner working of computer systems by introducing basic concepts in the design of microprocessors and operating systems",
@@ -360,7 +367,8 @@ window.StudiengangModuleDetails = {
             "• Fundamental concepts in the design of operating systems\n" +
             "• Physical and virtual memory management\n" +
             "• Process management and scheduling\n\n" +
-            "The lectures are complemented by theoretical exercises and six practical assignments that cover the core concepts of the course and allow students to gain a deeper understanding of the topics"
+            "The lectures are complemented by theoretical exercises and six practical assignments that cover the core concepts of the course and allow students to gain a deeper understanding of the topics",
+        link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=187713&lang=de"
     },
     "Wahrscheinlichkeitstheorie und Statistik": {
         kurzbeschreibung: "Wahrscheinlichkeitsmodelle und Anwendungen, Einführung in Schätztheorie und statistische Testtheorie",
@@ -380,7 +388,8 @@ window.StudiengangModuleDetails = {
             "• Lineare Prognosen, Gesetz der grossen Zahlen, zentraler Grenzwertsatz\n\n" +
             "Einführung in die Statistik:\n" +
             "• Schätzung von Parametern\n" +
-            "• Tests"
+            "• Tests",
+        link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=187991&lang=de"
     },
     "Elektromagnetische Felder und Wellen": {
         kurzbeschreibung: "Gegenstand dieser Vorlesung ist die Erzeugung und Ausbreitung elektromagnetischer Felder. Ausgehend von den Maxwell'schen Gleichungen werden die Wellengleichung und ihre Lösungen hergeleitet. Spezifische Themen sind: Felder im freien Raum, Brechung und Reflexion an Grenzflächen, Dipolstrahlung und Feldwinkelspektrum",
@@ -391,7 +400,8 @@ window.StudiengangModuleDetails = {
             "• Felder im freien Raum\n" +
             "• Brechung und Reflexion an Grenzflächen\n" +
             "• Dipolstrahlung\n" +
-            "• Feldwinkelspektrum"
+            "• Feldwinkelspektrum",
+        link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=188239&lang=de"
     },
     "Halbleiterelemente": {
         kurzbeschreibung: "The course covers the basic principles of semiconductor devices in micro-, opto-, and power electronics. It imparts knowledge both of the basic physics and on the operation principles of pn-junctions, diodes, contacts, bipolar transistors, MOS devices, solar cells, photodetectors, LEDs and laser diodes",
@@ -409,7 +419,8 @@ window.StudiengangModuleDetails = {
             "• Physical and electrical properties of the pn-junction\n" +
             "• pn-diode: Characteristics, small-signal behaviour, G-R currents, ideality factor, junction breakdown\n" +
             "• MOS devices: Band diagram, MOSFET operation, CV- and IV characteristics, frequency limitations and non-ideal behaviour\n" +
-            "• Bipolar transistor: Operation principles, modes of operation, characteristics, models, simulation"
+            "• Bipolar transistor: Operation principles, modes of operation, characteristics, models, simulation",
+        link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=187791&lang=de"
     },
     "Numerische Methoden": {
         kurzbeschreibung: "Dieser Kurs gibt eine Einführung in numerische Methoden. Abgedeckt werden Methoden der Analysis (Nullstellensuche von Funktionen, Integration) und der gewöhnlicher Differentialgleichungen. Der Schwerpunkt liegt auf dem Erwerb von Fertigkeiten in der Anwendung von numerischen Verfahren",
@@ -421,6 +432,7 @@ window.StudiengangModuleDetails = {
             "  - Explizite Einschrittverfahren\n" +
             "  - Schrittweitensteuerung\n" +
             "  - Stabilitätsanalyse und implizite Verfahren\n" +
-            "  - Strukturerhaltende Verfahren"
+            "  - Strukturerhaltende Verfahren",
+        link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=188146&lang=de"
     }
 };
