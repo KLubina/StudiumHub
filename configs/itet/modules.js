@@ -44,6 +44,7 @@ window.StudiengangModules = [
     
     { jahr: 3, semester: 0, name: "Computational Thinking", kp: 4, kategorie: "Weitere Wahl-Grundlagenfächer" },
     { jahr: 3, semester: 0, name: "High-Frequency Design Techniques", kp: 4, kategorie: "Weitere Wahl-Grundlagenfächer" },
+    { jahr: 3, semester: 0, name: "Introduction to Electric Power Transmission: System & Technology", kp: 4, kategorie: "Weitere Wahl-Grundlagenfächer" },
 
     // PLATZHALTER für dynamische Praktika (wird durch Extensions ersetzt)
     { jahr: 3, semester: 0, name: "Wahl Praktika-Projekte-Seminare", kp: 0, kategorie: "Wahl Praktika-Projekte-Seminare", isPlaceholder: true },

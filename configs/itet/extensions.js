@@ -15,8 +15,10 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
     // *** NEUE PROPERTIES HINZUFÜGEN ***
     this.isKernfaecherTooltipLocked = false;
     this.isWahlfaecherTooltipLocked = false;
+    this.isWeitereWahlGrundlagenTooltipLocked = false;
     this.selectedKernfaecher = this.loadSelectedModules("kernfaecher");
     this.selectedWahlfaecher = this.loadSelectedModules("wahlfaecher");
+    this.selectedWeitereWahlGrundlagen = this.loadSelectedModules("weitere-wahl-grundlagen");
 
     // Neue Module-Kategorien initialisieren
     this.initializeNewModuleCategories();
@@ -551,6 +553,18 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
       totalAdded++;
     });
 
+    // Weitere Wahl-Grundlagenfächer hinzufügen
+    Object.values(this.selectedWeitereWahlGrundlagen).flat().forEach((modul) => {
+      const moduleCopy = {
+        ...modul,
+        jahr: 3,
+        semester: 0,
+        isDynamic: true,
+      };
+      this.config.daten.push(moduleCopy);
+      totalAdded++;
+    });
+
     console.log(`✅ ${totalAdded} ausgewählte Module hinzugefügt`);
     console.log(`📊 Gesamt Module nach Integration: ${this.config.daten.length}`);
   }
@@ -997,6 +1011,54 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
     return content;
   }
 
+  showWeitereWahlGrundlagenTooltip(event) {
+    console.log('🎯 Zeige Wahl-Grundlagen Tooltip');
+    const content = this.createWeitereWahlGrundlagenTooltip();
+    this.showCustomTooltip(content, event);
+  }
+
+  createWeitereWahlGrundlagenTooltip() {
+    let content = `
+        <div class="weitere-wahl-grundlagen-liste">
+            <h3>⚡ Weitere Wahl-Grundlagenfächer</h3>
+            <p style="font-size: 11px; color: #666; margin-bottom: 15px;">
+                💡 <strong>Klicke auf Module um sie auszuwählen!</strong><br>
+                ⚠️ Du musst mindestens 8 KP aus diesen Grundlagenfächern wählen.
+            </p>
+            <div style="display: grid; grid-template-columns: 1fr; gap: 2px;">
+    `;
+
+    this.weitereWahlGrundlagen.forEach((modul) => {
+      const isSelected = this.isModulSelected(modul.name, "weitere-wahl-grundlagen");
+      const bgColor = isSelected ? "#d4edda" : "#f8f9fa";
+      const textColor = isSelected ? "#155724" : "#333";
+      const buttonText = isSelected ? "✓ Gewählt" : "Wählen";
+      const buttonColor = isSelected ? "#28a745" : "#FFD700";
+
+      content += `
+            <div style="padding: 8px; background: ${bgColor}; color: ${textColor}; border-radius: 4px; margin: 2px; border: 1px solid #ddd; display: flex; justify-content: space-between; align-items: center;">
+                <div>
+                    <div style="font-weight: bold; font-size: 10px;">${modul.kp} KP</div>
+                    <div style="font-size: 10px; line-height: 1.3;">${modul.name}</div>
+                </div>
+                <button onclick="window.currentStudienplan.toggleModulFromTooltip('${modul.name}', 'weitere-wahl-grundlagen')" 
+                        style="background: ${buttonColor}; color: black; border: none; padding: 4px 8px; border-radius: 3px; cursor: pointer; font-size: 9px;">
+                    ${buttonText}
+                </button>
+            </div>
+        `;
+    });
+
+    content += `
+            </div>
+            <div style="margin-top: 15px; padding: 10px; background-color: #fff8dc; border-radius: 5px; border: 1px solid #ffd700;">
+                <strong>⚠️ Wichtig:</strong> Du musst mindestens 8 KP aus diesen Grundlagenfächern wählen!
+            </div>
+        </div>
+    `;
+    return content;
+  }
+
   // ============================================================================
   // SCHRITT 6: Neue Utility-Methoden hinzufügen
   // ============================================================================
@@ -1007,6 +1069,7 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
       praktika: this.praktikaModule,
       kernfaecher: Object.values(this.kernfaecherSchwerpunkte).flat(),
       wahlfaecher: Object.values(this.wahlfaecherBereiche).flat(),
+      "weitere-wahl-grundlagen": this.weitereWahlGrundlagen,
     };
 
     const modul = moduleMap[category].find((m) => m.name === modulName);
@@ -1018,6 +1081,7 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
         if (category === "praktika") this.showPraktikaTooltip(event);
         else if (category === "kernfaecher") this.showKernfaecherTooltip(event);
         else if (category === "wahlfaecher") this.showWahlfaecherTooltip(event);
+        else if (category === "weitere-wahl-grundlagen") this.showWeitereWahlGrundlagenTooltip(event);
       }, 100);
     }
   }
@@ -1035,6 +1099,7 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
       praktika: this.selectedPraktika,
       kernfaecher: this.selectedKernfaecher,
       wahlfaecher: this.selectedWahlfaecher,
+      "weitere-wahl-grundlagen": this.selectedWeitereWahlGrundlagen,
     };
 
     if (!selectedMap[category]["general"]) {
@@ -1055,6 +1120,7 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
       praktika: this.selectedPraktika,
       kernfaecher: this.selectedKernfaecher,
       wahlfaecher: this.selectedWahlfaecher,
+      "weitere-wahl-grundlagen": this.selectedWeitereWahlGrundlagen,
     };
 
     if (selectedMap[category]["general"]) {
@@ -1072,6 +1138,7 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
       praktika: this.selectedPraktika,
       kernfaecher: this.selectedKernfaecher,
       wahlfaecher: this.selectedWahlfaecher,
+      "weitere-wahl-grundlagen": this.selectedWeitereWahlGrundlagen,
     };
 
     return Object.values(selectedMap[category]).some((moduleList) =>
@@ -1097,6 +1164,7 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
         praktika: this.selectedPraktika,
         kernfaecher: this.selectedKernfaecher,
         wahlfaecher: this.selectedWahlfaecher,
+        "weitere-wahl-grundlagen": this.selectedWeitereWahlGrundlagen,
       };
       localStorage.setItem(storageKey, JSON.stringify(selectedMap[category]));
     } catch (error) {
@@ -1266,16 +1334,18 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
   }
 
   resetPraktika() {
-    if (confirm("🔄 Wirklich ALLE ausgewählten Module (Praktika, Kernfächer, Wahlfächer) zurücksetzen?")) {
+    if (confirm("🔄 Wirklich ALLE ausgewählten Module (Praktika, Kernfächer, Wahlfächer, Weitere Wahl-Grundlagenfächer) zurücksetzen?")) {
       // Alle Kategorien zurücksetzen
       this.selectedPraktika = {};
       this.selectedKernfaecher = {};
       this.selectedWahlfaecher = {};
+      this.selectedWeitereWahlGrundlagen = {};
       
       // Alle speichern
       this.saveSelectedPraktika();
       this.saveSelectedModules('kernfaecher');
       this.saveSelectedModules('wahlfaecher');
+      this.saveSelectedModules('weitere-wahl-grundlagen');
       
       // Anzeige aktualisieren
       this.updatePraktikaDisplay();
@@ -1396,9 +1466,24 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
       });
       
     } else if (kategorieKlasse === "weitere-wahl-grundlagen") {
-      // Weitere Wahl-Grundlagenfächer können hier implementiert werden
+      // Weitere Wahl-Grundlagenfächer-Events
+      div.addEventListener("mouseenter", (event) => {
+        this.showWeitereWahlGrundlagenTooltip(event);
+      });
+
+      div.addEventListener("mouseleave", () => {
+        if (!this.isWeitereWahlGrundlagenTooltipLocked) {
+          this.hideTooltip();
+        }
+      });
+
       div.addEventListener("click", (event) => {
-        this.showMessage("⚠️ Weitere Wahl-Grundlagenfächer: Diese Funktion ist noch nicht implementiert", "info");
+        this.isWeitereWahlGrundlagenTooltipLocked = !this.isWeitereWahlGrundlagenTooltipLocked;
+        if (this.isWeitereWahlGrundlagenTooltipLocked) {
+          this.showWeitereWahlGrundlagenTooltip(event);
+        } else {
+          this.hideTooltip();
+        }
       });
     }
   }
@@ -1619,6 +1704,25 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
         { name: "Startups und Recht", kp: 2, kategorie: "Wahlfächer" },
       ],
     };
+
+    // WEITERE WAHL-GRUNDLAGENFÄCHER
+    this.weitereWahlGrundlagen = [
+      {
+        name: "Computational Thinking",
+        kp: 4,
+        kategorie: "Weitere Wahl-Grundlagenfächer",
+      },
+      {
+        name: "High-Frequency Design Techniques",
+        kp: 4,
+        kategorie: "Weitere Wahl-Grundlagenfächer",
+      },
+      {
+        name: "Introduction to Electric Power Transmission: System & Technology",
+        kp: 4,
+        kategorie: "Weitere Wahl-Grundlagenfächer",
+      },
+    ];
   }
 };
 
