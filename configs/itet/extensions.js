@@ -347,6 +347,9 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
   }
 
   initialize() {
+    // WICHTIG: Globale Referenz für Tooltip-Buttons setzen
+    window.currentStudienplan = this;
+    
     // WICHTIG: Zuerst die Moduldaten um ausgewählte Praktika erweitern
     this.integrateSelectedPraktikaIntoConfig();
 
@@ -489,14 +492,14 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
       this.config.daten.splice(placeholderIndex, 1);
     }
 
-    // *** ERWEITERT: Alle Modul-Kategorien hinzufügen ***
-    const allSelectedModules = [
-      ...Object.values(this.selectedPraktika).flat(),
-      ...Object.values(this.selectedKernfaecher).flat(),
-      ...Object.values(this.selectedWahlfaecher).flat(),
-    ];
+    // Entferne alle bisherigen dynamischen Module
+    this.config.daten = this.config.daten.filter(m => !m.isDynamic);
 
-    allSelectedModules.forEach((modul) => {
+    // *** ERWEITERT: Alle Modul-Kategorien hinzufügen ***
+    let totalAdded = 0;
+    
+    // Praktika hinzufügen
+    Object.values(this.selectedPraktika).flat().forEach((modul) => {
       const moduleCopy = {
         ...modul,
         jahr: 3,
@@ -504,11 +507,34 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
         isDynamic: true,
       };
       this.config.daten.push(moduleCopy);
+      totalAdded++;
     });
 
-    console.log(
-      `✅ ${allSelectedModules.length} ausgewählte Module hinzugefügt`
-    );
+    // Kernfächer hinzufügen
+    Object.values(this.selectedKernfaecher).flat().forEach((modul) => {
+      const moduleCopy = {
+        ...modul,
+        jahr: 3,
+        semester: 0,
+        isDynamic: true,
+      };
+      this.config.daten.push(moduleCopy);
+      totalAdded++;
+    });
+
+    // Wahlfächer hinzufügen
+    Object.values(this.selectedWahlfaecher).flat().forEach((modul) => {
+      const moduleCopy = {
+        ...modul,
+        jahr: 3,
+        semester: 0,
+        isDynamic: true,
+      };
+      this.config.daten.push(moduleCopy);
+      totalAdded++;
+    });
+
+    console.log(`✅ ${totalAdded} ausgewählte Module hinzugefügt`);
   }
 
   /* ==== KP-COUNTER SYSTEM ==== */
@@ -1116,6 +1142,9 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
       wahlfaecherDisplay.style.color =
         wahlfaecherKp > 0 ? "#28a745" : "#dc3545";
     }
+    
+    // KP-Counter auch aktualisieren
+    this.updateKPDisplay();
   }
 
   showPraktikaTooltip(event) {
@@ -1216,28 +1245,47 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
   }
 
   resetPraktika() {
-    if (confirm("🔄 Wirklich alle Praktika zurücksetzen?")) {
+    if (confirm("🔄 Wirklich ALLE ausgewählten Module (Praktika, Kernfächer, Wahlfächer) zurücksetzen?")) {
+      // Alle Kategorien zurücksetzen
       this.selectedPraktika = {};
+      this.selectedKernfaecher = {};
+      this.selectedWahlfaecher = {};
+      
+      // Alle speichern
       this.saveSelectedPraktika();
+      this.saveSelectedModules('kernfaecher');
+      this.saveSelectedModules('wahlfaecher');
+      
+      // Anzeige aktualisieren
       this.updatePraktikaDisplay();
       this.refreshStudienplan();
-      this.showMessage("✅ Alle Praktika zurückgesetzt!", "success");
+      
+      this.showMessage("✅ Alle Module zurückgesetzt!", "success");
     }
   }
 
   exportPraktika() {
+    const praktikaKp = Object.values(this.selectedPraktika).flat().reduce((sum, m) => sum + m.kp, 0);
+    const kernfaecherKp = Object.values(this.selectedKernfaecher).flat().reduce((sum, m) => sum + m.kp, 0);
+    const wahlfaecherKp = Object.values(this.selectedWahlfaecher).flat().reduce((sum, m) => sum + m.kp, 0);
+    
     const exportData = {
       studiengang: "BSc ITET - ETH Zürich",
       selectedPraktika: this.selectedPraktika,
+      selectedKernfaecher: this.selectedKernfaecher,
+      selectedWahlfaecher: this.selectedWahlfaecher,
+      summary: {
+        praktikaKp: praktikaKp,
+        kernfaecherKp: kernfaecherKp,
+        wahlfaecherKp: wahlfaecherKp,
+        totalSelectedKp: praktikaKp + kernfaecherKp + wahlfaecherKp
+      },
       timestamp: new Date().toISOString(),
-      totalKp: Object.values(this.selectedPraktika)
-        .flat()
-        .reduce((sum, m) => sum + m.kp, 0),
       version: "2.0",
     };
 
-    this.downloadJSON(exportData, "itet-praktika.json");
-    this.showMessage("📁 Praktika als JSON-Datei gespeichert!", "success");
+    this.downloadJSON(exportData, "itet-alle-module.json");
+    this.showMessage("📁 Alle ausgewählten Module als JSON-Datei gespeichert!", "success");
   }
 
   /* ==== LEGENDE TOOLTIP EVENTS ==== */
@@ -1610,6 +1658,139 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
 
     content += `</div>`;
     return content;
+  }
+
+  /* ==== WICHTIGE FEHLENDE METHODEN ==== */
+  
+  showCustomTooltip(content, event) {
+    // Entferne existierendes Tooltip
+    this.hideTooltip();
+    
+    const tooltip = document.createElement('div');
+    tooltip.id = 'custom-tooltip';
+    tooltip.innerHTML = content;
+    
+    // Styling für das Tooltip
+    tooltip.style.position = 'fixed';
+    tooltip.style.backgroundColor = 'white';
+    tooltip.style.border = '2px solid #0D5B8C';
+    tooltip.style.borderRadius = '8px';
+    tooltip.style.padding = '15px';
+    tooltip.style.maxWidth = '600px';
+    tooltip.style.maxHeight = '70vh';
+    tooltip.style.overflowY = 'auto';
+    tooltip.style.zIndex = '10000';
+    tooltip.style.boxShadow = '0 4px 12px rgba(0,0,0,0.15)';
+    tooltip.style.fontSize = '12px';
+    
+    // Position berechnen
+    let x = event.clientX || 100;
+    let y = event.clientY || 100;
+    
+    // Stelle sicher, dass das Tooltip auf dem Bildschirm bleibt
+    const maxX = window.innerWidth - 620;
+    const maxY = window.innerHeight - 400;
+    x = Math.min(x, maxX);
+    y = Math.min(y, maxY);
+    
+    tooltip.style.left = x + 'px';
+    tooltip.style.top = y + 'px';
+    
+    document.body.appendChild(tooltip);
+    
+    // Close Button hinzufügen
+    const closeBtn = document.createElement('button');
+    closeBtn.innerHTML = '✕';
+    closeBtn.style.position = 'absolute';
+    closeBtn.style.top = '5px';
+    closeBtn.style.right = '5px';
+    closeBtn.style.background = '#dc3545';
+    closeBtn.style.color = 'white';
+    closeBtn.style.border = 'none';
+    closeBtn.style.borderRadius = '50%';
+    closeBtn.style.width = '20px';
+    closeBtn.style.height = '20px';
+    closeBtn.style.cursor = 'pointer';
+    closeBtn.style.fontSize = '10px';
+    
+    closeBtn.addEventListener('click', () => {
+      this.hideTooltip();
+    });
+    
+    tooltip.appendChild(closeBtn);
+  }
+  
+  hideTooltip() {
+    const existingTooltip = document.getElementById('custom-tooltip');
+    if (existingTooltip) {
+      existingTooltip.remove();
+    }
+  }
+  
+  createModule(modul, container) {
+    // Erstelle ein Modul-Element
+    const moduleDiv = document.createElement('div');
+    moduleDiv.classList.add('modul');
+    
+    // Kategorie-spezifische CSS Klassen hinzufügen
+    const kategorieKlasse = this.config.kategorieZuKlasse[modul.kategorie] || 'default';
+    moduleDiv.classList.add(kategorieKlasse);
+    
+    // Modul-Inhalt
+    const title = document.createElement('div');
+    title.classList.add('modul-titel');
+    title.textContent = modul.name;
+    
+    const kp = document.createElement('div');
+    kp.classList.add('modul-kp');
+    kp.textContent = `${modul.kp} KP`;
+    
+    moduleDiv.appendChild(title);
+    moduleDiv.appendChild(kp);
+    
+    // Custom Sizing anwenden
+    if (this.config.customSizing) {
+      this.config.customSizing.call(this.config, moduleDiv, modul);
+    }
+    
+    // Zum Container hinzufügen
+    container.appendChild(moduleDiv);
+    
+    return moduleDiv;
+  }
+  
+  createStudienplan() {
+    // Finde das Hauptcontainer Element
+    const mainContainer = document.querySelector('.studienplan-container') || 
+                         document.querySelector('#studienplan') ||
+                         document.body;
+    
+    // Leere den Container (außer Titel und Legende)
+    const title = mainContainer.querySelector('h1');
+    const legend = mainContainer.querySelector('.farben-legende');
+    
+    mainContainer.innerHTML = '';
+    
+    if (title) mainContainer.appendChild(title);
+    if (legend) mainContainer.appendChild(legend);
+    
+    // Jahre erstellen
+    const years = [...new Set(this.config.daten.map(m => m.jahr))].sort();
+    
+    years.forEach(year => {
+      const yearSection = this.createYearSection(year);
+      mainContainer.appendChild(yearSection);
+      
+      // Module für dieses Jahr hinzufügen
+      const yearModules = this.config.daten.filter(m => m.jahr === year);
+      const moduleContainer = yearSection.querySelector('.module-container') || yearSection;
+      
+      yearModules.forEach(modul => {
+        if (!modul.isPlaceholder) {
+          this.createModule(modul, moduleContainer);
+        }
+      });
+    });
   }
 };
 
