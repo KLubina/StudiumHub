@@ -57,6 +57,19 @@ h1 {
     margin-right: auto;
 }
 
+.featured-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.featured-cards .card {
+    flex: 0 0 300px;
+    max-width: 300px;
+}
+
 .cards-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
