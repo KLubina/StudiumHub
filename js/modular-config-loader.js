@@ -61,59 +61,9 @@ class StudiengangConfigLoader {
     async loadOptionalModule(url) {
         try {
             await this.loadModule(url);
-            // Spezielle Behandlung für extensions.js - warte auf Feature-Loading
-            if (url.includes('extensions.js')) {
-                console.log('⏳ Warte auf Feature-Module...');
-                await this.waitForFeatures();
-            }
         } catch (error) {
             console.log(`ℹ️ Optionales Modul ${url} nicht gefunden - wird übersprungen`);
         }
-    }
-
-    // Neue Methode: Warte bis alle Features geladen sind
-    async waitForFeatures() {
-        return new Promise((resolve) => {
-            let attempts = 0;
-            const maxAttempts = 50; // 5 Sekunden max
-            
-            const checkFeatures = () => {
-                attempts++;
-                
-                // Prüfe das spezifische ITET Ready Signal
-                if (window.ITETFeaturesReady === true) {
-                    console.log('✅ ITET Features sind bereit');
-                    resolve();
-                    return;
-                }
-                
-                // Prüfe andere bekannte Ready Signals
-                if (window.CSEFeaturesReady || window.MTECFeaturesReady) {
-                    console.log('✅ Custom Features sind bereit');
-                    resolve();
-                    return;
-                }
-                
-                // Fallback: Prüfe ob die Hauptklassen existieren
-                if (window.ITETStudienplan || window.CSEStudienplan || window.MTECStudienplan) {
-                    console.log('✅ Features durch Fallback-Prüfung erkannt');
-                    resolve();
-                    return;
-                }
-                
-                if (attempts >= maxAttempts) {
-                    console.log('⏰ Timeout beim Warten auf Features - fahre fort');
-                    resolve();
-                    return;
-                }
-                
-                // Versuche es in 100ms erneut
-                setTimeout(checkFeatures, 100);
-            };
-            
-            // Sofort prüfen
-            checkFeatures();
-        });
     }
 
     mergeConfigs() {

@@ -57,17 +57,8 @@
         
         if (window.ITETStudienplan) {
             console.log('✅ ITET Features vollständig geladen');
-            // Signalisiere dem Haupt-Loader, dass Features bereit sind
-            window.ITETFeaturesReady = true;
-            
-            // Feuere Event für andere Components
-            if (typeof CustomEvent !== 'undefined') {
-                window.dispatchEvent(new CustomEvent('ITETFeaturesReady'));
-            }
         } else {
             console.error('❌ ITET Hauptklasse nicht geladen!');
-            // Auch bei Fehler signalisieren (mit Fehlerstatus)
-            window.ITETFeaturesReady = false;
         }
     }
 })();
@@ -78,18 +69,4 @@ window.StudiengangExtensions = {
     enableModularFeatures: true
 };
 
-// Debug-Hilfsfunktion
-window.debugITETFeatures = function() {
-    console.log('🔍 ITET Feature Debug:');
-    console.log('ITETFeaturesReady:', window.ITETFeaturesReady);
-    console.log('ITETUtilities:', !!window.ITETUtilities);
-    console.log('ITETModuleData:', !!window.ITETModuleData);
-    console.log('ITETKPCounter:', !!window.ITETKPCounter);
-    console.log('ITETLayoutManager:', !!window.ITETLayoutManager);
-    console.log('ITETModuleSelector:', !!window.ITETModuleSelector);
-    console.log('ITETTooltipManager:', !!window.ITETTooltipManager);
-    console.log('ITETStudienplan:', !!window.ITETStudienplan);
-};
-
 console.log("✅ ITET Extensions - Modularer Loader - initialisiert");
-console.log("💡 Verwende window.debugITETFeatures() zum Debuggen");
