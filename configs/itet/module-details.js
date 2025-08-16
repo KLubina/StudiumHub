@@ -12,7 +12,8 @@ window.StudiengangModuleDetails = {
             "• Lineare Ausgleichsrechnung\n" +
             "• Determinanten\n" +
             "• Eigenwerte und Eigenvektoren, Symmetrische Matrizen\n" +
-            "• Singulärwertzerlegung und Fundamentalsatz der linearen Algebra, Anwendungen"
+            "• Singulärwertzerlegung und Fundamentalsatz der linearen Algebra, Anwendungen",
+        link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=192867&lang=de"
     },
     "Analysis 1": {
         kurzbeschreibung: "Einführung in die Grundlagen der Analysis",
@@ -25,7 +26,8 @@ window.StudiengangModuleDetails = {
             "• Potenzreihen\n" +
             "• Stetige Abbildungen\n" +
             "• Differential- und Integralrechnung einer Variablen\n" +
-            "• Einführung in gewöhnliche Differentialgleichungen"
+            "• Einführung in gewöhnliche Differentialgleichungen",
+        link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193410&lang=de"
     },
     "Analysis 2": {
         kurzbeschreibung: "Einführung in die mehrdimensionale Differential- und Integralrechnung",
@@ -36,7 +38,8 @@ window.StudiengangModuleDetails = {
             "• der Satz über implizite Funktionen\n" +
             "• Mehrfache Integrale\n" +
             "• Integration über Untermannigfaltigkeiten\n" +
-            "• Sätze von Gauss und Stokes"
+            "• Sätze von Gauss und Stokes",
+        link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=188523&lang=de"
     },
     "Digitaltechnik": {
         kurzbeschreibung: "Grundlagen der Digitaltechnik: Elementare Bausteine, Schaltalgebra, Schaltungsanalyse und -synthese, und Entwurf endlicher Automaten",
@@ -55,7 +58,8 @@ window.StudiengangModuleDetails = {
             "• Zahlensysteme und Codes\n" +
             "• Kombinatorische und sequenzielle Schaltungen\n" +
             "• Endliche Automaten\n" +
-            "• Speicher und Mikroprozessoren"
+            "• Speicher und Mikroprozessoren",
+        link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=192958&lang=de"
     },
     "Digitaltechnik Praktikum": {
         kurzbeschreibung: "Grundbegriffe analog - digital, Zahlendarstellung, kombinatorische und sequenzielle Schaltungen, Boole'sche Algebra, Karnaugh-Diagramme. Endliche Automaten. Speicher und Rechenmodule in CMOS-Technik, programmierbare Logikschaltungen",
@@ -67,7 +71,8 @@ window.StudiengangModuleDetails = {
             "• Verschiedene Arten von Latches und Flip-Flops erstellen\n" +
             "• Kleiner Synthesizer realisieren (selbsterstellte Melodien abspielen)\n" +
             "• Umgang mit modernem Oszilloskop\n" +
-            "• Analyse programmierter Schaltungen über digitale und analoge Eingänge"
+            "• Analyse programmierter Schaltungen über digitale und analoge Eingänge",
+        link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193802&lang=de"
     },
     "Netzwerke und Schaltungen": {
         kurzbeschreibung: "Grundlagen der Elektrotechnik: Stationäre elektrische und magnetische Felder, Grundbauelemente elektrischer Schaltungen, Gleichstromnetzwerke, und elektromagnetische Induktion",
@@ -83,7 +88,8 @@ window.StudiengangModuleDetails = {
             "• Einfache elektrische Netzwerke\n" +
             "• Stromleitungsmechanismen\n" +
             "• Stationäres Magnetfeld\n" +
-            "• Zeitlich veränderliches elektromagnetisches Feld"
+            "• Zeitlich veränderliches elektromagnetisches Feld",
+        link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=192802&semkez=2025W&ansicht=LEHRVERANSTALTUNGEN&lang=de"
     },
     "Netzwerke und Schaltungen II": {
         kurzbeschreibung: "Komplexe Wechselstromrechnung, Methoden und Sätze der Netzwerkberechnung; Netzwerke mit nicht sinusförmiger periodischer Erregung, Schaltvorgänge, Fourier- und Laplacetransformation; Übertragungsfunktion, Zweitore; Verstärkergrundschaltungen, Gegentakt- und Differenzverstärker; Operationsverstärker, Operationsverstärker-Grundschaltungen und Anwendungen",
@@ -99,7 +105,8 @@ window.StudiengangModuleDetails = {
             "• Übertragungsfunktion von Netzwerken, Zweitore\n" +
             "• Verstärkergrundschaltungen, Gegentaktverstärker und Differenzverstärker\n" +
             "• Operationsverstärker, Operationsverstärker-Grundschaltungen\n" +
-            "• Schaltungen mit Operationsverstärkern"
+            "• Schaltungen mit Operationsverstärkern",
+        link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=187813&lang=de"
     },
     "Netzwerke und Schaltungen Praktikum": {
         kurzbeschreibung: "Experimentelle Vertiefung des in den Lehrveranstaltungen Netzwerke und Schaltungen I und II vermittelten Wissens am Beispiel induktiver Energieübertragungssysteme (Parameter von Ersatzschaltungen, Übertragungscharakteristiken, Resonanzkompensation, Hochspannungserzeugung) und der Photovoltaik (Charakteristika eines Solarmoduls, Leistungsanpassung mit DC-DC Wandlern, elektromech. Energiewandlung)",
@@ -115,7 +122,8 @@ window.StudiengangModuleDetails = {
             "• Kennlinie und Leistungscharakteristik eines Solarmoduls\n" +
             "• Leistungsanpassung mit leistungselektronischen Wandlern\n" +
             "• Elektromechanische Energiewandlung\n\n" +
-            "Nach der messtechnischen und experimentellen Untersuchung von Komponenten und Teilsystemen wird stets auch die Gesamtfunktion behandelt und analysiert. Weitere wichtige Ziele sind das Kennenlernen moderner Messgeräte und deren Bedienung sowie die Vermittlung der Bedeutung einer methodischen Planung und Durchführung experimenteller Untersuchungen und einer klaren abschließenden Dokumentation"
+            "Nach der messtechnischen und experimentellen Untersuchung von Komponenten und Teilsystemen wird stets auch die Gesamtfunktion behandelt und analysiert. Weitere wichtige Ziele sind das Kennenlernen moderner Messgeräte und deren Bedienung sowie die Vermittlung der Bedeutung einer methodischen Planung und Durchführung experimenteller Untersuchungen und einer klaren abschließenden Dokumentation",
+        link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=188187&lang=de"
     },
     "Technische Mechanik": {
         kurzbeschreibung: "Einführung in die Technische Mechanik: Kinematik, Statik und Dynamik von starren Körpern und Systemen",
@@ -139,7 +147,8 @@ window.StudiengangModuleDetails = {
             "• Prinzip von d'Alembert\n" +
             "• Newtonsches Bewegungsgesetz\n" +
             "• Impulssatz, Drallsatz\n" +
-            "• Drall bei ebenen Bewegungen"
+            "• Drall bei ebenen Bewegungen",
+        link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193886&lang=de"
     },
     "Physik I": {
         kurzbeschreibung: "Einführung in Wellenphänomene und fundamentale Aspekte der Thermodynamik",
@@ -158,7 +167,8 @@ window.StudiengangModuleDetails = {
             "Thermodynamik:\n" +
             "• Kinetische Gastheorie für das ideale Gas\n" +
             "• Hauptsätze der Thermodynamik: Energieerhaltung, Kreisprozesse, Entropie\n" +
-            "• Wärmeübertragung & Wärmestrahlung"
+            "• Wärmeübertragung & Wärmestrahlung",
+        link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=188037&lang=de"
     },
     "Informatik I": {
         kurzbeschreibung: "Einführung in das Programmieren mit einem Fokus auf systematischem und algorithmischem Problemlösen. Programmiersprache ist C++",
@@ -172,7 +182,8 @@ window.StudiengangModuleDetails = {
             "• Computerarithmetik, Kontrollanweisungen, Funktionen, Klassen, Referenzen und Zeiger\n" +
             "• Charakteristiken und Anwendung fundamentaler Containertypen\n" +
             "• Aufbau und Speichermanagement einfacher dynamischer Datentypen\n" +
-            "• Motivation und Illustration der Konzepte durch Algorithmen und Anwendungen"
+            "• Motivation und Illustration der Konzepte durch Algorithmen und Anwendungen",
+        link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=187917&lang=de"
     },
     "Mathematische Methoden": {
         kurzbeschreibung: "Grundlagen der komplexen Analysis in Theorie & Anwendung und Einführung in Integraltransformationen mit Behandlung einiger Anwendungen",
@@ -188,7 +199,8 @@ window.StudiengangModuleDetails = {
             "• Residuensatz und Anwendungen\n" +
             "• Taylor- und Laurentreihen\n" +
             "• Fourier Reihen und Fourier Transformationen\n" +
-            "• Laplace Transformationen"
+            "• Laplace Transformationen",
+        link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=188879&lang=de"
     },
     "Vorkurs Informatik": {
         kurzbeschreibung: "Die Veranstaltung bietet eine Einführung in die Grundlagen der Programmierung mit C++. Es wird keine Programmiererfahrung vorausgesetzt",
@@ -199,7 +211,8 @@ window.StudiengangModuleDetails = {
             "• Allgemeine Einführung in die Informatik: Entwicklung, Ziele, elementare Konzepte\n" +
             "• Interaktives Tutorial zum Selbststudium als Einführung in C++: behandelt werden Variablen, Datentypen, Verzweigungen und Schleifen\n" +
             "• Einführung in das systematische Lösen von Programmierproblemen mittels schrittweiser Verfeinerung\n" +
-            "• Zwei kleine Programmierprojekte: praktische Anwendung der gelernten Grundlagen"
+            "• Zwei kleine Programmierprojekte: praktische Anwendung der gelernten Grundlagen",
+        link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193009&lang=de"
     },
     "Analysis 3": {
         kurzbeschreibung: "In this lecture we treat problems in applied analysis. The focus lies on the solution of quasilinear first order PDEs with the method of characteristics, and on the study of three fundamental types of partial differential equations of second order: the Laplace equation, the heat equation, and the wave equation",
