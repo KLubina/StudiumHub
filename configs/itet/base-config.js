@@ -32,10 +32,10 @@ window.StudiengangBaseConfig = {
     // Kategorien-Reihenfolge für 3. Jahr (wie bei MTEC)
     thirdYearCategoryOrder: [
         "Kernfächer nach Schwerpunkt",
-        "Wahl Praktika-Projekte-Seminare", 
-        "Wissenschaftliche Arbeit",
+        "Weitere Wahl-Grundlagenfächer",
         "Wahlfächer",
-        "Weitere Wahl-Grundlagenfächer"
+        "Wahl Praktika-Projekte-Seminare", 
+        "Wissenschaftliche Arbeit"
     ],
     
     // Kategorien basierend auf dem ITET Studienplan - OBJEKT FORMAT für Drag & Drop
@@ -43,19 +43,20 @@ window.StudiengangBaseConfig = {
         { name: "Obligatorische Fächer", klasse: "obligatorisch" },
         { name: "Obligatorische Praktikum", klasse: "obligatorisch-praktikum" },
         { 
-            name: "Wahl Praktika-Projekte-Seminare", 
-            klasse: "wahl-praktika-projekte",
-            hasTooltip: true,  // WICHTIG: Aktiviert Tooltips
-            info: "💡 Ziehe Module aus der Liste!",
-            description: "Wählbare Praktika und Projekte"
-        },
-        { 
             name: "Kernfächer nach Schwerpunkt", 
             klasse: "kern",
             hasTooltip: true,  // WICHTIG: Aktiviert Tooltips
             info: "💡 Wähle deine Kernfächer!",
             description: "Computer und Netzwerk Schwerpunkt",
             minKp: 18
+        },
+        { 
+            name: "Weitere Wahl-Grundlagenfächer", 
+            klasse: "weitere-wahl-grundlagen",
+            hasTooltip: true,  // WICHTIG: Aktiviert Tooltips
+            info: "💡 Wähle zusätzliche Grundlagen!",
+            description: "Zusätzliche Grundlagenfächer",
+            minKp: 8
         },
         { 
             name: "Wahlfächer", 
@@ -66,17 +67,16 @@ window.StudiengangBaseConfig = {
             minKp: 6
         },
         { 
+            name: "Wahl Praktika-Projekte-Seminare", 
+            klasse: "wahl-praktika-projekte",
+            hasTooltip: true,  // WICHTIG: Aktiviert Tooltips
+            info: "💡 Ziehe Module aus der Liste!",
+            description: "Wählbare Praktika und Projekte"
+        },
+        { 
             name: "Wissenschaftliche Arbeit", 
             klasse: "wissenschaft",
             description: "Bachelorarbeit und SIP"
-        },
-        { 
-            name: "Weitere Wahl-Grundlagenfächer", 
-            klasse: "weitere-wahl-grundlagen",
-            hasTooltip: true,  // WICHTIG: Aktiviert Tooltips
-            info: "💡 Wähle zusätzliche Grundlagen!",
-            description: "Zusätzliche Grundlagenfächer",
-            minKp: 8
         }
     ],
     

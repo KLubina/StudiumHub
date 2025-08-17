@@ -404,10 +404,10 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
     // Kategorien in definierter Reihenfolge
     const reihenfolge = [
       "Kernfächer nach Schwerpunkt",
+      "Weitere Wahl-Grundlagenfächer",
+      "Wahlfächer",
       "Wahl Praktika-Projekte-Seminare",
       "Wissenschaftliche Arbeit",
-      "Wahlfächer",
-      "Weitere Wahl-Grundlagenfächer",
     ];
 
     reihenfolge.forEach((kategorie) => {
