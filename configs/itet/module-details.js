@@ -416,4 +416,111 @@ window.StudiengangModuleDetails = {
       "  - Strukturerhaltende Verfahren",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=188146&lang=de",
   },
+  
+  // Zusätzliche Module für Wahlbereich / höhere Semester
+  "Discrete Event Systems": {
+    kurzbeschreibung:
+      "Introduction to discrete event systems.",
+  inhalt:
+      "1. Regular Languages\n" +
+      "2. Non-Regular Languages\n" +
+      "3. Markov Chains\n" +
+      "4. Stochastic Discrete Event Systems\n" +
+      "5. Worst-Case Event Systems\n" +
+      "6. Verification of Finite Automata\n" +
+      "7. Petri Nets",
+    link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=227-0102-00L",
+  },
+  
+  "Communication Systems": {
+    kurzbeschreibung:
+      "The course teaches the fundamentals of digital communication systems. ",
+    inhalt:
+      "- essential components of digital communication systems\n" +
+      "- analog and digital modulation\n" +
+      "- baseband and passband representation; up- and down-conversion\n" +
+      "- communication channels as LTI systems\n" +
+      "- discretizing communication systems; sampling and quantization\n" +
+      "- noise, signal-to-noise ratio (SNR), and interference\n" +
+      "- detection theory and error rates\n" +
+      "- basics of forward error correction\n" +
+      "- basics of information theory\n" +
+      "- orthogonal frequency-division multiplexing (OFDM)\n" +
+      "- building blocks of modern communication systems\n",
+    link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=227-0121-00L",
+  },
+  
+  "Embedded Systems": {
+    kurzbeschreibung:
+      "An embedded system is a combination of hardware and software, either fixed in function or programmable, that is designed for a specific application scenario or for a specific task within a larger system.",
+    inhalt:
+      "Understanding the specific requirements and problems that arise in embedded system applications.\n\n" +
+      "Understanding the hardware structure of a microcontroller and an embedded system:\n" +
+      "• memory architecture and memory map\n" +
+      "• internal and external peripherals\n" +
+      "• low-power and low-energy design\n" +
+      "• instruction sets and computational accelerators\n\n" +
+      "Understanding the firmware structure of a microcontroller and an embedded system:\n" +
+      "• low-level instruction set\n" +
+      "• hardware-software interfaces\n" +
+      "• communication between components\n" +
+      "• embedded real-time operating systems\n" +
+      "• real-time scheduling\n" +
+      "• shared resources\n" +
+      "• low-power and low-energy programming\n" +
+      "• computational accelerators\n\n" +
+      "Using formal models and methods for designing and optimizing embedded systems.\n\n" +
+      "Gaining experience with practical applications of:\n" +
+      "• the C programming language\n" +
+      "• embedded real-time operating systems\n" +
+      "• debug functionalities of the associated design environment to design, implement, and verify embedded firmware",
+    link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=227-0124-00L",
+  },
+  
+  "Communication Networks": {
+    kurzbeschreibung:
+      "Understand the fundamental concepts behind communication networks and the Internet.",
+    lernziel:
+      "- understand how the Internet works;\n" +
+      "- build and operate Internet-like network infrastructures;\n" +
+      "- identify the right set of metrics to evaluate the performance or the adequacy of a network and " +
+      "- propose ways to improve it (if any).\n\n",
+    link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=227-0120-00L",
+  },
+  
+  "Fundamentals of Computer Architecture": {
+    kurzbeschreibung:
+      "Computer architecture is the science & art of designing and optimizing hardware components and the hardware/software interface to create a computer that meets design goals.",
+    inhalt:
+      "Modern Processor Architectures:\n" +
+      "• Superscalar processors\n" +
+      "• Multi-threaded processors\n" +
+      "• Out-of-order execution\n" +
+      "• VLIW (Very Long Instruction Word)\n" +
+      "• Pipelining and speculation\n" +
+      "• Branch prediction\n\n" +
+      "Memory Systems:\n" +
+      "• Cache hierarchies\n" +
+      "• Main memory systems\n" +
+      "• Storage subsystems\n" +
+      "• Memory controllers\n" +
+      "• DRAM chips and technologies\n" +
+      "• Emerging memory technologies\n\n" +
+      "Accelerators:\n" +
+      "• GPUs (Graphics Processing Units)\n" +
+      "• Systolic arrays\n" +
+      "• ML accelerators\n" +
+      "• Data-centric architectures\n\n" +
+      "Applications:\n" +
+      "• Machine learning workloads\n" +
+      "• Graph analytics\n" +
+      "• Bioinformatics applications\n\n" +
+      "Laboratory Work:\n" +
+      "• Ramulator 2.0 simulator\n" +
+      "• MQSim framework\n" +
+      "• DRAM Bender\n" +
+      "• Memory scheduling\n" +
+      "• Prefetching techniques",
+    link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=227-0152-00L",
+  },
 };
