@@ -194,12 +194,14 @@ window.StudiengangModuleDetails = {
   },
   "Vorkurs Informatik": {
     kurzbeschreibung:
-      "Die Veranstaltung bietet eine Einführung in die Grundlagen der Programmierung mit C++.",
+      "Einführung in die Grundlagen der Programmierung mit C++.",
     inhalt:
       "• Allgemeine Einführung in die Informatik: Entwicklung, Ziele, elementare Konzepte\n" +
-      "• Interaktives Tutorial zum Selbststudium als Einführung in C++: behandelt werden Variablen, Datentypen, Verzweigungen und Schleifen\n" +
-      "• Einführung in das systematische Lösen von Programmierproblemen mittels schrittweiser Verfeinerung\n" +
-      "• Zwei kleine Programmierprojekte: praktische Anwendung der gelernten Grundlagen",
+      "• Interaktives Tutorial als Einführung in C++:\n" +
+      "  - Variablen\n" +
+      "  - Datentypen\n" +
+      "  - Verzweigungen und Schleifen\n" +
+      "• Einführung in das systematische Lösen von Programmierproblemen mittels schrittweiser Verfeinerung",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193009&lang=de",
   },
   "Analysis 3": {
