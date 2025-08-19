@@ -695,43 +695,6 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
   updateKPBreakdown(breakdown) {
     const breakdownEl = document.getElementById("kp-breakdown");
 
-    let html = `
-            <div style="border-bottom: 1px solid #ddd; padding-bottom: 8px; margin-bottom: 8px;">
-                <strong>📋 Zusammenfassung:</strong><br>
-                <span style="color: #0D5B8C;">▶ ${
-                  breakdown.moduleCount
-                } Module insgesamt</span><br>
-                <span style="color: #00A0E3;">▶ ${
-                  breakdown.total
-                } KP Gesamtsumme</span>
-                ${
-                  breakdown.dynamicKP > 0
-                    ? `<br><span style="color: #4CA64C;">▶ ${breakdown.dynamicKP} KP aus gewählten Praktika</span>`
-                    : ""
-                }
-            </div>
-        `;
-
-    if (!this.showDetailedBreakdown) {
-      const topCategories = Object.entries(breakdown.byCategory)
-        .sort(([, a], [, b]) => b.kp - a.kp)
-        .slice(0, 3);
-
-      html += `<div style="margin-bottom: 10px;"><strong>📚 Top Kategorien:</strong>`;
-
-      topCategories.forEach(([kategorie, data]) => {
-        const color = this.getCategoryColor(kategorie);
-        const percentage = ((data.kp / breakdown.total) * 100).toFixed(1);
-
-        html += `
-                    <div style="margin: 3px 0; padding: 2px 4px; border-left: 3px solid ${color}; background-color: rgba(13, 91, 140, 0.05);">
-                        <span style="font-weight: 500;">${kategorie}:</span> 
-                        <span style="color: ${color}; font-weight: bold;">${data.kp} KP</span> 
-                        <span style="color: #666; font-size: 10px;">(${percentage}%)</span>
-                    </div>
-                `;
-      });
-
       html += `</div>`;
     }
 
