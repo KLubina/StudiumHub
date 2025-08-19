@@ -75,5 +75,14 @@ https://www.berufsberatung.ch/dyn/show/19998
   - Universität Esslingen
     - https://www.hs-esslingen.de/en/computer-sciences
     - https://www2.hs-esslingen.de/public/Bekanntmachungen/_public/Studierende/Modulhandbuch/Studiengaenge/Elektrotechnik%20ELB%20(B.Eng.)/MHB_2.2_ELB_Stand_2025-08-04_abWiSe2025-26.pdf
+  - Rheinische Hochschule Köln
+    - https://rh-koeln.de/studium/bachelor-elektrotechnik
+  - Technische Hochschule Georg Agricola
+    - https://www.thga.de/fileadmin/website/Formulare/Studienverlaufsplaene/SVP_Bachelor_Digitalisierung_2024.pdf
+    - https://www.thga.de/fileadmin/website/Formulare/Studienverlaufsplaene/SVP_Bachelor__Vollzeit_ET_2024.pdf
+  - Willhelm Büchner Hochschule
+    - https://www.wb-fernstudium.de/kursseite/bachelor-studiengang-elektro-und-informationstechnik-beng.html
+  - AKAD University
+    - https://www.akad.de/abschluss/bachelor/elektro-und-informationstechnik-beng/
 
 https://www.swissuniversities.ch/themen/lehre-studium/akkreditierte-schweizer-hochschulen
