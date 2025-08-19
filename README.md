@@ -66,5 +66,14 @@ https://www.berufsberatung.ch/dyn/show/19998
   - https://www.fhnw.ch/de/studium/technik/elektro-und-informationstechnik
  
   - Studienführer: https://www.fhnw.ch/de/studium/technik/media/studienfuhrer-ht-fhnw.pdf/@@download/file
+ 
+  ### Private ITET-Studiengänge Europa
+  - Constructor University
+    - https://constructor.university/programs/undergraduate-education/electrical-computer-engineering
+  - Internationale Universität Berlin
+    - https://www.iu-fernstudium.de/bachelor/elektrotechnik/
+  - Universität Esslingen
+    - https://www.hs-esslingen.de/en/computer-sciences
+    - https://www2.hs-esslingen.de/public/Bekanntmachungen/_public/Studierende/Modulhandbuch/Studiengaenge/Elektrotechnik%20ELB%20(B.Eng.)/MHB_2.2_ELB_Stand_2025-08-04_abWiSe2025-26.pdf
 
 https://www.swissuniversities.ch/themen/lehre-studium/akkreditierte-schweizer-hochschulen
