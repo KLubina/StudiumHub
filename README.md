@@ -32,6 +32,7 @@ ITET allgemein: https://www.berufsberatung.ch/dyn/show/19998
   - Studiumgang-Seite: https://www.fhnw.ch/de/studium/technik/elektro-und-informationstechnik
   - Studienführer: https://www.fhnw.ch/de/studium/technik/media/studienfuhrer-ht-fhnw.pdf/@@download/file
   - Curriculum: https://www.fhnw.ch/de/studium/technik/elektro-und-informationstechnik/einblick-in-den-studienaufbau
+  - Alle Module: https://issuu.com/fhnw/docs/modultabelle_eit?ff&pageLayout=singlePage
  
   ### Private ITET-Studiengänge Europa
   - Constructor University
