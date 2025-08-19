@@ -594,18 +594,6 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
             <div id="kp-breakdown" style="font-size: 11px; line-height: 1.4;">
                 <!-- Aufschlüsselung wird hier eingefügt -->
             </div>
-            
-            <div style="margin-top: 12px; text-align: center;">
-                <button id="refresh-kp" style="background: #28a745; color: white; border: none; padding: 6px 12px; border-radius: 4px; cursor: pointer; font-size: 11px; margin-right: 5px;">
-                    🔄 Aktualisieren
-                </button>
-                <button id="export-kp" style="background: #17a2b8; color: white; border: none; padding: 6px 12px; border-radius: 4px; cursor: pointer; font-size: 11px; margin-right: 5px;">
-                    📊 Export
-                </button>
-                <button id="toggle-breakdown" style="background: #6c757d; color: white; border: none; padding: 6px 12px; border-radius: 4px; cursor: pointer; font-size: 11px;">
-                    👁️ Details
-                </button>
-            </div>
         `;
 
     legendContainer.insertBefore(
