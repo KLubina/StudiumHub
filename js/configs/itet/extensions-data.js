@@ -3,9 +3,8 @@
   // ============================================================================
   // Füge diese NEUE Methode zu deiner Klasse hinzu:
 
-  initializeNewModuleCategories() {
-    // KERNFÄCHER NACH SCHWERPUNKT
-    this.kernfaecherSchwerpunkte = {
+window.ITETModuleData = {
+  kernfaecherSchwerpunkte: {
       "Biomedizinische Technik": [
         {
           name: "Biomedical Imaging",
@@ -136,10 +135,10 @@
           kategorie: "Kernfächer nach Schwerpunkt",
         },
       ],
-    };
+    },
 
     // WAHLFÄCHER
-    this.wahlfaecherBereiche = {
+    wahlfaecherBereiche : {
       "Ingenieurswissenschaftliche Wahlfächer": [
         {
           name: "Electromagnetic Waves: Materials, Effects, and Antennas",
@@ -196,10 +195,10 @@
         { name: "Basics of Air Transport (Aviation I)", kp: 4, kategorie: "Wahlfächer" },
         { name: "Lecture Series: Space Research and Exploration", kp: 1, kategorie: "Wahlfächer" },
       ],
-    };
+    },
 
     // WEITERE WAHL-GRUNDLAGENFÄCHER
-    this.weitereWahlGrundlagen = [
+    weitereWahlGrundlagen : [
       {
         name: "Computational Thinking",
         kp: 4,
@@ -215,10 +214,10 @@
         kp: 4,
         kategorie: "Weitere Wahl-Grundlagenfächer",
       },
-    ];
+    ],
 
     // PRAKTIKA IN UNTERKATEGORIEN ORGANISIERT
-    this.praktikaSchwerpunkte = {
+    praktikaSchwerpunkte : {
       "Machine Learning & KI": [
         {
           name: "Machine Learning for Brain-Computer Interfaces",
@@ -561,9 +560,8 @@
           kategorie: "Wahl Praktika-Projekte-Seminare",
         },
       ],
-    };
+    }
   }
-};
 
     // Neue Module-Kategorien initialisieren
     this.initializeNewModuleCategories();
@@ -891,4 +889,3 @@
         kategorie: "Wahl Praktika-Projekte-Seminare",
       },
     ];
-  }
