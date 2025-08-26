@@ -1,5 +1,6 @@
 Hochschule Luzern
 
+------------FIX------------
 Basic Module – 1. Semester (HS)
 Elektrotechnik – 3 ECTS
 Digitaltechnik – 3 ECTS
@@ -27,7 +28,6 @@ Elektronik 2 – 6 ECTS
 Advanced Programming – 3 ECTS
 Statistical Data Analysis – 3 ECTS
 
-
 Intermediate Module – 4. Semester (FS)
 Produktentwicklung 2 – 3 ECTS
 Regelungstechnik – 3 ECTS
@@ -37,6 +37,7 @@ Digital Design – 3 ECTS
 Advanced Embedded Systems – 3 ECTS
 Data Communication Systems – 3 ECTS
 AI for Engineers – 3 ECTS
+------------FIX------------
 
 5.Semester/6. Semester
 Advanced Module – Energie- und Antriebssysteme
@@ -88,3 +89,4 @@ Statistical Data Analysis
 Web-Technologien
 
 Zusatzmodule – mindestens 15 ECTS
+
