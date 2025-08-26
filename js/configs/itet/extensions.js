@@ -351,21 +351,13 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
   initialize() {
     // WICHTIG: Globale Referenz für Tooltip-Buttons setzen
     window.currentStudienplan = this;
-    
-    // WICHTIG: Zuerst die Moduldaten um ausgewählte Praktika erweitern
-    this.integrateSelectedPraktikaIntoConfig();
 
     // Dann normales Initialize aufrufen
     super.initialize();
 
-    // ITET-spezifische UI hinzufügen
+    // Nur KP-Counter hinzufügen - KISS!
     this.addKPCounter();
-    this.addPraktikaControls();
     this.updateKPDisplay();
-    this.updatePraktikaDisplay();
-
-    // Spezielle Behandlung für 3. Jahr Layout
-    this.improveThirdYearLayout();
 
   }
 
@@ -601,21 +593,8 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
       legendContainer.firstChild
     );
 
-    // Event Listeners
-    document.getElementById("refresh-kp").addEventListener("click", () => {
-      this.updateKPDisplay();
-      this.showMessage("✅ KP-Zählung aktualisiert!", "success");
-    });
-
-    document.getElementById("export-kp").addEventListener("click", () => {
-      this.exportKPBreakdown();
-    });
-
-    document
-      .getElementById("toggle-breakdown")
-      .addEventListener("click", () => {
-        this.toggleBreakdownDetails();
-      });
+    // Event Listeners nur für existierende Elemente - KISS!
+    // Automatisches Update beim Laden - mehr brauchen wir nicht
   }
 
   updateKPDisplay() {
