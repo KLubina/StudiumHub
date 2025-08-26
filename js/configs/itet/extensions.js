@@ -54,17 +54,22 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
     }
   }
 
+// ...existing code...
   addPraktikaControls() {
     // Controls hinzufügen - NUR wenn sie nicht bereits existieren
     if (!document.getElementById("show-praktika-list")) {
       window.ITETUtils?.addPraktikaControls();
     }
     
-    // Event Listeners - mit Null-Checks
+    // Hilfsreferenz auf die Instanz für Event-Handler
+    const self = this;
+
+    // Event Listeners - mit Null-Checks (füge nur hinzu, wenn kein inline onclick gesetzt)
     const praktikaBtn = document.getElementById("show-praktika-list");
     if (praktikaBtn && !praktikaBtn.onclick) {
       praktikaBtn.addEventListener("click", (e) => {
-        this.showPraktikaTooltip(e);
+        e.preventDefault?.();
+        self.showPraktikaTooltip(e);
       });
     }
 
@@ -72,7 +77,7 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
     if (kernfaecherBtn && !kernfaecherBtn.onclick) {
       kernfaecherBtn.addEventListener("click", (e) => {
         e.preventDefault();
-        this.showKernfaecherTooltip(e);
+        self.showKernfaecherTooltip(e);
       });
     }
 
@@ -80,7 +85,7 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
     if (wahlfaecherBtn && !wahlfaecherBtn.onclick) {
       wahlfaecherBtn.addEventListener("click", (e) => {
         e.preventDefault();
-        this.showWahlfaecherTooltip(e);
+        self.showWahlfaecherTooltip(e);
       });
     }
 
@@ -88,29 +93,67 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
     if (weitereWahlBtn && !weitereWahlBtn.onclick) {
       weitereWahlBtn.addEventListener("click", (e) => {
         e.preventDefault();
-        this.showWeitereWahlGrundlagenTooltip(e);
+        self.showWeitereWahlGrundlagenTooltip(e);
       });
     }
 
     const saveBtn = document.getElementById("save-praktika");
     if (saveBtn && !saveBtn.onclick) {
       saveBtn.addEventListener("click", () => {
-        this.exportPraktika();
+        self.exportPraktika();
       });
     }
 
     const refreshBtn = document.getElementById("refresh-studienplan");
     if (refreshBtn && !refreshBtn.onclick) {
       refreshBtn.addEventListener("click", () => {
-        this.refreshStudienplan();
+        self.refreshStudienplan();
       });
     }
 
     const resetBtn = document.getElementById("reset-praktika");
     if (resetBtn && !resetBtn.onclick) {
       resetBtn.addEventListener("click", () => {
-        this.resetPraktika();
+        self.resetPraktika();
       });
+    }
+
+    // Fallback / Delegation: falls Buttons dynamisch ersetzt werden oder gar kein onclick/Listener gesetzt ist,
+    // fange Klicks auf dem Legenden-Container ab und öffne das passende Tooltip.
+    const legend = document.querySelector(".farben-legende");
+    if (legend && !legend.dataset.itetLegendHandler) {
+      legend.addEventListener("click", (e) => {
+        const targetBtn = e.target.closest(
+          "#show-praktika-list, #show-kernfaecher-list, #show-wahlfaecher-list, #show-weitere-wahl-grundlagen-list"
+        );
+        if (!targetBtn) return;
+
+        e.preventDefault();
+
+        // Bestimme eine sinnvolle Position für das Tooltip (Mittelpunkt des Buttons)
+        const rect = targetBtn.getBoundingClientRect();
+        const evt = { clientX: rect.left + rect.width / 2, clientY: rect.top + rect.height / 2 };
+
+        switch (targetBtn.id) {
+          case "show-praktika-list":
+            self.showPraktikaTooltip(evt);
+            break;
+          case "show-kernfaecher-list":
+            self.showKernfaecherTooltip(evt);
+            break;
+          case "show-wahlfaecher-list":
+            self.showWahlfaecherTooltip(evt);
+            break;
+          case "show-weitere-wahl-grundlagen-list":
+            self.showWeitereWahlGrundlagenTooltip(evt);
+            break;
+          default:
+            break;
+        }
+      }, true);
+
+      // Markiere, dass Handler gesetzt ist
+      legend.dataset.itetLegendHandler = "1";
     }
   }
 
