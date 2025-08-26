@@ -15,6 +15,8 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
     this.selectedWahlfaecher = this.loadSelectedModules("wahlfaecher");
     this.selectedWeitereWahlGrundlagen = this.loadSelectedModules("weitere-wahl-grundlagen");
 
+    this.initializeNewModuleCategories();
+
     // Tooltip-Locks
     this.isPraktikaTooltipLocked = false;
     this.isKernfaecherTooltipLocked = false;
@@ -39,52 +41,94 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
     this.updateKPDisplay();
   }
 
+  initializeNewModuleCategories() {
+    // Prüfe ob die separate Datei geladen wurde
+    if (window.ITETModuleData) {
+      this.kernfaecherSchwerpunkte = window.ITETModuleData.kernfaecherSchwerpunkte;
+      this.wahlfaecherBereiche = window.ITETModuleData.wahlfaecherBereiche;
+      this.weitereWahlGrundlagen = window.ITETModuleData.weitereWahlGrundlagen;
+      this.praktikaSchwerpunkte = window.ITETModuleData.praktikaSchwerpunkte;
+    } else {
+      // Fallback: Behalte die bestehenden Daten in der Hauptdatei
+      console.warn('ITETModuleData nicht geladen, verwende Fallback-Daten');
+    }
+  }
+
   addPraktikaControls() {
-    // Controls hinzufügen
-    window.ITETUtils.addPraktikaControls();
+    // Controls hinzufügen - NUR wenn sie nicht bereits existieren
+    if (!document.getElementById("show-praktika-list")) {
+      window.ITETUtils?.addPraktikaControls();
+    }
     
-    // Event Listeners
-    document.getElementById("show-praktika-list").addEventListener("click", (e) => {
-      this.showPraktikaTooltip(e);
-    });
+    // Event Listeners - mit Null-Checks
+    const praktikaBtn = document.getElementById("show-praktika-list");
+    if (praktikaBtn && !praktikaBtn.onclick) {
+      praktikaBtn.addEventListener("click", (e) => {
+        this.showPraktikaTooltip(e);
+      });
+    }
 
-    document.getElementById("show-kernfaecher-list").addEventListener("click", (e) => {
-      e.preventDefault();
-      this.showKernfaecherTooltip(e);
-    });
+    const kernfaecherBtn = document.getElementById("show-kernfaecher-list");
+    if (kernfaecherBtn && !kernfaecherBtn.onclick) {
+      kernfaecherBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        this.showKernfaecherTooltip(e);
+      });
+    }
 
-    document.getElementById("show-wahlfaecher-list").addEventListener("click", (e) => {
-      e.preventDefault();
-      this.showWahlfaecherTooltip(e);
-    });
+    const wahlfaecherBtn = document.getElementById("show-wahlfaecher-list");
+    if (wahlfaecherBtn && !wahlfaecherBtn.onclick) {
+      wahlfaecherBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        this.showWahlfaecherTooltip(e);
+      });
+    }
 
-    document.getElementById("show-weitere-wahl-grundlagen-list").addEventListener("click", (e) => {
-      e.preventDefault();
-      this.showWeitereWahlGrundlagenTooltip(e);
-    });
+    const weitereWahlBtn = document.getElementById("show-weitere-wahl-grundlagen-list");
+    if (weitereWahlBtn && !weitereWahlBtn.onclick) {
+      weitereWahlBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        this.showWeitereWahlGrundlagenTooltip(e);
+      });
+    }
 
-    document.getElementById("save-praktika").addEventListener("click", () => {
-      this.exportPraktika();
-    });
+    const saveBtn = document.getElementById("save-praktika");
+    if (saveBtn && !saveBtn.onclick) {
+      saveBtn.addEventListener("click", () => {
+        this.exportPraktika();
+      });
+    }
 
-    document.getElementById("refresh-studienplan").addEventListener("click", () => {
-      this.refreshStudienplan();
-    });
+    const refreshBtn = document.getElementById("refresh-studienplan");
+    if (refreshBtn && !refreshBtn.onclick) {
+      refreshBtn.addEventListener("click", () => {
+        this.refreshStudienplan();
+      });
+    }
 
-    document.getElementById("reset-praktika").addEventListener("click", () => {
-      this.resetPraktika();
-    });
+    const resetBtn = document.getElementById("reset-praktika");
+    if (resetBtn && !resetBtn.onclick) {
+      resetBtn.addEventListener("click", () => {
+        this.resetPraktika();
+      });
+    }
   }
 
   /* ==== KP-COUNTER ==== */
   addKPCounter() {
+    if (document.getElementById("kp-counter")) return; // Bereits vorhanden
+    
     const legendContainer = document.querySelector(".farben-legende");
-    const kpCounterElement = this.kpCounter.createKPCounter();
-    legendContainer.insertBefore(kpCounterElement, legendContainer.firstChild);
+    if (legendContainer && this.kpCounter?.createKPCounter) {
+      const kpCounterElement = this.kpCounter.createKPCounter();
+      legendContainer.insertBefore(kpCounterElement, legendContainer.firstChild);
+    }
   }
 
   updateKPDisplay() {
-    this.kpCounter.updateKPDisplay(this.config);
+    if (this.kpCounter?.updateKPDisplay) {
+      this.kpCounter.updateKPDisplay(this.config);
+    }
     this.updateModuleSelectionDisplays();
   }
 
@@ -201,18 +245,20 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
 
   /* ==== MODULE SELECTION ==== */
   toggleModulFromTooltip(modulName, category) {
+    if (!this.moduleData) return;
+
     const moduleMap = {
-      praktika: Object.values(this.moduleData.praktikaSchwerpunkte).flat(),
-      kernfaecher: Object.values(this.moduleData.kernfaecherSchwerpunkte).flat(),
-      wahlfaecher: Object.values(this.moduleData.wahlfaecherBereiche).flat(),
-      "weitere-wahl-grundlagen": this.moduleData.weitereWahlGrundlagen
+      praktika: Object.values(this.moduleData.praktikaSchwerpunkte || {}).flat(),
+      kernfaecher: Object.values(this.moduleData.kernfaecherSchwerpunkte || {}).flat(),
+      wahlfaecher: Object.values(this.moduleData.wahlfaecherBereiche || {}).flat(),
+      "weitere-wahl-grundlagen": this.moduleData.weitereWahlGrundlagen || []
     };
 
     const modul = moduleMap[category]?.find((m) => m.name === modulName);
     if (modul) {
       this.toggleModulSelection(modul, category);
       
-      // Tooltip neu laden
+      // Tooltip neu laden nach kurzer Verzögerung
       setTimeout(() => {
         const event = { clientX: 100, clientY: 100 };
         if (category === "praktika") this.showPraktikaTooltip(event);
@@ -281,6 +327,8 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
 
   /* ==== TOOLTIPS ==== */
   showPraktikaTooltip(event) {
+    if (!window.ITETTooltips?.createPraktikaTooltipContent) return;
+    
     const content = window.ITETTooltips.createPraktikaTooltipContent(
       this.moduleData, 
       (name, cat) => this.isModulSelected(name, cat)
@@ -289,6 +337,8 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
   }
 
   showKernfaecherTooltip(event) {
+    if (!window.ITETTooltips?.createKernfaecherTooltipContent) return;
+    
     const content = window.ITETTooltips.createKernfaecherTooltipContent(
       this.moduleData,
       (name, cat) => this.isModulSelected(name, cat)
@@ -297,6 +347,8 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
   }
 
   showWahlfaecherTooltip(event) {
+    if (!window.ITETTooltips?.createWahlfaecherTooltipContent) return;
+    
     const content = window.ITETTooltips.createWahlfaecherTooltipContent(
       this.moduleData,
       (name, cat) => this.isModulSelected(name, cat)
@@ -305,61 +357,13 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
   }
 
   showWeitereWahlGrundlagenTooltip(event) {
+    if (!window.ITETTooltips?.createWeitereWahlGrundlagenTooltipContent) return;
+    
     const content = window.ITETTooltips.createWeitereWahlGrundlagenTooltipContent(
       this.moduleData,
       (name, cat) => this.isModulSelected(name, cat)
     );
     this.showCustomTooltip(content, event);
-  }
-
-  /* ==== LEGEND TOOLTIP EVENTS ==== */
-  addLegendTooltipEvents(div, kategorie) {
-    const hasTooltip = kategorie.hasTooltip || false;
-    if (!hasTooltip) return;
-    
-    div.style.cursor = "pointer";
-    div.style.position = "relative";
-
-    // Icon hinzufügen
-    const icon = document.createElement("span");
-    icon.innerHTML = " 🎯";
-    icon.style.position = "absolute";
-    icon.style.top = "5px";
-    icon.style.right = "5px";
-    icon.style.fontSize = "12px";
-    icon.style.opacity = "0.7";
-    div.appendChild(icon);
-
-    // Event-Handler basierend auf Kategorie-Klasse
-    const kategorieKlasse = kategorie.klasse;
-    const eventMap = {
-      "wahl-praktika-projekte": "Praktika",
-      "kern": "Kernfaecher",
-      "wahl": "Wahlfaecher",
-      "weitere-wahl-grundlagen": "WeitereWahlGrundlagen"
-    };
-
-    const tooltipType = eventMap[kategorieKlasse];
-    if (!tooltipType) return;
-
-    div.addEventListener("mouseenter", (event) => {
-      this[`show${tooltipType}Tooltip`](event);
-    });
-
-    div.addEventListener("mouseleave", () => {
-      if (!this[`is${tooltipType}TooltipLocked`]) {
-        this.hideTooltip();
-      }
-    });
-
-    div.addEventListener("click", (event) => {
-      this[`is${tooltipType}TooltipLocked`] = !this[`is${tooltipType}TooltipLocked`];
-      if (this[`is${tooltipType}TooltipLocked`]) {
-        this[`show${tooltipType}Tooltip`](event);
-      } else {
-        this.hideTooltip();
-      }
-    });
   }
 
   /* ==== UTILITY METHODS ==== */
@@ -390,7 +394,11 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
   }
 
   showMessage(message, type = "info") {
-    window.ITETUtils.showMessage(message, type);
+    if (window.ITETUtils?.showMessage) {
+      window.ITETUtils.showMessage(message, type);
+    } else {
+      console.log(`${type}: ${message}`);
+    }
   }
 
   refreshStudienplan() {
@@ -474,7 +482,11 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
       weitereWahlGrundlagen: this.selectedWeitereWahlGrundlagen
     };
     
-    window.ITETUtils.exportAllModules(selectedModules);
+    if (window.ITETUtils?.exportAllModules) {
+      window.ITETUtils.exportAllModules(selectedModules);
+    } else {
+      console.log('Export-Funktionalität nicht verfügbar');
+    }
   }
 };
 
