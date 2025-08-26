@@ -351,35 +351,22 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
   initialize() {
     // WICHTIG: Globale Referenz für Tooltip-Buttons setzen
     window.currentStudienplan = this;
-    
-    // WICHTIG: Zuerst die Moduldaten um ausgewählte Praktika erweitern
-    this.integrateSelectedPraktikaIntoConfig();
 
     // Dann normales Initialize aufrufen
     super.initialize();
 
-    // ITET-spezifische UI hinzufügen
+    // Nur KP-Counter hinzufügen - KISS!
     this.addKPCounter();
-    this.addPraktikaControls();
     this.updateKPDisplay();
-    this.updatePraktikaDisplay();
 
-    // Spezielle Behandlung für 3. Jahr Layout
-    this.improveThirdYearLayout();
-
-    console.log(
-      "✅ ITET Studienplan mit verbessertem 3. Jahr Layout initialisiert"
-    );
   }
 
   /* ==== VERBESSERTES 3. JAHR LAYOUT ==== */
   improveThirdYearLayout() {
-    console.log("🎨 Verbessere 3. Jahr Layout...");
 
     // Finde das 3. Jahr Container
     const thirdYearContainer = document.querySelector(".jahr:last-child");
     if (!thirdYearContainer) {
-      console.log("⚠️ 3. Jahr Container nicht gefunden");
       return;
     }
 
@@ -450,8 +437,6 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
 
       container.appendChild(moduleContainer);
     });
-
-    console.log("✅ 3. Jahr Layout verbessert - kategoriebasiert wie MTEC");
   }
 
   /* ==== ÜBERSCHREIBE JAHR-SECTION ERSTELLUNG FÜR 3. JAHR ==== */
@@ -484,7 +469,6 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
 
   /* ==== DYNAMISCHE PRAKTIKA-INTEGRATION ==== */
   integrateSelectedPraktikaIntoConfig() {
-    console.log("🔄 Integriere alle ausgewählten Module in Konfiguration...");
 
     // *** WICHTIG: Erst ALLE dynamischen Module entfernen ***
     this.config.daten = this.config.daten.filter(m => !m.isDynamic);
@@ -492,7 +476,6 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
     // Finde und entferne ALLE Platzhalter
     this.config.daten = this.config.daten.filter(m => {
       if (m.isPlaceholder) {
-        console.log(`✅ Platzhalter entfernt: ${m.name}`);
         return false;
       }
       return true;
@@ -507,7 +490,6 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
       // Entferne Kernfächer und Wahlfächer aus Jahr 3 (werden durch Auswahl ersetzt)
       if (m.kategorie === "Kernfächer nach Schwerpunkt" || 
           m.kategorie === "Wahlfächer") {
-        console.log(`⚠️ Entferne statisches Modul: ${m.name}`);
         return false;
       }
       
@@ -564,9 +546,6 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
       this.config.daten.push(moduleCopy);
       totalAdded++;
     });
-
-    console.log(`✅ ${totalAdded} ausgewählte Module hinzugefügt`);
-    console.log(`📊 Gesamt Module nach Integration: ${this.config.daten.length}`);
   }
 
   /* ==== KP-COUNTER SYSTEM ==== */
@@ -607,18 +586,6 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
             <div id="kp-breakdown" style="font-size: 11px; line-height: 1.4;">
                 <!-- Aufschlüsselung wird hier eingefügt -->
             </div>
-            
-            <div style="margin-top: 12px; text-align: center;">
-                <button id="refresh-kp" style="background: #28a745; color: white; border: none; padding: 6px 12px; border-radius: 4px; cursor: pointer; font-size: 11px; margin-right: 5px;">
-                    🔄 Aktualisieren
-                </button>
-                <button id="export-kp" style="background: #17a2b8; color: white; border: none; padding: 6px 12px; border-radius: 4px; cursor: pointer; font-size: 11px; margin-right: 5px;">
-                    📊 Export
-                </button>
-                <button id="toggle-breakdown" style="background: #6c757d; color: white; border: none; padding: 6px 12px; border-radius: 4px; cursor: pointer; font-size: 11px;">
-                    👁️ Details
-                </button>
-            </div>
         `;
 
     legendContainer.insertBefore(
@@ -626,21 +593,8 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
       legendContainer.firstChild
     );
 
-    // Event Listeners
-    document.getElementById("refresh-kp").addEventListener("click", () => {
-      this.updateKPDisplay();
-      this.showMessage("✅ KP-Zählung aktualisiert!", "success");
-    });
-
-    document.getElementById("export-kp").addEventListener("click", () => {
-      this.exportKPBreakdown();
-    });
-
-    document
-      .getElementById("toggle-breakdown")
-      .addEventListener("click", () => {
-        this.toggleBreakdownDetails();
-      });
+    // Event Listeners nur für existierende Elemente - KISS!
+    // Automatisches Update beim Laden - mehr brauchen wir nicht
   }
 
   updateKPDisplay() {
@@ -719,48 +673,9 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
 
   updateKPBreakdown(breakdown) {
     const breakdownEl = document.getElementById("kp-breakdown");
-
-    let html = `
-            <div style="border-bottom: 1px solid #ddd; padding-bottom: 8px; margin-bottom: 8px;">
-                <strong>📋 Zusammenfassung:</strong><br>
-                <span style="color: #0D5B8C;">▶ ${
-                  breakdown.moduleCount
-                } Module insgesamt</span><br>
-                <span style="color: #00A0E3;">▶ ${
-                  breakdown.total
-                } KP Gesamtsumme</span>
-                ${
-                  breakdown.dynamicKP > 0
-                    ? `<br><span style="color: #4CA64C;">▶ ${breakdown.dynamicKP} KP aus gewählten Praktika</span>`
-                    : ""
-                }
-            </div>
-        `;
-
-    if (!this.showDetailedBreakdown) {
-      const topCategories = Object.entries(breakdown.byCategory)
-        .sort(([, a], [, b]) => b.kp - a.kp)
-        .slice(0, 3);
-
-      html += `<div style="margin-bottom: 10px;"><strong>📚 Top Kategorien:</strong>`;
-
-      topCategories.forEach(([kategorie, data]) => {
-        const color = this.getCategoryColor(kategorie);
-        const percentage = ((data.kp / breakdown.total) * 100).toFixed(1);
-
-        html += `
-                    <div style="margin: 3px 0; padding: 2px 4px; border-left: 3px solid ${color}; background-color: rgba(13, 91, 140, 0.05);">
-                        <span style="font-weight: 500;">${kategorie}:</span> 
-                        <span style="color: ${color}; font-weight: bold;">${data.kp} KP</span> 
-                        <span style="color: #666; font-size: 10px;">(${percentage}%)</span>
-                    </div>
-                `;
-      });
-
-      html += `</div>`;
-    }
-
-    breakdownEl.innerHTML = html;
+    
+    // KISS - keine Details, nur der Counter oben reicht!
+    breakdownEl.innerHTML = "";
   }
 
   toggleBreakdownDetails() {
@@ -832,28 +747,6 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
     praktikaControls.style.borderRadius = "5px";
     praktikaControls.style.border = "2px solid #4CA64C";
 
-    praktikaControls.innerHTML = `
-        <div style="text-align: center; margin-bottom: 10px;">
-            <h4 style="margin: 0 0 8px 0; color: #4CA64C;">🎯 ITET Modul Designer</h4>
-            <div style="font-size: 12px; color: #666;">
-                💡 <strong>Wähle deine Module für alle Kategorien!</strong><br>
-                📚 <span style="color: #4CA64C;">Praktika:</span> <span id="selected-praktika-kp">0</span> KP |
-                📚 <span style="color: #DD98DD;">Kernfächer:</span> <span id="selected-kernfaecher-kp">0</span> KP |
-                📚 <span style="color: #F2B48F;">Wahlfächer:</span> <span id="selected-wahlfaecher-kp">0</span> KP |
-                ⚡ <span style="color: #FFD700;">Grundlagen:</span> <span id="selected-weitere-wahl-grundlagen-kp">0</span> KP
-            </div>
-            <div style="margin-top: 8px;">
-                <button id="show-praktika-list" style="background: #4CA64C; color: white; border: none; padding: 5px 10px; border-radius: 3px; cursor: pointer; margin-right: 3px; font-size: 11px;">📋 Praktika</button>
-                <button id="show-kernfaecher-list" style="background: #DD98DD; color: black; border: none; padding: 5px 10px; border-radius: 3px; cursor: pointer; margin-right: 3px; font-size: 11px;">📚 Kernfächer</button>
-                <button id="show-wahlfaecher-list" style="background: #F2B48F; color: black; border: none; padding: 5px 10px; border-radius: 3px; cursor: pointer; margin-right: 3px; font-size: 11px;">🎓 Wahlfächer</button>
-                <button id="show-weitere-wahl-grundlagen-list" style="background: #FFD700; color: black; border: none; padding: 5px 10px; border-radius: 3px; cursor: pointer; margin-right: 3px; font-size: 11px;">⚡ Grundlagen</button>
-                <button id="save-praktika" style="background: #28a745; color: white; border: none; padding: 5px 10px; border-radius: 3px; cursor: pointer; margin-right: 3px; font-size: 11px;">💾 Speichern</button>
-                <button id="refresh-studienplan" style="background: #007bff; color: white; border: none; padding: 5px 10px; border-radius: 3px; cursor: pointer; margin-right: 3px; font-size: 11px;">🔄 Neu laden</button>
-                <button id="reset-praktika" style="background: #dc3545; color: white; border: none; padding: 5px 10px; border-radius: 3px; cursor: pointer; font-size: 11px;">🗑️ Reset</button>
-            </div>
-        </div>
-    `;
-
     legendContainer.insertBefore(
       praktikaControls,
       document.getElementById("kp-counter").nextSibling
@@ -863,7 +756,6 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
     document
       .getElementById("show-praktika-list")
       .addEventListener("click", (e) => {
-        console.log('🎯 Praktika Button geklickt');
         this.showPraktikaTooltip(e);
       });
 
@@ -872,7 +764,6 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
       .getElementById("show-kernfaecher-list")
       .addEventListener("click", (e) => {
         e.preventDefault();
-        console.log('🎯 Kernfächer Button geklickt');
         this.showKernfaecherTooltip(e);
       });
 
@@ -880,7 +771,6 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
       .getElementById("show-wahlfaecher-list")
       .addEventListener("click", (e) => {
         e.preventDefault();
-        console.log('🎯 Wahlfächer Button geklickt');
         this.showWahlfaecherTooltip(e);
       });
 
@@ -888,7 +778,6 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
       .getElementById("show-weitere-wahl-grundlagen-list")
       .addEventListener("click", (e) => {
         e.preventDefault();
-        console.log('🎯 Weitere Wahl-Grundlagen Button geklickt');
         this.showWeitereWahlGrundlagenTooltip(e);
       });
 
@@ -1022,7 +911,6 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
   }
 
   showWeitereWahlGrundlagenTooltip(event) {
-    console.log('🎯 Zeige Wahl-Grundlagen Tooltip');
     const content = this.createWeitereWahlGrundlagenTooltip();
     this.showCustomTooltip(content, event);
   }
@@ -2175,5 +2063,3 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
     };
   }
 };
-
-console.log("✅ ITET Extensions - Mit verbessertem 3. Jahr Layout - geladen");
