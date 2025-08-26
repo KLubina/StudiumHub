@@ -1,6 +1,7 @@
 Berner Fachhochschule 
 Studienplan BSc Elektrotechnik und Informationstechnologie 
 
+-----------------FIX------------------
 1. Semester
 Lineare Algebra und Geometrie 1 – 4 ECTS
 Elektronik Grundlagen – 4 ECTS
@@ -43,7 +44,9 @@ Einstieg in OOP – 4 ECTS
 Wahrscheinlichkeit, Statistik und dynamische Systeme – 6 ECTS
 Technical English – 2 ECTS
 Physik 4 – 2 ECTS
+-----------------FIX------------------
 
+-----------------WAHL-----------------
 5. Semester
 Projektarbeit – 6 ECTS
 Wahlmodul x – 2 ECTS
@@ -57,6 +60,7 @@ Bachelor-Thesis – 12 ECTS
 Vertiefungsrichtung – 12 ECTS
 Wahlmodul x – 2 ECTS
 Wahlmodul x – 2 ECTS
+-----------------WAHL-----------------
 
 Vertiefungsrichtungen
 
@@ -168,3 +172,4 @@ Introduction to Rust and Embedded Systems – 2 ECTS
 Kotlin for Java Developers – 2 ECTS
 Kickstart your idea – 2 ECTS
 Functional Programming with Java and Kotlin – 2 ECTS
+
