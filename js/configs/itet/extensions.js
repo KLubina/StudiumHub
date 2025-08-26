@@ -366,15 +366,35 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
     this.showCustomTooltip(content, event);
   }
 
-  /* ==== UTILITY METHODS ==== */
+// ...existing code...
   loadSelectedModules(category) {
     try {
       const storageKey = `itet-selected-${category}`;
       const saved = localStorage.getItem(storageKey);
-      return saved ? JSON.parse(saved) : {};
+      if (!saved) {
+        return { general: [] };
+      }
+      const parsed = JSON.parse(saved);
+
+      // Falls alte Version ein Array gespeichert hat -> in Objekt umwandeln
+      if (Array.isArray(parsed)) {
+        return { general: parsed };
+      }
+
+      // Falls ein Objekt gespeichert ist, stelle sicher, dass es Arrays enthält
+      if (parsed && typeof parsed === "object") {
+        // Wenn keine 'general' key vorhanden, versuche vorhandene Arrays zu konsolidieren
+        if (!parsed.general) {
+          const values = Object.values(parsed).filter(v => Array.isArray(v)).flat();
+          parsed.general = values.length ? values : [];
+        }
+        return parsed;
+      }
+
+      return { general: [] };
     } catch (error) {
       console.error(`Fehler beim Laden von ${category}:`, error);
-      return {};
+      return { general: [] };
     }
   }
 
@@ -387,11 +407,26 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
         wahlfaecher: this.selectedWahlfaecher,
         "weitere-wahl-grundlagen": this.selectedWeitereWahlGrundlagen
       };
-      localStorage.setItem(storageKey, JSON.stringify(selectedMap[category]));
+
+      // Sicherstellen, dass wir ein JSON-serialisierbares Objekt mit Arrays speichern
+      let toSave = selectedMap[category];
+      if (!toSave) {
+        toSave = { general: [] };
+      } else if (Array.isArray(toSave)) {
+        // ältere Formate: Array -> in Objekt packen
+        toSave = { general: toSave };
+      } else if (typeof toSave === "object" && !toSave.general) {
+        // Falls Objekt vorhanden, aber keine general-Property, konsolidiere Werte zu general
+        const values = Object.values(toSave).filter(v => Array.isArray(v)).flat();
+        toSave.general = values.length ? values : [];
+      }
+
+      localStorage.setItem(storageKey, JSON.stringify(toSave));
     } catch (error) {
       console.error(`Fehler beim Speichern von ${category}:`, error);
     }
   }
+// ...existing code...
 
   showMessage(message, type = "info") {
     if (window.ITETUtils?.showMessage) {
