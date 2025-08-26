@@ -1,4 +1,4 @@
-/* ==== MODULARER CONFIG LOADER ==== */
+/* ==== MODULARER CONFIG LOADER - ANGEPASST FÜR NEUE STRUKTUR ==== */
 /* Lädt und kombiniert alle Konfigurationsteile für einen Studiengang */
 
 class StudiengangConfigLoader {
@@ -9,17 +9,18 @@ class StudiengangConfigLoader {
     }
 
     async loadConfig() {
-        const configPath = `configs/${this.studiengang}`;
+        const configPath = `js/configs/${this.studiengang}`;
+        const dataPath = `js/data/${this.studiengang}`;
         
         try {
             // 1. Basis-Konfiguration laden
             await this.loadModule(`${configPath}/base-config.js`);
             
-            // 2. Module-Daten laden
-            await this.loadModule(`${configPath}/modules.js`);
+            // 2. Module-Daten laden (NEUER PFAD!)
+            await this.loadModule(`${dataPath}/modules.js`);
             
-            // 3. Module-Details laden (falls vorhanden)
-            await this.loadOptionalModule(`${configPath}/module-details.js`);
+            // 3. Module-Details laden (NEUER PFAD!) - falls vorhanden
+            await this.loadOptionalModule(`${dataPath}/module-details.js`);
             
             // 4. Erweiterungen laden (falls vorhanden)
             await this.loadOptionalModule(`${configPath}/extensions.js`);
@@ -114,7 +115,7 @@ class StudiengangConfigLoader {
         console.log(`🔄 Lade Fallback-Konfiguration für ${this.studiengang}`);
         return new Promise((resolve, reject) => {
             const script = document.createElement('script');
-            script.src = `configs/${this.studiengang}-config.js`;
+            script.src = `js/configs/${this.studiengang}-config.js`; // Auch hier angepasst!
             script.onload = () => {
                 console.log('✅ Fallback-Konfiguration geladen');
                 resolve(window.StudiengangConfig);
