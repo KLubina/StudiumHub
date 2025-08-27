@@ -173,8 +173,16 @@ window.StudiengangModuleDetails = {
     kurzbeschreibung:
       "Einführung in das Programmieren mit einem Fokus auf systematischem und algorithmischem Problemlösen. Programmiersprache ist C++",
     inhalt:
-      "• Fundamentale Datentypen, Ausdrücke und Anweisungen\n" +
-      "• Computerarithmetik, Kontrollanweisungen, Funktionen, Klassen, Referenzen und Zeiger\n" +
+      "• Fundamentale Datentypen\n" +
+      "• Ausdrücke\n" + 
+      "• Anweisungen\n" +
+
+      "• Computerarithmetik\n" +
+      "• Kontrollanweisungen\n" +
+      "• Funktionen\n" +
+      "• Klassen\n" +
+      "• Referenzen und Zeiger\n" +
+
       "• Charakteristiken und Anwendung fundamentaler Containertypen\n" +
       "• Aufbau und Speichermanagement einfacher dynamischer Datentypen\n" +
       "• Motivation und Illustration der Konzepte durch Algorithmen und Anwendungen",
@@ -196,11 +204,16 @@ window.StudiengangModuleDetails = {
     kurzbeschreibung:
       "Einführung in die Grundlagen der Programmierung mit C++.",
     inhalt:
-      "• Allgemeine Einführung in die Informatik: Entwicklung, Ziele, elementare Konzepte\n" +
+      "• Allgemeine Einführung in die Informatik\n" +
+      " - Entwicklung\n" +
+      " - Ziele\n" +
+      " - elementare Konzepte\n" +
+      
       "• Interaktives Tutorial als Einführung in C++:\n" +
       "  - Variablen\n" +
       "  - Datentypen\n" +
       "  - Verzweigungen und Schleifen\n" +
+
       "• Einführung in das systematische Lösen von Programmierproblemen mittels schrittweiser Verfeinerung",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193009&lang=de",
   },
@@ -330,13 +343,42 @@ window.StudiengangModuleDetails = {
       "Der Kurs behandelt die Grundlagen des Entwurfs und der Analyse von Algorithmen und Datenstrukturen, einschliesslich Graphentheorie und -problemen. Er bietet eine Einführung in generisches, sowie paralleles, Programmieren. Umsetzung in C++.",
     inhalt:
       "• Asymptotische Laufzeit (algorithmische Komplexität)\n" +
-      "• Fundamentale algorithmische Probleme, z.B. Suchen, Sortieren, kürzeste Wege, Spannbäume\n" +
-      "• Klassische Datenstrukturen, z.B. Suchbäume, balancierte Bäume, Heaps, Hashtabellen\n" +
+
+      "• Fundamentale algorithmische Probleme: \n" +
+      " - Suchen\n" +
+      " - Sortieren\n" +
+      " - kürzeste Wege\n" +
+      " - Spannbäume\n" +
+
+      "• Klassische Datenstrukturen: \n" +
+      " - Suchbäume\n" +
+      " - balancierte Bäume\n" +
+      " - Heaps\n" +
+      " - Hashtabellen\n" +
+
       "• Graphentheorie und -probleme\n" +
-      "• Problemlösungsstrategien als Entwurfsmuster für Algorithmen, z.B. Induktion, Divide-and-Conquer, Backtracking, dynamische Programmierung\n" +
-      "• Generisches Programmieren: C++-Templates, Funktionen höherer Ordnung, Lambdas, Closures\n" +
-      "• Paralleles Programmieren: (Un)abhängigkeit von Berechnungen, Parallelität und Nebenläufigkeit, geteilter Speicher, Wettlaufsituationen, wechselseitiger Ausschluss, Kommunikation und Synchronisation\n\n" +
-      "Im Übungsbetrieb wird das Verständnis durch theoretische und/oder Programmieraufgaben (C++, Code Expert) vertieft",
+      
+      "• Problemlösungsstrategien als Entwurfsmuster für Algorithmen: \n" +
+      " - Induktion\n" +
+      " - Divide-and-Conquer\n" +
+      " - Backtracking\n" +
+      " - dynamische Programmierung\n" +
+      
+       "• Generisches Programmieren: \n" +
+       " - C++-Templates\n" +
+       " - Funktionen höherer Ordnung\n" +
+       " - Lambdas\n" +
+       " - Closures\n" +
+      
+       "• Paralleles Programmieren: \n" +
+       " - (Un)abhängigkeit von Berechnungen\n" +
+       " - Parallelität und Nebenläufigkeit\n" +
+       " - geteilter Speicher\n" +
+       " - Wettlaufsituationen\n" +
+       " - wechselseitiger Ausschluss\n" +
+       " - Kommunikation und Synchronisation\n\n" +
+      
+       "Im Übungsbetrieb wird das Verständnis durch theoretische und/oder Programmieraufgaben (C++, Code Expert) vertieft",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193493&lang=de",
   },
   "Technische Informatik": {
@@ -345,7 +387,11 @@ window.StudiengangModuleDetails = {
     inhalt:
       "On the hardware side:\n" +
       "• How microprocessors implement control and data paths\n" +
-      "• Microarchitectural optimizations such as pipelining, speculation and caching\n\n" +
+      "• Microarchitectural optimizations such as\n" + 
+      " - pipelining\n" +
+      " - speculation\n" +
+      " - caching\n\n" +
+
       "On the software side:\n" +
       "• How to program a microprocessor\n" +
       "• Fundamental concepts in the design of operating systems\n" +
