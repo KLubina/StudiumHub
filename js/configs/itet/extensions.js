@@ -34,7 +34,23 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
     // Globale Referenz für Tooltip-Buttons
     window.currentStudienplan = this;
 
-    // Basis-Initialisierung
+    // Vor Initialisierung bereits ausgewählte Module integrieren (automatisches Laden)
+    try {
+      const selectionCounts = [
+        this.selectedPraktika?.general?.length || 0,
+        this.selectedKernfaecher?.general?.length || 0,
+        this.selectedWahlfaecher?.general?.length || 0,
+        this.selectedWeitereWahlGrundlagen?.general?.length || 0,
+      ];
+      const total = selectionCounts.reduce((a, b) => a + b, 0);
+      if (total > 0 && typeof this.integrateSelectedPraktikaIntoConfig === 'function') {
+        this.integrateSelectedPraktikaIntoConfig();
+      }
+    } catch (e) {
+      console.warn('Auto-Integrate failed:', e);
+    }
+
+    // Basis-Initialisierung (rendert jetzt ggf. schon mit dynamischen Modulen)
     super.initialize();
 
     // ITET-spezifische Initialisierung
@@ -632,9 +648,22 @@ toggleModulFromTooltip(modulName, category) {
 
   integrateSelectedPraktikaIntoConfig() {
     // Entferne ALLE dynamischen Module
-    this.config.daten = this.config.daten.filter(
-      (m) => !m.isDynamic && !m.isPlaceholder
-    );
+    this.config.daten = this.config.daten.filter((m) => !m.isDynamic);
+
+    // Ermittele welche Kategorien tatsächlich ausgewählt wurden
+    const selectedAll = [
+      ...Object.values(this.selectedPraktika || {}).flat(),
+      ...Object.values(this.selectedKernfaecher || {}).flat(),
+      ...Object.values(this.selectedWahlfaecher || {}).flat(),
+      ...Object.values(this.selectedWeitereWahlGrundlagen || {}).flat(),
+    ];
+    const selectedCategories = new Set(selectedAll.map((m) => m.kategorie));
+
+    // Placeholder nur für Kategorien mit Auswahl entfernen, damit leere Kategorien sichtbar bleiben
+    this.config.daten = this.config.daten.filter((m) => {
+      if (!m.isPlaceholder) return true;
+      return selectedCategories.has(m.kategorie) ? false : true; // behalten wenn nichts gewählt
+    });
 
     // Entferne Module aus Jahr 3 die ersetzt werden
     this.config.daten = this.config.daten.filter((m) => {
