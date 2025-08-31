@@ -147,10 +147,16 @@ class CSEGradeCalculator {
                 <div class="block-section" style="margin-bottom: 20px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
                     <h4 style="margin: 0 0 10px 0; color: #D32F2F;">Prüfungsblock G4</h4>
                     <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 10px; align-items: center;">
-                        <label>Fluiddynamik I (50%):</label>
+                        <label>Fluiddynamik I (25%):</label>
                         <input type="number" id="fdi" min="1" max="6" step="0.1" placeholder="Note" style="padding: 5px; border: 1px solid #ddd; border-radius: 4px;">
                         
-                        <label>Statistische Physik & CS (50%):</label>
+                        <label>Materialquantenmechanik (25%):</label>
+                        <input type="number" id="mq" min="1" max="6" step="0.1" placeholder="Note" style="padding: 5px; border: 1px solid #ddd; border-radius: 4px;">
+                        
+                        <label>Parallel Computing (25%):</label>
+                        <input type="number" id="pc" min="1" max="6" step="0.1" placeholder="Note" style="padding: 5px; border: 1px solid #ddd; border-radius: 4px;">
+                        
+                        <label>Statistische Physik & CS (25%):</label>
                         <input type="number" id="spcs" min="1" max="6" step="0.1" placeholder="Note" style="padding: 5px; border: 1px solid #ddd; border-radius: 4px;">
                     </div>
                     <div style="margin-top: 10px; font-weight: bold; color: #D32F2F;">
@@ -389,9 +395,28 @@ class CSEGradeCalculator {
     const spcs = getValue('spcs');
 
     let pbg4 = null;
-    const pbg4Values = [fdi, mq, pc, spcs].filter(v => v !== null);
-    if (pbg4Values.length > 0) {
-      pbg4 = pbg4Values.reduce((sum, val) => sum + val, 0) / pbg4Values.length;
+    let pbg4Sum = 0;
+    let pbg4Weight = 0;
+
+    if (fdi !== null) {
+      pbg4Sum += fdi * 0.25;
+      pbg4Weight += 0.25;
+    }
+    if (mq !== null) {
+      pbg4Sum += mq * 0.25;
+      pbg4Weight += 0.25;
+    }
+    if (pc !== null) {
+      pbg4Sum += pc * 0.25;
+      pbg4Weight += 0.25;
+    }
+    if (spcs !== null) {
+      pbg4Sum += spcs * 0.25;
+      pbg4Weight += 0.25;
+    }
+
+    if (pbg4Weight > 0) {
+      pbg4 = pbg4Sum / pbg4Weight;
     }
 
     // Ergebnisse anzeigen
