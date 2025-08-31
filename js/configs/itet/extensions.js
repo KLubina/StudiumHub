@@ -444,6 +444,12 @@ toggleModulFromTooltip(modulName, category) {
     this.saveSelectedModules(category);
     this.updateKPDisplay();
     this.showMessage(`✅ "${modul.name}" hinzugefügt`, "success");
+    // Sofort Curriculum aktualisieren (KISS)
+    if (typeof this.updateStudienplanWithSelection === 'function') {
+      this.updateStudienplanWithSelection();
+    } else {
+      this.refreshStudienplan();
+    }
   }
 
   removeModulSelection(modul, category) {
@@ -463,6 +469,12 @@ toggleModulFromTooltip(modulName, category) {
     this.saveSelectedModules(category);
     this.updateKPDisplay();
     this.showMessage(`🗑️ "${modul.name}" entfernt`, "info");
+    // Sofort Curriculum aktualisieren (KISS)
+    if (typeof this.updateStudienplanWithSelection === 'function') {
+      this.updateStudienplanWithSelection();
+    } else {
+      this.refreshStudienplan();
+    }
   }
 
   isModulSelected(modulName, category) {
