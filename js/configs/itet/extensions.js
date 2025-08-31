@@ -385,8 +385,7 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
     });
   }
 
-  /* ==== MODULE SELECTION ==== */
-  toggleModulFromTooltip(modulName, category) {
+toggleModulFromTooltip(modulName, category) {
     if (!this.moduleData) return;
 
     const moduleMap = {
@@ -405,6 +404,9 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
     const modul = moduleMap[category]?.find((m) => m.name === modulName);
     if (modul) {
       this.toggleModulSelection(modul, category);
+
+      // Studienplan automatisch aktualisieren nach Auswahl
+      this.updateStudienplanWithSelection();
 
       // Tooltip neu laden nach kurzer Verzögerung
       setTimeout(() => {
