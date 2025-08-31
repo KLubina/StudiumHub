@@ -36,8 +36,10 @@ window.RIGDragDropManager = {
         wahlmoduleBox.addEventListener('drop', (e) => {
             e.preventDefault();
             this.resetWahlmoduleBoxStyle(wahlmoduleBox);
-            
-            const modulData = JSON.parse(e.dataTransfer.getData('text/plain'));
+            console.debug('RIG DragDropManager: drop event', e);
+            const raw = e.dataTransfer.getData('text/plain');
+            console.debug('RIG DragDropManager: dataTransfer raw:', raw);
+            const modulData = raw ? JSON.parse(raw) : null;
             const semester = this.getSemesterFromBox(wahlmoduleBox);
             
             this.studienplan.wahlmoduleManager.addWahlmodulToBox(modulData, semester, wahlmoduleBox);
@@ -104,7 +106,12 @@ window.RIGDragDropManager = {
         draggableModules.forEach(modulEl => {
             modulEl.addEventListener('dragstart', (e) => {
                 const modulData = JSON.parse(modulEl.dataset.modul);
-                e.dataTransfer.setData('text/plain', JSON.stringify(modulData));
+                console.debug('RIG DragDropManager: dragstart', modulData, modulEl);
+                try {
+                    e.dataTransfer.setData('text/plain', JSON.stringify(modulData));
+                } catch (err) {
+                    console.warn('RIG DragDropManager: setData failed', err);
+                }
                 modulEl.style.transform = 'scale(0.8)';
                 modulEl.style.opacity = '0.5';
             });
