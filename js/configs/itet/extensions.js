@@ -609,59 +609,59 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
     }
   }
 
-  /* ==== ITET TOOLTIP FIX ==== */
-  /* Füge diese Methode zur ITETStudienplan Klasse hinzu */
+/* ==== ITET TOOLTIP FIX ==== */
+/* Das Problem: showCustomTooltip verwendet falsches Tooltip-Element */
 
-  // Füge diese Methode in die StudiengangCustomClass (ITETStudienplan) ein:
+// LÖSUNG 1: Ersetze die showCustomTooltip Methode in der ITETStudienplan Klasse:
 
-  showCustomTooltip(content, event) {
+showCustomTooltip(content, event) {
     // Entferne existierende Tooltips
-    const existingTooltip = document.getElementById("custom-tooltip");
+    const existingTooltip = document.getElementById('custom-tooltip');
     if (existingTooltip) {
-      existingTooltip.remove();
+        existingTooltip.remove();
     }
 
-    // Erstelle neues Tooltip
-    const tooltip = document.createElement("div");
-    tooltip.id = "custom-tooltip";
+    // Erstelle neues Tooltip (unabhängig vom Standard-Tooltip)
+    const tooltip = document.createElement('div');
+    tooltip.id = 'custom-tooltip';
     tooltip.innerHTML = content;
-
+    
     // Tooltip Styling
-    tooltip.style.position = "fixed";
-    tooltip.style.backgroundColor = "white";
-    tooltip.style.border = "2px solid #0D5B8C";
-    tooltip.style.borderRadius = "8px";
-    tooltip.style.padding = "15px";
-    tooltip.style.maxWidth = "600px";
-    tooltip.style.maxHeight = "500px";
-    tooltip.style.overflowY = "auto";
-    tooltip.style.zIndex = "10000";
-    tooltip.style.boxShadow = "0 4px 20px rgba(0,0,0,0.3)";
-    tooltip.style.fontSize = "12px";
-    tooltip.style.lineHeight = "1.4";
+    tooltip.style.position = 'fixed';
+    tooltip.style.backgroundColor = 'white';
+    tooltip.style.border = '2px solid #0D5B8C';
+    tooltip.style.borderRadius = '8px';
+    tooltip.style.padding = '15px';
+    tooltip.style.maxWidth = '600px';
+    tooltip.style.maxHeight = '500px';
+    tooltip.style.overflowY = 'auto';
+    tooltip.style.zIndex = '10000';
+    tooltip.style.boxShadow = '0 4px 20px rgba(0,0,0,0.3)';
+    tooltip.style.fontSize = '12px';
+    tooltip.style.lineHeight = '1.4';
 
     // Position berechnen
     const x = event.clientX || 200;
     const y = event.clientY || 200;
-
+    
     tooltip.style.left = `${Math.min(x, window.innerWidth - 620)}px`;
     tooltip.style.top = `${Math.min(y, window.innerHeight - 520)}px`;
 
     // Schließen-Button hinzufügen
-    const closeBtn = document.createElement("button");
-    closeBtn.innerHTML = "✕";
-    closeBtn.style.position = "absolute";
-    closeBtn.style.top = "5px";
-    closeBtn.style.right = "10px";
-    closeBtn.style.background = "none";
-    closeBtn.style.border = "none";
-    closeBtn.style.fontSize = "16px";
-    closeBtn.style.cursor = "pointer";
-    closeBtn.style.color = "#666";
-    closeBtn.style.padding = "0";
-    closeBtn.style.width = "20px";
-    closeBtn.style.height = "20px";
-
+    const closeBtn = document.createElement('button');
+    closeBtn.innerHTML = '✕';
+    closeBtn.style.position = 'absolute';
+    closeBtn.style.top = '5px';
+    closeBtn.style.right = '10px';
+    closeBtn.style.background = 'none';
+    closeBtn.style.border = 'none';
+    closeBtn.style.fontSize = '16px';
+    closeBtn.style.cursor = 'pointer';
+    closeBtn.style.color = '#666';
+    closeBtn.style.padding = '0';
+    closeBtn.style.width = '20px';
+    closeBtn.style.height = '20px';
+    
     closeBtn.onclick = () => tooltip.remove();
     tooltip.appendChild(closeBtn);
 
@@ -670,14 +670,15 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
 
     // Klick außerhalb zum Schließen
     setTimeout(() => {
-      document.addEventListener("click", function closeTooltip(e) {
-        if (!tooltip.contains(e.target)) {
-          tooltip.remove();
-          document.removeEventListener("click", closeTooltip);
-        }
-      });
+        document.addEventListener('click', function closeTooltip(e) {
+            if (!tooltip.contains(e.target)) {
+                tooltip.remove();
+                document.removeEventListener('click', closeTooltip);
+            }
+        });
     }, 100);
-  }
+}
+
 
   exportPraktika() {
     const selectedModules = {
