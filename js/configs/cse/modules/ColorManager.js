@@ -25,15 +25,17 @@ class CSEColorManager {
       // Verschiedene Methoden zum Extrahieren des Modulnamens
       let modulName = "";
       
-      // Methode 1: Suche nach .modul-name
-      const modulNameElement = modulEl.querySelector('.modul-name');
+      // Methode 1: Suche nach dem aktuellen Titel-Element (StudienplanBase verwendet .modul-titel)
+      const modulNameElement = modulEl.querySelector('.modul-titel') || modulEl.querySelector('.modul-name');
       if (modulNameElement) {
         modulName = modulNameElement.textContent.trim();
       } else {
-        // Methode 2: Verwende den gesamten Text des Elements
+        // Methode 2: Verwende den gesamten Text des Elements als Fallback
         modulName = modulEl.textContent.trim();
-        // Entferne KP-Angaben (z.B. "4 KP" am Anfang)
-        modulName = modulName.replace(/^\d+\s*KP\s*/i, '').trim();
+        // Entferne KP-Angaben (z.B. "7 KP") und mögliche Zeilenumbrüche oder zusätzliche Symbole
+        modulName = modulName.replace(/^[0-9]+\s*(KP|ECTS)?\s*/i, '').split('\n')[0].trim();
+        // Entferne Ellipsen, falls Titel gekürzt wurde
+        modulName = modulName.replace(/\.\.\.$/, '').trim();
       }
       
       console.log(`Element ${index}: "${modulName}"`);
