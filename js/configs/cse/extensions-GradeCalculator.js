@@ -269,8 +269,9 @@ class CSEGradeCalculator {
     const dm = getValue('dm');
     
     let bp1 = null;
-    if (la !== null && inf !== null && dm !== null) {
-      bp1 = (la + inf + dm) / 3;
+    const bp1Values = [la, inf, dm].filter(v => v !== null);
+    if (bp1Values.length > 0) {
+      bp1 = bp1Values.reduce((sum, val) => sum + val, 0) / bp1Values.length;
     }
 
     // BP2 Berechnung: (((AI + AII)/2) x 0.33) + (((PHYI + PHYII)/2) x 0.22) + (KA x 0.11) + (DSA x 0.22) + (Chem x 0.11)
@@ -283,10 +284,45 @@ class CSEGradeCalculator {
     const chem = getValue('chem');
 
     let bp2 = null;
-    if (ai !== null && aii !== null && phyi !== null && phyii !== null && ka !== null && dsa !== null && chem !== null) {
-      const analysisAvg = (ai + aii) / 2;
-      const physikAvg = (phyi + phyii) / 2;
-      bp2 = (analysisAvg * 0.33) + (physikAvg * 0.22) + (ka * 0.11) + (dsa * 0.22) + (chem * 0.11);
+    let bp2Sum = 0;
+    let bp2Weight = 0;
+
+    // Analysis-Durchschnitt
+    const analysisValues = [ai, aii].filter(v => v !== null);
+    if (analysisValues.length > 0) {
+      const analysisAvg = analysisValues.reduce((sum, val) => sum + val, 0) / analysisValues.length;
+      bp2Sum += analysisAvg * 0.33;
+      bp2Weight += 0.33;
+    }
+
+    // Physik-Durchschnitt
+    const physikValues = [phyi, phyii].filter(v => v !== null);
+    if (physikValues.length > 0) {
+      const physikAvg = physikValues.reduce((sum, val) => sum + val, 0) / physikValues.length;
+      bp2Sum += physikAvg * 0.22;
+      bp2Weight += 0.22;
+    }
+
+    // Komplexe Analysis
+    if (ka !== null) {
+      bp2Sum += ka * 0.11;
+      bp2Weight += 0.11;
+    }
+
+    // DSA
+    if (dsa !== null) {
+      bp2Sum += dsa * 0.22;
+      bp2Weight += 0.22;
+    }
+
+    // Chemie
+    if (chem !== null) {
+      bp2Sum += chem * 0.11;
+      bp2Weight += 0.11;
+    }
+
+    if (bp2Weight > 0) {
+      bp2 = bp2Sum / bp2Weight;
     }
 
     // PB-G1 Berechnung: (AIII x 0.25) + (MO x 0.25) + (NM CSE x 0.5)
@@ -295,8 +331,24 @@ class CSEGradeCalculator {
     const nmcse = getValue('nmcse');
 
     let pbg1 = null;
-    if (aiii !== null && mo !== null && nmcse !== null) {
-      pbg1 = (aiii * 0.25) + (mo * 0.25) + (nmcse * 0.5);
+    let pbg1Sum = 0;
+    let pbg1Weight = 0;
+
+    if (aiii !== null) {
+      pbg1Sum += aiii * 0.25;
+      pbg1Weight += 0.25;
+    }
+    if (mo !== null) {
+      pbg1Sum += mo * 0.25;
+      pbg1Weight += 0.25;
+    }
+    if (nmcse !== null) {
+      pbg1Sum += nmcse * 0.5;
+      pbg1Weight += 0.5;
+    }
+
+    if (pbg1Weight > 0) {
+      pbg1 = pbg1Sum / pbg1Weight;
     }
 
     // PB-G2 Berechnung: (PS x 0.5) + (SPCA x 0.5)
@@ -304,8 +356,9 @@ class CSEGradeCalculator {
     const spca = getValue('spca');
 
     let pbg2 = null;
-    if (ps !== null && spca !== null) {
-      pbg2 = (ps * 0.5) + (spca * 0.5);
+    const pbg2Values = [ps, spca].filter(v => v !== null);
+    if (pbg2Values.length > 0) {
+      pbg2 = pbg2Values.reduce((sum, val) => sum + val, 0) / pbg2Values.length;
     }
 
     // PB-G3 Berechnung: (NM PDE x 0.66) + (Stochastik x 0.33)
@@ -313,8 +366,20 @@ class CSEGradeCalculator {
     const stoch = getValue('stoch');
 
     let pbg3 = null;
-    if (nmpde !== null && stoch !== null) {
-      pbg3 = (nmpde * 0.66) + (stoch * 0.33);
+    let pbg3Sum = 0;
+    let pbg3Weight = 0;
+
+    if (nmpde !== null) {
+      pbg3Sum += nmpde * 0.66;
+      pbg3Weight += 0.66;
+    }
+    if (stoch !== null) {
+      pbg3Sum += stoch * 0.33;
+      pbg3Weight += 0.33;
+    }
+
+    if (pbg3Weight > 0) {
+      pbg3 = pbg3Sum / pbg3Weight;
     }
 
     // PB-G4 Berechnung: (FDI x 0.25) + (MQ x 0.25) + (PC x 0.25) + (SPCS x 0.25)
@@ -324,8 +389,9 @@ class CSEGradeCalculator {
     const spcs = getValue('spcs');
 
     let pbg4 = null;
-    if (fdi !== null && mq !== null && pc !== null && spcs !== null) {
-      pbg4 = (fdi * 0.25) + (mq * 0.25) + (pc * 0.25) + (spcs * 0.25);
+    const pbg4Values = [fdi, mq, pc, spcs].filter(v => v !== null);
+    if (pbg4Values.length > 0) {
+      pbg4 = pbg4Values.reduce((sum, val) => sum + val, 0) / pbg4Values.length;
     }
 
     // Ergebnisse anzeigen
