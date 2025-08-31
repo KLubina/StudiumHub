@@ -32,7 +32,8 @@ window.RIGTooltipManager = {
                 </p>
         `;
 
-        Object.entries(this.studienplan.wahlmoduleManager.wahlmoduleBereiche).forEach(([bereich, module]) => {
+    const bereiche = (this.studienplan && this.studienplan.wahlmoduleManager && this.studienplan.wahlmoduleManager.wahlmoduleBereiche) || {};
+    Object.entries(bereiche).forEach(([bereich, module]) => {
             content += `
                 <div class="wahlbereich-section" style="margin-bottom: 15px;">
                     <h4 style="margin: 10px 0 8px 0; padding: 3px 8px; background-color: #FF6B6B; color: white; border-radius: 4px; font-size: 12px;">
