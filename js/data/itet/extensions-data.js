@@ -1,7 +1,6 @@
-  // ============================================================================
-  // SCHRITT 2: Neue Methode für Module-Kategorien
-  // ============================================================================
-  // Füge diese NEUE Methode zu deiner Klasse hinzu:
+/* ==== ITET ERWEITERTE MODULE-DATEN (verschoben aus configs/itet) ==== */
+// Enthält strukturierte Listen für Kernfächer, Wahlfächer, weitere Grundlagen und Praktika/Projekte.
+// Wird optional vom modular-config-loader geladen und stellt window.ITETModuleData bereit.
 
 window.ITETModuleData = {
   kernfaecherSchwerpunkte: {
