@@ -1,31 +1,20 @@
-/* ==== CSE EXTENSIONS ==== */
-/* Spezielle Funktionalitäten und erweiterte Klasse für den CSE Studiengang */
+/* ==== CSE EXTENSIONS (VEREINFACHT) ==== */
+/* Spezielle Funktionalitäten für den CSE Studiengang - Alles in einer Datei für einfacheres Loading */
 
-// Module dynamisch laden
-const loadCSEModules = async () => {
-  const modulePaths = [
-    'modules/ColorManager.js',
-    'modules/GradeCalculator.js',
-    'modules/TooltipManager.js',
-    'modules/UIControlsManager.js'
+// Laden der modularen Klassen direkt aus dem configs/cse Ordner
+const loadCSEClasses = async () => {
+  const classPaths = [
+    './ColorManager.js',
+    './GradeCalculator.js', 
+    './TooltipManager.js',
+    './UIControlsManager.js'
   ];
 
-  // Erzeuge eine absolute Basis-URL relativ zur aktuellen Script-Datei
-  // (document.currentScript kann in einigen Setups verfügbar sein)
-  let baseUrl = './';
-  if (document.currentScript && document.currentScript.src) {
-    baseUrl = document.currentScript.src.replace(/\/[^\/]*$/, '/');
-  } else {
-    // Fallback: nimm das letzte Script-Tag (häufig das aktuell ausgeführte)
-    const scripts = document.getElementsByTagName('script');
-    if (scripts.length) {
-      const s = scripts[scripts.length - 1];
-      if (s && s.src) baseUrl = s.src.replace(/\/[^\/]*$/, '/');
-    }
-  }
-
-  for (const modulePath of modulePaths) {
-    const fullPath = new URL(modulePath, baseUrl).href;
+  // Basis-URL ermitteln (configs/cse/)
+  let baseUrl = './js/configs/cse/';
+  
+  for (const classPath of classPaths) {
+    const fullPath = baseUrl + classPath.replace('./', '');
     try {
       await new Promise((resolve, reject) => {
         const script = document.createElement('script');
@@ -34,36 +23,41 @@ const loadCSEModules = async () => {
         script.onerror = () => reject(new Error('Failed to load ' + fullPath));
         document.head.appendChild(script);
       });
-      console.log(`✓ Modul geladen: ${fullPath}`);
+      console.log(`✓ Klasse geladen: ${fullPath}`);
     } catch (error) {
-      console.error(`Fehler beim Laden des Moduls ${fullPath}:`, error);
+      console.error(`Fehler beim Laden der Klasse ${fullPath}:`, error);
     }
   }
 };
 
 /* ==== CSE-SPEZIFISCHE ERWEITERUNGEN ==== */
-// Erweiterte Klasse für CSE-spezifische Features
 window.StudiengangCustomClass = class CSEStudienplan extends StudienplanBase {
   constructor(config) {
     super(config);
-    this.modulesLoaded = false;
-    this.initModulesAsync();
+    this.classesLoaded = false;
+    this.initClassesAsync();
   }
 
-  async initModulesAsync() {
-    await loadCSEModules();
+  async initClassesAsync() {
+    try {
+      await loadCSEClasses();
 
-    // Modulare Komponenten initialisieren
-    if (window.CSEColorManager) this.colorManager = new CSEColorManager(this);
-    if (window.CSEGradeCalculator) this.gradeCalculator = new CSEGradeCalculator(this);
-    if (window.CSETooltipManager) this.tooltipManager = new CSETooltipManager(this);
-    if (window.CSEUIControlsManager) this.uiControlsManager = new CSEUIControlsManager(this, this.colorManager, this.gradeCalculator);
+      // Klassen initialisieren
+      if (window.CSEColorManager) this.colorManager = new CSEColorManager(this);
+      if (window.CSEGradeCalculator) this.gradeCalculator = new CSEGradeCalculator(this);
+      if (window.CSETooltipManager) this.tooltipManager = new CSETooltipManager(this);
+      if (window.CSEUIControlsManager) this.uiControlsManager = new CSEUIControlsManager(this, this.colorManager, this.gradeCalculator);
 
-    this.modulesLoaded = true;
+      this.classesLoaded = true;
+      console.log('✓ Alle CSE-Klassen initialisiert');
 
-    // Falls initialize bereits aufgerufen wurde, UI-Controls hinzufügen
-    if (this.isInitialized && this.uiControlsManager) {
-      this.uiControlsManager.addColoringModeControls();
+      // Falls initialize bereits aufgerufen wurde, UI-Controls hinzufügen und Farben setzen
+      if (this.isInitialized) {
+        this.addUIControls();
+        this.updateModuleColors();
+      }
+    } catch (error) {
+      console.error('Fehler beim Laden der CSE-Klassen:', error);
     }
   }
 
@@ -71,15 +65,22 @@ window.StudiengangCustomClass = class CSEStudienplan extends StudienplanBase {
     super.initialize();
     this.isInitialized = true;
 
-    // UI-Controls hinzufügen, falls Module bereits geladen sind
-    if (this.modulesLoaded && this.uiControlsManager) {
+    // UI-Controls und Farben hinzufügen, falls Klassen bereits geladen sind
+    if (this.classesLoaded) {
+      this.addUIControls();
+      this.updateModuleColors();
+    }
+  }
+
+  addUIControls() {
+    if (this.uiControlsManager) {
       this.uiControlsManager.addColoringModeControls();
     }
   }
 
   // Delegate-Methoden für Kompatibilität
   get coloringMode() {
-    return this.colorManager && this.colorManager.coloringMode;
+    return this.colorManager ? this.colorManager.coloringMode : 'pruefungsblock';
   }
 
   set coloringMode(mode) {
@@ -87,7 +88,18 @@ window.StudiengangCustomClass = class CSEStudienplan extends StudienplanBase {
   }
 
   updateModuleColors() {
-    if (this.colorManager) this.colorManager.updateModuleColors();
+    console.log('🎨 updateModuleColors aufgerufen');
+    if (this.colorManager) {
+      this.colorManager.updateModuleColors();
+    } else {
+      console.warn('ColorManager noch nicht geladen, versuche es später...');
+      // Retry nach kurzer Zeit
+      setTimeout(() => {
+        if (this.colorManager) {
+          this.colorManager.updateModuleColors();
+        }
+      }, 500);
+    }
   }
 
   updateLegend() {
@@ -99,7 +111,7 @@ window.StudiengangCustomClass = class CSEStudienplan extends StudienplanBase {
   }
 
   getModuleCssClass(modul) {
-    return this.colorManager ? this.colorManager.getModuleCssClass(modul) : undefined;
+    return this.colorManager ? this.colorManager.getModuleCssClass(modul) : modul.kategorie;
   }
 
   createThemenbereichLegend(container) {
