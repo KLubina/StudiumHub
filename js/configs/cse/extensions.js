@@ -4,10 +4,10 @@
 // Laden der modularen Klassen direkt aus dem configs/cse Ordner
 const loadCSEClasses = async () => {
   const classPaths = [
-    './ColorManager.js',
-    './GradeCalculator.js', 
-    './TooltipManager.js',
-    './UIControlsManager.js'
+    './extensions-ColorManager.js',
+    './extensions-GradeCalculator.js', 
+    './extensions-tooltips.js',
+    './extensions-UIControlsManager.js'
   ];
 
   // Basis-URL ermitteln (configs/cse/)
