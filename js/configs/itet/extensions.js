@@ -57,6 +57,67 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
     }
   }
 
+  /* ==== LEGEND TOOLTIP EVENTS (OVERRIDE) ==== */
+  // Diese Methode überschreibt die leere Basis-Implementierung und sorgt dafür,
+  // dass Klicks auf Legenden-Einträge (mit hasTooltip=true) die Auswahl-Tooltips öffnen.
+  addLegendTooltipEvents(div, kategorie) {
+    if (!kategorie || !kategorie.hasTooltip) return;
+
+    // Markiere visuell als interaktiv
+    div.classList.add("tooltip-enabled");
+    div.style.cursor = "pointer";
+    div.title = "Klicken zum Module auswählen";
+
+    const openTooltip = (e) => {
+      // Sicherstellen, dass benötigte Tooltip-Funktionen geladen sind
+      if (!window.ITETTooltips) {
+        console.warn("ITETTooltips noch nicht geladen");
+        return;
+      }
+      // Event anreichern falls von Keyboard / programmatisch
+      if (!e.clientX || !e.clientY) {
+        const rect = div.getBoundingClientRect();
+        e.clientX = rect.left + rect.width / 2;
+        e.clientY = rect.top + rect.height / 2;
+      }
+
+      const name = kategorie.name;
+      if (name.startsWith("Kernfächer")) {
+        this.showKernfaecherTooltip(e);
+      } else if (name.startsWith("Weitere Wahl-Grundlagen")) {
+        this.showWeitereWahlGrundlagenTooltip(e);
+      } else if (name === "Wahlfächer") {
+        this.showWahlfaecherTooltip(e);
+      } else if (name.startsWith("Wahl Praktika")) {
+        this.showPraktikaTooltip(e);
+      }
+    };
+
+    div.addEventListener("click", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      openTooltip(e);
+    });
+
+    // Optional: Hover öffnen, wenn im Base-Config enableHover true ist
+    if (this.config.enableHover) {
+      div.addEventListener("mouseenter", (e) => {
+        // Nicht bei bereits offenem Tooltip sofort wechseln, wenn locked Flags bestehen
+        if (this.isTooltipLocked) return;
+        openTooltip(e);
+      });
+    }
+
+    // Tastatur-Zugänglichkeit
+    div.tabIndex = 0;
+    div.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        openTooltip(e);
+      }
+    });
+  }
+
   // ...existing code...
   addPraktikaControls() {
     // Controls hinzufügen - NUR wenn sie nicht bereits existieren
