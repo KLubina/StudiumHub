@@ -654,4 +654,30 @@ toggleModulFromTooltip(modulName, category) {
       this.config.daten.push(moduleCopy);
     });
   }
+
+  /* ==== INLINE AUTO-REFRESH (KISS) ==== */
+  // Wird von toggleModulFromTooltip aufgerufen. Fehlte zuvor -> Module erschienen nicht.
+  // Einfach: dynamische Module neu integrieren und NUR das 3. Jahr neu rendern.
+  updateStudienplanWithSelection() {
+    // Aktuelle Auswahl integrieren (entfernt vorher alte dynamische Einträge)
+    this.integrateSelectedPraktikaIntoConfig();
+
+    // Suche Container des 3. Jahres
+    const yearContainers = Array.from(document.querySelectorAll('.jahr'));
+    const thirdYearContainer = yearContainers.find(c => {
+      const title = c.querySelector('.jahr-titel');
+      return title && /3\.\s*Jahr/i.test(title.textContent.trim());
+    });
+
+    if (thirdYearContainer) {
+      // Kategorie-basiertes Layout für Jahr 3 neu aufbauen
+      this.createCategoryBasedThirdYear(thirdYearContainer);
+    } else {
+      // Fallback: kompletter Neuaufbau (sollte selten nötig sein)
+      this.createStudienplan();
+    }
+
+    // KP-Anzeigen aktualisieren
+    this.updateKPDisplay();
+  }
 }
