@@ -19,6 +19,9 @@ class StudiengangConfigLoader {
             // 2. Module-Daten laden (NEUER PFAD!)
             await this.loadModule(`${dataPath}/modules.js`);
             
+                // 2b. Erweiterte Auswahl-/Kategoriedaten (optional, z.B. ITET spezielle Listen)
+                await this.loadOptionalModule(`${dataPath}/extensions-data.js`);
+            
             // 3. Module-Details laden (NEUER PFAD!) - falls vorhanden
             await this.loadOptionalModule(`${dataPath}/module-details.js`);
             
