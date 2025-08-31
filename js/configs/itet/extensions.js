@@ -115,14 +115,7 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
       openTooltip(e);
     });
 
-    // Optional: Hover öffnen, wenn im Base-Config enableHover true ist
-    if (this.config.enableHover) {
-      div.addEventListener("mouseenter", (e) => {
-        // Nicht bei bereits offenem Tooltip sofort wechseln, wenn locked Flags bestehen
-        if (this.isTooltipLocked) return;
-        openTooltip(e);
-      });
-    }
+  // Entfernt: automatisches Öffnen per Hover (KISS: nur expliziter Klick)
 
     // Tastatur-Zugänglichkeit
     div.tabIndex = 0;
@@ -720,5 +713,41 @@ toggleModulFromTooltip(modulName, category) {
 
     // KP-Anzeigen aktualisieren
     this.updateKPDisplay();
+  }
+
+  /* ==== OVERRIDES: TOOLTIP BEHAVIOR (CLICK-ONLY + OUTSIDE CLICK CLOSE) ==== */
+  showCustomTooltip(content, event) {
+    // Auf Basisfunktion zurückgreifen
+    if (typeof StudienplanBase !== 'undefined' && StudienplanBase.prototype.showCustomTooltip) {
+      StudienplanBase.prototype.showCustomTooltip.call(this, content, event);
+    }
+
+    // Outside-Click Handler nur einmal registrieren
+    if (!this._outsideClickHandler) {
+      this._outsideClickHandler = (e) => {
+        // Wenn kein Tooltip mehr existiert -> Listener entfernen
+        if (!this.tooltipEl) {
+          document.removeEventListener('click', this._outsideClickHandler, true);
+          this._outsideClickHandler = null;
+          return;
+        }
+        const insideTooltip = this.tooltipEl.contains(e.target);
+        const insideLegendInteractive = !!e.target.closest('.farben-legende .tooltip-enabled');
+        if (!insideTooltip && !insideLegendInteractive) {
+          this.hideTooltip();
+        }
+      };
+      document.addEventListener('click', this._outsideClickHandler, true);
+    }
+  }
+
+  hideTooltip() {
+    if (typeof StudienplanBase !== 'undefined' && StudienplanBase.prototype.hideTooltip) {
+      StudienplanBase.prototype.hideTooltip.call(this);
+    }
+    if (this._outsideClickHandler) {
+      document.removeEventListener('click', this._outsideClickHandler, true);
+      this._outsideClickHandler = null;
+    }
   }
 }
