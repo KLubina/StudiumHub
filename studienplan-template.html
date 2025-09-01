@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id="page-title">Studienplan</title>
-    
+
     <!-- Base CSS -->
     <link rel="stylesheet" href="css/studienplan-base.css">
-    
+
     <!-- Theme-specific CSS (wird dynamisch geladen) -->
     <link rel="stylesheet" id="theme-css" href="">
-    
+
     <!-- Studiengang-spezifische CSS (optional) -->
     <link rel="stylesheet" id="custom-css" href="">
 </head>
@@ -43,86 +43,86 @@
     <div id="tooltip" class="tooltip-container" style="display: none;"></div>
 
     <!-- Base JavaScript -->
-    <script src="js/studienplan-base.js"></script>
-    
+    <script src="js/base/studienplan-base-loader.js"></script>
+
     <!-- Modularer Config Loader -->
     <script src="js/modular-config-loader.js"></script>
-    
-<!-- In studienplan-template.html, erweitere den Script-Bereich: -->
 
-<script>
-    // URL Parameter auslesen um Studiengang zu bestimmen
-    const urlParams = new URLSearchParams(window.location.search);
-    const studiengang = urlParams.get('studiengang') || 'cs';
-    
-    console.log(`🎯 Studiengang aus URL: ${studiengang}`);
-    
-    // Theme CSS laden
-    const themeCSS = document.getElementById('theme-css');
-    themeCSS.href = `css/themes/${studiengang}-theme.css`;
-    
-    // Optional: Custom CSS laden
-    const customCSS = document.getElementById('custom-css');
-    customCSS.href = `css/custom/${studiengang}-custom.css`;
-    
-    // Funktion zum Laden von Extension-Modulen
-    async function loadExtensionModules(studiengang) {
-        // Liste der Extension-Module die geladen werden sollen
-        const extensionModules = [
-            'extensions-data',
-            'extensions-kp-counter', 
-            'extensions-tooltips',
-            'extensions-utils'
-        ];
-        
-        // Prüfe ob Extensions existieren für diesen Studiengang
-        const hasExtensions = ['itet', 'cse', 'rig'].includes(studiengang);
-        
-        if (hasExtensions) {
-            console.log(`📦 Lade Extension-Module für ${studiengang}...`);
-            
-            for (const module of extensionModules) {
-                const script = document.createElement('script');
-                script.src = `js/configs/${studiengang}/${module}.js`;
-                script.onerror = () => {
-                    console.log(`⏭️ ${module}.js nicht gefunden - übersprungen`);
-                };
-                script.onload = () => {
-                    console.log(`✅ ${module}.js geladen`);
-                };
-                document.head.appendChild(script);
-                
-                // Warte bis Script geladen ist
-                await new Promise((resolve) => {
-                    script.onload = resolve;
-                    script.onerror = resolve; // Auch bei Fehler weitermachen
-                    setTimeout(resolve, 100); // Timeout als Fallback
-                });
+    <!-- In studienplan-template.html, erweitere den Script-Bereich: -->
+
+    <script>
+        // URL Parameter auslesen um Studiengang zu bestimmen
+        const urlParams = new URLSearchParams(window.location.search);
+        const studiengang = urlParams.get('studiengang') || 'cs';
+
+        console.log(`🎯 Studiengang aus URL: ${studiengang}`);
+
+        // Theme CSS laden
+        const themeCSS = document.getElementById('theme-css');
+        themeCSS.href = `css/themes/${studiengang}-theme.css`;
+
+        // Optional: Custom CSS laden
+        const customCSS = document.getElementById('custom-css');
+        customCSS.href = `css/custom/${studiengang}-custom.css`;
+
+        // Funktion zum Laden von Extension-Modulen
+        async function loadExtensionModules(studiengang) {
+            // Liste der Extension-Module die geladen werden sollen
+            const extensionModules = [
+                'extensions-data',
+                'extensions-kp-counter',
+                'extensions-tooltips',
+                'extensions-utils'
+            ];
+
+            // Prüfe ob Extensions existieren für diesen Studiengang
+            const hasExtensions = ['itet', 'cse', 'rig'].includes(studiengang);
+
+            if (hasExtensions) {
+                console.log(`📦 Lade Extension-Module für ${studiengang}...`);
+
+                for (const module of extensionModules) {
+                    const script = document.createElement('script');
+                    script.src = `js/configs/${studiengang}/${module}.js`;
+                    script.onerror = () => {
+                        console.log(`⏭️ ${module}.js nicht gefunden - übersprungen`);
+                    };
+                    script.onload = () => {
+                        console.log(`✅ ${module}.js geladen`);
+                    };
+                    document.head.appendChild(script);
+
+                    // Warte bis Script geladen ist
+                    await new Promise((resolve) => {
+                        script.onload = resolve;
+                        script.onerror = resolve; // Auch bei Fehler weitermachen
+                        setTimeout(resolve, 100); // Timeout als Fallback
+                    });
+                }
             }
         }
-    }
-    
-    // Warten bis DOM geladen ist
-    document.addEventListener('DOMContentLoaded', async function() {
-        console.log('📄 DOM geladen, starte Config-Loading...');
-        
-        // Erst Extension-Module laden
-        await loadExtensionModules(studiengang);
-        
-        // Dann normale Config laden
-        if (typeof window.loadStudiengangConfig === 'function') {
-            window.loadStudiengangConfig(studiengang).then(config => {
-                if (config) {
-                    console.log(`✅ Konfiguration für ${studiengang} erfolgreich geladen`);
-                } else {
-                    console.error(`❌ Konfiguration für ${studiengang} konnte nicht geladen werden`);
-                }
-            }).catch(error => {
-                console.error(`💥 Fehler beim Laden der Konfiguration für ${studiengang}:`, error);
-            });
-        }
-    });
-</script>
+
+        // Warten bis DOM geladen ist
+        document.addEventListener('DOMContentLoaded', async function () {
+            console.log('📄 DOM geladen, starte Config-Loading...');
+
+            // Erst Extension-Module laden
+            await loadExtensionModules(studiengang);
+
+            // Dann normale Config laden
+            if (typeof window.loadStudiengangConfig === 'function') {
+                window.loadStudiengangConfig(studiengang).then(config => {
+                    if (config) {
+                        console.log(`✅ Konfiguration für ${studiengang} erfolgreich geladen`);
+                    } else {
+                        console.error(`❌ Konfiguration für ${studiengang} konnte nicht geladen werden`);
+                    }
+                }).catch(error => {
+                    console.error(`💥 Fehler beim Laden der Konfiguration für ${studiengang}:`, error);
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>

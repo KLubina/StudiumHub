@@ -1,6 +1,3 @@
-/* ==== MODULARER CONFIG LOADER - ANGEPASST FÜR NEUE STRUKTUR ==== */
-/* Lädt und kombiniert alle Konfigurationsteile für einen Studiengang */
-
 class StudiengangConfigLoader {
     constructor(studiengang) {
         this.studiengang = studiengang;
@@ -13,22 +10,16 @@ class StudiengangConfigLoader {
         const dataPath = `js/data/${this.studiengang}`;
         
         try {
-            // 1. Basis-Konfiguration laden
             await this.loadModule(`${configPath}/base-config.js`);
             
-            // 2. Module-Daten laden (NEUER PFAD!)
             await this.loadModule(`${dataPath}/modules.js`);
             
-                // 2b. Erweiterte Auswahl-/Kategoriedaten (optional, z.B. ITET spezielle Listen)
                 await this.loadOptionalModule(`${dataPath}/extensions-data.js`);
             
-            // 3. Module-Details laden (NEUER PFAD!) - falls vorhanden
             await this.loadOptionalModule(`${dataPath}/module-details.js`);
             
-            // 4. Erweiterungen laden (falls vorhanden)
             await this.loadOptionalModule(`${configPath}/extensions.js`);
             
-            // 5. Alles zusammenfügen
             this.mergeConfigs();
             
             return this.config;
