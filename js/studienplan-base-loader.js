@@ -14,6 +14,7 @@ const baseModules = [
 // Module laden
 baseModules.forEach(module => {
     const script = document.createElement('script');
-    script.src = `js/base/${module}`;
+    // Dateien liegen im Ordner js/ (nicht js/base/) -> KISS: lade direkt aus js/
+    script.src = `js/${module}`;
     document.head.appendChild(script);
 });
