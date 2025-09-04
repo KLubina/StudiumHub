@@ -6,44 +6,56 @@ window.StudiengangModuleDetails = {
     kurzbeschreibung:
       "Ziel ist der sichere Umgang mit grundlegenden Verfahren der linearen Algebra",
     inhalt:
-      "1.) Lineare Gleichungssysteme und Matrizen:\n" +
+      "► Lineare Gleichungssysteme und Matrizen\n" +
       "• Lineare Gleichungssysteme\n" +
       "• Matrizen\n" +
       "• Gauss-Elimination\n" +
       "• LU- und QR-Zerlegungen\n\n" +
-      "2.) Lineare Räume und Grundlagen der linearen Algebra:\n" +
+
+      "► Lineare Räume und Grundlagen der linearen Algebra\n" +
       "• Lineare Räume\n" +
       "• Fundamentalsatz der linearen Algebra – Teil I\n" +
       "• Basiswahl und Basiswechsel\n\n" +
-      "3.) Lineare Abbildungen und Koordinatentransformationen:\n" +
+
+      "► Lineare Abbildungen und Koordinatentransformationen\n" +
       "• Lineare Abbildungen\n" +
       "• Abbildungsmatrix bei Koordinatentransformationen\n\n" +
-      "4.) Geometrische Strukturen in Vektorräumen:\n" +
+
+      "► Geometrische Strukturen in Vektorräumen\n" +
       "• Norm und Skalarprodukt in linearen Räumen\n" +
       "• Gram-Schmidt-Algorithmus\n" +
       "• Projektoren\n\n" +
-      "5.) Numerische Methoden und Anwendungen:\n" +
+
+      "► Numerische Methoden und Anwendungen\n" +
       "• Lineare Ausgleichsrechnung\n" +
       "• Anwendungen\n\n" +
-      "6.) Determinanten und ihre Eigenschaften:\n" +
-      "• Determinanten\n\n" +
-      "7.) Spektraltheorie:\n" +
+
+      "► Determinanten\n\n" +
+
+      "► Spektraltheorie\n" +
       "• Eigenwerte und Eigenvektoren\n" +
       "• Symmetrische Matrizen\n" +
-      "• Singulärwertzerlegung und Fundamentalsatz der linearen Algebra\n",
+      "• Singulärwertzerlegung und Fundamentalsatz der linearen Algebra",
 
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=192867&lang=de",
   },
   "Analysis 1": {
     kurzbeschreibung: "Einführung in die Grundlagen der Analysis",
     inhalt:
+      "► Grundlagen\n" +
       "• Reelle und komplexe Zahlen\n" +
-      "• Grenzwerte\n" +
+      "• Grenzwerte\n\n" +
+
+      "► Folgen und Reihen\n" +
       "• Folgen\n" +
       "• Reihen\n" +
-      "• Potenzreihen\n" +
+      "• Potenzreihen\n\n" +
+
+      "► Analysis einer Variablen\n" +
       "• Stetige Abbildungen\n" +
-      "• Differential- und Integralrechnung einer Variablen\n" +
+      "• Differential- und Integralrechnung einer Variablen\n\n" +
+
+      "► Einführung in Differentialgleichungen\n" +
       "• Einführung in gewöhnliche Differentialgleichungen",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193410&lang=de",
   },
@@ -51,25 +63,39 @@ window.StudiengangModuleDetails = {
     kurzbeschreibung:
       "Einführung in die mehrdimensionale Differential- und Integralrechnung",
     inhalt:
+      "► Differentialrechnung\n" +
       "• Differenzierbare Abbildungen\n" +
       "• Maxima und Minima\n" +
-      "• der Satz über implizite Funktionen\n" +
+      "• der Satz über implizite Funktionen\n\n" +
+
+      "► Integralrechnung\n" +
       "• Mehrfache Integrale\n" +
-      "• Integration über Untermannigfaltigkeiten\n" +
+      "• Integration über Untermannigfaltigkeiten\n\n" +
+
+      "► Zentrale Integralsätze\n" +
       "• Sätze von Gauss und Stokes",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=188523&lang=de",
   },
   Digitaltechnik: {
     kurzbeschreibung: "Grundlagen der Digitaltechnik",
     inhalt:
+      "► Grundlagen der Digitaltechnik\n" +
       "• Grundbegriffe analog – digital\n" +
+      "• Zahlensysteme und Codes\n\n" +
+      
+      "► Logik und Schaltalgebra\n" +
       "• Logische Verknüpfungen\n" +
-      "• Transistoren in CMOS-Technik\n" +
       "• Schaltalgebra (Boole'sche Algebra)\n" +
-      "• Schaltungsanalyse und -synthese\n" +
-      "• Zahlensysteme und Codes\n" +
-      "• Kombinatorische und sequenzielle Schaltungen\n" +
-      "• Endliche Automaten\n" +
+      "• Schaltungsanalyse und -synthese\n\n" +
+      
+      "► Bauelemente und Schaltungstechnik\n" +
+      "• Transistoren in CMOS-Technik\n" +
+      "• Kombinatorische und sequenzielle Schaltungen\n\n" +
+      
+      "► Automatisierung und Steuerung\n" +
+      "• Endliche Automaten\n\n" +
+      
+      "► Speicher- und Rechentechnik\n" +
       "• Speicher und Mikroprozessoren",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=192958&lang=de",
   },
@@ -77,37 +103,51 @@ window.StudiengangModuleDetails = {
     kurzbeschreibung:
       "Vertiefung der Inhalte aus Vorlesung und Übung, Umgang mit Designsoftware Quartus II und Oszilloskop",
     inhalt:
+      "► Digitale Schaltungen entwerfen\n" +
       "• 7-Segment-Anzeige ansteuern\n" +
       "• Addierer aufbauen\n" +
-      "• Verschiedene Arten von Latches und Flip-Flops erstellen\n" +
-      "• Kleiner Synthesizer realisieren (selbsterstellte Melodien abspielen)\n" +
+      "• Verschiedene Arten von Latches und Flip-Flops erstellen\n\n" +
+
+      "► Praktische Anwendungen\n" +
+      "• Kleiner Synthesizer realisieren (selbsterstellte Melodien abspielen)\n\n" +
+
+      "► Messtechnik und Analyse\n" +
       "• Umgang mit modernem Oszilloskop\n" +
       "• Analyse programmierter Schaltungen über digitale und analoge Eingänge",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193802&lang=de",
   },
-  "Netzwerke und Schaltungen": {
+  "Netzwerke und Schaltungen I": {
     kurzbeschreibung: "Grundlagen der Elektrotechnik",
     inhalt:
+      "► Elektrische Felder\n" +
       "• Elektrostatisches Feld\n" +
       "• Stationäres elektrisches Strömungsfeld\n" +
-      "• Einfache elektrische Netzwerke\n" +
-      "• Stromleitungsmechanismen\n" +
-      "• Stationäres Magnetfeld\n" +
-      "• Zeitlich veränderliches elektromagnetisches Feld",
+      "• Stromleitungsmechanismen\n\n" +
+
+      "► Einfache elektrische Netzwerke\n\n" +
+
+      "► Stationäres Magnetfeld\n\n" +
+
+      "► Zeitlich veränderliches elektromagnetisches Feld",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=192802&semkez=2025W&ansicht=LEHRVERANSTALTUNGEN&lang=de",
   },
   "Netzwerke und Schaltungen II": {
     kurzbeschreibung:
       "Netzwerke und Schaltungen II“ vermittelt Methoden zur Analyse elektrischer Netzwerke im Zeit- und Frequenzbereich sowie den Einsatz von Verstärkern und Operationsverstärkerschaltungen.",
     inhalt:
+      "► Wechselstrom- und Netzwerkanalyse\n" +
       "• Komplexe Wechselstromrechnung\n" +
       "• Methoden und Sätze der Netzwerkberechnung\n" +
       "• Maschenstromverfahren, Kontenpotentialverfahren\n" +
       "• Netzwerke mit nicht sinusförmiger periodischer Erregung\n" +
-      "• Fourierzerlegung, Zeit- und Frequenzbereich\n" +
+      "• Fourierzerlegung, Zeit- und Frequenzbereich\n\n" +
+
+      "► Dynamik und Transformationen\n" +
       "• Schaltvorgänge in elektrischen Netzwerken\n" +
       "• Übergangsverhalten, Fouriertransformation, Laplacetransformation\n" +
-      "• Übertragungsfunktion von Netzwerken, Zweitore\n" +
+      "• Übertragungsfunktion von Netzwerken, Zweitore\n\n" +
+
+      "► Verstärkerschaltungen\n" +
       "• Verstärkergrundschaltungen, Gegentaktverstärker und Differenzverstärker\n" +
       "• Operationsverstärker, Operationsverstärker-Grundschaltungen\n" +
       "• Schaltungen mit Operationsverstärkern",
@@ -117,15 +157,17 @@ window.StudiengangModuleDetails = {
     kurzbeschreibung:
       "Experimentelle Vertiefung des in den Lehrveranstaltungen Netzwerke und Schaltungen I und II vermittelten Wissens am Beispiel induktiver Energieübertragungssysteme",
     inhalt:
-      "Induktive Energieübertragung:\n" +
+      "► Induktive Energieübertragung:\n" +
       "• Parameter von Ersatzschaltungen\n" +
       "• Übertragungscharakteristiken\n" +
       "• Resonanzkompensation\n" +
       "• Hochspannungserzeugung\n\n" +
-      "Photovoltaik:\n" +
+
+      "► Photovoltaik:\n" +
       "• Kennlinie und Leistungscharakteristik eines Solarmoduls\n" +
       "• Leistungsanpassung mit leistungselektronischen Wandlern\n" +
       "• Elektromechanische Energiewandlung\n\n" +
+
       "Nach der messtechnischen und experimentellen Untersuchung von Komponenten und Teilsystemen wird stets auch die Gesamtfunktion behandelt und analysiert.\n" +
       "Weitere wichtige Ziele sind das Kennenlernen moderner Messgeräte sowie die Vermittlung der Bedeutung einer methodischen Planung und Durchführung experimenteller Untersuchungen und einer klaren abschließenden Dokumentation",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=188187&lang=de",
@@ -134,12 +176,13 @@ window.StudiengangModuleDetails = {
     kurzbeschreibung:
       "Durch die vermittelten Grundlagen der Kinematik, Statik und Dynamik sollen Studierende ein Grundverständnis der Materie erhalten, mit dem einfache Problemstellungen der Technischen Mechanik analysiert und gelöst werden können.",
     inhalt:
-      "Grundlagen:\n" +
+      "► Grundlagen Kinematik:\n" +
       "• Lage und Geschwindigkeit materieller Punkte\n" +
       "• Starre Körper, ebene Bewegung\n" +
       "• Kinematik starrer Körper\n" +
       "• Kraft, Moment, Leistung\n\n" +
-      "Statik:\n" +
+
+      "► Statik:\n" +
       "• Äquivalenz und Reduktion von Kräftegruppen\n" +
       "• Kräftemittelpunkt und Massenmittelpunkt\n" +
       "• Gleichgewicht\n" +
@@ -147,7 +190,8 @@ window.StudiengangModuleDetails = {
       "• Hauptsatz der Statik\n" +
       "• Bindungen, Analytische Statik\n" +
       "• Reibung\n\n" +
-      "Dynamik:\n" +
+
+      "► Dynamik:\n" +
       "• Beschleunigung, Trägheitskräfte\n" +
       "• Prinzip von d'Alembert\n" +
       "• Newtonsches Bewegungsgesetz\n" +
@@ -159,11 +203,12 @@ window.StudiengangModuleDetails = {
     kurzbeschreibung:
       "Einführung in Wellenphänomene und fundamentale Aspekte der Thermodynamik",
     inhalt:
-      "Schwingungen & Wellen:\n" +
+      "► Schwingungen & Wellen:\n" +
       "• Harmonische, gedämpfte & erzwungene Schwingungen\n" +
       "• Ausbreitung, Beugung & Reflektion, und Energie & Intensität diverser Wellenarten\n" +
       "• Welleneffekte: Dopplereffekt, Überlagerung & Interferenz, Stehende Wellen, Resonanz\n\n" +
-      "Thermodynamik:\n" +
+
+      "► Thermodynamik:\n" +
       "• Kinetische Gastheorie für das ideale Gas\n" +
       "• Hauptsätze der Thermodynamik: Energieerhaltung, Kreisprozesse, Entropie\n" +
       "• Wärmeübertragung & Wärmestrahlung",
@@ -173,16 +218,19 @@ window.StudiengangModuleDetails = {
     kurzbeschreibung:
       "Einführung in das Programmieren mit einem Fokus auf systematischem und algorithmischem Problemlösen. Programmiersprache ist C++",
     inhalt:
+      "► Grundlegende Sprachkonzepte\n" +
       "• Fundamentale Datentypen\n" +
-      "• Ausdrücke\n" + 
-      "• Anweisungen\n" +
+      "• Ausdrücke\n" +
+      "• Anweisungen\n\n" +
 
+      "► Programmstruktur und Steuerung\n" +
       "• Computerarithmetik\n" +
       "• Kontrollanweisungen\n" +
       "• Funktionen\n" +
       "• Klassen\n" +
-      "• Referenzen und Zeiger\n" +
+      "• Referenzen und Zeiger\n\n" +
 
+      "► Datenstrukturen und Anwendungen\n" +
       "• Charakteristiken und Anwendung fundamentaler Containertypen\n" +
       "• Aufbau und Speichermanagement einfacher dynamischer Datentypen\n" +
       "• Motivation und Illustration der Konzepte durch Algorithmen und Anwendungen",
@@ -192,12 +240,15 @@ window.StudiengangModuleDetails = {
     kurzbeschreibung:
       "Grundlagen der komplexen Analysis in Theorie & Anwendung und Einführung in Integraltransformationen mit Behandlung einiger Anwendungen",
     inhalt:
-      "• Komplexe Zahlen und Funktionen, komplexes Ableiten und die Cauchy Riemann Gleichungen\n" +
+      "► Komplexe Analysis\n" +
+      "• Komplexe Zahlen und Funktionen, komplexes Ableiten und die Cauchy-Riemann-Gleichungen\n" +
       "• Komplexes Integrieren\n" +
       "• Residuensatz und Anwendungen\n" +
-      "• Taylor- und Laurentreihen\n" +
-      "• Fourier Reihen und Fourier Transformationen\n" +
-      "• Laplace Transformationen",
+      "• Taylor- und Laurentreihen\n\n" +
+
+      "► Fourier- und Laplace-Analyse\n" +
+      "• Fourier-Reihen und Fourier-Transformationen\n" +
+      "• Laplace-Transformationen",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=188879&lang=de",
   },
   "Vorkurs Informatik": {
