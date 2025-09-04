@@ -8,7 +8,7 @@ window.StudiengangModules = [
     { jahr: 1, semester: 1, name: "Technische Mechanik", kp: 4, kategorie: "Obligatorische Fächer" },
     
     // Elektrotechnik
-    { jahr: 1, semester: 1, name: "Netzwerke und Schaltungen", kp: 4, kategorie: "Obligatorische Fächer" },
+    { jahr: 1, semester: 1, name: "Netzwerke und Schaltungen I", kp: 4, kategorie: "Obligatorische Fächer" },
     
     // Informationstechnologie
     { jahr: 1, semester: 1, name: "Digitaltechnik", kp: 4, kategorie: "Obligatorische Fächer" },

@@ -11,27 +11,21 @@ window.StudiengangModuleDetails = {
       "• Matrizen\n" +
       "• Gauss-Elimination\n" +
       "• LU- und QR-Zerlegungen\n\n" +
-
       "► Lineare Räume und Grundlagen der linearen Algebra\n" +
       "• Lineare Räume\n" +
       "• Fundamentalsatz der linearen Algebra – Teil I\n" +
       "• Basiswahl und Basiswechsel\n\n" +
-
       "► Lineare Abbildungen und Koordinatentransformationen\n" +
       "• Lineare Abbildungen\n" +
       "• Abbildungsmatrix bei Koordinatentransformationen\n\n" +
-
       "► Geometrische Strukturen in Vektorräumen\n" +
       "• Norm und Skalarprodukt in linearen Räumen\n" +
       "• Gram-Schmidt-Algorithmus\n" +
       "• Projektoren\n\n" +
-
       "► Numerische Methoden und Anwendungen\n" +
       "• Lineare Ausgleichsrechnung\n" +
       "• Anwendungen\n\n" +
-
       "► Determinanten\n\n" +
-
       "► Spektraltheorie\n" +
       "• Eigenwerte und Eigenvektoren\n" +
       "• Symmetrische Matrizen\n" +
@@ -45,18 +39,14 @@ window.StudiengangModuleDetails = {
       "► Grundlagen\n" +
       "• Reelle und komplexe Zahlen\n" +
       "• Grenzwerte\n\n" +
-
       "► Folgen und Reihen\n" +
       "• Folgen\n" +
       "• Reihen\n" +
       "• Potenzreihen\n\n" +
-
       "► Analysis einer Variablen\n" +
       "• Stetige Abbildungen\n" +
       "• Differential- und Integralrechnung einer Variablen\n\n" +
-
-      "► Einführung in Differentialgleichungen\n" +
-      "• Einführung in gewöhnliche Differentialgleichungen",
+      "► Einführung in gewöhnliche Differentialgleichungen",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193410&lang=de",
   },
   "Analysis 2": {
@@ -67,13 +57,10 @@ window.StudiengangModuleDetails = {
       "• Differenzierbare Abbildungen\n" +
       "• Maxima und Minima\n" +
       "• der Satz über implizite Funktionen\n\n" +
-
       "► Integralrechnung\n" +
       "• Mehrfache Integrale\n" +
       "• Integration über Untermannigfaltigkeiten\n\n" +
-
-      "► Zentrale Integralsätze\n" +
-      "• Sätze von Gauss und Stokes",
+      "► Sätze von Gauss und Stokes",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=188523&lang=de",
   },
   Digitaltechnik: {
@@ -82,21 +69,15 @@ window.StudiengangModuleDetails = {
       "► Grundlagen der Digitaltechnik\n" +
       "• Grundbegriffe analog – digital\n" +
       "• Zahlensysteme und Codes\n\n" +
-      
       "► Logik und Schaltalgebra\n" +
       "• Logische Verknüpfungen\n" +
       "• Schaltalgebra (Boole'sche Algebra)\n" +
       "• Schaltungsanalyse und -synthese\n\n" +
-      
       "► Bauelemente und Schaltungstechnik\n" +
       "• Transistoren in CMOS-Technik\n" +
       "• Kombinatorische und sequenzielle Schaltungen\n\n" +
-      
-      "► Automatisierung und Steuerung\n" +
-      "• Endliche Automaten\n\n" +
-      
-      "► Speicher- und Rechentechnik\n" +
-      "• Speicher und Mikroprozessoren",
+      "► Endliche Automaten\n\n" +
+      "► Speicher und Mikroprozessoren",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=192958&lang=de",
   },
   "Digitaltechnik Praktikum": {
@@ -107,10 +88,8 @@ window.StudiengangModuleDetails = {
       "• 7-Segment-Anzeige ansteuern\n" +
       "• Addierer aufbauen\n" +
       "• Verschiedene Arten von Latches und Flip-Flops erstellen\n\n" +
-
       "► Praktische Anwendungen\n" +
       "• Kleiner Synthesizer realisieren (selbsterstellte Melodien abspielen)\n\n" +
-
       "► Messtechnik und Analyse\n" +
       "• Umgang mit modernem Oszilloskop\n" +
       "• Analyse programmierter Schaltungen über digitale und analoge Eingänge",
@@ -123,11 +102,8 @@ window.StudiengangModuleDetails = {
       "• Elektrostatisches Feld\n" +
       "• Stationäres elektrisches Strömungsfeld\n" +
       "• Stromleitungsmechanismen\n\n" +
-
       "► Einfache elektrische Netzwerke\n\n" +
-
       "► Stationäres Magnetfeld\n\n" +
-
       "► Zeitlich veränderliches elektromagnetisches Feld",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=192802&semkez=2025W&ansicht=LEHRVERANSTALTUNGEN&lang=de",
   },
@@ -141,12 +117,10 @@ window.StudiengangModuleDetails = {
       "• Maschenstromverfahren, Kontenpotentialverfahren\n" +
       "• Netzwerke mit nicht sinusförmiger periodischer Erregung\n" +
       "• Fourierzerlegung, Zeit- und Frequenzbereich\n\n" +
-
       "► Dynamik und Transformationen\n" +
       "• Schaltvorgänge in elektrischen Netzwerken\n" +
       "• Übergangsverhalten, Fouriertransformation, Laplacetransformation\n" +
       "• Übertragungsfunktion von Netzwerken, Zweitore\n\n" +
-
       "► Verstärkerschaltungen\n" +
       "• Verstärkergrundschaltungen, Gegentaktverstärker und Differenzverstärker\n" +
       "• Operationsverstärker, Operationsverstärker-Grundschaltungen\n" +
@@ -162,12 +136,10 @@ window.StudiengangModuleDetails = {
       "• Übertragungscharakteristiken\n" +
       "• Resonanzkompensation\n" +
       "• Hochspannungserzeugung\n\n" +
-
       "► Photovoltaik:\n" +
       "• Kennlinie und Leistungscharakteristik eines Solarmoduls\n" +
       "• Leistungsanpassung mit leistungselektronischen Wandlern\n" +
       "• Elektromechanische Energiewandlung\n\n" +
-
       "Nach der messtechnischen und experimentellen Untersuchung von Komponenten und Teilsystemen wird stets auch die Gesamtfunktion behandelt und analysiert.\n" +
       "Weitere wichtige Ziele sind das Kennenlernen moderner Messgeräte sowie die Vermittlung der Bedeutung einer methodischen Planung und Durchführung experimenteller Untersuchungen und einer klaren abschließenden Dokumentation",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=188187&lang=de",
@@ -181,7 +153,6 @@ window.StudiengangModuleDetails = {
       "• Starre Körper, ebene Bewegung\n" +
       "• Kinematik starrer Körper\n" +
       "• Kraft, Moment, Leistung\n\n" +
-
       "► Statik:\n" +
       "• Äquivalenz und Reduktion von Kräftegruppen\n" +
       "• Kräftemittelpunkt und Massenmittelpunkt\n" +
@@ -190,7 +161,6 @@ window.StudiengangModuleDetails = {
       "• Hauptsatz der Statik\n" +
       "• Bindungen, Analytische Statik\n" +
       "• Reibung\n\n" +
-
       "► Dynamik:\n" +
       "• Beschleunigung, Trägheitskräfte\n" +
       "• Prinzip von d'Alembert\n" +
@@ -207,7 +177,6 @@ window.StudiengangModuleDetails = {
       "• Harmonische, gedämpfte & erzwungene Schwingungen\n" +
       "• Ausbreitung, Beugung & Reflektion, und Energie & Intensität diverser Wellenarten\n" +
       "• Welleneffekte: Dopplereffekt, Überlagerung & Interferenz, Stehende Wellen, Resonanz\n\n" +
-
       "► Thermodynamik:\n" +
       "• Kinetische Gastheorie für das ideale Gas\n" +
       "• Hauptsätze der Thermodynamik: Energieerhaltung, Kreisprozesse, Entropie\n" +
@@ -222,14 +191,12 @@ window.StudiengangModuleDetails = {
       "• Fundamentale Datentypen\n" +
       "• Ausdrücke\n" +
       "• Anweisungen\n\n" +
-
       "► Programmstruktur und Steuerung\n" +
       "• Computerarithmetik\n" +
       "• Kontrollanweisungen\n" +
       "• Funktionen\n" +
       "• Klassen\n" +
       "• Referenzen und Zeiger\n\n" +
-
       "► Datenstrukturen und Anwendungen\n" +
       "• Charakteristiken und Anwendung fundamentaler Containertypen\n" +
       "• Aufbau und Speichermanagement einfacher dynamischer Datentypen\n" +
@@ -245,7 +212,6 @@ window.StudiengangModuleDetails = {
       "• Komplexes Integrieren\n" +
       "• Residuensatz und Anwendungen\n" +
       "• Taylor- und Laurentreihen\n\n" +
-
       "► Fourier- und Laplace-Analyse\n" +
       "• Fourier-Reihen und Fourier-Transformationen\n" +
       "• Laplace-Transformationen",
@@ -259,12 +225,10 @@ window.StudiengangModuleDetails = {
       " - Entwicklung\n" +
       " - Ziele\n" +
       " - elementare Konzepte\n" +
-      
       "• Interaktives Tutorial als Einführung in C++:\n" +
       "  - Variablen\n" +
       "  - Datentypen\n" +
       "  - Verzweigungen und Schleifen\n" +
-
       "• Einführung in das systematische Lösen von Programmierproblemen mittels schrittweiser Verfeinerung",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193009&lang=de",
   },
@@ -394,42 +358,35 @@ window.StudiengangModuleDetails = {
       "Der Kurs behandelt die Grundlagen des Entwurfs und der Analyse von Algorithmen und Datenstrukturen, einschliesslich Graphentheorie und -problemen. Er bietet eine Einführung in generisches, sowie paralleles, Programmieren. Umsetzung in C++.",
     inhalt:
       "• Asymptotische Laufzeit (algorithmische Komplexität)\n" +
-
       "• Fundamentale algorithmische Probleme: \n" +
       " - Suchen\n" +
       " - Sortieren\n" +
       " - kürzeste Wege\n" +
       " - Spannbäume\n" +
-
       "• Klassische Datenstrukturen: \n" +
       " - Suchbäume\n" +
       " - balancierte Bäume\n" +
       " - Heaps\n" +
       " - Hashtabellen\n" +
-
       "• Graphentheorie und -probleme\n" +
-      
       "• Problemlösungsstrategien als Entwurfsmuster für Algorithmen: \n" +
       " - Induktion\n" +
       " - Divide-and-Conquer\n" +
       " - Backtracking\n" +
       " - dynamische Programmierung\n" +
-      
-       "• Generisches Programmieren: \n" +
-       " - C++-Templates\n" +
-       " - Funktionen höherer Ordnung\n" +
-       " - Lambdas\n" +
-       " - Closures\n" +
-      
-       "• Paralleles Programmieren: \n" +
-       " - (Un)abhängigkeit von Berechnungen\n" +
-       " - Parallelität und Nebenläufigkeit\n" +
-       " - geteilter Speicher\n" +
-       " - Wettlaufsituationen\n" +
-       " - wechselseitiger Ausschluss\n" +
-       " - Kommunikation und Synchronisation\n\n" +
-      
-       "Im Übungsbetrieb wird das Verständnis durch theoretische und/oder Programmieraufgaben (C++, Code Expert) vertieft",
+      "• Generisches Programmieren: \n" +
+      " - C++-Templates\n" +
+      " - Funktionen höherer Ordnung\n" +
+      " - Lambdas\n" +
+      " - Closures\n" +
+      "• Paralleles Programmieren: \n" +
+      " - (Un)abhängigkeit von Berechnungen\n" +
+      " - Parallelität und Nebenläufigkeit\n" +
+      " - geteilter Speicher\n" +
+      " - Wettlaufsituationen\n" +
+      " - wechselseitiger Ausschluss\n" +
+      " - Kommunikation und Synchronisation\n\n" +
+      "Im Übungsbetrieb wird das Verständnis durch theoretische und/oder Programmieraufgaben (C++, Code Expert) vertieft",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193493&lang=de",
   },
   "Technische Informatik": {
@@ -438,11 +395,10 @@ window.StudiengangModuleDetails = {
     inhalt:
       "On the hardware side:\n" +
       "• How microprocessors implement control and data paths\n" +
-      "• Microarchitectural optimizations such as\n" + 
+      "• Microarchitectural optimizations such as\n" +
       " - pipelining\n" +
       " - speculation\n" +
       " - caching\n\n" +
-
       "On the software side:\n" +
       "• How to program a microprocessor\n" +
       "• Fundamental concepts in the design of operating systems\n" +
@@ -515,12 +471,11 @@ window.StudiengangModuleDetails = {
       "  - Strukturerhaltende Verfahren",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=188146&lang=de",
   },
-  
+
   // Zusätzliche Module für Wahlbereich / höhere Semester
   "Discrete Event Systems": {
-    kurzbeschreibung:
-      "Introduction to discrete event systems.",
-  inhalt:
+    kurzbeschreibung: "Introduction to discrete event systems.",
+    inhalt:
       "1. Regular Languages\n" +
       "2. Non-Regular Languages\n" +
       "3. Markov Chains\n" +
@@ -530,7 +485,7 @@ window.StudiengangModuleDetails = {
       "7. Petri Nets",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=227-0102-00L",
   },
-  
+
   "Communication Systems": {
     kurzbeschreibung:
       "The course teaches the fundamentals of digital communication systems. ",
@@ -548,7 +503,7 @@ window.StudiengangModuleDetails = {
       "- building blocks of modern communication systems\n",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=227-0121-00L",
   },
-  
+
   "Embedded Systems": {
     kurzbeschreibung:
       "An embedded system is a combination of hardware and software, either fixed in function or programmable, that is designed for a specific application scenario or for a specific task within a larger system.",
@@ -575,7 +530,7 @@ window.StudiengangModuleDetails = {
       "• debug functionalities of the associated design environment to design, implement, and verify embedded firmware",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=227-0124-00L",
   },
-  
+
   "Communication Networks": {
     kurzbeschreibung:
       "Understand the fundamental concepts behind communication networks and the Internet.",
@@ -586,7 +541,7 @@ window.StudiengangModuleDetails = {
       "- propose ways to improve it (if any).\n\n",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=227-0120-00L",
   },
-  
+
   "Fundamentals of Computer Architecture": {
     kurzbeschreibung:
       "Computer architecture is the science & art of designing and optimizing hardware components and the hardware/software interface to create a computer that meets design goals.",
