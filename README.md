@@ -1,5 +1,7 @@
 https://raw.githack.com/KLubina/StudiumHub/main/index.html
 
+### Mind-Maps erstellen für ITET ETHZ Moduldetails
+
 ### Alle staatlichen UH und FH ITET-Studiengänge
 ITET allgemein: https://www.berufsberatung.ch/dyn/show/19998
 
