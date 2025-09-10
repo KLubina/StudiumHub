@@ -1,4 +1,5 @@
 window.StudiengangModuleDetails = {
+  // #region 1. Semester
   "Lineare Algebra": {
     kurzbeschreibung:
       "Ziel ist der sichere Umgang mit grundlegenden Verfahren der linearen Algebra",
@@ -62,24 +63,7 @@ window.StudiengangModuleDetails = {
       "► Einführung in gewöhnliche Differentialgleichungen",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193410&lang=de",
   },
-  "Analysis 2": {
-    kurzbeschreibung:
-      "Einführung in die mehrdimensionale Differential- und Integralrechnung",
-    inhalt:
-      "► Differentialrechnung\n" +
-      "• Differenzierbare Abbildungen\n" +
-      "• Maxima\n" + 
-      "• Minima\n" +
-      "• der Satz über implizite Funktionen\n\n" +
-      
-      "► Integralrechnung\n" +
-      "• Mehrfache Integrale\n" +
-      "• Integration über Untermannigfaltigkeiten\n\n" +
-      
-      "► Sätze von Gauss\n" + 
-      "► Sätze von Stokes\n\n",
-    link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=188523&lang=de",
-  },
+
   Digitaltechnik: {
     kurzbeschreibung: "Grundlagen der Digitaltechnik",
     inhalt:
@@ -138,6 +122,71 @@ window.StudiengangModuleDetails = {
       "► Zeitlich veränderliches elektromagnetisches Feld",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=192802&semkez=2025W&ansicht=LEHRVERANSTALTUNGEN&lang=de",
   },
+    "Technische Mechanik": {
+    kurzbeschreibung:
+      "Durch die vermittelten Grundlagen der Kinematik, Statik und Dynamik sollen Studierende ein Grundverständnis der Materie erhalten, mit dem einfache Problemstellungen der Technischen Mechanik analysiert und gelöst werden können.",
+    inhalt:
+      "► Kinematik\n" +
+      "• Lage und Geschwindigkeit materieller Punkte\n" +
+      "• Starre Körper, ebene Bewegung\n" +
+      "• Kinematik starrer Körper\n" +
+      "• Kraft, Moment, Leistung\n\n" +
+      
+      "► Statik\n" +
+      "• Äquivalenz und Reduktion von Kräftegruppen\n" +
+      "• Kräftemittelpunkt und Massenmittelpunkt\n" +
+      "• Gleichgewicht\n" +
+      "• Prinzip der virtuellen Leistungen\n" +
+      "• Hauptsatz der Statik\n" +
+      "• Bindungen, Analytische Statik\n" +
+      "• Reibung\n\n" +
+      
+      "► Dynamik\n" +
+      "• Beschleunigung, Trägheitskräfte\n" +
+      "• Prinzip von d'Alembert\n" +
+      "• Newtonsches Bewegungsgesetz\n" +
+      "• Impulssatz, Drallsatz\n" +
+      "• Drall bei ebenen Bewegungen",
+    link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193886&lang=de",
+  },
+    "Vorkurs Informatik": {
+    kurzbeschreibung:
+      "Einführung in die Grundlagen der Programmierung mit C++.",
+    inhalt:
+      "• Allgemeine Einführung in die Informatik\n" +
+      " - Entwicklung\n" +
+      " - Ziele\n" +
+      " - elementare Konzepte\n" +
+      
+      "• Interaktives Tutorial als Einführung in C++:\n" +
+      "  - Variablen\n" +
+      "  - Datentypen\n" +
+      "  - Verzweigungen und Schleifen\n" +
+      
+      "• Einführung in das systematische Lösen von Programmierproblemen mittels schrittweiser Verfeinerung",
+    link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193009&lang=de",
+  },
+  // #endregion
+
+  // #region 2. Semester
+    "Analysis 2": {
+    kurzbeschreibung:
+      "Einführung in die mehrdimensionale Differential- und Integralrechnung",
+    inhalt:
+      "► Differentialrechnung\n" +
+      "• Differenzierbare Abbildungen\n" +
+      "• Maxima\n" + 
+      "• Minima\n" +
+      "• der Satz über implizite Funktionen\n\n" +
+      
+      "► Integralrechnung\n" +
+      "• Mehrfache Integrale\n" +
+      "• Integration über Untermannigfaltigkeiten\n\n" +
+      
+      "► Sätze von Gauss\n" + 
+      "► Sätze von Stokes\n\n",
+    link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=188523&lang=de",
+  },
   "Netzwerke und Schaltungen II": {
     kurzbeschreibung:
       "Netzwerke und Schaltungen II“ vermittelt Methoden zur Analyse elektrischer Netzwerke im Zeit- und Frequenzbereich sowie den Einsatz von Verstärkern und Operationsverstärkerschaltungen.",
@@ -186,33 +235,6 @@ window.StudiengangModuleDetails = {
       "Nach der messtechnischen und experimentellen Untersuchung von Komponenten und Teilsystemen wird stets auch die Gesamtfunktion behandelt und analysiert.\n" +
       "Weitere wichtige Ziele sind das Kennenlernen moderner Messgeräte sowie die Vermittlung der Bedeutung einer methodischen Planung und Durchführung experimenteller Untersuchungen und einer klaren abschließenden Dokumentation",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=188187&lang=de",
-  },
-  "Technische Mechanik": {
-    kurzbeschreibung:
-      "Durch die vermittelten Grundlagen der Kinematik, Statik und Dynamik sollen Studierende ein Grundverständnis der Materie erhalten, mit dem einfache Problemstellungen der Technischen Mechanik analysiert und gelöst werden können.",
-    inhalt:
-      "► Kinematik\n" +
-      "• Lage und Geschwindigkeit materieller Punkte\n" +
-      "• Starre Körper, ebene Bewegung\n" +
-      "• Kinematik starrer Körper\n" +
-      "• Kraft, Moment, Leistung\n\n" +
-      
-      "► Statik\n" +
-      "• Äquivalenz und Reduktion von Kräftegruppen\n" +
-      "• Kräftemittelpunkt und Massenmittelpunkt\n" +
-      "• Gleichgewicht\n" +
-      "• Prinzip der virtuellen Leistungen\n" +
-      "• Hauptsatz der Statik\n" +
-      "• Bindungen, Analytische Statik\n" +
-      "• Reibung\n\n" +
-      
-      "► Dynamik\n" +
-      "• Beschleunigung, Trägheitskräfte\n" +
-      "• Prinzip von d'Alembert\n" +
-      "• Newtonsches Bewegungsgesetz\n" +
-      "• Impulssatz, Drallsatz\n" +
-      "• Drall bei ebenen Bewegungen",
-    link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193886&lang=de",
   },
   "Physik I": {
     kurzbeschreibung:
@@ -273,23 +295,9 @@ window.StudiengangModuleDetails = {
       "• Laplace-Transformationen",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=188879&lang=de",
   },
-  "Vorkurs Informatik": {
-    kurzbeschreibung:
-      "Einführung in die Grundlagen der Programmierung mit C++.",
-    inhalt:
-      "• Allgemeine Einführung in die Informatik\n" +
-      " - Entwicklung\n" +
-      " - Ziele\n" +
-      " - elementare Konzepte\n" +
-      
-      "• Interaktives Tutorial als Einführung in C++:\n" +
-      "  - Variablen\n" +
-      "  - Datentypen\n" +
-      "  - Verzweigungen und Schleifen\n" +
-      
-      "• Einführung in das systematische Lösen von Programmierproblemen mittels schrittweiser Verfeinerung",
-    link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193009&lang=de",
-  },
+  // #endregion
+
+  // #region 3. Semester
   "Analysis 3": {
     kurzbeschreibung:
       "In this lecture we treat problems in applied analysis. The aim of this class is to provide students with a general overview of first and second order PDEs, and teach them how to solve some of these equations using characteristics and/or separation of variables",
@@ -348,22 +356,6 @@ window.StudiengangModuleDetails = {
       "• Schnelle Fouriertransformation (FFT)",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193407&lang=de",
   },
-  "Signal- und Systemtheorie II": {
-    kurzbeschreibung: "Einführung in die Grundkonzepte der Systemtheorie",
-    inhalt:
-      "• Modellierung und Typenbezeichnung von dynamischen Systemen\n" +
-      "• Modellierung von linearen, zeitinvarianten Systemen durch Zustandsgleichungen\n" +
-      "• Lösung von Zustandsgleichungen durch Zeitbereich- und Laplacebereichmethoden\n" +
-      "• Stabilitäts-, Steuerbarkeits- und Beobachtbarkeitsanalyse\n" +
-      "• Beschreibung im Frequenzbereich, Bode- und Nyquistdiagramm\n" +
-      "• Abgetastete und zeitdiskrete Systeme\n\n" +
-      "Weiterführende Themen:\n" +
-      "• Nichtlineare Systeme\n" +
-      "• Chaos\n" +
-      "• Diskrete Ereignissysteme\n" +
-      "• Hybride Systeme",
-    link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=187298&lang=de",
-  },
   "Diskrete Mathematik": {
     kurzbeschreibung:
       "Einführung in die Grundlagen der diskreten Mathematik. Die Grundlagen werden mit Anwendungen aus der Informationstechnologie veranschaulicht",
@@ -410,6 +402,25 @@ window.StudiengangModuleDetails = {
       "• Impedanzmessungen\n" +
       "• Messung der Transfercharakteristik",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=192771&lang=de",
+  },
+  // #endregion
+
+  // #region 4. Semester
+    "Signal- und Systemtheorie II": {
+    kurzbeschreibung: "Einführung in die Grundkonzepte der Systemtheorie",
+    inhalt:
+      "• Modellierung und Typenbezeichnung von dynamischen Systemen\n" +
+      "• Modellierung von linearen, zeitinvarianten Systemen durch Zustandsgleichungen\n" +
+      "• Lösung von Zustandsgleichungen durch Zeitbereich- und Laplacebereichmethoden\n" +
+      "• Stabilitäts-, Steuerbarkeits- und Beobachtbarkeitsanalyse\n" +
+      "• Beschreibung im Frequenzbereich, Bode- und Nyquistdiagramm\n" +
+      "• Abgetastete und zeitdiskrete Systeme\n\n" +
+      "Weiterführende Themen:\n" +
+      "• Nichtlineare Systeme\n" +
+      "• Chaos\n" +
+      "• Diskrete Ereignissysteme\n" +
+      "• Hybride Systeme",
+    link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=187298&lang=de",
   },
   "Informatik II": {
     kurzbeschreibung:
@@ -529,8 +540,9 @@ window.StudiengangModuleDetails = {
       "  - Strukturerhaltende Verfahren",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=188146&lang=de",
   },
+  // #endregion
 
-  // Zusätzliche Module für Wahlbereich / höhere Semester
+  // #region Wahlbereich
   "Discrete Event Systems": {
     kurzbeschreibung: "Introduction to discrete event systems.",
     inhalt:
@@ -635,4 +647,5 @@ window.StudiengangModuleDetails = {
       "• Prefetching techniques",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=227-0152-00L",
   },
+  // #endregion
 };
