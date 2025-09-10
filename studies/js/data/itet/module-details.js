@@ -258,13 +258,18 @@ window.StudiengangModuleDetails = {
       "Grundlagen der komplexen Analysis in Theorie & Anwendung und Einführung in Integraltransformationen mit Behandlung einiger Anwendungen",
     inhalt:
       "► Komplexe Analysis\n" +
-      "• Komplexe Zahlen und Funktionen, komplexes Ableiten und die Cauchy-Riemann-Gleichungen\n" +
+      "• Komplexe Zahlen\n" +
+      "• Komplexe Funktionen\n" +
+      "• Komplexes Ableiten\n" +
+      "• Cauchy-Riemann-Gleichungen\n" +
       "• Komplexes Integrieren\n" +
       "• Residuensatz und Anwendungen\n" +
-      "• Taylor- und Laurentreihen\n\n" +
+      "• Taylorreihen\n" +
+      "• Laurentreihen\n\n" +
       
       "► Fourier- und Laplace-Analyse\n" +
-      "• Fourier-Reihen und Fourier-Transformationen\n" +
+      "• Fourier-Reihen\n" +
+      "• Fourier-Transformationen\n" +
       "• Laplace-Transformationen",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=188879&lang=de",
   },
