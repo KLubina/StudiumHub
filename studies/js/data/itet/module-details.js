@@ -114,8 +114,10 @@ window.StudiengangModuleDetails = {
       "• 7-Segment-Anzeige ansteuern\n" +
       "• Addierer aufbauen\n" +
       "• Verschiedene Arten von Latches und Flip-Flops erstellen\n\n" +
+      
       "► Praktische Anwendungen\n" +
       "• Kleiner Synthesizer realisieren (selbsterstellte Melodien abspielen)\n\n" +
+      
       "► Messtechnik und Analyse\n" +
       "• Umgang mit modernem Oszilloskop\n" +
       "• Analyse programmierter Schaltungen über digitale und analoge Eingänge",
@@ -180,6 +182,7 @@ window.StudiengangModuleDetails = {
       "• Kennlinie und Leistungscharakteristik eines Solarmoduls\n" +
       "• Leistungsanpassung mit leistungselektronischen Wandlern\n" +
       "• Elektromechanische Energiewandlung\n\n" +
+      
       "Nach der messtechnischen und experimentellen Untersuchung von Komponenten und Teilsystemen wird stets auch die Gesamtfunktion behandelt und analysiert.\n" +
       "Weitere wichtige Ziele sind das Kennenlernen moderner Messgeräte sowie die Vermittlung der Bedeutung einer methodischen Planung und Durchführung experimenteller Untersuchungen und einer klaren abschließenden Dokumentation",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=188187&lang=de",
@@ -273,10 +276,12 @@ window.StudiengangModuleDetails = {
       " - Entwicklung\n" +
       " - Ziele\n" +
       " - elementare Konzepte\n" +
+      
       "• Interaktives Tutorial als Einführung in C++:\n" +
       "  - Variablen\n" +
       "  - Datentypen\n" +
       "  - Verzweigungen und Schleifen\n" +
+      
       "• Einführung in das systematische Lösen von Programmierproblemen mittels schrittweiser Verfeinerung",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193009&lang=de",
   },
