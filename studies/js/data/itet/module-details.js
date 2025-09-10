@@ -84,21 +84,26 @@ window.StudiengangModuleDetails = {
     kurzbeschreibung: "Grundlagen der Digitaltechnik",
     inhalt:
       "► Grundlagen der Digitaltechnik\n" +
-      "• Grundbegriffe analog – digital\n" +
-      "• Zahlensysteme und Codes\n\n" +
+      "• Analog\n" +
+      "• Digital\n" +
+      "• Zahlensysteme\n" +
+      "• Codes\n\n" +
       
       "► Logik und Schaltalgebra\n" +
       "• Logische Verknüpfungen\n" +
       "• Schaltalgebra (Boole'sche Algebra)\n" +
-      "• Schaltungsanalyse und -synthese\n\n" +
+      "• Schaltungsanalyse\n" +
+      "• Schaltungssynthese\n\n" +
       
       "► Bauelemente und Schaltungstechnik\n" +
       "• Transistoren in CMOS-Technik\n" +
-      "• Kombinatorische und sequenzielle Schaltungen\n\n" +
+      "• Kombinatorische Schaltungen\n" + 
+      "• Sequenzielle Schaltungen\n\n" +
       
       "► Endliche Automaten\n\n" +
       
-      "► Speicher und Mikroprozessoren",
+      "► Speicher\n" +
+      "► Mikroprozessoren",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=192958&lang=de",
   },
   "Digitaltechnik Praktikum": {
@@ -135,21 +140,29 @@ window.StudiengangModuleDetails = {
     kurzbeschreibung:
       "Netzwerke und Schaltungen II“ vermittelt Methoden zur Analyse elektrischer Netzwerke im Zeit- und Frequenzbereich sowie den Einsatz von Verstärkern und Operationsverstärkerschaltungen.",
     inhalt:
-      "► Wechselstrom- und Netzwerkanalyse\n" +
+      "► Wechselstromanalyse und Netzwerkanalyse\n" +
       "• Komplexe Wechselstromrechnung\n" +
-      "• Methoden und Sätze der Netzwerkberechnung\n" +
-      "• Maschenstromverfahren, Kontenpotentialverfahren\n" +
+      "• Methoden der Netzwerkberechnung\n" +
+      "• Sätze der Netzwerkberechnung\n" +
+      "• Maschenstromverfahren\n" +
+      "• Kontenpotentialverfahren\n" +
       "• Netzwerke mit nicht sinusförmiger periodischer Erregung\n" +
       "• Fourierzerlegung, Zeit- und Frequenzbereich\n\n" +
       
       "► Dynamik und Transformationen\n" +
       "• Schaltvorgänge in elektrischen Netzwerken\n" +
-      "• Übergangsverhalten, Fouriertransformation, Laplacetransformation\n" +
-      "• Übertragungsfunktion von Netzwerken, Zweitore\n\n" +
+      "• Übergangsverhalten\n" +
+      "• Fouriertransformation\n" +
+      "• Laplacetransformation\n" +
+      "• Übertragungsfunktion von Netzwerken\n" +
+      "• Übertragungsfunktion von Zweitore\n\n" +
       
       "► Verstärkerschaltungen\n" +
-      "• Verstärkergrundschaltungen, Gegentaktverstärker und Differenzverstärker\n" +
-      "• Operationsverstärker, Operationsverstärker-Grundschaltungen\n" +
+      "• Verstärkergrundschaltungen\n" +
+      "• Gegentaktverstärker\n" + 
+      "• Differenzverstärker\n" +
+      "• Operationsverstärker\n" +
+      "• Operationsverstärker-Grundschaltungen\n" +
       "• Schaltungen mit Operationsverstärkern",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=187813&lang=de",
   },
@@ -162,6 +175,7 @@ window.StudiengangModuleDetails = {
       "• Übertragungscharakteristiken\n" +
       "• Resonanzkompensation\n" +
       "• Hochspannungserzeugung\n\n" +
+      
       "► Photovoltaik:\n" +
       "• Kennlinie und Leistungscharakteristik eines Solarmoduls\n" +
       "• Leistungsanpassung mit leistungselektronischen Wandlern\n" +
