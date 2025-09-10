@@ -165,7 +165,7 @@ window.StudiengangModuleDetails = {
     kurzbeschreibung:
       "Durch die vermittelten Grundlagen der Kinematik, Statik und Dynamik sollen Studierende ein Grundverständnis der Materie erhalten, mit dem einfache Problemstellungen der Technischen Mechanik analysiert und gelöst werden können.",
     inhalt:
-      "► Grundlagen Kinematik:\n" +
+      "► Kinematik:\n" +
       "• Lage und Geschwindigkeit materieller Punkte\n" +
       "• Starre Körper, ebene Bewegung\n" +
       "• Kinematik starrer Körper\n" +
@@ -219,9 +219,11 @@ window.StudiengangModuleDetails = {
       "• Klassen\n" +
       "• Referenzen und Zeiger\n\n" +
       
-      "► Datenstrukturen und Anwendungen\n" +
+      "► Datenstrukturen\n" +
       "• Charakteristiken und Anwendung fundamentaler Containertypen\n" +
-      "• Aufbau und Speichermanagement einfacher dynamischer Datentypen\n" +
+      "• Aufbau und Speichermanagement einfacher dynamischer Datentypen\n\n" +
+
+      "► Anwendung\n" +
       "• Motivation und Illustration der Konzepte durch Algorithmen und Anwendungen",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=187917&lang=de",
   },
