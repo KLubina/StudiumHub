@@ -1,36 +1,39 @@
-/* ==== ITET MODULE DETAILS ==== */
-/* Detaillierte Beschreibungen für alle ITET Module basierend auf den Anhangsdateien */
-
 window.StudiengangModuleDetails = {
   "Lineare Algebra": {
     kurzbeschreibung:
       "Ziel ist der sichere Umgang mit grundlegenden Verfahren der linearen Algebra",
-    inhalt:
+   inhalt:
       "► Lineare Gleichungssysteme und Matrizen\n" +
       "• Lineare Gleichungssysteme\n" +
       "• Matrizen\n" +
       "• Gauss-Elimination\n" +
       "• LU- und QR-Zerlegungen\n\n" +
+    
+      "► Determinanten\n" +
+      "• Determinanten\n\n" +
+    
       "► Lineare Räume und Grundlagen der linearen Algebra\n" +
       "• Lineare Räume\n" +
       "• Fundamentalsatz der linearen Algebra – Teil I\n" +
       "• Basiswahl und Basiswechsel\n\n" +
+    
       "► Lineare Abbildungen und Koordinatentransformationen\n" +
       "• Lineare Abbildungen\n" +
       "• Abbildungsmatrix bei Koordinatentransformationen\n\n" +
+    
       "► Geometrische Strukturen in Vektorräumen\n" +
       "• Norm und Skalarprodukt in linearen Räumen\n" +
       "• Gram-Schmidt-Algorithmus\n" +
       "• Projektoren\n\n" +
-      "► Numerische Methoden und Anwendungen\n" +
-      "• Lineare Ausgleichsrechnung\n" +
-      "• Anwendungen\n\n" +
-      "► Determinanten\n\n" +
+    
       "► Spektraltheorie\n" +
       "• Eigenwerte und Eigenvektoren\n" +
       "• Symmetrische Matrizen\n" +
-      "• Singulärwertzerlegung und Fundamentalsatz der linearen Algebra",
-
+      "• Singulärwertzerlegung und Fundamentalsatz der linearen Algebra\n\n" +
+    
+      "► Numerische Methoden und Anwendungen\n" +
+      "• Lineare Ausgleichsrechnung\n" +
+      "• Anwendungen\n",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=192867&lang=de",
   },
   "Analysis 1": {
@@ -39,13 +42,16 @@ window.StudiengangModuleDetails = {
       "► Grundlagen\n" +
       "• Reelle und komplexe Zahlen\n" +
       "• Grenzwerte\n\n" +
+        
       "► Folgen und Reihen\n" +
       "• Folgen\n" +
       "• Reihen\n" +
       "• Potenzreihen\n\n" +
+        
       "► Analysis einer Variablen\n" +
       "• Stetige Abbildungen\n" +
       "• Differential- und Integralrechnung einer Variablen\n\n" +
+        
       "► Einführung in gewöhnliche Differentialgleichungen",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193410&lang=de",
   },
