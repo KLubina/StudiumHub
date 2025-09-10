@@ -3,7 +3,7 @@ window.StudiengangModuleDetails = {
     kurzbeschreibung:
       "Ziel ist der sichere Umgang mit grundlegenden Verfahren der linearen Algebra",
    inhalt:
-      "► Lineare Gleichungssysteme und Matrizen\n" +
+      "► Matrizenrechnung\n" +
       "• Lineare Gleichungssysteme\n" +
       "• Matrizen\n" +
       "• Gauss-Elimination\n" +
@@ -13,17 +13,17 @@ window.StudiengangModuleDetails = {
       "► Determinanten\n" +
       "• Determinanten\n\n" +
     
-      "► Lineare Räume und Grundlagen der linearen Algebra\n" +
+      "► Vektorräume\n" +
       "• Lineare Räume\n" +
       "• Fundamentalsatz der linearen Algebra – Teil I\n" +
       "• Basiswahl\n" + 
       "• Basiswechsel\n\n" +
     
-      "► Lineare Abbildungen und Koordinatentransformationen\n" +
+      "► Transformationen\n" +
       "• Lineare Abbildungen\n" +
       "• Abbildungsmatrix bei Koordinatentransformationen\n\n" +
     
-      "► Geometrische Strukturen in Vektorräumen\n" +
+      "► Geometrie\n" +
       "• Normprodukt in linearen Räumen\n" +
       "• Skalarprodukt in linearen Räumen\n" +
       "• Gram-Schmidt-Algorithmus\n" +
@@ -36,7 +36,7 @@ window.StudiengangModuleDetails = {
       "• Singulärwertzerlegung der linearen Algebra\n" + 
       "• Fundamentalsatz der linearen Algebra\n\n" +
     
-      "► Numerische Methoden und Anwendungen\n" +
+      "► Numerik\n" +
       "• Lineare Ausgleichsrechnung\n" +
       "• Anwendungen\n",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=192867&lang=de",
@@ -49,7 +49,7 @@ window.StudiengangModuleDetails = {
       "• Komplexe Zahlen\n" +
       "• Grenzwerte\n\n" +
         
-      "► Folgen und Reihen\n" +
+      "► Reihentheorie\n" +
       "• Folgen\n" +
       "• Reihen\n" +
       "• Potenzreihen\n\n" +
@@ -77,7 +77,7 @@ window.StudiengangModuleDetails = {
       "• Integration über Untermannigfaltigkeiten\n\n" +
       
       "► Sätze von Gauss\n" + 
-      "► Sätze von Stokes\n\n" +
+      "► Sätze von Stokes\n\n",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=188523&lang=de",
   },
   Digitaltechnik: {
@@ -89,13 +89,13 @@ window.StudiengangModuleDetails = {
       "• Zahlensysteme\n" +
       "• Codes\n\n" +
       
-      "► Logik und Schaltalgebra\n" +
+      "► Schaltalgebra\n" +
       "• Logische Verknüpfungen\n" +
       "• Schaltalgebra (Boole'sche Algebra)\n" +
       "• Schaltungsanalyse\n" +
       "• Schaltungssynthese\n\n" +
       
-      "► Bauelemente und Schaltungstechnik\n" +
+      "► Schaltungstechnik\n" +
       "• Transistoren in CMOS-Technik\n" +
       "• Kombinatorische Schaltungen\n" + 
       "• Sequenzielle Schaltungen\n\n" +
@@ -118,7 +118,7 @@ window.StudiengangModuleDetails = {
       "► Praktische Anwendungen\n" +
       "• Kleiner Synthesizer realisieren (selbsterstellte Melodien abspielen)\n\n" +
       
-      "► Messtechnik und Analyse\n" +
+      "► Messtechnik\n" +
       "• Umgang mit modernem Oszilloskop\n" +
       "• Analyse programmierter Schaltungen über digitale und analoge Eingänge",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193802&lang=de",
@@ -142,7 +142,7 @@ window.StudiengangModuleDetails = {
     kurzbeschreibung:
       "Netzwerke und Schaltungen II“ vermittelt Methoden zur Analyse elektrischer Netzwerke im Zeit- und Frequenzbereich sowie den Einsatz von Verstärkern und Operationsverstärkerschaltungen.",
     inhalt:
-      "► Wechselstromanalyse und Netzwerkanalyse\n" +
+      "► Netzwerkanalyse\n" +
       "• Komplexe Wechselstromrechnung\n" +
       "• Methoden der Netzwerkberechnung\n" +
       "• Sätze der Netzwerkberechnung\n" +
@@ -151,7 +151,7 @@ window.StudiengangModuleDetails = {
       "• Netzwerke mit nicht sinusförmiger periodischer Erregung\n" +
       "• Fourierzerlegung, Zeit- und Frequenzbereich\n\n" +
       
-      "► Dynamik und Transformationen\n" +
+      "► Transformationen\n" +
       "• Schaltvorgänge in elektrischen Netzwerken\n" +
       "• Übergangsverhalten\n" +
       "• Fouriertransformation\n" +
@@ -191,13 +191,13 @@ window.StudiengangModuleDetails = {
     kurzbeschreibung:
       "Durch die vermittelten Grundlagen der Kinematik, Statik und Dynamik sollen Studierende ein Grundverständnis der Materie erhalten, mit dem einfache Problemstellungen der Technischen Mechanik analysiert und gelöst werden können.",
     inhalt:
-      "► Kinematik:\n" +
+      "► Kinematik\n" +
       "• Lage und Geschwindigkeit materieller Punkte\n" +
       "• Starre Körper, ebene Bewegung\n" +
       "• Kinematik starrer Körper\n" +
       "• Kraft, Moment, Leistung\n\n" +
       
-      "► Statik:\n" +
+      "► Statik\n" +
       "• Äquivalenz und Reduktion von Kräftegruppen\n" +
       "• Kräftemittelpunkt und Massenmittelpunkt\n" +
       "• Gleichgewicht\n" +
@@ -206,7 +206,7 @@ window.StudiengangModuleDetails = {
       "• Bindungen, Analytische Statik\n" +
       "• Reibung\n\n" +
       
-      "► Dynamik:\n" +
+      "► Dynamik\n" +
       "• Beschleunigung, Trägheitskräfte\n" +
       "• Prinzip von d'Alembert\n" +
       "• Newtonsches Bewegungsgesetz\n" +
@@ -218,7 +218,7 @@ window.StudiengangModuleDetails = {
     kurzbeschreibung:
       "Einführung in Wellenphänomene und fundamentale Aspekte der Thermodynamik",
     inhalt:
-      "► Schwingungen & Wellen:\n" +
+      "► Wellenlehre:\n" +
       "• Harmonische, gedämpfte & erzwungene Schwingungen\n" +
       "• Ausbreitung, Beugung & Reflektion, und Energie & Intensität diverser Wellenarten\n" +
       "• Welleneffekte: Dopplereffekt, Überlagerung & Interferenz, Stehende Wellen, Resonanz\n\n" +
@@ -238,7 +238,7 @@ window.StudiengangModuleDetails = {
       "• Ausdrücke\n" +
       "• Anweisungen\n\n" +
       
-      "► Programmstruktur und Steuerung\n" +
+      "► Kontrollstrukturen\n" +
       "• Computerarithmetik\n" +
       "• Kontrollanweisungen\n" +
       "• Funktionen\n" +
@@ -267,7 +267,7 @@ window.StudiengangModuleDetails = {
       "• Taylorreihen\n" +
       "• Laurentreihen\n\n" +
       
-      "► Fourier- und Laplace-Analyse\n" +
+      "► Transformationen\n" +
       "• Fourier-Reihen\n" +
       "• Fourier-Transformationen\n" +
       "• Laplace-Transformationen",
