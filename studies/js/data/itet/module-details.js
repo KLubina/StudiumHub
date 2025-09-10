@@ -7,7 +7,8 @@ window.StudiengangModuleDetails = {
       "• Lineare Gleichungssysteme\n" +
       "• Matrizen\n" +
       "• Gauss-Elimination\n" +
-      "• LU- und QR-Zerlegungen\n\n" +
+      "• LU-Zerlegung\n" + 
+      "• QR-Zerlegungen\n\n" +
     
       "► Determinanten\n" +
       "• Determinanten\n\n" +
@@ -15,21 +16,25 @@ window.StudiengangModuleDetails = {
       "► Lineare Räume und Grundlagen der linearen Algebra\n" +
       "• Lineare Räume\n" +
       "• Fundamentalsatz der linearen Algebra – Teil I\n" +
-      "• Basiswahl und Basiswechsel\n\n" +
+      "• Basiswahl\n" + 
+      "• Basiswechsel\n\n" +
     
       "► Lineare Abbildungen und Koordinatentransformationen\n" +
       "• Lineare Abbildungen\n" +
       "• Abbildungsmatrix bei Koordinatentransformationen\n\n" +
     
       "► Geometrische Strukturen in Vektorräumen\n" +
-      "• Norm und Skalarprodukt in linearen Räumen\n" +
+      "• Normprodukt in linearen Räumen\n" +
+      "• Skalarprodukt in linearen Räumen\n" +
       "• Gram-Schmidt-Algorithmus\n" +
       "• Projektoren\n\n" +
     
       "► Spektraltheorie\n" +
-      "• Eigenwerte und Eigenvektoren\n" +
+      "• Eigenwerte\n" +
+      "• Eigenvektoren\n" +
       "• Symmetrische Matrizen\n" +
-      "• Singulärwertzerlegung und Fundamentalsatz der linearen Algebra\n\n" +
+      "• Singulärwertzerlegung der linearen Algebra\n" + 
+      "• Fundamentalsatz der linearen Algebra\n\n" +
     
       "► Numerische Methoden und Anwendungen\n" +
       "• Lineare Ausgleichsrechnung\n" +
@@ -40,7 +45,8 @@ window.StudiengangModuleDetails = {
     kurzbeschreibung: "Einführung in die Grundlagen der Analysis",
     inhalt:
       "► Grundlagen\n" +
-      "• Reelle und komplexe Zahlen\n" +
+      "• Reelle Zahlen\n" +
+      "• Komplexe Zahlen\n" +
       "• Grenzwerte\n\n" +
         
       "► Folgen und Reihen\n" +
@@ -50,7 +56,8 @@ window.StudiengangModuleDetails = {
         
       "► Analysis einer Variablen\n" +
       "• Stetige Abbildungen\n" +
-      "• Differential- und Integralrechnung einer Variablen\n\n" +
+      "• Differentialrechnung einer Variablen\n\n" +
+      "• Integralrechnung einer Variablen\n\n" +
         
       "► Einführung in gewöhnliche Differentialgleichungen",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193410&lang=de",
@@ -61,14 +68,16 @@ window.StudiengangModuleDetails = {
     inhalt:
       "► Differentialrechnung\n" +
       "• Differenzierbare Abbildungen\n" +
-      "• Maxima und Minima\n" +
+      "• Maxima\n" + 
+      "• Minima\n" +
       "• der Satz über implizite Funktionen\n\n" +
       
       "► Integralrechnung\n" +
       "• Mehrfache Integrale\n" +
       "• Integration über Untermannigfaltigkeiten\n\n" +
       
-      "► Sätze von Gauss und Stokes",
+      "► Sätze von Gauss\n" + 
+      "► Sätze von Stokes\n\n" +
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=188523&lang=de",
   },
   Digitaltechnik: {
