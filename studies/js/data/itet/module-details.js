@@ -63,9 +63,11 @@ window.StudiengangModuleDetails = {
       "• Differenzierbare Abbildungen\n" +
       "• Maxima und Minima\n" +
       "• der Satz über implizite Funktionen\n\n" +
+      
       "► Integralrechnung\n" +
       "• Mehrfache Integrale\n" +
       "• Integration über Untermannigfaltigkeiten\n\n" +
+      
       "► Sätze von Gauss und Stokes",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=188523&lang=de",
   },
@@ -75,14 +77,18 @@ window.StudiengangModuleDetails = {
       "► Grundlagen der Digitaltechnik\n" +
       "• Grundbegriffe analog – digital\n" +
       "• Zahlensysteme und Codes\n\n" +
+      
       "► Logik und Schaltalgebra\n" +
       "• Logische Verknüpfungen\n" +
       "• Schaltalgebra (Boole'sche Algebra)\n" +
       "• Schaltungsanalyse und -synthese\n\n" +
+      
       "► Bauelemente und Schaltungstechnik\n" +
       "• Transistoren in CMOS-Technik\n" +
       "• Kombinatorische und sequenzielle Schaltungen\n\n" +
+      
       "► Endliche Automaten\n\n" +
+      
       "► Speicher und Mikroprozessoren",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=192958&lang=de",
   },
@@ -108,8 +114,11 @@ window.StudiengangModuleDetails = {
       "• Elektrostatisches Feld\n" +
       "• Stationäres elektrisches Strömungsfeld\n" +
       "• Stromleitungsmechanismen\n\n" +
+      
       "► Einfache elektrische Netzwerke\n\n" +
+      
       "► Stationäres Magnetfeld\n\n" +
+      
       "► Zeitlich veränderliches elektromagnetisches Feld",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=192802&semkez=2025W&ansicht=LEHRVERANSTALTUNGEN&lang=de",
   },
@@ -123,10 +132,12 @@ window.StudiengangModuleDetails = {
       "• Maschenstromverfahren, Kontenpotentialverfahren\n" +
       "• Netzwerke mit nicht sinusförmiger periodischer Erregung\n" +
       "• Fourierzerlegung, Zeit- und Frequenzbereich\n\n" +
+      
       "► Dynamik und Transformationen\n" +
       "• Schaltvorgänge in elektrischen Netzwerken\n" +
       "• Übergangsverhalten, Fouriertransformation, Laplacetransformation\n" +
       "• Übertragungsfunktion von Netzwerken, Zweitore\n\n" +
+      
       "► Verstärkerschaltungen\n" +
       "• Verstärkergrundschaltungen, Gegentaktverstärker und Differenzverstärker\n" +
       "• Operationsverstärker, Operationsverstärker-Grundschaltungen\n" +
@@ -159,6 +170,7 @@ window.StudiengangModuleDetails = {
       "• Starre Körper, ebene Bewegung\n" +
       "• Kinematik starrer Körper\n" +
       "• Kraft, Moment, Leistung\n\n" +
+      
       "► Statik:\n" +
       "• Äquivalenz und Reduktion von Kräftegruppen\n" +
       "• Kräftemittelpunkt und Massenmittelpunkt\n" +
@@ -167,6 +179,7 @@ window.StudiengangModuleDetails = {
       "• Hauptsatz der Statik\n" +
       "• Bindungen, Analytische Statik\n" +
       "• Reibung\n\n" +
+      
       "► Dynamik:\n" +
       "• Beschleunigung, Trägheitskräfte\n" +
       "• Prinzip von d'Alembert\n" +
@@ -183,6 +196,7 @@ window.StudiengangModuleDetails = {
       "• Harmonische, gedämpfte & erzwungene Schwingungen\n" +
       "• Ausbreitung, Beugung & Reflektion, und Energie & Intensität diverser Wellenarten\n" +
       "• Welleneffekte: Dopplereffekt, Überlagerung & Interferenz, Stehende Wellen, Resonanz\n\n" +
+      
       "► Thermodynamik:\n" +
       "• Kinetische Gastheorie für das ideale Gas\n" +
       "• Hauptsätze der Thermodynamik: Energieerhaltung, Kreisprozesse, Entropie\n" +
@@ -197,12 +211,14 @@ window.StudiengangModuleDetails = {
       "• Fundamentale Datentypen\n" +
       "• Ausdrücke\n" +
       "• Anweisungen\n\n" +
+      
       "► Programmstruktur und Steuerung\n" +
       "• Computerarithmetik\n" +
       "• Kontrollanweisungen\n" +
       "• Funktionen\n" +
       "• Klassen\n" +
       "• Referenzen und Zeiger\n\n" +
+      
       "► Datenstrukturen und Anwendungen\n" +
       "• Charakteristiken und Anwendung fundamentaler Containertypen\n" +
       "• Aufbau und Speichermanagement einfacher dynamischer Datentypen\n" +
@@ -218,6 +234,7 @@ window.StudiengangModuleDetails = {
       "• Komplexes Integrieren\n" +
       "• Residuensatz und Anwendungen\n" +
       "• Taylor- und Laurentreihen\n\n" +
+      
       "► Fourier- und Laplace-Analyse\n" +
       "• Fourier-Reihen und Fourier-Transformationen\n" +
       "• Laplace-Transformationen",
