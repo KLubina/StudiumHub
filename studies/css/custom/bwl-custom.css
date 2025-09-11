@@ -1,0 +1,30 @@
+/* ==== BWL CUSTOM CSS ==== */
+/* BWL HSG spezifische Anpassungen */
+
+/* Assessment Jahr Styling */
+[data-studiengang="bwl"] .jahr:first-child .jahr-titel {
+    background: linear-gradient(135deg, var(--color-kernfach), var(--color-methoden));
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Hauptstudium Bereich */
+[data-studiengang="bwl"] .bereich-titel {
+    font-weight: bold;
+    color: var(--color-kernfach);
+    border-bottom: 2px solid var(--color-grundlagen);
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+/* Legende positionierung */
+[data-studiengang="bwl"] .farben-legende {
+    margin-top: 415px;
+}
+
+/* Module mit vielen KP */
+[data-studiengang="bwl"] .modul.large-module {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+}

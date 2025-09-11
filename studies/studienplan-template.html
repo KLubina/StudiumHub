@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="de">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id="page-title">Studienplan</title>
 
-    <!-- Base CSS -->
+    <!-- Base CSS (Layout-Grundgerüst) -->
     <link rel="stylesheet" href="css/studienplan-base.css">
-
-    <!-- Theme-specific CSS (wird dynamisch geladen) -->
-    <link rel="stylesheet" id="theme-css" href="">
-
-    <!-- Studiengang-spezifische CSS (optional) -->
+    
+    <!-- NEU: Theme CSS (Gemeinsame Styles) -->
+    <link rel="stylesheet" href="css/themes/theme-core.css">
+    <link rel="stylesheet" href="css/themes/theme-variables.css">
+    <link rel="stylesheet" href="css/themes/theme-colors.css">
+    
+    <!-- Custom CSS (Studiengang-spezifische Features) -->
     <link rel="stylesheet" id="custom-css" href="">
 </head>
 
-<body>
+<body data-studiengang="">
     <!-- Zurück zum Hub Button -->
     <div class="hub-button-container">
         <a href="../index.html" class="hub-button">← Zurück zum Hub</a>
@@ -39,36 +40,34 @@
         </div>
     </div>
 
-    <!-- Tooltip-Container (für Studiengänge mit Tooltips) -->
+    <!-- Tooltip-Container -->
     <div id="tooltip" class="tooltip-container" style="display: none;"></div>
 
     <!-- Base JavaScript -->
-    <!-- KISS: Loader liegt in js/ -->
     <script src="js/studienplan-base-loader.js"></script>
-
-    <!-- Modularer Config Loader -->
     <script src="js/modular-config-loader.js"></script>
 
-    <!-- In studienplan-template.html, erweitere den Script-Bereich: -->
-
     <script>
-        // URL Parameter auslesen um Studiengang zu bestimmen
+        // URL Parameter auslesen
         const urlParams = new URLSearchParams(window.location.search);
         const studiengang = urlParams.get('studiengang') || 'cs';
 
-        console.log(`🎯 Studiengang aus URL: ${studiengang}`);
+        console.log(`🎯 Studiengang: ${studiengang}`);
 
-        // Theme CSS laden
-        const themeCSS = document.getElementById('theme-css');
-        themeCSS.href = `css/themes/${studiengang}-theme.css`;
+        // NEU: Data-Attribut setzen für CSS-Variablen
+        document.body.setAttribute('data-studiengang', studiengang);
 
-        // Optional: Custom CSS laden
+        // Custom CSS laden
         const customCSS = document.getElementById('custom-css');
         customCSS.href = `css/custom/${studiengang}-custom.css`;
+        
+        // Error handling falls Datei nicht existiert
+        customCSS.onerror = () => {
+            console.log(`Keine custom CSS für ${studiengang}`);
+        };
 
-        // Funktion zum Laden von Extension-Modulen
+        // Extension-Module laden (wie vorher)
         async function loadExtensionModules(studiengang) {
-            // Liste der Extension-Module die geladen werden sollen
             const extensionModules = [
                 'extensions-data',
                 'extensions-kp-counter',
@@ -76,7 +75,6 @@
                 'extensions-utils'
             ];
 
-            // Prüfe ob Extensions existieren für diesen Studiengang
             const hasExtensions = ['itet', 'cse', 'rig'].includes(studiengang);
 
             if (hasExtensions) {
@@ -85,45 +83,39 @@
                 for (const module of extensionModules) {
                     const script = document.createElement('script');
                     script.src = `js/configs/${studiengang}/${module}.js`;
-                    script.onerror = () => {
-                        console.log(`⏭️ ${module}.js nicht gefunden - übersprungen`);
-                    };
-                    script.onload = () => {
-                        console.log(`✅ ${module}.js geladen`);
-                    };
-                    document.head.appendChild(script);
-
-                    // Warte bis Script geladen ist
+                    
                     await new Promise((resolve) => {
-                        script.onload = resolve;
-                        script.onerror = resolve; // Auch bei Fehler weitermachen
-                        setTimeout(resolve, 100); // Timeout als Fallback
+                        script.onload = () => {
+                            console.log(`✅ ${module}.js geladen`);
+                            resolve();
+                        };
+                        script.onerror = () => {
+                            console.log(`⏭️ ${module}.js nicht gefunden`);
+                            resolve();
+                        };
+                        document.head.appendChild(script);
+                        setTimeout(resolve, 100);
                     });
                 }
             }
         }
 
-        // Warten bis DOM geladen ist
+        // DOM Ready
         document.addEventListener('DOMContentLoaded', async function () {
-            console.log('📄 DOM geladen, starte Config-Loading...');
+            console.log('📄 DOM geladen');
 
-            // Erst Extension-Module laden
             await loadExtensionModules(studiengang);
 
-            // Dann normale Config laden
             if (typeof window.loadStudiengangConfig === 'function') {
                 window.loadStudiengangConfig(studiengang).then(config => {
                     if (config) {
-                        console.log(`✅ Konfiguration für ${studiengang} erfolgreich geladen`);
-                    } else {
-                        console.error(`❌ Konfiguration für ${studiengang} konnte nicht geladen werden`);
+                        console.log(`✅ Konfiguration für ${studiengang} geladen`);
                     }
                 }).catch(error => {
-                    console.error(`💥 Fehler beim Laden der Konfiguration für ${studiengang}:`, error);
+                    console.error(`❌ Fehler:`, error);
                 });
             }
         });
     </script>
 </body>
-
 </html>
