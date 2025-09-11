@@ -1,49 +1,56 @@
 window.StudiengangModuleDetails = {
-  // 1. Jahr, 1. Semester
+  // #region 1. Semester
   "Lineare Algebra": {
     kurzbeschreibung:
       "Ziel ist der sichere Umgang mit grundlegenden Verfahren der linearen Algebra",
     inhalt:
-      "► Lineare Gleichungssysteme und Matrizen\n" +
+      "► Matrizenrechnung\n" +
       "• Lineare Gleichungssysteme\n" +
       "• Matrizen\n" +
       "• Gauss-Elimination\n" +
-      "• LU- und QR-Zerlegungen\n\n" +
-      "► Lineare Räume und Grundlagen der linearen Algebra\n" +
+      "• LU-Zerlegung\n" +
+      "• QR-Zerlegungen\n\n" +
+      "► Determinanten\n" +
+      "• Determinanten\n\n" +
+      "► Vektorräume\n" +
       "• Lineare Räume\n" +
       "• Fundamentalsatz der linearen Algebra – Teil I\n" +
-      "• Basiswahl und Basiswechsel\n\n" +
-      "► Lineare Abbildungen und Koordinatentransformationen\n" +
+      "• Basiswahl\n" +
+      "• Basiswechsel\n\n" +
+      "► Transformationen\n" +
       "• Lineare Abbildungen\n" +
       "• Abbildungsmatrix bei Koordinatentransformationen\n\n" +
-      "► Geometrische Strukturen in Vektorräumen\n" +
-      "• Norm und Skalarprodukt in linearen Räumen\n" +
+      "► Geometrie\n" +
+      "• Normprodukt in linearen Räumen\n" +
+      "• Skalarprodukt in linearen Räumen\n" +
       "• Gram-Schmidt-Algorithmus\n" +
       "• Projektoren\n\n" +
-      "► Numerische Methoden und Anwendungen\n" +
-      "• Lineare Ausgleichsrechnung\n" +
-      "• Anwendungen\n\n" +
-      "► Determinanten\n\n" +
       "► Spektraltheorie\n" +
-      "• Eigenwerte und Eigenvektoren\n" +
+      "• Eigenwerte\n" +
+      "• Eigenvektoren\n" +
       "• Symmetrische Matrizen\n" +
-      "• Singulärwertzerlegung und Fundamentalsatz der linearen Algebra",
-
+      "• Singulärwertzerlegung der linearen Algebra\n" +
+      "• Fundamentalsatz der linearen Algebra\n\n" +
+      "► Numerik\n" +
+      "• Lineare Ausgleichsrechnung\n" +
+      "• Anwendungen\n",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=192867&lang=de",
   },
   "Analysis 1": {
     kurzbeschreibung: "Einführung in die Grundlagen der Analysis",
     inhalt:
       "► Grundlagen\n" +
-      "• Reelle und komplexe Zahlen\n" +
+      "• Reelle Zahlen\n" +
+      "• Komplexe Zahlen\n" +
       "• Grenzwerte\n\n" +
-      "► Folgen und Reihen\n" +
+      "► Reihentheorie\n" +
       "• Folgen\n" +
       "• Reihen\n" +
       "• Potenzreihen\n\n" +
       "► Analysis einer Variablen\n" +
       "• Stetige Abbildungen\n" +
-      "• Differential- und Integralrechnung einer Variablen\n\n" +
+      "• Differentialrechnung einer Variablen\n\n" +
+      "• Integralrechnung einer Variablen\n\n" +
       "► Einführung in gewöhnliche Differentialgleichungen",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193410&lang=de",
   },
@@ -52,17 +59,22 @@ window.StudiengangModuleDetails = {
     kurzbeschreibung: "Grundlagen der Digitaltechnik",
     inhalt:
       "► Grundlagen der Digitaltechnik\n" +
-      "• Grundbegriffe analog – digital\n" +
-      "• Zahlensysteme und Codes\n\n" +
-      "► Logik und Schaltalgebra\n" +
+      "• Analog\n" +
+      "• Digital\n" +
+      "• Zahlensysteme\n" +
+      "• Codes\n\n" +
+      "► Schaltalgebra\n" +
       "• Logische Verknüpfungen\n" +
       "• Schaltalgebra (Boole'sche Algebra)\n" +
-      "• Schaltungsanalyse und -synthese\n\n" +
-      "► Bauelemente und Schaltungstechnik\n" +
+      "• Schaltungsanalyse\n" +
+      "• Schaltungssynthese\n\n" +
+      "► Schaltungstechnik\n" +
       "• Transistoren in CMOS-Technik\n" +
-      "• Kombinatorische und sequenzielle Schaltungen\n\n" +
+      "• Kombinatorische Schaltungen\n" +
+      "• Sequenzielle Schaltungen\n\n" +
       "► Endliche Automaten\n\n" +
-      "► Speicher und Mikroprozessoren",
+      "► Speicher\n" +
+      "► Mikroprozessoren",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=192958&lang=de",
   },
   "Digitaltechnik Praktikum": {
@@ -75,7 +87,7 @@ window.StudiengangModuleDetails = {
       "• Verschiedene Arten von Latches und Flip-Flops erstellen\n\n" +
       "► Praktische Anwendungen\n" +
       "• Kleiner Synthesizer realisieren (selbsterstellte Melodien abspielen)\n\n" +
-      "► Messtechnik und Analyse\n" +
+      "► Messtechnik\n" +
       "• Umgang mit modernem Oszilloskop\n" +
       "• Analyse programmierter Schaltungen über digitale und analoge Eingänge",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193802&lang=de",
@@ -92,16 +104,16 @@ window.StudiengangModuleDetails = {
       "► Zeitlich veränderliches elektromagnetisches Feld",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=192802&semkez=2025W&ansicht=LEHRVERANSTALTUNGEN&lang=de",
   },
-    "Technische Mechanik": {
+  "Technische Mechanik": {
     kurzbeschreibung:
       "Durch die vermittelten Grundlagen der Kinematik, Statik und Dynamik sollen Studierende ein Grundverständnis der Materie erhalten, mit dem einfache Problemstellungen der Technischen Mechanik analysiert und gelöst werden können.",
     inhalt:
-      "► Grundlagen Kinematik:\n" +
+      "► Kinematik\n" +
       "• Lage und Geschwindigkeit materieller Punkte\n" +
       "• Starre Körper, ebene Bewegung\n" +
       "• Kinematik starrer Körper\n" +
       "• Kraft, Moment, Leistung\n\n" +
-      "► Statik:\n" +
+      "► Statik\n" +
       "• Äquivalenz und Reduktion von Kräftegruppen\n" +
       "• Kräftemittelpunkt und Massenmittelpunkt\n" +
       "• Gleichgewicht\n" +
@@ -109,7 +121,7 @@ window.StudiengangModuleDetails = {
       "• Hauptsatz der Statik\n" +
       "• Bindungen, Analytische Statik\n" +
       "• Reibung\n\n" +
-      "► Dynamik:\n" +
+      "► Dynamik\n" +
       "• Beschleunigung, Trägheitskräfte\n" +
       "• Prinzip von d'Alembert\n" +
       "• Newtonsches Bewegungsgesetz\n" +
@@ -117,7 +129,7 @@ window.StudiengangModuleDetails = {
       "• Drall bei ebenen Bewegungen",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193886&lang=de",
   },
-    "Vorkurs Informatik": {
+  "Vorkurs Informatik": {
     kurzbeschreibung:
       "Einführung in die Grundlagen der Programmierung mit C++.",
     inhalt:
@@ -132,38 +144,50 @@ window.StudiengangModuleDetails = {
       "• Einführung in das systematische Lösen von Programmierproblemen mittels schrittweiser Verfeinerung",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193009&lang=de",
   },
-  // 1. Jahr, 2. Semester
+  // #endregion
+
+  // #region 2. Semester
   "Analysis 2": {
     kurzbeschreibung:
       "Einführung in die mehrdimensionale Differential- und Integralrechnung",
     inhalt:
       "► Differentialrechnung\n" +
       "• Differenzierbare Abbildungen\n" +
-      "• Maxima und Minima\n" +
+      "• Maxima\n" +
+      "• Minima\n" +
       "• der Satz über implizite Funktionen\n\n" +
       "► Integralrechnung\n" +
       "• Mehrfache Integrale\n" +
       "• Integration über Untermannigfaltigkeiten\n\n" +
-      "► Sätze von Gauss und Stokes",
+      "► Sätze von Gauss\n" +
+      "► Sätze von Stokes\n\n",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=188523&lang=de",
-  },  
+  },
   "Netzwerke und Schaltungen II": {
     kurzbeschreibung:
       "Netzwerke und Schaltungen II“ vermittelt Methoden zur Analyse elektrischer Netzwerke im Zeit- und Frequenzbereich sowie den Einsatz von Verstärkern und Operationsverstärkerschaltungen.",
     inhalt:
-      "► Wechselstrom- und Netzwerkanalyse\n" +
+      "► Netzwerkanalyse\n" +
       "• Komplexe Wechselstromrechnung\n" +
-      "• Methoden und Sätze der Netzwerkberechnung\n" +
-      "• Maschenstromverfahren, Kontenpotentialverfahren\n" +
+      "• Methoden der Netzwerkberechnung\n" +
+      "• Sätze der Netzwerkberechnung\n" +
+      "• Maschenstromverfahren\n" +
+      "• Kontenpotentialverfahren\n" +
       "• Netzwerke mit nicht sinusförmiger periodischer Erregung\n" +
       "• Fourierzerlegung, Zeit- und Frequenzbereich\n\n" +
-      "► Dynamik und Transformationen\n" +
+      "► Transformationen\n" +
       "• Schaltvorgänge in elektrischen Netzwerken\n" +
-      "• Übergangsverhalten, Fouriertransformation, Laplacetransformation\n" +
-      "• Übertragungsfunktion von Netzwerken, Zweitore\n\n" +
+      "• Übergangsverhalten\n" +
+      "• Fouriertransformation\n" +
+      "• Laplacetransformation\n" +
+      "• Übertragungsfunktion von Netzwerken\n" +
+      "• Übertragungsfunktion von Zweitore\n\n" +
       "► Verstärkerschaltungen\n" +
-      "• Verstärkergrundschaltungen, Gegentaktverstärker und Differenzverstärker\n" +
-      "• Operationsverstärker, Operationsverstärker-Grundschaltungen\n" +
+      "• Verstärkergrundschaltungen\n" +
+      "• Gegentaktverstärker\n" +
+      "• Differenzverstärker\n" +
+      "• Operationsverstärker\n" +
+      "• Operationsverstärker-Grundschaltungen\n" +
       "• Schaltungen mit Operationsverstärkern",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=187813&lang=de",
   },
@@ -188,7 +212,7 @@ window.StudiengangModuleDetails = {
     kurzbeschreibung:
       "Einführung in Wellenphänomene und fundamentale Aspekte der Thermodynamik",
     inhalt:
-      "► Schwingungen & Wellen:\n" +
+      "► Wellenlehre:\n" +
       "• Harmonische, gedämpfte & erzwungene Schwingungen\n" +
       "• Ausbreitung, Beugung & Reflektion, und Energie & Intensität diverser Wellenarten\n" +
       "• Welleneffekte: Dopplereffekt, Überlagerung & Interferenz, Stehende Wellen, Resonanz\n\n" +
@@ -206,15 +230,16 @@ window.StudiengangModuleDetails = {
       "• Fundamentale Datentypen\n" +
       "• Ausdrücke\n" +
       "• Anweisungen\n\n" +
-      "► Programmstruktur und Steuerung\n" +
+      "► Kontrollstrukturen\n" +
       "• Computerarithmetik\n" +
       "• Kontrollanweisungen\n" +
       "• Funktionen\n" +
       "• Klassen\n" +
       "• Referenzen und Zeiger\n\n" +
-      "► Datenstrukturen und Anwendungen\n" +
+      "► Datenstrukturen\n" +
       "• Charakteristiken und Anwendung fundamentaler Containertypen\n" +
-      "• Aufbau und Speichermanagement einfacher dynamischer Datentypen\n" +
+      "• Aufbau und Speichermanagement einfacher dynamischer Datentypen\n\n" +
+      "► Anwendung\n" +
       "• Motivation und Illustration der Konzepte durch Algorithmen und Anwendungen",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=187917&lang=de",
   },
@@ -223,35 +248,47 @@ window.StudiengangModuleDetails = {
       "Grundlagen der komplexen Analysis in Theorie & Anwendung und Einführung in Integraltransformationen mit Behandlung einiger Anwendungen",
     inhalt:
       "► Komplexe Analysis\n" +
-      "• Komplexe Zahlen und Funktionen, komplexes Ableiten und die Cauchy-Riemann-Gleichungen\n" +
+      "• Komplexe Zahlen\n" +
+      "• Komplexe Funktionen\n" +
+      "• Komplexes Ableiten\n" +
+      "• Cauchy-Riemann-Gleichungen\n" +
       "• Komplexes Integrieren\n" +
       "• Residuensatz und Anwendungen\n" +
-      "• Taylor- und Laurentreihen\n\n" +
-      "► Fourier- und Laplace-Analyse\n" +
-      "• Fourier-Reihen und Fourier-Transformationen\n" +
+      "• Taylorreihen\n" +
+      "• Laurentreihen\n\n" +
+      "► Transformationen\n" +
+      "• Fourier-Reihen\n" +
+      "• Fourier-Transformationen\n" +
       "• Laplace-Transformationen",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=188879&lang=de",
   },
-// 2. Jahr, 1. Semester
+  // #endregion
+
+  // #region 3. Semester
   "Analysis 3": {
     kurzbeschreibung:
       "In this lecture we treat problems in applied analysis. The aim of this class is to provide students with a general overview of first and second order PDEs, and teach them how to solve some of these equations using characteristics and/or separation of variables",
     inhalt:
-      "1.) General introduction to PDEs and their classification:\n" +
-      "• Linear, quasilinear, semilinear, nonlinear\n" +
-      "• Elliptic, parabolic, hyperbolic\n\n" +
-      "2.) Quasilinear first order PDEs:\n" +
+      "► General introduction to PDEs and their classification\n" +
+      "• Linear\n" +
+      "• Quasilinear\n" +
+      "• Semilinear\n" +
+      "• Nonlinear\n" +
+      "• Elliptic\n" +
+      "• Parabolic\n" +
+      "• Hyperbolic\n\n" +
+      "► Quasilinear first order PDEs\n" +
       "• Solution with the method of characteristics\n" +
       "• Conservation laws\n\n" +
-      "3.) Hyperbolic PDEs:\n" +
+      "► Hyperbolic PDEs\n" +
       "• Wave equation\n" +
       "• d'Alembert formula in (1+1)-dimensions\n" +
       "• Method of separation of variables\n\n" +
-      "4.) Parabolic PDEs:\n" +
+      "► Parabolic PDEs\n" +
       "• Heat equation\n" +
       "• Maximum principle\n" +
       "• Method of separation of variables\n\n" +
-      "5.) Elliptic PDEs:\n" +
+      "► Elliptic PDEs\n" +
       "• Laplace equation\n" +
       "• Maximum principle\n" +
       "• Method of separation of variables\n" +
@@ -262,59 +299,84 @@ window.StudiengangModuleDetails = {
     kurzbeschreibung:
       "The goal of the Physics II class is an introduction to quantum mechanics. After completing this course, students will understand the basics of quantum mechanics and be able to apply mathematical methods for solving various problems including atoms, molecules, and solids",
     inhalt:
+      "► Grundlagen der Quantenmechanik\n" +
       "• Wave mechanics: the old quantum theory\n" +
-      "• Postulates and formalism of Quantum Mechanics\n" +
+      "• Postulates and formalism of Quantum Mechanics\n\n" +
+      "► Einfache Quantensysteme\n" +
       "• First application: the quantum well and the harmonic Oscillator\n" +
-      "• QM in three dimension: the Hydrogen atom\n" +
+      "• QM in three dimension: the Hydrogen atom\n\n" +
+      "► Mehrteilchensysteme\n" +
       "• Identical particles: Pauli's principle\n" +
-      "• Crystalline Systems and band structures\n" +
-      "• Quantum statistics\n" +
+      "• Quantum statistics\n\n" +
+      "► Festkörperphysik\n" +
+      "• Crystalline Systems and band structures\n\n" +
+      "► Fortgeschrittene Konzepte\n" +
       "• Approximation Methods\n" +
-      "• Applications in Engineering\n" +
-      "• Entanglement and superposition",
+      "• Entanglement and superposition\n\n" +
+      "► Anwendungen\n" +
+      "• Applications in Engineering",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193671&lang=de",
   },
   "Signal- und Systemtheorie I": {
     kurzbeschreibung:
       "Einführung in die mathematische Signaltheorie und Systemtheorie",
     inhalt:
-      "Signaltheorie und Systemtheorie (zeitkontinuierlich und zeitdiskret):\n" +
+      "► Kontinuierliche Signaltheorie\n" +
       "• Signalanalyse im Zeit- und Frequenzbereich\n" +
       "• Signalräume, Hilberträume\n" +
-      "• Verallgemeinerte Funktionen\n" +
-      "• Lineare zeitinvariante Systeme\n" +
+      "• Verallgemeinerte Funktionen\n\n" +
+      "► Kontinuierliche Systemtheorie\n" +
+      "• Lineare zeitinvariante Systeme\n\n" +
+      "► Zeitdiskrete Signalverarbeitung\n" +
       "• Abtasttheoreme\n" +
       "• Zeitdiskrete Signale und Systeme\n" +
-      "• Digitale Filterstrukturen\n" +
+      "• Digitale Filterstrukturen\n\n" +
+      "► Digitale Transformationen\n" +
       "• Diskrete Fourier-Transformation (DFT)\n" +
       "• Endlich-dimensionale Signale und Systeme\n" +
       "• Schnelle Fouriertransformation (FFT)",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193407&lang=de",
   },
-
   "Diskrete Mathematik": {
     kurzbeschreibung:
       "Einführung in die Grundlagen der diskreten Mathematik. Die Grundlagen werden mit Anwendungen aus der Informationstechnologie veranschaulicht",
     inhalt:
-      "Die Lerneinheit behandelt die folgenden Gebiete der diskreten Mathematik:\n" +
-      "• Mengenlehre\n" +
-      "• Kombinatorik: Elementare Zählformen, Zählprinzipien, und spezielle Zählprobleme\n" +
-      "• Graphentheorie: Eigenschaften, Arten (Netzwerke, Bäume, ...), Einfärbung, Flüsse & Schnitte, und Matchings\n" +
-      "• Algebra: Elementare Zahlentheorie (Teilbarkeit, Kongruenz, ...), Einführung in die Kryptographie, Gruppen, Körper, und Ringe",
+      "► Mengenlehre\n" +
+      "► Kombinatorik \n" +
+      "• Elementare Zählformen \n" +
+      "• Zählprinzipien \n" +
+      "• spezielle Zählprobleme\n" +
+      "► Graphentheorie\n" +
+      "• Eigenschaften, \n" +
+      "• Arten (Netzwerke, Bäume, ...), \n" +
+      "• Einfärbung, \n" +
+      "• Flüsse, \n" +
+      "• Schnitte, \n" +
+      "• Matchings\n" +
+      "► Algebra: \n" +
+      "• Elementare Zahlentheorie (Teilbarkeit, Kongruenz, ...), \n" +
+      "• Einführung in die Kryptographie, \n" +
+      "• Gruppen, \n" +
+      "• Körper, \n" +
+      "• Ringe",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=194088&lang=de",
   },
   "Halbleiter-Schaltungstechnik": {
     kurzbeschreibung:
       "Einführungsvorlesung in die Halbleiter-Schaltungstechnik. Das Hauptziel dieser Vorlesung ist es, den Studenten das Konzept des aktiven Bauteils näher zu bringen.",
     inhalt:
+      "► Transistor-Grundlagen\n" +
       "• Rekapitulation des Transistors als Bauteil (bipolar und MOSFET)\n" +
       "• Gross- und Kleinsignalverhalten, Arbeitspunkt und Arbeitspunkteinstellung\n" +
-      "• Eintransistorverstärker, einfache Rückkopplung zur Arbeitspunkteinstellung\n" +
+      "• Eintransistorverstärker, einfache Rückkopplung zur Arbeitspunkteinstellung\n\n" +
+      "► Frequenzverhalten\n" +
       "• Frequenzgang von einfachen Verstärkern\n" +
-      "• Methoden zur Bandbreitenerweiterung\n" +
+      "• Methoden zur Bandbreitenerweiterung\n\n" +
+      "► Spezielle Verstärkertypen\n" +
       "• Differenzverstärker, Operationsverstärker, Verstärker mit variabler Bandbreite\n" +
       "• Instrumentierungsverstärker: Gleichtaktunterdrückung, Rauschen, Störsignale, Chopper-Technik\n" +
-      "• Transimpedanzverstärker\n" +
+      "• Transimpedanzverstärker\n\n" +
+      "► Aktive Filter\n" +
       "• Aktive Filter: einfache aktive Filter, Filter mit biquadratischen Stufen\n" +
       "• Filter höherer Ordnung, Realisierung mit biquadratischen Stufen und mit Leiterstruktur\n" +
       "• Switched-Cap-Filter",
@@ -324,32 +386,40 @@ window.StudiengangModuleDetails = {
     kurzbeschreibung:
       "Praktikum mit grundlegenden Versuchsschaltungen auf der Basis von Transistoren und Operationsverstärkern",
     inhalt:
-      "Im Praktikum werden folgende Themen und Schaltungen näher behandelt:\n" +
+      "► Bauelementcharakterisierung\n" +
       "• Charakterisierung einer realen Kapazität inklusive Nichtidealitäten\n" +
+      "• Charakterisierung eines realen Verstärkers mit Nicht-idealitäten\n\n" +
+      "► Verstärkerschaltungen\n" +
       "• Common-Emitter Transistorverstärker mit Widerstandsgegenkopplung\n" +
-      "• Charakterisierung eines realen Verstärkers mit Nicht-idealitäten\n" +
-      "• Verstärkergrundschaltungen\n" +
+      "• Verstärkergrundschaltungen\n\n" +
+      "► Spezielle Anwendungen\n" +
       "• Bandpassfilter mit Verstärker, Widerständen und Kapazitäten\n" +
       "• A/D und D/A-Wandler\n" +
       "• Oszillator und Funktionsgenerator auf Verstärkerbasis\n\n" +
-      "Messmethoden:\n" +
+      "► Messmethoden\n" +
       "• DC- und AC-Analyse\n" +
       "• Messungen im Zeit- und Frequenzbereich\n" +
       "• Impedanzmessungen\n" +
       "• Messung der Transfercharakteristik",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=192771&lang=de",
   },
-  // 2. Jahr, 2. Semester
-    "Signal- und Systemtheorie II": {
+  // #endregion
+
+  // #region 4. Semester
+  "Signal- und Systemtheorie II": {
     kurzbeschreibung: "Einführung in die Grundkonzepte der Systemtheorie",
     inhalt:
+      "► Systemmodellierung\n" +
       "• Modellierung und Typenbezeichnung von dynamischen Systemen\n" +
-      "• Modellierung von linearen, zeitinvarianten Systemen durch Zustandsgleichungen\n" +
+      "• Modellierung von linearen, zeitinvarianten Systemen durch Zustandsgleichungen\n\n" +
+      "► Zustandsraumanalyse\n" +
       "• Lösung von Zustandsgleichungen durch Zeitbereich- und Laplacebereichmethoden\n" +
-      "• Stabilitäts-, Steuerbarkeits- und Beobachtbarkeitsanalyse\n" +
-      "• Beschreibung im Frequenzbereich, Bode- und Nyquistdiagramm\n" +
+      "• Stabilitäts-, Steuerbarkeits- und Beobachtbarkeitsanalyse\n\n" +
+      "► Frequenzbereichsanalyse\n" +
+      "• Beschreibung im Frequenzbereich, Bode- und Nyquistdiagramm\n\n" +
+      "► Zeitdiskrete Systeme\n" +
       "• Abgetastete und zeitdiskrete Systeme\n\n" +
-      "Weiterführende Themen:\n" +
+      "► Weiterführende Themen\n" +
       "• Nichtlineare Systeme\n" +
       "• Chaos\n" +
       "• Diskrete Ereignissysteme\n" +
@@ -361,28 +431,28 @@ window.StudiengangModuleDetails = {
       "Der Kurs behandelt die Grundlagen des Entwurfs und der Analyse von Algorithmen und Datenstrukturen, einschliesslich Graphentheorie und -problemen. Er bietet eine Einführung in generisches, sowie paralleles, Programmieren. Umsetzung in C++.",
     inhalt:
       "• Asymptotische Laufzeit (algorithmische Komplexität)\n" +
-      "• Fundamentale algorithmische Probleme: \n" +
+      "• Fundamentale algorithmische Probleme\n" +
       " - Suchen\n" +
       " - Sortieren\n" +
       " - kürzeste Wege\n" +
       " - Spannbäume\n" +
-      "• Klassische Datenstrukturen: \n" +
+      "• Klassische Datenstrukturen\n" +
       " - Suchbäume\n" +
       " - balancierte Bäume\n" +
       " - Heaps\n" +
       " - Hashtabellen\n" +
       "• Graphentheorie und -probleme\n" +
-      "• Problemlösungsstrategien als Entwurfsmuster für Algorithmen: \n" +
+      "• Problemlösungsstrategien als Entwurfsmuster für Algorithmen\n" +
       " - Induktion\n" +
       " - Divide-and-Conquer\n" +
       " - Backtracking\n" +
       " - dynamische Programmierung\n" +
-      "• Generisches Programmieren: \n" +
+      "• Generisches Programmieren\n" +
       " - C++-Templates\n" +
       " - Funktionen höherer Ordnung\n" +
       " - Lambdas\n" +
       " - Closures\n" +
-      "• Paralleles Programmieren: \n" +
+      "• Paralleles Programmieren\n" +
       " - (Un)abhängigkeit von Berechnungen\n" +
       " - Parallelität und Nebenläufigkeit\n" +
       " - geteilter Speicher\n" +
@@ -396,14 +466,16 @@ window.StudiengangModuleDetails = {
     kurzbeschreibung:
       "The course provides knowledge on the inner working of computer systems by introducing basic concepts in the design of microprocessors and operating systems",
     inhalt:
-      "On the hardware side:\n" +
-      "• How microprocessors implement control and data paths\n" +
+      "► Mikroprocessor-Hardware\n" +
+      "• How microprocessors implement control and data paths\n\n" +
+      "► Mikroarchitektur-Optimierungen\n" +
       "• Microarchitectural optimizations such as\n" +
       " - pipelining\n" +
       " - speculation\n" +
       " - caching\n\n" +
-      "On the software side:\n" +
-      "• How to program a microprocessor\n" +
+      "► Programmierung\n" +
+      "• How to program a microprocessor\n\n" +
+      "► Betriebssystem-Grundlagen\n" +
       "• Fundamental concepts in the design of operating systems\n" +
       "• Physical and virtual memory management\n" +
       "• Process management and scheduling",
@@ -413,19 +485,20 @@ window.StudiengangModuleDetails = {
     kurzbeschreibung:
       "Wahrscheinlichkeitsmodelle und Anwendungen, Einführung in Schätztheorie und statistische Testtheorie",
     inhalt:
-      "Der Begriff Wahrscheinlichkeitsraum und einige klassische Modelle:\n" +
+      "► Wahrscheinlichkeitsräume\n" +
       "• Axiome von Kolmogorov, einfache Folgerungen\n" +
       "• Diskrete Modelle, Dichtefunktionen, Produktmodelle\n" +
       "• Zusammenhang zwischen den bisher betrachteten Modellen\n" +
       "• Verteilungsfunktionen, Transformation von Wahrscheinlichkeitsverteilungen\n\n" +
-      "Bedingte Wahrscheinlichkeiten:\n" +
+      "► Bedingte Wahrscheinlichkeiten\n" +
       "• Definition und Beispiele\n" +
       "• Berechnung von absoluten aus bedingten Wahrscheinlichkeiten\n" +
       "• Bayes'sche Regel, Anwendung auf Nachrichtenquellen\n" +
-      "• Bedingte Verteilungen\n" +
+      "• Bedingte Verteilungen\n\n" +
+      "► Zufallsvariablen\n" +
       "• Erwartungswert einer Zufallsvariablen, Varianz, Kovarianz und Korrelation\n" +
       "• Lineare Prognosen, Gesetz der grossen Zahlen, zentraler Grenzwertsatz\n\n" +
-      "Einführung in die Statistik:\n" +
+      "► Einführung in die Statistik\n" +
       "• Schätzung von Parametern\n" +
       "• Tests",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=187991&lang=de",
@@ -434,10 +507,13 @@ window.StudiengangModuleDetails = {
     kurzbeschreibung:
       "Verständnis von elektromagnetischen Feldern und Anwendungsgebiete",
     inhalt:
+      "► Grundlagen elektromagnetischer Felder\n" +
       "• Maxwell'sche Gleichungen\n" +
-      "• Wellengleichung und ihre Lösungen\n" +
+      "• Wellengleichung und ihre Lösungen\n\n" +
+      "► Wellenausbreitung\n" +
       "• Felder im freien Raum\n" +
-      "• Brechung und Reflexion an Grenzflächen\n" +
+      "• Brechung und Reflexion an Grenzflächen\n\n" +
+      "► Strahlung\n" +
       "• Dipolstrahlung\n" +
       "• Feldwinkelspektrum",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=188239&lang=de",
@@ -446,15 +522,16 @@ window.StudiengangModuleDetails = {
     kurzbeschreibung:
       "Understanding of the basic principles of semiconductor devices in micro-, opto-, and power electronics",
     inhalt:
+      "► Einführung\n" +
       "• Brief survey of the history of microelectronics\n\n" +
-      "Basic physics:\n" +
+      "► Grundlagen der Halbleiterphysik\n" +
       "• Crystal structure of solids\n" +
       "• Properties of silicon and other semiconductors\n" +
       "• Principles of quantum mechanics, band model\n" +
       "• Conductivity, dispersion relation\n" +
       "• Equilibrium statistics, transport equations\n" +
       "• Generation-recombination (G-R), Quasi-Fermi levels\n\n" +
-      "Devices:\n" +
+      "► Halbleiterbauelemente\n" +
       "• Physical and electrical properties of the pn-junction\n" +
       "• pn-diode: Characteristics, small-signal behaviour, G-R currents, ideality factor, junction breakdown\n" +
       "• MOS devices: Band diagram, MOSFET operation, CV- and IV characteristics, frequency limitations and non-ideal behaviour\n" +
@@ -465,17 +542,19 @@ window.StudiengangModuleDetails = {
     kurzbeschreibung:
       "Dieser Kurs gibt eine Einführung in numerische Methoden. Die Vorlesung verwendet Aufgaben und Beispiele, die das Programmieren mit (scientific) python brauchen.",
     inhalt:
+      "► Grundlegende numerische Verfahren\n" +
       "• Quadratur\n" +
-      "• Newton-Verfahren\n" +
-      "• Anfangswertaufgaben gewöhnlicher Differentialgleichungen:\n" +
-      "  - Explizite Einschrittverfahren\n" +
-      "  - Schrittweitensteuerung\n" +
-      "  - Stabilitätsanalyse und implizite Verfahren\n" +
-      "  - Strukturerhaltende Verfahren",
+      "• Newton-Verfahren\n\n" +
+      "► Anfangswertaufgaben gewöhnlicher Differentialgleichungen\n" +
+      "• Explizite Einschrittverfahren\n" +
+      "• Schrittweitensteuerung\n" +
+      "• Stabilitätsanalyse und implizite Verfahren\n" +
+      "• Strukturerhaltende Verfahren",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=188146&lang=de",
   },
+  // #endregion
 
-  // Zusätzliche Module für Wahlbereich / höhere Semester
+  // #region Wahlbereich
   "Discrete Event Systems": {
     kurzbeschreibung: "Introduction to discrete event systems.",
     inhalt:
@@ -580,4 +659,5 @@ window.StudiengangModuleDetails = {
       "• Prefetching techniques",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=227-0152-00L",
   },
+  // #endregion
 };
