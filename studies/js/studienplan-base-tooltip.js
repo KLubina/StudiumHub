@@ -1,10 +1,5 @@
-/* ==== STUDIENPLAN BASE TOOLTIP ==== */
-/* Tooltip-Funktionalität */
-
 StudienplanBase.prototype.showTooltip = function(modul, event) {
-    if (!this.tooltipEl) {
-        this.tooltipEl = document.getElementById('tooltip');
-    }
+    this.tooltipEl = document.getElementById('tooltip');
     
     if (this.aktivesModul === modul) return;
     
@@ -30,17 +25,17 @@ StudienplanBase.prototype.showTooltip = function(modul, event) {
 
 StudienplanBase.prototype.createTooltipContent = function(modul) {
     const fragment = document.createDocumentFragment();
-    const details = this.config.modulDetails && this.config.modulDetails[modul.name];
+    const details = this.config.modulDetails[modul.name];
+    
+    const title = document.createElement('h3');
+    title.textContent = modul.name;
+    fragment.appendChild(title);
+    
+    const kp = document.createElement('p');
+    kp.innerHTML = `<strong>${modul.kp} ${this.config.creditUnit || 'KP'}</strong>`;
+    fragment.appendChild(kp);
     
     if (details) {
-        const title = document.createElement('h3');
-        title.textContent = modul.name;
-        fragment.appendChild(title);
-        
-        const kp = document.createElement('p');
-        kp.innerHTML = `<strong>${modul.kp} ${this.config.creditUnit || 'KP'}</strong>`;
-        fragment.appendChild(kp);
-        
         if (details.kurzbeschreibung) {
             const kurzbeschreibungTitle = document.createElement('h4');
             kurzbeschreibungTitle.textContent = 'Kurzbeschreibung';
@@ -103,14 +98,6 @@ StudienplanBase.prototype.createTooltipContent = function(modul) {
             fragment.appendChild(linkContainer);
         }
     } else {
-        const title = document.createElement('h3');
-        title.textContent = modul.name;
-        fragment.appendChild(title);
-        
-        const kp = document.createElement('p');
-        kp.innerHTML = `<strong>${modul.kp} ${this.config.creditUnit || 'KP'}</strong>`;
-        fragment.appendChild(kp);
-        
         const noDetails = document.createElement('p');
         noDetails.textContent = 'Keine detaillierten Informationen verfügbar.';
         fragment.appendChild(noDetails);
@@ -120,18 +107,14 @@ StudienplanBase.prototype.createTooltipContent = function(modul) {
 };
 
 StudienplanBase.prototype.hideTooltip = function() {
-    if (this.tooltipEl) {
-        this.tooltipEl.style.display = 'none';
-    }
+    this.tooltipEl.style.display = 'none';
     this.aktivesModul = null;
     this.isVertiefungsgebieteTooltipLocked = false;
     this.isWahlfaecherTooltipLocked = false;
 };
 
 StudienplanBase.prototype.showCustomTooltip = function(content, event) {
-    if (!this.tooltipEl) {
-        this.tooltipEl = document.getElementById('tooltip');
-    }
+    this.tooltipEl = document.getElementById('tooltip');
     
     this.tooltipEl.innerHTML = content;
     

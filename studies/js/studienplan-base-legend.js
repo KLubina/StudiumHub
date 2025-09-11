@@ -1,16 +1,11 @@
-/* ==== STUDIENPLAN BASE LEGEND ==== */
-/* Legenden-Erstellung und -Verwaltung */
-
 StudienplanBase.prototype.createLegend = function() {
     const legendElement = document.getElementById('legende');
     legendElement.innerHTML = '';
 
-    // Spezielle Behandlung für Prüfungsblöcke (CSE)
     if (this.config.pruefungsbloecke) {
         this.createPruefungsbloeckeLegend(legendElement);
     }
 
-    // Standard Kategorien
     if (this.config.kategorien) {
         this.config.kategorien.forEach(kategorie => {
             this.createLegendItem(kategorie, legendElement);

@@ -106,15 +106,7 @@
 
             await loadExtensionModules(studiengang);
 
-            if (typeof window.loadStudiengangConfig === 'function') {
-                window.loadStudiengangConfig(studiengang).then(config => {
-                    if (config) {
-                        console.log(`✅ Konfiguration für ${studiengang} geladen`);
-                    }
-                }).catch(error => {
-                    console.error(`❌ Fehler:`, error);
-                });
-            }
+            window.loadStudiengangConfig(studiengang);
         });
     </script>
 </body>

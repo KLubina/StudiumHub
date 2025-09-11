@@ -1,6 +1,3 @@
-/* ==== STUDIENPLAN BASE LAYOUT ==== */
-/* Layout-Erstellung und -Verwaltung */
-
 StudienplanBase.prototype.createStudienplan = function() {
     const container = document.getElementById('studienplan');
     container.innerHTML = '';
@@ -30,7 +27,6 @@ StudienplanBase.prototype.createYearSection = function(year) {
     const yearTitle = document.createElement('div');
     yearTitle.classList.add('jahr-titel');
     
-    // Spezielle Behandlung für verschiedene Jahre
     if (this.config.assessmentJahr && year === 1) {
         yearTitle.textContent = 'Assessment Jahr';
     } else if (this.config.hauptstudium && year === 2) {
@@ -40,20 +36,15 @@ StudienplanBase.prototype.createYearSection = function(year) {
     }
     yearDiv.appendChild(yearTitle);
     
-    // Module für dieses Jahr gruppieren
     const yearModules = this.config.daten.filter(m => m.jahr === year);
     
-    // Nach Semester oder Bereich gruppieren
     if (yearModules.some(m => m.semester)) {
-        // Nach Semester gruppieren
         const semesters = [...new Set(yearModules.map(m => m.semester))].sort();
         
         semesters.forEach(semester => {
             if (semester === 0) {
-                // Module ohne spezifisches Semester (z.B. 3. Jahr)
                 const noSemesterModules = yearModules.filter(m => m.semester === 0);
                 if (this.config.bereicheReihenfolge) {
-                    // Nach Bereichen sortieren (BWL)
                     this.config.bereicheReihenfolge.forEach(bereich => {
                         const bereichModules = noSemesterModules.filter(m => m.bereich === bereich);
                         if (bereichModules.length > 0) {
@@ -61,14 +52,12 @@ StudienplanBase.prototype.createYearSection = function(year) {
                         }
                     });
                 } else {
-                    // Alle Module ohne Bereich
                     const moduleContainer = document.createElement('div');
                     moduleContainer.classList.add('module-container');
                     noSemesterModules.forEach(m => this.createModule(m, moduleContainer));
                     yearDiv.appendChild(moduleContainer);
                 }
             } else {
-                // Normale Semester
                 const semesterModules = yearModules.filter(m => m.semester === semester);
                 
                 const semesterTitle = document.createElement('div');
@@ -85,7 +74,6 @@ StudienplanBase.prototype.createYearSection = function(year) {
             }
         });
     } else if (yearModules.some(m => m.bereich)) {
-        // Nach Bereich gruppieren
         const bereiche = [...new Set(yearModules.map(m => m.bereich).filter(b => b))];
         
         bereiche.forEach(bereich => {
@@ -93,7 +81,6 @@ StudienplanBase.prototype.createYearSection = function(year) {
             this.createBereichSection(yearDiv, bereich, bereichModules);
         });
         
-        // Module ohne Bereich
         const ohneBereich = yearModules.filter(m => !m.bereich);
         if (ohneBereich.length > 0) {
             const moduleContainer = document.createElement('div');
@@ -102,7 +89,6 @@ StudienplanBase.prototype.createYearSection = function(year) {
             yearDiv.appendChild(moduleContainer);
         }
     } else {
-        // Alle Module direkt anzeigen
         const moduleContainer = document.createElement('div');
         moduleContainer.classList.add('module-container');
         yearModules.forEach(m => this.createModule(m, moduleContainer));
@@ -125,10 +111,8 @@ StudienplanBase.prototype.createBereichSection = function(container, bereich, mo
 };
 
 StudienplanBase.prototype.createCategoryLayout = function(container) {
-    // Für MTEC und andere kategoriebasierte Layouts
     const allModules = this.config.daten;
     
-    // Nach Kategorie gruppieren
     const categories = [...new Set(allModules.map(m => m.kategorie).filter(k => k))];
     
     categories.forEach(category => {
@@ -142,7 +126,6 @@ StudienplanBase.prototype.createCategoryLayout = function(container) {
         
         const categoryModules = allModules.filter(m => m.kategorie === category);
         
-        // Nach Fachgebiet gruppieren wenn vorhanden
         if (categoryModules.some(m => m.fachgebiet)) {
             const fachgebiete = [...new Set(categoryModules.map(m => m.fachgebiet).filter(f => f))];
             
@@ -161,14 +144,11 @@ StudienplanBase.prototype.createCategoryLayout = function(container) {
                 categoryDiv.appendChild(moduleContainer);
             });
             
-            // Module ohne Fachgebiet
             const ohneFachgebiet = categoryModules.filter(m => !m.fachgebiet);
-            if (ohneFachgebiet.length > 0) {
-                const moduleContainer = document.createElement('div');
-                moduleContainer.classList.add('module-container');
-                ohneFachgebiet.forEach(m => this.createModule(m, moduleContainer));
-                categoryDiv.appendChild(moduleContainer);
-            }
+            const moduleContainer = document.createElement('div');
+            moduleContainer.classList.add('module-container');
+            ohneFachgebiet.forEach(m => this.createModule(m, moduleContainer));
+            categoryDiv.appendChild(moduleContainer);
         } else {
             const moduleContainer = document.createElement('div');
             moduleContainer.classList.add('module-container');

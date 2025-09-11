@@ -1,6 +1,3 @@
-/* ==== STUDIENPLAN BASE CORE ==== */
-/* Hauptklasse und Initialisierung */
-
 class StudienplanBase {
     constructor(config) {
         this.config = config;
@@ -25,43 +22,32 @@ class StudienplanBase {
     }
 
     setPageInfo() {
-        if (this.config.title) {
-            document.getElementById('page-title').textContent = this.config.title;
-            document.getElementById('studienplan-title').textContent = this.config.title;
-        }
+        document.getElementById('page-title').textContent = this.config.title;
+        document.getElementById('studienplan-title').textContent = this.config.title;
         
-        if (this.config.subtitle) {
-            document.getElementById('studienplan-subtitle').textContent = this.config.subtitle;
-        }
+        document.getElementById('studienplan-subtitle').textContent = this.config.subtitle;
         
-        if (this.config.legendTitle) {
-            document.getElementById('legende-titel').textContent = this.config.legendTitle;
-        }
+        document.getElementById('legende-titel').textContent = this.config.legendTitle;
     }
 
     /* ==== EVENT LISTENERS ==== */
     setupEventListeners() {
-        // Click outside tooltip to close
         document.addEventListener('click', (event) => {
-            if (this.tooltipEl && event.target !== this.tooltipEl && !this.tooltipEl.contains(event.target)) {
-                let isModulClick = false;
-                let isLegendClick = false;
-                let target = event.target;
-                
-                while (target && !isModulClick && !isLegendClick) {
-                    if (target.classList) {
-                        if (target.classList.contains('modul')) {
-                            isModulClick = true;
-                        } else if (target.classList.contains('legende-item')) {
-                            isLegendClick = true;
-                        }
-                    }
-                    target = target.parentElement;
+            let isModulClick = false;
+            let isLegendClick = false;
+            let target = event.target;
+            
+            while (target && !isModulClick && !isLegendClick) {
+                if (target.classList.contains('modul')) {
+                    isModulClick = true;
+                } else if (target.classList.contains('legende-item')) {
+                    isLegendClick = true;
                 }
-                
-                if (!isModulClick && !isLegendClick) {
-                    this.hideTooltip();
-                }
+                target = target.parentElement;
+            }
+            
+            if (!isModulClick && !isLegendClick) {
+                this.hideTooltip();
             }
         });
     }
@@ -87,24 +73,7 @@ function initializeStudienplan(config) {
     
     let StudiengangClass = window.StudiengangClass || window.StudiengangCustomClass;
     
-    // Spezielle Behandlung für bekannte Custom Classes
-    if (!StudiengangClass && window.ITETStudienplan) {
-        StudiengangClass = window.ITETStudienplan;
-    }
-    if (!StudiengangClass && window.CSEStudienplan) {
-        StudiengangClass = window.CSEStudienplan;
-    }
-    if (!StudiengangClass && window.RIGStudienplan) {
-        StudiengangClass = window.RIGStudienplan;
-    }
-    if (!StudiengangClass && window.MTECStudienplan) {
-        StudiengangClass = window.MTECStudienplan;
-    }
-    
-    // Fallback auf StudienplanBase
-    if (!StudiengangClass) {
-        StudiengangClass = StudienplanBase;
-    }
+    StudiengangClass = StudiengangClass || window.ITETStudienplan || window.CSEStudienplan || window.RIGStudienplan || window.MTECStudienplan || StudienplanBase;
     
     const studienplan = new StudiengangClass(config);
     studienplan.initialize();

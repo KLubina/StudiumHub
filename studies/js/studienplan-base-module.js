@@ -1,6 +1,3 @@
-/* ==== STUDIENPLAN BASE MODULE ==== */
-/* Modul-Erstellung und -Sizing */
-
 StudienplanBase.prototype.createModule = function(modul, container) {
     const div = document.createElement('div');
     div.classList.add('modul');
@@ -41,12 +38,12 @@ StudienplanBase.prototype.createModule = function(modul, container) {
 };
 
 StudienplanBase.prototype.getModuleCssClass = function(modul) {
-    if (modul.pruefungsblock && this.config.pruefungsbloecke) {
+    if (modul.pruefungsblock) {
         const block = this.config.pruefungsbloecke.find(b => b.name === modul.pruefungsblock);
-        return block ? block.cssClass : null;
+        return block.cssClass;
     }
     
-    if (modul.kategorie && this.config.kategorieZuKlasse) {
+    if (modul.kategorie) {
         return this.config.kategorieZuKlasse[modul.kategorie];
     }
     
@@ -60,7 +57,7 @@ StudienplanBase.prototype.setModuleSize = function(div, modul) {
         this.setProportionalSize(div, modul);
     } else if (sizing === 'fixed') {
         this.setFixedSize(div, modul);
-    } else if (sizing === 'custom' && this.config.customSizing) {
+    } else if (sizing === 'custom') {
         this.config.customSizing(div, modul);
     }
 };
@@ -152,7 +149,7 @@ StudienplanBase.prototype.checkCondition = function(modul, condition) {
 };
 
 StudienplanBase.prototype.createModuleContent = function(div, modul) {
-    const details = this.config.modulDetails && this.config.modulDetails[modul.name];
+    const details = this.config.modulDetails[modul.name];
     if (details && details.vorlesungslink) {
         const videoIndicator = document.createElement('div');
         videoIndicator.classList.add('video-indicator');
