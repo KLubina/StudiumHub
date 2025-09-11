@@ -52,8 +52,6 @@
         const urlParams = new URLSearchParams(window.location.search);
         const studiengang = urlParams.get('studiengang') || 'cs';
 
-        console.log(`🎯 Studiengang: ${studiengang}`);
-
         // NEU: Data-Attribut setzen für CSS-Variablen
         document.body.setAttribute('data-studiengang', studiengang);
 
@@ -63,7 +61,6 @@
         
         // Error handling falls Datei nicht existiert
         customCSS.onerror = () => {
-            console.log(`Keine custom CSS für ${studiengang}`);
         };
 
         // Extension-Module laden (wie vorher)
@@ -78,7 +75,6 @@
             const hasExtensions = ['itet', 'cse', 'rig'].includes(studiengang);
 
             if (hasExtensions) {
-                console.log(`📦 Lade Extension-Module für ${studiengang}...`);
 
                 for (const module of extensionModules) {
                     const script = document.createElement('script');
@@ -86,11 +82,9 @@
                     
                     await new Promise((resolve) => {
                         script.onload = () => {
-                            console.log(`✅ ${module}.js geladen`);
                             resolve();
                         };
                         script.onerror = () => {
-                            console.log(`⏭️ ${module}.js nicht gefunden`);
                             resolve();
                         };
                         document.head.appendChild(script);
@@ -102,7 +96,6 @@
 
         // DOM Ready
         document.addEventListener('DOMContentLoaded', async function () {
-            console.log('📄 DOM geladen');
 
             await loadExtensionModules(studiengang);
 

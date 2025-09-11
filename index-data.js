@@ -1,0 +1,78 @@
+// Provides study programs as a reusable class to avoid duplication and centralize data.
+(function (global) {
+  class StudiesData {
+    static getPrograms() {
+      return [
+        /**
+         * Contract:
+         * - programs: array of objects
+         *   { key, title, subtitle, degree, school, featured }
+         * - key: used for CSS class and query param studiengang
+         * - title: headline text (e.g., "BSc ITET")
+         * - subtitle: smaller line under title (e.g., "ETH Zürich")
+         * - featured: boolean to place card in the featured row
+         */
+        {
+          key: "itet",
+          title: "BSc ITET",
+          subtitle: "ETH Zürich",
+          featured: true,
+        },
+        {
+          key: "mtec",
+          title: "MSc MTEC",
+          subtitle: "ETH Zürich",
+          featured: true,
+        },
+        {
+          key: "math",
+          title: "BSc Mathematik",
+          subtitle: "ETH Zürich",
+        },
+        {
+          key: "cse",
+          title: "BSc CSE",
+          subtitle: "ETH Zürich",
+        },
+        {
+          key: "bwl",
+          title: "BA BWL",
+          subtitle: "HSG",
+        },
+        {
+          key: "cs",
+          title: "BSc Informatik",
+          subtitle: "ETH Zürich",
+        },
+        {
+          key: "zhaw-cs",
+          title: "BSc Computer Science",
+          subtitle: "ZHAW",
+        },
+        {
+          key: "cds",
+          title: "BSc Computational and Data Science",
+          subtitle: "Fachhochschule Graubünden",
+        },
+        {
+          key: "it",
+          title: "BSc IT",
+          subtitle: "Hochschulinstitut Schaffhausen",
+        },
+        {
+          key: "ce",
+          title: "BSc Computer Engineering",
+          subtitle: "Aspira College Split",
+        },
+        {
+          key: "rig",
+          title: "BSc Raumbezogene Ingenieurwissenschaften",
+          subtitle: "ETH Zürich",
+        },
+      ];
+    }
+  }
+
+  // Expose to global scope
+  global.StudiesData = StudiesData;
+})(window);

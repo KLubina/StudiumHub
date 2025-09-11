@@ -1,0 +1,38 @@
+// Renders study program cards from a single source of truth to avoid HTML duplication.
+(function () {
+  const programs = (window.StudiesData && typeof window.StudiesData.getPrograms === 'function')
+    ? window.StudiesData.getPrograms()
+    : [];
+
+  function createCard({ key, title, subtitle }) {
+    const card = document.createElement('div');
+    card.className = `card ${key}`;
+
+    card.innerHTML = `
+      <div class="card-header">
+        <h2 class="card-title">${title}</h2>
+        <p class="card-subtitle">${subtitle}</p>
+      </div>
+      <div class="card-body"></div>
+      <div class="card-footer">
+        <a href="studies/studienplan-template.html?studiengang=${encodeURIComponent(key)}" class="btn">Zum Studienplan</a>
+      </div>
+    `;
+
+    return card;
+  }
+
+  function render() {
+    const featuredContainer = document.querySelector('.featured-cards');
+    const cardsContainer = document.querySelector('.cards-container');
+    if (!featuredContainer || !cardsContainer) return;
+
+    const featured = programs.filter(p => p.featured);
+    const others = programs.filter(p => !p.featured);
+
+    featured.forEach(p => featuredContainer.appendChild(createCard(p)));
+    others.forEach(p => cardsContainer.appendChild(createCard(p)));
+  }
+
+  document.addEventListener('DOMContentLoaded', render);
+})();
