@@ -1,5 +1,14 @@
 https://raw.githack.com/KLubina/StudiumHub/main/index.html
 
+## TO-DO
+
+### Das alles vereinen/standardisieren:
+### Tool-Tip
+### Kredit-Zähler
+### Wahlmodule auswählen
+### Modul-Farben ändern (wie bei CSE)
+### Prüfungsblock-Rechner
+
 ### Mind-Maps erstellen für ITET ETHZ Moduldetails
 
 ### Alle staatlichen UH und FH ITET-Studiengänge
