@@ -16,9 +16,6 @@ window.ITETKPCounter = {
         kpCounterContainer.innerHTML = `
             <div style="text-align: center; margin-bottom: 15px;">
                 <h3 style="margin: 0 0 5px 0; color: #0D5B8C; font-size: 18px;">📊 KP-Übersicht</h3>
-                <div style="font-size: 12px; color: #666;">
-                    Automatische Zählung aller Module
-                </div>
             </div>
             
             <div id="kp-total" style="text-align: center; margin-bottom: 15px; padding: 10px; background: linear-gradient(135deg, #0D5B8C, #00A0E3); color: white; border-radius: 5px; font-weight: bold;">
