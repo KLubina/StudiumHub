@@ -9,7 +9,9 @@ https://raw.githack.com/KLubina/StudiumHub/main/index.html
 ### Modul-Farben ändern (wie bei CSE)
 ### Prüfungsblock-Rechner
 
+### Links zu den Prüfungen hinzufügen zu den Moduldetails
 ### Mind-Maps erstellen für ITET ETHZ Moduldetails
+
 
 ### Alle staatlichen UH und FH ITET-Studiengänge
 ITET allgemein: https://www.berufsberatung.ch/dyn/show/19998
