@@ -101,6 +101,20 @@ window.StudiengangCustomClass = class CSEStudienplan extends StudienplanBase {
       const wahlmoduleData = prepareWahlmoduleData();
       this.config.wahlmoduleData = wahlmoduleData;
 
+      // If the central wahlmoduleManager was already created during base initialization,
+      // update its data so tooltips show the freshly loaded modules.
+      if (this.wahlmoduleManager) {
+        try {
+          this.wahlmoduleManager.wahlmoduleData = (wahlmoduleData && typeof wahlmoduleData.getAllWahlmoduleData === 'function')
+            ? wahlmoduleData.getAllWahlmoduleData()
+            : wahlmoduleData;
+          console.log('ℹ️ Aktualisierte wahlmoduleManager.wahlmoduleData mit geladenen CSE-Daten');
+        } catch (e) {
+          // If wahlmoduleData is a plain object, just assign it
+          this.wahlmoduleManager.wahlmoduleData = wahlmoduleData;
+        }
+      }
+
       // Klassen initialisieren
       if (window.CSEColorManager) this.colorManager = new CSEColorManager(this);
       if (window.CSEGradeCalculator) this.gradeCalculator = new CSEGradeCalculator(this);
@@ -188,10 +202,15 @@ window.StudiengangCustomClass = class CSEStudienplan extends StudienplanBase {
     
     // Prüfe ob es ein Wahlmodul-Kategorie ist
     if (this.wahlmoduleManager && kategorie && kategorie.hasTooltip) {
-      if (kategorie.name === "Wahlfächer" || kategorie.name === "Vertiefungsgebiet") {
-        // Nutze das zentrale Wahlmodul-System
+      // Use the central wahlmodule manager for any legend item that declares hasTooltip.
+      // This avoids brittle name checks and allows configs to provide the correct key mappings.
+      try {
         this.wahlmoduleManager.addLegendTooltipEvents(div, kategorie);
         handled = true;
+        console.log('🧭 Delegated legend tooltip to central wahlmoduleManager for', kategorie.name);
+      } catch (e) {
+        console.warn('⚠️ Failed to delegate to wahlmoduleManager, falling back to CSE tooltipManager', e);
+        handled = false;
       }
     }
 

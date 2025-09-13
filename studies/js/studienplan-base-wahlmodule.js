@@ -8,6 +8,15 @@ class StudienplanWahlmoduleManager {
         
         // Initialize wahlmodule data
         this.wahlmoduleData = this.getWahlmoduleData();
+        // Normalize known wrapper objects (e.g. window.CSEModuleData)
+        if (this.wahlmoduleData && typeof this.wahlmoduleData.getAllWahlmoduleData === 'function') {
+            try {
+                this.wahlmoduleData = this.wahlmoduleData.getAllWahlmoduleData();
+                console.log('ℹ️ wahlmoduleData normalized from wrapper via getAllWahlmoduleData()');
+            } catch (e) {
+                console.warn('⚠️ Failed to normalize wahlmoduleData:', e);
+            }
+        }
         this.selectedModules = this.loadSelectedModules();
         
         // Setup global reference for tooltip buttons
@@ -274,11 +283,15 @@ class StudienplanWahlmoduleManager {
             'Kernfächer nach Schwerpunkt': 'kernfaecher',
             'Weitere Wahl-Grundlagenfächer': 'weitere-wahl-grundlagen',
             'Wahlfächer': 'wahlfaecher',
+            'Wahlfächer (Semester)': 'wahlfaecher',
             'Wahl Praktika-Projekte-Seminare': 'praktika',
             'Wahlmodule (3 aus 6)': 'wahlmodule',
             'Wahlmodule': 'wahlmodule'
         };
-        
+        // Accept common German variants used by specific configs (e.g. CSE)
+        if (categoryName === 'Vertiefungsgebiet' || categoryName === 'Vertiefungsgebiete') return 'vertiefungsgebiete';
+        if (categoryName === 'Wahlfächer (Bereiche)' || categoryName === 'Wahlfächer - Bereiche') return 'wahlfaecher';
+
         return keyMappings[categoryName] || categoryName.toLowerCase().replace(/\s+/g, '-');
     }
 
@@ -298,7 +311,12 @@ class StudienplanWahlmoduleManager {
         const dataMap = {
             'kernfaecher': this.wahlmoduleData.kernfaecherSchwerpunkte,
             'weitere-wahl-grundlagen': { 'Grundlagenfächer': this.wahlmoduleData.weitereWahlGrundlagen },
+            // Accept both the normalized key and some config-specific keys
             'wahlfaecher': this.wahlmoduleData.wahlfaecherBereiche,
+            'wahlfaecherBereiche': this.wahlmoduleData.wahlfaecherBereiche,
+            'wahlfaecher-bereiche': this.wahlmoduleData.wahlfaecherBereiche,
+            // Vertiefungsgebiete (CSE uses this key)
+            'vertiefungsgebiete': this.wahlmoduleData.vertiefungsgebiete,
             'praktika': this.wahlmoduleData.praktikaSchwerpunkte,
             'wahlmodule': this.wahlmoduleData.wahlmoduleBereiche
         };
@@ -314,6 +332,8 @@ class StudienplanWahlmoduleManager {
             'praktika': '#4CA64C',
             'wahlmodule': '#FF6B6B'
         };
+        // special color for vertiefungsgebiete
+        if (categoryKey === 'vertiefungsgebiete' || categoryKey === 'vertiefungsgebiete') return '#A4C8FF';
         
         return colorMap[categoryKey] || '#6c757d';
     }
