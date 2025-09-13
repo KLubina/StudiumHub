@@ -100,19 +100,20 @@ StudienplanBase.prototype.createTooltipContent = function (modul) {
       fragment.appendChild(linkContainer);
     }
     // NEU: Prüfungslinks
-    if (details.pruefungslink) {
+    const examLink = details.pruefungen || details.pruefungslink;
+    if (examLink) {
       const examTitle = document.createElement("h4");
       examTitle.textContent = "Alte Prüfungen";
       fragment.appendChild(examTitle);
 
       const examContainer = document.createElement("p");
-      const examLink = document.createElement("a");
-      examLink.href = details.pruefungslink;
-      examLink.target = "_blank";
-      examLink.textContent = "Zu den alten Prüfungen auf GitHub";
-      examLink.style.color = "#0066cc";
-      examLink.style.textDecoration = "underline";
-      examContainer.appendChild(examLink);
+      const examLinkElement = document.createElement("a");
+      examLinkElement.href = examLink;
+      examLinkElement.target = "_blank";
+      examLinkElement.textContent = "Zu den alten Prüfungen auf GitHub";
+      examLinkElement.style.color = "#0066cc";
+      examLinkElement.style.textDecoration = "underline";
+      examContainer.appendChild(examLinkElement);
       fragment.appendChild(examContainer);
     }
   } else {

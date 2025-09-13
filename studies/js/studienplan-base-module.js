@@ -178,7 +178,7 @@ StudienplanBase.prototype.createModuleContent = function (div, modul) {
   }
 
   // NEU: Prüfungs-Indikator für alte Prüfungen
-  if (details && details.pruefungslink) {
+  if (details && (details.pruefungen || details.pruefungslink)) {
     const examIndicator = document.createElement("div");
     examIndicator.classList.add("exam-indicator");
     examIndicator.innerHTML = "📋";

@@ -35,6 +35,7 @@ window.StudiengangModuleDetails = {
       "• Lineare Ausgleichsrechnung\n" +
       "• Anwendungen\n",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=192867&lang=de",
+    vorlesungslink: "https://video.ethz.ch/lectures/d-math/2015/autumn/401-1151-00L/1707a212-2905-448f-b042-6eca940f6c93.html",
     pruefungen: "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/1.Sem/Lineare-Algebra"
   },
   "Analysis 1": {
@@ -54,6 +55,7 @@ window.StudiengangModuleDetails = {
       "• Integralrechnung einer Variablen\n\n" +
       "► Einführung in gewöhnliche Differentialgleichungen",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193410&lang=de",
+    vorlesungslink: "https://video.ethz.ch/lectures/d-math/2016/autumn/401-1261-07L/a65b10a4-c135-3bca-a4f5-c37d9f8b0913.html",
     pruefungen: "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/1.Sem/Analysis-I"
   },
 
@@ -166,6 +168,7 @@ window.StudiengangModuleDetails = {
       "► Sätze von Gauss\n" +
       "► Sätze von Stokes\n\n",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=188523&lang=de",
+    vorlesungslink: "https://video.ethz.ch/lectures/d-math/2016/spring/401-1262-07L/e9902307-e2b7-44f3-8feb-115773280c13.html",
     pruefungen: "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/2.Sem/Analysis-II"
   },
   "Netzwerke und Schaltungen II": {
@@ -194,7 +197,8 @@ window.StudiengangModuleDetails = {
       "• Operationsverstärker\n" +
       "• Operationsverstärker-Grundschaltungen\n" +
       "• Schaltungen mit Operationsverstärkern",
-    link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=187813&lang=de",
+  link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=187813&lang=de",
+  vorlesungslink: "https://video.ethz.ch/lectures/d-itet/2023/spring/227-0002-00L",
   },
   "Netzwerke und Schaltungen Praktikum": {
     kurzbeschreibung:
@@ -225,7 +229,8 @@ window.StudiengangModuleDetails = {
       "• Kinetische Gastheorie für das ideale Gas\n" +
       "• Hauptsätze der Thermodynamik: Energieerhaltung, Kreisprozesse, Entropie\n" +
       "• Wärmeübertragung & Wärmestrahlung",
-    link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=188037&lang=de",
+  link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=188037&lang=de",
+  vorlesungslink: "https://video.ethz.ch/lectures/d-phys/2023/autumn/402-0083-00L.html",
     pruefungen: "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/2.Sem/Physik-I"
   },
   "Informatik I": {
@@ -248,6 +253,7 @@ window.StudiengangModuleDetails = {
       "► Anwendung\n" +
       "• Motivation und Illustration der Konzepte durch Algorithmen und Anwendungen",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=187917&lang=de",
+    vorlesungslink: "https://video.ethz.ch/lectures/d-infk/2016/autumn/252-0847-00L.html",
     pruefungen: "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/2.Sem/Informatik-I"
   },
   "Mathematische Methoden": {
@@ -302,6 +308,7 @@ window.StudiengangModuleDetails = {
       "• Method of separation of variables\n" +
       "• Variational method",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193965&lang=de",
+    vorlesungslink: "https://video.ethz.ch/lectures/d-math/2015/autumn/401-0363-10L/a36b37a3-3ac0-4e47-8310-b79347db3717.html",
     pruefungen: "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/3.Sem/Analysis-III"
   },
   "Physik II": {
@@ -325,6 +332,7 @@ window.StudiengangModuleDetails = {
       "► Anwendungen\n" +
       "• Applications in Engineering",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193671&lang=de",
+    vorlesungslink: "https://video.ethz.ch/lectures/d-phys/2017/spring/402-1782-00L.html",
   },
   "Signal- und Systemtheorie I": {
     kurzbeschreibung:
@@ -391,7 +399,8 @@ window.StudiengangModuleDetails = {
       "• Aktive Filter: einfache aktive Filter, Filter mit biquadratischen Stufen\n" +
       "• Filter höherer Ordnung, Realisierung mit biquadratischen Stufen und mit Leiterstruktur\n" +
       "• Switched-Cap-Filter",
-    link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193624&lang=de",
+  link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193624&lang=de",
+  vorlesungslink: "https://video.ethz.ch/lectures/d-itet/2022/autumn/227-0077-10L",
   },
   "Halbleiter-Schaltungstechnik Praktikum": {
     kurzbeschreibung:
@@ -435,7 +444,8 @@ window.StudiengangModuleDetails = {
       "• Chaos\n" +
       "• Diskrete Ereignissysteme\n" +
       "• Hybride Systeme",
-    link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=187298&lang=de",
+  link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=187298&lang=de",
+  vorlesungslink: "https://video.ethz.ch/lectures/d-itet/2023/spring/227-0046-10L",
   },
   "Informatik II": {
     kurzbeschreibung:
@@ -490,7 +500,8 @@ window.StudiengangModuleDetails = {
       "• Fundamental concepts in the design of operating systems\n" +
       "• Physical and virtual memory management\n" +
       "• Process management and scheduling",
-    link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=187713&lang=de",
+  link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=187713&lang=de",
+  vorlesungslink: "https://video.ethz.ch/lectures/d-itet/2023/spring/227-0013-00L",
   },
   "Wahrscheinlichkeitstheorie und Statistik": {
     kurzbeschreibung:
@@ -565,6 +576,7 @@ window.StudiengangModuleDetails = {
       "• Stabilitätsanalyse und implizite Verfahren\n" +
       "• Strukturerhaltende Verfahren",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=188146&lang=de",
+    vorlesungslink: "https://video.ethz.ch/lectures/d-math/2016/autumn/401-0663-00L/1e9ea34b-4fc6-4dab-8e3b-dd21bfb732df.html",
     pruefungen: "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/4.Sem/Numerische-Methoden"
   },
   // #endregion
