@@ -1,6 +1,9 @@
 /* ==== CSE TOOLTIPS MANAGER ==== */
 /* CSE-spezifische Tooltip-Funktionalitäten für das zentrale System */
 
+// Verhindere Redeclaration-Fehler
+if (typeof window.CSETooltipManager === 'undefined') {
+
 class CSETooltipManager {
   constructor(studienplan) {
     this.studienplan = studienplan;
@@ -261,3 +264,5 @@ class CSETooltipManager {
 
 // Export für modularen Import
 window.CSETooltipManager = CSETooltipManager;
+
+} // Ende der if-Klausel für Redeclaration-Schutz

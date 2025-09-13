@@ -55,10 +55,24 @@ const loadCSEWahlmoduleData = async () => {
 
 // Wahlmodule-Daten für das zentrale System vorbereiten
 const prepareWahlmoduleData = () => {
+  // Basis-Daten aus der Config übernehmen (für Kernfächer)
   const wahlmoduleData = {
     vertiefungsgebiete: {},
-    wahlfaecherBereiche: {}
+    wahlfaecherBereiche: {},
+    // Kernfächer aus base-config.js übernehmen
+    kernfaecherSchwerpunkte: {},
+    kernfaecher: {}
   };
+
+  // Kernfächer aus base-config laden
+  if (window.StudiengangBaseConfig && window.StudiengangBaseConfig.wahlmoduleData) {
+    const baseConfig = window.StudiengangBaseConfig.wahlmoduleData;
+    if (baseConfig.kernfaecherSchwerpunkte) {
+      wahlmoduleData.kernfaecherSchwerpunkte = baseConfig.kernfaecherSchwerpunkte;
+      wahlmoduleData.kernfaecher = baseConfig.kernfaecherSchwerpunkte; // Alias
+      console.log('✓ Kernfächer aus base-config geladen:', Object.keys(wahlmoduleData.kernfaecherSchwerpunkte));
+    }
+  }
 
   // Vertiefungsgebiete gruppieren
   if (window.CSE_VertiefungsgebieteModules) {
@@ -82,6 +96,113 @@ const prepareWahlmoduleData = () => {
 
   return wahlmoduleData;
 };
+
+/* ==== CSE WAHLMODULE MANAGER FIXES ==== */
+/* Vereinfachte Category-Zuordnung für CSE */
+
+// Override der getCategoryKey und getModuleGroupsForCategory Methoden
+const setupCSEWahlmoduleFixes = () => {
+  if (typeof StudienplanWahlmoduleManager === 'undefined') {
+    console.warn('⚠️ StudienplanWahlmoduleManager nicht gefunden, versuche später...');
+    setTimeout(setupCSEWahlmoduleFixes, 500);
+    return;
+  }
+
+  console.log('🔧 CSE Wahlmodule Fixes werden angewendet...');
+
+  StudienplanWahlmoduleManager.prototype.getCategoryKey = function(categoryName) {
+    console.log('🔍 getCategoryKey aufgerufen mit:', categoryName);
+    
+    // CSE-spezifische einfache Zuordnungen
+    const cseKeyMappings = {
+      'Kernfächer': 'kernfaecher',
+      'Vertiefungsgebiet': 'vertiefungsgebiete',
+      'Vertiefungsgebiete': 'vertiefungsgebiete',  
+      'Wahlfächer': 'wahlfaecher'
+    };
+    
+    const result = cseKeyMappings[categoryName];
+    console.log('✓ Category Key Ergebnis:', result);
+    
+    return result || categoryName.toLowerCase().replace(/\s+/g, '-');
+  };
+
+  StudienplanWahlmoduleManager.prototype.getModuleGroupsForCategory = function(categoryKey) {
+    console.log('🔍 getModuleGroupsForCategory aufgerufen mit:', categoryKey);
+    console.log('📊 Verfügbare wahlmoduleData:', Object.keys(this.wahlmoduleData));
+    
+    let result = {};
+    
+    // CSE-spezifische Zuordnungen
+    if (categoryKey === 'kernfaecher') {
+      // Versuche beide möglichen Keys
+      result = this.wahlmoduleData.kernfaecherSchwerpunkte || this.wahlmoduleData.kernfaecher || {};
+      console.log('🎯 Kernfächer gefunden:', Object.keys(result));
+    } 
+    else if (categoryKey === 'vertiefungsgebiete') {
+      result = this.wahlmoduleData.vertiefungsgebiete || {};
+      console.log('🎯 Vertiefungsgebiete gefunden:', Object.keys(result));
+    } 
+    else if (categoryKey === 'wahlfaecher') {
+      result = this.wahlmoduleData.wahlfaecherBereiche || {};
+      console.log('🎯 Wahlfächer gefunden:', Object.keys(result));
+    }
+    
+    // Debug: Zeige was gefunden wurde
+    if (Object.keys(result).length === 0) {
+      console.warn('⚠️ Keine Module für categoryKey gefunden:', categoryKey);
+      console.log('Available keys in wahlmoduleData:', Object.keys(this.wahlmoduleData));
+    } else {
+      console.log('✅ Module gruppen gefunden:', Object.keys(result));
+      // Zeige erste Gruppe als Beispiel
+      const firstGroup = Object.values(result)[0];
+      if (Array.isArray(firstGroup)) {
+        console.log(`   Erste Gruppe hat ${firstGroup.length} Module`);
+      }
+    }
+    
+    return result;
+  };
+
+  console.log('✅ CSE Wahlmodule Fixes angewendet!');
+};
+
+// Debug-Funktion
+if (typeof window !== 'undefined') {
+  window.debugCSEWahlmodule = function() {
+    const studienplan = window.currentStudienplan;
+    if (!studienplan || !studienplan.wahlmoduleManager) {
+      console.log('❌ Kein Wahlmodule-Manager gefunden');
+      return;
+    }
+    
+    const manager = studienplan.wahlmoduleManager;
+    
+    console.log('=== CSE WAHLMODULE DEBUG ===');
+    console.log('📊 wahlmoduleData:', manager.wahlmoduleData);
+    console.log('🔑 Verfügbare Keys:', Object.keys(manager.wahlmoduleData));
+    
+    // Test die Kernfächer
+    const kernKey = manager.getCategoryKey('Kernfächer');
+    console.log('🎯 Kernfächer Key:', kernKey);
+    
+    const kernModules = manager.getModuleGroupsForCategory(kernKey);
+    console.log('📚 Kernfächer Module:', kernModules);
+    
+    if (Object.keys(kernModules).length > 0) {
+      Object.entries(kernModules).forEach(([groupName, modules]) => {
+        console.log(`   📁 ${groupName}: ${modules.length} Module`);
+        modules.forEach(m => console.log(`      - ${m.name} (${m.kp} KP)`));
+      });
+    }
+    
+    return {
+      wahlmoduleData: manager.wahlmoduleData,
+      kernKey,
+      kernModules
+    };
+  };
+}
 
 /* ==== CSE-SPEZIFISCHE ERWEITERUNGEN ==== */
 window.StudiengangCustomClass = class CSEStudienplan extends StudienplanBase {
@@ -123,6 +244,17 @@ window.StudiengangCustomClass = class CSEStudienplan extends StudienplanBase {
 
       this.classesLoaded = true;
       console.log('✓ Alle CSE-Klassen und Wahlmodule-Daten initialisiert');
+
+      // Setup Wahlmodule fixes nach dem Laden der Base-Klassen
+      setupCSEWahlmoduleFixes();
+
+      // Auto-Debug nach 2 Sekunden
+      setTimeout(() => {
+        if (window.currentStudienplan && window.currentStudienplan.wahlmoduleManager) {
+          console.log('🔧 Auto-Debug CSE Wahlmodule:');
+          window.debugCSEWahlmodule();
+        }
+      }, 2000);
 
       // Falls initialize bereits aufgerufen wurde, UI-Controls hinzufügen und Farben setzen
       if (this.isInitialized) {

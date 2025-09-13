@@ -1,4 +1,4 @@
-/* ==== CSE BASE CONFIGURATION ==== */
+/* ==== CSE BASE CONFIGURATION - FIXED ==== */
 /* Grundlegende Konfiguration für den CSE Studiengang */
 
 window.StudiengangBaseConfig = {
@@ -27,7 +27,7 @@ window.StudiengangBaseConfig = {
         enableCategoryTracking: true
     },
     
-    // NEU: Wahlmodul-System aktivieren
+    // Wahlmodul-System aktivieren
     enableWahlmodule: true,
     
     // Aspekt-Verhältnisse
@@ -96,7 +96,7 @@ window.StudiengangBaseConfig = {
         }
     ],
     
-    // Standard Kategorien (zusätzlich zu Prüfungsblöcken)
+    // Standard Kategorien
     kategorien: [
         { name: "Wissenschaftliche Arbeit", klasse: "wissenschaftliche-arbeit" },
         { 
@@ -126,10 +126,10 @@ window.StudiengangBaseConfig = {
         "vertiefung": "vertiefung"
     },
     
-    // NEU: Wahlmodule-Daten für das zentrale System
+    // FIXED: Wahlmodule-Daten mit richtigen Keys
     wahlmoduleData: {
-        // Kernfächer (die 4 zur Auswahl)
-        kernfaecher: {
+        // WICHTIG: Der Wahlmodule-Manager erwartet "kernfaecherSchwerpunkte"
+        kernfaecherSchwerpunkte: {
             "Alle Kernfächer": [
                 {
                     name: "Design of High Performance Computing",
@@ -170,31 +170,17 @@ window.StudiengangBaseConfig = {
             ]
         },
         
-        // Vertiefungsgebiete als Wahlmodule-Bereiche
-        vertiefungsgebiete: {
-            "Robotik": [],
-            "Astrophysik": [],
-            "Atmosphärenphysik": [],
-            "Chemie": [],
-            "Fluiddynamik": [],
-            "Systems and Control": [],
-            "Physik": [],
-            "Computational Finance": [],
-            "Electromagnetics": [],
-            "Geophysik": [],
-            "Biologie": []
-        },
+        // Vertiefungsgebiete (werden dynamisch aus anderen Dateien geladen)
+        vertiefungsgebiete: {},
         
-        // Wahlfächer nach Semester
-        wahlfaecherBereiche: {
-            "Frühlingssemester 2025": [],
-            "Herbstsemester 2024": []
-        }
+        // Wahlfächer (werden dynamisch aus anderen Dateien geladen)
+        wahlfaecherBereiche: {}
     }
 };
 
-// Backwards-compatible aliases for older keys expected by the Wahlmodule manager
+// Rückwärtskompatibilität (falls andere Code diese Keys erwartet)
 if (window.StudiengangBaseConfig && window.StudiengangBaseConfig.wahlmoduleData) {
-    // some code expects `kernfaecherSchwerpunkte`
-    window.StudiengangBaseConfig.wahlmoduleData.kernfaecherSchwerpunkte = window.StudiengangBaseConfig.wahlmoduleData.kernfaecher || {};
+    // Alias für kernfaecher
+    window.StudiengangBaseConfig.wahlmoduleData.kernfaecher = 
+        window.StudiengangBaseConfig.wahlmoduleData.kernfaecherSchwerpunkte;
 }
