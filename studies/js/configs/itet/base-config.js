@@ -31,6 +31,45 @@ window.StudiengangBaseConfig = {
         enableCategoryTracking: true
     },
     
+    // Prüfungsblöcke Definition - EINFACHE LÖSUNG: module statt modules
+    pruefungsbloecke: [
+        {
+            name: "Basisprüfungsblock A",
+            shortName: "BPb-A",
+            cssClass: "block-bpa",
+            color: "#FF6B6B",
+            module: ["Digitaltechnik", "Lineare Algebra", "Netzwerke und Schaltungen I", "Technische Mechanik"]
+        },
+        {
+            name: "Basisprüfungsblock B", 
+            shortName: "BPb-B",
+            cssClass: "block-bpb",
+            color: "#4ECDC4",
+            module: ["Analysis 1", "Analysis 2", "Informatik I", "Mathematische Methoden", "Netzwerke und Schaltungen II", "Physik I"]
+        },
+        {
+            name: "Prüfungsblock 1",
+            shortName: "Pb-1", 
+            cssClass: "block-p1",
+            color: "#45B7D1",
+            module: ["Analysis 3", "Physik II", "Signal- und Systemtheorie I", "Informatik II"]
+        },
+        {
+            name: "Prüfungsblock 2",
+            shortName: "Pb-2",
+            cssClass: "block-p2", 
+            color: "#96CEB4",
+            module: ["Halbleiter-Schaltungstechnik", "Diskrete Mathematik", "Technische Informatik", "Signal- und Systemtheorie II"]
+        },
+        {
+            name: "Prüfungsblock 3",
+            shortName: "Pb-3",
+            cssClass: "block-p3",
+            color: "#FFEAA7",
+            module: ["Numerische Methoden", "Elektromagnetische Felder und Wellen", "Halbleiterbauelemente", "Wahrscheinlichkeitstheorie und Statistik"]
+        }
+    ],
+    
     // Aspekt-Verhältnisse für verschiedene Module
     aspectRatios: {
         "longModuleName": 2.0,

@@ -1,53 +1,115 @@
-/* ==== ITET COLOR MANAGER (BASIC) ==== */
-/* Einfache ColorManager-Extension für ITET */
+/* ==== ITET COLOR MANAGER (KISS VERSION) ==== */
+/* Einfachste Lösung - funktioniert immer */
 
-// Verhindere doppeltes Laden
 if (!window.ITETColorManager) {
     class ITETColorManager extends StudienplanBaseColorManager {
         constructor(studienplan) {
             super(studienplan);
-            this.coloringMode = "kategorie"; // ITET Standard: Nach Kategorie färben
+            this.coloringMode = "kategorie";
         }
 
-        /* ==== UI CONTROLS ==== */
+        // EINFACHSTE LÖSUNG: Nie die Controls löschen
+        getModuleCssClass(modul) {
+            if (this.coloringMode === "pruefungsblock") {
+                // Suche Prüfungsblock
+                if (this.studienplan.config.pruefungsbloecke) {
+                    for (const block of this.studienplan.config.pruefungsbloecke) {
+                        if (block.module && block.module.includes(modul.name)) {
+                            return block.cssClass;
+                        }
+                    }
+                }
+                return "no-pruefungsblock";
+            }
+            
+            // Standard-Verhalten
+            return super.getModuleCssClass(modul);
+        }
+
+        // CONTROLS: Nur einmal erstellen
         addColoringModeControls() {
+            setTimeout(() => this.createControlsOnce(), 200);
+        }
+
+        createControlsOnce() {
             const legendContainer = document.querySelector(".farben-legende");
-            if (!legendContainer) return;
+            if (!legendContainer || legendContainer.querySelector('[data-itet-controls]')) return;
 
-            // Verhindere doppelte Controls
-            const existingControls = legendContainer.querySelector('[data-itet-coloring-controls]');
-            if (existingControls) return;
-
-            const coloringControls = document.createElement("div");
-            coloringControls.setAttribute('data-itet-coloring-controls', 'true');
-            coloringControls.style.marginBottom = "20px";
-            coloringControls.style.padding = "10px";
-            coloringControls.style.backgroundColor = "#f0f0f0";
-            coloringControls.style.borderRadius = "5px";
-            coloringControls.innerHTML = `
-                <div style="font-weight: bold; margin-bottom: 8px;">Färbung nach:</div>
-                <div>
-                    <label style="display: block;">
-                        <input type="radio" name="itet-coloring-mode" value="kategorie" checked> 
-                        Kategorien
-                    </label>
-                </div>
+            const controls = document.createElement("div");
+            controls.setAttribute('data-itet-controls', 'true');
+            controls.style.cssText = "margin-bottom:15px;padding:8px;background:#f0f0f0;border-radius:4px;";
+            controls.innerHTML = `
+                <div style="font-weight:bold;margin-bottom:5px;">Färbung:</div>
+                <label><input type="radio" name="itet-mode" value="kategorie" checked> Kategorien</label><br>
+                <label><input type="radio" name="itet-mode" value="pruefungsblock"> Prüfungsblöcke</label>
             `;
 
-            // Insert at top of legend
-            legendContainer.insertBefore(coloringControls, legendContainer.firstChild);
+            legendContainer.insertBefore(controls, legendContainer.firstChild);
 
-            // Event listeners
-            const radioButtons = coloringControls.querySelectorAll('input[name="itet-coloring-mode"]');
-            radioButtons.forEach((radio) => {
-                radio.addEventListener("change", (e) => {
+            // Event Listener
+            controls.addEventListener("change", (e) => {
+                if (e.target.name === "itet-mode") {
                     this.setColoringMode(e.target.value);
-                });
+                }
             });
+
+            // CSS sofort laden
+            this.addCSS();
+        }
+
+        // LEGEND: Nie Controls löschen
+        updateLegend() {
+            const legendElement = document.getElementById("legende");
+            if (!legendElement) return;
+
+            // NUR Legend-Items löschen, Controls behalten
+            const items = legendElement.querySelectorAll('.legende-item:not([data-itet-controls] *)');
+            items.forEach(item => item.remove());
+
+            if (this.coloringMode === "pruefungsblock") {
+                // Prüfungsblock-Legende
+                if (this.studienplan.config.pruefungsbloecke) {
+                    this.studienplan.config.pruefungsbloecke.forEach(block => {
+                        const item = document.createElement("div");
+                        item.className = "legende-item";
+                        item.innerHTML = `<div class="farb-box" style="background:${block.color}"></div><span>${block.shortName}</span>`;
+                        legendElement.appendChild(item);
+                    });
+                }
+                const other = document.createElement("div");
+                other.className = "legende-item";
+                other.innerHTML = `<div class="farb-box" style="background:#E0E0E0"></div><span>Sonstige</span>`;
+                legendElement.appendChild(other);
+            } else {
+                // Standard-Legende
+                this.studienplan.createLegend();
+            }
+        }
+
+        // CSS: Einmal laden
+        addCSS() {
+            if (document.getElementById('itet-styles')) return;
+            const style = document.createElement('style');
+            style.id = 'itet-styles';
+            style.textContent = `
+                .modul.block-bpa { background:#FF6B6B !important; }
+                .modul.block-bpb { background:#4ECDC4 !important; }
+                .modul.block-p1 { background:#45B7D1 !important; }
+                .modul.block-p2 { background:#96CEB4 !important; }
+                .modul.block-p3 { background:#FFEAA7 !important; }
+                .modul.no-pruefungsblock { background:#E0E0E0 !important; }
+            `;
+            document.head.appendChild(style);
+        }
+
+        // MODE SWITCHING: Einfach
+        setColoringMode(mode) {
+            this.coloringMode = mode;
+            this.updateModuleColors();
+            this.updateLegend();
         }
     }
 
-    // Export für ITET
     window.ITETColorManager = ITETColorManager;
     window.StudiengangColorManager = ITETColorManager;
 }
