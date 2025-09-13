@@ -39,7 +39,18 @@ ITET allgemein: https://www.berufsberatung.ch/dyn/show/19998
   - Studienführer: https://www.fhnw.ch/de/studium/technik/media/studienfuhrer-ht-fhnw.pdf/@@download/file
   - Curriculum: https://www.fhnw.ch/de/studium/technik/elektro-und-informationstechnik/einblick-in-den-studienaufbau
   - Alle Module: https://issuu.com/fhnw/docs/modultabelle_eit?ff&pageLayout=singlePage
- 
+
+https://www.swissuniversities.ch/themen/lehre-studium/akkreditierte-schweizer-hochschulen
+
+### Alle staatlichen Informatik-FH-Studiengänge
+https://www.berufsberatung.ch/dyn/show/16535
+- Berner Fachhochschule
+- Fachhochschule Graubünden
+- Fachhochschule Nordwestschweiz
+- Hochschule Luzern
+- OST - Ostschweizer Fachhochschule
+- Zürcher Hochschule für Angewandte Wissenschaften ZHAW
+
   ### Private ITET-Studiengänge Europa
   - Constructor University
     - https://constructor.university/programs/undergraduate-education/electrical-computer-engineering
@@ -58,30 +69,3 @@ ITET allgemein: https://www.berufsberatung.ch/dyn/show/19998
   - AKAD University
     - https://www.akad.de/abschluss/bachelor/elektro-und-informationstechnik-beng/
 
-https://www.swissuniversities.ch/themen/lehre-studium/akkreditierte-schweizer-hochschulen
-
-### Alle staatlichen Informatik-FH-Studiengänge
-https://www.berufsberatung.ch/dyn/show/16535
-- Berner Fachhochschule
-- Fachhochschule Graubünden
-- Fachhochschule Nordwestschweiz
-- Hochschule Luzern
-- OST - Ostschweizer Fachhochschule
-- Zürcher Hochschule für Angewandte Wissenschaften ZHAW
-
-### Alle staatlichen BWL-UH-Studiengänge
-https://www.berufsberatung.ch/dyn/show/210656
-- Uni Basel
-- Uni Bern
-- Uni Freiburg
-- Uni Luzern
-- Uni Neuenburg
-- Uni St.Gallen
-
-### Alle staatlichen Wirtschaftsinformatik-FH-Studiengänge
-https://www.berufsberatung.ch/dyn/show/16729
-- Berner Fachhochschule
-- Fachhochschule Nordwestschweiz
-- Hochschule Luzern
-- OST - Ostschweizer Fachhochschule
-- Zürcher Hochschule für Angewandte Wissenschaften ZHAW
