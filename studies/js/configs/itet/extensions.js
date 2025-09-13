@@ -1,5 +1,5 @@
-/* ==== ITET EXTENSIONS MAIN (VEREINFACHT) ==== */
-/* Hauptklasse für ITET - nutzt die ausgelagerten Module */
+/* ==== ITET EXTENSIONS - VEREINFACHT MIT ZENTRALEM KP-COUNTER ==== */
+/* Hauptklasse für ITET - nutzt das zentrale KP-Counter System */
 
 window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
   constructor(config) {
@@ -7,7 +7,6 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
 
     // Properties aus geladenen Modulen
     this.moduleData = window.ITETModuleData || {};
-    this.kpCounter = window.ITETKPCounter || {};
 
     // State für ausgewählte Module
     this.selectedPraktika = this.loadSelectedModules("praktika");
@@ -24,10 +23,6 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
     this.isKernfaecherTooltipLocked = false;
     this.isWahlfaecherTooltipLocked = false;
     this.isWeitereWahlGrundlagenTooltipLocked = false;
-
-    // KP-Counter State
-    this.showDetailedBreakdown = false;
-    this.updateTimeout = null;
   }
 
   initialize() {
@@ -53,10 +48,12 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
     // Basis-Initialisierung (rendert jetzt ggf. schon mit dynamischen Modulen)
     super.initialize();
 
+    // KP-Counter über zentrale Basis-Klasse initialisieren (NEU!)
+    this.initializeKPCounter();
+    
     // ITET-spezifische Initialisierung
-    this.addKPCounter();
     this.addPraktikaControls();
-    this.updateKPDisplay();
+    this.updateKPDisplayWithCategories(); // Erweiterte KP-Anzeige
   }
 
   initializeNewModuleCategories() {
@@ -68,14 +65,32 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
       this.weitereWahlGrundlagen = window.ITETModuleData.weitereWahlGrundlagen;
       this.praktikaSchwerpunkte = window.ITETModuleData.praktikaSchwerpunkte;
     } else {
-      // Fallback: Behalte die bestehenden Daten in der Hauptdatei
       console.warn("ITETModuleData nicht geladen, verwende Fallback-Daten");
     }
   }
 
+  /* ==== ERWEITERTE KP-ANZEIGE (nutzt zentrales System) ==== */
+  updateKPDisplayWithCategories() {
+    // Basis KP-Counter aktualisieren
+    const breakdown = this.updateKPDisplay();
+
+    // Kategorie-spezifische KP-Anzeigen aktualisieren (nur wenn Tracking aktiviert)
+    if (this.config.kpCounterConfig?.enableCategoryTracking) {
+      this.updateCategoryKPDisplays();
+    }
+
+    return breakdown;
+  }
+
+  updateCategoryKPDisplays() {
+    // Nutze die zentrale Methode für Kategorie-KP-Anzeige
+    this.updateCategoryKPDisplay("praktika", this.selectedPraktika);
+    this.updateCategoryKPDisplay("kernfaecher", this.selectedKernfaecher, 18);
+    this.updateCategoryKPDisplay("wahlfaecher", this.selectedWahlfaecher, 6);
+    this.updateCategoryKPDisplay("weitere-wahl-grundlagen", this.selectedWeitereWahlGrundlagen, 8);
+  }
+
   /* ==== LEGEND TOOLTIP EVENTS (OVERRIDE) ==== */
-  // Diese Methode überschreibt die leere Basis-Implementierung und sorgt dafür,
-  // dass Klicks auf Legenden-Einträge (mit hasTooltip=true) die Auswahl-Tooltips öffnen.
   addLegendTooltipEvents(div, kategorie) {
     if (!kategorie || !kategorie.hasTooltip) return;
 
@@ -115,8 +130,6 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
       openTooltip(e);
     });
 
-  // Entfernt: automatisches Öffnen per Hover (KISS: nur expliziter Klick)
-
     // Tastatur-Zugänglichkeit
     div.tabIndex = 0;
     div.addEventListener("keydown", (e) => {
@@ -127,189 +140,51 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
     });
   }
 
-  // ...existing code...
   addPraktikaControls() {
     // Controls hinzufügen - NUR wenn sie nicht bereits existieren
     if (!document.getElementById("show-praktika-list")) {
       window.ITETUtils?.addPraktikaControls();
     }
 
-    // Hilfsreferenz auf die Instanz für Event-Handler
+    // Event Listeners Setup
+    this.setupPraktikaControlEvents();
+  }
+
+  setupPraktikaControlEvents() {
     const self = this;
+    
+    // Event Listeners - mit Null-Checks
+    const eventMappings = [
+      { id: "show-praktika-list", method: "showPraktikaTooltip" },
+      { id: "show-kernfaecher-list", method: "showKernfaecherTooltip" },
+      { id: "show-wahlfaecher-list", method: "showWahlfaecherTooltip" },
+      { id: "show-weitere-wahl-grundlagen-list", method: "showWeitereWahlGrundlagenTooltip" }
+    ];
 
-    // Event Listeners - mit Null-Checks (füge nur hinzu, wenn kein inline onclick gesetzt)
-    const praktikaBtn = document.getElementById("show-praktika-list");
-    if (praktikaBtn && !praktikaBtn.onclick) {
-      praktikaBtn.addEventListener("click", (e) => {
-        e.preventDefault?.();
-        self.showPraktikaTooltip(e);
-      });
-    }
+    eventMappings.forEach(({ id, method }) => {
+      const btn = document.getElementById(id);
+      if (btn && !btn.onclick) {
+        btn.addEventListener("click", (e) => {
+          e.preventDefault();
+          self[method](e);
+        });
+      }
+    });
 
-    const kernfaecherBtn = document.getElementById("show-kernfaecher-list");
-    if (kernfaecherBtn && !kernfaecherBtn.onclick) {
-      kernfaecherBtn.addEventListener("click", (e) => {
-        e.preventDefault();
-        self.showKernfaecherTooltip(e);
-      });
-    }
-
-    const wahlfaecherBtn = document.getElementById("show-wahlfaecher-list");
-    if (wahlfaecherBtn && !wahlfaecherBtn.onclick) {
-      wahlfaecherBtn.addEventListener("click", (e) => {
-        e.preventDefault();
-        self.showWahlfaecherTooltip(e);
-      });
-    }
-
-    const weitereWahlBtn = document.getElementById(
-      "show-weitere-wahl-grundlagen-list"
-    );
-    if (weitereWahlBtn && !weitereWahlBtn.onclick) {
-      weitereWahlBtn.addEventListener("click", (e) => {
-        e.preventDefault();
-        self.showWeitereWahlGrundlagenTooltip(e);
-      });
-    }
-
+    // Weitere Control-Buttons
     const saveBtn = document.getElementById("save-praktika");
     if (saveBtn && !saveBtn.onclick) {
-      saveBtn.addEventListener("click", () => {
-        self.exportPraktika();
-      });
+      saveBtn.addEventListener("click", () => self.exportPraktika());
     }
 
     const refreshBtn = document.getElementById("refresh-studienplan");
     if (refreshBtn && !refreshBtn.onclick) {
-      refreshBtn.addEventListener("click", () => {
-        self.refreshStudienplan();
-      });
+      refreshBtn.addEventListener("click", () => self.refreshStudienplan());
     }
 
     const resetBtn = document.getElementById("reset-praktika");
     if (resetBtn && !resetBtn.onclick) {
-      resetBtn.addEventListener("click", () => {
-        self.resetPraktika();
-      });
-    }
-
-    // Fallback / Delegation: falls Buttons dynamisch ersetzt werden oder gar kein onclick/Listener gesetzt ist,
-    // fange Klicks auf dem Legenden-Container ab und öffne das passende Tooltip.
-    const legend = document.querySelector(".farben-legende");
-    if (legend && !legend.dataset.itetLegendHandler) {
-      legend.addEventListener(
-        "click",
-        (e) => {
-          const targetBtn = e.target.closest(
-            "#show-praktika-list, #show-kernfaecher-list, #show-wahlfaecher-list, #show-weitere-wahl-grundlagen-list"
-          );
-          if (!targetBtn) return;
-
-          e.preventDefault();
-
-          // Bestimme eine sinnvolle Position für das Tooltip (Mittelpunkt des Buttons)
-          const rect = targetBtn.getBoundingClientRect();
-          const evt = {
-            clientX: rect.left + rect.width / 2,
-            clientY: rect.top + rect.height / 2,
-          };
-
-          switch (targetBtn.id) {
-            case "show-praktika-list":
-              self.showPraktikaTooltip(evt);
-              break;
-            case "show-kernfaecher-list":
-              self.showKernfaecherTooltip(evt);
-              break;
-            case "show-wahlfaecher-list":
-              self.showWahlfaecherTooltip(evt);
-              break;
-            case "show-weitere-wahl-grundlagen-list":
-              self.showWeitereWahlGrundlagenTooltip(evt);
-              break;
-            default:
-              break;
-          }
-        },
-        true
-      );
-
-      // Markiere, dass Handler gesetzt ist
-      legend.dataset.itetLegendHandler = "1";
-    }
-  }
-
-  /* ==== KP-COUNTER ==== */
-  addKPCounter() {
-    if (document.getElementById("kp-counter")) return; // Bereits vorhanden
-
-    const legendContainer = document.querySelector(".farben-legende");
-    if (legendContainer && this.kpCounter?.createKPCounter) {
-      const kpCounterElement = this.kpCounter.createKPCounter();
-      legendContainer.insertBefore(
-        kpCounterElement,
-        legendContainer.firstChild
-      );
-    }
-  }
-
-  updateKPDisplay() {
-    if (this.kpCounter?.updateKPDisplay) {
-      this.kpCounter.updateKPDisplay(this.config);
-    }
-    this.updateModuleSelectionDisplays();
-  }
-
-  updateModuleSelectionDisplays() {
-    // Update Praktika KP
-    const praktikaKp = Object.values(this.selectedPraktika)
-      .flat()
-      .reduce((sum, m) => sum + m.kp, 0);
-    const praktikaDisplay = document.getElementById("selected-praktika-kp");
-    if (praktikaDisplay) {
-      praktikaDisplay.textContent = praktikaKp;
-      praktikaDisplay.style.color = praktikaKp > 0 ? "#28a745" : "#dc3545";
-    }
-
-    // Update Kernfächer KP
-    const kernfaecherKp = Object.values(this.selectedKernfaecher)
-      .flat()
-      .reduce((sum, m) => sum + m.kp, 0);
-    const kernfaecherDisplay = document.getElementById(
-      "selected-kernfaecher-kp"
-    );
-    if (kernfaecherDisplay) {
-      kernfaecherDisplay.textContent = kernfaecherKp;
-      kernfaecherDisplay.style.color =
-        kernfaecherKp >= 18 ? "#28a745" : "#dc3545";
-    }
-
-    // Update Wahlfächer KP
-    const wahlfaecherKp = Object.values(this.selectedWahlfaecher)
-      .flat()
-      .reduce((sum, m) => sum + m.kp, 0);
-    const wahlfaecherDisplay = document.getElementById(
-      "selected-wahlfaecher-kp"
-    );
-    if (wahlfaecherDisplay) {
-      wahlfaecherDisplay.textContent = wahlfaecherKp;
-      wahlfaecherDisplay.style.color =
-        wahlfaecherKp > 0 ? "#28a745" : "#dc3545";
-    }
-
-    // Update Weitere Wahl-Grundlagenfächer KP
-    const weitereWahlGrundlagenKp = Object.values(
-      this.selectedWeitereWahlGrundlagen
-    )
-      .flat()
-      .reduce((sum, m) => sum + m.kp, 0);
-    const weitereWahlGrundlagenDisplay = document.getElementById(
-      "selected-weitere-wahl-grundlagen-kp"
-    );
-    if (weitereWahlGrundlagenDisplay) {
-      weitereWahlGrundlagenDisplay.textContent = weitereWahlGrundlagenKp;
-      weitereWahlGrundlagenDisplay.style.color =
-        weitereWahlGrundlagenKp >= 8 ? "#28a745" : "#dc3545";
+      resetBtn.addEventListener("click", () => self.resetPraktika());
     }
   }
 
@@ -394,27 +269,20 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
     });
   }
 
-toggleModulFromTooltip(modulName, category) {
+  /* ==== MODUL AUSWAHL LOGIK (vereinfacht) ==== */
+  toggleModulFromTooltip(modulName, category) {
     if (!this.moduleData) return;
 
     const moduleMap = {
-      praktika: Object.values(
-        this.moduleData.praktikaSchwerpunkte || {}
-      ).flat(),
-      kernfaecher: Object.values(
-        this.moduleData.kernfaecherSchwerpunkte || {}
-      ).flat(),
-      wahlfaecher: Object.values(
-        this.moduleData.wahlfaecherBereiche || {}
-      ).flat(),
+      praktika: Object.values(this.moduleData.praktikaSchwerpunkte || {}).flat(),
+      kernfaecher: Object.values(this.moduleData.kernfaecherSchwerpunkte || {}).flat(),
+      wahlfaecher: Object.values(this.moduleData.wahlfaecherBereiche || {}).flat(),
       "weitere-wahl-grundlagen": this.moduleData.weitereWahlGrundlagen || [],
     };
 
     const modul = moduleMap[category]?.find((m) => m.name === modulName);
     if (modul) {
       this.toggleModulSelection(modul, category);
-
-      // Studienplan automatisch aktualisieren nach Auswahl
       this.updateStudienplanWithSelection();
 
       // Tooltip neu laden nach kurzer Verzögerung
@@ -451,14 +319,12 @@ toggleModulFromTooltip(modulName, category) {
 
     selectedMap[category]["general"].push({ ...modul });
     this.saveSelectedModules(category);
-    this.updateKPDisplay();
+    
+    // Zentrale KP-Anzeige aktualisieren
+    this.updateKPDisplayWithCategories();
+    
     this.showMessage(`✅ "${modul.name}" hinzugefügt`, "success");
-    // Sofort Curriculum aktualisieren (KISS)
-    if (typeof this.updateStudienplanWithSelection === 'function') {
-      this.updateStudienplanWithSelection();
-    } else {
-      this.refreshStudienplan();
-    }
+    this.updateStudienplanWithSelection();
   }
 
   removeModulSelection(modul, category) {
@@ -470,20 +336,18 @@ toggleModulFromTooltip(modulName, category) {
     };
 
     if (selectedMap[category]["general"]) {
-      selectedMap[category]["general"] = selectedMap[category][
-        "general"
-      ].filter((m) => m.name !== modul.name);
+      selectedMap[category]["general"] = selectedMap[category]["general"].filter(
+        (m) => m.name !== modul.name
+      );
     }
 
     this.saveSelectedModules(category);
-    this.updateKPDisplay();
+    
+    // Zentrale KP-Anzeige aktualisieren
+    this.updateKPDisplayWithCategories();
+    
     this.showMessage(`🗑️ "${modul.name}" entfernt`, "info");
-    // Sofort Curriculum aktualisieren (KISS)
-    if (typeof this.updateStudienplanWithSelection === 'function') {
-      this.updateStudienplanWithSelection();
-    } else {
-      this.refreshStudienplan();
-    }
+    this.updateStudienplanWithSelection();
   }
 
   isModulSelected(modulName, category) {
@@ -533,42 +397,22 @@ toggleModulFromTooltip(modulName, category) {
   showWeitereWahlGrundlagenTooltip(event) {
     if (!window.ITETTooltips?.createWeitereWahlGrundlagenTooltipContent) return;
 
-    const content =
-      window.ITETTooltips.createWeitereWahlGrundlagenTooltipContent(
-        this.moduleData,
-        (name, cat) => this.isModulSelected(name, cat)
-      );
+    const content = window.ITETTooltips.createWeitereWahlGrundlagenTooltipContent(
+      this.moduleData,
+      (name, cat) => this.isModulSelected(name, cat)
+    );
     this.showCustomTooltip(content, event);
   }
 
-  // ...existing code...
+  /* ==== STORAGE & UTILITY METHODS (vereinfacht) ==== */
   loadSelectedModules(category) {
     try {
       const storageKey = `itet-selected-${category}`;
       const saved = localStorage.getItem(storageKey);
-      if (!saved) {
-        return { general: [] };
-      }
+      if (!saved) return { general: [] };
+      
       const parsed = JSON.parse(saved);
-
-      // Falls alte Version ein Array gespeichert hat -> in Objekt umwandeln
-      if (Array.isArray(parsed)) {
-        return { general: parsed };
-      }
-
-      // Falls ein Objekt gespeichert ist, stelle sicher, dass es Arrays enthält
-      if (parsed && typeof parsed === "object") {
-        // Wenn keine 'general' key vorhanden, versuche vorhandene Arrays zu konsolidieren
-        if (!parsed.general) {
-          const values = Object.values(parsed)
-            .filter((v) => Array.isArray(v))
-            .flat();
-          parsed.general = values.length ? values : [];
-        }
-        return parsed;
-      }
-
-      return { general: [] };
+      return Array.isArray(parsed) ? { general: parsed } : parsed;
     } catch (error) {
       console.error(`Fehler beim Laden von ${category}:`, error);
       return { general: [] };
@@ -585,27 +429,11 @@ toggleModulFromTooltip(modulName, category) {
         "weitere-wahl-grundlagen": this.selectedWeitereWahlGrundlagen,
       };
 
-      // Sicherstellen, dass wir ein JSON-serialisierbares Objekt mit Arrays speichern
-      let toSave = selectedMap[category];
-      if (!toSave) {
-        toSave = { general: [] };
-      } else if (Array.isArray(toSave)) {
-        // ältere Formate: Array -> in Objekt packen
-        toSave = { general: toSave };
-      } else if (typeof toSave === "object" && !toSave.general) {
-        // Falls Objekt vorhanden, aber keine general-Property, konsolidiere Werte zu general
-        const values = Object.values(toSave)
-          .filter((v) => Array.isArray(v))
-          .flat();
-        toSave.general = values.length ? values : [];
-      }
-
-      localStorage.setItem(storageKey, JSON.stringify(toSave));
+      localStorage.setItem(storageKey, JSON.stringify(selectedMap[category]));
     } catch (error) {
       console.error(`Fehler beim Speichern von ${category}:`, error);
     }
   }
-  // ...existing code...
 
   showMessage(message, type = "info") {
     if (window.ITETUtils?.showMessage) {
@@ -635,7 +463,8 @@ toggleModulFromTooltip(modulName, category) {
       }
     }, 100);
 
-    this.updateKPDisplay();
+    // Zentrale KP-Anzeige aktualisieren
+    this.updateKPDisplayWithCategories();
     this.showMessage("✅ Studienplan aktualisiert!", "success");
   }
 
@@ -652,10 +481,10 @@ toggleModulFromTooltip(modulName, category) {
     ];
     const selectedCategories = new Set(selectedAll.map((m) => m.kategorie));
 
-    // Placeholder nur für Kategorien mit Auswahl entfernen, damit leere Kategorien sichtbar bleiben
+    // Placeholder nur für Kategorien mit Auswahl entfernen
     this.config.daten = this.config.daten.filter((m) => {
       if (!m.isPlaceholder) return true;
-      return selectedCategories.has(m.kategorie) ? false : true; // behalten wenn nichts gewählt
+      return selectedCategories.has(m.kategorie) ? false : true;
     });
 
     // Entferne Module aus Jahr 3 die ersetzt werden
@@ -689,11 +518,8 @@ toggleModulFromTooltip(modulName, category) {
     });
   }
 
-  /* ==== INLINE AUTO-REFRESH (KISS) ==== */
-  // Wird von toggleModulFromTooltip aufgerufen. Fehlte zuvor -> Module erschienen nicht.
-  // Einfach: dynamische Module neu integrieren und NUR das 3. Jahr neu rendern.
   updateStudienplanWithSelection() {
-    // Aktuelle Auswahl integrieren (entfernt vorher alte dynamische Einträge)
+    // Aktuelle Auswahl integrieren
     this.integrateSelectedPraktikaIntoConfig();
 
     // Suche Container des 3. Jahres
@@ -704,18 +530,16 @@ toggleModulFromTooltip(modulName, category) {
     });
 
     if (thirdYearContainer) {
-      // Kategorie-basiertes Layout für Jahr 3 neu aufbauen
       this.createCategoryBasedThirdYear(thirdYearContainer);
     } else {
-      // Fallback: kompletter Neuaufbau (sollte selten nötig sein)
       this.createStudienplan();
     }
 
-    // KP-Anzeigen aktualisieren
-    this.updateKPDisplay();
+    // Zentrale KP-Anzeige aktualisieren
+    this.updateKPDisplayWithCategories();
   }
 
-  /* ==== OVERRIDES: TOOLTIP BEHAVIOR (CLICK-ONLY + OUTSIDE CLICK CLOSE) ==== */
+  /* ==== TOOLTIP BEHAVIOR (CLICK-ONLY + OUTSIDE CLICK CLOSE) ==== */
   showCustomTooltip(content, event) {
     // Auf Basisfunktion zurückgreifen
     if (typeof StudienplanBase !== 'undefined' && StudienplanBase.prototype.showCustomTooltip) {
@@ -725,7 +549,6 @@ toggleModulFromTooltip(modulName, category) {
     // Outside-Click Handler nur einmal registrieren
     if (!this._outsideClickHandler) {
       this._outsideClickHandler = (e) => {
-        // Wenn kein Tooltip mehr existiert -> Listener entfernen
         if (!this.tooltipEl) {
           document.removeEventListener('click', this._outsideClickHandler, true);
           this._outsideClickHandler = null;
@@ -750,4 +573,4 @@ toggleModulFromTooltip(modulName, category) {
       this._outsideClickHandler = null;
     }
   }
-}
+};

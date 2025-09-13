@@ -6,6 +6,8 @@ class StudienplanBase {
         this.isTooltipLocked = false;
         this.isVertiefungsgebieteTooltipLocked = false;
         this.isWahlfaecherTooltipLocked = false;
+        
+        this.kpCounter = null;
     }
 
     /* ==== INITIALIZATION ==== */
@@ -14,6 +16,8 @@ class StudienplanBase {
         this.createLegend();
         this.createStudienplan();
         this.setupEventListeners();
+        
+        this.initializeKPCounter();
         
         // Text-fitting nach dem Rendern
         setTimeout(() => {

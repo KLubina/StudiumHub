@@ -18,6 +18,16 @@ window.StudiengangBaseConfig = {
     // Features
     enableTooltips: true,  // WICHTIG: Muss true sein für Drag & Drop
     enableHover: true,
+    // KP-Counter zentral aktivieren (StudienplanBase nutzt diese Einstellungen)
+    enableKPCounter: true,
+    kpCounterConfig: {
+        // Minimale erforderliche KP (wird vom KP-Counter genutzt)
+        requiredKP: 180,
+        // Detaillierte Aufschlüsselung anzeigen (Toggle im UI)
+        showDetailedBreakdown: true,
+        // Kategorie-spezifische KP-Anzeige aktivieren
+        enableCategoryTracking: true
+    },
     
     // Aspekt-Verhältnisse für verschiedene Module
     aspectRatios: {

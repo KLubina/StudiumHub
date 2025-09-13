@@ -18,6 +18,13 @@ window.StudiengangBaseConfig = {
     // Features
     enableTooltips: true,
     enableHover: true,
+    // KP-Counter zentral aktivieren
+    enableKPCounter: true,
+    kpCounterConfig: {
+        requiredKP: 120,
+        showDetailedBreakdown: false,
+        enableCategoryTracking: true
+    },
     
     // Kategorien mit Beschreibungen - KOMPAKTER
     kategorien: [
