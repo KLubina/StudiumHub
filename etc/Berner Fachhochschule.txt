@@ -1,0 +1,175 @@
+Berner Fachhochschule 
+Studienplan BSc Elektrotechnik und Informationstechnologie 
+
+-----------------FIX------------------
+1. Semester
+Lineare Algebra und Geometrie 1 – 4 ECTS
+Elektronik Grundlagen – 4 ECTS
+Labor-Projekte – 4 ECTS
+Grundlagen der Elektrotechnik – 4 ECTS
+Special Week Projektmanagement – 2 ECTS
+Funktionale Softwareentwicklung in C – 4 ECTS
+Analysis 1 – 4 ECTS
+Chemie & Werkstoffe 1 – 2 ECTS
+Physik 1 – 2 ECTS
+
+2. Semester
+Entwurf elektronischer Schaltungen – 4 ECTS
+Labor-Projekte – 4 ECTS
+Wechselstromtechnik – 4 ECTS
+Hardwarenahe Softwareentwicklung – 4 ECTS
+Analysis 2 – 6 ECTS
+Lineare Algebra & Geometrie 2 – 2 ECTS
+Rhetorik & Präsentationstechnik – 2 ECTS
+Physik 2 – 4 ECTS
+Chemie & Werkstoffe 2 – 2 ECTS
+
+3. Semester
+International English – 2 ECTS
+Physik 3 – 2 ECTS
+Elektrische und magnetische Felder – 4 ECTS
+SW-Projekte – 4 ECTS
+Kontinuierliche Signale und Systeme – 4 ECTS
+Elektronische Systeme – 4 ECTS
+Mathematik der Signalverarbeitung – 6 ECTS
+Special Week Start-up Gründung BWL – 2 ECTS
+Communication Networks – 2 ECTS
+
+4. Semester
+System-Projekte – 6 ECTS
+Digitale Signalverarbeitung – 4 ECTS
+Regelungstechnik – 4 ECTS
+Anwendung elektronischer Systeme – 4 ECTS
+Einstieg in OOP – 4 ECTS
+Wahrscheinlichkeit, Statistik und dynamische Systeme – 6 ECTS
+Technical English – 2 ECTS
+Physik 4 – 2 ECTS
+-----------------FIX------------------
+
+-----------------WAHL-----------------
+5. Semester
+Projektarbeit – 6 ECTS
+Wahlmodul x – 2 ECTS
+Wahlmodul x – 2 ECTS
+Vertiefungsrichtung – 16 ECTS
+Volkswirtschaftslehre – 2 ECTS
+Special Week Nachhaltigkeit – 2 ECTS
+
+6. Semester
+Bachelor-Thesis – 12 ECTS
+Vertiefungsrichtung – 12 ECTS
+Wahlmodul x – 2 ECTS
+Wahlmodul x – 2 ECTS
+-----------------WAHL-----------------
+
+Vertiefungsrichtungen
+
+Electric Energy Systems (min. 20, max. 24 ECTS)
+Photovoltaik und Leistungselektronik – 4 ECTS
+Elektrische Energieversorgung – 4 ECTS
+Elektrische Antriebssysteme und Robotik – 4 ECTS
+Power Grids – 2 ECTS
+Power Quality – 2 ECTS
+Photovoltaic System Planning – 2 ECTS
+High Voltage – 2 ECTS
+Energy Storage Technologies – 2 ECTS
+High Power Electronics – 2 ECTS
+
+Electric Mobility (min. 20, max. 24 ECTS)
+Photovoltaik und Leistungselektronik – 4 ECTS
+Elektrische Antriebssysteme und Robotik – 4 ECTS
+Embedded Systems – 4 ECTS
+High Voltage – 2 ECTS
+Energy Storage Technologies – 2 ECTS
+High Power Electronics – 2 ECTS
+Electric Drive Trains – 2 ECTS
+Power Electronic Systems – 2 ECTS
+Battery Systems Engineering – 2 ECTS
+
+Automation, Control and Robotics (min. 20, max. 24 ECTS)
+Photovoltaik und Leistungselektronik – 4 ECTS
+Elektrische Antriebssysteme und Robotik – 4 ECTS
+Embedded Systems – 4 ECTS
+Power Electronic Systems – 2 ECTS
+Battery Systems Engineering – 2 ECTS
+Electric Drive Trains – 2 ECTS
+Industrial Drives and Controls – 2 ECTS
+Automation and Control – 2 ECTS
+Robotics – 2 ECTS
+
+Embedded Systems (min. 20, max. 24 ECTS)
+Communication Technologies – 4 ECTS
+Embedded Systems – 4 ECTS
+C++ in Embedded Systems – 4 ECTS
+Hardware Design of Embedded Systems – 4 ECTS
+Machine Learning – 4 ECTS
+Echtzeitbetriebssysteme – 4 ECTS
+
+Communication Technologies (min. 20, max. 24 ECTS)
+Communication Technologies – 4 ECTS
+Embedded Systems – 4 ECTS
+Communication Electronics – 4 ECTS
+Communication Networks – 4 ECTS
+Machine Learning – 4 ECTS
+Wireless Communication Systems – 4 ECTS
+
+Keine spezifische Vertiefung (max. 16 ECTS)
+Power Grids – 2 ECTS
+Power Quality – 2 ECTS
+Photovoltaic System Planning – 2 ECTS
+Robotics – 2 ECTS
+High Voltage – 2 ECTS
+C++ in Embedded Systems – 4 ECTS
+Communication Electronics – 4 ECTS
+Communication Networks – 4 ECTS
+Energy Storage Technologies – 2 ECTS
+Hardware Design of Embedded Systems – 4 ECTS
+Echtzeitbetriebssysteme – 4 ECTS
+High Power Electronics – 2 ECTS
+Wireless Communication Systems – 4 ECTS
+Electric Drive Trains – 2 ECTS
+Power Electronic Systems – 2 ECTS
+Battery Systems Engineering – 2 ECTS
+Industrial Drives and Controls – 2 ECTS
+Automation and Control – 2 ECTS
+
+Wahlmodule
+
+Fachliche Wahlmodule (min. 10, max. 22 ECTS)
+Einführung in die Elektrotechnik – 1 ECTS
+Einführung in die Elektronik – 1 ECTS
+Einführung in die Programmierung – 1 ECTS
+Einführung in Mikroprozessoren und Printlayout – 1 ECTS
+Maschinelles Sehen und Bildverarbeitung – 2 ECTS
+Advanced Printed Circuit Board (PCB) Layout – 2 ECTS
+Praktikum Photovoltaik-Systemtechnik – 2 ECTS
+Sensorik – 2 ECTS
+Programmierung industrieller Anwendungen – 2 ECTS
+Embedded Linux – 2 ECTS
+Moderne Energiesysteme – 2 ECTS
+Eisenbahntechnik – 4 ECTS
+Navigation Systems – 2 ECTS
+Security in Communication Systems – 2 ECTS
+Embedded Android – 2 ECTS
+Python – 2 ECTS
+EMV: Einführung – 2 ECTS
+EMV: Analyse und Messtechnik – 2 ECTS
+Projektorientierte Signalverarbeitung – 2 ECTS
+Advanced Tooling for embedded SW – 2 ECTS
+App Development with Java – 2 ECTS
+High voltage DC-Systems – safety and application – 2 ECTS
+
+Überfachliche Wahlmodule (max. 4 ECTS)
+Astronomie – 2 ECTS
+Rechnungswesen – 2 ECTS
+Investitionstheorie und Finanzmanagement – 2 ECTS
+Marketing – 2 ECTS
+Human Resources: Teamwork and Leadership – 2 ECTS
+Strategiemanagement – 2 ECTS
+Technologie- und Innovationsmanagement – 2 ECTS
+Auslandpraktikum – 2 ECTS
+Introduction to Rust and Embedded Systems – 2 ECTS
+Kotlin for Java Developers – 2 ECTS
+Kickstart your idea – 2 ECTS
+Functional Programming with Java and Kotlin – 2 ECTS
+
