@@ -1,113 +1,518 @@
 /* ==== CSE VERTIEFUNGSGEBIETE DATA ==== */
-/* Daten für die verschiedenen Vertiefungsgebiete im CSE-Studiengang */
+/* Vertiefungsgebiete für den CSE-Studiengang im zentralen Modulformat */
 
-const CSE_VERTIEFUNGSGEBIETE = {
-  "Astrophysik": [
-    { name: "Theoretical Astrophysics", ects: 10 },
-    { name: "Theoretical Cosmology", ects: 10 },
-    { name: "Computational Astrophysics", ects: 6 }
-  ],
-  
-  "Atmosphärenphysik": [
-    { name: "Atmosphäre", ects: 3 },
-    { name: "Weather and Climate Models", ects: 4 }
-  ],
-  
-  "Chemie": [
-    { name: "Classical Simulation of (Biol)Molecular Systems", ects: 6 },
-    { name: "Quantenchemie", ects: 6 },
-    { name: "Molecular and Materials Modelling", ects: 4 }
-  ],
-  
-  "Fluiddynamik": [
-    { name: "Fluiddynamik II", ects: 3 },
-    { name: "Computational Methods for Flow, Heat and Mass Transfer Problems", ects: 4 }
-  ],
-  
-  "Systems and Control": [
-    { name: "Control Systems I (Regelsysteme)", ects: 6 },
-    { name: "Control Systems II", ects: 6 },
-    { name: "Signal- und Systemtheorie I", ects: 4 },
-    { name: "Signal- und Systemtheorie II", ects: 4 }
-  ],
-  
-  "Robotik": [
-    { name: "Theory of Robotics and Mechatronics", ects: 4 },
-    { name: "Autonomous Mobile Robots", ects: 5 },
-    { name: "Introduction to Machine Learning", ects: 8 },
-    { name: "Probabilistic Artificial Intelligence", ects: 8 },
-    { name: "Deep Learning", ects: 8 },
-    { name: "Computer Vision", ects: 8 },
-    { name: "Image Analysis and Computer Vision", ects: 6 },
-    { name: "Dynamic Programming and Optimal Control", ects: 4 },
-    { name: "Recursive Estimation", ects: 4 },
-    { name: "Robot Dynamics", ects: 4 },
-    { name: "Advanced Machine Learning", ects: 10 },
-    { name: "3D Vision", ects: 4 },
-    { name: "Seminar in Robotics for CSE", ects: 4 }
-  ],
-  
-  "Physik": [
-    { name: "Introduction to Computational Physics", ects: 8 },
-    { name: "Computational Statistical Physics", ects: 8 },
-    { name: "Computational Quantum Physics", ects: 8 },
-    { name: "Molecular and Materials Modelling", ects: 4 }
-  ],
-  
-  "Computational Finance": [
-    { name: "Mathematical Foundations for Finance", ects: 4 },
-    { name: "Computational Methods for Quantitative Finance – Monte Carlo and Sampling Methods", ects: 6 }
-  ],
-  
-  "Electromagnetics": [
-    { name: "Physical Modelling and Simulation", ects: 6 },
-    { name: "Optimization Methods for Engineers", ects: 3 }
-  ],
-  
-  "Geophysik": [
-    { name: "Continuum Mechanics", ects: 3 },
-    { name: "Numerical Modelling I and II", ects: 6 },
-    { name: "Dynamics of the Mantle and Lithosphere", ects: 3 },
-    { name: "Numerical Modelling for Applied Geophysics", ects: 4 },
-    { name: "Tomographic Imaging", ects: 3 },
-    { name: "Seismology of the Spherical Earth", ects: 3 },
-    { name: "Inverse Theory I+II", ects: 6 },
-    { name: "Numerical Modelling in Fortran", ects: 3 }
-  ],
-  
-  "Biologie": [
-    { name: "Computational Systems Biology", ects: 6 },
-    { name: "Statistical Models in Computational Biology", ects: 6 },
-    { name: "Spatio-Temporal Modelling in Biology", ects: 4 },
-    { name: "Introduction to Neuroinformatics", ects: 6 }
-  ]
-};
+window.CSE_VertiefungsgebieteModules = [
+    // Astrophysik
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Vertiefungsgebiete",
+        kategorie_vertiefung: "Astrophysik",
+        name: "Theoretical Astrophysics",
+        kp: 10,
+        kategorie: "vertiefung",
+        themenbereich: "physik",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Vertiefungsgebiete",
+        kategorie_vertiefung: "Astrophysik",
+        name: "Theoretical Cosmology",
+        kp: 10,
+        kategorie: "vertiefung",
+        themenbereich: "physik",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Vertiefungsgebiete",
+        kategorie_vertiefung: "Astrophysik",
+        name: "Computational Astrophysics",
+        kp: 6,
+        kategorie: "vertiefung",
+        themenbereich: "informatik",
+    },
 
-// Hilfsfunktion zum Generieren des HTML-Contents
+    // Atmosphärenphysik
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Vertiefungsgebiete",
+        kategorie_vertiefung: "Atmosphärenphysik",
+        name: "Atmosphäre",
+        kp: 3,
+        kategorie: "vertiefung",
+        themenbereich: "physik",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Vertiefungsgebiete",
+        kategorie_vertiefung: "Atmosphärenphysik",
+        name: "Weather and Climate Models",
+        kp: 4,
+        kategorie: "vertiefung",
+        themenbereich: "physik",
+    },
+
+    // Chemie
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Vertiefungsgebiete",
+        kategorie_vertiefung: "Chemie",
+        name: "Classical Simulation of (Biol)Molecular Systems",
+        kp: 6,
+        kategorie: "vertiefung",
+        themenbereich: "chemie",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Vertiefungsgebiete",
+        kategorie_vertiefung: "Chemie",
+        name: "Quantenchemie",
+        kp: 6,
+        kategorie: "vertiefung",
+        themenbereich: "chemie",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Vertiefungsgebiete",
+        kategorie_vertiefung: "Chemie",
+        name: "Molecular and Materials Modelling",
+        kp: 4,
+        kategorie: "vertiefung",
+        themenbereich: "chemie",
+    },
+
+    // Fluiddynamik
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Vertiefungsgebiete",
+        kategorie_vertiefung: "Fluiddynamik",
+        name: "Fluiddynamik II",
+        kp: 3,
+        kategorie: "vertiefung",
+        themenbereich: "physik",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Vertiefungsgebiete",
+        kategorie_vertiefung: "Fluiddynamik",
+        name: "Computational Methods for Flow, Heat and Mass Transfer Problems",
+        kp: 4,
+        kategorie: "vertiefung",
+        themenbereich: "informatik",
+    },
+
+    // Systems and Control
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Vertiefungsgebiete",
+        kategorie_vertiefung: "Systems and Control",
+        name: "Control Systems I (Regelsysteme)",
+        kp: 6,
+        kategorie: "vertiefung",
+        themenbereich: "engineering",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Vertiefungsgebiete",
+        kategorie_vertiefung: "Systems and Control",
+        name: "Control Systems II",
+        kp: 6,
+        kategorie: "vertiefung",
+        themenbereich: "engineering",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Vertiefungsgebiete",
+        kategorie_vertiefung: "Systems and Control",
+        name: "Signal- und Systemtheorie I",
+        kp: 4,
+        kategorie: "vertiefung",
+        themenbereich: "engineering",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Vertiefungsgebiete",
+        kategorie_vertiefung: "Systems and Control",
+        name: "Signal- und Systemtheorie II",
+        kp: 4,
+        kategorie: "vertiefung",
+        themenbereich: "engineering",
+    },
+
+    // Robotik
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Vertiefungsgebiete",
+        kategorie_vertiefung: "Robotik",
+        name: "Theory of Robotics and Mechatronics",
+        kp: 4,
+        kategorie: "vertiefung",
+        themenbereich: "engineering",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Vertiefungsgebiete",
+        kategorie_vertiefung: "Robotik",
+        name: "Autonomous Mobile Robots",
+        kp: 5,
+        kategorie: "vertiefung",
+        themenbereich: "informatik",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Vertiefungsgebiete",
+        kategorie_vertiefung: "Robotik",
+        name: "Probabilistic Artificial Intelligence",
+        kp: 8,
+        kategorie: "vertiefung",
+        themenbereich: "informatik",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Vertiefungsgebiete",
+        kategorie_vertiefung: "Robotik",
+        name: "Deep Learning",
+        kp: 8,
+        kategorie: "vertiefung",
+        themenbereich: "informatik",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Vertiefungsgebiete",
+        kategorie_vertiefung: "Robotik",
+        name: "Computer Vision",
+        kp: 8,
+        kategorie: "vertiefung",
+        themenbereich: "informatik",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Vertiefungsgebiete",
+        kategorie_vertiefung: "Robotik",
+        name: "Dynamic Programming and Optimal Control",
+        kp: 4,
+        kategorie: "vertiefung",
+        themenbereich: "mathematik",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Vertiefungsgebiete",
+        kategorie_vertiefung: "Robotik",
+        name: "Recursive Estimation",
+        kp: 4,
+        kategorie: "vertiefung",
+        themenbereich: "mathematik",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Vertiefungsgebiete",
+        kategorie_vertiefung: "Robotik",
+        name: "Robot Dynamics",
+        kp: 4,
+        kategorie: "vertiefung",
+        themenbereich: "engineering",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Vertiefungsgebiete",
+        kategorie_vertiefung: "Robotik",
+        name: "Advanced Machine Learning",
+        kp: 10,
+        kategorie: "vertiefung",
+        themenbereich: "informatik",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Vertiefungsgebiete",
+        kategorie_vertiefung: "Robotik",
+        name: "Seminar in Robotics for CSE",
+        kp: 4,
+        kategorie: "vertiefung",
+        themenbereich: "informatik",
+    },
+
+    // Physik
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Vertiefungsgebiete",
+        kategorie_vertiefung: "Physik",
+        name: "Introduction to Computational Physics",
+        kp: 8,
+        kategorie: "vertiefung",
+        themenbereich: "physik",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Vertiefungsgebiete",
+        kategorie_vertiefung: "Physik",
+        name: "Computational Statistical Physics",
+        kp: 8,
+        kategorie: "vertiefung",
+        themenbereich: "physik",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Vertiefungsgebiete",
+        kategorie_vertiefung: "Physik",
+        name: "Computational Quantum Physics",
+        kp: 8,
+        kategorie: "vertiefung",
+        themenbereich: "physik",
+    },
+
+    // Computational Finance
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Vertiefungsgebiete",
+        kategorie_vertiefung: "Computational Finance",
+        name: "Mathematical Foundations for Finance",
+        kp: 4,
+        kategorie: "vertiefung",
+        themenbereich: "mathematik",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Vertiefungsgebiete",
+        kategorie_vertiefung: "Computational Finance",
+        name: "Computational Methods for Quantitative Finance – Monte Carlo and Sampling Methods",
+        kp: 6,
+        kategorie: "vertiefung",
+        themenbereich: "mathematik",
+    },
+
+    // Electromagnetics
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Vertiefungsgebiete",
+        kategorie_vertiefung: "Electromagnetics",
+        name: "Physical Modelling and Simulation",
+        kp: 6,
+        kategorie: "vertiefung",
+        themenbereich: "physik",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Vertiefungsgebiete",
+        kategorie_vertiefung: "Electromagnetics",
+        name: "Optimization Methods for Engineers",
+        kp: 3,
+        kategorie: "vertiefung",
+        themenbereich: "engineering",
+    },
+
+    // Geophysik
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Vertiefungsgebiete",
+        kategorie_vertiefung: "Geophysik",
+        name: "Continuum Mechanics",
+        kp: 3,
+        kategorie: "vertiefung",
+        themenbereich: "physik",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Vertiefungsgebiete",
+        kategorie_vertiefung: "Geophysik",
+        name: "Numerical Modelling I and II",
+        kp: 6,
+        kategorie: "vertiefung",
+        themenbereich: "informatik",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Vertiefungsgebiete",
+        kategorie_vertiefung: "Geophysik",
+        name: "Dynamics of the Mantle and Lithosphere",
+        kp: 3,
+        kategorie: "vertiefung",
+        themenbereich: "physik",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Vertiefungsgebiete",
+        kategorie_vertiefung: "Geophysik",
+        name: "Numerical Modelling for Applied Geophysics",
+        kp: 4,
+        kategorie: "vertiefung",
+        themenbereich: "informatik",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Vertiefungsgebiete",
+        kategorie_vertiefung: "Geophysik",
+        name: "Tomographic Imaging",
+        kp: 3,
+        kategorie: "vertiefung",
+        themenbereich: "informatik",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Vertiefungsgebiete",
+        kategorie_vertiefung: "Geophysik",
+        name: "Seismology of the Spherical Earth",
+        kp: 3,
+        kategorie: "vertiefung",
+        themenbereich: "physik",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Vertiefungsgebiete",
+        kategorie_vertiefung: "Geophysik",
+        name: "Inverse Theory I+II",
+        kp: 6,
+        kategorie: "vertiefung",
+        themenbereich: "mathematik",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Vertiefungsgebiete",
+        kategorie_vertiefung: "Geophysik",
+        name: "Numerical Modelling in Fortran",
+        kp: 3,
+        kategorie: "vertiefung",
+        themenbereich: "informatik",
+    },
+
+    // Biologie
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Vertiefungsgebiete",
+        kategorie_vertiefung: "Biologie",
+        name: "Computational Systems Biology",
+        kp: 6,
+        kategorie: "vertiefung",
+        themenbereich: "biologie",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Vertiefungsgebiete",
+        kategorie_vertiefung: "Biologie",
+        name: "Statistical Models in Computational Biology",
+        kp: 6,
+        kategorie: "vertiefung",
+        themenbereich: "biologie",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Vertiefungsgebiete",
+        kategorie_vertiefung: "Biologie",
+        name: "Spatio-Temporal Modelling in Biology",
+        kp: 4,
+        kategorie: "vertiefung",
+        themenbereich: "biologie",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Vertiefungsgebiete",
+        kategorie_vertiefung: "Biologie",
+        name: "Introduction to Neuroinformatics",
+        kp: 6,
+        kategorie: "vertiefung",
+        themenbereich: "biologie",
+    },
+];
+
+// Hilfsfunktionen für erweiterte Funktionalität
+function getVertiefungsgebieteByKategorie(kategorie) {
+    return window.CSE_VertiefungsgebieteModules.filter(modul => modul.kategorie_vertiefung === kategorie);
+}
+
+function getVertiefungsgebieteByThemenbereich(themenbereich) {
+    return window.CSE_VertiefungsgebieteModules.filter(modul => modul.themenbereich === themenbereich);
+}
+
+function getVertiefungsgebieteKategorien() {
+    const kategorien = [...new Set(window.CSE_VertiefungsgebieteModules.map(modul => modul.kategorie_vertiefung))];
+    return kategorien.sort();
+}
+
 function generateVertiefungsgebieteHTML() {
-  let html = '<div class="vertiefungsgebiete-liste"><h3>Vertiefungsgebiete</h3>';
-  
-  for (const [bereich, kurse] of Object.entries(CSE_VERTIEFUNGSGEBIETE)) {
-    html += `<h4>${bereich}</h4><ul>`;
-    kurse.forEach(kurs => {
-      html += `<li>${kurs.name} – ${kurs.ects} ECTS</li>`;
+    let html = '<div class="vertiefungsgebiete-liste"><h3>Vertiefungsgebiete</h3>';
+    
+    const kategorien = getVertiefungsgebieteKategorien();
+    
+    kategorien.forEach(kategorie => {
+        const kurse = getVertiefungsgebieteByKategorie(kategorie);
+        html += `<h4>${kategorie}</h4><ul>`;
+        kurse.forEach(kurs => {
+            html += `<li>${kurs.name} – ${kurs.kp} KP (${kurs.themenbereich})</li>`;
+        });
+        html += '</ul>';
     });
-    html += '</ul>';
-  }
-  
-  html += '</div>';
-  return html;
+    
+    html += '</div>';
+    return html;
 }
 
 // Export für modularen Import
 if (typeof window !== 'undefined') {
-  window.CSE_VERTIEFUNGSGEBIETE = CSE_VERTIEFUNGSGEBIETE;
-  window.generateVertiefungsgebieteHTML = generateVertiefungsgebieteHTML;
+    window.CSE_VertiefungsgebieteModules = window.CSE_VertiefungsgebieteModules;
+    window.getVertiefungsgebieteByKategorie = getVertiefungsgebieteByKategorie;
+    window.getVertiefungsgebieteByThemenbereich = getVertiefungsgebieteByThemenbereich;
+    window.getVertiefungsgebieteKategorien = getVertiefungsgebieteKategorien;
+    window.generateVertiefungsgebieteHTML = generateVertiefungsgebieteHTML;
+    
+    // Rückwärtskompatibilität
+    window.CSE_VERTIEFUNGSGEBIETE = {
+        "INFO": "Daten wurden ins zentrale Format konvertiert. Verwende CSE_VertiefungsgebieteModules.",
+        "CONVERTED": true
+    };
 }
 
 if (typeof module !== 'undefined' && module.exports) {
-  module.exports = {
-    CSE_VERTIEFUNGSGEBIETE,
-    generateVertiefungsgebieteHTML
-  };
+    module.exports = {
+        CSE_VertiefungsgebieteModules: window.CSE_VertiefungsgebieteModules,
+        getVertiefungsgebieteByKategorie,
+        getVertiefungsgebieteByThemenbereich,
+        getVertiefungsgebieteKategorien,
+        generateVertiefungsgebieteHTML,
+        // Rückwärtskompatibilität
+        CSE_VERTIEFUNGSGEBIETE: {
+            "INFO": "Daten wurden ins zentrale Format konvertiert. Verwende CSE_VertiefungsgebieteModules.",
+            "CONVERTED": true
+        }
+    };
 }

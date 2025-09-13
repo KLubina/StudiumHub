@@ -1,94 +1,593 @@
 /* ==== CSE WAHLFÄCHER DATA ==== */
-/* Daten für die Wahlfächer im CSE-Studiengang nach Semester */
+/* Wahlfächer für den CSE-Studiengang im zentralen Modulformat */
 
-const CSE_WAHLFAECHER = {
-  "Frühlingssemester 2025": [
-    { name: "Product Development and Engineering Design", ects: 4 },
-    { name: "Optimization and Machine Learning", ects: 4 },
-    { name: "Visualization, Simulation and Interaction - Virtual Reality I", ects: 4 },
-    { name: "Informationstechnologien im digitalen Produkt", ects: 4 },
-    { name: "Biofluiddynamics", ects: 4 },
-    { name: "Introduction to Finite Element Analysis", ects: 4 },
-    { name: "Nonlinear FEA", ects: 4 },
-    { name: "Elektromagnetische Felder und Wellen", ects: 4 },
-    { name: "Algebra and Error Correcting Codes", ects: 6 },
-    { name: "Information Theory II", ects: 6 },
-    { name: "Communication and Detection Theory", ects: 6 },
-    { name: "Communication Networks", ects: 6 },
-    { name: "Principles of Distributed Computing", ects: 7 },
-    { name: "Information Security", ects: 8 },
-    { name: "Applied Cryptography", ects: 8 },
-    { name: "Game Programming Laboratory", ects: 10 },
-    { name: "Shape Modeling and Geometry Processing", ects: 8 },
-    { name: "Big Data for Engineers", ects: 6 },
-    { name: "Mobile Health and Activity Monitoring", ects: 6 },
-    { name: "Machine Learning for Health Care", ects: 5 },
-    { name: "Chemometrics and Machine Learning for Chemical Engineers", ects: 4 },
-    { name: "Neuromorphic Engineering II", ects: 6 },
-    { name: "Computational Vision (UZH)", ects: 6 },
-    { name: "Computational Models of Motion", ects: 8 },
-    { name: "Statistical Methods in Experimental Physics", ects: 10 },
-    { name: "Computational Systems Biology: Stochastic Approaches", ects: 4 },
-    { name: "Klimasysteme", ects: 3 },
-    { name: "Mathematical Optimization Lab", ects: 5 },
-    { name: "Network & Integer Optimization", ects: 5 },
-    { name: "Convex Optimization", ects: 5 },
-    { name: "High-Dimensional Statistics", ects: 4 },
-    { name: "Physikalische Chemie III: Molekulare Quantenmechanik", ects: 4 },
-    { name: "Soccer Analytics", ects: 3 }
-  ],
-  
-  "Herbstsemester 2024": [
-    { name: "Visualization, Simulation and Interaction - Virtual Reality II", ects: 4 },
-    { name: "Applied Finite Element Analysis", ects: 4 },
-    { name: "Nonlinear FEA", ects: 4 },
-    { name: "Design of Parallel and High-Performance Computing", ects: 9 },
-    { name: "Discrete Event Systems", ects: 6 },
-    { name: "VLSI 1: HDL Based Design for FPGAs", ects: 6 },
-    { name: "VLSI 3: Full-Custom Digital Circuit Design", ects: 6 },
-    { name: "Information Theory I", ects: 6 },
-    { name: "Computational Psychiatry", ects: 3 },
-    { name: "Algorithms, Probability, and Computing", ects: 8 },
-    { name: "Visual Computing", ects: 8 },
-    { name: "Computer Graphics", ects: 8 },
-    { name: "Physically-Based Simulation in Computer Graphics", ects: 5 },
-    { name: "Information Systems for Engineers", ects: 4 },
-    { name: "High-Dimensional Statistics", ects: 4 },
-    { name: "Time Series Analysis", ects: 4 },
-    { name: "Linear & Combinatorial Optimization", ects: 10 },
-    { name: "Allgemeine Mechanik", ects: 7 },
-    { name: "Neuromorphic Engineering I", ects: 6 },
-    { name: "Angewandte Computer Architektur", ects: 6 },
-    { name: "Responsible Machine Learning with Insurance Applications", ects: 4 },
-    { name: "Causality", ects: 5 }
-  ]
-};
+window.CSE_WahlfaecherModules = [
+    // Frühlingssemester 2025
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Wahlfächer",
+        semester_angebot: "Frühlingssemester 2025",
+        name: "Product Development and Engineering Design",
+        kp: 4,
+        kategorie: "wahl",
+        themenbereich: "engineering",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Wahlfächer",
+        semester_angebot: "Frühlingssemester 2025",
+        name: "Optimization and Machine Learning",
+        kp: 4,
+        kategorie: "wahl",
+        themenbereich: "informatik",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Wahlfächer",
+        semester_angebot: "Frühlingssemester 2025",
+        name: "Visualization, Simulation and Interaction - Virtual Reality I",
+        kp: 4,
+        kategorie: "wahl",
+        themenbereich: "informatik",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Wahlfächer",
+        semester_angebot: "Frühlingssemester 2025",
+        name: "Informationstechnologien im digitalen Produkt",
+        kp: 4,
+        kategorie: "wahl",
+        themenbereich: "informatik",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Wahlfächer",
+        semester_angebot: "Frühlingssemester 2025",
+        name: "Biofluiddynamics",
+        kp: 4,
+        kategorie: "wahl",
+        themenbereich: "physik",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Wahlfächer",
+        semester_angebot: "Frühlingssemester 2025",
+        name: "Introduction to Finite Element Analysis",
+        kp: 4,
+        kategorie: "wahl",
+        themenbereich: "engineering",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Wahlfächer",
+        semester_angebot: "Frühlingssemester 2025",
+        name: "Nonlinear FEA",
+        kp: 4,
+        kategorie: "wahl",
+        themenbereich: "engineering",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Wahlfächer",
+        semester_angebot: "Frühlingssemester 2025",
+        name: "Elektromagnetische Felder und Wellen",
+        kp: 4,
+        kategorie: "wahl",
+        themenbereich: "physik",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Wahlfächer",
+        semester_angebot: "Frühlingssemester 2025",
+        name: "Algebra and Error Correcting Codes",
+        kp: 6,
+        kategorie: "wahl",
+        themenbereich: "mathematik",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Wahlfächer",
+        semester_angebot: "Frühlingssemester 2025",
+        name: "Information Theory II",
+        kp: 6,
+        kategorie: "wahl",
+        themenbereich: "informatik",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Wahlfächer",
+        semester_angebot: "Frühlingssemester 2025",
+        name: "Communication and Detection Theory",
+        kp: 6,
+        kategorie: "wahl",
+        themenbereich: "informatik",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Wahlfächer",
+        semester_angebot: "Frühlingssemester 2025",
+        name: "Communication Networks",
+        kp: 6,
+        kategorie: "wahl",
+        themenbereich: "informatik",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Wahlfächer",
+        semester_angebot: "Frühlingssemester 2025",
+        name: "Principles of Distributed Computing",
+        kp: 7,
+        kategorie: "wahl",
+        themenbereich: "informatik",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Wahlfächer",
+        semester_angebot: "Frühlingssemester 2025",
+        name: "Information Security",
+        kp: 8,
+        kategorie: "wahl",
+        themenbereich: "informatik",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Wahlfächer",
+        semester_angebot: "Frühlingssemester 2025",
+        name: "Applied Cryptography",
+        kp: 8,
+        kategorie: "wahl",
+        themenbereich: "informatik",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Wahlfächer",
+        semester_angebot: "Frühlingssemester 2025",
+        name: "Game Programming Laboratory",
+        kp: 10,
+        kategorie: "wahl",
+        themenbereich: "informatik",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Wahlfächer",
+        semester_angebot: "Frühlingssemester 2025",
+        name: "Shape Modeling and Geometry Processing",
+        kp: 8,
+        kategorie: "wahl",
+        themenbereich: "informatik",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Wahlfächer",
+        semester_angebot: "Frühlingssemester 2025",
+        name: "Big Data for Engineers",
+        kp: 6,
+        kategorie: "wahl",
+        themenbereich: "informatik",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Wahlfächer",
+        semester_angebot: "Frühlingssemester 2025",
+        name: "Mobile Health and Activity Monitoring",
+        kp: 6,
+        kategorie: "wahl",
+        themenbereich: "informatik",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Wahlfächer",
+        semester_angebot: "Frühlingssemester 2025",
+        name: "Machine Learning for Health Care",
+        kp: 5,
+        kategorie: "wahl",
+        themenbereich: "informatik",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Wahlfächer",
+        semester_angebot: "Frühlingssemester 2025",
+        name: "Chemometrics and Machine Learning for Chemical Engineers",
+        kp: 4,
+        kategorie: "wahl",
+        themenbereich: "chemie",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Wahlfächer",
+        semester_angebot: "Frühlingssemester 2025",
+        name: "Neuromorphic Engineering II",
+        kp: 6,
+        kategorie: "wahl",
+        themenbereich: "engineering",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Wahlfächer",
+        semester_angebot: "Frühlingssemester 2025",
+        name: "Computational Vision (UZH)",
+        kp: 6,
+        kategorie: "wahl",
+        themenbereich: "informatik",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Wahlfächer",
+        semester_angebot: "Frühlingssemester 2025",
+        name: "Computational Models of Motion",
+        kp: 8,
+        kategorie: "wahl",
+        themenbereich: "informatik",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Wahlfächer",
+        semester_angebot: "Frühlingssemester 2025",
+        name: "Statistical Methods in Experimental Physics",
+        kp: 10,
+        kategorie: "wahl",
+        themenbereich: "physik",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Wahlfächer",
+        semester_angebot: "Frühlingssemester 2025",
+        name: "Computational Systems Biology: Stochastic Approaches",
+        kp: 4,
+        kategorie: "wahl",
+        themenbereich: "biologie",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Wahlfächer",
+        semester_angebot: "Frühlingssemester 2025",
+        name: "Klimasysteme",
+        kp: 3,
+        kategorie: "wahl",
+        themenbereich: "physik",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Wahlfächer",
+        semester_angebot: "Frühlingssemester 2025",
+        name: "Mathematical Optimization Lab",
+        kp: 5,
+        kategorie: "wahl",
+        themenbereich: "mathematik",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Wahlfächer",
+        semester_angebot: "Frühlingssemester 2025",
+        name: "Network & Integer Optimization",
+        kp: 5,
+        kategorie: "wahl",
+        themenbereich: "mathematik",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Wahlfächer",
+        semester_angebot: "Frühlingssemester 2025",
+        name: "Convex Optimization",
+        kp: 5,
+        kategorie: "wahl",
+        themenbereich: "mathematik",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Wahlfächer",
+        semester_angebot: "Frühlingssemester 2025",
+        name: "High-Dimensional Statistics",
+        kp: 4,
+        kategorie: "wahl",
+        themenbereich: "mathematik",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Wahlfächer",
+        semester_angebot: "Frühlingssemester 2025",
+        name: "Physikalische Chemie III: Molekulare Quantenmechanik",
+        kp: 4,
+        kategorie: "wahl",
+        themenbereich: "chemie",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Wahlfächer",
+        semester_angebot: "Frühlingssemester 2025",
+        name: "Soccer Analytics",
+        kp: 3,
+        kategorie: "wahl",
+        themenbereich: "mathematik",
+    },
 
-// Hilfsfunktion zum Generieren des HTML-Contents
+    // Herbstsemester 2024
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Wahlfächer",
+        semester_angebot: "Herbstsemester 2024",
+        name: "Visualization, Simulation and Interaction - Virtual Reality II",
+        kp: 4,
+        kategorie: "wahl",
+        themenbereich: "informatik",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Wahlfächer",
+        semester_angebot: "Herbstsemester 2024",
+        name: "Applied Finite Element Analysis",
+        kp: 4,
+        kategorie: "wahl",
+        themenbereich: "engineering",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Wahlfächer",
+        semester_angebot: "Herbstsemester 2024",
+        name: "Design of Parallel and High-Performance Computing",
+        kp: 9,
+        kategorie: "wahl",
+        themenbereich: "informatik",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Wahlfächer",
+        semester_angebot: "Herbstsemester 2024",
+        name: "Discrete Event Systems",
+        kp: 6,
+        kategorie: "wahl",
+        themenbereich: "informatik",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Wahlfächer",
+        semester_angebot: "Herbstsemester 2024",
+        name: "VLSI 1: HDL Based Design for FPGAs",
+        kp: 6,
+        kategorie: "wahl",
+        themenbereich: "engineering",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Wahlfächer",
+        semester_angebot: "Herbstsemester 2024",
+        name: "VLSI 3: Full-Custom Digital Circuit Design",
+        kp: 6,
+        kategorie: "wahl",
+        themenbereich: "engineering",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Wahlfächer",
+        semester_angebot: "Herbstsemester 2024",
+        name: "Information Theory I",
+        kp: 6,
+        kategorie: "wahl",
+        themenbereich: "informatik",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Wahlfächer",
+        semester_angebot: "Herbstsemester 2024",
+        name: "Computational Psychiatry",
+        kp: 3,
+        kategorie: "wahl",
+        themenbereich: "medizin",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Wahlfächer",
+        semester_angebot: "Herbstsemester 2024",
+        name: "Algorithms, Probability, and Computing",
+        kp: 8,
+        kategorie: "wahl",
+        themenbereich: "informatik",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Wahlfächer",
+        semester_angebot: "Herbstsemester 2024",
+        name: "Visual Computing",
+        kp: 8,
+        kategorie: "wahl",
+        themenbereich: "informatik",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Wahlfächer",
+        semester_angebot: "Herbstsemester 2024",
+        name: "Computer Graphics",
+        kp: 8,
+        kategorie: "wahl",
+        themenbereich: "informatik",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Wahlfächer",
+        semester_angebot: "Herbstsemester 2024",
+        name: "Physically-Based Simulation in Computer Graphics",
+        kp: 5,
+        kategorie: "wahl",
+        themenbereich: "informatik",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Wahlfächer",
+        semester_angebot: "Herbstsemester 2024",
+        name: "Information Systems for Engineers",
+        kp: 4,
+        kategorie: "wahl",
+        themenbereich: "informatik",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Wahlfächer",
+        semester_angebot: "Herbstsemester 2024",
+        name: "Time Series Analysis",
+        kp: 4,
+        kategorie: "wahl",
+        themenbereich: "mathematik",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Wahlfächer",
+        semester_angebot: "Herbstsemester 2024",
+        name: "Linear & Combinatorial Optimization",
+        kp: 10,
+        kategorie: "wahl",
+        themenbereich: "mathematik",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Wahlfächer",
+        semester_angebot: "Herbstsemester 2024",
+        name: "Allgemeine Mechanik",
+        kp: 7,
+        kategorie: "wahl",
+        themenbereich: "physik",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Wahlfächer",
+        semester_angebot: "Herbstsemester 2024",
+        name: "Neuromorphic Engineering I",
+        kp: 6,
+        kategorie: "wahl",
+        themenbereich: "engineering",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Wahlfächer",
+        semester_angebot: "Herbstsemester 2024",
+        name: "Angewandte Computer Architektur",
+        kp: 6,
+        kategorie: "wahl",
+        themenbereich: "informatik",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Wahlfächer",
+        semester_angebot: "Herbstsemester 2024",
+        name: "Responsible Machine Learning with Insurance Applications",
+        kp: 4,
+        kategorie: "wahl",
+        themenbereich: "informatik",
+    },
+    {
+        jahr: 3,
+        semester: 0,
+        bereich: "Wahlfächer",
+        semester_angebot: "Herbstsemester 2024",
+        name: "Causality",
+        kp: 5,
+        kategorie: "wahl",
+        themenbereich: "mathematik",
+    },
+];
+
+// Hilfsfunktionen für Rückwärtskompatibilität und neue Funktionalität
+function getWahlfaecherBySemester(semester) {
+    return window.CSE_WahlfaecherModules.filter(modul => modul.semester_angebot === semester);
+}
+
+function getWahlfaecherByThemenbereich(themenbereich) {
+    return window.CSE_WahlfaecherModules.filter(modul => modul.themenbereich === themenbereich);
+}
+
 function generateWahlfaecherHTML() {
-  let html = '<div class="wahlfaecher-liste"><h3>Wahlfächer</h3>';
-  
-  for (const [semester, kurse] of Object.entries(CSE_WAHLFAECHER)) {
-    html += `<h4>${semester}</h4><ul>`;
-    kurse.forEach(kurs => {
-      html += `<li>${kurs.name} – ${kurs.ects} ECTS</li>`;
+    let html = '<div class="wahlfaecher-liste"><h3>Wahlfächer</h3>';
+    
+    const semester = ["Frühlingssemester 2025", "Herbstsemester 2024"];
+    
+    semester.forEach(sem => {
+        const kurse = getWahlfaecherBySemester(sem);
+        html += `<h4>${sem}</h4><ul>`;
+        kurse.forEach(kurs => {
+            html += `<li>${kurs.name} – ${kurs.kp} KP (${kurs.themenbereich})</li>`;
+        });
+        html += '</ul>';
     });
-    html += '</ul>';
-  }
-  
-  html += '</div>';
-  return html;
+    
+    html += '</div>';
+    return html;
 }
 
 // Export für modularen Import
 if (typeof window !== 'undefined') {
-  window.CSE_WAHLFAECHER = CSE_WAHLFAECHER;
-  window.generateWahlfaecherHTML = generateWahlfaecherHTML;
+    window.CSE_WahlfaecherModules = window.CSE_WahlfaecherModules;
+    window.getWahlfaecherBySemester = getWahlfaecherBySemester;
+    window.getWahlfaecherByThemenbereich = getWahlfaecherByThemenbereich;
+    window.generateWahlfaecherHTML = generateWahlfaecherHTML;
+    
+    // Rückwärtskompatibilität
+    window.CSE_WAHLFAECHER = {
+        "INFO": "Daten wurden ins zentrale Format konvertiert. Verwende CSE_WahlfaecherModules.",
+        "CONVERTED": true
+    };
 }
 
 if (typeof module !== 'undefined' && module.exports) {
-  module.exports = {
-    CSE_WAHLFAECHER,
-    generateWahlfaecherHTML
-  };
+    module.exports = {
+        CSE_WahlfaecherModules: window.CSE_WahlfaecherModules,
+        getWahlfaecherBySemester,
+        getWahlfaecherByThemenbereich,
+        generateWahlfaecherHTML,
+        // Rückwärtskompatibilität
+        CSE_WAHLFAECHER: {
+            "INFO": "Daten wurden ins zentrale Format konvertiert. Verwende CSE_WahlfaecherModules.",
+            "CONVERTED": true
+        }
+    };
 }
