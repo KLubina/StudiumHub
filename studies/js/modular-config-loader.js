@@ -17,6 +17,11 @@ class StudiengangConfigLoader {
         
         await this.loadOptionalModule(`${dataPath}/module-details.js`);
         
+        // CSE Wahlmodule-Dateien
+        await this.loadOptionalModule(`${dataPath}/vertiefung-data.js`);
+        await this.loadOptionalModule(`${dataPath}/wahlfacher-data.js`);
+        await this.loadOptionalModule(`${dataPath}/cse-wahlmodule-data.js`);
+        
         // ColorManager vor extensions.js laden
         await this.loadOptionalModule(`${configPath}/extensions-ColorManager.js`);
         

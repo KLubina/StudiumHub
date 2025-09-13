@@ -125,8 +125,9 @@ window.StudiengangBaseConfig = {
         "vertiefung": "vertiefung"
     },
     
-    // Wahlmodule-Daten
+    // Wahlmodule-Daten - Kompatibel mit Wahlmodule-System
     wahlmoduleData: {
+        // Kernfächer aus cse-wahlmodule-data.js
         kernfaecherSchwerpunkte: {
             "Alle Kernfächer": [
                 {
@@ -167,7 +168,34 @@ window.StudiengangBaseConfig = {
                 }
             ]
         },
+        // Vertiefungsgebiete - werden dynamisch geladen
         vertiefungsgebiete: {},
-        wahlfaecherBereiche: {}
+        // Wahlfächer - werden dynamisch geladen  
+        wahlfaecherBereiche: {},
+
+        // Kompatibilitätsfunktion für Wahlmodule-System
+        getAllWahlmoduleData: function() {
+            const data = {
+                kernfaecherSchwerpunkte: this.kernfaecherSchwerpunkte,
+                vertiefungsgebiete: {},
+                wahlfaecherBereiche: {},
+                wahlmoduleBereiche: {}
+            };
+
+            // Vertiefungsgebiete dynamisch aus separater Datei laden
+            if (window.CSE_VertiefungsgebieteModules) {
+                const kategorien = [...new Set(window.CSE_VertiefungsgebieteModules.map(m => m.kategorie_vertiefung))];
+                kategorien.forEach(kategorie => {
+                    data.vertiefungsgebiete[kategorie] = window.CSE_VertiefungsgebieteModules.filter(m => m.kategorie_vertiefung === kategorie);
+                });
+            }
+
+            // Wahlfächer aus separater Datei laden
+            if (window.CSE_WahlfaecherModules) {
+                data.wahlfaecherBereiche["Alle Wahlfächer"] = window.CSE_WahlfaecherModules;
+            }
+
+            return data;
+        }
     }
 };
