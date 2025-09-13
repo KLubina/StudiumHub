@@ -5,7 +5,8 @@ const baseModules = [
     'studienplan-base-module.js',
     'studienplan-base-tooltip.js',
     'studienplan-base-utils.js',
-    'studienplan-base-kp-counter.js' 
+    'studienplan-base-kp-counter.js',
+    'studienplan-base-wahlmodule.js' 
 ];
 
 baseModules.forEach(module => {

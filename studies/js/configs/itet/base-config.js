@@ -1,4 +1,4 @@
-/* ==== ITET BASE CONFIGURATION - VERBESSERT ==== */
+/* ==== ITET BASE CONFIGURATION - VEREINFACHT MIT ZENTRALEM WAHLMODULE-SYSTEM ==== */
 /* Grundlegende Konfiguration für den ITET Studiengang */
 
 window.StudiengangBaseConfig = {
@@ -8,24 +8,25 @@ window.StudiengangBaseConfig = {
     legendTitle: "Farben-Legende",
     creditUnit: "KP",
     
-    // Layout-Konfiguration - VERBESSERT FÜR HORIZONTALES LAYOUT
+    // Layout-Konfiguration
     layout: "years",
     moduleSizing: "proportional",
     basisArea: 2000,
     defaultAspectRatio: 1.5,
-    layoutClass: "horizontal-modules", // Neue Layout-Klasse für horizontale Anordnung
+    layoutClass: "horizontal-modules",
     
     // Features
-    enableTooltips: true,  // WICHTIG: Muss true sein für Drag & Drop
+    enableTooltips: true,
     enableHover: true,
-    // KP-Counter zentral aktivieren (StudienplanBase nutzt diese Einstellungen)
+    
+    // NEU: Zentrales Wahlmodule-System aktivieren
+    enableWahlmodule: true,
+    
+    // KP-Counter zentral aktivieren
     enableKPCounter: true,
     kpCounterConfig: {
-        // Minimale erforderliche KP (wird vom KP-Counter genutzt)
         requiredKP: 180,
-        // Detaillierte Aufschlüsselung anzeigen (Toggle im UI)
         showDetailedBreakdown: true,
-        // Kategorie-spezifische KP-Anzeige aktivieren
         enableCategoryTracking: true
     },
     
@@ -37,9 +38,9 @@ window.StudiengangBaseConfig = {
     },
     
     // Spezielle Layout-Anweisungen für 3. Jahr
-    thirdYearLayout: "category-based", // Spezielle Behandlung für 3. Jahr
+    thirdYearLayout: "category-based",
     
-    // Kategorien-Reihenfolge für 3. Jahr (wie bei MTEC)
+    // Kategorien-Reihenfolge für 3. Jahr
     thirdYearCategoryOrder: [
         "Kernfächer nach Schwerpunkt",
         "Weitere Wahl-Grundlagenfächer",
@@ -48,14 +49,14 @@ window.StudiengangBaseConfig = {
         "Wissenschaftliche Arbeit"
     ],
     
-    // Kategorien basierend auf dem ITET Studienplan - OBJEKT FORMAT für Drag & Drop
+    // Kategorien mit hasTooltip für Wahlmodule-Auswahl
     kategorien: [
         { name: "Obligatorische Fächer", klasse: "obligatorisch" },
         { name: "Obligatorische Praktikum", klasse: "obligatorisch-praktikum" },
         { 
             name: "Kernfächer nach Schwerpunkt", 
             klasse: "kern",
-            hasTooltip: true,  // WICHTIG: Aktiviert Tooltips
+            hasTooltip: true,
             info: "💡 Wähle deine Kernfächer!",
             description: "Computer und Netzwerk Schwerpunkt",
             minKp: 18
@@ -63,7 +64,7 @@ window.StudiengangBaseConfig = {
         { 
             name: "Weitere Wahl-Grundlagenfächer", 
             klasse: "weitere-wahl-grundlagen",
-            hasTooltip: true,  // WICHTIG: Aktiviert Tooltips
+            hasTooltip: true,
             info: "💡 Wähle zusätzliche Grundlagen!",
             description: "Zusätzliche Grundlagenfächer",
             minKp: 8
@@ -71,7 +72,7 @@ window.StudiengangBaseConfig = {
         { 
             name: "Wahlfächer", 
             klasse: "wahl",
-            hasTooltip: true,  // WICHTIG: Aktiviert Tooltips
+            hasTooltip: true,
             info: "💡 Wähle deine Wahlfächer!",
             description: "Frei wählbare Module",
             minKp: 6
@@ -79,7 +80,7 @@ window.StudiengangBaseConfig = {
         { 
             name: "Wahl Praktika-Projekte-Seminare", 
             klasse: "wahl-praktika-projekte",
-            hasTooltip: true,  // WICHTIG: Aktiviert Tooltips
+            hasTooltip: true,
             info: "💡 Ziehe Module aus der Liste!",
             description: "Wählbare Praktika und Projekte"
         },
@@ -110,7 +111,7 @@ window.StudiengangBaseConfig = {
         categorySpacing: "20px"
     },
     
-    // Custom Sizing für bessere Kompaktheit (ähnlich MTEC)
+    // Custom Sizing für bessere Kompaktheit
     customSizing: function(div, modul) {
         let width = 160;
         let height = 70;
@@ -133,7 +134,7 @@ window.StudiengangBaseConfig = {
         // Namen kürzen wenn zu lang
         if (modul.name && modul.name.length > 45) {
             const shortName = this.shortenModuleName(modul.name);
-            div.title = modul.name; // Vollständiger Name als Tooltip
+            div.title = modul.name;
             const titleEl = div.querySelector('.modul-titel');
             if (titleEl) {
                 titleEl.textContent = shortName;

@@ -1,96 +1,57 @@
-/* ==== RIG MAIN EXTENSIONS CLASS ==== */
-/* Hauptklasse die alle Module zusammenführt */
+/* ==== RIG EXTENSIONS - VEREINFACHT MIT ZENTRALEM WAHLMODULE-SYSTEM ==== */
+/* Spezifische Anpassungen für RIG, nutzt das zentrale Wahlmodule-System */
 
-/*
- * Diese Datei lädt bei Bedarf die modularisierten Manager-Dateien (z.B.
- * `extensions-DragDropManager.js`) selbst nach, bevor die Custom-Klasse
- * definiert wird. So bleibt der Loader einfach und RIG ist selbstständig
- * lauffähig, auch wenn die Sub-Extensions nicht vorher vom zentralen
- * Loader geladen wurden.
- */
-
-(async function ensureRigDependenciesAndDefineClass() {
-    const basePath = 'js/configs/rig/';
-
-    async function loadScriptIfMissing(globalName, fileName) {
-        if (typeof window[globalName] !== 'undefined') return;
-        try {
-            await new Promise((resolve) => {
-                const s = document.createElement('script');
-                s.src = basePath + fileName;
-                s.onload = () => { console.log(`✅ Nachgeladen: ${fileName}`); resolve(); };
-                s.onerror = () => { console.warn(`⏭️ Kann ${fileName} nicht laden — übersprungen`); resolve(); };
-                document.head.appendChild(s);
-            });
-        } catch (e) {
-            console.warn('Fehler beim Nachladen von', fileName, e);
-        }
+window.StudiengangCustomClass = class RIGStudienplan extends StudienplanBase {
+    constructor(config) {
+        super(config);
     }
 
-    // Liste der erwarteten globalen Manager und ihre Dateien (in Reihenfolge)
-    const deps = [
-        ['RIGDragDropManager', 'extensions-DragDropManager.js'],
-        ['RIGTooltipManager', 'extensions-TooltipManager.js'],
-        ['RIGUIControlsManager', 'extensions-UIControlsManager.js'],
-        ['RIGWahlmoduleManager', 'extensions-WahlModuleManager.js']
-    ];
-
-    // Versuche, fehlende Abhängigkeiten nachzuladen (seriell, um Reihenfolge zu wahren)
-    for (const [globalName, fileName] of deps) {
-        // eslint-disable-next-line no-await-in-loop
-        await loadScriptIfMissing(globalName, fileName);
+    initialize() {
+        // Basis-Initialisierung (aktiviert automatisch das zentrale Wahlmodule-System)
+        super.initialize();
+        
+        // RIG-spezifische Initialisierung
+        this.setupRIGSpecifics();
     }
 
-    // Jetzt die Custom-Klasse definieren. Falls Manager noch fehlen, wird
-    // die Klasse trotzdem definiert, aber mit defensiven Checks.
-    window.StudiengangCustomClass = class RIGStudienplan extends StudienplanBase {
-        constructor(config) {
-            super(config);
+    setupRIGSpecifics() {
+        // Spezielle Message-Funktion für RIG
+        this.showMessage = function(message, type = "info") {
+            this.showToastMessage(message, type);
+        };
+        // Rely on centralized Wahlmodule manager in base; no overrides here
+    }
 
-            // Initialize all managers (defensive: prüfe auf Existenz)
-            this.dragDrop = (typeof RIGDragDropManager !== 'undefined') ? Object.create(RIGDragDropManager) : null;
-            this.wahlmoduleManager = (typeof RIGWahlmoduleManager !== 'undefined') ? Object.create(RIGWahlmoduleManager) : null;
-            this.uiControls = (typeof RIGUIControlsManager !== 'undefined') ? Object.create(RIGUIControlsManager) : null;
-            this.tooltipManager = (typeof RIGTooltipManager !== 'undefined') ? Object.create(RIGTooltipManager) : null;
+    /* Wahlmodule: rely on base centralized implementation (no overrides) */
 
-            // Initialize managers if present
-            if (this.dragDrop && typeof this.dragDrop.init === 'function') this.dragDrop.init(this);
-            if (this.wahlmoduleManager && typeof this.wahlmoduleManager.init === 'function') this.wahlmoduleManager.init(this);
-            if (this.uiControls && typeof this.uiControls.init === 'function') this.uiControls.init(this);
-            if (this.tooltipManager && typeof this.tooltipManager.init === 'function') this.tooltipManager.init(this);
-        }
+    /* ==== MESSAGE SYSTEM ==== */
+    showToastMessage(message, type = "info") {
+        const toast = document.createElement('div');
+        toast.style.position = 'fixed';
+        toast.style.top = '20px';
+        toast.style.right = '20px';
+        toast.style.padding = '10px 15px';
+        toast.style.borderRadius = '5px';
+        toast.style.zIndex = '9999';
+        toast.style.fontSize = '12px';
+        toast.style.fontWeight = 'bold';
+        toast.textContent = message;
 
-        initialize() {
-            super.initialize();
-            if (this.updateWahlmoduleDisplay) this.updateWahlmoduleDisplay();
-        }
+        const colors = {
+            success: { bg: '#28a745', color: 'white' },
+            warning: { bg: '#ffc107', color: 'black' },
+            info: { bg: '#17a2b8', color: 'white' },
+            error: { bg: '#dc3545', color: 'white' }
+        };
 
-        updateWahlmoduleDisplay() {
-            if (this.wahlmoduleManager && typeof this.wahlmoduleManager.updateWahlmoduleDisplay === 'function') {
-                this.wahlmoduleManager.updateWahlmoduleDisplay();
-            }
-        }
+        const style = colors[type] || colors.info;
+        toast.style.backgroundColor = style.bg;
+        toast.style.color = style.color;
 
-        // Delegate methods to appropriate managers (defensiv)
-        showWahlmoduleTooltip(event) {
-            if (this.tooltipManager && typeof this.tooltipManager.showWahlmoduleTooltip === 'function') {
-                this.tooltipManager.showWahlmoduleTooltip(event);
-            }
-        }
+        document.body.appendChild(toast);
 
-        addLegendTooltipEvents(div, kategorie) {
-            if (this.tooltipManager && typeof this.tooltipManager.addLegendTooltipEvents === 'function') {
-                this.tooltipManager.addLegendTooltipEvents(div, kategorie);
-            }
-        }
-
-        hideTooltip() {
-            if (this.tooltipManager && typeof this.tooltipManager.hideTooltip === 'function') {
-                this.tooltipManager.hideTooltip();
-            }
-            super.hideTooltip();
-        }
-    };
-
-    console.log('✅ RIG Custom Class definiert (mit selbstdiagnostischem Nachladen von Sub-Extensions)');
-})();
+        setTimeout(() => {
+            toast.remove();
+        }, 3000);
+    }
+};
