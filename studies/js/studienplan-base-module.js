@@ -160,30 +160,43 @@ StudienplanBase.prototype.checkCondition = function (modul, condition) {
 
 StudienplanBase.prototype.createModuleContent = function (div, modul) {
   const details = this.config.modulDetails[modul.name];
+  
+  // Container für alle Indikatoren erstellen
+  const hasAnyIndicator = (details && details.vorlesungslink) || 
+                         (details && details.link) || 
+                         (details && (details.pruefungen || details.pruefungslink));
+  
+  let indicatorsContainer;
+  if (hasAnyIndicator) {
+    indicatorsContainer = document.createElement("div");
+    indicatorsContainer.classList.add("indicators-container");
+    div.appendChild(indicatorsContainer);
+  }
+
   if (details && details.vorlesungslink) {
     const videoIndicator = document.createElement("div");
     videoIndicator.classList.add("video-indicator");
     videoIndicator.innerHTML = "🎥";
     videoIndicator.title = "Vorlesungsvideo verfügbar";
-    div.appendChild(videoIndicator);
+    indicatorsContainer.appendChild(videoIndicator);
   }
 
-  // NEU: Link-Indikator für VVZ-Links
+  // Link-Indikator für VVZ-Links
   if (details && details.link) {
     const linkIndicator = document.createElement("div");
     linkIndicator.classList.add("link-indicator");
     linkIndicator.innerHTML = "🔗";
     linkIndicator.title = "Weitere Infos (VVZ) verfügbar";
-    div.appendChild(linkIndicator);
+    indicatorsContainer.appendChild(linkIndicator);
   }
 
-  // NEU: Prüfungs-Indikator für alte Prüfungen
+  // Prüfungs-Indikator für alte Prüfungen
   if (details && (details.pruefungen || details.pruefungslink)) {
     const examIndicator = document.createElement("div");
     examIndicator.classList.add("exam-indicator");
     examIndicator.innerHTML = "📋";
     examIndicator.title = "Alte Prüfungen verfügbar";
-    div.appendChild(examIndicator);
+    indicatorsContainer.appendChild(examIndicator);
   }
 
   const kpDiv = document.createElement("div");
