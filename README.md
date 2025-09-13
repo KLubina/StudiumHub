@@ -69,3 +69,5 @@ https://www.berufsberatung.ch/dyn/show/16535
   - AKAD University
     - https://www.akad.de/abschluss/bachelor/elektro-und-informationstechnik-beng/
 
+https://www.vvz.ethz.ch/Vorlesungsverzeichnis/sucheLehrangebotPre.view?lang=de
+
