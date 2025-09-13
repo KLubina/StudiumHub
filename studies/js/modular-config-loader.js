@@ -44,6 +44,8 @@ class StudiengangConfigLoader {
 
             const script = document.createElement('script');
             script.src = url;
+            // Sicherstellen, dass dynamisch eingefügte Skripte in Reihenfolge ausgeführt werden
+            script.async = false;
             script.onload = () => {
                 this.loadedModules.add(url);
                 console.log(`✅ Geladen: ${url}`);
@@ -60,6 +62,8 @@ class StudiengangConfigLoader {
         try {
             await this.loadModule(url);
         } catch (error) {
+            // Optionales Modul fehlt — nur warnen, nicht unterbrechen
+            console.warn(`Optionales Modul konnte nicht geladen werden: ${url}`);
         }
     }
 
@@ -111,12 +115,28 @@ class StudiengangConfigLoader {
 }
 
 // Globale Funktion für einfache Nutzung
-window.loadStudiengangConfig = async function(studiengang) {    
-    const loader = new StudiengangConfigLoader(studiengang);
-    
-    const config = await loader.loadConfig();
-    
-    initializeStudienplan(config);
-    
-    return config;
+window.loadStudiengangConfig = async function(studiengang) {
+	const loader = new StudiengangConfigLoader(studiengang);
+
+	// Sicherstellen, dass DOM bereit ist (z.B. Container existiert)
+	if (document.readyState === 'loading') {
+		await new Promise(resolve => document.addEventListener('DOMContentLoaded', resolve, { once: true }));
+	}
+
+	try {
+		const config = await loader.loadConfig();
+		initializeStudienplan(config);
+		return config;
+	} catch (error) {
+		console.warn('Fehler beim Laden der modularen Config, versuche Fallback...', error);
+		// Versuche Fallback-Konfiguration
+		try {
+			const fallback = await loader.loadFallbackConfig();
+			initializeStudienplan(fallback);
+			return fallback;
+		} catch (fallbackErr) {
+			console.error('Fallback-Konfiguration ebenfalls fehlgeschlagen', fallbackErr);
+			throw fallbackErr;
+		}
+	}
 };
