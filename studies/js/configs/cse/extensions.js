@@ -1,7 +1,7 @@
-/* ==== CSE EXTENSIONS (VEREINFACHT) ==== */
-/* Spezielle Funktionalitäten für den CSE Studiengang - Alles in einer Datei für einfacheres Loading */
+/* ==== CSE EXTENSIONS (ZENTRALISIERT) ==== */
+/* CSE-spezifische Funktionalitäten mit Integration ins zentrale Wahlmodul-System */
 
-// Laden der modularen Klassen direkt aus dem configs/cse Ordner
+// Laden der modularen Klassen und Daten
 const loadCSEClasses = async () => {
   const classPaths = [
     './extensions-ColorManager.js',
@@ -30,6 +30,59 @@ const loadCSEClasses = async () => {
   }
 };
 
+// Laden der Wahlmodule-Daten
+const loadCSEWahlmoduleData = async () => {
+  const dataPaths = [
+    './js/data/cse/vertiefung-data.js',
+    './js/data/cse/wahlfacher-data.js'
+  ];
+  
+  for (const dataPath of dataPaths) {
+    try {
+      await new Promise((resolve, reject) => {
+        const script = document.createElement('script');
+        script.src = dataPath;
+        script.onload = resolve;
+        script.onerror = () => reject(new Error('Failed to load ' + dataPath));
+        document.head.appendChild(script);
+      });
+      console.log(`✓ Wahlmodule-Daten geladen: ${dataPath}`);
+    } catch (error) {
+      console.error(`Fehler beim Laden der Wahlmodule-Daten ${dataPath}:`, error);
+    }
+  }
+};
+
+// Wahlmodule-Daten für das zentrale System vorbereiten
+const prepareWahlmoduleData = () => {
+  const wahlmoduleData = {
+    vertiefungsgebiete: {},
+    wahlfaecherBereiche: {}
+  };
+
+  // Vertiefungsgebiete gruppieren
+  if (window.CSE_VertiefungsgebieteModules) {
+    const kategorien = window.getVertiefungsgebieteKategorien ? window.getVertiefungsgebieteKategorien() : [];
+    
+    kategorien.forEach(kategorie => {
+      const module = window.getVertiefungsgebieteByKategorie ? window.getVertiefungsgebieteByKategorie(kategorie) : [];
+      wahlmoduleData.vertiefungsgebiete[kategorie] = module;
+    });
+  }
+
+  // Wahlfächer nach Semester gruppieren
+  if (window.CSE_WahlfaecherModules) {
+    const semesters = ["Frühlingssemester 2025", "Herbstsemester 2024"];
+    
+    semesters.forEach(semester => {
+      const module = window.getWahlfaecherBySemester ? window.getWahlfaecherBySemester(semester) : [];
+      wahlmoduleData.wahlfaecherBereiche[semester] = module;
+    });
+  }
+
+  return wahlmoduleData;
+};
+
 /* ==== CSE-SPEZIFISCHE ERWEITERUNGEN ==== */
 window.StudiengangCustomClass = class CSEStudienplan extends StudienplanBase {
   constructor(config) {
@@ -40,7 +93,13 @@ window.StudiengangCustomClass = class CSEStudienplan extends StudienplanBase {
 
   async initClassesAsync() {
     try {
+      // Lade Klassen und Daten
       await loadCSEClasses();
+      await loadCSEWahlmoduleData();
+
+      // Wahlmodule-Daten ins zentrale System integrieren
+      const wahlmoduleData = prepareWahlmoduleData();
+      this.config.wahlmoduleData = wahlmoduleData;
 
       // Klassen initialisieren
       if (window.CSEColorManager) this.colorManager = new CSEColorManager(this);
@@ -49,7 +108,7 @@ window.StudiengangCustomClass = class CSEStudienplan extends StudienplanBase {
       if (window.CSEUIControlsManager) this.uiControlsManager = new CSEUIControlsManager(this, this.colorManager, this.gradeCalculator);
 
       this.classesLoaded = true;
-      console.log('✓ Alle CSE-Klassen initialisiert');
+      console.log('✓ Alle CSE-Klassen und Wahlmodule-Daten initialisiert');
 
       // Falls initialize bereits aufgerufen wurde, UI-Controls hinzufügen und Farben setzen
       if (this.isInitialized) {
@@ -122,21 +181,36 @@ window.StudiengangCustomClass = class CSEStudienplan extends StudienplanBase {
     if (this.gradeCalculator) this.gradeCalculator.showGradeCalculator();
   }
 
+  // Override für zentrale Tooltip-Integration
   addLegendTooltipEvents(div, kategorie) {
-    // First attach centralized behavior from base (if present)
-    if (typeof StudienplanBase !== 'undefined' && StudienplanBase.prototype.addLegendTooltipEvents) {
+    // Zuerst das zentrale System versuchen (für Wahlmodule)
+    let handled = false;
+    
+    // Prüfe ob es ein Wahlmodul-Kategorie ist
+    if (this.wahlmoduleManager && kategorie && kategorie.hasTooltip) {
+      if (kategorie.name === "Wahlfächer" || kategorie.name === "Vertiefungsgebiet") {
+        // Nutze das zentrale Wahlmodul-System
+        this.wahlmoduleManager.addLegendTooltipEvents(div, kategorie);
+        handled = true;
+      }
+    }
+
+    // Falls nicht durch Wahlmodul-System behandelt, nutze CSE-spezifisches System
+    if (!handled && this.tooltipManager) {
+      this.tooltipManager.addLegendTooltipEvents(div, kategorie);
+    }
+
+    // Fallback auf Base-System
+    if (!handled && typeof StudienplanBase !== 'undefined' && StudienplanBase.prototype.addLegendTooltipEvents) {
       try {
-        // Call base implementation which will forward to centralized manager when available
         StudienplanBase.prototype.addLegendTooltipEvents.call(this, div, kategorie);
       } catch (e) {
         // ignore
       }
     }
-
-    // Then attach CSE-specific tooltip behaviors
-    if (this.tooltipManager) this.tooltipManager.addLegendTooltipEvents(div, kategorie);
   }
 
+  // CSE-spezifische Tooltip-Methoden (Rückwärtskompatibilität)
   showVertiefungsgebieteTooltip(event) {
     if (this.tooltipManager) this.tooltipManager.showVertiefungsgebieteTooltip(event);
   }

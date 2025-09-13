@@ -18,6 +18,7 @@ window.StudiengangBaseConfig = {
     // Features
     enableTooltips: true,
     enableHover: true,
+    
     // KP-Counter zentral aktivieren
     enableKPCounter: true,
     kpCounterConfig: {
@@ -25,6 +26,9 @@ window.StudiengangBaseConfig = {
         showDetailedBreakdown: false,
         enableCategoryTracking: true
     },
+    
+    // NEU: Wahlmodul-System aktivieren
+    enableWahlmodule: true,
     
     // Aspekt-Verhältnisse
     aspectRatios: {
@@ -96,8 +100,18 @@ window.StudiengangBaseConfig = {
     kategorien: [
         { name: "Wissenschaftliche Arbeit", klasse: "wissenschaftliche-arbeit" },
         { name: "Kernfächer", klasse: "kern", info: "3 von 4 möglichen auswählen" },
-        { name: "Wahlfächer", klasse: "wahl", info: "mind. zwei Module", hasTooltip: true },
-        { name: "Vertiefungsgebiet", klasse: "vertiefung", info: "2 Module auswählen (Robotik)", hasTooltip: true }
+        { 
+            name: "Wahlfächer", 
+            klasse: "wahl", 
+            info: "mind. zwei Module", 
+            hasTooltip: true 
+        },
+        { 
+            name: "Vertiefungsgebiet", 
+            klasse: "vertiefung", 
+            info: "2 Module aus einem Gebiet auswählen", 
+            hasTooltip: true 
+        }
     ],
     
     kategorieZuKlasse: {
@@ -105,5 +119,29 @@ window.StudiengangBaseConfig = {
         "kern": "kern",
         "wahl": "wahl", 
         "vertiefung": "vertiefung"
+    },
+    
+    // NEU: Wahlmodule-Daten für das zentrale System
+    wahlmoduleData: {
+        // Vertiefungsgebiete als Wahlmodule-Bereiche
+        vertiefungsgebiete: {
+            "Robotik": [],
+            "Astrophysik": [],
+            "Atmosphärenphysik": [],
+            "Chemie": [],
+            "Fluiddynamik": [],
+            "Systems and Control": [],
+            "Physik": [],
+            "Computational Finance": [],
+            "Electromagnetics": [],
+            "Geophysik": [],
+            "Biologie": []
+        },
+        
+        // Wahlfächer nach Semester
+        wahlfaecherBereiche: {
+            "Frühlingssemester 2025": [],
+            "Herbstsemester 2024": []
+        }
     }
 };
