@@ -13,7 +13,8 @@ window.StudiengangModuleDetails = {
             "• Stetige Abbildungen\n" +
             "• Differential- und Integralrechnung einer Variablen\n" +
             "• Einführung in gewöhnliche Differentialgleichungen",
-        vorlesungslink: "https://video.ethz.ch/lectures/d-math/2016/autumn/401-1261-07L/a65b10a4-c135-3bca-a4f5-c37d9f8b0913.html"
+        vorlesungslink: "https://video.ethz.ch/lectures/d-math/2016/autumn/401-1261-07L/a65b10a4-c135-3bca-a4f5-c37d9f8b0913.html",
+        pruefungen: "https://github.com/KLubina/StudiumHub/tree/main/old-exams/CSE-old-exams/1.Sem/Analysis%20I"
     },
     "Analysis II": {
         kurzbeschreibung: "Einführung in die mehrdimensionale Differential- und Integralrechnung",
@@ -149,6 +150,7 @@ window.StudiengangModuleDetails = {
             "• Konzepte der parallelen Programmierung\n" +
             "• Probleme der Nebenläufigkeit\n" +
             "• Prozess-Synchronisation und Kommunikation"
+        ,pruefungen: "https://github.com/KLubina/StudiumHub/tree/main/old-exams/CSE-old-exams/2.Sem/Algorithmen%20und%20Datenstrukturen"
     },
     "Informatik": {
         kurzbeschreibung: "Die Vorlesung bietet eine Einführung in das Programmieren mit einem Fokus auf systematischem algorithmischem Problemlösen. Lehrsprache ist C++.",
@@ -188,7 +190,8 @@ window.StudiengangModuleDetails = {
             "• Morphismen\r\n\r\n" +
             "Logik:\n" +
             "• Aussagen- und Prädikatenlogik\n" +
-            "• Beweiskalküle"
+            "• Beweiskalküle",
+        pruefungen: "https://github.com/KLubina/StudiumHub/tree/main/old-exams/CSE-old-exams/1.Sem/Diskrete%20Mathematik"
     },
     "Lineare Algebra": {
         kurzbeschreibung: "Ziel ist der sichere Umgang mit grundlegenden Verfahren der linearen Algebra, insbesondere das Lösen linearer Gleichungssysteme, das Verständnis und die Anwendung von Vektor- und Matrixoperationen sowie die Nutzung von Zerlegungen, Eigenwertmethoden und linearen Abbildungen zur Analyse und Lösung mathematischer und technischer Probleme.",
@@ -202,6 +205,7 @@ window.StudiengangModuleDetails = {
             "• Eigenwerte und Eigenvektoren, Symmetrische Matrizen\n" +
             "• Singulärwertzerlegung und Fundamentalsatz der linearen Algebra, Anwendungen",
         vorlesungslink: "https://video.ethz.ch/lectures/d-math/2015/autumn/401-1151-00L/1707a212-2905-448f-b042-6eca940f6c93.html"
+        ,pruefungen: "https://github.com/KLubina/StudiumHub/tree/main/old-exams/CSE-old-exams/1.Sem/Lineare%20Algebra%20I"
     },
     "Numerical Methods for Partial Differential Equations": {
         kurzbeschreibung: "This course covers the derivation, properties, and practical implementation of fundamental numerical methods for solving key partial differential equations, including convection-diffusion, heat, and wave equations, as well as conservation laws. Emphasis is placed on efficient implementation in C++ using a finite element library, with a strong focus on understanding the mathematical foundations and selecting appropriate methods based on the characteristics of the PDE models.",

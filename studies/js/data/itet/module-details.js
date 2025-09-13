@@ -35,6 +35,7 @@ window.StudiengangModuleDetails = {
       "• Lineare Ausgleichsrechnung\n" +
       "• Anwendungen\n",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=192867&lang=de",
+    pruefungen: "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/1.Sem/Lineare-Algebra"
   },
   "Analysis 1": {
     kurzbeschreibung: "Einführung in die Grundlagen der Analysis",
@@ -53,6 +54,7 @@ window.StudiengangModuleDetails = {
       "• Integralrechnung einer Variablen\n\n" +
       "► Einführung in gewöhnliche Differentialgleichungen",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193410&lang=de",
+    pruefungen: "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/1.Sem/Analysis-I"
   },
 
   Digitaltechnik: {
@@ -103,6 +105,7 @@ window.StudiengangModuleDetails = {
       "► Stationäres Magnetfeld\n\n" +
       "► Zeitlich veränderliches elektromagnetisches Feld",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=192802&semkez=2025W&ansicht=LEHRVERANSTALTUNGEN&lang=de",
+    pruefungen: "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/1.Sem/Netzwerk-Schaltungen-I"
   },
   "Technische Mechanik": {
     kurzbeschreibung:
@@ -128,6 +131,7 @@ window.StudiengangModuleDetails = {
       "• Impulssatz, Drallsatz\n" +
       "• Drall bei ebenen Bewegungen",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193886&lang=de",
+    pruefungen: "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/1.Sem/Technische-Mechanik"
   },
   "Vorkurs Informatik": {
     kurzbeschreibung:
@@ -162,6 +166,7 @@ window.StudiengangModuleDetails = {
       "► Sätze von Gauss\n" +
       "► Sätze von Stokes\n\n",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=188523&lang=de",
+    pruefungen: "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/2.Sem/Analysis-II"
   },
   "Netzwerke und Schaltungen II": {
     kurzbeschreibung:
@@ -221,6 +226,7 @@ window.StudiengangModuleDetails = {
       "• Hauptsätze der Thermodynamik: Energieerhaltung, Kreisprozesse, Entropie\n" +
       "• Wärmeübertragung & Wärmestrahlung",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=188037&lang=de",
+    pruefungen: "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/2.Sem/Physik-I"
   },
   "Informatik I": {
     kurzbeschreibung:
@@ -242,6 +248,7 @@ window.StudiengangModuleDetails = {
       "► Anwendung\n" +
       "• Motivation und Illustration der Konzepte durch Algorithmen und Anwendungen",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=187917&lang=de",
+    pruefungen: "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/2.Sem/Informatik-I"
   },
   "Mathematische Methoden": {
     kurzbeschreibung:
@@ -261,6 +268,7 @@ window.StudiengangModuleDetails = {
       "• Fourier-Transformationen\n" +
       "• Laplace-Transformationen",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=188879&lang=de",
+    pruefungen: "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/2.Sem/Mathematische-Methoden"
   },
   // #endregion
 
@@ -294,6 +302,7 @@ window.StudiengangModuleDetails = {
       "• Method of separation of variables\n" +
       "• Variational method",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193965&lang=de",
+    pruefungen: "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/3.Sem/Analysis-III"
   },
   "Physik II": {
     kurzbeschreibung:
@@ -336,6 +345,7 @@ window.StudiengangModuleDetails = {
       "• Endlich-dimensionale Signale und Systeme\n" +
       "• Schnelle Fouriertransformation (FFT)",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193407&lang=de",
+    pruefungen: "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/3.Sem/Signal-System-I"
   },
   "Diskrete Mathematik": {
     kurzbeschreibung:
@@ -360,6 +370,7 @@ window.StudiengangModuleDetails = {
       "• Körper, \n" +
       "• Ringe",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=194088&lang=de",
+    pruefungen: "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/3.Sem/Diskrete-Mathematik"
   },
   "Halbleiter-Schaltungstechnik": {
     kurzbeschreibung:
@@ -502,6 +513,7 @@ window.StudiengangModuleDetails = {
       "• Schätzung von Parametern\n" +
       "• Tests",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=187991&lang=de",
+    pruefungen: "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/4.Sem/Wahrscheinlichkeitstheorie-und-Statistik"
   },
   "Elektromagnetische Felder und Wellen": {
     kurzbeschreibung:
@@ -517,6 +529,7 @@ window.StudiengangModuleDetails = {
       "• Dipolstrahlung\n" +
       "• Feldwinkelspektrum",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=188239&lang=de",
+    pruefungen: "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/4.Sem/Elektromagnetische-Felder-und-Wellen"
   },
   Halbleiterelemente: {
     kurzbeschreibung:
@@ -537,6 +550,7 @@ window.StudiengangModuleDetails = {
       "• MOS devices: Band diagram, MOSFET operation, CV- and IV characteristics, frequency limitations and non-ideal behaviour\n" +
       "• Bipolar transistor: Operation principles, modes of operation, characteristics, models, simulation",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=187791&lang=de",
+    pruefungen: "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/4.Sem/Halbleiterelemente"
   },
   "Numerische Methoden": {
     kurzbeschreibung:
@@ -551,6 +565,7 @@ window.StudiengangModuleDetails = {
       "• Stabilitätsanalyse und implizite Verfahren\n" +
       "• Strukturerhaltende Verfahren",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=188146&lang=de",
+    pruefungen: "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/4.Sem/Numerische-Methoden"
   },
   // #endregion
 
