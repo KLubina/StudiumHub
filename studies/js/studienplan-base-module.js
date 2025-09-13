@@ -177,6 +177,15 @@ StudienplanBase.prototype.createModuleContent = function (div, modul) {
     div.appendChild(linkIndicator);
   }
 
+  // NEU: Prüfungs-Indikator für alte Prüfungen
+  if (details && details.pruefungslink) {
+    const examIndicator = document.createElement("div");
+    examIndicator.classList.add("exam-indicator");
+    examIndicator.innerHTML = "📋";
+    examIndicator.title = "Alte Prüfungen verfügbar";
+    div.appendChild(examIndicator);
+  }
+
   const kpDiv = document.createElement("div");
   kpDiv.classList.add("modul-kp");
   kpDiv.textContent = `${modul.kp} ${this.config.creditUnit || "KP"}`;

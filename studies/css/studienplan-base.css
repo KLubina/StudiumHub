@@ -455,3 +455,30 @@ h2 {
     height: 16px;
     font-size: 10px;
 }
+
+/* Prüfungs-Indikator (📋) */
+.exam-indicator {
+    position: absolute;
+    top: 2px;
+    right: 22px; /* Rechts neben dem Link-Indikator */
+    font-size: 12px;
+    z-index: 3;
+    cursor: help;
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+}
+
+.exam-indicator:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* Falls sowohl Link- als auch Prüfungs-Indikator vorhanden sind */
+.modul .link-indicator + .exam-indicator,
+.modul .exam-indicator + .link-indicator {
+    right: 2px;
+}
+
+.modul .video-indicator + .link-indicator + .exam-indicator {
+    right: 2px;
+}
