@@ -123,6 +123,17 @@ window.StudiengangCustomClass = class CSEStudienplan extends StudienplanBase {
   }
 
   addLegendTooltipEvents(div, kategorie) {
+    // First attach centralized behavior from base (if present)
+    if (typeof StudienplanBase !== 'undefined' && StudienplanBase.prototype.addLegendTooltipEvents) {
+      try {
+        // Call base implementation which will forward to centralized manager when available
+        StudienplanBase.prototype.addLegendTooltipEvents.call(this, div, kategorie);
+      } catch (e) {
+        // ignore
+      }
+    }
+
+    // Then attach CSE-specific tooltip behaviors
     if (this.tooltipManager) this.tooltipManager.addLegendTooltipEvents(div, kategorie);
   }
 
