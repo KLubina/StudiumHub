@@ -99,7 +99,12 @@ window.StudiengangBaseConfig = {
     // Standard Kategorien (zusätzlich zu Prüfungsblöcken)
     kategorien: [
         { name: "Wissenschaftliche Arbeit", klasse: "wissenschaftliche-arbeit" },
-        { name: "Kernfächer", klasse: "kern", info: "3 von 4 möglichen auswählen" },
+        { 
+            name: "Kernfächer", 
+            klasse: "kern", 
+            info: "3 von 4 möglichen auswählen", 
+            hasTooltip: true 
+        },
         { 
             name: "Wahlfächer", 
             klasse: "wahl", 
@@ -123,6 +128,48 @@ window.StudiengangBaseConfig = {
     
     // NEU: Wahlmodule-Daten für das zentrale System
     wahlmoduleData: {
+        // Kernfächer (die 4 zur Auswahl)
+        kernfaecher: {
+            "Alle Kernfächer": [
+                {
+                    name: "Design of High Performance Computing",
+                    kp: 7,
+                    kategorie: "kern",
+                    themenbereich: "informatik",
+                    jahr: 3,
+                    semester: 0,
+                    bereich: "Kernfächer"
+                },
+                {
+                    name: "HPC Lab for CSE",
+                    kp: 7,
+                    kategorie: "kern",
+                    themenbereich: "informatik",
+                    jahr: 3,
+                    semester: 0,
+                    bereich: "Kernfächer"
+                },
+                {
+                    name: "Software Engineering",
+                    kp: 6,
+                    kategorie: "kern",
+                    themenbereich: "informatik",
+                    jahr: 3,
+                    semester: 0,
+                    bereich: "Kernfächer"
+                },
+                {
+                    name: "Introduction to Machine Learning",
+                    kp: 8,
+                    kategorie: "kern",
+                    themenbereich: "informatik",
+                    jahr: 3,
+                    semester: 0,
+                    bereich: "Kernfächer"
+                }
+            ]
+        },
+        
         // Vertiefungsgebiete als Wahlmodule-Bereiche
         vertiefungsgebiete: {
             "Robotik": [],
@@ -145,3 +192,9 @@ window.StudiengangBaseConfig = {
         }
     }
 };
+
+// Backwards-compatible aliases for older keys expected by the Wahlmodule manager
+if (window.StudiengangBaseConfig && window.StudiengangBaseConfig.wahlmoduleData) {
+    // some code expects `kernfaecherSchwerpunkte`
+    window.StudiengangBaseConfig.wahlmoduleData.kernfaecherSchwerpunkte = window.StudiengangBaseConfig.wahlmoduleData.kernfaecher || {};
+}

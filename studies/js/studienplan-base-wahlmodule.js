@@ -25,19 +25,45 @@ class StudienplanWahlmoduleManager {
 
     /* ==== DATA ACCESS ==== */
     getWahlmoduleData() {
-        // Try different sources for wahlmodule data
-        const sources = [
-            this.config.wahlmoduleData,
-            window.ITETModuleData,
-            window.RIGModuleData,
-            window.CSEModuleData
-        ];
-        
-        for (const source of sources) {
-            if (source) return source;
+        // Merge multiple possible sources for wahlmodule data.
+        // Priority: explicit config.wahlmoduleData > window.CSEModuleData (wrapper) > others
+        const result = {};
+
+        try {
+            // Start with config-provided data (if any)
+            if (this.config && this.config.wahlmoduleData && typeof this.config.wahlmoduleData === 'object') {
+                Object.assign(result, this.config.wahlmoduleData);
+            }
+
+            // If a global wrapper exists (like window.CSEModuleData) prefer its normalized form for missing keys
+            const wrappers = [window.CSEModuleData, window.ITETModuleData, window.RIGModuleData];
+            for (const w of wrappers) {
+                if (!w) continue;
+                if (typeof w.getAllWahlmoduleData === 'function') {
+                    try {
+                        const data = w.getAllWahlmoduleData();
+                        // Copy missing keys only
+                        for (const k of Object.keys(data || {})) {
+                            if (result[k] === undefined) result[k] = data[k];
+                        }
+                    } catch (e) {
+                        console.warn('Fehler beim Lesen von wrapper wahlmoduleData', e);
+                    }
+                } else if (typeof w === 'object') {
+                    for (const k of Object.keys(w)) {
+                        if (result[k] === undefined) result[k] = w[k];
+                    }
+                }
+            }
+        } catch (e) {
+            console.error('Fehler beim Zusammenführen der wahlmoduleData:', e);
         }
-        
-        return {};
+
+        // Ensure commonly expected keys exist to avoid undefined access
+        if (!result.kernfaecherSchwerpunkte && result.kernfaecher) result.kernfaecherSchwerpunkte = result.kernfaecher;
+        if (!result.kernfaecherSchwerpunkte) result.kernfaecherSchwerpunkte = {};
+
+        return result;
     }
 
     /* ==== TOOLTIP INTEGRATION ==== */
@@ -81,6 +107,28 @@ class StudienplanWahlmoduleManager {
         const content = this.createWahlmoduleTooltipContent(categoryKey, kategorie);
         
         this.studienplan.showCustomTooltip(content, event);
+
+        // After tooltip HTML inserted, attach event listeners to the buttons (no inline onclicks)
+        setTimeout(() => {
+            try {
+                const tooltipEl = this.studienplan.tooltipEl || document.getElementById('tooltip');
+                if (!tooltipEl) return;
+                const buttons = tooltipEl.querySelectorAll('.wahlmodule-toggle');
+                buttons.forEach(btn => {
+                    // avoid attaching multiple listeners
+                    if (btn.__wahlAttached) return;
+                    btn.__wahlAttached = true;
+                    btn.addEventListener('click', (e) => {
+                        e.stopPropagation();
+                        const modulName = btn.getAttribute('data-modul-name');
+                        const catKey = btn.getAttribute('data-category') || categoryKey;
+                        this.toggleModulFromTooltip(modulName, catKey);
+                    });
+                });
+            } catch (e) {
+                console.warn('Fehler beim Anhängen der Wahlmodule-Button-Handler', e);
+            }
+        }, 20);
         
         // Setup outside click handler
         if (!this._outsideClickHandler) {
@@ -131,13 +179,15 @@ class StudienplanWahlmoduleManager {
                 const buttonText = isSelected ? "✓ Gewählt" : "Wählen";
                 const buttonColor = isSelected ? "#28a745" : groupColor;
 
+                // Render button without inline onclick; attach handler after tooltip insertion
+                const safeName = modul.name.replace(/'/g, "&#39;");
                 content += `
                     <div style="padding: 6px; background: ${bgColor}; color: ${textColor}; border-radius: 4px; margin: 2px; border: 1px solid #ddd; display: flex; justify-content: space-between; align-items: center;">
                         <div>
                             <div style="font-weight: bold; font-size: 10px;">${modul.kp} KP</div>
                             <div style="font-size: 9px; line-height: 1.2;">${modul.name}</div>
                         </div>
-                        <button onclick="window.currentStudienplan.wahlmoduleManager.toggleModulFromTooltip('${modul.name}', '${categoryKey}')" 
+                        <button class="wahlmodule-toggle" data-modul-name="${safeName}" data-category="${categoryKey}"
                                 style="background: ${buttonColor}; color: ${this.getTextColor(buttonColor)}; border: none; padding: 3px 6px; border-radius: 3px; cursor: pointer; font-size: 8px;">
                             ${buttonText}
                         </button>
@@ -291,6 +341,11 @@ class StudienplanWahlmoduleManager {
         // Accept common German variants used by specific configs (e.g. CSE)
         if (categoryName === 'Vertiefungsgebiet' || categoryName === 'Vertiefungsgebiete') return 'vertiefungsgebiete';
         if (categoryName === 'Wahlfächer (Bereiche)' || categoryName === 'Wahlfächer - Bereiche') return 'wahlfaecher';
+
+        // Handle plain "Kernfächer" and variants (normalize umlaut)
+        if (!categoryName) return '';
+        const normalized = categoryName.trim().toLowerCase();
+        if (normalized === 'kernfächer' || normalized.indexOf('kern') === 0) return 'kernfaecher';
 
         return keyMappings[categoryName] || categoryName.toLowerCase().replace(/\s+/g, '-');
     }

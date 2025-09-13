@@ -1,5 +1,5 @@
-/* ==== CSE MODULE DATA ==== */
-/* Alle Moduldaten für den CSE Studiengang */
+/* ==== CSE MODULE DATA - BEREINIGT ==== */
+/* Alle Moduldaten für den CSE Studiengang - ohne hardcodierte 3. Jahr Module */
 
 window.StudiengangModules = [
     // 1. Jahr
@@ -175,76 +175,12 @@ window.StudiengangModules = [
         themenbereich: "informatik",
     },
 
-    // 3. Jahr - Kernfächer
-    {
-        jahr: 3,
-        semester: 0,
-        bereich: "Kernfächer",
-        name: "Software Engineering",
-        kp: 6,
-        kategorie: "kern",
-        themenbereich: "informatik",
-    },
-    {
-        jahr: 3,
-        semester: 0,
-        bereich: "Kernfächer",
-        name: "Design of High Performance Computing",
-        kp: 6,
-        kategorie: "kern",
-        themenbereich: "informatik",
-    },
-    {
-        jahr: 3,
-        semester: 0,
-        bereich: "Kernfächer",
-        name: "Introduction into Machine Learning",
-        kp: 8,
-        kategorie: "kern",
-        themenbereich: "informatik",
-    },
+    // 3. Jahr - PLATZHALTER für dynamische Module (wird durch zentrale Wahlmodule ersetzt)
+    { jahr: 3, semester: 0, name: "Kernfächer", kp: 0, kategorie: "Kernfächer", isPlaceholder: true },
+    { jahr: 3, semester: 0, name: "Vertiefungsgebiet", kp: 0, kategorie: "Vertiefungsgebiet", isPlaceholder: true },
+    { jahr: 3, semester: 0, name: "Wahlfächer", kp: 0, kategorie: "Wahlfächer", isPlaceholder: true },
 
-    // 3. Jahr - Vertiefungsgebiet
-    {
-        jahr: 3,
-        semester: 0,
-        bereich: "Vertiefungsgebiet",
-        name: "3D Vision",
-        kp: 4,
-        kategorie: "vertiefung",
-        themenbereich: "informatik",
-    },
-    {
-        jahr: 3,
-        semester: 0,
-        bereich: "Vertiefungsgebiet",
-        name: "Image Analysis and Computer Vision",
-        kp: 6,
-        kategorie: "vertiefung",
-        themenbereich: "informatik",
-    },
-
-    // 3. Jahr - Wahlfächer
-    {
-        jahr: 3,
-        semester: 0,
-        bereich: "Wahlfächer",
-        name: "Information Systems for Engineers",
-        kp: 5,
-        kategorie: "wahl",
-        themenbereich: "informatik",
-    },
-    {
-        jahr: 3,
-        semester: 0,
-        bereich: "Wahlfächer",
-        name: "Communication Networks",
-        kp: 6,
-        kategorie: "wahl",
-        themenbereich: "informatik",
-    },
-
-    // 3. Jahr - Abschluss
+    // 3. Jahr - Abschluss (diese bleiben fest)
     {
         jahr: 3,
         semester: 0,
