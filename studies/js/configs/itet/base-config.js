@@ -1,4 +1,4 @@
-/* ==== ITET BASE CONFIGURATION - VEREINFACHT MIT ZENTRALEM WAHLMODULE-SYSTEM ==== */
+/* ==== ITET BASE CONFIGURATION - MIT OPTIONALEM COLORMANAGER ==== */
 /* Grundlegende Konfiguration für den ITET Studiengang */
 
 window.StudiengangBaseConfig = {
@@ -18,12 +18,13 @@ window.StudiengangBaseConfig = {
     // Features
     enableTooltips: true,
     enableHover: true,
-    
-    // NEU: Zentrales Wahlmodule-System aktivieren
     enableWahlmodule: true,
-    
-    // KP-Counter zentral aktivieren
     enableKPCounter: true,
+    
+    // OPTIONAL: ColorManager aktivieren (Standard Base-Funktionen)
+    enableColorManager: true,  // auf true setzen falls gewünscht
+    
+    // KP-Counter
     kpCounterConfig: {
         requiredKP: 180,
         showDetailedBreakdown: true,
@@ -99,16 +100,6 @@ window.StudiengangBaseConfig = {
         "Wahlfächer": "wahl",
         "Wissenschaftliche Arbeit": "wissenschaft",
         "Weitere Wahl-Grundlagenfächer": "weitere-wahl-grundlagen"
-    },
-    
-    // Spezielle Styling-Optionen für ITET
-    styling: {
-        compactLayout: true,
-        horizontalModules: true,
-        categoryBasedThirdYear: true,
-        showCategoryTitles: true,
-        moduleSpacing: "8px",
-        categorySpacing: "20px"
     },
     
     // Custom Sizing für bessere Kompaktheit

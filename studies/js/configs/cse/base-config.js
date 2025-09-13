@@ -1,4 +1,4 @@
-/* ==== CSE BASE CONFIGURATION - FIXED ==== */
+/* ==== CSE BASE CONFIGURATION - VEREINFACHT ==== */
 /* Grundlegende Konfiguration für den CSE Studiengang */
 
 window.StudiengangBaseConfig = {
@@ -18,17 +18,16 @@ window.StudiengangBaseConfig = {
     // Features
     enableTooltips: true,
     enableHover: true,
-    
-    // KP-Counter zentral aktivieren
     enableKPCounter: true,
+    enableWahlmodule: true,
+    enableColorManager: true, // NEU: ColorManager aktivieren
+    
+    // KP-Counter Konfiguration
     kpCounterConfig: {
         requiredKP: 180,
         showDetailedBreakdown: false,
         enableCategoryTracking: true
     },
-    
-    // Wahlmodul-System aktivieren
-    enableWahlmodule: true,
     
     // Aspekt-Verhältnisse
     aspectRatios: {
@@ -96,7 +95,7 @@ window.StudiengangBaseConfig = {
         }
     ],
     
-    // Standard Kategorien
+    // Kategorien
     kategorien: [
         { name: "Wissenschaftliche Arbeit", klasse: "wissenschaftliche-arbeit" },
         { 
@@ -126,9 +125,8 @@ window.StudiengangBaseConfig = {
         "vertiefung": "vertiefung"
     },
     
-    // FIXED: Wahlmodule-Daten mit richtigen Keys
+    // Wahlmodule-Daten
     wahlmoduleData: {
-        // WICHTIG: Der Wahlmodule-Manager erwartet "kernfaecherSchwerpunkte"
         kernfaecherSchwerpunkte: {
             "Alle Kernfächer": [
                 {
@@ -169,18 +167,7 @@ window.StudiengangBaseConfig = {
                 }
             ]
         },
-        
-        // Vertiefungsgebiete (werden dynamisch aus anderen Dateien geladen)
         vertiefungsgebiete: {},
-        
-        // Wahlfächer (werden dynamisch aus anderen Dateien geladen)
         wahlfaecherBereiche: {}
     }
 };
-
-// Rückwärtskompatibilität (falls andere Code diese Keys erwartet)
-if (window.StudiengangBaseConfig && window.StudiengangBaseConfig.wahlmoduleData) {
-    // Alias für kernfaecher
-    window.StudiengangBaseConfig.wahlmoduleData.kernfaecher = 
-        window.StudiengangBaseConfig.wahlmoduleData.kernfaecherSchwerpunkte;
-}

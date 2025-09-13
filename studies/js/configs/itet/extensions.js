@@ -10,6 +10,9 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
     // Basis-Initialisierung (aktiviert automatisch das zentrale Wahlmodule-System)
     super.initialize();
     
+    // EXPLIZIT: ColorManager für ITET aktivieren
+    this.config.enableColorManager = true;
+    
     // ITET-spezifische Initialisierung
     this.setupITETSpecifics();
   }

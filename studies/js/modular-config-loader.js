@@ -17,6 +17,12 @@ class StudiengangConfigLoader {
         
         await this.loadOptionalModule(`${dataPath}/module-details.js`);
         
+        // ColorManager vor extensions.js laden
+        await this.loadOptionalModule(`${configPath}/extensions-ColorManager.js`);
+        
+        // Weitere CSE-spezifische Extensions
+        await this.loadOptionalModule(`${configPath}/extensions-GradeCalculator.js`);
+        
         await this.loadOptionalModule(`${configPath}/extensions.js`);
         
         this.mergeConfigs();

@@ -1,6 +1,8 @@
 /* ==== CSE GRADE CALCULATOR ==== */
 /* Verwaltet den Block-Prüfungen-Rechner für CSE */
 
+// Verhindere doppeltes Laden
+if (!window.CSEGradeCalculator) {
 class CSEGradeCalculator {
   constructor(studienplan) {
     this.studienplan = studienplan;
@@ -439,3 +441,4 @@ class CSEGradeCalculator {
 
 // Export für modularen Import
 window.CSEGradeCalculator = CSEGradeCalculator;
+}
