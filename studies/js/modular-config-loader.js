@@ -22,6 +22,12 @@ class StudiengangConfigLoader {
         await this.loadOptionalModule(`${dataPath}/wahlfacher-data.js`);
         await this.loadOptionalModule(`${dataPath}/cse-wahlmodule-data.js`);
         
+        // ITET Wahlmodule-Dateien
+        await this.loadOptionalModule(`${dataPath}/kernfacher-data.js`);
+        await this.loadOptionalModule(`${dataPath}/wahlfacher-data.js`);
+        await this.loadOptionalModule(`${dataPath}/weitere-wahl-grundlagenfacher-data.js`);
+        await this.loadOptionalModule(`${dataPath}/praktika-seminar-projekt-data.js`);
+        
         // ColorManager vor extensions.js laden
         await this.loadOptionalModule(`${configPath}/extensions-ColorManager.js`);
         
@@ -29,6 +35,9 @@ class StudiengangConfigLoader {
         await this.loadOptionalModule(`${configPath}/extensions-GradeCalculator.js`);
         
         await this.loadOptionalModule(`${configPath}/extensions.js`);
+        
+        // Nach dem Laden aller Module, kombiniere ITET Moduldaten zu einem konsistenten Format
+        this.combineModuleData();
         
         this.mergeConfigs();
         
@@ -64,6 +73,56 @@ class StudiengangConfigLoader {
         } catch (error) {
             // Optionales Modul fehlt — nur warnen, nicht unterbrechen
             console.warn(`Optionales Modul konnte nicht geladen werden: ${url}`);
+        }
+    }
+
+    combineModuleData() {
+        // Für ITET: Kombiniere separate Datendateien zu window.ITETModuleData falls es noch nicht existiert
+        if (this.studiengang === 'itet') {
+            if (!window.ITETModuleData || !window.ITETModuleData.getAllWahlmoduleData) {
+                // Sammle alle separaten ITET-Daten
+                const combinedData = {};
+                
+                // Kernfächer (bereits in kernfacher-data.js definiert)
+                if (window.ITETModuleData && window.ITETModuleData.kernfaecherSchwerpunkte) {
+                    combinedData.kernfaecherSchwerpunkte = window.ITETModuleData.kernfaecherSchwerpunkte;
+                }
+                
+                // Wahlfächer von wahlfacher-data.js
+                if (window.ITETWahlfaecherData && window.ITETWahlfaecherData.wahlfaecherBereiche) {
+                    combinedData.wahlfaecherBereiche = window.ITETWahlfaecherData.wahlfaecherBereiche;
+                }
+                
+                // Weitere Wahl-Grundlagenfächer
+                if (window.ITETWeitereWahlGrundlagenData && window.ITETWeitereWahlGrundlagenData.weitereWahlGrundlagen) {
+                    combinedData.weitereWahlGrundlagen = window.ITETWeitereWahlGrundlagenData.weitereWahlGrundlagen;
+                }
+                
+                // Praktika-Seminare-Projekte
+                if (window.ITETPraktikaSeminarProjektData && window.ITETPraktikaSeminarProjektData.praktikaSchwerpunkte) {
+                    combinedData.praktikaSchwerpunkte = window.ITETPraktikaSeminarProjektData.praktikaSchwerpunkte;
+                }
+                
+                // Erstelle oder erweitere window.ITETModuleData mit einer getAllWahlmoduleData Funktion
+                if (!window.ITETModuleData) {
+                    window.ITETModuleData = {};
+                }
+                
+                // Übertrage alle kombinierten Daten
+                Object.assign(window.ITETModuleData, combinedData);
+                
+                // Füge die erwartete getAllWahlmoduleData Funktion hinzu
+                window.ITETModuleData.getAllWahlmoduleData = function() {
+                    return {
+                        kernfaecherSchwerpunkte: this.kernfaecherSchwerpunkte || {},
+                        wahlfaecherBereiche: this.wahlfaecherBereiche || {},
+                        weitereWahlGrundlagen: this.weitereWahlGrundlagen || [],
+                        praktikaSchwerpunkte: this.praktikaSchwerpunkte || {}
+                    };
+                };
+                
+                console.log('✅ ITET Moduldaten kombiniert:', window.ITETModuleData);
+            }
         }
     }
 

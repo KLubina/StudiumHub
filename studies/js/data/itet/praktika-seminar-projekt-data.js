@@ -1,222 +1,10 @@
-/* ==== ITET ERWEITERTE MODULE-DATEN (verschoben aus configs/itet) ==== */
-// Enthält strukturierte Listen für Kernfächer, Wahlfächer, weitere Grundlagen und Praktika/Projekte.
-// Wird optional vom modular-config-loader geladen und stellt window.ITETModuleData bereit.
+/* ==== ITET PRAKTIKA-SEMINAR-PROJEKT DATA ==== */
+// Enthält strukturierte Listen für Praktika, Seminare und Projekte nach Schwerpunkten.
+// Wird vom modular-config-loader geladen und stellt window.ITETPraktikaSeminarProjektData bereit.
 
-window.ITETModuleData = {
-  kernfaecherSchwerpunkte: {
-      "Biomedizinische Technik": [
-        {
-          name: "Biomedical Imaging",
-          kp: 6,
-          kategorie: "Kernfächer nach Schwerpunkt",
-        },
-        {
-          name: "Biomedical Engineering",
-          kp: 4,
-          kategorie: "Kernfächer nach Schwerpunkt",
-        },
-        {
-          name: "Bioelectronics and Biosensors",
-          kp: 6,
-          kategorie: "Kernfächer nach Schwerpunkt",
-        },
-        {
-          name: "Introduction to Neuroinformatics",
-          kp: 6,
-          kategorie: "Kernfächer nach Schwerpunkt",
-        },
-        {
-          name: "Neural Systems",
-          kp: 6,
-          kategorie: "Kernfächer nach Schwerpunkt",
-        },
-      ],
-      "Computer und Netzwerke": [
-        {
-          name: "Discrete Event Systems",
-          kp: 6,
-          kategorie: "Kernfächer nach Schwerpunkt",
-        },
-        {
-          name: "Embedded Systems",
-          kp: 6,
-          kategorie: "Kernfächer nach Schwerpunkt",
-        },
-        {
-          name: "Communication Networks",
-          kp: 6,
-          kategorie: "Kernfächer nach Schwerpunkt",
-        },
-        {
-          name: "Fundamentals of Computer Architecture",
-          kp: 6,
-          kategorie: "Kernfächer nach Schwerpunkt",
-        },
-      ],
-      "Elektrische Energietechnik": [
-        {
-          name: "Leistungselektronik",
-          kp: 6,
-          kategorie: "Kernfächer nach Schwerpunkt",
-        },
-        {
-          name: "Power Semiconductors",
-          kp: 6,
-          kategorie: "Kernfächer nach Schwerpunkt",
-        },
-        {
-          name: "Control Systems",
-          kp: 6,
-          kategorie: "Kernfächer nach Schwerpunkt",
-        },
-      ],
-      "Elektronik und Photonik": [
-        {
-          name: "VLSI 1: HDL Based Design for FPGAs",
-          kp: 6,
-          kategorie: "Kernfächer nach Schwerpunkt",
-        },
-        {
-          name: "Solid State Electronics and Optics",
-          kp: 6,
-          kategorie: "Kernfächer nach Schwerpunkt",
-        },
-        {
-          name: "Analog Integrated Circuits",
-          kp: 6,
-          kategorie: "Kernfächer nach Schwerpunkt",
-        },
-        {
-          name: "Radio-Frequency Electronics I",
-          kp: 6,
-          kategorie: "Kernfächer nach Schwerpunkt",
-        },
-        {
-          name: "High-Speed Signal Propagation",
-          kp: 6,
-          kategorie: "Kernfächer nach Schwerpunkt",
-        },
-        {
-          name: "Optics and Photonics",
-          kp: 6,
-          kategorie: "Kernfächer nach Schwerpunkt",
-        },
-        {
-          name: "Mess- und Versuchstechnik",
-          kp: 6,
-          kategorie: "Kernfächer nach Schwerpunkt",
-        },
-      ],
-      "Kommunikation, Regelung und Signalverarbeitung": [
-        {
-          name: "Discrete-Time and Statistical Signal Processing",
-          kp: 6,
-          kategorie: "Kernfächer nach Schwerpunkt",
-        },
-        {
-          name: "Communication Systems",
-          kp: 6,
-          kategorie: "Kernfächer nach Schwerpunkt",
-        },
-        {
-          name: "Communication and Detection Theory",
-          kp: 6,
-          kategorie: "Kernfächer nach Schwerpunkt",
-        },
-        {
-          name: "Fundamentals of Physical Modeling and Simulations",
-          kp: 6,
-          kategorie: "Kernfächer nach Schwerpunkt",
-        },
-        {
-          name: "Introduction to Estimation and Machine Learning",
-          kp: 6,
-          kategorie: "Kernfächer nach Schwerpunkt",
-        },
-      ],
-    },
-
-    // WAHLFÄCHER
-    wahlfaecherBereiche : {
-      "Ingenieurswissenschaftliche Wahlfächer": [
-        {
-          name: "Electromagnetic Waves: Materials, Effects, and Antennas",
-          kp: 6,
-          kategorie: "Wahlfächer",
-        },
-        { name: "Mechatronik", kp: 6, kategorie: "Wahlfächer" },
-        {
-          name: "VLSI 2: From Netlist to Complete System on Chip",
-          kp: 6,
-          kategorie: "Wahlfächer",
-        },
-        { name: "Computational Control", kp: 6, kategorie: "Wahlfächer" },
-        { name: "Design and Control of Electric Machines", kp: 6, kategorie: "Wahlfächer" },
-        { name: "Chemistry of Devices and Technologies", kp: 4, kategorie: "Wahlfächer" },
-        { name: "Cell and Molecular Biology for Engineers", kp: 6, kategorie: "Wahlfächer" },
-        { name: "Seminar in Computer Architecture", kp: 2, kategorie: "Wahlfächer" },
-        {
-          name: "Introduction to Machine Learning",
-          kp: 8,
-          kategorie: "Wahlfächer",
-        },
-        { name: "Adaptive User Interfaces through Machine Learning", kp: 2, kategorie: "Wahlfächer" },
-        { name: "Imaging and Computing in Medicine", kp: 6, kategorie: "Wahlfächer" },
-        { name: "Qubits, Electrons, Photons", kp: 6, kategorie: "Wahlfächer" },
-        { name: "Single Molecule Biosensors", kp: 6, kategorie: "Wahlfächer" },
-        { name: "Fundamentals of Electric Machines", kp: 6, kategorie: "Wahlfächer" },
-        { name: "Computer Security", kp: 4, kategorie: "Wahlfächer" },
-        { name: "Maxwell, Einstein, and the GPS", kp: 6, kategorie: "Wahlfächer" },
-        { name: "Digital Creativity for Circular Construction", kp: 8, kategorie: "Wahlfächer" },
-        {
-          name: "Manufacturing of Electronic Devices",
-          kp: 4,
-          kategorie: "Wahlfächer",
-        },
-        { name: "Microsystems I: Process Technology and Integration", kp: 6, kategorie: "Wahlfächer" },
-        { name: "Information Systems for Engineers", kp: 4, kategorie: "Wahlfächer" },
-        { name: "Materials and Mechanics in Medicine", kp: 4, kategorie: "Wahlfächer" },
-      ],
-      "Wirtschafts-, Rechts- und Managementwissenschaftliche Wahlfächer": [
-        { name: "Managerial Economics", kp: 4, kategorie: "Wahlfächer" },
-        {
-          name: "Einführung in die Mikroökonomie",
-          kp: 3,
-          kategorie: "Wahlfächer",
-        },
-        { name: "Grundzüge des Rechts", kp: 2, kategorie: "Wahlfächer" },
-        { name: "Startups und Recht", kp: 2, kategorie: "Wahlfächer" },
-        { name: "Die Rolle des Geistigen Eigentums im Ingenieurwesen", kp: 2, kategorie: "Wahlfächer" },
-      ],
-      "Mensch-Technik-Umwelt Wahlfächer (MTU)": [
-        { name: "Management & Sustainability of Air Transport", kp: 4, kategorie: "Wahlfächer" },
-        { name: "#AI4Impact: Machine Learning for Social Impact", kp: 3, kategorie: "Wahlfächer" },
-        { name: "Basics of Air Transport (Aviation I)", kp: 4, kategorie: "Wahlfächer" },
-        { name: "Lecture Series: Space Research and Exploration", kp: 1, kategorie: "Wahlfächer" },
-      ],
-    },
-
-    // WEITERE WAHL-GRUNDLAGENFÄCHER
-    weitereWahlGrundlagen : [
-      {
-        name: "Computational Thinking",
-        kp: 4,
-        kategorie: "Weitere Wahl-Grundlagenfächer",
-      },
-      {
-        name: "High-Frequency Design Techniques",
-        kp: 4,
-        kategorie: "Weitere Wahl-Grundlagenfächer",
-      },
-      {
-        name: "Introduction to Electric Power Transmission: System & Technology",
-        kp: 4,
-        kategorie: "Weitere Wahl-Grundlagenfächer",
-      },
-    ],
-
-    // PRAKTIKA IN UNTERKATEGORIEN ORGANISIERT
-    praktikaSchwerpunkte : {
+window.ITETPraktikaSeminarProjektData = {
+  // PRAKTIKA IN UNTERKATEGORIEN ORGANISIERT
+  praktikaSchwerpunkte: {
       "Machine Learning & KI": [
         {
           name: "Machine Learning for Brain-Computer Interfaces",
@@ -559,14 +347,10 @@ window.ITETModuleData = {
           kategorie: "Wahl Praktika-Projekte-Seminare",
         },
       ],
-    }
-  }
-
-    // Neue Module-Kategorien initialisieren
-    this.initializeNewModuleCategories();
-
-    // Verfügbare Praktika, Projekte und Seminare
-    this.praktikaModule = [
+    },
+    
+    // Weitere Module können hier über initializeNewModuleCategories() hinzugefügt werden
+    praktikaModule: [
       {
         name: "Amateurfunk-Kurs",
         kp: 1.5,
@@ -886,5 +670,6 @@ window.ITETModuleData = {
         name: "Applied Circuit and PCB-Design",
         kp: 2,
         kategorie: "Wahl Praktika-Projekte-Seminare",
-      },
-    ];
+      }
+    ]
+  };
