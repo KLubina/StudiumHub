@@ -11,11 +11,11 @@ class StudiengangConfigLoader {
         
         await this.loadModule(`${configPath}/base-config.js`);
         
-        await this.loadModule(`${dataPath}/modules.js`);
+        await this.loadModule(`${dataPath}/basic-modules-data.js`);
         
         await this.loadOptionalModule(`${dataPath}/extensions-data.js`);
         
-        await this.loadOptionalModule(`${dataPath}/module-details.js`);
+        await this.loadOptionalModule(`${dataPath}/basic-modules-details.js`);
         
         // CSE Wahlmodule-Dateien
         await this.loadOptionalModule(`${dataPath}/vertiefung-data.js`);
