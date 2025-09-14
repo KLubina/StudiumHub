@@ -4,7 +4,6 @@
 window.StudiengangBaseConfig = {
     // Grundlegende Informationen
     title: "BSc Information Technology",
-    subtitle: "mind. 180 ECTS insgesamt",
     legendTitle: "Farben-Legende",
     creditUnit: "ECTS",
     

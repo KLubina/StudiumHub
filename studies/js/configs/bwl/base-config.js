@@ -4,7 +4,6 @@
 window.StudiengangBaseConfig = {
     // Grundlegende Informationen
     title: "BA BWL Studium an der HSG",
-    subtitle: "mind. 180 ECTS insgesamt",
     legendTitle: "Farben-Legende",
     creditUnit: "ECTS",
     

@@ -3,8 +3,7 @@
 
 window.StudiengangBaseConfig = {
     // Grundlegende Informationen
-    title: "BSc Computer Engineering (Aspira)",
-    subtitle: "mind. 180 ECTS insgesamt - 6 Semester",
+    title: "BSc Computer Engineering ",
     legendTitle: "Farben-Legende",
     creditUnit: "ECTS",
     

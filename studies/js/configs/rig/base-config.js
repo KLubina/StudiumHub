@@ -4,7 +4,6 @@
 window.StudiengangBaseConfig = {
     // Grundlegende Informationen
     title: "BSc Raumbezogene Ingenieurwissenschaften",
-    subtitle: "mind. 180 KP insgesamt - ETH Zürich",
     legendTitle: "Farben-Legende",
     creditUnit: "KP",
     

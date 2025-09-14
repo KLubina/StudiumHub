@@ -3,8 +3,7 @@
 
 window.StudiengangBaseConfig = {
     // Grundlegende Informationen
-    title: "BSc Computer Science - ZHAW",
-    subtitle: "mind. 180 ECTS insgesamt - 6 Semester",
+    title: "BSc Computer Science",
     legendTitle: "Farben-Legende",
     creditUnit: "ECTS",
     

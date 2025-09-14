@@ -4,7 +4,6 @@
 window.StudiengangBaseConfig = {
     // Grundlegende Informationen
     title: "BSc Informatik",
-    subtitle: "mind. 180 KP insgesamt",
     legendTitle: "Farben-Legende",
     creditUnit: "KP",
     

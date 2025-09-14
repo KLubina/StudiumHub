@@ -3,8 +3,7 @@
 
 window.StudiengangBaseConfig = {
     // Grundlegende Informationen
-    title: "MSc Management, Technology, and Economics (MTEC)",
-    subtitle: "mind. 120 KP insgesamt",
+    title: "MSc Management, Technology, and Economics",
     legendTitle: "Farben-Legende & Anforderungen",
     creditUnit: "KP",
     

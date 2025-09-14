@@ -3,8 +3,7 @@
 
 window.StudiengangBaseConfig = {
     // Grundlegende Informationen
-    title: "BSc Computational Science and Engineering (CSE)",
-    subtitle: "mind. 180 KP insgesamt",
+    title: "BSc Computational Science and Engineering",
     legendTitle: "Farben-Legende",
     creditUnit: "KP",
     

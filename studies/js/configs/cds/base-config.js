@@ -4,7 +4,6 @@
 window.StudiengangBaseConfig = {
     // Grundlegende Informationen
     title: "BSc Computational and Data Science",
-    subtitle: "Meine Vertiefung: Computational and Data Science - 8 Semester",
     legendTitle: "Farben-Legende",
     creditUnit: "ECTS",
     
