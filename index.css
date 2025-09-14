@@ -119,6 +119,14 @@ h1 {
 .rig .card-header {
     background-color: #DC143C;
 }
+
+.bfh-eit .card-header {
+    background-color: #00a0e3;
+}
+
+.hslu-eit .card-header {
+    background-color: #00a0e3;
+}
 /* #endregion ==== STUDIENGANG-SPEZIFISCHE FARBEN ==== */
 
 .card-title {

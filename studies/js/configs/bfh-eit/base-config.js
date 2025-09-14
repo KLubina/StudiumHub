@@ -17,18 +17,11 @@ window.StudiengangBaseConfig = {
     // === 3. FEATURE FLAGS ===
     enableTooltips: true,
     enableHover: true,
-    enableColorManager: true,
+    enableColorManager: false,
     enableWahlmodule: true,
     enableKPCounter: true,
     
     // === 4. ERWEITERTE FEATURES ===
-    // ColorManager Config
-    coloringModes: {
-        kategorie: "Kategorien",
-        semester: "Semestern",
-    },
-    defaultColoringMode: "kategorie",
-    
     // KP-Counter Config
     kpCounterConfig: {
         requiredKP: 180,
