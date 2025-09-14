@@ -164,7 +164,8 @@ StudienplanBase.prototype.createModuleContent = function (div, modul) {
   // Container für alle Indikatoren erstellen
   const hasAnyIndicator = (details && details.vorlesungslink) || 
                          (details && details.link) || 
-                         (details && (details.pruefungen || details.pruefungslink));
+                         (details && (details.pruefungen || details.pruefungslink)) ||
+                         (details && details.kurslink);
   
   let indicatorsContainer;
   if (hasAnyIndicator) {
@@ -188,6 +189,15 @@ StudienplanBase.prototype.createModuleContent = function (div, modul) {
     linkIndicator.innerHTML = "🔗";
     linkIndicator.title = "Weitere Infos (VVZ) verfügbar";
     indicatorsContainer.appendChild(linkIndicator);
+  }
+
+  // Kurs-Indikator für Kurswebseiten / Materialien
+  if (details && details.kurslink) {
+    const kursIndicator = document.createElement("div");
+    kursIndicator.classList.add("kurs-indicator");
+    kursIndicator.innerHTML = "📚";
+    kursIndicator.title = "Kursmaterial / Webseiten verfügbar";
+    indicatorsContainer.appendChild(kursIndicator);
   }
 
   // Prüfungs-Indikator für alte Prüfungen
