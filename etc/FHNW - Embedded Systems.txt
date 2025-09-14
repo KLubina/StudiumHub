@@ -3,27 +3,35 @@ Vertiefungsprofil Embedded Systems Design
 
 Projekt 1
 https://www.fhnw.ch/de/studium/module/9169675
+6
 
 Objektorientierte Programmierung 1
 https://www.fhnw.ch/de/studium/module/6007993
+3
 
 Wärme und Strahlung
 https://www.fhnw.ch/de/studium/module/9063957
+3
 
 Allgemeine Elektrotechnik 1
 https://www.fhnw.ch/de/studium/module/6007771
+3
 
 Konvergenz Elektrotechnik*
 https://www.fhnw.ch/de/studium/module/9041293
+3
 
 Analysis 1
 https://www.fhnw.ch/de/studium/module/6008327
+3
 
 Lineare Algebra 1
 https://www.fhnw.ch/de/studium/module/6008325
+3
 
 Grundlagenlabor 1
 https://www.fhnw.ch/de/studium/module/6010242
+3
 
 Kommunikation
 https://www.fhnw.ch/de/studium/technik/kontext/
@@ -34,27 +42,35 @@ https://www.fhnw.ch/de/studium/technik/kontext/
 2. Semester
 Algebra 
 https://www.fhnw.ch/de/studium/module/6008331
+3
 
 Analysis 2
 https://www.fhnw.ch/de/studium/module/6008332
+3
 
 Mechanik
 https://www.fhnw.ch/de/studium/module/9090504
+3
 
 Projekt 2
 https://www.fhnw.ch/de/studium/module/9155733
+6
 
 Grundlagenlabor 2
 https://www.fhnw.ch/de/studium/module/6010244
+3
 
 Allgemeine Elektrotechnik 2
 https://www.fhnw.ch/de/studium/module/6007772
+3
 
 Digitaltechnik 1*
 https://www.fhnw.ch/de/studium/module/6007847
+3
 
 Objektorientierte Programmierung 2
 https://www.fhnw.ch/de/studium/module/6007994
+3
 
 Kommunikation
 https://www.fhnw.ch/de/studium/technik/kontext/
@@ -65,52 +81,67 @@ https://www.fhnw.ch/de/studium/technik/kontext/
 3. Semester
 Grundlagenlabor 3
 https://www.fhnw.ch/de/studium/module/6010245
+3
 
 Modellieren dynamischer Systeme
 https://www.fhnw.ch/de/studium/module/9067170
+3
 
 Projekt 3
 https://www.fhnw.ch/de/studium/module/9155749
+6
 
 Analysis 3
 https://www.fhnw.ch/de/studium/module/6008406
+3
 
 Elektromagnetismus
 https://www.fhnw.ch/de/studium/module/6013946
+3
 
 Analogtechnik
 https://www.fhnw.ch/de/studium/module/9102228
+3
 
 Signalverarbeitung
 https://www.fhnw.ch/de/studium/module/9030028
+3
 
 Kommunikationstechnik Grundlagen
 https://www.fhnw.ch/de/studium/module/9029168
+3
 
 Mikrocontroller - Grundlagen
 https://www.fhnw.ch/de/studium/module/9436642
+3
 
 4. Semester
 Grundlagenlabor 4
 https://www.fhnw.ch/de/studium/module/6010246
+3
 
 Digitale Signalverarbeitung - Grundlagen
 https://www.fhnw.ch/de/studium/module/9029185
+3
 
 Digitaltechnik 2
 https://www.fhnw.ch/de/studium/module/6007850
+3
 
 Integraltransformationen
 https://www.fhnw.ch/de/studium/module/6008408
 
 Schwingungen und Wellen
 https://www.fhnw.ch/de/studium/module/9093422
+3
 
 Analoge Schaltungstechnik - Grundlagen
 https://www.fhnw.ch/de/studium/module/9390399
+3
 
 Projekt 4
 https://www.fhnw.ch/de/studium/module/9155761
+6
 
 Englisch
 https://www.fhnw.ch/de/studium/technik/kontext/
@@ -124,52 +155,59 @@ https://www.fhnw.ch/de/studium/technik/kontext/
 5. Semester
 Projekt 5*
 https://www.fhnw.ch/de/studium/module/6018820
-
-Projekt 5*
-https://www.fhnw.ch/de/studium/module/6018820
+6
 
 Labor Embedded Systems Design 1
 https://www.fhnw.ch/de/studium/module/9436437
+3
 
 Kommunikationstechnik
 https://www.fhnw.ch/de/studium/module/9108204
+3
 
 Digitale Schaltungstechnik
 https://www.fhnw.ch/de/studium/module/9029170
+3
 
 Digitale Signalverarbeitung
 https://www.fhnw.ch/de/studium/module/9108200
+3
 
 Microcontroller Systems Programming
 https://www.fhnw.ch/de/studium/module/9416781
+3
 
 Datennetze
 https://www.fhnw.ch/de/studium/module/9288353
+3
 
 Englisch
 https://www.fhnw.ch/de/studium/technik/kontext/
 
 Workshop Linux und Webtechnologien
 https://www.fhnw.ch/de/studium/module/9434920
+3
 
 6. Semester
 Projekt 6*
 https://www.fhnw.ch/de/studium/module/9004584
-
-Projekt 6*
-https://www.fhnw.ch/de/studium/module/9004584
+12
 
 Labor Embedded Systems Design 2
 https://www.fhnw.ch/de/studium/module/9436624
+3
 
 Digital Communication
 https://www.fhnw.ch/de/studium/module/9107973
+3
 
 Embedded Systems Software Design
 https://www.fhnw.ch/de/studium/module/6007864
+3
 
 Analog Circuits for Embedded Systems
 https://www.fhnw.ch/de/studium/module/9435525?show_language=en
+3
 
 Geistes- und Sozialwissenschaften
 https://www.fhnw.ch/de/studium/technik/kontext/
