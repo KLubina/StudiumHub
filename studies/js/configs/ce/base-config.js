@@ -1,22 +1,29 @@
-/* ==== COMPUTER ENGINEERING BASE CONFIGURATION ==== */
+/* ==== CE BASE CONFIGURATION - STANDARDISIERT ==== */
 /* Grundlegende Konfiguration für den Computer Engineering B.Sc. Studiengang (Aspira) */
 
 window.StudiengangBaseConfig = {
-    // Grundlegende Informationen
-    title: "BSc Computer Engineering ",
+    // === 1. BASIC INFO ===
+    title: "BSc Computer Engineering",
     legendTitle: "Farben-Legende",
     creditUnit: "ECTS",
     
-    // Layout-Konfiguration
+    // === 2. LAYOUT CONFIG ===
     layout: "years",
     moduleSizing: "proportional",
     basisArea: 2000,
     defaultAspectRatio: 1.5,
     
-    // Features
+    // === 3. FEATURE FLAGS ===
     enableTooltips: false,
     enableHover: true,
+    enableColorManager: false,
+    enableWahlmodule: false,
+    enableKPCounter: false,
     
+    // === 4. ERWEITERTE FEATURES ===
+    // (keine, da alle Flags false sind)
+    
+    // === 5. LAYOUT-SPEZIFISCHE CONFIG ===
     // Aspekt-Verhältnisse für verschiedene Module
     aspectRatios: {
         "longName": 2.2,
@@ -25,7 +32,7 @@ window.StudiengangBaseConfig = {
         "Mobile Application Development": 2.0
     },
     
-    // Kategorien und ihre CSS-Klassen
+    // === 6. KATEGORIEN ===
     kategorien: [
         { name: "Mathematics & Foundations", klasse: "foundations" },
         { name: "Programming & Software Development", klasse: "programming" },

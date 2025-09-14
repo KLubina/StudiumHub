@@ -1,160 +1,165 @@
-/* ==== CSE BASE CONFIGURATION - VEREINFACHT ==== */
+/* ==== CSE BASE CONFIGURATION - STANDARDISIERT ==== */
 /* Grundlegende Konfiguration für den CSE Studiengang */
 
 window.StudiengangBaseConfig = {
-  // Grundlegende Informationen
-  title: "BSc Computational Science and Engineering",
-  legendTitle: "Farben-Legende",
-  creditUnit: "KP",
+    // === 1. BASIC INFO ===
+    title: "BSc Computational Science and Engineering",
+    legendTitle: "Farben-Legende",
+    creditUnit: "KP",
 
-  // Layout-Konfiguration
-  layout: "years",
-  moduleSizing: "proportional",
-  basisArea: 2000,
-  defaultAspectRatio: 1.5,
-  layoutClass: "layout-bereich",
+    // === 2. LAYOUT CONFIG ===
+    layout: "years",
+    moduleSizing: "proportional",
+    basisArea: 2000,
+    defaultAspectRatio: 1.5,
+    layoutClass: "layout-bereich",
 
-  // Features
-  enableTooltips: true,
-  enableHover: true,
-  enableKPCounter: true,
-  enableWahlmodule: true,
-  enableColorManager: true,
-  coloringModes: {
-    pruefungsblock: "Prüfungsblöcken",
-    themenbereich: "Themenbereichen",
-  },
-  defaultColoringMode: "pruefungsblock",
+    // === 3. FEATURE FLAGS ===
+    enableTooltips: true,
+    enableHover: true,
+    enableColorManager: true,
+    enableWahlmodule: true,
+    enableKPCounter: true,
 
-  // KP-Counter Konfiguration
-  kpCounterConfig: {
-    requiredKP: 180,
-    showDetailedBreakdown: false,
-    enableCategoryTracking: true,
-  },
+    // === 4. ERWEITERTE FEATURES ===
+    // ColorManager Config
+    coloringModes: {
+        pruefungsblock: "Prüfungsblöcken",
+        themenbereich: "Themenbereichen",
+    },
+    defaultColoringMode: "pruefungsblock",
 
-  // Aspekt-Verhältnisse
-  aspectRatios: {
-    longName: 2.0,
-    specialModule: 2.5,
-  },
+    // KP-Counter Config
+    kpCounterConfig: {
+        requiredKP: 180,
+        showDetailedBreakdown: false,
+        enableCategoryTracking: true,
+    },
 
-  // Bereiche-Reihenfolge für 3. Jahr
-  bereicheReihenfolge: [
-    "Kernfächer",
-    "Vertiefungsgebiet",
-    "Wahlfächer",
-    "Abschluss",
-  ],
+    // Prüfungsblöcke für ColorManager
+    pruefungsbloecke: [
+        {
+            name: "Basisprüfungsblock 1",
+            module: [],
+            cssClass: "basis1",
+        },
+        {
+            name: "Basisprüfungsblock 2",
+            module: [],
+            cssClass: "basis2",
+        },
+        {
+            name: "Prüfungsblock G1",
+            module: [],
+            cssClass: "block-g1",
+        },
+        {
+            name: "Prüfungsblock G2",
+            module: [],
+            cssClass: "block-g2",
+        },
+        {
+            name: "Prüfungsblock G3",
+            module: [],
+            cssClass: "block-g3",
+        },
+        {
+            name: "Prüfungsblock G4",
+            module: [],
+            cssClass: "block-g4",
+        },
+    ],
 
-  // Prüfungsblöcke (vereinfacht für CSE - ohne Moduldetails)
-  pruefungsbloecke: [
-    {
-      name: "Basisprüfungsblock 1",
-      module: [],
-      cssClass: "basis1",
+    // === 5. LAYOUT-SPEZIFISCHE CONFIG ===
+    // Aspekt-Verhältnisse
+    aspectRatios: {
+        longName: 2.0,
+        specialModule: 2.5,
     },
-    {
-      name: "Basisprüfungsblock 2",
-      module: [],
-      cssClass: "basis2",
-    },
-    {
-      name: "Prüfungsblock G1",
-      module: [],
-      cssClass: "block-g1",
-    },
-    {
-      name: "Prüfungsblock G2",
-      module: [],
-      cssClass: "block-g2",
-    },
-    {
-      name: "Prüfungsblock G3",
-      module: [],
-      cssClass: "block-g3",
-    },
-    {
-      name: "Prüfungsblock G4",
-      module: [],
-      cssClass: "block-g4",
-    },
-  ],
 
-  // Kategorien
-  kategorien: [
-    { name: "Wissenschaftliche Arbeit", klasse: "wissenschaftliche-arbeit" },
-    {
-      name: "Kernfächer",
-      klasse: "kern",
-      info: "3 von 4 möglichen auswählen",
-      hasTooltip: true,
-    },
-    {
-      name: "Wahlfächer",
-      klasse: "wahl",
-      info: "mind. zwei Module",
-      hasTooltip: true,
-    },
-    {
-      name: "Vertiefungsgebiet",
-      klasse: "vertiefung",
-      info: "2 Module aus einem Gebiet auswählen",
-      hasTooltip: true,
-    },
-  ],
+    // Bereiche-Reihenfolge für 3. Jahr
+    bereicheReihenfolge: [
+        "Kernfächer",
+        "Vertiefungsgebiet",
+        "Wahlfächer",
+        "Abschluss",
+    ],
 
-  kategorieZuKlasse: {
-    "wissenschaftliche-arbeit": "wissenschaftliche-arbeit",
-    kern: "kern",
-    wahl: "wahl",
-    vertiefung: "vertiefung",
-  },
+    // === 6. KATEGORIEN ===
+    kategorien: [
+        { name: "Wissenschaftliche Arbeit", klasse: "wissenschaftliche-arbeit" },
+        {
+            name: "Kernfächer",
+            klasse: "kern",
+            info: "3 von 4 möglichen auswählen",
+            hasTooltip: true,
+        },
+        {
+            name: "Wahlfächer",
+            klasse: "wahl",
+            info: "mind. zwei Module",
+            hasTooltip: true,
+        },
+        {
+            name: "Vertiefungsgebiet",
+            klasse: "vertiefung",
+            info: "2 Module aus einem Gebiet auswählen",
+            hasTooltip: true,
+        },
+    ],
 
-  // Wahlmodule-Daten - Kompatibel mit Wahlmodule-System
-  wahlmoduleData: {
-    // Kernfächer aus cse-wahlmodule-data.js
-    kernfaecherSchwerpunkte: {
-      Kernfächer: window.CSE_KernfaecherModules || [],
+    kategorieZuKlasse: {
+        "wissenschaftliche-arbeit": "wissenschaftliche-arbeit",
+        kern: "kern",
+        wahl: "wahl",
+        vertiefung: "vertiefung",
     },
-    // Vertiefungsgebiete - werden dynamisch geladen
-    vertiefungsgebiete: {},
-    // Wahlfächer - werden dynamisch geladen
-    wahlfaecherBereiche: {},
 
-    // Kompatibilitätsfunktion für Wahlmodule-System
-    getAllWahlmoduleData: function () {
-      const data = {
-        kernfaecherSchwerpunkte: this.kernfaecherSchwerpunkte,
+    // === 7. WAHLMODULE DATA ===
+    // Wahlmodule-Daten - Kompatibel mit Wahlmodule-System
+    wahlmoduleData: {
+        // Kernfächer aus cse-wahlmodule-data.js
+        kernfaecherSchwerpunkte: {
+            Kernfächer: window.CSE_KernfaecherModules || [],
+        },
+        // Vertiefungsgebiete - werden dynamisch geladen
         vertiefungsgebiete: {},
+        // Wahlfächer - werden dynamisch geladen
         wahlfaecherBereiche: {},
-        wahlmoduleBereiche: {},
-      };
 
-      // Vertiefungsgebiete dynamisch aus separater Datei laden
-      if (window.CSE_VertiefungsgebieteModules) {
-        const kategorien = [
-          ...new Set(
-            window.CSE_VertiefungsgebieteModules.map(
-              (m) => m.kategorie_vertiefung
-            )
-          ),
-        ];
-        kategorien.forEach((kategorie) => {
-          data.vertiefungsgebiete[kategorie] =
-            window.CSE_VertiefungsgebieteModules.filter(
-              (m) => m.kategorie_vertiefung === kategorie
-            );
-        });
-      }
+        // Kompatibilitätsfunktion für Wahlmodule-System
+        getAllWahlmoduleData: function () {
+            const data = {
+                kernfaecherSchwerpunkte: this.kernfaecherSchwerpunkte,
+                vertiefungsgebiete: {},
+                wahlfaecherBereiche: {},
+                wahlmoduleBereiche: {},
+            };
 
-      // Wahlfächer aus separater Datei laden
-      if (window.CSE_WahlfaecherModules) {
-        data.wahlfaecherBereiche["Alle Wahlfächer"] =
-          window.CSE_WahlfaecherModules;
-      }
+            // Vertiefungsgebiete dynamisch aus separater Datei laden
+            if (window.CSE_VertiefungsgebieteModules) {
+                const kategorien = [
+                    ...new Set(
+                        window.CSE_VertiefungsgebieteModules.map(
+                            (m) => m.kategorie_vertiefung
+                        )
+                    ),
+                ];
+                kategorien.forEach((kategorie) => {
+                    data.vertiefungsgebiete[kategorie] =
+                        window.CSE_VertiefungsgebieteModules.filter(
+                            (m) => m.kategorie_vertiefung === kategorie
+                        );
+                });
+            }
 
-      return data;
+            // Wahlfächer aus separater Datei laden
+            if (window.CSE_WahlfaecherModules) {
+                data.wahlfaecherBereiche["Alle Wahlfächer"] =
+                    window.CSE_WahlfaecherModules;
+            }
+
+            return data;
+        },
     },
-  },
 };

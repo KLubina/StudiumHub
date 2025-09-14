@@ -1,31 +1,34 @@
-/* ==== BWL BASE CONFIGURATION ==== */
+/* ==== BWL BASE CONFIGURATION - STANDARDISIERT ==== */
 /* Grundlegende Konfiguration für den BWL HSG Studiengang */
 
 window.StudiengangBaseConfig = {
-    // Grundlegende Informationen
+    // === 1. BASIC INFO ===
     title: "BA Betriebswirtschaftslehre",
     legendTitle: "Farben-Legende",
     creditUnit: "ECTS",
     
-    // Layout-Konfiguration
+    // === 2. LAYOUT CONFIG ===
     layout: "years",
     moduleSizing: "fixed",
-    useEctsBasedSizing: true,
     baseWidth: 160,
     baseHeight: 80,
+    useEctsBasedSizing: true,
     
-    // Spezielle Flags
+    // === 3. FEATURE FLAGS ===
+    enableTooltips: false,
+    enableHover: true,
+    enableColorManager: false,
+    enableWahlmodule: false, 
+    enableKPCounter: false,
+    
+    // === 4. SPEZIELLE FLAGS (BWL-spezifisch) ===
     assessmentJahr: true,
     hauptstudium: true,
     
-    // Features
-    enableTooltips: false,
-    enableHover: true,
-    
-    // Bereiche-Reihenfolge für 2. Jahr
+    // === 5. BEREICHE-REIHENFOLGE ===
     bereicheReihenfolge: ["Pflichtbereich", "Pflichtwahlbereich", "Kontextstudium", "Bachelor"],
     
-    // Kategorien und ihre CSS-Klassen
+    // === 6. KATEGORIEN ===
     kategorien: [
         { name: "BWL & Management Kernfächer", klasse: "kernfach" },
         { name: "Methodenfächer (Mathe, Statistik, Informatik)", klasse: "methoden" },

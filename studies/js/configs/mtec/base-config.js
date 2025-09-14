@@ -1,31 +1,39 @@
-/* ==== MTEC BASE CONFIGURATION ==== */
+/* ==== MTEC BASE CONFIGURATION - STANDARDISIERT ==== */
 /* Grundlegende Konfiguration für den MTEC Studiengang */
 
 window.StudiengangBaseConfig = {
-    // Grundlegende Informationen
+    // === 1. BASIC INFO ===
     title: "MSc Management, Technology, and Economics",
     legendTitle: "Farben-Legende & Anforderungen",
     creditUnit: "KP",
     
-    // Layout-Konfiguration - PROPORTIONAL OPTIMIERT
+    // === 2. LAYOUT CONFIG ===
     layout: "categories",
     moduleSizing: "proportional", 
-    basisArea: 2800, // Reduziert für bessere Proportionalität
-    defaultAspectRatio: 2.2, // Breiter für kompaktere Darstellung
-    layoutClass: "horizontal-fachgebiete", // Spezielle Layout-Klasse
+    basisArea: 2800,
+    defaultAspectRatio: 2.2,
+    layoutClass: "horizontal-fachgebiete",
     
-    // Features
+    // === 3. FEATURE FLAGS ===
     enableTooltips: true,
     enableHover: true,
-    // KP-Counter zentral aktivieren
+    enableColorManager: false,
+    enableWahlmodule: false,
     enableKPCounter: true,
+    
+    // === 4. ERWEITERTE FEATURES ===
+    // KP-Counter Config
     kpCounterConfig: {
         requiredKP: 120,
         showDetailedBreakdown: false,
         enableCategoryTracking: true
     },
     
-    // Kategorien mit Beschreibungen - KOMPAKTER
+    // === 5. LAYOUT-SPEZIFISCHE CONFIG ===
+    // Aspekt-Verhältnisse (nicht verwendet, aber konsistenz)
+    aspectRatios: {},
+    
+    // === 6. KATEGORIEN ===
     kategorien: [
         { 
             name: "Core Courses", 
@@ -62,6 +70,7 @@ window.StudiengangBaseConfig = {
         "Internship": "internship"
     },
     
+    // === 7. CUSTOM FUNCTIONS ===
     // Custom Sizing für bessere Kompaktheit
     customSizing: function(div, modul) {
         let width = 160;

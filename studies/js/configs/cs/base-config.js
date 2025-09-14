@@ -1,22 +1,29 @@
-/* ==== CS BASE CONFIGURATION ==== */
+/* ==== CS BASE CONFIGURATION - STANDARDISIERT ==== */
 /* Grundlegende Konfiguration für den CS Studiengang */
 
 window.StudiengangBaseConfig = {
-    // Grundlegende Informationen
+    // === 1. BASIC INFO ===
     title: "BSc Informatik",
     legendTitle: "Farben-Legende",
     creditUnit: "KP",
     
-    // Layout-Konfiguration
+    // === 2. LAYOUT CONFIG ===
     layout: "years", 
     moduleSizing: "proportional",
     basisArea: 2500,
     defaultAspectRatio: 1.5,
     
-    // Features
+    // === 3. FEATURE FLAGS ===
     enableTooltips: false,
     enableHover: true,
+    enableColorManager: false,
+    enableWahlmodule: false,
+    enableKPCounter: false,
     
+    // === 4. ERWEITERTE FEATURES ===
+    // (keine, da alle Flags false sind)
+    
+    // === 5. LAYOUT-SPEZIFISCHE CONFIG ===
     // Aspekt-Verhältnisse für verschiedene Module
     aspectRatios: {
         "longName": 2.0,
@@ -24,7 +31,7 @@ window.StudiengangBaseConfig = {
         "category:spezialisierung": 3.0
     },
     
-    // Kategorien und ihre CSS-Klassen
+    // === 6. KATEGORIEN ===
     kategorien: [
         { name: "Pure CS-Module", klasse: "cs-pure" },
         { name: "CS und CSE-Module", klasse: "cs-cse" },

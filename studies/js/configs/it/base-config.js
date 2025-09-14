@@ -1,22 +1,29 @@
-/* ==== IT BASE CONFIGURATION ==== */
+/* ==== IT BASE CONFIGURATION - STANDARDISIERT ==== */
 /* Grundlegende Konfiguration für den Information Technology B.Sc. Studiengang */
 
 window.StudiengangBaseConfig = {
-    // Grundlegende Informationen
+    // === 1. BASIC INFO ===
     title: "BSc Information Technology",
     legendTitle: "Farben-Legende",
     creditUnit: "ECTS",
     
-    // Layout-Konfiguration
+    // === 2. LAYOUT CONFIG ===
     layout: "years",
     moduleSizing: "proportional",
     basisArea: 2200,
     defaultAspectRatio: 1.4,
     
-    // Features
+    // === 3. FEATURE FLAGS ===
     enableTooltips: false,
     enableHover: true,
+    enableColorManager: false,
+    enableWahlmodule: false,
+    enableKPCounter: false,
     
+    // === 4. ERWEITERTE FEATURES ===
+    // (keine, da alle Flags false sind)
+    
+    // === 5. LAYOUT-SPEZIFISCHE CONFIG ===
     // Aspekt-Verhältnisse für verschiedene Module
     aspectRatios: {
         "longName": 2.0,
@@ -25,7 +32,7 @@ window.StudiengangBaseConfig = {
         "Bachelorarbeit": 3.0
     },
     
-    // Kategorien und ihre CSS-Klassen
+    // === 6. KATEGORIEN ===
     kategorien: [
         { name: "Grundlagen & Cornerstone", klasse: "grundlagen" },
         { name: "Programmierung & Software Engineering", klasse: "programmierung" },

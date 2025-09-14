@@ -1,33 +1,34 @@
-/* ==== RIG BASE CONFIGURATION - VEREINFACHT MIT ZENTRALEM WAHLMODULE-SYSTEM ==== */
+/* ==== RIG BASE CONFIGURATION - STANDARDISIERT ==== */
 /* Grundlegende Konfiguration für den Raumbezogene Ingenieurwissenschaften Studiengang */
 
 window.StudiengangBaseConfig = {
-    // Grundlegende Informationen
+    // === 1. BASIC INFO ===
     title: "BSc Raumbezogene Ingenieurwissenschaften",
     legendTitle: "Farben-Legende",
     creditUnit: "KP",
     
-    // Layout-Konfiguration
+    // === 2. LAYOUT CONFIG ===
     layout: "years",
     moduleSizing: "proportional",
     basisArea: 2200,
     defaultAspectRatio: 1.4,
     
-    // Features
+    // === 3. FEATURE FLAGS ===
     enableTooltips: true,
     enableHover: true,
-    
-    // NEU: Zentrales Wahlmodule-System aktivieren
+    enableColorManager: false,
     enableWahlmodule: true,
-    
-    // KP-Counter aktivieren
     enableKPCounter: true,
+    
+    // === 4. ERWEITERTE FEATURES ===
+    // KP-Counter Config
     kpCounterConfig: {
         requiredKP: 180,
         showDetailedBreakdown: false,
         enableCategoryTracking: true
     },
     
+    // === 5. LAYOUT-SPEZIFISCHE CONFIG ===
     // Aspekt-Verhältnisse für verschiedene Module
     aspectRatios: {
         "longName": 2.0,
@@ -35,7 +36,7 @@ window.StudiengangBaseConfig = {
         "Wahlmodule": 2.2
     },
     
-    // Kategorien mit hasTooltip für Wahlmodule-Auswahl
+    // === 6. KATEGORIEN ===
     kategorien: [
         { name: "Grundlagenfächer Basisprüfung", klasse: "grundlagen" },
         { name: "Obligatorische Fächer, Prüfungsblöcke 1-3", klasse: "obligatorisch" },

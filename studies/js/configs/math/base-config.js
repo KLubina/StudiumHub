@@ -1,29 +1,36 @@
-/* ==== MATH BASE CONFIGURATION ==== */
+/* ==== MATH BASE CONFIGURATION - STANDARDISIERT ==== */
 /* Grundlegende Konfiguration für den Mathematik Studiengang */
 
 window.StudiengangBaseConfig = {
-    // Grundlegende Informationen
+    // === 1. BASIC INFO ===
     title: "BSc Mathematik",
     legendTitle: "Farben-Legende",
     creditUnit: "KP",
     
-    // Layout-Konfiguration
+    // === 2. LAYOUT CONFIG ===
     layout: "years",
     moduleSizing: "proportional",
     basisArea: 2500,
     defaultAspectRatio: 1.5,
     
-    // Features
+    // === 3. FEATURE FLAGS ===
     enableTooltips: false,
     enableHover: true,
+    enableColorManager: false,
+    enableWahlmodule: false,
+    enableKPCounter: false,
     
+    // === 4. ERWEITERTE FEATURES ===
+    // (keine, da alle Flags false sind)
+    
+    // === 5. LAYOUT-SPEZIFISCHE CONFIG ===
     // Aspekt-Verhältnisse für verschiedene Module
     aspectRatios: {
         "longModuleName": 2.0,
         "specialModule": 2.5
     },
     
-    // Kategorien und ihre CSS-Klassen
+    // === 6. KATEGORIEN ===
     kategorien: [
         { name: "Obligatorische Fächer", klasse: "obligatorisch" },
         { name: "Ergänzungsfächer", klasse: "ergaenzung" },

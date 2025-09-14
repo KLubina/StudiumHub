@@ -1,22 +1,29 @@
-/* ==== ZHAW CS BASE CONFIGURATION ==== */
+/* ==== ZHAW-CS BASE CONFIGURATION - STANDARDISIERT ==== */
 /* Grundlegende Konfiguration für den Computer Science B.Sc. Studiengang an der ZHAW */
 
 window.StudiengangBaseConfig = {
-    // Grundlegende Informationen
+    // === 1. BASIC INFO ===
     title: "BSc Computer Science",
     legendTitle: "Farben-Legende",
     creditUnit: "ECTS",
     
-    // Layout-Konfiguration
+    // === 2. LAYOUT CONFIG ===
     layout: "years",
     moduleSizing: "proportional",
     basisArea: 2000,
     defaultAspectRatio: 1.5,
     
-    // Features
+    // === 3. FEATURE FLAGS ===
     enableTooltips: false,
     enableHover: true,
+    enableColorManager: false,
+    enableWahlmodule: false,
+    enableKPCounter: false,
     
+    // === 4. ERWEITERTE FEATURES ===
+    // (keine, da alle Flags false sind)
+    
+    // === 5. LAYOUT-SPEZIFISCHE CONFIG ===
     // Aspekt-Verhältnisse für verschiedene Module
     aspectRatios: {
         "longName": 2.0,
@@ -24,7 +31,7 @@ window.StudiengangBaseConfig = {
         "Projektarbeit in Informatik": 2.2
     },
     
-    // Kategorien und ihre CSS-Klassen
+    // === 6. KATEGORIEN ===
     kategorien: [
         { name: "Kontextmodule", klasse: "kontext" },
         { name: "Projektmodule", klasse: "projekt" },
