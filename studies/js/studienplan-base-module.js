@@ -1,4 +1,16 @@
 StudienplanBase.prototype.createModule = function (modul, container) {
+  // Do not render placeholder or empty modules (e.g. small legend placeholders)
+  // Skip modules with non-positive KP, explicit isPlaceholder flag, or known placeholder names
+  if (!modul || modul.isPlaceholder || (typeof modul.kp === 'number' && modul.kp <= 0)) {
+    return null;
+  }
+
+  // Also skip common placeholder titles used in some configs
+  const skipNames = ["Kernfächer", "Vertiefungsgebiet", "Vertiefungsgebiete", "Wahlfächer", "Alle Kernfächer"];
+  if (modul.name && skipNames.includes(modul.name)) {
+    return null;
+  }
+
   const div = document.createElement("div");
   div.classList.add("modul");
 
