@@ -2,27 +2,35 @@ Vertiefungsprofil Energie- und Antriebssysteme
 1. Semester
 Projekt 1
 https://www.fhnw.ch/de/studium/module/9169675
+6
 
 Objektorientierte Programmierung 1
 https://www.fhnw.ch/de/studium/module/6007993
+3
 
 Wärme und Strahlung
 https://www.fhnw.ch/de/studium/module/9063957
+3
 
 Allgemeine Elektrotechnik 1
 https://www.fhnw.ch/de/studium/module/6007771
+3
 
 Konvergenz Elektrotechnik*
 https://www.fhnw.ch/de/studium/module/9041293
+3
 
 Analysis 1
 https://www.fhnw.ch/de/studium/module/6008327
+3
 
 Lineare Algebra 1
 https://www.fhnw.ch/de/studium/module/6008325
+3
 
 Grundlagenlabor 1
 https://www.fhnw.ch/de/studium/module/6010242
+3
 
 Kommunikation
 https://www.fhnw.ch/de/studium/technik/kontext/
@@ -33,24 +41,31 @@ https://www.fhnw.ch/de/studium/technik/kontext/
 2. Semester
 Algebra 
 https://www.fhnw.ch/de/studium/module/6008331
+3
 
 Mechanik
 https://www.fhnw.ch/de/studium/module/9090504
+3
 
 Projekt 2
 https://www.fhnw.ch/de/studium/module/9155733
+6
 
 Grundlagenlabor 2
 https://www.fhnw.ch/de/studium/module/6010244
+3
 
 Allgemeine Elektrotechnik 2
 https://www.fhnw.ch/de/studium/module/6007772
+3
 
 Digitaltechnik 1*
 https://www.fhnw.ch/de/studium/module/6007847
+3
 
 Objektorientierte Programmierung 2
 https://www.fhnw.ch/de/studium/module/6007994
+3
 
 Kommunikation
 https://www.fhnw.ch/de/studium/technik/kontext/
@@ -64,52 +79,68 @@ https://www.fhnw.ch/de/studium/module/6008332
 3. Semester
 Grundlagenlabor 3
 https://www.fhnw.ch/de/studium/module/6010245
+3
 
 Modellieren dynamischer Systeme
 https://www.fhnw.ch/de/studium/module/9067170
+3
 
 Projekt 3
 https://www.fhnw.ch/de/studium/module/9155749
+6
 
 Elektromagnetismus
 https://www.fhnw.ch/de/studium/module/6013946
+3
 
 Analysis 3
 https://www.fhnw.ch/de/studium/module/6008406
+3
 
 Analogtechnik
 https://www.fhnw.ch/de/studium/module/9102228
+3
 
 Elektrische Energietechnik - Grundlagen
 https://www.fhnw.ch/de/studium/module/9029156
+3
 
 Signalverarbeitung
 https://www.fhnw.ch/de/studium/module/9030028
+3
 
 Kommunikationstechnik Grundlagen
 https://www.fhnw.ch/de/studium/module/9029168
+3
 
 4. Semester
 Projekt 4
 https://www.fhnw.ch/de/studium/module/9155761
+6
 
 Grundlagenlabor 4
 https://www.fhnw.ch/de/studium/module/6010246
+3
 
 Mikrocontroller - Grundlagen
 https://www.fhnw.ch/de/studium/module/9436642
+3
 
 Schwingungen und Wellen
 https://www.fhnw.ch/de/studium/module/9093422
+3
 
 Regelungstechnik - Grundlagen
 https://www.fhnw.ch/de/studium/module/9030224
+3
 
 Werkstoffe
 https://www.fhnw.ch/de/studium/module/6008098
+3
 
 Leistungselektronik und Antriebe - Grundlagen
 https://www.fhnw.ch/de/studium/module/9029204
+3
 
 Englisch
 https://www.fhnw.ch/de/studium/technik/kontext/
@@ -123,30 +154,35 @@ https://www.fhnw.ch/de/studium/technik/kontext/
 5. Semester
 Projekt 5*
 https://www.fhnw.ch/de/studium/module/6018820
-
-Projekt 5*
-https://www.fhnw.ch/de/studium/module/6018820
+6
 
 Labor Energie- und Antriebssysteme 1
 https://www.fhnw.ch/de/studium/module/9029200
+3
 
 Mess- und Sensortechnik
 https://www.fhnw.ch/de/studium/module/9102143
+3
 
 Effiziente Leistungselektronik
 https://www.fhnw.ch/de/studium/module/9401457
+3
 
 Moderne Energieversorgung
 https://www.fhnw.ch/de/studium/module/9401472
+3
 
 Reglerauslegung für dynamische Systeme
 https://www.fhnw.ch/de/studium/module/9401449?show_language=en
+3
 
 Datennetze
 https://www.fhnw.ch/de/studium/module/9288353
+3
 
 Moderne Speichertechnologien für elektrische Energie
 https://www.fhnw.ch/de/studium/module/9262156
+3
 
 Englisch
 https://www.fhnw.ch/de/studium/technik/kontext/
@@ -154,21 +190,23 @@ https://www.fhnw.ch/de/studium/technik/kontext/
 6. Semester
 Projekt 6*
 https://www.fhnw.ch/de/studium/module/9004584
-
-Projekt 6*
-https://www.fhnw.ch/de/studium/module/9004584
+12
 
 Labor Energie- und Antriebssysteme 2
 https://www.fhnw.ch/de/studium/module/9029202
+3
 
 Dynamische Antriebe
 https://www.fhnw.ch/de/studium/module/9401465
+3
 
 Energieautomation
 https://www.fhnw.ch/de/studium/module/9102131
+3
 
 Smart Power Engineering
 https://www.fhnw.ch/de/studium/module/9401476?sho
+3
 
 Geistes- und Sozialwissenschaften
 https://www.fhnw.ch/de/studium/technik/kontext/
