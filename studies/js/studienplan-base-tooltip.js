@@ -126,13 +126,7 @@ StudienplanBase.prototype.createTooltipContent = function (modul) {
 };
 
 StudienplanBase.prototype.hideTooltip = function () {
-  if (this.tooltipEl) {
-    try {
-      this.tooltipEl.style.display = "none";
-    } catch (e) {
-      // ignore style errors
-    }
-  }
+  this.tooltipEl.style.display = "none";
   this.aktivesModul = null;
   this.isVertiefungsgebieteTooltipLocked = false;
   this.isWahlfaecherTooltipLocked = false;

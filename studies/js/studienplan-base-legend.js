@@ -17,24 +17,17 @@ StudienplanBase.prototype.createPruefungsbloeckeLegend = function(container) {
     this.config.pruefungsbloecke.forEach(block => {
         const div = document.createElement('div');
         div.classList.add('legende-item');
-        div.classList.add(block.cssClass);
+        div.classList.add(block.cssClass || '');
         
-        const titelDiv = document.createElement('div');
-        titelDiv.classList.add('legende-item-titel');
-        titelDiv.textContent = block.name;
-        div.appendChild(titelDiv);
+        // KISS: Farbe direkt aus Config setzen
+        if (block.color) {
+            div.style.backgroundColor = block.color;
+            div.style.color = 'white';
+        }
         
-        const inhaltDiv = document.createElement('div');
-        inhaltDiv.classList.add('legende-item-inhalt');
+        // KISS: Nur Block-Namen anzeigen, keine undefined Module
+        div.textContent = block.name || block.shortName || 'Unnamed Block';
         
-        block.module.forEach(modul => {
-            const modulDiv = document.createElement('div');
-            modulDiv.classList.add('legende-modul');
-            modulDiv.textContent = `${modul.name}, NG: ${modul.ng}`;
-            inhaltDiv.appendChild(modulDiv);
-        });
-        
-        div.appendChild(inhaltDiv);
         container.appendChild(div);
     });
 };
