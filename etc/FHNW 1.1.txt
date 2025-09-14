@@ -1,0 +1,87 @@
+# 📚 Curriculum – Bachelor Elektro- und Informationstechnik  
+Vertiefungsprofil Energie- und Antriebssysteme (FHNW)
+
+---
+
+## 1. Semester
+- [Projekt 1](https://www.fhnw.ch/de/studium/module/6010242)  
+- [Objektorientierte Programmierung 1](https://www.fhnw.ch/de/studium/module/6007993)  
+- [Wärme und Strahlung](https://www.fhnw.ch/de/studium/technik/kontext/)  
+- [Allgemeine Elektrotechnik 1](https://www.fhnw.ch/de/studium/module/6008327)  
+- [Konvergenz Elektrotechnik* / Digitaltechnik 1](https://www.fhnw.ch/de/studium/module/9041293)  
+- [Analysis 1](https://www.fhnw.ch/de/studium/module/6008325)  
+- [Lineare Algebra 1](https://www.fhnw.ch/de/studium/module/6007771)  
+- [Grundlagenlabor 1](https://www.fhnw.ch/de/studium/module/9169675)  
+- [Kommunikation](https://www.fhnw.ch/de/studium/module/9063957)  
+- Englisch  
+
+---
+
+## 2. Semester
+- [Analysis 2](https://www.fhnw.ch/de/studium/module/6010244)  
+- [Algebra](https://www.fhnw.ch/de/studium/module/6007994)  
+- [Mechanik](https://www.fhnw.ch/de/studium/technik/kontext/)  
+- [Projekt 2](https://www.fhnw.ch/de/studium/module/6008332)  
+- [Grundlagenlabor 2](https://www.fhnw.ch/de/studium/module/6008331)  
+- [Allgemeine Elektrotechnik 2](https://www.fhnw.ch/de/studium/module/9155733)  
+- [Digitaltechnik 1*](https://www.fhnw.ch/de/studium/module/9090504)  
+- [Objektorientierte Programmierung 2](https://www.fhnw.ch/de/studium/module/6007847)  
+- [Kommunikation](https://www.fhnw.ch/de/studium/module/6007772)  
+- Englisch  
+
+---
+
+## 3. Semester
+- [Grundlagenlabor 3](https://www.fhnw.ch/de/studium/module/6010245)  
+- [Modellieren dynamischer Systeme](https://www.fhnw.ch/de/studium/module/6008406)  
+- [Projekt 3](https://www.fhnw.ch/de/studium/module/9155749)  
+- [Elektromagnetismus](https://www.fhnw.ch/de/studium/module/9102228)  
+- [Analysis 3](https://www.fhnw.ch/de/studium/module/6013946)  
+- [Analogtechnik](https://www.fhnw.ch/de/studium/module/9029156)  
+- [Elektrische Energietechnik – Grundlagen](https://www.fhnw.ch/de/studium/module/9029168)  
+- [Signalverarbeitung](https://www.fhnw.ch/de/studium/module/9030028)  
+- [Kommunikationstechnik Grundlagen](https://www.fhnw.ch/de/studium/module/9067170)  
+
+---
+
+## 4. Semester
+- [Projekt 4](https://www.fhnw.ch/de/studium/module/6010246)  
+- [Grundlagenlabor 4](https://www.fhnw.ch/de/studium/technik/kontext/)  
+- [Mikrocontroller – Grundlagen](https://www.fhnw.ch/de/studium/technik/kontext/)  
+- [Schwingungen und Wellen](https://www.fhnw.ch/de/studium/module/9155761)  
+- [Regelungstechnik – Grundlagen](https://www.fhnw.ch/de/studium/module/9436642)  
+- [Werkstoffe](https://www.fhnw.ch/de/studium/module/9093422)  
+- [Leistungselektronik und Antriebe – Grundlagen](https://www.fhnw.ch/de/studium/module/9029204)  
+- Englisch  
+- [Betriebswirtschaftslehre](https://www.fhnw.ch/de/studium/module/9030224)  
+- [Geistes- und Sozialwissenschaften](https://www.fhnw.ch/de/studium/technik/kontext/)  
+
+---
+
+## 5. Semester
+- [Projekt 5*](https://www.fhnw.ch/de/studium/technik/kontext/)  
+- [Labor Energie- und Antriebssysteme 1](https://www.fhnw.ch/de/studium/module/6018820)  
+- [Mess- und Sensortechnik](https://www.fhnw.ch/de/studium/module/9288353)  
+- [Effiziente Leistungselektronik](https://www.fhnw.ch/de/studium/module/9102143)  
+- [Moderne Energieversorgung](https://www.fhnw.ch/de/studium/module/9401472)  
+- [Reglerauslegung für dynamische Systeme](https://www.fhnw.ch/de/studium/module/9401457)  
+- [Datennetze](https://www.fhnw.ch/de/studium/module/9029200)  
+- [Moderne Speichertechnologien für elektrische Energie](https://www.fhnw.ch/de/studium/module/9401449?show_language=en)  
+- Englisch  
+- [Geistes- und Sozialwissenschaften](https://www.fhnw.ch/de/studium/module/9262156)  
+
+---
+
+## 6. Semester
+- [Projekt 6*](https://www.fhnw.ch/de/studium/technik/kontext/)  
+- [Labor Energie- und Antriebssysteme 2](https://www.fhnw.ch/de/studium/module/9004584)  
+- [Dynamische Antriebe](https://www.fhnw.ch/de/studium/module/9401465)  
+- [Energieautomation](https://www.fhnw.ch/de/studium/module/9401476?sho)  
+- [Smart Power Engineering](https://www.fhnw.ch/de/studium/module/9102131)  
+- [Geistes- und Sozialwissenschaften](https://www.fhnw.ch/de/studium/module/9029202)  
+- Betriebswirtschaftslehre  
+
+---
+
+\* Die Zeiteinteilung für die Projekte 5 und 6 ist weitestgehend frei. Es muss mit etwa 8 Stunden pro Woche gerechnet werden.  
+\* Je nach Vorbildung wird **Konvergenz Elektrotechnik** durch **Digitaltechnik 1** ersetzt.
