@@ -40,29 +40,30 @@ AI for Engineers – 3 ECTS
 ------------FIX------------
 
 5.Semester/6. Semester
-Advanced Module – Energie- und Antriebssysteme
+obligatorische Abschlussmodule
+Bachelor-Thesis – 12 ECTS
+Industrieprojekt – 6 ECTS
+
+Vertiefungen
+Energie- und Antriebssysteme
 E-Power Lab – 3 ECTS
 Leistungselektronik & elektrische Antriebssysteme – 3 ECTS
 Elektrische Energieversorgungssysteme – 3 ECTS
 
-Advanced Module – KI und Signal Processing
+KI und Signal Processing
 Applied Artificial Intelligence – 3 ECTS
 Digital Communications – 3 ECTS
 Digital Signal Processing – 3 ECTS
 
-Advanced Module – Technische Informatik
+Technische Informatik
 Concurrent Distributed Systems – 3 ECTS
 Embedded Power and Performance – 3 ECTS
 Advanced Reliable Embedded Systems – 3 ECTS
 
-Advanced Module – Mechatronik / Automation / Robotik
+Mechatronik / Automation / Robotik
 Industrielle Automation – 3 ECTS
 Industrierobotik – 3 ECTS
 Advanced Robotik – 3 ECTS
-
-Abschlussmodule
-Bachelor-Thesis – 12 ECTS
-Industrieprojekt – 6 ECTS
 
 Erweiterungsmodule – mindestens 15 ECTS
 Erweiterungsmodule (alphabetisch)

@@ -69,6 +69,16 @@
           title: "BSc Raumbezogene Ingenieurwissenschaften",
           subtitle: "ETH Zürich",
         },
+        {
+          key: "bfh-eit",
+          title: "BSc Elektrotechnik und Informationstechnologie",
+          subtitle: "Berner Fachhochschule",
+        },
+        {
+          key: "hslu-eit",
+          title: "BSc Elektrotechnik und Informationstechnologie",
+          subtitle: "Hochschule Luzern",
+        },
       ];
     }
   }
