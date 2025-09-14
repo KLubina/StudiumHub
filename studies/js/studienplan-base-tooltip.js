@@ -84,6 +84,39 @@ StudienplanBase.prototype.createTooltipContent = function (modul) {
       fragment.appendChild(linkContainer);
     }
 
+    // NEU: Kurslinks (unterstützt String mit Newlines oder Array von URLs)
+    if (details.kurslink) {
+      const kursTitle = document.createElement("h4");
+      kursTitle.textContent = "Kursmaterial / Webseiten";
+      fragment.appendChild(kursTitle);
+
+      const kursContainer = document.createElement("p");
+
+      // Normalize to array
+      let links = [];
+      if (Array.isArray(details.kurslink)) {
+        links = details.kurslink;
+      } else if (typeof details.kurslink === "string") {
+        // Split on newlines and whitespace-separated newlines
+        links = details.kurslink.split(/\r?\n/).map(s => s.trim()).filter(Boolean);
+      }
+
+      links.forEach((url, idx) => {
+        const a = document.createElement("a");
+        a.href = url;
+        a.target = "_blank";
+        a.textContent = url;
+        a.style.color = "#0066cc";
+        a.style.textDecoration = "underline";
+        kursContainer.appendChild(a);
+
+        // If multiple links, separate with a <br>
+        if (idx < links.length - 1) kursContainer.appendChild(document.createElement("br"));
+      });
+
+      fragment.appendChild(kursContainer);
+    }
+
     if (details.vorlesungslink) {
       const linkTitle = document.createElement("h4");
       linkTitle.textContent = "Vorlesungsaufzeichnung";

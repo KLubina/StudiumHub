@@ -34,8 +34,9 @@ window.StudiengangModuleDetails = {
       "► Numerik\n" +
       "• Lineare Ausgleichsrechnung\n" +
       "• Anwendungen\n",
-    link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=192867&lang=de",
-    vorlesungslink: "https://video.ethz.ch/lectures/d-math/2015/autumn/401-1151-00L/1707a212-2905-448f-b042-6eca940f6c93.html",
+  link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=192867&lang=de",
+  kurslink: "https://metaphor.ethz.ch/x/2019/hs/401-0151-00L/\nhttps://n.ethz.ch/~michbaum/linalg/",
+  vorlesungslink: "https://video.ethz.ch/lectures/d-math/2015/autumn/401-1151-00L/1707a212-2905-448f-b042-6eca940f6c93.html",
     pruefungen: "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/1.Sem/Lineare-Algebra"
   },
   "Analysis 1": {
@@ -54,8 +55,9 @@ window.StudiengangModuleDetails = {
       "• Differentialrechnung einer Variablen\n\n" +
       "• Integralrechnung einer Variablen\n\n" +
       "► Einführung in gewöhnliche Differentialgleichungen",
-    link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193410&lang=de",
-    vorlesungslink: "https://video.ethz.ch/lectures/d-math/2016/autumn/401-1261-07L/a65b10a4-c135-3bca-a4f5-c37d9f8b0913.html",
+  link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193410&lang=de",
+  kurslink: "https://n.ethz.ch/~michbaum/analysis1/",
+  vorlesungslink: "https://video.ethz.ch/lectures/d-math/2016/autumn/401-1261-07L/a65b10a4-c135-3bca-a4f5-c37d9f8b0913.html",
     pruefungen: "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/1.Sem/Analysis-I"
   },
 
@@ -79,7 +81,8 @@ window.StudiengangModuleDetails = {
       "► Endliche Automaten\n\n" +
       "► Speicher\n" +
       "► Mikroprozessoren",
-    link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=192958&lang=de",
+  link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=192958&lang=de",
+  kurslink: "https://n.ethz.ch/~jloehle/",
   },
   "Digitaltechnik Praktikum": {
     kurzbeschreibung:
@@ -107,6 +110,7 @@ window.StudiengangModuleDetails = {
       "► Stationäres Magnetfeld\n\n" +
       "► Zeitlich veränderliches elektromagnetisches Feld",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=192802&semkez=2025W&ansicht=LEHRVERANSTALTUNGEN&lang=de",
+    kurslink: "https://n.ethz.ch/~rsahleanu/nus1/",
     pruefungen: "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/1.Sem/Netzwerk-Schaltungen-I"
   },
   "Technische Mechanik": {
@@ -132,7 +136,8 @@ window.StudiengangModuleDetails = {
       "• Newtonsches Bewegungsgesetz\n" +
       "• Impulssatz, Drallsatz\n" +
       "• Drall bei ebenen Bewegungen",
-    link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193886&lang=de",
+  link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193886&lang=de",
+  kurslink: "https://www.n.ethz.ch/~ldewindt/TechMechHS22_PVK/index.html",
     pruefungen: "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/1.Sem/Technische-Mechanik"
   },
   "Vorkurs Informatik": {
@@ -148,7 +153,8 @@ window.StudiengangModuleDetails = {
       "  - Datentypen\n" +
       "  - Verzweigungen und Schleifen\n" +
       "• Einführung in das systematische Lösen von Programmierproblemen mittels schrittweiser Verfeinerung",
-    link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193009&lang=de",
+  link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193009&lang=de",
+  kurslink: "https://lec.inf.ethz.ch/itet/informatik0/2019/",
   },
   // #endregion
 
@@ -167,9 +173,10 @@ window.StudiengangModuleDetails = {
       "• Integration über Untermannigfaltigkeiten\n\n" +
       "► Sätze von Gauss\n" +
       "► Sätze von Stokes\n\n",
-    link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=188523&lang=de",
-    vorlesungslink: "https://video.ethz.ch/lectures/d-math/2016/spring/401-1262-07L/e9902307-e2b7-44f3-8feb-115773280c13.html",
-    pruefungen: "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/2.Sem/Analysis-II"
+      link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=188523&lang=de",
+      kurslink: "https://n.ethz.ch/~michbaum/analysis2/",
+      vorlesungslink: "https://video.ethz.ch/lectures/d-math/2016/spring/401-1262-07L/e9902307-e2b7-44f3-8feb-115773280c13.html",
+      pruefungen: "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/2.Sem/Analysis-II"
   },
   "Netzwerke und Schaltungen II": {
     kurzbeschreibung:
@@ -198,6 +205,7 @@ window.StudiengangModuleDetails = {
       "• Operationsverstärker-Grundschaltungen\n" +
       "• Schaltungen mit Operationsverstärkern",
   link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=187813&lang=de",
+  kurslink: "https://www.n.ethz.ch/~ldewindt/NuS2FS24/index.html\nhttps://n.ethz.ch/~msteinkel/",
   vorlesungslink: "https://video.ethz.ch/lectures/d-itet/2023/spring/227-0002-00L",
   },
   "Netzwerke und Schaltungen Praktikum": {
@@ -352,8 +360,9 @@ window.StudiengangModuleDetails = {
       "• Diskrete Fourier-Transformation (DFT)\n" +
       "• Endlich-dimensionale Signale und Systeme\n" +
       "• Schnelle Fouriertransformation (FFT)",
-    link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193407&lang=de",
-    pruefungen: "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/3.Sem/Signal-System-I"
+      link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193407&lang=de",
+      kurslink: "https://www.mins.ee.ethz.ch/teaching/signal/klausuren.html",
+      pruefungen: "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/3.Sem/Signal-System-I"
   },
   "Diskrete Mathematik": {
     kurzbeschreibung:
@@ -378,6 +387,7 @@ window.StudiengangModuleDetails = {
       "• Körper, \n" +
       "• Ringe",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=194088&lang=de",
+    kurslink: "https://cadmo.ethz.ch/education/lectures/HS15/DiskreteMathematik.html\nhttps://crypto.ethz.ch/teaching/DM23/",
     pruefungen: "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/3.Sem/Diskrete-Mathematik"
   },
   "Halbleiter-Schaltungstechnik": {
@@ -482,6 +492,7 @@ window.StudiengangModuleDetails = {
       " - Kommunikation und Synchronisation\n\n" +
       "Im Übungsbetrieb wird das Verständnis durch theoretische und/oder Programmieraufgaben (C++, Code Expert) vertieft",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193493&lang=de",
+    kurslink: "https://vs.inf.ethz.ch/edu/I2/",
   },
   "Technische Informatik": {
     kurzbeschreibung:
@@ -540,6 +551,7 @@ window.StudiengangModuleDetails = {
       "• Dipolstrahlung\n" +
       "• Feldwinkelspektrum",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=188239&lang=de",
+    kurslink: "https://www.n.ethz.ch/~zrene/EM/",
     pruefungen: "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/4.Sem/Elektromagnetische-Felder-und-Wellen"
   },
   Halbleiterelemente: {
