@@ -17,16 +17,25 @@ class StudiengangConfigLoader {
         
         await this.loadOptionalModule(`${dataPath}/basic-modules-details.js`);
         
-        // CSE Wahlmodule-Dateien
-        await this.loadOptionalModule(`${dataPath}/vertiefung-data.js`);
-        await this.loadOptionalModule(`${dataPath}/wahlfacher-data.js`);
-        await this.loadOptionalModule(`${dataPath}/cse-wahlmodule-data.js`);
-        
-        // ITET Wahlmodule-Dateien
-        await this.loadOptionalModule(`${dataPath}/kernfacher-data.js`);
-        await this.loadOptionalModule(`${dataPath}/wahlfacher-data.js`);
-        await this.loadOptionalModule(`${dataPath}/weitere-wahl-grundlagenfacher-data.js`);
-        await this.loadOptionalModule(`${dataPath}/praktika-seminar-projekt-data.js`);
+        // FIXED: BFH and HSLU specific data files
+        if (this.studiengang === 'bfh-eit') {
+            await this.loadOptionalModule(`${dataPath}/vertiefungsrichtungen-data.js`);
+            await this.loadOptionalModule(`${dataPath}/wahlmodule-data.js`);
+        } else if (this.studiengang === 'hslu-eit') {
+            await this.loadOptionalModule(`${dataPath}/vertiefungsrichtungen-data.js`);
+            await this.loadOptionalModule(`${dataPath}/wahlmodule-data.js`);
+        } else {
+            // CSE Wahlmodule-Dateien
+            await this.loadOptionalModule(`${dataPath}/vertiefung-data.js`);
+            await this.loadOptionalModule(`${dataPath}/wahlfacher-data.js`);
+            await this.loadOptionalModule(`${dataPath}/cse-wahlmodule-data.js`);
+            
+            // ITET Wahlmodule-Dateien
+            await this.loadOptionalModule(`${dataPath}/kernfacher-data.js`);
+            await this.loadOptionalModule(`${dataPath}/wahlfacher-data.js`);
+            await this.loadOptionalModule(`${dataPath}/weitere-wahl-grundlagenfacher-data.js`);
+            await this.loadOptionalModule(`${dataPath}/praktika-seminar-projekt-data.js`);
+        }
         
         // ColorManager vor extensions.js laden
         await this.loadOptionalModule(`${configPath}/extensions-ColorManager.js`);

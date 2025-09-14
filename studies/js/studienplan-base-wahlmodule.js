@@ -25,8 +25,7 @@ class StudienplanWahlmoduleManager {
 
     /* ==== DATA ACCESS ==== */
     getWahlmoduleData() {
-        // Merge multiple possible sources for wahlmodule data.
-        // Priority: explicit config.wahlmoduleData > window.CSEModuleData (wrapper) > others
+        // KISS: Read directly from separate window objects if combined data doesn't exist
         const result = {};
 
         try {
@@ -35,14 +34,19 @@ class StudienplanWahlmoduleManager {
                 Object.assign(result, this.config.wahlmoduleData);
             }
 
-            // If a global wrapper exists (like window.CSEModuleData) prefer its normalized form for missing keys
-            const wrappers = [window.CSEModuleData, window.ITETModuleData, window.RIGModuleData];
+            // Try combined wrappers first
+            const wrappers = [
+                window.CSEModuleData, 
+                window.ITETModuleData, 
+                window.RIGModuleData,
+                window.BFHEITModuleData,
+                window.HSLUEITModuleData
+            ];
             for (const w of wrappers) {
                 if (!w) continue;
                 if (typeof w.getAllWahlmoduleData === 'function') {
                     try {
                         const data = w.getAllWahlmoduleData();
-                        // Copy missing keys only
                         for (const k of Object.keys(data || {})) {
                             if (result[k] === undefined) result[k] = data[k];
                         }
@@ -55,14 +59,35 @@ class StudienplanWahlmoduleManager {
                     }
                 }
             }
+
+            // KISS: Fallback - read directly from separate BFH/HSLU window objects
+            if (window.BFHEITVertiefungsrichtungenData && window.BFHEITVertiefungsrichtungenData.vertiefungsrichtungen) {
+                result.vertiefungsrichtungen = window.BFHEITVertiefungsrichtungenData.vertiefungsrichtungen;
+            }
+            if (window.BFHEITWahlmoduleData && window.BFHEITWahlmoduleData.wahlmoduleBereiche) {
+                result.wahlmoduleBereiche = window.BFHEITWahlmoduleData.wahlmoduleBereiche;
+            }
+            if (window.HSLUEITVertiefungsrichtungenData && window.HSLUEITVertiefungsrichtungenData.vertiefungsrichtungen) {
+                result.vertiefungsrichtungen = window.HSLUEITVertiefungsrichtungenData.vertiefungsrichtungen;
+            }
+            if (window.HSLUEITWahlmoduleData) {
+                if (window.HSLUEITWahlmoduleData.erweiterungsmoduleBereiche) {
+                    result.erweiterungsmoduleBereiche = window.HSLUEITWahlmoduleData.erweiterungsmoduleBereiche;
+                }
+                if (window.HSLUEITWahlmoduleData.zusatzmoduleBereiche) {
+                    result.zusatzmoduleBereiche = window.HSLUEITWahlmoduleData.zusatzmoduleBereiche;
+                }
+            }
+
         } catch (e) {
             console.error('Fehler beim Zusammenführen der wahlmoduleData:', e);
         }
 
-        // Ensure commonly expected keys exist to avoid undefined access
+        // Ensure commonly expected keys exist
         if (!result.kernfaecherSchwerpunkte && result.kernfaecher) result.kernfaecherSchwerpunkte = result.kernfaecher;
         if (!result.kernfaecherSchwerpunkte) result.kernfaecherSchwerpunkte = {};
 
+        console.log('🔍 Final wahlmoduleData:', result);
         return result;
     }
 
@@ -151,6 +176,11 @@ class StudienplanWahlmoduleManager {
     createWahlmoduleTooltipContent(categoryKey, kategorie) {
         const moduleGroups = this.getModuleGroupsForCategory(categoryKey);
         
+        // FIXED: Better debugging for empty module groups
+        console.log('🔍 Debug - categoryKey:', categoryKey);
+        console.log('🔍 Debug - moduleGroups:', moduleGroups);
+        console.log('🔍 Debug - wahlmoduleData:', this.wahlmoduleData);
+        
         let content = `
             <div class="wahlmodule-liste">
                 <h3>🎯 ${kategorie.name}</h3>
@@ -161,42 +191,55 @@ class StudienplanWahlmoduleManager {
                 <div style="max-height: 400px; overflow-y: auto;">
         `;
 
-        Object.entries(moduleGroups).forEach(([groupName, modules]) => {
-            const groupColor = this.getGroupColor(categoryKey, groupName);
-            
+        // FIXED: Check if moduleGroups is empty
+        if (!moduleGroups || Object.keys(moduleGroups).length === 0) {
             content += `
-                <div style="margin-bottom: 15px;">
-                    <h4 style="margin: 10px 0 8px 0; padding: 3px 8px; background-color: ${groupColor}; color: ${this.getTextColor(groupColor)}; border-radius: 4px; font-size: 12px;">
-                        ${groupName} (${modules.length} Module)
-                    </h4>
-                    <div style="display: grid; grid-template-columns: 1fr; gap: 2px;">
+                <div style="padding: 20px; text-align: center; color: #666;">
+                    <p>⚠️ Keine Module für diese Kategorie gefunden.</p>
+                    <p><small>Kategorie-Key: ${categoryKey}</small></p>
+                    <p><small>Verfügbare Daten: ${Object.keys(this.wahlmoduleData || {}).join(', ')}</small></p>
+                </div>
             `;
-
-            modules.forEach((modul) => {
-                const isSelected = this.isModulSelected(modul.name, categoryKey);
-                const bgColor = isSelected ? "#d4edda" : "#f8f9fa";
-                const textColor = isSelected ? "#155724" : "#333";
-                const buttonText = isSelected ? "✓ Gewählt" : "Wählen";
-                const buttonColor = isSelected ? "#28a745" : groupColor;
-
-                // Render button without inline onclick; attach handler after tooltip insertion
-                const safeName = modul.name.replace(/'/g, "&#39;");
+        } else {
+            Object.entries(moduleGroups).forEach(([groupName, modules]) => {
+                if (!modules || !Array.isArray(modules)) return;
+                
+                const groupColor = this.getGroupColor(categoryKey, groupName);
+                
                 content += `
-                    <div style="padding: 6px; background: ${bgColor}; color: ${textColor}; border-radius: 4px; margin: 2px; border: 1px solid #ddd; display: flex; justify-content: space-between; align-items: center;">
-                        <div>
-                            <div style="font-weight: bold; font-size: 10px;">${modul.kp} KP</div>
-                            <div style="font-size: 9px; line-height: 1.2;">${modul.name}</div>
-                        </div>
-                        <button class="wahlmodule-toggle" data-modul-name="${safeName}" data-category="${categoryKey}"
-                                style="background: ${buttonColor}; color: ${this.getTextColor(buttonColor)}; border: none; padding: 3px 6px; border-radius: 3px; cursor: pointer; font-size: 8px;">
-                            ${buttonText}
-                        </button>
-                    </div>
+                    <div style="margin-bottom: 15px;">
+                        <h4 style="margin: 10px 0 8px 0; padding: 3px 8px; background-color: ${groupColor}; color: ${this.getTextColor(groupColor)}; border-radius: 4px; font-size: 12px;">
+                            ${groupName} (${modules.length} Module)
+                        </h4>
+                        <div style="display: grid; grid-template-columns: 1fr; gap: 2px;">
                 `;
-            });
 
-            content += `</div></div>`;
-        });
+                modules.forEach((modul) => {
+                    const isSelected = this.isModulSelected(modul.name, categoryKey);
+                    const bgColor = isSelected ? "#d4edda" : "#f8f9fa";
+                    const textColor = isSelected ? "#155724" : "#333";
+                    const buttonText = isSelected ? "✓ Gewählt" : "Wählen";
+                    const buttonColor = isSelected ? "#28a745" : groupColor;
+
+                    // Render button without inline onclick; attach handler after tooltip insertion
+                    const safeName = modul.name.replace(/'/g, "&#39;");
+                    content += `
+                        <div style="padding: 6px; background: ${bgColor}; color: ${textColor}; border-radius: 4px; margin: 2px; border: 1px solid #ddd; display: flex; justify-content: space-between; align-items: center;">
+                            <div>
+                                <div style="font-weight: bold; font-size: 10px;">${modul.kp} KP</div>
+                                <div style="font-size: 9px; line-height: 1.2;">${modul.name}</div>
+                            </div>
+                            <button class="wahlmodule-toggle" data-modul-name="${safeName}" data-category="${categoryKey}"
+                                    style="background: ${buttonColor}; color: ${this.getTextColor(buttonColor)}; border: none; padding: 3px 6px; border-radius: 3px; cursor: pointer; font-size: 8px;">
+                                ${buttonText}
+                            </button>
+                        </div>
+                    `;
+                });
+
+                content += `</div></div>`;
+            });
+        }
 
         content += `
                 </div>
@@ -329,15 +372,24 @@ class StudienplanWahlmoduleManager {
 
     /* ==== UTILITY METHODS ==== */
     getCategoryKey(categoryName) {
+        // FIXED: Added BFH and HSLU specific category mappings
         const keyMappings = {
+            // Original mappings
             'Kernfächer nach Schwerpunkt': 'kernfaecher',
             'Weitere Wahl-Grundlagenfächer': 'weitere-wahl-grundlagen',
             'Wahlfächer': 'wahlfaecher',
             'Wahlfächer (Semester)': 'wahlfaecher',
             'Wahl Praktika-Projekte-Seminare': 'praktika',
             'Wahlmodule (3 aus 6)': 'wahlmodule',
-            'Wahlmodule': 'wahlmodule'
+            'Wahlmodule': 'wahlmodule',
+            // BFH specific
+            'Vertiefungsrichtungen': 'vertiefungsrichtungen',
+            'Fachliche Wahlmodule': 'wahlmoduleBereiche',
+            // HSLU specific
+            'Erweiterungsmodule': 'erweiterungsmoduleBereiche',
+            'Zusatzmodule': 'zusatzmoduleBereiche'
         };
+        
         // Accept common German variants used by specific configs (e.g. CSE)
         if (categoryName === 'Vertiefungsgebiet' || categoryName === 'Vertiefungsgebiete') return 'vertiefungsgebiete';
         if (categoryName === 'Wahlfächer (Bereiche)' || categoryName === 'Wahlfächer - Bereiche') return 'wahlfaecher';
@@ -356,7 +408,13 @@ class StudienplanWahlmoduleManager {
             'weitere-wahl-grundlagen': { name: 'Weitere Wahl-Grundlagenfächer' },
             'wahlfaecher': { name: 'Wahlfächer' },
             'praktika': { name: 'Wahl Praktika-Projekte-Seminare' },
-            'wahlmodule': { name: 'Wahlmodule' }
+            'wahlmodule': { name: 'Wahlmodule' },
+            // BFH specific
+            'vertiefungsrichtungen': { name: 'Vertiefungsrichtungen' },
+            'wahlmoduleBereiche': { name: 'Fachliche Wahlmodule' },
+            // HSLU specific
+            'erweiterungsmoduleBereiche': { name: 'Erweiterungsmodule' },
+            'zusatzmoduleBereiche': { name: 'Zusatzmodule' }
         };
         
         return keyMappings[categoryKey] || { name: categoryKey };
@@ -373,7 +431,13 @@ class StudienplanWahlmoduleManager {
             // Vertiefungsgebiete (CSE uses this key)
             'vertiefungsgebiete': this.wahlmoduleData.vertiefungsgebiete,
             'praktika': this.wahlmoduleData.praktikaSchwerpunkte,
-            'wahlmodule': this.wahlmoduleData.wahlmoduleBereiche
+            'wahlmodule': this.wahlmoduleData.wahlmoduleBereiche,
+            // FIXED: BFH specific mappings
+            'vertiefungsrichtungen': this.wahlmoduleData.vertiefungsrichtungen,
+            'wahlmoduleBereiche': this.wahlmoduleData.wahlmoduleBereiche,
+            // FIXED: HSLU specific mappings
+            'erweiterungsmoduleBereiche': this.wahlmoduleData.erweiterungsmoduleBereiche,
+            'zusatzmoduleBereiche': this.wahlmoduleData.zusatzmoduleBereiche
         };
         
         return dataMap[categoryKey] || {};
@@ -385,7 +449,13 @@ class StudienplanWahlmoduleManager {
             'weitere-wahl-grundlagen': '#FFD700',
             'wahlfaecher': '#F2B48F',
             'praktika': '#4CA64C',
-            'wahlmodule': '#FF6B6B'
+            'wahlmodule': '#FF6B6B',
+            // FIXED: BFH colors
+            'vertiefungsrichtungen': '#00a0e3',
+            'wahlmoduleBereiche': '#28a745',
+            // FIXED: HSLU colors
+            'erweiterungsmoduleBereiche': '#0066cc',
+            'zusatzmoduleBereiche': '#6c757d'
         };
         // special color for vertiefungsgebiete
         if (categoryKey === 'vertiefungsgebiete' || categoryKey === 'vertiefungsgebiete') return '#A4C8FF';
@@ -395,7 +465,7 @@ class StudienplanWahlmoduleManager {
 
     getTextColor(backgroundColor) {
         // Simple logic for text color based on background
-        const darkColors = ['#4CA64C', '#FF6B6B', '#DD98DD'];
+        const darkColors = ['#4CA64C', '#FF6B6B', '#DD98DD', '#00a0e3', '#28a745', '#0066cc', '#6c757d'];
         return darkColors.includes(backgroundColor) ? 'white' : 'black';
     }
 
