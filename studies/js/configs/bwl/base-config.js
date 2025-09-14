@@ -3,7 +3,7 @@
 
 window.StudiengangBaseConfig = {
     // Grundlegende Informationen
-    title: "BA BWL Studium an der HSG",
+    title: "BA Betriebswirtschaftslehre",
     legendTitle: "Farben-Legende",
     creditUnit: "ECTS",
     
