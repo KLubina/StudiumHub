@@ -62,24 +62,22 @@ if (!window.ITETColorManager) {
             const legendElement = document.getElementById("legende");
             if (!legendElement) return;
 
-            // NUR Legend-Items löschen, Controls behalten
-            const items = legendElement.querySelectorAll('.legende-item:not([data-itet-controls] *)');
+            // Remove only previously added legend items but keep controls inserted by ITET
+            const items = Array.from(legendElement.children).filter(el => !el.closest('[data-itet-controls]'));
             items.forEach(item => item.remove());
 
             if (this.coloringMode === "pruefungsblock") {
-                // Prüfungsblock-Legende
-                if (this.studienplan.config.pruefungsbloecke) {
+                // Build Prüfungsblock-only legend (no undefined entries)
+                if (this.studienplan.config.pruefungsbloecke && Array.isArray(this.studienplan.config.pruefungsbloecke)) {
                     this.studienplan.config.pruefungsbloecke.forEach(block => {
                         const item = document.createElement("div");
                         item.className = "legende-item";
-                        item.innerHTML = `<div class="farb-box" style="background:${block.color}"></div><span>${block.shortName}</span>`;
+                        const color = block.color || '#E0E0E0';
+                        const label = block.name || block.shortName || 'Unnamed Block';
+                        item.innerHTML = `<div class="farb-box" style="background:${color}"></div><span>${label}</span>`;
                         legendElement.appendChild(item);
                     });
                 }
-                const other = document.createElement("div");
-                other.className = "legende-item";
-                other.innerHTML = `<div class="farb-box" style="background:#E0E0E0"></div><span>Sonstige</span>`;
-                legendElement.appendChild(other);
             } else {
                 // Standard-Legende
                 this.studienplan.createLegend();

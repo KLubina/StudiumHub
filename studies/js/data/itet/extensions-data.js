@@ -563,7 +563,19 @@ window.ITETModuleData = {
   }
 
     // Neue Module-Kategorien initialisieren
-    this.initializeNewModuleCategories();
+    // Guarded call: the helper may live in an optional utils file which isn't guaranteed to be loaded.
+    try {
+      if (typeof this.initializeNewModuleCategories === 'function') {
+        this.initializeNewModuleCategories();
+      } else if (typeof window.initializeNewModuleCategories === 'function') {
+        // fallback if helper was attached to window
+        window.initializeNewModuleCategories();
+      } else {
+        // no-op: optional initializer not present
+      }
+    } catch (e) {
+      console.warn('initializeNewModuleCategories threw an error or is missing:', e);
+    }
 
     // Verfügbare Praktika, Projekte und Seminare
     this.praktikaModule = [

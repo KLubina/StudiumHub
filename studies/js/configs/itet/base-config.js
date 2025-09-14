@@ -20,9 +20,7 @@ window.StudiengangBaseConfig = {
     enableHover: true,
     enableWahlmodule: true,
     enableKPCounter: true,
-    
-    // OPTIONAL: ColorManager aktivieren (Standard Base-Funktionen)
-    enableColorManager: true,  // auf true setzen falls gewünscht
+    enableColorManager: true, 
     
     // KP-Counter
     kpCounterConfig: {
