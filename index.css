@@ -127,6 +127,11 @@ h1 {
 .hslu-eit .card-header {
     background-color: #00a0e3;
 }
+
+/* MSc ITET */
+.msc-itet .card-header {
+    background-color: #00a0e3;
+}
 /* #endregion ==== STUDIENGANG-SPEZIFISCHE FARBEN ==== */
 
 .card-title {
