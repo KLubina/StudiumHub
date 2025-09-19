@@ -24,6 +24,10 @@ class StudiengangConfigLoader {
         } else if (this.studiengang === 'hslu-eit') {
             await this.loadOptionalModule(`${dataPath}/vertiefungsrichtungen-data.js`);
             await this.loadOptionalModule(`${dataPath}/wahlmodule-data.js`);
+        } else if (this.studiengang === 'msc-itet') {
+            // MSc ITET uses kernfächer and vertiefungsfächer data files
+            await this.loadOptionalModule(`${dataPath}/kernfacher-data.js`);
+            await this.loadOptionalModule(`${dataPath}/vertiefungsfacher-data.js`);
         } else {
             // CSE Wahlmodule-Dateien
             await this.loadOptionalModule(`${dataPath}/vertiefung-data.js`);
@@ -45,8 +49,8 @@ class StudiengangConfigLoader {
         
         await this.loadOptionalModule(`${configPath}/extensions.js`);
         
-        // Nach dem Laden aller Module, kombiniere ITET Moduldaten zu einem konsistenten Format
-        this.combineModuleData();
+    // Nach dem Laden aller Module, kombiniere ITET Moduldaten zu einem konsistenten Format
+    this.combineModuleData();
         
         this.mergeConfigs();
         
@@ -131,6 +135,31 @@ class StudiengangConfigLoader {
                 };
                 
                 console.log('✅ ITET Moduldaten kombiniert:', window.ITETModuleData);
+            }
+        } else if (this.studiengang === 'msc-itet') {
+            // Für MSc ITET: Kombiniere Kernfächer- und Vertiefungsfächer-Daten in ein konsistentes Wrapper-Objekt
+            if (!window.MSCITETModuleData || !window.MSCITETModuleData.getAllWahlmoduleData) {
+                const combinedMSC = {};
+
+                if (window.MSCITETKernfaecherData && window.MSCITETKernfaecherData.kernfaecherSchwerpunkte) {
+                    combinedMSC.kernfaecherSchwerpunkte = window.MSCITETKernfaecherData.kernfaecherSchwerpunkte;
+                }
+                if (window.MSCITETVertiefungsfaecherData && window.MSCITETVertiefungsfaecherData.vertiefungsfaecherBereiche) {
+                    combinedMSC.vertiefungsfaecherBereiche = window.MSCITETVertiefungsfaecherData.vertiefungsfaecherBereiche;
+                }
+
+                window.MSCITETModuleData = {
+                    ...(window.MSCITETModuleData || {}),
+                    ...combinedMSC,
+                };
+                window.MSCITETModuleData.getAllWahlmoduleData = function() {
+                    return {
+                        kernfaecherSchwerpunkte: this.kernfaecherSchwerpunkte || {},
+                        vertiefungsfaecherBereiche: this.vertiefungsfaecherBereiche || {}
+                    };
+                };
+
+                console.log('✅ MSc ITET Moduldaten kombiniert:', window.MSCITETModuleData);
             }
         }
     }

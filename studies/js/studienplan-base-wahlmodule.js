@@ -38,6 +38,7 @@ class StudienplanWahlmoduleManager {
             const wrappers = [
                 window.CSEModuleData, 
                 window.ITETModuleData, 
+                window.MSCITETModuleData,
                 window.RIGModuleData,
                 window.BFHEITModuleData,
                 window.HSLUEITModuleData
@@ -376,6 +377,7 @@ class StudienplanWahlmoduleManager {
         const keyMappings = {
             // Original mappings
             'Kernfächer nach Schwerpunkt': 'kernfaecher',
+            'Vertiefungsfächer': 'vertiefungsfaecher',
             'Weitere Wahl-Grundlagenfächer': 'weitere-wahl-grundlagen',
             'Wahlfächer': 'wahlfaecher',
             'Wahlfächer (Semester)': 'wahlfaecher',
@@ -423,6 +425,7 @@ class StudienplanWahlmoduleManager {
     getModuleGroupsForCategory(categoryKey) {
         const dataMap = {
             'kernfaecher': this.wahlmoduleData.kernfaecherSchwerpunkte,
+            'vertiefungsfaecher': this.wahlmoduleData.vertiefungsfaecherBereiche,
             'weitere-wahl-grundlagen': { 'Grundlagenfächer': this.wahlmoduleData.weitereWahlGrundlagen },
             // Accept both the normalized key and some config-specific keys
             'wahlfaecher': this.wahlmoduleData.wahlfaecherBereiche,
