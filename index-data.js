@@ -19,6 +19,12 @@
           featured: true,
         },
         {
+          key: "msc-itet",
+          title: "MSc ITET",
+          subtitle: "ETH Zürich",
+          featured: true,
+        },
+        {
           key: "mtec",
           title: "MSc MTEC",
           subtitle: "ETH Zürich",
