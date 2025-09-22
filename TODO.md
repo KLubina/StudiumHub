@@ -1,5 +1,3 @@
-https://raw.githack.com/KLubina/StudiumHub/main/index.html
-
 ## TO-DO
 
 ### Mind-Maps erstellen für ITET ETHZ Moduldetails
