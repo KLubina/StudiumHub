@@ -7,11 +7,12 @@ window.StudiengangCustomClass = class SozwiStudienplan extends StudienplanBase {
     }
 
     initialize() {
+        // WICHTIG: Sozialwissenschaften Module-Daten ZUERST kombinieren
+        // bevor super.initialize() aufgerufen wird (das erstellt den WahlmoduleManager)
+        this.combineModuleData();
+
         // Basis-Initialisierung (aktiviert automatisch das zentrale Wahlmodule-System)
         super.initialize();
-
-        // Sozialwissenschaften Module-Daten kombinieren
-        this.combineModuleData();
 
         // Sozialwissenschaften-spezifische Initialisierung
         this.setupSozwiSpecifics();

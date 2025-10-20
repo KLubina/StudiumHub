@@ -36,12 +36,14 @@ class StudienplanWahlmoduleManager {
 
             // Try combined wrappers first
             const wrappers = [
-                window.CSEModuleData, 
-                window.ITETModuleData, 
+                window.CSEModuleData,
+                window.ITETModuleData,
                 window.MSCITETModuleData,
                 window.RIGModuleData,
                 window.BFHEITModuleData,
-                window.HSLUEITModuleData
+                window.HSLUEITModuleData,
+                window.HSTModuleData,
+                window.SozwiModuleData
             ];
             for (const w of wrappers) {
                 if (!w) continue;
@@ -440,9 +442,17 @@ class StudienplanWahlmoduleManager {
             'wahlmoduleBereiche': this.wahlmoduleData.wahlmoduleBereiche,
             // FIXED: HSLU specific mappings
             'erweiterungsmoduleBereiche': this.wahlmoduleData.erweiterungsmoduleBereiche,
-            'zusatzmoduleBereiche': this.wahlmoduleData.zusatzmoduleBereiche
+            'zusatzmoduleBereiche': this.wahlmoduleData.zusatzmoduleBereiche,
+            // FIXED: Sozialwissenschaften specific mappings
+            'major': this.wahlmoduleData.majorBereiche,
+            'majorBereiche': this.wahlmoduleData.majorBereiche,
+            'minor': this.wahlmoduleData.minorBereiche,
+            'minorBereiche': this.wahlmoduleData.minorBereiche,
+            // FIXED: HST specific mappings
+            'schwerpunkt': this.wahlmoduleData.schwerpunktBereiche,
+            'schwerpunktBereiche': this.wahlmoduleData.schwerpunktBereiche
         };
-        
+
         return dataMap[categoryKey] || {};
     }
 
@@ -458,17 +468,25 @@ class StudienplanWahlmoduleManager {
             'wahlmoduleBereiche': '#28a745',
             // FIXED: HSLU colors
             'erweiterungsmoduleBereiche': '#0066cc',
-            'zusatzmoduleBereiche': '#6c757d'
+            'zusatzmoduleBereiche': '#6c757d',
+            // FIXED: Sozialwissenschaften colors
+            'major': '#6c63ff',
+            'majorBereiche': '#6c63ff',
+            'minor': '#48c9b0',
+            'minorBereiche': '#48c9b0',
+            // FIXED: HST colors
+            'schwerpunkt': '#96CEB4',
+            'schwerpunktBereiche': '#96CEB4'
         };
         // special color for vertiefungsgebiete
         if (categoryKey === 'vertiefungsgebiete' || categoryKey === 'vertiefungsgebiete') return '#A4C8FF';
-        
+
         return colorMap[categoryKey] || '#6c757d';
     }
 
     getTextColor(backgroundColor) {
         // Simple logic for text color based on background
-        const darkColors = ['#4CA64C', '#FF6B6B', '#DD98DD', '#00a0e3', '#28a745', '#0066cc', '#6c757d'];
+        const darkColors = ['#4CA64C', '#FF6B6B', '#DD98DD', '#00a0e3', '#28a745', '#0066cc', '#6c757d', '#6c63ff', '#48c9b0', '#96CEB4'];
         return darkColors.includes(backgroundColor) ? 'white' : 'black';
     }
 
