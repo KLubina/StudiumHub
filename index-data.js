@@ -85,6 +85,12 @@
           title: "BSc Elektrotechnik und Informationstechnologie",
           subtitle: "Hochschule Luzern",
         },
+        {
+          key: "hst",
+          title: "BSc Gesundheitswissenschaften und Technologie",
+          subtitle: "ETH Zürich",
+          featured: true,
+        },
       ];
     }
   }

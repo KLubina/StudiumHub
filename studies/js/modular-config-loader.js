@@ -28,6 +28,10 @@ class StudiengangConfigLoader {
             // MSc ITET uses kernfächer and vertiefungsfächer data files
             await this.loadOptionalModule(`${dataPath}/kernfacher-data.js`);
             await this.loadOptionalModule(`${dataPath}/vertiefungsfacher-data.js`);
+        } else if (this.studiengang === 'hst') {
+            // HST uses schwerpunkt and wahlfächer data files
+            await this.loadOptionalModule(`${dataPath}/schwerpunkt-data.js`);
+            await this.loadOptionalModule(`${dataPath}/wahlfacher-data.js`);
         } else {
             // CSE Wahlmodule-Dateien
             await this.loadOptionalModule(`${dataPath}/vertiefung-data.js`);

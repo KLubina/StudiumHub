@@ -1,0 +1,161 @@
+/* ==== HST CUSTOM CSS ==== */
+/* Spezifische Features für Gesundheitswissenschaften und Technologie */
+
+/* KP-Counter */
+#kp-counter {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border: 2px solid var(--color-basispruefung);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#kp-total {
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    background: linear-gradient(135deg, #4ECDC4, #45B7D1);
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#kp-progress-bar {
+    width: 100%;
+    height: 4px;
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 2px;
+    margin-top: 5px;
+}
+
+#kp-progress-fill {
+    height: 100%;
+    background-color: white;
+    border-radius: 2px;
+    transition: width 0.5s ease;
+}
+
+/* Schwerpunkt Controls */
+.schwerpunkt-controls {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.schwerpunkt-controls button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: all 0.2s;
+}
+
+/* Listen für Schwerpunkte und Wahlfächer */
+.schwerpunkt-liste,
+.wahlfaecher-liste {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+/* 3. Jahr Horizontales Layout */
+[data-studiengang="hst"] .jahr:last-child .module-container {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+}
+
+/* Bereich-Titel */
+[data-studiengang="hst"] .bereich-titel {
+    font-size: 12px;
+    font-weight: bold;
+    color: #333;
+    margin: 15px 0 5px 0;
+    padding: 5px 10px;
+    background-color: #e8f4fd;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-left: 3px solid #4ECDC4;
+}
+
+/* Kompakte Module */
+[data-studiengang="hst"] .modul {
+    max-width: 180px;
+    min-width: 140px;
+}
+
+/* Messages */
+.hst-message {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    z-index: 9999;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Kategorie Farben */
+:root {
+    --color-basispruefung: #FF6B6B;
+    --color-kernfach: #4ECDC4;
+    --color-schwerpunkt: #96CEB4;
+    --color-wahl: #FFEAA7;
+    --color-wissenschaft: #A29BFE;
+}
+
+[data-studiengang="hst"] .modul.basispruefung {
+    background-color: var(--color-basispruefung);
+    border-color: var(--color-basispruefung);
+}
+
+[data-studiengang="hst"] .modul.kernfach {
+    background-color: var(--color-kernfach);
+    border-color: var(--color-kernfach);
+}
+
+[data-studiengang="hst"] .modul.schwerpunkt {
+    background-color: var(--color-schwerpunkt);
+    border-color: var(--color-schwerpunkt);
+}
+
+[data-studiengang="hst"] .modul.wahl {
+    background-color: var(--color-wahl);
+    border-color: var(--color-wahl);
+}
+
+[data-studiengang="hst"] .modul.wissenschaft {
+    background-color: var(--color-wissenschaft);
+    border-color: var(--color-wissenschaft);
+}
+
+/* Prüfungsblock Farben */
+[data-studiengang="hst"] .modul.block-bp1 {
+    background-color: #FF6B6B;
+    border-color: #FF6B6B;
+}
+
+[data-studiengang="hst"] .modul.block-bp2 {
+    background-color: #4ECDC4;
+    border-color: #4ECDC4;
+}
+
+[data-studiengang="hst"] .modul.block-ka {
+    background-color: #45B7D1;
+    border-color: #45B7D1;
+}
+
+[data-studiengang="hst"] .modul.block-kb {
+    background-color: #96CEB4;
+    border-color: #96CEB4;
+}
+
+[data-studiengang="hst"] .modul.block-kc {
+    background-color: #FFEAA7;
+    border-color: #FFEAA7;
+}
