@@ -128,6 +128,16 @@ h1 {
     background-color: #00a0e3;
 }
 
+/* HST / HEST: BSc Gesundheitswissenschaften und Technologie (ETH ZH) */
+.hst .card-header {
+    background-color: #2b8a7a; /* teal-ish for good contrast with white text */
+}
+
+/* Sozialwissenschaften UZH */
+.sozwi .card-header {
+    background-color: #6a1b9a; /* purple to visually distinguish and contrast white text */
+}
+
 /* MSc ITET */
 .msc-itet .card-header {
     background-color: #00a0e3;
