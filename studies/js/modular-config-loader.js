@@ -32,6 +32,11 @@ class StudiengangConfigLoader {
             // HST uses schwerpunkt and wahlfächer data files
             await this.loadOptionalModule(`${dataPath}/schwerpunkt-data.js`);
             await this.loadOptionalModule(`${dataPath}/wahlfacher-data.js`);
+        } else if (this.studiengang === 'sozwi') {
+            // Sozialwissenschaften uses major and minor data files
+            await this.loadOptionalModule(`${dataPath}/major-data.js`);
+            await this.loadOptionalModule(`${dataPath}/minor-data.js`);
+            await this.loadOptionalModule(`${dataPath}/politikwissenschaft-modules-data.js`);
         } else {
             // CSE Wahlmodule-Dateien
             await this.loadOptionalModule(`${dataPath}/vertiefung-data.js`);

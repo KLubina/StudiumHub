@@ -91,6 +91,12 @@
           subtitle: "ETH Zürich",
           featured: true,
         },
+        {
+          key: "sozwi",
+          title: "BA Sozialwissenschaften",
+          subtitle: "Universität Zürich",
+          featured: true,
+        },
       ];
     }
   }
