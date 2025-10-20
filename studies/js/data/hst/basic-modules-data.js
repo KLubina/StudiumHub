@@ -9,8 +9,8 @@ window.StudiengangModules = [
     { jahr: 1, semester: 1, name: "Einführung Gesundheitswissenschaften und Technologie I", kp: 4, kategorie: "Basisprüfung" },
 
     // ========== SEMESTER 2 - Basisprüfungsblock 2 ==========
-    { jahr: 1, semester: 2, name: "Mathematik I", kp: 6, kategorie: "Basisprüfung" },
-    { jahr: 1, semester: 2, name: "Organische Chemie I (für Biol./Pharm.Wiss./HST)", kp: 4, kategorie: "Basisprüfung" },
+    { jahr: 1, semester: 1, name: "Mathematik I", kp: 6, kategorie: "Basisprüfung" },
+    { jahr: 1, semester: 1, name: "Organische Chemie I (für Biol./Pharm.Wiss./HST)", kp: 4, kategorie: "Basisprüfung" },
     { jahr: 1, semester: 2, name: "Infektion", kp: 2, kategorie: "Basisprüfung" },
     { jahr: 1, semester: 2, name: "Biochemie", kp: 3, kategorie: "Basisprüfung" },
     { jahr: 1, semester: 2, name: "Organische Chemie II (für Biol./Pharm.Wiss./HST)", kp: 5, kategorie: "Basisprüfung" },
@@ -23,9 +23,9 @@ window.StudiengangModules = [
 
     // ========== SEMESTER 3 - Kernfächer Block A/B ==========
     { jahr: 2, semester: 1, name: "Physik I", kp: 4, kategorie: "Kernfach" },
-    { jahr: 2, semester: 1, name: "Molekular- und Zellbiologie in Gesundheit und Krankheit", kp: 6, kategorie: "Kernfach" },
-    { jahr: 2, semester: 1, name: "Histologie", kp: 2, kategorie: "Kernfach" },
-    { jahr: 2, semester: 1, name: "Physik II", kp: 4, kategorie: "Kernfach" },
+    { jahr: 2, semester: 2, name: "Molekular- und Zellbiologie in Gesundheit und Krankheit", kp: 6, kategorie: "Kernfach" },
+    { jahr: 2, semester: 2, name: "Histologie", kp: 2, kategorie: "Kernfach" },
+    { jahr: 2, semester: 2, name: "Physik II", kp: 4, kategorie: "Kernfach" },
     { jahr: 2, semester: 1, name: "Humanphysiologie I", kp: 5, kategorie: "Kernfach" },
     { jahr: 2, semester: 1, name: "Mathematik III", kp: 5, kategorie: "Kernfach" },
     { jahr: 2, semester: 1, name: "Statistik II", kp: 3, kategorie: "Kernfach" },
