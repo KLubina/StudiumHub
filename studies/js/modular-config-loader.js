@@ -91,10 +91,35 @@ class StudiengangConfigLoader {
 
     async loadOptionalModule(url) {
         try {
-            await this.loadModule(url);
+            // Do a quick fetch to avoid injecting an HTML 404 page as a script
+            // which causes the browser to block it with a MIME-type nosniff error.
+            // We only inject the <script> tag if the resource exists and looks like JS.
+            let okToLoad = false;
+            try {
+                const resp = await fetch(url, { method: 'GET' });
+                if (resp.ok) {
+                    const ct = resp.headers.get('content-type') || '';
+                    if (/javascript|application\/ecmascript|text\/javascript/.test(ct) || url.endsWith('.js')) {
+                        okToLoad = true;
+                    } else {
+                        console.warn(`Optionales Modul übersprungen (ungültiger Content-Type): ${url} (${ct})`);
+                    }
+                } else {
+                    console.warn(`Optionales Modul nicht gefunden (HTTP ${resp.status}): ${url}`);
+                }
+            } catch (fetchErr) {
+                // If fetch fails (CORS/server), fallback to attempting to load the script tag
+                // but still handle errors gracefully in loadModule.
+                console.warn(`Konnte Modul vorab nicht prüfen, versuche zu laden: ${url}`, fetchErr);
+                okToLoad = true;
+            }
+
+            if (okToLoad) {
+                await this.loadModule(url);
+            }
         } catch (error) {
-            // Optionales Modul fehlt — nur warnen, nicht unterbrechen
-            console.warn(`Optionales Modul konnte nicht geladen werden: ${url}`);
+            // Optionales Modul fehlt oder konnte nicht ausgeführt werden — nur warnen, nicht unterbrechen
+            console.warn(`Optionales Modul konnte nicht geladen werden: ${url}`, error);
         }
     }
 

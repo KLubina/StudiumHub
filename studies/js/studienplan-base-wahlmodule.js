@@ -82,6 +82,17 @@ class StudienplanWahlmoduleManager {
                 }
             }
 
+            // HST-specific sources: schwerpunkt and wahlfächer files
+            if (window.HSTSchwerpunktData && window.HSTSchwerpunktData.schwerpunktBereiche) {
+                // Map HST schwerpunktBereiche into the standard schwerpunktBereiche key
+                result.schwerpunktBereiche = window.HSTSchwerpunktData.schwerpunktBereiche;
+                // Also map to kernfaecherSchwerpunkte for backward compatibility where code expects that
+                if (!result.kernfaecherSchwerpunkte) result.kernfaecherSchwerpunkte = window.HSTSchwerpunktData.schwerpunktBereiche;
+            }
+            if (window.HSTWahlfaecherData && window.HSTWahlfaecherData.wahlfaecherBereiche) {
+                result.wahlfaecherBereiche = window.HSTWahlfaecherData.wahlfaecherBereiche;
+            }
+
         } catch (e) {
             console.error('Fehler beim Zusammenführen der wahlmoduleData:', e);
         }
@@ -401,6 +412,8 @@ class StudienplanWahlmoduleManager {
         // Handle plain "Kernfächer" and variants (normalize umlaut)
         if (!categoryName) return '';
         const normalized = categoryName.trim().toLowerCase();
+    // HST specific: map 'Schwerpunktfächer' or variants to 'schwerpunkt'
+    if (normalized === 'schwerpunktfächer' || normalized.indexOf('schwerpunkt') === 0) return 'schwerpunkt';
         if (normalized === 'kernfächer' || normalized.indexOf('kern') === 0) return 'kernfaecher';
 
         return keyMappings[categoryName] || categoryName.toLowerCase().replace(/\s+/g, '-');
