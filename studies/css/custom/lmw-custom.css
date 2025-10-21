@@ -1,0 +1,253 @@
+/* ==== LMW CUSTOM CSS ==== */
+/* Spezifische Features für Lebensmittelwissenschaften und Ernährung */
+
+/* KP-Counter */
+#kp-counter {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border: 2px solid var(--color-basispruefung);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#kp-total {
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    background: linear-gradient(135deg, #7ED321, #4A90E2);
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#kp-progress-bar {
+    width: 100%;
+    height: 4px;
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 2px;
+    margin-top: 5px;
+}
+
+#kp-progress-fill {
+    height: 100%;
+    background-color: white;
+    border-radius: 2px;
+    transition: width 0.5s ease;
+}
+
+/* Wahlfächer Controls */
+.wahlfaecher-controls {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.wahlfaecher-controls button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: all 0.2s;
+}
+
+/* Listen für Wahlfächer */
+.wahlfaecher-liste {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+/* 3. Jahr Horizontales Layout */
+[data-studiengang="lmw"] .jahr:last-child .module-container {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+}
+
+/* Bereich-Titel */
+[data-studiengang="lmw"] .bereich-titel {
+    font-size: 12px;
+    font-weight: bold;
+    color: #333;
+    margin: 15px 0 5px 0;
+    padding: 5px 10px;
+    background-color: #e8f9f0;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-left: 3px solid #7ED321;
+}
+
+/* Kompakte Module */
+[data-studiengang="lmw"] .modul {
+    max-width: 200px;
+    min-width: 120px;
+}
+
+/* Messages */
+.lmw-message {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    z-index: 9999;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Kategorie Farben */
+:root {
+    --color-basispruefung: #FF6B6B;
+    --color-zusatzfach: #FFB347;
+    --color-obligatorisch: #4ECDC4;
+    --color-grundlagenfach: #45B7D1;
+    --color-weitere: #A0D8F1;
+    --color-kernfach: #7ED321;
+    --color-fachgrundlage: #6BBF59;
+    --color-lmw-fach: #59A649;
+    --color-praktikum: #96CEB4;
+    --color-exkursion: #FFD93D;
+    --color-wahl: #FFEAA7;
+    --color-wik: #DDA15E;
+    --color-bachelor-arbeit: #A29BFE;
+}
+
+/* Kategorie-basierte Färbung */
+[data-studiengang="lmw"] .modul.basispruefung {
+    background-color: var(--color-basispruefung);
+    border-color: var(--color-basispruefung);
+}
+
+[data-studiengang="lmw"] .modul.zusatzfach {
+    background-color: var(--color-zusatzfach);
+    border-color: var(--color-zusatzfach);
+}
+
+[data-studiengang="lmw"] .modul.obligatorisch {
+    background-color: var(--color-obligatorisch);
+    border-color: var(--color-obligatorisch);
+}
+
+[data-studiengang="lmw"] .modul.grundlagenfach {
+    background-color: var(--color-grundlagenfach);
+    border-color: var(--color-grundlagenfach);
+}
+
+[data-studiengang="lmw"] .modul.weitere {
+    background-color: var(--color-weitere);
+    border-color: var(--color-weitere);
+}
+
+[data-studiengang="lmw"] .modul.kernfach {
+    background-color: var(--color-kernfach);
+    border-color: var(--color-kernfach);
+}
+
+[data-studiengang="lmw"] .modul.fachgrundlage {
+    background-color: var(--color-fachgrundlage);
+    border-color: var(--color-fachgrundlage);
+}
+
+[data-studiengang="lmw"] .modul.lmw-fach {
+    background-color: var(--color-lmw-fach);
+    border-color: var(--color-lmw-fach);
+}
+
+[data-studiengang="lmw"] .modul.praktikum {
+    background-color: var(--color-praktikum);
+    border-color: var(--color-praktikum);
+}
+
+[data-studiengang="lmw"] .modul.exkursion {
+    background-color: var(--color-exkursion);
+    border-color: var(--color-exkursion);
+}
+
+[data-studiengang="lmw"] .modul.wahl {
+    background-color: var(--color-wahl);
+    border-color: var(--color-wahl);
+}
+
+[data-studiengang="lmw"] .modul.wik {
+    background-color: var(--color-wik);
+    border-color: var(--color-wik);
+}
+
+[data-studiengang="lmw"] .modul.bachelor-arbeit {
+    background-color: var(--color-bachelor-arbeit);
+    border-color: var(--color-bachelor-arbeit);
+}
+
+/* Bereich-basierte Färbung */
+[data-studiengang="lmw"] .modul.bereich-natwig {
+    background-color: #4A90E2;
+    border-color: #4A90E2;
+}
+
+[data-studiengang="lmw"] .modul.bereich-sozwi {
+    background-color: #F5A623;
+    border-color: #F5A623;
+}
+
+[data-studiengang="lmw"] .modul.bereich-lmw {
+    background-color: #7ED321;
+    border-color: #7ED321;
+}
+
+/* Hover-Effekte für Module */
+[data-studiengang="lmw"] .modul:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Text Kontrast Anpassungen */
+[data-studiengang="lmw"] .modul.basispruefung,
+[data-studiengang="lmw"] .modul.kernfach,
+[data-studiengang="lmw"] .modul.fachgrundlage,
+[data-studiengang="lmw"] .modul.lmw-fach,
+[data-studiengang="lmw"] .modul.bereich-natwig,
+[data-studiengang="lmw"] .modul.bereich-lmw {
+    color: white;
+}
+
+[data-studiengang="lmw"] .modul.basispruefung .modul-titel,
+[data-studiengang="lmw"] .modul.kernfach .modul-titel,
+[data-studiengang="lmw"] .modul.fachgrundlage .modul-titel,
+[data-studiengang="lmw"] .modul.lmw-fach .modul-titel,
+[data-studiengang="lmw"] .modul.bereich-natwig .modul-titel,
+[data-studiengang="lmw"] .modul.bereich-lmw .modul-titel {
+    color: white;
+}
+
+/* Color Manager Button Styles */
+.color-manager-controls button {
+    background: linear-gradient(135deg, #7ED321, #4A90E2);
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.color-manager-controls button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    [data-studiengang="lmw"] .modul {
+        max-width: 100%;
+        min-width: 100px;
+    }
+
+    [data-studiengang="lmw"] .jahr:last-child .module-container {
+        flex-direction: column !important;
+    }
+}

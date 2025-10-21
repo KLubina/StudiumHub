@@ -92,6 +92,12 @@
           featured: true,
         },
         {
+          key: "lmw",
+          title: "BSc Lebensmittelwissenschaften und Ernährung",
+          subtitle: "ETH Zürich",
+          featured: true,
+        },
+        {
           key: "sozwi",
           title: "BA Sozialwissenschaften",
           subtitle: "Universität Zürich",
