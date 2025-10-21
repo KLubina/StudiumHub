@@ -426,6 +426,10 @@ class StudienplanWahlmoduleManager {
             'wahlfaecher': { name: 'Wahlfächer' },
             'praktika': { name: 'Wahl Praktika-Projekte-Seminare' },
             'wahlmodule': { name: 'Wahlmodule' },
+            // Vertiefung mappings
+            'vertiefungsgebiete': { name: 'Vertiefungsgebiete' },
+            'vertiefung': { name: 'Vertiefung' },
+            'fokus-vertiefung': { name: 'Fokus-Vertiefung' },
             // BFH specific
             'vertiefungsrichtungen': { name: 'Vertiefungsrichtungen' },
             'wahlmoduleBereiche': { name: 'Fachliche Wahlmodule' },
@@ -433,7 +437,7 @@ class StudienplanWahlmoduleManager {
             'erweiterungsmoduleBereiche': { name: 'Erweiterungsmodule' },
             'zusatzmoduleBereiche': { name: 'Zusatzmodule' }
         };
-        
+
         return keyMappings[categoryKey] || { name: categoryKey };
     }
 
@@ -448,6 +452,9 @@ class StudienplanWahlmoduleManager {
             'wahlfaecher-bereiche': this.wahlmoduleData.wahlfaecherBereiche,
             // Vertiefungsgebiete (CSE uses this key)
             'vertiefungsgebiete': this.wahlmoduleData.vertiefungsgebiete,
+            'vertiefung': this.wahlmoduleData.vertiefungsgebiete,
+            // FIXED: Maschineningenieurwissenschaften specific (Fokus-Vertiefung)
+            'fokus-vertiefung': this.wahlmoduleData.vertiefungsgebiete,
             'praktika': this.wahlmoduleData.praktikaSchwerpunkte,
             'wahlmodule': this.wahlmoduleData.wahlmoduleBereiche,
             // FIXED: BFH specific mappings

@@ -1,55 +1,92 @@
 /* ==== MASCHINENINGENIEURWISSENSCHAFTEN CUSTOM CSS ==== */
-/* KISS: Minimaler Farbsatz für BSc Maschineningenieurwissenschaften */
+/* Custom Styles für BSc Maschineningenieurwissenschaften ETH Zürich */
 
-/* Farbvariablen (einfach anpassbar) */
+/* Farbvariablen für Standard-Kategorien */
 [data-studiengang="masch"] {
-    --color-mechanik: #1f77b4;       /* Blau */
-    --color-thermodynamik: #d62728;  /* Rot */
-    --color-informatik: #ff7f0e;     /* Orange */
-    --color-physik: #2ca02c;         /* Grün */
-    --color-mathematik: #9467bd;     /* Lila */
-    --color-werkstoffe: #8c564b;     /* Braun */
-    --color-konstruktion: #17becf;   /* Cyan */
-    --color-praktikum: #bcbd22;      /* Oliv */
-    --color-projekt: #e377c2;        /* Rosa */
-    --color-thesis: #7f7f7f;         /* Grau */
-    --color-sonstiges: #f7f7f7;      /* Heller Neutralton */
-    --color-text-on-dark: #ffffff;
-    --color-text-on-light: #000000;
+    /* Standard-Kategorien */
+    --color-obligatorisch: #0D5B8C;         /* Dunkelblau für Pflichtfächer */
+    --color-praktikum: #00A0E3;             /* Hellblau für Praktika */
+    --color-wahl: #F2B48F;                  /* Orange für Wahlfächer */
+    --color-vertiefung: #7209B7;            /* Lila für Fokus-Vertiefung */
+    --color-wissenschaft: #888888;          /* Grau für Bachelor-Arbeit */
 }
 
-/* Basis-Style für Modul-Boxen (sorgt dafür, dass sie nicht weiss auf weiss sind) */
-[data-studiengang="masch"] .modul {
-    background-color: var(--color-sonstiges);
-    border: 1px solid #ddd;
-    color: var(--color-text-on-light);
-    border-radius: 6px;
-    box-shadow: 0 1px 0 rgba(0,0,0,0.03);
-    transition: transform 0.12s ease, box-shadow 0.12s ease;
+/* Standard-Kategorien Styling */
+[data-studiengang="masch"] .modul.obligatorisch {
+    background-color: var(--color-obligatorisch);
+    border-color: var(--color-obligatorisch);
+    color: white;
 }
 
+[data-studiengang="masch"] .modul.praktikum {
+    background-color: var(--color-praktikum);
+    border-color: var(--color-praktikum);
+    color: white;
+}
+
+[data-studiengang="masch"] .modul.wahl {
+    background-color: var(--color-wahl);
+    border-color: var(--color-wahl);
+    color: black;
+}
+
+[data-studiengang="masch"] .modul.vertiefung {
+    background-color: var(--color-vertiefung);
+    border-color: var(--color-vertiefung);
+    color: white;
+}
+
+[data-studiengang="masch"] .modul.wissenschaft {
+    background-color: var(--color-wissenschaft);
+    border-color: var(--color-wissenschaft);
+    color: white;
+}
+
+/* Hover-Effekte */
 [data-studiengang="masch"] .modul:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    filter: brightness(1.05);
 }
 
-/* Kategoriespezifische Farben (einfach, klar, kontrastreich) */
-[data-studiengang="masch"] .modul.mechanik { background-color: var(--color-mechanik); border-color: var(--color-mechanik); color: var(--color-text-on-dark); }
-[data-studiengang="masch"] .modul.thermodynamik { background-color: var(--color-thermodynamik); border-color: var(--color-thermodynamik); color: var(--color-text-on-dark); }
-[data-studiengang="masch"] .modul.informatik { background-color: var(--color-informatik); border-color: var(--color-informatik); color: var(--color-text-on-dark); }
-[data-studiengang="masch"] .modul.physik { background-color: var(--color-physik); border-color: var(--color-physik); color: var(--color-text-on-dark); }
-[data-studiengang="masch"] .modul.mathematik { background-color: var(--color-mathematik); border-color: var(--color-mathematik); color: var(--color-text-on-dark); }
-[data-studiengang="masch"] .modul.werkstoffe { background-color: var(--color-werkstoffe); border-color: var(--color-werkstoffe); color: var(--color-text-on-dark); }
-[data-studiengang="masch"] .modul.konstruktion { background-color: var(--color-konstruktion); border-color: var(--color-konstruktion); color: var(--color-text-on-dark); }
-[data-studiengang="masch"] .modul.praktikum { background-color: var(--color-praktikum); border-color: var(--color-praktikum); color: var(--color-text-on-dark); }
-[data-studiengang="masch"] .modul.projekt { background-color: var(--color-projekt); border-color: var(--color-projekt); color: var(--color-text-on-dark); }
-[data-studiengang="masch"] .modul.thesis { background-color: var(--color-thesis); border-color: var(--color-thesis); color: var(--color-text-on-dark); }
+/* Lesbarkeit */
+[data-studiengang="masch"] .modul .modul-kp {
+    font-weight: 600;
+}
 
-/* Kleine Lesbarkeitsanpassungen */
-[data-studiengang="masch"] .modul .modul-kp { font-weight: 600; }
-[data-studiengang="masch"] .modul .modul-titel { font-weight: 600; color: inherit; }
+[data-studiengang="masch"] .modul .modul-titel {
+    font-weight: 500;
+    color: inherit;
+}
 
-/* Falls eine Legende später gewünscht wird, kann sie so aussehen (optional) */
-[data-studiengang="masch"] .farben-legende { margin-top: 10px; display: flex; gap: 8px; flex-wrap: wrap; }
-[data-studiengang="masch"] .farben-legende .item { display:flex; align-items:center; gap:6px; font-size:12px; }
-[data-studiengang="masch"] .farben-legende .sw { width:16px; height:12px; border-radius:3px; border:1px solid #ccc; }
+/* Farben-Legende */
+[data-studiengang="masch"] .farben-legende {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+[data-studiengang="masch"] .farben-legende .legende-titel {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+[data-studiengang="masch"] .farben-legende .item {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    font-size: 12px;
+}
+
+[data-studiengang="masch"] .farben-legende .sw {
+    width: 20px;
+    height: 14px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
