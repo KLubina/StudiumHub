@@ -97,6 +97,11 @@
           subtitle: "Universität Zürich",
           featured: true,
         },
+        {
+          key: "masch",
+          title: "BSc Maschineningenieurwissenschaften",
+          subtitle: "ETH Zürich",
+        },
       ];
     }
   }

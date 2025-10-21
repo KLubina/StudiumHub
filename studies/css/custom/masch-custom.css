@@ -1,0 +1,13 @@
+/* ==== MASCHINENINGENIEURWISSENSCHAFTEN CUSTOM CSS ==== */
+/* Custom Styles für Maschineningenieurwissenschaften ETH Zürich */
+
+/* Standard Layout */
+[data-studiengang="masch"] .modul {
+    /* Nutzt die Standard-Styles aus theme-core.css */
+}
+
+/* Optional: Spezielle Anpassungen für lange Modulnamen */
+[data-studiengang="masch"] .modul-name {
+    font-size: 11px;
+    line-height: 1.2;
+}
