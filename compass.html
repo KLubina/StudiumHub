@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETH-UZH Kompass</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #1e3a8a 0%, #312e81 50%, #1e293b 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 24px;
+            padding: 40px;
+            box-shadow: 0 25px 80px rgba(0,0,0,0.4);
+            max-width: 1400px;
+            width: 100%;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #1e293b;
+            margin-bottom: 8px;
+            font-size: 32px;
+            font-weight: 700;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #64748b;
+            margin-bottom: 35px;
+            font-size: 15px;
+            font-weight: 500;
+        }
+        
+        .compass-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 950px;
+            margin: 0 auto;
+            aspect-ratio: 1;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        svg {
+            width: 100%;
+            height: 100%;
+            filter: drop-shadow(0 4px 12px rgba(0,0,0,0.1));
+        }
+        
+        .pentagon-outline {
+            fill: none;
+            stroke: #cbd5e0;
+            stroke-width: 3;
+        }
+        
+        .pentagon-fill {
+            fill: url(#pentagonGradient);
+            opacity: 0.15;
+        }
+        
+        .sector-line {
+            stroke: #e2e8f0;
+            stroke-width: 2;
+            stroke-dasharray: 8,6;
+        }
+        
+        .inner-circle {
+            fill: #fbbf24;
+            opacity: 0.25;
+            stroke: #f59e0b;
+            stroke-width: 3;
+        }
+        
+        .corner-area {
+            opacity: 0.12;
+            transition: opacity 0.3s;
+            cursor: pointer;
+        }
+        
+        .corner-area:hover {
+            opacity: 0.25;
+        }
+        
+        .corner-label {
+            font-size: 15px;
+            font-weight: 700;
+            fill: #1e293b;
+            text-anchor: middle;
+        }
+        
+        .corner-icon {
+            font-size: 24px;
+            text-anchor: middle;
+        }
+        
+        .center-label {
+            font-size: 18px;
+            font-weight: 800;
+            fill: #92400e;
+            text-anchor: middle;
+        }
+        
+        .study-dot {
+            cursor: pointer;
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+            stroke: white;
+            stroke-width: 2.5;
+        }
+        
+        .study-dot:hover {
+            r: 9;
+            stroke-width: 3.5;
+            filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
+        }
+        
+        .controls {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 35px;
+            margin-top: 35px;
+            padding-top: 25px;
+            border-top: 2px solid #e2e8f0;
+            flex-wrap: wrap;
+        }
+        
+        .filter-group {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        
+        .filter-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            user-select: none;
+            padding: 6px 12px;
+            border-radius: 8px;
+            transition: background 0.2s;
+        }
+        
+        .filter-item:hover {
+            background: #f1f5f9;
+        }
+        
+        .filter-checkbox {
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+            accent-color: #3b82f6;
+        }
+        
+        .filter-label {
+            font-size: 13px;
+            font-weight: 600;
+            color: #475569;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        
+        .filter-color {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            border: 2.5px solid white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+        }
+        
+        .zoom-controls {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        
+        .zoom-btn {
+            width: 40px;
+            height: 40px;
+            border: 2px solid #cbd5e0;
+            background: white;
+            border-radius: 8px;
+            font-size: 20px;
+            font-weight: 700;
+            color: #475569;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+        }
+        
+        .zoom-btn:hover {
+            background: #f1f5f9;
+            border-color: #94a3b8;
+            transform: scale(1.05);
+        }
+        
+        .zoom-btn:active {
+            transform: scale(0.95);
+        }
+        
+        .zoom-reset {
+            font-size: 12px;
+            padding: 8px 12px;
+            width: auto;
+        }
+        
+        .zoom-level {
+            font-size: 12px;
+            color: #64748b;
+            min-width: 50px;
+            text-align: center;
+        }
+        
+        .tooltip {
+            position: fixed;
+            background: rgba(15, 23, 42, 0.95);
+            color: white;
+            border-radius: 8px;
+            padding: 10px 14px;
+            font-size: 13px;
+            font-weight: 600;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.2s;
+            z-index: 1000;
+            white-space: nowrap;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+        }
+        
+        .info-box {
+            background: #f8fafc;
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 25px;
+            border: 2px solid #e2e8f0;
+        }
+        
+        .info-title {
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+        
+        .info-text {
+            color: #64748b;
+            font-size: 13px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ETH–UZH Kompass</h1>
+        <div class="subtitle">Wirtschaft im Zentrum – Die fünf Kräftefelder des Wissens</div>
+        
+        <div class="compass-wrapper">
+            <svg viewBox="0 0 1000 1000" id="compass-svg">
+                <defs>
+                    <radialGradient id="pentagonGradient">
+                        <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+                    </radialGradient>
+                    
+                    <filter id="glow">
+                        <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                        <feMerge>
+                            <feMergeNode in="coloredBlur"/>
+                            <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                    </filter>
+                </defs>
+                
+                <g id="background"></g>
+                <g id="structure"></g>
+                <g id="labels"></g>
+                <g id="studies"></g>
+            </svg>
+            <div class="tooltip" id="tooltip"></div>
+        </div>
+        
+        <div class="controls">
+            <div class="filter-group">
+                <div class="filter-item" onclick="toggleFilter('eth')">
+                    <input type="checkbox" id="filter-eth" class="filter-checkbox" checked>
+                    <label class="filter-label" for="filter-eth">
+                        <div class="filter-color" style="background: #ef4444;"></div>
+                        <span>ETH</span>
+                    </label>
+                </div>
+                <div class="filter-item" onclick="toggleFilter('uzh')">
+                    <input type="checkbox" id="filter-uzh" class="filter-checkbox" checked>
+                    <label class="filter-label" for="filter-uzh">
+                        <div class="filter-color" style="background: #3b82f6;"></div>
+                        <span>UZH</span>
+                    </label>
+                </div>
+                <div class="filter-item" onclick="toggleFilter('med')">
+                    <input type="checkbox" id="filter-med" class="filter-checkbox" checked>
+                    <label class="filter-label" for="filter-med">
+                        <div class="filter-color" style="background: #10b981;"></div>
+                        <span>Medizin</span>
+                    </label>
+                </div>
+                <div class="filter-item" onclick="toggleFilter('law')">
+                    <input type="checkbox" id="filter-law" class="filter-checkbox" checked>
+                    <label class="filter-label" for="filter-law">
+                        <div class="filter-color" style="background: #f59e0b;"></div>
+                        <span>Recht</span>
+                    </label>
+                </div>
+                <div class="filter-item" onclick="toggleFilter('biz')">
+                    <input type="checkbox" id="filter-biz" class="filter-checkbox" checked>
+                    <label class="filter-label" for="filter-biz">
+                        <div class="filter-color" style="background: #8b5cf6;"></div>
+                        <span>Wirtschaft</span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="zoom-controls">
+                <button class="zoom-btn" onclick="zoomIn()">+</button>
+                <div class="zoom-level" id="zoom-level">100%</div>
+                <button class="zoom-btn" onclick="zoomOut()">−</button>
+                <button class="zoom-btn zoom-reset" onclick="resetZoom()">Reset</button>
+            </div>
+        </div>
+        
+        <div class="info-box">
+            <div class="info-title">Konzept</div>
+            <div class="info-text">
+                Das Pentagon zeigt die fünf Hauptbereiche des Wissens. Wirtschaft steht im Zentrum, da sie alle Bereiche verbindet und durchdringt. 
+                Studiengänge positionieren sich je nach ihrer Ausrichtung näher an den entsprechenden Ecken. 
+                Interdisziplinäre Programme liegen zwischen den Polen oder näher am wirtschaftlichen Zentrum.
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const centerX = 500;
+        const centerY = 500;
+        const outerRadius = 380;
+        const innerRadius = 120;
+        
+        const corners = [
+            {angle: -90, label: 'Technik &\nInnovation', icon: '⚙️', color: '#6366f1'},
+            {angle: -18, label: 'Natur &\nUmwelt', icon: '🌿', color: '#10b981'},
+            {angle: 54, label: 'Leben &\nGesundheit', icon: '🧬', color: '#ec4899'},
+            {angle: 126, label: 'Mensch &\nGesellschaft', icon: '🧠', color: '#f59e0b'},
+            {angle: 198, label: 'Recht &\nNormen', icon: '⚖️', color: '#8b5cf6'}
+        ];
+        
+        function polarToCartesian(centerX, centerY, radius, angleInDegrees) {
+            const angleInRadians = (angleInDegrees) * Math.PI / 180.0;
+            return {
+                x: centerX + (radius * Math.cos(angleInRadians)),
+                y: centerY + (radius * Math.sin(angleInRadians))
+            };
+        }
+        
+        const pentagonPoints = corners.map(c => 
+            polarToCartesian(centerX, centerY, outerRadius, c.angle)
+        );
+        
+        const backgroundGroup = document.getElementById('background');
+        const structureGroup = document.getElementById('structure');
+        const labelsGroup = document.getElementById('labels');
+        
+        corners.forEach((corner, i) => {
+            const nextIndex = (i + 1) % corners.length;
+            const p1 = pentagonPoints[i];
+            const p2 = pentagonPoints[nextIndex];
+            const midX = (p1.x + p2.x) / 2;
+            const midY = (p1.y + p2.y) / 2;
+            
+            const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+            path.setAttribute('d', `M ${centerX} ${centerY} L ${p1.x} ${p1.y} L ${p2.x} ${p2.y} Z`);
+            path.setAttribute('fill', corner.color);
+            path.setAttribute('class', 'corner-area');
+            backgroundGroup.appendChild(path);
+        });
+        
+        const pentagonPath = pentagonPoints.map((p, i) => 
+            `${i === 0 ? 'M' : 'L'} ${p.x} ${p.y}`
+        ).join(' ') + ' Z';
+        
+        const pentagonFill = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+        pentagonFill.setAttribute('d', pentagonPath);
+        pentagonFill.setAttribute('class', 'pentagon-fill');
+        structureGroup.appendChild(pentagonFill);
+        
+        const pentagonOutline = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+        pentagonOutline.setAttribute('d', pentagonPath);
+        pentagonOutline.setAttribute('class', 'pentagon-outline');
+        structureGroup.appendChild(pentagonOutline);
+        
+        corners.forEach(corner => {
+            const outerPoint = polarToCartesian(centerX, centerY, outerRadius, corner.angle);
+            const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+            line.setAttribute('x1', centerX);
+            line.setAttribute('y1', centerY);
+            line.setAttribute('x2', outerPoint.x);
+            line.setAttribute('y2', outerPoint.y);
+            line.setAttribute('class', 'sector-line');
+            structureGroup.appendChild(line);
+        });
+        
+        const centerCircle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+        centerCircle.setAttribute('cx', centerX);
+        centerCircle.setAttribute('cy', centerY);
+        centerCircle.setAttribute('r', innerRadius);
+        centerCircle.setAttribute('class', 'inner-circle');
+        structureGroup.appendChild(centerCircle);
+        
+        corners.forEach(corner => {
+            const labelPoint = polarToCartesian(centerX, centerY, outerRadius + 50, corner.angle);
+            const iconPoint = polarToCartesian(centerX, centerY, outerRadius + 80, corner.angle);
+            
+            const icon = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+            icon.setAttribute('x', iconPoint.x);
+            icon.setAttribute('y', iconPoint.y + 8);
+            icon.setAttribute('class', 'corner-icon');
+            icon.textContent = corner.icon;
+            labelsGroup.appendChild(icon);
+            
+            const lines = corner.label.split('\n');
+            lines.forEach((line, i) => {
+                const label = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+                label.setAttribute('x', labelPoint.x);
+                label.setAttribute('y', labelPoint.y + (i * 18));
+                label.setAttribute('class', 'corner-label');
+                label.textContent = line;
+                labelsGroup.appendChild(label);
+            });
+        });
+        
+
+        
+        const studyPrograms = [
+            {name: 'Informatik', angle: -90, distance: 0.85, color: '#ef4444', category: 'eth'},
+            {name: 'Elektrotechnik', angle: -95, distance: 0.80, color: '#ef4444', category: 'eth'},
+            {name: 'Maschineningenieur', angle: -85, distance: 0.78, color: '#ef4444', category: 'eth'},
+            {name: 'Materialwissenschaft', angle: -75, distance: 0.75, color: '#ef4444', category: 'eth'},
+            {name: 'Mathematik', angle: -100, distance: 0.88, color: '#ef4444', category: 'eth'},
+            {name: 'Physik', angle: -105, distance: 0.85, color: '#ef4444', category: 'eth'},
+            {name: 'Rechnergest. Wiss.', angle: -80, distance: 0.82, color: '#ef4444', category: 'eth'},
+            {name: 'Softwaresysteme', angle: -70, distance: 0.65, color: '#3b82f6', category: 'uzh'},
+            {name: 'Wirtschaftsinformatik', angle: -55, distance: 0.45, color: '#8b5cf6', category: 'biz'},
+            
+            {name: 'Umweltingenieur', angle: -25, distance: 0.75, color: '#ef4444', category: 'eth'},
+            {name: 'Bauingenieur', angle: -40, distance: 0.72, color: '#ef4444', category: 'eth'},
+            {name: 'Raumbez. Ingenieur', angle: -15, distance: 0.68, color: '#ef4444', category: 'eth'},
+            {name: 'Architektur', angle: 100, distance: 0.60, color: '#ef4444', category: 'eth'},
+            {name: 'Agrarwissenschaften', angle: 0, distance: 0.78, color: '#ef4444', category: 'eth'},
+            {name: 'Umweltnaturwiss.', angle: -10, distance: 0.82, color: '#ef4444', category: 'eth'},
+            {name: 'Erd- u. Klimawiss.', angle: -5, distance: 0.85, color: '#ef4444', category: 'eth'},
+            {name: 'Erdsystemwiss.', angle: 5, distance: 0.83, color: '#3b82f6', category: 'uzh'},
+            {name: 'Geographie', angle: 15, distance: 0.72, color: '#3b82f6', category: 'uzh'},
+            {name: 'Biodiversität', angle: 25, distance: 0.80, color: '#3b82f6', category: 'uzh'},
+            
+            {name: 'Biologie', angle: 45, distance: 0.82, color: '#ef4444', category: 'eth'},
+            {name: 'Biochemie', angle: 55, distance: 0.78, color: '#ef4444', category: 'eth'},
+            {name: 'Chemie', angle: -60, distance: 0.75, color: '#ef4444', category: 'eth'},
+            {name: 'Chemieingenieur', angle: -50, distance: 0.70, color: '#ef4444', category: 'eth'},
+            {name: 'Pharmazie', angle: 65, distance: 0.72, color: '#ef4444', category: 'eth'},
+            {name: 'Biomedizin', angle: 60, distance: 0.75, color: '#3b82f6', category: 'uzh'},
+            {name: 'Lebensmittelwiss.', angle: 35, distance: 0.65, color: '#ef4444', category: 'eth'},
+            {name: 'Gesundheitswiss.', angle: 70, distance: 0.68, color: '#10b981', category: 'med'},
+            {name: 'Humanmedizin', angle: 58, distance: 0.85, color: '#10b981', category: 'med'},
+            {name: 'Zahnmedizin', angle: 52, distance: 0.80, color: '#10b981', category: 'med'},
+            {name: 'Veterinärmedizin', angle: 48, distance: 0.78, color: '#10b981', category: 'med'},
+            {name: 'Chiropraktik', angle: 62, distance: 0.76, color: '#10b981', category: 'med'},
+            
+            {name: 'Psychologie', angle: 115, distance: 0.70, color: '#3b82f6', category: 'uzh'},
+            {name: 'Erziehungswiss.', angle: 125, distance: 0.75, color: '#3b82f6', category: 'uzh'},
+            {name: 'Soziologie', angle: 135, distance: 0.80, color: '#3b82f6', category: 'uzh'},
+            {name: 'Politikwissenschaft', angle: 130, distance: 0.78, color: '#3b82f6', category: 'uzh'},
+            {name: 'Kommunikationswiss.', angle: 120, distance: 0.72, color: '#3b82f6', category: 'uzh'},
+            {name: 'Ethnologie', angle: 145, distance: 0.82, color: '#3b82f6', category: 'uzh'},
+            {name: 'Populäre Kulturen', angle: 140, distance: 0.75, color: '#3b82f6', category: 'uzh'},
+            {name: 'Geschichte', angle: 155, distance: 0.85, color: '#3b82f6', category: 'uzh'},
+            {name: 'Kunstgeschichte', angle: 150, distance: 0.80, color: '#3b82f6', category: 'uzh'},
+            {name: 'Filmwissenschaft', angle: 110, distance: 0.68, color: '#3b82f6', category: 'uzh'},
+            {name: 'Musikwissenschaft', angle: 148, distance: 0.77, color: '#3b82f6', category: 'uzh'},
+            {name: 'Deutsche Lit.', angle: 160, distance: 0.88, color: '#3b82f6', category: 'uzh'},
+            {name: 'Englische Lit.', angle: 165, distance: 0.86, color: '#3b82f6', category: 'uzh'},
+            {name: 'Französische Lit.', angle: 170, distance: 0.84, color: '#3b82f6', category: 'uzh'},
+            {name: 'Italienische Lit.', angle: 175, distance: 0.82, color: '#3b82f6', category: 'uzh'},
+            {name: 'Iberoromanische Lit.', angle: 158, distance: 0.83, color: '#3b82f6', category: 'uzh'},
+            {name: 'Slavische Lit.', angle: 152, distance: 0.81, color: '#3b82f6', category: 'uzh'},
+            {name: 'Sinologie', angle: 168, distance: 0.87, color: '#3b82f6', category: 'uzh'},
+            {name: 'Japanologie', angle: 172, distance: 0.85, color: '#3b82f6', category: 'uzh'},
+            {name: 'Indologie', angle: 163, distance: 0.84, color: '#3b82f6', category: 'uzh'},
+            {name: 'Computerlinguistik', angle: 105, distance: 0.62, color: '#3b82f6', category: 'uzh'},
+            
+            {name: 'Philosophie', angle: 195, distance: 0.82, color: '#3b82f6', category: 'uzh'},
+            {name: 'Theologie', angle: 205, distance: 0.85, color: '#3b82f6', category: 'uzh'},
+            {name: 'Religionswiss.', angle: 200, distance: 0.80, color: '#3b82f6', category: 'uzh'},
+            {name: 'Rechtswissenschaft', angle: 190, distance: 0.75, color: '#f59e0b', category: 'law'},
+            {name: 'Griechische Philologie', angle: 210, distance: 0.83, color: '#3b82f6', category: 'uzh'},
+            {name: 'Lateinische Philologie', angle: 215, distance: 0.81, color: '#3b82f6', category: 'uzh'},
+            {name: 'Archäologien', angle: 180, distance: 0.78, color: '#3b82f6', category: 'uzh'},
+            
+            {name: 'BWL', angle: 0, distance: 0, color: '#8b5cf6', category: 'biz'},
+            {name: 'VWL', angle: -30, distance: 0.42, color: '#8b5cf6', category: 'biz'},
+            {name: 'Banking & Finance', angle: 30, distance: 0.35, color: '#8b5cf6', category: 'biz'},
+            {name: 'Wirtschaftschemie', angle: -45, distance: 0.52, color: '#3b82f6', category: 'uzh'},
+        ];
+        
+        const studiesGroup = document.getElementById('studies');
+        const tooltip = document.getElementById('tooltip');
+        const compassSvg = document.getElementById('compass-svg');
+        
+        let currentZoom = 1;
+        const minZoom = 0.5;
+        const maxZoom = 3;
+        const zoomStep = 0.2;
+        
+        const activeFilters = {
+            eth: true,
+            uzh: true,
+            med: true,
+            law: true,
+            biz: true
+        };
+        
+        const studyDots = [];
+        
+        studyPrograms.forEach(program => {
+            const position = polarToCartesian(
+                centerX, 
+                centerY, 
+                outerRadius * program.distance, 
+                program.angle
+            );
+            
+            const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+            circle.setAttribute('cx', position.x);
+            circle.setAttribute('cy', position.y);
+            circle.setAttribute('r', '6');
+            circle.setAttribute('fill', program.color);
+            circle.setAttribute('class', 'study-dot');
+            circle.dataset.category = program.category;
+            
+            circle.addEventListener('mouseenter', (e) => {
+                const rect = e.target.getBoundingClientRect();
+                tooltip.textContent = program.name;
+                tooltip.style.opacity = '1';
+                tooltip.style.left = rect.left + rect.width / 2 + 'px';
+                tooltip.style.top = rect.top - 35 + 'px';
+                tooltip.style.transform = 'translateX(-50%)';
+            });
+            
+            circle.addEventListener('mouseleave', () => {
+                tooltip.style.opacity = '0';
+            });
+            
+            studiesGroup.appendChild(circle);
+            studyDots.push({element: circle, category: program.category});
+        });
+        
+        function toggleFilter(category) {
+            const checkbox = document.getElementById(`filter-${category}`);
+            checkbox.checked = !checkbox.checked;
+            activeFilters[category] = checkbox.checked;
+            updateVisibility();
+        }
+        
+        function updateVisibility() {
+            studyDots.forEach(dot => {
+                const isVisible = activeFilters[dot.category];
+                dot.element.style.opacity = isVisible ? '1' : '0';
+                dot.element.style.pointerEvents = isVisible ? 'auto' : 'none';
+            });
+        }
+        
+        function zoomIn() {
+            if (currentZoom < maxZoom) {
+                currentZoom = Math.min(currentZoom + zoomStep, maxZoom);
+                applyZoom();
+            }
+        }
+        
+        function zoomOut() {
+            if (currentZoom > minZoom) {
+                currentZoom = Math.max(currentZoom - zoomStep, minZoom);
+                applyZoom();
+            }
+        }
+        
+        function resetZoom() {
+            currentZoom = 1;
+            applyZoom();
+        }
+        
+        function applyZoom() {
+            compassSvg.style.transform = `scale(${currentZoom})`;
+            compassSvg.style.transition = 'transform 0.3s ease';
+            document.getElementById('zoom-level').textContent = Math.round(currentZoom * 100) + '%';
+        }
+        
+        compassSvg.addEventListener('wheel', (e) => {
+            e.preventDefault();
+            if (e.deltaY < 0) {
+                zoomIn();
+            } else {
+                zoomOut();
+            }
+        }, { passive: false });
+    </script>
+</body>
+</html>

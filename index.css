@@ -17,6 +17,43 @@ header {
     padding: 20px 0;
     text-align: center;
     margin-bottom: 20px;
+    position: relative;
+}
+
+header .container {
+    position: relative;
+}
+
+.compass-link {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px 16px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.compass-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-50%) scale(1.05);
+}
+
+.compass-icon {
+    font-size: 1.3rem;
+    line-height: 1;
+}
+
+.compass-text {
+    line-height: 1;
 }
 
 .container {
@@ -196,9 +233,20 @@ footer {
     h1 {
         font-size: 1.5rem;
     }
-    
+
     .featured-cards {
         flex-direction: column;
         align-items: center;
+    }
+
+    .compass-link {
+        position: static;
+        transform: none;
+        margin-top: 10px;
+        display: inline-flex;
+    }
+
+    .compass-link:hover {
+        transform: scale(1.05);
     }
 }
