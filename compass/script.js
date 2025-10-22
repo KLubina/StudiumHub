@@ -1,15 +1,12 @@
-const centerX = 500;
-const centerY = 500;
-const outerRadius = 380;
-const innerRadius = 120;
-
-const corners = [
-    {angle: -90, label: 'Technik &\nInnovation', icon: '⚙️', color: '#6366f1'},
-    {angle: -18, label: 'Natur &\nUmwelt', icon: '🌿', color: '#10b981'},
-    {angle: 54, label: 'Leben &\nGesundheit', icon: '🧬', color: '#ec4899'},
-    {angle: 126, label: 'Mensch &\nGesellschaft', icon: '🧠', color: '#f59e0b'},
-    {angle: 198, label: 'Recht &\nNormen', icon: '⚖️', color: '#8b5cf6'}
-];
+// read configuration from shared data file (compass/data.js)
+const {
+    centerX = 500,
+    centerY = 500,
+    outerRadius = 380,
+    innerRadius = 120,
+    corners = [],
+    studyPrograms = []
+} = (window.COMPASS || {});
 
 function polarToCartesian(centerX, centerY, radius, angleInDegrees) {
     const angleInRadians = (angleInDegrees) * Math.PI / 180.0;
@@ -90,76 +87,7 @@ corners.forEach(corner => {
     });
 });
 
-const studyPrograms = [
-    {name: 'Informatik', angle: -90, distance: 0.85, color: '#ef4444', category: 'eth'},
-    {name: 'Elektrotechnik', angle: -95, distance: 0.80, color: '#ef4444', category: 'eth'},
-    {name: 'Maschineningenieur', angle: -85, distance: 0.78, color: '#ef4444', category: 'eth'},
-    {name: 'Materialwissenschaft', angle: -75, distance: 0.75, color: '#ef4444', category: 'eth'},
-    {name: 'Mathematik', angle: -100, distance: 0.88, color: '#ef4444', category: 'eth'},
-    {name: 'Physik', angle: -105, distance: 0.85, color: '#ef4444', category: 'eth'},
-    {name: 'Rechnergest. Wiss.', angle: -80, distance: 0.82, color: '#ef4444', category: 'eth'},
-    {name: 'Softwaresysteme', angle: -70, distance: 0.65, color: '#3b82f6', category: 'uzh'},
-    {name: 'Wirtschaftsinformatik', angle: -55, distance: 0.45, color: '#8b5cf6', category: 'biz'},
-    
-    {name: 'Umweltingenieur', angle: -25, distance: 0.75, color: '#ef4444', category: 'eth'},
-    {name: 'Bauingenieur', angle: -40, distance: 0.72, color: '#ef4444', category: 'eth'},
-    {name: 'Raumbez. Ingenieur', angle: -15, distance: 0.68, color: '#ef4444', category: 'eth'},
-    {name: 'Architektur', angle: 100, distance: 0.60, color: '#ef4444', category: 'eth'},
-    {name: 'Agrarwissenschaften', angle: 0, distance: 0.78, color: '#ef4444', category: 'eth'},
-    {name: 'Umweltnaturwiss.', angle: -10, distance: 0.82, color: '#ef4444', category: 'eth'},
-    {name: 'Erd- u. Klimawiss.', angle: -5, distance: 0.85, color: '#ef4444', category: 'eth'},
-    {name: 'Erdsystemwiss.', angle: 5, distance: 0.83, color: '#3b82f6', category: 'uzh'},
-    {name: 'Geographie', angle: 15, distance: 0.72, color: '#3b82f6', category: 'uzh'},
-    {name: 'Biodiversität', angle: 25, distance: 0.80, color: '#3b82f6', category: 'uzh'},
-    
-    {name: 'Biologie', angle: 45, distance: 0.82, color: '#ef4444', category: 'eth'},
-    {name: 'Biochemie', angle: 55, distance: 0.78, color: '#ef4444', category: 'eth'},
-    {name: 'Chemie', angle: -60, distance: 0.75, color: '#ef4444', category: 'eth'},
-    {name: 'Chemieingenieur', angle: -50, distance: 0.70, color: '#ef4444', category: 'eth'},
-    {name: 'Pharmazie', angle: 65, distance: 0.72, color: '#ef4444', category: 'eth'},
-    {name: 'Biomedizin', angle: 60, distance: 0.75, color: '#3b82f6', category: 'uzh'},
-    {name: 'Lebensmittelwiss.', angle: 35, distance: 0.65, color: '#ef4444', category: 'eth'},
-    {name: 'Gesundheitswiss.', angle: 70, distance: 0.68, color: '#10b981', category: 'med'},
-    {name: 'Humanmedizin', angle: 58, distance: 0.85, color: '#10b981', category: 'med'},
-    {name: 'Zahnmedizin', angle: 52, distance: 0.80, color: '#10b981', category: 'med'},
-    {name: 'Veterinärmedizin', angle: 48, distance: 0.78, color: '#10b981', category: 'med'},
-    {name: 'Chiropraktik', angle: 62, distance: 0.76, color: '#10b981', category: 'med'},
-    
-    {name: 'Psychologie', angle: 115, distance: 0.70, color: '#3b82f6', category: 'uzh'},
-    {name: 'Erziehungswiss.', angle: 125, distance: 0.75, color: '#3b82f6', category: 'uzh'},
-    {name: 'Soziologie', angle: 135, distance: 0.80, color: '#3b82f6', category: 'uzh'},
-    {name: 'Politikwissenschaft', angle: 130, distance: 0.78, color: '#3b82f6', category: 'uzh'},
-    {name: 'Kommunikationswiss.', angle: 120, distance: 0.72, color: '#3b82f6', category: 'uzh'},
-    {name: 'Ethnologie', angle: 145, distance: 0.82, color: '#3b82f6', category: 'uzh'},
-    {name: 'Populäre Kulturen', angle: 140, distance: 0.75, color: '#3b82f6', category: 'uzh'},
-    {name: 'Geschichte', angle: 155, distance: 0.85, color: '#3b82f6', category: 'uzh'},
-    {name: 'Kunstgeschichte', angle: 150, distance: 0.80, color: '#3b82f6', category: 'uzh'},
-    {name: 'Filmwissenschaft', angle: 110, distance: 0.68, color: '#3b82f6', category: 'uzh'},
-    {name: 'Musikwissenschaft', angle: 148, distance: 0.77, color: '#3b82f6', category: 'uzh'},
-    {name: 'Deutsche Lit.', angle: 160, distance: 0.88, color: '#3b82f6', category: 'uzh'},
-    {name: 'Englische Lit.', angle: 165, distance: 0.86, color: '#3b82f6', category: 'uzh'},
-    {name: 'Französische Lit.', angle: 170, distance: 0.84, color: '#3b82f6', category: 'uzh'},
-    {name: 'Italienische Lit.', angle: 175, distance: 0.82, color: '#3b82f6', category: 'uzh'},
-    {name: 'Iberoromanische Lit.', angle: 158, distance: 0.83, color: '#3b82f6', category: 'uzh'},
-    {name: 'Slavische Lit.', angle: 152, distance: 0.81, color: '#3b82f6', category: 'uzh'},
-    {name: 'Sinologie', angle: 168, distance: 0.87, color: '#3b82f6', category: 'uzh'},
-    {name: 'Japanologie', angle: 172, distance: 0.85, color: '#3b82f6', category: 'uzh'},
-    {name: 'Indologie', angle: 163, distance: 0.84, color: '#3b82f6', category: 'uzh'},
-    {name: 'Computerlinguistik', angle: 105, distance: 0.62, color: '#3b82f6', category: 'uzh'},
-    
-    {name: 'Philosophie', angle: 195, distance: 0.82, color: '#3b82f6', category: 'uzh'},
-    {name: 'Theologie', angle: 205, distance: 0.85, color: '#3b82f6', category: 'uzh'},
-    {name: 'Religionswiss.', angle: 200, distance: 0.80, color: '#3b82f6', category: 'uzh'},
-    {name: 'Rechtswissenschaft', angle: 190, distance: 0.75, color: '#f59e0b', category: 'law'},
-    {name: 'Griechische Philologie', angle: 210, distance: 0.83, color: '#3b82f6', category: 'uzh'},
-    {name: 'Lateinische Philologie', angle: 215, distance: 0.81, color: '#3b82f6', category: 'uzh'},
-    {name: 'Archäologien', angle: 180, distance: 0.78, color: '#3b82f6', category: 'uzh'},
-    
-    {name: 'BWL', angle: 0, distance: 0, color: '#8b5cf6', category: 'biz'},
-    {name: 'VWL', angle: -30, distance: 0.42, color: '#8b5cf6', category: 'biz'},
-    {name: 'Banking & Finance', angle: 30, distance: 0.35, color: '#8b5cf6', category: 'biz'},
-    {name: 'Wirtschaftschemie', angle: -45, distance: 0.52, color: '#3b82f6', category: 'uzh'},
-];
+// studyPrograms array moved to compass/data.js and read via window.COMPASS
 
 const studiesGroup = document.getElementById('studies');
 const tooltip = document.getElementById('tooltip');
