@@ -14,7 +14,7 @@
       { angle: 198, label: "Recht", color: "#8b5cf6" },
     ],
     studyPrograms: [
-        //#region Ingenieurwesen
+        //#region Produktengineering
       {
         name: "Informatik",
         angle: -90,
@@ -146,6 +146,7 @@
       },
       //#endregion
 
+      //#region Biologie & Biochemie
       {
         name: "Biodiversität",
         angle: 25,
@@ -209,6 +210,7 @@
         color: "#10b981",
         category: "med",
       },
+        //#endregion
       //#region Medizin
       {
         name: "Humanmedizin",
@@ -460,6 +462,7 @@
         color: "#3b82f6",
         category: "uzh",
       },
+      //#endregion
     ],
   };
 })();
