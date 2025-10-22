@@ -14,6 +14,7 @@
       { angle: 198, label: "Recht", color: "#8b5cf6" },
     ],
     studyPrograms: [
+        //#region Ingenieurwesen
       {
         name: "Informatik",
         angle: -90,
@@ -77,6 +78,9 @@
         color: "#8b5cf6",
         category: "biz",
       },
+      //#endregion
+
+        //#region Bau
       {
         name: "Umweltingenieur",
         angle: -25,
@@ -140,6 +144,8 @@
         color: "#3b82f6",
         category: "uzh",
       },
+      //#endregion
+
       {
         name: "Biodiversität",
         angle: 25,
@@ -203,6 +209,7 @@
         color: "#10b981",
         category: "med",
       },
+      //#region Medizin
       {
         name: "Humanmedizin",
         angle: 54,
@@ -238,6 +245,7 @@
         color: "#3b82f6",
         category: "uzh",
       },
+      //#endregion
       {
         name: "Erziehungswiss.",
         angle: 125,
@@ -308,6 +316,7 @@
         color: "#3b82f6",
         category: "uzh",
       },
+      //#region Literaturwissenschaft
       {
         name: "Deutsche Lit.",
         angle: 160,
@@ -350,6 +359,7 @@
         color: "#3b82f6",
         category: "uzh",
       },
+      //#endregion
       {
         name: "Sinologie",
         angle: 168,
@@ -427,6 +437,7 @@
         color: "#3b82f6",
         category: "uzh",
       },
+      //#region Wirtschaft
       { name: "BWL", angle: 0, distance: 0, color: "#8b5cf6", category: "biz" },
       {
         name: "VWL",
