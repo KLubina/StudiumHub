@@ -9,7 +9,7 @@
     corners: [
       { angle: -90, label: "Technik", color: "#6366f1" },
       { angle: -18, label: "Natur &\nUmwelt", color: "#10b981" },
-      { angle: 54, label: "Leben", color: "#ec4899" },
+      { angle: 54, label: "Medizin", color: "#ec4899" },
       { angle: 126, label: "Gesellschaft", color: "#f59e0b" },
       { angle: 198, label: "Recht", color: "#8b5cf6" },
     ],
