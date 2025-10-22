@@ -66,12 +66,7 @@ corners.forEach(corner => {
     structureGroup.appendChild(line);
 });
 
-const centerCircle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
-centerCircle.setAttribute('cx', centerX);
-centerCircle.setAttribute('cy', centerY);
-centerCircle.setAttribute('r', innerRadius);
-centerCircle.setAttribute('class', 'inner-circle');
-structureGroup.appendChild(centerCircle);
+
 
 corners.forEach(corner => {
     const labelPoint = polarToCartesian(centerX, centerY, outerRadius + 50, corner.angle);
