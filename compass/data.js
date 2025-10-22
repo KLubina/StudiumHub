@@ -7,11 +7,11 @@
     outerRadius: 380,
     innerRadius: 120,
     corners: [
-      {angle: -90, label: 'Technik &\nInnovation', icon: '⚙️', color: '#6366f1'},
+      {angle: -90, label: 'Technik', icon: '⚙️', color: '#6366f1'},
       {angle: -18, label: 'Natur &\nUmwelt', icon: '🌿', color: '#10b981'},
-      {angle: 54, label: 'Leben &\nGesundheit', icon: '🧬', color: '#ec4899'},
-      {angle: 126, label: 'Mensch &\nGesellschaft', icon: '🧠', color: '#f59e0b'},
-      {angle: 198, label: 'Recht &\nNormen', icon: '⚖️', color: '#8b5cf6'}
+      {angle: 54, label: 'Leben', icon: '🧬', color: '#ec4899'},
+      {angle: 126, label: 'Gesellschaft', icon: '🧠', color: '#f59e0b'},
+      {angle: 198, label: 'Recht', icon: '⚖️', color: '#8b5cf6'}
     ],
     studyPrograms: [
       {name: 'Informatik', angle: -90, distance: 0.85, color: '#ef4444', category: 'eth'},
@@ -41,7 +41,7 @@
       {name: 'Biomedizin', angle: 60, distance: 0.75, color: '#3b82f6', category: 'uzh'},
       {name: 'Lebensmittelwiss.', angle: 35, distance: 0.65, color: '#ef4444', category: 'eth'},
       {name: 'Gesundheitswiss.', angle: 70, distance: 0.68, color: '#10b981', category: 'med'},
-      {name: 'Humanmedizin', angle: 58, distance: 0.85, color: '#10b981', category: 'med'},
+      {name: 'Humanmedizin', angle: 54, distance: 1, color: '#10b981', category: 'med'},
       {name: 'Zahnmedizin', angle: 52, distance: 0.80, color: '#10b981', category: 'med'},
       {name: 'Veterinärmedizin', angle: 48, distance: 0.78, color: '#10b981', category: 'med'},
       {name: 'Chiropraktik', angle: 62, distance: 0.76, color: '#10b981', category: 'med'},
@@ -69,7 +69,7 @@
       {name: 'Philosophie', angle: 195, distance: 0.82, color: '#3b82f6', category: 'uzh'},
       {name: 'Theologie', angle: 205, distance: 0.85, color: '#3b82f6', category: 'uzh'},
       {name: 'Religionswiss.', angle: 200, distance: 0.80, color: '#3b82f6', category: 'uzh'},
-      {name: 'Rechtswissenschaft', angle: 190, distance: 0.75, color: '#f59e0b', category: 'law'},
+      {name: 'Rechtswissenschaft', angle: 198, distance: 1, color: '#f59e0b', category: 'law'},
       {name: 'Griechische Philologie', angle: 210, distance: 0.83, color: '#3b82f6', category: 'uzh'},
       {name: 'Lateinische Philologie', angle: 215, distance: 0.81, color: '#3b82f6', category: 'uzh'},
       {name: 'Archäologien', angle: 180, distance: 0.78, color: '#3b82f6', category: 'uzh'},
