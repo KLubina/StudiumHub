@@ -3,7 +3,7 @@
 
 window.StudiengangBaseConfig = {
     // === 1. BASIC INFO ===
-    title: "BSc Informationstechnologie und Elektrotechnik",
+    title: "BSc Elektrotechnik und Informationstechnologie",
     legendTitle: "Farben-Legende",
     creditUnit: "KP",
 
