@@ -1,0 +1,78 @@
+/* ==== MATERIALWISSENSCHAFTEN CUSTOM CSS ==== */
+/* Custom Styles für BSc Materialwissenschaften ETH Zürich */
+
+/* Farbvariablen für Kategorien */
+[data-studiengang="matw"] {
+    /* Standard-Kategorien */
+    --color-obligatorisch: #d97706;       /* Amber/Orange für Pflichtfächer */
+    --color-praktikum: #059669;           /* Grün für Praktika */
+    --color-wissenschaft: #6b7280;        /* Grau für wissenschaftliche Arbeit */
+}
+
+/* Standard-Kategorien Styling */
+[data-studiengang="matw"] .modul.obligatorisch {
+    background-color: var(--color-obligatorisch);
+    border-color: var(--color-obligatorisch);
+    color: white;
+}
+
+[data-studiengang="matw"] .modul.praktikum {
+    background-color: var(--color-praktikum);
+    border-color: var(--color-praktikum);
+    color: white;
+}
+
+[data-studiengang="matw"] .modul.wissenschaft {
+    background-color: var(--color-wissenschaft);
+    border-color: var(--color-wissenschaft);
+    color: white;
+}
+
+/* Hover-Effekte */
+[data-studiengang="matw"] .modul:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    filter: brightness(1.1);
+}
+
+/* Lesbarkeit */
+[data-studiengang="matw"] .modul .modul-kp {
+    font-weight: 600;
+}
+
+[data-studiengang="matw"] .modul .modul-titel {
+    font-weight: 500;
+    color: inherit;
+}
+
+/* Farben-Legende */
+[data-studiengang="matw"] .farben-legende {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+[data-studiengang="matw"] .farben-legende .legende-titel {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+[data-studiengang="matw"] .farben-legende .item {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    font-size: 12px;
+}
+
+[data-studiengang="matw"] .farben-legende .sw {
+    width: 20px;
+    height: 14px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}

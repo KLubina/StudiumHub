@@ -108,6 +108,16 @@
           title: "BSc Maschineningenieurwissenschaften",
           subtitle: "ETH Zürich",
         },
+        {
+          key: "matw",
+          title: "BSc Materialwissenschaften",
+          subtitle: "ETH Zürich",
+        },
+        {
+          key: "physik",
+          title: "BSc Physik",
+          subtitle: "ETH Zürich",
+        },
       ];
     }
   }

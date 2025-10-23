@@ -179,6 +179,26 @@ h1 {
 .msc-itet .card-header {
     background-color: #00a0e3;
 }
+
+/* Lebensmittelwissenschaften */
+.lmw .card-header {
+    background-color: #16a34a;
+}
+
+/* Maschinenbau */
+.masch .card-header {
+    background-color: #0D5B8C;
+}
+
+/* Materialwissenschaften */
+.matw .card-header {
+    background-color: #d97706;
+}
+
+/* Physik */
+.physik .card-header {
+    background-color: #7c2d12;
+}
 /* #endregion ==== STUDIENGANG-SPEZIFISCHE FARBEN ==== */
 
 .card-title {
