@@ -210,6 +210,13 @@
         color: "#10b981",
         category: "med",
       },
+      {
+        name: "Sport, Bew. & Gesundheit",
+        angle: 80,
+        distance: 0.65,
+        color: "#3b82f6",
+        category: "uzh",
+      },
         //#endregion
       //#region Medizin
       {

@@ -199,6 +199,11 @@ h1 {
 .physik .card-header {
     background-color: #7c2d12;
 }
+
+/* Sport, Bewegung und Gesundheit */
+.sbg .card-header {
+    background-color: #0891b2;
+}
 /* #endregion ==== STUDIENGANG-SPEZIFISCHE FARBEN ==== */
 
 .card-title {

@@ -118,6 +118,11 @@
           title: "BSc Physik",
           subtitle: "ETH Zürich",
         },
+        {
+          key: "sbg",
+          title: "BSc Sport, Bewegung und Gesundheit",
+          subtitle: "Universität Basel",
+        },
       ];
     }
   }
