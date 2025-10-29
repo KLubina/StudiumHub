@@ -12,6 +12,7 @@
          * - subtitle: smaller line under title (e.g., "ETH Zürich")
          * - featured: boolean to place card in the featured row
          */
+        // Featured
         {
           key: "itet",
           title: "BSc ITET",
@@ -30,98 +31,110 @@
           subtitle: "ETH Zürich",
           featured: true,
         },
-        {
-          key: "math",
-          title: "BSc Mathematik",
-          subtitle: "ETH Zürich",
-        },
-        {
-          key: "cse",
-          title: "BSc CSE",
-          subtitle: "ETH Zürich",
-        },
-        {
-          key: "bwl",
-          title: "BA BWL",
-          subtitle: "HSG",
-        },
-        {
-          key: "cs",
-          title: "BSc Informatik",
-          subtitle: "ETH Zürich",
-        },
-        {
-          key: "zhaw-cs",
-          title: "BSc Computer Science",
-          subtitle: "ZHAW",
-        },
-        {
-          key: "cds",
-          title: "BSc Computational and Data Science",
-          subtitle: "Fachhochschule Graubünden",
-        },
-        {
-          key: "it",
-          title: "BSc IT",
-          subtitle: "Hochschulinstitut Schaffhausen",
-        },
-        {
-          key: "ce",
-          title: "BSc Computer Engineering",
-          subtitle: "Aspira College Split",
-        },
-        {
-          key: "rig",
-          title: "BSc Raumbezogene Ingenieurwissenschaften",
-          subtitle: "ETH Zürich",
-        },
-        {
-          key: "bfh-eit",
-          title: "BSc Elektrotechnik und Informationstechnologie",
-          subtitle: "Berner Fachhochschule",
-        },
-        {
-          key: "hslu-eit",
-          title: "BSc Elektrotechnik und Informationstechnologie",
-          subtitle: "Hochschule Luzern",
-        },
+        // Unis
         {
           key: "hst",
           title: "BSc Gesundheitswissenschaften und Technologie",
           subtitle: "ETH Zürich",
-          featured: true,
+          category: "Unis",
         },
         {
           key: "lmw",
           title: "BSc Lebensmittelwissenschaften und Ernährung",
           subtitle: "ETH Zürich",
-          featured: true,
+          category: "Unis",
         },
         {
-          key: "sozwi",
-          title: "BA Sozialwissenschaften",
-          subtitle: "Universität Zürich",
-          featured: true,
+          key: "math",
+          title: "BSc Mathematik",
+          subtitle: "ETH Zürich",
+          category: "Unis",
+        },
+        {
+          key: "cse",
+          title: "BSc CSE",
+          subtitle: "ETH Zürich",
+          category: "Unis",
+        },
+        {
+          key: "cs",
+          title: "BSc Informatik",
+          subtitle: "ETH Zürich",
+          category: "Unis",
+        },
+        {
+          key: "rig",
+          title: "BSc Raumbezogene Ingenieurwissenschaften",
+          subtitle: "ETH Zürich",
+          category: "Unis",
         },
         {
           key: "masch",
           title: "BSc Maschineningenieurwissenschaften",
           subtitle: "ETH Zürich",
+          category: "Unis",
         },
         {
           key: "matw",
           title: "BSc Materialwissenschaften",
           subtitle: "ETH Zürich",
+          category: "Unis",
         },
         {
           key: "physik",
           title: "BSc Physik",
           subtitle: "ETH Zürich",
+          category: "Unis",
+        },
+        {
+          key: "sozwi",
+          title: "BA Sozialwissenschaften",
+          subtitle: "Universität Zürich",
+          category: "Unis",
         },
         {
           key: "sbg",
           title: "BSc Sport, Bewegung und Gesundheit",
           subtitle: "Universität Basel",
+          category: "Unis",
+        },
+        // FH Unis
+        {
+          key: "zhaw-cs",
+          title: "BSc Computer Science",
+          subtitle: "ZHAW",
+          category: "FH Unis",
+        },
+        {
+          key: "cds",
+          title: "BSc Computational and Data Science",
+          subtitle: "Fachhochschule Graubünden",
+          category: "FH Unis",
+        },
+        {
+          key: "bfh-eit",
+          title: "BSc Elektrotechnik und Informationstechnologie",
+          subtitle: "Berner Fachhochschule",
+          category: "FH Unis",
+        },
+        {
+          key: "hslu-eit",
+          title: "BSc Elektrotechnik und Informationstechnologie",
+          subtitle: "Hochschule Luzern",
+          category: "FH Unis",
+        },
+        // Private Unis
+        {
+          key: "it",
+          title: "BSc IT",
+          subtitle: "Hochschulinstitut Schaffhausen",
+          category: "Private Unis",
+        },
+        {
+          key: "ce",
+          title: "BSc Computer Engineering",
+          subtitle: "Aspira College Split",
+          category: "Private Unis",
         },
       ];
     }

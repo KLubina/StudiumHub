@@ -28,10 +28,27 @@
     if (!featuredContainer || !cardsContainer) return;
 
     const featured = programs.filter(p => p.featured);
-    const others = programs.filter(p => !p.featured);
+    const categorized = programs.filter(p => p.category);
 
+    // Render featured
     featured.forEach(p => featuredContainer.appendChild(createCard(p)));
-    others.forEach(p => cardsContainer.appendChild(createCard(p)));
+
+    // Render by category
+    const categories = ['Unis', 'FH Unis', 'Private Unis'];
+    categories.forEach(category => {
+      const categoryPrograms = categorized.filter(p => p.category === category);
+      if (categoryPrograms.length > 0) {
+        const categoryHeading = document.createElement('h2');
+        categoryHeading.className = 'category-heading';
+        categoryHeading.textContent = category;
+        cardsContainer.appendChild(categoryHeading);
+
+        const categoryGrid = document.createElement('div');
+        categoryGrid.className = 'category-grid';
+        categoryPrograms.forEach(p => categoryGrid.appendChild(createCard(p)));
+        cardsContainer.appendChild(categoryGrid);
+      }
+    });
   }
 
   document.addEventListener('DOMContentLoaded', render);
