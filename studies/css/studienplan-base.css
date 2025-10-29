@@ -80,38 +80,6 @@ body {
     line-height: 1;
 }
 
-/* ==== PRAKTIKUM TOGGLE BUTTON ==== */
-.praktikum-toggle-container {
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    z-index: 1000;
-}
-
-.praktikum-toggle-button {
-    display: inline-block;
-    background-color: #10b981;
-    color: white;
-    border: none;
-    padding: 8px 15px;
-    border-radius: 20px;
-    font-size: 14px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.praktikum-toggle-button:hover {
-    background-color: #059669;
-    transform: translateY(-1px);
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
-}
-
-.praktikum-toggle-button:active {
-    transform: translateY(0px);
-}
-
 h1 {
     text-align: center;
     margin-bottom: 10px;
@@ -398,19 +366,6 @@ h2 {
     }
 
     .compass-button {
-        font-size: 16px;
-        padding: 10px 20px;
-    }
-
-    .praktikum-toggle-container {
-        position: relative;
-        top: 0;
-        right: 0;
-        margin-bottom: 15px;
-        text-align: center;
-    }
-
-    .praktikum-toggle-button {
         font-size: 16px;
         padding: 10px 20px;
     }
