@@ -31,6 +31,13 @@
         </a>
     </div>
 
+    <!-- Praktikum Toggle Button -->
+    <div class="praktikum-toggle-container">
+        <button id="praktikum-toggle" class="praktikum-toggle-button">
+            Praktika ausblenden
+        </button>
+    </div>
+
     <h1 id="studienplan-title">Studienplan</h1>
     <h2 id="studienplan-subtitle">mind. 180 KP insgesamt</h2>
 
@@ -108,6 +115,23 @@
             await loadExtensionModules(studiengang);
 
             window.loadStudiengangConfig(studiengang);
+
+            // Praktikum Toggle Functionality
+            const toggleButton = document.getElementById('praktikum-toggle');
+            let praktikumVisible = true;
+
+            if (toggleButton) {
+                toggleButton.addEventListener('click', function() {
+                    praktikumVisible = !praktikumVisible;
+
+                    const praktikumModules = document.querySelectorAll('.obligatorisch-praktikum');
+                    praktikumModules.forEach(modul => {
+                        modul.style.display = praktikumVisible ? '' : 'none';
+                    });
+
+                    toggleButton.textContent = praktikumVisible ? 'Praktika ausblenden' : 'Praktika einblenden';
+                });
+            }
         });
     </script>
 </body>
