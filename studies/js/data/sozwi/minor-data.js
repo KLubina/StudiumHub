@@ -114,5 +114,91 @@ window.SozwiMinorData = {
         "Vergleichende Sprachwissenschaft": [
             { name: "Vergleichende Sprachwissenschaft Minor", kp: 60, kategorie: "Minor" }
         ],
+
+        /* ---- Hinzugefügte Minors (weitere Fakultäten) ---- */
+        "Angewandte Mathematik und Machine Learning": [
+            { name: "Angewandte Mathematik und Machine Learning Minor", kp: 60, kategorie: "Minor" }
+        ],
+        "Antike Religionsgeschichte": [
+            { name: "Antike Religionsgeschichte Minor", kp: 60, kategorie: "Minor" }
+        ],
+        "Applied Probability and Statistics": [
+            { name: "Applied Probability and Statistics Minor", kp: 60, kategorie: "Minor" }
+        ],
+        "Astronomie und Astrobiologie": [
+            { name: "Astronomie und Astrobiologie Minor", kp: 60, kategorie: "Minor" }
+        ],
+        "Banking and Finance": [
+            { name: "Banking and Finance Minor", kp: 60, kategorie: "Minor" }
+        ],
+        "Betriebswirtschaftslehre": [
+            { name: "Betriebswirtschaftslehre Minor", kp: 60, kategorie: "Minor" }
+        ],
+        "Bibelwissenschaft": [
+            { name: "Bibelwissenschaft Minor", kp: 60, kategorie: "Minor" }
+        ],
+        "Biochemie": [
+            { name: "Biochemie Minor", kp: 60, kategorie: "Minor" }
+        ],
+        "Biodiversität": [
+            { name: "Biodiversität Minor", kp: 60, kategorie: "Minor" }
+        ],
+        "Biologie": [
+            { name: "Biologie Minor", kp: 60, kategorie: "Minor" },
+            { name: "Biologie Minor", kp: 30, kategorie: "Minor" }
+        ],
+        "Biomedizin": [
+            { name: "Biomedizin Minor", kp: 60, kategorie: "Minor" }
+        ],
+        "Chemie": [
+            { name: "Chemie Minor", kp: 60, kategorie: "Minor" }
+        ],
+        "Christentumsgeschichte": [
+            { name: "Christentumsgeschichte Minor", kp: 60, kategorie: "Minor" }
+        ],
+        "Computational Science": [
+            { name: "Computational Science Minor", kp: 60, kategorie: "Minor" }
+        ],
+        "Erdsystemwissenschaften": [
+            { name: "Erdsystemwissenschaften Minor", kp: 60, kategorie: "Minor" }
+        ],
+        "Geographie": [
+            { name: "Geographie Minor", kp: 60, kategorie: "Minor" }
+        ],
+        "Hebräische Sprache und Literatur": [
+            { name: "Hebräische Sprache und Literatur Minor", kp: 60, kategorie: "Minor" }
+        ],
+        "Hermeneutik": [
+            { name: "Hermeneutik Minor", kp: 60, kategorie: "Minor" }
+        ],
+        "Informatik": [
+            { name: "Informatik Minor", kp: 60, kategorie: "Minor" }
+        ],
+        "Mathematik": [
+            { name: "Mathematik Minor", kp: 60, kategorie: "Minor" }
+        ],
+        "Mensch und Computer": [
+            { name: "Mensch und Computer Minor", kp: 60, kategorie: "Minor" }
+        ],
+        "Physik": [
+            { name: "Physik Minor", kp: 60, kategorie: "Minor" }
+        ],
+        "Rechtswissenschaft": [
+            { name: "Rechtswissenschaft Minor", kp: 60, kategorie: "Minor" },
+            { name: "Rechtswissenschaft Minor", kp: 30, kategorie: "Minor" }
+        ],
+        "Religionswissenschaft": [
+            { name: "Religionswissenschaft Minor", kp: 60, kategorie: "Minor" }
+        ],
+        "Systematisch-Praktische Theologie": [
+            { name: "Systematisch-Praktische Theologie Minor", kp: 60, kategorie: "Minor" }
+        ],
+        "Umweltwissenschaften": [
+            { name: "Umweltwissenschaften Minor", kp: 60, kategorie: "Minor" },
+            { name: "Umweltwissenschaften Minor", kp: 30, kategorie: "Minor" }
+        ],
+        "Volkswirtschaftslehre": [
+            { name: "Volkswirtschaftslehre Minor", kp: 60, kategorie: "Minor" }
+        ]
     },
 };
