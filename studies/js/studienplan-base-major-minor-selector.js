@@ -78,13 +78,20 @@ StudienplanBase.prototype.createMajorMinorSelector = function() {
     );
     selectionContainer.appendChild(majorGroup);
 
-    // Minor Auswahl
-    const minorGroup = this.createSelectorGroup(
-        'Minor (60 ECTS)',
-        'minor-select',
-        Object.keys(this.minorData.minorBereiche),
-        'Wähle deinen Minor...'
-    );
+    // Minor Auswahl (mit Gruppen wenn vorhanden)
+    const minorGroup = this.minorData.minorGruppen
+        ? this.createGroupedSelectorGroup(
+            'Minor',
+            'minor-select',
+            this.minorData.minorGruppen,
+            'Wähle deinen Minor...'
+          )
+        : this.createSelectorGroup(
+            'Minor (60 ECTS)',
+            'minor-select',
+            Object.keys(this.minorData.minorBereiche),
+            'Wähle deinen Minor...'
+          );
     selectionContainer.appendChild(minorGroup);
 
     container.appendChild(selectionContainer);
@@ -123,6 +130,47 @@ StudienplanBase.prototype.createSelectorGroup = function(label, selectId, option
         optionEl.value = option;
         optionEl.textContent = option;
         select.appendChild(optionEl);
+    });
+
+    group.appendChild(select);
+
+    return group;
+};
+
+StudienplanBase.prototype.createGroupedSelectorGroup = function(label, selectId, groups, placeholder) {
+    const group = document.createElement('div');
+    group.className = 'selector-group';
+
+    const labelEl = document.createElement('label');
+    labelEl.textContent = label;
+    labelEl.setAttribute('for', selectId);
+    group.appendChild(labelEl);
+
+    const select = document.createElement('select');
+    select.id = selectId;
+    select.className = 'study-select';
+
+    // Placeholder Option
+    const placeholderOption = document.createElement('option');
+    placeholderOption.value = '';
+    placeholderOption.textContent = placeholder;
+    placeholderOption.disabled = true;
+    placeholderOption.selected = true;
+    select.appendChild(placeholderOption);
+
+    // Gruppierte Optionen mit <optgroup>
+    Object.keys(groups).forEach(groupName => {
+        const optgroup = document.createElement('optgroup');
+        optgroup.label = groupName;
+
+        groups[groupName].forEach(option => {
+            const optionEl = document.createElement('option');
+            optionEl.value = option;
+            optionEl.textContent = option;
+            optgroup.appendChild(optionEl);
+        });
+
+        select.appendChild(optgroup);
     });
 
     group.appendChild(select);

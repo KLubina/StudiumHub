@@ -1,7 +1,85 @@
 /* ==== SOZIALWISSENSCHAFTEN MINOR DATA ==== */
-// Enthält strukturierte Listen für Minor-Optionen (60 ECTS)
+// Enthält strukturierte Listen für Minor-Optionen gruppiert nach Fakultät und ECTS
 
 window.SozwiMinorData = {
+    // Gruppierte Struktur für Dropdown
+    minorGruppen: {
+        "Minor 60 ECTS - Philosophische Fakultät": [
+            "Allgemeine und Vergleichende Literaturwissenschaft",
+            "Altertumswissenschaften",
+            "Archäologien",
+            "Computerlinguistik und Sprachtechnologie",
+            "Deutsche Sprach- und Literaturwissenschaft",
+            "Englische Sprach- und Literaturwissenschaft",
+            "Erziehungswissenschaft",
+            "Ethnologie",
+            "Filmwissenschaft",
+            "Französische Sprach- und Literaturwissenschaft",
+            "Geschichte",
+            "Geschichte der Neuzeit",
+            "Griechische Philologie",
+            "Iberoromanische Sprach- und Literaturwissenschaft",
+            "Indologie",
+            "Interdisziplinäre Archäologische Wissenschaften",
+            "Islamwissenschaft",
+            "Italienische Sprach- und Literaturwissenschaft",
+            "Japanologie (2019)",
+            "Japanologie (2024)",
+            "Kommunikationswissenschaft und Medienforschung",
+            "Kunstgeschichte",
+            "Kunstgeschichte Ostasiens",
+            "Lateinische Philologie",
+            "Musikwissenschaft",
+            "Nah- und Mitteloststudien",
+            "Philosophie",
+            "Politikwissenschaft",
+            "Populäre Kulturen",
+            "Rätoromanische Sprach- und Literaturwissenschaft",
+            "Sinologie",
+            "Skandinavistik",
+            "Slavische Sprach- und Literaturwissenschaft",
+            "Soziologie",
+            "Vergleichende Germanische Sprachwissenschaft",
+            "Vergleichende Romanische Sprachwissenschaft",
+            "Vergleichende Sprachwissenschaft"
+        ],
+        "Minor 60 ECTS - weitere Fakultäten": [
+            "Angewandte Mathematik und Machine Learning",
+            "Antike Religionsgeschichte",
+            "Applied Probability and Statistics",
+            "Astronomie und Astrobiologie",
+            "Banking and Finance",
+            "Betriebswirtschaftslehre",
+            "Bibelwissenschaft",
+            "Biochemie",
+            "Biodiversität",
+            "Biologie",
+            "Biomedizin",
+            "Chemie",
+            "Christentumsgeschichte",
+            "Computational Science",
+            "Erdsystemwissenschaften",
+            "Geographie",
+            "Hebräische Sprache und Literatur",
+            "Hermeneutik",
+            "Informatik",
+            "Mathematik",
+            "Mensch und Computer",
+            "Physik",
+            "Rechtswissenschaft",
+            "Religionswissenschaft",
+            "Systematisch-Praktische Theologie",
+            "Umweltwissenschaften",
+            "Volkswirtschaftslehre"
+        ],
+        "Minor 30 ECTS - weitere Fakultäten": [
+            "Biologie (30 ECTS)",
+            "Rechtswissenschaft (30 ECTS)",
+            "Umweltwissenschaften (30 ECTS)"
+        ]
+    },
+
+    // Detaillierte Modul-Daten
     minorBereiche: {
         "Allgemeine und Vergleichende Literaturwissenschaft": [
             { name: "Allgemeine und Vergleichende Literaturwissenschaft Minor", kp: 60, kategorie: "Minor" }
@@ -115,7 +193,7 @@ window.SozwiMinorData = {
             { name: "Vergleichende Sprachwissenschaft Minor", kp: 60, kategorie: "Minor" }
         ],
 
-        /* ---- Hinzugefügte Minors (weitere Fakultäten) ---- */
+        /* ---- Weitere Fakultäten (60 ECTS) ---- */
         "Angewandte Mathematik und Machine Learning": [
             { name: "Angewandte Mathematik und Machine Learning Minor", kp: 60, kategorie: "Minor" }
         ],
@@ -144,7 +222,9 @@ window.SozwiMinorData = {
             { name: "Biodiversität Minor", kp: 60, kategorie: "Minor" }
         ],
         "Biologie": [
-            { name: "Biologie Minor", kp: 60, kategorie: "Minor" },
+            { name: "Biologie Minor", kp: 60, kategorie: "Minor" }
+        ],
+        "Biologie (30 ECTS)": [
             { name: "Biologie Minor", kp: 30, kategorie: "Minor" }
         ],
         "Biomedizin": [
@@ -184,7 +264,9 @@ window.SozwiMinorData = {
             { name: "Physik Minor", kp: 60, kategorie: "Minor" }
         ],
         "Rechtswissenschaft": [
-            { name: "Rechtswissenschaft Minor", kp: 60, kategorie: "Minor" },
+            { name: "Rechtswissenschaft Minor", kp: 60, kategorie: "Minor" }
+        ],
+        "Rechtswissenschaft (30 ECTS)": [
             { name: "Rechtswissenschaft Minor", kp: 30, kategorie: "Minor" }
         ],
         "Religionswissenschaft": [
@@ -194,7 +276,9 @@ window.SozwiMinorData = {
             { name: "Systematisch-Praktische Theologie Minor", kp: 60, kategorie: "Minor" }
         ],
         "Umweltwissenschaften": [
-            { name: "Umweltwissenschaften Minor", kp: 60, kategorie: "Minor" },
+            { name: "Umweltwissenschaften Minor", kp: 60, kategorie: "Minor" }
+        ],
+        "Umweltwissenschaften (30 ECTS)": [
             { name: "Umweltwissenschaften Minor", kp: 30, kategorie: "Minor" }
         ],
         "Volkswirtschaftslehre": [
