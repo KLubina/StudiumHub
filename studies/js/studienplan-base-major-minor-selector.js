@@ -56,6 +56,8 @@ StudienplanBase.prototype.createMajorMinorSelector = function() {
         return;
     }
 
+    // Container sichtbar machen für major-minor Studiengänge
+    container.style.display = 'block';
     container.innerHTML = '';
 
     // Titel

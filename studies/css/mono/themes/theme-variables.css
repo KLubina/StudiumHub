@@ -1,0 +1,116 @@
+/* ==== THEME VARIABLES CSS ==== */
+/* Studiengang-spezifische Farben */
+
+/* ==== BWL ==== */
+[data-studiengang="bwl"] {
+    --color-kernfach: #0066b2;
+    --color-methoden: #c4153a;
+    --color-grundlagen: #5ca800;
+    --color-kontext: #5a1b6d;
+    --color-bachelor: #001f4d;
+}
+
+/* ==== CS ==== */
+[data-studiengang="cs"] {
+    --color-math: #0066b3;
+    --color-cs-pure: #7cc623;
+    --color-cs-cse: #4aa147;
+    --color-cs-cse-wahl: #9ed897;
+    --color-wissenschaft: #888888;
+    --color-spezialisierung: #002654;
+}
+
+/* ==== CSE ==== */
+[data-studiengang="cse"] {
+    --color-basis1: #8064A2;
+    --color-basis2: #1F77B4;
+    --color-block-g1: #8DC63F;
+    --color-block-g2: #E671B8;
+    --color-block-g3: #4CAF50;
+    --color-block-g4: #D32F2F;
+    --color-physik: #2196F3;
+    --color-informatik: #2600ff;
+    --color-mathematik: #00a99d;
+    --color-chemie: #9C27B0;
+    --color-kern: #9BBB59;
+    --color-wahl: #F2B48F;
+    --color-vertiefung: #DD98DD;
+}
+
+/* ==== ITET ==== */
+[data-studiengang="itet"] {
+    --color-obligatorisch: #0D5B8C;
+    --color-obligatorisch-praktikum: #00A0E3;
+    --color-wahl-praktika-projekte: #4CA64C;
+    --color-kern: #DD98DD;
+    --color-wahl: #F2B48F;
+    --color-wissenschaft: #888888;
+    --color-weitere-wahl-grundlagen: #FFD700;
+}
+
+/* ==== MATH ==== */
+[data-studiengang="math"] {
+    --color-obligatorisch: #0D5B8C;
+    --color-ergaenzung: #00A0E3;
+    --color-wahl: #F2B48F;
+    --color-kern: #4CA64C;
+    --color-wahlpflicht: #DD98DD;
+    --color-wissenschaft: #888888;
+}
+
+/* ==== MTEC ==== */
+[data-studiengang="mtec"] {
+    --color-core: #0D5B8C;
+    --color-elective: #00A0E3;
+    --color-supplementary: #F2B48F;
+    --color-thesis: #4CA64C;
+    --color-internship: #DD98DD;
+}
+
+/* ==== IT ==== */
+[data-studiengang="it"] {
+    --color-grundlagen: #2E86AB;
+    --color-programmierung: #A23B72;
+    --color-kommunikation: #F18F01;
+    --color-transfer: #C73E1D;
+    --color-spezialisierung: #592E83;
+    --color-wahlpflicht: #05A8AA;
+    --color-abschluss: #1B1F3A;
+}
+
+/* ==== CE ==== */
+[data-studiengang="ce"] {
+    --color-foundations: #1F4E79;
+    --color-programming: #D83B01;
+    --color-systems: #038387;
+    --color-webmobile: #8764B8;
+    --color-security: #CA5010;
+    --color-professional: #486860;
+    --color-project: #0F3A4B;
+}
+
+/* ==== CDS ==== */
+[data-studiengang="cds"] {
+    --color-grundlagen: #5B9BD5;
+    --color-schwerpunkte: #D4A574;
+    --color-wahlmodul: #F2E394;
+    --color-labor: #F4A6CD;
+    --color-projektarbeit: #D85C5C;
+}
+
+/* ==== ZHAW-CS ==== */
+[data-studiengang="zhaw-cs"] {
+    --color-kontext: #82B366;
+    --color-projekt: #D18B47;
+    --color-fach: #E1C34F;
+    --color-mathe-nawi: #5B9BD5;
+}
+
+/* ==== RIG ==== */
+[data-studiengang="rig"] {
+    --color-grundlagen: #87CEEB;
+    --color-obligatorisch: #DC143C;
+    --color-wahlmodule: #FF6B6B;
+    --color-freie-wahl: #90EE90;
+    --color-selbstaendig: #696969;
+}

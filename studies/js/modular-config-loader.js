@@ -3,11 +3,19 @@ class StudiengangConfigLoader {
         this.studiengang = studiengang;
         this.config = {};
         this.loadedModules = new Set();
+        // Bestimme ob major-minor oder mono Modell
+        this.studyModel = this.getStudyModel(studiengang);
+    }
+
+    getStudyModel(studiengang) {
+        // Studiengänge mit major-minor System
+        const majorMinorPrograms = ['sozwi'];
+        return majorMinorPrograms.includes(studiengang) ? 'major-minor' : 'mono';
     }
 
     async loadConfig() {
-        const configPath = `js/configs/${this.studiengang}`;
-        const dataPath = `js/data/${this.studiengang}`;
+        const configPath = `js/${this.studyModel}/configs/${this.studiengang}`;
+        const dataPath = `js/${this.studyModel}/data/${this.studiengang}`;
         
         await this.loadModule(`${configPath}/base-config.js`);
         
@@ -225,7 +233,7 @@ class StudiengangConfigLoader {
     async loadFallbackConfig() {
         return new Promise((resolve, reject) => {
             const script = document.createElement('script');
-            script.src = `js/configs/${this.studiengang}-config.js`;
+            script.src = `js/${this.studyModel}/configs/${this.studiengang}-config.js`;
             script.onload = () => {
                 resolve(window.StudiengangConfig);
             };

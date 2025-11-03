@@ -7,12 +7,12 @@
 
     <!-- Base CSS (Layout-Grundgerüst) -->
     <link rel="stylesheet" href="css/studienplan-base.css">
-    
-    <!-- NEU: Theme CSS (Gemeinsame Styles) -->
-    <link rel="stylesheet" href="css/themes/theme-core.css">
-    <link rel="stylesheet" href="css/themes/theme-variables.css">
-    <link rel="stylesheet" href="css/themes/theme-colors.css">
-    
+
+    <!-- NEU: Theme CSS (Gemeinsame Styles) - wird dynamisch geladen -->
+    <link rel="stylesheet" id="theme-core-css" href="">
+    <link rel="stylesheet" id="theme-variables-css" href="">
+    <link rel="stylesheet" id="theme-colors-css" href="">
+
     <!-- Custom CSS (Studiengang-spezifische Features) -->
     <link rel="stylesheet" id="custom-css" href="">
 </head>
@@ -40,7 +40,7 @@
         </div>
 
         <!-- Major/Minor Selector (nur für major-minor Studiengänge) -->
-        <div id="major-minor-selector" class="major-minor-selector">
+        <div id="major-minor-selector" class="major-minor-selector" style="display: none;">
             <!-- JavaScript wird hier den Selector einfügen -->
         </div>
 
@@ -68,10 +68,23 @@
         // NEU: Data-Attribut setzen für CSS-Variablen
         document.body.setAttribute('data-studiengang', studiengang);
 
+        // Bestimme ob major-minor oder mono Modell
+        const majorMinorPrograms = ['sozwi'];
+        const studyModel = majorMinorPrograms.includes(studiengang) ? 'major-minor' : 'mono';
+
+        // Theme CSS laden
+        const themeCoreCSS = document.getElementById('theme-core-css');
+        const themeVariablesCSS = document.getElementById('theme-variables-css');
+        const themeColorsCSS = document.getElementById('theme-colors-css');
+
+        themeCoreCSS.href = `css/${studyModel}/themes/theme-core.css`;
+        themeVariablesCSS.href = `css/${studyModel}/themes/theme-variables.css`;
+        themeColorsCSS.href = `css/${studyModel}/themes/theme-colors.css`;
+
         // Custom CSS laden
         const customCSS = document.getElementById('custom-css');
-        customCSS.href = `css/custom/${studiengang}-custom.css`;
-        
+        customCSS.href = `css/${studyModel}/custom/${studiengang}-custom.css`;
+
         // Error handling falls Datei nicht existiert
         customCSS.onerror = () => {
         };
@@ -88,11 +101,14 @@
             const hasExtensions = ['itet', 'cse', 'rig'].includes(studiengang);
 
             if (hasExtensions) {
+                // Bestimme ob major-minor oder mono Modell
+                const majorMinorPrograms = ['sozwi'];
+                const studyModel = majorMinorPrograms.includes(studiengang) ? 'major-minor' : 'mono';
 
                 for (const module of extensionModules) {
                     const script = document.createElement('script');
-                    script.src = `js/configs/${studiengang}/${module}.js`;
-                    
+                    script.src = `js/${studyModel}/configs/${studiengang}/${module}.js`;
+
                     await new Promise((resolve) => {
                         script.onload = () => {
                             resolve();
