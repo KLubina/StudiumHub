@@ -23,7 +23,6 @@ window.SozwiMinorData = {
             "Interdisziplinäre Archäologische Wissenschaften",
             "Islamwissenschaft",
             "Italienische Sprach- und Literaturwissenschaft",
-            "Japanologie (2019)",
             "Japanologie (2024)",
             "Kommunikationswissenschaft und Medienforschung",
             "Kunstgeschichte",
@@ -134,9 +133,6 @@ window.SozwiMinorData = {
         ],
         "Italienische Sprach- und Literaturwissenschaft": [
             { name: "Italienische Sprach- und Literaturwissenschaft Minor", kp: 60, kategorie: "Minor" }
-        ],
-        "Japanologie (2019)": [
-            { name: "Japanologie (2019) Minor", kp: 60, kategorie: "Minor" }
         ],
         "Japanologie (2024)": [
             { name: "Japanologie (2024) Minor", kp: 60, kategorie: "Minor" }
