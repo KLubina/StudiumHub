@@ -6,11 +6,12 @@
         /**
          * Contract:
          * - programs: array of objects
-         *   { key, title, subtitle, degree, school, featured }
+         *   { key, title, subtitle, degree, school, featured, studyModel }
          * - key: used for CSS class and query param studiengang
          * - title: headline text (e.g., "BSc ITET")
          * - subtitle: smaller line under title (e.g., "ETH Zürich")
          * - featured: boolean to place card in the featured row
+         * - studyModel: "mono" (default) or "major-minor" to indicate program type
          */
         // Featured
         {
@@ -91,6 +92,7 @@
           title: "BA Sozialwissenschaften",
           subtitle: "Universität Zürich",
           category: "Unis",
+          studyModel: "major-minor",
         },
         {
           key: "sbg",

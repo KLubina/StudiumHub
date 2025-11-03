@@ -4,13 +4,17 @@
     ? window.StudiesData.getPrograms()
     : [];
 
-  function createCard({ key, title, subtitle }) {
+  function createCard({ key, title, subtitle, studyModel }) {
     const card = document.createElement('div');
     card.className = `card ${key}`;
 
+    const studyModelBadge = studyModel === 'major-minor'
+      ? '<span class="study-model-badge">Major/Minor</span>'
+      : '';
+
     card.innerHTML = `
       <div class="card-header">
-        <h2 class="card-title">${title}</h2>
+        <h2 class="card-title">${title}${studyModelBadge}</h2>
         <p class="card-subtitle">${subtitle}</p>
       </div>
       <div class="card-body"></div>

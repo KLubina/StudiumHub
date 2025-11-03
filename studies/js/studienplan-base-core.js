@@ -13,12 +13,13 @@ class StudienplanBase {
     /* ==== INITIALIZATION ==== */
     initialize() {
         this.setPageInfo();
+        this.initMajorMinorSelector();
         this.createLegend();
         this.createStudienplan();
         this.setupEventListeners();
-        
+
         this.initializeKPCounter();
-        
+
         // Text-fitting nach dem Rendern
         setTimeout(() => {
             this.adjustAllText();

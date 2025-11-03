@@ -6,10 +6,16 @@ StudienplanBase.prototype.createLegend = function() {
         this.createPruefungsbloeckeLegend(legendElement);
     }
 
-    if (this.config.kategorien) {
+    if (this.config.kategorien && this.config.kategorien.length > 0) {
         this.config.kategorien.forEach(kategorie => {
             this.createLegendItem(kategorie, legendElement);
         });
+    } else if (this.config.enableMajorMinorSelector) {
+        // Zeige Hinweis für Major/Minor-Studiengänge
+        const hint = document.createElement('div');
+        hint.className = 'legend-hint';
+        hint.innerHTML = '👆 Bitte wähle zuerst deinen <strong>Major</strong> und <strong>Minor</strong> aus, um die verfügbaren Module zu sehen.';
+        legendElement.appendChild(hint);
     }
 };
 

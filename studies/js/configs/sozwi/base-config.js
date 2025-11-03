@@ -20,6 +20,7 @@ window.StudiengangBaseConfig = {
     enableColorManager: false,
     enableWahlmodule: true,
     enableKPCounter: true,
+    enableMajorMinorSelector: true,
 
     // === 4. ERWEITERTE FEATURES ===
     // KP-Counter Config
@@ -30,24 +31,8 @@ window.StudiengangBaseConfig = {
     },
 
     // === 5. KATEGORIEN ===
-    kategorien: [
-        {
-            name: "Major",
-            klasse: "major",
-            hasTooltip: true,
-            info: "💡 Wähle deinen Major (120 ECTS)!",
-            description: "Majors: Ethnologie, Kommunikationswissenschaft und Medienforschung, Politikwissenschaft, Populäre Kulturen, Soziologie",
-            minKp: 120,
-        },
-        {
-            name: "Minor",
-            klasse: "minor",
-            hasTooltip: true,
-            info: "💡 Wähle deinen Minor (60 ECTS)!",
-            description: "Frei wählbarer Minor aus dem breiten Angebot der Universität",
-            minKp: 60,
-        },
-    ],
+    // Kategorien werden dynamisch basierend auf Major/Minor-Auswahl gesetzt
+    kategorien: [],
 
     kategorieZuKlasse: {
         "Major": "major",
