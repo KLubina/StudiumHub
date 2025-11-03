@@ -42,11 +42,12 @@ class StudiengangConfigLoader {
             await this.loadOptionalModule(`${dataPath}/wahlfacher-data.js`);
         } else if (this.studiengang === 'sozwi') {
             // Sozialwissenschaften uses major and minor data files
-            // Load ethnologie modules first (vor major-data.js)
+            // Load major-specific modules first (vor major-data.js)
             await this.loadOptionalModule(`${dataPath}/ethnologie-modules-data.js`);
+            await this.loadOptionalModule(`${dataPath}/kommunikationswissenschaft-modules-data.js`);
+            await this.loadOptionalModule(`${dataPath}/politikwissenschaft-modules-data.js`);
             await this.loadOptionalModule(`${dataPath}/major-data.js`);
             await this.loadOptionalModule(`${dataPath}/minor-data.js`);
-            await this.loadOptionalModule(`${dataPath}/politikwissenschaft-modules-data.js`);
         } else {
             // CSE Wahlmodule-Dateien
             await this.loadOptionalModule(`${dataPath}/vertiefung-data.js`);

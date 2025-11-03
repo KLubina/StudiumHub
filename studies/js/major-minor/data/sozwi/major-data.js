@@ -8,14 +8,11 @@ window.SozwiMajorData = {
         get "Ethnologie"() {
             return window.SozwiEthnologieModules || [];
         },
-        "Kommunikationswissenschaft und Medienforschung": [
-            {
-                name: "Kommunikationswissenschaft und Medienforschung Major",
-                kp: 120,
-                kategorie: "Major",
-                info: "Studieninhalte gemäss Modulkatalog Kommunikationswissenschaft"
-            }
-        ],
+        // Kommunikationswissenschaft Module werden aus separater Datei geladen
+        // Siehe: kommunikationswissenschaft-modules-data.js
+        get "Kommunikationswissenschaft und Medienforschung"() {
+            return window.SozwiKommunikationswissenschaftModules || [];
+        },
         "Politikwissenschaft": [
             // 1. Studienjahr - Einführung
             { name: "Politische Systeme und Theorien I", kp: 9, kategorie: "Major", jahr: 1, semester: 1 },
