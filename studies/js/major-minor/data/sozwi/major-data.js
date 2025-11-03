@@ -3,14 +3,11 @@
 
 window.SozwiMajorData = {
     majorBereiche: {
-        "Ethnologie": [
-            {
-                name: "Ethnologie Major",
-                kp: 120,
-                kategorie: "Major",
-                info: "Studieninhalte gemäss Modulkatalog Ethnologie"
-            }
-        ],
+        // Ethnologie Module werden aus separater Datei geladen
+        // Siehe: ethnologie-modules-data.js
+        get "Ethnologie"() {
+            return window.SozwiEthnologieModules || [];
+        },
         "Kommunikationswissenschaft und Medienforschung": [
             {
                 name: "Kommunikationswissenschaft und Medienforschung Major",
