@@ -191,3 +191,31 @@
     background-color: #45B7D1;
     color: white;
 }
+
+/* Legenden-Farben für Kernfächer Blöcke */
+[data-studiengang="hst"] .legende-item.block-ka {
+    background-color: #45B7D1;
+    color: white;
+}
+
+[data-studiengang="hst"] .legende-item.block-kb {
+    background-color: #96CEB4;
+    color: white;
+}
+
+[data-studiengang="hst"] .legende-item.block-kc {
+    background-color: #FFEAA7;
+    color: #333;
+}
+
+/* Styles for new category: Einzelfächer und Praktika */
+[data-studiengang="hst"] .modul.einzelfaecher-praktika {
+    background-color: #F6C85F; /* warm gelb/orange für Praktika/Einzelfächer */
+    border-color: #F6C85F;
+    color: #222;
+}
+
+[data-studiengang="hst"] .legende-item.einzelfaecher-praktika {
+    background-color: #F6C85F;
+    color: #222;
+}
