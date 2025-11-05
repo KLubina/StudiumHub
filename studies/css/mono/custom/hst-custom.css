@@ -159,3 +159,35 @@
     background-color: #FFEAA7;
     border-color: #FFEAA7;
 }
+
+/* Zusätzliche Kategorie-spezifische Klassen (von kategorieZuKlasse in HST config) */
+[data-studiengang="hst"] .modul.basispruefung-bp1 {
+    background-color: #FF6B6B; /* wie block-bp1 */
+    border-color: #FF6B6B;
+}
+
+[data-studiengang="hst"] .modul.basispruefung-bp2 {
+    background-color: #4ECDC4; /* wie block-bp2 */
+    border-color: #4ECDC4;
+}
+
+[data-studiengang="hst"] .modul.praktikum-basisjahr {
+    background-color: #45B7D1; /* Praktikum: wähle Farbton (hier nahe Kern-A) */
+    border-color: #45B7D1;
+}
+
+/* Legenden-Einträge für die neuen Kategorien */
+[data-studiengang="hst"] .legende-item.basispruefung-bp1 {
+    background-color: #FF6B6B;
+    color: white;
+}
+
+[data-studiengang="hst"] .legende-item.basispruefung-bp2 {
+    background-color: #4ECDC4;
+    color: white;
+}
+
+[data-studiengang="hst"] .legende-item.praktikum-basisjahr {
+    background-color: #45B7D1;
+    color: white;
+}

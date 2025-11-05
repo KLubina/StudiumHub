@@ -123,8 +123,13 @@ window.StudiengangBaseConfig = {
     ],
 
     // === 6. KATEGORIEN ===
+    // Die Module im HST-Base Data verwenden spezifische kategorie-Werte wie
+    // "Basisprüfungsblock 1", "Basisprüfungsblock 2" oder "Praktikum des Basisjahres".
+    // Diese müssen hier als Legenden-Einträge erscheinen und auf CSS-Klassen gemappt werden.
     kategorien: [
-        { name: "Basisprüfung", klasse: "basispruefung" },
+        { name: "Basisprüfungsblock 1", klasse: "basispruefung-bp1" },
+        { name: "Basisprüfungsblock 2", klasse: "basispruefung-bp2" },
+        { name: "Praktikum des Basisjahres", klasse: "praktikum-basisjahr" },
         { name: "Kernfach", klasse: "kernfach" },
         {
             name: "Schwerpunktfächer",
@@ -149,7 +154,9 @@ window.StudiengangBaseConfig = {
     ],
 
     kategorieZuKlasse: {
-        "Basisprüfung": "basispruefung",
+        "Basisprüfungsblock 1": "basispruefung-bp1",
+        "Basisprüfungsblock 2": "basispruefung-bp2",
+        "Praktikum des Basisjahres": "praktikum-basisjahr",
         "Kernfach": "kernfach",
         "Schwerpunktfächer": "schwerpunkt",
         "Wahlfächer": "wahl",

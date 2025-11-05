@@ -3,23 +3,25 @@
 
 window.StudiengangModules = [
     // ========== SEMESTER 1 - Basisprüfungsblock 1 ==========
-    { jahr: 1, semester: 1, name: "Molekulare Genetik und Zellbiologie", kp: 5, kategorie: "Basisprüfung" },
-    { jahr: 1, semester: 1, name: "Allgemeine Chemie (für HST)", kp: 6, kategorie: "Basisprüfung" },
-    { jahr: 1, semester: 1, name: "Grundlagen der Informatik", kp: 4, kategorie: "Basisprüfung" },
-    { jahr: 1, semester: 1, name: "Einführung Gesundheitswissenschaften und Technologie I", kp: 4, kategorie: "Basisprüfung" },
+    { jahr: 1, semester: 1, name: "Molekulare Genetik und Zellbiologie", kp: 5, kategorie: "Basisprüfungsblock 1" },
+    { jahr: 1, semester: 1, name: "Allgemeine Chemie (für HST)", kp: 6, kategorie: "Basisprüfungsblock 1" },
+    { jahr: 1, semester: 1, name: "Grundlagen der Informatik", kp: 4, kategorie: "Basisprüfungsblock 1" },
+    { jahr: 1, semester: 1, name: "Einführung Gesundheitswissenschaften und Technologie I", kp: 4, kategorie: "Basisprüfungsblock 1" },
+    // ========== SEMESTER 1 - Basisprüfungsblock 1 ==========
+    { jahr: 1, semester: 1, name: "Mathematik I", kp: 6, kategorie: "Basisprüfungsblock 1" },
+    { jahr: 1, semester: 1, name: "Organische Chemie I (für Biol./Pharm.Wiss./HST)", kp: 4, kategorie: "Basisprüfungsblock 1" },
 
     // ========== SEMESTER 2 - Basisprüfungsblock 2 ==========
-    { jahr: 1, semester: 1, name: "Mathematik I", kp: 6, kategorie: "Basisprüfung" },
-    { jahr: 1, semester: 1, name: "Organische Chemie I (für Biol./Pharm.Wiss./HST)", kp: 4, kategorie: "Basisprüfung" },
-    { jahr: 1, semester: 2, name: "Infektion", kp: 2, kategorie: "Basisprüfung" },
-    { jahr: 1, semester: 2, name: "Biochemie", kp: 3, kategorie: "Basisprüfung" },
-    { jahr: 1, semester: 2, name: "Organische Chemie II (für Biol./Pharm.Wiss./HST)", kp: 5, kategorie: "Basisprüfung" },
-    { jahr: 1, semester: 2, name: "Biomechanik I", kp: 5, kategorie: "Basisprüfung" },
-    { jahr: 1, semester: 2, name: "Mathematik II", kp: 5, kategorie: "Basisprüfung" },
-    { jahr: 1, semester: 2, name: "Statistik I", kp: 3, kategorie: "Basisprüfung" },
-    { jahr: 1, semester: 2, name: "Einführung Gesundheitswissenschaften und Technologie II", kp: 2, kategorie: "Basisprüfung" },
-    { jahr: 1, semester: 2, name: "Praktikum Chemie", kp: 2, kategorie: "Basisprüfung" },
-    { jahr: 1, semester: 2, name: "Praktikum Gesundheitswissenschaften und Technologie", kp: 2, kategorie: "Basisprüfung" },
+    { jahr: 1, semester: 2, name: "Infektion", kp: 2, kategorie: "Basisprüfungsblock 2" },
+    { jahr: 1, semester: 2, name: "Biochemie", kp: 3, kategorie: "Basisprüfungsblock 2" },
+    { jahr: 1, semester: 2, name: "Organische Chemie II (für Biol./Pharm.Wiss./HST)", kp: 5, kategorie: "Basisprüfungsblock 2" },
+    { jahr: 1, semester: 2, name: "Biomechanik I", kp: 5, kategorie: "Basisprüfungsblock 2" },
+    { jahr: 1, semester: 2, name: "Mathematik II", kp: 5, kategorie: "Basisprüfungsblock 2" },
+    { jahr: 1, semester: 2, name: "Statistik I", kp: 3, kategorie: "Basisprüfungsblock 2" },
+    { jahr: 1, semester: 2, name: "Einführung Gesundheitswissenschaften und Technologie II", kp: 2, kategorie: "Basisprüfungsblock 2" },
+
+    { jahr: 1, semester: 2, name: "Praktikum Chemie", kp: 2, kategorie: "Praktikum des Basisjahres" },
+    { jahr: 1, semester: 2, name: "Praktikum Gesundheitswissenschaften und Technologie", kp: 2, kategorie: "Praktikum des Basisjahres" },
 
     // ========== SEMESTER 3 - Kernfächer Block A/B ==========
     { jahr: 2, semester: 1, name: "Physik I", kp: 4, kategorie: "Kernfach" },
