@@ -30,7 +30,13 @@ class StudienplanBase {
         document.getElementById('page-title').textContent = this.config.title;
         document.getElementById('studienplan-title').textContent = this.config.title;
         
-        document.getElementById('studienplan-subtitle').textContent = this.config.subtitle;
+        // Render subtitle: prefer HTML subtitle if provided, otherwise use plain text
+        const subtitleEl = document.getElementById('studienplan-subtitle');
+        if (this.config.subtitleHtml) {
+            subtitleEl.innerHTML = this.config.subtitleHtml;
+        } else {
+            subtitleEl.textContent = this.config.subtitle || '';
+        }
         
         document.getElementById('legende-titel').textContent = this.config.legendTitle;
     }

@@ -5,6 +5,10 @@ window.StudiengangBaseConfig = {
     // === 1. BASIC INFO ===
     title: "BSc Gesundheitswissenschaften und Technologie",
     legendTitle: "Farben-Legende",
+    // Optional HTML subtitle (renders clickable links when provided)
+    subtitleHtml: `Herbstsemester: <a href="https://www.vvz.ethz.ch/Vorlesungsverzeichnis/sucheLehrangebot.view?lerneinheitscode=&deptId=24&famname=&unterbereichAbschnittId=&seite=0&lerneinheitstitel=&rufname=&kpRange=0,999&lehrsprache=&bereichAbschnittId=&semkez=2025W&studiengangAbschnittId=117434&studiengangTyp=BSC&ansicht=1&lang=de&katalogdaten=&wahlinfo=" target="_blank" rel="noopener">VVZ Herbst 2025</a>
+        <br>
+        Sommersemester: <a href="https://www.vvz.ethz.ch/Vorlesungsverzeichnis/sucheLehrangebot.view?lang=de&search=on&semkez=2025S&studiengangTyp=BSC&deptId=24&studiengangAbschnittId=114449&bereichAbschnittId=&lerneinheitstitel=&lerneinheitscode=&famname=&rufname=&wahlinfo=&lehrsprache=&periodizitaet=&kpRange=0%2C999&katalogdaten=&_strukturAus=on&search=Suchen" target="_blank" rel="noopener">VVZ Sommer 2025</a>`,
     creditUnit: "ECTS",
 
     // === 2. LAYOUT CONFIG ===
