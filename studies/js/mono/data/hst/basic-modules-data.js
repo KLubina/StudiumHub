@@ -38,11 +38,11 @@ window.StudiengangModules = [
     { jahr: 2, semester: 2, name: "Humanphysiologie II", kp: 5, kategorie: "Kernfächer Block C" },
     { jahr: 2, semester: 2, name: "Biomechanik II", kp: 4, kategorie: "Kernfächer Block C" },
     { jahr: 2, semester: 2, name: "Biomedizinische Grenzflächen", kp: 4, kategorie: "Kernfächer Block C" },
-    { jahr: 2, semester: 2, name: "Praktikum Physiologie", kp: 3, kategorie: "Kernfächer Block C" },
     
     // Einzelfächer und Praktika
     { jahr: 2, semester: 1, name: "Laboratory Course in Medical Technology", kp: 2, kategorie: "Einzelfächer und Praktika" },
     { jahr: 2, semester: 1, name: "Produktentwicklung in der Medizintechnik", kp: 4, kategorie: "Einzelfächer und Praktika" },
+    { jahr: 2, semester: 2, name: "Praktikum Physiologie", kp: 3, kategorie: "Einzelfächer und Praktika" },
     
     // ========== SEMESTER 5-6 - Schwerpunkte & Wahlfächer (Platzhalter) ==========
     { jahr: 3, semester: 0, name: "Schwerpunktfächer", kp: 0, kategorie: "Schwerpunktfächer", isPlaceholder: true },
