@@ -1,5 +1,12 @@
 ## TO-DO
 
+## Alle staatlichen UH BWL-Studiengänge
+- Universität Basel
+- Universität Bern
+- Universität Freiburg
+- Universität Luzern
+- Universität St. Gallen
+
 ### Mind-Maps erstellen für ITET ETHZ Moduldetails
 
 ### Alle staatlichen UH und FH ITET-Studiengänge
