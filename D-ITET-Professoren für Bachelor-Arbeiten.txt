@@ -1,0 +1,91 @@
+https://ee.ethz.ch/de/studium/bachelorstudiengang/bsc-etit/drittes-studienjahr/bachelor-projekt.html
+
+Das Bachelor-Projekt wird unter der Leitung eines Professors (einschliesslich Titularprofessor:innen) des Departements oder eines am Departement assoziierten Professors ausgeführt. 
+
+https://ee.ethz.ch/de/departement/professoren.html
+
+Biomedizin & Bildgebung
+- Prof. Morteza Aramesh — Zellinstruktive Schnittstellen, Nanoporen‑Sensoren, Einzelzell‑Profilierung, Biophysik von Immunzellen (Institut für Biomedizinische Technik)
+- Prof. Sebastian Kozerke — MR‑Physik, Signalverarbeitung, Fluss-/Bewegungs- und parametrische Bildgebung, Stoffwechsel, Spektroskopie, Experimentelle und klinische Anwendungen (Institut für Biomedizinische Technik)
+- Prof. Klaas Prüssmann — Magnetresonanz‑Bildgebung, Kernmagnetismus, RF‑Detektion, Bildrekonstruktion, Geräteentwicklung, Radiologie (Institut für Biomedizinische Technik)
+- Prof. Daniel Razansky — Leistungsstarke funktionelle und molekulare Bildgebung (Institut für Biomedizinische Technik)
+- Prof. Marco Stampanoni — Entwicklung bildgebender Technologien mit Röntgen- und Synchrotron‑Strahlung, Tomographische Mikroskopie, Medizinische Bildgebung (Institut für Biomedizinische Technik)
+- Prof. Klaas Enno Stephan — Translationale Neuromodellierung und Komputationale Psychiatrie, mathematische Modelle neuronaler Schaltkreise und individueller Krankheitsmechanismen (Institut für Biomedizinische Technik)
+- Prof. János Vörös — Stretchable bioelectronics, Biosensoren, Interfacing biology, Bottom‑up neuroscience (Institut für Biomedizinische Technik)
+- Prof. Mehmet Fatih Yanik — Neurotechnology. Development of interfaces to brain for imaging, decoding, and manipulation of neuronal circuits. (Institut für Neuroinformatik)
+
+Computer Vision, Bildverarbeitung & Machine Learning (anwendungsnah)
+- Prof. Ender Konukoglu — Bildgestützte Medizin, Maschinelles Lernen, Personalisierte Medizin (Institut für Bildverarbeitung)
+- Prof. Valerio Mante — Behavioral and neural mechanisms of learning and cognition, computational neuroscience, machine learning, data science. (Institut für Neuroinformatik)
+- Prof. Benjamin Grewe — Berechnung neuronaler Schaltkreise, Lernalgorithmen in biologischen und künstlichen neuronalen Netzwerken (Institut für Neuroinformatik)
+- Prof. Timothée Proix — Computergestützte Neurowissenschaften, Sprache und Kognition in biologischen und künstlichen neuronalen Netzwerken, personalisierte Medizin (Institut für Neuroinformatik)
+- Prof. Melika Payvand — Autonome Intelligente Agenten (Institut für Neuroinformatik)
+
+Integrierte Systeme, Mikroelektronik & Hardware‑nahes ML
+- Prof. Luca Benini — Autonomes Fahren, Big data, Digitalisierung, Eingebettete Systeme, Gehirn‑Maschine‑Schnittstellen, Industrie 4.0, Low‑Power‑Design, Maschinelles Lernen (Institut für Integrierte Systeme)
+- Prof. Christoph Studer — Mikroelektronik, Digitale Schaltungen, Drahtlose Kommunikation, Digitale Signalverarbeitung, Maschinelles Lernen (Institut für Integrierte Systeme)
+- Prof. Mathieu Luisier — Elektronik, Nanoelektronik, Transistoren, Moore's law, Hochleistungsrechnen, Nanoskalige Bauelemente (Institut für Integrierte Systeme)
+- Prof. Taekwang Jang — Schaltungen und Systeme für Computerplattformen der nächsten Generation, Internet of things (Institut für Integrierte Systeme)
+- Prof. Hua Wang — Integrierte Schaltungen & Systeme, RF/mm‑Wellen/THz‑Kommunikation und ‑Sensorik, Silizium‑Photonik, Hardware‑Sicherheit, Schaltungen für Quantenelektronik, maschinelles Lernen, Bioelektronik, Biosensoren, Biologie‑Elektronik‑Schnittstellen (Institut für Integrierte Systeme)
+- Prof. Laura Bégon‑Lours — Neuromorphe Bauelemente, künstliche Synapsen und Neuronen, Nanofabrikation, Funktionsoxide, Ferroelektrika (Institut für Integrierte Systeme)
+- Prof. Colombo Bolognesi — Heterojunction‑Bipolar‑Transistoren (HBT) und High‑Electron‑Mobility‑Transistoren (HEMT) (Professur für Millimeterwellen Elektronik)
+- Prof. Ulrike Grossner — Nutzung von elektrischer Energie, Design, Optimierung und Herstellung von Leistungshalbleiter‑Geräten, Neue Verpackungstechnologien (Professur für Leistungshalbleiter)
+
+Signalverarbeitung, Informationstheorie & Mathematische Grundlagen
+- Prof. Helmut Bölcskei — Mathematische Grundlagen der Informationswissenschaften, Maschinelles Lernen, Mathematische Signalverarbeitung, Datenwissenschaft (Professur für Mathematische Informationswissenschaften)
+- Prof. Hans‑Andrea Loeliger — Signalverarbeitung, Maschinelles Lernen, Informationstheorie, Fehlerkorrekturcodes (Institut für Signal‑ und Informationsverarbeitung)
+- Prof. Amos Lapidoth — Digitale Kommunikation, Informationstheorie (Institut für Signal‑ und Informationsverarbeitung)
+
+Photonik, Optik & Sensorik
+- Prof. Lukas Novotny — Photonik, Optomechanik, Nanooptik, Sensorik (Professur für Photonik)
+- Prof. Jürg Leuthold — Optische‑, THz‑ und Millimeterwellenkommunikation, Erforschung elektromagnetischer Wellen (Institut für Elektromagnetische Felder)
+
+Robotik, Steuerung, Systeme & Verifikation
+- Prof. Florian Dörfler — Energiewende, Regelungstechnik, Systemtheorie, Optimierung, Verteilte Systeme, Netzwerke, Smart Grid (Institut für Automatik)
+- Prof. Lars Lindemann — System‑ und Steuerungstheorie, formale Verifizierung, maschinelles Lernen zur Verifizierung und Steuerung, Quantifizierung von Unsicherheiten, autonome und cyber‑physische Systeme, Robotik (Institut für Automatik)
+- Prof. John Lygeros — Automatische Steuerung, Energiesysteme, Automation, Energieeffizienz von Gebäuden, Kamera‑Netzwerke (Institut für Automatik)
+- Prof. Roger Wattenhofer — Distributed Systems, Positioning Systems, Wireless Networks, Mobile Systems, Social Networks, Blockchain (Institut für Technische Informatik)
+
+Netzwerke, Betriebssysteme & Verteilte Systeme
+- Prof. Laurent Vanbever — Internet, Routing, Networking, Software Defined Networking, Neue Internet‑Architekturen, Blockchain (Institut für Technische Informatik und Kommunikationsnetze)
+- Prof. Kaveh Razavi — System‑Sicherheit, Hardware‑Sicherheit, Computersysteme, Betriebssysteme (Institut für Technische Informatik und Kommunikationsnetze)
+- Prof. Roger Wattenhofer — Distributed Systems, Positioning Systems, Wireless/Mobile Systems, Social Networks, Blockchain (Institut für Technische Informatik)
+
+Energie, Elektrische Systeme & Leistungselektronik
+- Prof. Jürgen Biela — Nutzung von elektrischer Energie, Energiewende, Leistungselektronik, Energietechnik, Beschleuniger (Professur für Hochleistungselektronik)
+- Prof. Christian Franck — Technologie der elektrischen Energieübertragung, Gasisolierte Hochspannungssysteme, Hochspannungsgleichstromübertragung (HGÜ), Energiewende (Institut für Hochspannungstechnik)
+- Prof. Gabriela Hug — Energiewende, Elektrizitätsnetze, Smart grid, Einbindung erneuerbarer Energien, Energiemanagement (Institut für Elektrische Energieübertragung)
+- Prof. Vanessa Wood — Energiewende, Elektrische Mobilität, Produktionsprozesse, Big data, Materialien, Physik (Institut für Elektronik)
+
+Quantum, Nanotechnologie & Materialien
+- Prof. Mickaël Perrin — Niederdimensionale Quantenelektronik, Quantenwärmekraftmaschinen, maschinelles Lernen (Quantum Devices)
+- Prof. Mathieu Luisier — Elektronik, Nanoelektronik, Transistoren, Hochleistungsrechnen, Nanoskalige Bauelemente (Institut für Integrierte Systeme)
+- Prof. Vanessa Wood — Energiewende, Elektrische Mobilität, Produktionsprozesse, Big data, Materialien, Physik (Institut für Elektronik)
+
+Security, Hardware‑Security & Systems
+- Prof. Kaveh Razavi — System‑Sicherheit, Hardware‑Sicherheit, Computersysteme, Betriebssysteme (Institut für Technische Informatik und Kommunikationsnetze)
+- Prof. Onur Mutlu — Computerarchitektur, Computersysteme, Bioinformatik, Speicher‑ und Speichersysteme, Hardware‑Sicherheit, Fehlertoleranz, Hardware‑/Software‑Kooperation, Genomanalyse, Computer für Gesundheit & Medizin (Forschungsgruppe SAFARI)
+
+Dateninfrastruktur, Big Data & Systeme für ML
+- Prof. Luca Benini — Autonomes Fahren, Big data, Digitalisierung, Eingebettete Systeme, Low‑Power‑Design, Maschinelles Lernen (Institut für Integrierte Systeme)
+- Prof. Laurent Vanbever — Internet, Routing, Networking, SDN, Neue Internet‑Architekturen (Institut für Technische Informatik und Kommunikationsnetze)
+- Prof. Onur Mutlu — Speicher‑ und Systems‑Optimierung für datenintensive Anwendungen (Forschungsgruppe SAFARI)
+
+Interdisziplinäre / Neuro‑ & Computational Neuroscience
+- Prof. Valerio Mante — Behavioral and neural mechanisms of learning and cognition, computational neuroscience, machine learning, data science. (Institut für Neuroinformatik)
+- Prof. Benjamin Grewe — Berechnung neuronaler Schaltkreise, Lernalgorithmen in biologischen und künstlichen neuronalen Netzwerken (Institut für Neuroinformatik)
+- Prof. Richard Hahnloser — Neuronale Systeme, Neurophysik (Institut für Neuroinformatik)
+- Prof. Timothée Proix — Computergestützte Neurowissenschaften, Sprache und Kognition in biologischen und künstlichen neuronalen Netzwerken, personalisierte Medizin (Institut für Neuroinformatik)
+- Prof. Klaas Enno Stephan — Translationale Neuromodellierung und Komputationale Psychiatrie (Institut für Biomedizinische Technik)
+- Prof. János Vörös — Stretchable bioelectronics, Biosensoren, Interfacing biology (Institut für Biomedizinische Technik)
+- Prof. Mehmet Fatih Yanik — Neurotechnology, Interfaces to brain for imaging/decoding/manipulation (Institut für Neuroinformatik)
+
+Photonik & Millimeterwellen Elektronik (spezial)
+- Prof. Jürg Leuthold — Optische, THz‑ und Millimeterwellenkommunikation (Institut für Elektromagnetische Felder)
+- Prof. Colombo Bolognesi — HBT/HEMT (Professur für Millimeterwellen Elektronik)
+- Prof. Lukas Novotny — Photonik, Optomechanik, Nanooptik (Professur für Photonik)
+
+Sonstige / Management & Anwendungen
+- Prof. Amos Lapidoth — Digitale Kommunikation, Informationstheorie (Institut für Signal‑ und Informationsverarbeitung)
+- Prof. Roger Wattenhofer — Distributed Systems, Positioning Systems, Wireless/Mobile Systems, Social Networks, Blockchain (Institut für Technische Informatik)
+- Prof. Laurent Vanbever — Internet/Networking/SDN (Institut für Technische Informatik und Kommunikationsnetze)
