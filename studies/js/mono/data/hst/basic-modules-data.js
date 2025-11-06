@@ -9,7 +9,7 @@ window.StudiengangModules = [
     { jahr: 1, semester: 1, name: "Einführung Gesundheitswissenschaften und Technologie I", kp: 4, kategorie: "Basisprüfungsblock 1" },
     // ========== SEMESTER 1 - Basisprüfungsblock 1 ==========
     { jahr: 1, semester: 1, name: "Mathematik I", kp: 6, kategorie: "Basisprüfungsblock 2" },
-    { jahr: 1, semester: 1, name: "Organische Chemie I (für Biol./Pharm.Wiss./HST)", kp: 4, kategorie: "Basisprüfungsblock 2" },
+    { jahr: 1, semester: 1, name: "Organische Chemie I", kp: 4, kategorie: "Basisprüfungsblock 2" },
 
     // ========== SEMESTER 2 - Basisprüfungsblock 2 ==========
     { jahr: 1, semester: 2, name: "Infektion", kp: 2, kategorie: "Basisprüfungsblock 2" },
