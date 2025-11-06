@@ -100,6 +100,12 @@
           subtitle: "Universität Basel",
           category: "Unis",
         },
+                {
+          key: "bwl",
+          title: "BWL",
+          subtitle: "Universität St.Gallen",
+          category: "Unis",
+        },
         // FH Unis
         {
           key: "zhaw-cs",
