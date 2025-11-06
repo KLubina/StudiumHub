@@ -5,6 +5,10 @@ window.StudiengangBaseConfig = {
     // === 1. BASIC INFO ===
     title: "BSc Elektrotechnik und Informationstechnologie",
     legendTitle: "Farben-Legende",
+        // Optional HTML subtitle (renders clickable links when provided)
+    subtitleHtml: `Herbstsemester: <a href="https://www.vvz.ethz.ch/Vorlesungsverzeichnis/sucheLehrangebot.view?lerneinheitscode=&deptId=18&famname=&unterbereichAbschnittId=&seite=0&lerneinheitstitel=&rufname=&kpRange=0,999&lehrsprache=&bereichAbschnittId=&semkez=2025W&studiengangAbschnittId=117363&studiengangTyp=BSC&ansicht=1&lang=de&katalogdaten=&wahlinfo=" target="_blank" rel="noopener">VVZ Herbst 2025</a>
+        <br>
+        Sommersemester: <a href="https://www.vvz.ethz.ch/Vorlesungsverzeichnis/sucheLehrangebot.view?lerneinheitscode=&deptId=18&famname=&unterbereichAbschnittId=&seite=0&lerneinheitstitel=&rufname=&kpRange=0,999&lehrsprache=&bereichAbschnittId=&semkez=2025S&studiengangAbschnittId=114361&studiengangTyp=BSC&ansicht=1&lang=de&katalogdaten=&wahlinfo=" target="_blank" rel="noopener">VVZ Sommer 2025</a>`,
     creditUnit: "KP",
 
     // === 2. LAYOUT CONFIG ===
