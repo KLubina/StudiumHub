@@ -4,139 +4,78 @@ Uni Basel
 https://www.unibas.ch/de/Studium/Vor-dem-Studium/Studienangebot.html?gad_source=1&gad_campaignid=20672271246&gclid=CjwKCAiAzrbIBhA3EiwAUBaUdXgl21oDhFVYO4ipn4KCykh_j4DgDUvTGdtV-CBZuDA-zhR5VYoM9xoCqlcQAvD_BwE
 
 50 Studienangebote in deiner Auswahl
-Altertumswissenschaften (Studienfach)
-Bachelor
-Altertumswissenschaften (Studiengang)
-Bachelor
-Biologie
-Bachelor
-Biologie - ausserfakultäres Bachelorstudienfach
-Bachelor
-Chemie
-Bachelor
-Chemie - ausserfakultäres Bachelorstudienfach
-Bachelor
-Computational Sciences
-Bachelor
-Computer Science / Informatik
-Bachelor
-Computer Science / Informatik (ausserfakultäres Bachelorstudienfach)
-Bachelor
-Deutsche Philologie
-Bachelor
-Englisch
-Bachelor
-Ethnologie
-Bachelor
-Französistik
-Bachelor
-Geographie - ausserfakultäres Bachelorstudienfach
-Bachelor
-Geowissenschaften
-Bachelor
-Geschichte
-Bachelor
-Geschlechterforschung
-Bachelor
-Hispanistik
-Bachelor
-Humanmedizin
-Bachelor
-Italianistik
-Bachelor
-Jüdische Studien
-Bachelor
-Kulturanthropologie
-Bachelor
-Kunstgeschichte
-Bachelor
-Mathematik
-Bachelor
-Mathematik - ausserfakultäres Bachelorstudienfach
-Bachelor
-Medienwissenschaft
-Bachelor
-Musikwissenschaft
-Bachelor
-Nahoststudien
-Bachelor
-Nanowissenschaften
-Bachelor
-Nordistik
-Bachelor
-Osteuropäische Kulturen
-Bachelor
-Osteuropa-Studien
-Bachelor
-Pharmazeutische Wissenschaften
-Bachelor
-Philosophie
-Bachelor
-Physik
-Bachelor
-Physik - ausserfakultäres Bachelorstudienfach
-Bachelor
-Politikwissenschaft
-Bachelor
-Prähistorische und Naturwissenschaftliche Archäologie
-Bachelor
-Psychologie
-Bachelor
-Rechtswissenschaft
-Bachelor
-Rechtswissenschaft - ausserfakultäres Bachelorstudienfach
-Bachelor
-Religionswissenschaft
-Bachelor
-Soziologie
-Bachelor
-Sport, Bewegung & Gesundheit: Studienrichtung Prävention und Gesundheitsförderung
-Bachelor
-Sport, Bewegung & Gesundheit: Studienrichtung Sportwissenschaft (mit Zweitfach)
-Bachelor
-Theologie
-Bachelor
-Theologie - ausserfakultäres Bachelorstudienfach
-Bachelor
-Wirtschaftswissenschaften
-Bachelor
-Wirtschaftswissenschaften - ausserfakultäres Bachelorstudienfach
-Bachelor
-Zahnmedizin
-Bachelor
+Altertumswissenschaften 75 KP - Studienfach 75 KP
+Altertumswissenschaften 150 KP
+Biologie 180 KP
+Biologie 75 KP - ausserfakultäres Bachelorstudienfach 75 KP
+Chemie 180 KP
+Chemie 75 KP - ausserfakultäres Bachelorstudienfach 75 KP
+Computational Sciences 180 KP
+Computer Science / Informatik 180 KP
+Computer Science / Informatik 75 KP - ausserfakultäres Bachelorstudienfach 75 KP
+Deutsche Philologie 75 KP - anderes Fach 75 KP
+Englisch 75 KP - anderes Fach 75 KP
+Ethnologie 75 KP - anderes Fach 75 KP
+Französistik 75 KP - anderes Fach 75 KP
+Geographie 75 KP - ausserfakultäres Bachelorstudienfach 75 KP
+Geowissenschaften 180 KP
+Geschichte 75 KP - anderes Fach 75 KP
+Geschlechterforschung 75 KP - anderes Fach 75 KP
+Hispanistik 75 KP - anderes Fach 75 KP
+Humanmedizin 180 KP
+Italianistik 75 KP - anderes Fach 75 KP
+Jüdische Studien 75 KP - anderes Fach 75 KP
+Kulturanthropologie 75 KP - anderes Fach 75 KP
+Kunstgeschichte 75 KP - anderes Fach 75 KP
+Mathematik 180 KP
+Mathematik 75 KP - ausserfakultäres Bachelorstudienfach 75 KP
+Medienwissenschaft 75 KP - anderes Fach 75 KP
+Musikwissenschaft 75 KP - anderes Fach 75 KP
+Nahoststudien 75 KP - anderes Fach 75 KP
+Nanowissenschaften 180 KP
+Nordistik 75 KP - anderes Fach 75 KP
+Osteuropäische Kulturen 75 KP - anderes Fach 75 KP
+Osteuropa-Studien - 180 KP
+Pharmazeutische Wissenschaften 180 KP
+Philosophie 75 KP - anderes Fach 75 KP
+Physik 180 KP
+Physik 75 KP - ausserfakultäres Bachelorstudienfach 75 KP
+Politikwissenschaft 75 KP - anderes Fach 75 KP
+Prähistorische und Naturwissenschaftliche Archäologie 180 KP
+Psychologie 180 KP
+Rechtswissenschaft 180 KP
+Rechtswissenschaft 75 KP - ausserfakultäres Bachelorstudienfach 75 KP
+Religionswissenschaft 75 KP - anderes Fach 75 KP
+Soziologie 75 KP - anderes Fach 75 KP
+Sport, Bewegung & Gesundheit: Studienrichtung Prävention und Gesundheitsförderung 180 KP
+Sport, Bewegung & Gesundheit: Studienrichtung Sportwissenschaft (mit Zweitfach) 99 KP - ausserfakultäres Bachelorstudienfach 75 KP
+Theologie - 180 KP
+Theologie 75 KP - ausserfakultäres Bachelorstudienfach 75 KP
+Wirtschaftswissenschaften 180 KP
+Wirtschaftswissenschaften 75 KP - ausserfakultäres Bachelorstudienfach 75 KP
+Zahnmedizin 180 KP
 
 Uni Luzern
 https://www.unilu.ch/fileadmin/universitaet/dienste/unikomm/dokumente/Studienbroschueren/Studienprogramme_Bachelor.pdf
-Bachelor-Studienprogramme der Universität Luzern
-Studienprogramm Studienabschluss
-(Angaben beziehen sich auf Mono/Major) Studienmöglichkeiten Bachelor Unterrichtssprache Fakultät
-Mono¹ Major/HF² Minor/NF³ Major in KuWi4
-Ethik – X Deutsch TF
-Ethnologie Bachelor of Arts in Ethnologie X X X Deutsch KSF
-Geschichte Bachelor of Arts in Geschichte X X X Deutsch KSF
-Gesellschafts- und 
-Kommunikationswissenschaften
-Bachelor of Arts in Gesellschafts- und 
-Kommunikationswissenschaften X Deutsch KSF
-Gesundheitswissenschaften Bachelor of Science in
-Gesundheitswissenschaften X Deutsch GMF
-Judaistik Bachelor of Arts in Judaistik X X X Deutsch KSF/TF
-Kulturwissenschaften Bachelor of Arts in Kulturwissenschaften X Deutsch KSF
-Philosophie Bachelor of Arts in Philosophie X X X Deutsch KSF
-Philosophy, Politics and Economics Bachelor of Arts in Philosophy, Politics and 
-Economics X Deutsch KSF/WF
-Politikwissenschaft Bachelor of Arts in Politikwissenschaft X X X Deutsch KSF
-Psychologie (ab HS 2024) Bachelor of Science in Psychologie X X Deutsch VPF
-Rechtswissenschaft Bachelor of Law X X Deutsch5 RF
-Religionspädagogik Bachelor of Arts in Religionspädagogik X X Deutsch TF
-Soziologie Bachelor of Arts in Soziologie X X X Deutsch KSF
-Theologie Flex-Studium6 Bachelor of Theology X X X Deutsch TF
-Wirtschaftswissenschaften Bachelor of Arts in Wirtschaftswissenschaften X X X Deutsch, Englisch WF
+Ethik (60)
+Ethnologie (120/60)
+Geschichte (120/60)
+Gesellschafts- und Kommunikationswissenschaften (180)
+Gesundheitswissenschaften (180)
+Judaistik (120/60)
+Kulturwissenschaften (180) 
+Philosophie (120/60)
+Philosophy, Politics and Economics (180)
+Politikwissenschaft (120/60)
+Psychologie (120/60)
+Rechtswissenschaft (180/60)
+Religionspädagogik (180/60)
+Soziologie (120/60)
+Theologie Flex-Studium (180/120/60)
+Wirtschaftswissenschaften (180/120/60) 
 
 Uni St.Gallen
 https://www.unisg.ch/de/studium/programme/bachelor/
-Assessmentjahr Wirtschaftswissenschaften,
-Rechtswissenschaft & International Affairs
 Major Betriebswirtschaftslehre (BWL)
 Major Volkswirtschaftslehre (VWL)
 Major International Affairs (BIA)
@@ -146,256 +85,203 @@ Bachelor in Informatik (BCS)
 
 Uni Bern
 https://www.unibe.ch/unibe/portal/content/e1006/e251033/e265838/Bachelor-d_25-26_ger.pdf
-Studienfach Studiengang 
-(Angaben in Bezug auf Mono / Major)
-Studienbeginn 
-FS
-Bachelor LV-Angebot in 
-Englisch 
-vorhanden***
-Fakultät 
-Mono 180
-Major 150
-Major 120
-Minor 90
-Minor 60
-Minor 30
-Minor 15
-Archäologie B A in Archaeology X vereinzelt Phil.-hist.
-Astronomie keine Phil.-nat.
-Basis Antike mit Studienschwerpunkt Griechisch √ keine Phil.-hist.
-Basis Antike mit Studienschwerpunkt Latein √ keine Phil.-hist.
-Betriebswirtschaftslehre B Sc in Business Administration ∆ ja WISO
-Biochemie und Molekularbiologie B Sc in Biochemie und Molekularbiologie ja Phil.-nat.
-Biologie B Sc in Biology** ja Phil.-nat.
-Central Asian Studies keine 
-Angabe Phil.-hist.
-Chemie und Molekulare Wissenschaften B Sc in Chemistry and Molecular Sciences ja Phil.-nat.
-Chinesische Sprache und Gesellschaft
-Deutsch, 
-viele Texte 
-in Englisch
-Phil.-hist.
-Deutsche Sprach- und Literaturwissenschaft B A in German Language and Literature X keine Phil.-hist.
-Digitalization and Applied Data Science in Business, 
-Economics and the Social Sciences ja WISO
-Eastern European Studies B A in Eastern European Studies √ ja Phil.-hist.
-English B A in English ja 100% Phil.-hist.
-Erdwissenschaften (Geologie) B Sc in Earth Sciences ja Phil.-nat.
-Erziehungswissenschaft B Sc in Education X keine Phil.-hum.
-Geographie B Sc in Geography ja ca 25% Phil.-nat.
-Geschichte B A in History X keine Phil.-hist.
-Humanmedizin B of Medicine keine Med
-Informatik B Sc in Computer Science 90 ja Phil.-nat.
-Interreligiöse Studien B A in Interreligious Studies X ja Theol.
-Islamic and Middle Eastern Studies B A in Islamic and Middle Eastern Studies √ ja 20% Phil.-hist.
-Italienische Sprach- und Literaturwissenschaft B A in Italian Linguistics and Literature √ keine Phil.-hist.
-** Schwerpunkt ab 5. Semester
-*** Lehrveranstaltungen (LVs) werden teilweise in Englisch angeboten
-Zulassung, Immatrikulation 
-und Beratung
-Studienbeginn: 
-X Frühjahrssemester möglich → Studienfachberatung kontaktieren
-∆ Frühjahrssemester möglich → Bewilligung Dekanat einholen
-√ Frühjahrssemester möglich
-Studienfach Studiengang 
-(Angaben in Bezug auf Mono / Major)
-Studienbeginn 
-FS
-Bachelor LV-Angebot in 
-Englisch 
-vorhanden***
-Fakultät 
-Mono 180
-Major 150
-Major 120
-Minor 90
-Minor 60
-Minor 30
-Minor 15
-Judaistik √ ja ca. 30% Theol.
-Klassische Philologie mit Schwerpunkt Griechisch B A in Classics with special qualification in Greek √ keine Phil.-hist.
-Klassische Philologie mit Schwerpunkt Latein B A in Classics with special qualification in Latin √ keine Phil.-hist.
-Kulturgeschichte und Archäologie des vorislamischen Palästina / Israel √ ja Theol.
-Kunstgeschichte B A in Art History √
-keine bis 
-vereinzelte
-Phil.-hist.
-Langue et Littérature françaises B A in French Linguistics and Literature √ keine Phil.-hist.
-Linguistik B A in Linguistics X ja Phil.-hist.
-Mathematik B Sc in Mathematics keine Phil.-nat.
-Musikwissenschaft B A in Musicology X keine 
-Angabe Phil.-hist.
-Nachhaltige Entwicklung √ ja Phil.-nat.
-Neurowissenschaft √ ja Phil.-hum.
-Pharmazeutische Wissenschaften B Sc in Pharmaceutical Sciences ja Phil.-nat.
-Philosophie B A in Philosophy √ ja 
-max. 5% Phil.-hist.
-Philosophie des Geistes √ ja 
-max. 5% Phil.-hist.
-Physik B Sc in Physics keine Phil.-nat.
-Politik- und Verwaltungswissenschaft B A in Political Science and Public 
-Administration keine WISO
-Psychologie B Sc in Psychology keine Phil.-hum.
-Rechtswissenschaft B of Law keine Rw
-Rechtswissenschaft: Grundlagen des Rechts keine Rw
-Rechtswissenschaft: Obligationenrecht und Wirtschaftsrecht keine Rw
-Rechtswissenschaft: Öffentliches Recht keine Rw
-Rechtswissenschaft: Staatsrecht und Staatstheorie keine Rw
-Rechtswissenschaft: Wirtschaftsrecht keine Rw
-Religionswissenschaft B A in Science of Religion X ja ca. 10% Phil.-hist.
-Slavistik B A in Slavic Languages and Literatures X keine 
-Angabe Phil.-hist.
-Sozialanthropologie B A in Social Anthropology X ja ca. 50% Phil.-hist.
-Sozialwissenschaften B A in Social Sciences ∆ ja WISO
-Sozialwissenschaften mit Schwerpunkt Kommunikations- und Medienwissenschaft 
-akann nur in der elektr. Prüfungsadministration 
-gewählt werden
-∆ ja WISO
-Sozialwissenschaften mit Schwerpunkt Politikwissenschaft 
-akann nur in der elektr. Prüfungsadministration 
-gewählt werden
-∆ ja WISO
-Sozialwissenschaften mit Schwerpunkt Soziologie 
-akann nur in der elektr. Prüfungsadministration 
-gewählt werden
-∆ ja WISO
-Spanische Sprach- und Literaturwissenschaft B A in Spanish Linguistics and Literature X
-ja, 15% 
-Englisch, 
-Deutsch, 
-andere romanische 
-Sprache
-Phil.-hist.
-Sportwissenschaft B Sc in Sport Science ja Phil.-hum.
-Theaterwissenschaft B A in Theatre and Dance Studies X keine Phil.-hist.
-Theologie mit Schwerpunkt Christkatholische 
-Theologie
-B of Theology with special qualification in 
-Old Catholic Theology X ja ca. 10% Theol.
-Theologie mit Schwerpunkt Evangelische Theologie B of Theology with special qualification in 
-Protestant Theology X ja ca. 10% Theol.
-Theologie X ja ca. 10% Theol.
-Veterinärmedizin B of Veterinary Medicine keine Vetsuisse
-Volkswirtschaftslehre B Sc in Economics ∆ ja WISO
-Wirtschaftsinformatik ∆ ja WISO
-Studienfach Studiengang 
-(Angaben in Bezug auf Mono
-/ Major)
-Studienbeginn 
-FS
-Bachelor LV-An
--
-gebot in 
-Englisch 
-vorhan
--
-den***
-Fakultät 
-Mono 180
-Major 150
-Major 120
-Minor 90
-Minor 60
-Minor 30
-Minor 15
-Wissenschaftsphilosophie
-√ ja 
-max. 5% Phil.-hist.
-Zahnmedizin B of Dental Medicine keine Me
+Archäologie (120)   
+Betriebswirtschaftslehre (120/60/30/15)   
+Biochemie und Molekularbiologie (180/60/30/15)   
+Biologie (180)   
+Chemie und Molekulare Wissenschaften (180/60/30/15)   
+Deutsche Sprach- und Literaturwissenschaft (120/60/30)   
+English (120)   
+Erdwissenschaften (Geologie) (180/120/60/30/15)   
+Erziehungswissenschaft (120/60/30)   
+Französische Sprach- und Literaturwissenschaft (120/60/30)   
+Geographie (120)   
+Geschichte (180/120)   
+Humanmedizin (180)   
+Informatik (120)   
+Interreligiöse Studien (120)   
+Islamic and Middle Eastern Studies (120)   
+Italienische Sprach- und Literaturwissenschaft (120/60/30)   
+Klassische Philologie (120)   
+Kunstgeschichte (120/60/30)   
+Linguistik (120)   
+Mathematik (120/90/60/30/15)   
+Musikwissenschaft (120/60/30)   
+Osteuropa‑Studien (120)   
+Pharmazeutische Wissenschaften (180)   
+Philosophie (120)   
+Physik (120)   
+Politik‑ und Verwaltungswissenschaft (120)   
+Psychologie (120)   
+Rechtswissenschaft (180)   
+Religionswissenschaft (120/60/30)   
+Slavistik (120)   
+Sozialanthropologie (120/60/30)   
+Sozialwissenschaften (120/60/30/15)   
+Spanische Sprach- und Literaturwissenschaft (120/60/30)   
+Sportwissenschaft (120/60/30)   
+Theaterwissenschaft (120/60/30)   
+Theologie (180)   
+Veterinärmedizin (180)   
+Volkswirtschaftslehre (120/60/30/15)   
+Zahnmedizin (180)
+
+**Nur‑Minor‑Angebote / spezialisierte Minors**  
+Basis Antike mit Schwerpunkt Griechisch (60/30)   
+Basis Antike mit Schwerpunkt Latein (60/30)   
+Chinesische Sprache und Gesellschaft (30)   
+Digitalization and Applied Data Science in Business, Economics and the Social Sciences (30)   
+Klassische Philologie mit Schwerpunkt Griechisch (60/30)   
+Klassische Philologie mit Schwerpunkt Latein (60/30)   
+Kulturgeschichte und Archäologie des vorislamischen Palästina/Israel (60/30)   
+Nachhaltige Entwicklung (60/30/15)   
+Obligationenrecht und Wirtschaftsrecht (30)   
+Philosophie des Geistes (60)   
+Staatsrecht und Staatstheorie (30)   
+Wirtschaftsinformatik (30/15)   
+Wissenschaftsphilosophie (60)
 
 Uni Freiburg
 https://studies.unifr.ch/de/studienangebot/courses/?ba=1&ma=0&do=0
 
 Theologie und Interreligiöse Studien
-Theologie			
-Theologische Studien			
-Interreligiöse Studien			
+Theologie - 180 ECTS
+Theologische Studien - 120 ECTS
+Interreligiöse Studien - 120 ECTS
 
 Recht
-Rechtswissenschaft			
-Rechtswissenschaft im Teilzeitstudium			
+Rechtswissenschaft - 180 ECTS
+Rechtswissenschaft im Teilzeitstudium - 180 ECTS
 
 Wirtschaftswissenschaften
-Betriebswirtschaftslehre			
-Volkswirtschaftslehre			
-Wirtschafts- und Rechtswissenschaftliche Studien			
+Betriebswirtschaftslehre - 180 ECTS
+Volkswirtschaftslehre - 180 ECTS
+Wirtschafts- und Rechtswissenschaftliche Studien - 120 ECTS		
 
 Kommunikationswissenschaft und Medienforschung
-Business Communication			
-Kommunikationswissenschaft und Medienforschung			
-Kommunikationswissenschaft			
+Business Communication - 60 ECTS
+Kommunikationswissenschaft und Medienforschung - 120 ECTS
+Kommunikationswissenschaft - 90 ECTS
 
 Philosophie
-Philosophie			
+Philosophie - 120 ECTS
 
 Sprachen und Literaturen
-Deutsch und Französisch: Zweisprachigkeit und Kulturkontakt			
-Englische Sprache und Literatur			
-Französisch			
-Germanistik			
-Germanistische Literaturwissenschaft			
-Griechische Sprache und Kultur			
-Italienisch			
-Klassische Philologie			
-Lateinische Sprache und Kultur			
-Rätoromanisch			
-Slavistik			
-Spanisch			
+Deutsch und Französisch: Zweisprachigkeit und Kulturkontakt - 180 ECTS
+Englische Sprache und Literatur - 120 ECTS
+Französisch - 120 ECTS
+Germanistik - 120 ECTS
+Germanistische Literaturwissenschaft - 60 ECTS
+Griechische Sprache und Kultur - 60 ECTS
+Italienisch - 120 ECTS
+Klassische Philologie - 120 ECTS
+Lateinische Sprache und Kultur - 60 ECTS
+Rätoromanisch - 60 ECTS
+Slavistik - 120 ECTS
+Spanisch - 120 ECTS
 
 Mehrsprachigkeit und Fremdsprachendidaktik
-Deutsch als Fremdsprache			
-Französisch als Fremdsprache			
+Deutsch als Fremdsprache - 60 ECTS
+Französisch als Fremdsprache - 60 ECTS
 
 Historische Wissenschaften
-Geschichte			
-Geschichte der Moderne			
-Zeitgeschichte			
+Geschichte - 120 ECTS
+Geschichte der Moderne - 120 ECTS
+Zeitgeschichte - 120 ECTS
 
 Kunstgeschichte und Musikwissenschaft
-Kunstgeschichte			
-Musikwissenschaft und Geschichte des Musiktheaters			
+Kunstgeschichte	- 120 ECTS
+Musikwissenschaft und Geschichte des Musiktheaters - 120 ECTS	
 
 Sozialwissenschaften
-Soziologie (FR)			
-Soziologie			
-Sozialarbeit und Sozialpolitik (FR)			
-Sozialarbeit und Sozialpolitik			
-Osteuropa-Studien			
-Politik und Gesellschaft			
-Religionswissenschaft			
-Sozialanthropologie			
+Soziologie (FR) - 120 ECTS
+Soziologie - 120 ECTS
+Sozialarbeit und Sozialpolitik (FR) - 120 ECTS
+Sozialarbeit und Sozialpolitik - 120 ECTS
+Osteuropa-Studien - 120 ECTS
+Politik und Gesellschaft - 60 ECTS
+Religionswissenschaft - 120 ECTS
+Sozialanthropologie - 120 ECTS
 
 Pädagogik, Psychologie
-Sonderpädagogik und Sozialpädagogik			
-Logopädie			
-Sonderpädagogik			
-Erziehungswissenschaften			
-Pädagogik / Psychologie			
-Psychologie			
+Sonderpädagogik und Sozialpädagogik - 180 ECTS	
+Logopädie - 180 ECTS
+Sonderpädagogik - 60 ECTS
+Erziehungswissenschaften - 120 ECTS
+Pädagogik / Psychologie - 120 ECTS
+Psychologie - 180 ECTS
 
 Exakte Wissenschaften und Naturwissenschaften
-Biochemie			
-Biologie			
-Chemie			
-Erdwissenschaften			
-Geographie			
-Mathematik			
-Physik			
-Umweltwissenschaften und Umweltgeisteswissenschaften
+Biochemie - 120 ECTS	
+Biologie - 120 ECTS		
+Chemie - 150 ECTS/120 ECTS	
+Erdwissenschaften - 150 ECTS
+Geographie - 120 ECTS
+Mathematik - 120 ECTS
+Physik - 150 ECTS	
+Umweltwissenschaften und Umweltgeisteswissenschaften - 60 ECTS
 	
 Humanmedizin, Medizinische Wissenschaften und Sportwissenschaften
-Humanmedizin			
-Biomedizinische Wissenschaften			
-Sport- und Bewegungswissenschaften			
-Digitalisierung und Informatik
+Humanmedizin - 180 ECTS
+Biomedizinische Wissenschaften - 120 ECTS
+Sport- und Bewegungswissenschaften - 180 ECTS/120 ECTS
 
-Wirtschaftsinformatik			
-Informatik			
+Digitalisierung und Informatiks
+Wirtschaftsinformatik - 180 ECTS
+Informatik - 120 ECTS
+		
 Unterricht auf der Primar- und Sekundarstufe
+Ausbildung für den Unterricht auf der Primarstufe - 180 ECTS
+Ausbildung für den Unterricht auf der Sekundarstufe I - 150 ECTS
 
-Ausbildung für den Unterricht auf der Primarstufe			
-Ausbildung für den Unterricht auf der Sekundarstufe I			
+Nebenprogramme nach Wahl (als 60/30 ECTS)
+Betriebswirtschaftslehre
+Biochemie
+Biologie
+Business Communication
+Chemie
+Deutsch als Fremdsprache
+Englische Sprache und Literatur
+Erdwissenschaften
+Erziehungswissenschaften
+Französisch
+Französisch als Fremdsprache
+Geographie
+Germanistik
+Germanistische Literaturwissenschaft
+Geschichte
+Griechische Sprache und Kultur
+Informatik
+Interreligiöse Studien
+Italienisch
+Kommunikationswissenschaft und Medienforschung
+Kunstgeschichte
+Lateinische Sprache und Kultur
+Mathematik
+Musikwissenschaft und Geschichte des Musiktheaters
+Osteuropa-Studien
+Pädagogik / Psychologie
+Physik
+Philosophie
+Politik und Gesellschaft
+Psychologie
+Rätoromanisch
+Rechtswissenschaft
+Religionswissenschaft
+Slavistik
+Sonderpädagogik
+Sozialanthropologie
+Sozialarbeit und Sozialpolitik
+Sozialarbeit und Sozialpolitik (FR)
+Soziologie
+Soziologie (FR)
+Spanisch
+Sport- und Bewegungswissenschaften
+Theologie
+Umweltwissenschaften und Umweltgeisteswissenschaften
+Volkswirtschaftslehre
+Wirtschaftsinformatik
+Zeitgeschichte
 
 # Bachelor of Science (BSc) Programme an der ETH
 https://ethz.ch/studierende/de/studium/studiengaenge.html
