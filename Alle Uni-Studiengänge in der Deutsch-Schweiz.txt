@@ -397,3 +397,135 @@ Unterricht auf der Primar- und Sekundarstufe
 Ausbildung für den Unterricht auf der Primarstufe			
 Ausbildung für den Unterricht auf der Sekundarstufe I			
 
+# Bachelor of Science (BSc) Programme an der ETH
+https://ethz.ch/studierende/de/studium/studiengaenge.html
+
+-----------------------------------------
+Architektur und Bauwissenschaften
+-----------------------------------------
+- Architektur (180)
+- Bauingenieurwissenschaften (180)
+- Raumbezogene Ingenieurwissenschaften (180)
+- Umweltingenieurwissenschaften (180)
+-----------------------------------------
+Systemorientierte Naturwissenschaften 1
+-----------------------------------------
+- Agrarwissenschaften (180)
+- Erd- und Klimawissenschaften (180)
+- Umweltnaturwissenschaften (180)
+
+-----------------------------------------
+Naturwissenschaften und Mathematik 1
+-----------------------------------------
+- Biologie (180)
+- Biochemie (180)
+- Chemie (180)
+- Chemieingenieurwissenschaften (180)
+- Interdisziplinäre Naturwissenschaften (180)
+- Pharmazeutische Wissenschaften (180)
+-----------------------------------------
+Systemorientierte Naturwissenschaften 2
+-----------------------------------------
+- Gesundheitswissenschaften und Technologie (180)
+- Lebensmittelwissenschaften und Ernährung (180)
+
+- Humanmedizin (180)
+
+-----------------------------------------
+Naturwissenschaften und Mathematik 2
+-----------------------------------------
+- Mathematik (180)
+- Physik (180)
+- Rechnergestützte Wissenschaften (180)
+-----------------------------------------
+Ingenieurwissenschaften
+-----------------------------------------
+- Elektrotechnik und Informationstechnologie (180)
+- Informatik (180)
+- Maschineningenieurwissenschaften (180)
+- Materialwissenschaft (180)
+
+# UZH Studiengänge - Übersicht
+https://www.uzh.ch/de/studies/programs/bachelor.html
+
+## 🔹 RECHTSWISSENSCHAFTEN
+### Bachelor of Law UZH (RVO21)
+- Rechtswissenschaft (180)
+
+## 🔹 MEDIZIN
+### Medizinische Studiengänge
+- Chiropraktik (180)
+- Humanmedizin (180)
+- Veterinärmedizin (180)
+- Zahnmedizin (180)
+
+## 🔹 GEISTESWISSENSCHAFTEN
+
+### Bachelor of Arts in Religionswissenschaft (Bologna 2020)
+- Religionswissenschaft (120)
+- Religious Studies and Theology (180)
+
+### Bachelor of Theology UZH (Bologna 2020)
+- Theologie (180/120)
+
+### Bachelor of Arts UZH in Wirtschaftswissenschaften (RVO22)
+- Banking and Finance (150)
+- Betriebswirtschaftslehre (150)
+- Volkswirtschaftslehre (150)
+
+### Bachelor of Arts (RVO19)
+- Archäologien (120)
+- Computerlinguistik und Sprachtechnologie (120)
+- Deutsche Sprach- und Literaturwissenschaft (120)
+- Englische Sprach- und Literaturwissenschaft (120)
+- Erziehungswissenschaft (120)
+- Fachwissenschaft Pädagogik und Psychologie (120)
+- Filmwissenschaft (120)
+- Französische Sprach- und Literaturwissenschaft (120)
+- Geschichte (120)
+- Griechische Philologie (120)
+- Iberoromanische Sprach- und Literaturwissenschaft (120)
+- Indologie (120)
+- Italienische Sprach- und Literaturwissenschaft (120)
+- Japanologie (120)
+- Kunstgeschichte (120)
+- Lateinische Philologie (120)
+- Musikwissenschaft (120)
+- Nah- und Mitteloststudien (120)
+- Osteuropastudien (120)
+- Philosophie (120)
+- Sinologie (120)
+- Skandinavistik (120)
+- Slavische Sprach- und Literaturwissenschaft (120)
+- Vergleichende Romanische Sprachwissenschaft (120)
+- Vergleichende Sprachwissenschaft (120)
+
+### Bachelor of Arts in Sozialwissenschaften (RVO19)
+- Ethnologie (120)
+- Kommunikationswissenschaft und Medienforschung (120)
+- Politikwissenschaft (120)
+- Populäre Kulturen (120)
+- Soziologie (120)
+
+### Bachelor of Science in Psychologie (RVO19)
+- Psychologie (120)
+
+## 🔹 MATHEMATISCH-NATURWISSENSCHAFTLICHE FAKULTÄT
+
+### Bachelor of Science UZH in Informatik (RVO22)
+- Softwaresysteme (150)
+- Wirtschaftsinformatik (150)
+
+### Bachelor of Science – Mathematisch-naturwissenschaftliche Fakultät (ab 2021)
+- Angewandte Mathematik und Machine Learning (180/150/120)
+- Astronomie und Astrophysik (180/150)
+- Biochemie (180)
+- Biodiversität (180/150/120)
+- Biologie (180/150/120)
+- Biomedizin (180/150)
+- Chemie (180/150/120)
+- Erdsystemwissenschaften (180)
+- Geographie (180/150/120)
+- Mathematik (180/150/120)
+- Physik (180/150/120)
+- Wirtschaftschemie (180)
