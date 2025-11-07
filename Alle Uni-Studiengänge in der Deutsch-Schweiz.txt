@@ -1,4 +1,4 @@
-Alle Uni-Studiengänge in der Schweiz
+Alle Uni-Studiengänge in der Deutsch-Schweiz
 
 Uni Basel
 https://www.unibas.ch/de/Studium/Vor-dem-Studium/Studienangebot.html?gad_source=1&gad_campaignid=20672271246&gclid=CjwKCAiAzrbIBhA3EiwAUBaUdXgl21oDhFVYO4ipn4KCykh_j4DgDUvTGdtV-CBZuDA-zhR5VYoM9xoCqlcQAvD_BwE
@@ -396,3 +396,4 @@ Unterricht auf der Primar- und Sekundarstufe
 
 Ausbildung für den Unterricht auf der Primarstufe			
 Ausbildung für den Unterricht auf der Sekundarstufe I			
+
