@@ -37,7 +37,28 @@ window.StudiengangModuleDetails = {
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=194171&semkez=2025W&ansicht=LEHRVERANSTALTUNGEN&lang=de",
   },
   "Allgemeine Chemie": {
-    kurzbeschreibung: "Die Vorlesung erläutert einige Grundlagen der allgemeinen Chemie. Dies schliesst (unter anderen) Reaktionsgleichungen, Energieumsatz bei chemischen Reaktionen, Eigenschaften von ionische und kovalente Bindungen, Lewisschen Strukturen, Eigenschaften von Lösungen, Kinetik, Thermodynamik, Säure-Basen Gleichgewichte, Elektrochemie und Eigenschaften von Metalle Komplexe ein.",
+    kurzbeschreibung: "Grundlagen der allgemeinen und anorganischen Chemie",
+    inhalt:
+      "► Chemische Reaktionen\n" +
+      "• Reaktionsgleichungen\n" +
+      "• Energieumsatz bei chemischen Reaktionen\n\n" +
+      "► Chemische Bindungen\n" +
+      "• Eigenschaften von ionischen Bindungen\n" +
+      "• Eigenschaften von kovalenten Bindungen\n" +
+      "• Lewissche Strukturen\n\n" +
+      "► Lösungen\n" +
+      "• Eigenschaften von Lösungen\n\n" +
+      "► Kinetik und Thermodynamik\n" +
+      "• Kinetik\n" +
+      "• Thermodynamik\n\n" +
+      "► Säure-Basen Gleichgewichte\n" +
+      "• Säure-Basen Theorie\n" +
+      "• Gleichgewichte\n\n" +
+      "► Elektrochemie\n" +
+      "• Redox-Reaktionen\n" +
+      "• Elektrochemische Zellen\n\n" +
+      "► Metallkomplexe\n" +
+      "• Eigenschaften von Metall-Komplexen",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=193363&semkez=2025W&ansicht=LEHRVERANSTALTUNGEN&lang=de",
   },
   "Grundlagen der Informatik": {
@@ -148,11 +169,46 @@ window.StudiengangModuleDetails = {
 
   // #region 2. Semester - Basisprüfungsblock 2
   "Infektion": {
-    kurzbeschreibung: "Aufbau und Funktion von pathogenen Bakterien, Viren, Pilzen, sowie ein- und mehrzelliger Parasiten. Die Vorlesung wird von einer Lernplattform begleitet. Einzelne Inhalte müssen im Selbststudium erarbeitet werden.",
+    kurzbeschreibung: "Aufbau und Funktion von pathogenen Bakterien, Viren, Pilzen und Parasiten sowie Antiinfektiva und Resistenzen",
+    inhalt:
+      "► Bakterien\n" +
+      "• Zellaufbau Gram-positiver Bakterien\n" +
+      "• Zellaufbau Gram-negativer Bakterien\n" +
+      "• Bakterien-Wirt Interaktionen\n" +
+      "• Auswirkungen auf den Wirt\n\n" +
+      "► Antibiotika\n" +
+      "• Wirkungsweise von Antiinfektiva\n" +
+      "• Antibiotika\n" +
+      "• Antibiotika-Resistenzen\n" +
+      "• Resistenzmechanismen von Pathogenen\n\n" +
+      "► Viren\n" +
+      "• Klassifikation pathogener Viren\n" +
+      "• Virale Infektionsmechanismen\n\n" +
+      "► Eukaryotische Krankheitserreger\n" +
+      "• Organisation eukaryotischer Krankheitserreger\n" +
+      "• Klassifizierung eukaryotischer Krankheitserreger\n" +
+      "• Lebensweise eukaryotischer Krankheitserreger\n" +
+      "• Pilze\n" +
+      "• Ein- und mehrzellige Parasiten",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=188594&semkez=2025S&ansicht=LEHRVERANSTALTUNGEN&lang=de",
   },
   "Biochemie": {
-    kurzbeschreibung: "Der Kurs vermittelt Studierenden die zentralen Fakten und Konzepte der Biochemie und behandelt Themen aus den Bereichen Struktur, physico-chemischen Eigenschaften und Funktion von Biomolekülen; Enzyme und deren Funktionsweise; menschlicher Stoffwechsel und dessen Regulation; Signaltransduktion und Motorproteine.",
+    kurzbeschreibung: "Zentrale Fakten und Konzepte der Biochemie: Biomoleküle, Enzyme, Stoffwechsel und Signaltransduktion",
+    inhalt:
+      "► Biomoleküle\n" +
+      "• Struktur von Biomolekülen\n" +
+      "• Physico-chemische Eigenschaften von Biomolekülen\n" +
+      "• Funktion von Biomolekülen\n\n" +
+      "► Enzyme\n" +
+      "• Enzyme und deren Funktionsweise\n" +
+      "• Enzymkinetik\n\n" +
+      "► Menschlicher Stoffwechsel\n" +
+      "• Stoffwechselwege\n" +
+      "• Regulation des Stoffwechsels\n\n" +
+      "► Signaltransduktion\n" +
+      "• Signalübertragung in Zellen\n\n" +
+      "► Motorproteine\n" +
+      "• Proteine als molekulare Motoren",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=188655&semkez=2025S&ansicht=LEHRVERANSTALTUNGEN&lang=de",
   },
   "Organische Chemie II": {
@@ -214,6 +270,30 @@ window.StudiengangModuleDetails = {
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=188324&semkez=2025S&ansicht=LEHRVERANSTALTUNGEN&lang=de",
   },
   "Biomechanik I": {
+    kurzbeschreibung: "Einführung in die Technische Mechanik mit Anwendungen in Biologie und Medizin: Kinematik, Statik und Materialverhalten",
+    inhalt:
+      "► Grundlagen\n" +
+      "• Lage und Geschwindigkeit materieller Punkte\n" +
+      "• Starre Körper\n" +
+      "• Ebene Bewegung\n" +
+      "• Kinematik starrer Körper\n" +
+      "• Kraft\n" +
+      "• Moment\n" +
+      "• Leistung\n\n" +
+      "► Statik\n" +
+      "• Äquivalenz und Reduktion von Kräftegruppen\n" +
+      "• Gleichgewicht\n" +
+      "• Hauptsatz der Statik\n" +
+      "• Bindungen\n" +
+      "• Analytische Statik\n" +
+      "• Reibung\n\n" +
+      "► Materialverhalten unter Belastung\n" +
+      "• Beanspruchung\n" +
+      "• Spannungen\n" +
+      "• Verzerrungen im Zug und Druck\n" +
+      "• Biegung\n" +
+      "• Torsion\n" +
+      "• Deformation und Versagen von Materialien",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=188267&semkez=2025S&ansicht=LEHRVERANSTALTUNGEN&lang=de",
   },
   "Mathematik II": {
@@ -266,6 +346,25 @@ window.StudiengangModuleDetails = {
       "• Residuenanalyse",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=188479&semkez=2025S&ansicht=LEHRVERANSTALTUNGEN&lang=de",
   },
+  "Einführung Gesundheitswissenschaften und Technologie II": {
+    kurzbeschreibung: "Einführung in die fünf Vertiefungsbereiche des Studiengangs und Berufsmöglichkeiten",
+    inhalt:
+      "► Vertiefungsbereiche\n" +
+      "• Medizintechnik\n" +
+      "• Rehabilitation und Inklusion\n" +
+      "• Bewegungswissenschaften und Sport\n" +
+      "• Neurowissenschaften\n" +
+      "• Molekulare Gesundheitswissenschaften\n\n" +
+      "► Forschungsprozesse\n" +
+      "• Ausgewählte Forschungsfragen\n" +
+      "• Konkrete Forschungsprozesse\n\n" +
+      "► Berufsfelder\n" +
+      "• Medizintechnik\n" +
+      "• Biomedizin\n" +
+      "• Gesundheitsförderung\n" +
+      "• Weitere Bereiche",
+    link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=188880&semkez=2025S&ansicht=LEHRVERANSTALTUNGEN&lang=de",
+  },
   "Praktikum Chemie": {
     kurzbeschreibung: "Grundlegende Techniken der Laborarbeit mit analytischen und präparativen Aufgaben",
     inhalt:
@@ -283,6 +382,25 @@ window.StudiengangModuleDetails = {
       "• CO2-Kreislauf\n" +
       "• Arbeit mit gasförmigen Substanzen im Labor",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=187326&semkez=2025S&ansicht=LEHRVERANSTALTUNGEN&lang=de",
+  },
+  "Praktikum Gesundheitswissenschaften und Technologie": {
+    kurzbeschreibung: "Ausgewählte Experimente als Einstieg ins wissenschaftliche Arbeiten im Bereich Gesundheitswissenschaften und Technologie",
+    inhalt:
+      "► Muskelphysiologie\n" +
+      "• Menschlicher vs. pneumatischer Muskel\n" +
+      "• Muskelaktivität und Kraft\n\n" +
+      "► Sensomotorik\n" +
+      "• Gleichgewicht/Sensomotorik\n\n" +
+      "► Biomechanik\n" +
+      "• Stress-Strain-Relation\n\n" +
+      "► Molekularbiologie\n" +
+      "• Molekulare Diagnostik\n\n" +
+      "► Wissenschaftliches Arbeiten\n" +
+      "• Datenerhebung\n" +
+      "• Datendarstellung\n" +
+      "• Diskussion und Berichterstellung\n" +
+      "• Literaturrecherche",
+    link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=187709&semkez=2025S&ansicht=LEHRVERANSTALTUNGEN&lang=de",
   },
   // #endregion
 
