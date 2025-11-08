@@ -2,7 +2,7 @@
 /* Custom Styles für BSc Physik ETH Zürich */
 
 /* Farbvariablen für Kategorien */
-[data-studiengang="physik"] {
+[data-studiengang="eth-physik"] {
     /* Basisprüfungsblöcke */
     --color-basis1: #7c2d12;              /* Dunkelrot-Braun für Basisprüfungsblock 1 */
     --color-basis2: #b91c1c;              /* Rot für Basisprüfungsblock 2 */
@@ -22,93 +22,93 @@
 }
 
 /* Basisprüfungsblöcke */
-[data-studiengang="physik"] .modul.basis1 {
+[data-studiengang="eth-physik"] .modul.basis1 {
     background-color: var(--color-basis1);
     border-color: var(--color-basis1);
     color: white;
 }
 
-[data-studiengang="physik"] .modul.basis2 {
+[data-studiengang="eth-physik"] .modul.basis2 {
     background-color: var(--color-basis2);
     border-color: var(--color-basis2);
     color: white;
 }
 
 /* Prüfungsblöcke */
-[data-studiengang="physik"] .modul.pruefung1 {
+[data-studiengang="eth-physik"] .modul.pruefung1 {
     background-color: var(--color-pruefung1);
     border-color: var(--color-pruefung1);
     color: white;
 }
 
-[data-studiengang="physik"] .modul.pruefung2a {
+[data-studiengang="eth-physik"] .modul.pruefung2a {
     background-color: var(--color-pruefung2a);
     border-color: var(--color-pruefung2a);
     color: white;
 }
 
-[data-studiengang="physik"] .modul.pruefung2b {
+[data-studiengang="eth-physik"] .modul.pruefung2b {
     background-color: var(--color-pruefung2b);
     border-color: var(--color-pruefung2b);
     color: white;
 }
 
 /* Weitere Kategorien */
-[data-studiengang="physik"] .modul.obligatorisch {
+[data-studiengang="eth-physik"] .modul.obligatorisch {
     background-color: var(--color-obligatorisch);
     border-color: var(--color-obligatorisch);
     color: white;
 }
 
-[data-studiengang="physik"] .modul.praktikum {
+[data-studiengang="eth-physik"] .modul.praktikum {
     background-color: var(--color-praktikum);
     border-color: var(--color-praktikum);
     color: white;
 }
 
-[data-studiengang="physik"] .modul.kernfach {
+[data-studiengang="eth-physik"] .modul.kernfach {
     background-color: var(--color-kernfach);
     border-color: var(--color-kernfach);
     color: white;
 }
 
-[data-studiengang="physik"] .modul.wahl {
+[data-studiengang="eth-physik"] .modul.wahl {
     background-color: var(--color-wahl);
     border-color: var(--color-wahl);
     color: white;
 }
 
-[data-studiengang="physik"] .modul.gess {
+[data-studiengang="eth-physik"] .modul.gess {
     background-color: var(--color-gess);
     border-color: var(--color-gess);
     color: white;
 }
 
-[data-studiengang="physik"] .modul.wissenschaft {
+[data-studiengang="eth-physik"] .modul.wissenschaft {
     background-color: var(--color-wissenschaft);
     border-color: var(--color-wissenschaft);
     color: white;
 }
 
 /* Hover-Effekte */
-[data-studiengang="physik"] .modul:hover {
+[data-studiengang="eth-physik"] .modul:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     filter: brightness(1.1);
 }
 
 /* Lesbarkeit */
-[data-studiengang="physik"] .modul .modul-kp {
+[data-studiengang="eth-physik"] .modul .modul-kp {
     font-weight: 600;
 }
 
-[data-studiengang="physik"] .modul .modul-titel {
+[data-studiengang="eth-physik"] .modul .modul-titel {
     font-weight: 500;
     color: inherit;
 }
 
 /* Farben-Legende */
-[data-studiengang="physik"] .farben-legende {
+[data-studiengang="eth-physik"] .farben-legende {
     margin-top: 20px;
     padding: 15px;
     background-color: #f9f9f9;
@@ -116,14 +116,14 @@
     border: 1px solid #ddd;
 }
 
-[data-studiengang="physik"] .farben-legende .legende-titel {
+[data-studiengang="eth-physik"] .farben-legende .legende-titel {
     font-size: 14px;
     font-weight: 600;
     margin-bottom: 10px;
     color: #333;
 }
 
-[data-studiengang="physik"] .farben-legende .item {
+[data-studiengang="eth-physik"] .farben-legende .item {
     display: inline-flex;
     align-items: center;
     gap: 8px;
@@ -132,7 +132,7 @@
     font-size: 12px;
 }
 
-[data-studiengang="physik"] .farben-legende .sw {
+[data-studiengang="eth-physik"] .farben-legende .sw {
     width: 20px;
     height: 14px;
     border-radius: 3px;

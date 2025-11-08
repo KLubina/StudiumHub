@@ -63,7 +63,7 @@
     <script>
         // URL Parameter auslesen
         const urlParams = new URLSearchParams(window.location.search);
-        const studiengang = urlParams.get('studiengang') || 'cs';
+        const studiengang = urlParams.get('studiengang') || 'eth-cs';
 
         // NEU: Data-Attribut setzen für CSS-Variablen
         document.body.setAttribute('data-studiengang', studiengang);
@@ -98,7 +98,7 @@
                 'extensions-utils'
             ];
 
-            const hasExtensions = ['itet', 'cse', 'rig'].includes(studiengang);
+            const hasExtensions = ['eth-itet', 'eth-cse', 'eth-rig'].includes(studiengang);
 
             if (hasExtensions) {
                 // Bestimme ob major-minor oder mono Modell

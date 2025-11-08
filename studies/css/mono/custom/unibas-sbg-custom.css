@@ -44,28 +44,28 @@
     --color-wahl: #ec4899;
 }
 
-[data-studiengang="sbg"] .modul.grundlagen {
+[data-studiengang="unibas-sbg"] .modul.grundlagen {
     background-color: var(--color-grundlagen);
     border-color: var(--color-grundlagen);
 }
 
-[data-studiengang="sbg"] .modul.vertiefung {
+[data-studiengang="unibas-sbg"] .modul.vertiefung {
     background-color: var(--color-vertiefung);
     border-color: var(--color-vertiefung);
 }
 
-[data-studiengang="sbg"] .modul.profil {
+[data-studiengang="unibas-sbg"] .modul.profil {
     background-color: var(--color-profil);
     border-color: var(--color-profil);
 }
 
-[data-studiengang="sbg"] .modul.wahl {
+[data-studiengang="unibas-sbg"] .modul.wahl {
     background-color: var(--color-wahl);
     border-color: var(--color-wahl);
 }
 
 /* Fachgebiet-Überschriften */
-[data-studiengang="sbg"] .fachgebiet-titel {
+[data-studiengang="unibas-sbg"] .fachgebiet-titel {
     font-size: 13px;
     font-weight: 600;
     color: #1f2937;
@@ -77,17 +77,17 @@
 }
 
 /* Kompakte Module */
-[data-studiengang="sbg"] .modul {
+[data-studiengang="unibas-sbg"] .modul {
     max-width: 200px;
     min-width: 120px;
 }
 
 /* Category-Container Layout */
-[data-studiengang="sbg"] .category-container {
+[data-studiengang="unibas-sbg"] .category-container {
     margin-bottom: 30px;
 }
 
-[data-studiengang="sbg"] .category-titel {
+[data-studiengang="unibas-sbg"] .category-titel {
     font-size: 18px;
     font-weight: bold;
     color: #1f2937;

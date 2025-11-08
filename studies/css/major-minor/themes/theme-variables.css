@@ -2,7 +2,7 @@
 /* Studiengang-spezifische Farben */
 
 /* ==== BWL ==== */
-[data-studiengang="bwl"] {
+[data-studiengang="unisg-bwl"] {
     --color-kernfach: #0066b2;
     --color-methoden: #c4153a;
     --color-grundlagen: #5ca800;
@@ -11,7 +11,7 @@
 }
 
 /* ==== CS ==== */
-[data-studiengang="cs"] {
+[data-studiengang="eth-cs"] {
     --color-math: #0066b3;
     --color-cs-pure: #7cc623;
     --color-cs-cse: #4aa147;
@@ -21,7 +21,7 @@
 }
 
 /* ==== CSE ==== */
-[data-studiengang="cse"] {
+[data-studiengang="eth-cse"] {
     --color-basis1: #8064A2;
     --color-basis2: #1F77B4;
     --color-block-g1: #8DC63F;
@@ -38,7 +38,7 @@
 }
 
 /* ==== ITET ==== */
-[data-studiengang="itet"] {
+[data-studiengang="eth-itet"] {
     --color-obligatorisch: #0D5B8C;
     --color-obligatorisch-praktikum: #00A0E3;
     --color-wahl-praktika-projekte: #4CA64C;
@@ -49,7 +49,7 @@
 }
 
 /* ==== MATH ==== */
-[data-studiengang="math"] {
+[data-studiengang="eth-math"] {
     --color-obligatorisch: #0D5B8C;
     --color-ergaenzung: #00A0E3;
     --color-wahl: #F2B48F;
@@ -59,7 +59,7 @@
 }
 
 /* ==== MTEC ==== */
-[data-studiengang="mtec"] {
+[data-studiengang="eth-mtec"] {
     --color-core: #0D5B8C;
     --color-elective: #00A0E3;
     --color-supplementary: #F2B48F;
@@ -68,7 +68,7 @@
 }
 
 /* ==== IT ==== */
-[data-studiengang="it"] {
+[data-studiengang="hssh-it"] {
     --color-grundlagen: #2E86AB;
     --color-programmierung: #A23B72;
     --color-kommunikation: #F18F01;
@@ -79,7 +79,7 @@
 }
 
 /* ==== CE ==== */
-[data-studiengang="ce"] {
+[data-studiengang="aspira-ce"] {
     --color-foundations: #1F4E79;
     --color-programming: #D83B01;
     --color-systems: #038387;
@@ -90,7 +90,7 @@
 }
 
 /* ==== CDS ==== */
-[data-studiengang="cds"] {
+[data-studiengang="fhgr-cds"] {
     --color-grundlagen: #5B9BD5;
     --color-schwerpunkte: #D4A574;
     --color-wahlmodul: #F2E394;
@@ -99,7 +99,7 @@
 }
 
 /* ==== ZHAW-CS ==== */
-[data-studiengang="zhaw-cs"] {
+[data-studiengang="fhzh-cs"] {
     --color-kontext: #82B366;
     --color-projekt: #D18B47;
     --color-fach: #E1C34F;
@@ -107,7 +107,7 @@
 }
 
 /* ==== RIG ==== */
-[data-studiengang="rig"] {
+[data-studiengang="eth-rig"] {
     --color-grundlagen: #87CEEB;
     --color-obligatorisch: #DC143C;
     --color-wahlmodule: #FF6B6B;

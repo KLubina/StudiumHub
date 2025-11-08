@@ -26,17 +26,17 @@ class StudiengangConfigLoader {
         await this.loadOptionalModule(`${dataPath}/basic-modules-details.js`);
         
         // FIXED: BFH and HSLU specific data files
-        if (this.studiengang === 'bfh-eit') {
+        if (this.studiengang === 'fhbern-eit') {
             await this.loadOptionalModule(`${dataPath}/vertiefungsrichtungen-data.js`);
             await this.loadOptionalModule(`${dataPath}/wahlmodule-data.js`);
-        } else if (this.studiengang === 'hslu-eit') {
+        } else if (this.studiengang === 'fhlu-eit') {
             await this.loadOptionalModule(`${dataPath}/vertiefungsrichtungen-data.js`);
             await this.loadOptionalModule(`${dataPath}/wahlmodule-data.js`);
-        } else if (this.studiengang === 'msc-itet') {
+        } else if (this.studiengang === 'eth-msc-itet') {
             // MSc ITET uses kernfächer and vertiefungsfächer data files
             await this.loadOptionalModule(`${dataPath}/kernfacher-data.js`);
             await this.loadOptionalModule(`${dataPath}/vertiefungsfacher-data.js`);
-        } else if (this.studiengang === 'hst') {
+        } else if (this.studiengang === 'eth-hst') {
             // HST uses schwerpunkt and wahlfächer data files
             await this.loadOptionalModule(`${dataPath}/schwerpunkt-data.js`);
             await this.loadOptionalModule(`${dataPath}/wahlfacher-data.js`);
@@ -136,7 +136,7 @@ class StudiengangConfigLoader {
 
     combineModuleData() {
         // Für ITET: Kombiniere separate Datendateien zu window.ITETModuleData falls es noch nicht existiert
-        if (this.studiengang === 'itet') {
+        if (this.studiengang === 'eth-itet') {
             if (!window.ITETModuleData || !window.ITETModuleData.getAllWahlmoduleData) {
                 // Sammle alle separaten ITET-Daten
                 const combinedData = {};
@@ -181,7 +181,7 @@ class StudiengangConfigLoader {
                 
                 console.log('✅ ITET Moduldaten kombiniert:', window.ITETModuleData);
             }
-        } else if (this.studiengang === 'msc-itet') {
+        } else if (this.studiengang === 'eth-msc-itet') {
             // Für MSc ITET: Kombiniere Kernfächer- und Vertiefungsfächer-Daten in ein konsistentes Wrapper-Objekt
             if (!window.MSCITETModuleData || !window.MSCITETModuleData.getAllWahlmoduleData) {
                 const combinedMSC = {};

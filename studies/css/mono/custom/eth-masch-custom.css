@@ -2,7 +2,7 @@
 /* Custom Styles für BSc Maschineningenieurwissenschaften ETH Zürich */
 
 /* Farbvariablen für Standard-Kategorien */
-[data-studiengang="masch"] {
+[data-studiengang="eth-masch"] {
     /* Standard-Kategorien */
     --color-obligatorisch: #0D5B8C;         /* Dunkelblau für Pflichtfächer */
     --color-praktikum: #00A0E3;             /* Hellblau für Praktika */
@@ -12,55 +12,55 @@
 }
 
 /* Standard-Kategorien Styling */
-[data-studiengang="masch"] .modul.obligatorisch {
+[data-studiengang="eth-masch"] .modul.obligatorisch {
     background-color: var(--color-obligatorisch);
     border-color: var(--color-obligatorisch);
     color: white;
 }
 
-[data-studiengang="masch"] .modul.praktikum {
+[data-studiengang="eth-masch"] .modul.praktikum {
     background-color: var(--color-praktikum);
     border-color: var(--color-praktikum);
     color: white;
 }
 
-[data-studiengang="masch"] .modul.wahl {
+[data-studiengang="eth-masch"] .modul.wahl {
     background-color: var(--color-wahl);
     border-color: var(--color-wahl);
     color: black;
 }
 
-[data-studiengang="masch"] .modul.vertiefung {
+[data-studiengang="eth-masch"] .modul.vertiefung {
     background-color: var(--color-vertiefung);
     border-color: var(--color-vertiefung);
     color: white;
 }
 
-[data-studiengang="masch"] .modul.wissenschaft {
+[data-studiengang="eth-masch"] .modul.wissenschaft {
     background-color: var(--color-wissenschaft);
     border-color: var(--color-wissenschaft);
     color: white;
 }
 
 /* Hover-Effekte */
-[data-studiengang="masch"] .modul:hover {
+[data-studiengang="eth-masch"] .modul:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     filter: brightness(1.05);
 }
 
 /* Lesbarkeit */
-[data-studiengang="masch"] .modul .modul-kp {
+[data-studiengang="eth-masch"] .modul .modul-kp {
     font-weight: 600;
 }
 
-[data-studiengang="masch"] .modul .modul-titel {
+[data-studiengang="eth-masch"] .modul .modul-titel {
     font-weight: 500;
     color: inherit;
 }
 
 /* Farben-Legende */
-[data-studiengang="masch"] .farben-legende {
+[data-studiengang="eth-masch"] .farben-legende {
     margin-top: 20px;
     padding: 15px;
     background-color: #f9f9f9;
@@ -68,14 +68,14 @@
     border: 1px solid #ddd;
 }
 
-[data-studiengang="masch"] .farben-legende .legende-titel {
+[data-studiengang="eth-masch"] .farben-legende .legende-titel {
     font-size: 14px;
     font-weight: 600;
     margin-bottom: 10px;
     color: #333;
 }
 
-[data-studiengang="masch"] .farben-legende .item {
+[data-studiengang="eth-masch"] .farben-legende .item {
     display: inline-flex;
     align-items: center;
     gap: 8px;
@@ -84,7 +84,7 @@
     font-size: 12px;
 }
 
-[data-studiengang="masch"] .farben-legende .sw {
+[data-studiengang="eth-masch"] .farben-legende .sw {
     width: 20px;
     height: 14px;
     border-radius: 3px;

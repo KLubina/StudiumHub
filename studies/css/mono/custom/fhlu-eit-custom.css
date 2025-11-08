@@ -1,14 +1,17 @@
-/* ==== BFH EIT CUSTOM CSS ==== */
-/* Spezifische Features für BFH Elektrotechnik und Informationstechnologie */
+/* ==== HSLU EIT CUSTOM CSS ==== */
+/* Spezifische Features für HSLU Elektrotechnik und Informationstechnologie */
 
 /* CSS-Variablen für Farbschema */
-[data-studiengang="bfh-eit"] {
-    --color-grundlagen: #1f77b4;           /* Blau für Grundlagenfächer */
-    --color-praktika: #ff7f0e;             /* Orange für Praktika und Projekte */
-    --color-sprachen: #2ca02c;             /* Grün für Sprachen und Soft Skills */
-    --color-vertiefung: #d62728;           /* Rot für Vertiefungsrichtungen */
-    --color-wahlmodule: #9467bd;           /* Lila für Fachliche Wahlmodule */
-    --color-abschluss: #8c564b;            /* Braun für Abschlussarbeit */
+[data-studiengang="fhlu-eit"] {
+    --color-grundlagen: #2E86AB;           /* Blau für Grundlagenfächer */
+    --color-elektrotechnik: #A23B72;       /* Magenta für Elektrotechnik und Elektronik */
+    --color-informatik: #F18F01;           /* Orange für Informatik und Programmierung */
+    --color-projekte: #C73E1D;             /* Rot für Produktentwicklung und Projekte */
+    --color-kontext: #6A994E;              /* Grün für Kontextstudium */
+    --color-vertiefung: #7209B7;           /* Lila für Vertiefungsrichtungen */
+    --color-erweiterung: #F72585;          /* Pink für Erweiterungsmodule */
+    --color-zusatz: #4361EE;               /* Blau-Lila für Zusatzmodule */
+    --color-abschluss: #F77F00;            /* Orange für Abschlussarbeit */
 }
 
 /* KP-Counter */
@@ -25,7 +28,7 @@
     text-align: center;
     margin-bottom: 15px;
     padding: 10px;
-    background: linear-gradient(135deg, var(--color-grundlagen), var(--color-praktika));
+    background: linear-gradient(135deg, var(--color-grundlagen), var(--color-elektrotechnik));
     color: white;
     border-radius: 5px;
     font-weight: bold;
@@ -52,38 +55,53 @@
 }
 
 /* Kategorie-spezifische Styles */
-[data-studiengang="bfh-eit"] .grundlagen {
+[data-studiengang="fhlu-eit"] .grundlagen {
     background-color: var(--color-grundlagen);
     color: white;
 }
 
-[data-studiengang="bfh-eit"] .praktika {
-    background-color: var(--color-praktika);
+[data-studiengang="fhlu-eit"] .elektrotechnik {
+    background-color: var(--color-elektrotechnik);
     color: white;
 }
 
-[data-studiengang="bfh-eit"] .sprachen {
-    background-color: var(--color-sprachen);
+[data-studiengang="fhlu-eit"] .informatik {
+    background-color: var(--color-informatik);
     color: white;
 }
 
-[data-studiengang="bfh-eit"] .vertiefung {
+[data-studiengang="fhlu-eit"] .projekte {
+    background-color: var(--color-projekte);
+    color: white;
+}
+
+[data-studiengang="fhlu-eit"] .kontext {
+    background-color: var(--color-kontext);
+    color: white;
+}
+
+[data-studiengang="fhlu-eit"] .vertiefung {
     background-color: var(--color-vertiefung);
     color: white;
 }
 
-[data-studiengang="bfh-eit"] .wahlmodule {
-    background-color: var(--color-wahlmodule);
+[data-studiengang="fhlu-eit"] .erweiterung {
+    background-color: var(--color-erweiterung);
     color: white;
 }
 
-[data-studiengang="bfh-eit"] .abschluss {
+[data-studiengang="fhlu-eit"] .zusatz {
+    background-color: var(--color-zusatz);
+    color: white;
+}
+
+[data-studiengang="fhlu-eit"] .abschluss {
     background-color: var(--color-abschluss);
     color: white;
 }
 
 /* 3. Jahr Horizontales Layout */
-[data-studiengang="bfh-eit"] .jahr:last-child .module-container {
+[data-studiengang="fhlu-eit"] .jahr:last-child .module-container {
     display: flex !important;
     flex-direction: row !important;
     flex-wrap: wrap !important;
@@ -91,7 +109,7 @@
 }
 
 /* Bereich-Titel */
-[data-studiengang="bfh-eit"] .bereich-titel {
+[data-studiengang="fhlu-eit"] .bereich-titel {
     font-size: 12px;
     font-weight: bold;
     color: #333;
@@ -105,13 +123,13 @@
 }
 
 /* Kompakte Module */
-[data-studiengang="bfh-eit"] .modul {
+[data-studiengang="fhlu-eit"] .modul {
     max-width: 180px;
     min-width: 140px;
 }
 
 /* Hover Effect */
-[data-studiengang="bfh-eit"] .modul:hover {
+[data-studiengang="fhlu-eit"] .modul:hover {
     filter: brightness(1.1);
     transform: scale(1.02);
     transition: all 0.2s ease;
@@ -120,7 +138,7 @@
 /* Wahlmodul Controls */
 .wahlmodul-controls {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     margin: 15px 0;
 }
@@ -132,7 +150,20 @@
     cursor: pointer;
     font-size: 12px;
     transition: all 0.2s;
-    background-color: var(--color-wahlmodule);
+}
+
+.wahlmodul-controls .vertiefung-btn {
+    background-color: var(--color-vertiefung);
+    color: white;
+}
+
+.wahlmodul-controls .erweiterung-btn {
+    background-color: var(--color-erweiterung);
+    color: white;
+}
+
+.wahlmodul-controls .zusatz-btn {
+    background-color: var(--color-zusatz);
     color: white;
 }
 
@@ -141,7 +172,7 @@
 }
 
 /* Messages */
-.bfh-eit-message {
+.hslu-eit-message {
     position: fixed;
     top: 20px;
     right: 20px;

@@ -60,7 +60,7 @@
 }
 
 /* 3. Jahr Horizontales Layout */
-[data-studiengang="lmw"] .jahr:last-child .module-container {
+[data-studiengang="eth-lmw"] .jahr:last-child .module-container {
     display: flex !important;
     flex-direction: row !important;
     flex-wrap: wrap !important;
@@ -68,7 +68,7 @@
 }
 
 /* Bereich-Titel */
-[data-studiengang="lmw"] .bereich-titel {
+[data-studiengang="eth-lmw"] .bereich-titel {
     font-size: 12px;
     font-weight: bold;
     color: #333;
@@ -82,7 +82,7 @@
 }
 
 /* Kompakte Module */
-[data-studiengang="lmw"] .modul {
+[data-studiengang="eth-lmw"] .modul {
     max-width: 200px;
     min-width: 120px;
 }
@@ -117,109 +117,109 @@
 }
 
 /* Kategorie-basierte Färbung */
-[data-studiengang="lmw"] .modul.basispruefung {
+[data-studiengang="eth-lmw"] .modul.basispruefung {
     background-color: var(--color-basispruefung);
     border-color: var(--color-basispruefung);
 }
 
-[data-studiengang="lmw"] .modul.zusatzfach {
+[data-studiengang="eth-lmw"] .modul.zusatzfach {
     background-color: var(--color-zusatzfach);
     border-color: var(--color-zusatzfach);
 }
 
-[data-studiengang="lmw"] .modul.obligatorisch {
+[data-studiengang="eth-lmw"] .modul.obligatorisch {
     background-color: var(--color-obligatorisch);
     border-color: var(--color-obligatorisch);
 }
 
-[data-studiengang="lmw"] .modul.grundlagenfach {
+[data-studiengang="eth-lmw"] .modul.grundlagenfach {
     background-color: var(--color-grundlagenfach);
     border-color: var(--color-grundlagenfach);
 }
 
-[data-studiengang="lmw"] .modul.weitere {
+[data-studiengang="eth-lmw"] .modul.weitere {
     background-color: var(--color-weitere);
     border-color: var(--color-weitere);
 }
 
-[data-studiengang="lmw"] .modul.kernfach {
+[data-studiengang="eth-lmw"] .modul.kernfach {
     background-color: var(--color-kernfach);
     border-color: var(--color-kernfach);
 }
 
-[data-studiengang="lmw"] .modul.fachgrundlage {
+[data-studiengang="eth-lmw"] .modul.fachgrundlage {
     background-color: var(--color-fachgrundlage);
     border-color: var(--color-fachgrundlage);
 }
 
-[data-studiengang="lmw"] .modul.lmw-fach {
+[data-studiengang="eth-lmw"] .modul.lmw-fach {
     background-color: var(--color-lmw-fach);
     border-color: var(--color-lmw-fach);
 }
 
-[data-studiengang="lmw"] .modul.praktikum {
+[data-studiengang="eth-lmw"] .modul.praktikum {
     background-color: var(--color-praktikum);
     border-color: var(--color-praktikum);
 }
 
-[data-studiengang="lmw"] .modul.exkursion {
+[data-studiengang="eth-lmw"] .modul.exkursion {
     background-color: var(--color-exkursion);
     border-color: var(--color-exkursion);
 }
 
-[data-studiengang="lmw"] .modul.wahl {
+[data-studiengang="eth-lmw"] .modul.wahl {
     background-color: var(--color-wahl);
     border-color: var(--color-wahl);
 }
 
-[data-studiengang="lmw"] .modul.wik {
+[data-studiengang="eth-lmw"] .modul.wik {
     background-color: var(--color-wik);
     border-color: var(--color-wik);
 }
 
-[data-studiengang="lmw"] .modul.bachelor-arbeit {
+[data-studiengang="eth-lmw"] .modul.bachelor-arbeit {
     background-color: var(--color-bachelor-arbeit);
     border-color: var(--color-bachelor-arbeit);
 }
 
 /* Bereich-basierte Färbung */
-[data-studiengang="lmw"] .modul.bereich-natwig {
+[data-studiengang="eth-lmw"] .modul.bereich-natwig {
     background-color: #4A90E2;
     border-color: #4A90E2;
 }
 
-[data-studiengang="lmw"] .modul.bereich-sozwi {
+[data-studiengang="eth-lmw"] .modul.bereich-sozwi {
     background-color: #F5A623;
     border-color: #F5A623;
 }
 
-[data-studiengang="lmw"] .modul.bereich-lmw {
+[data-studiengang="eth-lmw"] .modul.bereich-lmw {
     background-color: #7ED321;
     border-color: #7ED321;
 }
 
 /* Hover-Effekte für Module */
-[data-studiengang="lmw"] .modul:hover {
+[data-studiengang="eth-lmw"] .modul:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 /* Text Kontrast Anpassungen */
-[data-studiengang="lmw"] .modul.basispruefung,
-[data-studiengang="lmw"] .modul.kernfach,
-[data-studiengang="lmw"] .modul.fachgrundlage,
-[data-studiengang="lmw"] .modul.lmw-fach,
-[data-studiengang="lmw"] .modul.bereich-natwig,
-[data-studiengang="lmw"] .modul.bereich-lmw {
+[data-studiengang="eth-lmw"] .modul.basispruefung,
+[data-studiengang="eth-lmw"] .modul.kernfach,
+[data-studiengang="eth-lmw"] .modul.fachgrundlage,
+[data-studiengang="eth-lmw"] .modul.lmw-fach,
+[data-studiengang="eth-lmw"] .modul.bereich-natwig,
+[data-studiengang="eth-lmw"] .modul.bereich-lmw {
     color: white;
 }
 
-[data-studiengang="lmw"] .modul.basispruefung .modul-titel,
-[data-studiengang="lmw"] .modul.kernfach .modul-titel,
-[data-studiengang="lmw"] .modul.fachgrundlage .modul-titel,
-[data-studiengang="lmw"] .modul.lmw-fach .modul-titel,
-[data-studiengang="lmw"] .modul.bereich-natwig .modul-titel,
-[data-studiengang="lmw"] .modul.bereich-lmw .modul-titel {
+[data-studiengang="eth-lmw"] .modul.basispruefung .modul-titel,
+[data-studiengang="eth-lmw"] .modul.kernfach .modul-titel,
+[data-studiengang="eth-lmw"] .modul.fachgrundlage .modul-titel,
+[data-studiengang="eth-lmw"] .modul.lmw-fach .modul-titel,
+[data-studiengang="eth-lmw"] .modul.bereich-natwig .modul-titel,
+[data-studiengang="eth-lmw"] .modul.bereich-lmw .modul-titel {
     color: white;
 }
 
@@ -242,12 +242,12 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    [data-studiengang="lmw"] .modul {
+    [data-studiengang="eth-lmw"] .modul {
         max-width: 100%;
         min-width: 100px;
     }
 
-    [data-studiengang="lmw"] .jahr:last-child .module-container {
+    [data-studiengang="eth-lmw"] .jahr:last-child .module-container {
         flex-direction: column !important;
     }
 }

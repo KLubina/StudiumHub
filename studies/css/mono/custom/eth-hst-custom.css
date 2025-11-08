@@ -61,7 +61,7 @@
 }
 
 /* 3. Jahr Horizontales Layout */
-[data-studiengang="hst"] .jahr:last-child .module-container {
+[data-studiengang="eth-hst"] .jahr:last-child .module-container {
     display: flex !important;
     flex-direction: row !important;
     flex-wrap: wrap !important;
@@ -69,7 +69,7 @@
 }
 
 /* Bereich-Titel */
-[data-studiengang="hst"] .bereich-titel {
+[data-studiengang="eth-hst"] .bereich-titel {
     font-size: 12px;
     font-weight: bold;
     color: #333;
@@ -83,7 +83,7 @@
 }
 
 /* Kompakte Module */
-[data-studiengang="hst"] .modul {
+[data-studiengang="eth-hst"] .modul {
     max-width: 180px;
     min-width: 140px;
 }
@@ -109,113 +109,113 @@
     --color-wissenschaft: #A29BFE;
 }
 
-[data-studiengang="hst"] .modul.basispruefung {
+[data-studiengang="eth-hst"] .modul.basispruefung {
     background-color: var(--color-basispruefung);
     border-color: var(--color-basispruefung);
 }
 
-[data-studiengang="hst"] .modul.kernfach {
+[data-studiengang="eth-hst"] .modul.kernfach {
     background-color: var(--color-kernfach);
     border-color: var(--color-kernfach);
 }
 
-[data-studiengang="hst"] .modul.schwerpunkt {
+[data-studiengang="eth-hst"] .modul.schwerpunkt {
     background-color: var(--color-schwerpunkt);
     border-color: var(--color-schwerpunkt);
 }
 
-[data-studiengang="hst"] .modul.wahl {
+[data-studiengang="eth-hst"] .modul.wahl {
     background-color: var(--color-wahl);
     border-color: var(--color-wahl);
 }
 
-[data-studiengang="hst"] .modul.wissenschaft {
+[data-studiengang="eth-hst"] .modul.wissenschaft {
     background-color: var(--color-wissenschaft);
     border-color: var(--color-wissenschaft);
 }
 
 /* Prüfungsblock Farben */
-[data-studiengang="hst"] .modul.block-bp1 {
+[data-studiengang="eth-hst"] .modul.block-bp1 {
     background-color: #FF6B6B;
     border-color: #FF6B6B;
 }
 
-[data-studiengang="hst"] .modul.block-bp2 {
+[data-studiengang="eth-hst"] .modul.block-bp2 {
     background-color: #4ECDC4;
     border-color: #4ECDC4;
 }
 
-[data-studiengang="hst"] .modul.block-ka {
+[data-studiengang="eth-hst"] .modul.block-ka {
     background-color: #45B7D1;
     border-color: #45B7D1;
 }
 
-[data-studiengang="hst"] .modul.block-kb {
+[data-studiengang="eth-hst"] .modul.block-kb {
     background-color: #96CEB4;
     border-color: #96CEB4;
 }
 
-[data-studiengang="hst"] .modul.block-kc {
+[data-studiengang="eth-hst"] .modul.block-kc {
     background-color: #FFEAA7;
     border-color: #FFEAA7;
 }
 
 /* Zusätzliche Kategorie-spezifische Klassen (von kategorieZuKlasse in HST config) */
-[data-studiengang="hst"] .modul.basispruefung-bp1 {
+[data-studiengang="eth-hst"] .modul.basispruefung-bp1 {
     background-color: #FF6B6B; /* wie block-bp1 */
     border-color: #FF6B6B;
 }
 
-[data-studiengang="hst"] .modul.basispruefung-bp2 {
+[data-studiengang="eth-hst"] .modul.basispruefung-bp2 {
     background-color: #4ECDC4; /* wie block-bp2 */
     border-color: #4ECDC4;
 }
 
-[data-studiengang="hst"] .modul.praktikum-basisjahr {
+[data-studiengang="eth-hst"] .modul.praktikum-basisjahr {
     background-color: #45B7D1; /* Praktikum: wähle Farbton (hier nahe Kern-A) */
     border-color: #45B7D1;
 }
 
 /* Legenden-Einträge für die neuen Kategorien */
-[data-studiengang="hst"] .legende-item.basispruefung-bp1 {
+[data-studiengang="eth-hst"] .legende-item.basispruefung-bp1 {
     background-color: #FF6B6B;
     color: white;
 }
 
-[data-studiengang="hst"] .legende-item.basispruefung-bp2 {
+[data-studiengang="eth-hst"] .legende-item.basispruefung-bp2 {
     background-color: #4ECDC4;
     color: white;
 }
 
-[data-studiengang="hst"] .legende-item.praktikum-basisjahr {
+[data-studiengang="eth-hst"] .legende-item.praktikum-basisjahr {
     background-color: #45B7D1;
     color: white;
 }
 
 /* Legenden-Farben für Kernfächer Blöcke */
-[data-studiengang="hst"] .legende-item.block-ka {
+[data-studiengang="eth-hst"] .legende-item.block-ka {
     background-color: #45B7D1;
     color: white;
 }
 
-[data-studiengang="hst"] .legende-item.block-kb {
+[data-studiengang="eth-hst"] .legende-item.block-kb {
     background-color: #96CEB4;
     color: white;
 }
 
-[data-studiengang="hst"] .legende-item.block-kc {
+[data-studiengang="eth-hst"] .legende-item.block-kc {
     background-color: #FFEAA7;
     color: #333;
 }
 
 /* Styles for new category: Einzelfächer und Praktika */
-[data-studiengang="hst"] .modul.einzelfaecher-praktika {
+[data-studiengang="eth-hst"] .modul.einzelfaecher-praktika {
     background-color: #F6C85F; /* warm gelb/orange für Praktika/Einzelfächer */
     border-color: #F6C85F;
     color: #222;
 }
 
-[data-studiengang="hst"] .legende-item.einzelfaecher-praktika {
+[data-studiengang="eth-hst"] .legende-item.einzelfaecher-praktika {
     background-color: #F6C85F;
     color: #222;
 }
