@@ -776,4 +776,26 @@ window.StudiengangModuleDetails = {
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=187457&semkez=2025S&ansicht=LEHRVERANSTALTUNGEN&lang=de",
   },
   // #endregion
+
+  // #region Bachelorarbeit
+  "Bachelorarbeit": {
+    kurzbeschreibung: "Selbständige Bearbeitung eines wissenschaftlichen Themas im Bereich Gesundheitswissenschaften und Technologie",
+    inhalt:
+      "• Individuell definiertes wissenschaftliches Projekt im Bereich D-HEST\n\n" +
+      "D-HEST Forschungsgruppen:\n\n" +
+      "► Institute of Human Movement Sciences and Sport\n" +
+      "   https://ibws.ethz.ch/the-institute.html\n\n" +
+      "► Institute of Food, Nutrition and Health\n" +
+      "   https://ifnh.ethz.ch/research.html\n\n" +
+      "► Medizintechnik\n" +
+      "   https://hest.ethz.ch/forschung/forschungsbereiche/medizintechnik.html\n\n" +
+      "► Institute for Neuroscience\n" +
+      "   https://ins.ethz.ch/research.html\n\n" +
+      "► Institute of Translational Medicine\n" +
+      "   https://itm.ethz.ch/research.html\n\n" +
+      "► Biomedical Proteomics Platform\n" +
+      "   https://hest.ethz.ch/forschung/forschungsbereiche/biomedical-proteomics-platform.html",
+    link: "https://hest.ethz.ch/forschung/forschungsbereiche.html"
+  },
+  // #endregion
 };
