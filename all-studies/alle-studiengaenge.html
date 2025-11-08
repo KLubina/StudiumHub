@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/svg+xml" href="https://www.svgrepo.com/show/400288/graduationcap.svg">
+    <link rel="icon" type="image/png" sizes="256x256" href="https://images.emojiterra.com/mozilla/512px/1f393.png">
+
+    <link rel="stylesheet" href="alle-studiengaenge.css">
+
+    <title>Alle Uni-Studiengänge in der Deutsch-Schweiz | StudiumHub</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="../index.html" class="back-link">← Zurück zu StudiumHub</a>
+            <h1>Alle Uni-Studiengänge in der Deutsch-Schweiz</h1>
+            <div class="subtitle">
+                <a href="https://www.berufsberatung.ch/dyn/show/5435" target="_blank" rel="noopener noreferrer" style="color: white; font-size: 0.9rem;">
+                    Quelle: berufsberatung.ch
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Filter -->
+        <div class="controls">
+            <div class="filter-container">
+                <select id="uniFilter">
+                    <option value="">Alle Universitäten</option>
+                </select>
+                <select id="categoryFilter">
+                    <option value="">Alle Fachbereiche</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Studiengänge werden hier angezeigt -->
+        <div id="studiengaengeContainer"></div>
+    </div>
+
+    <script src="alle-studiengaenge-data.js"></script>
+    <script src="alle-studiengaenge.js"></script>
+</body>
+
+</html>
