@@ -92,7 +92,7 @@
 
 ### 1. Theologie und Religionswissenschaften
 
-- Theologie Flex-Studium - 180/120/60 ECTS
+- Theologie - 180/120/60 ECTS
 - Religionspädagogik - 180/60 ECTS
 - Judaistik - 120/60 ECTS
 
@@ -257,56 +257,56 @@
 
 ### 1. Theologie und Religionswissenschaften
 
-- Theologie - 180 ECTS
+- Theologie - 180/60 ECTS
 - Theologische Studien - 120 ECTS
-- Interreligiöse Studien - 120 ECTS
-- Religionswissenschaft - 120 ECTS
+- Interreligiöse Studien - 120/60 ECTS
+- Religionswissenschaft - 120/60 ECTS
 
 ### 2. Rechtswissenschaften
 
-- Rechtswissenschaft - 180 ECTS
+- Rechtswissenschaft - 180/60 ECTS
 - Rechtswissenschaft im Teilzeitstudium - 180 ECTS
 
 ### 3. Wirtschaftswissenschaften
 
-- Betriebswirtschaftslehre - 180 ECTS
-- Volkswirtschaftslehre - 180 ECTS
+- Betriebswirtschaftslehre - 180/60 ECTS
+- Volkswirtschaftslehre - 180/60 ECTS
 - Wirtschafts- und Rechtswissenschaftliche Studien - 120 ECTS
-- Wirtschaftsinformatik - 180 ECTS
+- Wirtschaftsinformatik - 180/60 ECTS
 
 ### 4. Geistes- und Kulturwissenschaften
 
-- Englische Sprache und Literatur - 120 ECTS
-- Französisch - 120 ECTS
-- Germanistik - 120 ECTS
+- Englische Sprache und Literatur - 120/60 ECTS
+- Französisch - 120/60 ECTS
+- Germanistik - 120/60 ECTS
 - Germanistische Literaturwissenschaft - 60 ECTS
 - Griechische Sprache und Kultur - 60 ECTS
-- Italienisch - 120 ECTS
+- Italienisch - 120/60 ECTS
 - Klassische Philologie - 120 ECTS
 - Lateinische Sprache und Kultur - 60 ECTS
 - Rätoromanisch - 60 ECTS
-- Slavistik - 120 ECTS
-- Spanisch - 120 ECTS
+- Slavistik - 120/60 ECTS
+- Spanisch - 120/60 ECTS
 - Deutsch und Französisch: Zweisprachigkeit und Kulturkontakt - 180 ECTS
 - Deutsch als Fremdsprache - 60 ECTS
 - Französisch als Fremdsprache - 60 ECTS
-- Geschichte - 120 ECTS
+- Geschichte - 120/60 ECTS
 - Geschichte der Moderne - 120 ECTS
-- Zeitgeschichte - 120 ECTS
-- Kunstgeschichte - 120 ECTS
-- Musikwissenschaft und Geschichte des Musiktheaters - 120 ECTS
-- Philosophie - 120 ECTS
+- Zeitgeschichte - 120/60 ECTS
+- Kunstgeschichte - 120/60 ECTS
+- Musikwissenschaft und Geschichte des Musiktheaters - 120/60 ECTS
+- Philosophie - 120/60 ECTS
 
 ### 5. Sozialwissenschaften
 
 - Soziologie (FR) - 120 ECTS
-- Soziologie - 120 ECTS
-- Sozialarbeit und Sozialpolitik (FR) - 120 ECTS
-- Sozialarbeit und Sozialpolitik - 120 ECTS
-- Osteuropa-Studien - 120 ECTS
+- Soziologie - 120/60 ECTS
+- Sozialarbeit und Sozialpolitik (FR) - 120/60 ECTS
+- Sozialarbeit und Sozialpolitik - 120/60 ECTS
+- Osteuropa-Studien - 120/60 ECTS
 - Politik und Gesellschaft - 60 ECTS
-- Sozialanthropologie - 120 ECTS
-- Kommunikationswissenschaft und Medienforschung - 120 ECTS
+- Sozialanthropologie - 120/60 ECTS
+- Kommunikationswissenschaft und Medienforschung - 120/60 ECTS
 - Kommunikationswissenschaft - 90 ECTS
 - Business Communication - 60 ECTS
 
@@ -315,29 +315,29 @@
 - Sonderpädagogik und Sozialpädagogik - 180 ECTS
 - Logopädie - 180 ECTS
 - Sonderpädagogik - 60 ECTS
-- Erziehungswissenschaften - 120 ECTS
-- Pädagogik / Psychologie - 120 ECTS
+- Erziehungswissenschaften - 120/60 ECTS
+- Pädagogik / Psychologie - 120/60 ECTS
 - Ausbildung für den Unterricht auf der Primarstufe - 180 ECTS
 - Ausbildung für den Unterricht auf der Sekundarstufe I - 150 ECTS
 
 ### 7. Psychologie
 
-- Psychologie - 180 ECTS
+- Psychologie - 180/60 ECTS
 
 ### 8. Naturwissenschaften
 
-- Biochemie - 120 ECTS
-- Biologie - 120 ECTS
-- Chemie - 150/120 ECTS
-- Erdwissenschaften - 150 ECTS
-- Geographie - 120 ECTS
-- Physik - 150 ECTS
+- Biochemie - 120/60 ECTS
+- Biologie - 120/60 ECTS
+- Chemie - 150/120/60 ECTS
+- Erdwissenschaften - 150/60 ECTS
+- Geographie - 120/60 ECTS
+- Physik - 150/60 ECTS
 - Umweltwissenschaften und Umweltgeisteswissenschaften - 60 ECTS
 
 ### 9. Mathematik und Informatik
 
-- Mathematik - 120 ECTS
-- Informatik - 120 ECTS
+- Mathematik - 120/60 ECTS
+- Informatik - 120/60 ECTS
 
 ### 10. Medizin und Gesundheitswissenschaften
 
@@ -346,7 +346,7 @@
 
 ### 12. Sportwissenschaften
 
-- Sport- und Bewegungswissenschaften - 180/120 ECTS
+- Sport- und Bewegungswissenschaften - 180/120/60 ECTS
 
 ---
 
