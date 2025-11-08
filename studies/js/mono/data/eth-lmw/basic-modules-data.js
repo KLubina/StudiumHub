@@ -7,12 +7,12 @@ window.StudiengangModules = [
     { jahr: 1, semester: 1, name: "Mathematik I: Analysis I und Lineare Algebra", kp: 6, kategorie: "Basisprüfung", bereich: "Natur- und Ingenieurwissenschaften" },
     { jahr: 1, semester: 1, name: "Mathematics IV: Statistics", kp: 4, kategorie: "Basisprüfung", bereich: "Natur- und Ingenieurwissenschaften" },
     { jahr: 1, semester: 1, name: "Welternährungssystem (World Food System)", kp: 4, kategorie: "Basisprüfung", bereich: "Lebensmittelwissenschaften" },
-
+    { jahr: 1, semester: 1, name: "Chemie I", kp: 4, kategorie: "Basisprüfung", bereich: "Natur- und Ingenieurwissenschaften" },
+    { jahr: 1, semester: 1, name: "Allgemeine Biologie I", kp: 3, kategorie: "Basisprüfung", bereich: "Natur- und Ingenieurwissenschaften" },
+    
     // ========== SEMESTER 2 - Basisprüfung ==========
     { jahr: 1, semester: 2, name: "Mathematik II: Analysis II", kp: 7, kategorie: "Basisprüfung", bereich: "Natur- und Ingenieurwissenschaften" },
     { jahr: 1, semester: 2, name: "Physik I", kp: 5, kategorie: "Basisprüfung", bereich: "Natur- und Ingenieurwissenschaften" },
-    { jahr: 1, semester: 2, name: "Chemie I", kp: 4, kategorie: "Basisprüfung", bereich: "Natur- und Ingenieurwissenschaften" },
-    { jahr: 1, semester: 2, name: "Allgemeine Biologie I", kp: 3, kategorie: "Basisprüfung", bereich: "Natur- und Ingenieurwissenschaften" },
     { jahr: 1, semester: 2, name: "Einsatz von Informatikmitteln", kp: 2, kategorie: "Zusatzfach Basisjahr", bereich: "Natur- und Ingenieurwissenschaften" },
     { jahr: 1, semester: 2, name: "Grundlagen der Mikroskopie und Pflanzenbiologie", kp: 1, kategorie: "Zusatzfach Basisjahr", bereich: "Natur- und Ingenieurwissenschaften" },
     { jahr: 1, semester: 2, name: "Grundlagen in Lebensmittelwissenschaften", kp: 3, kategorie: "Basisprüfung", bereich: "Lebensmittelwissenschaften" },
