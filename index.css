@@ -130,95 +130,87 @@ h1 {
 }
 
 /* #region ==== STUDIENGANG-SPEZIFISCHE FARBEN ==== */
-.math .card-header {
+.eth-math .card-header {
     background-color: #0d5b8c;
 }
 
-.cse .card-header {
+.eth-cse .card-header {
     background-color: #8064a2;
 }
 
-.bwl .card-header {
+.unisg-bwl .card-header {
     background-color: #0066b2;
 }
 
-.cs .card-header {
+.eth-cs .card-header {
     background-color: #7cc623;
 }
 
-.itet .card-header {
+.eth-itet .card-header {
     background-color: #00a0e3;
 }
 
-.mtec .card-header {
+.eth-mtec .card-header {
     background-color: #e67e22;
 }
 
-.it .card-header {
+.hssh-it .card-header {
     background-color: #2E86AB;
 }
 
-.ce .card-header {
+.aspira-ce .card-header {
     background-color: #1F4E79;
 }
 
-.zhaw-cs .card-header {
+.fhzh-cs .card-header {
     background-color: #5B9BD5;
 }
 
-.cds .card-header {
+.fhgr-cds .card-header {
     background-color: #D4A574;
 }
 
-.rig .card-header {
+.eth-rig .card-header {
     background-color: #DC143C;
 }
 
-.bfh-eit .card-header {
+.fhbern-eit .card-header {
     background-color: #00a0e3;
 }
 
-.hslu-eit .card-header {
+.fhlu-eit .card-header {
     background-color: #00a0e3;
 }
 
-/* HST / HEST: BSc Gesundheitswissenschaften und Technologie (ETH ZH) */
-.hst .card-header {
-    background-color: #2b8a7a; /* teal-ish for good contrast with white text */
+.eth-hst .card-header {
+    background-color: #2b8a7a;
 }
 
-/* Sozialwissenschaften UZH */
 .sozwi .card-header {
-    background-color: #6a1b9a; /* purple to visually distinguish and contrast white text */
+    background-color: #6a1b9a;
 }
 
-/* MSc ITET */
-.msc-itet .card-header {
+.eth-msc-itet .card-header {
     background-color: #00a0e3;
 }
 
-/* Lebensmittelwissenschaften */
-.lmw .card-header {
+.eth-lmw .card-header {
     background-color: #16a34a;
 }
 
-/* Maschinenbau */
-.masch .card-header {
+.eth-masch .card-header {
     background-color: #0D5B8C;
 }
 
-/* Materialwissenschaften */
-.matw .card-header {
+.eth-matw .card-header {
     background-color: #d97706;
 }
 
-/* Physik */
-.physik .card-header {
+.eth-physik .card-header {
     background-color: #7c2d12;
 }
 
-/* Sport, Bewegung und Gesundheit */
-.sbg .card-header {
+.unibas-sbg .card-header {
     background-color: #0891b2;
 }
 /* #endregion ==== STUDIENGANG-SPEZIFISCHE FARBEN ==== */
