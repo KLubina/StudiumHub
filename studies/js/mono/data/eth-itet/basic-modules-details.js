@@ -704,7 +704,103 @@ window.StudiengangModuleDetails = {
   "Bachelorarbeit": {
     kurzbeschreibung: "Selbständige Bearbeitung eines wissenschaftlichen Themas im Bereich Elektrotechnik und Informationstechnologie",
     inhalt:
-      "• Individuell definiertes wissenschaftliches Projekt im Bereich ITET",
+      "• Individuell definiertes wissenschaftliches Projekt im Bereich ITET\n\n" +
+      "Das Bachelor-Projekt wird unter der Leitung eines Professors (einschliesslich Titularprofessor:innen) des Departements oder eines am Departement assoziierten Professors ausgeführt.\n\n" +
+      "═══════════════════════════════════════════════════\n" +
+      "D-ITET PROFESSOREN & FORSCHUNGSBEREICHE\n" +
+      "═══════════════════════════════════════════════════\n\n" +
+      
+      "► BIOMEDIZIN & BILDGEBUNG\n" +
+      "• Prof. Morteza Aramesh — Zellinstruktive Schnittstellen, Nanoporen-Sensoren, Einzelzell-Profilierung (Institut für Biomedizinische Technik)\n" +
+      "• Prof. Sebastian Kozerke — MR-Physik, Signalverarbeitung, Fluss-/Bewegungs- und parametrische Bildgebung (Institut für Biomedizinische Technik)\n" +
+      "• Prof. Klaas Prüssmann — Magnetresonanz-Bildgebung, Kernmagnetismus, RF-Detektion (Institut für Biomedizinische Technik)\n" +
+      "• Prof. Daniel Razansky — Funktionelle und molekulare Bildgebung (Institut für Biomedizinische Technik)\n" +
+      "• Prof. Marco Stampanoni — Röntgen- und Synchrotron-Bildgebung, Tomographische Mikroskopie (Institut für Biomedizinische Technik)\n" +
+      "• Prof. Klaas Enno Stephan — Translationale Neuromodellierung und Komputationale Psychiatrie (Institut für Biomedizinische Technik)\n" +
+      "• Prof. János Vörös — Stretchable bioelectronics, Biosensoren, Interfacing biology (Institut für Biomedizinische Technik)\n" +
+      "• Prof. Mehmet Fatih Yanik — Neurotechnology, Brain interfaces (Institut für Neuroinformatik)\n\n" +
+      
+      "► COMPUTER VISION, BILDVERARBEITUNG & ML\n" +
+      "• Prof. Ender Konukoglu — Bildgestützte Medizin, Maschinelles Lernen (Institut für Bildverarbeitung)\n" +
+      "• Prof. Valerio Mante — Behavioral/neural mechanisms, computational neuroscience (Institut für Neuroinformatik)\n" +
+      "• Prof. Benjamin Grewe — Neuronale Schaltkreise, Lernalgorithmen (Institut für Neuroinformatik)\n" +
+      "• Prof. Timothée Proix — Computergestützte Neurowissenschaften, Sprache und Kognition (Institut für Neuroinformatik)\n" +
+      "• Prof. Melika Payvand — Autonome Intelligente Agenten (Institut für Neuroinformatik)\n\n" +
+      
+      "► INTEGRIERTE SYSTEME, MIKROELEKTRONIK & HW-NAHES ML\n" +
+      "• Prof. Luca Benini — Autonomes Fahren, Eingebettete Systeme, Low-Power-Design (Institut für Integrierte Systeme)\n" +
+      "• Prof. Christoph Studer — Mikroelektronik, Digitale Schaltungen, Wireless Communication (Institut für Integrierte Systeme)\n" +
+      "• Prof. Mathieu Luisier — Nanoelektronik, Transistoren, Moore's law (Institut für Integrierte Systeme)\n" +
+      "• Prof. Taekwang Jang — Schaltungen für Next-Gen Computerplattformen, IoT (Institut für Integrierte Systeme)\n" +
+      "• Prof. Hua Wang — RF/mm-Wellen/THz-Kommunikation, Hardware-Sicherheit (Institut für Integrierte Systeme)\n" +
+      "• Prof. Laura Bégon-Lours — Neuromorphe Bauelemente, künstliche Synapsen (Institut für Integrierte Systeme)\n" +
+      "• Prof. Colombo Bolognesi — HBT und HEMT (Professur für Millimeterwellen Elektronik)\n" +
+      "• Prof. Ulrike Grossner — Leistungshalbleiter-Geräte (Professur für Leistungshalbleiter)\n\n" +
+      
+      "► SIGNALVERARBEITUNG, INFORMATIONSTHEORIE & MATHEMATIK\n" +
+      "• Prof. Helmut Bölcskei — Mathematische Grundlagen der Informationswissenschaften (Professur für Mathematische Informationswissenschaften)\n" +
+      "• Prof. Hans-Andrea Loeliger — Signalverarbeitung, Maschinelles Lernen (Institut für Signal- und Informationsverarbeitung)\n" +
+      "• Prof. Amos Lapidoth — Digitale Kommunikation, Informationstheorie (Institut für Signal- und Informationsverarbeitung)\n\n" +
+      
+      "► PHOTONIK, OPTIK & SENSORIK\n" +
+      "• Prof. Lukas Novotny — Photonik, Optomechanik, Nanooptik (Professur für Photonik)\n" +
+      "• Prof. Jürg Leuthold — Optische-, THz- und Millimeterwellenkommunikation (Institut für Elektromagnetische Felder)\n\n" +
+      
+      "► ROBOTIK, STEUERUNG, SYSTEME & VERIFIKATION\n" +
+      "• Prof. Florian Dörfler — Energiewende, Regelungstechnik, Smart Grid (Institut für Automatik)\n" +
+      "• Prof. Lars Lindemann — System- und Steuerungstheorie, formale Verifizierung (Institut für Automatik)\n" +
+      "• Prof. John Lygeros — Automatische Steuerung, Energiesysteme (Institut für Automatik)\n" +
+      "• Prof. Roger Wattenhofer — Distributed Systems, Blockchain (Institut für Technische Informatik)\n\n" +
+      
+      "► NETZWERKE, BETRIEBSSYSTEME & VERTEILTE SYSTEME\n" +
+      "• Prof. Laurent Vanbever — Internet, Routing, SDN (Institut für Technische Informatik und Kommunikationsnetze)\n" +
+      "• Prof. Kaveh Razavi — System-Sicherheit, Hardware-Sicherheit (Institut für Technische Informatik und Kommunikationsnetze)\n\n" +
+      
+      "► ENERGIE, ELEKTRISCHE SYSTEME & LEISTUNGSELEKTRONIK\n" +
+      "• Prof. Jürgen Biela — Leistungselektronik, Energietechnik (Professur für Hochleistungselektronik)\n" +
+      "• Prof. Christian Franck — Hochspannungstechnik, HGÜ (Institut für Hochspannungstechnik)\n" +
+      "• Prof. Gabriela Hug — Elektrizitätsnetze, Smart grid (Institut für Elektrische Energieübertragung)\n" +
+      "• Prof. Vanessa Wood — Elektrische Mobilität, Materialien (Institut für Elektronik)\n\n" +
+      
+      "► QUANTUM, NANOTECHNOLOGIE & MATERIALIEN\n" +
+      "• Prof. Mickaël Perrin — Niederdimensionale Quantenelektronik (Quantum Devices)\n" +
+      "• Prof. Mathieu Luisier — Nanoelektronik, Nanoskalige Bauelemente (Institut für Integrierte Systeme)\n" +
+      "• Prof. Vanessa Wood — Materialien, Physik (Institut für Elektronik)\n\n" +
+      
+      "► SECURITY, HARDWARE-SECURITY & SYSTEMS\n" +
+      "• Prof. Kaveh Razavi — System-Sicherheit, Hardware-Sicherheit (Institut für Technische Informatik und Kommunikationsnetze)\n" +
+      "• Prof. Onur Mutlu — Computerarchitektur, Hardware-Sicherheit (Forschungsgruppe SAFARI)\n\n" +
+
+      "Alle D-ITET Professoren:\n" +
+      "https://ee.ethz.ch/de/departement/professoren.html\n\n" +
+      
+      "═══════════════════════════════════════════════════\n" +
+      "ASSOZIIERTE PROFESSOREN (ANDERE DEPARTEMENTE)\n" +
+      "═══════════════════════════════════════════════════\n\n" +
+      
+      "► D-BSSG\n" +
+      "• Prof. Andreas Hierlemann — Mikrotechnologie, Mikrofluidik, Mikroelektronik für Biologie und Medizin\n\n" +
+      
+      "► D-INFK\n" +
+      "• Prof. G. Alonso — Information and Communication Systems\n" +
+      "• Prof. S. Capkun — System Security\n" +
+      "• Prof. M. Gross — Computer Graphics\n" +
+      "• Prof. T. Hoefler — Scalable Parallel Computing\n" +
+      "• Prof. C. Holz — Sensing, Interaction & Perception\n" +
+      "• Prof. A. Perrig — Network Security\n" +
+      "• Prof. M. Pollefeys — Computer Vision and Geometry\n" +
+      "• Prof. T. Roscoe — Network and Operating Systems\n" +
+      "• Prof. S. Tang — Computer Vision and Learning\n" +
+      "• Prof. J. Vogt — Medical Data Science\n" +
+      "• Prof. F. Yang — Statistical Machine Learning\n\n" +
+      
+      "► D-HEST\n" +
+      "• Prof. Carlo Menon — Biomedical and Mobile Health Tech\n" +
+      "• Prof. Ralph Müller — Biomechanische Testung, biomedizinische Bildgebung\n" +
+      "• Prof. Robert Riener — Bewegungssynthese, Biomechanik, Rehabilitationsrobotik\n\n" +
+      
+      "Assoziierte Professoren (PDF):\n" +
+      "https://ethz.ch/content/dam/ethz/special-interest/itet/department/Studies/Master/D-ITET_Assoziierte_Profs.pdf",
     link: "https://ee.ethz.ch/de/studium/bachelorstudiengang/bsc-etit/drittes-studienjahr/bachelor-projekt.html"
   },
   // #endregion
