@@ -148,6 +148,19 @@
     font-weight: normal;
 }
 
+/* Fixed Major Display */
+.major-minor-selector .fixed-major-display {
+    padding: 10px 12px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.95);
+    color: #333;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 /* Legend Hint */
 .legend-hint {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);

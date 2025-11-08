@@ -69,13 +69,29 @@ StudienplanBase.prototype.createMajorMinorSelector = function() {
     const selectionContainer = document.createElement('div');
     selectionContainer.className = 'selection-container';
 
-    // Major Auswahl
-    const majorGroup = this.createSelectorGroup(
-        'Major (120 ECTS)',
-        'major-select',
-        Object.keys(this.majorData.majorBereiche),
-        'Wähle deinen Major...'
-    );
+    // Major Anzeige (FIXED - nicht auswählbar)
+    const majorOptions = Object.keys(this.majorData.majorBereiche);
+    const fixedMajor = majorOptions[0]; // Nimm den ersten (und einzigen) Major
+    
+    const majorGroup = document.createElement('div');
+    majorGroup.className = 'selector-group';
+    
+    const majorLabel = document.createElement('label');
+    majorLabel.textContent = 'Major (120 ECTS)';
+    majorGroup.appendChild(majorLabel);
+    
+    const majorDisplay = document.createElement('div');
+    majorDisplay.className = 'fixed-major-display';
+    majorDisplay.textContent = fixedMajor;
+    majorGroup.appendChild(majorDisplay);
+    
+    // Verstecktes Input für den fixen Major-Wert
+    const hiddenMajorInput = document.createElement('input');
+    hiddenMajorInput.type = 'hidden';
+    hiddenMajorInput.id = 'major-select';
+    hiddenMajorInput.value = fixedMajor;
+    majorGroup.appendChild(hiddenMajorInput);
+    
     selectionContainer.appendChild(majorGroup);
 
     // Minor Auswahl (mit Gruppen wenn vorhanden)
@@ -99,8 +115,8 @@ StudienplanBase.prototype.createMajorMinorSelector = function() {
     // Event Listener
     this.attachSelectorEvents();
 
-    // Lade gespeicherte Auswahl
-    this.loadSavedSelection();
+    // Lade gespeicherte Auswahl (oder setze Major automatisch)
+    this.loadSavedSelection(fixedMajor);
 };
 
 StudienplanBase.prototype.createSelectorGroup = function(label, selectId, options, placeholder) {
@@ -270,22 +286,24 @@ StudienplanBase.prototype.updateLegendForSelection = function(selectedMajor, sel
     }
 };
 
-StudienplanBase.prototype.loadSavedSelection = function() {
-    const savedMajor = localStorage.getItem('selectedMajor');
+StudienplanBase.prototype.loadSavedSelection = function(fixedMajor) {
     const savedMinor = localStorage.getItem('selectedMinor');
 
     const majorSelect = document.getElementById('major-select');
     const minorSelect = document.getElementById('minor-select');
 
-    if (savedMajor && majorSelect) {
-        majorSelect.value = savedMajor;
+    // Major ist immer fix gesetzt
+    if (fixedMajor && majorSelect) {
+        majorSelect.value = fixedMajor;
     }
+    
+    // Lade gespeicherten Minor
     if (savedMinor && minorSelect) {
         minorSelect.value = savedMinor;
     }
 
-    // Aktualisiere Legende wenn beide gespeichert sind
-    if (savedMajor && savedMinor) {
-        this.updateLegendForSelection(savedMajor, savedMinor);
+    // Aktualisiere Legende wenn Major fix und Minor gespeichert ist
+    if (fixedMajor && savedMinor) {
+        this.updateLegendForSelection(fixedMajor, savedMinor);
     }
 };
