@@ -9,7 +9,15 @@ class StudiengangConfigLoader {
 
     getStudyModel(studiengang) {
         // Studiengänge mit major-minor System
-        const majorMinorPrograms = ['sozwi'];
+        const majorMinorPrograms = [
+            'sozwi',
+            'uzh-polisci',
+            'uzh-geschichte',
+            'uzh-ethnologie',
+            'uzh-kommunikation',
+            'uzh-pop-kultur',
+            'uzh-soziologie'
+        ];
         return majorMinorPrograms.includes(studiengang) ? 'major-minor' : 'mono';
     }
 
@@ -46,6 +54,10 @@ class StudiengangConfigLoader {
             await this.loadOptionalModule(`${dataPath}/ethnologie-modules-data.js`);
             await this.loadOptionalModule(`${dataPath}/kommunikationswissenschaft-modules-data.js`);
             await this.loadOptionalModule(`${dataPath}/politikwissenschaft-modules-data.js`);
+            await this.loadOptionalModule(`${dataPath}/major-data.js`);
+            await this.loadOptionalModule(`${dataPath}/minor-data.js`);
+        } else if (['uzh-polisci', 'uzh-geschichte', 'uzh-ethnologie', 'uzh-kommunikation', 'uzh-pop-kultur', 'uzh-soziologie'].includes(this.studiengang)) {
+            // UZH Major/Minor programs: Load major and minor data files
             await this.loadOptionalModule(`${dataPath}/major-data.js`);
             await this.loadOptionalModule(`${dataPath}/minor-data.js`);
         } else {

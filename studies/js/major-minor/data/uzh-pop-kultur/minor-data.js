@@ -2,7 +2,10 @@
 // Enthält strukturierte Listen für Minor-Optionen gruppiert nach Fakultät und ECTS
 // Diese Liste ist für alle UZH Major/Minor Programme identisch
 
-window.PopKulturMinorData = {
+// Minor-Daten für UZH Populäre Kulturen
+// Alle verfügbaren UZH Minors (60 ECTS)
+
+window.UzhPopKulturMinorData = {
     // Gruppierte Struktur für Dropdown
     minorGruppen: {
         "Minor 60 ECTS - Philosophische Fakultät": [

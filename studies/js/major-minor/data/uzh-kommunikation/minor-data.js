@@ -2,7 +2,10 @@
 // Enthält strukturierte Listen für Minor-Optionen gruppiert nach Fakultät und ECTS
 // Diese Liste ist für alle UZH Major/Minor Programme identisch
 
-window.KommunikationMinorData = {
+// Minor-Daten für UZH Kommunikationswissenschaft
+// Alle verfügbaren UZH Minors (60 ECTS)
+
+window.UzhKommunikationMinorData = {
     // Gruppierte Struktur für Dropdown
     minorGruppen: {
         "Minor 60 ECTS - Philosophische Fakultät": [

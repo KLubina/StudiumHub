@@ -2,7 +2,7 @@
 // Enthält strukturierte Listen für Minor-Optionen gruppiert nach Fakultät und ECTS
 // Diese Liste ist für alle UZH Major/Minor Programme identisch
 
-window.EthnologieMinorData = {
+window.UzhEthnologieMinorData = {
     // Gruppierte Struktur für Dropdown
     minorGruppen: {
         "Minor 60 ECTS - Philosophische Fakultät": [
