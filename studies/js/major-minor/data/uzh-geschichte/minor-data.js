@@ -1,7 +1,8 @@
-/* ==== SOZIALWISSENSCHAFTEN MINOR DATA ==== */
+/* ==== UZH GESCHICHTE MINOR DATA ==== */
 // Enthält strukturierte Listen für Minor-Optionen gruppiert nach Fakultät und ECTS
+// Diese Liste ist für alle UZH Major/Minor Programme identisch
 
-window.SozwiMinorData = {
+window.GeschichteMinorData = {
     // Gruppierte Struktur für Dropdown
     minorGruppen: {
         "Minor 60 ECTS - Philosophische Fakultät": [
@@ -78,7 +79,7 @@ window.SozwiMinorData = {
         ]
     },
 
-    // Detaillierte Modul-Daten
+    // Detaillierte Modul-Daten (identisch für alle UZH BA Programme)
     minorBereiche: {
         "Allgemeine und Vergleichende Literaturwissenschaft": [
             { name: "Allgemeine und Vergleichende Literaturwissenschaft Minor", kp: 60, kategorie: "Minor" }
@@ -134,8 +135,8 @@ window.SozwiMinorData = {
         "Italienische Sprach- und Literaturwissenschaft": [
             { name: "Italienische Sprach- und Literaturwissenschaft Minor", kp: 60, kategorie: "Minor" }
         ],
-        "Japanologie (2024)": [
-            { name: "Japanologie (2024) Minor", kp: 60, kategorie: "Minor" }
+        "Japanologie": [
+            { name: "Japanologie Minor", kp: 60, kategorie: "Minor" }
         ],
         "Kommunikationswissenschaft und Medienforschung": [
             { name: "Kommunikationswissenschaft und Medienforschung Minor", kp: 60, kategorie: "Minor" }
