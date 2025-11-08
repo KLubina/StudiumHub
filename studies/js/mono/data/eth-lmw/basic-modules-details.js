@@ -5,34 +5,176 @@
 window.StudiengangModuleDetails = {
     // ========== SEMESTER 1 ==========
     "Ökonomie": {
+        kurzbeschreibung: "Dieser Kurs stellt grundlegende ökonomische Konzepte und Theorien vor. Beginnend mit der Mikroökonomie, startet der Kurs mit den Themen Angebot und Nachfrage, Märkte und Verhaltensökonomie, bevor er zu den wichtigsten makroökonomischen Konzepten der volkswirtschaftlichen Gesamtrechnung, des Arbeitsmarktes, des Handels und der Geldpolitik übergeht.",
+        inhalt: 
+            "► Mikroökonomische Grundlagen\n" +
+            "• Haushalte, Unternehmen, Angebot und Nachfrage\n" +
+            "• Haushaltspräferenzen und Konsumverhalten\n" +
+            "• Preisveränderungen und Reaktionen\n" +
+            "• Güterpreisbildung und Angebotsverhalten\n" +
+            "• Ökonomische Entscheidungsfindung\n\n" +
+            "► Marktstrukturen\n" +
+            "• Vollkommene Konkurrenz und Wettbewerbsmärkte\n" +
+            "• Monopole und Marktmacht\n" +
+            "• Staatliche Markteingriffe\n\n" +
+            "► Marktversagen\n" +
+            "• Falsche Preissignale und deren Konsequenzen\n\n" +
+            "► Makroökonomische Konzepte\n" +
+            "• Arbeitsmarkt: Angebot, Nachfrage und Arbeitslosigkeit\n" +
+            "• Volkswirtschaftliche Gesamtrechnung\n" +
+            "• Aussenhandel und Binnenmarkteffekte\n" +
+            "• Geld, Geldschöpfung und Inflation",
         link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=194190&semkez=2025W&ansicht=LEHRVERANSTALTUNGEN&lang=de",
         semester: "2025W"
     },
     "Mathematik I: Analysis I und Lineare Algebra": {
+        kurzbeschreibung: "Diese Vorlesung behandelt mathematische Konzepte und Methoden, die zum Modellieren, Lösen und Diskutieren wissenschaftlicher Probleme nötig sind - speziell durch gewöhnliche Differentialgleichungen.",
+        inhalt:
+            "► Differential- und Integralrechnung\n" +
+            "• Wiederholung der Ableitung und Linearisierung\n" +
+            "• Taylor-Polynome und Extremwerte\n" +
+            "• Stammfunktion und Hauptsatz der Differential- und Integralrechnung\n" +
+            "• Integrationsmethoden und uneigentliche Integrale\n\n" +
+            "► Lineare Algebra und Komplexe Zahlen\n" +
+            "• Lineare Gleichungssysteme und Gauss-Verfahren\n" +
+            "• Matrizen, Determinanten, Eigenwerte und Eigenvektoren\n" +
+            "• Darstellungsformen der komplexe Zahlen\n" +
+            "• Potenzieren, Radizieren, Fundamentalsatz der Algebra\n\n" +
+            "► Gewöhnliche Differentialgleichungen\n" +
+            "• Separierbare DGL und Integration durch Substitution\n" +
+            "• Lineare DGL erster und zweiter Ordnung\n" +
+            "• Homogene Systeme linearer DGL mit konstanten Koeffizienten\n" +
+            "• Einführung in die dynamischen Systeme in der Ebene",
         link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=194120&semkez=2025W&ansicht=LEHRVERANSTALTUNGEN&lang=de",
         semester: "2025W"
     },
     "Mathematics IV: Statistics": {
+        kurzbeschreibung: "Einführung in einfache Methoden und grundlegende Begriffe von Statistik und Wahrscheinlichkeitsrechnung für Naturwissenschaftler. Die Konzepte werden anhand einiger Daten-Beispiele eingeführt und mithilfe der statistischen Programmiersprache R angewendet.",
+        inhalt:
+            "► Wahrscheinlichkeitsrechnung\n" +
+            "• Grundregeln der Wahrscheinlichkeit\n" +
+            "• Zufallsvariablen\n" +
+            "• Diskrete und stetige Verteilungen\n" +
+            "• Ausblick auf Grenzwertsätze\n\n" +
+            "► Beschreibende Statistik\n" +
+            "• Grafische Methoden\n" +
+            "• Deskriptive Kennzahlen\n\n" +
+            "► Analytische Statistik\n" +
+            "• Schätzungen und Tests (Binomialtest, t-Test, Vorzeichentest, F-Test, Wilcoxon-Test)\n" +
+            "• Vertrauensintervalle und Vorhersageintervalle\n" +
+            "• Korrelation\n" +
+            "• Einfache und multiple lineare Regression\n\n" +
+            "► Programmierung\n" +
+            "• Einführung in die statistische Programmiersprache R",
         link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=193518&semkez=2025W&ansicht=LEHRVERANSTALTUNGEN&lang=de",
         semester: "2025W"
     },
     "Welternährungssystem": {
+        kurzbeschreibung: "Die Grundlagen des Welternährungssystem werden anhand von Fallbeispielen aus der Forschung entlang der Wertschöpfungskette vermittelt. In einem begleitenden Lernelement können die Studierenden nicht nur selbst gewählte Themen des Welternährungssystems vertiefen, sondern lernen auch Methoden der Künstlichen Intelligenz kennen und anwenden.",
+        inhalt:
+            "► Wertschöpfungskette\n" +
+            "• Landwirtschaftliche Produktion und Agrarmärkte\n" +
+            "• Handel und soziale Nachhaltigkeit\n" +
+            "• Lebensmittelmikrobiologie und -sicherheit\n" +
+            "• Agri-Food Waste Valorization\n" +
+            "• Nachhaltiges Konsumverhalten\n" +
+            "• Ernährung und Gesundheit\n\n" +
+            "► Globale Perspektive\n" +
+            "• Relevante Aspekte für Industrie-, Schwellen- und Entwicklungsländer\n" +
+            "• Ingenieur-, natur- und sozialwissenschaftliche Ansätze\n\n" +
+            "► KI-Integration\n" +
+            "• Praktische Einblicke in ChatGPT und ähnliche Sprachmodelle\n" +
+            "• Stärken und Schwächen von KI-Werkzeugen\n" +
+            "• Verantwortungsvoller Einsatz für wissenschaftliche Arbeiten\n" +
+            "• Kritische Reflexion des KI-Einsatzes",
         link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=193329&semkez=2025W&ansicht=LEHRVERANSTALTUNGEN&lang=de",
         semester: "2025W"
     },
     "Chemie I": {
+        kurzbeschreibung: "Allgemeine Chemie I: Chemische Bindung und Molekülstruktur, chemische Thermodynamik, chemisches Gleichgewicht. In dem Fach werden die Kompetenzen Prozessverständnis, Systemverständnis, Modellierung, Konzeptentwicklung und Datenanalyse & Interpretation gelehrt, angewandt und geprüft.",
+        inhalt:
+            "► Grundlagen\n" +
+            "• Stöchiometrie: Stoffmenge, Stoffmasse, Zusammensetzung, Reaktionsgleichung, ideales Gasgesetz\n" +
+            "• Atombau: Elementarteilchen, Elektronenkonfiguration, Periodisches System\n" +
+            "• Chemische Bindung: Darstellung, Raumstruktur, Molekülorbitale\n\n" +
+            "► Thermodynamik\n" +
+            "• System und Umgebung, Zustandsbeschreibung\n" +
+            "• Erster Hauptsatz: Innere Energie, Wärme, Arbeit, Enthalpie, Reaktionsenthalpie\n" +
+            "• Zweiter Hauptsatz: Entropie, Reaktionsentropie\n" +
+            "• Gibbs-Energie und chemisches Potential: Reaktions-Gibbs-Energie, Stoffaktivitäten, Gleichgewichtskonstante\n\n" +
+            "► Chemisches Gleichgewicht\n" +
+            "• Massenwirkungsgesetz, Reaktionsquotient\n" +
+            "• Gleichgewicht bei Phasenübergängen\n" +
+            "• Säuren und Basen: pH-Begriff, Dissoziationsfunktionen, Puffer, mehrprotonige Systeme\n" +
+            "• Auflösung und Fällung: Heterogene Gleichgewichte, Löslichkeitskonstante\n" +
+            "• Kohlendioxid-Kohlensäure-Carbonat-Gleichgewicht in der Umwelt",
         link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=192945&semkez=2025W&ansicht=LEHRVERANSTALTUNGEN&lang=de",
         semester: "2025W"
     },
     "Allgemeine Biologie I": {
+        kurzbeschreibung: "Organismische Biologie um die Grundlagen der klassischen und molekularen Genetik, der Evolutionsbiologie und der Phylogenie zu vermitteln. Erster Teil einer zweisemestrigen Biologievorlesung für Studierende der Agrar-, Lebensmittel- und Umweltnaturwissenschaften.",
+        inhalt:
+            "► Genetik (Woche 1-7)\n" +
+            "• Zellbiologie: Mitose\n" +
+            "• Sexuelle Lebenszyklen und Meiose\n" +
+            "• Mendelsche Genetik\n" +
+            "• Kopplung und Chromosomen\n" +
+            "• Evolution von Genomen\n\n" +
+            "► Evolution\n" +
+            "• Wie Evolution funktioniert\n" +
+            "• Phylogenetische Rekonstruktionen\n" +
+            "• Mikroevolution\n" +
+            "• Arten und Artbildung\n" +
+            "• Makroevolution\n\n" +
+            "► Vielfalt des Lebens (Woche 8-14)\n" +
+            "• Einführung in Viren und Prokaryoten\n" +
+            "• Ursprung und Evolution der Eukaryoten\n" +
+            "• Nicht-vaskuläre und samenlose vaskuläre Pflanzen\n" +
+            "• Samenpflanzen\n" +
+            "• Einführung in Pilze\n" +
+            "• Überblick über tierische Vielfalt: Wirbellose und Wirbeltiere",
         link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=193042&semkez=2025W&ansicht=LEHRVERANSTALTUNGEN&lang=de",
         semester: "2025W"
     },
     "Einsatz von Informatikmitteln": {
+        kurzbeschreibung: "Die Studierenden lernen ausgewählte Konzepte und Informatikmittel einzusetzen, um interdisziplinäre Projekte zu bearbeiten. Themenbereiche: Modellieren und Simulieren, Daten verwalten mit Listen, Tabellen und relationalen Datenbanken, Einführung in die Programmierung.",
+        inhalt:
+            "► Datenverarbeitung\n" +
+            "• Modellieren und Simulieren wissenschaftlicher Problemstellungen\n" +
+            "• Verarbeitung und Analyse realer Daten aus verschiedenen Fachrichtungen\n" +
+            "• Umgang mit der Komplexität realer Daten\n\n" +
+            "► Datenverwaltung\n" +
+            "• Datenverwaltung mit Listen und Tabellen\n" +
+            "• Relationale Datenbanken: Abfragen und Modellverständnis\n\n" +
+            "► Programmierung mit Python\n" +
+            "• Variablen und Datentypen\n" +
+            "• Kontrollstrukturen\n" +
+            "• Sequentielle Datentypen\n" +
+            "• Aufgabenstellungen codieren, Programme testen und Fehler beheben\n\n" +
+            "► Simulation\n" +
+            "• Umsetzung naturwissenschaftlicher Modelle als Simulation",
         link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=192979&semkez=2025W&ansicht=LEHRVERANSTALTUNGEN&lang=de",
         semester: "2025W"
     },
     "Grundlagen der Mikroskopie und Pflanzenbiologie": {
+        kurzbeschreibung: "Einführung in die Theorie und Grundlagen der Lichtmikroskopie. Die Studierenden lernen den sicheren Umgang mit dem Lichtmikroskop sowie die Herstellung mikroskopischer Präparate. Sie mikroskopieren pflanzliche Strukturen und dokumentieren ihre Beobachtungen systematisch.",
+        inhalt:
+            "► Lichtmikroskopie\n" +
+            "• Optische Prinzipien und Funktionsweise\n" +
+            "• Köhlersches Beleuchtungsprinzip\n" +
+            "• Kontrastierungstechniken\n" +
+            "• Herstellung mikroskopischer Präparate\n" +
+            "• Dokumentation und Vermessung von Strukturen\n\n" +
+            "► Pflanzliche Zellbiologie\n" +
+            "• Aufbau und Funktion pflanzlicher Zellen\n" +
+            "• Plastiden, Vakuole und Zellwand\n\n" +
+            "► Pflanzenanatomie\n" +
+            "• Gewebe- und Organstrukturen (Zell-, Gewebe- und Organebene)\n" +
+            "• Anatomie von Blatt und Spross\n" +
+            "• Epidermis, Leitgewebe und Holz\n" +
+            "• Anatomische Anpassungen an verschiedene Standorte\n\n" +
+            "► Systematik und Ökologie\n" +
+            "• Verknüpfung von Anatomie mit Systematik, Physiologie, Ökologie und Entwicklung",
         link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=192812&semkez=2025W&ansicht=LEHRVERANSTALTUNGEN&lang=de",
         semester: "2025W"
     },
