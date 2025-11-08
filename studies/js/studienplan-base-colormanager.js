@@ -62,15 +62,24 @@ class StudienplanBaseColorManager {
     }
 
     applyColorToModule(modulEl, modul) {
-        // Entferne alle möglichen Farb-Klassen
-        const classesToRemove = [
+        // ALLE möglichen Farb-Klassen entfernen (komplett)
+        const allColorClasses = [
+            // Prüfungsblöcke
             'basis', 'block-bpa', 'block-bpb', 'block-p1', 'block-p2', 'block-p3', 'no-pruefungsblock',
-            'physik', 'informatik', 'mathematik', 'chemie', 'sonstiges',
-            'obligatorisch', 'kern', 'wahl', 'wissenschaft'
+            // Themenbereiche
+            'physik', 'informatik', 'informationstechnologie', 'mathematik', 'elektrotechnik', 'chemie', 'sonstiges',
+            // Kategorien
+            'obligatorisch', 'obligatorisch-praktikum', 'kern', 'wahl', 'wissenschaft',
+            'weitere-wahl-grundlagen', 'wahl-praktika-projekte'
         ];
-        
-        classesToRemove.forEach(cls => modulEl.classList.remove(cls));
-        
+
+        // Entferne ALLE Farb-Klassen
+        allColorClasses.forEach(cls => modulEl.classList.remove(cls));
+
+        // Entferne auch inline styles (falls vorhanden)
+        modulEl.style.backgroundColor = '';
+        modulEl.style.color = '';
+
         // Neue Klasse anwenden
         const cssClass = this.getModuleCssClass(modul);
         if (cssClass) {
@@ -96,25 +105,43 @@ class StudienplanBaseColorManager {
 
     /* ==== NEU: CSE-STYLE FEATURES ==== */
     getThemenbereichClass(modul) {
-        let result = modul.themenbereich;
-        
-        // Fallbacks basierend auf Modulnamen
-        if (!result) {
-            const name = modul.name.toLowerCase();
-            if (name.includes('physik') || name.includes('fluid')) {
-                result = "physik";
-            } else if (name.includes('informatik') || name.includes('programm') || name.includes('computer')) {
-                result = "informatik";
-            } else if (name.includes('mathematik') || name.includes('analysis') || name.includes('algebra')) {
-                result = "mathematik";
-            } else if (name.includes('chemie')) {
-                result = "chemie";
-            } else {
-                result = "sonstiges";
-            }
+        // Verwende das themenbereich-Feld aus den Daten (wenn vorhanden)
+        if (modul.themenbereich) {
+            return modul.themenbereich;
         }
-        
-        return result;
+
+        // Fallback: Erkenne Thema basierend auf Modulnamen
+        const name = modul.name.toLowerCase();
+
+        // Physik
+        if (name.includes('physik') || name.includes('mechanik') || name.includes('elektromagnetisch')) {
+            return "physik";
+        }
+
+        // Elektrotechnik
+        if (name.includes('elektrotechnik') || name.includes('netzwerk') || name.includes('schaltung') ||
+            name.includes('signal') || name.includes('halbleiter')) {
+            return "elektrotechnik";
+        }
+
+        // Informationstechnologie
+        if (name.includes('informatik') || name.includes('digital') || name.includes('computer') ||
+            name.includes('programm') || name.includes('technische informatik')) {
+            return "informationstechnologie";
+        }
+
+        // Mathematik
+        if (name.includes('mathematik') || name.includes('analysis') || name.includes('algebra') ||
+            name.includes('numerisch') || name.includes('wahrscheinlichkeit') || name.includes('diskrete')) {
+            return "mathematik";
+        }
+
+        // Chemie
+        if (name.includes('chemie')) {
+            return "chemie";
+        }
+
+        return "sonstiges";
     }
 
     /* ==== NEU: ITET-STYLE FEATURES ==== */
@@ -164,11 +191,32 @@ class StudienplanBaseColorManager {
             { name: "Sonstiges", klasse: "sonstiges" }
         ];
 
+        // Farb-Mapping für Themenbereiche
+        const colorMap = {
+            'physik': { bg: '#2196F3', color: 'white' },
+            'informatik': { bg: '#2600ff', color: 'white' },
+            'informationstechnologie': { bg: '#2600ff', color: 'white' },
+            'mathematik': { bg: '#00a99d', color: 'white' },
+            'elektrotechnik': { bg: '#FF6B35', color: 'white' },
+            'chemie': { bg: '#9C27B0', color: 'white' },
+            'sonstiges': { bg: '#E0E0E0', color: 'black' }
+        };
+
         themenbereiche.forEach((thema) => {
             const div = document.createElement("div");
             div.classList.add("legende-item");
-            div.classList.add(thema.klasse);
             div.textContent = thema.name;
+
+            // Farben direkt setzen
+            const colors = colorMap[thema.klasse];
+            if (colors) {
+                div.style.backgroundColor = colors.bg;
+                div.style.color = colors.color;
+                div.style.padding = '8px';
+                div.style.margin = '2px 0';
+                div.style.borderRadius = '4px';
+            }
+
             container.appendChild(div);
         });
     }

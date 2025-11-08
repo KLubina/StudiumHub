@@ -111,7 +111,7 @@ window.StudiengangBaseConfig = {
             module: [
                 "Numerische Methoden",
                 "Elektromagnetische Felder und Wellen",
-                "Halbleiterbauelemente",
+                "Halbleiterelemente",
                 "Wahrscheinlichkeitstheorie und Statistik",
             ],
         },
