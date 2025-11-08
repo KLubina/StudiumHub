@@ -7,8 +7,6 @@
 - Universität Luzern
 - Universität St. Gallen
 
-### Mind-Maps erstellen für ITET ETHZ Moduldetails
-
 ### Alle staatlichen UH und FH ITET-Studiengänge
   
 - OST - Ostschweizer Fachhochschule
