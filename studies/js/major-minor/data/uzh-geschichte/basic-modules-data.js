@@ -2,81 +2,57 @@
 /* Grundlegende Modulstruktur für Geschichte Major (120 ECTS) + Minor (60 ECTS) */
 
 window.StudiengangModules = [
-    // === 1. STUDIENJAHR (60 ECTS) ===
-    // Herbstsemester (30 ECTS)
+    // === 1. STUDIENJAHR - Modulgruppe: Einführung in die Geschichte ===
+    // 1. Semester
     {
         jahr: 1,
         semester: 1,
-        name: "Einführung in die Geschichtswissenschaft",
-        kp: 6,
+        name: "Basismodul I (P 9)",
+        kp: 9,
         kategorie: "major-geschichte",
         typ: "pflicht"
     },
     {
         jahr: 1,
         semester: 1,
-        name: "Überblicksvorlesung Epoche 1",
+        name: "Einführungsvorlesung Herbst (P 3)",
         kp: 3,
         kategorie: "major-geschichte",
-        typ: "epochen"
-    },
-    {
-        jahr: 1,
-        semester: 1,
-        name: "Proseminar Epoche 1",
-        kp: 6,
-        kategorie: "major-geschichte",
         typ: "pflicht"
     },
     {
         jahr: 1,
         semester: 1,
-        name: "Minor (HS)",
-        kp: 15,
-        kategorie: "minor",
-        typ: "minor"
+        name: "Grundlagen Latein (P 6)",
+        kp: 6,
+        kategorie: "major-geschichte",
+        typ: "pflicht"
     },
 
-    // Frühlingssemester (30 ECTS)
+    // 2. Semester
     {
         jahr: 1,
         semester: 2,
-        name: "Überblicksvorlesung Epoche 2",
-        kp: 3,
-        kategorie: "major-geschichte",
-        typ: "epochen"
-    },
-    {
-        jahr: 1,
-        semester: 2,
-        name: "Proseminar Epoche 2",
-        kp: 6,
+        name: "Basismodul II (P 9)",
+        kp: 9,
         kategorie: "major-geschichte",
         typ: "pflicht"
     },
     {
         jahr: 1,
         semester: 2,
-        name: "Überblicksvorlesung Epoche 3",
+        name: "Einführungsvorlesung Frühling (P 3)",
         kp: 3,
         kategorie: "major-geschichte",
-        typ: "epochen"
+        typ: "pflicht"
     },
     {
         jahr: 1,
         semester: 2,
-        name: "Quellenübung",
-        kp: 3,
+        name: "Grundlagen Latein (P 6)",
+        kp: 6,
         kategorie: "major-geschichte",
-        typ: "methoden"
-    },
-    {
-        jahr: 1,
-        semester: 2,
-        name: "Minor (FS)",
-        kp: 15,
-        kategorie: "minor",
-        typ: "minor"
+        typ: "pflicht"
     },
 
     // === MODULGRUPPE: ALTERTUM ===
