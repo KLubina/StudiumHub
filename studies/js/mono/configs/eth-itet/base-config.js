@@ -36,13 +36,8 @@ window.StudiengangBaseConfig = {
     },
     defaultColoringMode: "kategorie",
 
-    // Themenbereiche für ITET
-    themenbereiche: [
-        { name: "🧮 Mathematik", klasse: "mathematik" },
-        { name: "⚡ Elektrotechnik", klasse: "elektrotechnik" },
-        { name: "💻 Informationstechnologie", klasse: "informationstechnologie" },
-        { name: "🌍 Physik", klasse: "physik" },
-    ],
+    // HINWEIS: Farb-Zuordnungen (Themenbereiche & Prüfungsblöcke) sind in color-config.js definiert
+    // Die color-config.js wird automatisch geladen und ist über window.ITETColorConfig verfügbar
 
     // KP-Counter Config
     kpCounterConfig: {
@@ -50,72 +45,6 @@ window.StudiengangBaseConfig = {
         showDetailedBreakdown: true,
         enableCategoryTracking: true,
     },
-
-    // Prüfungsblöcke für ColorManager
-    pruefungsbloecke: [
-        {
-            name: "Basisprüfungsblock A",
-            shortName: "BPb-A",
-            cssClass: "block-bpa",
-            color: "#FF6B6B",
-            module: [
-                "Digitaltechnik",
-                "Lineare Algebra",
-                "Netzwerke und Schaltungen I",
-                "Technische Mechanik",
-            ],
-        },
-        {
-            name: "Basisprüfungsblock B",
-            shortName: "BPb-B",
-            cssClass: "block-bpb",
-            color: "#4ECDC4",
-            module: [
-                "Analysis 1",
-                "Analysis 2",
-                "Informatik I",
-                "Mathematische Methoden",
-                "Netzwerke und Schaltungen II",
-                "Physik I",
-            ],
-        },
-        {
-            name: "Prüfungsblock 1",
-            shortName: "Pb-1",
-            cssClass: "block-p1",
-            color: "#45B7D1",
-            module: [
-                "Analysis 3",
-                "Physik II",
-                "Signal- und Systemtheorie I",
-                "Informatik II",
-            ],
-        },
-        {
-            name: "Prüfungsblock 2",
-            shortName: "Pb-2",
-            cssClass: "block-p2",
-            color: "#96CEB4",
-            module: [
-                "Halbleiter-Schaltungstechnik",
-                "Diskrete Mathematik",
-                "Technische Informatik",
-                "Signal- und Systemtheorie II",
-            ],
-        },
-        {
-            name: "Prüfungsblock 3",
-            shortName: "Pb-3",
-            cssClass: "block-p3",
-            color: "#FFEAA7",
-            module: [
-                "Numerische Methoden",
-                "Elektromagnetische Felder und Wellen",
-                "Halbleiterelemente",
-                "Wahrscheinlichkeitstheorie und Statistik",
-            ],
-        },
-    ],
 
     // === 5. LAYOUT-SPEZIFISCHE CONFIG ===
     // Aspekt-Verhältnisse für verschiedene Module

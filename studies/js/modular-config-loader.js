@@ -24,9 +24,12 @@ class StudiengangConfigLoader {
     async loadConfig() {
         const configPath = `js/${this.studyModel}/configs/${this.studiengang}`;
         const dataPath = `js/${this.studyModel}/data/${this.studiengang}`;
-        
+
         await this.loadModule(`${configPath}/base-config.js`);
-        
+
+        // Color-Config laden (zentrale Farb-Zuordnungen für ITET)
+        await this.loadOptionalModule(`${configPath}/color-config.js`);
+
         await this.loadModule(`${dataPath}/basic-modules-data.js`);
         
         await this.loadOptionalModule(`${dataPath}/extensions-data.js`);

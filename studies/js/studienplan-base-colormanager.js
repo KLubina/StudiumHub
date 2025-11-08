@@ -105,7 +105,15 @@ class StudienplanBaseColorManager {
 
     /* ==== NEU: CSE-STYLE FEATURES ==== */
     getThemenbereichClass(modul) {
-        // Verwende das themenbereich-Feld aus den Daten (wenn vorhanden)
+        // ZENTRALE CONFIG: Holt Themenbereich aus ITETColorConfig
+        if (window.ITETColorConfig) {
+            const themenbereich = window.ITETColorConfig.getThemenbereich(modul.name);
+            if (themenbereich) {
+                return themenbereich;
+            }
+        }
+
+        // Fallback für alte Modul-Struktur (wenn noch vorhanden)
         if (modul.themenbereich) {
             return modul.themenbereich;
         }
@@ -146,6 +154,15 @@ class StudienplanBaseColorManager {
 
     /* ==== NEU: ITET-STYLE FEATURES ==== */
     getPruefungsblockClass(modul) {
+        // ZENTRALE CONFIG: Holt Prüfungsblock aus ITETColorConfig
+        if (window.ITETColorConfig) {
+            const block = window.ITETColorConfig.getPruefungsblock(modul.name);
+            if (block) {
+                return block.cssClass;
+            }
+        }
+
+        // Fallback: Alte config.pruefungsbloecke (für Abwärtskompatibilität)
         if (this.studienplan.config.pruefungsbloecke) {
             for (const block of this.studienplan.config.pruefungsbloecke) {
                 if (block.module && block.module.includes(modul.name)) {
@@ -153,13 +170,19 @@ class StudienplanBaseColorManager {
                 }
             }
         }
+
         return "no-pruefungsblock";
     }
 
     createPruefungsbloeckeLegend(container) {
-        if (!this.studienplan.config.pruefungsbloecke) return;
+        // ZENTRALE CONFIG: Nutzt ITETColorConfig
+        const pruefungsbloecke = window.ITETColorConfig
+            ? Object.values(window.ITETColorConfig.pruefungsbloecke)
+            : this.studienplan.config.pruefungsbloecke || [];
 
-        this.studienplan.config.pruefungsbloecke.forEach(block => {
+        if (pruefungsbloecke.length === 0) return;
+
+        pruefungsbloecke.forEach(block => {
             const item = document.createElement("div");
             item.className = "legende-item";
             item.style.backgroundColor = block.color || '#E0E0E0';
@@ -182,7 +205,25 @@ class StudienplanBaseColorManager {
     }
 
     createThemenbereichLegend(container) {
-        // Studiengangspezifische Themenbereiche aus Config oder Standard
+        // ZENTRALE CONFIG: Nutzt ITETColorConfig für Themenbereiche
+        if (window.ITETColorConfig && window.ITETColorConfig.colors.themenbereiche) {
+            const themenbereiche = window.ITETColorConfig.colors.themenbereiche;
+
+            Object.entries(themenbereiche).forEach(([, config]) => {
+                const div = document.createElement("div");
+                div.classList.add("legende-item");
+                div.textContent = `${config.emoji} ${config.label}`;
+                div.style.backgroundColor = config.bg;
+                div.style.color = config.text;
+                div.style.padding = '8px';
+                div.style.margin = '2px 0';
+                div.style.borderRadius = '4px';
+                container.appendChild(div);
+            });
+            return;
+        }
+
+        // Fallback: Alte Konfiguration
         const themenbereiche = this.studienplan.config.themenbereiche || [
             { name: "Physik", klasse: "physik" },
             { name: "Informatik", klasse: "informatik" },
@@ -191,7 +232,6 @@ class StudienplanBaseColorManager {
             { name: "Sonstiges", klasse: "sonstiges" }
         ];
 
-        // Farb-Mapping für Themenbereiche
         const colorMap = {
             'physik': { bg: '#2196F3', color: 'white' },
             'informatik': { bg: '#2600ff', color: 'white' },
@@ -207,7 +247,6 @@ class StudienplanBaseColorManager {
             div.classList.add("legende-item");
             div.textContent = thema.name;
 
-            // Farben direkt setzen
             const colors = colorMap[thema.klasse];
             if (colors) {
                 div.style.backgroundColor = colors.bg;
