@@ -190,6 +190,30 @@ h1 {
     background-color: #6a1b9a;
 }
 
+.uzh-geschichte .card-header {
+    background-color: #8b4513;
+}
+
+.uzh-polisci .card-header {
+    background-color: #1e40af;
+}
+
+.uzh-ethnologie .card-header {
+    background-color: #c2410c;
+}
+
+.uzh-kommunikation .card-header {
+    background-color: #0891b2;
+}
+
+.uzh-pop-kultur .card-header {
+    background-color: #db2777;
+}
+
+.uzh-soziologie .card-header {
+    background-color: #7c3aed;
+}
+
 .eth-msc-itet .card-header {
     background-color: #00a0e3;
 }
