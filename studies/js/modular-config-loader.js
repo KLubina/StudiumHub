@@ -59,7 +59,12 @@ class StudiengangConfigLoader {
         } else if (['uzh-polisci', 'uzh-geschichte', 'uzh-ethnologie', 'uzh-kommunikation', 'uzh-pop-kultur', 'uzh-soziologie'].includes(this.studiengang)) {
             // UZH Major/Minor programs: Load major and minor data files
             await this.loadOptionalModule(`${dataPath}/major-data.js`);
-            await this.loadOptionalModule(`${dataPath}/minor-data.js`);
+
+            // Load common UZH minor data (shared across all UZH programs)
+            await this.loadOptionalModule(`js/${this.studyModel}/data/uzh-common/minor-data.js`);
+
+            // Create program-specific alias for the common minor data
+            this.setupUzhMinorDataAlias();
         } else {
             // CSE Wahlmodule-Dateien
             await this.loadOptionalModule(`${dataPath}/vertiefung-data.js`);
@@ -218,6 +223,30 @@ class StudiengangConfigLoader {
 
                 console.log('✅ MSc ITET Moduldaten kombiniert:', window.MSCITETModuleData);
             }
+        }
+    }
+
+    setupUzhMinorDataAlias() {
+        // Kopiere die gemeinsame UzhCommonMinorData in die programm-spezifische Variable
+        // Mapping: 'uzh-geschichte' -> 'UzhGeschichteMinorData'
+        if (!window.UzhCommonMinorData) {
+            console.warn('UzhCommonMinorData nicht gefunden - Minor-Daten konnten nicht geladen werden');
+            return;
+        }
+
+        const studiengangToVariableMap = {
+            'uzh-polisci': 'UzhPolisciMinorData',
+            'uzh-geschichte': 'UzhGeschichteMinorData',
+            'uzh-ethnologie': 'UzhEthnologieMinorData',
+            'uzh-kommunikation': 'UzhKommunikationMinorData',
+            'uzh-pop-kultur': 'UzhPopKulturMinorData',
+            'uzh-soziologie': 'UzhSoziologieMinorData'
+        };
+
+        const targetVariable = studiengangToVariableMap[this.studiengang];
+        if (targetVariable) {
+            window[targetVariable] = window.UzhCommonMinorData;
+            console.log(`✅ UZH Minor-Daten aliasiert: UzhCommonMinorData → ${targetVariable}`);
         }
     }
 
