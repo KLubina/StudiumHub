@@ -95,6 +95,13 @@
           studyModel: "major-minor",
         },
         {
+          key: "uzh-weiteres",
+          title: "Bachelor Weiteres",
+          subtitle: "Universität Zürich",
+          category: "Unis",
+          studyModel: "major-minor",
+        },
+        {
           key: "unibas-sbg",
           title: "BSc Sport, Bewegung und Gesundheit",
           subtitle: "Universität Basel",
