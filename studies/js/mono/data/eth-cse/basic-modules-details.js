@@ -401,7 +401,10 @@ window.StudiengangModuleDetails = {
     "Bachelorarbeit": {
         kurzbeschreibung: "Selbständige Bearbeitung eines wissenschaftlichen Themas",
         inhalt:
-            "• Individuell definiertes wissenschaftliches Projekt"
+            "• Individuell definiertes wissenschaftliches Projekt\n\n" +
+            "All projects in CSE must involve the application of core CSE techniques and must have a strong software implementation component. Algorithm development and implementation, numerical or discrete modeling, or simulations must constitute the main contribution of the student to the project.\n\n" +
+            "A thesis project is usually supervised and graded by a lecturer in charge of teaching a Core Course or a course in a Field of Specialization, but any other lecturer of ETH Zurich, who is entitled to supervise master thesis in her or his own department is also eligible.",
+        link: "https://rw.ethz.ch/the-programme/theses.html"
     },
     "3D Vision": {
         kurzbeschreibung: "Advanced topics in computer vision focusing on three-dimensional scene understanding",
