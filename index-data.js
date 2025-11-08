@@ -88,13 +88,6 @@
           category: "Unis",
         },
         {
-          key: "sozwi",
-          title: "BA Sozialwissenschaften",
-          subtitle: "Universität Zürich",
-          category: "Unis",
-          studyModel: "major-minor",
-        },
-        {
           key: "uzh-geschichte",
           title: "Bachelor Geschichte",
           subtitle: "Universität Zürich",
