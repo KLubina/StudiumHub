@@ -2,6 +2,18 @@ StudienplanBase.prototype.createLegend = function() {
     const legendElement = document.getElementById('legende');
     legendElement.innerHTML = '';
 
+    // Wenn ColorManager aktiv ist, überlasse ihm die Legende
+    if (this.config.enableColorManager) {
+        // Nur Kategorien, KEINE Prüfungsblöcke (ColorManager regelt das)
+        if (this.config.kategorien && this.config.kategorien.length > 0) {
+            this.config.kategorien.forEach(kategorie => {
+                this.createLegendItem(kategorie, legendElement);
+            });
+        }
+        return;
+    }
+
+    // Standard-Verhalten ohne ColorManager
     if (this.config.pruefungsbloecke) {
         this.createPruefungsbloeckeLegend(legendElement);
     }

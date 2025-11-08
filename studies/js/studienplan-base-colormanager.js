@@ -35,18 +35,18 @@ class StudienplanBaseColorManager {
     updateLegend() {
         const legendElement = document.getElementById("legende");
         if (!legendElement) return;
-        
+
         // Nur Legend-Items entfernen, Controls behalten
         legendElement.querySelectorAll('.legende-item:not([data-controls] *)').forEach(item => item.remove());
-        
+
         // NEU: Mode-spezifische Legenden
         if (this.coloringMode === "pruefungsblock") {
             this.createPruefungsbloeckeLegend(legendElement);
         } else if (this.coloringMode === "themenbereich") {
             this.createThemenbereichLegend(legendElement);
         } else {
-            // Standard: Kategorien-Legende
-            this.studienplan.createLegend();
+            // Standard: Kategorien-Legende (OHNE Prüfungsblöcke)
+            this.createKategorienLegend(legendElement);
         }
     }
 
@@ -143,6 +143,15 @@ class StudienplanBaseColorManager {
             item.innerHTML = `<span>${block.shortName || block.name}</span>`;
             container.appendChild(item);
         });
+    }
+
+    createKategorienLegend(container) {
+        // Nur Kategorien anzeigen, OHNE Prüfungsblöcke
+        if (this.studienplan.config.kategorien && this.studienplan.config.kategorien.length > 0) {
+            this.studienplan.config.kategorien.forEach(kategorie => {
+                this.studienplan.createLegendItem(kategorie, container);
+            });
+        }
     }
 
     createThemenbereichLegend(container) {
