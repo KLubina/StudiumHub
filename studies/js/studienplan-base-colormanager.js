@@ -64,8 +64,10 @@ class StudienplanBaseColorManager {
     applyColorToModule(modulEl, modul) {
         // ALLE möglichen Farb-Klassen entfernen (komplett)
         const allColorClasses = [
-            // Prüfungsblöcke
+            // ITET Prüfungsblöcke
             'basis', 'block-bpa', 'block-bpb', 'block-p1', 'block-p2', 'block-p3', 'no-pruefungsblock',
+            // CSE Prüfungsblöcke
+            'basis1', 'basis2', 'block-g1', 'block-g2', 'block-g3', 'block-g4',
             // Themenbereiche
             'physik', 'informatik', 'informationstechnologie', 'mathematik', 'elektrotechnik', 'chemie', 'sonstiges',
             // Kategorien
@@ -105,9 +107,10 @@ class StudienplanBaseColorManager {
 
     /* ==== NEU: CSE-STYLE FEATURES ==== */
     getThemenbereichClass(modul) {
-        // ZENTRALE CONFIG: Holt Themenbereich aus ITETColorConfig
-        if (window.ITETColorConfig) {
-            const themenbereich = window.ITETColorConfig.getThemenbereich(modul.name);
+        // ZENTRALE CONFIG: Holt Themenbereich aus ColorConfig (ITET oder CSE)
+        const colorConfig = window.ITETColorConfig || window.CSEColorConfig;
+        if (colorConfig) {
+            const themenbereich = colorConfig.getThemenbereich(modul.name);
             if (themenbereich) {
                 return themenbereich;
             }
@@ -154,9 +157,10 @@ class StudienplanBaseColorManager {
 
     /* ==== NEU: ITET-STYLE FEATURES ==== */
     getPruefungsblockClass(modul) {
-        // ZENTRALE CONFIG: Holt Prüfungsblock aus ITETColorConfig
-        if (window.ITETColorConfig) {
-            const block = window.ITETColorConfig.getPruefungsblock(modul.name);
+        // ZENTRALE CONFIG: Holt Prüfungsblock aus ColorConfig (ITET oder CSE)
+        const colorConfig = window.ITETColorConfig || window.CSEColorConfig;
+        if (colorConfig) {
+            const block = colorConfig.getPruefungsblock(modul.name);
             if (block) {
                 return block.cssClass;
             }
@@ -175,9 +179,10 @@ class StudienplanBaseColorManager {
     }
 
     createPruefungsbloeckeLegend(container) {
-        // ZENTRALE CONFIG: Nutzt ITETColorConfig
-        const pruefungsbloecke = window.ITETColorConfig
-            ? Object.values(window.ITETColorConfig.pruefungsbloecke)
+        // ZENTRALE CONFIG: Nutzt ColorConfig (ITET oder CSE)
+        const colorConfig = window.ITETColorConfig || window.CSEColorConfig;
+        const pruefungsbloecke = colorConfig
+            ? Object.values(colorConfig.pruefungsbloecke)
             : this.studienplan.config.pruefungsbloecke || [];
 
         if (pruefungsbloecke.length === 0) return;
@@ -205,9 +210,10 @@ class StudienplanBaseColorManager {
     }
 
     createThemenbereichLegend(container) {
-        // ZENTRALE CONFIG: Nutzt ITETColorConfig für Themenbereiche
-        if (window.ITETColorConfig && window.ITETColorConfig.colors.themenbereiche) {
-            const themenbereiche = window.ITETColorConfig.colors.themenbereiche;
+        // ZENTRALE CONFIG: Nutzt ColorConfig (ITET oder CSE) für Themenbereiche
+        const colorConfig = window.ITETColorConfig || window.CSEColorConfig;
+        if (colorConfig && colorConfig.colors.themenbereiche) {
+            const themenbereiche = colorConfig.colors.themenbereiche;
 
             Object.entries(themenbereiche).forEach(([, config]) => {
                 const div = document.createElement("div");
@@ -304,18 +310,26 @@ class StudienplanBaseColorManager {
 
     ensureCSS() {
         if (document.getElementById('colormanager-styles')) return;
-        
+
         const style = document.createElement('style');
         style.id = 'colormanager-styles';
         style.textContent = `
-            /* Prüfungsblock-Farben */
+            /* ITET Prüfungsblock-Farben */
             .modul.block-bpa { background-color: #FF6B6B !important; color: white !important; }
             .modul.block-bpb { background-color: #4ECDC4 !important; color: white !important; }
             .modul.block-p1 { background-color: #45B7D1 !important; color: white !important; }
             .modul.block-p2 { background-color: #96CEB4 !important; color: white !important; }
             .modul.block-p3 { background-color: #FFEAA7 !important; color: black !important; }
             .modul.no-pruefungsblock { background-color: #E0E0E0 !important; color: black !important; }
-            
+
+            /* CSE Prüfungsblock-Farben */
+            .modul.basis1 { background-color: #FF6B6B !important; color: white !important; }
+            .modul.basis2 { background-color: #4ECDC4 !important; color: white !important; }
+            .modul.block-g1 { background-color: #45B7D1 !important; color: white !important; }
+            .modul.block-g2 { background-color: #96CEB4 !important; color: white !important; }
+            .modul.block-g3 { background-color: #FFEAA7 !important; color: black !important; }
+            .modul.block-g4 { background-color: #DDA15E !important; color: white !important; }
+
             /* Themenbereich-Farben */
             .modul.physik { background-color: #2196F3 !important; color: white !important; }
             .modul.informatik { background-color: #2600ff !important; color: white !important; }
@@ -324,13 +338,13 @@ class StudienplanBaseColorManager {
             .modul.elektrotechnik { background-color: #FF6B35 !important; color: white !important; }
             .modul.chemie { background-color: #9C27B0 !important; color: white !important; }
             .modul.sonstiges { background-color: #E0E0E0 !important; color: black !important; }
-            
+
             /* Controls Styling */
             [data-color-controls] input[type="radio"] { margin-right: 8px; }
-            [data-color-controls] label:hover { 
-                background-color: rgba(0,0,0,0.05); 
-                border-radius: 3px; 
-                padding: 2px; 
+            [data-color-controls] label:hover {
+                background-color: rgba(0,0,0,0.05);
+                border-radius: 3px;
+                padding: 2px;
             }
         `;
         document.head.appendChild(style);

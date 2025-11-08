@@ -29,46 +29,15 @@ window.StudiengangBaseConfig = {
     },
     defaultColoringMode: "pruefungsblock",
 
+    // HINWEIS: Farb-Zuordnungen (Themenbereiche & Prüfungsblöcke) sind in color-config.js definiert
+    // Die color-config.js wird automatisch geladen und ist über window.CSEColorConfig verfügbar
+
     // KP-Counter Config
     kpCounterConfig: {
         requiredKP: 180,
         showDetailedBreakdown: false,
         enableCategoryTracking: true,
     },
-
-    // Prüfungsblöcke für ColorManager
-    pruefungsbloecke: [
-        {
-            name: "Basisprüfungsblock 1",
-            module: [],
-            cssClass: "basis1",
-        },
-        {
-            name: "Basisprüfungsblock 2",
-            module: [],
-            cssClass: "basis2",
-        },
-        {
-            name: "Prüfungsblock G1",
-            module: [],
-            cssClass: "block-g1",
-        },
-        {
-            name: "Prüfungsblock G2",
-            module: [],
-            cssClass: "block-g2",
-        },
-        {
-            name: "Prüfungsblock G3",
-            module: [],
-            cssClass: "block-g3",
-        },
-        {
-            name: "Prüfungsblock G4",
-            module: [],
-            cssClass: "block-g4",
-        },
-    ],
 
     // === 5. LAYOUT-SPEZIFISCHE CONFIG ===
     // Aspekt-Verhältnisse
