@@ -40,46 +40,6 @@ body {
     transform: translateY(0px);
 }
 
-/* ==== COMPASS BUTTON ==== */
-.compass-button-container {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    z-index: 1000;
-}
-
-.compass-button {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    background-color: #6366f1;
-    color: white;
-    text-decoration: none;
-    padding: 8px 15px;
-    border-radius: 20px;
-    font-size: 14px;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.compass-button:hover {
-    background-color: #4f46e5;
-    transform: translateY(-1px);
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
-    color: white;
-    text-decoration: none;
-}
-
-.compass-button:active {
-    transform: translateY(0px);
-}
-
-.compass-icon {
-    font-size: 16px;
-    line-height: 1;
-}
-
 h1 {
     text-align: center;
     margin-bottom: 10px;
@@ -390,19 +350,6 @@ h2 {
     }
 
     .hub-button {
-        font-size: 16px;
-        padding: 10px 20px;
-    }
-
-    .compass-button-container {
-        position: relative;
-        top: 0;
-        right: 0;
-        margin-bottom: 15px;
-        text-align: center;
-    }
-
-    .compass-button {
         font-size: 16px;
         padding: 10px 20px;
     }
