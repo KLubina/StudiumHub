@@ -7,7 +7,7 @@ window.StudiengangModules = [
     {
         jahr: 1,
         semester: 1,
-        name: "Basismodul I (P 9)",
+        name: "Basismodul I",
         kp: 9,
         kategorie: "major-geschichte",
         typ: "pflicht"
@@ -15,7 +15,7 @@ window.StudiengangModules = [
     {
         jahr: 1,
         semester: 1,
-        name: "Einführungsvorlesung Herbst (P 3)",
+        name: "Einführungsvorlesung Herbst",
         kp: 3,
         kategorie: "major-geschichte",
         typ: "pflicht"
@@ -23,7 +23,7 @@ window.StudiengangModules = [
     {
         jahr: 1,
         semester: 1,
-        name: "Grundlagen Latein (P 6)",
+        name: "Grundlagen Latein",
         kp: 6,
         kategorie: "major-geschichte",
         typ: "pflicht"
@@ -33,7 +33,7 @@ window.StudiengangModules = [
     {
         jahr: 1,
         semester: 2,
-        name: "Basismodul II (P 9)",
+        name: "Basismodul II",
         kp: 9,
         kategorie: "major-geschichte",
         typ: "pflicht"
@@ -41,7 +41,7 @@ window.StudiengangModules = [
     {
         jahr: 1,
         semester: 2,
-        name: "Einführungsvorlesung Frühling (P 3)",
+        name: "Einführungsvorlesung Frühling",
         kp: 3,
         kategorie: "major-geschichte",
         typ: "pflicht"
@@ -49,7 +49,7 @@ window.StudiengangModules = [
     {
         jahr: 1,
         semester: 2,
-        name: "Grundlagen Latein (P 6)",
+        name: "Grundlagen Latein",
         kp: 6,
         kategorie: "major-geschichte",
         typ: "pflicht"
@@ -59,7 +59,7 @@ window.StudiengangModules = [
     {
         jahr: 2,
         bereich: "Modulgruppe: Altertum",
-        name: "Seminar Alte Geschichte (WP 9), zweisemestrig",
+        name: "Seminar Alte Geschichte, zweisemestrig",
         kp: 9,
         kategorie: "major-geschichte",
         typ: "wahlpflicht"
@@ -67,7 +67,7 @@ window.StudiengangModules = [
     {
         jahr: 2,
         bereich: "Modulgruppe: Altertum",
-        name: "Kolloquium oder Vorlesung Alte Geschichte (W 3)",
+        name: "Kolloquium oder Vorlesung Alte Geschichte",
         kp: 3,
         kategorie: "major-geschichte",
         typ: "wahlpflicht"
@@ -77,7 +77,7 @@ window.StudiengangModules = [
     {
         jahr: 2,
         bereich: "Modulgruppe: Mittelalter",
-        name: "Kolloquium oder Vorlesung Geschichte des Mittelalters (W 3)",
+        name: "Kolloquium oder Vorlesung Geschichte des Mittelalters",
         kp: 3,
         kategorie: "major-geschichte",
         typ: "wahlpflicht"
@@ -85,7 +85,7 @@ window.StudiengangModules = [
     {
         jahr: 2,
         bereich: "Modulgruppe: Mittelalter",
-        name: "Seminar Geschichte des Mittelalters (WP 9), zweisemestrig",
+        name: "Seminar Geschichte des Mittelalters, zweisemestrig",
         kp: 9,
         kategorie: "major-geschichte",
         typ: "wahlpflicht"
@@ -95,7 +95,7 @@ window.StudiengangModules = [
     {
         jahr: 2,
         bereich: "Modulgruppe: Neuzeit",
-        name: "Kolloquium oder Vorlesung Geschichte der Neuzeit (W 3)",
+        name: "Kolloquium oder Vorlesung Geschichte der Neuzeit",
         kp: 3,
         kategorie: "major-geschichte",
         typ: "wahlpflicht"
@@ -103,7 +103,7 @@ window.StudiengangModules = [
     {
         jahr: 2,
         bereich: "Modulgruppe: Neuzeit",
-        name: "Seminar Geschichte der Neuzeit (WP 9), zweisemestrig",
+        name: "Seminar Geschichte der Neuzeit, zweisemestrig",
         kp: 9,
         kategorie: "major-geschichte",
         typ: "wahlpflicht"
@@ -113,7 +113,7 @@ window.StudiengangModules = [
     {
         jahr: 3,
         bereich: "Modulgruppe: Abschluss",
-        name: "Mündliche Prüfung (P 9), einsemestrig",
+        name: "Mündliche Prüfung, einsemestrig",
         kp: 9,
         kategorie: "major-geschichte",
         typ: "pflicht"
@@ -121,7 +121,7 @@ window.StudiengangModules = [
     {
         jahr: 3,
         bereich: "Modulgruppe: Abschluss",
-        name: "Methoden und Theorie (P 9), zweisemestrig",
+        name: "Methoden und Theorie, zweisemestrig",
         kp: 9,
         kategorie: "major-geschichte",
         typ: "pflicht"
@@ -129,7 +129,7 @@ window.StudiengangModules = [
     {
         jahr: 3,
         bereich: "Modulgruppe: Abschluss",
-        name: "Bachelorarbeit (P 15)",
+        name: "Bachelorarbeit",
         kp: 15,
         kategorie: "major-geschichte",
         typ: "ba-arbeit"
