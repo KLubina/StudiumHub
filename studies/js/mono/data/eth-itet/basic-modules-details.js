@@ -699,4 +699,13 @@ window.StudiengangModuleDetails = {
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=227-0152-00L",
   },
   // #endregion
+
+  // #region Bachelorarbeit
+  "Bachelorarbeit": {
+    kurzbeschreibung: "Selbständige Bearbeitung eines wissenschaftlichen Themas im Bereich Elektrotechnik und Informationstechnologie",
+    inhalt:
+      "• Individuell definiertes wissenschaftliches Projekt im Bereich ITET",
+    link: "https://ee.ethz.ch/de/studium/bachelorstudiengang/bsc-etit/drittes-studienjahr/bachelor-projekt.html"
+  },
+  // #endregion
 };
