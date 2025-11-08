@@ -95,8 +95,8 @@
           studyModel: "major-minor",
         },
         {
-          key: "uzh-weiteres",
-          title: "Bachelor Weiteres",
+          key: "uzh-geschichte",
+          title: "Bachelor Geschichte",
           subtitle: "Universität Zürich",
           category: "Unis",
           studyModel: "major-minor",
