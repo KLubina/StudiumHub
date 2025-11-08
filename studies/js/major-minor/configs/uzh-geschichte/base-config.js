@@ -14,11 +14,17 @@ window.StudiengangBaseConfig = {
         Studieninfo: <a href="https://www.hist.uzh.ch/de/studium/studienstufen/bachelor.html" target="_blank" rel="noopener">Studium Bachelor</a> | <a href="https://www.phil.uzh.ch/static/rechtssammlung/bachelor/regulaer-nachfolger/mc/MC_06B-7600-120.pdf" target="_blank" rel="noopener">Studienplan & Reglement (PDF)</a> | <a href="https://www.phil.uzh.ch/dam/jcr:caf7c837-2711-417f-aab2-1589b37fa910/STO_06B-7600-120.pdf" target="_blank" rel="noopener">Studienordnung (PDF)</a>`,
 
     // === 2. LAYOUT CONFIG ===
-    layout: "years",
+    layout: "first-year-then-groups",
     moduleSizing: "proportional",
     basisArea: 2000,
     defaultAspectRatio: 1.5,
     layoutClass: "horizontal-modules",
+    bereicheReihenfolge: [
+        "Modulgruppe: Altertum",
+        "Modulgruppe: Mittelalter",
+        "Modulgruppe: Neuzeit",
+        "Modulgruppe: Abschluss"
+    ],
 
     // === 3. FEATURE FLAGS ===
     enableTooltips: true,

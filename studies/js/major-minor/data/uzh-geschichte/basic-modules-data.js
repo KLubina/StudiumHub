@@ -79,134 +79,93 @@ window.StudiengangModules = [
         typ: "minor"
     },
 
-    // === 2. STUDIENJAHR (60 ECTS) ===
-    // Herbstsemester (30 ECTS)
+    // === MODULGRUPPE: ALTERTUM ===
     {
         jahr: 2,
-        semester: 1,
-        name: "Vertiefungsvorlesung",
-        kp: 3,
-        kategorie: "major-geschichte",
-        typ: "wahlpflicht"
-    },
-    {
-        jahr: 2,
-        semester: 1,
-        name: "Kolloquium",
-        kp: 3,
-        kategorie: "major-geschichte",
-        typ: "methoden"
-    },
-    {
-        jahr: 2,
-        semester: 1,
-        name: "Hauptseminar",
+        bereich: "Modulgruppe: Altertum",
+        name: "Seminar Alte Geschichte (WP 9), zweisemestrig",
         kp: 9,
         kategorie: "major-geschichte",
         typ: "wahlpflicht"
     },
     {
         jahr: 2,
-        semester: 1,
-        name: "Minor (HS)",
-        kp: 15,
-        kategorie: "minor",
-        typ: "minor"
+        bereich: "Modulgruppe: Altertum",
+        name: "Kolloquium oder Vorlesung Alte Geschichte (W 3)",
+        kp: 3,
+        kategorie: "major-geschichte",
+        typ: "wahlpflicht"
     },
 
-    // Frühlingssemester (30 ECTS)
+    // === MODULGRUPPE: MITTELALTER ===
     {
         jahr: 2,
-        semester: 2,
-        name: "Vertiefungsvorlesung",
+        bereich: "Modulgruppe: Mittelalter",
+        name: "Kolloquium oder Vorlesung Geschichte des Mittelalters (W 3)",
         kp: 3,
         kategorie: "major-geschichte",
         typ: "wahlpflicht"
     },
     {
         jahr: 2,
-        semester: 2,
-        name: "Kolloquium",
-        kp: 3,
-        kategorie: "major-geschichte",
-        typ: "methoden"
-    },
-    {
-        jahr: 2,
-        semester: 2,
-        name: "Hauptseminar",
+        bereich: "Modulgruppe: Mittelalter",
+        name: "Seminar Geschichte des Mittelalters (WP 9), zweisemestrig",
         kp: 9,
         kategorie: "major-geschichte",
         typ: "wahlpflicht"
     },
+
+    // === MODULGRUPPE: NEUZEIT ===
     {
         jahr: 2,
-        semester: 2,
-        name: "Minor (FS)",
-        kp: 15,
-        kategorie: "minor",
-        typ: "minor"
-    },
-
-    // === 3. STUDIENJAHR (60 ECTS) ===
-    // Herbstsemester (30 ECTS)
-    {
-        jahr: 3,
-        semester: 1,
-        name: "Vertiefungsvorlesung",
+        bereich: "Modulgruppe: Neuzeit",
+        name: "Kolloquium oder Vorlesung Geschichte der Neuzeit (W 3)",
         kp: 3,
         kategorie: "major-geschichte",
         typ: "wahlpflicht"
     },
     {
-        jahr: 3,
-        semester: 1,
-        name: "Hauptseminar",
+        jahr: 2,
+        bereich: "Modulgruppe: Neuzeit",
+        name: "Seminar Geschichte der Neuzeit (WP 9), zweisemestrig",
         kp: 9,
         kategorie: "major-geschichte",
         typ: "wahlpflicht"
     },
-    {
-        jahr: 3,
-        semester: 1,
-        name: "Wahlmodule / Vertiefung",
-        kp: 3,
-        kategorie: "major-geschichte",
-        typ: "wahlpflicht"
-    },
-    {
-        jahr: 3,
-        semester: 1,
-        name: "Minor (HS) - Rest",
-        kp: 15,
-        kategorie: "minor",
-        typ: "minor"
-    },
 
-    // Frühlingssemester (30 ECTS) - mit Bachelorarbeit
+    // === MODULGRUPPE: ABSCHLUSS ===
     {
         jahr: 3,
-        semester: 2,
-        name: "Bachelorarbeit Geschichte",
+        bereich: "Modulgruppe: Abschluss",
+        name: "Mündliche Prüfung (P 9), einsemestrig",
+        kp: 9,
+        kategorie: "major-geschichte",
+        typ: "pflicht"
+    },
+    {
+        jahr: 3,
+        bereich: "Modulgruppe: Abschluss",
+        name: "Methoden und Theorie (P 9), zweisemestrig",
+        kp: 9,
+        kategorie: "major-geschichte",
+        typ: "pflicht"
+    },
+    {
+        jahr: 3,
+        bereich: "Modulgruppe: Abschluss",
+        name: "Bachelorarbeit (P 15)",
         kp: 15,
         kategorie: "major-geschichte",
         typ: "ba-arbeit"
     },
+
+    // === MINOR (über alle Jahre) ===
     {
-        jahr: 3,
-        semester: 2,
-        name: "Vertiefungsvorlesung",
-        kp: 3,
-        kategorie: "major-geschichte",
-        typ: "wahlpflicht"
-    },
-    {
-        jahr: 3,
-        semester: 2,
-        name: "Wahlmodule / Vertiefung",
-        kp: 12,
-        kategorie: "major-geschichte",
-        typ: "wahlpflicht"
+        jahr: 2,
+        name: "Minor",
+        kp: 60,
+        kategorie: "minor",
+        typ: "minor"
     }
 ];
 
