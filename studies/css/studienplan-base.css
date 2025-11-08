@@ -89,9 +89,46 @@ h1 {
 h2 {
     text-align: center;
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     font-size: 18px;
     font-weight: normal;
+}
+
+/* ==== STUDIEN LINKS ==== */
+.studien-links {
+    text-align: center;
+    margin: 15px auto 30px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    max-width: 800px;
+}
+
+.studien-link-button {
+    display: inline-block;
+    background-color: #f0f0f0;
+    color: #333;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    border: 1px solid #ddd;
+}
+
+.studien-link-button:hover {
+    background-color: #e0e0e0;
+    border-color: #ccc;
+    color: #000;
+    text-decoration: none;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.studien-link-button:active {
+    transform: translateY(0);
 }
 
 .container {
