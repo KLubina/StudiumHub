@@ -1,4 +1,4 @@
-https://studentservices.uzh.ch/uzh/anonym/vvz/?sap-language=DE&sap-ui-language=DE#/details/2025/004/CGStudyProgramDetail/50891442/50000007/Philosophische%2520Fakult%25C3%25A4t/50890575/Bachelor%2520of%2520Arts%2520(RVO19)/true/50891442/Geschichte/2025/004
+Hier ist die formatierte Modulliste im gewünschten Stil:
 
 ## Pflichtmodule
 Modul — ECTS
@@ -29,6 +29,7 @@ Geschichte der Neuzeit 16 — 9 ECTS
 Geschichte der Neuzeit 17 — 9 ECTS
 Geschichte der Neuzeit 18 — 9 ECTS
 Geschichte der Neuzeit 19 — 9 ECTS
+Geschichte der Neuzeit 2 — 9 ECTS
 Geschichte der Neuzeit 20 — 9 ECTS
 Geschichte der Neuzeit 21 — 9 ECTS
 Geschichte der Neuzeit 22 — 9 ECTS
@@ -37,12 +38,10 @@ Geschichte des Mittelalters 6 — 9 ECTS
 Geschichte des Mittelalters 7 — 9 ECTS
 Geschichte des Mittelalters 8 — 9 ECTS
 Griechisch II (Graecum) — 6 ECTS
-Grundlagen Albanisch 2 — 3 ECTS
 Grundlagen Chinesisch (Teil II: A1.2) — 3 ECTS
 Grundlagen Japanisch (Teil II: A1.2) — 3 ECTS
 Grundlagen Russisch (Teil II: A2.2) — 3 ECTS
 Italiano B1 (Parte II) — 3 ECTS
-Klassisches Ägyptisch II — 3 ECTS
 Latein II (Latinum) — 6 ECTS
 Lengua Española (A2-B1) — 3 ECTS
 Llengua Catalana (A2-B1) — 3 ECTS
@@ -56,26 +55,35 @@ Tschechisch Mittelstufe 2 — 6 ECTS
 
 ## Wahlmodule (zusätzlich)
 Modul — ECTS
+#MeToo und nun? Sexualisierte Gewalt aus interdisziplinärer Sicht — 3 ECTS
 Alte Geschichte 1 (Kolloquium) — 3 ECTS
 Alte Geschichte 1 (Vorlesung) — 3 ECTS
 Alte Geschichte 2 (Kolloquium) — 3 ECTS
-Exkursion — 3 ECTS
+Die Klagen des Bauern (Klassisch-ägyptische Lektüre) — 3 ECTS
+Feldzug, Forscher und Folianten. Napoleons Description de l'Égypte – Eine Wissenschaftsgeschichte — 3 ECTS
 Geschichte der Neuzeit 1 (Kolloquium) — 3 ECTS
 Geschichte der Neuzeit 1 (Vorlesung) — 3 ECTS
 Geschichte der Neuzeit 2 (Kolloquium) — 3 ECTS
 Geschichte der Neuzeit 2 (Vorlesung) — 3 ECTS
 Geschichte der Neuzeit 3 (Kolloquium) — 3 ECTS
 Geschichte der Neuzeit 3 (Vorlesung) — 3 ECTS
-Geschichte der Neuzeit 4 (Kolloquium) — 3 ECTS
+Geschichte der Neuzeit 4 (Kolloquium) [s06] — 3 ECTS
 Geschichte des Mittelalters 1 (Kolloquium) — 3 ECTS
 Geschichte des Mittelalters 1 (Vorlesung) — 3 ECTS
-Geschichte des Mittelalters 2 (Kolloquium) — 3 ECTS
-Geschichte des Mittelalters 2 (Vorlesung) — 3 ECTS
+Geschichte des Mittelalters 2 (Kolloquium) [s04] — 3 ECTS
+Geschichte des Mittelalters 2 (Vorlesung) [s03] — 3 ECTS
 Geschichte des Mittelalters 3 (Kolloquium) — 3 ECTS
+Herrin des Hauses. Die Stellung der Frauen im Alten Ägypten — 3 ECTS
+Irish Culture: From the Celts to the Celtic Tiger and Beyond — 3 ECTS
 Osteuropäische Kulturen (Kolloquium) — 3 ECTS
 Politik, Kulturen und Gesellschaften Osteuropas (Vorlesung) — 3 ECTS
 Praktikum — 3 ECTS
 Raumanalysen interdisziplinär: GIS als digitale Methode — 3 ECTS
+Ringvorlesung Altertumswissenschaften [s03] — 3 ECTS
+Satire in Byzanz (byzantinisches Kolloquium) — 3 ECTS
 Schreibwerkstatt für Studierende an der Bachelorarbeit — 3 ECTS
-Start! Practice your Teaching — 1 ECTS
-Start! Teaching Essentials — 1 ECTS
+Selbstorganisiertes Kolloquium: Vorwärts! Fortschrittsdenken in Vergangenheit und Gegenwart — 3 ECTS
+Seminar jüdische Studien: Ein Überblick über die europäisch-jüdische Geschichte, 1492-2024 — 3 ECTS
+Start! Coaching Accessibility — 1 ECTS
+Start! Teaching beyond studying — 1 ECTS
+Start! Teaching while studying — 1 ECTS
