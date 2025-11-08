@@ -32,8 +32,17 @@ window.StudiengangBaseConfig = {
     coloringModes: {
         kategorie: "Kategorien",
         pruefungsblock: "Prüfungsblöcken",
+        themenbereich: "Thema",
     },
     defaultColoringMode: "kategorie",
+
+    // Themenbereiche für ITET
+    themenbereiche: [
+        { name: "🧮 Mathematik", klasse: "mathematik" },
+        { name: "⚡ Elektrotechnik", klasse: "elektrotechnik" },
+        { name: "💻 Informationstechnologie", klasse: "informationstechnologie" },
+        { name: "🌍 Physik", klasse: "physik" },
+    ],
 
     // KP-Counter Config
     kpCounterConfig: {

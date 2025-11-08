@@ -146,7 +146,8 @@ class StudienplanBaseColorManager {
     }
 
     createThemenbereichLegend(container) {
-        const themenbereiche = [
+        // Studiengangspezifische Themenbereiche aus Config oder Standard
+        const themenbereiche = this.studienplan.config.themenbereiche || [
             { name: "Physik", klasse: "physik" },
             { name: "Informatik", klasse: "informatik" },
             { name: "Mathematik", klasse: "mathematik" },
@@ -222,7 +223,9 @@ class StudienplanBaseColorManager {
             /* Themenbereich-Farben */
             .modul.physik { background-color: #2196F3 !important; color: white !important; }
             .modul.informatik { background-color: #2600ff !important; color: white !important; }
+            .modul.informationstechnologie { background-color: #2600ff !important; color: white !important; }
             .modul.mathematik { background-color: #00a99d !important; color: white !important; }
+            .modul.elektrotechnik { background-color: #FF6B35 !important; color: white !important; }
             .modul.chemie { background-color: #9C27B0 !important; color: white !important; }
             .modul.sonstiges { background-color: #E0E0E0 !important; color: black !important; }
             
