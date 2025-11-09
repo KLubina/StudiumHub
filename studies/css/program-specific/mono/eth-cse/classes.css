@@ -1,6 +1,31 @@
 /* ==== ETH CSE - CSS CLASSES ==== */
 /* Program-specific CSS classes for CSE */
 
+/* Main category classes */
+[data-studiengang="eth-cse"] .modul.wissenschaftliche-arbeit,
+[data-studiengang="eth-cse"] .legende-item.wissenschaftliche-arbeit {
+    background-color: var(--color-wissenschaftliche-arbeit, #16a34a);
+    color: white;
+}
+
+[data-studiengang="eth-cse"] .modul.kern,
+[data-studiengang="eth-cse"] .legende-item.kern {
+    background-color: var(--color-kern);
+    color: var(--color-kern-text, white);
+}
+
+[data-studiengang="eth-cse"] .modul.wahl,
+[data-studiengang="eth-cse"] .legende-item.wahl {
+    background-color: var(--color-wahl);
+    color: var(--color-wahl-text, black);
+}
+
+[data-studiengang="eth-cse"] .modul.vertiefung,
+[data-studiengang="eth-cse"] .legende-item.vertiefung {
+    background-color: var(--color-vertiefung);
+    color: var(--color-vertiefung-text, black);
+}
+
 /* CSE-specific classes */
 [data-studiengang="eth-cse"] .modul.basis1,
 [data-studiengang="eth-cse"] .legende-item.basis1 {

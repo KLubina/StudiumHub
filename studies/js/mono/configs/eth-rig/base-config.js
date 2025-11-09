@@ -53,6 +53,14 @@ window.StudiengangBaseConfig = {
     ],
     
     kategorieZuKlasse: {
+        // Direkte Mappings (für Module mit kurzen Kategorie-Namen)
+        "grundlagen": "grundlagen",
+        "obligatorisch": "obligatorisch",
+        "wahlmodule": "wahlmodule",
+        "freie-wahl": "freie-wahl",
+        "selbstaendig": "selbstaendig",
+
+        // Lange Namen Mappings (für Legende)
         "Grundlagenfächer Basisprüfung": "grundlagen",
         "Obligatorische Fächer, Prüfungsblöcke 1-3": "obligatorisch",
         "Wahlmodule (3 aus 6)": "wahlmodule",
