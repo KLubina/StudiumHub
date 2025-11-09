@@ -1,8 +1,0 @@
-/* ==== UZH GESCHICHTE - LAYOUT OVERRIDES ==== */
-/* Program-specific layout customizations */
-
-/* Jahr Titel with Geschichte color */
-[data-studiengang="uzh-geschichte"] .jahr-titel {
-    color: var(--color-geschichte);
-    border-bottom: 2px solid var(--color-geschichte);
-}

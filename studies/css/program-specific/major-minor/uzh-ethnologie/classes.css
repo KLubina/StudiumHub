@@ -1,14 +1,50 @@
 /* ==== UZH ETHNOLOGIE - CSS CLASSES ==== */
-/* Program-specific CSS classes for Ethnologie */
+/* Program-specific CSS classes for Ethnologie (Major-Minor) */
 
-/* Subject-specific class */
-.ethnologie {
-    background-color: var(--color-ethnologie);
-    color: white;
+/* Major */
+[data-studiengang="uzh-ethnologie"] .modul.major,
+[data-studiengang="uzh-ethnologie"] .legende-item.major {
+    background-color: var(--color-major);
+    color: var(--color-major-text, white);
 }
 
-/* Ethnologie-specific module styling if needed */
-[data-studiengang="uzh-ethnologie"] .modul.ethnologie-spezifisch {
+/* Minor */
+[data-studiengang="uzh-ethnologie"] .modul.minor,
+[data-studiengang="uzh-ethnologie"] .legende-item.minor {
+    background-color: var(--color-minor);
+    color: var(--color-minor-text, white);
+}
+
+/* Pflicht */
+[data-studiengang="uzh-ethnologie"] .modul.pflicht,
+[data-studiengang="uzh-ethnologie"] .legende-item.pflicht {
+    background-color: var(--color-pflicht);
+    color: var(--color-pflicht-text, white);
+}
+
+/* Wahlpflicht */
+[data-studiengang="uzh-ethnologie"] .modul.wahlpflicht,
+[data-studiengang="uzh-ethnologie"] .legende-item.wahlpflicht {
+    background-color: var(--color-wahlpflicht);
+    color: var(--color-wahlpflicht-text, white);
+}
+
+/* Wahl */
+[data-studiengang="uzh-ethnologie"] .modul.wahl,
+[data-studiengang="uzh-ethnologie"] .legende-item.wahl {
+    background-color: var(--color-wahl);
+    color: var(--color-wahl-text, white);
+}
+
+/* Subject-specific generic class */
+.ethnologie {
     background-color: var(--color-ethnologie);
-    color: white;
+    color: var(--color-ethnologie-text, white);
+}
+
+/* Ethnologie-specific module + legend items */
+[data-studiengang="uzh-ethnologie"] .modul.ethnologie-spezifisch,
+[data-studiengang="uzh-ethnologie"] .legende-item.ethnologie-spezifisch {
+    background-color: var(--color-ethnologie);
+    color: var(--color-ethnologie-text, white);
 }

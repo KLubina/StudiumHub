@@ -1,14 +1,50 @@
 /* ==== UZH KOMMUNIKATION - CSS CLASSES ==== */
-/* Program-specific CSS classes for Kommunikation */
+/* Program-specific CSS classes for Kommunikation (Major-Minor) */
 
-/* Subject-specific class */
-.kommunikation {
-    background-color: var(--color-kommunikation);
-    color: white;
+/* Major */
+[data-studiengang="uzh-kommunikation"] .modul.major,
+[data-studiengang="uzh-kommunikation"] .legende-item.major {
+    background-color: var(--color-major);
+    color: var(--color-major-text, white);
 }
 
-/* Kommunikation-specific module styling if needed */
-[data-studiengang="uzh-kommunikation"] .modul.kommunikation-spezifisch {
+/* Minor */
+[data-studiengang="uzh-kommunikation"] .modul.minor,
+[data-studiengang="uzh-kommunikation"] .legende-item.minor {
+    background-color: var(--color-minor);
+    color: var(--color-minor-text, white);
+}
+
+/* Pflicht */
+[data-studiengang="uzh-kommunikation"] .modul.pflicht,
+[data-studiengang="uzh-kommunikation"] .legende-item.pflicht {
+    background-color: var(--color-pflicht);
+    color: var(--color-pflicht-text, white);
+}
+
+/* Wahlpflicht */
+[data-studiengang="uzh-kommunikation"] .modul.wahlpflicht,
+[data-studiengang="uzh-kommunikation"] .legende-item.wahlpflicht {
+    background-color: var(--color-wahlpflicht);
+    color: var(--color-wahlpflicht-text, white);
+}
+
+/* Wahl */
+[data-studiengang="uzh-kommunikation"] .modul.wahl,
+[data-studiengang="uzh-kommunikation"] .legende-item.wahl {
+    background-color: var(--color-wahl);
+    color: var(--color-wahl-text, white);
+}
+
+/* Subject-specific generic class */
+.kommunikation {
     background-color: var(--color-kommunikation);
-    color: white;
+    color: var(--color-kommunikation-text, white);
+}
+
+/* Kommunikation-specific module + legend items */
+[data-studiengang="uzh-kommunikation"] .modul.kommunikation-spezifisch,
+[data-studiengang="uzh-kommunikation"] .legende-item.kommunikation-spezifisch {
+    background-color: var(--color-kommunikation);
+    color: var(--color-kommunikation-text, white);
 }

@@ -1,14 +1,50 @@
 /* ==== UZH POP-KULTUR - CSS CLASSES ==== */
-/* Program-specific CSS classes for Pop-Kultur */
+/* Program-specific CSS classes for Pop-Kultur (Major-Minor) */
 
-/* Subject-specific class */
-.pop-kultur {
-    background-color: var(--color-pop-kultur);
-    color: white;
+/* Major */
+[data-studiengang="uzh-pop-kultur"] .modul.major,
+[data-studiengang="uzh-pop-kultur"] .legende-item.major {
+    background-color: var(--color-major);
+    color: var(--color-major-text, white);
 }
 
-/* Pop-Kultur-specific module styling if needed */
-[data-studiengang="uzh-pop-kultur"] .modul.pop-kultur-spezifisch {
+/* Minor */
+[data-studiengang="uzh-pop-kultur"] .modul.minor,
+[data-studiengang="uzh-pop-kultur"] .legende-item.minor {
+    background-color: var(--color-minor);
+    color: var(--color-minor-text, white);
+}
+
+/* Pflicht */
+[data-studiengang="uzh-pop-kultur"] .modul.pflicht,
+[data-studiengang="uzh-pop-kultur"] .legende-item.pflicht {
+    background-color: var(--color-pflicht);
+    color: var(--color-pflicht-text, white);
+}
+
+/* Wahlpflicht */
+[data-studiengang="uzh-pop-kultur"] .modul.wahlpflicht,
+[data-studiengang="uzh-pop-kultur"] .legende-item.wahlpflicht {
+    background-color: var(--color-wahlpflicht);
+    color: var(--color-wahlpflicht-text, white);
+}
+
+/* Wahl */
+[data-studiengang="uzh-pop-kultur"] .modul.wahl,
+[data-studiengang="uzh-pop-kultur"] .legende-item.wahl {
+    background-color: var(--color-wahl);
+    color: var(--color-wahl-text, white);
+}
+
+/* Subject-specific generic class */
+.pop-kultur {
     background-color: var(--color-pop-kultur);
-    color: white;
+    color: var(--color-pop-kultur-text, white);
+}
+
+/* Pop-Kultur-specific module + legend items */
+[data-studiengang="uzh-pop-kultur"] .modul.pop-kultur-spezifisch,
+[data-studiengang="uzh-pop-kultur"] .legende-item.pop-kultur-spezifisch {
+    background-color: var(--color-pop-kultur);
+    color: var(--color-pop-kultur-text, white);
 }

@@ -1,8 +1,0 @@
-/* ==== UZH POP-KULTUR - LAYOUT OVERRIDES ==== */
-/* Program-specific layout customizations */
-
-/* Jahr Titel with Pop-Kultur color */
-[data-studiengang="uzh-pop-kultur"] .jahr-titel {
-    color: var(--color-pop-kultur);
-    border-bottom: 2px solid var(--color-pop-kultur);
-}

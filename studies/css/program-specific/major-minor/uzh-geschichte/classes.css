@@ -1,14 +1,50 @@
 /* ==== UZH GESCHICHTE - CSS CLASSES ==== */
-/* Program-specific CSS classes for Geschichte */
+/* Program-specific CSS classes for Geschichte (Major-Minor) */
 
-/* Subject-specific class */
-.geschichte {
-    background-color: var(--color-geschichte);
-    color: white;
+/* Major */
+[data-studiengang="uzh-geschichte"] .modul.major,
+[data-studiengang="uzh-geschichte"] .legende-item.major {
+    background-color: var(--color-major);
+    color: var(--color-major-text, white);
 }
 
-/* Geschichte-specific module styling if needed */
-[data-studiengang="uzh-geschichte"] .modul.geschichte-spezifisch {
+/* Minor */
+[data-studiengang="uzh-geschichte"] .modul.minor,
+[data-studiengang="uzh-geschichte"] .legende-item.minor {
+    background-color: var(--color-minor);
+    color: var(--color-minor-text, white);
+}
+
+/* Pflicht */
+[data-studiengang="uzh-geschichte"] .modul.pflicht,
+[data-studiengang="uzh-geschichte"] .legende-item.pflicht {
+    background-color: var(--color-pflicht);
+    color: var(--color-pflicht-text, white);
+}
+
+/* Wahlpflicht */
+[data-studiengang="uzh-geschichte"] .modul.wahlpflicht,
+[data-studiengang="uzh-geschichte"] .legende-item.wahlpflicht {
+    background-color: var(--color-wahlpflicht);
+    color: var(--color-wahlpflicht-text, white);
+}
+
+/* Wahl */
+[data-studiengang="uzh-geschichte"] .modul.wahl,
+[data-studiengang="uzh-geschichte"] .legende-item.wahl {
+    background-color: var(--color-wahl);
+    color: var(--color-wahl-text, white);
+}
+
+/* Subject-specific generic class */
+.geschichte {
     background-color: var(--color-geschichte);
-    color: white;
+    color: var(--color-geschichte-text, white);
+}
+
+/* Geschichte-specific module + legend items */
+[data-studiengang="uzh-geschichte"] .modul.geschichte-spezifisch,
+[data-studiengang="uzh-geschichte"] .legende-item.geschichte-spezifisch {
+    background-color: var(--color-geschichte);
+    color: var(--color-geschichte-text, white);
 }
