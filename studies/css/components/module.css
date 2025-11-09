@@ -1,0 +1,93 @@
+/* ==== MODULE COMPONENT ==== */
+/* Styling for individual module blocks */
+
+.modul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    color: white;
+    box-sizing: border-box;
+    border: none;
+    border-radius: var(--module-radius);
+    box-shadow: var(--module-shadow);
+    overflow: hidden;
+    padding: var(--module-padding);
+    margin: var(--module-margin);
+    position: relative;
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.modul:hover {
+    transform: scale(var(--hover-scale));
+    z-index: var(--z-hover);
+    box-shadow: var(--hover-shadow);
+    filter: brightness(1.1);
+}
+
+/* Modul Title */
+.modul-titel {
+    font-weight: bold;
+    margin: 2px 0;
+    font-size: var(--font-size-modul-titel);
+    line-height: 1.2;
+    width: 100%;
+    text-align: center;
+    word-break: break-word;
+    overflow: hidden;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    padding: 0 4px;
+}
+
+/* Modul KP (Credit Points) */
+.modul-kp {
+    font-size: var(--font-size-modul-kp);
+    margin: 2px 0;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    overflow: hidden;
+    line-height: 1.1;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* ==== MODULE VARIANTS ==== */
+
+/* Large Module */
+.modul.large-module {
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Small Module */
+.modul.small-module {
+    border-radius: 4px;
+}
+
+/* Clickable Module */
+.modul.clickable {
+    cursor: pointer;
+}
+
+/* Hover-Enabled Module */
+.modul.hover-enabled:hover {
+    transform: scale(1.05);
+    z-index: var(--z-hover);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ==== BULLET LISTS INSIDE MODULES ==== */
+
+.bullet-list {
+    text-align: left;
+    margin: var(--spacing-xs) 0;
+    padding-left: 25px;
+    list-style-type: disc;
+    width: 100%;
+}
+
+.bullet-list li {
+    margin-bottom: var(--spacing-xs);
+    line-height: 1.2;
+}

@@ -1,0 +1,112 @@
+/* ==== CONTROLS COMPONENT ==== */
+/* Buttons, choosers, and interactive controls */
+
+/* ==== PRAKTIKA CONTROLS ==== */
+
+.praktika-controls {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-sm);
+    margin: var(--spacing-md) 0;
+}
+
+.praktika-controls button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: var(--font-size-small);
+    transition: all var(--transition-normal);
+    background-color: #f0f0f0;
+    color: var(--color-text);
+    font-weight: 500;
+}
+
+.praktika-controls button:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.praktika-controls button:active {
+    transform: translateY(0);
+}
+
+.praktika-controls button.active {
+    background-color: var(--color-hub-button);
+    color: white;
+}
+
+/* ==== WAHLMODULE CONTROLS ==== */
+
+.wahlmodule-controls {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-sm);
+    margin: var(--spacing-md) 0;
+}
+
+.wahlmodule-controls button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: var(--font-size-small);
+    transition: all var(--transition-normal);
+    background-color: #f0f0f0;
+    color: var(--color-text);
+    font-weight: 500;
+}
+
+.wahlmodule-controls button:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.wahlmodule-controls button:active {
+    transform: translateY(0);
+}
+
+.wahlmodule-controls button.active {
+    background-color: #6c63ff;
+    color: white;
+}
+
+/* ==== SCHWERPUNKT CHOOSER ==== */
+
+.schwerpunkt-chooser {
+    margin: var(--spacing-lg) 0;
+    padding: var(--spacing-md);
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border: 2px solid var(--color-border);
+}
+
+.schwerpunkt-chooser label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+.schwerpunkt-chooser select {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 14px;
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+    transition: all var(--transition-normal);
+}
+
+.schwerpunkt-chooser select:hover {
+    border-color: var(--color-hub-button);
+}
+
+.schwerpunkt-chooser select:focus {
+    outline: none;
+    border-color: var(--color-hub-button);
+    box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
+}

@@ -1,0 +1,97 @@
+/* ==== MODULE LISTS COMPONENT ==== */
+/* Scrollable module selection lists */
+
+/* Generic Module List */
+.module-liste {
+    max-height: 400px;
+    overflow-y: auto;
+    padding: var(--spacing-sm);
+    background-color: white;
+    border-radius: 4px;
+    border: 1px solid var(--color-border);
+}
+
+/* Praktika Liste */
+.praktika-liste {
+    max-height: 400px;
+    overflow-y: auto;
+    padding: var(--spacing-sm);
+    background-color: white;
+    border-radius: 4px;
+}
+
+/* Kernfächer Liste */
+.kernfaecher-liste {
+    max-height: 400px;
+    overflow-y: auto;
+    padding: var(--spacing-sm);
+    background-color: white;
+    border-radius: 4px;
+}
+
+/* Wahlfächer Liste */
+.wahlfaecher-liste {
+    max-height: 400px;
+    overflow-y: auto;
+    padding: var(--spacing-sm);
+    background-color: white;
+    border-radius: 4px;
+}
+
+/* Major Liste */
+.major-liste {
+    max-height: 400px;
+    overflow-y: auto;
+    padding: var(--spacing-sm);
+    background-color: white;
+    border-radius: 4px;
+}
+
+/* Minor Liste */
+.minor-liste {
+    max-height: 400px;
+    overflow-y: auto;
+    padding: var(--spacing-sm);
+    background-color: white;
+    border-radius: 4px;
+}
+
+/* ==== SCROLLBAR STYLING ==== */
+
+.module-liste::-webkit-scrollbar,
+.praktika-liste::-webkit-scrollbar,
+.kernfaecher-liste::-webkit-scrollbar,
+.wahlfaecher-liste::-webkit-scrollbar,
+.major-liste::-webkit-scrollbar,
+.minor-liste::-webkit-scrollbar {
+    width: 8px;
+}
+
+.module-liste::-webkit-scrollbar-track,
+.praktika-liste::-webkit-scrollbar-track,
+.kernfaecher-liste::-webkit-scrollbar-track,
+.wahlfaecher-liste::-webkit-scrollbar-track,
+.major-liste::-webkit-scrollbar-track,
+.minor-liste::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.module-liste::-webkit-scrollbar-thumb,
+.praktika-liste::-webkit-scrollbar-thumb,
+.kernfaecher-liste::-webkit-scrollbar-thumb,
+.wahlfaecher-liste::-webkit-scrollbar-thumb,
+.major-liste::-webkit-scrollbar-thumb,
+.minor-liste::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.module-liste::-webkit-scrollbar-thumb:hover,
+.praktika-liste::-webkit-scrollbar-thumb:hover,
+.kernfaecher-liste::-webkit-scrollbar-thumb:hover,
+.wahlfaecher-liste::-webkit-scrollbar-thumb:hover,
+.major-liste::-webkit-scrollbar-thumb:hover,
+.minor-liste::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

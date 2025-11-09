@@ -1,0 +1,61 @@
+/* ==== LEGEND COMPONENT ==== */
+/* Color legend styling */
+
+.legende-titel {
+    font-size: var(--font-size-bereich-titel);
+    font-weight: bold;
+    margin-bottom: var(--spacing-md);
+}
+
+.legende-item {
+    margin-bottom: var(--spacing-xs);
+    padding: var(--spacing-sm);
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+    transition: transform var(--transition-fast);
+}
+
+.legende-item:hover {
+    transform: scale(1.02);
+}
+
+.legende-item-titel {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.legende-item-inhalt {
+    font-size: var(--font-size-small);
+    line-height: 1.4;
+}
+
+.legende-modul {
+    margin-bottom: var(--spacing-xs);
+}
+
+.legende-description {
+    font-size: var(--font-size-small);
+    margin-top: var(--spacing-xs);
+    color: var(--color-text);
+}
+
+/* ==== LEGEND HINT ==== */
+
+.legend-hint {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: var(--spacing-lg);
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.6;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.legend-hint strong {
+    font-weight: 700;
+    text-decoration: underline;
+}

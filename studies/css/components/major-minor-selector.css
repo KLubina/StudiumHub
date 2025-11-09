@@ -1,0 +1,77 @@
+/* ==== MAJOR-MINOR SELECTOR COMPONENT ==== */
+/* Interactive selector for major/minor study combinations */
+
+.major-minor-selector {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: var(--spacing-xl);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.major-minor-selector .selector-title {
+    color: white;
+    font-size: 1.4rem;
+    margin-bottom: var(--spacing-lg);
+    text-align: center;
+    font-weight: 600;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.major-minor-selector .selection-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-lg);
+}
+
+.major-minor-selector .selector-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.major-minor-selector .selector-group label {
+    color: white;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.major-minor-selector .study-select {
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 6px;
+    background: white;
+    cursor: pointer;
+    transition: all var(--transition-slow);
+    font-family: inherit;
+}
+
+.major-minor-selector .study-select:hover {
+    border-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.major-minor-selector .study-select:focus {
+    outline: none;
+    border-color: white;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+}
+
+/* ==== RESPONSIVE ==== */
+
+@media (max-width: 768px) {
+    .major-minor-selector {
+        padding: var(--spacing-lg);
+    }
+
+    .major-minor-selector .selector-title {
+        font-size: 1.2rem;
+    }
+
+    .major-minor-selector .selection-container {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+}

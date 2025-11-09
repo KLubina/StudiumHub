@@ -1,0 +1,59 @@
+/* ==== INDICATORS COMPONENT ==== */
+/* Video, link, exam, and course indicators on modules */
+
+/* Container for all indicators */
+.indicators-container {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2px;
+    z-index: var(--z-indicator);
+}
+
+/* Base Indicator Style */
+.video-indicator,
+.link-indicator,
+.exam-indicator,
+.kurs-indicator {
+    width: var(--indicator-size);
+    height: var(--indicator-size);
+    background-color: var(--indicator-bg);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    box-shadow: var(--indicator-shadow);
+    cursor: help;
+    opacity: 0.8;
+    transition: transform var(--transition-normal),
+                background-color var(--transition-normal),
+                opacity var(--transition-normal);
+}
+
+/* Hover Effects */
+.video-indicator:hover,
+.link-indicator:hover,
+.exam-indicator:hover,
+.kurs-indicator:hover {
+    transform: scale(1.2);
+    background-color: rgba(255, 255, 255, 1);
+    opacity: 1;
+}
+
+/* ==== SMALL MODULE INDICATORS ==== */
+
+.modul.small-module .indicators-container {
+    gap: 1px;
+}
+
+.modul.small-module .video-indicator,
+.modul.small-module .link-indicator,
+.modul.small-module .exam-indicator,
+.modul.small-module .kurs-indicator {
+    width: var(--indicator-size-small);
+    height: var(--indicator-size-small);
+    font-size: 9px;
+}

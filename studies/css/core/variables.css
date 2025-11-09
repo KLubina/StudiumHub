@@ -1,0 +1,75 @@
+/* ==== CORE VARIABLES ==== */
+/* Global CSS Custom Properties */
+
+:root {
+    /* Layout Dimensions */
+    --container-max-width: 1200px;
+    --legend-width: 280px;
+    --legend-margin: 20px;
+
+    /* Module Styling */
+    --module-radius: 5px;
+    --module-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    --module-padding: 5px;
+    --module-margin: 1px;
+    --module-gap: 5px;
+    --module-min-width: 140px;
+    --module-max-width: 180px;
+
+    /* Hover Effects */
+    --hover-scale: 1.02;
+    --hover-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+    /* Typography */
+    --font-family: Arial, sans-serif;
+    --font-size-h1: 24px;
+    --font-size-h2: 18px;
+    --font-size-jahr-titel: 20px;
+    --font-size-bereich-titel: 18px;
+    --font-size-modul-titel: 14px;
+    --font-size-modul-kp: 14px;
+    --font-size-small: 12px;
+
+    /* Colors - UI Elements */
+    --color-background: #fff;
+    --color-text: #333;
+    --color-border: #ddd;
+    --color-hub-button: #0066cc;
+    --color-hub-button-hover: #0052a3;
+
+    /* Spacing */
+    --spacing-xs: 5px;
+    --spacing-sm: 10px;
+    --spacing-md: 15px;
+    --spacing-lg: 20px;
+    --spacing-xl: 30px;
+    --spacing-xxl: 40px;
+
+    /* Transitions */
+    --transition-fast: 0.1s ease;
+    --transition-normal: 0.2s ease;
+    --transition-slow: 0.3s ease;
+    --transition-progress: 0.5s ease;
+
+    /* Z-Index Layers */
+    --z-tooltip: 1000;
+    --z-message: 9999;
+    --z-hover: 100;
+    --z-indicator: 10;
+
+    /* Indicator Styling */
+    --indicator-size: 18px;
+    --indicator-size-small: 14px;
+    --indicator-bg: rgba(255, 255, 255, 0.9);
+    --indicator-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+
+    /* Tooltip */
+    --tooltip-max-width: 500px;
+    --tooltip-width: 350px;
+    --tooltip-max-height: 400px;
+    --tooltip-bg: #fff;
+    --tooltip-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+
+    /* Responsive Breakpoints */
+    --breakpoint-mobile: 768px;
+}
