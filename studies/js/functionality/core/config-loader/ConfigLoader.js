@@ -10,27 +10,17 @@ class StudiengangConfigLoader {
     }
 
     async loadConfig() {
-        // Mono uses new unified structure: js/mono/{studiengang}/
-        // Major-minor still uses old structure: js/major-minor/configs/ and js/major-minor/data/
-        let configPath, dataPath;
+        // New unified structure for both mono and major-minor: js/{studyModel}/{studiengang}/
+        const basePath = `js/${this.studyModel}/${this.studiengang}`;
 
-        if (this.studyModel === 'mono') {
-            // New structure: everything in one folder
-            configPath = dataPath = `js/${this.studyModel}/${this.studiengang}`;
-        } else {
-            // Old structure: separate configs and data folders
-            configPath = `js/${this.studyModel}/configs/${this.studiengang}`;
-            dataPath = `js/${this.studyModel}/data/${this.studiengang}`;
-        }
+        await this.loader.loadModule(`${basePath}/base-config.js`);
+        await this.loader.loadOptionalModule(`${basePath}/color-config.js`);
+        await this.loader.loadModule(`${basePath}/basic-modules-data.js`);
+        await this.loader.loadOptionalModule(`${basePath}/extensions-data.js`);
+        await this.loader.loadOptionalModule(`${basePath}/basic-modules-details.js`);
 
-        await this.loader.loadModule(`${configPath}/base-config.js`);
-        await this.loader.loadOptionalModule(`${configPath}/color-config.js`);
-        await this.loader.loadModule(`${dataPath}/basic-modules-data.js`);
-        await this.loader.loadOptionalModule(`${dataPath}/extensions-data.js`);
-        await this.loader.loadOptionalModule(`${dataPath}/basic-modules-details.js`);
-
-        await this.loadStudiengangSpecificData(configPath, dataPath);
-        await this.loadExtensions(configPath);
+        await this.loadStudiengangSpecificData(basePath);
+        await this.loadExtensions(basePath);
 
         ModuleDataCombiner.combineModuleData(this.studiengang);
         this.config = ConfigMerger.mergeConfigs();
@@ -38,82 +28,77 @@ class StudiengangConfigLoader {
         return this.config;
     }
 
-    async loadStudiengangSpecificData(configPath, dataPath) {
+    async loadStudiengangSpecificData(basePath) {
         if (this.studiengang === 'fhbern-eit') {
-            await this.loadBFHData(dataPath);
+            await this.loadBFHData(basePath);
         } else if (this.studiengang === 'fhlu-eit') {
-            await this.loadHSLUData(dataPath);
+            await this.loadHSLUData(basePath);
         } else if (this.studiengang === 'eth-msc-itet') {
-            await this.loadMSCITETData(dataPath);
+            await this.loadMSCITETData(basePath);
         } else if (this.studiengang === 'eth-hst') {
-            await this.loadHSTData(dataPath);
+            await this.loadHSTData(basePath);
         } else if (this.studiengang === 'sozwi') {
-            await this.loadSozwiData(dataPath);
+            await this.loadSozwiData(basePath);
         } else if (['uzh-polisci', 'uzh-geschichte', 'uzh-ethnologie', 'uzh-kommunikation', 'uzh-pop-kultur', 'uzh-soziologie'].includes(this.studiengang)) {
-            await this.loadUZHData(dataPath);
+            await this.loadUZHData(basePath);
         } else {
-            await this.loadDefaultWahlmoduleData(dataPath);
+            await this.loadDefaultWahlmoduleData(basePath);
         }
     }
 
-    async loadBFHData(dataPath) {
-        await this.loader.loadOptionalModule(`${dataPath}/vertiefungsrichtungen-data.js`);
-        await this.loader.loadOptionalModule(`${dataPath}/wahlmodule-data.js`);
+    async loadBFHData(basePath) {
+        await this.loader.loadOptionalModule(`${basePath}/vertiefungsrichtungen-data.js`);
+        await this.loader.loadOptionalModule(`${basePath}/wahlmodule-data.js`);
     }
 
-    async loadHSLUData(dataPath) {
-        await this.loader.loadOptionalModule(`${dataPath}/vertiefungsrichtungen-data.js`);
-        await this.loader.loadOptionalModule(`${dataPath}/wahlmodule-data.js`);
+    async loadHSLUData(basePath) {
+        await this.loader.loadOptionalModule(`${basePath}/vertiefungsrichtungen-data.js`);
+        await this.loader.loadOptionalModule(`${basePath}/wahlmodule-data.js`);
     }
 
-    async loadMSCITETData(dataPath) {
-        await this.loader.loadOptionalModule(`${dataPath}/kernfacher-data.js`);
-        await this.loader.loadOptionalModule(`${dataPath}/vertiefungsfacher-data.js`);
+    async loadMSCITETData(basePath) {
+        await this.loader.loadOptionalModule(`${basePath}/kernfacher-data.js`);
+        await this.loader.loadOptionalModule(`${basePath}/vertiefungsfacher-data.js`);
     }
 
-    async loadHSTData(dataPath) {
-        await this.loader.loadOptionalModule(`${dataPath}/schwerpunkt-data.js`);
-        await this.loader.loadOptionalModule(`${dataPath}/wahlfacher-data.js`);
+    async loadHSTData(basePath) {
+        await this.loader.loadOptionalModule(`${basePath}/schwerpunkt-data.js`);
+        await this.loader.loadOptionalModule(`${basePath}/wahlfacher-data.js`);
     }
 
-    async loadSozwiData(dataPath) {
-        await this.loader.loadOptionalModule(`${dataPath}/ethnologie-modules-data.js`);
-        await this.loader.loadOptionalModule(`${dataPath}/kommunikationswissenschaft-modules-data.js`);
-        await this.loader.loadOptionalModule(`${dataPath}/politikwissenschaft-modules-data.js`);
-        await this.loader.loadOptionalModule(`${dataPath}/major-data.js`);
-        await this.loader.loadOptionalModule(`${dataPath}/minor-data.js`);
+    async loadSozwiData(basePath) {
+        await this.loader.loadOptionalModule(`${basePath}/ethnologie-modules-data.js`);
+        await this.loader.loadOptionalModule(`${basePath}/kommunikationswissenschaft-modules-data.js`);
+        await this.loader.loadOptionalModule(`${basePath}/politikwissenschaft-modules-data.js`);
+        await this.loader.loadOptionalModule(`${basePath}/major-data.js`);
+        await this.loader.loadOptionalModule(`${basePath}/minor-data.js`);
     }
 
-    async loadUZHData(dataPath) {
-        await this.loader.loadOptionalModule(`${dataPath}/major-data.js`);
-        await this.loader.loadOptionalModule(`js/${this.studyModel}/data/uzh-common/minor-data.js`);
+    async loadUZHData(basePath) {
+        await this.loader.loadOptionalModule(`${basePath}/major-data.js`);
+        await this.loader.loadOptionalModule(`js/${this.studyModel}/uzh-common/minor-data.js`);
         ModuleDataCombiner.setupUzhMinorDataAlias(this.studiengang);
     }
 
-    async loadDefaultWahlmoduleData(dataPath) {
-        await this.loader.loadOptionalModule(`${dataPath}/vertiefung-data.js`);
-        await this.loader.loadOptionalModule(`${dataPath}/wahlfacher-data.js`);
-        await this.loader.loadOptionalModule(`${dataPath}/cse-wahlmodule-data.js`);
-        await this.loader.loadOptionalModule(`${dataPath}/kernfacher-data.js`);
-        await this.loader.loadOptionalModule(`${dataPath}/weitere-wahl-grundlagenfacher-data.js`);
-        await this.loader.loadOptionalModule(`${dataPath}/praktika-seminar-projekt-data.js`);
+    async loadDefaultWahlmoduleData(basePath) {
+        await this.loader.loadOptionalModule(`${basePath}/vertiefung-data.js`);
+        await this.loader.loadOptionalModule(`${basePath}/wahlfacher-data.js`);
+        await this.loader.loadOptionalModule(`${basePath}/cse-wahlmodule-data.js`);
+        await this.loader.loadOptionalModule(`${basePath}/kernfacher-data.js`);
+        await this.loader.loadOptionalModule(`${basePath}/weitere-wahl-grundlagenfacher-data.js`);
+        await this.loader.loadOptionalModule(`${basePath}/praktika-seminar-projekt-data.js`);
     }
 
-    async loadExtensions(configPath) {
+    async loadExtensions(basePath) {
         // Only load the main extensions file (ColorManager and other features are now handled by optional modules)
-        await this.loader.loadOptionalModule(`${configPath}/extensions.js`);
+        await this.loader.loadOptionalModule(`${basePath}/extensions.js`);
     }
 
     async loadFallbackConfig() {
         return new Promise((resolve, reject) => {
             const script = document.createElement('script');
-            // Mono: js/mono/{studiengang}/{studiengang}-config.js
-            // Major-minor: js/major-minor/configs/{studiengang}-config.js
-            const fallbackPath = this.studyModel === 'mono'
-                ? `js/${this.studyModel}/${this.studiengang}/${this.studiengang}-config.js`
-                : `js/${this.studyModel}/configs/${this.studiengang}-config.js`;
-
-            script.src = fallbackPath;
+            // New unified structure: js/{studyModel}/{studiengang}/{studiengang}-config.js
+            script.src = `js/${this.studyModel}/${this.studiengang}/${this.studiengang}-config.js`;
             script.onload = () => {
                 resolve(window.StudiengangConfig);
             };
