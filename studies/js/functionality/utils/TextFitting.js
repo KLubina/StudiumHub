@@ -1,12 +1,14 @@
+/* Text Fitting Utilities */
+
 StudienplanBase.prototype.fitText = function(container, selector) {
     const node = container.querySelector(selector);
-    
+
     let fs = 16;
     node.style.fontSize = fs + 'px';
 
     const containerWidth = container.clientWidth - 10;
-    const containerHeight = selector === '.modul-titel' 
-        ? container.clientHeight * 0.7 - 10 
+    const containerHeight = selector === '.modul-titel'
+        ? container.clientHeight * 0.7 - 10
         : container.clientHeight * 0.3 - 5;
 
     while ((node.scrollWidth > containerWidth || node.scrollHeight > containerHeight) && fs > 6) {
@@ -36,16 +38,16 @@ StudienplanBase.prototype.adjustAllText = function() {
 StudienplanBase.prototype.adjustSmallModule = function(div, modul) {
     const kp = div.querySelector('.modul-kp');
     const titel = div.querySelector('.modul-titel');
-    
+
     kp.style.fontSize = '15px';
     kp.style.fontWeight = 'bold';
     kp.style.marginTop = '2px';
     kp.style.marginBottom = '2px';
-    
+
     titel.style.fontSize = '12px';
     titel.style.lineHeight = '1.1';
     titel.style.marginTop = '1px';
-    
+
     if (modul.name.length > 25) {
         if (modul.name.includes('Geschichte:')) {
             titel.textContent = modul.name.split('Geschichte:')[1].trim();
@@ -54,22 +56,8 @@ StudienplanBase.prototype.adjustSmallModule = function(div, modul) {
         }
         div.title = modul.name;
     }
-    
+
     kp.style.marginBottom = '0';
     titel.style.marginTop = '0';
     titel.style.marginBottom = '0';
 };
-
-/* ==== POLYFILLS ==== */
-Event.prototype.composedPath = function() {
-    if (this.path) return this.path;
-    
-    let target = this.target;
-    this.path = [];
-    while (target.parentNode !== null) {
-        this.path.push(target);
-        target = target.parentNode;
-    }
-    this.path.push(document, window);
-    return this.path;
-}
