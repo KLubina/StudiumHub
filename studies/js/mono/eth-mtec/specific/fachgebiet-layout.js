@@ -1,14 +1,9 @@
-/* ==== MTEC SPECIFIC ==== */
-/* Spezielle Funktionalitäten und erweiterte Klasse für den MTEC Studiengang */
+/* ==== MTEC FACHGEBIET LAYOUT ==== */
+/* Horizontale Darstellung der Fachgebiete */
 
-/* ==== MTEC-SPEZIFISCHE LAYOUT-KLASSE ==== */
-window.StudiengangCustomClass = class MTECStudienplan extends StudienplanBase {
-    constructor(config) {
-        super(config);
-    }
-    
+if (window.MTECStudienplan) {
     // Überschreibe die Fachgebiet-Layout-Erstellung für horizontale Darstellung
-    createFachgebietLayout(container, modules) {
+    window.MTECStudienplan.prototype.createFachgebietLayout = function(container, modules) {
         const fachgebiete = [...new Set(modules.map(m => m.fachgebiet).filter(f => f))];
         
         fachgebiete.forEach(fachgebiet => {
@@ -45,5 +40,5 @@ window.StudiengangCustomClass = class MTECStudienplan extends StudienplanBase {
             ohneGebiet.forEach(m => this.createModule(m, moduleContainer));
             container.appendChild(moduleContainer);
         }
-    }
-};
+    };
+}

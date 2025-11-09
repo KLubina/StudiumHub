@@ -1,35 +1,16 @@
-/* ==== ITET SPECIFIC ==== */
-/* Spezifische Anpassungen für ITET, nutzt das zentrale Wahlmodule-System */
+/* ==== ITET THIRD YEAR LAYOUT ==== */
+/* Spezifisches Layout für das 3. Jahr - Kategorie-basiert */
 
-window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
-  constructor(config) {
-    super(config);
-  }
-
-  initialize() {
-    // Basis-Initialisierung (aktiviert automatisch das zentrale Wahlmodule-System)
-    super.initialize();
-    
-    // EXPLIZIT: ColorManager für ITET aktivieren
-    this.config.enableColorManager = true;
-    
-    // ITET-spezifische Initialisierung
-    this.setupITETSpecifics();
-  }
-
-  setupITETSpecifics() {
-    // Basis-Klasse hat bereits showMessage und showToastMessage implementiert
-  }
-
+if (window.ITETStudienplan) {
   /* ==== 3. JAHR LAYOUT - KATEGORIE-BASIERT ==== */
-  createYearSection(year) {
+  window.ITETStudienplan.prototype.createYearSection = function(year) {
     if (year === 3) {
       return this.createThirdYearSection();
     }
-    return super.createYearSection(year);
-  }
+    return StudienplanBase.prototype.createYearSection.call(this, year);
+  };
 
-  createThirdYearSection() {
+  window.ITETStudienplan.prototype.createThirdYearSection = function() {
     const yearDiv = document.createElement("div");
     yearDiv.classList.add("jahr");
 
@@ -44,9 +25,9 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
     }, 100);
 
     return yearDiv;
-  }
+  };
 
-  createCategoryBasedThirdYear(container) {
+  window.ITETStudienplan.prototype.createCategoryBasedThirdYear = function(container) {
     const thirdYearModules = this.config.daten.filter((m) => m.jahr === 3);
 
     // Container leeren (außer Titel)
@@ -100,16 +81,5 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
 
       container.appendChild(moduleContainer);
     });
-  }
-
-  /* ==== OVERRIDE TOOLTIP HIDING ==== */
-  hideTooltip() {
-    super.hideTooltip();
-    
-    // Cleanup outside click handler if exists
-    if (this.wahlmoduleManager && this.wahlmoduleManager._outsideClickHandler) {
-      document.removeEventListener('click', this.wahlmoduleManager._outsideClickHandler, true);
-      this.wahlmoduleManager._outsideClickHandler = null;
-    }
-  }
-};
+  };
+}
