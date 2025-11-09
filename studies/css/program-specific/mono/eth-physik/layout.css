@@ -1,0 +1,12 @@
+/* ==== ETH-PHYSIK - LAYOUT OVERRIDES ==== */
+/* Program-specific layout customizations */
+
+[data-studiengang="eth-physik"] .jahr-titel {
+    color: var(--color-primary);
+    border-bottom: 2px solid var(--color-primary);
+}
+
+[data-studiengang="eth-physik"] .kategorie-titel {
+    background-color: var(--color-kategorie);
+    color: white;
+}

@@ -1,0 +1,17 @@
+/* ==== ETH-MATW - CSS CLASSES ==== */
+/* Program-specific CSS classes */
+
+[data-studiengang="eth-matw"] .modul.pflicht {
+    background-color: var(--color-pflicht);
+    color: white;
+}
+
+[data-studiengang="eth-matw"] .modul.wahlpflicht {
+    background-color: var(--color-wahlpflicht);
+    color: white;
+}
+
+[data-studiengang="eth-matw"] .modul.wahl {
+    background-color: var(--color-wahl);
+    color: white;
+}

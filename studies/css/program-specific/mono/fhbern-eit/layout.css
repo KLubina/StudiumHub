@@ -1,0 +1,12 @@
+/* ==== FHBERN-EIT - LAYOUT OVERRIDES ==== */
+/* Program-specific layout customizations */
+
+[data-studiengang="fhbern-eit"] .jahr-titel {
+    color: var(--color-primary);
+    border-bottom: 2px solid var(--color-primary);
+}
+
+[data-studiengang="fhbern-eit"] .kategorie-titel {
+    background-color: var(--color-kategorie);
+    color: white;
+}

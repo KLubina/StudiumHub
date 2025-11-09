@@ -1,0 +1,13 @@
+/* ==== FHGR-CDS - COLOR VARIABLES ==== */
+/* FH Graubünden Computational and Data Science Program */
+
+[data-studiengang="fhgr-cds"] {
+    /* Primary program color */
+    --color-primary: #0284c7;
+
+    /* Module type colors */
+    --color-pflicht: #dc2626;
+    --color-wahlpflicht: #ea580c;
+    --color-wahl: #16a34a;
+    --color-kategorie: #0369a1;
+}

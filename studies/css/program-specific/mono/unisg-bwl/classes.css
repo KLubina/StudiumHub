@@ -1,0 +1,17 @@
+/* ==== UNISG-BWL - CSS CLASSES ==== */
+/* Program-specific CSS classes */
+
+[data-studiengang="unisg-bwl"] .modul.pflicht {
+    background-color: var(--color-pflicht);
+    color: white;
+}
+
+[data-studiengang="unisg-bwl"] .modul.wahlpflicht {
+    background-color: var(--color-wahlpflicht);
+    color: white;
+}
+
+[data-studiengang="unisg-bwl"] .modul.wahl {
+    background-color: var(--color-wahl);
+    color: white;
+}

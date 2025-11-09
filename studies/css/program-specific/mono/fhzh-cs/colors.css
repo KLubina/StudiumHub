@@ -1,0 +1,13 @@
+/* ==== FHZH-CS - COLOR VARIABLES ==== */
+/* FH Zürich Computer Science Program */
+
+[data-studiengang="fhzh-cs"] {
+    /* Primary program color */
+    --color-primary: #1d4ed8;
+
+    /* Module type colors */
+    --color-pflicht: #dc2626;
+    --color-wahlpflicht: #ea580c;
+    --color-wahl: #16a34a;
+    --color-kategorie: #1e40af;
+}

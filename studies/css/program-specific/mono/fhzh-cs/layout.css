@@ -1,0 +1,12 @@
+/* ==== FHZH-CS - LAYOUT OVERRIDES ==== */
+/* Program-specific layout customizations */
+
+[data-studiengang="fhzh-cs"] .jahr-titel {
+    color: var(--color-primary);
+    border-bottom: 2px solid var(--color-primary);
+}
+
+[data-studiengang="fhzh-cs"] .kategorie-titel {
+    background-color: var(--color-kategorie);
+    color: white;
+}

@@ -1,0 +1,17 @@
+/* ==== ETH-RIG - CSS CLASSES ==== */
+/* Program-specific CSS classes */
+
+[data-studiengang="eth-rig"] .modul.pflicht {
+    background-color: var(--color-pflicht);
+    color: white;
+}
+
+[data-studiengang="eth-rig"] .modul.wahlpflicht {
+    background-color: var(--color-wahlpflicht);
+    color: white;
+}
+
+[data-studiengang="eth-rig"] .modul.wahl {
+    background-color: var(--color-wahl);
+    color: white;
+}

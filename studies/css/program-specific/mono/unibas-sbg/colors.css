@@ -1,0 +1,13 @@
+/* ==== UNIBAS-SBG - COLOR VARIABLES ==== */
+/* Universität Basel Sustainable Business & Governance Program */
+
+[data-studiengang="unibas-sbg"] {
+    /* Primary program color */
+    --color-primary: #15803d;
+
+    /* Module type colors */
+    --color-pflicht: #dc2626;
+    --color-wahlpflicht: #ea580c;
+    --color-wahl: #16a34a;
+    --color-kategorie: #166534;
+}

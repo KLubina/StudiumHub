@@ -1,0 +1,13 @@
+/* ==== ETH-MASCH - COLOR VARIABLES ==== */
+/* ETH Maschinenbau Program */
+
+[data-studiengang="eth-masch"] {
+    /* Primary program color */
+    --color-primary: #6b7280;
+
+    /* Module type colors */
+    --color-pflicht: #dc2626;
+    --color-wahlpflicht: #ea580c;
+    --color-wahl: #16a34a;
+    --color-kategorie: #4b5563;
+}

@@ -1,0 +1,13 @@
+/* ==== ETH-PHYSIK - COLOR VARIABLES ==== */
+/* ETH Physik Program */
+
+[data-studiengang="eth-physik"] {
+    /* Primary program color */
+    --color-primary: #db2777;
+
+    /* Module type colors */
+    --color-pflicht: #dc2626;
+    --color-wahlpflicht: #ea580c;
+    --color-wahl: #16a34a;
+    --color-kategorie: #be185d;
+}

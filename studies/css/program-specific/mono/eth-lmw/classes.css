@@ -1,0 +1,17 @@
+/* ==== ETH-LMW - CSS CLASSES ==== */
+/* Program-specific CSS classes */
+
+[data-studiengang="eth-lmw"] .modul.pflicht {
+    background-color: var(--color-pflicht);
+    color: white;
+}
+
+[data-studiengang="eth-lmw"] .modul.wahlpflicht {
+    background-color: var(--color-wahlpflicht);
+    color: white;
+}
+
+[data-studiengang="eth-lmw"] .modul.wahl {
+    background-color: var(--color-wahl);
+    color: white;
+}

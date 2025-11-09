@@ -1,0 +1,13 @@
+/* ==== ETH-LMW - COLOR VARIABLES ==== */
+/* ETH Lebensmittelwissenschaften Program */
+
+[data-studiengang="eth-lmw"] {
+    /* Primary program color */
+    --color-primary: #16a34a;
+
+    /* Module type colors */
+    --color-pflicht: #dc2626;
+    --color-wahlpflicht: #ea580c;
+    --color-wahl: #16a34a;
+    --color-kategorie: #059669;
+}

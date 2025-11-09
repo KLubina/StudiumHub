@@ -1,0 +1,13 @@
+/* ==== FHLU-EIT - COLOR VARIABLES ==== */
+/* FH Luzern Elektrotechnik und Informationstechnologie Program */
+
+[data-studiengang="fhlu-eit"] {
+    /* Primary program color */
+    --color-primary: #c2410c;
+
+    /* Module type colors */
+    --color-pflicht: #dc2626;
+    --color-wahlpflicht: #ea580c;
+    --color-wahl: #16a34a;
+    --color-kategorie: #9a3412;
+}

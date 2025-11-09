@@ -1,0 +1,13 @@
+/* ==== HSSH-IT - COLOR VARIABLES ==== */
+/* Hochschule Schaffhausen Informatik Program */
+
+[data-studiengang="hssh-it"] {
+    /* Primary program color */
+    --color-primary: #7c2d12;
+
+    /* Module type colors */
+    --color-pflicht: #dc2626;
+    --color-wahlpflicht: #ea580c;
+    --color-wahl: #16a34a;
+    --color-kategorie: #92400e;
+}

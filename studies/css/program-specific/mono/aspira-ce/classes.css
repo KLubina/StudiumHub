@@ -1,0 +1,17 @@
+/* ==== ASPIRA-CE - CSS CLASSES ==== */
+/* Program-specific CSS classes */
+
+[data-studiengang="aspira-ce"] .modul.pflicht {
+    background-color: var(--color-pflicht);
+    color: white;
+}
+
+[data-studiengang="aspira-ce"] .modul.wahlpflicht {
+    background-color: var(--color-wahlpflicht);
+    color: white;
+}
+
+[data-studiengang="aspira-ce"] .modul.wahl {
+    background-color: var(--color-wahl);
+    color: white;
+}

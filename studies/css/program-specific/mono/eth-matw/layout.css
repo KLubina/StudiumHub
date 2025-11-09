@@ -1,0 +1,12 @@
+/* ==== ETH-MATW - LAYOUT OVERRIDES ==== */
+/* Program-specific layout customizations */
+
+[data-studiengang="eth-matw"] .jahr-titel {
+    color: var(--color-primary);
+    border-bottom: 2px solid var(--color-primary);
+}
+
+[data-studiengang="eth-matw"] .kategorie-titel {
+    background-color: var(--color-kategorie);
+    color: white;
+}

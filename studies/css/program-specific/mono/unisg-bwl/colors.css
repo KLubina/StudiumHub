@@ -1,0 +1,13 @@
+/* ==== UNISG-BWL - COLOR VARIABLES ==== */
+/* Universität St. Gallen Betriebswirtschaftslehre Program */
+
+[data-studiengang="unisg-bwl"] {
+    /* Primary program color */
+    --color-primary: #b91c1c;
+
+    /* Module type colors */
+    --color-pflicht: #dc2626;
+    --color-wahlpflicht: #ea580c;
+    --color-wahl: #16a34a;
+    --color-kategorie: #991b1b;
+}

@@ -1,0 +1,12 @@
+/* ==== UNIBAS-SBG - LAYOUT OVERRIDES ==== */
+/* Program-specific layout customizations */
+
+[data-studiengang="unibas-sbg"] .jahr-titel {
+    color: var(--color-primary);
+    border-bottom: 2px solid var(--color-primary);
+}
+
+[data-studiengang="unibas-sbg"] .kategorie-titel {
+    background-color: var(--color-kategorie);
+    color: white;
+}

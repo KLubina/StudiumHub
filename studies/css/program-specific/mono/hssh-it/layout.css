@@ -1,0 +1,12 @@
+/* ==== HSSH-IT - LAYOUT OVERRIDES ==== */
+/* Program-specific layout customizations */
+
+[data-studiengang="hssh-it"] .jahr-titel {
+    color: var(--color-primary);
+    border-bottom: 2px solid var(--color-primary);
+}
+
+[data-studiengang="hssh-it"] .kategorie-titel {
+    background-color: var(--color-kategorie);
+    color: white;
+}

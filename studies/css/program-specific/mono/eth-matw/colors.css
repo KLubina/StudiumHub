@@ -1,0 +1,13 @@
+/* ==== ETH-MATW - COLOR VARIABLES ==== */
+/* ETH Materialwissenschaft Program */
+
+[data-studiengang="eth-matw"] {
+    /* Primary program color */
+    --color-primary: #0891b2;
+
+    /* Module type colors */
+    --color-pflicht: #dc2626;
+    --color-wahlpflicht: #ea580c;
+    --color-wahl: #16a34a;
+    --color-kategorie: #0e7490;
+}
