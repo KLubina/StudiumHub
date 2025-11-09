@@ -11,20 +11,14 @@
     box-sizing: border-box;
     border: none;
     border-radius: var(--module-radius);
-    box-shadow: var(--module-shadow);
     overflow: hidden;
     padding: var(--module-padding);
     margin: var(--module-margin);
     position: relative;
-    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+    /* no transform/box-shadow transitions for simplicity */
 }
 
-.modul:hover {
-    transform: scale(var(--hover-scale));
-    z-index: var(--z-hover);
-    box-shadow: var(--hover-shadow);
-    filter: brightness(1.1);
-}
+/* No special hover effects */
 
 /* Modul Title */
 .modul-titel {
@@ -71,11 +65,7 @@
 }
 
 /* Hover-Enabled Module */
-.modul.hover-enabled:hover {
-    transform: scale(1.05);
-    z-index: var(--z-hover);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-}
+/* Hover-enabled variant intentionally has no visual effects */
 
 /* ==== BULLET LISTS INSIDE MODULES ==== */
 

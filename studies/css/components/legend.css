@@ -13,12 +13,9 @@
     color: white;
     text-align: center;
     border-radius: 4px;
-    transition: transform var(--transition-fast);
 }
 
-.legende-item:hover {
-    transform: scale(1.02);
-}
+
 
 .legende-item-titel {
     font-weight: bold;
@@ -45,14 +42,13 @@
 /* ==== LEGEND HINT ==== */
 
 .legend-hint {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: var(--color-hub-button);
     color: white;
     padding: var(--spacing-lg);
-    border-radius: 8px;
+    border-radius: 6px;
     text-align: center;
     font-size: 1rem;
     line-height: 1.6;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .legend-hint strong {
