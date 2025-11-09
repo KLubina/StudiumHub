@@ -1,27 +1,32 @@
 /* ==== FHGR-CDS - CSS CLASSES ==== */
 /* Program-specific CSS classes */
 
-[data-studiengang="fhgr-cds"] .modul.grundlagen {
+[data-studiengang="fhgr-cds"] .modul.grundlagen,
+[data-studiengang="fhgr-cds"] .legende-item.grundlagen {
     background-color: var(--color-grundlagen);
-    color: white;
+    color: var(--color-grundlagen-text, white);
 }
 
-[data-studiengang="fhgr-cds"] .modul.schwerpunkte {
+[data-studiengang="fhgr-cds"] .modul.schwerpunkte,
+[data-studiengang="fhgr-cds"] .legende-item.schwerpunkte {
     background-color: var(--color-schwerpunkte);
-    color: white;
+    color: var(--color-schwerpunkte-text, white);
 }
 
-[data-studiengang="fhgr-cds"] .modul.wahlmodul {
+[data-studiengang="fhgr-cds"] .modul.wahlmodul,
+[data-studiengang="fhgr-cds"] .legende-item.wahlmodul {
     background-color: var(--color-wahlmodul);
-    color: white;
+    color: var(--color-wahlmodul-text, white);
 }
 
-[data-studiengang="fhgr-cds"] .modul.labor {
+[data-studiengang="fhgr-cds"] .modul.labor,
+[data-studiengang="fhgr-cds"] .legende-item.labor {
     background-color: var(--color-labor);
-    color: white;
+    color: var(--color-labor-text, white);
 }
 
-[data-studiengang="fhgr-cds"] .modul.projektarbeit {
+[data-studiengang="fhgr-cds"] .modul.projektarbeit,
+[data-studiengang="fhgr-cds"] .legende-item.projektarbeit {
     background-color: var(--color-projektarbeit);
-    color: white;
+    color: var(--color-projektarbeit-text, white);
 }

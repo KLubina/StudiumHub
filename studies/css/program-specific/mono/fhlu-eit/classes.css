@@ -1,47 +1,56 @@
 /* ==== FHLU-EIT - CSS CLASSES ==== */
 /* Program-specific CSS classes */
 
-[data-studiengang="fhlu-eit"] .modul.grundlagen {
+[data-studiengang="fhlu-eit"] .modul.grundlagen,
+[data-studiengang="fhlu-eit"] .legende-item.grundlagen {
     background-color: var(--color-grundlagen);
-    color: white;
+    color: var(--color-grundlagen-text, white);
 }
 
-[data-studiengang="fhlu-eit"] .modul.elektrotechnik {
+[data-studiengang="fhlu-eit"] .modul.elektrotechnik,
+[data-studiengang="fhlu-eit"] .legende-item.elektrotechnik {
     background-color: var(--color-elektrotechnik);
-    color: white;
+    color: var(--color-elektrotechnik-text, white);
 }
 
-[data-studiengang="fhlu-eit"] .modul.informatik {
+[data-studiengang="fhlu-eit"] .modul.informatik,
+[data-studiengang="fhlu-eit"] .legende-item.informatik {
     background-color: var(--color-informatik);
-    color: white;
+    color: var(--color-informatik-text, white);
 }
 
-[data-studiengang="fhlu-eit"] .modul.projekte {
+[data-studiengang="fhlu-eit"] .modul.projekte,
+[data-studiengang="fhlu-eit"] .legende-item.projekte {
     background-color: var(--color-projekte);
-    color: white;
+    color: var(--color-projekte-text, white);
 }
 
-[data-studiengang="fhlu-eit"] .modul.kontext {
+[data-studiengang="fhlu-eit"] .modul.kontext,
+[data-studiengang="fhlu-eit"] .legende-item.kontext {
     background-color: var(--color-kontext);
-    color: white;
+    color: var(--color-kontext-text, white);
 }
 
-[data-studiengang="fhlu-eit"] .modul.vertiefung {
+[data-studiengang="fhlu-eit"] .modul.vertiefung,
+[data-studiengang="fhlu-eit"] .legende-item.vertiefung {
     background-color: var(--color-vertiefung);
-    color: white;
+    color: var(--color-vertiefung-text, white);
 }
 
-[data-studiengang="fhlu-eit"] .modul.erweiterung {
+[data-studiengang="fhlu-eit"] .modul.erweiterung,
+[data-studiengang="fhlu-eit"] .legende-item.erweiterung {
     background-color: var(--color-erweiterung);
-    color: white;
+    color: var(--color-erweiterung-text, white);
 }
 
-[data-studiengang="fhlu-eit"] .modul.zusatz {
+[data-studiengang="fhlu-eit"] .modul.zusatz,
+[data-studiengang="fhlu-eit"] .legende-item.zusatz {
     background-color: var(--color-zusatz);
-    color: white;
+    color: var(--color-zusatz-text, white);
 }
 
-[data-studiengang="fhlu-eit"] .modul.abschluss {
+[data-studiengang="fhlu-eit"] .modul.abschluss,
+[data-studiengang="fhlu-eit"] .legende-item.abschluss {
     background-color: var(--color-abschluss);
-    color: white;
+    color: var(--color-abschluss-text, white);
 }

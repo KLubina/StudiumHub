@@ -1,22 +1,26 @@
 /* ==== FHZH-CS - CSS CLASSES ==== */
 /* Program-specific CSS classes */
 
-[data-studiengang="fhzh-cs"] .modul.kontext {
+[data-studiengang="fhzh-cs"] .modul.kontext,
+[data-studiengang="fhzh-cs"] .legende-item.kontext {
     background-color: var(--color-kontext);
-    color: white;
+    color: var(--color-kontext-text, white);
 }
 
-[data-studiengang="fhzh-cs"] .modul.projekt {
+[data-studiengang="fhzh-cs"] .modul.projekt,
+[data-studiengang="fhzh-cs"] .legende-item.projekt {
     background-color: var(--color-projekt);
-    color: white;
+    color: var(--color-projekt-text, white);
 }
 
-[data-studiengang="fhzh-cs"] .modul.fach {
+[data-studiengang="fhzh-cs"] .modul.fach,
+[data-studiengang="fhzh-cs"] .legende-item.fach {
     background-color: var(--color-fach);
-    color: white;
+    color: var(--color-fach-text, white);
 }
 
-[data-studiengang="fhzh-cs"] .modul.mathe-nawi {
+[data-studiengang="fhzh-cs"] .modul.mathe-nawi,
+[data-studiengang="fhzh-cs"] .legende-item.mathe-nawi {
     background-color: var(--color-mathe-nawi);
-    color: white;
+    color: var(--color-mathe-nawi-text, white);
 }
