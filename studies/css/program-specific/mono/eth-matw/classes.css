@@ -1,17 +1,20 @@
 /* ==== ETH-MATW - CSS CLASSES ==== */
 /* Program-specific CSS classes */
 
-[data-studiengang="eth-matw"] .modul.obligatorisch {
+[data-studiengang="eth-matw"] .modul.obligatorisch,
+[data-studiengang="eth-matw"] .legende-item.obligatorisch {
     background-color: var(--color-obligatorisch);
     color: white;
 }
 
-[data-studiengang="eth-matw"] .modul.praktikum {
+[data-studiengang="eth-matw"] .modul.praktikum,
+[data-studiengang="eth-matw"] .legende-item.praktikum {
     background-color: var(--color-praktikum);
     color: white;
 }
 
-[data-studiengang="eth-matw"] .modul.wissenschaft {
+[data-studiengang="eth-matw"] .modul.wissenschaft,
+[data-studiengang="eth-matw"] .legende-item.wissenschaft {
     background-color: var(--color-wissenschaft);
     color: white;
 }

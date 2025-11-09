@@ -1,32 +1,38 @@
 /* ==== FHBERN-EIT - CSS CLASSES ==== */
 /* Program-specific CSS classes */
 
-[data-studiengang="fhbern-eit"] .modul.grundlagen {
+[data-studiengang="fhbern-eit"] .modul.grundlagen,
+[data-studiengang="fhbern-eit"] .legende-item.grundlagen {
     background-color: var(--color-grundlagen);
     color: white;
 }
 
-[data-studiengang="fhbern-eit"] .modul.praktika {
+[data-studiengang="fhbern-eit"] .modul.praktika,
+[data-studiengang="fhbern-eit"] .legende-item.praktika {
     background-color: var(--color-praktika);
     color: white;
 }
 
-[data-studiengang="fhbern-eit"] .modul.sprachen {
+[data-studiengang="fhbern-eit"] .modul.sprachen,
+[data-studiengang="fhbern-eit"] .legende-item.sprachen {
     background-color: var(--color-sprachen);
     color: white;
 }
 
-[data-studiengang="fhbern-eit"] .modul.vertiefung {
+[data-studiengang="fhbern-eit"] .modul.vertiefung,
+[data-studiengang="fhbern-eit"] .legende-item.vertiefung {
     background-color: var(--color-vertiefung);
     color: white;
 }
 
-[data-studiengang="fhbern-eit"] .modul.wahlmodule {
+[data-studiengang="fhbern-eit"] .modul.wahlmodule,
+[data-studiengang="fhbern-eit"] .legende-item.wahlmodule {
     background-color: var(--color-wahlmodule);
     color: white;
 }
 
-[data-studiengang="fhbern-eit"] .modul.abschluss {
+[data-studiengang="fhbern-eit"] .modul.abschluss,
+[data-studiengang="fhbern-eit"] .legende-item.abschluss {
     background-color: var(--color-abschluss);
     color: white;
 }

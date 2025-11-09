@@ -1,47 +1,56 @@
 /* ==== ETH-CS - CSS CLASSES ==== */
 /* Program-specific CSS classes */
 
-[data-studiengang="eth-cs"] .modul.cs-pure {
+[data-studiengang="eth-cs"] .modul.cs-pure,
+[data-studiengang="eth-cs"] .legende-item.cs-pure {
     background-color: var(--color-cs-pure);
     color: white;
 }
 
-[data-studiengang="eth-cs"] .modul.cs-cse {
+[data-studiengang="eth-cs"] .modul.cs-cse,
+[data-studiengang="eth-cs"] .legende-item.cs-cse {
     background-color: var(--color-cs-cse);
     color: white;
 }
 
-[data-studiengang="eth-cs"] .modul.cs-cse-wahl {
+[data-studiengang="eth-cs"] .modul.cs-cse-wahl,
+[data-studiengang="eth-cs"] .legende-item.cs-cse-wahl {
     background-color: var(--color-cs-cse-wahl);
     color: white;
 }
 
-[data-studiengang="eth-cs"] .modul.math {
+[data-studiengang="eth-cs"] .modul.math,
+[data-studiengang="eth-cs"] .legende-item.math {
     background-color: var(--color-math);
     color: white;
 }
 
-[data-studiengang="eth-cs"] .modul.algo {
+[data-studiengang="eth-cs"] .modul.algo,
+[data-studiengang="eth-cs"] .legende-item.algo {
     background-color: var(--color-algo);
     color: white;
 }
 
-[data-studiengang="eth-cs"] .modul.ergaenzung {
+[data-studiengang="eth-cs"] .modul.ergaenzung,
+[data-studiengang="eth-cs"] .legende-item.ergaenzung {
     background-color: var(--color-ergaenzung);
     color: white;
 }
 
-[data-studiengang="eth-cs"] .modul.wissenschaft {
+[data-studiengang="eth-cs"] .modul.wissenschaft,
+[data-studiengang="eth-cs"] .legende-item.wissenschaft {
     background-color: var(--color-wissenschaft);
     color: white;
 }
 
-[data-studiengang="eth-cs"] .modul.spezialisierung {
+[data-studiengang="eth-cs"] .modul.spezialisierung,
+[data-studiengang="eth-cs"] .legende-item.spezialisierung {
     background-color: var(--color-spezialisierung);
     color: black;
 }
 
-[data-studiengang="eth-cs"] .modul.wahlfaecher {
+[data-studiengang="eth-cs"] .modul.wahlfaecher,
+[data-studiengang="eth-cs"] .legende-item.wahlfaecher {
     background-color: var(--color-wahlfaecher);
     color: white;
 }

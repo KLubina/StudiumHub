@@ -1,67 +1,80 @@
 /* ==== ETH-LMW - CSS CLASSES ==== */
 /* Program-specific CSS classes */
 
-[data-studiengang="eth-lmw"] .modul.basispruefung {
+[data-studiengang="eth-lmw"] .modul.basispruefung,
+[data-studiengang="eth-lmw"] .legende-item.basispruefung {
     background-color: var(--color-basispruefung);
     color: white;
 }
 
-[data-studiengang="eth-lmw"] .modul.zusatzfach {
+[data-studiengang="eth-lmw"] .modul.zusatzfach,
+[data-studiengang="eth-lmw"] .legende-item.zusatzfach {
     background-color: var(--color-zusatzfach);
     color: white;
 }
 
-[data-studiengang="eth-lmw"] .modul.obligatorisch {
+[data-studiengang="eth-lmw"] .modul.obligatorisch,
+[data-studiengang="eth-lmw"] .legende-item.obligatorisch {
     background-color: var(--color-obligatorisch);
     color: white;
 }
 
-[data-studiengang="eth-lmw"] .modul.grundlagenfach {
+[data-studiengang="eth-lmw"] .modul.grundlagenfach,
+[data-studiengang="eth-lmw"] .legende-item.grundlagenfach {
     background-color: var(--color-grundlagenfach);
     color: white;
 }
 
-[data-studiengang="eth-lmw"] .modul.weitere {
+[data-studiengang="eth-lmw"] .modul.weitere,
+[data-studiengang="eth-lmw"] .legende-item.weitere {
     background-color: var(--color-weitere);
     color: white;
 }
 
-[data-studiengang="eth-lmw"] .modul.kernfach {
+[data-studiengang="eth-lmw"] .modul.kernfach,
+[data-studiengang="eth-lmw"] .legende-item.kernfach {
     background-color: var(--color-kernfach);
     color: white;
 }
 
-[data-studiengang="eth-lmw"] .modul.fachgrundlage {
+[data-studiengang="eth-lmw"] .modul.fachgrundlage,
+[data-studiengang="eth-lmw"] .legende-item.fachgrundlage {
     background-color: var(--color-fachgrundlage);
     color: white;
 }
 
-[data-studiengang="eth-lmw"] .modul.lmw-fach {
+[data-studiengang="eth-lmw"] .modul.lmw-fach,
+[data-studiengang="eth-lmw"] .legende-item.lmw-fach {
     background-color: var(--color-lmw-fach);
     color: white;
 }
 
-[data-studiengang="eth-lmw"] .modul.praktikum {
+[data-studiengang="eth-lmw"] .modul.praktikum,
+[data-studiengang="eth-lmw"] .legende-item.praktikum {
     background-color: var(--color-praktikum);
     color: white;
 }
 
-[data-studiengang="eth-lmw"] .modul.exkursion {
+[data-studiengang="eth-lmw"] .modul.exkursion,
+[data-studiengang="eth-lmw"] .legende-item.exkursion {
     background-color: var(--color-exkursion);
     color: white;
 }
 
-[data-studiengang="eth-lmw"] .modul.wahl {
+[data-studiengang="eth-lmw"] .modul.wahl,
+[data-studiengang="eth-lmw"] .legende-item.wahl {
     background-color: var(--color-wahl);
     color: white;
 }
 
-[data-studiengang="eth-lmw"] .modul.wik {
+[data-studiengang="eth-lmw"] .modul.wik,
+[data-studiengang="eth-lmw"] .legende-item.wik {
     background-color: var(--color-wik);
     color: white;
 }
 
-[data-studiengang="eth-lmw"] .modul.bachelor-arbeit {
+[data-studiengang="eth-lmw"] .modul.bachelor-arbeit,
+[data-studiengang="eth-lmw"] .legende-item.bachelor-arbeit {
     background-color: var(--color-bachelor-arbeit);
     color: white;
 }

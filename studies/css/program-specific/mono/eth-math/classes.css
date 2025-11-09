@@ -1,32 +1,38 @@
 /* ==== ETH-MATH - CSS CLASSES ==== */
 /* Program-specific CSS classes */
 
-[data-studiengang="eth-math"] .modul.obligatorisch {
+[data-studiengang="eth-math"] .modul.obligatorisch,
+[data-studiengang="eth-math"] .legende-item.obligatorisch {
     background-color: var(--color-obligatorisch);
     color: white;
 }
 
-[data-studiengang="eth-math"] .modul.ergaenzung {
+[data-studiengang="eth-math"] .modul.ergaenzung,
+[data-studiengang="eth-math"] .legende-item.ergaenzung {
     background-color: var(--color-ergaenzung);
     color: white;
 }
 
-[data-studiengang="eth-math"] .modul.wahl {
+[data-studiengang="eth-math"] .modul.wahl,
+[data-studiengang="eth-math"] .legende-item.wahl {
     background-color: var(--color-wahl);
     color: white;
 }
 
-[data-studiengang="eth-math"] .modul.kern {
+[data-studiengang="eth-math"] .modul.kern,
+[data-studiengang="eth-math"] .legende-item.kern {
     background-color: var(--color-kern);
     color: white;
 }
 
-[data-studiengang="eth-math"] .modul.wahlpflicht {
+[data-studiengang="eth-math"] .modul.wahlpflicht,
+[data-studiengang="eth-math"] .legende-item.wahlpflicht {
     background-color: var(--color-wahlpflicht);
     color: white;
 }
 
-[data-studiengang="eth-math"] .modul.wissenschaft {
+[data-studiengang="eth-math"] .modul.wissenschaft,
+[data-studiengang="eth-math"] .legende-item.wissenschaft {
     background-color: var(--color-wissenschaft);
     color: white;
 }
