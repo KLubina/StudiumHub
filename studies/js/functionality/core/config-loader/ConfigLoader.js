@@ -16,10 +16,10 @@ class StudiengangConfigLoader {
         // Load modular config files (new structure)
         await this.loadModularConfigs(basePath);
 
-        // Load data files
-        await this.loader.loadModule(`${basePath}/basic-modules-data.js`);
-        await this.loader.loadOptionalModule(`${basePath}/extensions-data.js`);
-        await this.loader.loadOptionalModule(`${basePath}/basic-modules-details.js`);
+        // Load data files - now in data/ subdirectory
+        await this.loader.loadModule(`${basePath}/data/basic-modules-data.js`);
+        await this.loader.loadOptionalModule(`${basePath}/data/extensions-data.js`);
+        await this.loader.loadOptionalModule(`${basePath}/data/basic-modules-details.js`);
 
         await this.loadStudiengangSpecificData(basePath);
         await this.loadExtensions(basePath);
@@ -31,23 +31,23 @@ class StudiengangConfigLoader {
     }
 
     async loadModularConfigs(basePath) {
-        // Core config files (always loaded)
-        await this.loader.loadModule(`${basePath}/general-config.js`);
-        await this.loader.loadModule(`${basePath}/layout-config.js`);
-        await this.loader.loadModule(`${basePath}/features-config.js`);
-        await this.loader.loadModule(`${basePath}/categories-config.js`);
+        // Core config files (always loaded) - now in config/ subdirectory
+        await this.loader.loadModule(`${basePath}/config/general-config.js`);
+        await this.loader.loadModule(`${basePath}/config/layout-config.js`);
+        await this.loader.loadModule(`${basePath}/config/features-config.js`);
+        await this.loader.loadModule(`${basePath}/config/categories-config.js`);
 
         // Feature-specific config files (loaded based on feature flags after features-config.js is loaded)
         // These are optional and only loaded if the corresponding feature is enabled
-        await this.loader.loadOptionalModule(`${basePath}/color-manager-config.js`);
-        await this.loader.loadOptionalModule(`${basePath}/kp-counter-config.js`);
-        await this.loader.loadOptionalModule(`${basePath}/wahlmodule-config.js`);
+        await this.loader.loadOptionalModule(`${basePath}/config/color-manager-config.js`);
+        await this.loader.loadOptionalModule(`${basePath}/config/kp-counter-config.js`);
+        await this.loader.loadOptionalModule(`${basePath}/config/wahlmodule-config.js`);
 
         // Legacy fallback: try to load old base-config.js if modular configs don't exist
         await this.loader.loadOptionalModule(`${basePath}/base-config.js`);
 
-        // Load color-config.js (can exist independently)
-        await this.loader.loadOptionalModule(`${basePath}/color-config.js`);
+        // Load color-config.js (can exist independently) - now in config/ subdirectory
+        await this.loader.loadOptionalModule(`${basePath}/config/color-config.js`);
     }
 
     async loadStudiengangSpecificData(basePath) {
@@ -69,51 +69,52 @@ class StudiengangConfigLoader {
     }
 
     async loadBFHData(basePath) {
-        await this.loader.loadOptionalModule(`${basePath}/vertiefungsrichtungen-data.js`);
-        await this.loader.loadOptionalModule(`${basePath}/wahlmodule-data.js`);
+        await this.loader.loadOptionalModule(`${basePath}/data/vertiefungsrichtungen-data.js`);
+        await this.loader.loadOptionalModule(`${basePath}/data/wahlmodule-data.js`);
     }
 
     async loadHSLUData(basePath) {
-        await this.loader.loadOptionalModule(`${basePath}/vertiefungsrichtungen-data.js`);
-        await this.loader.loadOptionalModule(`${basePath}/wahlmodule-data.js`);
+        await this.loader.loadOptionalModule(`${basePath}/data/vertiefungsrichtungen-data.js`);
+        await this.loader.loadOptionalModule(`${basePath}/data/wahlmodule-data.js`);
     }
 
     async loadMSCITETData(basePath) {
-        await this.loader.loadOptionalModule(`${basePath}/kernfacher-data.js`);
-        await this.loader.loadOptionalModule(`${basePath}/vertiefungsfacher-data.js`);
+        await this.loader.loadOptionalModule(`${basePath}/data/kernfacher-data.js`);
+        await this.loader.loadOptionalModule(`${basePath}/data/vertiefungsfacher-data.js`);
     }
 
     async loadHSTData(basePath) {
-        await this.loader.loadOptionalModule(`${basePath}/schwerpunkt-data.js`);
-        await this.loader.loadOptionalModule(`${basePath}/wahlfacher-data.js`);
+        await this.loader.loadOptionalModule(`${basePath}/data/schwerpunkt-data.js`);
+        await this.loader.loadOptionalModule(`${basePath}/data/wahlfacher-data.js`);
     }
 
     async loadSozwiData(basePath) {
-        await this.loader.loadOptionalModule(`${basePath}/ethnologie-modules-data.js`);
-        await this.loader.loadOptionalModule(`${basePath}/kommunikationswissenschaft-modules-data.js`);
-        await this.loader.loadOptionalModule(`${basePath}/politikwissenschaft-modules-data.js`);
-        await this.loader.loadOptionalModule(`${basePath}/major-data.js`);
-        await this.loader.loadOptionalModule(`${basePath}/minor-data.js`);
+        await this.loader.loadOptionalModule(`${basePath}/data/ethnologie-modules-data.js`);
+        await this.loader.loadOptionalModule(`${basePath}/data/kommunikationswissenschaft-modules-data.js`);
+        await this.loader.loadOptionalModule(`${basePath}/data/politikwissenschaft-modules-data.js`);
+        await this.loader.loadOptionalModule(`${basePath}/data/major-data.js`);
+        await this.loader.loadOptionalModule(`${basePath}/data/minor-data.js`);
     }
 
     async loadUZHData(basePath) {
-        await this.loader.loadOptionalModule(`${basePath}/major-data.js`);
+        await this.loader.loadOptionalModule(`${basePath}/data/major-data.js`);
         await this.loader.loadOptionalModule(`js/${this.studyModel}/uzh-common/minor-data.js`);
         ModuleDataCombiner.setupUzhMinorDataAlias(this.studiengang);
     }
 
     async loadDefaultWahlmoduleData(basePath) {
-        await this.loader.loadOptionalModule(`${basePath}/vertiefung-data.js`);
-        await this.loader.loadOptionalModule(`${basePath}/wahlfacher-data.js`);
-        await this.loader.loadOptionalModule(`${basePath}/cse-wahlmodule-data.js`);
-        await this.loader.loadOptionalModule(`${basePath}/kernfacher-data.js`);
-        await this.loader.loadOptionalModule(`${basePath}/weitere-wahl-grundlagenfacher-data.js`);
-        await this.loader.loadOptionalModule(`${basePath}/praktika-seminar-projekt-data.js`);
+        await this.loader.loadOptionalModule(`${basePath}/data/vertiefung-data.js`);
+        await this.loader.loadOptionalModule(`${basePath}/data/wahlfacher-data.js`);
+        await this.loader.loadOptionalModule(`${basePath}/data/cse-wahlmodule-data.js`);
+        await this.loader.loadOptionalModule(`${basePath}/data/kernfacher-data.js`);
+        await this.loader.loadOptionalModule(`${basePath}/data/weitere-wahl-grundlagenfacher-data.js`);
+        await this.loader.loadOptionalModule(`${basePath}/data/praktika-seminar-projekt-data.js`);
     }
 
     async loadExtensions(basePath) {
         // Only load the main extensions file (ColorManager and other features are now handled by optional modules)
-        await this.loader.loadOptionalModule(`${basePath}/extensions.js`);
+        // Extensions are now in extensions/ subdirectory
+        await this.loader.loadOptionalModule(`${basePath}/extensions/extensions.js`);
     }
 
     async loadFallbackConfig() {
