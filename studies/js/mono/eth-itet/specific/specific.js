@@ -1,4 +1,4 @@
-/* ==== ITET EXTENSIONS - VEREINFACHT MIT ZENTRALEM WAHLMODULE-SYSTEM ==== */
+/* ==== ITET SPECIFIC ==== */
 /* Spezifische Anpassungen für ITET, nutzt das zentrale Wahlmodule-System */
 
 window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {

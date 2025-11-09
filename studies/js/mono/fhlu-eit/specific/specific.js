@@ -1,4 +1,4 @@
-/* ==== HSLU EIT EXTENSIONS - VEREINFACHT MIT ZENTRALEM WAHLMODULE-SYSTEM ==== */
+/* ==== HSLU EIT SPECIFIC ==== */
 /* Spezifische Anpassungen für HSLU EIT, nutzt das zentrale Wahlmodule-System */
 
 window.StudiengangCustomClass = class HSLUEITStudienplan extends StudienplanBase {

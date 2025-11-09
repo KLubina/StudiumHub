@@ -1,4 +1,4 @@
-/* ==== RIG EXTENSIONS - VEREINFACHT MIT ZENTRALEM WAHLMODULE-SYSTEM ==== */
+/* ==== RIG SPECIFIC ==== */
 /* Spezifische Anpassungen für RIG, nutzt das zentrale Wahlmodule-System */
 
 window.StudiengangCustomClass = class RIGStudienplan extends StudienplanBase {

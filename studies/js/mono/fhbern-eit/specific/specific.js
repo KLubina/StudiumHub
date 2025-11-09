@@ -1,4 +1,4 @@
-/* ==== BFH EIT EXTENSIONS - VEREINFACHT MIT ZENTRALEM WAHLMODULE-SYSTEM ==== */
+/* ==== BFH EIT SPECIFIC ==== */
 /* Spezifische Anpassungen für BFH EIT, nutzt das zentrale Wahlmodule-System */
 
 window.StudiengangCustomClass = class BFHEITStudienplan extends StudienplanBase {

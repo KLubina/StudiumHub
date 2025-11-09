@@ -1,4 +1,4 @@
-/* ==== MSC ITET EXTENSIONS ==== */
+/* ==== MSC ITET SPECIFIC ==== */
 /* Einfache Implementierung für MSc ITET */
 
 window.StudiengangCustomClass = class MSCITETStudienplan extends StudienplanBase {

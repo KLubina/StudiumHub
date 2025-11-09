@@ -18,11 +18,10 @@ class StudiengangConfigLoader {
 
         // Load data files - now in data/ subdirectory
         await this.loader.loadModule(`${basePath}/data/basic-modules-data.js`);
-        await this.loader.loadOptionalModule(`${basePath}/data/extensions-data.js`);
         await this.loader.loadOptionalModule(`${basePath}/data/basic-modules-details.js`);
 
         await this.loadStudiengangSpecificData(basePath);
-        await this.loadExtensions(basePath);
+        await this.loadStudiengangSpecifics(basePath);
 
         ModuleDataCombiner.combineModuleData(this.studiengang);
         this.config = ConfigMerger.mergeConfigs();
@@ -111,10 +110,10 @@ class StudiengangConfigLoader {
         await this.loader.loadOptionalModule(`${basePath}/data/praktika-seminar-projekt-data.js`);
     }
 
-    async loadExtensions(basePath) {
-        // Only load the main extensions file (ColorManager and other features are now handled by optional modules)
-        // Extensions are now in extensions/ subdirectory
-        await this.loader.loadOptionalModule(`${basePath}/extensions/extensions.js`);
+    async loadStudiengangSpecifics(basePath) {
+        // Load studiengang-specific implementation class
+        // Custom implementations are in specific/ subdirectory (e.g., ITETStudienplan, BFHEITStudienplan)
+        await this.loader.loadOptionalModule(`${basePath}/specific/specific.js`);
     }
 
     async loadFallbackConfig() {

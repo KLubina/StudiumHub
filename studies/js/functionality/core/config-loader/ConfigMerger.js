@@ -31,12 +31,12 @@ class ConfigMerger {
             config.modulDetails = {};
         }
 
-        // Merge extensions (custom class)
+        // Merge additional module data (legacy compatibility - some data files use StudiengangExtensions)
         if (window.StudiengangExtensions) {
             Object.assign(config, window.StudiengangExtensions);
         }
 
-        // Set custom class (if provided)
+        // Set custom studiengang-specific class (if provided via specific.js)
         if (window.StudiengangCustomClass) {
             window.StudiengangClass = window.StudiengangCustomClass;
         }

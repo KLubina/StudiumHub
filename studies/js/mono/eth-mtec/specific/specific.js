@@ -1,4 +1,4 @@
-/* ==== MTEC EXTENSIONS ==== */
+/* ==== MTEC SPECIFIC ==== */
 /* Spezielle Funktionalitäten und erweiterte Klasse für den MTEC Studiengang */
 
 /* ==== MTEC-SPEZIFISCHE LAYOUT-KLASSE ==== */
