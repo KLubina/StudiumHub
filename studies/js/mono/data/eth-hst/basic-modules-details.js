@@ -1,7 +1,8 @@
 window.StudiengangModuleDetails = {
   // #region 1. Semester - Basisprüfungsblock 1
   "Molekulare Genetik und Zellbiologie": {
-    kurzbeschreibung: "Grundprinzipien der Evolution, Zellbiologie, Molekularbiologie, Genetik und Entwicklungsbiologie am Beispiel Mensch",
+    kurzbeschreibung:
+      "Grundprinzipien der Evolution, Zellbiologie, Molekularbiologie, Genetik und Entwicklungsbiologie am Beispiel Mensch",
     inhalt:
       "► Evolution und Krankheiten\n" +
       "• Bedeutung der Evolution für die Entstehung des Menschen\n" +
@@ -62,7 +63,8 @@ window.StudiengangModuleDetails = {
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=193363&semkez=2025W&ansicht=LEHRVERANSTALTUNGEN&lang=de",
   },
   "Grundlagen der Informatik": {
-    kurzbeschreibung: "Informatik-Konzepte zur Bearbeitung interdisziplinärer Projekte",
+    kurzbeschreibung:
+      "Informatik-Konzepte zur Bearbeitung interdisziplinärer Projekte",
     inhalt:
       "► Programmierung\n" +
       "• Variablen und Datentypen\n" +
@@ -82,7 +84,8 @@ window.StudiengangModuleDetails = {
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=193758&semkez=2025W&ansicht=LEHRVERANSTALTUNGEN&lang=de",
   },
   "Einführung Gesundheitswissenschaften und Technologie I": {
-    kurzbeschreibung: "Übersicht über Gesundheit und Krankheit, technologische Aspekte und wissenschaftliches Arbeiten",
+    kurzbeschreibung:
+      "Übersicht über Gesundheit und Krankheit, technologische Aspekte und wissenschaftliches Arbeiten",
     inhalt:
       "► Gesundheit und Krankheit\n" +
       "• Gesundheitsmodelle\n" +
@@ -105,7 +108,8 @@ window.StudiengangModuleDetails = {
 
   // #region 1. Semester - Basisprüfungsblock 2
   "Mathematik I": {
-    kurzbeschreibung: "Einführung in die ein- und mehrdimensionale Analysis und Lineare Algebra mit Anwendungen in den Naturwissenschaften",
+    kurzbeschreibung:
+      "Einführung in die ein- und mehrdimensionale Analysis und Lineare Algebra mit Anwendungen in den Naturwissenschaften",
     inhalt:
       "► Funktionen und Grundlagen\n" +
       "• Reproduktion, Fixpunkte\n" +
@@ -136,7 +140,8 @@ window.StudiengangModuleDetails = {
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=192849&semkez=2025W&ansicht=LEHRVERANSTALTUNGEN&lang=de",
   },
   "Organische Chemie I": {
-    kurzbeschreibung: "Grundlagen der Organischen Chemie: Strukturlehre, Bindungsverhältnisse, funktionelle Gruppen und Reaktionslehre",
+    kurzbeschreibung:
+      "Grundlagen der Organischen Chemie: Strukturlehre, Bindungsverhältnisse, funktionelle Gruppen und Reaktionslehre",
     inhalt:
       "► Strukturlehre\n" +
       "• Isolierung, Trennung und Charakterisierung organischer Verbindungen\n" +
@@ -168,8 +173,9 @@ window.StudiengangModuleDetails = {
   // #endregion
 
   // #region 2. Semester - Basisprüfungsblock 2
-  "Infektion": {
-    kurzbeschreibung: "Aufbau und Funktion von pathogenen Bakterien, Viren, Pilzen und Parasiten sowie Antiinfektiva und Resistenzen",
+  Infektion: {
+    kurzbeschreibung:
+      "Aufbau und Funktion von pathogenen Bakterien, Viren, Pilzen und Parasiten sowie Antiinfektiva und Resistenzen",
     inhalt:
       "► Bakterien\n" +
       "• Zellaufbau Gram-positiver Bakterien\n" +
@@ -192,8 +198,9 @@ window.StudiengangModuleDetails = {
       "• Ein- und mehrzellige Parasiten",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=188594&semkez=2025S&ansicht=LEHRVERANSTALTUNGEN&lang=de",
   },
-  "Biochemie": {
-    kurzbeschreibung: "Zentrale Fakten und Konzepte der Biochemie: Biomoleküle, Enzyme, Stoffwechsel und Signaltransduktion",
+  Biochemie: {
+    kurzbeschreibung:
+      "Zentrale Fakten und Konzepte der Biochemie: Biomoleküle, Enzyme, Stoffwechsel und Signaltransduktion",
     inhalt:
       "► Biomoleküle\n" +
       "• Struktur von Biomolekülen\n" +
@@ -212,7 +219,8 @@ window.StudiengangModuleDetails = {
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=188655&semkez=2025S&ansicht=LEHRVERANSTALTUNGEN&lang=de",
   },
   "Organische Chemie II": {
-    kurzbeschreibung: "Zusammenhang zwischen Struktur und Reaktivität organischer Moleküle anhand grundlegender Reaktionstypen",
+    kurzbeschreibung:
+      "Zusammenhang zwischen Struktur und Reaktivität organischer Moleküle anhand grundlegender Reaktionstypen",
     inhalt:
       "► Reaktionslehre\n" +
       "• Klassifizierung organisch-chemischer Reaktionen\n" +
@@ -270,7 +278,8 @@ window.StudiengangModuleDetails = {
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=188324&semkez=2025S&ansicht=LEHRVERANSTALTUNGEN&lang=de",
   },
   "Biomechanik I": {
-    kurzbeschreibung: "Einführung in die Technische Mechanik mit Anwendungen in Biologie und Medizin: Kinematik, Statik und Materialverhalten",
+    kurzbeschreibung:
+      "Einführung in die Technische Mechanik mit Anwendungen in Biologie und Medizin: Kinematik, Statik und Materialverhalten",
     inhalt:
       "► Grundlagen\n" +
       "• Lage und Geschwindigkeit materieller Punkte\n" +
@@ -297,7 +306,8 @@ window.StudiengangModuleDetails = {
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=188267&semkez=2025S&ansicht=LEHRVERANSTALTUNGEN&lang=de",
   },
   "Mathematik II": {
-    kurzbeschreibung: "Fortsetzung der Analysis und Linearen Algebra mit Anwendungen in den Naturwissenschaften",
+    kurzbeschreibung:
+      "Fortsetzung der Analysis und Linearen Algebra mit Anwendungen in den Naturwissenschaften",
     inhalt:
       "► Komplexe Zahlen\n" +
       "• Kartesische und Polar-Darstellung\n" +
@@ -327,7 +337,8 @@ window.StudiengangModuleDetails = {
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=187283&semkez=2025S&ansicht=LEHRVERANSTALTUNGEN&lang=de",
   },
   "Statistik I": {
-    kurzbeschreibung: "Einführung in Statistik und Wahrscheinlichkeitsrechnung für Nichtmathematiker",
+    kurzbeschreibung:
+      "Einführung in Statistik und Wahrscheinlichkeitsrechnung für Nichtmathematiker",
     inhalt:
       "► Wahrscheinlichkeitsmodelle für Zähldaten\n" +
       "• Diskrete Wahrscheinlichkeitsmodelle\n" +
@@ -347,7 +358,8 @@ window.StudiengangModuleDetails = {
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=188479&semkez=2025S&ansicht=LEHRVERANSTALTUNGEN&lang=de",
   },
   "Einführung Gesundheitswissenschaften und Technologie II": {
-    kurzbeschreibung: "Einführung in die fünf Vertiefungsbereiche des Studiengangs und Berufsmöglichkeiten",
+    kurzbeschreibung:
+      "Einführung in die fünf Vertiefungsbereiche des Studiengangs und Berufsmöglichkeiten",
     inhalt:
       "► Vertiefungsbereiche\n" +
       "• Medizintechnik\n" +
@@ -366,7 +378,8 @@ window.StudiengangModuleDetails = {
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=188880&semkez=2025S&ansicht=LEHRVERANSTALTUNGEN&lang=de",
   },
   "Praktikum Chemie": {
-    kurzbeschreibung: "Grundlegende Techniken der Laborarbeit mit analytischen und präparativen Aufgaben",
+    kurzbeschreibung:
+      "Grundlegende Techniken der Laborarbeit mit analytischen und präparativen Aufgaben",
     inhalt:
       "► Analytische Experimente\n" +
       "• Nitritbestimmung\n" +
@@ -384,7 +397,8 @@ window.StudiengangModuleDetails = {
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=187326&semkez=2025S&ansicht=LEHRVERANSTALTUNGEN&lang=de",
   },
   "Praktikum Gesundheitswissenschaften und Technologie": {
-    kurzbeschreibung: "Ausgewählte Experimente als Einstieg ins wissenschaftliche Arbeiten im Bereich Gesundheitswissenschaften und Technologie",
+    kurzbeschreibung:
+      "Ausgewählte Experimente als Einstieg ins wissenschaftliche Arbeiten im Bereich Gesundheitswissenschaften und Technologie",
     inhalt:
       "► Muskelphysiologie\n" +
       "• Menschlicher vs. pneumatischer Muskel\n" +
@@ -406,7 +420,8 @@ window.StudiengangModuleDetails = {
 
   // #region 3. Semester - Kernfächer Block A
   "Humanphysiologie I": {
-    kurzbeschreibung: "Physiologische Prozesse des menschlichen Körpers mit Fokus auf Mechanismen und Organfunktionen",
+    kurzbeschreibung:
+      "Physiologische Prozesse des menschlichen Körpers mit Fokus auf Mechanismen und Organfunktionen",
     inhalt:
       "► Kern-Konzepte in der Physiologie\n" +
       "• Grundlegende Mechanismen physiologischer Prozesse\n" +
@@ -433,7 +448,8 @@ window.StudiengangModuleDetails = {
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=194078&semkez=2025W&ansicht=LEHRVERANSTALTUNGEN&lang=de",
   },
   "Mathematik III": {
-    kurzbeschreibung: "Vertiefung der Analysis mit partiellen Differentialgleichungen und Systemanalyse",
+    kurzbeschreibung:
+      "Vertiefung der Analysis mit partiellen Differentialgleichungen und Systemanalyse",
     inhalt:
       "► Modellbildung\n" +
       "• SIR-Modelle: Ausbreitung von Krankheiten bei Epidemien\n" +
@@ -463,7 +479,8 @@ window.StudiengangModuleDetails = {
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=192855&semkez=2025W&ansicht=LEHRVERANSTALTUNGEN&lang=de",
   },
   "Statistik II": {
-    kurzbeschreibung: "Vertiefung von Statistikmethoden mit Fokus auf Problemlösungsfähigkeit in R",
+    kurzbeschreibung:
+      "Vertiefung von Statistikmethoden mit Fokus auf Problemlösungsfähigkeit in R",
     inhalt:
       "► Lineare Regression\n" +
       "• Regression mit Faktoren\n" +
@@ -490,7 +507,8 @@ window.StudiengangModuleDetails = {
 
   // #region 3. Semester - Kernfächer Block B
   "Physik I": {
-    kurzbeschreibung: "Einführung in die klassische Physik mit Fokus auf Anwendungen in der Medizin",
+    kurzbeschreibung:
+      "Einführung in die klassische Physik mit Fokus auf Anwendungen in der Medizin",
     inhalt:
       "► Allgemeine Einführung\n" +
       "• Positron-Emissions-Tomographie\n" +
@@ -518,7 +536,8 @@ window.StudiengangModuleDetails = {
 
   // #region 3. Semester - Einzelfächer und Praktika
   "Laboratory Course in Medical Technology": {
-    kurzbeschreibung: "Angewendete Grundlagen in CAD, FEM, Produktoptimierung, mechanischer Belastungstest, Softwareentwicklung und Robotik",
+    kurzbeschreibung:
+      "Angewendete Grundlagen in CAD, FEM, Produktoptimierung, mechanischer Belastungstest, Softwareentwicklung und Robotik",
     inhalt:
       "► CAD und FEM\n" +
       "• Anwenden von CAD Software\n" +
@@ -539,7 +558,8 @@ window.StudiengangModuleDetails = {
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=194725&semkez=2025W&ansicht=LEHRVERANSTALTUNGEN&lang=de",
   },
   "Produktentwicklung in der Medizintechnik": {
-    kurzbeschreibung: "Entwicklung von Medizintechnik-Produkten von Anforderungsanalyse bis Zulassung",
+    kurzbeschreibung:
+      "Entwicklung von Medizintechnik-Produkten von Anforderungsanalyse bis Zulassung",
     inhalt:
       "► Einführung\n" +
       "• Einführung in die Medizintechnik\n\n" +
@@ -569,7 +589,8 @@ window.StudiengangModuleDetails = {
 
   // #region 4. Semester - Kernfächer Block B
   "Molekular- und Zellbiologie in Gesundheit und Krankheit": {
-    kurzbeschreibung: "Biochemische, molekulare und zelluläre Mechanismen der Krankheitsentwicklung",
+    kurzbeschreibung:
+      "Biochemische, molekulare und zelluläre Mechanismen der Krankheitsentwicklung",
     inhalt:
       "► Pathologische Prozessmodelle\n" +
       "• Lineare mechanistische Modelle pathologischer Prozesse\n" +
@@ -616,8 +637,9 @@ window.StudiengangModuleDetails = {
       "• Autophagie",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=187208&semkez=2025S&ansicht=LEHRVERANSTALTUNGEN&lang=de",
   },
-  "Histologie": {
-    kurzbeschreibung: "Online-Praktikum am virtuellen Mikroskop zur mikroskopischen Anatomie von Geweben und Organen",
+  Histologie: {
+    kurzbeschreibung:
+      "Online-Praktikum am virtuellen Mikroskop zur mikroskopischen Anatomie von Geweben und Organen",
     inhalt:
       "► Histologische Technik\n" +
       "• Einführung in histologische Technik\n\n" +
@@ -637,7 +659,8 @@ window.StudiengangModuleDetails = {
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=187873&semkez=2025S&ansicht=LEHRVERANSTALTUNGEN&lang=de",
   },
   "Physik II": {
-    kurzbeschreibung: "Klassische Physik mit Schwerpunkt auf medizinische Anwendungen: Strömungslehre, Thermodynamik, Elektromagnetismus und Optik",
+    kurzbeschreibung:
+      "Klassische Physik mit Schwerpunkt auf medizinische Anwendungen: Strömungslehre, Thermodynamik, Elektromagnetismus und Optik",
     inhalt:
       "► Strömungslehre\n" +
       "• Laminare Strömungen\n" +
@@ -674,7 +697,8 @@ window.StudiengangModuleDetails = {
 
   // #region 4. Semester - Kernfächer Block C
   "Humanphysiologie II": {
-    kurzbeschreibung: "Grundlagen der Physiologie und Anatomie des menschlichen Körpers mit integrativer Betrachtung",
+    kurzbeschreibung:
+      "Grundlagen der Physiologie und Anatomie des menschlichen Körpers mit integrativer Betrachtung",
     inhalt:
       "► Sinnesphysiologie\n" +
       "• Sinnesorgane und Wahrnehmung\n\n" +
@@ -701,7 +725,8 @@ window.StudiengangModuleDetails = {
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=187706&semkez=2025S&ansicht=LEHRVERANSTALTUNGEN&lang=de",
   },
   "Biomechanik II": {
-    kurzbeschreibung: "Dynamik, Kinetik und Kinematik von Mehrkörpersystemen mit Anwendung auf die menschliche Bewegung",
+    kurzbeschreibung:
+      "Dynamik, Kinetik und Kinematik von Mehrkörpersystemen mit Anwendung auf die menschliche Bewegung",
     inhalt:
       "► Kinematik der Bewegung\n" +
       "• Bewegungsanalyse\n\n" +
@@ -728,7 +753,8 @@ window.StudiengangModuleDetails = {
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=187724&semkez=2025S&ansicht=LEHRVERANSTALTUNGEN&lang=de",
   },
   "Biomedizinische Grenzflächen": {
-    kurzbeschreibung: "Design von Materialien für biomedizinische Anwendungen mit Fokus auf Grenzflächenwechselwirkungen",
+    kurzbeschreibung:
+      "Design von Materialien für biomedizinische Anwendungen mit Fokus auf Grenzflächenwechselwirkungen",
     inhalt:
       "► Protein-Oberflächen Wechselwirkungen\n" +
       "• Wechselwirkungen zwischen Proteinen und synthetischen Materialien\n\n" +
@@ -752,7 +778,8 @@ window.StudiengangModuleDetails = {
 
   // #region 4. Semester - Einzelfächer und Praktika
   "Praktikum Physiologie": {
-    kurzbeschreibung: "Praktische Experimente zur Funktion von Nerven, Muskeln, Herz, Kreislauf, Atmung und Sinnesorganen",
+    kurzbeschreibung:
+      "Praktische Experimente zur Funktion von Nerven, Muskeln, Herz, Kreislauf, Atmung und Sinnesorganen",
     inhalt:
       "► Nervenfunktion\n" +
       "• Bestimmung der Nervenleitgeschwindigkeit\n\n" +
@@ -778,8 +805,9 @@ window.StudiengangModuleDetails = {
   // #endregion
 
   // #region Bachelorarbeit
-  "Bachelorarbeit": {
-    kurzbeschreibung: "Selbständige Bearbeitung eines wissenschaftlichen Themas im Bereich Gesundheitswissenschaften und Technologie",
+  Bachelorarbeit: {
+    kurzbeschreibung:
+      "Selbständige Bearbeitung eines wissenschaftlichen Themas im Bereich Gesundheitswissenschaften und Technologie",
     inhalt:
       "• Individuell definiertes wissenschaftliches Projekt im Bereich D-HEST\n\n" +
       "D-HEST Forschungsgruppen:\n\n" +
@@ -795,7 +823,7 @@ window.StudiengangModuleDetails = {
       "   https://itm.ethz.ch/research.html\n\n" +
       "► Biomedical Proteomics Platform\n" +
       "   https://hest.ethz.ch/forschung/forschungsbereiche/biomedical-proteomics-platform.html",
-    link: "https://hest.ethz.ch/forschung/forschungsbereiche.html"
+    link: "https://hest.ethz.ch/forschung/forschungsbereiche.html",
   },
   // #endregion
 };

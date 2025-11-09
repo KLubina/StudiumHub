@@ -34,10 +34,13 @@ window.StudiengangModuleDetails = {
       "► Numerik\n" +
       "• Lineare Ausgleichsrechnung\n" +
       "• Anwendungen\n",
-  link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=192867&lang=de",
-  kurslink: "https://metaphor.ethz.ch/x/2019/hs/401-0151-00L/\nhttps://n.ethz.ch/~michbaum/linalg/",
-  vorlesungslink: "https://video.ethz.ch/lectures/d-math/2015/autumn/401-1151-00L/1707a212-2905-448f-b042-6eca940f6c93.html",
-    pruefungen: "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/1.Sem/Lineare-Algebra"
+    link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=192867&lang=de",
+    kurslink:
+      "https://metaphor.ethz.ch/x/2019/hs/401-0151-00L/\nhttps://n.ethz.ch/~michbaum/linalg/",
+    vorlesungslink:
+      "https://video.ethz.ch/lectures/d-math/2015/autumn/401-1151-00L/1707a212-2905-448f-b042-6eca940f6c93.html",
+    pruefungen:
+      "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/1.Sem/Lineare-Algebra",
   },
   "Analysis 1": {
     kurzbeschreibung: "Einführung in die Grundlagen der Analysis",
@@ -55,10 +58,12 @@ window.StudiengangModuleDetails = {
       "• Differentialrechnung einer Variablen\n\n" +
       "• Integralrechnung einer Variablen\n\n" +
       "► Einführung in gewöhnliche Differentialgleichungen",
-  link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193410&lang=de",
-  kurslink: "https://n.ethz.ch/~michbaum/analysis1/",
-  vorlesungslink: "https://video.ethz.ch/lectures/d-math/2016/autumn/401-1261-07L/a65b10a4-c135-3bca-a4f5-c37d9f8b0913.html",
-    pruefungen: "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/1.Sem/Analysis-I"
+    link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193410&lang=de",
+    kurslink: "https://n.ethz.ch/~michbaum/analysis1/",
+    vorlesungslink:
+      "https://video.ethz.ch/lectures/d-math/2016/autumn/401-1261-07L/a65b10a4-c135-3bca-a4f5-c37d9f8b0913.html",
+    pruefungen:
+      "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/1.Sem/Analysis-I",
   },
 
   Digitaltechnik: {
@@ -81,8 +86,8 @@ window.StudiengangModuleDetails = {
       "► Endliche Automaten\n\n" +
       "► Speicher\n" +
       "► Mikroprozessoren",
-  link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=192958&lang=de",
-  kurslink: "https://n.ethz.ch/~jloehle/",
+    link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=192958&lang=de",
+    kurslink: "https://n.ethz.ch/~jloehle/",
   },
   "Digitaltechnik Praktikum": {
     kurzbeschreibung:
@@ -111,7 +116,8 @@ window.StudiengangModuleDetails = {
       "► Zeitlich veränderliches elektromagnetisches Feld",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=192802&semkez=2025W&ansicht=LEHRVERANSTALTUNGEN&lang=de",
     kurslink: "https://n.ethz.ch/~rsahleanu/nus1/",
-    pruefungen: "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/1.Sem/Netzwerk-Schaltungen-I"
+    pruefungen:
+      "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/1.Sem/Netzwerk-Schaltungen-I",
   },
   "Technische Mechanik": {
     kurzbeschreibung:
@@ -136,9 +142,10 @@ window.StudiengangModuleDetails = {
       "• Newtonsches Bewegungsgesetz\n" +
       "• Impulssatz, Drallsatz\n" +
       "• Drall bei ebenen Bewegungen",
-  link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193886&lang=de",
-  kurslink: "https://www.n.ethz.ch/~ldewindt/TechMechHS22_PVK/index.html",
-    pruefungen: "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/1.Sem/Technische-Mechanik"
+    link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193886&lang=de",
+    kurslink: "https://www.n.ethz.ch/~ldewindt/TechMechHS22_PVK/index.html",
+    pruefungen:
+      "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/1.Sem/Technische-Mechanik",
   },
   "Vorkurs Informatik": {
     kurzbeschreibung:
@@ -153,8 +160,8 @@ window.StudiengangModuleDetails = {
       "  - Datentypen\n" +
       "  - Verzweigungen und Schleifen\n" +
       "• Einführung in das systematische Lösen von Programmierproblemen mittels schrittweiser Verfeinerung",
-  link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193009&lang=de",
-  kurslink: "https://lec.inf.ethz.ch/itet/informatik0/2019/",
+    link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193009&lang=de",
+    kurslink: "https://lec.inf.ethz.ch/itet/informatik0/2019/",
   },
   // #endregion
 
@@ -173,10 +180,12 @@ window.StudiengangModuleDetails = {
       "• Integration über Untermannigfaltigkeiten\n\n" +
       "► Sätze von Gauss\n" +
       "► Sätze von Stokes\n\n",
-      link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=188523&lang=de",
-      kurslink: "https://n.ethz.ch/~michbaum/analysis2/",
-      vorlesungslink: "https://video.ethz.ch/lectures/d-math/2016/spring/401-1262-07L/e9902307-e2b7-44f3-8feb-115773280c13.html",
-      pruefungen: "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/2.Sem/Analysis-II"
+    link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=188523&lang=de",
+    kurslink: "https://n.ethz.ch/~michbaum/analysis2/",
+    vorlesungslink:
+      "https://video.ethz.ch/lectures/d-math/2016/spring/401-1262-07L/e9902307-e2b7-44f3-8feb-115773280c13.html",
+    pruefungen:
+      "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/2.Sem/Analysis-II",
   },
   "Netzwerke und Schaltungen II": {
     kurzbeschreibung:
@@ -204,9 +213,11 @@ window.StudiengangModuleDetails = {
       "• Operationsverstärker\n" +
       "• Operationsverstärker-Grundschaltungen\n" +
       "• Schaltungen mit Operationsverstärkern",
-  link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=187813&lang=de",
-  kurslink: "https://www.n.ethz.ch/~ldewindt/NuS2FS24/index.html\nhttps://n.ethz.ch/~msteinkel/",
-  vorlesungslink: "https://video.ethz.ch/lectures/d-itet/2023/spring/227-0002-00L",
+    link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=187813&lang=de",
+    kurslink:
+      "https://www.n.ethz.ch/~ldewindt/NuS2FS24/index.html\nhttps://n.ethz.ch/~msteinkel/",
+    vorlesungslink:
+      "https://video.ethz.ch/lectures/d-itet/2023/spring/227-0002-00L",
   },
   "Netzwerke und Schaltungen Praktikum": {
     kurzbeschreibung:
@@ -237,9 +248,11 @@ window.StudiengangModuleDetails = {
       "• Kinetische Gastheorie für das ideale Gas\n" +
       "• Hauptsätze der Thermodynamik: Energieerhaltung, Kreisprozesse, Entropie\n" +
       "• Wärmeübertragung & Wärmestrahlung",
-  link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=188037&lang=de",
-  vorlesungslink: "https://video.ethz.ch/lectures/d-phys/2023/autumn/402-0083-00L.html",
-    pruefungen: "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/2.Sem/Physik-I"
+    link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=188037&lang=de",
+    vorlesungslink:
+      "https://video.ethz.ch/lectures/d-phys/2023/autumn/402-0083-00L.html",
+    pruefungen:
+      "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/2.Sem/Physik-I",
   },
   "Informatik I": {
     kurzbeschreibung:
@@ -261,8 +274,10 @@ window.StudiengangModuleDetails = {
       "► Anwendung\n" +
       "• Motivation und Illustration der Konzepte durch Algorithmen und Anwendungen",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=187917&lang=de",
-    vorlesungslink: "https://video.ethz.ch/lectures/d-infk/2016/autumn/252-0847-00L.html",
-    pruefungen: "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/2.Sem/Informatik-I"
+    vorlesungslink:
+      "https://video.ethz.ch/lectures/d-infk/2016/autumn/252-0847-00L.html",
+    pruefungen:
+      "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/2.Sem/Informatik-I",
   },
   "Mathematische Methoden": {
     kurzbeschreibung:
@@ -282,7 +297,8 @@ window.StudiengangModuleDetails = {
       "• Fourier-Transformationen\n" +
       "• Laplace-Transformationen",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=188879&lang=de",
-    pruefungen: "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/2.Sem/Mathematische-Methoden"
+    pruefungen:
+      "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/2.Sem/Mathematische-Methoden",
   },
   // #endregion
 
@@ -316,8 +332,10 @@ window.StudiengangModuleDetails = {
       "• Method of separation of variables\n" +
       "• Variational method",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193965&lang=de",
-    vorlesungslink: "https://video.ethz.ch/lectures/d-math/2015/autumn/401-0363-10L/a36b37a3-3ac0-4e47-8310-b79347db3717.html",
-    pruefungen: "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/3.Sem/Analysis-III"
+    vorlesungslink:
+      "https://video.ethz.ch/lectures/d-math/2015/autumn/401-0363-10L/a36b37a3-3ac0-4e47-8310-b79347db3717.html",
+    pruefungen:
+      "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/3.Sem/Analysis-III",
   },
   "Physik II": {
     kurzbeschreibung:
@@ -340,7 +358,8 @@ window.StudiengangModuleDetails = {
       "► Anwendungen\n" +
       "• Applications in Engineering",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193671&lang=de",
-    vorlesungslink: "https://video.ethz.ch/lectures/d-phys/2017/spring/402-1782-00L.html",
+    vorlesungslink:
+      "https://video.ethz.ch/lectures/d-phys/2017/spring/402-1782-00L.html",
   },
   "Signal- und Systemtheorie I": {
     kurzbeschreibung:
@@ -360,9 +379,10 @@ window.StudiengangModuleDetails = {
       "• Diskrete Fourier-Transformation (DFT)\n" +
       "• Endlich-dimensionale Signale und Systeme\n" +
       "• Schnelle Fouriertransformation (FFT)",
-      link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193407&lang=de",
-      kurslink: "https://www.mins.ee.ethz.ch/teaching/signal/klausuren.html",
-      pruefungen: "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/3.Sem/Signal-System-I"
+    link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193407&lang=de",
+    kurslink: "https://www.mins.ee.ethz.ch/teaching/signal/klausuren.html",
+    pruefungen:
+      "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/3.Sem/Signal-System-I",
   },
   "Diskrete Mathematik": {
     kurzbeschreibung:
@@ -387,8 +407,10 @@ window.StudiengangModuleDetails = {
       "• Körper, \n" +
       "• Ringe",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=194088&lang=de",
-    kurslink: "https://cadmo.ethz.ch/education/lectures/HS15/DiskreteMathematik.html\nhttps://crypto.ethz.ch/teaching/DM23/",
-    pruefungen: "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/3.Sem/Diskrete-Mathematik"
+    kurslink:
+      "https://cadmo.ethz.ch/education/lectures/HS15/DiskreteMathematik.html\nhttps://crypto.ethz.ch/teaching/DM23/",
+    pruefungen:
+      "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/3.Sem/Diskrete-Mathematik",
   },
   "Halbleiter-Schaltungstechnik": {
     kurzbeschreibung:
@@ -409,8 +431,9 @@ window.StudiengangModuleDetails = {
       "• Aktive Filter: einfache aktive Filter, Filter mit biquadratischen Stufen\n" +
       "• Filter höherer Ordnung, Realisierung mit biquadratischen Stufen und mit Leiterstruktur\n" +
       "• Switched-Cap-Filter",
-  link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193624&lang=de",
-  vorlesungslink: "https://video.ethz.ch/lectures/d-itet/2022/autumn/227-0077-10L",
+    link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193624&lang=de",
+    vorlesungslink:
+      "https://video.ethz.ch/lectures/d-itet/2022/autumn/227-0077-10L",
   },
   "Halbleiter-Schaltungstechnik Praktikum": {
     kurzbeschreibung:
@@ -454,8 +477,9 @@ window.StudiengangModuleDetails = {
       "• Chaos\n" +
       "• Diskrete Ereignissysteme\n" +
       "• Hybride Systeme",
-  link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=187298&lang=de",
-  vorlesungslink: "https://video.ethz.ch/lectures/d-itet/2023/spring/227-0046-10L",
+    link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=187298&lang=de",
+    vorlesungslink:
+      "https://video.ethz.ch/lectures/d-itet/2023/spring/227-0046-10L",
   },
   "Informatik II": {
     kurzbeschreibung:
@@ -511,8 +535,9 @@ window.StudiengangModuleDetails = {
       "• Fundamental concepts in the design of operating systems\n" +
       "• Physical and virtual memory management\n" +
       "• Process management and scheduling",
-  link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=187713&lang=de",
-  vorlesungslink: "https://video.ethz.ch/lectures/d-itet/2023/spring/227-0013-00L",
+    link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=187713&lang=de",
+    vorlesungslink:
+      "https://video.ethz.ch/lectures/d-itet/2023/spring/227-0013-00L",
   },
   "Wahrscheinlichkeitstheorie und Statistik": {
     kurzbeschreibung:
@@ -535,7 +560,8 @@ window.StudiengangModuleDetails = {
       "• Schätzung von Parametern\n" +
       "• Tests",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=187991&lang=de",
-    pruefungen: "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/4.Sem/Wahrscheinlichkeitstheorie-und-Statistik"
+    pruefungen:
+      "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/4.Sem/Wahrscheinlichkeitstheorie-und-Statistik",
   },
   "Elektromagnetische Felder und Wellen": {
     kurzbeschreibung:
@@ -552,7 +578,8 @@ window.StudiengangModuleDetails = {
       "• Feldwinkelspektrum",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=188239&lang=de",
     kurslink: "https://www.n.ethz.ch/~zrene/EM/",
-    pruefungen: "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/4.Sem/Elektromagnetische-Felder-und-Wellen"
+    pruefungen:
+      "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/4.Sem/Elektromagnetische-Felder-und-Wellen",
   },
   Halbleiterelemente: {
     kurzbeschreibung:
@@ -573,7 +600,8 @@ window.StudiengangModuleDetails = {
       "• MOS devices: Band diagram, MOSFET operation, CV- and IV characteristics, frequency limitations and non-ideal behaviour\n" +
       "• Bipolar transistor: Operation principles, modes of operation, characteristics, models, simulation",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=187791&lang=de",
-    pruefungen: "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/4.Sem/Halbleiterelemente"
+    pruefungen:
+      "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/4.Sem/Halbleiterelemente",
   },
   "Numerische Methoden": {
     kurzbeschreibung:
@@ -588,8 +616,10 @@ window.StudiengangModuleDetails = {
       "• Stabilitätsanalyse und implizite Verfahren\n" +
       "• Strukturerhaltende Verfahren",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=188146&lang=de",
-    vorlesungslink: "https://video.ethz.ch/lectures/d-math/2016/autumn/401-0663-00L/1e9ea34b-4fc6-4dab-8e3b-dd21bfb732df.html",
-    pruefungen: "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/4.Sem/Numerische-Methoden"
+    vorlesungslink:
+      "https://video.ethz.ch/lectures/d-math/2016/autumn/401-0663-00L/1e9ea34b-4fc6-4dab-8e3b-dd21bfb732df.html",
+    pruefungen:
+      "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/4.Sem/Numerische-Methoden",
   },
   // #endregion
 
@@ -701,15 +731,15 @@ window.StudiengangModuleDetails = {
   // #endregion
 
   // #region Bachelorarbeit
-  "Bachelorarbeit": {
-    kurzbeschreibung: "Selbständige Bearbeitung eines wissenschaftlichen Themas im Bereich Elektrotechnik und Informationstechnologie",
+  Bachelorarbeit: {
+    kurzbeschreibung:
+      "Selbständige Bearbeitung eines wissenschaftlichen Themas im Bereich Elektrotechnik und Informationstechnologie",
     inhalt:
       "• Individuell definiertes wissenschaftliches Projekt im Bereich ITET\n\n" +
       "Das Bachelor-Projekt wird unter der Leitung eines Professors (einschliesslich Titularprofessor:innen) des Departements oder eines am Departement assoziierten Professors ausgeführt.\n\n" +
       "═══════════════════════════════════════════════════\n" +
       "D-ITET PROFESSOREN & FORSCHUNGSBEREICHE\n" +
       "═══════════════════════════════════════════════════\n\n" +
-      
       "► BIOMEDIZIN & BILDGEBUNG\n" +
       "• Prof. Morteza Aramesh — Zellinstruktive Schnittstellen, Nanoporen-Sensoren, Einzelzell-Profilierung (Institut für Biomedizinische Technik)\n" +
       "• Prof. Sebastian Kozerke — MR-Physik, Signalverarbeitung, Fluss-/Bewegungs- und parametrische Bildgebung (Institut für Biomedizinische Technik)\n" +
@@ -719,14 +749,12 @@ window.StudiengangModuleDetails = {
       "• Prof. Klaas Enno Stephan — Translationale Neuromodellierung und Komputationale Psychiatrie (Institut für Biomedizinische Technik)\n" +
       "• Prof. János Vörös — Stretchable bioelectronics, Biosensoren, Interfacing biology (Institut für Biomedizinische Technik)\n" +
       "• Prof. Mehmet Fatih Yanik — Neurotechnology, Brain interfaces (Institut für Neuroinformatik)\n\n" +
-      
       "► COMPUTER VISION, BILDVERARBEITUNG & ML\n" +
       "• Prof. Ender Konukoglu — Bildgestützte Medizin, Maschinelles Lernen (Institut für Bildverarbeitung)\n" +
       "• Prof. Valerio Mante — Behavioral/neural mechanisms, computational neuroscience (Institut für Neuroinformatik)\n" +
       "• Prof. Benjamin Grewe — Neuronale Schaltkreise, Lernalgorithmen (Institut für Neuroinformatik)\n" +
       "• Prof. Timothée Proix — Computergestützte Neurowissenschaften, Sprache und Kognition (Institut für Neuroinformatik)\n" +
       "• Prof. Melika Payvand — Autonome Intelligente Agenten (Institut für Neuroinformatik)\n\n" +
-      
       "► INTEGRIERTE SYSTEME, MIKROELEKTRONIK & HW-NAHES ML\n" +
       "• Prof. Luca Benini — Autonomes Fahren, Eingebettete Systeme, Low-Power-Design (Institut für Integrierte Systeme)\n" +
       "• Prof. Christoph Studer — Mikroelektronik, Digitale Schaltungen, Wireless Communication (Institut für Integrierte Systeme)\n" +
@@ -736,51 +764,40 @@ window.StudiengangModuleDetails = {
       "• Prof. Laura Bégon-Lours — Neuromorphe Bauelemente, künstliche Synapsen (Institut für Integrierte Systeme)\n" +
       "• Prof. Colombo Bolognesi — HBT und HEMT (Professur für Millimeterwellen Elektronik)\n" +
       "• Prof. Ulrike Grossner — Leistungshalbleiter-Geräte (Professur für Leistungshalbleiter)\n\n" +
-      
       "► SIGNALVERARBEITUNG, INFORMATIONSTHEORIE & MATHEMATIK\n" +
       "• Prof. Helmut Bölcskei — Mathematische Grundlagen der Informationswissenschaften (Professur für Mathematische Informationswissenschaften)\n" +
       "• Prof. Hans-Andrea Loeliger — Signalverarbeitung, Maschinelles Lernen (Institut für Signal- und Informationsverarbeitung)\n" +
       "• Prof. Amos Lapidoth — Digitale Kommunikation, Informationstheorie (Institut für Signal- und Informationsverarbeitung)\n\n" +
-      
       "► PHOTONIK, OPTIK & SENSORIK\n" +
       "• Prof. Lukas Novotny — Photonik, Optomechanik, Nanooptik (Professur für Photonik)\n" +
       "• Prof. Jürg Leuthold — Optische-, THz- und Millimeterwellenkommunikation (Institut für Elektromagnetische Felder)\n\n" +
-      
       "► ROBOTIK, STEUERUNG, SYSTEME & VERIFIKATION\n" +
       "• Prof. Florian Dörfler — Energiewende, Regelungstechnik, Smart Grid (Institut für Automatik)\n" +
       "• Prof. Lars Lindemann — System- und Steuerungstheorie, formale Verifizierung (Institut für Automatik)\n" +
       "• Prof. John Lygeros — Automatische Steuerung, Energiesysteme (Institut für Automatik)\n" +
       "• Prof. Roger Wattenhofer — Distributed Systems, Blockchain (Institut für Technische Informatik)\n\n" +
-      
       "► NETZWERKE, BETRIEBSSYSTEME & VERTEILTE SYSTEME\n" +
       "• Prof. Laurent Vanbever — Internet, Routing, SDN (Institut für Technische Informatik und Kommunikationsnetze)\n" +
       "• Prof. Kaveh Razavi — System-Sicherheit, Hardware-Sicherheit (Institut für Technische Informatik und Kommunikationsnetze)\n\n" +
-      
       "► ENERGIE, ELEKTRISCHE SYSTEME & LEISTUNGSELEKTRONIK\n" +
       "• Prof. Jürgen Biela — Leistungselektronik, Energietechnik (Professur für Hochleistungselektronik)\n" +
       "• Prof. Christian Franck — Hochspannungstechnik, HGÜ (Institut für Hochspannungstechnik)\n" +
       "• Prof. Gabriela Hug — Elektrizitätsnetze, Smart grid (Institut für Elektrische Energieübertragung)\n" +
       "• Prof. Vanessa Wood — Elektrische Mobilität, Materialien (Institut für Elektronik)\n\n" +
-      
       "► QUANTUM, NANOTECHNOLOGIE & MATERIALIEN\n" +
       "• Prof. Mickaël Perrin — Niederdimensionale Quantenelektronik (Quantum Devices)\n" +
       "• Prof. Mathieu Luisier — Nanoelektronik, Nanoskalige Bauelemente (Institut für Integrierte Systeme)\n" +
       "• Prof. Vanessa Wood — Materialien, Physik (Institut für Elektronik)\n\n" +
-      
       "► SECURITY, HARDWARE-SECURITY & SYSTEMS\n" +
       "• Prof. Kaveh Razavi — System-Sicherheit, Hardware-Sicherheit (Institut für Technische Informatik und Kommunikationsnetze)\n" +
       "• Prof. Onur Mutlu — Computerarchitektur, Hardware-Sicherheit (Forschungsgruppe SAFARI)\n\n" +
-
       "Alle D-ITET Professoren:\n" +
       "https://ee.ethz.ch/de/departement/professoren.html\n\n" +
-      
       "═══════════════════════════════════════════════════\n" +
       "ASSOZIIERTE PROFESSOREN (ANDERE DEPARTEMENTE)\n" +
       "═══════════════════════════════════════════════════\n\n" +
-      
       "► D-BSSG\n" +
       "• Prof. Andreas Hierlemann — Mikrotechnologie, Mikrofluidik, Mikroelektronik für Biologie und Medizin\n\n" +
-      
       "► D-INFK\n" +
       "• Prof. G. Alonso — Information and Communication Systems\n" +
       "• Prof. S. Capkun — System Security\n" +
@@ -793,15 +810,13 @@ window.StudiengangModuleDetails = {
       "• Prof. S. Tang — Computer Vision and Learning\n" +
       "• Prof. J. Vogt — Medical Data Science\n" +
       "• Prof. F. Yang — Statistical Machine Learning\n\n" +
-      
       "► D-HEST\n" +
       "• Prof. Carlo Menon — Biomedical and Mobile Health Tech\n" +
       "• Prof. Ralph Müller — Biomechanische Testung, biomedizinische Bildgebung\n" +
       "• Prof. Robert Riener — Bewegungssynthese, Biomechanik, Rehabilitationsrobotik\n\n" +
-      
       "Assoziierte Professoren (PDF):\n" +
       "https://ethz.ch/content/dam/ethz/special-interest/itet/department/Studies/Master/D-ITET_Assoziierte_Profs.pdf",
-    link: "https://ee.ethz.ch/de/studium/bachelorstudiengang/bsc-etit/drittes-studienjahr/bachelor-projekt.html"
+    link: "https://ee.ethz.ch/de/studium/bachelorstudiengang/bsc-etit/drittes-studienjahr/bachelor-projekt.html",
   },
   // #endregion
 };
