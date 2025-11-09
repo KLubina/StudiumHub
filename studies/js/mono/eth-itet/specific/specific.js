@@ -18,10 +18,7 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
   }
 
   setupITETSpecifics() {
-    // Spezielle Message-Funktion für ITET falls benötigt
-    this.showMessage = function(message, type = "info") {
-      this.showToastMessage(message, type);
-    };
+    // Basis-Klasse hat bereits showMessage und showToastMessage implementiert
   }
 
   /* ==== 3. JAHR LAYOUT - KATEGORIE-BASIERT ==== */
@@ -103,63 +100,6 @@ window.StudiengangCustomClass = class ITETStudienplan extends StudienplanBase {
 
       container.appendChild(moduleContainer);
     });
-  }
-
-  /* ==== ERWEITERTE KP-ANZEIGE FÜR KATEGORIEN ==== */
-  updateKPDisplayWithCategories() {
-    // Basis KP-Counter aktualisieren
-    const breakdown = this.updateKPDisplay();
-
-    // Kategorie-spezifische KP-Anzeigen aktualisieren (falls Wahlmodule-Manager aktiv)
-    if (this.wahlmoduleManager && this.config.kpCounterConfig?.enableCategoryTracking) {
-      this.updateCategoryKPDisplays();
-    }
-
-    return breakdown;
-  }
-
-  updateCategoryKPDisplays() {
-    if (!this.wahlmoduleManager) return;
-
-    const categories = ['praktika', 'kernfaecher', 'wahlfaecher', 'weitere-wahl-grundlagen'];
-    const minKpMap = { 'kernfaecher': 18, 'weitere-wahl-grundlagen': 8, 'wahlfaecher': 6 };
-
-    categories.forEach(category => {
-      const selectedModules = this.wahlmoduleManager.selectedModules[category] || [];
-      const minKp = minKpMap[category] || 0;
-      this.updateCategoryKPDisplay(category, { general: selectedModules }, minKp);
-    });
-  }
-
-  /* ==== MESSAGE SYSTEM ==== */
-  showToastMessage(message, type = "info") {
-    const toast = document.createElement('div');
-    toast.style.position = 'fixed';
-    toast.style.top = '20px';
-    toast.style.right = '20px';
-    toast.style.padding = '10px 15px';
-    toast.style.borderRadius = '5px';
-    toast.style.zIndex = '9999';
-    toast.style.fontSize = '12px';
-    toast.style.fontWeight = 'bold';
-    toast.textContent = message;
-
-    const colors = {
-        success: { bg: '#28a745', color: 'white' },
-        warning: { bg: '#ffc107', color: 'black' },
-        info: { bg: '#17a2b8', color: 'white' },
-        error: { bg: '#dc3545', color: 'white' }
-    };
-
-    const style = colors[type] || colors.info;
-    toast.style.backgroundColor = style.bg;
-    toast.style.color = style.color;
-
-    document.body.appendChild(toast);
-
-    setTimeout(() => {
-        toast.remove();
-    }, 3000);
   }
 
   /* ==== OVERRIDE TOOLTIP HIDING ==== */
