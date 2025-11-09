@@ -2,7 +2,9 @@
 
 const tooltipModules = [
     'Tooltip.js',
-    'TooltipContent.js'
+    'TooltipContent.js',
+    // Zentralisierte Overrides (räumt Outside-Click Handler auf)
+    'TooltipOverrides.js'
 ];
 
 window.subModulesReady.tooltip = Promise.all(
