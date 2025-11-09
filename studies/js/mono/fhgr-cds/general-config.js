@@ -1,0 +1,11 @@
+/* ==== GENERAL CONFIGURATION ==== */
+/* Basic information about the study program */
+
+window.StudiengangGeneralConfig = {
+    // Program identification
+    title: "BSc Computational and Data Science",
+
+    // Display settings
+    legendTitle: "Farben-Legende",
+    creditUnit: "ECTS"
+};

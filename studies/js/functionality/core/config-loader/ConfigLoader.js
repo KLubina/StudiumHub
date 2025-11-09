@@ -13,8 +13,10 @@ class StudiengangConfigLoader {
         // New unified structure for both mono and major-minor: js/{studyModel}/{studiengang}/
         const basePath = `js/${this.studyModel}/${this.studiengang}`;
 
-        await this.loader.loadModule(`${basePath}/base-config.js`);
-        await this.loader.loadOptionalModule(`${basePath}/color-config.js`);
+        // Load modular config files (new structure)
+        await this.loadModularConfigs(basePath);
+
+        // Load data files
         await this.loader.loadModule(`${basePath}/basic-modules-data.js`);
         await this.loader.loadOptionalModule(`${basePath}/extensions-data.js`);
         await this.loader.loadOptionalModule(`${basePath}/basic-modules-details.js`);
@@ -26,6 +28,26 @@ class StudiengangConfigLoader {
         this.config = ConfigMerger.mergeConfigs();
 
         return this.config;
+    }
+
+    async loadModularConfigs(basePath) {
+        // Core config files (always loaded)
+        await this.loader.loadModule(`${basePath}/general-config.js`);
+        await this.loader.loadModule(`${basePath}/layout-config.js`);
+        await this.loader.loadModule(`${basePath}/features-config.js`);
+        await this.loader.loadModule(`${basePath}/categories-config.js`);
+
+        // Feature-specific config files (loaded based on feature flags after features-config.js is loaded)
+        // These are optional and only loaded if the corresponding feature is enabled
+        await this.loader.loadOptionalModule(`${basePath}/color-manager-config.js`);
+        await this.loader.loadOptionalModule(`${basePath}/kp-counter-config.js`);
+        await this.loader.loadOptionalModule(`${basePath}/wahlmodule-config.js`);
+
+        // Legacy fallback: try to load old base-config.js if modular configs don't exist
+        await this.loader.loadOptionalModule(`${basePath}/base-config.js`);
+
+        // Load color-config.js (can exist independently)
+        await this.loader.loadOptionalModule(`${basePath}/color-config.js`);
     }
 
     async loadStudiengangSpecificData(basePath) {
