@@ -4,6 +4,46 @@
     ? window.StudiesData.getPrograms()
     : [];
 
+  // Map simple feature keys to emoji + label
+  const FEATURE_MAP = {
+    wahlmodule: { icon: '🧩', label: 'Wahlmodule' },
+    kpCounter: { icon: '🧮', label: 'KP-Counter' },
+    colorManager: { icon: '🎨', label: 'Farbmanager' },
+  };
+
+  // Load features from features-config.js at runtime
+  async function loadFeatures(key, studyModel) {
+    const folder = studyModel === 'major-minor' ? 'major-minor' : 'mono';
+    const url = `studies/js/${folder}/${key}/config/features-config.js`;
+
+    try {
+      const response = await fetch(url);
+      if (!response.ok) return [];
+
+      const text = await response.text();
+      const features = [];
+
+      if (/enableWahlmodule:\s*true/i.test(text)) features.push('wahlmodule');
+      if (/enableKPCounter:\s*true/i.test(text)) features.push('kpCounter');
+      if (/enableColorManager:\s*true/i.test(text)) features.push('colorManager');
+
+      return features;
+    } catch {
+      return [];
+    }
+  }
+
+  function renderFeatureIcons(features) {
+    if (!Array.isArray(features) || features.length === 0) return '';
+    const items = features
+      .map(key => FEATURE_MAP[key])
+      .filter(Boolean)
+      .map(({ icon, label }) => `<span class="feature-icon" title="${label}">${icon}</span>`)
+      .join('');
+    if (!items) return '';
+    return `<div class="feature-icons" aria-label="Studiengang-Features">${items}</div>`;
+  }
+
   function createCard({ key, title, subtitle, studyModel }) {
     const card = document.createElement('div');
     card.className = `card ${key}`;
@@ -16,12 +56,24 @@
       <div class="card-header">
         <h2 class="card-title">${title}${studyModelBadge}</h2>
         <p class="card-subtitle">${subtitle}</p>
+        <div class="feature-icons-placeholder"></div>
       </div>
-      <div class="card-body"></div>
+      <div class="card-body">
+      </div>
       <div class="card-footer">
         <a href="studies/studienplan-template.html?studiengang=${encodeURIComponent(key)}" class="btn">Zum Studienplan</a>
       </div>
     `;
+
+    // Load features asynchronously
+    loadFeatures(key, studyModel).then(features => {
+      const placeholder = card.querySelector('.feature-icons-placeholder');
+      if (placeholder && features.length > 0) {
+        placeholder.outerHTML = renderFeatureIcons(features);
+      } else if (placeholder) {
+        placeholder.remove();
+      }
+    });
 
     return card;
   }

@@ -2,6 +2,7 @@
 (function (global) {
   class StudiesData {
     static getPrograms() {
+
       return [
         /**
          * Contract:
@@ -12,6 +13,7 @@
          * - subtitle: smaller line under title (e.g., "ETH Zürich")
          * - featured: boolean to place card in the featured row
          * - studyModel: "mono" (default) or "major-minor" to indicate program type
+         * - features are auto-loaded from index-features.js (generated from features-config.js)
          */
         // Featured
         {
@@ -44,48 +46,56 @@
           title: "BSc Lebensmittelwissenschaften und Ernährung",
           subtitle: "ETH Zürich",
           category: "Unis",
+
         },
         {
           key: "eth-math",
           title: "BSc Mathematik",
           subtitle: "ETH Zürich",
           category: "Unis",
+
         },
         {
           key: "eth-cse",
           title: "BSc CSE",
           subtitle: "ETH Zürich",
           category: "Unis",
+
         },
         {
           key: "eth-cs",
           title: "BSc Informatik",
           subtitle: "ETH Zürich",
           category: "Unis",
+
         },
         {
           key: "eth-rig",
           title: "BSc Raumbezogene Ingenieurwissenschaften",
           subtitle: "ETH Zürich",
           category: "Unis",
+
         },
         {
           key: "eth-masch",
           title: "BSc Maschineningenieurwissenschaften",
           subtitle: "ETH Zürich",
           category: "Unis",
+
         },
         {
           key: "eth-matw",
           title: "BSc Materialwissenschaften",
           subtitle: "ETH Zürich",
           category: "Unis",
+
         },
         {
           key: "eth-physik",
           title: "BSc Physik",
           subtitle: "ETH Zürich",
           category: "Unis",
+
         },
         {
           key: "uzh-geschichte",
@@ -93,6 +103,7 @@
           subtitle: "Universität Zürich",
           category: "Unis",
           studyModel: "major-minor",
+
         },
         {
           key: "uzh-polisci",
@@ -100,6 +111,7 @@
           subtitle: "Universität Zürich",
           category: "Unis",
           studyModel: "major-minor",
+
         },
         {
           key: "uzh-ethnologie",
@@ -107,6 +119,7 @@
           subtitle: "Universität Zürich",
           category: "Unis",
           studyModel: "major-minor",
+
         },
         {
           key: "uzh-kommunikation",
@@ -114,6 +127,7 @@
           subtitle: "Universität Zürich",
           category: "Unis",
           studyModel: "major-minor",
+
         },
         {
           key: "uzh-pop-kultur",
@@ -121,6 +135,7 @@
           subtitle: "Universität Zürich",
           category: "Unis",
           studyModel: "major-minor",
+
         },
         {
           key: "uzh-soziologie",
@@ -128,18 +143,21 @@
           subtitle: "Universität Zürich",
           category: "Unis",
           studyModel: "major-minor",
+
         },
         {
           key: "unibas-sbg",
           title: "BSc Sport, Bewegung und Gesundheit",
           subtitle: "Universität Basel",
           category: "Unis",
+
         },
                 {
           key: "unisg-bwl",
           title: "BWL",
           subtitle: "Universität St.Gallen",
           category: "Unis",
+
         },
         // FH Unis
         {
@@ -147,24 +165,28 @@
           title: "BSc Computer Science",
           subtitle: "ZHAW",
           category: "FH Unis",
+
         },
         {
           key: "fhgr-cds",
           title: "BSc Computational and Data Science",
           subtitle: "Fachhochschule Graubünden",
           category: "FH Unis",
+
         },
         {
           key: "fhbern-eit",
           title: "BSc Elektrotechnik und Informationstechnologie",
           subtitle: "Berner Fachhochschule",
           category: "FH Unis",
+
         },
         {
           key: "fhlu-eit",
           title: "BSc Elektrotechnik und Informationstechnologie",
           subtitle: "Hochschule Luzern",
           category: "FH Unis",
+
         },
         // Private Unis
         {
@@ -172,12 +194,14 @@
           title: "BSc IT",
           subtitle: "Hochschulinstitut Schaffhausen",
           category: "Private Unis",
+
         },
         {
           key: "aspira-ce",
           title: "BSc Computer Engineering",
           subtitle: "Aspira College Split",
           category: "Private Unis",
+
         },
       ];
     }
