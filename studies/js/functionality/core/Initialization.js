@@ -1,5 +1,7 @@
 /* Initialization Logic */
 
+console.log('📋 [Initialization.js] Defining StudienplanBase.prototype.initialize');
+
 StudienplanBase.prototype.initialize = function() {
     this.setPageInfo();
     this.initMajorMinorSelector();
@@ -13,6 +15,8 @@ StudienplanBase.prototype.initialize = function() {
         this.adjustAllText();
     }, 100);
 };
+
+console.log('📋 [Initialization.js] StudienplanBase.prototype.initialize defined');
 
 StudienplanBase.prototype.setPageInfo = function() {
     document.getElementById('page-title').textContent = this.config.title;

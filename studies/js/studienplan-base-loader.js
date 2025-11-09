@@ -46,7 +46,15 @@ window.baseModulesReady = (async () => {
     console.log('📥 Loading core/index.js ...');
     await loadScript(`${corePath}/index.js`);
 
-    // 2) Then load optional modules (do not fail the whole init if one is missing)
+    // 2) CRITICAL: Wait for ALL core sub-modules to finish loading FIRST
+    // This ensures Initialization.js (which defines the base initialize method)
+    // is loaded BEFORE optional modules try to patch it
+    console.log('⏳ Waiting for core sub-modules to finish loading ...');
+    const coreModules = ['utils', 'module', 'legend', 'layout', 'configLoader', 'core'];
+    await Promise.all(coreModules.map(key => window.subModulesReady[key]).filter(Boolean));
+    console.log('✅ Core modules loaded successfully');
+
+    // 3) NOW load optional modules (after core is complete)
     const optionalModules = [
         'tooltip/index.js',
         'kp-counter/index.js',
@@ -64,9 +72,11 @@ window.baseModulesReady = (async () => {
         console.warn(`⚠️ Optional modules failed to load: ${failed}. Core continues.`);
     }
 
-    console.log('⏳ Waiting for all registered sub-modules to finish loading ...');
-    await Promise.all(Object.values(window.subModulesReady));
-    console.log('✅ Core and available optional modules (incl. sub-modules) loaded successfully');
+    // 4) Wait for optional sub-modules to finish loading
+    console.log('⏳ Waiting for optional sub-modules to finish loading ...');
+    const optionalKeys = Object.keys(window.subModulesReady).filter(k => !coreModules.includes(k));
+    await Promise.all(optionalKeys.map(key => window.subModulesReady[key]).filter(Boolean));
+    console.log('✅ All modules (core + optional) loaded successfully');
 })();
 
 console.log('📦 Module loading initiated (core + optional)');

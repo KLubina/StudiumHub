@@ -32,7 +32,8 @@ window.subModulesReady.core = (async () => {
         window.subModulesReady.configLoader
     ]);
 
-    // 4. Finally load remaining core files
+    // 4. CRITICAL: Load Initialization.js BEFORE optional modules can patch it!
+    // This defines the base initialize() method that optional modules will wrap
     await loadCoreScript('js/functionality/core/Initialization.js');
     await loadCoreScript('js/functionality/core/EventListeners.js');
     await loadCoreScript('js/functionality/core/GlobalInit.js');

@@ -43,8 +43,18 @@ StudienplanBase.prototype.addLegendTooltipEvents = function(div, kategorie) {
     }
 };
 
-const originalInitialize = StudienplanBase.prototype.initialize;
-StudienplanBase.prototype.initialize = function() {
-    originalInitialize.call(this);
-    this.initializeWahlmoduleSystem();
-};
+// Auto-Integration mit Check gegen mehrfache Anwendung
+if (!StudienplanBase.prototype._wahlmoduleIntegrated) {
+    console.log('🧩 [Wahlmodule] Patching StudienplanBase.prototype.initialize');
+    const originalInitialize = StudienplanBase.prototype.initialize;
+    console.log('🧩 [Wahlmodule] originalInitialize:', originalInitialize);
+    console.log('🧩 [Wahlmodule] originalInitialize.toString():', originalInitialize.toString().substring(0, 200));
+    StudienplanBase.prototype.initialize = function() {
+        console.log('🧩 [Wahlmodule] Patched initialize() called');
+        console.log('🧩 [Wahlmodule] About to call originalInitialize');
+        originalInitialize.call(this);
+        console.log('🧩 [Wahlmodule] originalInitialize completed');
+        this.initializeWahlmoduleSystem();
+    };
+    StudienplanBase.prototype._wahlmoduleIntegrated = true;
+}

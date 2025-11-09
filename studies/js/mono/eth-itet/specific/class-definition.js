@@ -7,12 +7,18 @@ window.ITETStudienplan = class ITETStudienplan extends StudienplanBase {
   }
 
   initialize() {
+    // EXPLIZIT: ColorManager für ITET aktivieren (MUSS vor super.initialize() sein!)
+    this.config.enableColorManager = true;
+
     // Basis-Initialisierung (aktiviert automatisch das zentrale Wahlmodule-System)
     super.initialize();
-    
-    // EXPLIZIT: ColorManager für ITET aktivieren
-    this.config.enableColorManager = true;
-    
+
+    // ColorManager explizit initialisieren (weil der Monkey-Patch in Integration.js
+    // nicht für Subklassen greift, die initialize() überschreiben)
+    if (this.config.enableColorManager && this.initializeColorManager) {
+      this.initializeColorManager();
+    }
+
     // ITET-spezifische Initialisierung
     this.setupITETSpecifics();
   }
