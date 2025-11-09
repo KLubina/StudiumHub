@@ -90,8 +90,7 @@ class StudiengangConfigLoader {
     }
 
     async loadExtensions(configPath) {
-        await this.loader.loadOptionalModule(`${configPath}/extensions-ColorManager.js`);
-        await this.loader.loadOptionalModule(`${configPath}/extensions-GradeCalculator.js`);
+        // Only load the main extensions file (ColorManager and other features are now handled by optional modules)
         await this.loader.loadOptionalModule(`${configPath}/extensions.js`);
     }
 
