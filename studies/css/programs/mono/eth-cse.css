@@ -1,0 +1,87 @@
+/* ==== ETH CSE PROGRAM-SPECIFIC CSS ==== */
+/* Only CSE-specific overrides and unique features */
+
+/* Grade Calculator Modal (CSE-specific feature) */
+#grade-calculator-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grade-calculator-content {
+    background: white;
+    padding: var(--spacing-xl);
+    border-radius: 10px;
+    max-width: 600px;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.block-section {
+    margin-bottom: var(--spacing-lg);
+    padding: var(--spacing-md);
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+/* Radio Button Styling for Color Mode */
+[data-studiengang="eth-cse"] input[type="radio"] {
+    margin-right: var(--spacing-xs);
+}
+
+/* Vertiefungsgebiete & Wahlfächer Listen (extended heights) */
+.vertiefungsgebiete-liste,
+.wahlfaecher-liste {
+    max-height: 600px;
+    overflow-y: auto;
+    padding-right: var(--spacing-sm);
+}
+
+.vertiefungsgebiete-liste h4,
+.wahlfaecher-liste h4 {
+    margin: var(--spacing-md) 0 8px 0;
+    padding: 3px 8px;
+    border-radius: 4px;
+}
+
+.vertiefungsgebiete-liste h4 {
+    background-color: var(--color-vertiefung);
+    color: black;
+}
+
+.wahlfaecher-liste h4 {
+    background-color: var(--color-wahl);
+    color: black;
+}
+
+/* Custom Scrollbar for CSE lists */
+.vertiefungsgebiete-liste::-webkit-scrollbar,
+.wahlfaecher-liste::-webkit-scrollbar {
+    width: 6px;
+}
+
+.vertiefungsgebiete-liste::-webkit-scrollbar-thumb,
+.wahlfaecher-liste::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+}
+
+/* CSE Messages */
+.cse-message {
+    position: fixed;
+    top: var(--spacing-lg);
+    right: var(--spacing-lg);
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: 5px;
+    z-index: var(--z-message);
+    font-size: var(--font-size-small);
+    font-weight: bold;
+}

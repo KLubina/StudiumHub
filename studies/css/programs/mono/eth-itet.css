@@ -1,0 +1,51 @@
+/* ==== ETH ITET PROGRAM-SPECIFIC CSS ==== */
+/* Only ITET-specific overrides and unique features */
+
+/* KP-Counter with ITET colors */
+#kp-counter {
+    border-color: var(--color-obligatorisch);
+}
+
+#kp-total {
+    background: linear-gradient(135deg, var(--color-obligatorisch), var(--color-obligatorisch-praktikum));
+}
+
+/* 3rd Year Horizontal Layout */
+[data-studiengang="eth-itet"] .jahr:last-child .module-container {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+}
+
+/* Bereich Titel with ITET branding */
+[data-studiengang="eth-itet"] .bereich-titel {
+    font-size: var(--font-size-small);
+    font-weight: bold;
+    color: var(--color-text);
+    margin: var(--spacing-md) 0 var(--spacing-xs) 0;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    background-color: #e8f4fd;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-left: 3px solid var(--color-obligatorisch);
+}
+
+/* Compact Module Sizing */
+[data-studiengang="eth-itet"] .modul {
+    max-width: 180px;
+    min-width: 140px;
+}
+
+/* ITET Messages */
+.itet-message {
+    position: fixed;
+    top: var(--spacing-lg);
+    right: var(--spacing-lg);
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: 5px;
+    z-index: var(--z-message);
+    font-size: var(--font-size-small);
+    font-weight: bold;
+}

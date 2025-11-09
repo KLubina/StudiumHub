@@ -1,0 +1,101 @@
+/* ==== MONO THEME ==== */
+/* Theme styling for single-major study programs */
+
+/* ==== COLOR CLASS MAPPINGS ==== */
+
+/* Generic category classes using CSS variables */
+.obligatorisch { background-color: var(--color-obligatorisch); color: white; }
+.obligatorisch-praktikum { background-color: var(--color-obligatorisch-praktikum); color: white; }
+.wahl-praktika-projekte { background-color: var(--color-wahl-praktika-projekte); color: white; }
+.kern { background-color: var(--color-kern); color: black; }
+.wahl { background-color: var(--color-wahl); color: black; }
+.wissenschaft { background-color: var(--color-wissenschaft); color: white; }
+.weitere-wahl-grundlagen { background-color: var(--color-weitere-wahl-grundlagen); color: black; }
+
+/* CSE specific */
+.basis1 { background-color: var(--color-basis1); color: white; }
+.basis2 { background-color: var(--color-basis2); color: white; }
+.block-g1 { background-color: var(--color-block-g1); color: black; }
+.block-g2 { background-color: var(--color-block-g2); color: white; }
+.block-g3 { background-color: var(--color-block-g3); color: white; }
+.block-g4 { background-color: var(--color-block-g4); color: white; }
+.physik { background-color: var(--color-physik); color: white; }
+.informatik { background-color: var(--color-informatik); color: white; }
+.mathematik { background-color: var(--color-mathematik); color: white; }
+.chemie { background-color: var(--color-chemie); color: white; }
+.vertiefung { background-color: var(--color-vertiefung); color: black; }
+
+/* MTEC specific */
+.core { background-color: var(--color-core); color: white; }
+.elective { background-color: var(--color-elective); color: white; }
+.supplementary { background-color: var(--color-supplementary); color: black; }
+.thesis { background-color: var(--color-thesis); color: white; }
+.internship { background-color: var(--color-internship); color: black; }
+
+/* CS specific */
+.math { background-color: var(--color-math); color: white; }
+.cs-pure { background-color: var(--color-cs-pure); color: black; }
+.cs-cse { background-color: var(--color-cs-cse); color: white; }
+.cs-cse-wahl { background-color: var(--color-cs-cse-wahl); color: black; }
+.spezialisierung { background-color: var(--color-spezialisierung); color: white; }
+
+/* General classes */
+.ergaenzung { background-color: var(--color-ergaenzung); color: white; }
+.wahlpflicht { background-color: var(--color-wahlpflicht); color: black; }
+.grundlagen { background-color: var(--color-grundlagen); color: white; }
+.wahlmodule { background-color: var(--color-wahlmodule); color: white; }
+.freie-wahl { background-color: var(--color-freie-wahl); color: black; }
+.selbstaendig { background-color: var(--color-selbstaendig); color: white; }
+.praktikum { background-color: var(--color-praktikum); color: white; }
+
+/* FH specific */
+.programmierung { background-color: var(--color-programmierung); color: white; }
+.kommunikation { background-color: var(--color-kommunikation); color: white; }
+.transfer { background-color: var(--color-transfer); color: white; }
+.abschluss { background-color: var(--color-abschluss); color: white; }
+.kontext { background-color: var(--color-kontext); color: white; }
+.projekt { background-color: var(--color-projekt); color: white; }
+.fach { background-color: var(--color-fach); color: black; }
+.mathe-nawi { background-color: var(--color-mathe-nawi); color: white; }
+.schwerpunkte { background-color: var(--color-schwerpunkte); color: white; }
+.wahlmodul { background-color: var(--color-wahlmodul); color: black; }
+.labor { background-color: var(--color-labor); color: black; }
+.projektarbeit { background-color: var(--color-projektarbeit); color: white; }
+
+/* Aspira CE specific */
+.foundations { background-color: var(--color-foundations); color: white; }
+.programming { background-color: var(--color-programming); color: white; }
+.systems { background-color: var(--color-systems); color: white; }
+.webmobile { background-color: var(--color-webmobile); color: white; }
+.security { background-color: var(--color-security); color: white; }
+.professional { background-color: var(--color-professional); color: white; }
+.project { background-color: var(--color-project); color: white; }
+
+/* BWL specific */
+.kernfach { background-color: var(--color-kernfach); color: white; }
+.methoden { background-color: var(--color-methoden); color: white; }
+.bachelor { background-color: var(--color-bachelor); color: white; }
+
+/* ==== DYNAMIC COLOR CLASSES (for Color Manager) ==== */
+/* These get overridden dynamically via JavaScript */
+
+/* Example ITET Prüfungsblöcke */
+.block-bpa { background-color: #FF6B6B; color: white; }
+.block-bpb { background-color: #4ECDC4; color: white; }
+.block-pb1 { background-color: #45B7D1; color: white; }
+.block-pb2 { background-color: #96CEB4; color: white; }
+.block-pb3 { background-color: #FFEAA7; color: black; }
+
+/* Example CSE Prüfungsblöcke */
+.block-basis1 { background-color: #8064A2; color: white; }
+.block-basis2 { background-color: #1F77B4; color: white; }
+.block-g1 { background-color: #8DC63F; color: black; }
+.block-g2 { background-color: #E671B8; color: white; }
+.block-g3 { background-color: #4CAF50; color: white; }
+.block-g4 { background-color: #D32F2F; color: white; }
+
+/* ==== HOVER EFFECTS ==== */
+
+.modul:hover {
+    filter: brightness(1.1);
+}

@@ -1,0 +1,124 @@
+/* ==== MAJOR-MINOR THEME ==== */
+/* Theme styling for dual-major study programs (UZH model) */
+
+/* ==== BASE MAJOR-MINOR COLOR CLASSES ==== */
+
+.major {
+    background-color: var(--color-major);
+    color: white;
+}
+
+.minor {
+    background-color: var(--color-minor);
+    color: white;
+}
+
+.pflicht {
+    background-color: var(--color-pflicht);
+    color: white;
+}
+
+.wahlpflicht {
+    background-color: var(--color-wahlpflicht);
+    color: white;
+}
+
+.wahl {
+    background-color: var(--color-wahl);
+    color: black;
+}
+
+/* ==== SPECIFIC SUBJECT COLORS ==== */
+
+.ethnologie {
+    background-color: var(--color-ethnologie);
+    color: white;
+}
+
+.kommunikationswissenschaft {
+    background-color: var(--color-kommunikationswissenschaft);
+    color: white;
+}
+
+.politikwissenschaft {
+    background-color: var(--color-politikwissenschaft);
+    color: white;
+}
+
+.populaere-kulturen {
+    background-color: var(--color-populaere-kulturen);
+    color: #333;
+}
+
+.soziologie {
+    background-color: var(--color-soziologie);
+    color: white;
+}
+
+.geschichte {
+    background-color: var(--color-geschichte);
+    color: white;
+}
+
+/* ==== MAJOR-MINOR SPECIFIC MODULE STYLING ==== */
+
+/* Enhanced hover for major-minor modules */
+[data-studiengang^="uzh-"] .modul:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(108, 99, 255, 0.3);
+    transition: all var(--transition-normal);
+}
+
+/* Compact module layout for major-minor */
+[data-studiengang^="uzh-"] .modul {
+    max-width: 250px;
+    min-width: 160px;
+}
+
+/* ==== BEREICH TITEL STYLING ==== */
+
+[data-studiengang^="uzh-"] .bereich-titel {
+    font-size: var(--font-size-small);
+    font-weight: bold;
+    color: var(--color-text);
+    margin: var(--spacing-md) 0 var(--spacing-xs) 0;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    background-color: #f0edff;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-left: 3px solid var(--color-major);
+}
+
+/* ==== MESSAGES ==== */
+
+.uzh-message {
+    position: fixed;
+    top: var(--spacing-lg);
+    right: var(--spacing-lg);
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: 5px;
+    z-index: var(--z-message);
+    font-size: var(--font-size-small);
+    font-weight: bold;
+}
+
+/* ==== LEGEND CUSTOMIZATION ==== */
+
+/* Major-Minor programs might have different legend layouts */
+[data-studiengang^="uzh-"] .legende-item {
+    background: linear-gradient(135deg, var(--color-major) 0%, var(--color-minor) 100%);
+}
+
+/* ==== YEAR LAYOUT ==== */
+
+/* UZH programs typically have a different year structure */
+[data-studiengang^="uzh-"] .jahr {
+    margin-bottom: var(--spacing-xl);
+}
+
+[data-studiengang^="uzh-"] .jahr-titel {
+    color: var(--color-major);
+    border-bottom: 2px solid var(--color-major);
+    padding-bottom: var(--spacing-xs);
+}

@@ -1,0 +1,232 @@
+/* ==== COLOR VARIABLES ==== */
+/* Program-specific color definitions for all study programs */
+
+/* ==== ETH ZÜRICH ==== */
+
+/* ITET - Elektrotechnik und Informationstechnologie */
+[data-studiengang="eth-itet"] {
+    --color-obligatorisch: #0D5B8C;
+    --color-obligatorisch-praktikum: #00A0E3;
+    --color-wahl-praktika-projekte: #4CA64C;
+    --color-kern: #DD98DD;
+    --color-wahl: #F2B48F;
+    --color-wissenschaft: #888888;
+    --color-weitere-wahl-grundlagen: #FFD700;
+}
+
+/* CSE - Computational Science and Engineering */
+[data-studiengang="eth-cse"] {
+    --color-basis1: #8064A2;
+    --color-basis2: #1F77B4;
+    --color-block-g1: #8DC63F;
+    --color-block-g2: #E671B8;
+    --color-block-g3: #4CAF50;
+    --color-block-g4: #D32F2F;
+    --color-physik: #2196F3;
+    --color-informatik: #2600ff;
+    --color-mathematik: #00a99d;
+    --color-chemie: #9C27B0;
+    --color-kern: #9BBB59;
+    --color-wahl: #F2B48F;
+    --color-vertiefung: #DD98DD;
+}
+
+/* MSc ITET */
+[data-studiengang="eth-msc-itet"] {
+    --color-obligatorisch: #0D5B8C;
+    --color-kern: #DD98DD;
+    --color-wahl: #F2B48F;
+    --color-vertiefung: #4CA64C;
+    --color-wissenschaft: #888888;
+}
+
+/* MTEC - Management, Technology, Economics */
+[data-studiengang="eth-mtec"] {
+    --color-core: #0D5B8C;
+    --color-elective: #00A0E3;
+    --color-supplementary: #F2B48F;
+    --color-thesis: #4CA64C;
+    --color-internship: #DD98DD;
+}
+
+/* CS - Informatik */
+[data-studiengang="eth-cs"] {
+    --color-math: #0066b3;
+    --color-cs-pure: #7cc623;
+    --color-cs-cse: #4aa147;
+    --color-cs-cse-wahl: #9ed897;
+    --color-wissenschaft: #888888;
+    --color-spezialisierung: #002654;
+}
+
+/* MATH - Mathematik */
+[data-studiengang="eth-math"] {
+    --color-obligatorisch: #0D5B8C;
+    --color-ergaenzung: #00A0E3;
+    --color-wahl: #F2B48F;
+    --color-kern: #4CA64C;
+    --color-wahlpflicht: #DD98DD;
+    --color-wissenschaft: #888888;
+}
+
+/* RIG - Raumbezogene Ingenieurwissenschaften */
+[data-studiengang="eth-rig"] {
+    --color-grundlagen: #87CEEB;
+    --color-obligatorisch: #DC143C;
+    --color-wahlmodule: #FF6B6B;
+    --color-freie-wahl: #90EE90;
+    --color-selbstaendig: #696969;
+}
+
+/* MASCH - Maschineningenieurwissenschaften */
+[data-studiengang="eth-masch"] {
+    --color-grundlagen: #4A90E2;
+    --color-obligatorisch: #E67E22;
+    --color-wahl: #95A5A6;
+    --color-vertiefung: #9B59B6;
+    --color-wissenschaft: #34495E;
+}
+
+/* MATW - Materialwissenschaften */
+[data-studiengang="eth-matw"] {
+    --color-grundlagen: #3498DB;
+    --color-obligatorisch: #E74C3C;
+    --color-wahl: #2ECC71;
+    --color-vertiefung: #F39C12;
+    --color-wissenschaft: #7F8C8D;
+}
+
+/* PHYSIK - Physik */
+[data-studiengang="eth-physik"] {
+    --color-grundlagen: #2C3E50;
+    --color-obligatorisch: #E67E22;
+    --color-wahl: #16A085;
+    --color-vertiefung: #8E44AD;
+    --color-wissenschaft: #95A5A6;
+}
+
+/* HST - Gesundheitswissenschaften und Technologie */
+[data-studiengang="eth-hst"] {
+    --color-grundlagen: #27AE60;
+    --color-obligatorisch: #3498DB;
+    --color-wahl: #E67E22;
+    --color-vertiefung: #9B59B6;
+    --color-wissenschaft: #95A5A6;
+    --color-praktikum: #1ABC9C;
+}
+
+/* LMW - Lebensmittelwissenschaften */
+[data-studiengang="eth-lmw"] {
+    --color-grundlagen: #F39C12;
+    --color-obligatorisch: #27AE60;
+    --color-wahl: #E74C3C;
+    --color-vertiefung: #8E44AD;
+    --color-wissenschaft: #7F8C8D;
+}
+
+/* ==== UNIVERSITÄT BASEL ==== */
+
+/* SBG - Sport, Bewegung und Gesundheit */
+[data-studiengang="unibas-sbg"] {
+    --color-grundlagen: #2E86AB;
+    --color-vertiefung: #A23B72;
+    --color-wahlpflicht: #F18F01;
+    --color-ergaenzung: #C73E1D;
+    --color-wissenschaft: #888888;
+}
+
+/* ==== UNIVERSITÄT ST. GALLEN ==== */
+
+/* BWL - Betriebswirtschaftslehre */
+[data-studiengang="unisg-bwl"] {
+    --color-kernfach: #0066b2;
+    --color-methoden: #c4153a;
+    --color-grundlagen: #5ca800;
+    --color-kontext: #5a1b6d;
+    --color-bachelor: #001f4d;
+}
+
+/* ==== UZH - MAJOR-MINOR MODELL ==== */
+
+/* Generic Major-Minor Colors */
+[data-studiengang="uzh-geschichte"],
+[data-studiengang="uzh-polisci"],
+[data-studiengang="uzh-ethnologie"],
+[data-studiengang="uzh-kommunikation"],
+[data-studiengang="uzh-pop-kultur"],
+[data-studiengang="uzh-soziologie"] {
+    --color-major: #6c63ff;
+    --color-minor: #48c9b0;
+    --color-pflicht: #e84393;
+    --color-wahlpflicht: #fd79a8;
+    --color-wahl: #fdcb6e;
+}
+
+/* Specific Subject Colors (used across UZH programs) */
+:root {
+    --color-ethnologie: #e84393;
+    --color-kommunikationswissenschaft: #fd79a8;
+    --color-politikwissenschaft: #a29bfe;
+    --color-populaere-kulturen: #fdcb6e;
+    --color-soziologie: #00b894;
+    --color-geschichte: #d63031;
+}
+
+/* ==== FACHHOCHSCHULEN ==== */
+
+/* ZHAW - Computer Science */
+[data-studiengang="fhzh-cs"] {
+    --color-kontext: #82B366;
+    --color-projekt: #D18B47;
+    --color-fach: #E1C34F;
+    --color-mathe-nawi: #5B9BD5;
+}
+
+/* FH Graubünden - Computational and Data Science */
+[data-studiengang="fhgr-cds"] {
+    --color-grundlagen: #5B9BD5;
+    --color-schwerpunkte: #D4A574;
+    --color-wahlmodul: #F2E394;
+    --color-labor: #F4A6CD;
+    --color-projektarbeit: #D85C5C;
+}
+
+/* BFH - Elektrotechnik */
+[data-studiengang="fhbern-eit"] {
+    --color-grundlagen: #003366;
+    --color-vertiefung: #E67E22;
+    --color-wahl: #27AE60;
+    --color-projekt: #9B59B6;
+    --color-wissenschaft: #95A5A6;
+}
+
+/* HSLU - Elektrotechnik */
+[data-studiengang="fhlu-eit"] {
+    --color-grundlagen: #2980B9;
+    --color-vertiefung: #D35400;
+    --color-wahl: #16A085;
+    --color-projekt: #8E44AD;
+    --color-wissenschaft: #7F8C8D;
+}
+
+/* HS Schaffhausen - IT */
+[data-studiengang="hssh-it"] {
+    --color-grundlagen: #2E86AB;
+    --color-programmierung: #A23B72;
+    --color-kommunikation: #F18F01;
+    --color-transfer: #C73E1D;
+    --color-spezialisierung: #592E83;
+    --color-wahlpflicht: #05A8AA;
+    --color-abschluss: #1B1F3A;
+}
+
+/* Aspira - Computer Engineering */
+[data-studiengang="aspira-ce"] {
+    --color-foundations: #1F4E79;
+    --color-programming: #D83B01;
+    --color-systems: #038387;
+    --color-webmobile: #8764B8;
+    --color-security: #CA5010;
+    --color-professional: #486860;
+    --color-project: #0F3A4B;
+}

@@ -5,16 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id="page-title">Studienplan</title>
 
-    <!-- Base CSS (Layout-Grundgerüst) -->
-    <link rel="stylesheet" href="css/studienplan-base.css">
+    <!-- ==== CORE CSS ==== -->
+    <link rel="stylesheet" href="css/core/variables.css">
+    <link rel="stylesheet" href="css/core/layout.css">
+    <link rel="stylesheet" href="css/core/typography.css">
 
-    <!-- NEU: Theme CSS (Gemeinsame Styles) - wird dynamisch geladen -->
-    <link rel="stylesheet" id="theme-core-css" href="">
-    <link rel="stylesheet" id="theme-variables-css" href="">
-    <link rel="stylesheet" id="theme-colors-css" href="">
+    <!-- ==== COMPONENTS CSS ==== -->
+    <link rel="stylesheet" href="css/components/hub-button.css">
+    <link rel="stylesheet" href="css/components/study-links.css">
+    <link rel="stylesheet" href="css/components/module.css">
+    <link rel="stylesheet" href="css/components/legend.css">
+    <link rel="stylesheet" href="css/components/tooltip.css">
+    <link rel="stylesheet" href="css/components/kp-counter.css">
+    <link rel="stylesheet" href="css/components/controls.css">
+    <link rel="stylesheet" href="css/components/module-lists.css">
+    <link rel="stylesheet" href="css/components/indicators.css">
+    <link rel="stylesheet" href="css/components/major-minor-selector.css">
 
-    <!-- Custom CSS (Studiengang-spezifische Features) -->
-    <link rel="stylesheet" id="custom-css" href="">
+    <!-- ==== THEMES CSS (loaded dynamically) ==== -->
+    <link rel="stylesheet" href="css/themes/color-variables.css">
+    <link rel="stylesheet" id="theme-css" href="">
+
+    <!-- ==== PROGRAM-SPECIFIC CSS (loaded dynamically) ==== -->
+    <link rel="stylesheet" id="uzh-shared-css" href="">
+    <link rel="stylesheet" id="program-css" href="">
 </head>
 
 <body data-studiengang="">
@@ -61,24 +75,27 @@
         document.body.setAttribute('data-studiengang', studiengang);
 
         // Bestimme ob major-minor oder mono Modell
-        const majorMinorPrograms = ['sozwi'];
+        const majorMinorPrograms = ['sozwi', 'uzh-geschichte', 'uzh-polisci', 'uzh-ethnologie',
+                                    'uzh-kommunikation', 'uzh-pop-kultur', 'uzh-soziologie'];
         const studyModel = majorMinorPrograms.includes(studiengang) ? 'major-minor' : 'mono';
 
-        // Theme CSS laden
-        const themeCoreCSS = document.getElementById('theme-core-css');
-        const themeVariablesCSS = document.getElementById('theme-variables-css');
-        const themeColorsCSS = document.getElementById('theme-colors-css');
+        // Theme CSS laden (mono oder major-minor)
+        const themeCSS = document.getElementById('theme-css');
+        themeCSS.href = `css/themes/${studyModel}-theme.css`;
 
-        themeCoreCSS.href = `css/${studyModel}/themes/theme-core.css`;
-        themeVariablesCSS.href = `css/${studyModel}/themes/theme-variables.css`;
-        themeColorsCSS.href = `css/${studyModel}/themes/theme-colors.css`;
+        // UZH Shared CSS laden (nur für UZH Programme)
+        const uzhSharedCSS = document.getElementById('uzh-shared-css');
+        if (studiengang.startsWith('uzh-')) {
+            uzhSharedCSS.href = `css/programs/major-minor/uzh-shared.css`;
+        }
 
-        // Custom CSS laden
-        const customCSS = document.getElementById('custom-css');
-        customCSS.href = `css/${studyModel}/custom/${studiengang}-custom.css`;
+        // Program-specific CSS laden
+        const programCSS = document.getElementById('program-css');
+        programCSS.href = `css/programs/${studyModel}/${studiengang}.css`;
 
         // Error handling falls Datei nicht existiert
-        customCSS.onerror = () => {
+        programCSS.onerror = () => {
+            console.log(`No program-specific CSS found for ${studiengang}`);
         };
 
         // Extension-Module laden (wie vorher)

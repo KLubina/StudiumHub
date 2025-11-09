@@ -1,107 +1,8 @@
-/* ==== HST CUSTOM CSS ==== */
-/* Spezifische Features für Gesundheitswissenschaften und Technologie */
+/* ==== ETH HST PROGRAM-SPECIFIC CSS ==== */
+/* Gesundheitswissenschaften und Technologie - specific overrides */
 
-/* KP-Counter */
-#kp-counter {
-    margin-bottom: 20px;
-    padding: 15px;
-    background-color: #f8f9fa;
-    border-radius: 8px;
-    border: 2px solid var(--color-basispruefung);
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-#kp-total {
-    text-align: center;
-    margin-bottom: 15px;
-    padding: 10px;
-    background: linear-gradient(135deg, #4ECDC4, #45B7D1);
-    color: white;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-#kp-progress-bar {
-    width: 100%;
-    height: 4px;
-    background-color: rgba(255,255,255,0.3);
-    border-radius: 2px;
-    margin-top: 5px;
-}
-
-#kp-progress-fill {
-    height: 100%;
-    background-color: white;
-    border-radius: 2px;
-    transition: width 0.5s ease;
-}
-
-/* Schwerpunkt Controls */
-.schwerpunkt-controls {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    margin: 15px 0;
-}
-
-.schwerpunkt-controls button {
-    padding: 8px 12px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 12px;
-    transition: all 0.2s;
-}
-
-/* Listen für Schwerpunkte und Wahlfächer */
-.schwerpunkt-liste,
-.wahlfaecher-liste {
-    max-height: 400px;
-    overflow-y: auto;
-}
-
-/* 3. Jahr Horizontales Layout */
-[data-studiengang="eth-hst"] .jahr:last-child .module-container {
-    display: flex !important;
-    flex-direction: row !important;
-    flex-wrap: wrap !important;
-    gap: 8px !important;
-}
-
-/* Bereich-Titel */
-[data-studiengang="eth-hst"] .bereich-titel {
-    font-size: 12px;
-    font-weight: bold;
-    color: #333;
-    margin: 15px 0 5px 0;
-    padding: 5px 10px;
-    background-color: #e8f4fd;
-    border-radius: 5px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    border-left: 3px solid #4ECDC4;
-}
-
-/* Kompakte Module */
-[data-studiengang="eth-hst"] .modul {
-    max-width: 180px;
-    min-width: 140px;
-}
-
-/* Messages */
-.hst-message {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    padding: 10px 15px;
-    border-radius: 5px;
-    z-index: 9999;
-    font-size: 12px;
-    font-weight: bold;
-}
-
-/* Kategorie Farben */
-:root {
+/* Additional HST Color Variables */
+[data-studiengang="eth-hst"] {
     --color-basispruefung: #FF6B6B;
     --color-kernfach: #4ECDC4;
     --color-schwerpunkt: #96CEB4;
@@ -109,74 +10,132 @@
     --color-wissenschaft: #A29BFE;
 }
 
+/* KP-Counter with HST colors */
+[data-studiengang="eth-hst"] #kp-counter {
+    border-color: var(--color-basispruefung);
+}
+
+[data-studiengang="eth-hst"] #kp-total {
+    background: linear-gradient(135deg, #4ECDC4, #45B7D1);
+}
+
+/* 3rd Year Horizontal Layout */
+[data-studiengang="eth-hst"] .jahr:last-child .module-container {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+}
+
+/* Bereich Titel with HST branding */
+[data-studiengang="eth-hst"] .bereich-titel {
+    font-size: var(--font-size-small);
+    font-weight: bold;
+    color: var(--color-text);
+    margin: var(--spacing-md) 0 var(--spacing-xs) 0;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    background-color: #e8f4fd;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-left: 3px solid #4ECDC4;
+}
+
+/* Compact Module Sizing */
+[data-studiengang="eth-hst"] .modul {
+    max-width: 180px;
+    min-width: 140px;
+}
+
+/* ==== HST-SPECIFIC CATEGORY COLORS ==== */
+
 [data-studiengang="eth-hst"] .modul.basispruefung {
     background-color: var(--color-basispruefung);
     border-color: var(--color-basispruefung);
+    color: white;
 }
 
 [data-studiengang="eth-hst"] .modul.kernfach {
     background-color: var(--color-kernfach);
     border-color: var(--color-kernfach);
+    color: white;
 }
 
 [data-studiengang="eth-hst"] .modul.schwerpunkt {
     background-color: var(--color-schwerpunkt);
     border-color: var(--color-schwerpunkt);
+    color: white;
 }
 
 [data-studiengang="eth-hst"] .modul.wahl {
     background-color: var(--color-wahl);
     border-color: var(--color-wahl);
+    color: #333;
 }
 
 [data-studiengang="eth-hst"] .modul.wissenschaft {
     background-color: var(--color-wissenschaft);
     border-color: var(--color-wissenschaft);
+    color: white;
 }
 
-/* Prüfungsblock Farben */
+/* Prüfungsblock Colors */
 [data-studiengang="eth-hst"] .modul.block-bp1 {
     background-color: #FF6B6B;
     border-color: #FF6B6B;
+    color: white;
 }
 
 [data-studiengang="eth-hst"] .modul.block-bp2 {
     background-color: #4ECDC4;
     border-color: #4ECDC4;
+    color: white;
 }
 
 [data-studiengang="eth-hst"] .modul.block-ka {
     background-color: #45B7D1;
     border-color: #45B7D1;
+    color: white;
 }
 
 [data-studiengang="eth-hst"] .modul.block-kb {
     background-color: #96CEB4;
     border-color: #96CEB4;
+    color: white;
 }
 
 [data-studiengang="eth-hst"] .modul.block-kc {
     background-color: #FFEAA7;
     border-color: #FFEAA7;
+    color: #333;
 }
 
-/* Zusätzliche Kategorie-spezifische Klassen (von kategorieZuKlasse in HST config) */
+/* Category-specific Classes */
 [data-studiengang="eth-hst"] .modul.basispruefung-bp1 {
-    background-color: #FF6B6B; /* wie block-bp1 */
+    background-color: #FF6B6B;
     border-color: #FF6B6B;
+    color: white;
 }
 
 [data-studiengang="eth-hst"] .modul.basispruefung-bp2 {
-    background-color: #4ECDC4; /* wie block-bp2 */
+    background-color: #4ECDC4;
     border-color: #4ECDC4;
+    color: white;
 }
 
 [data-studiengang="eth-hst"] .modul.praktikum-basisjahr {
-    background-color: #45B7D1; /* Praktikum: wähle Farbton (hier nahe Kern-A) */
+    background-color: #45B7D1;
     border-color: #45B7D1;
+    color: white;
 }
 
-/* Legenden-Einträge für die neuen Kategorien */
+[data-studiengang="eth-hst"] .modul.einzelfaecher-praktika {
+    background-color: #F6C85F;
+    border-color: #F6C85F;
+    color: #222;
+}
+
+/* Legend Item Colors for HST-specific categories */
 [data-studiengang="eth-hst"] .legende-item.basispruefung-bp1 {
     background-color: #FF6B6B;
     color: white;
@@ -192,7 +151,6 @@
     color: white;
 }
 
-/* Legenden-Farben für Kernfächer Blöcke */
 [data-studiengang="eth-hst"] .legende-item.block-ka {
     background-color: #45B7D1;
     color: white;
@@ -208,14 +166,19 @@
     color: #333;
 }
 
-/* Styles for new category: Einzelfächer und Praktika */
-[data-studiengang="eth-hst"] .modul.einzelfaecher-praktika {
-    background-color: #F6C85F; /* warm gelb/orange für Praktika/Einzelfächer */
-    border-color: #F6C85F;
-    color: #222;
-}
-
 [data-studiengang="eth-hst"] .legende-item.einzelfaecher-praktika {
     background-color: #F6C85F;
     color: #222;
+}
+
+/* HST Messages */
+.hst-message {
+    position: fixed;
+    top: var(--spacing-lg);
+    right: var(--spacing-lg);
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: 5px;
+    z-index: var(--z-message);
+    font-size: var(--font-size-small);
+    font-weight: bold;
 }

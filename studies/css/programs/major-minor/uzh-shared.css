@@ -1,0 +1,50 @@
+/* ==== UZH SHARED CSS ==== */
+/* Shared styles for all UZH major-minor programs */
+
+/* KP-Counter with UZH colors */
+[data-studiengang^="uzh-"] #kp-counter {
+    border-color: var(--color-major);
+}
+
+[data-studiengang^="uzh-"] #kp-total {
+    background: linear-gradient(135deg, var(--color-major), var(--color-minor));
+}
+
+/* Bereich Titel with UZH branding */
+[data-studiengang^="uzh-"] .bereich-titel {
+    font-size: var(--font-size-small);
+    font-weight: bold;
+    color: var(--color-text);
+    margin: var(--spacing-md) 0 var(--spacing-xs) 0;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    background-color: #f0edff;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-left: 3px solid var(--color-major);
+}
+
+/* Compact Module Layout for UZH */
+[data-studiengang^="uzh-"] .modul {
+    max-width: 250px;
+    min-width: 160px;
+}
+
+/* UZH-specific hover effects */
+[data-studiengang^="uzh-"] .modul:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(108, 99, 255, 0.3);
+    transition: all var(--transition-normal);
+}
+
+/* UZH Messages */
+.uzh-message {
+    position: fixed;
+    top: var(--spacing-lg);
+    right: var(--spacing-lg);
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: 5px;
+    z-index: var(--z-message);
+    font-size: var(--font-size-small);
+    font-weight: bold;
+}

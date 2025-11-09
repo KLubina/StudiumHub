@@ -1,0 +1,20 @@
+/* ==== ETH MSc ITET PROGRAM-SPECIFIC CSS ==== */
+/* Master ITET - specific overrides */
+
+/* Simplified layout for Master program */
+[data-studiengang="eth-msc-itet"] .modul {
+    max-width: 200px;
+    min-width: 150px;
+}
+
+/* MSc ITET Messages */
+.msc-itet-message {
+    position: fixed;
+    top: var(--spacing-lg);
+    right: var(--spacing-lg);
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: 5px;
+    z-index: var(--z-message);
+    font-size: var(--font-size-small);
+    font-weight: bold;
+}
