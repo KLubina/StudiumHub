@@ -4,35 +4,35 @@
 [data-studiengang="fhbern-eit"] .modul.grundlagen,
 [data-studiengang="fhbern-eit"] .legende-item.grundlagen {
     background-color: var(--color-grundlagen);
-    color: white;
+    color: var(--color-grundlagen-text, white);
 }
 
 [data-studiengang="fhbern-eit"] .modul.praktika,
 [data-studiengang="fhbern-eit"] .legende-item.praktika {
     background-color: var(--color-praktika);
-    color: white;
+    color: var(--color-praktika-text, white);
 }
 
 [data-studiengang="fhbern-eit"] .modul.sprachen,
 [data-studiengang="fhbern-eit"] .legende-item.sprachen {
     background-color: var(--color-sprachen);
-    color: white;
+    color: var(--color-sprachen-text, white);
 }
 
 [data-studiengang="fhbern-eit"] .modul.vertiefung,
 [data-studiengang="fhbern-eit"] .legende-item.vertiefung {
     background-color: var(--color-vertiefung);
-    color: white;
+    color: var(--color-vertiefung-text, white);
 }
 
 [data-studiengang="fhbern-eit"] .modul.wahlmodule,
 [data-studiengang="fhbern-eit"] .legende-item.wahlmodule {
     background-color: var(--color-wahlmodule);
-    color: white;
+    color: var(--color-wahlmodule-text, white);
 }
 
 [data-studiengang="fhbern-eit"] .modul.abschluss,
 [data-studiengang="fhbern-eit"] .legende-item.abschluss {
     background-color: var(--color-abschluss);
-    color: white;
+    color: var(--color-abschluss-text, white);
 }

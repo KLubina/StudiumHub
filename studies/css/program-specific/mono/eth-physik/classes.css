@@ -4,65 +4,65 @@
 [data-studiengang="eth-physik"] .modul.basis1,
 [data-studiengang="eth-physik"] .legende-item.basis1 {
     background-color: var(--color-basis1);
-    color: white;
+    color: var(--color-basis1-text, white);
 }
 
 [data-studiengang="eth-physik"] .modul.basis2,
 [data-studiengang="eth-physik"] .legende-item.basis2 {
     background-color: var(--color-basis2);
-    color: white;
+    color: var(--color-basis2-text, white);
 }
 
 [data-studiengang="eth-physik"] .modul.pruefung1,
 [data-studiengang="eth-physik"] .legende-item.pruefung1 {
     background-color: var(--color-pruefung1);
-    color: white;
+    color: var(--color-pruefung1-text, white);
 }
 
 [data-studiengang="eth-physik"] .modul.pruefung2a,
 [data-studiengang="eth-physik"] .legende-item.pruefung2a {
     background-color: var(--color-pruefung2a);
-    color: white;
+    color: var(--color-pruefung2a-text, white);
 }
 
 [data-studiengang="eth-physik"] .modul.pruefung2b,
 [data-studiengang="eth-physik"] .legende-item.pruefung2b {
     background-color: var(--color-pruefung2b);
-    color: white;
+    color: var(--color-pruefung2b-text, white);
 }
 
 [data-studiengang="eth-physik"] .modul.obligatorisch,
 [data-studiengang="eth-physik"] .legende-item.obligatorisch {
     background-color: var(--color-obligatorisch);
-    color: white;
+    color: var(--color-obligatorisch-text, white);
 }
 
 [data-studiengang="eth-physik"] .modul.praktikum,
 [data-studiengang="eth-physik"] .legende-item.praktikum {
     background-color: var(--color-praktikum);
-    color: white;
+    color: var(--color-praktikum-text, white);
 }
 
 [data-studiengang="eth-physik"] .modul.kernfach,
 [data-studiengang="eth-physik"] .legende-item.kernfach {
     background-color: var(--color-kernfach);
-    color: white;
+    color: var(--color-kernfach-text, white);
 }
 
 [data-studiengang="eth-physik"] .modul.wahl,
 [data-studiengang="eth-physik"] .legende-item.wahl {
     background-color: var(--color-wahl);
-    color: white;
+    color: var(--color-wahl-text, white);
 }
 
 [data-studiengang="eth-physik"] .modul.gess,
 [data-studiengang="eth-physik"] .legende-item.gess {
     background-color: var(--color-gess);
-    color: white;
+    color: var(--color-gess-text, white);
 }
 
 [data-studiengang="eth-physik"] .modul.wissenschaft,
 [data-studiengang="eth-physik"] .legende-item.wissenschaft {
     background-color: var(--color-wissenschaft);
-    color: white;
+    color: var(--color-wissenschaft-text, white);
 }

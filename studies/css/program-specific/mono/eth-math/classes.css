@@ -4,35 +4,35 @@
 [data-studiengang="eth-math"] .modul.obligatorisch,
 [data-studiengang="eth-math"] .legende-item.obligatorisch {
     background-color: var(--color-obligatorisch);
-    color: white;
+    color: var(--color-obligatorisch-text, white);
 }
 
 [data-studiengang="eth-math"] .modul.ergaenzung,
 [data-studiengang="eth-math"] .legende-item.ergaenzung {
     background-color: var(--color-ergaenzung);
-    color: white;
+    color: var(--color-ergaenzung-text, white);
 }
 
 [data-studiengang="eth-math"] .modul.wahl,
 [data-studiengang="eth-math"] .legende-item.wahl {
     background-color: var(--color-wahl);
-    color: white;
+    color: var(--color-wahl-text, white);
 }
 
 [data-studiengang="eth-math"] .modul.kern,
 [data-studiengang="eth-math"] .legende-item.kern {
     background-color: var(--color-kern);
-    color: white;
+    color: var(--color-kern-text, white);
 }
 
 [data-studiengang="eth-math"] .modul.wahlpflicht,
 [data-studiengang="eth-math"] .legende-item.wahlpflicht {
     background-color: var(--color-wahlpflicht);
-    color: white;
+    color: var(--color-wahlpflicht-text, white);
 }
 
 [data-studiengang="eth-math"] .modul.wissenschaft,
 [data-studiengang="eth-math"] .legende-item.wissenschaft {
     background-color: var(--color-wissenschaft);
-    color: white;
+    color: var(--color-wissenschaft-text, white);
 }

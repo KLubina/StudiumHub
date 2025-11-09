@@ -4,53 +4,53 @@
 [data-studiengang="eth-cs"] .modul.cs-pure,
 [data-studiengang="eth-cs"] .legende-item.cs-pure {
     background-color: var(--color-cs-pure);
-    color: white;
+    color: var(--color-cs-pure-text, white);
 }
 
 [data-studiengang="eth-cs"] .modul.cs-cse,
 [data-studiengang="eth-cs"] .legende-item.cs-cse {
     background-color: var(--color-cs-cse);
-    color: white;
+    color: var(--color-cs-cse-text, white);
 }
 
 [data-studiengang="eth-cs"] .modul.cs-cse-wahl,
 [data-studiengang="eth-cs"] .legende-item.cs-cse-wahl {
     background-color: var(--color-cs-cse-wahl);
-    color: white;
+    color: var(--color-cs-cse-wahl-text, white);
 }
 
 [data-studiengang="eth-cs"] .modul.math,
 [data-studiengang="eth-cs"] .legende-item.math {
     background-color: var(--color-math);
-    color: white;
+    color: var(--color-math-text, white);
 }
 
 [data-studiengang="eth-cs"] .modul.algo,
 [data-studiengang="eth-cs"] .legende-item.algo {
     background-color: var(--color-algo);
-    color: white;
+    color: var(--color-algo-text, white);
 }
 
 [data-studiengang="eth-cs"] .modul.ergaenzung,
 [data-studiengang="eth-cs"] .legende-item.ergaenzung {
     background-color: var(--color-ergaenzung);
-    color: white;
+    color: var(--color-ergaenzung-text, white);
 }
 
 [data-studiengang="eth-cs"] .modul.wissenschaft,
 [data-studiengang="eth-cs"] .legende-item.wissenschaft {
     background-color: var(--color-wissenschaft);
-    color: white;
+    color: var(--color-wissenschaft-text, white);
 }
 
 [data-studiengang="eth-cs"] .modul.spezialisierung,
 [data-studiengang="eth-cs"] .legende-item.spezialisierung {
     background-color: var(--color-spezialisierung);
-    color: black;
+    color: var(--color-spezialisierung-text, black);
 }
 
 [data-studiengang="eth-cs"] .modul.wahlfaecher,
 [data-studiengang="eth-cs"] .legende-item.wahlfaecher {
     background-color: var(--color-wahlfaecher);
-    color: white;
+    color: var(--color-wahlfaecher-text, white);
 }

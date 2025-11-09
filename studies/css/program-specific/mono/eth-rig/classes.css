@@ -4,29 +4,29 @@
 [data-studiengang="eth-rig"] .modul.grundlagen,
 [data-studiengang="eth-rig"] .legende-item.grundlagen {
     background-color: var(--color-grundlagen);
-    color: white;
+    color: var(--color-grundlagen-text, white);
 }
 
 [data-studiengang="eth-rig"] .modul.obligatorisch,
 [data-studiengang="eth-rig"] .legende-item.obligatorisch {
     background-color: var(--color-obligatorisch);
-    color: white;
+    color: var(--color-obligatorisch-text, white);
 }
 
 [data-studiengang="eth-rig"] .modul.wahlmodule,
 [data-studiengang="eth-rig"] .legende-item.wahlmodule {
     background-color: var(--color-wahlmodule);
-    color: white;
+    color: var(--color-wahlmodule-text, white);
 }
 
 [data-studiengang="eth-rig"] .modul.freie-wahl,
 [data-studiengang="eth-rig"] .legende-item.freie-wahl {
     background-color: var(--color-freie-wahl);
-    color: white;
+    color: var(--color-freie-wahl-text, white);
 }
 
 [data-studiengang="eth-rig"] .modul.selbstaendig,
 [data-studiengang="eth-rig"] .legende-item.selbstaendig {
     background-color: var(--color-selbstaendig);
-    color: white;
+    color: var(--color-selbstaendig-text, white);
 }

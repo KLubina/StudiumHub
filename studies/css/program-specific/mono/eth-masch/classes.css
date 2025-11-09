@@ -4,29 +4,29 @@
 [data-studiengang="eth-masch"] .modul.obligatorisch,
 [data-studiengang="eth-masch"] .legende-item.obligatorisch {
     background-color: var(--color-obligatorisch);
-    color: white;
+    color: var(--color-obligatorisch-text, white);
 }
 
 [data-studiengang="eth-masch"] .modul.praktikum,
 [data-studiengang="eth-masch"] .legende-item.praktikum {
     background-color: var(--color-praktikum);
-    color: white;
+    color: var(--color-praktikum-text, white);
 }
 
 [data-studiengang="eth-masch"] .modul.wahl,
 [data-studiengang="eth-masch"] .legende-item.wahl {
     background-color: var(--color-wahl);
-    color: white;
+    color: var(--color-wahl-text, white);
 }
 
 [data-studiengang="eth-masch"] .modul.vertiefung,
 [data-studiengang="eth-masch"] .legende-item.vertiefung {
     background-color: var(--color-vertiefung);
-    color: white;
+    color: var(--color-vertiefung-text, white);
 }
 
 [data-studiengang="eth-masch"] .modul.wissenschaft,
 [data-studiengang="eth-masch"] .legende-item.wissenschaft {
     background-color: var(--color-wissenschaft);
-    color: white;
+    color: var(--color-wissenschaft-text, white);
 }
