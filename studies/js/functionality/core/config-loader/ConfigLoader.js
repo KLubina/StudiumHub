@@ -10,8 +10,18 @@ class StudiengangConfigLoader {
     }
 
     async loadConfig() {
-        const configPath = `js/${this.studyModel}/configs/${this.studiengang}`;
-        const dataPath = `js/${this.studyModel}/data/${this.studiengang}`;
+        // Mono uses new unified structure: js/mono/{studiengang}/
+        // Major-minor still uses old structure: js/major-minor/configs/ and js/major-minor/data/
+        let configPath, dataPath;
+
+        if (this.studyModel === 'mono') {
+            // New structure: everything in one folder
+            configPath = dataPath = `js/${this.studyModel}/${this.studiengang}`;
+        } else {
+            // Old structure: separate configs and data folders
+            configPath = `js/${this.studyModel}/configs/${this.studiengang}`;
+            dataPath = `js/${this.studyModel}/data/${this.studiengang}`;
+        }
 
         await this.loader.loadModule(`${configPath}/base-config.js`);
         await this.loader.loadOptionalModule(`${configPath}/color-config.js`);
@@ -97,7 +107,13 @@ class StudiengangConfigLoader {
     async loadFallbackConfig() {
         return new Promise((resolve, reject) => {
             const script = document.createElement('script');
-            script.src = `js/${this.studyModel}/configs/${this.studiengang}-config.js`;
+            // Mono: js/mono/{studiengang}/{studiengang}-config.js
+            // Major-minor: js/major-minor/configs/{studiengang}-config.js
+            const fallbackPath = this.studyModel === 'mono'
+                ? `js/${this.studyModel}/${this.studiengang}/${this.studiengang}-config.js`
+                : `js/${this.studyModel}/configs/${this.studiengang}-config.js`;
+
+            script.src = fallbackPath;
             script.onload = () => {
                 resolve(window.StudiengangConfig);
             };
