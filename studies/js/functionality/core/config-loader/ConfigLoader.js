@@ -111,9 +111,10 @@ class StudiengangConfigLoader {
     }
 
     async loadStudiengangSpecifics(basePath) {
-        // Load studiengang-specific implementation class
-        // Custom implementations are in specific/ subdirectory (e.g., ITETStudienplan, BFHEITStudienplan)
-        await this.loader.loadOptionalModule(`${basePath}/specific/specific.js`);
+        // Load studiengang-specific implementation/registration
+        // Preferred lightweight pattern: specific/register-class.js sets window.StudiengangCustomClass
+        // Backward compatible: also try specific/specific.js (legacy, may define class inline)
+        await this.loader.loadOptionalModule(`${basePath}/specific/register-class.js`);
     }
 
     async loadFallbackConfig() {
