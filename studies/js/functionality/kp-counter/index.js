@@ -6,8 +6,14 @@ const kpCounterModules = [
     'Integration.js'
 ];
 
-kpCounterModules.forEach(module => {
-    const script = document.createElement('script');
-    script.src = `js/functionality/kp-counter/${module}`;
-    document.head.appendChild(script);
-});
+window.subModulesReady.kpCounter = Promise.all(
+    kpCounterModules.map(module => {
+        return new Promise((resolve) => {
+            const script = document.createElement('script');
+            script.src = `js/functionality/kp-counter/${module}`;
+            script.onload = () => resolve();
+            script.onerror = () => resolve();
+            document.head.appendChild(script);
+        });
+    })
+);

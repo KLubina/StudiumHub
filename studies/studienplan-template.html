@@ -140,6 +140,8 @@
 
         // DOM Ready
         document.addEventListener('DOMContentLoaded', async function () {
+            // Wait for all base modules to load first
+            await window.baseModulesReady;
 
             await loadExtensionModules(studiengang);
 

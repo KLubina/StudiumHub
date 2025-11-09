@@ -7,8 +7,14 @@ const majorMinorSelectorModules = [
     'DataHandler.js'
 ];
 
-majorMinorSelectorModules.forEach(module => {
-    const script = document.createElement('script');
-    script.src = `js/functionality/major-minor-selector/${module}`;
-    document.head.appendChild(script);
-});
+window.subModulesReady.majorMinorSelector = Promise.all(
+    majorMinorSelectorModules.map(module => {
+        return new Promise((resolve) => {
+            const script = document.createElement('script');
+            script.src = `js/functionality/major-minor-selector/${module}`;
+            script.onload = () => resolve();
+            script.onerror = () => resolve();
+            document.head.appendChild(script);
+        });
+    })
+);

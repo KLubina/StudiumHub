@@ -5,8 +5,14 @@ const legendModules = [
     'LegendItem.js'
 ];
 
-legendModules.forEach(module => {
-    const script = document.createElement('script');
-    script.src = `js/functionality/legend/${module}`;
-    document.head.appendChild(script);
-});
+window.subModulesReady.legend = Promise.all(
+    legendModules.map(module => {
+        return new Promise((resolve) => {
+            const script = document.createElement('script');
+            script.src = `js/functionality/legend/${module}`;
+            script.onload = () => resolve();
+            script.onerror = () => resolve();
+            document.head.appendChild(script);
+        });
+    })
+);

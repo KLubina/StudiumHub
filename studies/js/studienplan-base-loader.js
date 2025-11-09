@@ -38,16 +38,31 @@ const basePath = 'js/functionality';
 
 console.log('📦 Loading modularized Studienplan base components from functionality/...');
 
-baseModules.forEach(module => {
-    const script = document.createElement('script');
-    script.src = `${basePath}/${module}`;
-    script.onerror = () => {
-        console.error(`❌ Failed to load module: ${basePath}/${module}`);
-    };
-    script.onload = () => {
-        console.log(`✅ Loaded: ${basePath}/${module}`);
-    };
-    document.head.appendChild(script);
+// Initialize global object to track sub-module loading
+window.subModulesReady = {};
+
+// Promise that resolves when all base modules are loaded
+window.baseModulesReady = Promise.all(
+    baseModules.map(module => {
+        return new Promise((resolve, reject) => {
+            const script = document.createElement('script');
+            script.src = `${basePath}/${module}`;
+            script.onerror = () => {
+                console.error(`❌ Failed to load module: ${basePath}/${module}`);
+                reject(new Error(`Failed to load ${module}`));
+            };
+            script.onload = () => {
+                console.log(`✅ Loaded: ${basePath}/${module}`);
+                resolve();
+            };
+            document.head.appendChild(script);
+        });
+    })
+).then(async () => {
+    console.log('✅ All index.js files loaded, waiting for sub-modules...');
+    // Wait for all sub-modules to finish loading
+    await Promise.all(Object.values(window.subModulesReady));
+    console.log('✅ All base modules and sub-modules loaded successfully');
 });
 
 console.log('📦 All base modules queued for loading (functionality)');

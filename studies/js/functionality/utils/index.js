@@ -5,8 +5,14 @@ const utilsModules = [
     'Polyfills.js'
 ];
 
-utilsModules.forEach(module => {
-    const script = document.createElement('script');
-    script.src = `js/functionality/utils/${module}`;
-    document.head.appendChild(script);
-});
+window.subModulesReady.utils = Promise.all(
+    utilsModules.map(module => {
+        return new Promise((resolve) => {
+            const script = document.createElement('script');
+            script.src = `js/functionality/utils/${module}`;
+            script.onload = () => resolve();
+            script.onerror = () => resolve();
+            document.head.appendChild(script);
+        });
+    })
+);

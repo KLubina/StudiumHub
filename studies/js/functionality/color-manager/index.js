@@ -7,8 +7,14 @@ const colorManagerModules = [
     'Integration.js'
 ];
 
-colorManagerModules.forEach(module => {
-    const script = document.createElement('script');
-    script.src = `js/functionality/color-manager/${module}`;
-    document.head.appendChild(script);
-});
+window.subModulesReady.colorManager = Promise.all(
+    colorManagerModules.map(module => {
+        return new Promise((resolve) => {
+            const script = document.createElement('script');
+            script.src = `js/functionality/color-manager/${module}`;
+            script.onload = () => resolve();
+            script.onerror = () => resolve();
+            document.head.appendChild(script);
+        });
+    })
+);

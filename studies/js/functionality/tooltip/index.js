@@ -5,8 +5,14 @@ const tooltipModules = [
     'TooltipContent.js'
 ];
 
-tooltipModules.forEach(module => {
-    const script = document.createElement('script');
-    script.src = `js/functionality/tooltip/${module}`;
-    document.head.appendChild(script);
-});
+window.subModulesReady.tooltip = Promise.all(
+    tooltipModules.map(module => {
+        return new Promise((resolve) => {
+            const script = document.createElement('script');
+            script.src = `js/functionality/tooltip/${module}`;
+            script.onload = () => resolve();
+            script.onerror = () => resolve();
+            document.head.appendChild(script);
+        });
+    })
+);

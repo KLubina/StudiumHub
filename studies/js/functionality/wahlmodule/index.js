@@ -9,8 +9,14 @@ const wahlmoduleModules = [
     'Integration.js'
 ];
 
-wahlmoduleModules.forEach(module => {
-    const script = document.createElement('script');
-    script.src = `js/functionality/wahlmodule/${module}`;
-    document.head.appendChild(script);
-});
+window.subModulesReady.wahlmodule = Promise.all(
+    wahlmoduleModules.map(module => {
+        return new Promise((resolve) => {
+            const script = document.createElement('script');
+            script.src = `js/functionality/wahlmodule/${module}`;
+            script.onload = () => resolve();
+            script.onerror = () => resolve();
+            document.head.appendChild(script);
+        });
+    })
+);

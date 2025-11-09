@@ -7,8 +7,14 @@ const layoutModules = [
     'FirstYearThenGroupsLayout.js'
 ];
 
-layoutModules.forEach(module => {
-    const script = document.createElement('script');
-    script.src = `js/functionality/layout/${module}`;
-    document.head.appendChild(script);
-});
+window.subModulesReady.layout = Promise.all(
+    layoutModules.map(module => {
+        return new Promise((resolve) => {
+            const script = document.createElement('script');
+            script.src = `js/functionality/layout/${module}`;
+            script.onload = () => resolve();
+            script.onerror = () => resolve();
+            document.head.appendChild(script);
+        });
+    })
+);
