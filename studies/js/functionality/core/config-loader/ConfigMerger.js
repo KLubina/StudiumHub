@@ -4,13 +4,26 @@ class ConfigMerger {
     static mergeConfigs() {
         let config = {};
 
+        // Provide safe defaults for optional feature flags so that a missing
+        // features-config.js does not break merging and implicitly means
+        // "all features disabled".
+        const defaultFeaturesConfig = {
+            enableTooltips: false,
+            enableHover: false,
+            enableColorManager: false,
+            enableWahlmodule: false,
+            enableKPCounter: false
+        };
+
         // NEW: Merge modular config files (if they exist)
         if (window.StudiengangGeneralConfig || window.StudiengangLayoutConfig) {
             // New modular structure detected
             config = {
                 ...window.StudiengangGeneralConfig,
                 ...window.StudiengangLayoutConfig,
-                ...window.StudiengangFeaturesConfig,
+                // Merge defaults first, then study-specific to allow partial configs
+                ...defaultFeaturesConfig,
+                ...(window.StudiengangFeaturesConfig || {}),
                 ...window.StudiengangCategoriesConfig,
                 ...window.StudiengangColorManagerConfig,
                 ...window.StudiengangKPCounterConfig,
@@ -19,6 +32,11 @@ class ConfigMerger {
         } else if (window.StudiengangBaseConfig) {
             // LEGACY: Fall back to old base-config.js structure
             config = { ...window.StudiengangBaseConfig };
+            // In legacy mode also ensure features flags exist so downstream code
+            // can rely on them consistently.
+            for (const [k, v] of Object.entries(defaultFeaturesConfig)) {
+                if (!(k in config)) config[k] = v;
+            }
         }
 
         // Add module data

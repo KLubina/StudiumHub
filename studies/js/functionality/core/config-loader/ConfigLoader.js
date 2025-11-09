@@ -33,7 +33,8 @@ class StudiengangConfigLoader {
         // Core config files (always loaded) - now in config/ subdirectory
         await this.loader.loadModule(`${basePath}/config/general-config.js`);
         await this.loader.loadModule(`${basePath}/config/layout-config.js`);
-        await this.loader.loadModule(`${basePath}/config/features-config.js`);
+        // Features config is optional: absence means all feature flags default to false
+        await this.loader.loadOptionalModule(`${basePath}/config/features-config.js`);
         await this.loader.loadModule(`${basePath}/config/categories-config.js`);
 
         // Feature-specific config files (loaded based on feature flags after features-config.js is loaded)
