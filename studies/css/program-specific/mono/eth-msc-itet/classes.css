@@ -1,5 +1,33 @@
 /* ==== ETH MSC-ITET - CSS CLASSES ==== */
 /* Program-specific CSS classes for MSc ITET */
 
-/* All classes use shared/common-classes.css */
-/* No MSc-ITET-specific classes needed beyond the common ones */
+/* MSc ITET-specific classes */
+[data-studiengang="eth-msc-itet"] .modul.obligatorisch,
+[data-studiengang="eth-msc-itet"] .legende-item.obligatorisch {
+    background-color: var(--color-obligatorisch);
+    color: var(--color-obligatorisch-text, white);
+}
+
+[data-studiengang="eth-msc-itet"] .modul.kern,
+[data-studiengang="eth-msc-itet"] .legende-item.kern {
+    background-color: var(--color-kern);
+    color: var(--color-kern-text, black);
+}
+
+[data-studiengang="eth-msc-itet"] .modul.vertiefung,
+[data-studiengang="eth-msc-itet"] .legende-item.vertiefung {
+    background-color: var(--color-vertiefung);
+    color: var(--color-vertiefung-text, white);
+}
+
+[data-studiengang="eth-msc-itet"] .modul.wahl,
+[data-studiengang="eth-msc-itet"] .legende-item.wahl {
+    background-color: var(--color-wahl);
+    color: var(--color-wahl-text, black);
+}
+
+[data-studiengang="eth-msc-itet"] .modul.wissenschaft,
+[data-studiengang="eth-msc-itet"] .legende-item.wissenschaft {
+    background-color: var(--color-wissenschaft);
+    color: var(--color-wissenschaft-text, white);
+}
