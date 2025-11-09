@@ -5,9 +5,14 @@
     /* Primary program color */
     --color-primary: #c2410c;
 
-    /* Module type colors */
-    --color-pflicht: #dc2626;
-    --color-wahlpflicht: #ea580c;
-    --color-wahl: #16a34a;
-    --color-kategorie: #9a3412;
+    /* Category colors */
+    --color-grundlagen: #dc2626;
+    --color-elektrotechnik: #ea580c;
+    --color-informatik: #0284c7;
+    --color-projekte: #7c3aed;
+    --color-kontext: #059669;
+    --color-vertiefung: #d97706;
+    --color-erweiterung: #16a34a;
+    --color-zusatz: #db2777;
+    --color-abschluss: #9333ea;
 }

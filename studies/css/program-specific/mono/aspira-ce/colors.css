@@ -2,12 +2,12 @@
 /* ASPIRA Computational Engineering Program */
 
 [data-studiengang="aspira-ce"] {
-    /* Primary program color */
-    --color-primary: #00a8e1;
-
-    /* Module type colors */
-    --color-pflicht: #e74c3c;
-    --color-wahlpflicht: #f39c12;
-    --color-wahl: #27ae60;
-    --color-kategorie: #3498db;
+    /* Category-specific colors */
+    --color-foundations: #3b82f6;
+    --color-programming: #8b5cf6;
+    --color-systems: #10b981;
+    --color-webmobile: #f59e0b;
+    --color-security: #ef4444;
+    --color-professional: #06b6d4;
+    --color-project: #84cc16;
 }

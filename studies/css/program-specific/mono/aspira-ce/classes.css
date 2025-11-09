@@ -1,17 +1,37 @@
 /* ==== ASPIRA-CE - CSS CLASSES ==== */
 /* Program-specific CSS classes */
 
-[data-studiengang="aspira-ce"] .modul.pflicht {
-    background-color: var(--color-pflicht);
+[data-studiengang="aspira-ce"] .modul.foundations {
+    background-color: var(--color-foundations);
     color: white;
 }
 
-[data-studiengang="aspira-ce"] .modul.wahlpflicht {
-    background-color: var(--color-wahlpflicht);
+[data-studiengang="aspira-ce"] .modul.programming {
+    background-color: var(--color-programming);
     color: white;
 }
 
-[data-studiengang="aspira-ce"] .modul.wahl {
-    background-color: var(--color-wahl);
+[data-studiengang="aspira-ce"] .modul.systems {
+    background-color: var(--color-systems);
+    color: white;
+}
+
+[data-studiengang="aspira-ce"] .modul.webmobile {
+    background-color: var(--color-webmobile);
+    color: white;
+}
+
+[data-studiengang="aspira-ce"] .modul.security {
+    background-color: var(--color-security);
+    color: white;
+}
+
+[data-studiengang="aspira-ce"] .modul.professional {
+    background-color: var(--color-professional);
+    color: white;
+}
+
+[data-studiengang="aspira-ce"] .modul.project {
+    background-color: var(--color-project);
     color: white;
 }

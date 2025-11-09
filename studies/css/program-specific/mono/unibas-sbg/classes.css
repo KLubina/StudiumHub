@@ -1,13 +1,18 @@
 /* ==== UNIBAS-SBG - CSS CLASSES ==== */
 /* Program-specific CSS classes */
 
-[data-studiengang="unibas-sbg"] .modul.pflicht {
-    background-color: var(--color-pflicht);
+[data-studiengang="unibas-sbg"] .modul.grundlagen {
+    background-color: var(--color-grundlagen);
     color: white;
 }
 
-[data-studiengang="unibas-sbg"] .modul.wahlpflicht {
-    background-color: var(--color-wahlpflicht);
+[data-studiengang="unibas-sbg"] .modul.vertiefung {
+    background-color: var(--color-vertiefung);
+    color: white;
+}
+
+[data-studiengang="unibas-sbg"] .modul.profil {
+    background-color: var(--color-profil);
     color: white;
 }
 

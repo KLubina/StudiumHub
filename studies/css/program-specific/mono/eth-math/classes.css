@@ -1,8 +1,23 @@
 /* ==== ETH-MATH - CSS CLASSES ==== */
 /* Program-specific CSS classes */
 
-[data-studiengang="eth-math"] .modul.pflicht {
-    background-color: var(--color-pflicht);
+[data-studiengang="eth-math"] .modul.obligatorisch {
+    background-color: var(--color-obligatorisch);
+    color: white;
+}
+
+[data-studiengang="eth-math"] .modul.ergaenzung {
+    background-color: var(--color-ergaenzung);
+    color: white;
+}
+
+[data-studiengang="eth-math"] .modul.wahl {
+    background-color: var(--color-wahl);
+    color: white;
+}
+
+[data-studiengang="eth-math"] .modul.kern {
+    background-color: var(--color-kern);
     color: white;
 }
 
@@ -11,7 +26,7 @@
     color: white;
 }
 
-[data-studiengang="eth-math"] .modul.wahl {
-    background-color: var(--color-wahl);
+[data-studiengang="eth-math"] .modul.wissenschaft {
+    background-color: var(--color-wissenschaft);
     color: white;
 }

@@ -1,17 +1,27 @@
 /* ==== FHGR-CDS - CSS CLASSES ==== */
 /* Program-specific CSS classes */
 
-[data-studiengang="fhgr-cds"] .modul.pflicht {
-    background-color: var(--color-pflicht);
+[data-studiengang="fhgr-cds"] .modul.grundlagen {
+    background-color: var(--color-grundlagen);
     color: white;
 }
 
-[data-studiengang="fhgr-cds"] .modul.wahlpflicht {
-    background-color: var(--color-wahlpflicht);
+[data-studiengang="fhgr-cds"] .modul.schwerpunkte {
+    background-color: var(--color-schwerpunkte);
     color: white;
 }
 
-[data-studiengang="fhgr-cds"] .modul.wahl {
-    background-color: var(--color-wahl);
+[data-studiengang="fhgr-cds"] .modul.wahlmodul {
+    background-color: var(--color-wahlmodul);
+    color: white;
+}
+
+[data-studiengang="fhgr-cds"] .modul.labor {
+    background-color: var(--color-labor);
+    color: white;
+}
+
+[data-studiengang="fhgr-cds"] .modul.projektarbeit {
+    background-color: var(--color-projektarbeit);
     color: white;
 }

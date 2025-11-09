@@ -1,17 +1,27 @@
 /* ==== UNISG-BWL - CSS CLASSES ==== */
 /* Program-specific CSS classes */
 
-[data-studiengang="unisg-bwl"] .modul.pflicht {
-    background-color: var(--color-pflicht);
+[data-studiengang="unisg-bwl"] .modul.kernfach {
+    background-color: var(--color-kernfach);
     color: white;
 }
 
-[data-studiengang="unisg-bwl"] .modul.wahlpflicht {
-    background-color: var(--color-wahlpflicht);
+[data-studiengang="unisg-bwl"] .modul.methoden {
+    background-color: var(--color-methoden);
     color: white;
 }
 
-[data-studiengang="unisg-bwl"] .modul.wahl {
-    background-color: var(--color-wahl);
+[data-studiengang="unisg-bwl"] .modul.grundlagen {
+    background-color: var(--color-grundlagen);
+    color: white;
+}
+
+[data-studiengang="unisg-bwl"] .modul.kontext {
+    background-color: var(--color-kontext);
+    color: white;
+}
+
+[data-studiengang="unisg-bwl"] .modul.bachelor {
+    background-color: var(--color-bachelor);
     color: white;
 }

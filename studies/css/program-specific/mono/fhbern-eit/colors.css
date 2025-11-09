@@ -5,9 +5,11 @@
     /* Primary program color */
     --color-primary: #d97706;
 
-    /* Module type colors */
-    --color-pflicht: #dc2626;
-    --color-wahlpflicht: #ea580c;
-    --color-wahl: #16a34a;
-    --color-kategorie: #b45309;
+    /* Category colors */
+    --color-grundlagen: #dc2626;
+    --color-praktika: #db2777;
+    --color-sprachen: #c026d3;
+    --color-vertiefung: #0284c7;
+    --color-wahlmodule: #16a34a;
+    --color-abschluss: #7c3aed;
 }

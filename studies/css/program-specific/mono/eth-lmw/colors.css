@@ -5,9 +5,18 @@
     /* Primary program color */
     --color-primary: #16a34a;
 
-    /* Module type colors */
-    --color-pflicht: #dc2626;
-    --color-wahlpflicht: #ea580c;
+    /* Category colors */
+    --color-basispruefung: #dc2626;
+    --color-zusatzfach: #ea580c;
+    --color-obligatorisch: #d97706;
+    --color-grundlagenfach: #16a34a;
+    --color-weitere: #059669;
+    --color-kernfach: #0891b2;
+    --color-fachgrundlage: #0284c7;
+    --color-lmw-fach: #7c3aed;
+    --color-praktikum: #db2777;
+    --color-exkursion: #c026d3;
     --color-wahl: #16a34a;
-    --color-kategorie: #059669;
+    --color-wik: #4f46e5;
+    --color-bachelor-arbeit: #9333ea;
 }

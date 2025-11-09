@@ -1,17 +1,22 @@
 /* ==== FHZH-CS - CSS CLASSES ==== */
 /* Program-specific CSS classes */
 
-[data-studiengang="fhzh-cs"] .modul.pflicht {
-    background-color: var(--color-pflicht);
+[data-studiengang="fhzh-cs"] .modul.kontext {
+    background-color: var(--color-kontext);
     color: white;
 }
 
-[data-studiengang="fhzh-cs"] .modul.wahlpflicht {
-    background-color: var(--color-wahlpflicht);
+[data-studiengang="fhzh-cs"] .modul.projekt {
+    background-color: var(--color-projekt);
     color: white;
 }
 
-[data-studiengang="fhzh-cs"] .modul.wahl {
-    background-color: var(--color-wahl);
+[data-studiengang="fhzh-cs"] .modul.fach {
+    background-color: var(--color-fach);
+    color: white;
+}
+
+[data-studiengang="fhzh-cs"] .modul.mathe-nawi {
+    background-color: var(--color-mathe-nawi);
     color: white;
 }

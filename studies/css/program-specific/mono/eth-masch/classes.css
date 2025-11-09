@@ -1,17 +1,27 @@
 /* ==== ETH-MASCH - CSS CLASSES ==== */
 /* Program-specific CSS classes */
 
-[data-studiengang="eth-masch"] .modul.pflicht {
-    background-color: var(--color-pflicht);
+[data-studiengang="eth-masch"] .modul.obligatorisch {
+    background-color: var(--color-obligatorisch);
     color: white;
 }
 
-[data-studiengang="eth-masch"] .modul.wahlpflicht {
-    background-color: var(--color-wahlpflicht);
+[data-studiengang="eth-masch"] .modul.praktikum {
+    background-color: var(--color-praktikum);
     color: white;
 }
 
 [data-studiengang="eth-masch"] .modul.wahl {
     background-color: var(--color-wahl);
+    color: white;
+}
+
+[data-studiengang="eth-masch"] .modul.vertiefung {
+    background-color: var(--color-vertiefung);
+    color: white;
+}
+
+[data-studiengang="eth-masch"] .modul.wissenschaft {
+    background-color: var(--color-wissenschaft);
     color: white;
 }

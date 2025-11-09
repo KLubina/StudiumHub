@@ -5,9 +5,9 @@
     /* Primary program color */
     --color-primary: #1d4ed8;
 
-    /* Module type colors */
-    --color-pflicht: #dc2626;
-    --color-wahlpflicht: #ea580c;
-    --color-wahl: #16a34a;
-    --color-kategorie: #1e40af;
+    /* Category colors */
+    --color-kontext: #059669;
+    --color-projekt: #7c3aed;
+    --color-fach: #0284c7;
+    --color-mathe-nawi: #dc2626;
 }

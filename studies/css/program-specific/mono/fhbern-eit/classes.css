@@ -1,17 +1,32 @@
 /* ==== FHBERN-EIT - CSS CLASSES ==== */
 /* Program-specific CSS classes */
 
-[data-studiengang="fhbern-eit"] .modul.pflicht {
-    background-color: var(--color-pflicht);
+[data-studiengang="fhbern-eit"] .modul.grundlagen {
+    background-color: var(--color-grundlagen);
     color: white;
 }
 
-[data-studiengang="fhbern-eit"] .modul.wahlpflicht {
-    background-color: var(--color-wahlpflicht);
+[data-studiengang="fhbern-eit"] .modul.praktika {
+    background-color: var(--color-praktika);
     color: white;
 }
 
-[data-studiengang="fhbern-eit"] .modul.wahl {
-    background-color: var(--color-wahl);
+[data-studiengang="fhbern-eit"] .modul.sprachen {
+    background-color: var(--color-sprachen);
+    color: white;
+}
+
+[data-studiengang="fhbern-eit"] .modul.vertiefung {
+    background-color: var(--color-vertiefung);
+    color: white;
+}
+
+[data-studiengang="fhbern-eit"] .modul.wahlmodule {
+    background-color: var(--color-wahlmodule);
+    color: white;
+}
+
+[data-studiengang="fhbern-eit"] .modul.abschluss {
+    background-color: var(--color-abschluss);
     color: white;
 }

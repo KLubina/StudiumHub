@@ -1,17 +1,57 @@
 /* ==== ETH-PHYSIK - CSS CLASSES ==== */
 /* Program-specific CSS classes */
 
-[data-studiengang="eth-physik"] .modul.pflicht {
-    background-color: var(--color-pflicht);
+[data-studiengang="eth-physik"] .modul.basis1 {
+    background-color: var(--color-basis1);
     color: white;
 }
 
-[data-studiengang="eth-physik"] .modul.wahlpflicht {
-    background-color: var(--color-wahlpflicht);
+[data-studiengang="eth-physik"] .modul.basis2 {
+    background-color: var(--color-basis2);
+    color: white;
+}
+
+[data-studiengang="eth-physik"] .modul.pruefung1 {
+    background-color: var(--color-pruefung1);
+    color: white;
+}
+
+[data-studiengang="eth-physik"] .modul.pruefung2a {
+    background-color: var(--color-pruefung2a);
+    color: white;
+}
+
+[data-studiengang="eth-physik"] .modul.pruefung2b {
+    background-color: var(--color-pruefung2b);
+    color: white;
+}
+
+[data-studiengang="eth-physik"] .modul.obligatorisch {
+    background-color: var(--color-obligatorisch);
+    color: white;
+}
+
+[data-studiengang="eth-physik"] .modul.praktikum {
+    background-color: var(--color-praktikum);
+    color: white;
+}
+
+[data-studiengang="eth-physik"] .modul.kernfach {
+    background-color: var(--color-kernfach);
     color: white;
 }
 
 [data-studiengang="eth-physik"] .modul.wahl {
     background-color: var(--color-wahl);
+    color: white;
+}
+
+[data-studiengang="eth-physik"] .modul.gess {
+    background-color: var(--color-gess);
+    color: white;
+}
+
+[data-studiengang="eth-physik"] .modul.wissenschaft {
+    background-color: var(--color-wissenschaft);
     color: white;
 }

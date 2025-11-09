@@ -1,17 +1,27 @@
 /* ==== ETH-RIG - CSS CLASSES ==== */
 /* Program-specific CSS classes */
 
-[data-studiengang="eth-rig"] .modul.pflicht {
-    background-color: var(--color-pflicht);
+[data-studiengang="eth-rig"] .modul.grundlagen {
+    background-color: var(--color-grundlagen);
     color: white;
 }
 
-[data-studiengang="eth-rig"] .modul.wahlpflicht {
-    background-color: var(--color-wahlpflicht);
+[data-studiengang="eth-rig"] .modul.obligatorisch {
+    background-color: var(--color-obligatorisch);
     color: white;
 }
 
-[data-studiengang="eth-rig"] .modul.wahl {
-    background-color: var(--color-wahl);
+[data-studiengang="eth-rig"] .modul.wahlmodule {
+    background-color: var(--color-wahlmodule);
+    color: white;
+}
+
+[data-studiengang="eth-rig"] .modul.freie-wahl {
+    background-color: var(--color-freie-wahl);
+    color: white;
+}
+
+[data-studiengang="eth-rig"] .modul.selbstaendig {
+    background-color: var(--color-selbstaendig);
     color: white;
 }

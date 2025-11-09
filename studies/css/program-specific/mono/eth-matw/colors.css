@@ -5,9 +5,8 @@
     /* Primary program color */
     --color-primary: #0891b2;
 
-    /* Module type colors */
-    --color-pflicht: #dc2626;
-    --color-wahlpflicht: #ea580c;
-    --color-wahl: #16a34a;
-    --color-kategorie: #0e7490;
+    /* Category colors */
+    --color-obligatorisch: #dc2626;
+    --color-praktikum: #db2777;
+    --color-wissenschaft: #7c3aed;
 }
