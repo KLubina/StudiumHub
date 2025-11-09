@@ -1,37 +1,6 @@
 /* ==== ETH CSE - LAYOUT OVERRIDES ==== */
 /* Program-specific layout customizations */
 
-/* Grade Calculator Modal (CSE-specific feature) */
-[data-studiengang="eth-cse"] #grade-calculator-modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: 2000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-[data-studiengang="eth-cse"] .grade-calculator-content {
-    background: white;
-    padding: var(--spacing-xl);
-    border-radius: 10px;
-    max-width: 600px;
-    max-height: 80vh;
-    overflow-y: auto;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-}
-
-[data-studiengang="eth-cse"] .block-section {
-    margin-bottom: var(--spacing-lg);
-    padding: var(--spacing-md);
-    background: #f8f9fa;
-    border-radius: 8px;
-}
-
 /* Radio Button Styling for Color Mode */
 [data-studiengang="eth-cse"] input[type="radio"] {
     margin-right: var(--spacing-xs);
