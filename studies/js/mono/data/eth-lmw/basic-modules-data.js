@@ -2,7 +2,7 @@
 /* Alle Module für den Lebensmittelwissenschaften Studiengang (Studienreglement 2024) */
 
 window.StudiengangModules = [
-  // ========== SEMESTER 1 - Basisprüfungsblock 1 ==========
+  // #region 1. Semester - Basisprüfungsblock 1
   {
     jahr: 1,
     semester: 1,
@@ -69,7 +69,9 @@ window.StudiengangModules = [
     bereich: "Natur- und Ingenieurwissenschaften",
   },
 
-  // ========== SEMESTER 2 - Basisprüfung ==========
+  // #endregion 1. Semester - Basisprüfungsblock 1
+
+  // #region 2. Semester - Basisprüfung
   {
     jahr: 1,
     semester: 2,
@@ -144,7 +146,9 @@ window.StudiengangModules = [
     bereich: "Natur- und Ingenieurwissenschaften",
   },
 
-  // ========== SEMESTER 3 - Prüfungsblock ==========
+  // #endregion 2. Semester - Basisprüfung
+
+  // #region 3. Semester - Prüfungsblock
   {
     jahr: 2,
     semester: 1,
@@ -234,7 +238,9 @@ window.StudiengangModules = [
     bereich: "Lebensmittelwissenschaften",
   },
 
-  // ========== SEMESTER 4 ==========
+  // #endregion 3. Semester - Prüfungsblock
+
+  // #region 4. Semester
   {
     jahr: 2,
     semester: 2,
@@ -300,7 +306,9 @@ window.StudiengangModules = [
     bereich: "Lebensmittelwissenschaften",
   },
 
-  // ========== SEMESTER 5 - Fachvertiefung ==========
+  // #endregion 4. Semester
+
+  // #region 5. Semester - Fachvertiefung
   {
     jahr: 3,
     semester: 1,
@@ -374,7 +382,9 @@ window.StudiengangModules = [
     bereich: "Lebensmittelwissenschaften",
   },
 
-  // ========== SEMESTER 6 - Vertiefung & Abschluss ==========
+  // #endregion 5. Semester - Fachvertiefung
+
+  // #region 6. Semester - Vertiefung & Abschluss
   {
     jahr: 3,
     semester: 2,
@@ -464,7 +474,9 @@ window.StudiengangModules = [
     bereich: "Lebensmittelwissenschaften",
   },
 
-  // ========== Wissenschaft im Kontext (über alle Semester verteilt) ==========
+  // #endregion 6. Semester - Vertiefung & Abschluss
+
+  // #region Wissenschaft im Kontext (über alle Semester verteilt)
   {
     jahr: 3,
     semester: 0,
@@ -474,7 +486,9 @@ window.StudiengangModules = [
     isPlaceholder: true,
   },
 
-  // ========== Wahlfächer (Platzhalter) ==========
+  // #endregion Wissenschaft im Kontext (über alle Semester verteilt)
+
+  // #region Wahlfächer (Platzhalter)
   {
     jahr: 3,
     semester: 0,
@@ -484,7 +498,9 @@ window.StudiengangModules = [
     isPlaceholder: true,
   },
 
-  // ========== Bachelorarbeit ==========
+  // #endregion Wahlfächer (Platzhalter)
+
+  // #region Bachelorarbeit
   {
     jahr: 3,
     semester: 2,
@@ -492,4 +508,5 @@ window.StudiengangModules = [
     kp: 15,
     kategorie: "Bachelor-Arbeit",
   },
+  // #endregion Bachelorarbeit
 ];

@@ -2,7 +2,7 @@
 /* Alle Moduldaten für den Maschineningenieurwissenschaften Studiengang ETH Zürich */
 
 window.StudiengangModules = [
-  // 1. Jahr, 1. Semester
+  // #region 1. Semester
   {
     jahr: 1,
     semester: 1,
@@ -46,7 +46,9 @@ window.StudiengangModules = [
     kategorie: "Obligatorische Fächer",
   },
 
-  // 1. Jahr, 2. Semester
+  // #endregion 1. Semester
+
+  // #region 2. Semester
   {
     jahr: 1,
     semester: 2,
@@ -104,7 +106,9 @@ window.StudiengangModules = [
     kategorie: "Obligatorische Fächer",
   },
 
-  // 2. Jahr, 1. Semester (3. Semester)
+  // #endregion 2. Semester
+
+  // #region 3. Semester
   {
     jahr: 2,
     semester: 1,
@@ -148,7 +152,9 @@ window.StudiengangModules = [
     kategorie: "Obligatorische Fächer",
   },
 
-  // 2. Jahr, 2. Semester (4. Semester)
+  // #endregion 3. Semester
+
+  // #region 4. Semester
   {
     jahr: 2,
     semester: 2,
@@ -191,21 +197,11 @@ window.StudiengangModules = [
     kp: 3,
     kategorie: "Obligatorische Fächer",
   },
+  // #endregion 4. Semester
 
-  // 3. Jahr (5. und 6. Semester)
+  // #region 5.-6. Semester (Platzhalter & Abschluss)
   { jahr: 3, semester: 0, name: "Wahlfächer", kp: 24, kategorie: "Wahlfächer" },
-  {
-    jahr: 3,
-    semester: 0,
-    name: "Fokus-Vertiefung",
-    kp: 20,
-    kategorie: "Fokus-Vertiefung",
-  },
-  {
-    jahr: 3,
-    semester: 0,
-    name: "Bachelor-Arbeit",
-    kp: 16,
-    kategorie: "Wissenschaftliche Arbeit",
-  },
+  { jahr: 3, semester: 0, name: "Fokus-Vertiefung", kp: 20, kategorie: "Fokus-Vertiefung" },
+  { jahr: 3, semester: 0, name: "Bachelor-Arbeit", kp: 16, kategorie: "Wissenschaftliche Arbeit" },
+  // #endregion 5.-6. Semester (Platzhalter & Abschluss)
 ];

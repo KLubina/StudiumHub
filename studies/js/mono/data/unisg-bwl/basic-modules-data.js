@@ -2,6 +2,7 @@
 /* Alle Moduldaten für den BWL HSG Studiengang */
 
 window.StudiengangModules = [
+  // #region 1. Semester
   // 1. Semester (Assessment Jahr)
   {
     jahr: 1,
@@ -46,7 +47,9 @@ window.StudiengangModules = [
     kategorie: "kontext",
   },
   { jahr: 1, semester: 1, name: "Skills", kp: 5.0, kategorie: "methoden" },
+  // #endregion 1. Semester
 
+  // #region 2. Semester
   // 2. Semester (Assessment Jahr)
   {
     jahr: 1,
@@ -91,7 +94,9 @@ window.StudiengangModules = [
     kategorie: "kontext",
   },
   { jahr: 1, semester: 2, name: "Skills", kp: 5.0, kategorie: "methoden" },
+  // #endregion 2. Semester
 
+  // #region Fachstudium - Pflichtbereich (2.-3. Jahr)
   // Fachstudium - Pflichtbereich (2.-3. Jahr)
   {
     jahr: 2,
@@ -197,7 +202,9 @@ window.StudiengangModules = [
     kp: 8.0,
     kategorie: "methoden",
   },
+  // #endregion Fachstudium - Pflichtbereich (2.-3. Jahr)
 
+  // #region Bachelor-Arbeit
   // Bachelor-Arbeit
   {
     jahr: 2,
@@ -207,7 +214,9 @@ window.StudiengangModules = [
     kp: 12.0,
     kategorie: "bachelor",
   },
+  // #endregion Bachelor-Arbeit
 
+  // #region Kontextstudium - Fokusbereich Geschichte
   // Kontextstudium - Fokusbereich Geschichte
   {
     jahr: 2,
@@ -265,7 +274,9 @@ window.StudiengangModules = [
     kp: 3.0,
     kategorie: "kontext",
   },
+  // #endregion Kontextstudium - Fokusbereich Geschichte
 
+  // #region Pflichtwahlbereich
   // Pflichtwahlbereich
   {
     jahr: 2,
@@ -307,4 +318,5 @@ window.StudiengangModules = [
     kp: 4.0,
     kategorie: "kernfach",
   },
+  // #endregion Pflichtwahlbereich
 ];

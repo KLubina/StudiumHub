@@ -2,7 +2,7 @@
 /* Alle Moduldaten für den Information Technology B.Sc. Studiengang */
 
 window.StudiengangModules = [
-  // 1. Semester
+  // #region 1. Semester
   {
     jahr: 1,
     semester: 1,
@@ -39,7 +39,9 @@ window.StudiengangModules = [
     kategorie: "transfer",
   },
 
-  // 2. Semester
+  // #endregion 1. Semester
+
+  // #region 2. Semester
   {
     jahr: 1,
     semester: 2,
@@ -76,7 +78,9 @@ window.StudiengangModules = [
     kategorie: "kommunikation",
   },
 
-  // 3. Semester
+  // #endregion 2. Semester
+
+  // #region 3. Semester
   {
     jahr: 2,
     semester: 3,
@@ -113,7 +117,9 @@ window.StudiengangModules = [
     kategorie: "transfer",
   },
 
-  // 4. Semester
+  // #endregion 3. Semester
+
+  // #region 4. Semester
   {
     jahr: 2,
     semester: 4,
@@ -143,7 +149,9 @@ window.StudiengangModules = [
     kategorie: "wahlpflicht",
   },
 
-  // 5. Semester - Schwerpunkt Data Science
+  // #endregion 4. Semester
+
+  // #region 5. Semester - Schwerpunkt Data Science
   {
     jahr: 3,
     semester: 5,
@@ -176,7 +184,9 @@ window.StudiengangModules = [
     kategorie: "transfer",
   },
 
-  // 6. Semester
+  // #endregion 5. Semester - Schwerpunkt Data Science
+
+  // #region 6. Semester
   { jahr: 3, semester: 6, name: "Journal Club", kp: 6, kategorie: "abschluss" },
   {
     jahr: 3,
@@ -192,4 +202,5 @@ window.StudiengangModules = [
     kp: 18,
     kategorie: "abschluss",
   },
+  // #endregion 6. Semester
 ];

@@ -2,6 +2,7 @@
 /* Alle Moduldaten für den HSLU Elektrotechnik und Informationstechnologie Studiengang */
 
 window.StudiengangModules = [
+  // #region 1. Semester (HS) - Basic Module
   // === 1. SEMESTER (HS) - Basic Module ===
 
   // Elektrotechnik
@@ -47,6 +48,9 @@ window.StudiengangModules = [
     kategorie: "Informatik und Programmierung",
   },
 
+  // #endregion 1. Semester (HS) - Basic Module
+
+  // #region 2. Semester (FS) - Basic Module
   // === 2. SEMESTER (FS) - Basic Module ===
 
   // Kontextstudium
@@ -120,6 +124,9 @@ window.StudiengangModules = [
     kategorie: "Informatik und Programmierung",
   },
 
+  // #endregion 2. Semester (FS) - Basic Module
+
+  // #region 3. Semester (HS) - Intermediate Module
   // === 3. SEMESTER (HS) - Intermediate Module ===
 
   // Produktentwicklung
@@ -179,6 +186,9 @@ window.StudiengangModules = [
     kategorie: "Informatik und Programmierung",
   },
 
+  // #endregion 3. Semester (HS) - Intermediate Module
+
+  // #region 4. Semester (FS) - Intermediate Module
   // === 4. SEMESTER (FS) - Intermediate Module ===
 
   // Produktentwicklung
@@ -243,6 +253,9 @@ window.StudiengangModules = [
     kategorie: "Informatik und Programmierung",
   },
 
+  // #endregion 4. Semester (FS) - Intermediate Module
+
+  // #region 5.-6. Semester (Abschluss & Platzhalter)
   // === 5./6. SEMESTER - Obligatorische Abschlussmodule ===
 
   {
@@ -285,4 +298,5 @@ window.StudiengangModules = [
     kategorie: "Zusatzmodule",
     isPlaceholder: true,
   },
+  // #endregion 5.-6. Semester (Abschluss & Platzhalter)
 ];

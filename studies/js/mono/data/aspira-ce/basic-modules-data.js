@@ -2,7 +2,7 @@
 /* Alle Moduldaten für den Computer Engineering B.Sc. Studiengang (Aspira) */
 
 window.StudiengangModules = [
-  // #region Jahr 1 - Semester 1 (30 ECTS)
+  // #region 1. Semester (30 ECTS)
   {
     jahr: 1,
     semester: 1,
@@ -32,9 +32,9 @@ window.StudiengangModules = [
     kategorie: "foundations",
   },
 
-  // #endregion Jahr 1 - Semester 1
+  // #endregion 1. Semester
 
-  // #region Jahr 1 - Semester 2 (30 ECTS)
+  // #region 2. Semester (30 ECTS)
   {
     jahr: 1,
     semester: 2,
@@ -64,9 +64,9 @@ window.StudiengangModules = [
     kategorie: "systems",
   },
 
-  // #endregion Jahr 1 - Semester 2
+  // #endregion 2. Semester
 
-  // #region Jahr 2 - Semester 3 (30 ECTS)
+  // #region 3. Semester (30 ECTS)
   {
     jahr: 2,
     semester: 3,
@@ -96,9 +96,9 @@ window.StudiengangModules = [
     kategorie: "security",
   },
 
-  // #endregion Jahr 2 - Semester 3
+  // #endregion 3. Semester
 
-  // #region Jahr 2 - Semester 4 (30 ECTS)
+  // #region 4. Semester (30 ECTS)
   {
     jahr: 2,
     semester: 4,
@@ -128,9 +128,9 @@ window.StudiengangModules = [
     kategorie: "security",
   },
 
-  // #endregion Jahr 2 - Semester 4
+  // #endregion 4. Semester
 
-  // #region Jahr 3 - Semester 5 (30 ECTS)
+  // #region 5. Semester (30 ECTS)
   {
     jahr: 3,
     semester: 5,
@@ -160,9 +160,9 @@ window.StudiengangModules = [
     kategorie: "webmobile",
   },
 
-  // #endregion Jahr 3 - Semester 5
+  // #endregion 5. Semester
 
-  // #region Jahr 3 - Semester 6 (30 ECTS)
+  // #region 6. Semester (30 ECTS)
   {
     jahr: 3,
     semester: 6,
@@ -184,5 +184,5 @@ window.StudiengangModules = [
     kp: 6,
     kategorie: "professional",
   },
-  // #endregion Jahr 3 - Semester 6
+  // #endregion 6. Semester
 ];

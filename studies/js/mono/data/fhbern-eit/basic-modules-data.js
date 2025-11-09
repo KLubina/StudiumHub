@@ -2,6 +2,7 @@
 /* Alle Moduldaten für den BFH Elektrotechnik und Informationstechnologie Studiengang */
 
 window.StudiengangModules = [
+  // #region 1. Semester
   // === 1. SEMESTER ===
 
   // Mathematik und Grundlagen
@@ -73,6 +74,9 @@ window.StudiengangModules = [
     kategorie: "Sprachen und Soft Skills",
   },
 
+  // #endregion 1. Semester
+
+  // #region 2. Semester
   // === 2. SEMESTER ===
 
   // Mathematik und Grundlagen
@@ -144,6 +148,9 @@ window.StudiengangModules = [
     kategorie: "Sprachen und Soft Skills",
   },
 
+  // #endregion 2. Semester
+
+  // #region 3. Semester
   // === 3. SEMESTER ===
 
   // Mathematik und Signalverarbeitung
@@ -215,6 +222,9 @@ window.StudiengangModules = [
     kategorie: "Sprachen und Soft Skills",
   },
 
+  // #endregion 3. Semester
+
+  // #region 4. Semester
   // === 4. SEMESTER ===
 
   // Mathematik und Statistik
@@ -279,6 +289,9 @@ window.StudiengangModules = [
     kategorie: "Sprachen und Soft Skills",
   },
 
+  // #endregion 4. Semester
+
+  // #region 5. Semester (Wahlbereich)
   // === 5. SEMESTER (Wahlbereich) ===
 
   // Feste Module
@@ -330,6 +343,9 @@ window.StudiengangModules = [
     isPlaceholder: true,
   },
 
+  // #endregion 5. Semester (Wahlbereich)
+
+  // #region 6. Semester (Wahlbereich)
   // === 6. SEMESTER (Wahlbereich) ===
 
   // Abschlussarbeit
@@ -366,4 +382,5 @@ window.StudiengangModules = [
     kategorie: "Fachliche Wahlmodule",
     isPlaceholder: true,
   },
+  // #endregion 6. Semester (Wahlbereich)
 ];

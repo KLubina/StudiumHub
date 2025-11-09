@@ -2,7 +2,7 @@
 /* Alle Moduldaten für den Computational and Data Science Studiengang */
 
 window.StudiengangModules = [
-  // 1. Semester
+  // #region 1. Semester
   {
     jahr: 1,
     semester: 1,
@@ -46,7 +46,9 @@ window.StudiengangModules = [
     kategorie: "grundlagen",
   },
 
-  // 2. Semester
+  // #endregion 1. Semester
+
+  // #region 2. Semester
   {
     jahr: 1,
     semester: 2,
@@ -83,7 +85,9 @@ window.StudiengangModules = [
     kategorie: "grundlagen",
   },
 
-  // 3. Semester
+  // #endregion 2. Semester
+
+  // #region 3. Semester
   {
     jahr: 2,
     semester: 3,
@@ -127,7 +131,9 @@ window.StudiengangModules = [
     kategorie: "grundlagen",
   },
 
-  // 4. Semester
+  // #endregion 3. Semester
+
+  // #region 4. Semester
   {
     jahr: 2,
     semester: 4,
@@ -171,7 +177,9 @@ window.StudiengangModules = [
     kategorie: "grundlagen",
   },
 
-  // 5. Semester
+  // #endregion 4. Semester
+
+  // #region 5. Semester
   {
     jahr: 3,
     semester: 5,
@@ -208,7 +216,9 @@ window.StudiengangModules = [
     kategorie: "grundlagen",
   },
 
-  // 6. Semester
+  // #endregion 5. Semester
+
+  // #region 6. Semester
   {
     jahr: 3,
     semester: 6,
@@ -239,7 +249,9 @@ window.StudiengangModules = [
     kategorie: "labor",
   },
 
-  // 7. Semester
+  // #endregion 6. Semester
+
+  // #region 7. Semester
   { jahr: 4, semester: 7, name: "Big Data", kp: 8, kategorie: "schwerpunkte" },
   {
     jahr: 4,
@@ -251,7 +263,9 @@ window.StudiengangModules = [
   { jahr: 4, semester: 7, name: "Fachpraktikum", kp: 6, kategorie: "labor" },
   { jahr: 4, semester: 7, name: "Wahlmodul", kp: 4, kategorie: "wahlmodul" },
 
-  // 8. Semester
+  // #endregion 7. Semester
+
+  // #region 8. Semester
   {
     jahr: 4,
     semester: 8,
@@ -273,4 +287,5 @@ window.StudiengangModules = [
     kp: 14,
     kategorie: "projektarbeit",
   },
+  // #endregion 8. Semester
 ];

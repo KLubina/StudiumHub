@@ -2,7 +2,7 @@
 /* Alle Moduldaten für den Raumbezogene Ingenieurwissenschaften Studiengang - exakt nach PDF */
 
 window.StudiengangModules = [
-  // 1. Semester
+  // #region 1. Semester
   { jahr: 1, semester: 1, name: "Analysis I", kp: 7, kategorie: "grundlagen" },
   {
     jahr: 1,
@@ -40,7 +40,9 @@ window.StudiengangModules = [
     kategorie: "obligatorisch",
   },
 
-  // 2. Semester
+  // #endregion 1. Semester
+
+  // #region 2. Semester
   { jahr: 1, semester: 2, name: "Analysis II", kp: 7, kategorie: "grundlagen" },
   { jahr: 1, semester: 2, name: "Physik I", kp: 4, kategorie: "grundlagen" },
   {
@@ -73,7 +75,9 @@ window.StudiengangModules = [
   },
   { jahr: 1, semester: 2, name: "Recht", kp: 2, kategorie: "obligatorisch" },
 
-  // 3. Semester
+  // #endregion 2. Semester
+
+  // #region 3. Semester
   { jahr: 2, semester: 3, name: "Physik II", kp: 4, kategorie: "grundlagen" },
   {
     jahr: 2,
@@ -113,7 +117,9 @@ window.StudiengangModules = [
   { jahr: 2, semester: 3, name: "Ökonomie", kp: 3, kategorie: "obligatorisch" },
   { jahr: 2, semester: 3, name: "Projekt", kp: 4, kategorie: "selbstaendig" },
 
-  // 4. Semester
+  // #endregion 3. Semester
+
+  // #region 4. Semester
   {
     jahr: 2,
     semester: 4,
@@ -137,7 +143,9 @@ window.StudiengangModules = [
   },
   { jahr: 2, semester: 4, name: "Wahlmodule", kp: 18, kategorie: "wahlmodule" },
 
-  // 5. Semester
+  // #endregion 4. Semester
+
+  // #region 5. Semester
   { jahr: 3, semester: 5, name: "Wahlmodule", kp: 15, kategorie: "wahlmodule" },
   {
     jahr: 3,
@@ -147,7 +155,9 @@ window.StudiengangModules = [
     kategorie: "freie-wahl",
   },
 
-  // 6. Semester
+  // #endregion 5. Semester
+
+  // #region 6. Semester
   {
     jahr: 3,
     semester: 6,
@@ -163,4 +173,5 @@ window.StudiengangModules = [
     kp: 8,
     kategorie: "freie-wahl",
   },
+  // #endregion 6. Semester
 ];

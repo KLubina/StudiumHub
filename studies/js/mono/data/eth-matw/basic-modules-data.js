@@ -2,7 +2,7 @@
 /* Alle Moduldaten für den Materialwissenschaften Studiengang ETH Zürich */
 
 window.StudiengangModules = [
-  // 1. Jahr, 1. Semester
+  // #region 1. Semester
   {
     jahr: 1,
     semester: 1,
@@ -53,7 +53,9 @@ window.StudiengangModules = [
     kategorie: "Obligatorische Praktikum",
   },
 
-  // 1. Jahr, 2. Semester
+  // #endregion 1. Semester
+
+  // #region 2. Semester
   {
     jahr: 1,
     semester: 2,
@@ -104,7 +106,9 @@ window.StudiengangModules = [
     kategorie: "Obligatorische Praktikum",
   },
 
-  // 2. Jahr, 1. Semester (3. Semester)
+  // #endregion 2. Semester
+
+  // #region 3. Semester
   {
     jahr: 2,
     semester: 1,
@@ -162,7 +166,9 @@ window.StudiengangModules = [
     kategorie: "Obligatorische Praktikum",
   },
 
-  // 2. Jahr, 2. Semester (4. Semester)
+  // #endregion 3. Semester
+
+  // #region 4. Semester
   {
     jahr: 2,
     semester: 2,
@@ -213,7 +219,9 @@ window.StudiengangModules = [
     kategorie: "Obligatorische Praktikum",
   },
 
-  // 3. Jahr, 1. Semester (5. Semester)
+  // #endregion 4. Semester
+
+  // #region 5. Semester
   {
     jahr: 3,
     semester: 1,
@@ -250,7 +258,9 @@ window.StudiengangModules = [
     kategorie: "Wissenschaftliche Arbeit",
   },
 
-  // 3. Jahr, 2. Semester (6. Semester)
+  // #endregion 5. Semester
+
+  // #region 6. Semester
   {
     jahr: 3,
     semester: 2,
@@ -286,4 +296,5 @@ window.StudiengangModules = [
     kp: 12,
     kategorie: "Wissenschaftliche Arbeit",
   },
+  // #endregion 6. Semester
 ];

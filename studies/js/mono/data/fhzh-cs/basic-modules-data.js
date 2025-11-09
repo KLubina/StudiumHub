@@ -2,7 +2,7 @@
 /* Alle Moduldaten für den Computer Science B.Sc. Studiengang an der ZHAW */
 
 window.StudiengangModules = [
-  // 1. Semester (30 ECTS, 30 Wochenlektionen)
+  // #region 1. Semester (30 ECTS, 30 Wochenlektionen)
   {
     jahr: 1,
     semester: 1,
@@ -42,7 +42,9 @@ window.StudiengangModules = [
     kategorie: "mathe-nawi",
   },
 
-  // 2. Semester (30 ECTS, 30 Wochenlektionen)
+  // #endregion 1. Semester (30 ECTS, 30 Wochenlektionen)
+
+  // #region 2. Semester (30 ECTS, 30 Wochenlektionen)
   {
     jahr: 1,
     semester: 2,
@@ -88,7 +90,9 @@ window.StudiengangModules = [
     kategorie: "mathe-nawi",
   },
 
-  // 3. Semester (30 ECTS, 30 Wochenlektionen)
+  // #endregion 2. Semester (30 ECTS, 30 Wochenlektionen)
+
+  // #region 3. Semester (30 ECTS, 30 Wochenlektionen)
   {
     jahr: 2,
     semester: 3,
@@ -134,7 +138,9 @@ window.StudiengangModules = [
     kategorie: "mathe-nawi",
   },
 
-  // 4. Semester (30 ECTS, 30 Wochenlektionen)
+  // #endregion 3. Semester (30 ECTS, 30 Wochenlektionen)
+
+  // #region 4. Semester (30 ECTS, 30 Wochenlektionen)
   {
     jahr: 2,
     semester: 4,
@@ -181,7 +187,9 @@ window.StudiengangModules = [
     kategorie: "mathe-nawi",
   },
 
-  // 5. Semester (30 ECTS, 24 Wochenlektionen)
+  // #endregion 4. Semester (30 ECTS, 30 Wochenlektionen)
+
+  // #region 5. Semester (30 ECTS, 24 Wochenlektionen)
   {
     jahr: 3,
     semester: 5,
@@ -212,7 +220,9 @@ window.StudiengangModules = [
     kategorie: "fach",
   },
 
-  // 6. Semester (30 ECTS, 18 Wochenlektionen)
+  // #endregion 5. Semester (30 ECTS, 24 Wochenlektionen)
+
+  // #region 6. Semester (30 ECTS, 18 Wochenlektionen)
   {
     jahr: 3,
     semester: 6,
@@ -230,4 +240,5 @@ window.StudiengangModules = [
   { jahr: 3, semester: 6, name: "Wahlpflichtmodul", kp: 6, kategorie: "fach" },
   { jahr: 3, semester: 6, name: "Wahlpflichtmodul", kp: 4, kategorie: "fach" },
   { jahr: 3, semester: 6, name: "Wahlpflichtmodul", kp: 4, kategorie: "fach" },
+  // #endregion 6. Semester (30 ECTS, 18 Wochenlektionen)
 ];

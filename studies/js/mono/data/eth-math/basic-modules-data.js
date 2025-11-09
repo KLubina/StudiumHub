@@ -2,6 +2,7 @@
 /* Alle Moduldaten für den Mathematik Studiengang */
 
 window.StudiengangModules = [
+  // #region 1. Semester
   {
     jahr: 1,
     semester: 1,
@@ -31,6 +32,9 @@ window.StudiengangModules = [
     kategorie: "Obligatorische Fächer",
   },
 
+  // #endregion 1. Semester
+
+  // #region 2. Semester
   {
     jahr: 1,
     semester: 2,
@@ -67,6 +71,9 @@ window.StudiengangModules = [
     kategorie: "Ergänzungsfächer",
   },
 
+  // #endregion 2. Semester
+
+  // #region 3. Semester
   {
     jahr: 2,
     semester: 1,
@@ -103,6 +110,9 @@ window.StudiengangModules = [
     kategorie: "Wahlpflichtfächer",
   },
 
+  // #endregion 3. Semester
+
+  // #region 4. Semester
   {
     jahr: 2,
     semester: 2,
@@ -132,6 +142,9 @@ window.StudiengangModules = [
     kategorie: "Wissenschaftliche Arbeit",
   },
 
+  // #endregion 4. Semester
+
+  // #region 5. Semester
   {
     jahr: 3,
     semester: 1,
@@ -199,6 +212,9 @@ window.StudiengangModules = [
     fachgebiet: "",
   },
 
+  // #endregion 5. Semester
+
+  // #region 6. Semester
   {
     jahr: 3,
     semester: 2,
@@ -220,4 +236,5 @@ window.StudiengangModules = [
     kp: 16,
     kategorie: "Wissenschaftliche Arbeit",
   },
+  // #endregion 6. Semester
 ];
