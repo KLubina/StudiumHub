@@ -104,47 +104,12 @@
             console.log(`No layout.css found for ${studiengang}`);
         };
 
-        // Extension-Module laden (wie vorher)
-        async function loadExtensionModules(studiengang) {
-            const extensionModules = [
-                'extensions-data',
-                'extensions-kp-counter',
-                'extensions-tooltips',
-                'extensions-utils'
-            ];
-
-            const hasExtensions = ['eth-itet', 'eth-cse', 'eth-rig'].includes(studiengang);
-
-            if (hasExtensions) {
-                // Bestimme ob major-minor oder mono Modell
-                const majorMinorPrograms = ['sozwi'];
-                const studyModel = majorMinorPrograms.includes(studiengang) ? 'major-minor' : 'mono';
-
-                for (const module of extensionModules) {
-                    const script = document.createElement('script');
-                    script.src = `js/${studyModel}/configs/${studiengang}/${module}.js`;
-
-                    await new Promise((resolve) => {
-                        script.onload = () => {
-                            resolve();
-                        };
-                        script.onerror = () => {
-                            resolve();
-                        };
-                        document.head.appendChild(script);
-                        setTimeout(resolve, 100);
-                    });
-                }
-            }
-        }
-
         // DOM Ready
         document.addEventListener('DOMContentLoaded', async function () {
             // Wait for all base modules to load first
             await window.baseModulesReady;
 
-            await loadExtensionModules(studiengang);
-
+            // ConfigLoader now handles all config and extension loading
             window.loadStudiengangConfig(studiengang);
         });
     </script>

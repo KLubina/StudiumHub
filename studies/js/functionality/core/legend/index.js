@@ -1,15 +1,15 @@
-/* Utils - Main Entry Point */
+/* Legend - Main Entry Point */
 
-const utilsModules = [
-    'TextFitting.js',
-    'Polyfills.js'
+const legendModules = [
+    'LegendCreator.js',
+    'LegendItem.js'
 ];
 
-window.subModulesReady.utils = Promise.all(
-    utilsModules.map(module => {
+window.subModulesReady.legend = Promise.all(
+    legendModules.map(module => {
         return new Promise((resolve) => {
             const script = document.createElement('script');
-            script.src = `js/functionality/utils/${module}`;
+            script.src = `js/functionality/core/legend/${module}`;
             script.onload = () => resolve();
             script.onerror = () => resolve();
             document.head.appendChild(script);

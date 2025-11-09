@@ -1,16 +1,15 @@
-/* Module - Main Entry Point */
+/* Utils - Main Entry Point */
 
-const moduleModules = [
-    'ModuleCreator.js',
-    'ModuleSizing.js',
-    'ModuleContent.js'
+const utilsModules = [
+    'TextFitting.js',
+    'Polyfills.js'
 ];
 
-window.subModulesReady.module = Promise.all(
-    moduleModules.map(module => {
+window.subModulesReady.utils = Promise.all(
+    utilsModules.map(module => {
         return new Promise((resolve) => {
             const script = document.createElement('script');
-            script.src = `js/functionality/module/${module}`;
+            script.src = `js/functionality/core/utils/${module}`;
             script.onload = () => resolve();
             script.onerror = () => resolve();
             document.head.appendChild(script);

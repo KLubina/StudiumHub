@@ -14,7 +14,7 @@ window.subModulesReady.configLoader = Promise.all(
     configLoaderModules.map(module => {
         return new Promise((resolve) => {
             const script = document.createElement('script');
-            script.src = `js/functionality/config-loader/${module}`;
+            script.src = `js/functionality/core/config-loader/${module}`;
             script.onload = () => resolve();
             script.onerror = () => resolve(); // Continue even if one fails
             document.head.appendChild(script);
