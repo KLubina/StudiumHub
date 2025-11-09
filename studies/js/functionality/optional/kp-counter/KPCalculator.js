@@ -14,6 +14,8 @@ StudienplanKPCounter.prototype.updateKPDisplay = function(config) {
     const totalEl = document.getElementById("kp-total");
     if (totalEl) totalEl.textContent = breakdown.total;
 
+    // Progress handling removed (simplified counter)
+
     return breakdown;
 };
 
