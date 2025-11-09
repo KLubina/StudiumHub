@@ -1,27 +1,32 @@
 /* ==== UNISG-BWL - CSS CLASSES ==== */
 /* Program-specific CSS classes */
 
-[data-studiengang="unisg-bwl"] .modul.kernfach {
+[data-studiengang="unisg-bwl"] .modul.kernfach,
+[data-studiengang="unisg-bwl"] .legende-item.kernfach {
     background-color: var(--color-kernfach);
-    color: white;
+    color: var(--color-kernfach-text, white);
 }
 
-[data-studiengang="unisg-bwl"] .modul.methoden {
+[data-studiengang="unisg-bwl"] .modul.methoden,
+[data-studiengang="unisg-bwl"] .legende-item.methoden {
     background-color: var(--color-methoden);
-    color: white;
+    color: var(--color-methoden-text, white);
 }
 
-[data-studiengang="unisg-bwl"] .modul.grundlagen {
+[data-studiengang="unisg-bwl"] .modul.grundlagen,
+[data-studiengang="unisg-bwl"] .legende-item.grundlagen {
     background-color: var(--color-grundlagen);
-    color: white;
+    color: var(--color-grundlagen-text, white);
 }
 
-[data-studiengang="unisg-bwl"] .modul.kontext {
+[data-studiengang="unisg-bwl"] .modul.kontext,
+[data-studiengang="unisg-bwl"] .legende-item.kontext {
     background-color: var(--color-kontext);
-    color: white;
+    color: var(--color-kontext-text, white);
 }
 
-[data-studiengang="unisg-bwl"] .modul.bachelor {
+[data-studiengang="unisg-bwl"] .modul.bachelor,
+[data-studiengang="unisg-bwl"] .legende-item.bachelor {
     background-color: var(--color-bachelor);
-    color: white;
+    color: var(--color-bachelor-text, white);
 }
