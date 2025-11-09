@@ -1,0 +1,10 @@
+/* ==== ETH MSC-ITET - COLOR VARIABLES ==== */
+/* Master of Science in Elektrotechnik und Informationstechnologie */
+
+[data-studiengang="eth-msc-itet"] {
+    --color-obligatorisch: #0D5B8C;
+    --color-kern: #DD98DD;
+    --color-wahl: #F2B48F;
+    --color-vertiefung: #4CA64C;
+    --color-wissenschaft: #888888;
+}

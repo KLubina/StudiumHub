@@ -1,0 +1,10 @@
+/* ==== ETH MTEC - COLOR VARIABLES ==== */
+/* Management, Technology, Economics */
+
+[data-studiengang="eth-mtec"] {
+    --color-core: #0D5B8C;
+    --color-elective: #00A0E3;
+    --color-supplementary: #F2B48F;
+    --color-thesis: #4CA64C;
+    --color-internship: #DD98DD;
+}

@@ -1,8 +1,8 @@
-/* ==== ETH CSE PROGRAM-SPECIFIC CSS ==== */
-/* Only CSE-specific overrides and unique features */
+/* ==== ETH CSE - LAYOUT OVERRIDES ==== */
+/* Program-specific layout customizations */
 
 /* Grade Calculator Modal (CSE-specific feature) */
-#grade-calculator-modal {
+[data-studiengang="eth-cse"] #grade-calculator-modal {
     position: fixed;
     top: 0;
     left: 0;
@@ -15,7 +15,7 @@
     align-items: center;
 }
 
-.grade-calculator-content {
+[data-studiengang="eth-cse"] .grade-calculator-content {
     background: white;
     padding: var(--spacing-xl);
     border-radius: 10px;
@@ -25,7 +25,7 @@
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
-.block-section {
+[data-studiengang="eth-cse"] .block-section {
     margin-bottom: var(--spacing-lg);
     padding: var(--spacing-md);
     background: #f8f9fa;
@@ -38,44 +38,44 @@
 }
 
 /* Vertiefungsgebiete & Wahlfächer Listen (extended heights) */
-.vertiefungsgebiete-liste,
-.wahlfaecher-liste {
+[data-studiengang="eth-cse"] .vertiefungsgebiete-liste,
+[data-studiengang="eth-cse"] .wahlfaecher-liste {
     max-height: 600px;
     overflow-y: auto;
     padding-right: var(--spacing-sm);
 }
 
-.vertiefungsgebiete-liste h4,
-.wahlfaecher-liste h4 {
+[data-studiengang="eth-cse"] .vertiefungsgebiete-liste h4,
+[data-studiengang="eth-cse"] .wahlfaecher-liste h4 {
     margin: var(--spacing-md) 0 8px 0;
     padding: 3px 8px;
     border-radius: 4px;
 }
 
-.vertiefungsgebiete-liste h4 {
+[data-studiengang="eth-cse"] .vertiefungsgebiete-liste h4 {
     background-color: var(--color-vertiefung);
     color: black;
 }
 
-.wahlfaecher-liste h4 {
+[data-studiengang="eth-cse"] .wahlfaecher-liste h4 {
     background-color: var(--color-wahl);
     color: black;
 }
 
 /* Custom Scrollbar for CSE lists */
-.vertiefungsgebiete-liste::-webkit-scrollbar,
-.wahlfaecher-liste::-webkit-scrollbar {
+[data-studiengang="eth-cse"] .vertiefungsgebiete-liste::-webkit-scrollbar,
+[data-studiengang="eth-cse"] .wahlfaecher-liste::-webkit-scrollbar {
     width: 6px;
 }
 
-.vertiefungsgebiete-liste::-webkit-scrollbar-thumb,
-.wahlfaecher-liste::-webkit-scrollbar-thumb {
+[data-studiengang="eth-cse"] .vertiefungsgebiete-liste::-webkit-scrollbar-thumb,
+[data-studiengang="eth-cse"] .wahlfaecher-liste::-webkit-scrollbar-thumb {
     background: rgba(255, 255, 255, 0.3);
     border-radius: 3px;
 }
 
 /* CSE Messages */
-.cse-message {
+[data-studiengang="eth-cse"] .cse-message {
     position: fixed;
     top: var(--spacing-lg);
     right: var(--spacing-lg);

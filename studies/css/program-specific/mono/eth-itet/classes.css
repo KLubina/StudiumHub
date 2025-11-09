@@ -1,0 +1,25 @@
+/* ==== ETH ITET - CSS CLASSES ==== */
+/* Program-specific CSS classes for ITET */
+
+/* ITET-specific classes (generic classes are in shared/common-classes.css) */
+.obligatorisch-praktikum {
+    background-color: var(--color-obligatorisch-praktikum);
+    color: white;
+}
+
+.wahl-praktika-projekte {
+    background-color: var(--color-wahl-praktika-projekte);
+    color: white;
+}
+
+.weitere-wahl-grundlagen {
+    background-color: var(--color-weitere-wahl-grundlagen);
+    color: black;
+}
+
+/* Dynamic Prüfungsblock classes (overridden by JavaScript) */
+.block-bpa { background-color: #FF6B6B; color: white; }
+.block-bpb { background-color: #4ECDC4; color: white; }
+.block-pb1 { background-color: #45B7D1; color: white; }
+.block-pb2 { background-color: #96CEB4; color: white; }
+.block-pb3 { background-color: #FFEAA7; color: black; }

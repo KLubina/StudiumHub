@@ -1,4 +1,4 @@
-/* ==== UZH SHARED CSS ==== */
+/* ==== UZH COMMON STYLES ==== */
 /* Shared styles for all UZH major-minor programs */
 
 /* KP-Counter with UZH colors */
@@ -35,6 +35,17 @@
     transform: scale(1.02);
     box-shadow: 0 4px 12px rgba(108, 99, 255, 0.3);
     transition: all var(--transition-normal);
+}
+
+/* Year Layout for UZH */
+[data-studiengang^="uzh-"] .jahr {
+    margin-bottom: var(--spacing-xl);
+}
+
+[data-studiengang^="uzh-"] .jahr-titel {
+    color: var(--color-major);
+    border-bottom: 2px solid var(--color-major);
+    padding-bottom: var(--spacing-xs);
 }
 
 /* UZH Messages */

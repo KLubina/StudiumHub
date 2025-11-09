@@ -1,25 +1,25 @@
-/* ==== ETH ITET PROGRAM-SPECIFIC CSS ==== */
-/* Only ITET-specific overrides and unique features */
+/* ==== ETH HST - LAYOUT OVERRIDES ==== */
+/* Program-specific layout customizations */
 
-/* KP-Counter with ITET colors */
-#kp-counter {
-    border-color: var(--color-obligatorisch);
+/* KP-Counter with HST colors */
+[data-studiengang="eth-hst"] #kp-counter {
+    border-color: var(--color-basispruefung);
 }
 
-#kp-total {
-    background: linear-gradient(135deg, var(--color-obligatorisch), var(--color-obligatorisch-praktikum));
+[data-studiengang="eth-hst"] #kp-total {
+    background: linear-gradient(135deg, #4ECDC4, #45B7D1);
 }
 
 /* 3rd Year Horizontal Layout */
-[data-studiengang="eth-itet"] .jahr:last-child .module-container {
+[data-studiengang="eth-hst"] .jahr:last-child .module-container {
     display: flex !important;
     flex-direction: row !important;
     flex-wrap: wrap !important;
     gap: 8px !important;
 }
 
-/* Bereich Titel with ITET branding */
-[data-studiengang="eth-itet"] .bereich-titel {
+/* Bereich Titel with HST branding */
+[data-studiengang="eth-hst"] .bereich-titel {
     font-size: var(--font-size-small);
     font-weight: bold;
     color: var(--color-text);
@@ -29,17 +29,17 @@
     border-radius: 5px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    border-left: 3px solid var(--color-obligatorisch);
+    border-left: 3px solid #4ECDC4;
 }
 
 /* Compact Module Sizing */
-[data-studiengang="eth-itet"] .modul {
+[data-studiengang="eth-hst"] .modul {
     max-width: 180px;
     min-width: 140px;
 }
 
-/* ITET Messages */
-.itet-message {
+/* HST Messages */
+[data-studiengang="eth-hst"] .hst-message {
     position: fixed;
     top: var(--spacing-lg);
     right: var(--spacing-lg);

@@ -1,0 +1,28 @@
+/* ==== ETH MTEC - CSS CLASSES ==== */
+/* Program-specific CSS classes for MTEC */
+
+/* MTEC-specific category classes */
+.core {
+    background-color: var(--color-core);
+    color: white;
+}
+
+.elective {
+    background-color: var(--color-elective);
+    color: white;
+}
+
+.supplementary {
+    background-color: var(--color-supplementary);
+    color: black;
+}
+
+.thesis {
+    background-color: var(--color-thesis);
+    color: white;
+}
+
+.internship {
+    background-color: var(--color-internship);
+    color: black;
+}

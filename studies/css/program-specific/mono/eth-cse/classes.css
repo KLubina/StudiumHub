@@ -1,0 +1,61 @@
+/* ==== ETH CSE - CSS CLASSES ==== */
+/* Program-specific CSS classes for CSE */
+
+/* CSE-specific classes */
+.basis1 {
+    background-color: var(--color-basis1);
+    color: white;
+}
+
+.basis2 {
+    background-color: var(--color-basis2);
+    color: white;
+}
+
+.block-g1 {
+    background-color: var(--color-block-g1);
+    color: black;
+}
+
+.block-g2 {
+    background-color: var(--color-block-g2);
+    color: white;
+}
+
+.block-g3 {
+    background-color: var(--color-block-g3);
+    color: white;
+}
+
+.block-g4 {
+    background-color: var(--color-block-g4);
+    color: white;
+}
+
+.physik {
+    background-color: var(--color-physik);
+    color: white;
+}
+
+.informatik {
+    background-color: var(--color-informatik);
+    color: white;
+}
+
+.mathematik {
+    background-color: var(--color-mathematik);
+    color: white;
+}
+
+.chemie {
+    background-color: var(--color-chemie);
+    color: white;
+}
+
+/* Dynamic Prüfungsblock classes (overridden by JavaScript) */
+.block-basis1 { background-color: #8064A2; color: white; }
+.block-basis2 { background-color: #1F77B4; color: white; }
+.block-g1 { background-color: #8DC63F; color: black; }
+.block-g2 { background-color: #E671B8; color: white; }
+.block-g3 { background-color: #4CAF50; color: white; }
+.block-g4 { background-color: #D32F2F; color: white; }

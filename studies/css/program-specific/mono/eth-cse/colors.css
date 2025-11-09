@@ -1,0 +1,18 @@
+/* ==== ETH CSE - COLOR VARIABLES ==== */
+/* Computational Science and Engineering */
+
+[data-studiengang="eth-cse"] {
+    --color-basis1: #8064A2;
+    --color-basis2: #1F77B4;
+    --color-block-g1: #8DC63F;
+    --color-block-g2: #E671B8;
+    --color-block-g3: #4CAF50;
+    --color-block-g4: #D32F2F;
+    --color-physik: #2196F3;
+    --color-informatik: #2600ff;
+    --color-mathematik: #00a99d;
+    --color-chemie: #9C27B0;
+    --color-kern: #9BBB59;
+    --color-wahl: #F2B48F;
+    --color-vertiefung: #DD98DD;
+}

@@ -22,13 +22,14 @@
     <link rel="stylesheet" href="css/components/indicators.css">
     <link rel="stylesheet" href="css/components/major-minor-selector.css">
 
-    <!-- ==== THEMES CSS (loaded dynamically) ==== -->
-    <link rel="stylesheet" href="css/themes/color-variables.css">
-    <link rel="stylesheet" id="theme-css" href="">
+    <!-- ==== SHARED CSS ==== -->
+    <link rel="stylesheet" href="css/program-specific/shared/common-classes.css">
+    <link rel="stylesheet" id="uzh-common-css" href="">
 
     <!-- ==== PROGRAM-SPECIFIC CSS (loaded dynamically) ==== -->
-    <link rel="stylesheet" id="uzh-shared-css" href="">
-    <link rel="stylesheet" id="program-css" href="">
+    <link rel="stylesheet" id="program-colors-css" href="">
+    <link rel="stylesheet" id="program-classes-css" href="">
+    <link rel="stylesheet" id="program-layout-css" href="">
 </head>
 
 <body data-studiengang="">
@@ -79,23 +80,30 @@
                                     'uzh-kommunikation', 'uzh-pop-kultur', 'uzh-soziologie'];
         const studyModel = majorMinorPrograms.includes(studiengang) ? 'major-minor' : 'mono';
 
-        // Theme CSS laden (mono oder major-minor)
-        const themeCSS = document.getElementById('theme-css');
-        themeCSS.href = `css/themes/${studyModel}-theme.css`;
-
-        // UZH Shared CSS laden (nur für UZH Programme)
-        const uzhSharedCSS = document.getElementById('uzh-shared-css');
+        // UZH Common CSS laden (nur für UZH Programme)
+        const uzhCommonCSS = document.getElementById('uzh-common-css');
         if (studiengang.startsWith('uzh-')) {
-            uzhSharedCSS.href = `css/programs/major-minor/uzh-shared.css`;
+            uzhCommonCSS.href = `css/program-specific/shared/uzh-common.css`;
         }
 
-        // Program-specific CSS laden
-        const programCSS = document.getElementById('program-css');
-        programCSS.href = `css/programs/${studyModel}/${studiengang}.css`;
+        // Program-specific CSS laden (colors, classes, layout)
+        const programColorsCSS = document.getElementById('program-colors-css');
+        const programClassesCSS = document.getElementById('program-classes-css');
+        const programLayoutCSS = document.getElementById('program-layout-css');
 
-        // Error handling falls Datei nicht existiert
-        programCSS.onerror = () => {
-            console.log(`No program-specific CSS found for ${studiengang}`);
+        programColorsCSS.href = `css/program-specific/${studyModel}/${studiengang}/colors.css`;
+        programClassesCSS.href = `css/program-specific/${studyModel}/${studiengang}/classes.css`;
+        programLayoutCSS.href = `css/program-specific/${studyModel}/${studiengang}/layout.css`;
+
+        // Error handling falls Dateien nicht existieren
+        programColorsCSS.onerror = () => {
+            console.log(`No colors.css found for ${studiengang}`);
+        };
+        programClassesCSS.onerror = () => {
+            console.log(`No classes.css found for ${studiengang}`);
+        };
+        programLayoutCSS.onerror = () => {
+            console.log(`No layout.css found for ${studiengang}`);
         };
 
         // Extension-Module laden (wie vorher)

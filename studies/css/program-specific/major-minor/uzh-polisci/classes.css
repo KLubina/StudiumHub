@@ -1,0 +1,8 @@
+/* ==== UZH POLISCI - CSS CLASSES ==== */
+/* Program-specific CSS classes for Politikwissenschaft */
+
+/* Subject-specific class */
+.politikwissenschaft {
+    background-color: var(--color-politikwissenschaft);
+    color: white;
+}

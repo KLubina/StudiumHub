@@ -1,0 +1,65 @@
+/* ==== ETH HST - CSS CLASSES ==== */
+/* Program-specific CSS classes for HST */
+
+/* HST-specific category classes */
+.basispruefung {
+    background-color: var(--color-basispruefung);
+    color: white;
+}
+
+.kernfach {
+    background-color: var(--color-kernfach);
+    color: white;
+}
+
+.schwerpunkt {
+    background-color: var(--color-schwerpunkt);
+    color: white;
+}
+
+/* HST Prüfungsblock classes */
+.block-bp1 {
+    background-color: #FF6B6B;
+    color: white;
+}
+
+.block-bp2 {
+    background-color: #4ECDC4;
+    color: white;
+}
+
+.block-ka {
+    background-color: #45B7D1;
+    color: white;
+}
+
+.block-kb {
+    background-color: #96CEB4;
+    color: white;
+}
+
+.block-kc {
+    background-color: #FFEAA7;
+    color: #333;
+}
+
+/* HST Category-specific classes */
+.basispruefung-bp1 {
+    background-color: #FF6B6B;
+    color: white;
+}
+
+.basispruefung-bp2 {
+    background-color: #4ECDC4;
+    color: white;
+}
+
+.praktikum-basisjahr {
+    background-color: #45B7D1;
+    color: white;
+}
+
+.einzelfaecher-praktika {
+    background-color: #F6C85F;
+    color: #222;
+}

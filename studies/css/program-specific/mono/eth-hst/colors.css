@@ -1,0 +1,16 @@
+/* ==== ETH HST - COLOR VARIABLES ==== */
+/* Gesundheitswissenschaften und Technologie */
+
+[data-studiengang="eth-hst"] {
+    --color-grundlagen: #27AE60;
+    --color-obligatorisch: #3498DB;
+    --color-wahl: #E67E22;
+    --color-vertiefung: #9B59B6;
+    --color-wissenschaft: #95A5A6;
+    --color-praktikum: #1ABC9C;
+
+    /* HST-specific categories */
+    --color-basispruefung: #FF6B6B;
+    --color-kernfach: #4ECDC4;
+    --color-schwerpunkt: #96CEB4;
+}

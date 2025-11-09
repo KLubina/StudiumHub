@@ -1,0 +1,14 @@
+/* ==== UZH POLISCI - COLOR VARIABLES ==== */
+/* Politikwissenschaft (Political Science) Major-Minor Program */
+
+[data-studiengang="uzh-polisci"] {
+    /* Generic Major-Minor colors */
+    --color-major: #6c63ff;
+    --color-minor: #48c9b0;
+    --color-pflicht: #e84393;
+    --color-wahlpflicht: #fd79a8;
+    --color-wahl: #fdcb6e;
+
+    /* Subject-specific color */
+    --color-politikwissenschaft: #a29bfe;
+}

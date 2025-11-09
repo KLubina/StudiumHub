@@ -1,0 +1,12 @@
+/* ==== ETH ITET - COLOR VARIABLES ==== */
+/* Elektrotechnik und Informationstechnologie */
+
+[data-studiengang="eth-itet"] {
+    --color-obligatorisch: #0D5B8C;
+    --color-obligatorisch-praktikum: #00A0E3;
+    --color-wahl-praktika-projekte: #4CA64C;
+    --color-kern: #DD98DD;
+    --color-wahl: #F2B48F;
+    --color-wissenschaft: #888888;
+    --color-weitere-wahl-grundlagen: #FFD700;
+}

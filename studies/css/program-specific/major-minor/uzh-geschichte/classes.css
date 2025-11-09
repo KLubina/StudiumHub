@@ -1,0 +1,14 @@
+/* ==== UZH GESCHICHTE - CSS CLASSES ==== */
+/* Program-specific CSS classes for Geschichte */
+
+/* Subject-specific class */
+.geschichte {
+    background-color: var(--color-geschichte);
+    color: white;
+}
+
+/* Geschichte-specific module styling if needed */
+[data-studiengang="uzh-geschichte"] .modul.geschichte-spezifisch {
+    background-color: var(--color-geschichte);
+    color: white;
+}

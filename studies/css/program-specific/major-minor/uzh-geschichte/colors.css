@@ -1,0 +1,14 @@
+/* ==== UZH GESCHICHTE - COLOR VARIABLES ==== */
+/* Geschichte (History) Major-Minor Program */
+
+[data-studiengang="uzh-geschichte"] {
+    /* Generic Major-Minor colors */
+    --color-major: #6c63ff;
+    --color-minor: #48c9b0;
+    --color-pflicht: #e84393;
+    --color-wahlpflicht: #fd79a8;
+    --color-wahl: #fdcb6e;
+
+    /* Subject-specific color */
+    --color-geschichte: #d63031;
+}
