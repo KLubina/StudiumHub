@@ -112,9 +112,13 @@ class StudiengangConfigLoader {
     }
 
     async loadStudiengangSpecifics(basePath) {
-        // Load studiengang-specific implementation/registration
-        // Preferred lightweight pattern: specific/register-class.js sets window.StudiengangCustomClass
-        // Backward compatible: also try specific/specific.js (legacy, may define class inline)
+        // Load studiengang-specific implementation/registration in correct order:
+        // 1. class-definition.js - defines the custom class (e.g., window.ITETStudienplan)
+        // 2. third-year-layout.js - extends the class with custom layout methods
+        // 3. register-class.js - registers the class as window.StudiengangCustomClass
+
+        await this.loader.loadOptionalModule(`${basePath}/specific/class-definition.js`);
+        await this.loader.loadOptionalModule(`${basePath}/specific/third-year-layout.js`);
         await this.loader.loadOptionalModule(`${basePath}/specific/register-class.js`);
     }
 

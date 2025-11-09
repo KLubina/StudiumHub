@@ -38,25 +38,35 @@ StudienplanWahlmoduleManager.prototype.showWahlmoduleTooltip = function(kategori
 
     this.studienplan.showCustomTooltip(content, event);
 
+    // Use event delegation instead of attaching handlers to each button
+    // This is more reliable and prevents duplicate handlers
     setTimeout(() => {
         try {
             const tooltipEl = this.studienplan.tooltipEl || document.getElementById('tooltip');
             if (!tooltipEl) return;
-            const buttons = tooltipEl.querySelectorAll('.wahlmodule-toggle');
-            buttons.forEach(btn => {
-                if (btn.__wahlAttached) return;
-                btn.__wahlAttached = true;
-                btn.addEventListener('click', (e) => {
-                    e.stopPropagation();
-                    const modulName = btn.getAttribute('data-modul-name');
-                    const catKey = btn.getAttribute('data-category') || categoryKey;
-                    this.toggleModulFromTooltip(modulName, catKey);
-                });
-            });
+
+            // Remove old handler if it exists to prevent duplicates
+            if (tooltipEl.__wahlmoduleClickHandler) {
+                tooltipEl.removeEventListener('click', tooltipEl.__wahlmoduleClickHandler);
+            }
+
+            // Add single delegated handler to tooltip container
+            tooltipEl.__wahlmoduleClickHandler = (e) => {
+                const btn = e.target.closest('.wahlmodule-toggle');
+                if (!btn) return;
+
+                e.stopPropagation();
+                e.preventDefault();
+                const modulName = btn.getAttribute('data-modul-name');
+                const catKey = btn.getAttribute('data-category') || categoryKey;
+                this.toggleModulFromTooltip(modulName, catKey);
+            };
+
+            tooltipEl.addEventListener('click', tooltipEl.__wahlmoduleClickHandler);
         } catch (e) {
             console.warn('Fehler beim Anhängen der Wahlmodule-Button-Handler', e);
         }
-    }, 20);
+    }, 50);
 
     if (!this._outsideClickHandler) {
         this._outsideClickHandler = (e) => {
