@@ -24,7 +24,7 @@ class StudienplanBaseColorManager {
 
     applyColors() {
         document.querySelectorAll(".modul").forEach(modulEl => {
-            const modulName = modulEl.querySelector('.modul-titel')?.textContent.trim();
+            const modulName = modulEl.dataset.originalName || modulEl.querySelector('.modul-titel')?.textContent.trim();
             if (!modulName) return;
             
             // Entferne ALLE möglichen Farb-Klassen
@@ -79,9 +79,11 @@ class StudienplanBaseColorManager {
         Object.values(this.colorConfig.pruefungsbloecke).forEach(block => {
             const div = document.createElement("div");
             div.className = "legende-item";
+            if (block.cssClass) {
+                div.classList.add(block.cssClass);
+            }
+            // Keine Inline-Farbe mehr – CSS Klasse + variables regeln Darstellung
             div.textContent = block.shortName || block.name;
-            div.style.backgroundColor = block.color;
-            div.style.color = this.isLightColor(block.color) ? 'black' : 'white';
             container.appendChild(div);
         });
     }
@@ -90,9 +92,10 @@ class StudienplanBaseColorManager {
         Object.values(this.colorConfig.colors.themenbereiche).forEach(theme => {
             const div = document.createElement("div");
             div.className = "legende-item";
+            // Verwende slug als Klasse, damit Variable greifen kann: erwartet --color-<slug>
+            const slug = theme.label.toLowerCase().replace(/\s+/g,'-');
+            div.classList.add(slug);
             div.textContent = `${theme.emoji} ${theme.label}`;
-            div.style.backgroundColor = theme.bg;
-            div.style.color = theme.text;
             container.appendChild(div);
         });
     }
@@ -154,23 +157,7 @@ class StudienplanBaseColorManager {
         const style = document.createElement('style');
         style.id = 'colormanager-styles';
         style.textContent = `
-            /* Prüfungsblöcke */
-            .modul.block-bpa, .modul.block-bpb, .modul.block-p1, 
-            .modul.block-p2, .modul.block-p3,
-            .modul.basis1, .modul.basis2, .modul.block-g1, 
-            .modul.block-g2, .modul.block-g3, .modul.block-g4 {
-                color: white !important;
-            }
-
-            /* Themenbereiche */
-            .modul.physik, .modul.informatik, .modul.informationstechnologie,
-            .modul.mathematik, .modul.elektrotechnik, .modul.chemie {
-                color: white !important;
-            }
-            
-            .modul.sonstiges { color: black !important; }
-            
-            /* Radio Buttons */
+            /* Radio Buttons UI */
             [data-color-controls] label:hover {
                 background: rgba(0,0,0,0.05);
                 border-radius: 3px;
@@ -181,7 +168,16 @@ class StudienplanBaseColorManager {
     }
 
     isLightColor(color) {
-        return ['#FFEAA7', '#E0E0E0', '#F2B48F', '#FFD700', '#90EE90'].includes(color);
+        // Deprecated: Textfarbe wird künftig durch --color-<slug>-text oder generische Berechnung geregelt
+        const hex = color?.replace('#','');
+        if (!hex || (hex.length !== 3 && hex.length !== 6)) return false;
+        const fullHex = hex.length === 3 ? hex.split('').map(c=>c+c).join('') : hex;
+        const r = parseInt(fullHex.substring(0,2),16);
+        const g = parseInt(fullHex.substring(2,4),16);
+        const b = parseInt(fullHex.substring(4,6),16);
+        // Relative luminance formula
+        const luminance = (0.2126*r + 0.7152*g + 0.0722*b) / 255;
+        return luminance > 0.7;
     }
 }
 

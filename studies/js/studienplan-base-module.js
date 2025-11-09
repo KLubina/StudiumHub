@@ -14,6 +14,12 @@ StudienplanBase.prototype.createModule = function (modul, container) {
   const div = document.createElement("div");
   div.classList.add("modul");
 
+  // Speichere den unveränderten Originalnamen für spätere Farbzuordnung (ColorManager)
+  // Falls der sichtbare Titel gekürzt oder angepasst wird, bleibt originalName unverändert.
+  if (modul.name) {
+    div.dataset.originalName = modul.name;
+  }
+
   const cssClass = this.getModuleCssClass(modul);
   if (cssClass) {
     div.classList.add(cssClass);

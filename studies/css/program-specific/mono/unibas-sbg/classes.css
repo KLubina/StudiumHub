@@ -1,22 +1,26 @@
 /* ==== UNIBAS-SBG - CSS CLASSES ==== */
 /* Program-specific CSS classes */
 
-[data-studiengang="unibas-sbg"] .modul.grundlagen {
+[data-studiengang="unibas-sbg"] .modul.grundlagen,
+[data-studiengang="unibas-sbg"] .legende-item.grundlagen {
     background-color: var(--color-grundlagen);
-    color: white;
+    color: var(--color-grundlagen-text, white);
 }
 
-[data-studiengang="unibas-sbg"] .modul.vertiefung {
+[data-studiengang="unibas-sbg"] .modul.vertiefung,
+[data-studiengang="unibas-sbg"] .legende-item.vertiefung {
     background-color: var(--color-vertiefung);
-    color: white;
+    color: var(--color-vertiefung-text, white);
 }
 
-[data-studiengang="unibas-sbg"] .modul.profil {
+[data-studiengang="unibas-sbg"] .modul.profil,
+[data-studiengang="unibas-sbg"] .legende-item.profil {
     background-color: var(--color-profil);
-    color: white;
+    color: var(--color-profil-text, white);
 }
 
-[data-studiengang="unibas-sbg"] .modul.wahl {
+[data-studiengang="unibas-sbg"] .modul.wahl,
+[data-studiengang="unibas-sbg"] .legende-item.wahl {
     background-color: var(--color-wahl);
-    color: white;
+    color: var(--color-wahl-text, white);
 }

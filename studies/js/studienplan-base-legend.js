@@ -35,17 +35,11 @@ StudienplanBase.prototype.createPruefungsbloeckeLegend = function(container) {
     this.config.pruefungsbloecke.forEach(block => {
         const div = document.createElement('div');
         div.classList.add('legende-item');
-        div.classList.add(block.cssClass || '');
-        
-        // KISS: Farbe direkt aus Config setzen
-        if (block.color) {
-            div.style.backgroundColor = block.color;
-            div.style.color = 'white';
+        if (block.cssClass) {
+            div.classList.add(block.cssClass);
         }
-        
-        // KISS: Nur Block-Namen anzeigen, keine undefined Module
+        // Keine Inline-Farbe mehr – Klasse übernimmt Styling über CSS-Variable
         div.textContent = block.name || block.shortName || 'Unnamed Block';
-        
         container.appendChild(div);
     });
 };
@@ -55,7 +49,8 @@ StudienplanBase.prototype.createLegendItem = function(kategorie, container) {
     div.classList.add('legende-item');
     
     if (typeof kategorie === 'string') {
-        div.classList.add(this.getCssClassForCategory(kategorie));
+        const slug = this.getCssClassForCategory(kategorie);
+        div.classList.add(slug);
         div.textContent = kategorie;
     } else {
         div.classList.add(kategorie.klasse || this.getCssClassForCategory(kategorie.name));
