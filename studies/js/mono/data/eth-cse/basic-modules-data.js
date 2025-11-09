@@ -2,7 +2,7 @@
 /* Alle Moduldaten für den CSE Studiengang - ohne hardcodierte 3. Jahr Module */
 
 window.StudiengangModules = [
-  // #region Jahr 1 - Semester 1
+  // #region 1. Semester
   // HINWEIS: Farb-Zuordnungen (Themenbereiche & Prüfungsblöcke) befinden sich in color-config.js
 
   { jahr: 1, semester: 1, name: "Physik I", kp: 4, ng: 2 },
@@ -11,9 +11,9 @@ window.StudiengangModules = [
   { jahr: 1, semester: 1, name: "Diskrete Mathematik", kp: 7, ng: 1 },
   { jahr: 1, semester: 1, name: "Analysis I", kp: 8, ng: 3 },
 
-  // #endregion Jahr 1 - Semester 1
+  // #endregion 1. Semester
 
-  // #region Jahr 1 - Semester 2
+  // #region 2. Semester
   { jahr: 1, semester: 2, name: "Physik II", kp: 4, ng: 2 },
   {
     jahr: 1,
@@ -31,9 +31,9 @@ window.StudiengangModules = [
     kp: 8,
     ng: 2,
   },
-  // #endregion Jahr 1 - Semester 2
+  // #endregion 2. Semester
 
-  // #region Jahr 2 (ohne Semesterunterscheidung)
+  // #region 3.-4. Semester (ohne Semesterunterscheidung)
   { jahr: 2, name: "Analysis III", kp: 4, ng: 1 },
   { jahr: 2, name: "Introduction to Mathematical Optimization", kp: 5, ng: 1 },
   { jahr: 2, name: "Numerische Methoden für CSE", kp: 9, ng: 2 },
@@ -74,9 +74,9 @@ window.StudiengangModules = [
     kp: 5,
     ng: 1,
   },
-  // #endregion Jahr 2
+  // #endregion 3.-4. Semester
 
-  // #region Jahr 3 - Platzhalter
+  // #region 5.-6. Semester - Platzhalter
   {
     jahr: 3,
     semester: 0,
@@ -102,9 +102,9 @@ window.StudiengangModules = [
     isPlaceholder: true,
   },
 
-  // #endregion Jahr 3 - Platzhalter
+  // #endregion 5.-6. Semester - Platzhalter
 
-  // #region Jahr 3 - Abschluss
+  // #region 5.-6. Semester - Abschluss
   {
     jahr: 3,
     semester: 0,
@@ -121,5 +121,5 @@ window.StudiengangModules = [
     kp: 14,
     kategorie: "wissenschaftliche-arbeit",
   },
-  // #endregion Jahr 3 - Abschluss
+  // #endregion 5.-6. Semester - Abschluss
 ];

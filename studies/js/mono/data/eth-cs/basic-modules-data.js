@@ -2,7 +2,7 @@
 /* Alle Moduldaten für den CS Studiengang */
 
 window.StudiengangModules = [
-  // #region Jahr 1 - Semester 1
+  // #region 1. Semester
   {
     jahr: 1,
     semester: 1,
@@ -25,9 +25,9 @@ window.StudiengangModules = [
     kp: 7,
     kategorie: "math",
   },
-  // #endregion Jahr 1 - Semester 1
+  // #endregion 1. Semester
 
-  // #region Jahr 1 - Semester 2
+  // #region 2. Semester
   { jahr: 1, semester: 2, name: "Analysis I", kp: 7, kategorie: "math" },
   {
     jahr: 1,
@@ -50,9 +50,9 @@ window.StudiengangModules = [
     kp: 4,
     kategorie: "algo",
   },
-  // #endregion Jahr 1 - Semester 2
+  // #endregion 2. Semester
 
-  // #region Jahr 2 - Semester 1
+  // #region 3. Semester
   {
     jahr: 2,
     semester: 1,
@@ -75,9 +75,9 @@ window.StudiengangModules = [
     kp: 7,
     kategorie: "cs-cse",
   },
-  // #endregion Jahr 2 - Semester 1
+  // #endregion 3. Semester
 
-  // #region Jahr 2 - Semester 2
+  // #region 4. Semester
   {
     jahr: 2,
     semester: 2,
@@ -114,9 +114,9 @@ window.StudiengangModules = [
     kp: 6,
     kategorie: "wissenschaft",
   },
-  // #endregion Jahr 2 - Semester 2
+  // #endregion 4. Semester
 
-  // #region Jahr 3 - Abschluss und Wahl/Spezialisierung
+  // #region 5.-6. Semester - Abschluss und Wahl/Spezialisierung
   {
     jahr: 3,
     semester: 0,
@@ -144,5 +144,5 @@ window.StudiengangModules = [
     kategorie: "wissenschaft",
   },
   { jahr: 3, semester: 0, name: "Seminar", kp: 2, kategorie: "wissenschaft" },
-  // #endregion Jahr 3 - Abschluss und Wahl/Spezialisierung
+  // #endregion 5.-6. Semester - Abschluss und Wahl/Spezialisierung
 ];

@@ -3,7 +3,7 @@
 /* Nur Module die in basic-modules-data.js vorhanden sind */
 
 window.StudiengangModuleDetails = {
-  // ========== SEMESTER 1 ==========
+  // #region 1 Semester
   Ökonomie: {
     kurzbeschreibung:
       "Dieser Kurs stellt grundlegende ökonomische Konzepte und Theorien vor. Beginnend mit der Mikroökonomie, startet der Kurs mit den Themen Angebot und Nachfrage, Märkte und Verhaltensökonomie, bevor er zu den wichtigsten makroökonomischen Konzepten der volkswirtschaftlichen Gesamtrechnung, des Arbeitsmarktes, des Handels und der Geldpolitik übergeht.",
@@ -187,7 +187,9 @@ window.StudiengangModuleDetails = {
     semester: "2025W",
   },
 
-  // ========== SEMESTER 2 ==========
+  // #endregion 1 Semester
+
+  // #region 2 Semester
   "Mathematik II: Analysis II": {
     kurzbeschreibung:
       "Fortführung der Themen von Mathematik I mit Schwerpunkt auf der mehrdimensionalen Differential- und Integralrechnung.",
@@ -398,7 +400,9 @@ window.StudiengangModuleDetails = {
     semester: "2025S",
   },
 
-  // ========== SEMESTER 3 ==========
+  // #endregion 2 Semester
+
+  // #region 3 Semester
   "Statistik II": {
     kurzbeschreibung:
       "Vertiefung von Statistikmethoden. Nach dem detailierten Fundament aus Statistik I liegt nun der Fokus auf konzeptueller Breite und konkreter Problemlösungsfähigkeit mit der Statistiksoftware R.",
@@ -639,7 +643,9 @@ window.StudiengangModuleDetails = {
     semester: "2025W",
   },
 
-  // ========== SEMESTER 4 ==========
+  // #endregion 3 Semester
+
+  // #region 4 Semester
   "Agrarökonomie im World Food System": {
     kurzbeschreibung:
       "Die Vorlesung widmet sich den grossen sozialen und umweltbezogenen Herausforderungen in globalen Ernährungssystemen. Wir vermitteln einen Überblick über aktuelle Forschungsergebnisse sowie Konzepte und Theorien, um Problemursachen und politische Handlungsoptionen zu beleuchten.",
@@ -807,7 +813,9 @@ window.StudiengangModuleDetails = {
     semester: "2025S",
   },
 
-  // ========== SEMESTER 5 ==========
+  // #endregion 4 Semester
+
+  // #region 5 Semester
   "Lebensmittel-Mikrobiologie I": {
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=194347&semkez=2025W&ansicht=LEHRVERANSTALTUNGEN&lang=de",
     semester: "2025W",
@@ -845,7 +853,9 @@ window.StudiengangModuleDetails = {
     semester: "2025W",
   },
 
-  // ========== SEMESTER 6 ==========
+  // #endregion 5 Semester
+
+  // #region 6 Semester
   "Lebensmittel-Mikrobiologie II": {
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=188248&semkez=2025S&ansicht=LEHRVERANSTALTUNGEN&lang=de",
     semester: "2025S",
@@ -891,7 +901,9 @@ window.StudiengangModuleDetails = {
     semester: "2025S",
   },
 
-  // ========== BACHELOR-ARBEIT ==========
+  // #endregion 6 Semester
+
+  // #region Bachelorarbeit
   "Bachelor-Arbeit": {
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=188254&semkez=2025S&ansicht=LEHRVERANSTALTUNGEN&lang=de",
     semester: "2025S",
@@ -900,4 +912,5 @@ window.StudiengangModuleDetails = {
         "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=193970&semkez=2025W&ansicht=LEHRVERANSTALTUNGEN&lang=de",
     },
   },
+  // #endregion Bachelorarbeit
 };

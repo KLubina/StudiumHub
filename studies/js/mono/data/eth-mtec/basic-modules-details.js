@@ -2,6 +2,7 @@
 /* Detaillierte Beschreibungen für alle MTEC Module (für Tooltips) */
 
 window.StudiengangModuleDetails = {
+  // #region Management & Leadership
   "Introduction to Management": {
     kurzbeschreibung:
       "Introduction to general management following a systemic view of organizations using the congruence model framework",
@@ -118,6 +119,9 @@ window.StudiengangModuleDetails = {
       "• Founding team dynamics\n" +
       "• Dragon's Den presentation",
   },
+  // #endregion Management & Leadership
+
+  // #region Economics & Finance
   "Principles of Macroeconomics": {
     kurzbeschreibung:
       "Examination of macroeconomic variables behavior including gross domestic product, unemployment and inflation rates",
@@ -242,6 +246,9 @@ window.StudiengangModuleDetails = {
       "• Advanced financial risk assessment\n" +
       "• Integration of sustainability in financial decisions",
   },
+  // #endregion Economics & Finance
+
+  // #region Operations, OR & Digital Transformation
   "Management of Digital Transformation": {
     kurzbeschreibung:
       "Overview of digital transformation within organizations, opportunities and management challenges in transforming to the digital age",
@@ -380,6 +387,9 @@ window.StudiengangModuleDetails = {
       "• Decision theory refinements\n" +
       "• Individual uncertainty decision-making",
   },
+  // #endregion Operations, OR & Digital Transformation
+
+  // #region Projekte & Abschluss
   "Semester Project Small": {
     kurzbeschreibung:
       "Training in solution of specific engineering problems using technical and social skills from the master's program",
@@ -446,4 +456,5 @@ window.StudiengangModuleDetails = {
       "• Reflection on learning outcomes\n" +
       "• Integration of theory and practice",
   },
+  // #endregion Projekte & Abschluss
 };

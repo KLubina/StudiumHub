@@ -1,5 +1,5 @@
 window.StudiengangModuleDetails = {
-  // #region 1. Semester
+  // #region 1 Semester
   "Lineare Algebra": {
     kurzbeschreibung:
       "Ziel ist der sichere Umgang mit grundlegenden Verfahren der linearen Algebra",
@@ -163,9 +163,9 @@ window.StudiengangModuleDetails = {
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193009&lang=de",
     kurslink: "https://lec.inf.ethz.ch/itet/informatik0/2019/",
   },
-  // #endregion
+  // #endregion 1 Semester
 
-  // #region 2. Semester
+  // #region 2 Semester
   "Analysis 2": {
     kurzbeschreibung:
       "Einführung in die mehrdimensionale Differential- und Integralrechnung",
@@ -300,9 +300,9 @@ window.StudiengangModuleDetails = {
     pruefungen:
       "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/2.Sem/Mathematische-Methoden",
   },
-  // #endregion
+  // #endregion 2 Semester
 
-  // #region 3. Semester
+  // #region 3 Semester
   "Analysis 3": {
     kurzbeschreibung:
       "In this lecture we treat problems in applied analysis. The aim of this class is to provide students with a general overview of first and second order PDEs, and teach them how to solve some of these equations using characteristics and/or separation of variables",
@@ -456,9 +456,9 @@ window.StudiengangModuleDetails = {
       "• Messung der Transfercharakteristik",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=192771&lang=de",
   },
-  // #endregion
+  // #endregion 3 Semester
 
-  // #region 4. Semester
+  // #region 4 Semester
   "Signal- und Systemtheorie II": {
     kurzbeschreibung: "Einführung in die Grundkonzepte der Systemtheorie",
     inhalt:
@@ -621,7 +621,7 @@ window.StudiengangModuleDetails = {
     pruefungen:
       "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/4.Sem/Numerische-Methoden",
   },
-  // #endregion
+  // #endregion 4 Semester
 
   // #region Wahlbereich
   "Discrete Event Systems": {
@@ -728,7 +728,7 @@ window.StudiengangModuleDetails = {
       "• Prefetching techniques",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=227-0152-00L",
   },
-  // #endregion
+  // #endregion Wahlbereich
 
   // #region Bachelorarbeit
   Bachelorarbeit: {
@@ -818,5 +818,5 @@ window.StudiengangModuleDetails = {
       "https://ethz.ch/content/dam/ethz/special-interest/itet/department/Studies/Master/D-ITET_Assoziierte_Profs.pdf",
     link: "https://ee.ethz.ch/de/studium/bachelorstudiengang/bsc-etit/drittes-studienjahr/bachelor-projekt.html",
   },
-  // #endregion
+  // #endregion Bachelorarbeit
 };

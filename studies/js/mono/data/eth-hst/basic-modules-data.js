@@ -2,7 +2,7 @@
 /* Alle Basisfächer und Kernfächer für den HST Studiengang (Semester 1-4) */
 
 window.StudiengangModules = [
-  // #region Semester 1 - Basisprüfungsblock 1
+  // #region 1. Semester - Basisprüfungsblock 1
   // ========== SEMESTER 1 - Basisprüfungsblock 1 ==========
   {
     jahr: 1,
@@ -32,9 +32,9 @@ window.StudiengangModules = [
     kp: 4,
     kategorie: "Basisprüfungsblock 1",
   },
-  // #endregion Semester 1 - Basisprüfungsblock 1
+  // #endregion 1. Semester - Basisprüfungsblock 1
 
-  // #region Semester 1 - Basisprüfungsblock 2
+  // #region 1. Semester - Basisprüfungsblock 2
   // ========== SEMESTER 1 - Basisprüfungsblock 1 ==========
   {
     jahr: 1,
@@ -50,9 +50,9 @@ window.StudiengangModules = [
     kp: 4,
     kategorie: "Basisprüfungsblock 2",
   },
-  // #endregion Semester 1 - Basisprüfungsblock 2
+  // #endregion 1. Semester - Basisprüfungsblock 2
 
-  // #region Semester 2 - Basisprüfungsblock 2
+  // #region 2. Semester - Basisprüfungsblock 2
   // ========== SEMESTER 2 - Basisprüfungsblock 2 ==========
   {
     jahr: 1,
@@ -118,9 +118,9 @@ window.StudiengangModules = [
     kp: 2,
     kategorie: "Praktikum des Basisjahres",
   },
-  // #endregion Semester 2 - Basisprüfungsblock 2
+  // #endregion 2. Semester - Basisprüfungsblock 2
 
-  // #region Semester 3 - Kernfächer Block A
+  // #region 3. Semester - Kernfächer Block A
   // ========== SEMESTER 3 - Kernfächer Block A ==========
   {
     jahr: 2,
@@ -143,9 +143,9 @@ window.StudiengangModules = [
     kp: 3,
     kategorie: "Kernfächer Block A",
   },
-  // #endregion Semester 3 - Kernfächer Block A
+  // #endregion 3. Semester - Kernfächer Block A
 
-  // #region Semester 3 - Kernfächer Block B
+  // #region 3. Semester - Kernfächer Block B
   // ========== SEMESTER 3 - Kernfächer Block B ==========
   {
     jahr: 2,
@@ -175,9 +175,9 @@ window.StudiengangModules = [
     kp: 4,
     kategorie: "Kernfächer Block B",
   },
-  // #endregion Semester 3 - Kernfächer Block B
+  // #endregion 3. Semester - Kernfächer Block B
 
-  // #region Semester 4 - Kernfächer Block C
+  // #region 4. Semester - Kernfächer Block C
   // ========== SEMESTER 4 - Kernfächer Block C ==========
   {
     jahr: 2,
@@ -200,9 +200,9 @@ window.StudiengangModules = [
     kp: 4,
     kategorie: "Kernfächer Block C",
   },
-  // #endregion Semester 4 - Kernfächer Block C
+  // #endregion 4. Semester - Kernfächer Block C
 
-  // #region Semester 3-4 - Einzelfächer und Praktika
+  // #region 3.-4. Semester - Einzelfächer und Praktika
   // Einzelfächer und Praktika
   {
     jahr: 2,
@@ -225,9 +225,9 @@ window.StudiengangModules = [
     kp: 3,
     kategorie: "Einzelfächer und Praktika",
   },
-  // #endregion Semester 3-4 - Einzelfächer und Praktika
+  // #endregion 3.-4. Semester - Einzelfächer und Praktika
 
-  // #region Semester 5-6 - Schwerpunkte & Wahlfächer (Platzhalter)
+  // #region 5.-6. Semester - Schwerpunkte & Wahlfächer (Platzhalter)
   // ========== SEMESTER 5-6 - Schwerpunkte & Wahlfächer (Platzhalter) ==========
   {
     jahr: 3,
@@ -245,7 +245,7 @@ window.StudiengangModules = [
     kategorie: "Wahlfächer",
     isPlaceholder: true,
   },
-  // #endregion Semester 5-6 - Schwerpunkte & Wahlfächer (Platzhalter)
+  // #endregion 5.-6. Semester - Schwerpunkte & Wahlfächer (Platzhalter)
 
   // #region Bachelorarbeit
   // ========== Bachelorarbeit ==========

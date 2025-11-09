@@ -2,7 +2,7 @@
 /* Alle fixen Moduldaten für den MSc ITET Studiengang */
 
 window.StudiengangModules = [
-    // #region Jahr 1 - Semester 0 (Kern-/Vertiefungsfächer als Wahlmodule)
+    // #region 1.-2. Semester (Kern-/Vertiefungsfächer als Wahlmodule)
     // 1. Jahr - Kernfächer und Vertiefungsfächer sind Wahlmodule
     { 
         jahr: 1, 
@@ -29,9 +29,9 @@ window.StudiengangModules = [
         kp: 12, 
         kategorie: "Fixe Module" 
     },
-    // #endregion Jahr 1 - Semester 0
+    // #endregion 1.-2. Semester (Kern-/Vertiefungsfächer als Wahlmodule)
 
-    // #region Jahr 2 - Semester 1 (Fixe Module)
+    // #region 3. Semester (Fixe Module)
     // 2. Jahr - Fixe Module  
     { 
         jahr: 2, 
@@ -52,7 +52,7 @@ window.StudiengangModules = [
         kp: 2, 
         kategorie: "Fixe Module" 
     },
-    // #endregion Jahr 2 - Semester 1
+    // #endregion 3. Semester
     { 
         jahr: 2, 
         semester: 2, 
@@ -60,7 +60,7 @@ window.StudiengangModules = [
         kp: 30, 
         kategorie: "Fixe Module" 
     }
-    // #region Jahr 2 - Semester 2
+    // #region 4. Semester
     // (Master-Arbeit)
-    // #endregion Jahr 2 - Semester 2
+    // #endregion 4. Semester
 ];

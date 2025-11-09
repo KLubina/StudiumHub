@@ -2,6 +2,7 @@
 /* Detaillierte Beschreibungen für alle CSE Module (für Tooltips) */
 
 window.StudiengangModuleDetails = {
+  // #region Grundstudium (1–2 Jahr)
   "Analysis I": {
     kurzbeschreibung: "Einführung in die Grundlagen der Analysis",
     inhalt:
@@ -285,6 +286,9 @@ window.StudiengangModuleDetails = {
       "• Tests",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=187991&semkez=2025S&ansicht=LEHRVERANSTALTUNGEN&lang=de",
   },
+  // #endregion Grundstudium (1–2 Jahr)
+
+  // #region Vertiefung & Wahlbereich
   "Fluid Dynamics I": {
     kurzbeschreibung:
       "An introduction to the physical and mathematical foundations of fluid dynamics is given.",
@@ -422,6 +426,9 @@ window.StudiengangModuleDetails = {
       "• Bayesian approaches to unsupervised learning (Gaussian mixtures, EM)",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=187933&semkez=2025S&ansicht=LEHRVERANSTALTUNGEN&lang=de",
   },
+  // #endregion Vertiefung & Wahlbereich
+
+  // #region Wissenschaft im Kontext
   "Wissenschaft im Kontext": {
     kurzbeschreibung: "Wissenschaftliches Arbeiten und Methodenkompetenz",
     inhalt:
@@ -429,6 +436,9 @@ window.StudiengangModuleDetails = {
       "• Recherche\n" +
       "• wissenschaftliches Schreiben",
   },
+  // #endregion Wissenschaft im Kontext
+
+  // #region Abschluss (5–6 Semester)
   Fallstudien: {
     kurzbeschreibung:
       "Praktische Anwendung der im Studium erlernten Fähigkeiten in einem Praxisprojekt",
@@ -443,6 +453,9 @@ window.StudiengangModuleDetails = {
       "A thesis project is usually supervised and graded by a lecturer in charge of teaching a Core Course or a course in a Field of Specialization, but any other lecturer of ETH Zurich, who is entitled to supervise master thesis in her or his own department is also eligible.",
     link: "https://rw.ethz.ch/the-programme/theses.html",
   },
+  // #endregion Abschluss (5–6 Semester)
+
+  // #region Zusätzliche Wahlfächer
   "3D Vision": {
     kurzbeschreibung:
       "Advanced topics in computer vision focusing on three-dimensional scene understanding",
@@ -490,4 +503,5 @@ window.StudiengangModuleDetails = {
     kurzbeschreibung: "Lab course (minimal entry)",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=188305&semkez=2025S&ansicht=LEHRVERANSTALTUNGEN&lang=de",
   },
+  // #endregion Zusätzliche Wahlfächer
 };

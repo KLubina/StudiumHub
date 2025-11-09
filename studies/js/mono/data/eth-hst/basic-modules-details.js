@@ -1,5 +1,5 @@
 window.StudiengangModuleDetails = {
-  // #region 1. Semester - Basisprüfungsblock 1
+  // #region 1 Semester - Basisprüfungsblock 1
   "Molekulare Genetik und Zellbiologie": {
     kurzbeschreibung:
       "Grundprinzipien der Evolution, Zellbiologie, Molekularbiologie, Genetik und Entwicklungsbiologie am Beispiel Mensch",
@@ -106,7 +106,7 @@ window.StudiengangModuleDetails = {
   },
   // #endregion
 
-  // #region 1. Semester - Basisprüfungsblock 2
+  // #region 1 Semester - Basisprüfungsblock 2
   "Mathematik I": {
     kurzbeschreibung:
       "Einführung in die ein- und mehrdimensionale Analysis und Lineare Algebra mit Anwendungen in den Naturwissenschaften",
@@ -172,7 +172,7 @@ window.StudiengangModuleDetails = {
   },
   // #endregion
 
-  // #region 2. Semester - Basisprüfungsblock 2
+  // #region 2 Semester - Basisprüfungsblock 2
   Infektion: {
     kurzbeschreibung:
       "Aufbau und Funktion von pathogenen Bakterien, Viren, Pilzen und Parasiten sowie Antiinfektiva und Resistenzen",
@@ -418,7 +418,7 @@ window.StudiengangModuleDetails = {
   },
   // #endregion
 
-  // #region 3. Semester - Kernfächer Block A
+  // #region 3 Semester - Kernfächer Block A
   "Humanphysiologie I": {
     kurzbeschreibung:
       "Physiologische Prozesse des menschlichen Körpers mit Fokus auf Mechanismen und Organfunktionen",
@@ -505,7 +505,7 @@ window.StudiengangModuleDetails = {
   },
   // #endregion
 
-  // #region 3. Semester - Kernfächer Block B
+  // #region 3 Semester - Kernfächer Block B
   "Physik I": {
     kurzbeschreibung:
       "Einführung in die klassische Physik mit Fokus auf Anwendungen in der Medizin",
@@ -534,7 +534,7 @@ window.StudiengangModuleDetails = {
   },
   // #endregion
 
-  // #region 3. Semester - Einzelfächer und Praktika
+  // #region 3 Semester - Einzelfächer und Praktika
   "Laboratory Course in Medical Technology": {
     kurzbeschreibung:
       "Angewendete Grundlagen in CAD, FEM, Produktoptimierung, mechanischer Belastungstest, Softwareentwicklung und Robotik",
@@ -587,7 +587,7 @@ window.StudiengangModuleDetails = {
   },
   // #endregion
 
-  // #region 4. Semester - Kernfächer Block B
+  // #region 4 Semester - Kernfächer Block B
   "Molekular- und Zellbiologie in Gesundheit und Krankheit": {
     kurzbeschreibung:
       "Biochemische, molekulare und zelluläre Mechanismen der Krankheitsentwicklung",
@@ -776,7 +776,7 @@ window.StudiengangModuleDetails = {
   },
   // #endregion
 
-  // #region 4. Semester - Einzelfächer und Praktika
+  // #region 4 Semester - Einzelfächer und Praktika
   "Praktikum Physiologie": {
     kurzbeschreibung:
       "Praktische Experimente zur Funktion von Nerven, Muskeln, Herz, Kreislauf, Atmung und Sinnesorganen",

@@ -2,7 +2,7 @@
 /* Alle Moduldaten für den ITET Studiengang - ohne hart kodierte Praktika */
 
 window.StudiengangModules = [
-  // #region Jahr 1 - Semester 1
+  // #region 1. Semester
   // Nach Hauptbereichen geordnet: Physik | Elektrotechnik | Informationstechnologie | Mathematik
   // HINWEIS: Farb-Zuordnungen (Themenbereiche & Prüfungsblöcke) befinden sich in color-config.js
 
@@ -63,9 +63,9 @@ window.StudiengangModules = [
     kategorie: "Obligatorische Fächer",
   },
 
-  // #endregion Jahr 1 - Semester 1
+  // #endregion 1. Semester
 
-  // #region Jahr 1 - Semester 2
+  // #region 2. Semester
   // Nach Hauptbereichen geordnet: Physik | Elektrotechnik | Informationstechnologie | Mathematik
 
   // Physik
@@ -118,9 +118,9 @@ window.StudiengangModules = [
     kategorie: "Obligatorische Fächer",
   },
 
-  // #endregion Jahr 1 - Semester 2
+  // #endregion 2. Semester
 
-  // #region Jahr 2 - Semester 1
+  // #region 3. Semester
   // Nach Hauptbereichen geordnet: Physik | Elektrotechnik | Informationstechnologie | Mathematik
 
   // Physik
@@ -180,9 +180,9 @@ window.StudiengangModules = [
     kategorie: "Obligatorische Fächer",
   },
 
-  // #endregion Jahr 2 - Semester 1
+  // #endregion 3. Semester
 
-  // #region Jahr 2 - Semester 2
+  // #region 4. Semester
   // Nach Hauptbereichen geordnet: Physik | Elektrotechnik | Informationstechnologie | Mathematik
 
   // Physik
@@ -235,9 +235,9 @@ window.StudiengangModules = [
     kategorie: "Obligatorische Fächer",
   },
 
-  // #endregion Jahr 2 - Semester 2
+  // #endregion 4. Semester
 
-  // #region Jahr 3 - Platzhalter & Abschluss
+  // #region 5.-6. Semester (Platzhalter & Abschluss)
   // PLATZHALTER für dynamische Module (wird durch Extensions ersetzt)
   {
     jahr: 3,
@@ -278,5 +278,5 @@ window.StudiengangModules = [
     kp: 6,
     kategorie: "Wissenschaftliche Arbeit",
   },
-  // #endregion Jahr 3 - Platzhalter & Abschluss
+  // #endregion 5.-6. Semester (Platzhalter & Abschluss)
 ];
