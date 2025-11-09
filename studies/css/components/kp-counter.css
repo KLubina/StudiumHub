@@ -1,63 +1,47 @@
-/* ==== KP COUNTER COMPONENT ==== */
-/* Credit points counter widget */
-
 #kp-counter {
-    margin-bottom: var(--spacing-lg);
-    padding: var(--spacing-md);
-    background-color: #f9f9f9;
-    border-radius: 6px;
-    border: 1px solid var(--color-border);
+    padding: 10px;
+    background: #eee;
+    font-size: 14px;
 }
 
 #kp-total {
     text-align: center;
-    margin-bottom: var(--spacing-md);
-    padding: var(--spacing-sm);
-    background: var(--color-hub-button);
-    color: white;
-    border-radius: 5px;
-    font-weight: bold;
+    padding: 6px;
+    background: #333;
+    color: #fff;
+    font-size: 14px;
 }
 
 #kp-progress-bar {
     width: 100%;
     height: 4px;
-    background-color: rgba(255, 255, 255, 0.3);
-    border-radius: 2px;
-    margin-top: var(--spacing-xs);
+    background: #ccc;
+    margin: 6px 0;
 }
 
 #kp-progress-fill {
     height: 100%;
-    background-color: white;
-    border-radius: 2px;
+    background: #333;
 }
 
-/* ==== KP BREAKDOWN ==== */
-
 #kp-breakdown {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--spacing-sm);
-    margin-top: var(--spacing-md);
+    margin-top: 10px;
 }
 
 .kp-category {
-    padding: 8px;
-    background-color: white;
-    border-radius: 4px;
-    font-size: var(--font-size-small);
+    padding: 6px;
+    background: #fff;
+    margin-bottom: 6px;
     text-align: center;
+    font-size: 12px;
 }
 
 .kp-category-label {
     font-weight: 600;
-    margin-bottom: 4px;
     color: #666;
 }
 
 .kp-category-value {
-    font-size: 18px;
     font-weight: bold;
-    color: var(--color-hub-button);
+    color: #333;
 }
