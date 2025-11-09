@@ -1,0 +1,14 @@
+/* ==== UZH ETHNOLOGIE - CSS CLASSES ==== */
+/* Program-specific CSS classes for Ethnologie */
+
+/* Subject-specific class */
+.ethnologie {
+    background-color: var(--color-ethnologie);
+    color: white;
+}
+
+/* Ethnologie-specific module styling if needed */
+[data-studiengang="uzh-ethnologie"] .modul.ethnologie-spezifisch {
+    background-color: var(--color-ethnologie);
+    color: white;
+}

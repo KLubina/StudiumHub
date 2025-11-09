@@ -1,0 +1,8 @@
+/* ==== UZH ETHNOLOGIE - LAYOUT OVERRIDES ==== */
+/* Program-specific layout customizations */
+
+/* Jahr Titel with Ethnologie color */
+[data-studiengang="uzh-ethnologie"] .jahr-titel {
+    color: var(--color-ethnologie);
+    border-bottom: 2px solid var(--color-ethnologie);
+}

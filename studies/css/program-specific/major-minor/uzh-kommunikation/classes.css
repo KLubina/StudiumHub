@@ -1,0 +1,14 @@
+/* ==== UZH KOMMUNIKATION - CSS CLASSES ==== */
+/* Program-specific CSS classes for Kommunikation */
+
+/* Subject-specific class */
+.kommunikation {
+    background-color: var(--color-kommunikation);
+    color: white;
+}
+
+/* Kommunikation-specific module styling if needed */
+[data-studiengang="uzh-kommunikation"] .modul.kommunikation-spezifisch {
+    background-color: var(--color-kommunikation);
+    color: white;
+}

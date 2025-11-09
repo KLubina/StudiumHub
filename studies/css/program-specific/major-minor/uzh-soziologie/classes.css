@@ -1,0 +1,14 @@
+/* ==== UZH SOZIOLOGIE - CSS CLASSES ==== */
+/* Program-specific CSS classes for Soziologie */
+
+/* Subject-specific class */
+.soziologie {
+    background-color: var(--color-soziologie);
+    color: white;
+}
+
+/* Soziologie-specific module styling if needed */
+[data-studiengang="uzh-soziologie"] .modul.soziologie-spezifisch {
+    background-color: var(--color-soziologie);
+    color: white;
+}

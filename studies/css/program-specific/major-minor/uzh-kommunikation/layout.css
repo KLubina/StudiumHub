@@ -1,0 +1,8 @@
+/* ==== UZH KOMMUNIKATION - LAYOUT OVERRIDES ==== */
+/* Program-specific layout customizations */
+
+/* Jahr Titel with Kommunikation color */
+[data-studiengang="uzh-kommunikation"] .jahr-titel {
+    color: var(--color-kommunikation);
+    border-bottom: 2px solid var(--color-kommunikation);
+}

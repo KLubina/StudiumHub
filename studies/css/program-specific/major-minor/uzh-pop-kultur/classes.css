@@ -1,0 +1,14 @@
+/* ==== UZH POP-KULTUR - CSS CLASSES ==== */
+/* Program-specific CSS classes for Pop-Kultur */
+
+/* Subject-specific class */
+.pop-kultur {
+    background-color: var(--color-pop-kultur);
+    color: white;
+}
+
+/* Pop-Kultur-specific module styling if needed */
+[data-studiengang="uzh-pop-kultur"] .modul.pop-kultur-spezifisch {
+    background-color: var(--color-pop-kultur);
+    color: white;
+}

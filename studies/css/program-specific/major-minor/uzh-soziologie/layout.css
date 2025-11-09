@@ -1,0 +1,8 @@
+/* ==== UZH SOZIOLOGIE - LAYOUT OVERRIDES ==== */
+/* Program-specific layout customizations */
+
+/* Jahr Titel with Soziologie color */
+[data-studiengang="uzh-soziologie"] .jahr-titel {
+    color: var(--color-soziologie);
+    border-bottom: 2px solid var(--color-soziologie);
+}
