@@ -26,7 +26,12 @@ StudienplanBase.prototype.showTooltip = function (modul, event) {
 };
 
 StudienplanBase.prototype.hideTooltip = function () {
-    this.tooltipEl.style.display = "none";
+    if (!this.tooltipEl) {
+        this.tooltipEl = document.getElementById("tooltip");
+    }
+    if (this.tooltipEl) {
+        this.tooltipEl.style.display = "none";
+    }
     this.aktivesModul = null;
     this.isVertiefungsgebieteTooltipLocked = false;
     this.isWahlfaecherTooltipLocked = false;
