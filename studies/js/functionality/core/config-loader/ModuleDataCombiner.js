@@ -10,23 +10,33 @@ class ModuleDataCombiner {
     }
 
     static combineITETData() {
+        console.log('🔧 combineITETData called - checking data availability...');
+        console.log('  - window.ITETModuleData exists:', !!window.ITETModuleData);
+        console.log('  - window.ITETWahlfaecherData exists:', !!window.ITETWahlfaecherData);
+        console.log('  - window.ITETWeitereWahlGrundlagenData exists:', !!window.ITETWeitereWahlGrundlagenData);
+        console.log('  - window.ITETPraktikaSeminarProjektData exists:', !!window.ITETPraktikaSeminarProjektData);
+
         if (!window.ITETModuleData || !window.ITETModuleData.getAllWahlmoduleData) {
             const combinedData = {};
 
             if (window.ITETModuleData && window.ITETModuleData.kernfaecherSchwerpunkte) {
                 combinedData.kernfaecherSchwerpunkte = window.ITETModuleData.kernfaecherSchwerpunkte;
+                console.log('  ✓ Added kernfaecherSchwerpunkte');
             }
 
             if (window.ITETWahlfaecherData && window.ITETWahlfaecherData.wahlfaecherBereiche) {
                 combinedData.wahlfaecherBereiche = window.ITETWahlfaecherData.wahlfaecherBereiche;
+                console.log('  ✓ Added wahlfaecherBereiche');
             }
 
             if (window.ITETWeitereWahlGrundlagenData && window.ITETWeitereWahlGrundlagenData.weitereWahlGrundlagen) {
                 combinedData.weitereWahlGrundlagen = window.ITETWeitereWahlGrundlagenData.weitereWahlGrundlagen;
+                console.log('  ✓ Added weitereWahlGrundlagen');
             }
 
             if (window.ITETPraktikaSeminarProjektData && window.ITETPraktikaSeminarProjektData.praktikaSchwerpunkte) {
                 combinedData.praktikaSchwerpunkte = window.ITETPraktikaSeminarProjektData.praktikaSchwerpunkte;
+                console.log('  ✓ Added praktikaSchwerpunkte');
             }
 
             if (!window.ITETModuleData) {
@@ -45,6 +55,8 @@ class ModuleDataCombiner {
             };
 
             console.log('✅ ITET Moduldaten kombiniert:', window.ITETModuleData);
+        } else {
+            console.log('⏭️  ITET Moduldaten bereits kombiniert, überspringe Kombination');
         }
     }
 
