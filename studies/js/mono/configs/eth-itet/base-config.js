@@ -18,7 +18,6 @@ window.StudiengangBaseConfig = {
     moduleSizing: "proportional",
     basisArea: 2000,
     defaultAspectRatio: 1.5,
-    layoutClass: "horizontal-modules",
 
     // === 3. FEATURE FLAGS ===
     enableTooltips: true,
