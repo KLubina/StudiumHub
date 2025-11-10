@@ -32,35 +32,21 @@ class ConfigMerger {
             aspectRatios: {}
         };
 
-        // NEW: Merge modular config files (if they exist)
-        if (window.StudiengangGeneralConfig || window.StudiengangLayoutConfig) {
-            // New modular structure detected
-            config = {
-                // Merge general defaults first, then study-specific configs to allow overrides
-                ...defaultGeneralConfig,
-                ...defaultLayoutConfig,
-                ...window.StudiengangGeneralConfig,
-                ...window.StudiengangLayoutConfig,
-                // Merge defaults first, then study-specific to allow partial configs
-                ...defaultFeaturesConfig,
-                ...(window.StudiengangFeaturesConfig || {}),
-                ...window.StudiengangCategoriesConfig,
-                ...window.StudiengangColorManagerConfig,
-                ...window.StudiengangKPCounterConfig,
-                ...window.StudiengangWahlmoduleConfig
-            };
-        } else if (window.StudiengangBaseConfig) {
-            // LEGACY: Fall back to old base-config.js structure
-            config = { ...window.StudiengangBaseConfig };
-            // In legacy mode also ensure default values exist so downstream code
-            // can rely on them consistently.
-            for (const [k, v] of Object.entries(defaultGeneralConfig)) {
-                if (!(k in config)) config[k] = v;
-            }
-            for (const [k, v] of Object.entries(defaultFeaturesConfig)) {
-                if (!(k in config)) config[k] = v;
-            }
-        }
+        // Merge modular config files
+        config = {
+            // Merge general defaults first, then study-specific configs to allow overrides
+            ...defaultGeneralConfig,
+            ...defaultLayoutConfig,
+            ...window.StudiengangGeneralConfig,
+            ...window.StudiengangLayoutConfig,
+            // Merge defaults first, then study-specific to allow partial configs
+            ...defaultFeaturesConfig,
+            ...(window.StudiengangFeaturesConfig || {}),
+            ...window.StudiengangCategoriesConfig,
+            ...window.StudiengangColorManagerConfig,
+            ...window.StudiengangKPCounterConfig,
+            ...window.StudiengangWahlmoduleConfig
+        };
 
         // Add module data
         config.daten = window.StudiengangModules;
@@ -70,11 +56,6 @@ class ConfigMerger {
             config.modulDetails = window.StudiengangModuleDetails;
         } else {
             config.modulDetails = {};
-        }
-
-        // Merge additional module data (legacy compatibility - some data files use StudiengangExtensions)
-        if (window.StudiengangExtensions) {
-            Object.assign(config, window.StudiengangExtensions);
         }
 
         // Set custom studiengang-specific class (if provided via specific.js)

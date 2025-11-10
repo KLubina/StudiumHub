@@ -44,9 +44,6 @@ class StudiengangConfigLoader {
         await this.loader.loadOptionalModule(`${basePath}/standard-config/kp-counter-config.js`);
         await this.loader.loadOptionalModule(`${basePath}/standard-config/wahlmodule-config.js`);
 
-        // Legacy fallback: try to load old base-config.js if modular configs don't exist
-        await this.loader.loadOptionalModule(`${basePath}/base-config.js`);
-
         // Load color-config.js (can exist independently) - now in standard-config/ subdirectory
         await this.loader.loadOptionalModule(`${basePath}/standard-config/color-config.js`);
     }
@@ -60,8 +57,6 @@ class StudiengangConfigLoader {
             await this.loadMSCITETData(basePath);
         } else if (this.studiengang === 'eth-hst') {
             await this.loadHSTData(basePath);
-        } else if (this.studiengang === 'sozwi') {
-            await this.loadSozwiData(basePath);
         } else if (['uzh-polisci', 'uzh-geschichte', 'uzh-ethnologie', 'uzh-kommunikation', 'uzh-pop-kultur', 'uzh-soziologie'].includes(this.studiengang)) {
             await this.loadUZHData(basePath);
         } else {
@@ -89,14 +84,6 @@ class StudiengangConfigLoader {
         await this.loader.loadOptionalModule(`${basePath}/data/wahlfacher-data.js`);
     }
 
-    async loadSozwiData(basePath) {
-        await this.loader.loadOptionalModule(`${basePath}/data/ethnologie-modules-data.js`);
-        await this.loader.loadOptionalModule(`${basePath}/data/kommunikationswissenschaft-modules-data.js`);
-        await this.loader.loadOptionalModule(`${basePath}/data/politikwissenschaft-modules-data.js`);
-        await this.loader.loadOptionalModule(`${basePath}/data/major-data.js`);
-        await this.loader.loadOptionalModule(`${basePath}/data/minor-data.js`);
-    }
-
     async loadUZHData(basePath) {
         await this.loader.loadOptionalModule(`${basePath}/data/major-data.js`);
         await this.loader.loadOptionalModule(`../program-specific/${this.studyModel}/uzh-common/minor-data.js`);
@@ -121,21 +108,6 @@ class StudiengangConfigLoader {
         await this.loader.loadOptionalModule(`${basePath}/specific/class-definition.js`);
         await this.loader.loadOptionalModule(`${basePath}/specific/third-year-layout.js`);
         await this.loader.loadOptionalModule(`${basePath}/specific/register-class.js`);
-    }
-
-    async loadFallbackConfig() {
-        return new Promise((resolve, reject) => {
-            const script = document.createElement('script');
-            // New unified structure: program-specific/{studyModel}/{studiengang}/{studiengang}-config.js
-            script.src = `../program-specific/${this.studyModel}/${this.studiengang}/${this.studiengang}-config.js`;
-            script.onload = () => {
-                resolve(window.StudiengangConfig);
-            };
-            script.onerror = () => {
-                reject(new Error(`Fallback-Konfiguration für ${this.studiengang} nicht gefunden`));
-            };
-            document.head.appendChild(script);
-        });
     }
 
     cleanup() {

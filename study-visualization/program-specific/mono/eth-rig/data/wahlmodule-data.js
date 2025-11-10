@@ -1,9 +1,7 @@
 /* ==== RIG ERWEITERTE MODULE-DATEN (aus configs/rig verschoben) ==== */
 /*
   Diese Datei wird optional vom modular-config-loader geladen und stellt
-  window.RIGModuleData bereit. Zusätzlich wird sie zur Kompatibilität
-  als window.StudiengangExtensions referenziert, damit der Loader die
-  Daten in die zusammengeführte Config übernehmen kann.
+  window.RIGModuleData bereit.
 */
 
 window.RIGModuleData = {
@@ -77,7 +75,3 @@ window.RIGModuleData = {
     ],
   },
 };
-
-// Kompatibilität: modular-config-loader erwartet window.StudiengangExtensions
-window.StudiengangExtensions =
-  window.StudiengangExtensions || window.RIGModuleData;

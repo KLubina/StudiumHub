@@ -29,20 +29,8 @@ window.subModulesReady.configLoader = Promise.all(
             await new Promise(resolve => document.addEventListener('DOMContentLoaded', resolve, { once: true }));
         }
 
-        try {
-            const config = await loader.loadConfig();
-            initializeStudienplan(config);
-            return config;
-        } catch (error) {
-            console.warn('Fehler beim Laden der modularen Config, versuche Fallback...', error);
-            try {
-                const fallback = await loader.loadFallbackConfig();
-                initializeStudienplan(fallback);
-                return fallback;
-            } catch (fallbackErr) {
-                console.error('Fallback-Konfiguration ebenfalls fehlgeschlagen', fallbackErr);
-                throw fallbackErr;
-            }
-        }
+        const config = await loader.loadConfig();
+        initializeStudienplan(config);
+        return config;
     };
 });

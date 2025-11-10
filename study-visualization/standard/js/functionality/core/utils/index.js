@@ -1,8 +1,7 @@
 /* Utils - Main Entry Point */
 
 const utilsModules = [
-    'TextFitting.js',
-    'Polyfills.js'
+    'TextFitting.js'
 ];
 
 window.subModulesReady.utils = Promise.all(
