@@ -1,64 +1,6 @@
-/* ==== SOZIOLOGIE MAJOR MODULES DATA ==== */
-// Module für Soziologie (HS 2025 + FS 2026)
-
 window.SozioModulesData = {
   // Frühjahrssemester 2026 – Soziologie
   fs2026: {
-    pflichtmodule: [
-      {
-        name: "Bachelorarbeit",
-        kp: 15,
-        kategorie: "Pflichtmodule",
-        semester: "FS",
-        jahr: 3,
-      },
-      {
-        name: "Empirische Sozialforschung",
-        kp: 6,
-        kategorie: "Pflichtmodule",
-        semester: "FS",
-      },
-      {
-        name: "Soziologische Theorie",
-        kp: 9,
-        kategorie: "Pflichtmodule",
-        semester: "FS",
-      },
-      {
-        name: "Wirtschaft und Gesellschaft",
-        kp: 6,
-        kategorie: "Pflichtmodule",
-        semester: "FS",
-      },
-    ],
-
-    wahlpflichtmodule: [
-      {
-        name: "Angebot des Sprachenzentrums – Sprachkurs",
-        kp: 0,
-        kategorie: "Wahlpflichtmodule",
-        semester: "FS",
-      },
-      {
-        name: "Fortgeschrittene Methoden",
-        kp: 6,
-        kategorie: "Wahlpflichtmodule",
-        semester: "FS",
-      },
-      {
-        name: "Modellbildung",
-        kp: 6,
-        kategorie: "Wahlpflichtmodule",
-        semester: "FS",
-      },
-      {
-        name: "Statistik II",
-        kp: 6,
-        kategorie: "Wahlpflichtmodule",
-        semester: "FS",
-      },
-    ],
-
     wahlmodule: [
       {
         name: "Beyond Algorithms: How AI Reshapes Society",
@@ -245,67 +187,6 @@ window.SozioModulesData = {
 
   // Herbstsemester 2025 – Soziologie
   hs2025: {
-    pflichtmodule: [
-      {
-        name: "Bachelorarbeit",
-        kp: 15,
-        kategorie: "Pflichtmodule",
-        semester: "HS",
-        jahr: 3,
-      },
-      {
-        name: "Grundlagen der Soziologie",
-        kp: 6,
-        kategorie: "Pflichtmodule",
-        semester: "HS",
-      },
-      {
-        name: "Soziologische Theorie",
-        kp: 9,
-        kategorie: "Pflichtmodule",
-        semester: "HS",
-      },
-      {
-        name: "Techniken wissenschaftlichen Arbeitens",
-        kp: 3,
-        kategorie: "Pflichtmodule",
-        semester: "HS",
-      },
-    ],
-
-    wahlpflichtmodule: [
-      {
-        name: "Angebot des Sprachenzentrums – Sprachkurs",
-        kp: 0,
-        kategorie: "Wahlpflichtmodule",
-        semester: "HS",
-      },
-      {
-        name: "Statistik I",
-        kp: 6,
-        kategorie: "Wahlpflichtmodule",
-        semester: "HS",
-      },
-      {
-        name: "Statistik III",
-        kp: 6,
-        kategorie: "Wahlpflichtmodule",
-        semester: "HS",
-      },
-      {
-        name: "Umfragemethoden",
-        kp: 6,
-        kategorie: "Wahlpflichtmodule",
-        semester: "HS",
-      },
-      {
-        name: "Wissenschaftstheorie",
-        kp: 6,
-        kategorie: "Wahlpflichtmodule",
-        semester: "HS",
-      },
-    ],
-
     wahlmodule: [
       {
         name: "Armut und Reichtum in hochentwickelten Ökonomien",
