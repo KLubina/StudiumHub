@@ -15,10 +15,18 @@ class ConfigMerger {
             enableKPCounter: false
         };
 
+        // Provide standard defaults for general display settings
+        const defaultGeneralConfig = {
+            legendTitle: "Legende",
+            creditUnit: "ECTS"
+        };
+
         // NEW: Merge modular config files (if they exist)
         if (window.StudiengangGeneralConfig || window.StudiengangLayoutConfig) {
             // New modular structure detected
             config = {
+                // Merge general defaults first, then study-specific configs to allow overrides
+                ...defaultGeneralConfig,
                 ...window.StudiengangGeneralConfig,
                 ...window.StudiengangLayoutConfig,
                 // Merge defaults first, then study-specific to allow partial configs
@@ -32,8 +40,11 @@ class ConfigMerger {
         } else if (window.StudiengangBaseConfig) {
             // LEGACY: Fall back to old base-config.js structure
             config = { ...window.StudiengangBaseConfig };
-            // In legacy mode also ensure features flags exist so downstream code
+            // In legacy mode also ensure default values exist so downstream code
             // can rely on them consistently.
+            for (const [k, v] of Object.entries(defaultGeneralConfig)) {
+                if (!(k in config)) config[k] = v;
+            }
             for (const [k, v] of Object.entries(defaultFeaturesConfig)) {
                 if (!(k in config)) config[k] = v;
             }

@@ -3,9 +3,5 @@
 
 window.StudiengangGeneralConfig = {
     // Program identification
-    title: "BSc Computer Engineering",
-
-    // Display settings
-    legendTitle: "Farben-Legende",
-    creditUnit: "ECTS"
+    title: "BSc Computer Engineering"
 };

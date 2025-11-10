@@ -4,9 +4,5 @@
 window.StudiengangGeneralConfig = {
     // Program identification
     title: "MSc Informationstechnologie und Elektrotechnik",
-    subtitle: "mind. 120 KP insgesamt",
-
-    // Display settings
-    legendTitle: "Farben-Legende",
-    creditUnit: "KP"
+    subtitle: "mind. 120 KP insgesamt"
 };

@@ -3,9 +3,5 @@
 
 window.StudiengangGeneralConfig = {
     // Program identification
-    title: "BSc Computational and Data Science",
-
-    // Display settings
-    legendTitle: "Farben-Legende",
-    creditUnit: "ECTS"
+    title: "BSc Computational and Data Science"
 };

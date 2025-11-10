@@ -3,9 +3,5 @@
 
 window.StudiengangGeneralConfig = {
     // Program identification
-    title: "BSc Materialwissenschaften",
-
-    // Display settings
-    legendTitle: "Farben-Legende",
-    creditUnit: "ECTS"
+    title: "BSc Materialwissenschaften"
 };

@@ -11,9 +11,5 @@ window.StudiengangGeneralConfig = {
         <br>
         <a href="https://www.hslu.ch/de-ch/technik-architektur/studium/bachelor/elektrotechnik-und-informationstechnologie/" target="_blank" rel="noopener">Studiengang-Seite</a>
         <br>
-        <a href="https://www.hslu.ch/-/media/campus/common/files/dokumente/ta/ta-studium/curriculum/2025-26/e-curriculum-2025-26.pdf?sc_lang=de-ch" target="_blank" rel="noopener">Curriculum 2025-26 (PDF)</a>`,
-
-    // Display settings
-    legendTitle: "Farben-Legende",
-    creditUnit: "ECTS"
+        <a href="https://www.hslu.ch/-/media/campus/common/files/dokumente/ta/ta-studium/curriculum/2025-26/e-curriculum-2025-26.pdf?sc_lang=de-ch" target="_blank" rel="noopener">Curriculum 2025-26 (PDF)</a>`
 };

@@ -3,9 +3,5 @@
 
 window.StudiengangGeneralConfig = {
     // Program identification
-    title: "BSc Computational Science and Engineering",
-
-    // Display settings
-    legendTitle: "Farben-Legende",
-    creditUnit: "KP"
+    title: "BSc Computational Science and Engineering"
 };

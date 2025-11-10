@@ -3,9 +3,5 @@
 
 window.StudiengangGeneralConfig = {
     // Program identification
-    title: "BSc Raumbezogene Ingenieurwissenschaften",
-
-    // Display settings
-    legendTitle: "Farben-Legende",
-    creditUnit: "KP"
+    title: "BSc Raumbezogene Ingenieurwissenschaften"
 };

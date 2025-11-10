@@ -3,9 +3,5 @@
 
 window.StudiengangGeneralConfig = {
     // Program identification
-    title: "BSc Mathematik",
-
-    // Display settings
-    legendTitle: "Farben-Legende",
-    creditUnit: "KP"
+    title: "BSc Mathematik"
 };

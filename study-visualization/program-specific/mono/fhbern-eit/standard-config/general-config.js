@@ -12,9 +12,5 @@ window.StudiengangGeneralConfig = {
         <br>
         <a href="https://www.bfh.ch/dam/jcr:364b3125-8149-4859-bd7e-276054e5cf5d/studienplan-elektrotechnik-informationstechnologie-vollzeit-bfh.pdf" target="_blank" rel="noopener">Studienplan (PDF)</a>
         <br>
-        <a href="https://is-a.bfh.ch/imoniteur_OPROAD/PORTAL6S.htm?ww_n_keybuffer=135252520#tab30" target="_blank" rel="noopener">Alle Module</a>`,
-
-    // Display settings
-    legendTitle: "Farben-Legende",
-    creditUnit: "ECTS"
+        <a href="https://is-a.bfh.ch/imoniteur_OPROAD/PORTAL6S.htm?ww_n_keybuffer=135252520#tab30" target="_blank" rel="noopener">Alle Module</a>`
 };

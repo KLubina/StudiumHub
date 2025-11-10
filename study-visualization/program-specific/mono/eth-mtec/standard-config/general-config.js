@@ -3,9 +3,5 @@
 
 window.StudiengangGeneralConfig = {
     // Program identification
-    title: "MSc Management, Technology, and Economics",
-
-    // Display settings
-    legendTitle: "Farben-Legende & Anforderungen",
-    creditUnit: "KP"
+    title: "MSc Management, Technology, and Economics"
 };

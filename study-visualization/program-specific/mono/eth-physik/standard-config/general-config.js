@@ -3,9 +3,5 @@
 
 window.StudiengangGeneralConfig = {
     // Program identification
-    title: "BSc Physik",
-
-    // Display settings
-    legendTitle: "Farben-Legende",
-    creditUnit: "KP"
+    title: "BSc Physik"
 };
