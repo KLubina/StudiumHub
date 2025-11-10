@@ -7,45 +7,55 @@ window.StudiengangModules = [
 
   // Elektrotechnik
   {
-    jahr: 1,
-    semester: 1,
+    // PFLICHTFELDER
     name: "Elektrotechnik",
     kp: 3,
     kategorie: "Elektrotechnik und Elektronik",
-  },
-  {
+    // KONTEXT (wenn vorhanden)
     jahr: 1,
     semester: 1,
+  },
+  {
+    // PFLICHTFELDER
     name: "Digitaltechnik",
     kp: 3,
     kategorie: "Elektrotechnik und Elektronik",
+    // KONTEXT (wenn vorhanden)
+    jahr: 1,
+    semester: 1,
   },
 
   // Mathematik
   {
-    jahr: 1,
-    semester: 1,
+    // PFLICHTFELDER
     name: "Mathematik 1B",
     kp: 3,
     kategorie: "Grundlagenfächer",
+    // KONTEXT (wenn vorhanden)
+    jahr: 1,
+    semester: 1,
   },
 
   // Kontextstudium
   {
-    jahr: 1,
-    semester: 1,
+    // PFLICHTFELDER
     name: "Kontext 1",
     kp: 6,
     kategorie: "Kontextstudium",
+    // KONTEXT (wenn vorhanden)
+    jahr: 1,
+    semester: 1,
   },
 
   // Programmierung
   {
-    jahr: 1,
-    semester: 1,
+    // PFLICHTFELDER
     name: "Programming in C",
     kp: 6,
     kategorie: "Informatik und Programmierung",
+    // KONTEXT (wenn vorhanden)
+    jahr: 1,
+    semester: 1,
   },
 
   // #endregion 1. Semester (HS) - Basic Module
@@ -55,73 +65,91 @@ window.StudiengangModules = [
 
   // Kontextstudium
   {
-    jahr: 1,
-    semester: 2,
+    // PFLICHTFELDER
     name: "Kontext 2",
     kp: 6,
     kategorie: "Kontextstudium",
+    // KONTEXT (wenn vorhanden)
+    jahr: 1,
+    semester: 2,
   },
 
   // Grundlagenfächer
   {
-    jahr: 1,
-    semester: 2,
+    // PFLICHTFELDER
     name: "Physik 1B",
     kp: 3,
     kategorie: "Grundlagenfächer",
-  },
-  {
+    // KONTEXT (wenn vorhanden)
     jahr: 1,
     semester: 2,
+  },
+  {
+    // PFLICHTFELDER
     name: "Mathematik 2B",
     kp: 3,
     kategorie: "Grundlagenfächer",
-  },
-  {
+    // KONTEXT (wenn vorhanden)
     jahr: 1,
     semester: 2,
+  },
+  {
+    // PFLICHTFELDER
     name: "Lineare Algebra",
     kp: 3,
     kategorie: "Grundlagenfächer",
+    // KONTEXT (wenn vorhanden)
+    jahr: 1,
+    semester: 2,
   },
 
   // Elektrotechnik und Elektronik
   {
-    jahr: 1,
-    semester: 2,
+    // PFLICHTFELDER
     name: "Elektrotechnik 2",
     kp: 3,
     kategorie: "Elektrotechnik und Elektronik",
-  },
-  {
+    // KONTEXT (wenn vorhanden)
     jahr: 1,
     semester: 2,
+  },
+  {
+    // PFLICHTFELDER
     name: "Elektronik 1",
     kp: 3,
     kategorie: "Elektrotechnik und Elektronik",
+    // KONTEXT (wenn vorhanden)
+    jahr: 1,
+    semester: 2,
   },
 
   // Programmierung
   {
-    jahr: 1,
-    semester: 2,
+    // PFLICHTFELDER
     name: "Applied Programming",
     kp: 3,
     kategorie: "Informatik und Programmierung",
-  },
-  {
+    // KONTEXT (wenn vorhanden)
     jahr: 1,
     semester: 2,
+  },
+  {
+    // PFLICHTFELDER
     name: "Python Basic",
     kp: 3,
     kategorie: "Informatik und Programmierung",
-  },
-  {
+    // KONTEXT (wenn vorhanden)
     jahr: 1,
     semester: 2,
+  },
+  {
+    // PFLICHTFELDER
     name: "Mikrocontroller Fundamentals",
     kp: 3,
     kategorie: "Informatik und Programmierung",
+    // KONTEXT (wenn vorhanden)
+    jahr: 1,
+    semester: 2,
   },
 
   // #endregion 2. Semester (FS) - Basic Module
@@ -131,59 +159,73 @@ window.StudiengangModules = [
 
   // Produktentwicklung
   {
-    jahr: 2,
-    semester: 3,
+    // PFLICHTFELDER
     name: "Produktentwicklung 1",
     kp: 6,
     kategorie: "Produktentwicklung und Projekte",
+    // KONTEXT (wenn vorhanden)
+    jahr: 2,
+    semester: 3,
   },
 
   // Grundlagenfächer
   {
-    jahr: 2,
-    semester: 3,
+    // PFLICHTFELDER
     name: "Physik 2B",
     kp: 6,
     kategorie: "Grundlagenfächer",
-  },
-  {
+    // KONTEXT (wenn vorhanden)
     jahr: 2,
     semester: 3,
+  },
+  {
+    // PFLICHTFELDER
     name: "Mathematik 3B",
     kp: 3,
     kategorie: "Grundlagenfächer",
-  },
-  {
+    // KONTEXT (wenn vorhanden)
     jahr: 2,
     semester: 3,
+  },
+  {
+    // PFLICHTFELDER
     name: "Statistical Data Analysis",
     kp: 3,
     kategorie: "Grundlagenfächer",
+    // KONTEXT (wenn vorhanden)
+    jahr: 2,
+    semester: 3,
   },
 
   // Elektrotechnik und Signale
   {
-    jahr: 2,
-    semester: 3,
+    // PFLICHTFELDER
     name: "Signale und Systeme",
     kp: 3,
     kategorie: "Elektrotechnik und Elektronik",
-  },
-  {
+    // KONTEXT (wenn vorhanden)
     jahr: 2,
     semester: 3,
+  },
+  {
+    // PFLICHTFELDER
     name: "Elektronik 2",
     kp: 6,
     kategorie: "Elektrotechnik und Elektronik",
+    // KONTEXT (wenn vorhanden)
+    jahr: 2,
+    semester: 3,
   },
 
   // Programmierung
   {
-    jahr: 2,
-    semester: 3,
+    // PFLICHTFELDER
     name: "Advanced Programming",
     kp: 3,
     kategorie: "Informatik und Programmierung",
+    // KONTEXT (wenn vorhanden)
+    jahr: 2,
+    semester: 3,
   },
 
   // #endregion 3. Semester (HS) - Intermediate Module
@@ -193,64 +235,80 @@ window.StudiengangModules = [
 
   // Produktentwicklung
   {
-    jahr: 2,
-    semester: 4,
+    // PFLICHTFELDER
     name: "Produktentwicklung 2",
     kp: 3,
     kategorie: "Produktentwicklung und Projekte",
+    // KONTEXT (wenn vorhanden)
+    jahr: 2,
+    semester: 4,
   },
 
   // Elektrotechnik und Systeme
   {
-    jahr: 2,
-    semester: 4,
+    // PFLICHTFELDER
     name: "Regelungstechnik",
     kp: 3,
     kategorie: "Elektrotechnik und Elektronik",
-  },
-  {
+    // KONTEXT (wenn vorhanden)
     jahr: 2,
     semester: 4,
+  },
+  {
+    // PFLICHTFELDER
     name: "Nachrichtentechnik",
     kp: 3,
     kategorie: "Elektrotechnik und Elektronik",
-  },
-  {
+    // KONTEXT (wenn vorhanden)
     jahr: 2,
     semester: 4,
+  },
+  {
+    // PFLICHTFELDER
     name: "Grundlagen elektrischer Antriebssysteme",
     kp: 6,
     kategorie: "Elektrotechnik und Elektronik",
-  },
-  {
+    // KONTEXT (wenn vorhanden)
     jahr: 2,
     semester: 4,
+  },
+  {
+    // PFLICHTFELDER
     name: "Digital Design",
     kp: 3,
     kategorie: "Elektrotechnik und Elektronik",
+    // KONTEXT (wenn vorhanden)
+    jahr: 2,
+    semester: 4,
   },
 
   // Informatik und KI
   {
-    jahr: 2,
-    semester: 4,
+    // PFLICHTFELDER
     name: "Advanced Embedded Systems",
     kp: 3,
     kategorie: "Informatik und Programmierung",
-  },
-  {
+    // KONTEXT (wenn vorhanden)
     jahr: 2,
     semester: 4,
+  },
+  {
+    // PFLICHTFELDER
     name: "Data Communication Systems",
     kp: 3,
     kategorie: "Informatik und Programmierung",
-  },
-  {
+    // KONTEXT (wenn vorhanden)
     jahr: 2,
     semester: 4,
+  },
+  {
+    // PFLICHTFELDER
     name: "AI for Engineers",
     kp: 3,
     kategorie: "Informatik und Programmierung",
+    // KONTEXT (wenn vorhanden)
+    jahr: 2,
+    semester: 4,
   },
 
   // #endregion 4. Semester (FS) - Intermediate Module
@@ -259,43 +317,53 @@ window.StudiengangModules = [
   // === 5./6. SEMESTER - Obligatorische Abschlussmodule ===
 
   {
-    jahr: 3,
-    semester: 0,
+    // PFLICHTFELDER
     name: "Bachelor-Thesis",
     kp: 12,
     kategorie: "Abschlussarbeit",
-  },
-  {
+    // KONTEXT (wenn vorhanden)
     jahr: 3,
     semester: 0,
+  },
+  {
+    // PFLICHTFELDER
     name: "Industrieprojekt",
     kp: 6,
     kategorie: "Produktentwicklung und Projekte",
+    // KONTEXT (wenn vorhanden)
+    jahr: 3,
+    semester: 0,
   },
 
   // Platzhalter für dynamische Module
   {
-    jahr: 3,
-    semester: 0,
+    // PFLICHTFELDER
     name: "Vertiefungsrichtung",
     kp: 9,
     kategorie: "Vertiefungsrichtungen",
+    // KONTEXT (wenn vorhanden)
+    jahr: 3,
+    semester: 0,
     isPlaceholder: true,
   },
   {
-    jahr: 3,
-    semester: 0,
+    // PFLICHTFELDER
     name: "Erweiterungsmodule",
     kp: 15,
     kategorie: "Erweiterungsmodule",
+    // KONTEXT (wenn vorhanden)
+    jahr: 3,
+    semester: 0,
     isPlaceholder: true,
   },
   {
-    jahr: 3,
-    semester: 0,
+    // PFLICHTFELDER
     name: "Zusatzmodule",
     kp: 15,
     kategorie: "Zusatzmodule",
+    // KONTEXT (wenn vorhanden)
+    jahr: 3,
+    semester: 0,
     isPlaceholder: true,
   },
   // #endregion 5.-6. Semester (Abschluss & Platzhalter)
