@@ -16,19 +16,5 @@ window.StudiengangCategoriesConfig = {
         },
         { name: "Freie Wahl + SIP", klasse: "freie-wahl" },
         { name: "Selbständige Arbeiten", klasse: "selbstaendig" }
-    ],
-
-    // Category to CSS class mapping
-    kategorieZuKlasse: {
-        "grundlagen": "grundlagen",
-        "obligatorisch": "obligatorisch",
-        "wahlmodule": "wahlmodule",
-        "freie-wahl": "freie-wahl",
-        "selbstaendig": "selbstaendig",
-        "Grundlagenfächer Basisprüfung": "grundlagen",
-        "Obligatorische Fächer, Prüfungsblöcke 1-3": "obligatorisch",
-        "Wahlmodule (3 aus 6)": "wahlmodule",
-        "Freie Wahl + SIP": "freie-wahl",
-        "Selbständige Arbeiten": "selbstaendig"
-    }
+    ]
 };

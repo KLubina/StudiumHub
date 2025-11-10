@@ -10,15 +10,5 @@ window.StudiengangCategoriesConfig = {
         { name: "Kernfächer", klasse: "kern" },
         { name: "Wahlpflichtfächer", klasse: "wahlpflicht" },
         { name: "Wissenschaftliche Arbeit", klasse: "wissenschaft" }
-    ],
-
-    // Category to CSS class mapping
-    kategorieZuKlasse: {
-        "Obligatorische Fächer": "obligatorisch",
-        "Ergänzungsfächer": "ergaenzung",
-        "Wahlfächer": "wahl",
-        "Kernfächer": "kern",
-        "Wahlpflichtfächer": "wahlpflicht",
-        "Wissenschaftliche Arbeit": "wissenschaft"
-    }
+    ]
 };

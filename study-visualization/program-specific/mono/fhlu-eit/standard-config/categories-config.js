@@ -34,18 +34,5 @@ window.StudiengangCategoriesConfig = {
             minKp: 15
         },
         { name: "Abschlussarbeit", klasse: "abschluss" }
-    ],
-
-    // Category to CSS class mapping
-    kategorieZuKlasse: {
-        "Grundlagenfächer": "grundlagen",
-        "Elektrotechnik und Elektronik": "elektrotechnik",
-        "Informatik und Programmierung": "informatik",
-        "Produktentwicklung und Projekte": "projekte",
-        "Kontextstudium": "kontext",
-        "Vertiefungsrichtungen": "vertiefung",
-        "Erweiterungsmodule": "erweiterung",
-        "Zusatzmodule": "zusatz",
-        "Abschlussarbeit": "abschluss"
-    }
+    ]
 };

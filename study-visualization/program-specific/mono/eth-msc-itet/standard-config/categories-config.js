@@ -21,12 +21,5 @@ window.StudiengangCategoriesConfig = {
             description: "Mind. 40 KP",
             minKp: 40
         }
-    ],
-
-    // Category to CSS class mapping
-    kategorieZuKlasse: {
-        "Fixe Module": "obligatorisch",
-        "Kernfächer": "kern",
-        "Vertiefungsfächer": "vertiefung"
-    }
+    ]
 };

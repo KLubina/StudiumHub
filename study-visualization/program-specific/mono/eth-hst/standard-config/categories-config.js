@@ -35,19 +35,5 @@ window.StudiengangCategoriesConfig = {
             klasse: "wissenschaft",
             description: "Bachelorarbeit"
         }
-    ],
-
-    // Category to CSS class mapping
-    kategorieZuKlasse: {
-        "Basisprüfungsblock 1": "basispruefung-bp1",
-        "Basisprüfungsblock 2": "basispruefung-bp2",
-        "Praktikum des Basisjahres": "praktikum-basisjahr",
-        "Einzelfächer und Praktika": "einzelfaecher-praktika",
-        "Kernfächer Block A": "block-ka",
-        "Kernfächer Block B": "block-kb",
-        "Kernfächer Block C": "block-kc",
-        "Schwerpunktfächer": "schwerpunkt",
-        "Wahlfächer": "wahl",
-        "Wissenschaftliche Arbeit": "wissenschaft"
-    }
+    ]
 };

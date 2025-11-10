@@ -10,16 +10,5 @@ window.StudiengangCategoriesConfig = {
         { name: "Methodenmodule", klasse: "methoden" },
         { name: "Wahlpflichtmodule", klasse: "wahlpflicht" },
         { name: "Bachelor-Arbeit", klasse: "ba-arbeit" }
-    ],
-
-    // Category to CSS class mapping
-    kategorieZuKlasse: {
-        "major-komm": "major-komm",
-        "minor": "minor",
-        "pflicht": "pflicht",
-        "methoden": "methoden",
-        "wahlpflicht": "wahlpflicht",
-        "ba-arbeit": "ba-arbeit",
-        "vertiefung": "vertiefung"
-    }
+    ]
 };

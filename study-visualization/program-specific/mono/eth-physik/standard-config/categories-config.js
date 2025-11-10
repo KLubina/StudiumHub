@@ -25,20 +25,5 @@ window.StudiengangCategoriesConfig = {
         },
         { name: "Wissenschaft im Kontext", klasse: "gess" },
         { name: "Wissenschaftliche Arbeit", klasse: "wissenschaft" }
-    ],
-
-    // Category to CSS class mapping
-    kategorieZuKlasse: {
-        "Basisprüfungsblock 1": "basis1",
-        "Basisprüfungsblock 2": "basis2",
-        "Prüfungsblock I": "pruefung1",
-        "Prüfungsblock IIa": "pruefung2a",
-        "Prüfungsblock IIb": "pruefung2b",
-        "Obligatorische Fächer": "obligatorisch",
-        "Praktika": "praktikum",
-        "Kernfächer": "kernfach",
-        "Wahlfächer": "wahl",
-        "Wissenschaft im Kontext": "gess",
-        "Wissenschaftliche Arbeit": "wissenschaft"
-    }
+    ]
 };

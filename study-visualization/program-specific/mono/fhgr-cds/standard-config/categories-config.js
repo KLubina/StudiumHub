@@ -9,14 +9,5 @@ window.StudiengangCategoriesConfig = {
         { name: "Wahlmodul", klasse: "wahlmodul" },
         { name: "Labor", klasse: "labor" },
         { name: "Projektarbeit", klasse: "projektarbeit" }
-    ],
-
-    // Category to CSS class mapping
-    kategorieZuKlasse: {
-        "grundlagen": "grundlagen",
-        "schwerpunkte": "schwerpunkte",
-        "wahlmodul": "wahlmodul",
-        "labor": "labor",
-        "projektarbeit": "projektarbeit"
-    }
+    ]
 };

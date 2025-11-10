@@ -48,22 +48,5 @@ window.StudiengangCategoriesConfig = {
             klasse: "bachelor-arbeit",
             description: "Abschlussarbeit (15 KP)"
         }
-    ],
-
-    // Category to CSS class mapping
-    kategorieZuKlasse: {
-        "Basisprüfung": "basispruefung",
-        "Zusatzfach Basisjahr": "zusatzfach",
-        "Obligatorisches Fach": "obligatorisch",
-        "Grundlagenfach II": "grundlagenfach",
-        "Weitere Fächer": "weitere",
-        "Kernfach": "kernfach",
-        "Fachgrundlage": "fachgrundlage",
-        "Lebensmittelwissenschaftliches Fach": "lmw-fach",
-        "Laborpraktikum": "praktikum",
-        "Exkursionen": "exkursion",
-        "Wahlfächer": "wahl",
-        "Wissenschaft im Kontext": "wik",
-        "Bachelor-Arbeit": "bachelor-arbeit"
-    }
+    ]
 };

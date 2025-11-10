@@ -17,8 +17,8 @@ class StudienplanBase {
     }
 
     getCssClassForCategory(categoryName) {
-        const mapping = this.config.kategorieZuKlasse || {};
-        return mapping[categoryName] || categoryName.toLowerCase().replace(/\s+/g, '-');
+        // Fallback: convert category name to kebab-case for CSS class
+        return categoryName.toLowerCase().replace(/\s+/g, '-');
     }
 
     addLegendTooltipEvents(div, kategorie) {

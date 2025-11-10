@@ -24,15 +24,5 @@ window.StudiengangCategoriesConfig = {
             minKp: 10
         },
         { name: "Abschlussarbeit", klasse: "abschluss" }
-    ],
-
-    // Category to CSS class mapping
-    kategorieZuKlasse: {
-        "Grundlagenfächer": "grundlagen",
-        "Praktika und Projekte": "praktika",
-        "Sprachen und Soft Skills": "sprachen",
-        "Vertiefungsrichtungen": "vertiefung",
-        "Fachliche Wahlmodule": "wahlmodule",
-        "Abschlussarbeit": "abschluss"
-    }
+    ]
 };

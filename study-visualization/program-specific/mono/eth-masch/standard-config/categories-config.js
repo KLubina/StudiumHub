@@ -19,14 +19,5 @@ window.StudiengangCategoriesConfig = {
             hasTooltip: true
         },
         { name: "Wissenschaftliche Arbeit", klasse: "wissenschaft" }
-    ],
-
-    // Category to CSS class mapping
-    kategorieZuKlasse: {
-        "Obligatorische Fächer": "obligatorisch",
-        "Obligatorische Praktikum": "praktikum",
-        "Wahlfächer": "wahl",
-        "Fokus-Vertiefung": "vertiefung",
-        "Wissenschaftliche Arbeit": "wissenschaft"
-    }
+    ]
 };

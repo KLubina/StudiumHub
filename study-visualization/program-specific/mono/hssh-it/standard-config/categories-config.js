@@ -11,16 +11,5 @@ window.StudiengangCategoriesConfig = {
         { name: "Spezialisierung & Schwerpunkt", klasse: "spezialisierung" },
         { name: "Wahlpflichtfächer", klasse: "wahlpflicht" },
         { name: "Abschluss & Forschung", klasse: "abschluss" }
-    ],
-
-    // Category to CSS class mapping
-    kategorieZuKlasse: {
-        "grundlagen": "grundlagen",
-        "programmierung": "programmierung",
-        "kommunikation": "kommunikation",
-        "transfer": "transfer",
-        "spezialisierung": "spezialisierung",
-        "wahlpflicht": "wahlpflicht",
-        "abschluss": "abschluss"
-    }
+    ]
 };

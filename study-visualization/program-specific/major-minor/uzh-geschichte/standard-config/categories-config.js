@@ -11,18 +11,5 @@ window.StudiengangCategoriesConfig = {
         { name: "Epochenmodule", klasse: "epochen" },
         { name: "Wahlpflichtmodule", klasse: "wahlpflicht" },
         { name: "Bachelor-Arbeit", klasse: "ba-arbeit" }
-    ],
-
-    // Category to CSS class mapping
-    kategorieZuKlasse: {
-        "major-geschichte": "major-geschichte",
-        "minor": "minor",
-        "pflicht": "pflicht",
-        "methoden": "methoden",
-        "epochen": "epochen",
-        "wahlpflicht": "wahlpflicht",
-        "ba-arbeit": "ba-arbeit",
-        "propädeutikum": "propaedeutikum",
-        "vertiefung": "vertiefung"
-    }
+    ]
 };

@@ -42,16 +42,5 @@ window.StudiengangCategoriesConfig = {
             klasse: "wissenschaft",
             description: "Bachelorarbeit und SIP"
         }
-    ],
-
-    // Category to CSS class mapping
-    kategorieZuKlasse: {
-        "Obligatorische Fächer": "obligatorisch",
-        "Obligatorische Praktikum": "obligatorisch-praktikum",
-        "Wahl Praktika-Projekte-Seminare": "wahl-praktika-projekte",
-        "Kernfächer nach Schwerpunkt": "kern",
-        "Wahlfächer": "wahl",
-        "Wissenschaftliche Arbeit": "wissenschaft",
-        "Weitere Wahl-Grundlagenfächer": "weitere-wahl-grundlagen"
-    }
+    ]
 };

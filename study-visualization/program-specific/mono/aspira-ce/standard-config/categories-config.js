@@ -11,16 +11,5 @@ window.StudiengangCategoriesConfig = {
         { name: "Security & Analysis", klasse: "security" },
         { name: "Professional Skills", klasse: "professional" },
         { name: "Final Project", klasse: "project" }
-    ],
-
-    // Category to CSS class mapping
-    kategorieZuKlasse: {
-        "foundations": "foundations",
-        "programming": "programming",
-        "systems": "systems",
-        "webmobile": "webmobile",
-        "security": "security",
-        "professional": "professional",
-        "project": "project"
-    }
+    ]
 };

@@ -29,14 +29,5 @@ window.StudiengangCategoriesConfig = {
             klasse: "internship",
             description: "6 KP - Pflichtpraktikum"
         }
-    ],
-
-    // Category to CSS class mapping
-    kategorieZuKlasse: {
-        "Core Courses": "core",
-        "Elective Courses": "elective",
-        "Supplementary Courses": "supplementary",
-        "Master's Thesis": "thesis",
-        "Internship": "internship"
-    }
+    ]
 };

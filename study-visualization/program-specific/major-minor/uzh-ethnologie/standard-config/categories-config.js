@@ -11,18 +11,5 @@ window.StudiengangCategoriesConfig = {
         { name: "Sprachen & Regionen", klasse: "sprachen" },
         { name: "Wahlmodule", klasse: "wahlmodule" },
         { name: "Bachelor-Arbeit", klasse: "ba-arbeit" }
-    ],
-
-    // Category to CSS class mapping
-    kategorieZuKlasse: {
-        "major-ethnologie": "major-ethnologie",
-        "minor": "minor",
-        "pflicht": "pflicht",
-        "kernbereiche": "kernbereiche",
-        "sprachen": "sprachen",
-        "wahlmodule": "wahlmodule",
-        "ba-arbeit": "ba-arbeit",
-        "methoden": "methoden",
-        "vertiefung": "vertiefung"
-    }
+    ]
 };

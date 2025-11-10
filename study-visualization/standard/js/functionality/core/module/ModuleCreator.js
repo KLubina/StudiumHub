@@ -60,10 +60,6 @@ StudienplanBase.prototype.getModuleCssClass = function (modul) {
         return block.cssClass;
     }
 
-    if (modul.kategorie) {
-        return this.config.kategorieZuKlasse[modul.kategorie];
-    }
-
     return modul.kategorie;
 };
 

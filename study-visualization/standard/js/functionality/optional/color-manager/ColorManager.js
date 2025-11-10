@@ -32,7 +32,7 @@ class StudienplanBaseColorManager {
     getCssClass(modulName) {
         if (!this.colorConfig) {
             const modul = this.config.daten?.find(m => m.name === modulName);
-            return modul?.kategorie ? this.config.kategorieZuKlasse[modul.kategorie] : null;
+            return modul?.kategorie;
         }
 
         if (this.currentMode === "themenbereich") {
@@ -45,7 +45,7 @@ class StudienplanBaseColorManager {
         }
 
         const modul = this.config.daten?.find(m => m.name === modulName);
-        return modul?.kategorie ? this.config.kategorieZuKlasse[modul.kategorie] : null;
+        return modul?.kategorie;
     }
 
     syncRadioButtons() {

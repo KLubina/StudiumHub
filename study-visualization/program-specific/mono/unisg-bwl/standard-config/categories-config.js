@@ -9,14 +9,5 @@ window.StudiengangCategoriesConfig = {
         { name: "Grundlagenfächer (VWL, Recht)", klasse: "grundlagen" },
         { name: "Kontextstudium", klasse: "kontext" },
         { name: "Bachelor-Arbeit", klasse: "bachelor" }
-    ],
-
-    // Category to CSS class mapping
-    kategorieZuKlasse: {
-        "kernfach": "kernfach",
-        "methoden": "methoden",
-        "grundlagen": "grundlagen",
-        "kontext": "kontext",
-        "bachelor": "bachelor"
-    }
+    ]
 };

@@ -30,13 +30,5 @@ window.StudiengangCategoriesConfig = {
             description: "20 ECTS - Frei wählbare Module",
             minKp: 20
         }
-    ],
-
-    // Category to CSS class mapping
-    kategorieZuKlasse: {
-        "Grundlagenmodule": "grundlagen",
-        "Vertiefungsmodule": "vertiefung",
-        "Profilmodul": "profil",
-        "Wahlbereich": "wahl"
-    }
+    ]
 };

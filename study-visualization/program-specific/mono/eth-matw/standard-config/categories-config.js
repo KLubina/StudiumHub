@@ -7,12 +7,5 @@ window.StudiengangCategoriesConfig = {
         { name: "Obligatorische Fächer", klasse: "obligatorisch" },
         { name: "Obligatorische Praktikum", klasse: "praktikum" },
         { name: "Wissenschaftliche Arbeit", klasse: "wissenschaft" }
-    ],
-
-    // Category to CSS class mapping
-    kategorieZuKlasse: {
-        "Obligatorische Fächer": "obligatorisch",
-        "Obligatorische Praktikum": "praktikum",
-        "Wissenschaftliche Arbeit": "wissenschaft"
-    }
+    ]
 };

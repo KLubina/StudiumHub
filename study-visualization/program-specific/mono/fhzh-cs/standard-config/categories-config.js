@@ -8,13 +8,5 @@ window.StudiengangCategoriesConfig = {
         { name: "Projektmodule", klasse: "projekt" },
         { name: "Fachmodule", klasse: "fach" },
         { name: "Mathematisch-Naturwiss. Module", klasse: "mathe-nawi" }
-    ],
-
-    // Category to CSS class mapping
-    kategorieZuKlasse: {
-        "kontext": "kontext",
-        "projekt": "projekt",
-        "fach": "fach",
-        "mathe-nawi": "mathe-nawi"
-    }
+    ]
 };

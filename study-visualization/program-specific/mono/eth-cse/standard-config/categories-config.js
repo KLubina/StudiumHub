@@ -23,13 +23,5 @@ window.StudiengangCategoriesConfig = {
             info: "2 Module aus einem Gebiet auswählen",
             hasTooltip: true
         }
-    ],
-
-    // Category to CSS class mapping
-    kategorieZuKlasse: {
-        "wissenschaftliche-arbeit": "wissenschaftliche-arbeit",
-        kern: "kern",
-        wahl: "wahl",
-        vertiefung: "vertiefung"
-    }
+    ]
 };
