@@ -10,17 +10,19 @@
     <link rel="stylesheet" href="css/core/layout.css">
     <link rel="stylesheet" href="css/core/typography.css">
 
-    <!-- ==== COMPONENTS CSS ==== -->
-    <link rel="stylesheet" href="css/components/hub-button.css">
-    <link rel="stylesheet" href="css/components/study-links.css">
-    <link rel="stylesheet" href="css/components/module.css">
-    <link rel="stylesheet" href="css/components/legend.css">
-    <link rel="stylesheet" href="css/components/tooltip.css">
-    <link rel="stylesheet" href="css/components/kp-counter.css">
-    <link rel="stylesheet" href="css/components/controls.css">
-    <link rel="stylesheet" href="css/components/module-lists.css">
-    <link rel="stylesheet" href="css/components/indicators.css">
-    <link rel="stylesheet" href="css/components/major-minor-selector.css">
+    <!-- ==== CORE COMPONENTS CSS ==== -->
+    <link rel="stylesheet" href="css/core/hub-button.css">
+    <link rel="stylesheet" href="css/core/module.css">
+    <link rel="stylesheet" href="css/core/legend.css">
+
+    <!-- ==== OPTIONAL FEATURES CSS ==== -->
+    <link rel="stylesheet" href="css/optional/study-links.css">
+    <link rel="stylesheet" href="css/optional/tooltip.css">
+    <link rel="stylesheet" href="css/optional/kp-counter.css">
+    <link rel="stylesheet" href="css/optional/controls.css">
+    <link rel="stylesheet" href="css/optional/module-lists.css">
+    <link rel="stylesheet" href="css/optional/indicators.css">
+    <link rel="stylesheet" href="css/optional/major-minor-selector.css">
 
     <!-- ==== SHARED CSS ==== -->
     <link rel="stylesheet" id="uzh-common-css" href="">
@@ -34,7 +36,7 @@
 <body data-studiengang="">
     <!-- Zurück zum Hub Button -->
     <div class="hub-button-container">
-        <a href="../index.html" class="hub-button">← Zurück zum Hub</a>
+        <a href="../../index.html" class="hub-button">← Zurück zum Hub</a>
     </div>
 
     <h1 id="studienplan-title">Studienplan</h1>
@@ -81,7 +83,7 @@
         // UZH Common CSS laden (nur für UZH Programme)
         const uzhCommonCSS = document.getElementById('uzh-common-css');
         if (studiengang.startsWith('uzh-')) {
-            uzhCommonCSS.href = `css/program-specific/shared/uzh-common.css`;
+            uzhCommonCSS.href = `../program-specific/major-minor/uzh-common/uzh-common.css`;
         }
 
         // Program-specific CSS laden (colors, classes, layout)
@@ -89,9 +91,9 @@
         const programClassesCSS = document.getElementById('program-classes-css');
         const programLayoutCSS = document.getElementById('program-layout-css');
 
-        programColorsCSS.href = `css/program-specific/${studyModel}/${studiengang}/colors.css`;
-        programClassesCSS.href = `css/program-specific/${studyModel}/${studiengang}/classes.css`;
-        programLayoutCSS.href = `css/program-specific/${studyModel}/${studiengang}/layout.css`;
+        programColorsCSS.href = `../program-specific/${studyModel}/${studiengang}/standard-config/colors/colors.css`;
+        programClassesCSS.href = `../program-specific/${studyModel}/${studiengang}/standard-config/colors/classes.css`;
+        programLayoutCSS.href = `../program-specific/${studyModel}/${studiengang}/individual/layout.css`;
 
         // Error handling falls Dateien nicht existieren
         programColorsCSS.onerror = () => {

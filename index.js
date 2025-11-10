@@ -14,7 +14,7 @@
   // Load features from features-config.js at runtime
   async function loadFeatures(key, studyModel) {
     const folder = studyModel === 'major-minor' ? 'major-minor' : 'mono';
-    const url = `studies/js/${folder}/${key}/config/features-config.js`;
+    const url = `study-visualization/program-specific/${folder}/${key}/standard-config/features-config.js`;
 
     try {
       const response = await fetch(url);
@@ -61,7 +61,7 @@
       <div class="card-body">
       </div>
       <div class="card-footer">
-        <a href="studies/studienplan-template.html?studiengang=${encodeURIComponent(key)}" class="btn">Zum Studienplan</a>
+        <a href="study-visualization/standard/studienplan-template.html?studiengang=${encodeURIComponent(key)}" class="btn">Zum Studienplan</a>
       </div>
     `;
 

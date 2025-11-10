@@ -10,8 +10,8 @@ class StudiengangConfigLoader {
     }
 
     async loadConfig() {
-        // New unified structure for both mono and major-minor: js/{studyModel}/{studiengang}/
-        const basePath = `js/${this.studyModel}/${this.studiengang}`;
+        // New unified structure for both mono and major-minor: program-specific/{studyModel}/{studiengang}/
+        const basePath = `../program-specific/${this.studyModel}/${this.studiengang}`;
 
         // Load modular config files (new structure)
         await this.loadModularConfigs(basePath);
@@ -30,24 +30,24 @@ class StudiengangConfigLoader {
     }
 
     async loadModularConfigs(basePath) {
-        // Core config files (always loaded) - now in config/ subdirectory
-        await this.loader.loadModule(`${basePath}/config/general-config.js`);
-        await this.loader.loadModule(`${basePath}/config/layout-config.js`);
+        // Core config files (always loaded) - now in standard-config/ subdirectory
+        await this.loader.loadModule(`${basePath}/standard-config/general-config.js`);
+        await this.loader.loadModule(`${basePath}/standard-config/layout-config.js`);
         // Features config is optional: absence means all feature flags default to false
-        await this.loader.loadOptionalModule(`${basePath}/config/features-config.js`);
-        await this.loader.loadModule(`${basePath}/config/categories-config.js`);
+        await this.loader.loadOptionalModule(`${basePath}/standard-config/features-config.js`);
+        await this.loader.loadModule(`${basePath}/standard-config/categories-config.js`);
 
         // Feature-specific config files (loaded based on feature flags after features-config.js is loaded)
         // These are optional and only loaded if the corresponding feature is enabled
-        await this.loader.loadOptionalModule(`${basePath}/config/color-manager-config.js`);
-        await this.loader.loadOptionalModule(`${basePath}/config/kp-counter-config.js`);
-        await this.loader.loadOptionalModule(`${basePath}/config/wahlmodule-config.js`);
+        await this.loader.loadOptionalModule(`${basePath}/standard-config/color-manager-config.js`);
+        await this.loader.loadOptionalModule(`${basePath}/standard-config/kp-counter-config.js`);
+        await this.loader.loadOptionalModule(`${basePath}/standard-config/wahlmodule-config.js`);
 
         // Legacy fallback: try to load old base-config.js if modular configs don't exist
         await this.loader.loadOptionalModule(`${basePath}/base-config.js`);
 
-        // Load color-config.js (can exist independently) - now in config/ subdirectory
-        await this.loader.loadOptionalModule(`${basePath}/config/color-config.js`);
+        // Load color-config.js (can exist independently) - now in standard-config/ subdirectory
+        await this.loader.loadOptionalModule(`${basePath}/standard-config/color-config.js`);
     }
 
     async loadStudiengangSpecificData(basePath) {
@@ -98,7 +98,7 @@ class StudiengangConfigLoader {
 
     async loadUZHData(basePath) {
         await this.loader.loadOptionalModule(`${basePath}/data/major-data.js`);
-        await this.loader.loadOptionalModule(`js/${this.studyModel}/uzh-common/minor-data.js`);
+        await this.loader.loadOptionalModule(`../program-specific/${this.studyModel}/uzh-common/minor-data.js`);
         ModuleDataCombiner.setupUzhMinorDataAlias(this.studiengang);
     }
 
@@ -125,8 +125,8 @@ class StudiengangConfigLoader {
     async loadFallbackConfig() {
         return new Promise((resolve, reject) => {
             const script = document.createElement('script');
-            // New unified structure: js/{studyModel}/{studiengang}/{studiengang}-config.js
-            script.src = `js/${this.studyModel}/${this.studiengang}/${this.studiengang}-config.js`;
+            // New unified structure: program-specific/{studyModel}/{studiengang}/{studiengang}-config.js
+            script.src = `../program-specific/${this.studyModel}/${this.studiengang}/${this.studiengang}-config.js`;
             script.onload = () => {
                 resolve(window.StudiengangConfig);
             };
