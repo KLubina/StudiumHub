@@ -10,9 +10,7 @@ window.StudiengangGeneralConfig = {
         <br>
         Sommersemester: <a href="https://www.vvz.ethz.ch/Vorlesungsverzeichnis/sucheLehrangebot.view?lerneinheitscode=&deptId=18&famname=&unterbereichAbschnittId=&seite=0&lerneinheitstitel=&rufname=&kpRange=0,999&lehrsprache=&bereichAbschnittId=&semkez=2025S&studiengangAbschnittId=114361&studiengangTyp=BSC&ansicht=1&lang=de&katalogdaten=&wahlinfo=" target="_blank" rel="noopener">VVZ Sommer 2025</a>
         <br>
-        <a href="https://ethz.ch/de/studium/bachelor/studienangebot/ingenieurwissenschaften/elektrotechnik-und-informationstechnologie/details.html" target="_blank" rel="noopener">Studiengang-Seite</a>
-        <br>
-        <a href="https://rechtssammlung.sp.ethz.ch/Dokumente/Forms/311%20Bachelor%20BSc%20und%20BA.aspx#InplviewHash4dfcf9fd-a65f-462d-938a-df50fbd498ab=SortField%3DStand-SortDir%3DAsc" target="_blank" rel="noopener">Rechtssammlung: Bachelor BSc und BA</a>`,
+        Studieninfo: <a href="https://ethz.ch/de/studium/bachelor/studienangebot/ingenieurwissenschaften/elektrotechnik-und-informationstechnologie/details.html" target="_blank" rel="noopener">Studiengang-Seite</a> | <a href="https://rechtssammlung.sp.ethz.ch/Dokumente/Forms/311%20Bachelor%20BSc%20und%20BA.aspx#InplviewHash4dfcf9fd-a65f-462d-938a-df50fbd498ab=SortField%3DStand-SortDir%3DAsc" target="_blank" rel="noopener">Studienplan & Reglement</a>`,
 
     // Display settings
     legendTitle: "Farben-Legende",
