@@ -22,6 +22,8 @@ class ConfigMerger {
         };
 
         // Provide standard defaults for layout settings
+        // NOTE: Core only supports "years" layout. Custom layouts should be
+        // implemented in program-specific/individual/ by overriding createStudienplan
         const defaultLayoutConfig = {
             layout: "years",
             moduleSizing: "proportional",

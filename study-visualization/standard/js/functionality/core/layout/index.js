@@ -2,9 +2,7 @@
 
 const layoutModules = [
     'LayoutSelector.js',
-    'YearLayout.js',
-    'CategoryLayout.js',
-    'FirstYearThenGroupsLayout.js'
+    'YearLayout.js'
 ];
 
 window.subModulesReady.layout = Promise.all(
