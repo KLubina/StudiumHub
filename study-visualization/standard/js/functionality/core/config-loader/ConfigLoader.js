@@ -105,9 +105,9 @@ class StudiengangConfigLoader {
         // 2. third-year-layout.js - extends the class with custom layout methods
         // 3. register-class.js - registers the class as window.StudiengangCustomClass
 
-        await this.loader.loadOptionalModule(`${basePath}/specific/class-definition.js`);
-        await this.loader.loadOptionalModule(`${basePath}/specific/third-year-layout.js`);
-        await this.loader.loadOptionalModule(`${basePath}/specific/register-class.js`);
+        await this.loader.loadOptionalModule(`${basePath}/individual/class-definition.js`);
+        await this.loader.loadOptionalModule(`${basePath}/individual/third-year-layout.js`);
+        await this.loader.loadOptionalModule(`${basePath}/individual/register-class.js`);
     }
 
     cleanup() {

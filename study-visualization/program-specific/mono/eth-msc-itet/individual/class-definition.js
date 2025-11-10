@@ -1,35 +1,31 @@
-/* ==== ITET CLASS DEFINITION ==== */
-/* Hauptklasse für den ITET Studienplan */
+/* ==== MSC ITET CLASS DEFINITION ==== */
+/* Hauptklasse für den MSc ITET Studienplan */
 
-window.ITETStudienplan = class ITETStudienplan extends StudienplanBase {
+window.MScITETStudienplan = class MScITETStudienplan extends StudienplanBase {
   constructor(config) {
     super(config);
   }
 
   initialize() {
-    // EXPLIZIT: ColorManager für ITET aktivieren (MUSS vor super.initialize() sein!)
-    this.config.enableColorManager = true;
-
     // Basis-Initialisierung (aktiviert automatisch das zentrale Wahlmodule-System)
     super.initialize();
 
-    // ColorManager explizit initialisieren (weil der Monkey-Patch in Integration.js
-    // nicht für Subklassen greift, die initialize() überschreiben)
+    // ColorManager explizit initialisieren falls aktiviert
     if (this.config.enableColorManager && this.initializeColorManager) {
       this.initializeColorManager();
     }
 
-    // ITET-spezifische Initialisierung
-    this.setupITETSpecifics();
+    // MSc ITET-spezifische Initialisierung
+    this.setupMScITETSpecifics();
   }
 
-  setupITETSpecifics() {
+  setupMScITETSpecifics() {
     // Basis-Klasse hat bereits showMessage und showToastMessage implementiert
   }
 
   /**
    * Override: CSS-Klasse für Module bestimmen
-   * ITET-spezifisch: Kategorien mit Leerzeichen werden korrekt behandelt
+   * MSc ITET-spezifisch: Kategorien mit Leerzeichen werden korrekt behandelt
    */
   getModuleCssClass(modul) {
     if (modul.pruefungsblock) {

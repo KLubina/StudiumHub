@@ -1,13 +1,13 @@
-/* ==== ITET CLASS DEFINITION ==== */
-/* Hauptklasse für den ITET Studienplan */
+/* ==== HST CLASS DEFINITION ==== */
+/* Hauptklasse für den HST (Gesundheitswissenschaften und Technologie) Studienplan */
 
-window.ITETStudienplan = class ITETStudienplan extends StudienplanBase {
+window.HSTStudienplan = class HSTStudienplan extends StudienplanBase {
   constructor(config) {
     super(config);
   }
 
   initialize() {
-    // EXPLIZIT: ColorManager für ITET aktivieren (MUSS vor super.initialize() sein!)
+    // EXPLIZIT: ColorManager für HST aktivieren (MUSS vor super.initialize() sein!)
     this.config.enableColorManager = true;
 
     // Basis-Initialisierung (aktiviert automatisch das zentrale Wahlmodule-System)
@@ -19,17 +19,17 @@ window.ITETStudienplan = class ITETStudienplan extends StudienplanBase {
       this.initializeColorManager();
     }
 
-    // ITET-spezifische Initialisierung
-    this.setupITETSpecifics();
+    // HST-spezifische Initialisierung
+    this.setupHSTSpecifics();
   }
 
-  setupITETSpecifics() {
+  setupHSTSpecifics() {
     // Basis-Klasse hat bereits showMessage und showToastMessage implementiert
   }
 
   /**
    * Override: CSS-Klasse für Module bestimmen
-   * ITET-spezifisch: Kategorien mit Leerzeichen werden korrekt behandelt
+   * HST-spezifisch: Kategorien mit Leerzeichen werden korrekt behandelt
    */
   getModuleCssClass(modul) {
     if (modul.pruefungsblock) {
