@@ -1,0 +1,19 @@
+/* Clickable Module */
+.modul.clickable {
+    cursor: pointer;
+}
+
+/* ==== BULLET LISTS INSIDE MODULES ==== */
+
+.bullet-list {
+    text-align: left;
+    margin: var(--spacing-xs) 0;
+    padding-left: 25px;
+    list-style-type: disc;
+    width: 100%;
+}
+
+.bullet-list li {
+    margin-bottom: var(--spacing-xs);
+    line-height: 1.2;
+}

@@ -18,8 +18,6 @@
     /* no transform/box-shadow transitions for simplicity */
 }
 
-/* No special hover effects */
-
 /* Modul Title */
 .modul-titel {
     font-weight: bold;
@@ -57,27 +55,4 @@
 /* Small Module */
 .modul.small-module {
     border-radius: 4px;
-}
-
-/* Clickable Module */
-.modul.clickable {
-    cursor: pointer;
-}
-
-/* Hover-Enabled Module */
-/* Hover-enabled variant intentionally has no visual effects */
-
-/* ==== BULLET LISTS INSIDE MODULES ==== */
-
-.bullet-list {
-    text-align: left;
-    margin: var(--spacing-xs) 0;
-    padding-left: 25px;
-    list-style-type: disc;
-    width: 100%;
-}
-
-.bullet-list li {
-    margin-bottom: var(--spacing-xs);
-    line-height: 1.2;
 }
