@@ -85,7 +85,10 @@ class StudiengangConfigLoader {
     }
 
     async loadUZHData(basePath) {
-        await this.loader.loadOptionalModule(`${basePath}/data/major-data.js`);
+        // Load the new modular UZH data structure
+        await this.loader.loadOptionalModule(`${basePath}/data/pflichtmodule-data.js`);
+        await this.loader.loadOptionalModule(`${basePath}/data/wahlpflichtmodule-data.js`);
+        await this.loader.loadOptionalModule(`${basePath}/data/wahlmodule-data.js`);
         await this.loader.loadOptionalModule(`../program-specific/${this.studyModel}/uzh-common/minor-data.js`);
         ModuleDataCombiner.setupUzhMinorDataAlias(this.studiengang);
     }

@@ -1,4 +1,4 @@
-window.SozioModulesData = {
+window.SoziologieWahlpflichtmoduleData = {
   // Frühjahrssemester 2026 – Soziologie
   fs2026: {
     wahlpflichtmodule: [

@@ -1,163 +1,58 @@
-window.PolwiModulesData = {
-  // 3. Studienjahr - Spezialisierung
-  spezialisierung: [
-    {
-      name: "Agenda Setting and the Media",
-      kp: 6,
-      kategorie: "Wahlmodule",
-      semester: "HS",
-      jahr: 3,
-    },
-    {
-      name: "International Economic Institutions",
-      kp: 6,
-      kategorie: "Wahlmodule",
-      semester: "HS",
-      jahr: 3,
-    },
-    {
-      name: "Parliaments and Democracy",
-      kp: 6,
-      kategorie: "Wahlmodule",
-      semester: "HS",
-      jahr: 3,
-    },
-    {
-      name: "Political Mobilization and Violence",
-      kp: 6,
-      kategorie: "Wahlmodule",
-      semester: "HS",
-      jahr: 3,
-    },
-    {
-      name: "Political Participation",
-      kp: 6,
-      kategorie: "Wahlmodule",
-      semester: "HS",
-      jahr: 3,
-    },
-    {
-      name: "Reforming Representative Democracy",
-      kp: 6,
-      kategorie: "Wahlmodule",
-      semester: "HS",
-      jahr: 3,
-    },
-    {
-      name: "Debatten, Diskurse, Dialoge",
-      kp: 6,
-      kategorie: "Wahlmodule",
-      semester: "HS",
-      jahr: 3,
-    },
-    {
-      name: "Direkte Demokratie Schweiz im 21. Jahrhundert",
-      kp: 6,
-      kategorie: "Wahlmodule",
-      semester: "HS",
-      jahr: 3,
-    },
-    {
-      name: "Frieden und Konflikt in den Internationalen Beziehungen",
-      kp: 6,
-      kategorie: "Wahlmodule",
-      semester: "HS",
-      jahr: 3,
-    },
-    {
-      name: "Governance und Demokratie",
-      kp: 6,
-      kategorie: "Wahlmodule",
-      semester: "HS",
-      jahr: 3,
-    },
-    {
-      name: "Macht Politik einen Unterschied?",
-      kp: 6,
-      kategorie: "Wahlmodule",
-      semester: "HS",
-      jahr: 3,
-    },
-    {
-      name: "Staat und Gewalt",
-      kp: 6,
-      kategorie: "Wahlmodule",
-      semester: "HS",
-      jahr: 3,
-    },
-    {
-      name: "Technologischer Wandel, soziale Transformation",
-      kp: 6,
-      kategorie: "Wahlmodule",
-      semester: "HS",
-      jahr: 3,
-    },
-    {
-      name: "Citizens democratic commitment in times of crisis",
-      kp: 6,
-      kategorie: "Wahlmodule",
-      semester: "FS",
-      jahr: 3,
-    },
-  ],
+/* ==== POLITIKWISSENSCHAFT WAHLMODULE DATA ==== */
+// Wahlmodule für Politikwissenschaft (HS 2025 + FS 2026)
 
-  // Weitere Wahlmodule
-  wahlmodule: [
-    {
-      name: "Climate Targets in Europe",
-      kp: 6,
-      kategorie: "Wahlmodule",
-      semester: "HS/FS",
-    },
-    {
-      name: "Data, Governance, and Society (Vorlesung)",
-      kp: 3,
-      kategorie: "Wahlmodule",
-      semester: "FS",
-    },
-    {
-      name: "European Integration",
-      kp: 3,
-      kategorie: "Wahlmodule",
-      semester: "FS",
-    },
-    { name: "Praktikum", kp: 6, kategorie: "Wahlmodule", semester: "HS/FS" },
-    {
-      name: "Switzerland in the Modern World",
-      kp: 6,
-      kategorie: "Wahlmodule",
-      semester: "HS/FS",
-    },
-    {
-      name: "Political Campaign Strategy",
-      kp: 6,
-      kategorie: "Wahlmodule",
-      semester: "HS",
-    },
-    {
-      name: "Politik und Kunst erforschen",
-      kp: 6,
-      kategorie: "Wahlmodule",
-      semester: "HS",
-    },
-    {
-      name: "Understanding China's Governance",
-      kp: 6,
-      kategorie: "Wahlmodule",
-      semester: "HS",
-    },
-    // EU-Module
-    {
-      name: "EEE 262 Umweltpolitik der Schweiz",
-      kp: 3,
-      kategorie: "Wahlmodule",
-      semester: "HS",
-    },
-    {
-      name: "EEE 264 Umweltpolitik der EU",
-      kp: 3,
-      kategorie: "Wahlmodule",
-      semester: "FS",
-    },
-  ],
+window.PolisciWahlmoduleData = {
+  // Frühjahrssemester 2026 – Politikwissenschaft Wahlmodule
+  fs2026: {
+    wahlmodule: [
+      {
+        name: "Agenda Setting and the Media",
+        kp: 6,
+        kategorie: "Wahlmodule",
+        semester: "FS",
+      },
+      {
+        name: "European Integration",
+        kp: 3,
+        kategorie: "Wahlmodule",
+        semester: "FS",
+      },
+      {
+        name: "EEE 264 Umweltpolitik der EU",
+        kp: 3,
+        kategorie: "Wahlmodule",
+        semester: "FS",
+      },
+    ],
+  },
+
+  // Herbstsemester 2025 – Politikwissenschaft Wahlmodule
+  hs2025: {
+    wahlmodule: [
+      {
+        name: "Praktikum",
+        kp: 6,
+        kategorie: "Wahlmodule",
+        semester: "HS",
+      },
+      {
+        name: "Politik und Kunst erforschen",
+        kp: 6,
+        kategorie: "Wahlmodule",
+        semester: "HS",
+      },
+      {
+        name: "Understanding China's Governance",
+        kp: 6,
+        kategorie: "Wahlmodule",
+        semester: "HS",
+      },
+      {
+        name: "EEE 262 Umweltpolitik der Schweiz",
+        kp: 3,
+        kategorie: "Wahlmodule",
+        semester: "HS",
+      },
+    ],
+  },
 };
