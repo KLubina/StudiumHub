@@ -57,10 +57,20 @@ StudienplanBase.prototype.getModuleCssClass = function (modul) {
         const block = this.config.pruefungsbloecke.find(
             (b) => b.name === modul.pruefungsblock
         );
-        return block.cssClass;
+        return block ? block.cssClass : null;
     }
 
-    return modul.kategorie;
+    // Kategorie-Namen mit Leerzeichen in CSS-konforme Klassen umwandeln
+    // Nutzt die 'klasse' Eigenschaft aus der Kategorie-Konfiguration
+    if (modul.kategorie) {
+        const kategorie = this.config.kategorien?.find(
+            (k) => k.name === modul.kategorie
+        );
+        // Falls Kategorie in Config gefunden, nutze die klasse, sonst Fallback auf kategorie
+        return kategorie ? kategorie.klasse : modul.kategorie;
+    }
+
+    return null;
 };
 
 StudienplanBase.prototype.addModuleEvents = function (div, modul) {
