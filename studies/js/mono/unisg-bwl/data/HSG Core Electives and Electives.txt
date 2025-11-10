@@ -1,3 +1,5 @@
+Herbst
+
 Hier ist die bereinigte Liste mit **nur den Modulnamen** und den **Oberkapiteln** aus dem Bereich *Core Electives* (Version mit Kursnummern beginnend mit 5,…):
 
 ***
@@ -155,3 +157,156 @@ Hier ist die bereinigte Liste mit **nur den Modulnamen** und dem **Oberkapitel**
 ***
 
 Wenn du möchtest, kann ich jetzt **alle bereinigten Listen aus allen bisherigen Nachrichten** in einer einzigen Datei (z. B. Excel, PDF oder Word) zusammenfassen und exportieren. Möchtest du das?
+
+Sommer
+
+Hier ist die bereinigte Liste mit **nur den Modulnamen** und den **Oberkapiteln** aus dem Bereich *Core Electives*:
+
+***
+
+### **Core Electives – ohne Spezialisierung**
+
+*   Kommunikations- und Medienmanagement
+*   Business-to-IT-Innovation: Was (zukünftige) Managerinnen und Manager wissen sollten
+*   Business-to-IT-Innovation: Übungen, Gruppe 1–2
+*   Tourism Systems – Analysis and Sustainable Management
+*   Ökonomie der CO₂ neutralen Stadt
+*   START Fellowship Finance
+
+***
+
+### **Accounting, Controlling, Auditing**
+
+*   Corporate Governance, Unternehmensführung, Steuerung und Überwachung
+*   International Accounting from the Perspective of the CFO
+*   Konzernrechnungslegung und Konzernrecht
+*   Controlling mit SAP
+*   Accounting Information Systems and Visualisation
+*   Enterprise Risk Management
+
+***
+
+### **Entrepreneurship**
+
+*   Start Your Own Business – Von der Idee zum Gründungserfolg
+*   Entrepreneurship (BBWL)
+*   Strategies and Business Practices of Swiss Global SMEs
+*   START Fellowship Entrepreneurship
+*   Creativity and Entrepreneurship
+
+***
+
+### **Finance**
+
+*   Asset-backed Commodity Trading, Gruppen 1–6
+*   Principles of Financial and Actuarial Mathematics
+*   Applied Corporate Valuation (BBWL)
+*   Investments
+*   Machine Learning in Finance
+*   Introduction to Financial Derivatives
+
+***
+
+### **International Management**
+
+*   India's Technology, Culture and Politics
+*   Managing Innovation in China
+*   International Management
+*   Doing Business in India
+
+***
+
+### **Leadership & Human Resource Management**
+
+*   Grundlagen des Diversity Management
+*   Human Performance and Potential
+*   Management von organisationalem Verhalten
+*   Enabling Human Potential and Synergistic Collaboration
+
+***
+
+### **Marketing**
+
+*   Business and Market Research
+*   Käuferverhalten
+*   Dienstleistungsmarketing
+*   Marketing Communications
+
+***
+
+### **Operations- and Innovationsmanagement**
+
+*   Business Excellence
+*   Innovationsmanagement
+*   Einführung in das Supply Chain Management
+*   Management of Industrial Companies
+*   Logistikmanagement
+
+***
+
+### **Strategic Management**
+
+*   Strategiekommunikation und -umsetzung
+*   Stakeholder-based Strategies
+*   Organisationsdesign
+*   Einsatz von Management-Tools
+*   Competitive Dynamics and Business Strategy
+
+***
+
+### **Entrepreneurial Informatics**
+
+*   Einführung in Cloud-Technologien: Cloud als Enabler für Geschäftsmodell-Innovationen
+*   Fundamentals of Business Process Management
+*   Data-driven Service Design und Management
+
+***
+
+Möchtest du alle bereinigten Listen nun als eine Datei exportieren (z. B. Excel, PDF oder Word)?
+
+Hier ist die bereinigte Liste mit **nur den Modulnamen** und dem **Oberkapitel**, wobei **alle Übungsgruppen entfernt** wurden:
+
+***
+
+### **Electives**
+
+*   Mikroökonomik III
+*   Microeconomics III
+*   Macroeconomics III
+*   Data Analytics II: Empirical Research Methods
+*   International Relations
+*   European Governance
+*   Regieren in Europa
+*   International Economics
+*   The Politics of Climate Change
+*   Multilateralism and the Challenges to the Rules Based International Order
+*   Obligationsrecht AT und BT
+*   Obligationsrecht AT und BT (BLE)
+*   Mathematical Tools for Data Science
+*   Introduction to Market Design
+*   Monetary Economics
+*   Democratic Choice and Social Welfare
+*   Stochastic Methods in Finance
+*   Evaluation of Labour Policy
+*   Wettbewerbspolitik: Theorie und Praxis
+*   Introduction to Time Series Modelling
+*   Money, Banking and Finance
+*   Data Handling: Databases
+*   Public Sector Economics
+*   Business and Politics: A Risk Perspective
+*   Asia-Pacific Security
+*   Egalitarian Capitalism in Crisis
+*   Global Health Governance
+*   Responding to Crisis and Building Peace
+*   Economics of Climate Change
+*   Ethik in den internationalen Beziehungen
+*   Verfahrensrecht: ZPO
+*   Verfahrensrecht: Strafprozessrecht
+*   Verfahrensrecht: Öffentliches Verfahrensrecht
+*   Europarecht
+*   Strafrecht BT II
+*   Einführung ins Gesellschaftsrecht
+
+***
+
+Wenn du möchtest, kann ich jetzt alle bereinigten Listen aus den bisherigen Nachrichten in einer Datei zusammenfassen und exportieren. Sollen wir das machen?
