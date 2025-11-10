@@ -4,10 +4,29 @@
 window.HSTWahlfaecherData = {
   wahlfaecherBereiche: {
     "Technik & Informatik": [
-      { name: "Signals and Systems", kp: 4, kategorie: "Wahlfächer" },
-      { name: "Microrobotics", kp: 4, kategorie: "Wahlfächer" },
-      { name: "Mass Transfer", kp: 4, kategorie: "Wahlfächer" },
-      { name: "Signal- und Systemtheorie I", kp: 4, kategorie: "Wahlfächer" },
+      {
+        // ============================================
+        // PFLICHTFELDER
+        // ============================================
+        name: "Signals and Systems",
+        kp: 4,
+        kategorie: "Wahlfächer",
+      },
+      {
+        name: "Microrobotics",
+        kp: 4,
+        kategorie: "Wahlfächer",
+      },
+      {
+        name: "Mass Transfer",
+        kp: 4,
+        kategorie: "Wahlfächer",
+      },
+      {
+        name: "Signal- und Systemtheorie I",
+        kp: 4,
+        kategorie: "Wahlfächer",
+      },
       {
         name: "Materialwissenschaftliche Grundlagen I",
         kp: 2,
@@ -30,11 +49,31 @@ window.HSTWahlfaecherData = {
       },
     ],
     "Sport & Bewegungswissenschaften": [
-      { name: "Praktikum Sportphysiologie", kp: 4, kategorie: "Wahlfächer" },
-      { name: "Sportgeschichte", kp: 2, kategorie: "Wahlfächer" },
-      { name: "Sportpädagogik", kp: 2, kategorie: "Wahlfächer" },
-      { name: "Sportpsychologie", kp: 2, kategorie: "Wahlfächer" },
-      { name: "Sportsoziologie", kp: 2, kategorie: "Wahlfächer" },
+      {
+        name: "Praktikum Sportphysiologie",
+        kp: 4,
+        kategorie: "Wahlfächer",
+      },
+      {
+        name: "Sportgeschichte",
+        kp: 2,
+        kategorie: "Wahlfächer",
+      },
+      {
+        name: "Sportpädagogik",
+        kp: 2,
+        kategorie: "Wahlfächer",
+      },
+      {
+        name: "Sportpsychologie",
+        kp: 2,
+        kategorie: "Wahlfächer",
+      },
+      {
+        name: "Sportsoziologie",
+        kp: 2,
+        kategorie: "Wahlfächer",
+      },
       {
         name: "Bewegungs- und Sporttherapie I",
         kp: 2,
@@ -50,10 +89,26 @@ window.HSTWahlfaecherData = {
         kp: 2,
         kategorie: "Wahlfächer",
       },
-      { name: "Paraplegie und Sport", kp: 2, kategorie: "Wahlfächer" },
-      { name: "Praktikum Bewegungslehre", kp: 2, kategorie: "Wahlfächer" },
-      { name: "Praktikum Trainingslehre", kp: 2, kategorie: "Wahlfächer" },
-      { name: "Nutrition and Performance", kp: 2, kategorie: "Wahlfächer" },
+      {
+        name: "Paraplegie und Sport",
+        kp: 2,
+        kategorie: "Wahlfächer",
+      },
+      {
+        name: "Praktikum Bewegungslehre",
+        kp: 2,
+        kategorie: "Wahlfächer",
+      },
+      {
+        name: "Praktikum Trainingslehre",
+        kp: 2,
+        kategorie: "Wahlfächer",
+      },
+      {
+        name: "Nutrition and Performance",
+        kp: 2,
+        kategorie: "Wahlfächer",
+      },
       {
         name: "Thermoregulation und Sporttextilien",
         kp: 1,
@@ -61,19 +116,31 @@ window.HSTWahlfaecherData = {
       },
     ],
     "Public Health & Gesundheitswissenschaften": [
-      { name: "Einführung in Public Health", kp: 2, kategorie: "Wahlfächer" },
+      {
+        name: "Einführung in Public Health",
+        kp: 2,
+        kategorie: "Wahlfächer",
+      },
       {
         name: "Psychologie und Epidemiologie in Arbeit und Gesundheit",
         kp: 2,
         kategorie: "Wahlfächer",
       },
-      { name: "This is Public Health", kp: 1, kategorie: "Wahlfächer" },
+      {
+        name: "This is Public Health",
+        kp: 1,
+        kategorie: "Wahlfächer",
+      },
       {
         name: "Environmental Exposures and Health Effects",
         kp: 3,
         kategorie: "Wahlfächer",
       },
-      { name: "Introduction to Toxicology", kp: 3, kategorie: "Wahlfächer" },
+      {
+        name: "Introduction to Toxicology",
+        kp: 3,
+        kategorie: "Wahlfächer",
+      },
       {
         name: "Vom Symptom zur Diagnose (für HST)",
         kp: 1,
@@ -91,9 +158,21 @@ window.HSTWahlfaecherData = {
         kp: 6,
         kategorie: "Wahlfächer",
       },
-      { name: "Proteins and Lipids", kp: 6, kategorie: "Wahlfächer" },
-      { name: "Medizinische Chemie I", kp: 2, kategorie: "Wahlfächer" },
-      { name: "Medizinische Chemie II", kp: 2, kategorie: "Wahlfächer" },
+      {
+        name: "Proteins and Lipids",
+        kp: 6,
+        kategorie: "Wahlfächer",
+      },
+      {
+        name: "Medizinische Chemie I",
+        kp: 2,
+        kategorie: "Wahlfächer",
+      },
+      {
+        name: "Medizinische Chemie II",
+        kp: 2,
+        kategorie: "Wahlfächer",
+      },
       {
         name: "Pharmakologie und Toxikologie I",
         kp: 3,
@@ -104,8 +183,16 @@ window.HSTWahlfaecherData = {
         kp: 2,
         kategorie: "Wahlfächer",
       },
-      { name: "Gene Technology", kp: 2, kategorie: "Wahlfächer" },
-      { name: "Pharmaceutical Immunology I", kp: 2, kategorie: "Wahlfächer" },
+      {
+        name: "Gene Technology",
+        kp: 2,
+        kategorie: "Wahlfächer",
+      },
+      {
+        name: "Pharmaceutical Immunology I",
+        kp: 2,
+        kategorie: "Wahlfächer",
+      },
       {
         name: "Cellular Biochemistry (Part I)",
         kp: 3,
@@ -116,8 +203,16 @@ window.HSTWahlfaecherData = {
         kp: 3,
         kategorie: "Wahlfächer",
       },
-      { name: "Biopharmazie", kp: 3, kategorie: "Wahlfächer" },
-      { name: "Systems Biology", kp: 6, kategorie: "Wahlfächer" },
+      {
+        name: "Biopharmazie",
+        kp: 3,
+        kategorie: "Wahlfächer",
+      },
+      {
+        name: "Systems Biology",
+        kp: 6,
+        kategorie: "Wahlfächer",
+      },
     ],
     "Medizin & Krankheiten": [
       {
@@ -137,7 +232,11 @@ window.HSTWahlfaecherData = {
         kp: 3,
         kategorie: "Wahlfächer",
       },
-      { name: "Ethics in Drug Development", kp: 3, kategorie: "Wahlfächer" },
+      {
+        name: "Ethics in Drug Development",
+        kp: 3,
+        kategorie: "Wahlfächer",
+      },
       {
         name: "Climate, Ethics and Human Health",
         kp: 3,
@@ -155,8 +254,16 @@ window.HSTWahlfaecherData = {
         kp: 3,
         kategorie: "Wahlfächer",
       },
-      { name: "Lebensmittel-Mikrobiologie I", kp: 3, kategorie: "Wahlfächer" },
-      { name: "Lebensmittel-Mikrobiologie II", kp: 3, kategorie: "Wahlfächer" },
+      {
+        name: "Lebensmittel-Mikrobiologie I",
+        kp: 3,
+        kategorie: "Wahlfächer",
+      },
+      {
+        name: "Lebensmittel-Mikrobiologie II",
+        kp: 3,
+        kategorie: "Wahlfächer",
+      },
     ],
     Wirtschaft: [
       {
@@ -164,8 +271,16 @@ window.HSTWahlfaecherData = {
         kp: 2,
         kategorie: "Wahlfächer",
       },
-      { name: "Consumer Behaviour II", kp: 2, kategorie: "Wahlfächer" },
-      { name: "Berufspraktische Übungen", kp: 2, kategorie: "Wahlfächer" },
+      {
+        name: "Consumer Behaviour II",
+        kp: 2,
+        kategorie: "Wahlfächer",
+      },
+      {
+        name: "Berufspraktische Übungen",
+        kp: 2,
+        kategorie: "Wahlfächer",
+      },
     ],
   },
 };

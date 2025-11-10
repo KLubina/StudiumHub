@@ -4,9 +4,16 @@
 window.StudiengangModules = [
   // Core Courses: 1. General Management and Human Resource Management
   {
+    // ============================================
+    // PFLICHTFELDER
+    // ============================================
     name: "Introduction to Management",
     kp: 3,
     kategorie: "Core Courses",
+
+    // ============================================
+    // STUDIENGANGSPEZIFISCH (optional)
+    // ============================================
     fachgebiet: "Management & HR",
   },
   {

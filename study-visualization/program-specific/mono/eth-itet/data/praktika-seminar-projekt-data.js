@@ -7,6 +7,9 @@ window.ITETPraktikaSeminarProjektData = {
   praktikaSchwerpunkte: {
     "Machine Learning & KI": [
       {
+        // ============================================
+        // PFLICHTFELDER
+        // ============================================
         name: "Machine Learning for Brain-Computer Interfaces",
         kp: 3,
         kategorie: "Wahl Praktika-Projekte-Seminare",
@@ -352,6 +355,9 @@ window.ITETPraktikaSeminarProjektData = {
   // Weitere Module können hier über initializeNewModuleCategories() hinzugefügt werden
   praktikaModule: [
     {
+      // ============================================
+      // PFLICHTFELDER
+      // ============================================
       name: "Amateurfunk-Kurs",
       kp: 1.5,
       kategorie: "Wahl Praktika-Projekte-Seminare",

@@ -6,30 +6,37 @@ window.EthnologiePflichtmodulesData = {
   fs2026: {
     pflichtmodule: [
       {
+        // ============================================
+        // PFLICHTFELDER
+        // ============================================
         name: "Ethnologische Forschungsmethoden",
         kp: 6,
         kategorie: "Pflichtmodule",
-        semester: "FS",
+
+        // ============================================
+        // KONTEXT (wenn vorhanden)
+        // ============================================
+        semester: 2,
       },
       {
         name: "Fachgeschichte",
         kp: 9,
         kategorie: "Pflichtmodule",
-        semester: "FS",
+        semester: 2,
       },
       {
         name: "Bachelorarbeit",
         kp: 15,
         kategorie: "Bachelor-Arbeit",
-        semester: "FS",
         jahr: 3,
+        semester: 2,
       },
       {
         name: "Ba-Kolloquium",
         kp: 3,
         kategorie: "Pflichtmodule",
-        semester: "FS",
         jahr: 3,
+        semester: 2,
       },
     ],
   },
@@ -41,27 +48,27 @@ window.EthnologiePflichtmodulesData = {
         name: "Einführung in die Ethnologie",
         kp: 6,
         kategorie: "Pflichtmodule",
-        semester: "HS",
+        semester: 1,
       },
       {
         name: "Einführung in die Arbeit mit ethnologischen Texten",
         kp: 9,
         kategorie: "Pflichtmodule",
-        semester: "HS",
+        semester: 1,
       },
       {
         name: "Bachelorarbeit",
         kp: 15,
         kategorie: "Bachelor-Arbeit",
-        semester: "HS",
         jahr: 3,
+        semester: 1,
       },
       {
         name: "Ba-Kolloquium",
         kp: 3,
         kategorie: "Pflichtmodule",
-        semester: "HS",
         jahr: 3,
+        semester: 1,
       },
     ],
   },

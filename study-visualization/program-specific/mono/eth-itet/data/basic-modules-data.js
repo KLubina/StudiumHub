@@ -8,59 +8,66 @@ window.StudiengangModules = [
 
   // Physik
   {
-    jahr: 1,
-    semester: 1,
+    // ============================================
+    // PFLICHTFELDER
+    // ============================================
     name: "Technische Mechanik",
     kp: 4,
     kategorie: "Obligatorische Fächer",
+
+    // ============================================
+    // KONTEXT (wenn vorhanden)
+    // ============================================
+    jahr: 1,
+    semester: 1,
   },
 
   // Elektrotechnik
   {
-    jahr: 1,
-    semester: 1,
     name: "Netzwerke und Schaltungen I",
     kp: 4,
     kategorie: "Obligatorische Fächer",
+    jahr: 1,
+    semester: 1,
   },
 
   // Informationstechnologie
   {
-    jahr: 1,
-    semester: 1,
     name: "Digitaltechnik",
     kp: 4,
     kategorie: "Obligatorische Fächer",
-  },
-  {
     jahr: 1,
     semester: 1,
+  },
+  {
     name: "Digitaltechnik Praktikum",
     kp: 1,
     kategorie: "Obligatorische Praktikum",
-  },
-  {
     jahr: 1,
     semester: 1,
+  },
+  {
     name: "Vorkurs Informatik",
     kp: 1,
     kategorie: "Obligatorische Praktikum",
+    jahr: 1,
+    semester: 1,
   },
 
   // Mathematik
   {
-    jahr: 1,
-    semester: 1,
     name: "Analysis 1",
     kp: 8,
     kategorie: "Obligatorische Fächer",
-  },
-  {
     jahr: 1,
     semester: 1,
+  },
+  {
     name: "Lineare Algebra",
     kp: 5,
     kategorie: "Obligatorische Fächer",
+    jahr: 1,
+    semester: 1,
   },
 
   // #endregion 1. Semester
@@ -70,52 +77,52 @@ window.StudiengangModules = [
 
   // Physik
   {
-    jahr: 1,
-    semester: 2,
     name: "Physik I",
     kp: 4,
     kategorie: "Obligatorische Fächer",
+    jahr: 1,
+    semester: 2,
   },
 
   // Elektrotechnik
   {
-    jahr: 1,
-    semester: 2,
     name: "Netzwerke und Schaltungen II",
     kp: 8,
     kategorie: "Obligatorische Fächer",
-  },
-  {
     jahr: 1,
     semester: 2,
+  },
+  {
     name: "Netzwerke und Schaltungen Praktikum",
     kp: 1,
     kategorie: "Obligatorische Praktikum",
+    jahr: 1,
+    semester: 2,
   },
 
   // Informationstechnologie
   {
-    jahr: 1,
-    semester: 2,
     name: "Informatik I",
     kp: 4,
     kategorie: "Obligatorische Fächer",
+    jahr: 1,
+    semester: 2,
   },
 
   // Mathematik
   {
-    jahr: 1,
-    semester: 2,
     name: "Analysis 2",
     kp: 8,
     kategorie: "Obligatorische Fächer",
-  },
-  {
     jahr: 1,
     semester: 2,
+  },
+  {
     name: "Mathematische Methoden",
     kp: 4,
     kategorie: "Obligatorische Fächer",
+    jahr: 1,
+    semester: 2,
   },
 
   // #endregion 2. Semester
@@ -125,59 +132,59 @@ window.StudiengangModules = [
 
   // Physik
   {
-    jahr: 2,
-    semester: 1,
     name: "Physik II",
     kp: 8,
     kategorie: "Obligatorische Fächer",
+    jahr: 2,
+    semester: 1,
   },
 
   // Elektrotechnik
   {
-    jahr: 2,
-    semester: 1,
     name: "Signal- und Systemtheorie I",
     kp: 4,
     kategorie: "Obligatorische Fächer",
-  },
-  {
     jahr: 2,
     semester: 1,
+  },
+  {
     name: "Halbleiter-Schaltungstechnik",
     kp: 4,
     kategorie: "Obligatorische Fächer",
-  },
-  {
     jahr: 2,
     semester: 1,
+  },
+  {
     name: "Halbleiter-Schaltungstechnik Praktikum",
     kp: 1,
     kategorie: "Obligatorische Praktikum",
+    jahr: 2,
+    semester: 1,
   },
 
   // Informationstechnologie
   {
-    jahr: 2,
-    semester: 1,
     name: "Informatik II",
     kp: 4,
     kategorie: "Obligatorische Fächer",
+    jahr: 2,
+    semester: 1,
   },
 
   // Mathematik
   {
-    jahr: 2,
-    semester: 1,
     name: "Analysis 3",
     kp: 4,
     kategorie: "Obligatorische Fächer",
-  },
-  {
     jahr: 2,
     semester: 1,
+  },
+  {
     name: "Diskrete Mathematik",
     kp: 4,
     kategorie: "Obligatorische Fächer",
+    jahr: 2,
+    semester: 1,
   },
 
   // #endregion 3. Semester
@@ -187,52 +194,52 @@ window.StudiengangModules = [
 
   // Physik
   {
-    jahr: 2,
-    semester: 2,
     name: "Elektromagnetische Felder und Wellen",
     kp: 4,
     kategorie: "Obligatorische Fächer",
+    jahr: 2,
+    semester: 2,
   },
 
   // Elektrotechnik
   {
-    jahr: 2,
-    semester: 2,
     name: "Signal- und Systemtheorie II",
     kp: 4,
     kategorie: "Obligatorische Fächer",
-  },
-  {
     jahr: 2,
     semester: 2,
+  },
+  {
     name: "Halbleiterelemente",
     kp: 4,
     kategorie: "Obligatorische Fächer",
+    jahr: 2,
+    semester: 2,
   },
 
   // Informationstechnologie
   {
-    jahr: 2,
-    semester: 2,
     name: "Technische Informatik",
     kp: 4,
     kategorie: "Obligatorische Fächer",
+    jahr: 2,
+    semester: 2,
   },
 
   // Mathematik
   {
-    jahr: 2,
-    semester: 2,
     name: "Numerische Methoden",
     kp: 4,
     kategorie: "Obligatorische Fächer",
-  },
-  {
     jahr: 2,
     semester: 2,
+  },
+  {
     name: "Wahrscheinlichkeitstheorie und Statistik",
     kp: 4,
     kategorie: "Obligatorische Fächer",
+    jahr: 2,
+    semester: 2,
   },
 
   // #endregion 4. Semester
@@ -240,43 +247,43 @@ window.StudiengangModules = [
   // #region 5.-6. Semester (Platzhalter & Abschluss)
   // PLATZHALTER für dynamische Module (wird durch Extensions ersetzt)
   {
-    jahr: 3,
-    semester: 0,
     name: "Kernfächer nach Schwerpunkt",
     kp: 0,
     kategorie: "Kernfächer nach Schwerpunkt",
+    jahr: 3,
+    semester: 0,
     isPlaceholder: true,
   },
   {
-    jahr: 3,
-    semester: 0,
     name: "Weitere Wahl-Grundlagenfächer",
     kp: 0,
     kategorie: "Weitere Wahl-Grundlagenfächer",
+    jahr: 3,
+    semester: 0,
     isPlaceholder: true,
   },
   {
-    jahr: 3,
-    semester: 0,
     name: "Wahl Praktika-Projekte-Seminare",
     kp: 0,
     kategorie: "Wahl Praktika-Projekte-Seminare",
+    jahr: 3,
+    semester: 0,
     isPlaceholder: true,
   },
 
   {
-    jahr: 3,
-    semester: 0,
     name: "Bachelorarbeit",
     kp: 12,
     kategorie: "Wissenschaftliche Arbeit",
-  },
-  {
     jahr: 3,
     semester: 0,
+  },
+  {
     name: "Science in Perspective",
     kp: 6,
     kategorie: "Wissenschaftliche Arbeit",
+    jahr: 3,
+    semester: 0,
   },
   // #endregion 5.-6. Semester (Platzhalter & Abschluss)
 ];

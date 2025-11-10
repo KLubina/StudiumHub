@@ -6,46 +6,53 @@ window.KommunikationWahlpflichtmoduleData = {
   fs2026: {
     wahlpflichtmodule: [
       {
+        // ============================================
+        // PFLICHTFELDER
+        // ============================================
         name: "Angewandte Medien- und Publikumsforschung",
         kp: 3,
         kategorie: "Wahlpflichtmodule",
-        semester: "FS",
+
+        // ============================================
+        // KONTEXT (wenn vorhanden)
+        // ============================================
+        semester: 2,
       },
       {
         name: "Das schweizerische Mediensystem",
         kp: 3,
         kategorie: "Wahlpflichtmodule",
-        semester: "FS",
+        semester: 2,
       },
       {
         name: "Geschichte und Soziologie der Medien",
         kp: 3,
         kategorie: "Wahlpflichtmodule",
-        semester: "FS",
+        semester: 2,
       },
       {
         name: "Medienrecht",
         kp: 3,
         kategorie: "Wahlpflichtmodule",
-        semester: "FS",
+        semester: 2,
       },
       {
         name: "Medienethik",
         kp: 3,
         kategorie: "Wahlpflichtmodule",
-        semester: "FS",
+        semester: 2,
       },
       {
         name: "Werbung",
         kp: 3,
         kategorie: "Wahlpflichtmodule",
-        semester: "FS",
+        semester: 2,
       },
       {
         name: "Qualitative Sozialforschung",
         kp: 3,
         kategorie: "Wahlpflichtmodule",
-        semester: "FS",
+        semester: 2,
       },
     ],
   },
@@ -57,43 +64,43 @@ window.KommunikationWahlpflichtmoduleData = {
         name: "Angewandte Medien- und Publikumsforschung",
         kp: 3,
         kategorie: "Wahlpflichtmodule",
-        semester: "HS",
+        semester: 1,
       },
       {
         name: "Das schweizerische Mediensystem",
         kp: 3,
         kategorie: "Wahlpflichtmodule",
-        semester: "HS",
+        semester: 1,
       },
       {
         name: "Geschichte und Soziologie der Medien",
         kp: 3,
         kategorie: "Wahlpflichtmodule",
-        semester: "HS",
+        semester: 1,
       },
       {
         name: "Medienrecht",
         kp: 3,
         kategorie: "Wahlpflichtmodule",
-        semester: "HS",
+        semester: 1,
       },
       {
         name: "Medienethik",
         kp: 3,
         kategorie: "Wahlpflichtmodule",
-        semester: "HS",
+        semester: 1,
       },
       {
         name: "Werbung",
         kp: 3,
         kategorie: "Wahlpflichtmodule",
-        semester: "HS",
+        semester: 1,
       },
       {
         name: "Qualitative Sozialforschung",
         kp: 3,
         kategorie: "Wahlpflichtmodule",
-        semester: "HS",
+        semester: 1,
       },
     ],
   },

@@ -6,6 +6,9 @@ window.ITETWeitereWahlGrundlagenData = {
   // WEITERE WAHL-GRUNDLAGENFÄCHER
   weitereWahlGrundlagen: [
     {
+      // ============================================
+      // PFLICHTFELDER
+      // ============================================
       name: "Computational Thinking",
       kp: 4,
       kategorie: "Weitere Wahl-Grundlagenfächer",

@@ -6,36 +6,43 @@ window.PopKulturPflichtmoduleData = {
   fs2026: {
     pflichtmodule: [
       {
+        // ============================================
+        // PFLICHTFELDER
+        // ============================================
         name: "Populäre Literaturen und Medien: Geschichte, Theorien, Felder",
         kp: 6,
         kategorie: "Pflichtmodule",
-        semester: "FS",
+
+        // ============================================
+        // KONTEXT (wenn vorhanden)
+        // ============================================
+        semester: 2,
       },
       {
         name: "Kulturtheorien lesen, verstehen, diskutieren",
         kp: 6,
         kategorie: "Pflichtmodule",
-        semester: "FS",
+        semester: 2,
       },
       {
         name: "Qualitative Methoden: analysieren, interpretieren, formulieren",
         kp: 9,
         kategorie: "Pflichtmodule",
-        semester: "FS",
+        semester: 2,
       },
       {
         name: "Bachelorkolloquium",
         kp: 3,
         kategorie: "Pflichtmodule",
-        semester: "FS",
         jahr: 3,
+        semester: 2,
       },
       {
         name: "Bachelorarbeit",
         kp: 15,
         kategorie: "Bachelor-Arbeit",
-        semester: "FS",
         jahr: 3,
+        semester: 2,
       },
     ],
   },
@@ -47,33 +54,33 @@ window.PopKulturPflichtmoduleData = {
         name: "Alltagskulturen: Geschichte, Theorien, Felder",
         kp: 6,
         kategorie: "Pflichtmodule",
-        semester: "HS",
+        semester: 1,
       },
       {
         name: "Kulturtheorien lesen, verstehen, diskutieren",
         kp: 6,
         kategorie: "Pflichtmodule",
-        semester: "HS",
+        semester: 1,
       },
       {
         name: "Qualitative Methoden: recherchieren, erheben, evaluieren",
         kp: 9,
         kategorie: "Pflichtmodule",
-        semester: "HS",
+        semester: 1,
       },
       {
         name: "Bachelorkolloquium",
         kp: 3,
         kategorie: "Pflichtmodule",
-        semester: "HS",
         jahr: 3,
+        semester: 1,
       },
       {
         name: "Bachelorarbeit",
         kp: 15,
         kategorie: "Bachelor-Arbeit",
-        semester: "HS",
         jahr: 3,
+        semester: 1,
       },
     ],
   },

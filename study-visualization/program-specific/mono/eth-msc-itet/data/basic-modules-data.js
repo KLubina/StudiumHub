@@ -4,61 +4,72 @@
 window.StudiengangModules = [
     // #region 1.-2. Semester (Kern-/Vertiefungsfächer als Wahlmodule)
     // 1. Jahr - Kernfächer und Vertiefungsfächer sind Wahlmodule
-    { 
-        jahr: 1, 
-        semester: 0, 
-        name: "Kernfächer", 
-        kp: 0, 
-        kategorie: "Kernfächer", 
-        isPlaceholder: true 
+    {
+        // ============================================
+        // PFLICHTFELDER
+        // ============================================
+        name: "Kernfächer",
+        kp: 0,
+        kategorie: "Kernfächer",
+
+        // ============================================
+        // KONTEXT (wenn vorhanden)
+        // ============================================
+        jahr: 1,
+        semester: 0,
+
+        // ============================================
+        // STUDIENGANGSPEZIFISCH (optional)
+        // ============================================
+        isPlaceholder: true,
     },
-    { 
-        jahr: 1, 
-        semester: 0, 
-        name: "Vertiefungsfächer", 
-        kp: 0, 
-        kategorie: "Vertiefungsfächer", 
-        isPlaceholder: true 
+    {
+        name: "Vertiefungsfächer",
+        kp: 0,
+        kategorie: "Vertiefungsfächer",
+        jahr: 1,
+        semester: 0,
+        isPlaceholder: true,
     },
 
     // 1. Jahr - Fixe Module
-    { 
-        jahr: 1, 
-        semester: 1, 
-        name: "Semesterprojekt", 
-        kp: 12, 
-        kategorie: "Fixe Module" 
+    {
+        name: "Semesterprojekt",
+        kp: 12,
+        kategorie: "Fixe Module",
+        jahr: 1,
+        semester: 1,
     },
     // #endregion 1.-2. Semester (Kern-/Vertiefungsfächer als Wahlmodule)
 
     // #region 3. Semester (Fixe Module)
-    // 2. Jahr - Fixe Module  
-    { 
-        jahr: 2, 
-        semester: 1, 
-        name: "Eines der folgenden", 
-        kp: 12, 
+    // 2. Jahr - Fixe Module
+    {
+        name: "Eines der folgenden",
+        kp: 12,
         kategorie: "Fixe Module",
+        jahr: 2,
+        semester: 1,
         inhalt: [
             "Weitere Fächer (Kern-/Vertiefungs-/Wahl-)",
-            "2. Semesterprojekt", 
+            "2. Semesterprojekt",
             "Industriepraktikum"
         ]
     },
-    { 
-        jahr: 2, 
-        semester: 1, 
-        name: "Wissenschaft im Kontext", 
-        kp: 2, 
-        kategorie: "Fixe Module" 
+    {
+        name: "Wissenschaft im Kontext",
+        kp: 2,
+        kategorie: "Fixe Module",
+        jahr: 2,
+        semester: 1,
     },
     // #endregion 3. Semester
-    { 
-        jahr: 2, 
-        semester: 2, 
-        name: "Master-Arbeit", 
-        kp: 30, 
-        kategorie: "Fixe Module" 
+    {
+        name: "Master-Arbeit",
+        kp: 30,
+        kategorie: "Fixe Module",
+        jahr: 2,
+        semester: 2,
     }
     // #region 4. Semester
     // (Master-Arbeit)
