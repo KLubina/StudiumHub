@@ -137,7 +137,7 @@ class ModuleDataCombiner {
             wahl: !!wahlData
         });
         
-        // Simple solution: collect all modules into one flat array
+        // Super simple: collect all modules into one flat array
         const allModules = [];
         
         // Extract from nested structure (fs2026/hs2025)
@@ -156,13 +156,12 @@ class ModuleDataCombiner {
             if (wahlData.hs2025?.wahlmodule) allModules.push(...wahlData.hs2025.wahlmodule);
         }
         
-        console.log(`✅ Total modules combined: ${allModules.length}`);
+        console.log(`✅ Total modules: ${allModules.length}`);
         
-        // Store in window.studiengangConfig.daten
-        if (!window.studiengangConfig) window.studiengangConfig = {};
-        window.studiengangConfig.daten = allModules;
+        // Put it where ConfigMerger expects it
+        window.StudiengangModules = allModules;
         
-        console.log('✅ UZH Daten kombiniert in studiengangConfig.daten');
+        console.log('✅ UZH Daten → window.StudiengangModules');
     }
 }
 
