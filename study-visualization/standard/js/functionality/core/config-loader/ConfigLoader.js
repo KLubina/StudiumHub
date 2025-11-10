@@ -16,9 +16,15 @@ class StudiengangConfigLoader {
         // Load modular config files (new structure)
         await this.loadModularConfigs(basePath);
 
+        // Check if this is a UZH studiengang
+        const isUZH = ['uzh-polisci', 'uzh-geschichte', 'uzh-ethnologie', 'uzh-kommunikation', 'uzh-pop-kultur', 'uzh-soziologie'].includes(this.studiengang);
+
         // Load data files - now in data/ subdirectory
-        await this.loader.loadModule(`${basePath}/data/basic-modules-data.js`);
-        await this.loader.loadOptionalModule(`${basePath}/data/basic-modules-details.js`);
+        // UZH studiengänge don't have basic-modules-data.js, they load their data in loadUZHData()
+        if (!isUZH) {
+            await this.loader.loadModule(`${basePath}/data/basic-modules-data.js`);
+            await this.loader.loadOptionalModule(`${basePath}/data/basic-modules-details.js`);
+        }
 
         await this.loadStudiengangSpecificData(basePath);
         await this.loadStudiengangSpecifics(basePath);

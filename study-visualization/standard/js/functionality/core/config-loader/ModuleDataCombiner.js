@@ -6,6 +6,8 @@ class ModuleDataCombiner {
             this.combineITETData();
         } else if (studiengang === 'eth-msc-itet') {
             this.combineMSCITETData();
+        } else if (studiengang.startsWith('uzh-')) {
+            this.combineUZHData(studiengang);
         }
     }
 
@@ -106,6 +108,61 @@ class ModuleDataCombiner {
             window[targetVariable] = window.UzhCommonMinorData;
             console.log(`✅ UZH Minor-Daten aliasiert: UzhCommonMinorData → ${targetVariable}`);
         }
+    }
+
+    static combineUZHData(studiengang) {
+        console.log('🔧 combineUZHData called for:', studiengang);
+        
+        // Map studiengang to variable prefix
+        const prefixMap = {
+            'uzh-polisci': 'Polisci',
+            'uzh-geschichte': 'Geschichte',
+            'uzh-ethnologie': 'Ethnologie',
+            'uzh-kommunikation': 'Kommunikation',
+            'uzh-pop-kultur': 'PopKultur',
+            'uzh-soziologie': 'Soziologie'
+        };
+        
+        const prefix = prefixMap[studiengang];
+        if (!prefix) return;
+        
+        // Get the three data sources
+        const pflichtData = window[`${prefix}PflichtmoduleData`];
+        const wahlpflichtData = window[`${prefix}WahlpflichtmoduleData`];
+        const wahlData = window[`${prefix}WahlmoduleData`];
+        
+        console.log(`📦 Daten gefunden:`, {
+            pflicht: !!pflichtData,
+            wahlpflicht: !!wahlpflichtData,
+            wahl: !!wahlData
+        });
+        
+        // Simple solution: collect all modules into one flat array
+        const allModules = [];
+        
+        // Extract from nested structure (fs2026/hs2025)
+        if (pflichtData) {
+            if (pflichtData.fs2026?.pflichtmodule) allModules.push(...pflichtData.fs2026.pflichtmodule);
+            if (pflichtData.hs2025?.pflichtmodule) allModules.push(...pflichtData.hs2025.pflichtmodule);
+        }
+        
+        if (wahlpflichtData) {
+            if (wahlpflichtData.fs2026?.wahlpflichtmodule) allModules.push(...wahlpflichtData.fs2026.wahlpflichtmodule);
+            if (wahlpflichtData.hs2025?.wahlpflichtmodule) allModules.push(...wahlpflichtData.hs2025.wahlpflichtmodule);
+        }
+        
+        if (wahlData) {
+            if (wahlData.fs2026?.wahlmodule) allModules.push(...wahlData.fs2026.wahlmodule);
+            if (wahlData.hs2025?.wahlmodule) allModules.push(...wahlData.hs2025.wahlmodule);
+        }
+        
+        console.log(`✅ Total modules combined: ${allModules.length}`);
+        
+        // Store in window.studiengangConfig.daten
+        if (!window.studiengangConfig) window.studiengangConfig = {};
+        window.studiengangConfig.daten = allModules;
+        
+        console.log('✅ UZH Daten kombiniert in studiengangConfig.daten');
     }
 }
 
