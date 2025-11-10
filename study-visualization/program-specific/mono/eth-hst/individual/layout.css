@@ -1,15 +1,6 @@
 /* ==== ETH HST - LAYOUT OVERRIDES ==== */
 /* Program-specific layout customizations */
 
-/* KP-Counter with HST colors */
-[data-studiengang="eth-hst"] #kp-counter {
-    border-color: var(--color-basispruefung);
-}
-
-[data-studiengang="eth-hst"] #kp-total {
-    background: linear-gradient(135deg, #4ECDC4, #45B7D1);
-}
-
 /* 3rd Year Horizontal Layout */
 [data-studiengang="eth-hst"] .jahr:last-child .module-container {
     display: flex !important;

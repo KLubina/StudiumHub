@@ -1,15 +1,6 @@
 /* ==== ETH ITET - LAYOUT OVERRIDES ==== */
 /* Program-specific layout customizations */
 
-/* KP-Counter with ITET colors */
-[data-studiengang="eth-itet"] #kp-counter {
-    border-color: var(--color-obligatorisch);
-}
-
-[data-studiengang="eth-itet"] #kp-total {
-    background: linear-gradient(135deg, var(--color-obligatorisch), var(--color-obligatorisch-praktikum));
-}
-
 /* 3rd Year Horizontal Layout */
 [data-studiengang="eth-itet"] .jahr:last-child .module-container {
     display: flex !important;
