@@ -32,7 +32,8 @@ class StudiengangConfigLoader {
     async loadModularConfigs(basePath) {
         // Core config files (always loaded) - now in standard-config/ subdirectory
         await this.loader.loadModule(`${basePath}/standard-config/general-config.js`);
-        await this.loader.loadModule(`${basePath}/standard-config/layout-config.js`);
+        // Layout config is optional: absence means default layout values from ConfigMerger will be used
+        await this.loader.loadOptionalModule(`${basePath}/standard-config/layout-config.js`);
         // Features config is optional: absence means all feature flags default to false
         await this.loader.loadOptionalModule(`${basePath}/standard-config/features-config.js`);
         await this.loader.loadModule(`${basePath}/standard-config/categories-config.js`);

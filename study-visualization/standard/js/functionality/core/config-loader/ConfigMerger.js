@@ -21,12 +21,22 @@ class ConfigMerger {
             creditUnit: "ECTS"
         };
 
+        // Provide standard defaults for layout settings
+        const defaultLayoutConfig = {
+            layout: "years",
+            moduleSizing: "proportional",
+            basisArea: 2000,
+            defaultAspectRatio: 1.5,
+            aspectRatios: {}
+        };
+
         // NEW: Merge modular config files (if they exist)
         if (window.StudiengangGeneralConfig || window.StudiengangLayoutConfig) {
             // New modular structure detected
             config = {
                 // Merge general defaults first, then study-specific configs to allow overrides
                 ...defaultGeneralConfig,
+                ...defaultLayoutConfig,
                 ...window.StudiengangGeneralConfig,
                 ...window.StudiengangLayoutConfig,
                 // Merge defaults first, then study-specific to allow partial configs
