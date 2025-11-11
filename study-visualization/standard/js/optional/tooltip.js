@@ -23,7 +23,73 @@ window.StudienplanTooltip = {
             }
         });
 
+        // Warte bis Details geladen sind, dann füge Indikatoren hinzu
+        this.waitForDetailsAndAddIndicators();
+
         console.log('✅ Tooltip-System initialisiert (Click-basiert)');
+    },
+
+    waitForDetailsAndAddIndicators() {
+        // Prüfe wiederholt ob Details geladen sind
+        const checkDetails = () => {
+            if (window.StudiengangModuleDetails && Object.keys(window.StudiengangModuleDetails).length > 0) {
+                this.addIndicatorsToAllModules();
+            } else {
+                // Versuche in 100ms wieder
+                setTimeout(checkDetails, 100);
+            }
+        };
+        checkDetails();
+    },
+
+    addIndicatorsToAllModules() {
+        // Finde alle Module (außer Platzhaltern)
+        const modules = document.querySelectorAll('.modul:not(.modul-platzhalter)');
+        modules.forEach(modul => {
+            const name = modul.querySelector('.modul-titel')?.textContent;
+            if (name && window.StudiengangModuleDetails[name]) {
+                this.addIndicators(modul, window.StudiengangModuleDetails[name]);
+            }
+        });
+    },
+
+    addIndicators(moduleElement, details) {
+        // Prüfe ob schon ein Container existiert
+        let container = moduleElement.querySelector('.indicators-container');
+        if (!container) {
+            container = document.createElement('div');
+            container.className = 'indicators-container';
+            moduleElement.style.position = 'relative';
+            moduleElement.appendChild(container);
+        }
+
+        // Leere Container (um nicht doppelt hinzuzufügen)
+        container.innerHTML = '';
+
+        // Füge Indikatoren basierend auf verfügbaren Details hinzu
+        if (details.vorlesungslink) {
+            const indicator = document.createElement('div');
+            indicator.className = 'video-indicator';
+            indicator.title = 'Vorlesungsvideos verfügbar';
+            indicator.textContent = '🎥';
+            container.appendChild(indicator);
+        }
+
+        if (details.pruefungen) {
+            const indicator = document.createElement('div');
+            indicator.className = 'exam-indicator';
+            indicator.title = 'Alte Prüfungen verfügbar';
+            indicator.textContent = '📝';
+            container.appendChild(indicator);
+        }
+
+        if (details.link) {
+            const indicator = document.createElement('div');
+            indicator.className = 'link-indicator';
+            indicator.title = 'VVZ Seite verfügbar';
+            indicator.textContent = '📖';
+            container.appendChild(indicator);
+        }
     },
 
     showTooltip(moduleElement) {
