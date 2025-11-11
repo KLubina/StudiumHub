@@ -6,16 +6,11 @@ window.EthnologieWahlmoduleData = {
   fs2026: {
     wahlmodule: [
       {
-        // ============================================
         // PFLICHTFELDER
-        // ============================================
         name: "Anthropology and Science-Fiction",
         kp: 6,
         kategorie: "Wahlmodule",
-
-        // ============================================
-        // KONTEXT (wenn vorhanden)
-        // ============================================
+        // KONTEXT
         semester: 2,
       },
       {

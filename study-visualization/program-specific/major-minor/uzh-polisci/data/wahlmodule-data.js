@@ -6,16 +6,11 @@ window.PolisciWahlmoduleData = {
   fs2026: {
     wahlmodule: [
       {
-        // ============================================
         // PFLICHTFELDER
-        // ============================================
         name: "Agenda Setting and the Media",
         kp: 6,
         kategorie: "Wahlmodule",
-
-        // ============================================
-        // KONTEXT (wenn vorhanden)
-        // ============================================
+        // KONTEXT
         semester: 2,
       },
       {

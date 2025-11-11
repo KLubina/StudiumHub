@@ -6,16 +6,11 @@ window.GeschichteWahlmoduleData = {
   fs2026: {
     wahlmodule: [
       {
-        // ============================================
         // PFLICHTFELDER
-        // ============================================
         name: "#MeToo und nun? Sexualisierte Gewalt aus interdisziplinärer Sicht",
         kp: 3,
         kategorie: "Wahlmodule",
-
-        // ============================================
-        // KONTEXT (wenn vorhanden)
-        // ============================================
+        // KONTEXT
         semester: 2,
       },
       {

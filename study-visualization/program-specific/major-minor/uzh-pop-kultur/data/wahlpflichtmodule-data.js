@@ -6,16 +6,11 @@ window.PopKulturWahlpflichtmoduleData = {
   fs2026: {
     wahlpflichtmodule: [
       {
-        // ============================================
         // PFLICHTFELDER
-        // ============================================
         name: "Angebot des Sprachenzentrums – Sprachkurs",
         kp: 0,
         kategorie: "Wahlpflichtmodule",
-
-        // ============================================
-        // KONTEXT (wenn vorhanden)
-        // ============================================
+        // KONTEXT
         semester: 2,
         info: "Variable ECTS je nach Sprachkurs",
       },

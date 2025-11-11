@@ -6,16 +6,11 @@ window.GeschichteWahlpflichtmoduleData = {
   fs2026: {
     wahlpflichtmodule: [
       {
-        // ============================================
         // PFLICHTFELDER
-        // ============================================
         name: "Academic English C1 (Part2)",
         kp: 3,
         kategorie: "Wahlpflichtmodule",
-
-        // ============================================
-        // KONTEXT (wenn vorhanden)
-        // ============================================
+        // KONTEXT
         semester: 2,
       },
       {

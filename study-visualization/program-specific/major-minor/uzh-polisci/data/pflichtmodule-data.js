@@ -6,18 +6,12 @@ window.PolisciPflichtmoduleData = {
   fs2026: {
     pflichtmodule: [
       {
-        // ============================================
         // PFLICHTFELDER
-        // ============================================
         name: "Politische Systeme und Theorien II",
         kp: 9,
         kategorie: "Pflichtmodule",
-
-        // ============================================
-        // KONTEXT (wenn vorhanden)
-        // ============================================
+        // KONTEXT 
         jahr: 1,
-        semester: 2,
         semester: 2,
       },
       {

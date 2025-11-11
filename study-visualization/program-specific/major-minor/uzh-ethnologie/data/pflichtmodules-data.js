@@ -6,16 +6,11 @@ window.EthnologiePflichtmodulesData = {
   fs2026: {
     pflichtmodule: [
       {
-        // ============================================
         // PFLICHTFELDER
-        // ============================================
         name: "Ethnologische Forschungsmethoden",
         kp: 6,
         kategorie: "Pflichtmodule",
-
-        // ============================================
-        // KONTEXT (wenn vorhanden)
-        // ============================================
+        // KONTEXT
         semester: 2,
       },
       {

@@ -6,16 +6,11 @@ window.GeschichtePflichtmoduleData = {
   fs2026: {
     pflichtmodule: [
       {
-        // ============================================
         // PFLICHTFELDER
-        // ============================================
         name: "Bachelorarbeit",
         kp: 15,
         kategorie: "Pflichtmodule",
-
-        // ============================================
-        // KONTEXT (wenn vorhanden)
-        // ============================================
+        // KONTEXT
         jahr: 3,
         semester: 2,
       },

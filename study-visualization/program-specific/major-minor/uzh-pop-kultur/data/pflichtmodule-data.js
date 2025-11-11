@@ -6,16 +6,11 @@ window.PopKulturPflichtmoduleData = {
   fs2026: {
     pflichtmodule: [
       {
-        // ============================================
         // PFLICHTFELDER
-        // ============================================
         name: "Populäre Literaturen und Medien: Geschichte, Theorien, Felder",
         kp: 6,
         kategorie: "Pflichtmodule",
-
-        // ============================================
-        // KONTEXT (wenn vorhanden)
-        // ============================================
+        // KONTEXT
         semester: 2,
       },
       {

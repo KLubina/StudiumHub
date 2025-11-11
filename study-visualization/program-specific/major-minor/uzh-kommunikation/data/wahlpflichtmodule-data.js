@@ -6,16 +6,11 @@ window.KommunikationWahlpflichtmoduleData = {
   fs2026: {
     wahlpflichtmodule: [
       {
-        // ============================================
         // PFLICHTFELDER
-        // ============================================
         name: "Angewandte Medien- und Publikumsforschung",
         kp: 3,
         kategorie: "Wahlpflichtmodule",
-
-        // ============================================
-        // KONTEXT (wenn vorhanden)
-        // ============================================
+        // KONTEXT
         semester: 2,
       },
       {

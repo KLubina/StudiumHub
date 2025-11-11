@@ -6,16 +6,11 @@ window.PolisciWahlpflichtmoduleData = {
   fs2026: {
     wahlpflichtmodule: [
       {
-        // ============================================
         // PFLICHTFELDER
-        // ============================================
         name: "Sicherheit und Konflikt",
         kp: 3,
         kategorie: "Wahlpflichtmodule",
-
-        // ============================================
-        // KONTEXT (wenn vorhanden)
-        // ============================================
+        // KONTEXT
         semester: 2,
       },
       {

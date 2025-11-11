@@ -6,16 +6,11 @@ window.KommunikationPflichtmoduleData = {
   fs2026: {
     pflichtmodule: [
       {
-        // ============================================
         // PFLICHTFELDER
-        // ============================================
         name: "Einführung in die Kommunikationswissenschaft und Medienforschung",
         kp: 3,
         kategorie: "Pflichtmodule",
-
-        // ============================================
-        // KONTEXT (wenn vorhanden)
-        // ============================================
+        // KONTEXT
         semester: 2,
       },
       {

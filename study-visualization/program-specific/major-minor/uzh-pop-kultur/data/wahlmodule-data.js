@@ -6,16 +6,11 @@ window.PopKulturWahlmoduleData = {
   fs2026: {
     wahlmodule: [
       {
-        // ============================================
         // PFLICHTFELDER
-        // ============================================
         name: "Das Monster und Wir: Monströse Figuren und Zukunftsvorstellungen im Film",
         kp: 6,
         kategorie: "Wahlmodule",
-
-        // ============================================
-        // KONTEXT (wenn vorhanden)
-        // ============================================
+        // KONTEXT
         semester: 2,
       },
       {

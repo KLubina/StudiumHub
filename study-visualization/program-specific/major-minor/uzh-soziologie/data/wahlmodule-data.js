@@ -3,16 +3,11 @@ window.SoziologieWahlmoduleData = {
   fs2026: {
     wahlmodule: [
       {
-        // ============================================
         // PFLICHTFELDER
-        // ============================================
         name: "Beyond Algorithms: How AI Reshapes Society",
         kp: 6,
         kategorie: "Wahlmodule",
-
-        // ============================================
-        // KONTEXT (wenn vorhanden)
-        // ============================================
+        // KONTEXT
         semester: 2,
       },
       {

@@ -7,16 +7,11 @@ window.EthnologieWahlpflichtmoduleData = {
     wahlpflichtmodule: [
       // Kernbereiche (verfügbar in beiden Semestern)
       {
-        // ============================================
         // PFLICHTFELDER
-        // ============================================
         name: "Kernbereich Materielle Kultur, praktisches Wissen und Kunst",
         kp: 3,
         kategorie: "Kernbereiche",
-
-        // ============================================
-        // KONTEXT (wenn vorhanden)
-        // ============================================
+        // KONTEXT
         semester: 2,
       },
       {
