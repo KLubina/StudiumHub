@@ -6,22 +6,14 @@ window.MASCH_VertiefungsgebieteModules = [
 
   // Herbstsemester
   {
-    // ============================================
     // PFLICHTFELDER
-    // ============================================
     name: "Engineering Design Optimization",
     kp: 4,
     kategorie: "Fokus-Vertiefung",
-
-    // ============================================
-    // KONTEXT (wenn vorhanden)
-    // ============================================
+    // KONTEXT
     jahr: 3,
     semester: 0,
-
-    // ============================================
-    // STUDIENGANGSPEZIFISCH (optional)
-    // ============================================
+    // STUDIENGANGSPEZIFISCH
     bereich: "Fokus-Vertiefung",
     kategorie_vertiefung: "Design, Mechanics and Manufacturing",
   },

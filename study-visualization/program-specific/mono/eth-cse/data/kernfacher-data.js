@@ -4,22 +4,14 @@
 // Export modules as an array like other data files (vertiefung-data.js style)
 window.CSE_KernfaecherModules = [
   {
-    // ============================================
     // PFLICHTFELDER
-    // ============================================
     name: "Design of High Performance Computing",
     kp: 7,
     kategorie: "kern",
-
-    // ============================================
     // KONTEXT
-    // ============================================
     jahr: 3,
     semester: 0,
-
-    // ============================================
     // STUDIENGANGSPEZIFISCH
-    // ============================================
     bereich: "Kernfächer",
     themenbereich: "informatik",
   },

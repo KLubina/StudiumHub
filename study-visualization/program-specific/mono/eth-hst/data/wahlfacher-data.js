@@ -5,9 +5,7 @@ window.HSTWahlfaecherData = {
   wahlfaecherBereiche: {
     "Technik & Informatik": [
       {
-        // ============================================
         // PFLICHTFELDER
-        // ============================================
         name: "Signals and Systems",
         kp: 4,
         kategorie: "Wahlfächer",

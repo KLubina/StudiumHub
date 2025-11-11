@@ -4,16 +4,11 @@
 window.StudiengangModules = [
   // #region 1. Semester
   {
-    // ============================================
     // PFLICHTFELDER
-    // ============================================
     name: "Einführung in die Programmierung",
     kp: 7,
     kategorie: "cs-pure",
-
-    // ============================================
     // KONTEXT
-    // ============================================
     jahr: 1,
     semester: 1,
   },

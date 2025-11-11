@@ -6,9 +6,7 @@ window.ITETModuleData = {
   kernfaecherSchwerpunkte: {
     "Biomedizinische Technik": [
       {
-        // ============================================
         // PFLICHTFELDER
-        // ============================================
         name: "Biomedical Imaging",
         kp: 6,
         kategorie: "Kernfächer nach Schwerpunkt",

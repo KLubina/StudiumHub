@@ -5,15 +5,10 @@ window.StudiengangModules = [
   // #region 1. Semester
   // HINWEIS: Farb-Zuordnungen (Themenbereiche & Prüfungsblöcke) befinden sich in color-config.js
   {
-    // ============================================
     // PFLICHTFELDER
-    // ============================================
     name: "Physik I",
     kp: 4,
-
-    // ============================================
     // KONTEXT
-    // ============================================
     jahr: 1,
     semester: 1,
   },

@@ -4,16 +4,11 @@
 window.StudiengangModules = [
   // #region 1. Semester
   {
-    // ============================================
     // PFLICHTFELDER
-    // ============================================
     name: "Analysis I",
     kp: 7,
     kategorie: "Obligatorische Fächer",
-
-    // ============================================
-    // KONTEXT (wenn vorhanden)
-    // ============================================
+    // KONTEXT
     jahr: 1,
     semester: 1,
   },

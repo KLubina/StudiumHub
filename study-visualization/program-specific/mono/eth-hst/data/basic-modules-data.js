@@ -5,16 +5,11 @@ window.StudiengangModules = [
   // #region 1. Semester - Basisprüfungsblock 1
   // ========== SEMESTER 1 - Basisprüfungsblock 1 ==========
   {
-    // ============================================
     // PFLICHTFELDER
-    // ============================================
     name: "Molekulare Genetik und Zellbiologie",
     kp: 5,
     kategorie: "Basisprüfungsblock 1",
-
-    // ============================================
-    // KONTEXT (wenn vorhanden)
-    // ============================================
+    // KONTEXT 
     jahr: 1,
     semester: 1,
   },

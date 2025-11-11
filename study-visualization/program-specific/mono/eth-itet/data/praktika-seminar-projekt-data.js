@@ -7,9 +7,7 @@ window.ITETPraktikaSeminarProjektData = {
   praktikaSchwerpunkte: {
     "Machine Learning & KI": [
       {
-        // ============================================
         // PFLICHTFELDER
-        // ============================================
         name: "Machine Learning for Brain-Computer Interfaces",
         kp: 3,
         kategorie: "Wahl Praktika-Projekte-Seminare",

@@ -8,16 +8,11 @@ window.StudiengangModules = [
 
   // Physik
   {
-    // ============================================
     // PFLICHTFELDER
-    // ============================================
     name: "Technische Mechanik",
     kp: 4,
     kategorie: "Obligatorische Fächer",
-
-    // ============================================
-    // KONTEXT (wenn vorhanden)
-    // ============================================
+    // KONTEXT
     jahr: 1,
     semester: 1,
   },

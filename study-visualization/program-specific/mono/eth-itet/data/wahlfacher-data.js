@@ -7,9 +7,7 @@ window.ITETWahlfaecherData = {
   wahlfaecherBereiche: {
     "Ingenieurswissenschaftliche Wahlfächer": [
       {
-        // ============================================
         // PFLICHTFELDER
-        // ============================================
         name: "Electromagnetic Waves: Materials, Effects, and Antennas",
         kp: 6,
         kategorie: "Wahlfächer",

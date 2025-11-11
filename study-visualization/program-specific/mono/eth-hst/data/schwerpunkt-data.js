@@ -5,9 +5,7 @@ window.HSTSchwerpunktData = {
   schwerpunktBereiche: {
     Neurosciences: [
       {
-        // ============================================
         // PFLICHTFELDER
-        // ============================================
         name: "Molecular Neurophysiology: From Molecules to Systems",
         kp: 4,
         kategorie: "Schwerpunktfächer",

@@ -4,22 +4,14 @@
 window.StudiengangModules = [
   // #region 1. Semester - Basisprüfungsblock 1
   {
-    // ============================================
     // PFLICHTFELDER
-    // ============================================
     name: "Ökonomie",
     kp: 3,
     kategorie: "Basisprüfung",
-
-    // ============================================
-    // KONTEXT (wenn vorhanden)
-    // ============================================
+    // KONTEXT
     jahr: 1,
     semester: 1,
-
-    // ============================================
-    // STUDIENGANGSPEZIFISCH (optional)
-    // ============================================
+    // STUDIENGANGSPEZIFISCH
     bereich: "Sozialwissenschaften",
   },
   {
