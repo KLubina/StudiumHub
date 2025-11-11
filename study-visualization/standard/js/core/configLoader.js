@@ -42,8 +42,41 @@ window.StudienplanConfigLoader = {
             }
 
             // Lade Modul-Daten
-            const dataPath = `../program-specific/${studyModel}/${studiengang}/data/basic-modules-data.js`;
-            await this.loadScript(dataPath);
+            if (studyModel === 'major-minor') {
+                // Für major-minor: nutze vorrangig die Pflichtmodule
+                const pflichtPath = `../program-specific/${studyModel}/${studiengang}/data/pflichtmodule-data.js`;
+                await this.loadScript(pflichtPath);
+
+                // Simple resolution: versuche zuerst einen vorhersehbaren globalen Namen
+                // wie "GeschichtePflichtmoduleData" abzurufen. Falls nicht vorhanden,
+                // nimm die erste globale Variable, die auf 'PflichtmoduleData' endet.
+                if (!window.StudiengangModules) {
+                    try {
+                        const base = studiengang.replace(/^.*?-/, ''); // 'uzh-geschichte' -> 'geschichte'
+                        const candidateKey = base.charAt(0).toUpperCase() + base.slice(1) + 'PflichtmoduleData';
+                        if (window[candidateKey]) {
+                            window.StudiengangModules = window[candidateKey];
+                        } else {
+                            const anyKey = Object.keys(window).find(k => /PflichtmoduleData$/.test(k));
+                            if (anyKey) {
+                                window.StudiengangModules = window[anyKey];
+                            } else {
+                                // Fallback: lade basic-modules-data.js falls vorhanden
+                                const fallbackDataPath = `../program-specific/${studyModel}/${studiengang}/data/basic-modules-data.js`;
+                                await this.loadScript(fallbackDataPath);
+                            }
+                        }
+                    } catch (e) {
+                        // ignore and let fallback (basic-modules-data.js) handle it
+                        const fallbackDataPath = `../program-specific/${studyModel}/${studiengang}/data/basic-modules-data.js`;
+                        await this.loadScript(fallbackDataPath);
+                    }
+                }
+            } else {
+                // Mono-Modelle verwenden das standardisierte basic-modules-data.js
+                const dataPath = `../program-specific/${studyModel}/${studiengang}/data/basic-modules-data.js`;
+                await this.loadScript(dataPath);
+            }
 
             // Lade Modul-Details falls vorhanden (für Module Details Modal)
             const detailsPath = `../program-specific/${studyModel}/${studiengang}/data/basic-modules-details.js`;

@@ -99,10 +99,37 @@
         categoryHeading.textContent = category;
         cardsContainer.appendChild(categoryHeading);
 
-        const categoryGrid = document.createElement('div');
-        categoryGrid.className = 'category-grid';
-        categoryPrograms.forEach(p => categoryGrid.appendChild(createCard(p)));
-        cardsContainer.appendChild(categoryGrid);
+        if (category === 'Unis') {
+          // Sub-categorization for 'Unis'
+          const ethPrograms = categoryPrograms.filter(p => p.subtitle.includes('ETH'));
+          const uzhPrograms = categoryPrograms.filter(p => p.subtitle.includes('Universität Zürich'));
+          const otherUniPrograms = categoryPrograms.filter(p => !p.subtitle.includes('ETH') && !p.subtitle.includes('Universität Zürich'));
+
+          const subCategories = [
+            { name: 'ETH', programs: ethPrograms },
+            { name: 'UZH', programs: uzhPrograms },
+            { name: 'Rest', programs: otherUniPrograms },
+          ];
+
+          subCategories.forEach(subCategory => {
+            if (subCategory.programs.length > 0) {
+              const subCategoryHeading = document.createElement('h3');
+              subCategoryHeading.className = 'sub-category-heading';
+              subCategoryHeading.textContent = subCategory.name;
+              cardsContainer.appendChild(subCategoryHeading);
+
+              const categoryGrid = document.createElement('div');
+              categoryGrid.className = 'category-grid';
+              subCategory.programs.forEach(p => categoryGrid.appendChild(createCard(p)));
+              cardsContainer.appendChild(categoryGrid);
+            }
+          });
+        } else {
+          const categoryGrid = document.createElement('div');
+          categoryGrid.className = 'category-grid';
+          categoryPrograms.forEach(p => categoryGrid.appendChild(createCard(p)));
+          cardsContainer.appendChild(categoryGrid);
+        }
       }
     });
   }
