@@ -57,10 +57,17 @@ window.StudienplanColorManager = {
             this.setMode(e.target.value);
         });
 
-        // Platziere den Selector vor der farben-legende
+        // Platziere den Selector IN der farben-legende oben (prepend),
+        // damit er nicht als zusätzliches Flex-Kind im übergeordneten .container
+        // den gesamten Platz einnehmen kann.
         const farbenLegende = document.querySelector('.farben-legende');
         if (farbenLegende) {
-            farbenLegende.parentNode.insertBefore(selectorContainer, farbenLegende);
+            // bevorzugt: prepend, kompatibel mit älteren Browsern via insertAdjacentElement
+            if (typeof farbenLegende.prepend === 'function') {
+                farbenLegende.prepend(selectorContainer);
+            } else {
+                farbenLegende.insertAdjacentElement('afterbegin', selectorContainer);
+            }
         }
 
         return true;
