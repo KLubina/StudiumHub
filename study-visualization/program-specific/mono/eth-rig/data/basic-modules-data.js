@@ -233,6 +233,8 @@ window.StudiengangModules = [
     name: "Wahlmodule",
     ects: 18,
     standardcategory: "wahlmodule",
+    isPlaceholder: true,
+    wahlmodulSource: "./wahlmodule-data.js",
     // KONTEXT
     year: 2,
     semester: 4,
@@ -245,6 +247,8 @@ window.StudiengangModules = [
     name: "Wahlmodule",
     ects: 15,
     standardcategory: "wahlmodule",
+    isPlaceholder: true,
+    wahlmodulSource: "./wahlmodule-data.js",
     // KONTEXT
     year: 3,
     semester: 5,
@@ -275,6 +279,8 @@ window.StudiengangModules = [
     name: "Wahlmodule",
     ects: 12,
     standardcategory: "wahlmodule",
+    isPlaceholder: true,
+    wahlmodulSource: "./wahlmodule-data.js",
     // KONTEXT
     year: 3,
     semester: 6,

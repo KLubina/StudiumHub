@@ -193,3 +193,6 @@ window.HSLUEITWahlmoduleData = [
     bereich: "Allgemeine Zusatzmodule"
   }
 ];
+
+// Export für wahlmodule.js - der Code erkennt nur spezifische Variablennamen
+window.WahlmoduleData = window.HSLUEITWahlmoduleData;

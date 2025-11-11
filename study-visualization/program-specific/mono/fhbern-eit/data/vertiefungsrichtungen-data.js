@@ -242,3 +242,6 @@ window.BFHEITVertiefungsrichtungenData = [
     vertiefungsrichtung: "Communication Technologies"
   }
 ];
+
+// Export für wahlmodule.js - der Code erkennt nur spezifische Variablennamen
+window.WahlmoduleData = window.BFHEITVertiefungsrichtungenData;

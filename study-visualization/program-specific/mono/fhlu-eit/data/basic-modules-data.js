@@ -345,6 +345,7 @@ window.StudiengangModules = [
     year: 3,
     semester: 0,
     isPlaceholder: true,
+    wahlmodulSource: "./vertiefungsrichtungen-data.js",
   },
   {
     // PFLICHTFELDER
@@ -355,6 +356,7 @@ window.StudiengangModules = [
     year: 3,
     semester: 0,
     isPlaceholder: true,
+    wahlmodulSource: "./wahlmodule-data.js",
   },
   {
     // PFLICHTFELDER
@@ -365,6 +367,7 @@ window.StudiengangModules = [
     year: 3,
     semester: 0,
     isPlaceholder: true,
+    wahlmodulSource: "./wahlmodule-data.js",
   },
   // #endregion 5.-6. Semester (Abschluss & Platzhalter)
 ];

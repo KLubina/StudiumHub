@@ -173,3 +173,6 @@ window.RIGModuleData = [
     bereich: "Netzinfrastrukturen",
   },
 ];
+
+// Export für wahlmodule.js - der Code erkennt nur spezifische Variablennamen
+window.WahlmoduleData = window.RIGModuleData;

@@ -214,3 +214,6 @@ window.BFHEITWahlmoduleData = [
     bereich: "Allgemeinbildung"
   }
 ];
+
+// Export für wahlmodule.js - der Code erkennt nur spezifische Variablennamen
+window.WahlmoduleData = window.BFHEITWahlmoduleData;

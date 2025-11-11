@@ -79,3 +79,6 @@ window.HSLUEITVertiefungsrichtungenData = [
     vertiefungsrichtung: "Mechatronik / Automation / Robotik"
   }
 ];
+
+// Export für wahlmodule.js - der Code erkennt nur spezifische Variablennamen
+window.WahlmoduleData = window.HSLUEITVertiefungsrichtungenData;
