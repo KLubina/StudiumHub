@@ -8,8 +8,29 @@ window.StudienplanKPCounter = {
         if (this._initialized) return;
         this._initialized = true;
 
+        // Erstelle KP-Counter Box wenn sie noch nicht existiert
+        this.createCounterBox();
+
         // Berechne und zeige Gesamt-KP
         this.updateTotalKP();
+    },
+
+    createCounterBox() {
+        // Schaue ob Counter-Box bereits existiert
+        if (document.getElementById('kp-counter')) {
+            return;
+        }
+
+        // Erstelle Container für KP-Counter
+        const counterBox = document.createElement('div');
+        counterBox.id = 'kp-counter';
+        counterBox.className = 'kp-counter-box';
+
+        // Füge IN die Farben-Legende ein (am Ende)
+        const legendeContainer = document.querySelector('.farben-legende');
+        if (legendeContainer) {
+            legendeContainer.appendChild(counterBox);
+        }
     },
 
     updateTotalKP() {
@@ -21,10 +42,10 @@ window.StudienplanKPCounter = {
             total += ects;
         });
 
-        // Zeige in Subtitle oder erstelle neues Element
-        const subtitle = document.getElementById('studienplan-subtitle');
-        if (subtitle) {
-            subtitle.textContent = `Gesamt: ${total} KP (mind. 180 KP erforderlich)`;
+        // Zeige in KP-Counter Box
+        const counterBox = document.getElementById('kp-counter');
+        if (counterBox) {
+            counterBox.innerHTML = `<div id="kp-total">Gesamt: <strong>${total} KP</strong> (mind. 180 KP erforderlich)</div>`;
         }
     }
 };
