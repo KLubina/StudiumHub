@@ -8,14 +8,30 @@ window.StudienplanWahlmodule = {
     initialize() {
         // Klick-Listener für Platzhalter-Module
         document.addEventListener('click', (e) => {
+            console.log('Click detected:', e.target);
             const modul = e.target.closest('.modul-platzhalter');
+            console.log('Platzhalter gefunden:', modul);
             if (modul) {
                 const source = modul.getAttribute('data-wahlmodul-source');
+                console.log('Source:', source);
                 if (source) {
+                    e.preventDefault();
+                    e.stopPropagation();
                     window.StudienplanWahlmodule.openWahlmodulDialog(source, modul);
                 }
             }
         });
+        
+        // Check ob Platzhalter vorhanden sind
+        setTimeout(() => {
+            const platzhalter = document.querySelectorAll('.modul-platzhalter');
+            console.log('Platzhalter gefunden:', platzhalter.length);
+            platzhalter.forEach(p => {
+                console.log('Platzhalter:', p.querySelector('.modul-titel')?.textContent, 
+                           'Source:', p.getAttribute('data-wahlmodul-source'));
+            });
+        }, 1000);
+        
         console.log('Wahlmodule initialisiert');
     },
 
@@ -91,6 +107,16 @@ window.StudienplanWahlmodule = {
 
     // Zeigt den Auswahl-Dialog an
     showModulSelectionDialog(modules, placeholderElement) {
+        // Hole bereits ausgewählte Module aus dem Platzhalter
+        let selectedModules = [];
+        if (placeholderElement.dataset.selectedModules) {
+            try {
+                selectedModules = JSON.parse(placeholderElement.dataset.selectedModules);
+            } catch (e) {
+                selectedModules = [];
+            }
+        }
+
         // Erstelle Modal-Overlay
         const overlay = document.createElement('div');
         overlay.className = 'wahlmodul-overlay';
@@ -105,7 +131,7 @@ window.StudienplanWahlmodule = {
                         <input type="text" id="wahlmodul-search" placeholder="Module durchsuchen...">
                     </div>
                     <div class="wahlmodul-list" id="wahlmodul-list">
-                        ${this.renderModulList(modules)}
+                        ${this.renderModulList(modules, selectedModules)}
                     </div>
                 </div>
                 <div class="wahlmodul-footer">
@@ -126,16 +152,22 @@ window.StudienplanWahlmodule = {
     },
 
     // Rendert die Modulliste
-    renderModulList(modules) {
-        return modules.map((module, index) => `
+    renderModulList(modules, selectedModules = []) {
+        return modules.map((module, index) => {
+            // Prüfe ob dieses Modul bereits ausgewählt ist
+            const isSelected = selectedModules.some(m => m.name === module.name && m.ects === module.ects);
+            const checkedAttr = isSelected ? 'checked' : '';
+            
+            return `
             <div class="wahlmodul-item" data-index="${index}">
-                <input type="checkbox" id="wahlmodul-${index}" class="wahlmodul-checkbox">
+                <input type="checkbox" id="wahlmodul-${index}" class="wahlmodul-checkbox" ${checkedAttr}>
                 <label for="wahlmodul-${index}">
                     <span class="wahlmodul-name">${module.name}</span>
                     <span class="wahlmodul-ects">${module.ects || 0} ECTS</span>
                 </label>
             </div>
-        `).join('');
+        `;
+        }).join('');
     },
 
     // Fügt Event Listener zum Dialog hinzu
@@ -168,6 +200,9 @@ window.StudienplanWahlmodule = {
         };
 
         checkboxes.forEach(cb => cb.addEventListener('change', updateSelection));
+        
+        // Initiale Auswahl anzeigen
+        updateSelection();
 
         // Such-Funktion
         searchInput.addEventListener('input', (e) => {
@@ -188,12 +223,8 @@ window.StudienplanWahlmodule = {
                     return modules[index];
                 });
 
-            if (selected.length > 0) {
-                this.addSelectedModules(selected, placeholderElement);
-                closeDialog();
-            } else {
-                alert('Bitte wählen Sie mindestens ein Modul aus.');
-            }
+            this.addSelectedModules(selected, placeholderElement);
+            closeDialog();
         });
     },
 
@@ -201,8 +232,19 @@ window.StudienplanWahlmodule = {
     addSelectedModules(selectedModules, placeholderElement) {
         const container = placeholderElement.parentElement;
         
-        // Entferne Platzhalter
-        placeholderElement.remove();
+        // Finde oder erstelle den Container für die ausgewählten Module
+        let selectedContainer = placeholderElement.nextElementSibling;
+        if (!selectedContainer || !selectedContainer.classList.contains('wahlmodul-selected-container')) {
+            selectedContainer = document.createElement('div');
+            selectedContainer.className = 'wahlmodul-selected-container';
+            placeholderElement.parentElement.insertBefore(selectedContainer, placeholderElement.nextElementSibling);
+        }
+
+        // Leere den Container
+        selectedContainer.innerHTML = '';
+
+        // Speichere die Auswahl im Platzhalter für spätere Bearbeitung
+        placeholderElement.dataset.selectedModules = JSON.stringify(selectedModules);
 
         // Füge ausgewählte Module hinzu
         selectedModules.forEach(module => {
@@ -210,7 +252,7 @@ window.StudienplanWahlmodule = {
             const tempDiv = document.createElement('div');
             tempDiv.innerHTML = moduleHTML;
             const moduleElement = tempDiv.firstElementChild;
-            container.appendChild(moduleElement);
+            selectedContainer.appendChild(moduleElement);
         });
 
         // Aktualisiere KP-Counter falls vorhanden
@@ -222,10 +264,15 @@ window.StudienplanWahlmodule = {
     }
 };
 
-// Initialisiere wenn DOM ready
-document.addEventListener('DOMContentLoaded', () => {
+// Initialisiere sofort oder wenn DOM ready
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => {
+        window.StudienplanWahlmodule.initialize();
+    });
+} else {
+    // DOM ist bereits ready, initialisiere sofort
     window.StudienplanWahlmodule.initialize();
-});
+}
 
 // Markiere als geladen
 window.subModulesReady['wahlmodule'] = Promise.resolve();

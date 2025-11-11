@@ -283,6 +283,26 @@
     opacity: 1;
 }
 
+/* Container für ausgewählte Module */
+.wahlmodul-selected-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.wahlmodul-selected-container .modul {
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.wahlmodul-selected-container .modul:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .wahlmodul-dialog {
