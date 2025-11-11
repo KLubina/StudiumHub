@@ -43,7 +43,7 @@ class ConfigMerger {
             ...defaultFeaturesConfig,
             ...(window.StudiengangFeaturesConfig || {}),
             ...window.StudiengangCategoriesConfig,
-            ...window.StudiengangColorManagerConfig,
+            // StudiengangColorManagerConfig removed - modes are hardcoded in ColorManager
             ...window.StudiengangKPCounterConfig,
             ...window.StudiengangWahlmoduleConfig
         };

@@ -46,12 +46,18 @@ class StudiengangConfigLoader {
 
         // Feature-specific config files (loaded based on feature flags after features-config.js is loaded)
         // These are optional and only loaded if the corresponding feature is enabled
-        await this.loader.loadOptionalModule(`${basePath}/standard-config/color-manager-config.js`);
+        // color-manager-config.js is no longer needed - modes are hardcoded in ColorManager
         await this.loader.loadOptionalModule(`${basePath}/standard-config/kp-counter-config.js`);
         await this.loader.loadOptionalModule(`${basePath}/standard-config/wahlmodule-config.js`);
 
         // Load color-config.js (can exist independently) - now in standard-config/ subdirectory
         await this.loader.loadOptionalModule(`${basePath}/standard-config/color-config.js`);
+
+        // Load new colormanagement files if ColorManager is enabled
+        if (window.StudiengangFeaturesConfig?.enableColorManager) {
+            await this.loader.loadOptionalModule(`${basePath}/colormanagement/secondcategories-config.js`);
+            await this.loader.loadOptionalModule(`${basePath}/colormanagement/thirdcategories-config.js`);
+        }
     }
 
     async loadStudiengangSpecificData(basePath) {
