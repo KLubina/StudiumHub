@@ -16,29 +16,38 @@ window.CSE_KernfaecherModules = [
     themenbereich: "informatik",
   },
   {
+    // PFLICHTFELDER
     name: "HPC Lab for CSE",
     kp: 7,
     kategorie: "kern",
+    // KONTEXT
     jahr: 3,
     semester: 0,
+    // STUDIENGANGSPEZIFISCH
     bereich: "Kernfächer",
     themenbereich: "informatik",
   },
   {
+    // PFLICHTFELDER
     name: "Software Engineering",
     kp: 6,
     kategorie: "kern",
+    // KONTEXT
     jahr: 3,
     semester: 0,
+    // STUDIENGANGSPEZIFISCH
     bereich: "Kernfächer",
     themenbereich: "informatik",
   },
   {
+    // PFLICHTFELDER
     name: "Introduction to Machine Learning",
     kp: 8,
     kategorie: "kern",
+    // KONTEXT
     jahr: 3,
     semester: 0,
+    // STUDIENGANGSPEZIFISCH
     bereich: "Kernfächer",
     themenbereich: "informatik",
   },
