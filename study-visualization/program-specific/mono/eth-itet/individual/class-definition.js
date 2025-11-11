@@ -7,46 +7,11 @@ window.ITETStudienplan = class ITETStudienplan extends StudienplanBase {
   }
 
   initialize() {
-    // EXPLIZIT: ColorManager für ITET aktivieren (MUSS vor super.initialize() sein!)
     this.config.enableColorManager = true;
-
-    // Basis-Initialisierung (aktiviert automatisch das zentrale Wahlmodule-System)
     super.initialize();
 
-    // ColorManager explizit initialisieren (weil der Monkey-Patch in Integration.js
-    // nicht für Subklassen greift, die initialize() überschreiben)
     if (this.config.enableColorManager && this.initializeColorManager) {
       this.initializeColorManager();
     }
-
-    // ITET-spezifische Initialisierung
-    this.setupITETSpecifics();
-  }
-
-  setupITETSpecifics() {
-    // Basis-Klasse hat bereits showMessage und showToastMessage implementiert
-  }
-
-  /**
-   * Override: CSS-Klasse für Module bestimmen
-   * ITET-spezifisch: Kategorien mit Leerzeichen werden korrekt behandelt
-   */
-  getModuleCssClass(modul) {
-    if (modul.pruefungsblock) {
-      const block = this.config.pruefungsbloecke.find(
-        (b) => b.name === modul.pruefungsblock
-      );
-      return block ? block.cssClass : null;
-    }
-
-    // Kategorie-Namen mit Leerzeichen in CSS-konforme Klassen umwandeln
-    if (modul.kategorie) {
-      const kategorie = this.config.kategorien.find(
-        (k) => k.name === modul.kategorie
-      );
-      return kategorie ? kategorie.klasse : null;
-    }
-
-    return null;
   }
 };

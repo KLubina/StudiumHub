@@ -13,9 +13,9 @@
     color: white;
 }
 
-[data-studiengang="eth-itet"] .modul.informationstechnologie,
-[data-studiengang="eth-itet"] .legende-item.informationstechnologie {
-    background-color: var(--color-informationstechnologie);
+[data-studiengang="eth-itet"] .modul.it,
+[data-studiengang="eth-itet"] .legende-item.it {
+    background-color: var(--color-it);
     color: white;
 }
 

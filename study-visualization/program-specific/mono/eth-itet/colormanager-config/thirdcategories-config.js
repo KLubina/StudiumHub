@@ -6,7 +6,7 @@ window.ITETThirdCategoryConfig = {
   kategorien: [
     { name: "Mathematik", klasse: "mathematik" },
     { name: "Elektrotechnik", klasse: "elektrotechnik" },
-    { name: "Informationstechnologie", klasse: "informationstechnologie" },
+    { name: "Informationstechnologie", klasse: "it" },
     { name: "Physik", klasse: "physik" },
   ],
 };

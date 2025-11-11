@@ -41,9 +41,21 @@ class StudienplanBaseColorManager {
             const modul = this.config.daten?.find(m => m.name === modulName);
             if (!modul) return null;
             
-            // Use the appropriate category based on current legend
+            // For third category (themenbereich) - use it directly if available
+            if (modul.thirdcategory) {
+                return modul.thirdcategory;
+            }
+            
+            // For second/standard category - find the klasse (not the name!)
             const categoryKey = this.currentLegend + "category";
-            return modul[categoryKey] || modul.standardcategory;
+            const categoryName = modul[categoryKey] || modul.standardcategory;
+            
+            if (categoryName && this.config.kategorien) {
+                const category = this.config.kategorien.find(k => k.name === categoryName);
+                return category?.klasse || null;
+            }
+            
+            return categoryName;
         }
 
         if (this.currentMode === "themenbereich") {
@@ -60,7 +72,15 @@ class StudienplanBaseColorManager {
         
         // Use the appropriate category based on current legend
         const categoryKey = this.currentLegend + "category";
-        return modul[categoryKey] || modul.standardcategory;
+        const categoryName = modul[categoryKey] || modul.standardcategory;
+        
+        // Find the klasse (not the name!)
+        if (categoryName && this.config.kategorien) {
+            const category = this.config.kategorien.find(k => k.name === categoryName);
+            return category?.klasse || null;
+        }
+        
+        return categoryName;
     }
 
     syncRadioButtons() {
