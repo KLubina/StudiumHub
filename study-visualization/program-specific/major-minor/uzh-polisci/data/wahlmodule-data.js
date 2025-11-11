@@ -14,15 +14,19 @@ window.PolisciWahlmoduleData = {
         semester: 2,
       },
       {
+        // PFLICHTFELDER
         name: "European Integration",
         kp: 3,
         kategorie: "Wahlmodule",
+        // KONTEXT
         semester: 2,
       },
       {
+        // PFLICHTFELDER
         name: "EEE 264 Umweltpolitik der EU",
         kp: 3,
         kategorie: "Wahlmodule",
+        // KONTEXT
         semester: 2,
       },
     ],
@@ -32,27 +36,35 @@ window.PolisciWahlmoduleData = {
   hs2025: {
     wahlmodule: [
       {
+        // PFLICHTFELDER
         name: "Praktikum",
         kp: 6,
         kategorie: "Wahlmodule",
+        // KONTEXT
         semester: 1,
       },
       {
+        // PFLICHTFELDER
         name: "Politik und Kunst erforschen",
         kp: 6,
         kategorie: "Wahlmodule",
+        // KONTEXT
         semester: 1,
       },
       {
+        // PFLICHTFELDER
         name: "Understanding China's Governance",
         kp: 6,
         kategorie: "Wahlmodule",
+        // KONTEXT
         semester: 1,
       },
       {
+        // PFLICHTFELDER
         name: "EEE 262 Umweltpolitik der Schweiz",
         kp: 3,
         kategorie: "Wahlmodule",
+        // KONTEXT
         semester: 1,
       },
     ],

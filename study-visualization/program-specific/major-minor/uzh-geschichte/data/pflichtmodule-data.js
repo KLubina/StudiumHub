@@ -15,39 +15,51 @@ window.GeschichtePflichtmoduleData = {
         semester: 2,
       },
       {
+        // PFLICHTFELDER
         name: "Basismodul I",
         kp: 9,
         kategorie: "Pflichtmodule",
+        // KONTEXT
         semester: 2,
       },
       {
+        // PFLICHTFELDER
         name: "Basismodul II",
         kp: 9,
         kategorie: "Pflichtmodule",
+        // KONTEXT
         semester: 2,
       },
       {
+        // PFLICHTFELDER
         name: "Einführungsvorlesung Frühling",
         kp: 3,
         kategorie: "Pflichtmodule",
+        // KONTEXT
         semester: 2,
       },
       {
+        // PFLICHTFELDER
         name: "Grundlagen Latein",
         kp: 6,
         kategorie: "Pflichtmodule",
+        // KONTEXT
         semester: 2,
       },
       {
+        // PFLICHTFELDER
         name: "Methoden und Theorie",
         kp: 9,
         kategorie: "Pflichtmodule",
+        // KONTEXT
         semester: 2,
       },
       {
+        // PFLICHTFELDER
         name: "Mündliche Prüfung",
         kp: 9,
         kategorie: "Pflichtmodule",
+        // KONTEXT
         semester: 2,
         jahr: 3,
       },
@@ -58,46 +70,60 @@ window.GeschichtePflichtmoduleData = {
   hs2025: {
     pflichtmodule: [
       {
+        // PFLICHTFELDER
         name: "Bachelorarbeit",
         kp: 15,
         kategorie: "Pflichtmodule",
+        // KONTEXT
         semester: 1,
         jahr: 3,
       },
       {
+        // PFLICHTFELDER
         name: "Basismodul I",
         kp: 9,
         kategorie: "Pflichtmodule",
+        // KONTEXT
         semester: 1,
       },
       {
+        // PFLICHTFELDER
         name: "Basismodul II",
         kp: 9,
         kategorie: "Pflichtmodule",
+        // KONTEXT
         semester: 1,
       },
       {
+        // PFLICHTFELDER
         name: "Einführungsvorlesung Herbst",
         kp: 3,
         kategorie: "Pflichtmodule",
+        // KONTEXT
         semester: 1,
       },
       {
+        // PFLICHTFELDER
         name: "Grundlagen Latein",
         kp: 6,
         kategorie: "Pflichtmodule",
+        // KONTEXT
         semester: 1,
       },
       {
+        // PFLICHTFELDER
         name: "Methoden und Theorie",
         kp: 9,
         kategorie: "Pflichtmodule",
+        // KONTEXT
         semester: 1,
       },
       {
+        // PFLICHTFELDER
         name: "Mündliche Prüfung",
         kp: 9,
         kategorie: "Pflichtmodule",
+        // KONTEXT
         semester: 1,
         jahr: 3,
       },

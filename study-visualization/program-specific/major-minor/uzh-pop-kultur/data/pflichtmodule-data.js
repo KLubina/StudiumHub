@@ -14,28 +14,36 @@ window.PopKulturPflichtmoduleData = {
         semester: 2,
       },
       {
+        // PFLICHTFELDER
         name: "Kulturtheorien lesen, verstehen, diskutieren",
         kp: 6,
         kategorie: "Pflichtmodule",
+        // KONTEXT
         semester: 2,
       },
       {
+        // PFLICHTFELDER
         name: "Qualitative Methoden: analysieren, interpretieren, formulieren",
         kp: 9,
         kategorie: "Pflichtmodule",
+        // KONTEXT
         semester: 2,
       },
       {
+        // PFLICHTFELDER
         name: "Bachelorkolloquium",
         kp: 3,
         kategorie: "Pflichtmodule",
+        // KONTEXT
         jahr: 3,
         semester: 2,
       },
       {
+        // PFLICHTFELDER
         name: "Bachelorarbeit",
         kp: 15,
         kategorie: "Bachelor-Arbeit",
+        // KONTEXT
         jahr: 3,
         semester: 2,
       },
@@ -46,34 +54,44 @@ window.PopKulturPflichtmoduleData = {
   hs2025: {
     pflichtmodule: [
       {
+        // PFLICHTFELDER
         name: "Alltagskulturen: Geschichte, Theorien, Felder",
         kp: 6,
         kategorie: "Pflichtmodule",
+        // KONTEXT
         semester: 1,
       },
       {
+        // PFLICHTFELDER
         name: "Kulturtheorien lesen, verstehen, diskutieren",
         kp: 6,
         kategorie: "Pflichtmodule",
+        // KONTEXT
         semester: 1,
       },
       {
+        // PFLICHTFELDER
         name: "Qualitative Methoden: recherchieren, erheben, evaluieren",
         kp: 9,
         kategorie: "Pflichtmodule",
+        // KONTEXT
         semester: 1,
       },
       {
+        // PFLICHTFELDER
         name: "Bachelorkolloquium",
         kp: 3,
         kategorie: "Pflichtmodule",
+        // KONTEXT
         jahr: 3,
         semester: 1,
       },
       {
+        // PFLICHTFELDER
         name: "Bachelorarbeit",
         kp: 15,
         kategorie: "Bachelor-Arbeit",
+        // KONTEXT
         jahr: 3,
         semester: 1,
       },
