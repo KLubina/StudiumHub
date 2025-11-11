@@ -1,0 +1,45 @@
+/* ==== ETH ITET - CSS CLASSES ==== */
+/* Program-specific CSS classes for ITET - Simplified */
+
+/* ITET-specific classes */
+[data-studiengang="eth-itet"] .modul.obligatorisch,
+[data-studiengang="eth-itet"] .legende-item.obligatorisch {
+    background-color: var(--color-obligatorisch);
+    color: white;
+}
+
+[data-studiengang="eth-itet"] .modul.obligatorisch-praktikum,
+[data-studiengang="eth-itet"] .legende-item.obligatorisch-praktikum {
+    background-color: var(--color-obligatorisch-praktikum);
+    color: white;
+}
+
+[data-studiengang="eth-itet"] .modul.kern,
+[data-studiengang="eth-itet"] .legende-item.kern {
+    background-color: var(--color-kern);
+    color: white;
+}
+
+[data-studiengang="eth-itet"] .modul.wahl,
+[data-studiengang="eth-itet"] .legende-item.wahl {
+    background-color: var(--color-wahl);
+    color: white;
+}
+
+[data-studiengang="eth-itet"] .modul.wahl-praktika-projekte,
+[data-studiengang="eth-itet"] .legende-item.wahl-praktika-projekte {
+    background-color: var(--color-wahl-praktika-projekte);
+    color: white;
+}
+
+[data-studiengang="eth-itet"] .modul.weitere-wahl-grundlagen,
+[data-studiengang="eth-itet"] .legende-item.weitere-wahl-grundlagen {
+    background-color: var(--color-weitere-wahl-grundlagen);
+    color: white;
+}
+
+[data-studiengang="eth-itet"] .modul.wissenschaft,
+[data-studiengang="eth-itet"] .legende-item.wissenschaft {
+    background-color: var(--color-wissenschaft);
+    color: white;
+}
