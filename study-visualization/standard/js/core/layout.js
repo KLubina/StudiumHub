@@ -34,7 +34,7 @@ window.StudienplanLayout = {
 
         return `
             <div class="semester" data-year="${year}" data-semester="${semester}">
-                <h4 class="semester-title">${semesterName} (${year}.${semester})</h4>
+                <h4 class="semester-title">${semesterName}</h4>
                 <div class="module-container">
                     ${modulesHTML}
                 </div>

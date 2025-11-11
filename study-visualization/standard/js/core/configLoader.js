@@ -11,6 +11,10 @@ window.StudienplanConfigLoader = {
                                         'uzh-kommunikation', 'uzh-pop-kultur', 'uzh-soziologie'];
             const studyModel = majorMinorPrograms.includes(studiengang) ? 'major-minor' : 'mono';
 
+            // Lade General-Konfiguration
+            const generalConfigPath = `../program-specific/${studyModel}/${studiengang}/standard-config/general-config.js`;
+            await this.loadScript(generalConfigPath);
+
             // Lade Kategorien-Konfiguration
             const categoriesConfigPath = `../program-specific/${studyModel}/${studiengang}/standard-config/standardcategories-config.js`;
             await this.loadScript(categoriesConfigPath);
@@ -117,8 +121,18 @@ window.StudienplanConfigLoader = {
         const titleElement = document.getElementById('studienplan-title');
         const subtitleElement = document.getElementById('studienplan-subtitle');
 
-        if (titleElement) titleElement.textContent = this.getStudiengangName(studiengang);
-        if (subtitleElement) subtitleElement.textContent = 'mind. 180 KP insgesamt';
+        if (titleElement) {
+            const title = window.StudiengangGeneralConfig?.title || this.getStudiengangName(studiengang);
+            titleElement.textContent = title;
+        }
+
+        if (subtitleElement) {
+            if (window.StudiengangGeneralConfig?.subtitleHtml) {
+                subtitleElement.innerHTML = window.StudiengangGeneralConfig.subtitleHtml;
+            } else {
+                subtitleElement.textContent = 'mind. 180 KP insgesamt';
+            }
+        }
     },
 
     // Übersetze Studiengang-Namen

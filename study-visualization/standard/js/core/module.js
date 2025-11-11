@@ -9,8 +9,14 @@ window.StudienplanModule = {
         const category = module.standardcategory || 'unknown';
         const name = module.name || 'Unbekanntes Modul';
 
+        // Berechne Größe basierend auf ECTS (4 ECTS = 100px)
+        const baseSize = 100;
+        const scale = Math.sqrt(ects / 4);
+        const size = baseSize * scale;
+        const style = `width: ${size}px; height: ${size}px;`;
+
         return `
-            <div class="modul ${category}" data-ects="${ects}">
+            <div class="modul ${category}" data-ects="${ects}" style="${style}">
                 <div class="modul-titel">${name}</div>
                 <div class="modul-kp">${ects} KP</div>
             </div>
