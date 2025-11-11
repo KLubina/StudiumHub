@@ -11,10 +11,13 @@ window.StudienplanColorManager = {
 
         // Versuche, den Selector zu erstellen; wenn keine Modi definiert sind,
         // gibt createColorModeSelector false zurück und wir markieren nicht als init.
-        const created = this.createColorModeSelector();
+    // Erfasse die ursprünglichen Klassen der Module, damit wir später zu 'standard' zurückkehren können
+    this.captureOriginalModuleClasses();
 
-        // Setze Default-Mode (auch wenn kein Selector erstellt wurde, aktualisieren wir die Legende)
-        this.setMode('standard'); // Default mode
+    const created = this.createColorModeSelector();
+
+    // Setze Default-Mode (auch wenn kein Selector erstellt wurde, aktualisieren wir die Legende)
+    this.setMode('standard'); // Default mode
 
         if (created) {
             this._initialized = true;
@@ -65,9 +68,26 @@ window.StudienplanColorManager = {
 
     setMode(modeKey) {
         this.currentMode = modeKey;
-        
+
         if (modeKey === 'standard') {
-            // Standard CSS verwenden
+            // Entferne vorherige color management CSS
+            const existing = document.querySelectorAll('link[data-color-mode]');
+            existing.forEach(link => link.remove());
+
+            // Stelle ursprüngliche Klassen wieder her und entferne mode-spezifische Markierung
+            const modules = document.querySelectorAll('.modul');
+            modules.forEach(modul => {
+                const prev = modul.dataset.currentColorClass;
+                if (prev) modul.classList.remove(prev);
+
+                if (modul.dataset.originalClasses) {
+                    modul.dataset.originalClasses.split(' ').forEach(c => modul.classList.add(c));
+                }
+
+                delete modul.dataset.currentColorClass;
+            });
+
+            // Aktualisiere Legende
             this.updateLegend('standard');
             return;
         }
@@ -99,6 +119,15 @@ window.StudienplanColorManager = {
         }
     },
 
+    // Speichere die originalen Klassen (alles ausser 'modul') pro Modul, damit wir später zu Standard zurückkehren können
+    captureOriginalModuleClasses() {
+        const modules = document.querySelectorAll('.modul');
+        modules.forEach(modul => {
+            const orig = Array.from(modul.classList).filter(c => c !== 'modul').join(' ');
+            if (orig) modul.dataset.originalClasses = orig;
+        });
+    },
+
     loadCSS(href, dataAttr) {
         const link = document.createElement('link');
         link.rel = 'stylesheet';
@@ -125,10 +154,20 @@ window.StudienplanColorManager = {
                     const cat = mode.getCategories().find(c => c.name === newCategory);
                     newCategory = cat ? cat.klasse : newCategory;
                 }
-                
-                // Entferne alte Kategorien und füge neue hinzu
-                modul.className = modul.className.replace(/modul\s+/, 'modul ');
-                modul.classList.add(newCategory);
+                // Entferne vorherige color-mode Klasse falls gesetzt
+                const prev = modul.dataset.currentColorClass;
+                if (prev) modul.classList.remove(prev);
+
+                // Entferne auch die originalClasses, damit wir nur die neue Klasse haben (wenn original vorhanden)
+                if (modul.dataset.originalClasses) {
+                    modul.dataset.originalClasses.split(' ').forEach(c => modul.classList.remove(c));
+                }
+
+                // Füge neue Kategorie-Klasse hinzu und merke sie als aktuell
+                if (newCategory) {
+                    modul.classList.add(newCategory);
+                    modul.dataset.currentColorClass = newCategory;
+                }
             }
         });
     },
