@@ -642,3 +642,6 @@ window.CSE_WahlfaecherModules = [
     themenbereich: "mathematik",
   },
 ];
+
+// Export für wahlmodule.js - der Code erkennt nur spezifische Variablennamen
+window.WahlmoduleData = window.CSE_WahlfaecherModules;

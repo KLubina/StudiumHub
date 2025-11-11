@@ -52,3 +52,6 @@ window.CSE_KernfaecherModules = [
     themenbereich: "informatik",
   },
 ];
+
+// Export für wahlmodule.js - der Code erkennt nur spezifische Variablennamen
+window.WahlmoduleData = window.CSE_KernfaecherModules;

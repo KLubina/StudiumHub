@@ -57,7 +57,7 @@ window.StudiengangModules = [
   },
   {
     // PFLICHTFELDER
-    name: "Mathematische Methoden (ehem. Komplexe Analysis)",
+    name: "Mathematische Methoden",
     ects: 4,
     // KONTEXT
     year: 1,
@@ -113,7 +113,7 @@ window.StudiengangModules = [
   },
   {
     // PFLICHTFELDER
-    name: "Wahrscheinlichkeitstheorie und Statistik (ehem. Stochastik)",
+    name: "Wahrscheinlichkeitstheorie und Statistik",
     ects: 4,
     // KONTEXT
     year: 2,
@@ -174,6 +174,7 @@ window.StudiengangModules = [
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     isPlaceholder: true,
+    wahlmodulSource: "./kernfacher-data.js",
   },
   {
     // PFLICHTFELDER
@@ -185,6 +186,7 @@ window.StudiengangModules = [
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     isPlaceholder: true,
+    wahlmodulSource: "./vertiefung-data.js",
   },
   {
     // PFLICHTFELDER
@@ -196,6 +198,7 @@ window.StudiengangModules = [
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     isPlaceholder: true,
+    wahlmodulSource: "./wahlfacher-data.js",
   },
   // #endregion 5.-6. Semester - Platzhalter
 
