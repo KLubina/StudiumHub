@@ -8,7 +8,7 @@ window.StudiengangModules = [
     name: "Cornerstone Module",
     kp: 6,
     kategorie: "grundlagen",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 1,
   },
@@ -17,7 +17,7 @@ window.StudiengangModules = [
     name: "Einführung in die Programmierung",
     kp: 6,
     kategorie: "programmierung",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 1,
   },
@@ -26,7 +26,7 @@ window.StudiengangModules = [
     name: "Algorithmen und Datenstrukturen",
     kp: 6,
     kategorie: "programmierung",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 1,
   },
@@ -35,7 +35,7 @@ window.StudiengangModules = [
     name: "Personality Development, Problemsolving and Decision Making",
     kp: 6,
     kategorie: "kommunikation",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 1,
   },
@@ -44,7 +44,7 @@ window.StudiengangModules = [
     name: "Transfer Project 1",
     kp: 6,
     kategorie: "transfer",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 1,
   },
@@ -57,7 +57,7 @@ window.StudiengangModules = [
     name: "Software Engineering",
     kp: 6,
     kategorie: "programmierung",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 2,
   },
@@ -66,7 +66,7 @@ window.StudiengangModules = [
     name: "Programmierung mit Datenbanksystemen",
     kp: 6,
     kategorie: "programmierung",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 2,
   },
@@ -75,7 +75,7 @@ window.StudiengangModules = [
     name: "Human Computer Interaction",
     kp: 6,
     kategorie: "grundlagen",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 2,
   },
@@ -84,7 +84,7 @@ window.StudiengangModules = [
     name: "Professional Communication, Team Development and Faciliation",
     kp: 6,
     kategorie: "kommunikation",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 2,
   },
@@ -93,7 +93,7 @@ window.StudiengangModules = [
     name: "Social Responsibility and Social Impact",
     kp: 6,
     kategorie: "kommunikation",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 2,
   },
@@ -106,7 +106,7 @@ window.StudiengangModules = [
     name: "Betriebssysteme",
     kp: 6,
     kategorie: "grundlagen",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 3,
   },
@@ -115,7 +115,7 @@ window.StudiengangModules = [
     name: "Anwendungsorientierte Programmierung",
     kp: 6,
     kategorie: "programmierung",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 3,
   },
@@ -124,7 +124,7 @@ window.StudiengangModules = [
     name: "Data Engineering and Data Analytics",
     kp: 6,
     kategorie: "spezialisierung",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 3,
   },
@@ -133,7 +133,7 @@ window.StudiengangModules = [
     name: "Global Challenges and Future Skills",
     kp: 6,
     kategorie: "kommunikation",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 3,
   },
@@ -142,7 +142,7 @@ window.StudiengangModules = [
     name: "Transfer Project 2",
     kp: 6,
     kategorie: "transfer",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 3,
   },
@@ -155,7 +155,7 @@ window.StudiengangModules = [
     name: "Rechnernetze und verteilte Systeme",
     kp: 6,
     kategorie: "grundlagen",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 4,
   },
@@ -164,7 +164,7 @@ window.StudiengangModules = [
     name: "IT-Sicherheit und Datenschutz",
     kp: 6,
     kategorie: "grundlagen",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 4,
   },
@@ -173,7 +173,7 @@ window.StudiengangModules = [
     name: "Design the Future",
     kp: 6,
     kategorie: "kommunikation",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 4,
   },
@@ -182,7 +182,7 @@ window.StudiengangModules = [
     name: "Wahlpflichtfach",
     kp: 12,
     kategorie: "wahlpflicht",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 4,
   },
@@ -195,7 +195,7 @@ window.StudiengangModules = [
     name: "Datenmanagement und Data Warehouse-Systeme",
     kp: 6,
     kategorie: "spezialisierung",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 3,
     semester: 5,
     schwerpunkt: "Data Science",
@@ -205,7 +205,7 @@ window.StudiengangModules = [
     name: "Data Analytics",
     kp: 6,
     kategorie: "spezialisierung",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 3,
     semester: 5,
     schwerpunkt: "Data Science",
@@ -215,7 +215,7 @@ window.StudiengangModules = [
     name: "Entwurf und Entwicklung von Datenanalyse-Applikationen",
     kp: 6,
     kategorie: "spezialisierung",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 3,
     semester: 5,
     schwerpunkt: "Data Science",
@@ -225,7 +225,7 @@ window.StudiengangModules = [
     name: "Action Learning and Action Research",
     kp: 12,
     kategorie: "transfer",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 3,
     semester: 5,
   },
@@ -238,7 +238,7 @@ window.StudiengangModules = [
     name: "Journal Club", 
     kp: 6, 
     kategorie: "abschluss",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 3, 
     semester: 6 
   },
@@ -247,7 +247,7 @@ window.StudiengangModules = [
     name: "Angewandte Forschungsmethoden",
     kp: 6,
     kategorie: "abschluss",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 3,
     semester: 6,
   },
@@ -256,7 +256,7 @@ window.StudiengangModules = [
     name: "Bachelorarbeit",
     kp: 18,
     kategorie: "abschluss",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 3,
     semester: 6,
   },

@@ -8,7 +8,7 @@ window.StudiengangModules = [
     name: "Algorithmen und Datenstrukturen",
     kp: 6,
     kategorie: "grundlagen",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 1,
   },
@@ -17,7 +17,7 @@ window.StudiengangModules = [
     name: "Mathematik I",
     kp: 6,
     kategorie: "grundlagen",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 1,
   },
@@ -26,7 +26,7 @@ window.StudiengangModules = [
     name: "Computer Science",
     kp: 6,
     kategorie: "grundlagen",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 1,
   },
@@ -35,7 +35,7 @@ window.StudiengangModules = [
     name: "Einführung in Computational und Data Science",
     kp: 6,
     kategorie: "grundlagen",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 1,
   },
@@ -44,7 +44,7 @@ window.StudiengangModules = [
     name: "Programmierung und Prompt Engineering I",
     kp: 6,
     kategorie: "grundlagen",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 1,
   },
@@ -53,7 +53,7 @@ window.StudiengangModules = [
     name: "First Certificate in English B2",
     kp: 3,
     kategorie: "grundlagen",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 1,
   },
@@ -66,7 +66,7 @@ window.StudiengangModules = [
     name: "Mathematik II",
     kp: 6,
     kategorie: "grundlagen",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 2,
   },
@@ -75,7 +75,7 @@ window.StudiengangModules = [
     name: "Datenbanken und Datenverarbeitung",
     kp: 6,
     kategorie: "grundlagen",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 2,
   },
@@ -84,7 +84,7 @@ window.StudiengangModules = [
     name: "Effiziente Algorithmen",
     kp: 6,
     kategorie: "grundlagen",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 2,
   },
@@ -93,7 +93,7 @@ window.StudiengangModules = [
     name: "Programmierung und Prompt Engineering II",
     kp: 6,
     kategorie: "grundlagen",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 2,
   },
@@ -102,7 +102,7 @@ window.StudiengangModules = [
     name: "Numerische Methoden",
     kp: 6,
     kategorie: "grundlagen",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 2,
   },
@@ -115,7 +115,7 @@ window.StudiengangModules = [
     name: "Innovationsmanagement und Design Thinking",
     kp: 4,
     kategorie: "grundlagen",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 3,
   },
@@ -124,7 +124,7 @@ window.StudiengangModules = [
     name: "Applied English for Computational and Data Scientists",
     kp: 6,
     kategorie: "grundlagen",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 3,
   },
@@ -133,7 +133,7 @@ window.StudiengangModules = [
     name: "Fortgeschrittene Numerische Methoden",
     kp: 6,
     kategorie: "grundlagen",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 3,
   },
@@ -142,7 +142,7 @@ window.StudiengangModules = [
     name: "Machine Learning",
     kp: 6,
     kategorie: "grundlagen",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 3,
   },
@@ -151,7 +151,7 @@ window.StudiengangModules = [
     name: "Modellierung und Simulation I",
     kp: 6,
     kategorie: "grundlagen",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 3,
   },
@@ -160,7 +160,7 @@ window.StudiengangModules = [
     name: "Mathematik III",
     kp: 2,
     kategorie: "grundlagen",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 3,
   },
@@ -173,7 +173,7 @@ window.StudiengangModules = [
     name: "Algorithmen des wissenschaftlichen Rechnens",
     kp: 4,
     kategorie: "schwerpunkte",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 4,
   },
@@ -182,7 +182,7 @@ window.StudiengangModules = [
     name: "Data Science und Informatik bei Banken und Versicherungen",
     kp: 6,
     kategorie: "grundlagen",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 4,
   },
@@ -191,7 +191,7 @@ window.StudiengangModules = [
     name: "Deep Learning",
     kp: 6,
     kategorie: "grundlagen",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 4,
   },
@@ -200,7 +200,7 @@ window.StudiengangModules = [
     name: "High Performance Computing",
     kp: 6,
     kategorie: "grundlagen",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 4,
   },
@@ -209,7 +209,7 @@ window.StudiengangModules = [
     name: "Hyperautomation und Robotics Process Automation (RPA)",
     kp: 5,
     kategorie: "grundlagen",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 4,
   },
@@ -218,7 +218,7 @@ window.StudiengangModules = [
     name: "Natural Language Processing",
     kp: 3,
     kategorie: "grundlagen",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 4,
   },
@@ -231,7 +231,7 @@ window.StudiengangModules = [
     name: "Computational Steering",
     kp: 8,
     kategorie: "schwerpunkte",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 3,
     semester: 5,
   },
@@ -240,7 +240,7 @@ window.StudiengangModules = [
     name: "Modellierung und Simulation II",
     kp: 8,
     kategorie: "schwerpunkte",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 3,
     semester: 5,
   },
@@ -249,7 +249,7 @@ window.StudiengangModules = [
     name: "Agiles Projektmanagement und Nachhaltigkeit",
     kp: 6,
     kategorie: "grundlagen",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 3,
     semester: 5,
   },
@@ -258,7 +258,7 @@ window.StudiengangModules = [
     name: "Data Science und Informatik in der Biologie",
     kp: 4,
     kategorie: "grundlagen",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 3,
     semester: 5,
   },
@@ -267,7 +267,7 @@ window.StudiengangModules = [
     name: "Data Science und Informatik in der Medizin",
     kp: 4,
     kategorie: "grundlagen",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 3,
     semester: 5,
   },
@@ -280,7 +280,7 @@ window.StudiengangModules = [
     name: "Uncertainty Quantification und Explainable AI",
     kp: 8,
     kategorie: "schwerpunkte",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 3,
     semester: 6,
   },
@@ -289,7 +289,7 @@ window.StudiengangModules = [
     name: "Scientific Visualization",
     kp: 8,
     kategorie: "schwerpunkte",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 3,
     semester: 6,
   },
@@ -298,7 +298,7 @@ window.StudiengangModules = [
     name: "Projektarbeit Computational and Data Science",
     kp: 6,
     kategorie: "labor",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 3,
     semester: 6,
   },
@@ -307,7 +307,7 @@ window.StudiengangModules = [
     name: "Wahlmodul", 
     kp: 4, 
     kategorie: "wahlmodul",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 3, 
     semester: 6 
   },
@@ -316,7 +316,7 @@ window.StudiengangModules = [
     name: "Wissenschaftliches Arbeiten und Exposé zur Bachelorarbeit",
     kp: 4,
     kategorie: "labor",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 3,
     semester: 6,
   },
@@ -329,7 +329,7 @@ window.StudiengangModules = [
     name: "Big Data", 
     kp: 8, 
     kategorie: "schwerpunkte",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 4, 
     semester: 7 
   },
@@ -338,7 +338,7 @@ window.StudiengangModules = [
     name: "Reinforcement Learning",
     kp: 8,
     kategorie: "schwerpunkte",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 4,
     semester: 7,
   },
@@ -347,7 +347,7 @@ window.StudiengangModules = [
     name: "Fachpraktikum", 
     kp: 6, 
     kategorie: "labor",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 4, 
     semester: 7 
   },
@@ -356,7 +356,7 @@ window.StudiengangModules = [
     name: "Wahlmodul", 
     kp: 4, 
     kategorie: "wahlmodul",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 4, 
     semester: 7 
   },
@@ -369,7 +369,7 @@ window.StudiengangModules = [
     name: "Datenvisualisierung",
     kp: 8,
     kategorie: "schwerpunkte",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 4,
     semester: 8,
   },
@@ -378,7 +378,7 @@ window.StudiengangModules = [
     name: "Time Series Analysis",
     kp: 8,
     kategorie: "schwerpunkte",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 4,
     semester: 8,
   },
@@ -387,7 +387,7 @@ window.StudiengangModules = [
     name: "Bachelor Thesis",
     kp: 14,
     kategorie: "projektarbeit",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 4,
     semester: 8,
   },

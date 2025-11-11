@@ -8,7 +8,7 @@ window.StudiengangModules = [
     name: "Communication Competence 1",
     kp: 2,
     kategorie: "kontext",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 1,
   },
@@ -17,7 +17,7 @@ window.StudiengangModules = [
     name: "Software-Projekt 1",
     kp: 4,
     kategorie: "projekt",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 1,
   },
@@ -26,7 +26,7 @@ window.StudiengangModules = [
     name: "Programmieren 1", 
     kp: 6, 
     kategorie: "fach",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1, 
     semester: 1 
   },
@@ -35,7 +35,7 @@ window.StudiengangModules = [
     name: "Datenbanken", 
     kp: 4, 
     kategorie: "fach",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1, 
     semester: 1 
   },
@@ -44,7 +44,7 @@ window.StudiengangModules = [
     name: "Information & Codierung",
     kp: 4,
     kategorie: "fach",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 1,
   },
@@ -53,7 +53,7 @@ window.StudiengangModules = [
     name: "Analysis 1", 
     kp: 4, 
     kategorie: "mathe-nawi",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1, 
     semester: 1 
   },
@@ -62,7 +62,7 @@ window.StudiengangModules = [
     name: "Diskrete Mathematik",
     kp: 3,
     kategorie: "mathe-nawi",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 1,
   },
@@ -71,7 +71,7 @@ window.StudiengangModules = [
     name: "Grundlagen der Elektrotechnik und Digitaltechnik",
     kp: 3,
     kategorie: "mathe-nawi",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 1,
   },
@@ -84,7 +84,7 @@ window.StudiengangModules = [
     name: "Communication Competence 2",
     kp: 2,
     kategorie: "kontext",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 2,
   },
@@ -93,7 +93,7 @@ window.StudiengangModules = [
     name: "Software-Projekt 2",
     kp: 4,
     kategorie: "projekt",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 2,
   },
@@ -102,7 +102,7 @@ window.StudiengangModules = [
     name: "Programmieren 2", 
     kp: 6, 
     kategorie: "fach",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1, 
     semester: 2 
   },
@@ -111,7 +111,7 @@ window.StudiengangModules = [
     name: "Systemnahe Programmierung",
     kp: 6,
     kategorie: "fach",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 2,
   },
@@ -120,7 +120,7 @@ window.StudiengangModules = [
     name: "Kommunikationstechnik",
     kp: 2,
     kategorie: "fach",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 2,
   },
@@ -129,7 +129,7 @@ window.StudiengangModules = [
     name: "Theoretische Informatik",
     kp: 4,
     kategorie: "fach",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 2,
   },
@@ -138,7 +138,7 @@ window.StudiengangModules = [
     name: "Analysis 2", 
     kp: 3, 
     kategorie: "mathe-nawi",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1, 
     semester: 2 
   },
@@ -147,7 +147,7 @@ window.StudiengangModules = [
     name: "Lineare Algebra",
     kp: 3,
     kategorie: "mathe-nawi",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 2,
   },
@@ -160,7 +160,7 @@ window.StudiengangModules = [
     name: "Communication Competence 3",
     kp: 2,
     kategorie: "kontext",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 3,
   },
@@ -169,7 +169,7 @@ window.StudiengangModules = [
     name: "Software-Projekt 3",
     kp: 4,
     kategorie: "projekt",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 3,
   },
@@ -178,7 +178,7 @@ window.StudiengangModules = [
     name: "Software-Entwicklung 1",
     kp: 5,
     kategorie: "fach",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 3,
   },
@@ -187,7 +187,7 @@ window.StudiengangModules = [
     name: "Web-Entwicklung", 
     kp: 4, 
     kategorie: "fach",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2, 
     semester: 3 
   },
@@ -196,7 +196,7 @@ window.StudiengangModules = [
     name: "Computertechnik 1", 
     kp: 3, 
     kategorie: "fach",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2, 
     semester: 3 
   },
@@ -205,7 +205,7 @@ window.StudiengangModules = [
     name: "Algorithmen & Datenstrukturen",
     kp: 5,
     kategorie: "projekt",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 3,
   },
@@ -214,7 +214,7 @@ window.StudiengangModules = [
     name: "Stochastik und Statistik",
     kp: 4,
     kategorie: "mathe-nawi",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 3,
   },
@@ -223,7 +223,7 @@ window.StudiengangModules = [
     name: "Höhere Mathematik für Informatiker 1",
     kp: 3,
     kategorie: "mathe-nawi",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 3,
   },
@@ -236,7 +236,7 @@ window.StudiengangModules = [
     name: "Wirtschaft für Ingenieure",
     kp: 2,
     kategorie: "kontext",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 4,
   },
@@ -245,7 +245,7 @@ window.StudiengangModules = [
     name: "Software-Projekt 4",
     kp: 4,
     kategorie: "projekt",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 4,
   },
@@ -254,7 +254,7 @@ window.StudiengangModules = [
     name: "Software-Entwicklung 2",
     kp: 4,
     kategorie: "fach",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 4,
   },
@@ -263,7 +263,7 @@ window.StudiengangModules = [
     name: "Betriebssysteme", 
     kp: 4, 
     kategorie: "fach",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2, 
     semester: 4 
   },
@@ -272,7 +272,7 @@ window.StudiengangModules = [
     name: "Computertechnik 2", 
     kp: 3, 
     kategorie: "fach",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2, 
     semester: 4 
   },
@@ -281,7 +281,7 @@ window.StudiengangModules = [
     name: "IT-Sicherheit", 
     kp: 4, 
     kategorie: "fach",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2, 
     semester: 4 
   },
@@ -290,7 +290,7 @@ window.StudiengangModules = [
     name: "Maschinelles Lernen & Data Mining",
     kp: 5,
     kategorie: "fach",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 4,
   },
@@ -299,7 +299,7 @@ window.StudiengangModules = [
     name: "Höhere Mathematik für Informatiker 2",
     kp: 2,
     kategorie: "mathe-nawi",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 4,
   },
@@ -308,7 +308,7 @@ window.StudiengangModules = [
     name: "Physik Engines",
     kp: 2,
     kategorie: "mathe-nawi",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 4,
   },
@@ -321,7 +321,7 @@ window.StudiengangModules = [
     name: "Wahlpflichtmodul",
     kp: 6,
     kategorie: "kontext",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 3,
     semester: 5,
   },
@@ -330,7 +330,7 @@ window.StudiengangModules = [
     name: "Wahlpflichtmodul",
     kp: 6,
     kategorie: "kontext",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 3,
     semester: 5,
   },
@@ -339,7 +339,7 @@ window.StudiengangModules = [
     name: "Projektarbeit in Informatik",
     kp: 8,
     kategorie: "projekt",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 3,
     semester: 5,
   },
@@ -348,7 +348,7 @@ window.StudiengangModules = [
     name: "Wahlpflichtmodul", 
     kp: 6, 
     kategorie: "fach",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 3, 
     semester: 5 
   },
@@ -357,7 +357,7 @@ window.StudiengangModules = [
     name: "Wahlpflichtmodul SG-übergreifend",
     kp: 4,
     kategorie: "fach",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 3,
     semester: 5,
   },
@@ -370,7 +370,7 @@ window.StudiengangModules = [
     name: "Wahlpflichtmodul",
     kp: 4,
     kategorie: "kontext",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 3,
     semester: 6,
   },
@@ -379,7 +379,7 @@ window.StudiengangModules = [
     name: "Bachelorarbeit in Informatik",
     kp: 12,
     kategorie: "projekt",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 3,
     semester: 6,
   },
@@ -388,7 +388,7 @@ window.StudiengangModules = [
     name: "Wahlpflichtmodul", 
     kp: 6, 
     kategorie: "fach",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 3, 
     semester: 6 
   },
@@ -397,7 +397,7 @@ window.StudiengangModules = [
     name: "Wahlpflichtmodul", 
     kp: 4, 
     kategorie: "fach",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 3, 
     semester: 6 
   },
@@ -406,7 +406,7 @@ window.StudiengangModules = [
     name: "Wahlpflichtmodul", 
     kp: 4, 
     kategorie: "fach",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 3, 
     semester: 6 
   },

@@ -11,7 +11,7 @@ window.StudiengangModules = [
     name: "Lineare Algebra und Geometrie 1",
     kp: 4,
     kategorie: "Grundlagenfächer",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 1,
   },
@@ -20,7 +20,7 @@ window.StudiengangModules = [
     name: "Analysis 1",
     kp: 4,
     kategorie: "Grundlagenfächer",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 1,
   },
@@ -29,7 +29,7 @@ window.StudiengangModules = [
     name: "Physik 1",
     kp: 2,
     kategorie: "Grundlagenfächer",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 1,
   },
@@ -38,7 +38,7 @@ window.StudiengangModules = [
     name: "Chemie & Werkstoffe 1",
     kp: 2,
     kategorie: "Grundlagenfächer",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 1,
   },
@@ -49,7 +49,7 @@ window.StudiengangModules = [
     name: "Elektronik Grundlagen",
     kp: 4,
     kategorie: "Grundlagenfächer",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 1,
   },
@@ -58,7 +58,7 @@ window.StudiengangModules = [
     name: "Grundlagen der Elektrotechnik",
     kp: 4,
     kategorie: "Grundlagenfächer",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 1,
   },
@@ -69,7 +69,7 @@ window.StudiengangModules = [
     name: "Funktionale Softwareentwicklung in C",
     kp: 4,
     kategorie: "Grundlagenfächer",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 1,
   },
@@ -78,7 +78,7 @@ window.StudiengangModules = [
     name: "Labor-Projekte",
     kp: 4,
     kategorie: "Praktika und Projekte",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 1,
   },
@@ -87,7 +87,7 @@ window.StudiengangModules = [
     name: "Special Week Projektmanagement",
     kp: 2,
     kategorie: "Sprachen und Soft Skills",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 1,
   },
@@ -103,7 +103,7 @@ window.StudiengangModules = [
     name: "Analysis 2",
     kp: 6,
     kategorie: "Grundlagenfächer",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 2,
   },
@@ -112,7 +112,7 @@ window.StudiengangModules = [
     name: "Lineare Algebra & Geometrie 2",
     kp: 2,
     kategorie: "Grundlagenfächer",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 2,
   },
@@ -121,7 +121,7 @@ window.StudiengangModules = [
     name: "Physik 2",
     kp: 4,
     kategorie: "Grundlagenfächer",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 2,
   },
@@ -130,7 +130,7 @@ window.StudiengangModules = [
     name: "Chemie & Werkstoffe 2",
     kp: 2,
     kategorie: "Grundlagenfächer",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 2,
   },
@@ -141,7 +141,7 @@ window.StudiengangModules = [
     name: "Entwurf elektronischer Schaltungen",
     kp: 4,
     kategorie: "Grundlagenfächer",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 2,
   },
@@ -150,7 +150,7 @@ window.StudiengangModules = [
     name: "Wechselstromtechnik",
     kp: 4,
     kategorie: "Grundlagenfächer",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 2,
   },
@@ -161,7 +161,7 @@ window.StudiengangModules = [
     name: "Hardwarenahe Softwareentwicklung",
     kp: 4,
     kategorie: "Grundlagenfächer",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 2,
   },
@@ -170,7 +170,7 @@ window.StudiengangModules = [
     name: "Labor-Projekte",
     kp: 4,
     kategorie: "Praktika und Projekte",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 2,
   },
@@ -179,7 +179,7 @@ window.StudiengangModules = [
     name: "Rhetorik & Präsentationstechnik",
     kp: 2,
     kategorie: "Sprachen und Soft Skills",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 2,
   },
@@ -195,7 +195,7 @@ window.StudiengangModules = [
     name: "Mathematik der Signalverarbeitung",
     kp: 6,
     kategorie: "Grundlagenfächer",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 3,
   },
@@ -204,7 +204,7 @@ window.StudiengangModules = [
     name: "Kontinuierliche Signale und Systeme",
     kp: 4,
     kategorie: "Grundlagenfächer",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 3,
   },
@@ -213,7 +213,7 @@ window.StudiengangModules = [
     name: "Physik 3",
     kp: 2,
     kategorie: "Grundlagenfächer",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 3,
   },
@@ -224,7 +224,7 @@ window.StudiengangModules = [
     name: "Elektrische und magnetische Felder",
     kp: 4,
     kategorie: "Grundlagenfächer",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 3,
   },
@@ -233,7 +233,7 @@ window.StudiengangModules = [
     name: "Elektronische Systeme",
     kp: 4,
     kategorie: "Grundlagenfächer",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 3,
   },
@@ -242,7 +242,7 @@ window.StudiengangModules = [
     name: "Communication Networks",
     kp: 2,
     kategorie: "Grundlagenfächer",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 3,
   },
@@ -253,7 +253,7 @@ window.StudiengangModules = [
     name: "SW-Projekte",
     kp: 4,
     kategorie: "Praktika und Projekte",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 3,
   },
@@ -262,7 +262,7 @@ window.StudiengangModules = [
     name: "International English",
     kp: 2,
     kategorie: "Sprachen und Soft Skills",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 3,
   },
@@ -271,7 +271,7 @@ window.StudiengangModules = [
     name: "Special Week Start-up Gründung BWL",
     kp: 2,
     kategorie: "Sprachen und Soft Skills",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 3,
   },
@@ -287,7 +287,7 @@ window.StudiengangModules = [
     name: "Wahrscheinlichkeit, Statistik und dynamische Systeme",
     kp: 6,
     kategorie: "Grundlagenfächer",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 4,
   },
@@ -296,7 +296,7 @@ window.StudiengangModules = [
     name: "Physik 4",
     kp: 2,
     kategorie: "Grundlagenfächer",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 4,
   },
@@ -307,7 +307,7 @@ window.StudiengangModules = [
     name: "Digitale Signalverarbeitung",
     kp: 4,
     kategorie: "Grundlagenfächer",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 4,
   },
@@ -316,7 +316,7 @@ window.StudiengangModules = [
     name: "Regelungstechnik",
     kp: 4,
     kategorie: "Grundlagenfächer",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 4,
   },
@@ -325,7 +325,7 @@ window.StudiengangModules = [
     name: "Anwendung elektronischer Systeme",
     kp: 4,
     kategorie: "Grundlagenfächer",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 4,
   },
@@ -336,7 +336,7 @@ window.StudiengangModules = [
     name: "Einstieg in OOP",
     kp: 4,
     kategorie: "Grundlagenfächer",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 4,
   },
@@ -345,7 +345,7 @@ window.StudiengangModules = [
     name: "System-Projekte",
     kp: 6,
     kategorie: "Praktika und Projekte",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 4,
   },
@@ -354,7 +354,7 @@ window.StudiengangModules = [
     name: "Technical English",
     kp: 2,
     kategorie: "Sprachen und Soft Skills",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 4,
   },
@@ -370,7 +370,7 @@ window.StudiengangModules = [
     name: "Projektarbeit",
     kp: 6,
     kategorie: "Praktika und Projekte",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 3,
     semester: 5,
   },
@@ -379,7 +379,7 @@ window.StudiengangModules = [
     name: "Volkswirtschaftslehre",
     kp: 2,
     kategorie: "Sprachen und Soft Skills",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 3,
     semester: 5,
   },
@@ -388,7 +388,7 @@ window.StudiengangModules = [
     name: "Special Week Nachhaltigkeit",
     kp: 2,
     kategorie: "Sprachen und Soft Skills",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 3,
     semester: 5,
   },
@@ -399,7 +399,7 @@ window.StudiengangModules = [
     name: "Vertiefungsrichtung",
     kp: 16,
     kategorie: "Vertiefungsrichtungen",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 3,
     semester: 5,
     isPlaceholder: true,
@@ -409,7 +409,7 @@ window.StudiengangModules = [
     name: "Wahlmodul",
     kp: 2,
     kategorie: "Fachliche Wahlmodule",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 3,
     semester: 5,
     isPlaceholder: true,
@@ -419,7 +419,7 @@ window.StudiengangModules = [
     name: "Wahlmodul",
     kp: 2,
     kategorie: "Fachliche Wahlmodule",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 3,
     semester: 5,
     isPlaceholder: true,
@@ -436,7 +436,7 @@ window.StudiengangModules = [
     name: "Bachelor-Thesis",
     kp: 12,
     kategorie: "Abschlussarbeit",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 3,
     semester: 6,
   },
@@ -447,7 +447,7 @@ window.StudiengangModules = [
     name: "Vertiefungsrichtung",
     kp: 12,
     kategorie: "Vertiefungsrichtungen",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 3,
     semester: 6,
     isPlaceholder: true,
@@ -457,7 +457,7 @@ window.StudiengangModules = [
     name: "Wahlmodul",
     kp: 2,
     kategorie: "Fachliche Wahlmodule",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 3,
     semester: 6,
     isPlaceholder: true,
@@ -467,7 +467,7 @@ window.StudiengangModules = [
     name: "Wahlmodul",
     kp: 2,
     kategorie: "Fachliche Wahlmodule",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 3,
     semester: 6,
     isPlaceholder: true,

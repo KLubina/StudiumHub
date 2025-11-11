@@ -11,7 +11,7 @@ window.StudiengangModules = [
     name: "Elektrotechnik",
     kp: 3,
     kategorie: "Elektrotechnik und Elektronik",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 1,
   },
@@ -20,7 +20,7 @@ window.StudiengangModules = [
     name: "Digitaltechnik",
     kp: 3,
     kategorie: "Elektrotechnik und Elektronik",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 1,
   },
@@ -31,7 +31,7 @@ window.StudiengangModules = [
     name: "Mathematik 1B",
     kp: 3,
     kategorie: "Grundlagenfächer",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 1,
   },
@@ -42,7 +42,7 @@ window.StudiengangModules = [
     name: "Kontext 1",
     kp: 6,
     kategorie: "Kontextstudium",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 1,
   },
@@ -53,7 +53,7 @@ window.StudiengangModules = [
     name: "Programming in C",
     kp: 6,
     kategorie: "Informatik und Programmierung",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 1,
   },
@@ -69,7 +69,7 @@ window.StudiengangModules = [
     name: "Kontext 2",
     kp: 6,
     kategorie: "Kontextstudium",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 2,
   },
@@ -80,7 +80,7 @@ window.StudiengangModules = [
     name: "Physik 1B",
     kp: 3,
     kategorie: "Grundlagenfächer",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 2,
   },
@@ -89,7 +89,7 @@ window.StudiengangModules = [
     name: "Mathematik 2B",
     kp: 3,
     kategorie: "Grundlagenfächer",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 2,
   },
@@ -98,7 +98,7 @@ window.StudiengangModules = [
     name: "Lineare Algebra",
     kp: 3,
     kategorie: "Grundlagenfächer",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 2,
   },
@@ -109,7 +109,7 @@ window.StudiengangModules = [
     name: "Elektrotechnik 2",
     kp: 3,
     kategorie: "Elektrotechnik und Elektronik",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 2,
   },
@@ -118,7 +118,7 @@ window.StudiengangModules = [
     name: "Elektronik 1",
     kp: 3,
     kategorie: "Elektrotechnik und Elektronik",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 2,
   },
@@ -129,7 +129,7 @@ window.StudiengangModules = [
     name: "Applied Programming",
     kp: 3,
     kategorie: "Informatik und Programmierung",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 2,
   },
@@ -138,7 +138,7 @@ window.StudiengangModules = [
     name: "Python Basic",
     kp: 3,
     kategorie: "Informatik und Programmierung",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 2,
   },
@@ -147,7 +147,7 @@ window.StudiengangModules = [
     name: "Mikrocontroller Fundamentals",
     kp: 3,
     kategorie: "Informatik und Programmierung",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 2,
   },
@@ -163,7 +163,7 @@ window.StudiengangModules = [
     name: "Produktentwicklung 1",
     kp: 6,
     kategorie: "Produktentwicklung und Projekte",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 3,
   },
@@ -174,7 +174,7 @@ window.StudiengangModules = [
     name: "Physik 2B",
     kp: 6,
     kategorie: "Grundlagenfächer",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 3,
   },
@@ -183,7 +183,7 @@ window.StudiengangModules = [
     name: "Mathematik 3B",
     kp: 3,
     kategorie: "Grundlagenfächer",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 3,
   },
@@ -192,7 +192,7 @@ window.StudiengangModules = [
     name: "Statistical Data Analysis",
     kp: 3,
     kategorie: "Grundlagenfächer",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 3,
   },
@@ -203,7 +203,7 @@ window.StudiengangModules = [
     name: "Signale und Systeme",
     kp: 3,
     kategorie: "Elektrotechnik und Elektronik",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 3,
   },
@@ -212,7 +212,7 @@ window.StudiengangModules = [
     name: "Elektronik 2",
     kp: 6,
     kategorie: "Elektrotechnik und Elektronik",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 3,
   },
@@ -223,7 +223,7 @@ window.StudiengangModules = [
     name: "Advanced Programming",
     kp: 3,
     kategorie: "Informatik und Programmierung",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 3,
   },
@@ -239,7 +239,7 @@ window.StudiengangModules = [
     name: "Produktentwicklung 2",
     kp: 3,
     kategorie: "Produktentwicklung und Projekte",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 4,
   },
@@ -250,7 +250,7 @@ window.StudiengangModules = [
     name: "Regelungstechnik",
     kp: 3,
     kategorie: "Elektrotechnik und Elektronik",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 4,
   },
@@ -259,7 +259,7 @@ window.StudiengangModules = [
     name: "Nachrichtentechnik",
     kp: 3,
     kategorie: "Elektrotechnik und Elektronik",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 4,
   },
@@ -268,7 +268,7 @@ window.StudiengangModules = [
     name: "Grundlagen elektrischer Antriebssysteme",
     kp: 6,
     kategorie: "Elektrotechnik und Elektronik",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 4,
   },
@@ -277,7 +277,7 @@ window.StudiengangModules = [
     name: "Digital Design",
     kp: 3,
     kategorie: "Elektrotechnik und Elektronik",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 4,
   },
@@ -288,7 +288,7 @@ window.StudiengangModules = [
     name: "Advanced Embedded Systems",
     kp: 3,
     kategorie: "Informatik und Programmierung",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 4,
   },
@@ -297,7 +297,7 @@ window.StudiengangModules = [
     name: "Data Communication Systems",
     kp: 3,
     kategorie: "Informatik und Programmierung",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 4,
   },
@@ -306,7 +306,7 @@ window.StudiengangModules = [
     name: "AI for Engineers",
     kp: 3,
     kategorie: "Informatik und Programmierung",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 4,
   },
@@ -321,7 +321,7 @@ window.StudiengangModules = [
     name: "Bachelor-Thesis",
     kp: 12,
     kategorie: "Abschlussarbeit",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 3,
     semester: 0,
   },
@@ -330,7 +330,7 @@ window.StudiengangModules = [
     name: "Industrieprojekt",
     kp: 6,
     kategorie: "Produktentwicklung und Projekte",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 3,
     semester: 0,
   },
@@ -341,7 +341,7 @@ window.StudiengangModules = [
     name: "Vertiefungsrichtung",
     kp: 9,
     kategorie: "Vertiefungsrichtungen",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 3,
     semester: 0,
     isPlaceholder: true,
@@ -351,7 +351,7 @@ window.StudiengangModules = [
     name: "Erweiterungsmodule",
     kp: 15,
     kategorie: "Erweiterungsmodule",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 3,
     semester: 0,
     isPlaceholder: true,
@@ -361,7 +361,7 @@ window.StudiengangModules = [
     name: "Zusatzmodule",
     kp: 15,
     kategorie: "Zusatzmodule",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 3,
     semester: 0,
     isPlaceholder: true,

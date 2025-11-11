@@ -159,7 +159,7 @@ window.HSLUEITWahlmoduleData = {
         name: "Zusatzmodul 1",
         kp: 3,
         kategorie: "Zusatzmodule",
-        // STUDIENGANGSPEZIFISCH (optional)
+        // STUDIENGANGSPEZIFISCH
         info: "Frei wählbare Module aus anderen Studiengängen",
       },
       {
@@ -167,7 +167,7 @@ window.HSLUEITWahlmoduleData = {
         name: "Zusatzmodul 2",
         kp: 3,
         kategorie: "Zusatzmodule",
-        // STUDIENGANGSPEZIFISCH (optional)
+        // STUDIENGANGSPEZIFISCH
         info: "Frei wählbare Module aus anderen Studiengängen",
       },
       {
@@ -175,7 +175,7 @@ window.HSLUEITWahlmoduleData = {
         name: "Zusatzmodul 3",
         kp: 3,
         kategorie: "Zusatzmodule",
-        // STUDIENGANGSPEZIFISCH (optional)
+        // STUDIENGANGSPEZIFISCH
         info: "Frei wählbare Module aus anderen Studiengängen",
       },
       {
@@ -183,7 +183,7 @@ window.HSLUEITWahlmoduleData = {
         name: "Zusatzmodul 4",
         kp: 3,
         kategorie: "Zusatzmodule",
-        // STUDIENGANGSPEZIFISCH (optional)
+        // STUDIENGANGSPEZIFISCH
         info: "Frei wählbare Module aus anderen Studiengängen",
       },
       {
@@ -191,7 +191,7 @@ window.HSLUEITWahlmoduleData = {
         name: "Zusatzmodul 5",
         kp: 3,
         kategorie: "Zusatzmodule",
-        // STUDIENGANGSPEZIFISCH (optional)
+        // STUDIENGANGSPEZIFISCH
         info: "Frei wählbare Module aus anderen Studiengängen",
       },
     ],

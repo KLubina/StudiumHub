@@ -9,7 +9,7 @@ window.StudiengangModules = [
     name: "Betriebswirtschaftslehre (Einführung in die Managementlehre)",
     kp: 5.5,
     kategorie: "kernfach",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 1,
   },
@@ -18,7 +18,7 @@ window.StudiengangModules = [
     name: "Mathematik A",
     kp: 3.5,
     kategorie: "methoden",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 1,
   },
@@ -27,7 +27,7 @@ window.StudiengangModules = [
     name: "Einführung ins Privatrecht",
     kp: 5.5,
     kategorie: "grundlagen",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 1,
   },
@@ -36,7 +36,7 @@ window.StudiengangModules = [
     name: "VWL A: Mikroökonomik I",
     kp: 5.5,
     kategorie: "grundlagen",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 1,
   },
@@ -45,7 +45,7 @@ window.StudiengangModules = [
     name: "Einführung in das wissenschaftliche Schreiben",
     kp: 3.0,
     kategorie: "kontext",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 1,
   },
@@ -54,7 +54,7 @@ window.StudiengangModules = [
     name: "Geschichte: Die Geschichte des Nationalismus in Europa seit 1750",
     kp: 2.0,
     kategorie: "kontext",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 1,
   },
@@ -63,7 +63,7 @@ window.StudiengangModules = [
     name: "Skills", 
     kp: 5.0, 
     kategorie: "methoden",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1, 
     semester: 1 
   },
@@ -76,7 +76,7 @@ window.StudiengangModules = [
     name: "Betriebswirtschaftslehre (Wirtschaftsethik und Finanzielle Führung)",
     kp: 5.5,
     kategorie: "kernfach",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 2,
   },
@@ -85,7 +85,7 @@ window.StudiengangModules = [
     name: "Mathematik B",
     kp: 3.5,
     kategorie: "methoden",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 2,
   },
@@ -94,7 +94,7 @@ window.StudiengangModules = [
     name: "Einführung ins Bundesstaatsrecht",
     kp: 5.5,
     kategorie: "grundlagen",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 2,
   },
@@ -103,7 +103,7 @@ window.StudiengangModules = [
     name: "VWL B: Makroökonomik I",
     kp: 5.5,
     kategorie: "grundlagen",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 2,
   },
@@ -112,7 +112,7 @@ window.StudiengangModules = [
     name: "Integrationsprojekt",
     kp: 4.0,
     kategorie: "kontext",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 2,
   },
@@ -121,7 +121,7 @@ window.StudiengangModules = [
     name: "Geschichte: Geschichte des politischen Denkens vor ca. 1750",
     kp: 2.0,
     kategorie: "kontext",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1,
     semester: 2,
   },
@@ -130,7 +130,7 @@ window.StudiengangModules = [
     name: "Skills", 
     kp: 5.0, 
     kategorie: "methoden",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 1, 
     semester: 2 
   },
@@ -143,7 +143,7 @@ window.StudiengangModules = [
     name: "Accounting, Controlling, Auditing",
     kp: 4.0,
     kategorie: "kernfach",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 0,
     bereich: "Pflichtbereich",
@@ -153,7 +153,7 @@ window.StudiengangModules = [
     name: "Corporate Finance (BBWL)",
     kp: 4.0,
     kategorie: "kernfach",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 0,
     bereich: "Pflichtbereich",
@@ -163,7 +163,7 @@ window.StudiengangModules = [
     name: "Introduction to Operations Management",
     kp: 4.0,
     kategorie: "kernfach",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 0,
     bereich: "Pflichtbereich",
@@ -173,7 +173,7 @@ window.StudiengangModules = [
     name: "Fundamentals and Methods of Computer Science for Business Studies",
     kp: 8.0,
     kategorie: "methoden",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 0,
     bereich: "Pflichtbereich",
@@ -183,7 +183,7 @@ window.StudiengangModules = [
     name: "Leadership und Human Resource Management",
     kp: 4.0,
     kategorie: "kernfach",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 0,
     bereich: "Pflichtbereich",
@@ -193,7 +193,7 @@ window.StudiengangModules = [
     name: "Makroökonomik II: Vorlesung und Selbststudium",
     kp: 4.0,
     kategorie: "grundlagen",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 0,
     bereich: "Pflichtbereich",
@@ -203,7 +203,7 @@ window.StudiengangModules = [
     name: "Marketing",
     kp: 4.0,
     kategorie: "kernfach",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 0,
     bereich: "Pflichtbereich",
@@ -213,7 +213,7 @@ window.StudiengangModules = [
     name: "Methoden: Empirische Sozialforschung",
     kp: 4.0,
     kategorie: "methoden",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 0,
     bereich: "Pflichtbereich",
@@ -223,7 +223,7 @@ window.StudiengangModules = [
     name: "Methoden: Statistik",
     kp: 4.0,
     kategorie: "methoden",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 0,
     bereich: "Pflichtbereich",
@@ -233,7 +233,7 @@ window.StudiengangModules = [
     name: "Mikroökonomik II",
     kp: 4.0,
     kategorie: "grundlagen",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 0,
     bereich: "Pflichtbereich",
@@ -243,7 +243,7 @@ window.StudiengangModules = [
     name: "Strategisches Management",
     kp: 4.0,
     kategorie: "kernfach",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 0,
     bereich: "Pflichtbereich",
@@ -253,7 +253,7 @@ window.StudiengangModules = [
     name: "Business and Tax Law",
     kp: 8.0,
     kategorie: "grundlagen",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 0,
     bereich: "Pflichtbereich",
@@ -263,7 +263,7 @@ window.StudiengangModules = [
     name: "Capstone-Projekt: Unternehmerische Informatik",
     kp: 8.0,
     kategorie: "methoden",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 0,
     bereich: "Pflichtbereich",
@@ -277,7 +277,7 @@ window.StudiengangModules = [
     name: "Bachelor-Arbeit",
     kp: 12.0,
     kategorie: "bachelor",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 0,
     bereich: "Bachelor",
@@ -291,7 +291,7 @@ window.StudiengangModules = [
     name: "Dark Continent - A History of Europe, 1914-present",
     kp: 3.0,
     kategorie: "kontext",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 0,
     bereich: "Kontextstudium",
@@ -301,7 +301,7 @@ window.StudiengangModules = [
     name: "Grundzüge der Unternehmensgeschichte (19.-20. Jahrhundert)",
     kp: 3.0,
     kategorie: "kontext",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 0,
     bereich: "Kontextstudium",
@@ -311,7 +311,7 @@ window.StudiengangModules = [
     name: "Die Geopolitik ist zurück auf dem Balkan - historische Voraussetzungen und künftige Risiken für Europa",
     kp: 3.0,
     kategorie: "kontext",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 0,
     bereich: "Kontextstudium",
@@ -321,7 +321,7 @@ window.StudiengangModules = [
     name: "Unternehmer-Biographien - ein Schlüssel zur Wirtschaftsgeschichte",
     kp: 6.0,
     kategorie: "kontext",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 0,
     bereich: "Kontextstudium",
@@ -331,7 +331,7 @@ window.StudiengangModules = [
     name: "Direkte Demokratie - ein politisches Erfolgsmodell? Seine Geschichte und Grenzen",
     kp: 3.0,
     kategorie: "kontext",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 0,
     bereich: "Kontextstudium",
@@ -341,7 +341,7 @@ window.StudiengangModules = [
     name: "Pulverfass Balkan - Kleinstaatenpolitik und Grossmachtrivalität vor und während des Ersten Weltkriegs",
     kp: 3.0,
     kategorie: "kontext",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 0,
     bereich: "Kontextstudium",
@@ -351,7 +351,7 @@ window.StudiengangModules = [
     name: "Increasing Racial and Ethnic Equity in Switzerland",
     kp: 3.0,
     kategorie: "kontext",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 0,
     bereich: "Kontextstudium",
@@ -365,7 +365,7 @@ window.StudiengangModules = [
     name: "Business-to-IT-Innovation: Was (zukünftige) Managerinnen und Manager wissen sollten",
     kp: 4.0,
     kategorie: "kernfach",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 0,
     bereich: "Pflichtwahlbereich",
@@ -375,7 +375,7 @@ window.StudiengangModules = [
     name: "Controlling mit SAP",
     kp: 4.0,
     kategorie: "kernfach",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 0,
     bereich: "Pflichtwahlbereich",
@@ -385,7 +385,7 @@ window.StudiengangModules = [
     name: "Machine Learning in Finance",
     kp: 4.0,
     kategorie: "methoden",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 0,
     bereich: "Pflichtwahlbereich",
@@ -395,7 +395,7 @@ window.StudiengangModules = [
     name: "Risk Management",
     kp: 4.0,
     kategorie: "kernfach",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 0,
     bereich: "Pflichtwahlbereich",
@@ -405,7 +405,7 @@ window.StudiengangModules = [
     name: "Business and Market Research",
     kp: 4.0,
     kategorie: "kernfach",
-    // KONTEXT (wenn vorhanden)
+    // KONTEXT
     jahr: 2,
     semester: 0,
     bereich: "Pflichtwahlbereich",
