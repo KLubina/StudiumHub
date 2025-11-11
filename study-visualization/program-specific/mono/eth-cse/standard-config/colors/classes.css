@@ -27,6 +27,35 @@
 }
 
 /* CSE-specific classes */
+[data-studiengang="eth-cse"] .modul.mathematik,
+[data-studiengang="eth-cse"] .legende-item.mathematik {
+    background-color: #00a99d;
+    color: white;
+}
+
+[data-studiengang="eth-cse"] .modul.informatik,
+[data-studiengang="eth-cse"] .legende-item.informatik {
+    background-color: #2600ff;
+    color: white;
+}
+
+[data-studiengang="eth-cse"] .modul.physik,
+[data-studiengang="eth-cse"] .legende-item.physik {
+    background-color: #2196F3;
+    color: white;
+}
+
+[data-studiengang="eth-cse"] .modul.chemie,
+[data-studiengang="eth-cse"] .legende-item.chemie {
+    background-color: #9C27B0;
+    color: white;
+}
+
+[data-studiengang="eth-cse"] .modul.sonstiges,
+[data-studiengang="eth-cse"] .legende-item.sonstiges {
+    background-color: #E0E0E0;
+    color: black;
+}
 [data-studiengang="eth-cse"] .modul.basis1,
 [data-studiengang="eth-cse"] .legende-item.basis1 {
     background-color: var(--color-basis1);
