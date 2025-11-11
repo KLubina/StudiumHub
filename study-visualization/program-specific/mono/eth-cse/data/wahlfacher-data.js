@@ -4,605 +4,641 @@
 window.CSE_WahlfaecherModules = [
   // Frühlingssemester 2025
   {
-    // ============================================
     // PFLICHTFELDER
-    // ============================================
     name: "Product Development and Engineering Design",
     kp: 4,
     kategorie: "wahl",
-
-    // ============================================
-    // KONTEXT (wenn vorhanden)
-    // ============================================
+    // KONTEXT
     jahr: 3,
     semester: 0,
-
-    // ============================================
-    // STUDIENGANGSPEZIFISCH (optional)
-    // ============================================
+    // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
     themenbereich: "engineering",
-    semester_angebot: "Frühlingssemester 2025",
   },
   {
+    // PFLICHTFELDER
     name: "Optimization and Machine Learning",
     kp: 4,
     kategorie: "wahl",
+    // KONTEXT
     jahr: 3,
     semester: 0,
+    // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
     themenbereich: "informatik",
-    semester_angebot: "Frühlingssemester 2025",
   },
   {
+    // PFLICHTFELDER
     name: "Visualization, Simulation and Interaction - Virtual Reality I",
     kp: 4,
     kategorie: "wahl",
+    // KONTEXT
     jahr: 3,
     semester: 0,
+    // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
     themenbereich: "informatik",
-    semester_angebot: "Frühlingssemester 2025",
   },
   {
+    // PFLICHTFELDER
     name: "Informationstechnologien im digitalen Produkt",
     kp: 4,
     kategorie: "wahl",
+    // KONTEXT
     jahr: 3,
     semester: 0,
+    // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
     themenbereich: "informatik",
-    semester_angebot: "Frühlingssemester 2025",
   },
   {
+    // PFLICHTFELDER
     name: "Biofluiddynamics",
     kp: 4,
     kategorie: "wahl",
+    // KONTEXT
     jahr: 3,
     semester: 0,
+    // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
     themenbereich: "physik",
-    semester_angebot: "Frühlingssemester 2025",
   },
   {
+    // PFLICHTFELDER
     name: "Introduction to Finite Element Analysis",
     kp: 4,
     kategorie: "wahl",
+    // KONTEXT
     jahr: 3,
     semester: 0,
+    // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
     themenbereich: "engineering",
-    semester_angebot: "Frühlingssemester 2025",
   },
   {
+    // PFLICHTFELDER
     name: "Nonlinear FEA",
     kp: 4,
     kategorie: "wahl",
+    // KONTEXT
     jahr: 3,
     semester: 0,
+    // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
     themenbereich: "engineering",
-    semester_angebot: "Frühlingssemester 2025",
   },
   {
+    // PFLICHTFELDER
     name: "Elektromagnetische Felder und Wellen",
     kp: 4,
     kategorie: "wahl",
+    // KONTEXT
     jahr: 3,
     semester: 0,
+    // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
     themenbereich: "physik",
-    semester_angebot: "Frühlingssemester 2025",
   },
   {
+    // PFLICHTFELDER
     name: "Algebra and Error Correcting Codes",
     kp: 6,
     kategorie: "wahl",
+    // KONTEXT
     jahr: 3,
     semester: 0,
+    // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
     themenbereich: "mathematik",
-    semester_angebot: "Frühlingssemester 2025",
   },
   {
+    // PFLICHTFELDER
     name: "Information Theory II",
     kp: 6,
     kategorie: "wahl",
+    // KONTEXT
     jahr: 3,
     semester: 0,
+    // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
     themenbereich: "informatik",
-    semester_angebot: "Frühlingssemester 2025",
   },
   {
+    // PFLICHTFELDER
     name: "Communication and Detection Theory",
     kp: 6,
     kategorie: "wahl",
+    // KONTEXT
     jahr: 3,
     semester: 0,
+    // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
     themenbereich: "informatik",
-    semester_angebot: "Frühlingssemester 2025",
   },
   {
+    // PFLICHTFELDER
     name: "Communication Networks",
     kp: 6,
     kategorie: "wahl",
+    // KONTEXT
     jahr: 3,
     semester: 0,
+    // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
     themenbereich: "informatik",
-    semester_angebot: "Frühlingssemester 2025",
   },
   {
+    // PFLICHTFELDER
     name: "Principles of Distributed Computing",
     kp: 7,
     kategorie: "wahl",
+    // KONTEXT
     jahr: 3,
     semester: 0,
+    // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
     themenbereich: "informatik",
-    semester_angebot: "Frühlingssemester 2025",
   },
   {
+    // PFLICHTFELDER
     name: "Information Security",
     kp: 8,
     kategorie: "wahl",
+    // KONTEXT
     jahr: 3,
     semester: 0,
+    // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
     themenbereich: "informatik",
-    semester_angebot: "Frühlingssemester 2025",
   },
   {
+    // PFLICHTFELDER
     name: "Applied Cryptography",
     kp: 8,
     kategorie: "wahl",
+    // KONTEXT
     jahr: 3,
     semester: 0,
+    // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
     themenbereich: "informatik",
-    semester_angebot: "Frühlingssemester 2025",
   },
   {
+    // PFLICHTFELDER
     name: "Game Programming Laboratory",
     kp: 10,
     kategorie: "wahl",
+    // KONTEXT
     jahr: 3,
     semester: 0,
+    // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
     themenbereich: "informatik",
-    semester_angebot: "Frühlingssemester 2025",
   },
   {
+    // PFLICHTFELDER
     name: "Shape Modeling and Geometry Processing",
     kp: 8,
     kategorie: "wahl",
+    // KONTEXT
     jahr: 3,
     semester: 0,
+    // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
     themenbereich: "informatik",
-    semester_angebot: "Frühlingssemester 2025",
   },
   {
+    // PFLICHTFELDER
     name: "Big Data for Engineers",
     kp: 6,
     kategorie: "wahl",
+    // KONTEXT
     jahr: 3,
     semester: 0,
+    // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
     themenbereich: "informatik",
-    semester_angebot: "Frühlingssemester 2025",
   },
   {
+    // PFLICHTFELDER
     name: "Mobile Health and Activity Monitoring",
     kp: 6,
     kategorie: "wahl",
+    // KONTEXT
     jahr: 3,
     semester: 0,
+    // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
     themenbereich: "informatik",
-    semester_angebot: "Frühlingssemester 2025",
   },
   {
+    // PFLICHTFELDER
     name: "Machine Learning for Health Care",
     kp: 5,
     kategorie: "wahl",
+    // KONTEXT
     jahr: 3,
     semester: 0,
+    // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
     themenbereich: "informatik",
-    semester_angebot: "Frühlingssemester 2025",
   },
   {
+    // PFLICHTFELDER
     name: "Chemometrics and Machine Learning for Chemical Engineers",
     kp: 4,
     kategorie: "wahl",
+    // KONTEXT
     jahr: 3,
     semester: 0,
+    // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
     themenbereich: "chemie",
-    semester_angebot: "Frühlingssemester 2025",
   },
   {
+    // PFLICHTFELDER
     name: "Neuromorphic Engineering II",
     kp: 6,
     kategorie: "wahl",
+    // KONTEXT
     jahr: 3,
     semester: 0,
+    // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
     themenbereich: "engineering",
-    semester_angebot: "Frühlingssemester 2025",
   },
   {
+    // PFLICHTFELDER
     name: "Computational Vision (UZH)",
     kp: 6,
     kategorie: "wahl",
+    // KONTEXT
     jahr: 3,
     semester: 0,
+    // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
     themenbereich: "informatik",
-    semester_angebot: "Frühlingssemester 2025",
   },
   {
+    // PFLICHTFELDER
     name: "Computational Models of Motion",
     kp: 8,
     kategorie: "wahl",
+    // KONTEXT
     jahr: 3,
     semester: 0,
+    // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
     themenbereich: "informatik",
-    semester_angebot: "Frühlingssemester 2025",
   },
   {
+    // PFLICHTFELDER
     name: "Statistical Methods in Experimental Physics",
     kp: 10,
     kategorie: "wahl",
+    // KONTEXT
     jahr: 3,
     semester: 0,
+    // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
     themenbereich: "physik",
-    semester_angebot: "Frühlingssemester 2025",
   },
   {
+    // PFLICHTFELDER
     name: "Computational Systems Biology: Stochastic Approaches",
     kp: 4,
     kategorie: "wahl",
+    // KONTEXT
     jahr: 3,
     semester: 0,
+    // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
     themenbereich: "biologie",
-    semester_angebot: "Frühlingssemester 2025",
   },
   {
+    // PFLICHTFELDER
     name: "Klimasysteme",
     kp: 3,
     kategorie: "wahl",
+    // KONTEXT
     jahr: 3,
     semester: 0,
+    // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
     themenbereich: "physik",
-    semester_angebot: "Frühlingssemester 2025",
   },
   {
+    // PFLICHTFELDER
     name: "Mathematical Optimization Lab",
     kp: 5,
     kategorie: "wahl",
+    // KONTEXT
     jahr: 3,
     semester: 0,
+    // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
     themenbereich: "mathematik",
-    semester_angebot: "Frühlingssemester 2025",
   },
   {
+    // PFLICHTFELDER
     name: "Network & Integer Optimization",
     kp: 5,
     kategorie: "wahl",
+    // KONTEXT
     jahr: 3,
     semester: 0,
+    // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
     themenbereich: "mathematik",
-    semester_angebot: "Frühlingssemester 2025",
   },
   {
+    // PFLICHTFELDER
     name: "Convex Optimization",
     kp: 5,
     kategorie: "wahl",
+    // KONTEXT
     jahr: 3,
     semester: 0,
+    // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
     themenbereich: "mathematik",
-    semester_angebot: "Frühlingssemester 2025",
   },
   {
+    // PFLICHTFELDER
     name: "High-Dimensional Statistics",
     kp: 4,
     kategorie: "wahl",
+    // KONTEXT
     jahr: 3,
     semester: 0,
+    // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
     themenbereich: "mathematik",
-    semester_angebot: "Frühlingssemester 2025",
   },
   {
+    // PFLICHTFELDER
     name: "Physikalische Chemie III: Molekulare Quantenmechanik",
     kp: 4,
     kategorie: "wahl",
+    // KONTEXT
     jahr: 3,
     semester: 0,
+    // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
     themenbereich: "chemie",
-    semester_angebot: "Frühlingssemester 2025",
   },
   {
+    // PFLICHTFELDER
     name: "Soccer Analytics",
     kp: 3,
     kategorie: "wahl",
+    // KONTEXT
     jahr: 3,
     semester: 0,
+    // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
     themenbereich: "mathematik",
-    semester_angebot: "Frühlingssemester 2025",
   },
 
   // Herbstsemester 2024
   {
+    // PFLICHTFELDER
     name: "Visualization, Simulation and Interaction - Virtual Reality II",
     kp: 4,
     kategorie: "wahl",
+    // KONTEXT
     jahr: 3,
     semester: 0,
+    // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
     themenbereich: "informatik",
-    semester_angebot: "Herbstsemester 2024",
   },
   {
+    // PFLICHTFELDER
     name: "Applied Finite Element Analysis",
     kp: 4,
     kategorie: "wahl",
+    // KONTEXT
     jahr: 3,
     semester: 0,
+    // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
     themenbereich: "engineering",
-    semester_angebot: "Herbstsemester 2024",
   },
   {
+    // PFLICHTFELDER
     name: "Design of Parallel and High-Performance Computing",
     kp: 9,
     kategorie: "wahl",
+    // KONTEXT
     jahr: 3,
     semester: 0,
+    // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
     themenbereich: "informatik",
-    semester_angebot: "Herbstsemester 2024",
   },
   {
+    // PFLICHTFELDER
     name: "Discrete Event Systems",
     kp: 6,
     kategorie: "wahl",
+    // KONTEXT
     jahr: 3,
     semester: 0,
+    // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
     themenbereich: "informatik",
-    semester_angebot: "Herbstsemester 2024",
   },
   {
+    // PFLICHTFELDER
     name: "VLSI 1: HDL Based Design for FPGAs",
     kp: 6,
     kategorie: "wahl",
+    // KONTEXT
     jahr: 3,
     semester: 0,
+    // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
     themenbereich: "engineering",
-    semester_angebot: "Herbstsemester 2024",
   },
   {
+    // PFLICHTFELDER
     name: "VLSI 3: Full-Custom Digital Circuit Design",
     kp: 6,
     kategorie: "wahl",
+    // KONTEXT
     jahr: 3,
     semester: 0,
+    // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
     themenbereich: "engineering",
-    semester_angebot: "Herbstsemester 2024",
   },
   {
+    // PFLICHTFELDER
     name: "Information Theory I",
     kp: 6,
     kategorie: "wahl",
+    // KONTEXT
     jahr: 3,
     semester: 0,
+    // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
     themenbereich: "informatik",
-    semester_angebot: "Herbstsemester 2024",
   },
   {
+    // PFLICHTFELDER
     name: "Computational Psychiatry",
     kp: 3,
     kategorie: "wahl",
+    // KONTEXT
     jahr: 3,
     semester: 0,
+    // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
     themenbereich: "medizin",
-    semester_angebot: "Herbstsemester 2024",
   },
   {
+    // PFLICHTFELDER
     name: "Algorithms, Probability, and Computing",
     kp: 8,
     kategorie: "wahl",
+    // KONTEXT
     jahr: 3,
     semester: 0,
+    // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
     themenbereich: "informatik",
-    semester_angebot: "Herbstsemester 2024",
   },
   {
+    // PFLICHTFELDER
     name: "Visual Computing",
     kp: 8,
     kategorie: "wahl",
+    // KONTEXT
     jahr: 3,
     semester: 0,
+    // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
     themenbereich: "informatik",
-    semester_angebot: "Herbstsemester 2024",
   },
   {
+    // PFLICHTFELDER
     name: "Computer Graphics",
     kp: 8,
     kategorie: "wahl",
+    // KONTEXT
     jahr: 3,
     semester: 0,
+    // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
     themenbereich: "informatik",
-    semester_angebot: "Herbstsemester 2024",
   },
   {
+    // PFLICHTFELDER
     name: "Physically-Based Simulation in Computer Graphics",
     kp: 5,
     kategorie: "wahl",
+    // KONTEXT
     jahr: 3,
     semester: 0,
+    // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
     themenbereich: "informatik",
-    semester_angebot: "Herbstsemester 2024",
   },
   {
+    // PFLICHTFELDER
     name: "Information Systems for Engineers",
     kp: 4,
     kategorie: "wahl",
+    // KONTEXT
     jahr: 3,
     semester: 0,
+    // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
     themenbereich: "informatik",
-    semester_angebot: "Herbstsemester 2024",
   },
   {
+    // PFLICHTFELDER
     name: "Time Series Analysis",
     kp: 4,
     kategorie: "wahl",
+    // KONTEXT
     jahr: 3,
     semester: 0,
+    // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
     themenbereich: "mathematik",
-    semester_angebot: "Herbstsemester 2024",
   },
   {
+    // PFLICHTFELDER
     name: "Linear & Combinatorial Optimization",
     kp: 10,
     kategorie: "wahl",
+    // KONTEXT
     jahr: 3,
     semester: 0,
+    // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
     themenbereich: "mathematik",
-    semester_angebot: "Herbstsemester 2024",
   },
   {
+    // PFLICHTFELDER
     name: "Allgemeine Mechanik",
     kp: 7,
     kategorie: "wahl",
+    // KONTEXT
     jahr: 3,
     semester: 0,
+    // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
     themenbereich: "physik",
-    semester_angebot: "Herbstsemester 2024",
   },
   {
+    // PFLICHTFELDER
     name: "Neuromorphic Engineering I",
     kp: 6,
     kategorie: "wahl",
+    // KONTEXT
     jahr: 3,
     semester: 0,
+    // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
     themenbereich: "engineering",
-    semester_angebot: "Herbstsemester 2024",
   },
   {
+    // PFLICHTFELDER
     name: "Angewandte Computer Architektur",
     kp: 6,
     kategorie: "wahl",
+    // KONTEXT
     jahr: 3,
     semester: 0,
+    // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
     themenbereich: "informatik",
-    semester_angebot: "Herbstsemester 2024",
   },
   {
+    // PFLICHTFELDER
     name: "Responsible Machine Learning with Insurance Applications",
     kp: 4,
     kategorie: "wahl",
+    // KONTEXT
     jahr: 3,
     semester: 0,
+    // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
     themenbereich: "informatik",
-    semester_angebot: "Herbstsemester 2024",
   },
   {
+    // PFLICHTFELDER
     name: "Causality",
     kp: 5,
     kategorie: "wahl",
+    // KONTEXT
     jahr: 3,
     semester: 0,
+    // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
     themenbereich: "mathematik",
-    semester_angebot: "Herbstsemester 2024",
   },
 ];
-
-// Hilfsfunktionen für Rückwärtskompatibilität und neue Funktionalität
-function getWahlfaecherBySemester(semester) {
-  return window.CSE_WahlfaecherModules.filter(
-    (modul) => modul.semester_angebot === semester
-  );
-}
-
-function getWahlfaecherByThemenbereich(themenbereich) {
-  return window.CSE_WahlfaecherModules.filter(
-    (modul) => modul.themenbereich === themenbereich
-  );
-}
-
-function generateWahlfaecherHTML() {
-  let html = '<div class="wahlfaecher-liste"><h3>Wahlfächer</h3>';
-
-  const semester = ["Frühlingssemester 2025", "Herbstsemester 2024"];
-
-  semester.forEach((sem) => {
-    const kurse = getWahlfaecherBySemester(sem);
-    html += `<h4>${sem}</h4><ul>`;
-    kurse.forEach((kurs) => {
-      html += `<li>${kurs.name} – ${kurs.kp} KP (${kurs.themenbereich})</li>`;
-    });
-    html += "</ul>";
-  });
-
-  html += "</div>";
-  return html;
-}
-
-// Export für modularen Import
-if (typeof window !== "undefined") {
-  window.CSE_WahlfaecherModules = window.CSE_WahlfaecherModules;
-  window.getWahlfaecherBySemester = getWahlfaecherBySemester;
-  window.getWahlfaecherByThemenbereich = getWahlfaecherByThemenbereich;
-  window.generateWahlfaecherHTML = generateWahlfaecherHTML;
-
-  // Rückwärtskompatibilität
-  window.CSE_WAHLFAECHER = {
-    INFO: "Daten wurden ins zentrale Format konvertiert. Verwende CSE_WahlfaecherModules.",
-    CONVERTED: true,
-  };
-}
-
-if (typeof module !== "undefined" && module.exports) {
-  module.exports = {
-    CSE_WahlfaecherModules: window.CSE_WahlfaecherModules,
-    getWahlfaecherBySemester,
-    getWahlfaecherByThemenbereich,
-    generateWahlfaecherHTML,
-    // Rückwärtskompatibilität
-    CSE_WAHLFAECHER: {
-      INFO: "Daten wurden ins zentrale Format konvertiert. Verwende CSE_WahlfaecherModules.",
-      CONVERTED: true,
-    },
-  };
-}
