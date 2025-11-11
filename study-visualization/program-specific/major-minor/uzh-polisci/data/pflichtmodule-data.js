@@ -11,32 +11,28 @@ window.PolisciPflichtmoduleData = [
     kp: 9,
     kategorie: "Pflichtmodule",
     jahr: 1,
-    semester: 1,
-    periode: "hs2025"
+    semester: 1
   },
   {
     name: "Einführung in die Schweizer Politik",
     kp: 3,
     kategorie: "Pflichtmodule",
     jahr: 1,
-    semester: 1,
-    periode: "hs2025"
+    semester: 1
   },
   {
     name: "Einführung Methoden und Statistik",
     kp: 3,
     kategorie: "Pflichtmodule",
     jahr: 1,
-    semester: 1,
-    periode: "hs2025"
+    semester: 1
   },
   {
     name: "Fortgeschrittene Methoden und Statistik",
     kp: 6,
     kategorie: "Pflichtmodule",
     jahr: 2,
-    semester: 1,
-    periode: "hs2025"
+    semester: 1
   },
   // fs2026 Pflichtmodule
   {
@@ -44,31 +40,27 @@ window.PolisciPflichtmoduleData = [
     kp: 9,
     kategorie: "Pflichtmodule",
     jahr: 1,
-    semester: 2,
-    periode: "fs2026"
+    semester: 2
   },
   {
     name: "Aufbaukurs Methoden und Statistik",
     kp: 6,
     kategorie: "Pflichtmodule",
     jahr: 1,
-    semester: 2,
-    periode: "fs2026"
+    semester: 2
   },
   {
     name: "Einführung in die qualitativen Methoden",
     kp: 6,
     kategorie: "Pflichtmodule",
     jahr: 2,
-    semester: 2,
-    periode: "fs2026"
+    semester: 2
   },
   {
     name: "Bachelorarbeit",
     kp: 15,
     kategorie: "Bachelor-Arbeit",
     jahr: 3,
-    semester: 2,
-    periode: "fs2026"
+    semester: 2
   }
 ];

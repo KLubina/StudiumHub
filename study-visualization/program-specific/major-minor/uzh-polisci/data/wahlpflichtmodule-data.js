@@ -7,197 +7,169 @@ window.PolisciWahlpflichtmoduleData = [
     name: "Demokratieforschung",
     kp: 3,
     kategorie: "Wahlpflichtmodule",
-    semester: 1,
-    periode: "hs2025"
+    semester: 1
   },
   {
     name: "Internationale Politik",
     kp: 3,
     kategorie: "Wahlpflichtmodule",
-    semester: 1,
-    periode: "hs2025"
+    semester: 1
   },
   {
     name: "Politikprozesse und Public Policy",
     kp: 3,
     kategorie: "Wahlpflichtmodule",
-    semester: 1,
-    periode: "hs2025"
+    semester: 1
   },
   {
     name: "Politisches Verhalten",
     kp: 3,
     kategorie: "Wahlpflichtmodule",
-    semester: 1,
-    periode: "hs2025"
+    semester: 1
   },
   {
     name: "Public Choice",
     kp: 3,
     kategorie: "Wahlpflichtmodule",
-    semester: 1,
-    periode: "hs2025"
+    semester: 1
   },
   {
     name: "Schweizer Politik",
     kp: 3,
     kategorie: "Wahlpflichtmodule",
-    semester: 1,
-    periode: "hs2025"
+    semester: 1
   },
   {
     name: "Vergleichende Politik",
     kp: 3,
     kategorie: "Wahlpflichtmodule",
-    semester: 1,
-    periode: "hs2025"
+    semester: 1
   },
   {
     name: "Vergleichende und Internationale Politische Ökonomie",
     kp: 6,
     kategorie: "Wahlpflichtmodule",
-    semester: 1,
-    periode: "hs2025"
+    semester: 1
   },
   {
     name: "Sicherheit und Konflikt",
     kp: 6,
     kategorie: "Wahlpflichtmodule",
-    semester: 1,
-    periode: "hs2025"
+    semester: 1
   },
   {
     name: "Governance",
     kp: 6,
     kategorie: "Wahlpflichtmodule",
-    semester: 1,
-    periode: "hs2025"
+    semester: 1
   },
   {
     name: "Entwicklung und Nachhaltigkeit",
     kp: 6,
     kategorie: "Wahlpflichtmodule",
-    semester: 1,
-    periode: "hs2025"
+    semester: 1
   },
   {
     name: "Europäische Politik",
     kp: 6,
     kategorie: "Wahlpflichtmodule",
-    semester: 1,
-    periode: "hs2025"
+    semester: 1
   },
   {
     name: "Aktuelle Themen der Politikwissenschaft",
     kp: 6,
     kategorie: "Wahlpflichtmodule",
-    semester: 1,
-    periode: "hs2025"
+    semester: 1
   },
   // fs2026 Wahlpflichtmodule
   {
     name: "Sicherheit und Konflikt",
     kp: 3,
     kategorie: "Wahlpflichtmodule",
-    semester: 2,
-    periode: "fs2026"
+    semester: 2
   },
   {
     name: "Vergleichende und Internationale Politische Ökonomie",
     kp: 3,
     kategorie: "Wahlpflichtmodule",
-    semester: 2,
-    periode: "fs2026"
+    semester: 2
   },
   {
     name: "Development and Sustainability",
     kp: 3,
     kategorie: "Wahlpflichtmodule",
-    semester: 2,
-    periode: "fs2026"
+    semester: 2
   },
   {
     name: "Europäische Politik",
     kp: 3,
     kategorie: "Wahlpflichtmodule",
-    semester: 2,
-    periode: "fs2026"
+    semester: 2
   },
   {
     name: "Governance",
     kp: 3,
     kategorie: "Wahlpflichtmodule",
-    semester: 2,
-    periode: "fs2026"
+    semester: 2
   },
   {
     name: "Politische Theorie",
     kp: 3,
     kategorie: "Wahlpflichtmodule",
-    semester: 2,
-    periode: "fs2026"
+    semester: 2
   },
   {
     name: "Aktuelle Themen der Politikwissenschaft",
     kp: 3,
     kategorie: "Wahlpflichtmodule",
-    semester: 2,
-    periode: "fs2026"
+    semester: 2
   },
   {
     name: "Vergleichende Politik",
     kp: 6,
     kategorie: "Wahlpflichtmodule",
-    semester: 2,
-    periode: "fs2026"
+    semester: 2
   },
   {
     name: "Public Choice",
     kp: 6,
     kategorie: "Wahlpflichtmodule",
-    semester: 2,
-    periode: "fs2026"
+    semester: 2
   },
   {
     name: "Politisches Verhalten",
     kp: 6,
     kategorie: "Wahlpflichtmodule",
-    semester: 2,
-    periode: "fs2026"
+    semester: 2
   },
   {
     name: "Politikprozesse und Public Policy",
     kp: 6,
     kategorie: "Wahlpflichtmodule",
-    semester: 2,
-    periode: "fs2026"
+    semester: 2
   },
   {
     name: "Internationale Politik",
     kp: 6,
     kategorie: "Wahlpflichtmodule",
-    semester: 2,
-    periode: "fs2026"
+    semester: 2
   },
   {
     name: "Demokratieforschung",
     kp: 6,
     kategorie: "Wahlpflichtmodule",
-    semester: 2,
-    periode: "fs2026"
+    semester: 2
   },
   {
     name: "Schweizer Politik",
     kp: 6,
     kategorie: "Wahlpflichtmodule",
-    semester: 2,
-    periode: "fs2026"
+    semester: 2
   },
   {
     name: "Angewandte Methoden",
     kp: 6,
     kategorie: "Wahlpflichtmodule",
-    semester: 2,
-    periode: "fs2026"
+    semester: 2
   }
 ];

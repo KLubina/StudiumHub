@@ -10,108 +10,93 @@ window.KommunikationPflichtmoduleData = [
     name: "Basistheorien der Kommunikationswissenschaft",
     kp: 6,
     kategorie: "Pflichtmodule",
-    semester: 1,
-    periode: "hs2025"
+    semester: 1
   },
   {
     name: "Statistik und Datenanalyse: Aufbau",
     kp: 6,
     kategorie: "Pflichtmodule",
-    semester: 1,
-    periode: "hs2025"
+    semester: 1
   },
   {
     name: "Methoden der empirischen Kommunikationsforschung: Aufbau",
     kp: 6,
     kategorie: "Pflichtmodule",
-    semester: 1,
-    periode: "hs2025"
+    semester: 1
   },
   {
     name: "Einführung in die Kommunikationswissenschaft und Medienforschung",
     kp: 3,
     kategorie: "Pflichtmodule",
-    semester: 1,
-    periode: "hs2025"
+    semester: 1
   },
   {
     name: "Wissenschaftliches Arbeiten",
     kp: 3,
     kategorie: "Pflichtmodule",
-    semester: 1,
-    periode: "hs2025"
+    semester: 1
   },
   {
     name: "Kernbereich Medieninhalte & Mediennutzung",
     kp: 3,
     kategorie: "Pflichtmodule",
-    semester: 1,
-    periode: "hs2025"
+    semester: 1
   },
   {
     name: "Kernbereich Medienrezeption & Medienwirkung",
     kp: 3,
     kategorie: "Pflichtmodule",
-    semester: 1,
-    periode: "hs2025"
+    semester: 1
   },
   {
     name: "Kernbereich Medienpolitik & Medienökonomie",
     kp: 3,
     kategorie: "Pflichtmodule",
-    semester: 1,
-    periode: "hs2025"
+    semester: 1
   },
   {
     name: "Kernbereich Medienproduktion & Medienmanagement",
     kp: 3,
     kategorie: "Pflichtmodule",
-    semester: 1,
-    periode: "hs2025"
+    semester: 1
   },
   {
     name: "Bachelorarbeit",
     kp: 15,
     kategorie: "Bachelor-Arbeit",
     jahr: 3,
-    semester: 1,
-    periode: "hs2025"
+    semester: 1
   },
   // fs2026 Pflichtmodule
   {
     name: "Einführung in die Kommunikationswissenschaft und Medienforschung",
     kp: 3,
     kategorie: "Pflichtmodule",
-    semester: 2,
-    periode: "fs2026"
+    semester: 2
   },
   {
     name: "Wissenschaftliches Arbeiten",
     kp: 3,
     kategorie: "Pflichtmodule",
-    semester: 2,
-    periode: "fs2026"
+    semester: 2
   },
   {
     name: "Statistik und Datenanalyse: Einführung",
     kp: 9,
     kategorie: "Pflichtmodule",
-    semester: 2,
-    periode: "fs2026"
+    semester: 2
   },
   {
     name: "Methoden der empirischen Kommunikationsforschung: Einführung",
     kp: 3,
     kategorie: "Pflichtmodule",
-    semester: 2,
-    periode: "fs2026"
+    semester: 2
   },
   {
     name: "Bachelorarbeit",
     kp: 15,
     kategorie: "Bachelor-Arbeit",
     jahr: 3,
-    semester: 2,
-    periode: "fs2026"
+    semester: 2
   }
 ];

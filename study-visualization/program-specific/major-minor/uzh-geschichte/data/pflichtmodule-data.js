@@ -8,51 +8,44 @@ window.GeschichtePflichtmoduleData = [
     kp: 15,
     kategorie: "Pflichtmodule",
     semester: 1,
-    jahr: 3,
-    periode: "hs2025"
+    jahr: 3
   },
   {
     name: "Basismodul I",
     kp: 9,
     kategorie: "Pflichtmodule",
-    semester: 1,
-    periode: "hs2025"
+    semester: 1
   },
   {
     name: "Basismodul II",
     kp: 9,
     kategorie: "Pflichtmodule",
-    semester: 1,
-    periode: "hs2025"
+    semester: 1
   },
   {
     name: "Einführungsvorlesung Herbst",
     kp: 3,
     kategorie: "Pflichtmodule",
-    semester: 1,
-    periode: "hs2025"
+    semester: 1
   },
   {
     name: "Grundlagen Latein",
     kp: 6,
     kategorie: "Pflichtmodule",
-    semester: 1,
-    periode: "hs2025"
+    semester: 1
   },
   {
     name: "Methoden und Theorie",
     kp: 9,
     kategorie: "Pflichtmodule",
-    semester: 1,
-    periode: "hs2025"
+    semester: 1
   },
   {
     name: "Mündliche Prüfung",
     kp: 9,
     kategorie: "Pflichtmodule",
     semester: 1,
-    jahr: 3,
-    periode: "hs2025"
+    jahr: 3
   },
   // fs2026 Pflichtmodule
   {
@@ -60,50 +53,43 @@ window.GeschichtePflichtmoduleData = [
     kp: 15,
     kategorie: "Pflichtmodule",
     semester: 2,
-    jahr: 3,
-    periode: "fs2026"
+    jahr: 3
   },
   {
     name: "Basismodul I",
     kp: 9,
     kategorie: "Pflichtmodule",
-    semester: 2,
-    periode: "fs2026"
+    semester: 2
   },
   {
     name: "Basismodul II",
     kp: 9,
     kategorie: "Pflichtmodule",
-    semester: 2,
-    periode: "fs2026"
+    semester: 2
   },
   {
     name: "Einführungsvorlesung Frühling",
     kp: 3,
     kategorie: "Pflichtmodule",
-    semester: 2,
-    periode: "fs2026"
+    semester: 2
   },
   {
     name: "Grundlagen Latein",
     kp: 6,
     kategorie: "Pflichtmodule",
-    semester: 2,
-    periode: "fs2026"
+    semester: 2
   },
   {
     name: "Methoden und Theorie",
     kp: 9,
     kategorie: "Pflichtmodule",
-    semester: 2,
-    periode: "fs2026"
+    semester: 2
   },
   {
     name: "Mündliche Prüfung",
     kp: 9,
     kategorie: "Pflichtmodule",
     semester: 2,
-    jahr: 3,
-    periode: "fs2026"
+    jahr: 3
   }
 ];
