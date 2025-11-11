@@ -1,52 +1,24 @@
 /* ==== UZH SOZIOLOGIE - CSS CLASSES ==== */
-/* Program-specific CSS classes for Soziologie (Major-Minor) */
+/* Program-specific CSS classes for Soziologie (Major-Minor)
+   Only keep selectors for implemented categories: Pflicht, Wahlpflicht, Wahlmodule */
 
-/* Pattern aligned with mono: each category applies to both module tiles and legend items */
-
-/* Major */
-[data-studiengang="uzh-soziologie"] .modul.major,
-[data-studiengang="uzh-soziologie"] .legende-item.major {
-    background-color: var(--color-major);
-    color: var(--color-major-text, white);
-}
-
-/* Minor */
-[data-studiengang="uzh-soziologie"] .modul.minor,
-[data-studiengang="uzh-soziologie"] .legende-item.minor {
-    background-color: var(--color-minor);
-    color: var(--color-minor-text, white);
-}
-
-/* Pflicht (required) */
+/* Pflicht */
 [data-studiengang="uzh-soziologie"] .modul.pflicht,
 [data-studiengang="uzh-soziologie"] .legende-item.pflicht {
     background-color: var(--color-pflicht);
     color: var(--color-pflicht-text, white);
 }
 
-/* Wahlpflicht (restricted elective) */
+/* Wahlpflicht */
 [data-studiengang="uzh-soziologie"] .modul.wahlpflicht,
 [data-studiengang="uzh-soziologie"] .legende-item.wahlpflicht {
     background-color: var(--color-wahlpflicht);
     color: var(--color-wahlpflicht-text, white);
 }
 
-/* Wahl (free elective) */
-[data-studiengang="uzh-soziologie"] .modul.wahl,
-[data-studiengang="uzh-soziologie"] .legende-item.wahl {
+/* Wahlmodule */
+[data-studiengang="uzh-soziologie"] .modul.wahlmodule,
+[data-studiengang="uzh-soziologie"] .legende-item.wahlmodule {
     background-color: var(--color-wahl);
     color: var(--color-wahl-text, white);
-}
-
-/* Subject-specific class (generic usage outside data attribute context if needed) */
-.soziologie {
-    background-color: var(--color-soziologie);
-    color: var(--color-soziologie-text, white);
-}
-
-/* Soziologie-specific module + legend items */
-[data-studiengang="uzh-soziologie"] .modul.soziologie-spezifisch,
-[data-studiengang="uzh-soziologie"] .legende-item.soziologie-spezifisch {
-    background-color: var(--color-soziologie);
-    color: var(--color-soziologie-text, white);
 }
