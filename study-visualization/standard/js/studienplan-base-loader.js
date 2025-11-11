@@ -11,8 +11,8 @@
  */
 
 // New base paths reflecting the moved modules into core/ and optional/
-const corePath = 'js/functionality/core';
-const optionalPath = 'js/functionality/optional';
+const corePath = 'js/core';
+const optionalPath = 'js/optional';
 
 console.log('📦 Loading Studienplan components (core first, then optional)...');
 
@@ -52,11 +52,11 @@ window.baseModulesReady = (async () => {
 
     // 3) NOW load optional modules (after core is complete)
     const optionalModules = [
-        'tooltip/index.js',
-        'kp-counter/index.js',
-        'color-manager/index.js',
-        'major-minor-selector/index.js',
-        'wahlmodule/index.js'
+        'tooltip.js',
+        'kp-counter.js',
+        'color-manager.js',
+        'major-minor-selector.js',
+        'wahlmodule.js'
     ];
 
     console.log('📥 Loading optional modules ...');
