@@ -16,3 +16,6 @@ window.StudienplanMajorMinorSelector = {
 document.addEventListener('DOMContentLoaded', () => {
     window.StudienplanMajorMinorSelector.initialize();
 });
+
+// Markiere als geladen
+window.subModulesReady['major-minor-selector'] = Promise.resolve();

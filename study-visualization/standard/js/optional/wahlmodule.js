@@ -13,3 +13,6 @@ window.StudienplanWahlmodule = {
 document.addEventListener('DOMContentLoaded', () => {
     window.StudienplanWahlmodule.initialize();
 });
+
+// Markiere als geladen
+window.subModulesReady['wahlmodule'] = Promise.resolve();

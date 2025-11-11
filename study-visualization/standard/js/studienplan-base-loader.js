@@ -20,20 +20,32 @@ console.log('📦 Loading Studienplan components (core first, then optional)...'
 window.subModulesReady = {};
 
 // Small helper to load a single script and return a promise
-function loadScript(src) {
-    return new Promise((resolve, reject) => {
-        const script = document.createElement('script');
-        script.src = src;
-        script.onerror = () => {
-            console.error(`❌ Failed to load: ${src}`);
-            reject(new Error(`Failed to load ${src}`));
-        };
-        script.onload = () => {
-            console.log(`✅ Loaded: ${src}`);
-            resolve();
-        };
-        document.head.appendChild(script);
-    });
+async function loadScript(src) {
+    try {
+        // Check if file exists first
+        const response = await fetch(src, { method: 'HEAD' });
+        if (!response.ok) {
+            throw new Error(`File not found: ${src}`);
+        }
+        
+        // Load the script
+        return new Promise((resolve, reject) => {
+            const script = document.createElement('script');
+            script.src = src;
+            script.onerror = () => {
+                console.error(`❌ Failed to load: ${src}`);
+                reject(new Error(`Failed to load ${src}`));
+            };
+            script.onload = () => {
+                console.log(`✅ Loaded: ${src}`);
+                resolve();
+            };
+            document.head.appendChild(script);
+        });
+    } catch (error) {
+        console.error(`❌ Failed to load: ${src} - ${error.message}`);
+        throw error;
+    }
 }
 
 // Promise that resolves when core and optional modules are loaded (lenient for optional)

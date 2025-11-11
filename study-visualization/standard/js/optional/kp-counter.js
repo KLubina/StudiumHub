@@ -4,6 +4,10 @@
 
 window.StudienplanKPCounter = {
     initialize() {
+        // Verhindere doppelte Initialisierung
+        if (this._initialized) return;
+        this._initialized = true;
+
         // Berechne und zeige Gesamt-KP
         this.updateTotalKP();
     },
@@ -29,3 +33,12 @@ window.StudienplanKPCounter = {
 document.addEventListener('DOMContentLoaded', () => {
     window.StudienplanKPCounter.initialize();
 });
+
+// Falls das Script nach dem DOMContentLoaded geladen wird, sofort initialisieren
+if (document.readyState === 'interactive' || document.readyState === 'complete') {
+    // Kleiner Timeout, damit andere Module (z.B. Layout) zuerst ihre Arbeit beenden können
+    setTimeout(() => window.StudienplanKPCounter.initialize(), 0);
+}
+
+// Markiere als geladen
+window.subModulesReady['kp-counter'] = Promise.resolve();

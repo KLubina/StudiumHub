@@ -50,3 +50,6 @@ window.StudienplanTooltip = {
 document.addEventListener('DOMContentLoaded', () => {
     window.StudienplanTooltip.initialize();
 });
+
+// Markiere als geladen
+window.subModulesReady['tooltip'] = Promise.resolve();

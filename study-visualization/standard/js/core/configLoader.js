@@ -27,6 +27,20 @@ window.StudienplanConfigLoader = {
                 // Color-Config ist optional
             }
 
+            // Lade Color Management Configs falls vorhanden
+            const secondCategoriesPath = `../program-specific/${studyModel}/${studiengang}/colormanagement/secondcategories-config.js`;
+            try {
+                await this.loadScript(secondCategoriesPath);
+            } catch (e) {
+                // Optional
+            }
+            const thirdCategoriesPath = `../program-specific/${studyModel}/${studiengang}/colormanagement/thirdcategories-config.js`;
+            try {
+                await this.loadScript(thirdCategoriesPath);
+            } catch (e) {
+                // Optional
+            }
+
             // Lade Modul-Daten
             const dataPath = `../program-specific/${studyModel}/${studiengang}/data/basic-modules-data.js`;
             await this.loadScript(dataPath);
@@ -42,15 +56,28 @@ window.StudienplanConfigLoader = {
         }
     },
 
-    // Lade ein Script dynamisch
-    loadScript(src) {
-        return new Promise((resolve, reject) => {
+    // Lade ein Script dynamisch (mit Fetch für bessere Fehlerbehandlung)
+    async loadScript(src) {
+        try {
+            const response = await fetch(src, { method: 'HEAD' });
+            if (!response.ok) {
+                // Datei existiert nicht - ignoriere
+                return;
+            }
+            
+            // Lade das Script
             const script = document.createElement('script');
             script.src = src;
-            script.onload = resolve;
-            script.onerror = reject;
             document.head.appendChild(script);
-        });
+            
+            // Warte auf Laden
+            await new Promise((resolve, reject) => {
+                script.onload = resolve;
+                script.onerror = reject;
+            });
+        } catch (error) {
+            // Ignoriere Fehler bei optionalen Scripts
+        }
     },
 
     // Rendere den Studienplan
@@ -70,6 +97,21 @@ window.StudienplanConfigLoader = {
 
         // Setze Titel
         this.setTitles(studiengang);
+
+        // Initialisiere optionale Module, falls vorhanden (z.B. wenn sie nach DOMContentLoaded geladen wurden)
+        try {
+            if (window.StudienplanKPCounter && typeof window.StudienplanKPCounter.updateTotalKP === 'function') {
+                // KP Counter aktualisieren (berechnet aus gerenderten Modulen)
+                window.StudienplanKPCounter.updateTotalKP();
+            }
+
+            if (window.StudienplanColorManager && typeof window.StudienplanColorManager.initialize === 'function') {
+                // Color Manager initialisieren (erzeugt Selector / Legendeneinträge)
+                window.StudienplanColorManager.initialize();
+            }
+        } catch (e) {
+            console.warn('Fehler beim Initialisieren optionaler Module:', e);
+        }
 
         console.log('Studienplan gerendert für:', studiengang);
     },
