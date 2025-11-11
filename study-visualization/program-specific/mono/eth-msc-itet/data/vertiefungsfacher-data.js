@@ -5,47 +5,79 @@ window.MSCITETVertiefungsfaecherData = {
   vertiefungsfaecherBereiche: {
     "Biomedical Engineering": [
       {
+        // PFLICHTFELDER
         name: "Physiology and Anatomy for Biomedical Engineers I",
         kp: 3,
         kategorie: "Vertiefungsfächer",
       },
       {
+        // PFLICHTFELDER
         name: "Micro and Nano-Tomography of Biological Tissues",
         kp: 4,
         kategorie: "Vertiefungsfächer",
       },
       {
+        // PFLICHTFELDER
         name: "Computational Neuroimaging Clinic",
         kp: 3,
         kategorie: "Vertiefungsfächer",
       },
       {
+        // PFLICHTFELDER
         name: "Methods & Models for fMRI Data Analysis",
         kp: 6,
         kategorie: "Vertiefungsfächer",
       },
       {
+        // PFLICHTFELDER
         name: "Computational Psychiatry",
         kp: 3,
         kategorie: "Vertiefungsfächer",
       },
       {
+        // PFLICHTFELDER
         name: "Biological Methods for Engineers",
         kp: 3,
         kategorie: "Vertiefungsfächer",
       },
-      { name: "Cell Biophysics", kp: 6, kategorie: "Vertiefungsfächer" },
       {
+        // PFLICHTFELDER
+        name: "Cell Biophysics",
+        kp: 6,
+        kategorie: "Vertiefungsfächer",
+      },
+      {
+        // PFLICHTFELDER
         name: "Physical Modelling and Simulation",
         kp: 6,
         kategorie: "Vertiefungsfächer",
       },
-      { name: "Computer Vision", kp: 8, kategorie: "Vertiefungsfächer" },
-      { name: "Medical Physics I", kp: 6, kategorie: "Vertiefungsfächer" },
+      {
+        // PFLICHTFELDER
+        name: "Computer Vision",
+        kp: 8,
+        kategorie: "Vertiefungsfächer",
+      },
+      {
+        // PFLICHTFELDER
+        name: "Medical Physics I",
+        kp: 6,
+        kategorie: "Vertiefungsfächer",
+      },
     ],
     Communication: [
-      { name: "Discrete Event Systems", kp: 6, kategorie: "Vertiefungsfächer" },
-      { name: "Control Systems", kp: 6, kategorie: "Vertiefungsfächer" },
+      {
+        // PFLICHTFELDER
+        name: "Discrete Event Systems",
+        kp: 6,
+        kategorie: "Vertiefungsfächer",
+      },
+      {
+        // PFLICHTFELDER
+        name: "Control Systems",
+        kp: 6,
+        kategorie: "Vertiefungsfächer",
+      },
       {
         name: "VLSI 1: HDL Based Design for FPGAs",
         kp: 6,
@@ -76,7 +108,12 @@ window.MSCITETVertiefungsfaecherData = {
         kp: 3,
         kategorie: "Vertiefungsfächer",
       },
-      { name: "Neural Network Theory", kp: 4, kategorie: "Vertiefungsfächer" },
+      {
+        // PFLICHTFELDER
+        name: "Neural Network Theory",
+        kp: 4,
+        kategorie: "Vertiefungsfächer",
+      },
       {
         name: "Image Analysis and Computer Vision",
         kp: 6,
@@ -87,7 +124,12 @@ window.MSCITETVertiefungsfaecherData = {
         kp: 6,
         kategorie: "Vertiefungsfächer",
       },
-      { name: "Acoustics I", kp: 3, kategorie: "Vertiefungsfächer" },
+      {
+        // PFLICHTFELDER
+        name: "Acoustics I",
+        kp: 3,
+        kategorie: "Vertiefungsfächer",
+      },
       {
         name: "Maxwell, Einstein, and the GPS",
         kp: 6,
@@ -98,7 +140,12 @@ window.MSCITETVertiefungsfaecherData = {
         kp: 10,
         kategorie: "Vertiefungsfächer",
       },
-      { name: "Network Security", kp: 8, kategorie: "Vertiefungsfächer" },
+      {
+        // PFLICHTFELDER
+        name: "Network Security",
+        kp: 8,
+        kategorie: "Vertiefungsfächer",
+      },
       {
         name: "Algebraic Methods in Combinatorics",
         kp: 5,
@@ -124,7 +171,12 @@ window.MSCITETVertiefungsfaecherData = {
         kp: 6,
         kategorie: "Vertiefungsfächer",
       },
-      { name: "Computational Control", kp: 6, kategorie: "Vertiefungsfächer" },
+      {
+        // PFLICHTFELDER
+        name: "Computational Control",
+        kp: 6,
+        kategorie: "Vertiefungsfächer",
+      },
       {
         name: "Model-Based Estimation and Signal Analysis",
         kp: 6,
@@ -140,7 +192,12 @@ window.MSCITETVertiefungsfaecherData = {
         kp: 6,
         kategorie: "Vertiefungsfächer",
       },
-      { name: "Acoustics II", kp: 3, kategorie: "Vertiefungsfächer" },
+      {
+        // PFLICHTFELDER
+        name: "Acoustics II",
+        kp: 3,
+        kategorie: "Vertiefungsfächer",
+      },
     ],
     "Computer and Networks": [
       {
@@ -148,7 +205,12 @@ window.MSCITETVertiefungsfaecherData = {
         kp: 6,
         kategorie: "Vertiefungsfächer",
       },
-      { name: "Control Systems", kp: 6, kategorie: "Vertiefungsfächer" },
+      {
+        // PFLICHTFELDER
+        name: "Control Systems",
+        kp: 6,
+        kategorie: "Vertiefungsfächer",
+      },
       {
         name: "VLSI 1: HDL Based Design for FPGAs",
         kp: 6,
@@ -164,7 +226,12 @@ window.MSCITETVertiefungsfaecherData = {
         kp: 6,
         kategorie: "Vertiefungsfächer",
       },
-      { name: "Distributed Systems", kp: 4, kategorie: "Vertiefungsfächer" },
+      {
+        // PFLICHTFELDER
+        name: "Distributed Systems",
+        kp: 4,
+        kategorie: "Vertiefungsfächer",
+      },
       {
         name: "Applied Computer Architecture",
         kp: 6,
@@ -190,7 +257,12 @@ window.MSCITETVertiefungsfaecherData = {
         kp: 5,
         kategorie: "Vertiefungsfächer",
       },
-      { name: "Information Theory II", kp: 6, kategorie: "Vertiefungsfächer" },
+      {
+        // PFLICHTFELDER
+        name: "Information Theory II",
+        kp: 6,
+        kategorie: "Vertiefungsfächer",
+      },
       {
         name: "Seminar in Deep Neural Networks",
         kp: 2,
@@ -223,7 +295,12 @@ window.MSCITETVertiefungsfaecherData = {
         kp: 6,
         kategorie: "Vertiefungsfächer",
       },
-      { name: "Communication Systems", kp: 6, kategorie: "Vertiefungsfächer" },
+      {
+        // PFLICHTFELDER
+        name: "Communication Systems",
+        kp: 6,
+        kategorie: "Vertiefungsfächer",
+      },
       {
         name: "Wireline Communication Circuits and Systems",
         kp: 6,
@@ -249,7 +326,12 @@ window.MSCITETVertiefungsfaecherData = {
         kp: 3,
         kategorie: "Vertiefungsfächer",
       },
-      { name: "Space Communications", kp: 4, kategorie: "Vertiefungsfächer" },
+      {
+        // PFLICHTFELDER
+        name: "Space Communications",
+        kp: 4,
+        kategorie: "Vertiefungsfächer",
+      },
       {
         name: "Analog Signal Processing and Filtering",
         kp: 6,
@@ -260,7 +342,12 @@ window.MSCITETVertiefungsfaecherData = {
         kp: 3,
         kategorie: "Vertiefungsfächer",
       },
-      { name: "Solar Cells", kp: 4, kategorie: "Vertiefungsfächer" },
+      {
+        // PFLICHTFELDER
+        name: "Solar Cells",
+        kp: 4,
+        kategorie: "Vertiefungsfächer",
+      },
       {
         name: "Modeling, Characterization and Reliability of Power Semiconductors",
         kp: 6,
@@ -321,7 +408,12 @@ window.MSCITETVertiefungsfaecherData = {
         kp: 2,
         kategorie: "Vertiefungsfächer",
       },
-      { name: "Embedded MEMS Lab", kp: 5, kategorie: "Vertiefungsfächer" },
+      {
+        // PFLICHTFELDER
+        name: "Embedded MEMS Lab",
+        kp: 5,
+        kategorie: "Vertiefungsfächer",
+      },
       {
         name: "Thin Films Technology - From Fundamentals to Oxide Electronics",
         kp: 5,
@@ -359,15 +451,35 @@ window.MSCITETVertiefungsfaecherData = {
         kp: 6,
         kategorie: "Vertiefungsfächer",
       },
-      { name: "Control Systems", kp: 6, kategorie: "Vertiefungsfächer" },
-      { name: "Communication Systems", kp: 6, kategorie: "Vertiefungsfächer" },
-      { name: "Linear System Theory", kp: 6, kategorie: "Vertiefungsfächer" },
+      {
+        // PFLICHTFELDER
+        name: "Control Systems",
+        kp: 6,
+        kategorie: "Vertiefungsfächer",
+      },
+      {
+        // PFLICHTFELDER
+        name: "Communication Systems",
+        kp: 6,
+        kategorie: "Vertiefungsfächer",
+      },
+      {
+        // PFLICHTFELDER
+        name: "Linear System Theory",
+        kp: 6,
+        kategorie: "Vertiefungsfächer",
+      },
       {
         name: "Fundamentals of Electric Machines",
         kp: 6,
         kategorie: "Vertiefungsfächer",
       },
-      { name: "Railway Systems I", kp: 6, kategorie: "Vertiefungsfächer" },
+      {
+        // PFLICHTFELDER
+        name: "Railway Systems I",
+        kp: 6,
+        kategorie: "Vertiefungsfächer",
+      },
       {
         name: "Multiphysics Simulations for Power Systems",
         kp: 4,
@@ -378,7 +490,12 @@ window.MSCITETVertiefungsfaecherData = {
         kp: 6,
         kategorie: "Vertiefungsfächer",
       },
-      { name: "Solar Cells", kp: 4, kategorie: "Vertiefungsfächer" },
+      {
+        // PFLICHTFELDER
+        name: "Solar Cells",
+        kp: 4,
+        kategorie: "Vertiefungsfächer",
+      },
       {
         name: "Modeling, Characterization and Reliability of Power Semiconductors",
         kp: 6,
@@ -409,7 +526,12 @@ window.MSCITETVertiefungsfaecherData = {
         kp: 6,
         kategorie: "Vertiefungsfächer",
       },
-      { name: "Railway Systems II", kp: 6, kategorie: "Vertiefungsfächer" },
+      {
+        // PFLICHTFELDER
+        name: "Railway Systems II",
+        kp: 6,
+        kategorie: "Vertiefungsfächer",
+      },
       {
         name: "Predictive Control of Power Electronics Systems",
         kp: 6,
@@ -422,14 +544,29 @@ window.MSCITETVertiefungsfaecherData = {
       },
     ],
     "Systems and Control": [
-      { name: "Discrete Event Systems", kp: 6, kategorie: "Vertiefungsfächer" },
+      {
+        // PFLICHTFELDER
+        name: "Discrete Event Systems",
+        kp: 6,
+        kategorie: "Vertiefungsfächer",
+      },
       {
         name: "Image Analysis and Computer Vision",
         kp: 6,
         kategorie: "Vertiefungsfächer",
       },
-      { name: "Power System Analysis", kp: 6, kategorie: "Vertiefungsfächer" },
-      { name: "System Identification", kp: 4, kategorie: "Vertiefungsfächer" },
+      {
+        // PFLICHTFELDER
+        name: "Power System Analysis",
+        kp: 6,
+        kategorie: "Vertiefungsfächer",
+      },
+      {
+        // PFLICHTFELDER
+        name: "System Identification",
+        kp: 4,
+        kategorie: "Vertiefungsfächer",
+      },
       {
         name: "Nonlinear Dynamics and Chaos I",
         kp: 4,
@@ -512,20 +649,40 @@ window.MSCITETVertiefungsfaecherData = {
         kp: 6,
         kategorie: "Vertiefungsfächer",
       },
-      { name: "Communication Systems", kp: 6, kategorie: "Vertiefungsfächer" },
+      {
+        // PFLICHTFELDER
+        name: "Communication Systems",
+        kp: 6,
+        kategorie: "Vertiefungsfächer",
+      },
       {
         name: "Machine Learning on Microcontrollers",
         kp: 6,
         kategorie: "Vertiefungsfächer",
       },
-      { name: "Linear System Theory", kp: 6, kategorie: "Vertiefungsfächer" },
-      { name: "Information Theory I", kp: 6, kategorie: "Vertiefungsfächer" },
+      {
+        // PFLICHTFELDER
+        name: "Linear System Theory",
+        kp: 6,
+        kategorie: "Vertiefungsfächer",
+      },
+      {
+        // PFLICHTFELDER
+        name: "Information Theory I",
+        kp: 6,
+        kategorie: "Vertiefungsfächer",
+      },
       {
         name: "Learning in Deep Artificial and Biological Neuronal Networks",
         kp: 4,
         kategorie: "Vertiefungsfächer",
       },
-      { name: "Acoustics I", kp: 3, kategorie: "Vertiefungsfächer" },
+      {
+        // PFLICHTFELDER
+        name: "Acoustics I",
+        kp: 3,
+        kategorie: "Vertiefungsfächer",
+      },
       {
         name: "Computer Vision and Artificial Intelligence for Autonomous Cars",
         kp: 6,
@@ -561,8 +718,18 @@ window.MSCITETVertiefungsfaecherData = {
         kp: 10,
         kategorie: "Vertiefungsfächer",
       },
-      { name: "Recursive Estimation", kp: 4, kategorie: "Vertiefungsfächer" },
-      { name: "Communication Networks", kp: 6, kategorie: "Vertiefungsfächer" },
+      {
+        // PFLICHTFELDER
+        name: "Recursive Estimation",
+        kp: 4,
+        kategorie: "Vertiefungsfächer",
+      },
+      {
+        // PFLICHTFELDER
+        name: "Communication Networks",
+        kp: 6,
+        kategorie: "Vertiefungsfächer",
+      },
       {
         name: "VLSI 2: From Netlist to Complete System on Chip",
         kp: 6,
@@ -583,7 +750,12 @@ window.MSCITETVertiefungsfaecherData = {
         kp: 6,
         kategorie: "Vertiefungsfächer",
       },
-      { name: "Deep Generative Models", kp: 2, kategorie: "Vertiefungsfächer" },
+      {
+        // PFLICHTFELDER
+        name: "Deep Generative Models",
+        kp: 2,
+        kategorie: "Vertiefungsfächer",
+      },
       {
         name: "Model- and Learning-Based Inverse Problems in Imaging",
         kp: 4,
@@ -594,7 +766,12 @@ window.MSCITETVertiefungsfaecherData = {
         kp: 4,
         kategorie: "Vertiefungsfächer",
       },
-      { name: "Acoustics II", kp: 3, kategorie: "Vertiefungsfächer" },
+      {
+        // PFLICHTFELDER
+        name: "Acoustics II",
+        kp: 3,
+        kategorie: "Vertiefungsfächer",
+      },
       {
         name: "Principles of Distributed Computing",
         kp: 7,
@@ -620,9 +797,21 @@ window.MSCITETVertiefungsfaecherData = {
         kp: 6,
         kategorie: "Vertiefungsfächer",
       },
-      { name: "3D Vision", kp: 5, kategorie: "Vertiefungsfächer" },
-      { name: "Machine Perception", kp: 8, kategorie: "Vertiefungsfächer" },
-      { name: "Big Data for Engineers", kp: 6, kategorie: "Vertiefungsfächer" },
+      { 
+        name: "3D Vision", 
+        kp: 5, 
+        kategorie: "Vertiefungsfächer" 
+      },
+      { 
+        name: "Machine Perception", 
+        kp: 8, 
+        kategorie: "Vertiefungsfächer" 
+      },
+      { 
+        name: "Big Data for Engineers", 
+        kp: 6, 
+        kategorie: "Vertiefungsfächer" 
+      },
       {
         name: "Deep Learning for Computer Vision: Seminal Work",
         kp: 2,
@@ -633,7 +822,11 @@ window.MSCITETVertiefungsfaecherData = {
         kp: 5,
         kategorie: "Vertiefungsfächer",
       },
-      { name: "Graph Theory", kp: 9, kategorie: "Vertiefungsfächer" },
+      { 
+        name: "Graph Theory", 
+        kp: 9, 
+        kategorie: "Vertiefungsfächer" 
+      },
       {
         name: "Time-Frequency Analysis",
         kp: 4,
