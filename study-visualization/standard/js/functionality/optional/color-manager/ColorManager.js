@@ -8,6 +8,7 @@ class StudienplanBaseColorManager {
         this.colorConfig = window.ITETColorConfig || window.CSEColorConfig;
         this.modes = this.config.coloringModes || {};
         this.currentMode = this.config.defaultColoringMode || "kategorie";
+        this.currentLegend = "standard"; // "standard", "second", etc.
     }
 
     setMode(mode) {
@@ -15,6 +16,12 @@ class StudienplanBaseColorManager {
         this.applyColors();
         this.updateLegend();
         this.syncRadioButtons();
+    }
+
+    setLegend(legend) {
+        this.currentLegend = legend; // "standard", "second", etc.
+        this.applyColors();
+        this.updateLegend();
     }
 
     applyColors() {
@@ -32,7 +39,11 @@ class StudienplanBaseColorManager {
     getCssClass(modulName) {
         if (!this.colorConfig) {
             const modul = this.config.daten?.find(m => m.name === modulName);
-            return modul?.kategorie;
+            if (!modul) return null;
+            
+            // Use the appropriate category based on current legend
+            const categoryKey = this.currentLegend + "category";
+            return modul[categoryKey] || modul.standardcategory;
         }
 
         if (this.currentMode === "themenbereich") {
@@ -45,7 +56,11 @@ class StudienplanBaseColorManager {
         }
 
         const modul = this.config.daten?.find(m => m.name === modulName);
-        return modul?.kategorie;
+        if (!modul) return null;
+        
+        // Use the appropriate category based on current legend
+        const categoryKey = this.currentLegend + "category";
+        return modul[categoryKey] || modul.standardcategory;
     }
 
     syncRadioButtons() {

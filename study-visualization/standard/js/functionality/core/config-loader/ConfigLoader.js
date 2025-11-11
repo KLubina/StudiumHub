@@ -42,7 +42,7 @@ class StudiengangConfigLoader {
         await this.loader.loadOptionalModule(`${basePath}/standard-config/layout-config.js`);
         // Features config is optional: absence means all feature flags default to false
         await this.loader.loadOptionalModule(`${basePath}/standard-config/features-config.js`);
-        await this.loader.loadModule(`${basePath}/standard-config/categories-config.js`);
+        await this.loader.loadModule(`${basePath}/standard-config/standardcategories-config.js`);
 
         // Feature-specific config files (loaded based on feature flags after features-config.js is loaded)
         // These are optional and only loaded if the corresponding feature is enabled
