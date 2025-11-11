@@ -29,13 +29,6 @@ window.StudienplanLegend = {
             return window.CSEColorConfig.colors.themenbereiche[category].label;
         }
 
-        const names = {
-            'cs-pure': 'Reine Informatik',
-            'cs-cse': 'Informatik & CSE',
-            'math': 'Mathematik',
-            'physics': 'Physik',
-            'unknown': 'Unbekannt'
-        };
         return names[category] || category;
     }
 };
