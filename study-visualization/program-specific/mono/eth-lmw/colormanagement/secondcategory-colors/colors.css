@@ -1,0 +1,9 @@
+/* ==== ETH LMW - BEREICH COLOR VARIABLES ==== */
+/* Natur- und Ingenieurwissenschaften, Sozialwissenschaften, Lebensmittelwissenschaften */
+
+[data-studiengang="eth-lmw"] {
+  --color-bereich-natwig: #4A90E2;
+  --color-bereich-sozwi: #F5A623;
+  --color-bereich-lmw: #7ED321;
+}
+

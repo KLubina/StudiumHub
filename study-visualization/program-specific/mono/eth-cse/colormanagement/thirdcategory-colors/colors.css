@@ -1,0 +1,11 @@
+/* ==== ETH CSE - THEMENBEREICH COLOR VARIABLES ==== */
+/* Mathematik, Informatik, Physik, Chemie, Sonstiges */
+
+[data-studiengang="eth-cse"] {
+  --color-mathematik: #00a99d;
+  --color-informatik: #2600ff;
+  --color-physik: #2196F3;
+  --color-chemie: #9C27B0;
+  --color-sonstiges: #E0E0E0;
+}
+

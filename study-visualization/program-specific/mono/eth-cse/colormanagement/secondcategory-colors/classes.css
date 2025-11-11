@@ -1,0 +1,39 @@
+/* ==== ETH CSE - PRÜFUNGSBLOCK CSS CLASSES ==== */
+/* Module & Legende nach Prüfungsblock färben */
+
+[data-studiengang="eth-cse"] .modul.basis1,
+[data-studiengang="eth-cse"] .legende-item.basis1 {
+  background-color: var(--color-basis1);
+  color: white;
+}
+
+[data-studiengang="eth-cse"] .modul.basis2,
+[data-studiengang="eth-cse"] .legende-item.basis2 {
+  background-color: var(--color-basis2);
+  color: white;
+}
+
+[data-studiengang="eth-cse"] .modul.block-g1,
+[data-studiengang="eth-cse"] .legende-item.block-g1 {
+  background-color: var(--color-block-g1);
+  color: white;
+}
+
+[data-studiengang="eth-cse"] .modul.block-g2,
+[data-studiengang="eth-cse"] .legende-item.block-g2 {
+  background-color: var(--color-block-g2);
+  color: white;
+}
+
+[data-studiengang="eth-cse"] .modul.block-g3,
+[data-studiengang="eth-cse"] .legende-item.block-g3 {
+  background-color: var(--color-block-g3);
+  color: white;
+}
+
+[data-studiengang="eth-cse"] .modul.block-g4,
+[data-studiengang="eth-cse"] .legende-item.block-g4 {
+  background-color: var(--color-block-g4);
+  color: white;
+}
+

@@ -1,0 +1,33 @@
+/* ==== ETH CSE - THEMENBEREICH CSS CLASSES ==== */
+/* Module & Legende nach Themenbereich färben */
+
+[data-studiengang="eth-cse"] .modul.mathematik,
+[data-studiengang="eth-cse"] .legende-item.mathematik {
+  background-color: var(--color-mathematik);
+  color: white;
+}
+
+[data-studiengang="eth-cse"] .modul.informatik,
+[data-studiengang="eth-cse"] .legende-item.informatik {
+  background-color: var(--color-informatik);
+  color: white;
+}
+
+[data-studiengang="eth-cse"] .modul.physik,
+[data-studiengang="eth-cse"] .legende-item.physik {
+  background-color: var(--color-physik);
+  color: white;
+}
+
+[data-studiengang="eth-cse"] .modul.chemie,
+[data-studiengang="eth-cse"] .legende-item.chemie {
+  background-color: var(--color-chemie);
+  color: white;
+}
+
+[data-studiengang="eth-cse"] .modul.sonstiges,
+[data-studiengang="eth-cse"] .legende-item.sonstiges {
+  background-color: var(--color-sonstiges);
+  color: black;
+}
+

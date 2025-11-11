@@ -1,0 +1,21 @@
+/* ==== ETH LMW - BEREICH CSS CLASSES ==== */
+/* Module & Legende nach Bereich färben */
+
+[data-studiengang="eth-lmw"] .modul.bereich-natwig,
+[data-studiengang="eth-lmw"] .legende-item.bereich-natwig {
+  background-color: var(--color-bereich-natwig);
+  color: white;
+}
+
+[data-studiengang="eth-lmw"] .modul.bereich-sozwi,
+[data-studiengang="eth-lmw"] .legende-item.bereich-sozwi {
+  background-color: var(--color-bereich-sozwi);
+  color: white;
+}
+
+[data-studiengang="eth-lmw"] .modul.bereich-lmw,
+[data-studiengang="eth-lmw"] .legende-item.bereich-lmw {
+  background-color: var(--color-bereich-lmw);
+  color: white;
+}
+

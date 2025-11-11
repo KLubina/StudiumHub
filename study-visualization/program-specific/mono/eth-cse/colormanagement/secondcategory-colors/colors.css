@@ -1,0 +1,12 @@
+/* ==== ETH CSE - PRÜFUNGSBLOCK COLOR VARIABLES ==== */
+/* Basisprüfungsblöcke und Prüfungsblöcke G1-G4 */
+
+[data-studiengang="eth-cse"] {
+  --color-basis1: #FF6B6B;
+  --color-basis2: #4ECDC4;
+  --color-block-g1: #45B7D1;
+  --color-block-g2: #96CEB4;
+  --color-block-g3: #FFEAA7;
+  --color-block-g4: #DDA15E;
+}
+
