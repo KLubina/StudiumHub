@@ -12,11 +12,13 @@ window.ITETWeitereWahlGrundlagenData = {
       kategorie: "Weitere Wahl-Grundlagenfächer",
     },
     {
+      // PFLICHTFELDER
       name: "High-Frequency Design Techniques",
       kp: 4,
       kategorie: "Weitere Wahl-Grundlagenfächer",
     },
     {
+      // PFLICHTFELDER
       name: "Introduction to Electric Power Transmission: System & Technology",
       kp: 4,
       kategorie: "Weitere Wahl-Grundlagenfächer",
