@@ -12,7 +12,6 @@ window.PopKulturWahlpflichtmoduleData = {
         kategorie: "Wahlpflichtmodule",
         // KONTEXT
         semester: 2,
-        info: "Variable ECTS je nach Sprachkurs",
       },
       {
         // PFLICHTFELDER
@@ -79,7 +78,6 @@ window.PopKulturWahlpflichtmoduleData = {
       {
         // PFLICHTFELDER
         name: "Angebot des Sprachenzentrums – Sprachkurs",
-        info: "Variable ECTS je nach Sprachkurs",
         kp: 0,
         kategorie: "Wahlpflichtmodule",
         // KONTEXT

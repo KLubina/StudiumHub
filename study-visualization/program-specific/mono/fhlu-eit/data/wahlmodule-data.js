@@ -160,7 +160,6 @@ window.HSLUEITWahlmoduleData = {
         kp: 3,
         kategorie: "Zusatzmodule",
         // STUDIENGANGSPEZIFISCH
-        info: "Frei wählbare Module aus anderen Studiengängen",
       },
       {
         // PFLICHTFELDER
@@ -168,7 +167,6 @@ window.HSLUEITWahlmoduleData = {
         kp: 3,
         kategorie: "Zusatzmodule",
         // STUDIENGANGSPEZIFISCH
-        info: "Frei wählbare Module aus anderen Studiengängen",
       },
       {
         // PFLICHTFELDER
@@ -176,7 +174,6 @@ window.HSLUEITWahlmoduleData = {
         kp: 3,
         kategorie: "Zusatzmodule",
         // STUDIENGANGSPEZIFISCH
-        info: "Frei wählbare Module aus anderen Studiengängen",
       },
       {
         // PFLICHTFELDER
@@ -184,7 +181,6 @@ window.HSLUEITWahlmoduleData = {
         kp: 3,
         kategorie: "Zusatzmodule",
         // STUDIENGANGSPEZIFISCH
-        info: "Frei wählbare Module aus anderen Studiengängen",
       },
       {
         // PFLICHTFELDER
@@ -192,7 +188,6 @@ window.HSLUEITWahlmoduleData = {
         kp: 3,
         kategorie: "Zusatzmodule",
         // STUDIENGANGSPEZIFISCH
-        info: "Frei wählbare Module aus anderen Studiengängen",
       },
     ],
   },
