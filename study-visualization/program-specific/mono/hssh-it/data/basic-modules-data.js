@@ -7,7 +7,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Cornerstone Module",
     kp: 6,
-    kategorie: "grundlagen",
+    standardcategory: "grundlagen",
     // KONTEXT
     jahr: 1,
     semester: 1,
@@ -16,7 +16,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Einführung in die Programmierung",
     kp: 6,
-    kategorie: "programmierung",
+    standardcategory: "programmierung",
     // KONTEXT
     jahr: 1,
     semester: 1,
@@ -25,7 +25,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Algorithmen und Datenstrukturen",
     kp: 6,
-    kategorie: "programmierung",
+    standardcategory: "programmierung",
     // KONTEXT
     jahr: 1,
     semester: 1,
@@ -34,7 +34,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Personality Development, Problemsolving and Decision Making",
     kp: 6,
-    kategorie: "kommunikation",
+    standardcategory: "kommunikation",
     // KONTEXT
     jahr: 1,
     semester: 1,
@@ -43,7 +43,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Transfer Project 1",
     kp: 6,
-    kategorie: "transfer",
+    standardcategory: "transfer",
     // KONTEXT
     jahr: 1,
     semester: 1,
@@ -56,7 +56,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Software Engineering",
     kp: 6,
-    kategorie: "programmierung",
+    standardcategory: "programmierung",
     // KONTEXT
     jahr: 1,
     semester: 2,
@@ -65,7 +65,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Programmierung mit Datenbanksystemen",
     kp: 6,
-    kategorie: "programmierung",
+    standardcategory: "programmierung",
     // KONTEXT
     jahr: 1,
     semester: 2,
@@ -74,7 +74,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Human Computer Interaction",
     kp: 6,
-    kategorie: "grundlagen",
+    standardcategory: "grundlagen",
     // KONTEXT
     jahr: 1,
     semester: 2,
@@ -83,7 +83,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Professional Communication, Team Development and Faciliation",
     kp: 6,
-    kategorie: "kommunikation",
+    standardcategory: "kommunikation",
     // KONTEXT
     jahr: 1,
     semester: 2,
@@ -92,7 +92,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Social Responsibility and Social Impact",
     kp: 6,
-    kategorie: "kommunikation",
+    standardcategory: "kommunikation",
     // KONTEXT
     jahr: 1,
     semester: 2,
@@ -105,7 +105,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Betriebssysteme",
     kp: 6,
-    kategorie: "grundlagen",
+    standardcategory: "grundlagen",
     // KONTEXT
     jahr: 2,
     semester: 3,
@@ -114,7 +114,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Anwendungsorientierte Programmierung",
     kp: 6,
-    kategorie: "programmierung",
+    standardcategory: "programmierung",
     // KONTEXT
     jahr: 2,
     semester: 3,
@@ -123,7 +123,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Data Engineering and Data Analytics",
     kp: 6,
-    kategorie: "spezialisierung",
+    standardcategory: "spezialisierung",
     // KONTEXT
     jahr: 2,
     semester: 3,
@@ -132,7 +132,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Global Challenges and Future Skills",
     kp: 6,
-    kategorie: "kommunikation",
+    standardcategory: "kommunikation",
     // KONTEXT
     jahr: 2,
     semester: 3,
@@ -141,7 +141,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Transfer Project 2",
     kp: 6,
-    kategorie: "transfer",
+    standardcategory: "transfer",
     // KONTEXT
     jahr: 2,
     semester: 3,
@@ -154,7 +154,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Rechnernetze und verteilte Systeme",
     kp: 6,
-    kategorie: "grundlagen",
+    standardcategory: "grundlagen",
     // KONTEXT
     jahr: 2,
     semester: 4,
@@ -163,7 +163,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "IT-Sicherheit und Datenschutz",
     kp: 6,
-    kategorie: "grundlagen",
+    standardcategory: "grundlagen",
     // KONTEXT
     jahr: 2,
     semester: 4,
@@ -172,7 +172,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Design the Future",
     kp: 6,
-    kategorie: "kommunikation",
+    standardcategory: "kommunikation",
     // KONTEXT
     jahr: 2,
     semester: 4,
@@ -181,7 +181,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Wahlpflichtfach",
     kp: 12,
-    kategorie: "wahlpflicht",
+    standardcategory: "wahlpflicht",
     // KONTEXT
     jahr: 2,
     semester: 4,
@@ -194,7 +194,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Datenmanagement und Data Warehouse-Systeme",
     kp: 6,
-    kategorie: "spezialisierung",
+    standardcategory: "spezialisierung",
     // KONTEXT
     jahr: 3,
     semester: 5,
@@ -204,7 +204,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Data Analytics",
     kp: 6,
-    kategorie: "spezialisierung",
+    standardcategory: "spezialisierung",
     // KONTEXT
     jahr: 3,
     semester: 5,
@@ -214,7 +214,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Entwurf und Entwicklung von Datenanalyse-Applikationen",
     kp: 6,
-    kategorie: "spezialisierung",
+    standardcategory: "spezialisierung",
     // KONTEXT
     jahr: 3,
     semester: 5,
@@ -224,7 +224,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Action Learning and Action Research",
     kp: 12,
-    kategorie: "transfer",
+    standardcategory: "transfer",
     // KONTEXT
     jahr: 3,
     semester: 5,
@@ -237,7 +237,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Journal Club", 
     kp: 6, 
-    kategorie: "abschluss",
+    standardcategory: "abschluss",
     // KONTEXT
     jahr: 3, 
     semester: 6 
@@ -246,7 +246,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Angewandte Forschungsmethoden",
     kp: 6,
-    kategorie: "abschluss",
+    standardcategory: "abschluss",
     // KONTEXT
     jahr: 3,
     semester: 6,
@@ -255,7 +255,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Bachelorarbeit",
     kp: 18,
-    kategorie: "abschluss",
+    standardcategory: "abschluss",
     // KONTEXT
     jahr: 3,
     semester: 6,

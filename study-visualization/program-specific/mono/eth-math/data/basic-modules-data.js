@@ -7,7 +7,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Analysis I: eine Variable",
     kp: 10,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 1,
     semester: 1,
@@ -16,7 +16,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Lineare Algebra I",
     kp: 7,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 1,
     semester: 1,
@@ -25,7 +25,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Physik I",
     kp: 7,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 1,
     semester: 1,
@@ -34,7 +34,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Informatik",
     kp: 5,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 1,
     semester: 1,
@@ -47,7 +47,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Analysis II: mehrere Variablen",
     kp: 10,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 1,
     semester: 2,
@@ -56,7 +56,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Lineare Algebra II",
     kp: 7,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 1,
     semester: 2,
@@ -65,7 +65,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Grundstrukturen",
     kp: 5,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 1,
     semester: 2,
@@ -74,7 +74,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Datenstrukturen & Algorithmen",
     kp: 8,
-    kategorie: "Ergänzungsfächer",
+    standardcategory: "Ergänzungsfächer",
     // KONTEXT
     jahr: 1,
     semester: 2,
@@ -83,7 +83,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Physik II",
     kp: 7,
-    kategorie: "Ergänzungsfächer",
+    standardcategory: "Ergänzungsfächer",
     // KONTEXT
     jahr: 1,
     semester: 2,
@@ -96,7 +96,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Funktionentheorie",
     kp: 6,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 2,
     semester: 1,
@@ -105,7 +105,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Analysis III (Maßtheorie)",
     kp: 6,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 2,
     semester: 1,
@@ -114,7 +114,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Algebra I",
     kp: 7,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 2,
     semester: 1,
@@ -123,7 +123,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Numerische Mathematik I",
     kp: 7,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 2,
     semester: 1,
@@ -132,7 +132,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Geometrie",
     kp: 6,
-    kategorie: "Wahlpflichtfächer",
+    standardcategory: "Wahlpflichtfächer",
     // KONTEXT
     jahr: 2,
     semester: 1,
@@ -145,7 +145,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Analysis IV",
     kp: 6,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 2,
     semester: 2,
@@ -154,7 +154,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Topologie",
     kp: 7,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 2,
     semester: 2,
@@ -163,7 +163,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Wahrscheinlichkeit und Statistik",
     kp: 8,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 2,
     semester: 2,
@@ -172,7 +172,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Semesterarbeit",
     kp: 2,
-    kategorie: "Wissenschaftliche Arbeit",
+    standardcategory: "Wissenschaftliche Arbeit",
     // KONTEXT
     jahr: 2,
     semester: 2,
@@ -185,7 +185,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Time Series Analysis",
     kp: 4,
-    kategorie: "Wahlfächer",
+    standardcategory: "Wahlfächer",
     // KONTEXT
     jahr: 3,
     semester: 1,
@@ -196,7 +196,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Applied Statistical Regression",
     kp: 5,
-    kategorie: "Wahlfächer",
+    standardcategory: "Wahlfächer",
     // KONTEXT
     jahr: 3,
     semester: 1,
@@ -207,7 +207,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Markov Processes",
     kp: 3,
-    kategorie: "Wahlfächer",
+    standardcategory: "Wahlfächer",
     // KONTEXT
     jahr: 3,
     semester: 1,
@@ -219,7 +219,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Computational Statistics",
     kp: 8,
-    kategorie: "Kernfächer",
+    standardcategory: "Kernfächer",
     // KONTEXT
     jahr: 3,
     semester: 1,
@@ -230,7 +230,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Probability Theory",
     kp: 9,
-    kategorie: "Kernfächer",
+    standardcategory: "Kernfächer",
     // KONTEXT
     jahr: 3,
     semester: 1,
@@ -241,7 +241,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Number Theory",
     kp: 7,
-    kategorie: "Kernfächer",
+    standardcategory: "Kernfächer",
     // KONTEXT
     jahr: 3,
     semester: 1,
@@ -252,7 +252,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Algebraic Geometry",
     kp: 9,
-    kategorie: "Kernfächer",
+    standardcategory: "Kernfächer",
     // KONTEXT
     jahr: 3,
     semester: 1,
@@ -264,7 +264,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Numerical Analysis II",
     kp: 6,
-    kategorie: "Wahlpflichtfächer",
+    standardcategory: "Wahlpflichtfächer",
     // KONTEXT
     jahr: 3,
     semester: 1,
@@ -279,7 +279,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Wissenschaft im Kontext",
     kp: 6,
-    kategorie: "Wissenschaftliche Arbeit",
+    standardcategory: "Wissenschaftliche Arbeit",
     // KONTEXT
     jahr: 3,
     semester: 2,
@@ -288,7 +288,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Seminar",
     kp: 2,
-    kategorie: "Wissenschaftliche Arbeit",
+    standardcategory: "Wissenschaftliche Arbeit",
     // KONTEXT
     jahr: 3,
     semester: 2,
@@ -297,7 +297,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Bachelorarbeit",
     kp: 16,
-    kategorie: "Wissenschaftliche Arbeit",
+    standardcategory: "Wissenschaftliche Arbeit",
     // KONTEXT
     jahr: 3,
     semester: 2,

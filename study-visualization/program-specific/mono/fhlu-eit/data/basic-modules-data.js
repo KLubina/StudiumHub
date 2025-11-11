@@ -10,7 +10,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Elektrotechnik",
     kp: 3,
-    kategorie: "Elektrotechnik und Elektronik",
+    standardcategory: "Elektrotechnik und Elektronik",
     // KONTEXT
     jahr: 1,
     semester: 1,
@@ -19,7 +19,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Digitaltechnik",
     kp: 3,
-    kategorie: "Elektrotechnik und Elektronik",
+    standardcategory: "Elektrotechnik und Elektronik",
     // KONTEXT
     jahr: 1,
     semester: 1,
@@ -30,7 +30,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Mathematik 1B",
     kp: 3,
-    kategorie: "Grundlagenfächer",
+    standardcategory: "Grundlagenfächer",
     // KONTEXT
     jahr: 1,
     semester: 1,
@@ -41,7 +41,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Kontext 1",
     kp: 6,
-    kategorie: "Kontextstudium",
+    standardcategory: "Kontextstudium",
     // KONTEXT
     jahr: 1,
     semester: 1,
@@ -52,7 +52,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Programming in C",
     kp: 6,
-    kategorie: "Informatik und Programmierung",
+    standardcategory: "Informatik und Programmierung",
     // KONTEXT
     jahr: 1,
     semester: 1,
@@ -68,7 +68,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Kontext 2",
     kp: 6,
-    kategorie: "Kontextstudium",
+    standardcategory: "Kontextstudium",
     // KONTEXT
     jahr: 1,
     semester: 2,
@@ -79,7 +79,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Physik 1B",
     kp: 3,
-    kategorie: "Grundlagenfächer",
+    standardcategory: "Grundlagenfächer",
     // KONTEXT
     jahr: 1,
     semester: 2,
@@ -88,7 +88,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Mathematik 2B",
     kp: 3,
-    kategorie: "Grundlagenfächer",
+    standardcategory: "Grundlagenfächer",
     // KONTEXT
     jahr: 1,
     semester: 2,
@@ -97,7 +97,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Lineare Algebra",
     kp: 3,
-    kategorie: "Grundlagenfächer",
+    standardcategory: "Grundlagenfächer",
     // KONTEXT
     jahr: 1,
     semester: 2,
@@ -108,7 +108,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Elektrotechnik 2",
     kp: 3,
-    kategorie: "Elektrotechnik und Elektronik",
+    standardcategory: "Elektrotechnik und Elektronik",
     // KONTEXT
     jahr: 1,
     semester: 2,
@@ -117,7 +117,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Elektronik 1",
     kp: 3,
-    kategorie: "Elektrotechnik und Elektronik",
+    standardcategory: "Elektrotechnik und Elektronik",
     // KONTEXT
     jahr: 1,
     semester: 2,
@@ -128,7 +128,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Applied Programming",
     kp: 3,
-    kategorie: "Informatik und Programmierung",
+    standardcategory: "Informatik und Programmierung",
     // KONTEXT
     jahr: 1,
     semester: 2,
@@ -137,7 +137,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Python Basic",
     kp: 3,
-    kategorie: "Informatik und Programmierung",
+    standardcategory: "Informatik und Programmierung",
     // KONTEXT
     jahr: 1,
     semester: 2,
@@ -146,7 +146,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Mikrocontroller Fundamentals",
     kp: 3,
-    kategorie: "Informatik und Programmierung",
+    standardcategory: "Informatik und Programmierung",
     // KONTEXT
     jahr: 1,
     semester: 2,
@@ -162,7 +162,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Produktentwicklung 1",
     kp: 6,
-    kategorie: "Produktentwicklung und Projekte",
+    standardcategory: "Produktentwicklung und Projekte",
     // KONTEXT
     jahr: 2,
     semester: 3,
@@ -173,7 +173,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Physik 2B",
     kp: 6,
-    kategorie: "Grundlagenfächer",
+    standardcategory: "Grundlagenfächer",
     // KONTEXT
     jahr: 2,
     semester: 3,
@@ -182,7 +182,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Mathematik 3B",
     kp: 3,
-    kategorie: "Grundlagenfächer",
+    standardcategory: "Grundlagenfächer",
     // KONTEXT
     jahr: 2,
     semester: 3,
@@ -191,7 +191,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Statistical Data Analysis",
     kp: 3,
-    kategorie: "Grundlagenfächer",
+    standardcategory: "Grundlagenfächer",
     // KONTEXT
     jahr: 2,
     semester: 3,
@@ -202,7 +202,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Signale und Systeme",
     kp: 3,
-    kategorie: "Elektrotechnik und Elektronik",
+    standardcategory: "Elektrotechnik und Elektronik",
     // KONTEXT
     jahr: 2,
     semester: 3,
@@ -211,7 +211,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Elektronik 2",
     kp: 6,
-    kategorie: "Elektrotechnik und Elektronik",
+    standardcategory: "Elektrotechnik und Elektronik",
     // KONTEXT
     jahr: 2,
     semester: 3,
@@ -222,7 +222,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Advanced Programming",
     kp: 3,
-    kategorie: "Informatik und Programmierung",
+    standardcategory: "Informatik und Programmierung",
     // KONTEXT
     jahr: 2,
     semester: 3,
@@ -238,7 +238,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Produktentwicklung 2",
     kp: 3,
-    kategorie: "Produktentwicklung und Projekte",
+    standardcategory: "Produktentwicklung und Projekte",
     // KONTEXT
     jahr: 2,
     semester: 4,
@@ -249,7 +249,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Regelungstechnik",
     kp: 3,
-    kategorie: "Elektrotechnik und Elektronik",
+    standardcategory: "Elektrotechnik und Elektronik",
     // KONTEXT
     jahr: 2,
     semester: 4,
@@ -258,7 +258,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Nachrichtentechnik",
     kp: 3,
-    kategorie: "Elektrotechnik und Elektronik",
+    standardcategory: "Elektrotechnik und Elektronik",
     // KONTEXT
     jahr: 2,
     semester: 4,
@@ -267,7 +267,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Grundlagen elektrischer Antriebssysteme",
     kp: 6,
-    kategorie: "Elektrotechnik und Elektronik",
+    standardcategory: "Elektrotechnik und Elektronik",
     // KONTEXT
     jahr: 2,
     semester: 4,
@@ -276,7 +276,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Digital Design",
     kp: 3,
-    kategorie: "Elektrotechnik und Elektronik",
+    standardcategory: "Elektrotechnik und Elektronik",
     // KONTEXT
     jahr: 2,
     semester: 4,
@@ -287,7 +287,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Advanced Embedded Systems",
     kp: 3,
-    kategorie: "Informatik und Programmierung",
+    standardcategory: "Informatik und Programmierung",
     // KONTEXT
     jahr: 2,
     semester: 4,
@@ -296,7 +296,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Data Communication Systems",
     kp: 3,
-    kategorie: "Informatik und Programmierung",
+    standardcategory: "Informatik und Programmierung",
     // KONTEXT
     jahr: 2,
     semester: 4,
@@ -305,7 +305,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "AI for Engineers",
     kp: 3,
-    kategorie: "Informatik und Programmierung",
+    standardcategory: "Informatik und Programmierung",
     // KONTEXT
     jahr: 2,
     semester: 4,
@@ -320,7 +320,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Bachelor-Thesis",
     kp: 12,
-    kategorie: "Abschlussarbeit",
+    standardcategory: "Abschlussarbeit",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -329,7 +329,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Industrieprojekt",
     kp: 6,
-    kategorie: "Produktentwicklung und Projekte",
+    standardcategory: "Produktentwicklung und Projekte",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -340,7 +340,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Vertiefungsrichtung",
     kp: 9,
-    kategorie: "Vertiefungsrichtungen",
+    standardcategory: "Vertiefungsrichtungen",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -350,7 +350,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Erweiterungsmodule",
     kp: 15,
-    kategorie: "Erweiterungsmodule",
+    standardcategory: "Erweiterungsmodule",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -360,7 +360,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Zusatzmodule",
     kp: 15,
-    kategorie: "Zusatzmodule",
+    standardcategory: "Zusatzmodule",
     // KONTEXT
     jahr: 3,
     semester: 0,

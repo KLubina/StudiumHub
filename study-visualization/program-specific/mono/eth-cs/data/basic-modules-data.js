@@ -7,7 +7,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Einführung in die Programmierung",
     kp: 7,
-    kategorie: "cs-pure",
+    standardcategory: "cs-pure",
     // KONTEXT
     jahr: 1,
     semester: 1,
@@ -16,7 +16,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Lineare Algebra",
     kp: 7,
-    kategorie: "math",
+    standardcategory: "math",
     // KONTEXT
     jahr: 1,
     semester: 1,
@@ -25,7 +25,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Datenstrukturen und Algorithmen",
     kp: 7,
-    kategorie: "cs-cse",
+    standardcategory: "cs-cse",
     // KONTEXT
     jahr: 1,
     semester: 1,
@@ -34,7 +34,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Diskrete Mathematik",
     kp: 7,
-    kategorie: "math",
+    standardcategory: "math",
     // KONTEXT
     jahr: 1,
     semester: 1,
@@ -46,7 +46,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Analysis I",
     kp: 7,
-    kategorie: "math",
+    standardcategory: "math",
     // KONTEXT
     jahr: 1,
     semester: 2,
@@ -55,7 +55,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Parallele Programmierung",
     kp: 7,
-    kategorie: "cs-cse",
+    standardcategory: "cs-cse",
     // KONTEXT
     jahr: 1,
     semester: 2,
@@ -64,7 +64,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Digital Design and Computer Architecture",
     kp: 7,
-    kategorie: "cs-pure",
+    standardcategory: "cs-pure",
     // KONTEXT
     jahr: 1,
     semester: 2,
@@ -73,7 +73,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Algorithmen und Wahrscheinlichkeit",
     kp: 4,
-    kategorie: "algo",
+    standardcategory: "algo",
     // KONTEXT
     jahr: 1,
     semester: 2,
@@ -85,7 +85,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Numerische Methoden für CSE",
     kp: 8,
-    kategorie: "cs-cse",
+    standardcategory: "cs-cse",
     // KONTEXT
     jahr: 2,
     semester: 1,
@@ -94,7 +94,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Analysis II",
     kp: 5,
-    kategorie: "math",
+    standardcategory: "math",
     // KONTEXT
     jahr: 2,
     semester: 1,
@@ -103,7 +103,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Theoretische Informatik",
     kp: 7,
-    kategorie: "cs-pure",
+    standardcategory: "cs-pure",
     // KONTEXT
     jahr: 2,
     semester: 1,
@@ -112,7 +112,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Systemnahe Programmierung und Rechnerarchitektur",
     kp: 7,
-    kategorie: "cs-cse",
+    standardcategory: "cs-cse",
     // KONTEXT
     jahr: 2,
     semester: 1,
@@ -124,7 +124,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Wahrscheinlichkeit und Statistik",
     kp: 5,
-    kategorie: "math",
+    standardcategory: "math",
     // KONTEXT
     jahr: 2,
     semester: 2,
@@ -133,7 +133,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Computernetzwerke",
     kp: 7,
-    kategorie: "cs-cse-wahl",
+    standardcategory: "cs-cse-wahl",
     // KONTEXT
     jahr: 2,
     semester: 2,
@@ -142,7 +142,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Datenmodellierung und Datenbanken",
     kp: 7,
-    kategorie: "cs-cse-wahl",
+    standardcategory: "cs-cse-wahl",
     // KONTEXT
     jahr: 2,
     semester: 2,
@@ -151,7 +151,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Formale Methoden und Funktionale Programmierung",
     kp: 7,
-    kategorie: "cs-cse-wahl",
+    standardcategory: "cs-cse-wahl",
     // KONTEXT
     jahr: 2,
     semester: 2,
@@ -160,7 +160,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Ergänzung",
     kp: 5,
-    kategorie: "ergaenzung",
+    standardcategory: "ergaenzung",
     // KONTEXT
     jahr: 2,
     semester: 2,
@@ -169,7 +169,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Wissenschaft im Kontext",
     kp: 6,
-    kategorie: "wissenschaft",
+    standardcategory: "wissenschaft",
     // KONTEXT
     jahr: 2,
     semester: 2,
@@ -181,7 +181,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Spezialisierung",
     kp: 32,
-    kategorie: "spezialisierung",
+    standardcategory: "spezialisierung",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -196,7 +196,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Wahlfächer",
     kp: 12,
-    kategorie: "wahlfaecher",
+    standardcategory: "wahlfaecher",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -205,7 +205,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Bachelorarbeit",
     kp: 10,
-    kategorie: "wissenschaft",
+    standardcategory: "wissenschaft",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -214,7 +214,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Seminar",
     kp: 2,
-    kategorie: "wissenschaft",
+    standardcategory: "wissenschaft",
     // KONTEXT
     jahr: 3,
     semester: 0,

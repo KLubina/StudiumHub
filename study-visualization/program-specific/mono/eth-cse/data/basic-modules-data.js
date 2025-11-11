@@ -143,7 +143,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Wissenschaft im Kontext",
     kp: 6,
-    kategorie: "wissenschaftliche-arbeit",
+    standardcategory: "wissenschaftliche-arbeit",
     // KONTEXT
     jahr: 2,
   },
@@ -168,7 +168,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Kernfächer",
     kp: 0,
-    kategorie: "Kernfächer",
+    standardcategory: "Kernfächer",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -179,7 +179,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Vertiefungsgebiet",
     kp: 0,
-    kategorie: "Vertiefungsgebiet",
+    standardcategory: "Vertiefungsgebiet",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -190,7 +190,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Wahlfächer",
     kp: 0,
-    kategorie: "Wahlfächer",
+    standardcategory: "Wahlfächer",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -204,7 +204,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Fallstudien",
     kp: 6,
-    kategorie: "wissenschaftliche-arbeit",
+    standardcategory: "wissenschaftliche-arbeit",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -215,7 +215,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Bachelorarbeit",
     kp: 14,
-    kategorie: "wissenschaftliche-arbeit",
+    standardcategory: "wissenschaftliche-arbeit",
     // KONTEXT
     jahr: 3,
     semester: 0,

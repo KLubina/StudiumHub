@@ -7,7 +7,7 @@ window.CSE_WahlfaecherModules = [
     // PFLICHTFELDER
     name: "Product Development and Engineering Design",
     kp: 4,
-    kategorie: "wahl",
+    standardcategory: "wahl",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -19,7 +19,7 @@ window.CSE_WahlfaecherModules = [
     // PFLICHTFELDER
     name: "Optimization and Machine Learning",
     kp: 4,
-    kategorie: "wahl",
+    standardcategory: "wahl",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -31,7 +31,7 @@ window.CSE_WahlfaecherModules = [
     // PFLICHTFELDER
     name: "Visualization, Simulation and Interaction - Virtual Reality I",
     kp: 4,
-    kategorie: "wahl",
+    standardcategory: "wahl",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -43,7 +43,7 @@ window.CSE_WahlfaecherModules = [
     // PFLICHTFELDER
     name: "Informationstechnologien im digitalen Produkt",
     kp: 4,
-    kategorie: "wahl",
+    standardcategory: "wahl",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -55,7 +55,7 @@ window.CSE_WahlfaecherModules = [
     // PFLICHTFELDER
     name: "Biofluiddynamics",
     kp: 4,
-    kategorie: "wahl",
+    standardcategory: "wahl",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -67,7 +67,7 @@ window.CSE_WahlfaecherModules = [
     // PFLICHTFELDER
     name: "Introduction to Finite Element Analysis",
     kp: 4,
-    kategorie: "wahl",
+    standardcategory: "wahl",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -79,7 +79,7 @@ window.CSE_WahlfaecherModules = [
     // PFLICHTFELDER
     name: "Nonlinear FEA",
     kp: 4,
-    kategorie: "wahl",
+    standardcategory: "wahl",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -91,7 +91,7 @@ window.CSE_WahlfaecherModules = [
     // PFLICHTFELDER
     name: "Elektromagnetische Felder und Wellen",
     kp: 4,
-    kategorie: "wahl",
+    standardcategory: "wahl",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -103,7 +103,7 @@ window.CSE_WahlfaecherModules = [
     // PFLICHTFELDER
     name: "Algebra and Error Correcting Codes",
     kp: 6,
-    kategorie: "wahl",
+    standardcategory: "wahl",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -115,7 +115,7 @@ window.CSE_WahlfaecherModules = [
     // PFLICHTFELDER
     name: "Information Theory II",
     kp: 6,
-    kategorie: "wahl",
+    standardcategory: "wahl",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -127,7 +127,7 @@ window.CSE_WahlfaecherModules = [
     // PFLICHTFELDER
     name: "Communication and Detection Theory",
     kp: 6,
-    kategorie: "wahl",
+    standardcategory: "wahl",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -139,7 +139,7 @@ window.CSE_WahlfaecherModules = [
     // PFLICHTFELDER
     name: "Communication Networks",
     kp: 6,
-    kategorie: "wahl",
+    standardcategory: "wahl",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -151,7 +151,7 @@ window.CSE_WahlfaecherModules = [
     // PFLICHTFELDER
     name: "Principles of Distributed Computing",
     kp: 7,
-    kategorie: "wahl",
+    standardcategory: "wahl",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -163,7 +163,7 @@ window.CSE_WahlfaecherModules = [
     // PFLICHTFELDER
     name: "Information Security",
     kp: 8,
-    kategorie: "wahl",
+    standardcategory: "wahl",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -175,7 +175,7 @@ window.CSE_WahlfaecherModules = [
     // PFLICHTFELDER
     name: "Applied Cryptography",
     kp: 8,
-    kategorie: "wahl",
+    standardcategory: "wahl",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -187,7 +187,7 @@ window.CSE_WahlfaecherModules = [
     // PFLICHTFELDER
     name: "Game Programming Laboratory",
     kp: 10,
-    kategorie: "wahl",
+    standardcategory: "wahl",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -199,7 +199,7 @@ window.CSE_WahlfaecherModules = [
     // PFLICHTFELDER
     name: "Shape Modeling and Geometry Processing",
     kp: 8,
-    kategorie: "wahl",
+    standardcategory: "wahl",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -211,7 +211,7 @@ window.CSE_WahlfaecherModules = [
     // PFLICHTFELDER
     name: "Big Data for Engineers",
     kp: 6,
-    kategorie: "wahl",
+    standardcategory: "wahl",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -223,7 +223,7 @@ window.CSE_WahlfaecherModules = [
     // PFLICHTFELDER
     name: "Mobile Health and Activity Monitoring",
     kp: 6,
-    kategorie: "wahl",
+    standardcategory: "wahl",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -235,7 +235,7 @@ window.CSE_WahlfaecherModules = [
     // PFLICHTFELDER
     name: "Machine Learning for Health Care",
     kp: 5,
-    kategorie: "wahl",
+    standardcategory: "wahl",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -247,7 +247,7 @@ window.CSE_WahlfaecherModules = [
     // PFLICHTFELDER
     name: "Chemometrics and Machine Learning for Chemical Engineers",
     kp: 4,
-    kategorie: "wahl",
+    standardcategory: "wahl",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -259,7 +259,7 @@ window.CSE_WahlfaecherModules = [
     // PFLICHTFELDER
     name: "Neuromorphic Engineering II",
     kp: 6,
-    kategorie: "wahl",
+    standardcategory: "wahl",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -271,7 +271,7 @@ window.CSE_WahlfaecherModules = [
     // PFLICHTFELDER
     name: "Computational Vision (UZH)",
     kp: 6,
-    kategorie: "wahl",
+    standardcategory: "wahl",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -283,7 +283,7 @@ window.CSE_WahlfaecherModules = [
     // PFLICHTFELDER
     name: "Computational Models of Motion",
     kp: 8,
-    kategorie: "wahl",
+    standardcategory: "wahl",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -295,7 +295,7 @@ window.CSE_WahlfaecherModules = [
     // PFLICHTFELDER
     name: "Statistical Methods in Experimental Physics",
     kp: 10,
-    kategorie: "wahl",
+    standardcategory: "wahl",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -307,7 +307,7 @@ window.CSE_WahlfaecherModules = [
     // PFLICHTFELDER
     name: "Computational Systems Biology: Stochastic Approaches",
     kp: 4,
-    kategorie: "wahl",
+    standardcategory: "wahl",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -319,7 +319,7 @@ window.CSE_WahlfaecherModules = [
     // PFLICHTFELDER
     name: "Klimasysteme",
     kp: 3,
-    kategorie: "wahl",
+    standardcategory: "wahl",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -331,7 +331,7 @@ window.CSE_WahlfaecherModules = [
     // PFLICHTFELDER
     name: "Mathematical Optimization Lab",
     kp: 5,
-    kategorie: "wahl",
+    standardcategory: "wahl",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -343,7 +343,7 @@ window.CSE_WahlfaecherModules = [
     // PFLICHTFELDER
     name: "Network & Integer Optimization",
     kp: 5,
-    kategorie: "wahl",
+    standardcategory: "wahl",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -355,7 +355,7 @@ window.CSE_WahlfaecherModules = [
     // PFLICHTFELDER
     name: "Convex Optimization",
     kp: 5,
-    kategorie: "wahl",
+    standardcategory: "wahl",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -367,7 +367,7 @@ window.CSE_WahlfaecherModules = [
     // PFLICHTFELDER
     name: "High-Dimensional Statistics",
     kp: 4,
-    kategorie: "wahl",
+    standardcategory: "wahl",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -379,7 +379,7 @@ window.CSE_WahlfaecherModules = [
     // PFLICHTFELDER
     name: "Physikalische Chemie III: Molekulare Quantenmechanik",
     kp: 4,
-    kategorie: "wahl",
+    standardcategory: "wahl",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -391,7 +391,7 @@ window.CSE_WahlfaecherModules = [
     // PFLICHTFELDER
     name: "Soccer Analytics",
     kp: 3,
-    kategorie: "wahl",
+    standardcategory: "wahl",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -405,7 +405,7 @@ window.CSE_WahlfaecherModules = [
     // PFLICHTFELDER
     name: "Visualization, Simulation and Interaction - Virtual Reality II",
     kp: 4,
-    kategorie: "wahl",
+    standardcategory: "wahl",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -417,7 +417,7 @@ window.CSE_WahlfaecherModules = [
     // PFLICHTFELDER
     name: "Applied Finite Element Analysis",
     kp: 4,
-    kategorie: "wahl",
+    standardcategory: "wahl",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -429,7 +429,7 @@ window.CSE_WahlfaecherModules = [
     // PFLICHTFELDER
     name: "Design of Parallel and High-Performance Computing",
     kp: 9,
-    kategorie: "wahl",
+    standardcategory: "wahl",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -441,7 +441,7 @@ window.CSE_WahlfaecherModules = [
     // PFLICHTFELDER
     name: "Discrete Event Systems",
     kp: 6,
-    kategorie: "wahl",
+    standardcategory: "wahl",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -453,7 +453,7 @@ window.CSE_WahlfaecherModules = [
     // PFLICHTFELDER
     name: "VLSI 1: HDL Based Design for FPGAs",
     kp: 6,
-    kategorie: "wahl",
+    standardcategory: "wahl",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -465,7 +465,7 @@ window.CSE_WahlfaecherModules = [
     // PFLICHTFELDER
     name: "VLSI 3: Full-Custom Digital Circuit Design",
     kp: 6,
-    kategorie: "wahl",
+    standardcategory: "wahl",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -477,7 +477,7 @@ window.CSE_WahlfaecherModules = [
     // PFLICHTFELDER
     name: "Information Theory I",
     kp: 6,
-    kategorie: "wahl",
+    standardcategory: "wahl",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -489,7 +489,7 @@ window.CSE_WahlfaecherModules = [
     // PFLICHTFELDER
     name: "Computational Psychiatry",
     kp: 3,
-    kategorie: "wahl",
+    standardcategory: "wahl",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -501,7 +501,7 @@ window.CSE_WahlfaecherModules = [
     // PFLICHTFELDER
     name: "Algorithms, Probability, and Computing",
     kp: 8,
-    kategorie: "wahl",
+    standardcategory: "wahl",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -513,7 +513,7 @@ window.CSE_WahlfaecherModules = [
     // PFLICHTFELDER
     name: "Visual Computing",
     kp: 8,
-    kategorie: "wahl",
+    standardcategory: "wahl",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -525,7 +525,7 @@ window.CSE_WahlfaecherModules = [
     // PFLICHTFELDER
     name: "Computer Graphics",
     kp: 8,
-    kategorie: "wahl",
+    standardcategory: "wahl",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -537,7 +537,7 @@ window.CSE_WahlfaecherModules = [
     // PFLICHTFELDER
     name: "Physically-Based Simulation in Computer Graphics",
     kp: 5,
-    kategorie: "wahl",
+    standardcategory: "wahl",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -549,7 +549,7 @@ window.CSE_WahlfaecherModules = [
     // PFLICHTFELDER
     name: "Information Systems for Engineers",
     kp: 4,
-    kategorie: "wahl",
+    standardcategory: "wahl",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -561,7 +561,7 @@ window.CSE_WahlfaecherModules = [
     // PFLICHTFELDER
     name: "Time Series Analysis",
     kp: 4,
-    kategorie: "wahl",
+    standardcategory: "wahl",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -573,7 +573,7 @@ window.CSE_WahlfaecherModules = [
     // PFLICHTFELDER
     name: "Linear & Combinatorial Optimization",
     kp: 10,
-    kategorie: "wahl",
+    standardcategory: "wahl",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -585,7 +585,7 @@ window.CSE_WahlfaecherModules = [
     // PFLICHTFELDER
     name: "Allgemeine Mechanik",
     kp: 7,
-    kategorie: "wahl",
+    standardcategory: "wahl",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -597,7 +597,7 @@ window.CSE_WahlfaecherModules = [
     // PFLICHTFELDER
     name: "Neuromorphic Engineering I",
     kp: 6,
-    kategorie: "wahl",
+    standardcategory: "wahl",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -609,7 +609,7 @@ window.CSE_WahlfaecherModules = [
     // PFLICHTFELDER
     name: "Angewandte Computer Architektur",
     kp: 6,
-    kategorie: "wahl",
+    standardcategory: "wahl",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -621,7 +621,7 @@ window.CSE_WahlfaecherModules = [
     // PFLICHTFELDER
     name: "Responsible Machine Learning with Insurance Applications",
     kp: 4,
-    kategorie: "wahl",
+    standardcategory: "wahl",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -633,7 +633,7 @@ window.CSE_WahlfaecherModules = [
     // PFLICHTFELDER
     name: "Causality",
     kp: 5,
-    kategorie: "wahl",
+    standardcategory: "wahl",
     // KONTEXT
     jahr: 3,
     semester: 0,

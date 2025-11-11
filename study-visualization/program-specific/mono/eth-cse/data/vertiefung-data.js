@@ -7,7 +7,7 @@ window.CSE_VertiefungsgebieteModules = [
     // PFLICHTFELDER
     name: "Theoretical Astrophysics",
     kp: 10,
-    kategorie: "vertiefung",
+    standardcategory: "vertiefung",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -19,7 +19,7 @@ window.CSE_VertiefungsgebieteModules = [
     // PFLICHTFELDER
     name: "Theoretical Cosmology",
     kp: 10,
-    kategorie: "vertiefung",
+    standardcategory: "vertiefung",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -31,7 +31,7 @@ window.CSE_VertiefungsgebieteModules = [
     // PFLICHTFELDER
     name: "Computational Astrophysics",
     kp: 6,
-    kategorie: "vertiefung",
+    standardcategory: "vertiefung",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -45,7 +45,7 @@ window.CSE_VertiefungsgebieteModules = [
     // PFLICHTFELDER
     name: "Atmosphäre",
     kp: 3,
-    kategorie: "vertiefung",
+    standardcategory: "vertiefung",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -57,7 +57,7 @@ window.CSE_VertiefungsgebieteModules = [
     // PFLICHTFELDER
     name: "Weather and Climate Models",
     kp: 4,
-    kategorie: "vertiefung",
+    standardcategory: "vertiefung",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -71,7 +71,7 @@ window.CSE_VertiefungsgebieteModules = [
     // PFLICHTFELDER
     name: "Classical Simulation of (Biol)Molecular Systems",
     kp: 6,
-    kategorie: "vertiefung",
+    standardcategory: "vertiefung",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -83,7 +83,7 @@ window.CSE_VertiefungsgebieteModules = [
     // PFLICHTFELDER
     name: "Quantenchemie",
     kp: 6,
-    kategorie: "vertiefung",
+    standardcategory: "vertiefung",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -95,7 +95,7 @@ window.CSE_VertiefungsgebieteModules = [
     // PFLICHTFELDER
     name: "Molecular and Materials Modelling",
     kp: 4,
-    kategorie: "vertiefung",
+    standardcategory: "vertiefung",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -109,7 +109,7 @@ window.CSE_VertiefungsgebieteModules = [
     // PFLICHTFELDER
     name: "Fluiddynamik II",
     kp: 3,
-    kategorie: "vertiefung",
+    standardcategory: "vertiefung",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -121,7 +121,7 @@ window.CSE_VertiefungsgebieteModules = [
     // PFLICHTFELDER
     name: "Computational Methods for Flow, Heat and Mass Transfer Problems",
     kp: 4,
-    kategorie: "vertiefung",
+    standardcategory: "vertiefung",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -135,7 +135,7 @@ window.CSE_VertiefungsgebieteModules = [
     // PFLICHTFELDER
     name: "Control Systems I (Regelsysteme)",
     kp: 6,
-    kategorie: "vertiefung",
+    standardcategory: "vertiefung",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -147,7 +147,7 @@ window.CSE_VertiefungsgebieteModules = [
     // PFLICHTFELDER
     name: "Control Systems II",
     kp: 6,
-    kategorie: "vertiefung",
+    standardcategory: "vertiefung",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -159,7 +159,7 @@ window.CSE_VertiefungsgebieteModules = [
     // PFLICHTFELDER
     name: "Signal- und Systemtheorie I",
     kp: 4,
-    kategorie: "vertiefung",
+    standardcategory: "vertiefung",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -171,7 +171,7 @@ window.CSE_VertiefungsgebieteModules = [
     // PFLICHTFELDER
     name: "Signal- und Systemtheorie II",
     kp: 4,
-    kategorie: "vertiefung",
+    standardcategory: "vertiefung",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -185,7 +185,7 @@ window.CSE_VertiefungsgebieteModules = [
     // PFLICHTFELDER
     name: "Theory of Robotics and Mechatronics",
     kp: 4,
-    kategorie: "vertiefung",
+    standardcategory: "vertiefung",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -197,7 +197,7 @@ window.CSE_VertiefungsgebieteModules = [
     // PFLICHTFELDER
     name: "Autonomous Mobile Robots",
     kp: 5,
-    kategorie: "vertiefung",
+    standardcategory: "vertiefung",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -209,7 +209,7 @@ window.CSE_VertiefungsgebieteModules = [
     // PFLICHTFELDER
     name: "Probabilistic Artificial Intelligence",
     kp: 8,
-    kategorie: "vertiefung",
+    standardcategory: "vertiefung",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -221,7 +221,7 @@ window.CSE_VertiefungsgebieteModules = [
     // PFLICHTFELDER
     name: "Deep Learning",
     kp: 8,
-    kategorie: "vertiefung",
+    standardcategory: "vertiefung",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -233,7 +233,7 @@ window.CSE_VertiefungsgebieteModules = [
     // PFLICHTFELDER
     name: "Computer Vision",
     kp: 8,
-    kategorie: "vertiefung",
+    standardcategory: "vertiefung",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -245,7 +245,7 @@ window.CSE_VertiefungsgebieteModules = [
     // PFLICHTFELDER
     name: "Dynamic Programming and Optimal Control",
     kp: 4,
-    kategorie: "vertiefung",
+    standardcategory: "vertiefung",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -257,7 +257,7 @@ window.CSE_VertiefungsgebieteModules = [
     // PFLICHTFELDER
     name: "Recursive Estimation",
     kp: 4,
-    kategorie: "vertiefung",
+    standardcategory: "vertiefung",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -269,7 +269,7 @@ window.CSE_VertiefungsgebieteModules = [
     // PFLICHTFELDER
     name: "Robot Dynamics",
     kp: 4,
-    kategorie: "vertiefung",
+    standardcategory: "vertiefung",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -281,7 +281,7 @@ window.CSE_VertiefungsgebieteModules = [
     // PFLICHTFELDER
     name: "Advanced Machine Learning",
     kp: 10,
-    kategorie: "vertiefung",
+    standardcategory: "vertiefung",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -293,7 +293,7 @@ window.CSE_VertiefungsgebieteModules = [
     // PFLICHTFELDER
     name: "Seminar in Robotics for CSE",
     kp: 4,
-    kategorie: "vertiefung",
+    standardcategory: "vertiefung",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -307,7 +307,7 @@ window.CSE_VertiefungsgebieteModules = [
     // PFLICHTFELDER
     name: "Introduction to Computational Physics",
     kp: 8,
-    kategorie: "vertiefung",
+    standardcategory: "vertiefung",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -319,7 +319,7 @@ window.CSE_VertiefungsgebieteModules = [
     // PFLICHTFELDER
     name: "Computational Statistical Physics",
     kp: 8,
-    kategorie: "vertiefung",
+    standardcategory: "vertiefung",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -331,7 +331,7 @@ window.CSE_VertiefungsgebieteModules = [
     // PFLICHTFELDER
     name: "Computational Quantum Physics",
     kp: 8,
-    kategorie: "vertiefung",
+    standardcategory: "vertiefung",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -345,7 +345,7 @@ window.CSE_VertiefungsgebieteModules = [
     // PFLICHTFELDER
     name: "Mathematical Foundations for Finance",
     kp: 4,
-    kategorie: "vertiefung",
+    standardcategory: "vertiefung",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -357,7 +357,7 @@ window.CSE_VertiefungsgebieteModules = [
     // PFLICHTFELDER
     name: "Computational Methods for Quantitative Finance – Monte Carlo and Sampling Methods",
     kp: 6,
-    kategorie: "vertiefung",
+    standardcategory: "vertiefung",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -371,7 +371,7 @@ window.CSE_VertiefungsgebieteModules = [
     // PFLICHTFELDER
     name: "Physical Modelling and Simulation",
     kp: 6,
-    kategorie: "vertiefung",
+    standardcategory: "vertiefung",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -383,7 +383,7 @@ window.CSE_VertiefungsgebieteModules = [
     // PFLICHTFELDER
     name: "Optimization Methods for Engineers",
     kp: 3,
-    kategorie: "vertiefung",
+    standardcategory: "vertiefung",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -397,7 +397,7 @@ window.CSE_VertiefungsgebieteModules = [
     // PFLICHTFELDER
     name: "Continuum Mechanics",
     kp: 3,
-    kategorie: "vertiefung",
+    standardcategory: "vertiefung",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -409,7 +409,7 @@ window.CSE_VertiefungsgebieteModules = [
     // PFLICHTFELDER
     name: "Numerical Modelling I and II",
     kp: 6,
-    kategorie: "vertiefung",
+    standardcategory: "vertiefung",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -421,7 +421,7 @@ window.CSE_VertiefungsgebieteModules = [
     // PFLICHTFELDER
     name: "Dynamics of the Mantle and Lithosphere",
     kp: 3,
-    kategorie: "vertiefung",
+    standardcategory: "vertiefung",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -433,7 +433,7 @@ window.CSE_VertiefungsgebieteModules = [
     // PFLICHTFELDER
     name: "Numerical Modelling for Applied Geophysics",
     kp: 4,
-    kategorie: "vertiefung",
+    standardcategory: "vertiefung",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -445,7 +445,7 @@ window.CSE_VertiefungsgebieteModules = [
     // PFLICHTFELDER
     name: "Tomographic Imaging",
     kp: 3,
-    kategorie: "vertiefung",
+    standardcategory: "vertiefung",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -457,7 +457,7 @@ window.CSE_VertiefungsgebieteModules = [
     // PFLICHTFELDER
     name: "Seismology of the Spherical Earth",
     kp: 3,
-    kategorie: "vertiefung",
+    standardcategory: "vertiefung",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -469,7 +469,7 @@ window.CSE_VertiefungsgebieteModules = [
     // PFLICHTFELDER
     name: "Inverse Theory I+II",
     kp: 6,
-    kategorie: "vertiefung",
+    standardcategory: "vertiefung",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -481,7 +481,7 @@ window.CSE_VertiefungsgebieteModules = [
     // PFLICHTFELDER
     name: "Numerical Modelling in Fortran",
     kp: 3,
-    kategorie: "vertiefung",
+    standardcategory: "vertiefung",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -495,7 +495,7 @@ window.CSE_VertiefungsgebieteModules = [
     // PFLICHTFELDER
     name: "Computational Systems Biology",
     kp: 6,
-    kategorie: "vertiefung",
+    standardcategory: "vertiefung",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -507,7 +507,7 @@ window.CSE_VertiefungsgebieteModules = [
     // PFLICHTFELDER
     name: "Statistical Models in Computational Biology",
     kp: 6,
-    kategorie: "vertiefung",
+    standardcategory: "vertiefung",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -519,7 +519,7 @@ window.CSE_VertiefungsgebieteModules = [
     // PFLICHTFELDER
     name: "Spatio-Temporal Modelling in Biology",
     kp: 4,
-    kategorie: "vertiefung",
+    standardcategory: "vertiefung",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -531,7 +531,7 @@ window.CSE_VertiefungsgebieteModules = [
     // PFLICHTFELDER
     name: "Introduction to Neuroinformatics",
     kp: 6,
-    kategorie: "vertiefung",
+    standardcategory: "vertiefung",
     // KONTEXT
     jahr: 3,
     semester: 0,

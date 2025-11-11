@@ -11,7 +11,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Technische Mechanik",
     kp: 4,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 1,
     semester: 1,
@@ -22,7 +22,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Netzwerke und Schaltungen I",
     kp: 4,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 1,
     semester: 1,
@@ -33,7 +33,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Digitaltechnik",
     kp: 4,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 1,
     semester: 1,
@@ -42,7 +42,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Digitaltechnik Praktikum",
     kp: 1,
-    kategorie: "Obligatorische Praktikum",
+    standardcategory: "Obligatorische Praktikum",
     // KONTEXT
     jahr: 1,
     semester: 1,
@@ -51,7 +51,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Vorkurs Informatik",
     kp: 1,
-    kategorie: "Obligatorische Praktikum",
+    standardcategory: "Obligatorische Praktikum",
     // KONTEXT
     jahr: 1,
     semester: 1,
@@ -62,7 +62,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Analysis 1",
     kp: 8,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 1,
     semester: 1,
@@ -71,7 +71,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Lineare Algebra",
     kp: 5,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 1,
     semester: 1,
@@ -87,7 +87,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Physik I",
     kp: 4,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 1,
     semester: 2,
@@ -98,7 +98,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Netzwerke und Schaltungen II",
     kp: 8,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 1,
     semester: 2,
@@ -107,7 +107,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Netzwerke und Schaltungen Praktikum",
     kp: 1,
-    kategorie: "Obligatorische Praktikum",
+    standardcategory: "Obligatorische Praktikum",
     // KONTEXT
     jahr: 1,
     semester: 2,
@@ -118,7 +118,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Informatik I",
     kp: 4,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 1,
     semester: 2,
@@ -129,7 +129,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Analysis 2",
     kp: 8,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 1,
     semester: 2,
@@ -138,7 +138,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Mathematische Methoden",
     kp: 4,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 1,
     semester: 2,
@@ -154,7 +154,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Physik II",
     kp: 8,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 2,
     semester: 1,
@@ -165,7 +165,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Signal- und Systemtheorie I",
     kp: 4,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 2,
     semester: 1,
@@ -174,7 +174,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Halbleiter-Schaltungstechnik",
     kp: 4,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 2,
     semester: 1,
@@ -183,7 +183,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Halbleiter-Schaltungstechnik Praktikum",
     kp: 1,
-    kategorie: "Obligatorische Praktikum",
+    standardcategory: "Obligatorische Praktikum",
     // KONTEXT
     jahr: 2,
     semester: 1,
@@ -194,7 +194,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Informatik II",
     kp: 4,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 2,
     semester: 1,
@@ -205,7 +205,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Analysis 3",
     kp: 4,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 2,
     semester: 1,
@@ -214,7 +214,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Diskrete Mathematik",
     kp: 4,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 2,
     semester: 1,
@@ -230,7 +230,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Elektromagnetische Felder und Wellen",
     kp: 4,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 2,
     semester: 2,
@@ -241,7 +241,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Signal- und Systemtheorie II",
     kp: 4,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 2,
     semester: 2,
@@ -250,7 +250,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Halbleiterelemente",
     kp: 4,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 2,
     semester: 2,
@@ -261,7 +261,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Technische Informatik",
     kp: 4,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 2,
     semester: 2,
@@ -272,7 +272,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Numerische Methoden",
     kp: 4,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 2,
     semester: 2,
@@ -281,7 +281,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Wahrscheinlichkeitstheorie und Statistik",
     kp: 4,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 2,
     semester: 2,
@@ -295,7 +295,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Kernfächer nach Schwerpunkt",
     kp: 0,
-    kategorie: "Kernfächer nach Schwerpunkt",
+    standardcategory: "Kernfächer nach Schwerpunkt",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -306,7 +306,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Weitere Wahl-Grundlagenfächer",
     kp: 0,
-    kategorie: "Weitere Wahl-Grundlagenfächer",
+    standardcategory: "Weitere Wahl-Grundlagenfächer",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -317,7 +317,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Wahl Praktika-Projekte-Seminare",
     kp: 0,
-    kategorie: "Wahl Praktika-Projekte-Seminare",
+    standardcategory: "Wahl Praktika-Projekte-Seminare",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -329,7 +329,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Bachelorarbeit",
     kp: 12,
-    kategorie: "Wissenschaftliche Arbeit",
+    standardcategory: "Wissenschaftliche Arbeit",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -338,7 +338,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Science in Perspective",
     kp: 6,
-    kategorie: "Wissenschaftliche Arbeit",
+    standardcategory: "Wissenschaftliche Arbeit",
     // KONTEXT
     jahr: 3,
     semester: 0,

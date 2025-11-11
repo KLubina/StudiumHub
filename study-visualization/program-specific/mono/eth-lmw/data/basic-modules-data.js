@@ -7,7 +7,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Ökonomie",
     kp: 3,
-    kategorie: "Basisprüfung",
+    standardcategory: "Basisprüfung",
     // KONTEXT
     jahr: 1,
     semester: 1,
@@ -18,7 +18,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Mathematik I: Analysis I und Lineare Algebra",
     kp: 6,
-    kategorie: "Basisprüfung",
+    standardcategory: "Basisprüfung",
     // KONTEXT
     jahr: 1,
     semester: 1,
@@ -29,7 +29,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Mathematics IV: Statistics",
     kp: 4,
-    kategorie: "Basisprüfung",
+    standardcategory: "Basisprüfung",
     // KONTEXT
     jahr: 1,
     semester: 1,
@@ -40,7 +40,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Welternährungssystem",
     kp: 4,
-    kategorie: "Basisprüfung",
+    standardcategory: "Basisprüfung",
     // KONTEXT
     jahr: 1,
     semester: 1,
@@ -51,7 +51,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Chemie I",
     kp: 4,
-    kategorie: "Basisprüfung",
+    standardcategory: "Basisprüfung",
     // KONTEXT
     jahr: 1,
     semester: 1,
@@ -62,7 +62,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Allgemeine Biologie I",
     kp: 3,
-    kategorie: "Basisprüfung",
+    standardcategory: "Basisprüfung",
     // KONTEXT
     jahr: 1,
     semester: 1,
@@ -74,7 +74,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Einsatz von Informatikmitteln",
     kp: 2,
-    kategorie: "Zusatzfach Basisjahr",
+    standardcategory: "Zusatzfach Basisjahr",
     // KONTEXT
     jahr: 1,
     semester: 1,
@@ -85,7 +85,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Grundlagen der Mikroskopie und Pflanzenbiologie",
     kp: 1,
-    kategorie: "Zusatzfach Basisjahr",
+    standardcategory: "Zusatzfach Basisjahr",
     // KONTEXT
     jahr: 1,
     semester: 1,
@@ -100,7 +100,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Mathematik II: Analysis II",
     kp: 7,
-    kategorie: "Basisprüfung",
+    standardcategory: "Basisprüfung",
     // KONTEXT
     jahr: 1,
     semester: 2,
@@ -111,7 +111,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Physik I",
     kp: 5,
-    kategorie: "Basisprüfung",
+    standardcategory: "Basisprüfung",
     // KONTEXT
     jahr: 1,
     semester: 2,
@@ -122,7 +122,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Chemie II",
     kp: 5,
-    kategorie: "Basisprüfung",
+    standardcategory: "Basisprüfung",
     // KONTEXT
     jahr: 1,
     semester: 2,
@@ -133,7 +133,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Allgemeine Biologie II",
     kp: 4,
-    kategorie: "Basisprüfung",
+    standardcategory: "Basisprüfung",
     // KONTEXT
     jahr: 1,
     semester: 2,
@@ -144,7 +144,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Grundlagen in Lebensmittelwissenschaften",
     kp: 3,
-    kategorie: "Basisprüfung",
+    standardcategory: "Basisprüfung",
     // KONTEXT
     jahr: 1,
     semester: 2,
@@ -155,7 +155,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Kulturpflanzen im World Food System",
     kp: 2,
-    kategorie: "Basisprüfung",
+    standardcategory: "Basisprüfung",
     // KONTEXT
     jahr: 1,
     semester: 2,
@@ -166,7 +166,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Nutztierwissenschaften im World Food System",
     kp: 2,
-    kategorie: "Basisprüfung",
+    standardcategory: "Basisprüfung",
     // KONTEXT
     jahr: 1,
     semester: 2,
@@ -177,7 +177,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Grundzüge des Rechts",
     kp: 2,
-    kategorie: "Basisprüfung",
+    standardcategory: "Basisprüfung",
     // KONTEXT
     jahr: 1,
     semester: 2,
@@ -189,7 +189,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Praktikum Chemie",
     kp: 3,
-    kategorie: "Zusatzfach Basisjahr",
+    standardcategory: "Zusatzfach Basisjahr",
     // KONTEXT
     jahr: 1,
     semester: 2,
@@ -204,7 +204,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Statistik II",
     kp: 3,
-    kategorie: "Obligatorisches Fach",
+    standardcategory: "Obligatorisches Fach",
     // KONTEXT
     jahr: 2,
     semester: 1,
@@ -215,7 +215,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Physik II",
     kp: 5,
-    kategorie: "Obligatorisches Fach",
+    standardcategory: "Obligatorisches Fach",
     // KONTEXT
     jahr: 2,
     semester: 1,
@@ -226,7 +226,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Organic Chemistry",
     kp: 2,
-    kategorie: "Obligatorisches Fach",
+    standardcategory: "Obligatorisches Fach",
     // KONTEXT
     jahr: 2,
     semester: 1,
@@ -237,7 +237,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Biochemie und Molekulare Biologie",
     kp: 4,
-    kategorie: "Obligatorisches Fach",
+    standardcategory: "Obligatorisches Fach",
     // KONTEXT
     jahr: 2,
     semester: 1,
@@ -248,7 +248,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Mikrobiologie",
     kp: 2,
-    kategorie: "Obligatorisches Fach",
+    standardcategory: "Obligatorisches Fach",
     // KONTEXT
     jahr: 2,
     semester: 1,
@@ -259,7 +259,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Physiology",
     kp: 3,
-    kategorie: "Obligatorisches Fach",
+    standardcategory: "Obligatorisches Fach",
     // KONTEXT
     jahr: 2,
     semester: 1,
@@ -270,7 +270,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Ausgewählte Kapitel der Physikalischen Chemie",
     kp: 2,
-    kategorie: "Obligatorisches Fach",
+    standardcategory: "Obligatorisches Fach",
     // KONTEXT
     jahr: 2,
     semester: 1,
@@ -281,7 +281,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Praktikum Physik für LMW",
     kp: 2,
-    kategorie: "Weitere Fächer",
+    standardcategory: "Weitere Fächer",
     // KONTEXT
     jahr: 2,
     semester: 1,
@@ -292,7 +292,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Praktikum Mikrobiologie",
     kp: 2,
-    kategorie: "Weitere Fächer",
+    standardcategory: "Weitere Fächer",
     // KONTEXT
     jahr: 2,
     semester: 1,
@@ -303,7 +303,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Lebensmittelchemie I",
     kp: 3,
-    kategorie: "Kernfach",
+    standardcategory: "Kernfach",
     // KONTEXT
     jahr: 2,
     semester: 1,
@@ -314,7 +314,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Introduction to Nutritional Science",
     kp: 3,
-    kategorie: "Kernfach",
+    standardcategory: "Kernfach",
     // KONTEXT
     jahr: 2,
     semester: 1,
@@ -329,7 +329,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Agrarökonomie im World Food System",
     kp: 2,
-    kategorie: "Grundlagenfach II",
+    standardcategory: "Grundlagenfach II",
     // KONTEXT
     jahr: 2,
     semester: 2,
@@ -340,7 +340,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Physiology and Anatomy II",
     kp: 3,
-    kategorie: "Grundlagenfach II",
+    standardcategory: "Grundlagenfach II",
     // KONTEXT
     jahr: 2,
     semester: 2,
@@ -351,7 +351,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Molecular Biology",
     kp: 2,
-    kategorie: "Grundlagenfach II",
+    standardcategory: "Grundlagenfach II",
     // KONTEXT
     jahr: 2,
     semester: 2,
@@ -362,7 +362,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Lebensmittelanalytik I",
     kp: 3,
-    kategorie: "Fachgrundlage",
+    standardcategory: "Fachgrundlage",
     // KONTEXT
     jahr: 2,
     semester: 2,
@@ -373,7 +373,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Lebensmittel-Technologie",
     kp: 3,
-    kategorie: "Fachgrundlage",
+    standardcategory: "Fachgrundlage",
     // KONTEXT
     jahr: 2,
     semester: 2,
@@ -384,7 +384,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Lebensmittel-Verfahrenstechnik I",
     kp: 4,
-    kategorie: "Fachgrundlage",
+    standardcategory: "Fachgrundlage",
     // KONTEXT
     jahr: 2,
     semester: 2,
@@ -395,7 +395,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Lebensmittelchemie-Praktikum",
     kp: 3,
-    kategorie: "Laborpraktikum",
+    standardcategory: "Laborpraktikum",
     // KONTEXT
     jahr: 2,
     semester: 2,
@@ -406,7 +406,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Exkursionen I",
     kp: 1,
-    kategorie: "Exkursionen",
+    standardcategory: "Exkursionen",
     // KONTEXT
     jahr: 2,
     semester: 2,
@@ -421,7 +421,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Lebensmittel-Mikrobiologie I",
     kp: 3,
-    kategorie: "Fachgrundlage",
+    standardcategory: "Fachgrundlage",
     // KONTEXT
     jahr: 3,
     semester: 1,
@@ -432,7 +432,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Food Biotechnology",
     kp: 3,
-    kategorie: "Fachgrundlage",
+    standardcategory: "Fachgrundlage",
     // KONTEXT
     jahr: 3,
     semester: 1,
@@ -443,7 +443,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Wissenschaftliches Arbeiten in den Lebensmittelwissenschaften",
     kp: 3,
-    kategorie: "Lebensmittelwissenschaftliches Fach",
+    standardcategory: "Lebensmittelwissenschaftliches Fach",
     // KONTEXT
     jahr: 3,
     semester: 1,
@@ -454,7 +454,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Lebensmittelchemie II",
     kp: 3,
-    kategorie: "Lebensmittelwissenschaftliches Fach",
+    standardcategory: "Lebensmittelwissenschaftliches Fach",
     // KONTEXT
     jahr: 3,
     semester: 1,
@@ -465,7 +465,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Lebensmittelanalytik II",
     kp: 3,
-    kategorie: "Lebensmittelwissenschaftliches Fach",
+    standardcategory: "Lebensmittelwissenschaftliches Fach",
     // KONTEXT
     jahr: 3,
     semester: 1,
@@ -476,7 +476,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Food Materials Science",
     kp: 4,
-    kategorie: "Lebensmittelwissenschaftliches Fach",
+    standardcategory: "Lebensmittelwissenschaftliches Fach",
     // KONTEXT
     jahr: 3,
     semester: 1,
@@ -487,7 +487,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Lebensmittel-Verfahrenstechnik II",
     kp: 3,
-    kategorie: "Lebensmittelwissenschaftliches Fach",
+    standardcategory: "Lebensmittelwissenschaftliches Fach",
     // KONTEXT
     jahr: 3,
     semester: 1,
@@ -498,7 +498,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Experimentelle Lebensmittel-Mikrobiologie",
     kp: 3,
-    kategorie: "Laborpraktikum",
+    standardcategory: "Laborpraktikum",
     // KONTEXT
     jahr: 3,
     semester: 1,
@@ -509,7 +509,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Lebensmittel-Technologiepraktikum",
     kp: 2,
-    kategorie: "Laborpraktikum",
+    standardcategory: "Laborpraktikum",
     // KONTEXT
     jahr: 3,
     semester: 1,
@@ -524,7 +524,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Lebensmittel-Mikrobiologie II",
     kp: 3,
-    kategorie: "Lebensmittelwissenschaftliches Fach",
+    standardcategory: "Lebensmittelwissenschaftliches Fach",
     // KONTEXT
     jahr: 3,
     semester: 2,
@@ -535,7 +535,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Food and Beverage Fermentation",
     kp: 5,
-    kategorie: "Lebensmittelwissenschaftliches Fach",
+    standardcategory: "Lebensmittelwissenschaftliches Fach",
     // KONTEXT
     jahr: 3,
     semester: 2,
@@ -546,7 +546,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Advanced Topics in Nutritional Science",
     kp: 3,
-    kategorie: "Lebensmittelwissenschaftliches Fach",
+    standardcategory: "Lebensmittelwissenschaftliches Fach",
     // KONTEXT
     jahr: 3,
     semester: 2,
@@ -557,7 +557,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Introduction to Toxicology",
     kp: 3,
-    kategorie: "Lebensmittelwissenschaftliches Fach",
+    standardcategory: "Lebensmittelwissenschaftliches Fach",
     // KONTEXT
     jahr: 3,
     semester: 2,
@@ -568,7 +568,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Lebensmittel-Sensorik",
     kp: 2,
-    kategorie: "Lebensmittelwissenschaftliches Fach",
+    standardcategory: "Lebensmittelwissenschaftliches Fach",
     // KONTEXT
     jahr: 3,
     semester: 2,
@@ -579,7 +579,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Consumer Behaviour II",
     kp: 2,
-    kategorie: "Lebensmittelwissenschaftliches Fach",
+    standardcategory: "Lebensmittelwissenschaftliches Fach",
     // KONTEXT
     jahr: 3,
     semester: 2,
@@ -590,7 +590,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Lebensmittel-Verfahrenstechnik III",
     kp: 3,
-    kategorie: "Lebensmittelwissenschaftliches Fach",
+    standardcategory: "Lebensmittelwissenschaftliches Fach",
     // KONTEXT
     jahr: 3,
     semester: 2,
@@ -601,7 +601,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Lebensmittel-Verfahrenstechnikpraktikum",
     kp: 3,
-    kategorie: "Laborpraktikum",
+    standardcategory: "Laborpraktikum",
     // KONTEXT
     jahr: 3,
     semester: 2,
@@ -612,7 +612,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Food Biotechnology Laboratory Course",
     kp: 3,
-    kategorie: "Laborpraktikum",
+    standardcategory: "Laborpraktikum",
     // KONTEXT
     jahr: 3,
     semester: 2,
@@ -623,7 +623,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Laborpraktikum Toxikologie und Ernährung",
     kp: 3,
-    kategorie: "Laborpraktikum",
+    standardcategory: "Laborpraktikum",
     // KONTEXT
     jahr: 3,
     semester: 2,
@@ -634,7 +634,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Exkursionen II",
     kp: 1,
-    kategorie: "Exkursionen",
+    standardcategory: "Exkursionen",
     // KONTEXT
     jahr: 3,
     semester: 2,
@@ -649,7 +649,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Wissenschaft im Kontext",
     kp: 6,
-    kategorie: "Wissenschaft im Kontext",
+    standardcategory: "Wissenschaft im Kontext",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -664,7 +664,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Wahlfächer",
     kp: 0,
-    kategorie: "Wahlfächer",
+    standardcategory: "Wahlfächer",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -679,7 +679,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Bachelor-Arbeit",
     kp: 15,
-    kategorie: "Bachelor-Arbeit",
+    standardcategory: "Bachelor-Arbeit",
     // KONTEXT
     jahr: 3,
     semester: 2,

@@ -7,7 +7,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Analysis I",
     kp: 8,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 1,
     semester: 1,
@@ -16,7 +16,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Lineare Algebra I",
     kp: 3,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 1,
     semester: 1,
@@ -25,7 +25,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Chemie I",
     kp: 4,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 1,
     semester: 1,
@@ -34,7 +34,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Physik I",
     kp: 4,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 1,
     semester: 1,
@@ -43,7 +43,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Materialwissenschaftliche Grundlagen I",
     kp: 2,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 1,
     semester: 1,
@@ -52,7 +52,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Programmieren I",
     kp: 2,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 1,
     semester: 1,
@@ -61,7 +61,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Projekte & Praktika I",
     kp: 7,
-    kategorie: "Obligatorische Praktikum",
+    standardcategory: "Obligatorische Praktikum",
     // KONTEXT
     jahr: 1,
     semester: 1,
@@ -74,7 +74,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Analysis II",
     kp: 8,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 1,
     semester: 2,
@@ -83,7 +83,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Lineare Algebra II",
     kp: 3,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 1,
     semester: 2,
@@ -92,7 +92,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Chemie II",
     kp: 4,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 1,
     semester: 2,
@@ -101,7 +101,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Physik II",
     kp: 4,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 1,
     semester: 2,
@@ -110,7 +110,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Materialwissenschaftliche Grundlagen II",
     kp: 2,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 1,
     semester: 2,
@@ -119,7 +119,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Programmieren II",
     kp: 2,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 1,
     semester: 2,
@@ -128,7 +128,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Projekte & Praktika II",
     kp: 7,
-    kategorie: "Obligatorische Praktikum",
+    standardcategory: "Obligatorische Praktikum",
     // KONTEXT
     jahr: 1,
     semester: 2,
@@ -141,7 +141,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Analysis III",
     kp: 3,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 2,
     semester: 1,
@@ -150,7 +150,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Quantenmechanik & Festkörperphysik I",
     kp: 3,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 2,
     semester: 1,
@@ -159,7 +159,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Materialcharakterisierung I",
     kp: 3,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 2,
     semester: 1,
@@ -168,7 +168,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Materialsynthese I",
     kp: 4,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 2,
     semester: 1,
@@ -177,7 +177,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Statistische Thermodynamik",
     kp: 3,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 2,
     semester: 1,
@@ -186,7 +186,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Kristallographie",
     kp: 2,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 2,
     semester: 1,
@@ -195,7 +195,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Computational Thinking I",
     kp: 2,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 2,
     semester: 1,
@@ -204,7 +204,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Projekte & Praktika III",
     kp: 8,
-    kategorie: "Obligatorische Praktikum",
+    standardcategory: "Obligatorische Praktikum",
     // KONTEXT
     jahr: 2,
     semester: 1,
@@ -217,7 +217,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Thermodynamik & Phasenumwandlung",
     kp: 6,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 2,
     semester: 2,
@@ -226,7 +226,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Mechanik",
     kp: 5,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 2,
     semester: 2,
@@ -235,7 +235,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Materialcharakterisierung II",
     kp: 4,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 2,
     semester: 2,
@@ -244,7 +244,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Materialsynthese II",
     kp: 4,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 2,
     semester: 2,
@@ -253,7 +253,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Quantenmechanik & Festkörperphysik II",
     kp: 3,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 2,
     semester: 2,
@@ -262,7 +262,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Finite Elemente",
     kp: 1,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 2,
     semester: 2,
@@ -271,7 +271,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Projekte & Praktika IV",
     kp: 8,
-    kategorie: "Obligatorische Praktikum",
+    standardcategory: "Obligatorische Praktikum",
     // KONTEXT
     jahr: 2,
     semester: 2,
@@ -284,7 +284,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Optische, Elektronische & Magnetische Eigenschaften",
     kp: 7,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 3,
     semester: 1,
@@ -293,7 +293,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Mechanische Eigenschaften",
     kp: 7,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 3,
     semester: 1,
@@ -302,7 +302,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Thermische & Transporteigenschaften",
     kp: 4,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 3,
     semester: 1,
@@ -311,7 +311,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Computational Thinking II",
     kp: 3,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 3,
     semester: 1,
@@ -320,7 +320,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Schlussprojekt",
     kp: 6,
-    kategorie: "Wissenschaftliche Arbeit",
+    standardcategory: "Wissenschaftliche Arbeit",
     // KONTEXT
     jahr: 3,
     semester: 1,
@@ -333,7 +333,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Materialauswahl",
     kp: 8,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 3,
     semester: 2,
@@ -342,7 +342,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Materialverarbeitung",
     kp: 7,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 3,
     semester: 2,
@@ -351,7 +351,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "GESS: Wissenschaft im Kontext",
     kp: 4,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 3,
     semester: 2,
@@ -360,7 +360,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Simulationstechniken",
     kp: 3,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 3,
     semester: 2,
@@ -369,7 +369,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Bachelor-Arbeit",
     kp: 12,
-    kategorie: "Wissenschaftliche Arbeit",
+    standardcategory: "Wissenschaftliche Arbeit",
     // KONTEXT
     jahr: 3,
     semester: 2,

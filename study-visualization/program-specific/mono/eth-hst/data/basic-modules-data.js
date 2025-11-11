@@ -8,7 +8,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Molekulare Genetik und Zellbiologie",
     kp: 5,
-    kategorie: "Basisprüfungsblock 1",
+    standardcategory: "Basisprüfungsblock 1",
     // KONTEXT 
     jahr: 1,
     semester: 1,
@@ -17,7 +17,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Allgemeine Chemie",
     kp: 6,
-    kategorie: "Basisprüfungsblock 1",
+    standardcategory: "Basisprüfungsblock 1",
     // KONTEXT
     jahr: 1,
     semester: 1,
@@ -26,7 +26,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Grundlagen der Informatik",
     kp: 4,
-    kategorie: "Basisprüfungsblock 1",
+    standardcategory: "Basisprüfungsblock 1",
     // KONTEXT
     jahr: 1,
     semester: 1,
@@ -35,7 +35,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Einführung Gesundheitswissenschaften und Technologie I",
     kp: 4,
-    kategorie: "Basisprüfungsblock 1",
+    standardcategory: "Basisprüfungsblock 1",
     // KONTEXT
     jahr: 1,
     semester: 1,
@@ -48,7 +48,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Mathematik I",
     kp: 6,
-    kategorie: "Basisprüfungsblock 2",
+    standardcategory: "Basisprüfungsblock 2",
     // KONTEXT
     jahr: 1,
     semester: 1,
@@ -57,7 +57,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Organische Chemie I",
     kp: 4,
-    kategorie: "Basisprüfungsblock 2",
+    standardcategory: "Basisprüfungsblock 2",
     // KONTEXT
     jahr: 1,
     semester: 1,
@@ -70,7 +70,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Infektion",
     kp: 2,
-    kategorie: "Basisprüfungsblock 2",
+    standardcategory: "Basisprüfungsblock 2",
     // KONTEXT
     jahr: 1,
     semester: 2,
@@ -79,7 +79,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Biochemie",
     kp: 3,
-    kategorie: "Basisprüfungsblock 2",
+    standardcategory: "Basisprüfungsblock 2",
     // KONTEXT
     jahr: 1,
     semester: 2,
@@ -88,7 +88,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Organische Chemie II",
     kp: 5,
-    kategorie: "Basisprüfungsblock 2",
+    standardcategory: "Basisprüfungsblock 2",
     // KONTEXT
     jahr: 1,
     semester: 2,
@@ -97,7 +97,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Biomechanik I",
     kp: 5,
-    kategorie: "Basisprüfungsblock 2",
+    standardcategory: "Basisprüfungsblock 2",
     // KONTEXT
     jahr: 1,
     semester: 2,
@@ -106,7 +106,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Mathematik II",
     kp: 5,
-    kategorie: "Basisprüfungsblock 2",
+    standardcategory: "Basisprüfungsblock 2",
     // KONTEXT
     jahr: 1,
     semester: 2,
@@ -115,7 +115,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Statistik I",
     kp: 3,
-    kategorie: "Basisprüfungsblock 2",
+    standardcategory: "Basisprüfungsblock 2",
     // KONTEXT
     jahr: 1,
     semester: 2,
@@ -124,7 +124,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Einführung Gesundheitswissenschaften und Technologie II",
     kp: 2,
-    kategorie: "Basisprüfungsblock 2",
+    standardcategory: "Basisprüfungsblock 2",
     // KONTEXT
     jahr: 1,
     semester: 2,
@@ -134,7 +134,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Praktikum Chemie",
     kp: 2,
-    kategorie: "Praktikum des Basisjahres",
+    standardcategory: "Praktikum des Basisjahres",
     // KONTEXT
     jahr: 1,
     semester: 2,
@@ -143,7 +143,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Praktikum Gesundheitswissenschaften und Technologie",
     kp: 2,
-    kategorie: "Praktikum des Basisjahres",
+    standardcategory: "Praktikum des Basisjahres",
     // KONTEXT
     jahr: 1,
     semester: 2,
@@ -156,7 +156,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Humanphysiologie I",
     kp: 5,
-    kategorie: "Kernfächer Block A",
+    standardcategory: "Kernfächer Block A",
     // KONTEXT
     jahr: 2,
     semester: 1,
@@ -165,7 +165,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Mathematik III",
     kp: 5,
-    kategorie: "Kernfächer Block A",
+    standardcategory: "Kernfächer Block A",
     // KONTEXT
     jahr: 2,
     semester: 1,
@@ -174,7 +174,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Statistik II",
     kp: 3,
-    kategorie: "Kernfächer Block A",
+    standardcategory: "Kernfächer Block A",
     // KONTEXT
     jahr: 2,
     semester: 1,
@@ -187,7 +187,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Physik I",
     kp: 4,
-    kategorie: "Kernfächer Block B",
+    standardcategory: "Kernfächer Block B",
     // KONTEXT
     jahr: 2,
     semester: 1,
@@ -196,7 +196,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Molekular- und Zellbiologie in Gesundheit und Krankheit",
     kp: 6,
-    kategorie: "Kernfächer Block B",
+    standardcategory: "Kernfächer Block B",
     // KONTEXT
     jahr: 2,
     semester: 2,
@@ -205,7 +205,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Histologie",
     kp: 2,
-    kategorie: "Kernfächer Block B",
+    standardcategory: "Kernfächer Block B",
     // KONTEXT
     jahr: 2,
     semester: 2,
@@ -214,7 +214,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Physik II",
     kp: 4,
-    kategorie: "Kernfächer Block B",
+    standardcategory: "Kernfächer Block B",
     // KONTEXT
     jahr: 2,
     semester: 2,
@@ -227,7 +227,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Humanphysiologie II",
     kp: 5,
-    kategorie: "Kernfächer Block C",
+    standardcategory: "Kernfächer Block C",
     // KONTEXT
     jahr: 2,
     semester: 2,
@@ -236,7 +236,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Biomechanik II",
     kp: 4,
-    kategorie: "Kernfächer Block C",
+    standardcategory: "Kernfächer Block C",
     // KONTEXT
     jahr: 2,
     semester: 2,
@@ -245,7 +245,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Biomedizinische Grenzflächen",
     kp: 4,
-    kategorie: "Kernfächer Block C",
+    standardcategory: "Kernfächer Block C",
     // KONTEXT
     jahr: 2,
     semester: 2,
@@ -258,7 +258,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Laboratory Course in Medical Technology",
     kp: 2,
-    kategorie: "Einzelfächer und Praktika",
+    standardcategory: "Einzelfächer und Praktika",
     // KONTEXT
     jahr: 2,
     semester: 1,
@@ -267,7 +267,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Produktentwicklung in der Medizintechnik",
     kp: 4,
-    kategorie: "Einzelfächer und Praktika",
+    standardcategory: "Einzelfächer und Praktika",
     // KONTEXT
     jahr: 2,
     semester: 1,
@@ -276,7 +276,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Praktikum Physiologie",
     kp: 3,
-    kategorie: "Einzelfächer und Praktika",
+    standardcategory: "Einzelfächer und Praktika",
     // KONTEXT
     jahr: 2,
     semester: 2,
@@ -289,7 +289,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Schwerpunktfächer",
     kp: 0,
-    kategorie: "Schwerpunktfächer",
+    standardcategory: "Schwerpunktfächer",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -300,7 +300,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Wahlfächer",
     kp: 0,
-    kategorie: "Wahlfächer",
+    standardcategory: "Wahlfächer",
     // KONTEXT
     jahr: 3,
     semester: 0,
@@ -315,7 +315,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Bachelorarbeit",
     kp: 15,
-    kategorie: "Wissenschaftliche Arbeit",
+    standardcategory: "Wissenschaftliche Arbeit",
     // KONTEXT
     jahr: 3,
     semester: 0,

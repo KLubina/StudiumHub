@@ -6,44 +6,44 @@ window.GeschichtePflichtmoduleData = [
   {
     name: "Bachelorarbeit",
     kp: 15,
-    kategorie: "Pflichtmodule",
+    standardcategory: "Pflichtmodule",
     semester: 1,
     jahr: 3
   },
   {
     name: "Basismodul I",
     kp: 9,
-    kategorie: "Pflichtmodule",
+    standardcategory: "Pflichtmodule",
     semester: 1
   },
   {
     name: "Basismodul II",
     kp: 9,
-    kategorie: "Pflichtmodule",
+    standardcategory: "Pflichtmodule",
     semester: 1
   },
   {
     name: "Einführungsvorlesung Herbst",
     kp: 3,
-    kategorie: "Pflichtmodule",
+    standardcategory: "Pflichtmodule",
     semester: 1
   },
   {
     name: "Grundlagen Latein",
     kp: 6,
-    kategorie: "Pflichtmodule",
+    standardcategory: "Pflichtmodule",
     semester: 1
   },
   {
     name: "Methoden und Theorie",
     kp: 9,
-    kategorie: "Pflichtmodule",
+    standardcategory: "Pflichtmodule",
     semester: 1
   },
   {
     name: "Mündliche Prüfung",
     kp: 9,
-    kategorie: "Pflichtmodule",
+    standardcategory: "Pflichtmodule",
     semester: 1,
     jahr: 3
   },
@@ -51,44 +51,44 @@ window.GeschichtePflichtmoduleData = [
   {
     name: "Bachelorarbeit",
     kp: 15,
-    kategorie: "Pflichtmodule",
+    standardcategory: "Pflichtmodule",
     semester: 2,
     jahr: 3
   },
   {
     name: "Basismodul I",
     kp: 9,
-    kategorie: "Pflichtmodule",
+    standardcategory: "Pflichtmodule",
     semester: 2
   },
   {
     name: "Basismodul II",
     kp: 9,
-    kategorie: "Pflichtmodule",
+    standardcategory: "Pflichtmodule",
     semester: 2
   },
   {
     name: "Einführungsvorlesung Frühling",
     kp: 3,
-    kategorie: "Pflichtmodule",
+    standardcategory: "Pflichtmodule",
     semester: 2
   },
   {
     name: "Grundlagen Latein",
     kp: 6,
-    kategorie: "Pflichtmodule",
+    standardcategory: "Pflichtmodule",
     semester: 2
   },
   {
     name: "Methoden und Theorie",
     kp: 9,
-    kategorie: "Pflichtmodule",
+    standardcategory: "Pflichtmodule",
     semester: 2
   },
   {
     name: "Mündliche Prüfung",
     kp: 9,
-    kategorie: "Pflichtmodule",
+    standardcategory: "Pflichtmodule",
     semester: 2,
     jahr: 3
   }

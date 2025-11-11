@@ -7,7 +7,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Physik I",
     kp: 7,
-    kategorie: "Basisprüfungsblock 1",
+    standardcategory: "Basisprüfungsblock 1",
     // KONTEXT
     jahr: 1,
     semester: 1,
@@ -16,7 +16,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Analysis I",
     kp: 10,
-    kategorie: "Basisprüfungsblock 1",
+    standardcategory: "Basisprüfungsblock 1",
     // KONTEXT
     jahr: 1,
     semester: 1,
@@ -25,7 +25,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Informatik",
     kp: 5,
-    kategorie: "Basisprüfungsblock 1",
+    standardcategory: "Basisprüfungsblock 1",
     // KONTEXT
     jahr: 1,
     semester: 1,
@@ -34,7 +34,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Lineare Algebra I",
     kp: 7,
-    kategorie: "Basisprüfungsblock 2",
+    standardcategory: "Basisprüfungsblock 2",
     // KONTEXT
     jahr: 1,
     semester: 1,
@@ -47,7 +47,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Lineare Algebra II",
     kp: 7,
-    kategorie: "Basisprüfungsblock 2",
+    standardcategory: "Basisprüfungsblock 2",
     // KONTEXT
     jahr: 1,
     semester: 2,
@@ -56,7 +56,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Analysis II",
     kp: 10,
-    kategorie: "Basisprüfungsblock 2",
+    standardcategory: "Basisprüfungsblock 2",
     // KONTEXT
     jahr: 1,
     semester: 2,
@@ -65,7 +65,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Physik II",
     kp: 7,
-    kategorie: "Basisprüfungsblock 2",
+    standardcategory: "Basisprüfungsblock 2",
     // KONTEXT
     jahr: 1,
     semester: 2,
@@ -74,7 +74,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Datenanalyse",
     kp: 5,
-    kategorie: "Basisprüfungsblock 2",
+    standardcategory: "Basisprüfungsblock 2",
     // KONTEXT
     jahr: 1,
     semester: 2,
@@ -87,7 +87,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Allgemeine Mechanik",
     kp: 6,
-    kategorie: "Prüfungsblock I",
+    standardcategory: "Prüfungsblock I",
     // KONTEXT
     jahr: 2,
     semester: 1,
@@ -96,7 +96,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Physikpraktikum 1",
     kp: 5,
-    kategorie: "Praktika",
+    standardcategory: "Praktika",
     // KONTEXT
     jahr: 2,
     semester: 1,
@@ -105,7 +105,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Funktionentheorie",
     kp: 5,
-    kategorie: "Prüfungsblock I",
+    standardcategory: "Prüfungsblock I",
     // KONTEXT
     jahr: 2,
     semester: 1,
@@ -114,7 +114,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Mathematische Methoden der Physik I",
     kp: 6,
-    kategorie: "Prüfungsblock IIa",
+    standardcategory: "Prüfungsblock IIa",
     // KONTEXT
     jahr: 2,
     semester: 1,
@@ -123,7 +123,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Physik III",
     kp: 7,
-    kategorie: "Prüfungsblock I",
+    standardcategory: "Prüfungsblock I",
     // KONTEXT
     jahr: 2,
     semester: 1,
@@ -136,7 +136,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Elektrodynamik",
     kp: 8,
-    kategorie: "Prüfungsblock IIa",
+    standardcategory: "Prüfungsblock IIa",
     // KONTEXT
     jahr: 2,
     semester: 2,
@@ -145,7 +145,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Theorie der Wärme",
     kp: 6,
-    kategorie: "Prüfungsblock IIb",
+    standardcategory: "Prüfungsblock IIb",
     // KONTEXT
     jahr: 2,
     semester: 2,
@@ -154,7 +154,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Numerische Methoden",
     kp: 5,
-    kategorie: "Prüfungsblock IIb",
+    standardcategory: "Prüfungsblock IIb",
     // KONTEXT
     jahr: 2,
     semester: 2,
@@ -163,7 +163,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Physikpraktikum 2",
     kp: 6,
-    kategorie: "Praktika",
+    standardcategory: "Praktika",
     // KONTEXT
     jahr: 2,
     semester: 2,
@@ -172,7 +172,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "GESS: Wissenschaft im Kontext",
     kp: 2,
-    kategorie: "Wissenschaft im Kontext",
+    standardcategory: "Wissenschaft im Kontext",
     // KONTEXT
     jahr: 2,
     semester: 2,
@@ -181,7 +181,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Mathematische Methoden der Physik II",
     kp: 8,
-    kategorie: "Prüfungsblock IIa",
+    standardcategory: "Prüfungsblock IIa",
     // KONTEXT
     jahr: 2,
     semester: 2,
@@ -194,7 +194,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "GESS: Wissenschaft im Kontext",
     kp: 2,
-    kategorie: "Wissenschaft im Kontext",
+    standardcategory: "Wissenschaft im Kontext",
     // KONTEXT
     jahr: 3,
     semester: 1,
@@ -203,7 +203,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Experimentelle oder theoretische Arbeit",
     kp: 8,
-    kategorie: "Wissenschaftliche Arbeit",
+    standardcategory: "Wissenschaftliche Arbeit",
     // KONTEXT
     jahr: 3,
     semester: 1,
@@ -212,7 +212,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Kernfach I (experimentell)",
     kp: 8,
-    kategorie: "Kernfächer",
+    standardcategory: "Kernfächer",
     // KONTEXT
     jahr: 3,
     semester: 1,
@@ -221,7 +221,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Kernfach II (experimentell oder theoretisch)",
     kp: 8,
-    kategorie: "Kernfächer",
+    standardcategory: "Kernfächer",
     // KONTEXT
     jahr: 3,
     semester: 1,
@@ -230,7 +230,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Quantenmechanik I",
     kp: 8,
-    kategorie: "Obligatorische Fächer",
+    standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 3,
     semester: 1,
@@ -243,7 +243,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Kernfach III",
     kp: 8,
-    kategorie: "Kernfächer",
+    standardcategory: "Kernfächer",
     // KONTEXT
     jahr: 3,
     semester: 2,
@@ -252,7 +252,7 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Wahlfächer",
     kp: 20,
-    kategorie: "Wahlfächer",
+    standardcategory: "Wahlfächer",
     // KONTEXT
     jahr: 3,
     semester: 2,
