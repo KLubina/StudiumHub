@@ -14,23 +14,29 @@ window.StudiengangModules = [
     semester: 1,
   },
   {
+    // PFLICHTFELDER
     name: "Allgemeine Chemie",
     kp: 6,
     kategorie: "Basisprüfungsblock 1",
+    // KONTEXT
     jahr: 1,
     semester: 1,
   },
   {
+    // PFLICHTFELDER
     name: "Grundlagen der Informatik",
     kp: 4,
     kategorie: "Basisprüfungsblock 1",
+    // KONTEXT
     jahr: 1,
     semester: 1,
   },
   {
+    // PFLICHTFELDER
     name: "Einführung Gesundheitswissenschaften und Technologie I",
     kp: 4,
     kategorie: "Basisprüfungsblock 1",
+    // KONTEXT
     jahr: 1,
     semester: 1,
   },
@@ -39,16 +45,20 @@ window.StudiengangModules = [
   // #region 1. Semester - Basisprüfungsblock 2
   // ========== SEMESTER 1 - Basisprüfungsblock 1 ==========
   {
+    // PFLICHTFELDER
     name: "Mathematik I",
     kp: 6,
     kategorie: "Basisprüfungsblock 2",
+    // KONTEXT
     jahr: 1,
     semester: 1,
   },
   {
+    // PFLICHTFELDER
     name: "Organische Chemie I",
     kp: 4,
     kategorie: "Basisprüfungsblock 2",
+    // KONTEXT
     jahr: 1,
     semester: 1,
   },
@@ -57,66 +67,84 @@ window.StudiengangModules = [
   // #region 2. Semester - Basisprüfungsblock 2
   // ========== SEMESTER 2 - Basisprüfungsblock 2 ==========
   {
+    // PFLICHTFELDER
     name: "Infektion",
     kp: 2,
     kategorie: "Basisprüfungsblock 2",
+    // KONTEXT
     jahr: 1,
     semester: 2,
   },
   {
+    // PFLICHTFELDER
     name: "Biochemie",
     kp: 3,
     kategorie: "Basisprüfungsblock 2",
+    // KONTEXT
     jahr: 1,
     semester: 2,
   },
   {
+    // PFLICHTFELDER
     name: "Organische Chemie II",
     kp: 5,
     kategorie: "Basisprüfungsblock 2",
+    // KONTEXT
     jahr: 1,
     semester: 2,
   },
   {
+    // PFLICHTFELDER
     name: "Biomechanik I",
     kp: 5,
     kategorie: "Basisprüfungsblock 2",
+    // KONTEXT
     jahr: 1,
     semester: 2,
   },
   {
+    // PFLICHTFELDER
     name: "Mathematik II",
     kp: 5,
     kategorie: "Basisprüfungsblock 2",
+    // KONTEXT
     jahr: 1,
     semester: 2,
   },
   {
+    // PFLICHTFELDER
     name: "Statistik I",
     kp: 3,
     kategorie: "Basisprüfungsblock 2",
+    // KONTEXT
     jahr: 1,
     semester: 2,
   },
   {
+    // PFLICHTFELDER
     name: "Einführung Gesundheitswissenschaften und Technologie II",
     kp: 2,
     kategorie: "Basisprüfungsblock 2",
+    // KONTEXT
     jahr: 1,
     semester: 2,
   },
 
   {
+    // PFLICHTFELDER
     name: "Praktikum Chemie",
     kp: 2,
     kategorie: "Praktikum des Basisjahres",
+    // KONTEXT
     jahr: 1,
     semester: 2,
   },
   {
+    // PFLICHTFELDER
     name: "Praktikum Gesundheitswissenschaften und Technologie",
     kp: 2,
     kategorie: "Praktikum des Basisjahres",
+    // KONTEXT
     jahr: 1,
     semester: 2,
   },
@@ -125,23 +153,29 @@ window.StudiengangModules = [
   // #region 3. Semester - Kernfächer Block A
   // ========== SEMESTER 3 - Kernfächer Block A ==========
   {
+    // PFLICHTFELDER
     name: "Humanphysiologie I",
     kp: 5,
     kategorie: "Kernfächer Block A",
+    // KONTEXT
     jahr: 2,
     semester: 1,
   },
   {
+    // PFLICHTFELDER
     name: "Mathematik III",
     kp: 5,
     kategorie: "Kernfächer Block A",
+    // KONTEXT
     jahr: 2,
     semester: 1,
   },
   {
+    // PFLICHTFELDER
     name: "Statistik II",
     kp: 3,
     kategorie: "Kernfächer Block A",
+    // KONTEXT
     jahr: 2,
     semester: 1,
   },
@@ -150,30 +184,38 @@ window.StudiengangModules = [
   // #region 3. Semester - Kernfächer Block B
   // ========== SEMESTER 3 - Kernfächer Block B ==========
   {
+    // PFLICHTFELDER
     name: "Physik I",
     kp: 4,
     kategorie: "Kernfächer Block B",
+    // KONTEXT
     jahr: 2,
     semester: 1,
   },
   {
+    // PFLICHTFELDER
     name: "Molekular- und Zellbiologie in Gesundheit und Krankheit",
     kp: 6,
     kategorie: "Kernfächer Block B",
+    // KONTEXT
     jahr: 2,
     semester: 2,
   },
   {
+    // PFLICHTFELDER
     name: "Histologie",
     kp: 2,
     kategorie: "Kernfächer Block B",
+    // KONTEXT
     jahr: 2,
     semester: 2,
   },
   {
+    // PFLICHTFELDER
     name: "Physik II",
     kp: 4,
     kategorie: "Kernfächer Block B",
+    // KONTEXT
     jahr: 2,
     semester: 2,
   },
@@ -182,23 +224,29 @@ window.StudiengangModules = [
   // #region 4. Semester - Kernfächer Block C
   // ========== SEMESTER 4 - Kernfächer Block C ==========
   {
+    // PFLICHTFELDER
     name: "Humanphysiologie II",
     kp: 5,
     kategorie: "Kernfächer Block C",
+    // KONTEXT
     jahr: 2,
     semester: 2,
   },
   {
+    // PFLICHTFELDER
     name: "Biomechanik II",
     kp: 4,
     kategorie: "Kernfächer Block C",
+    // KONTEXT
     jahr: 2,
     semester: 2,
   },
   {
+    // PFLICHTFELDER
     name: "Biomedizinische Grenzflächen",
     kp: 4,
     kategorie: "Kernfächer Block C",
+    // KONTEXT
     jahr: 2,
     semester: 2,
   },
@@ -207,23 +255,29 @@ window.StudiengangModules = [
   // #region 3.-4. Semester - Einzelfächer und Praktika
   // Einzelfächer und Praktika
   {
+    // PFLICHTFELDER
     name: "Laboratory Course in Medical Technology",
     kp: 2,
     kategorie: "Einzelfächer und Praktika",
+    // KONTEXT
     jahr: 2,
     semester: 1,
   },
   {
+    // PFLICHTFELDER
     name: "Produktentwicklung in der Medizintechnik",
     kp: 4,
     kategorie: "Einzelfächer und Praktika",
+    // KONTEXT
     jahr: 2,
     semester: 1,
   },
   {
+    // PFLICHTFELDER
     name: "Praktikum Physiologie",
     kp: 3,
     kategorie: "Einzelfächer und Praktika",
+    // KONTEXT
     jahr: 2,
     semester: 2,
   },
@@ -232,19 +286,25 @@ window.StudiengangModules = [
   // #region 5.-6. Semester - Schwerpunkte & Wahlfächer (Platzhalter)
   // ========== SEMESTER 5-6 - Schwerpunkte & Wahlfächer (Platzhalter) ==========
   {
+    // PFLICHTFELDER
     name: "Schwerpunktfächer",
     kp: 0,
     kategorie: "Schwerpunktfächer",
+    // KONTEXT
     jahr: 3,
     semester: 0,
+    // STUDIENGANGSPEZIFISCH
     isPlaceholder: true,
   },
   {
+    // PFLICHTFELDER
     name: "Wahlfächer",
     kp: 0,
     kategorie: "Wahlfächer",
+    // KONTEXT
     jahr: 3,
     semester: 0,
+    // STUDIENGANGSPEZIFISCH
     isPlaceholder: true,
   },
   // #endregion 5.-6. Semester - Schwerpunkte & Wahlfächer (Platzhalter)
@@ -252,9 +312,11 @@ window.StudiengangModules = [
   // #region Bachelorarbeit
   // ========== Bachelorarbeit ==========
   {
+    // PFLICHTFELDER
     name: "Bachelorarbeit",
     kp: 15,
     kategorie: "Wissenschaftliche Arbeit",
+    // KONTEXT
     jahr: 3,
     semester: 0,
   },

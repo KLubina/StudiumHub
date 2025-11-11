@@ -19,48 +19,60 @@ window.StudiengangModules = [
 
   // Elektrotechnik
   {
+    // PFLICHTFELDER
     name: "Netzwerke und Schaltungen I",
     kp: 4,
     kategorie: "Obligatorische Fächer",
+    // KONTEXT
     jahr: 1,
     semester: 1,
   },
 
   // Informationstechnologie
   {
+    // PFLICHTFELDER
     name: "Digitaltechnik",
     kp: 4,
     kategorie: "Obligatorische Fächer",
+    // KONTEXT
     jahr: 1,
     semester: 1,
   },
   {
+    // PFLICHTFELDER
     name: "Digitaltechnik Praktikum",
     kp: 1,
     kategorie: "Obligatorische Praktikum",
+    // KONTEXT
     jahr: 1,
     semester: 1,
   },
   {
+    // PFLICHTFELDER
     name: "Vorkurs Informatik",
     kp: 1,
     kategorie: "Obligatorische Praktikum",
+    // KONTEXT
     jahr: 1,
     semester: 1,
   },
 
   // Mathematik
   {
+    // PFLICHTFELDER
     name: "Analysis 1",
     kp: 8,
     kategorie: "Obligatorische Fächer",
+    // KONTEXT
     jahr: 1,
     semester: 1,
   },
   {
+    // PFLICHTFELDER
     name: "Lineare Algebra",
     kp: 5,
     kategorie: "Obligatorische Fächer",
+    // KONTEXT
     jahr: 1,
     semester: 1,
   },
@@ -72,50 +84,62 @@ window.StudiengangModules = [
 
   // Physik
   {
+    // PFLICHTFELDER
     name: "Physik I",
     kp: 4,
     kategorie: "Obligatorische Fächer",
+    // KONTEXT
     jahr: 1,
     semester: 2,
   },
 
   // Elektrotechnik
   {
+    // PFLICHTFELDER
     name: "Netzwerke und Schaltungen II",
     kp: 8,
     kategorie: "Obligatorische Fächer",
+    // KONTEXT
     jahr: 1,
     semester: 2,
   },
   {
+    // PFLICHTFELDER
     name: "Netzwerke und Schaltungen Praktikum",
     kp: 1,
     kategorie: "Obligatorische Praktikum",
+    // KONTEXT
     jahr: 1,
     semester: 2,
   },
 
   // Informationstechnologie
   {
+    // PFLICHTFELDER
     name: "Informatik I",
     kp: 4,
     kategorie: "Obligatorische Fächer",
+    // KONTEXT
     jahr: 1,
     semester: 2,
   },
 
   // Mathematik
   {
+    // PFLICHTFELDER
     name: "Analysis 2",
     kp: 8,
     kategorie: "Obligatorische Fächer",
+    // KONTEXT
     jahr: 1,
     semester: 2,
   },
   {
+    // PFLICHTFELDER
     name: "Mathematische Methoden",
     kp: 4,
     kategorie: "Obligatorische Fächer",
+    // KONTEXT
     jahr: 1,
     semester: 2,
   },
@@ -127,57 +151,71 @@ window.StudiengangModules = [
 
   // Physik
   {
+    // PFLICHTFELDER
     name: "Physik II",
     kp: 8,
     kategorie: "Obligatorische Fächer",
+    // KONTEXT
     jahr: 2,
     semester: 1,
   },
 
   // Elektrotechnik
   {
+    // PFLICHTFELDER
     name: "Signal- und Systemtheorie I",
     kp: 4,
     kategorie: "Obligatorische Fächer",
+    // KONTEXT
     jahr: 2,
     semester: 1,
   },
   {
+    // PFLICHTFELDER
     name: "Halbleiter-Schaltungstechnik",
     kp: 4,
     kategorie: "Obligatorische Fächer",
+    // KONTEXT
     jahr: 2,
     semester: 1,
   },
   {
+    // PFLICHTFELDER
     name: "Halbleiter-Schaltungstechnik Praktikum",
     kp: 1,
     kategorie: "Obligatorische Praktikum",
+    // KONTEXT
     jahr: 2,
     semester: 1,
   },
 
   // Informationstechnologie
   {
+    // PFLICHTFELDER
     name: "Informatik II",
     kp: 4,
     kategorie: "Obligatorische Fächer",
+    // KONTEXT
     jahr: 2,
     semester: 1,
   },
 
   // Mathematik
   {
+    // PFLICHTFELDER
     name: "Analysis 3",
     kp: 4,
     kategorie: "Obligatorische Fächer",
+    // KONTEXT
     jahr: 2,
     semester: 1,
   },
   {
+    // PFLICHTFELDER
     name: "Diskrete Mathematik",
     kp: 4,
     kategorie: "Obligatorische Fächer",
+    // KONTEXT
     jahr: 2,
     semester: 1,
   },
@@ -189,50 +227,62 @@ window.StudiengangModules = [
 
   // Physik
   {
+    // PFLICHTFELDER
     name: "Elektromagnetische Felder und Wellen",
     kp: 4,
     kategorie: "Obligatorische Fächer",
+    // KONTEXT
     jahr: 2,
     semester: 2,
   },
 
   // Elektrotechnik
   {
+    // PFLICHTFELDER
     name: "Signal- und Systemtheorie II",
     kp: 4,
     kategorie: "Obligatorische Fächer",
+    // KONTEXT
     jahr: 2,
     semester: 2,
   },
   {
+    // PFLICHTFELDER
     name: "Halbleiterelemente",
     kp: 4,
     kategorie: "Obligatorische Fächer",
+    // KONTEXT
     jahr: 2,
     semester: 2,
   },
 
   // Informationstechnologie
   {
+    // PFLICHTFELDER
     name: "Technische Informatik",
     kp: 4,
     kategorie: "Obligatorische Fächer",
+    // KONTEXT
     jahr: 2,
     semester: 2,
   },
 
   // Mathematik
   {
+    // PFLICHTFELDER
     name: "Numerische Methoden",
     kp: 4,
     kategorie: "Obligatorische Fächer",
+    // KONTEXT
     jahr: 2,
     semester: 2,
   },
   {
+    // PFLICHTFELDER
     name: "Wahrscheinlichkeitstheorie und Statistik",
     kp: 4,
     kategorie: "Obligatorische Fächer",
+    // KONTEXT
     jahr: 2,
     semester: 2,
   },
@@ -242,41 +292,54 @@ window.StudiengangModules = [
   // #region 5.-6. Semester (Platzhalter & Abschluss)
   // PLATZHALTER für dynamische Module (wird durch Extensions ersetzt)
   {
+    // PFLICHTFELDER
     name: "Kernfächer nach Schwerpunkt",
     kp: 0,
     kategorie: "Kernfächer nach Schwerpunkt",
+    // KONTEXT
     jahr: 3,
     semester: 0,
+    // STUDIENGANGSPEZIFISCH
     isPlaceholder: true,
   },
   {
+    // PFLICHTFELDER
     name: "Weitere Wahl-Grundlagenfächer",
     kp: 0,
     kategorie: "Weitere Wahl-Grundlagenfächer",
+    // KONTEXT
     jahr: 3,
     semester: 0,
+    // STUDIENGANGSPEZIFISCH
     isPlaceholder: true,
   },
   {
+    // PFLICHTFELDER
     name: "Wahl Praktika-Projekte-Seminare",
     kp: 0,
     kategorie: "Wahl Praktika-Projekte-Seminare",
+    // KONTEXT
     jahr: 3,
     semester: 0,
+    // STUDIENGANGSPEZIFISCH
     isPlaceholder: true,
   },
 
   {
+    // PFLICHTFELDER
     name: "Bachelorarbeit",
     kp: 12,
     kategorie: "Wissenschaftliche Arbeit",
+    // KONTEXT
     jahr: 3,
     semester: 0,
   },
   {
+    // PFLICHTFELDER
     name: "Science in Perspective",
     kp: 6,
     kategorie: "Wissenschaftliche Arbeit",
+    // KONTEXT
     jahr: 3,
     semester: 0,
   },
