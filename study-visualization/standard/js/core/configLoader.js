@@ -45,6 +45,14 @@ window.StudienplanConfigLoader = {
             const dataPath = `../program-specific/${studyModel}/${studiengang}/data/basic-modules-data.js`;
             await this.loadScript(dataPath);
 
+            // Lade Modul-Details falls vorhanden (für Module Details Modal)
+            const detailsPath = `../program-specific/${studyModel}/${studiengang}/data/basic-modules-details.js`;
+            try {
+                await this.loadScript(detailsPath);
+            } catch (e) {
+                // Details sind optional
+            }
+
             // Wenn Daten geladen, rendere den Studienplan
             if (window.StudiengangModules) {
                 this.renderStudiengang(window.StudiengangModules, studiengang);

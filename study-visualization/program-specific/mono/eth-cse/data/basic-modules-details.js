@@ -97,7 +97,7 @@ window.StudiengangModuleDetails = {
       "https://video.ethz.ch/lectures/d-phys/2017/spring/402-1782-00L.html",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=187596&semkez=2025S&ansicht=LEHRVERANSTALTUNGEN&lang=de",
   },
-  "Mathematische Methoden (ehem. Komplexe Analysis)": {
+  "Mathematische Methoden": {
     kurzbeschreibung:
       "Erwerb von einigen grundlegenden Werkzeugen der komplexen Analysis, sowie Verständnis und Anwendung Fourier- und Laplacetransformationen.",
     inhalt:
@@ -256,7 +256,7 @@ window.StudiengangModuleDetails = {
       "https://video.ethz.ch/lectures/d-math/2016/spring/401-0674-00L/09474fe0-ce1b-457c-8db7-fe94a77cf785.html",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=188112&semkez=2025S&ansicht=LEHRVERANSTALTUNGEN&lang=de",
   },
-  "Wahrscheinlichkeitstheorie und Statistik (ehem. Stochastik)": {
+  "Wahrscheinlichkeitstheorie und Statistik": {
     kurzbeschreibung:
       "Wahrscheinlichkeitsmodelle und Anwendungen, Einführung in Schätztheorie und statistische Testtheorie",
     inhalt:

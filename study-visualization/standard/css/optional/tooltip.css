@@ -2,7 +2,7 @@
 /* Module detail tooltips */
 
 .tooltip-container {
-    position: fixed;
+    position: absolute;
     max-width: var(--tooltip-max-width);
     width: var(--tooltip-width);
     background-color: var(--tooltip-bg);
