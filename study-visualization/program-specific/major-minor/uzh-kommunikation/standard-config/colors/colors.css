@@ -1,14 +1,8 @@
-/* ==== UZH KOMMUNIKATION - COLOR VARIABLES ==== */
-/* Kommunikations- und Medienwissenschaft Major-Minor Program */
+/* ==== UZH KOMMUNIKATION - COLOR VARIABLES (pruned) ==== */
+/* Only variables needed for implemented categories: Pflicht, Wahlpflicht, Wahlmodule */
 
 [data-studiengang="uzh-kommunikation"] {
-    /* Generic Major-Minor colors */
-    --color-major: #6c63ff;
-    --color-minor: #48c9b0;
     --color-pflicht: #e84393;
     --color-wahlpflicht: #fd79a8;
     --color-wahl: #fdcb6e;
-
-    /* Subject-specific color */
-    --color-kommunikation: #3498db;
 }
