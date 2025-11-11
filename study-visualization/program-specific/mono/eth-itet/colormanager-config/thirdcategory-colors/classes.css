@@ -1,0 +1,26 @@
+/* ==== ETH ITET - THEMENBEREICH CSS CLASSES ==== */
+/* Module & Legende nach Themenbereich färben */
+
+[data-studiengang="eth-itet"] .modul.mathematik,
+[data-studiengang="eth-itet"] .legende-item.mathematik {
+    background-color: var(--color-mathematik);
+    color: white;
+}
+
+[data-studiengang="eth-itet"] .modul.elektrotechnik,
+[data-studiengang="eth-itet"] .legende-item.elektrotechnik {
+    background-color: var(--color-elektrotechnik);
+    color: white;
+}
+
+[data-studiengang="eth-itet"] .modul.informationstechnologie,
+[data-studiengang="eth-itet"] .legende-item.informationstechnologie {
+    background-color: var(--color-informationstechnologie);
+    color: white;
+}
+
+[data-studiengang="eth-itet"] .modul.physik,
+[data-studiengang="eth-itet"] .legende-item.physik {
+    background-color: var(--color-physik);
+    color: white;
+}

@@ -1,35 +1,12 @@
-/* ==== ITET COLOR CONFIGURATION - ZENTRAL ==== */
-/* Alle Farb-Zuordnungen für Module an einem Ort */
+/* ==== THIRDCATEGORIES CONFIGURATION ==== */
+/* Modul-Themenbereiche Definition - wird in der Legende angezeigt */
+/* KISS Principle: Nur Themenbereiche definieren, Farben kommen von CSS */
 
-
-
-    // === FARB-DEFINITIONEN ===
-    colors: {
-        themenbereiche: {
-            mathematik: {
-                bg: "#00a99d",
-                text: "white",
-                emoji: "🧮",
-                label: "Mathematik"
-            },
-            elektrotechnik: {
-                bg: "#FF6B35",
-                text: "white",
-                emoji: "⚡",
-                label: "Elektrotechnik"
-            },
-            informationstechnologie: {
-                bg: "#2600ff",
-                text: "white",
-                emoji: "💻",
-                label: "Informationstechnologie"
-            },
-            physik: {
-                bg: "#2196F3",
-                text: "white",
-                emoji: "🌍",
-                label: "Physik"
-            }
-        }
-    },
-
+window.ITETThirdCategoryConfig = {
+  kategorien: [
+    { name: "Mathematik", klasse: "mathematik" },
+    { name: "Elektrotechnik", klasse: "elektrotechnik" },
+    { name: "Informationstechnologie", klasse: "informationstechnologie" },
+    { name: "Physik", klasse: "physik" },
+  ],
+};

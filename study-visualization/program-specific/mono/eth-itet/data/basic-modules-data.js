@@ -13,6 +13,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "Obligatorische Fächer",
     secondcategory: "Obligatorisch",
+    thirdcategory: "physik",
     // KONTEXT
     year: 1,
     semester: 1,
@@ -25,6 +26,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "Obligatorische Fächer",
     secondcategory: "Obligatorisch",
+    thirdcategory: "elektrotechnik",
     // KONTEXT
     year: 1,
     semester: 1,
@@ -37,6 +39,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "Obligatorische Fächer",
     secondcategory: "Obligatorisch",
+    thirdcategory: "informationstechnologie",
     // KONTEXT
     year: 1,
     semester: 1,
@@ -47,6 +50,7 @@ window.StudiengangModules = [
     ects: 1,
     standardcategory: "Obligatorische Praktikum",
     secondcategory: "Obligatorisch Praktikum",
+    thirdcategory: "informationstechnologie",
     // KONTEXT
     year: 1,
     semester: 1,
@@ -57,6 +61,7 @@ window.StudiengangModules = [
     ects: 1,
     standardcategory: "Obligatorische Praktikum",
     secondcategory: "Obligatorisch Praktikum",
+    thirdcategory: "informationstechnologie",
     // KONTEXT
     year: 1,
     semester: 1,
@@ -69,6 +74,7 @@ window.StudiengangModules = [
     ects: 8,
     standardcategory: "Obligatorische Fächer",
     secondcategory: "Obligatorisch",
+    thirdcategory: "mathematik",
     // KONTEXT
     year: 1,
     semester: 1,
@@ -79,6 +85,7 @@ window.StudiengangModules = [
     ects: 5,
     standardcategory: "Obligatorische Fächer",
     secondcategory: "Obligatorisch",
+    thirdcategory: "mathematik",
     // KONTEXT
     year: 1,
     semester: 1,
@@ -96,6 +103,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "Obligatorische Fächer",
     secondcategory: "Obligatorisch",
+    thirdcategory: "physik",
     // KONTEXT
     year: 1,
     semester: 2,
@@ -108,6 +116,7 @@ window.StudiengangModules = [
     ects: 8,
     standardcategory: "Obligatorische Fächer",
     secondcategory: "Obligatorisch",
+    thirdcategory: "elektrotechnik",
     // KONTEXT
     year: 1,
     semester: 2,
@@ -118,6 +127,7 @@ window.StudiengangModules = [
     ects: 1,
     standardcategory: "Obligatorische Praktikum",
     secondcategory: "Obligatorisch Praktikum",
+    thirdcategory: "elektrotechnik",
     // KONTEXT
     year: 1,
     semester: 2,
@@ -130,6 +140,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "Obligatorische Fächer",
     secondcategory: "Obligatorisch",
+    thirdcategory: "informationstechnologie",
     // KONTEXT
     year: 1,
     semester: 2,
@@ -142,6 +153,7 @@ window.StudiengangModules = [
     ects: 8,
     standardcategory: "Obligatorische Fächer",
     secondcategory: "Obligatorisch",
+    thirdcategory: "mathematik",
     // KONTEXT
     year: 1,
     semester: 2,
@@ -152,6 +164,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "Obligatorische Fächer",
     secondcategory: "Obligatorisch",
+    thirdcategory: "mathematik",
     // KONTEXT
     year: 1,
     semester: 2,
@@ -169,6 +182,7 @@ window.StudiengangModules = [
     ects: 8,
     standardcategory: "Obligatorische Fächer",
     secondcategory: "Obligatorisch",
+    thirdcategory: "physik",
     // KONTEXT
     year: 2,
     semester: 1,
@@ -181,6 +195,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "Obligatorische Fächer",
     secondcategory: "Obligatorisch",
+    thirdcategory: "elektrotechnik",
     // KONTEXT
     year: 2,
     semester: 1,
@@ -191,6 +206,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "Obligatorische Fächer",
     secondcategory: "Obligatorisch",
+    thirdcategory: "elektrotechnik",
     // KONTEXT
     year: 2,
     semester: 1,
@@ -201,6 +217,7 @@ window.StudiengangModules = [
     ects: 1,
     standardcategory: "Obligatorische Praktikum",
     secondcategory: "Obligatorisch Praktikum",
+    thirdcategory: "elektrotechnik",
     // KONTEXT
     year: 2,
     semester: 1,
@@ -213,6 +230,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "Obligatorische Fächer",
     secondcategory: "Obligatorisch",
+    thirdcategory: "informationstechnologie",
     // KONTEXT
     year: 2,
     semester: 1,
@@ -225,6 +243,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "Obligatorische Fächer",
     secondcategory: "Obligatorisch",
+    thirdcategory: "mathematik",
     // KONTEXT
     year: 2,
     semester: 1,
@@ -235,6 +254,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "Obligatorische Fächer",
     secondcategory: "Obligatorisch",
+    thirdcategory: "mathematik",
     // KONTEXT
     year: 2,
     semester: 1,
@@ -252,6 +272,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "Obligatorische Fächer",
     secondcategory: "Obligatorisch",
+    thirdcategory: "physik",
     // KONTEXT
     year: 2,
     semester: 2,
@@ -264,6 +285,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "Obligatorische Fächer",
     secondcategory: "Obligatorisch",
+    thirdcategory: "elektrotechnik",
     // KONTEXT
     year: 2,
     semester: 2,
@@ -274,6 +296,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "Obligatorische Fächer",
     secondcategory: "Obligatorisch",
+    thirdcategory: "elektrotechnik",
     // KONTEXT
     year: 2,
     semester: 2,
@@ -286,6 +309,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "Obligatorische Fächer",
     secondcategory: "Obligatorisch",
+    thirdcategory: "informationstechnologie",
     // KONTEXT
     year: 2,
     semester: 2,
@@ -298,6 +322,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "Obligatorische Fächer",
     secondcategory: "Obligatorisch",
+    thirdcategory: "mathematik",
     // KONTEXT
     year: 2,
     semester: 2,
@@ -308,6 +333,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "Obligatorische Fächer",
     secondcategory: "Obligatorisch",
+    thirdcategory: "mathematik",
     // KONTEXT
     year: 2,
     semester: 2,
