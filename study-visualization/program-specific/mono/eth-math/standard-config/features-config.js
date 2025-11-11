@@ -4,7 +4,6 @@
 window.StudiengangFeaturesConfig = {
     // Core features
     enableTooltips: false,
-    enableHover: false,
 
     // Optional features
     enableColorManager: false,
