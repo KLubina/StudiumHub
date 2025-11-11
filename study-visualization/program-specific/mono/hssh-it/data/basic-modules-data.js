@@ -9,7 +9,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "grundlagen",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   {
@@ -18,7 +18,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "programmierung",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   {
@@ -27,7 +27,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "programmierung",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   {
@@ -36,7 +36,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "kommunikation",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   {
@@ -45,7 +45,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "transfer",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
 
@@ -58,7 +58,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "programmierung",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -67,7 +67,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "programmierung",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -76,7 +76,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "grundlagen",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -85,7 +85,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "kommunikation",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -94,7 +94,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "kommunikation",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
 
@@ -107,7 +107,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "grundlagen",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 3,
   },
   {
@@ -116,7 +116,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "programmierung",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 3,
   },
   {
@@ -125,7 +125,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "spezialisierung",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 3,
   },
   {
@@ -134,7 +134,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "kommunikation",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 3,
   },
   {
@@ -143,7 +143,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "transfer",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 3,
   },
 
@@ -156,7 +156,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "grundlagen",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 4,
   },
   {
@@ -165,7 +165,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "grundlagen",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 4,
   },
   {
@@ -174,7 +174,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "kommunikation",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 4,
   },
   {
@@ -183,7 +183,7 @@ window.StudiengangModules = [
     ects: 12,
     standardcategory: "wahlpflicht",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 4,
   },
 
@@ -196,7 +196,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "spezialisierung",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 5,
     schwerpunkt: "Data Science",
   },
@@ -206,7 +206,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "spezialisierung",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 5,
     schwerpunkt: "Data Science",
   },
@@ -216,7 +216,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "spezialisierung",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 5,
     schwerpunkt: "Data Science",
   },
@@ -226,7 +226,7 @@ window.StudiengangModules = [
     ects: 12,
     standardcategory: "transfer",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 5,
   },
 
@@ -239,7 +239,7 @@ window.StudiengangModules = [
     ects: 6, 
     standardcategory: "abschluss",
     // KONTEXT
-    jahr: 3, 
+    year: 3, 
     semester: 6 
   },
   {
@@ -248,7 +248,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "abschluss",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 6,
   },
   {
@@ -257,7 +257,7 @@ window.StudiengangModules = [
     ects: 18,
     standardcategory: "abschluss",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 6,
   },
   // #endregion 6. Semester

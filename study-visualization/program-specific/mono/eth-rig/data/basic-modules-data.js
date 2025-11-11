@@ -9,7 +9,7 @@ window.StudiengangModules = [
     ects: 7,
     standardcategory: "grundlagen",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   {
@@ -18,7 +18,7 @@ window.StudiengangModules = [
     ects: 5,
     standardcategory: "grundlagen",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   {
@@ -27,7 +27,7 @@ window.StudiengangModules = [
     ects: 5,
     standardcategory: "grundlagen",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   {
@@ -36,7 +36,7 @@ window.StudiengangModules = [
     ects: 5,
     standardcategory: "obligatorisch",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   {
@@ -45,7 +45,7 @@ window.StudiengangModules = [
     ects: 5,
     standardcategory: "obligatorisch",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   {
@@ -54,7 +54,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "obligatorisch",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   // #endregion 1. Semester
@@ -66,7 +66,7 @@ window.StudiengangModules = [
     ects: 7,
     standardcategory: "grundlagen",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -75,7 +75,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "grundlagen",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -84,7 +84,7 @@ window.StudiengangModules = [
     ects: 5,
     standardcategory: "grundlagen",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -93,7 +93,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "grundlagen",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -102,7 +102,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "obligatorisch",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -111,7 +111,7 @@ window.StudiengangModules = [
     ects: 2,
     standardcategory: "obligatorisch",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -120,7 +120,7 @@ window.StudiengangModules = [
     ects: 2,
     standardcategory: "obligatorisch",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   // #endregion 2. Semester
@@ -132,7 +132,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "grundlagen",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 3,
   },
   {
@@ -141,7 +141,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "obligatorisch",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 3,
   },
   {
@@ -150,7 +150,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "obligatorisch",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 3,
   },
   {
@@ -159,7 +159,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "obligatorisch",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 3,
   },
   {
@@ -168,7 +168,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "obligatorisch",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 3,
   },
   {
@@ -177,7 +177,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "obligatorisch",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 3,
   },
   {
@@ -186,7 +186,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "obligatorisch",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 3,
   },
   {
@@ -195,7 +195,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "selbstaendig",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 3,
   },
   // #endregion 3. Semester
@@ -207,7 +207,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "obligatorisch",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 4,
   },
   {
@@ -216,7 +216,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "obligatorisch",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 4,
   },
   {
@@ -225,7 +225,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "grundlagen",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 4,
   },
   {
@@ -234,7 +234,7 @@ window.StudiengangModules = [
     ects: 18,
     standardcategory: "wahlmodule",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 4,
   },
   // #endregion 4. Semester
@@ -246,7 +246,7 @@ window.StudiengangModules = [
     ects: 15,
     standardcategory: "wahlmodule",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 5,
   },
   {
@@ -255,7 +255,7 @@ window.StudiengangModules = [
     ects: 7,
     standardcategory: "freie-wahl",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 5,
   },
   // #endregion 5. Semester
@@ -267,7 +267,7 @@ window.StudiengangModules = [
     ects: 10,
     standardcategory: "selbstaendig",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 6,
   },
   {
@@ -276,7 +276,7 @@ window.StudiengangModules = [
     ects: 12,
     standardcategory: "wahlmodule",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 6,
   },
   {
@@ -285,7 +285,7 @@ window.StudiengangModules = [
     ects: 8,
     standardcategory: "freie-wahl",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 6,
   },
   // #endregion 6. Semester

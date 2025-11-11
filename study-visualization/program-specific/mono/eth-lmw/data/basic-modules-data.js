@@ -9,7 +9,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Basisprüfung",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
     // STUDIENGANGSPEZIFISCH
     bereich: "Sozialwissenschaften",
@@ -20,7 +20,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "Basisprüfung",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
     // STUDIENGANGSPEZIFISCH
     bereich: "Natur- und Ingenieurwissenschaften",
@@ -31,7 +31,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "Basisprüfung",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
     // STUDIENGANGSPEZIFISCH
     bereich: "Natur- und Ingenieurwissenschaften",
@@ -42,7 +42,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "Basisprüfung",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
     // STUDIENGANGSPEZIFISCH
     bereich: "Lebensmittelwissenschaften",
@@ -53,7 +53,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "Basisprüfung",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
     // STUDIENGANGSPEZIFISCH
     bereich: "Natur- und Ingenieurwissenschaften",
@@ -64,7 +64,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Basisprüfung",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
     // STUDIENGANGSPEZIFISCH
     bereich: "Natur- und Ingenieurwissenschaften",
@@ -76,7 +76,7 @@ window.StudiengangModules = [
     ects: 2,
     standardcategory: "Zusatzfach Basisjahr",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
     // STUDIENGANGSPEZIFISCH
     bereich: "Natur- und Ingenieurwissenschaften",
@@ -87,7 +87,7 @@ window.StudiengangModules = [
     ects: 1,
     standardcategory: "Zusatzfach Basisjahr",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
     // STUDIENGANGSPEZIFISCH
     bereich: "Natur- und Ingenieurwissenschaften",
@@ -102,7 +102,7 @@ window.StudiengangModules = [
     ects: 7,
     standardcategory: "Basisprüfung",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
     // STUDIENGANGSPEZIFISCH
     bereich: "Natur- und Ingenieurwissenschaften",
@@ -113,7 +113,7 @@ window.StudiengangModules = [
     ects: 5,
     standardcategory: "Basisprüfung",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
     // STUDIENGANGSPEZIFISCH
     bereich: "Natur- und Ingenieurwissenschaften",
@@ -124,7 +124,7 @@ window.StudiengangModules = [
     ects: 5,
     standardcategory: "Basisprüfung",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
     // STUDIENGANGSPEZIFISCH
     bereich: "Natur- und Ingenieurwissenschaften",
@@ -135,7 +135,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "Basisprüfung",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
     // STUDIENGANGSPEZIFISCH
     bereich: "Natur- und Ingenieurwissenschaften",
@@ -146,7 +146,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Basisprüfung",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
     // STUDIENGANGSPEZIFISCH
     bereich: "Lebensmittelwissenschaften",
@@ -157,7 +157,7 @@ window.StudiengangModules = [
     ects: 2,
     standardcategory: "Basisprüfung",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
     // STUDIENGANGSPEZIFISCH
     bereich: "Lebensmittelwissenschaften",
@@ -168,7 +168,7 @@ window.StudiengangModules = [
     ects: 2,
     standardcategory: "Basisprüfung",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
     // STUDIENGANGSPEZIFISCH
     bereich: "Lebensmittelwissenschaften",
@@ -179,7 +179,7 @@ window.StudiengangModules = [
     ects: 2,
     standardcategory: "Basisprüfung",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
     // STUDIENGANGSPEZIFISCH
     bereich: "Sozialwissenschaften",
@@ -191,7 +191,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Zusatzfach Basisjahr",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
     // STUDIENGANGSPEZIFISCH
     bereich: "Natur- und Ingenieurwissenschaften",
@@ -206,7 +206,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Obligatorisches Fach",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 1,
     // STUDIENGANGSPEZIFISCH
     bereich: "Natur- und Ingenieurwissenschaften",
@@ -217,7 +217,7 @@ window.StudiengangModules = [
     ects: 5,
     standardcategory: "Obligatorisches Fach",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 1,
     // STUDIENGANGSPEZIFISCH
     bereich: "Natur- und Ingenieurwissenschaften",
@@ -228,7 +228,7 @@ window.StudiengangModules = [
     ects: 2,
     standardcategory: "Obligatorisches Fach",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 1,
     // STUDIENGANGSPEZIFISCH
     bereich: "Natur- und Ingenieurwissenschaften",
@@ -239,7 +239,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "Obligatorisches Fach",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 1,
     // STUDIENGANGSPEZIFISCH
     bereich: "Natur- und Ingenieurwissenschaften",
@@ -250,7 +250,7 @@ window.StudiengangModules = [
     ects: 2,
     standardcategory: "Obligatorisches Fach",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 1,
     // STUDIENGANGSPEZIFISCH
     bereich: "Natur- und Ingenieurwissenschaften",
@@ -261,7 +261,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Obligatorisches Fach",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 1,
     // STUDIENGANGSPEZIFISCH
     bereich: "Natur- und Ingenieurwissenschaften",
@@ -272,7 +272,7 @@ window.StudiengangModules = [
     ects: 2,
     standardcategory: "Obligatorisches Fach",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 1,
     // STUDIENGANGSPEZIFISCH
     bereich: "Natur- und Ingenieurwissenschaften",
@@ -283,7 +283,7 @@ window.StudiengangModules = [
     ects: 2,
     standardcategory: "Weitere Fächer",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 1,
     // STUDIENGANGSPEZIFISCH
     bereich: "Natur- und Ingenieurwissenschaften",
@@ -294,7 +294,7 @@ window.StudiengangModules = [
     ects: 2,
     standardcategory: "Weitere Fächer",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 1,
     // STUDIENGANGSPEZIFISCH
     bereich: "Natur- und Ingenieurwissenschaften",
@@ -305,7 +305,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Kernfach",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 1,
     // STUDIENGANGSPEZIFISCH
     bereich: "Lebensmittelwissenschaften",
@@ -316,7 +316,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Kernfach",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 1,
     // STUDIENGANGSPEZIFISCH
     bereich: "Lebensmittelwissenschaften",
@@ -331,7 +331,7 @@ window.StudiengangModules = [
     ects: 2,
     standardcategory: "Grundlagenfach II",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 2,
     // STUDIENGANGSPEZIFISCH
     bereich: "Lebensmittelwissenschaften",
@@ -342,7 +342,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Grundlagenfach II",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 2,
     // STUDIENGANGSPEZIFISCH
     bereich: "Natur- und Ingenieurwissenschaften",
@@ -353,7 +353,7 @@ window.StudiengangModules = [
     ects: 2,
     standardcategory: "Grundlagenfach II",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 2,
     // STUDIENGANGSPEZIFISCH
     bereich: "Natur- und Ingenieurwissenschaften",
@@ -364,7 +364,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Fachgrundlage",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 2,
     // STUDIENGANGSPEZIFISCH
     bereich: "Lebensmittelwissenschaften",
@@ -375,7 +375,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Fachgrundlage",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 2,
     // STUDIENGANGSPEZIFISCH
     bereich: "Lebensmittelwissenschaften",
@@ -386,7 +386,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "Fachgrundlage",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 2,
     // STUDIENGANGSPEZIFISCH
     bereich: "Lebensmittelwissenschaften",
@@ -397,7 +397,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Laborpraktikum",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 2,
     // STUDIENGANGSPEZIFISCH
     bereich: "Lebensmittelwissenschaften",
@@ -408,7 +408,7 @@ window.StudiengangModules = [
     ects: 1,
     standardcategory: "Exkursionen",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 2,
     // STUDIENGANGSPEZIFISCH
     bereich: "Lebensmittelwissenschaften",
@@ -423,7 +423,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Fachgrundlage",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 1,
     // STUDIENGANGSPEZIFISCH
     bereich: "Lebensmittelwissenschaften",
@@ -434,7 +434,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Fachgrundlage",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 1,
     // STUDIENGANGSPEZIFISCH
     bereich: "Lebensmittelwissenschaften",
@@ -445,7 +445,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Lebensmittelwissenschaftliches Fach",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 1,
     // STUDIENGANGSPEZIFISCH
     bereich: "Lebensmittelwissenschaften",
@@ -456,7 +456,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Lebensmittelwissenschaftliches Fach",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 1,
     // STUDIENGANGSPEZIFISCH
     bereich: "Lebensmittelwissenschaften",
@@ -467,7 +467,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Lebensmittelwissenschaftliches Fach",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 1,
     // STUDIENGANGSPEZIFISCH
     bereich: "Lebensmittelwissenschaften",
@@ -478,7 +478,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "Lebensmittelwissenschaftliches Fach",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 1,
     // STUDIENGANGSPEZIFISCH
     bereich: "Lebensmittelwissenschaften",
@@ -489,7 +489,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Lebensmittelwissenschaftliches Fach",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 1,
     // STUDIENGANGSPEZIFISCH
     bereich: "Lebensmittelwissenschaften",
@@ -500,7 +500,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Laborpraktikum",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 1,
     // STUDIENGANGSPEZIFISCH
     bereich: "Lebensmittelwissenschaften",
@@ -511,7 +511,7 @@ window.StudiengangModules = [
     ects: 2,
     standardcategory: "Laborpraktikum",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 1,
     // STUDIENGANGSPEZIFISCH
     bereich: "Lebensmittelwissenschaften",
@@ -526,7 +526,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Lebensmittelwissenschaftliches Fach",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 2,
     // STUDIENGANGSPEZIFISCH
     bereich: "Lebensmittelwissenschaften",
@@ -537,7 +537,7 @@ window.StudiengangModules = [
     ects: 5,
     standardcategory: "Lebensmittelwissenschaftliches Fach",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 2,
     // STUDIENGANGSPEZIFISCH
     bereich: "Lebensmittelwissenschaften",
@@ -548,7 +548,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Lebensmittelwissenschaftliches Fach",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 2,
     // STUDIENGANGSPEZIFISCH
     bereich: "Lebensmittelwissenschaften",
@@ -559,7 +559,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Lebensmittelwissenschaftliches Fach",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 2,
     // STUDIENGANGSPEZIFISCH
     bereich: "Lebensmittelwissenschaften",
@@ -570,7 +570,7 @@ window.StudiengangModules = [
     ects: 2,
     standardcategory: "Lebensmittelwissenschaftliches Fach",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 2,
     // STUDIENGANGSPEZIFISCH
     bereich: "Lebensmittelwissenschaften",
@@ -581,7 +581,7 @@ window.StudiengangModules = [
     ects: 2,
     standardcategory: "Lebensmittelwissenschaftliches Fach",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 2,
     // STUDIENGANGSPEZIFISCH
     bereich: "Lebensmittelwissenschaften",
@@ -592,7 +592,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Lebensmittelwissenschaftliches Fach",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 2,
     // STUDIENGANGSPEZIFISCH
     bereich: "Lebensmittelwissenschaften",
@@ -603,7 +603,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Laborpraktikum",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 2,
     // STUDIENGANGSPEZIFISCH
     bereich: "Lebensmittelwissenschaften",
@@ -614,7 +614,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Laborpraktikum",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 2,
     // STUDIENGANGSPEZIFISCH
     bereich: "Lebensmittelwissenschaften",
@@ -625,7 +625,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Laborpraktikum",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 2,
     // STUDIENGANGSPEZIFISCH
     bereich: "Lebensmittelwissenschaften",
@@ -636,7 +636,7 @@ window.StudiengangModules = [
     ects: 1,
     standardcategory: "Exkursionen",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 2,
     // STUDIENGANGSPEZIFISCH
     bereich: "Lebensmittelwissenschaften",
@@ -651,7 +651,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "Wissenschaft im Kontext",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     isPlaceholder: true,
@@ -666,7 +666,7 @@ window.StudiengangModules = [
     ects: 0,
     standardcategory: "Wahlfächer",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     isPlaceholder: true,
@@ -681,7 +681,7 @@ window.StudiengangModules = [
     ects: 15,
     standardcategory: "Bachelor-Arbeit",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 2,
   },
   // #endregion Bachelorarbeit

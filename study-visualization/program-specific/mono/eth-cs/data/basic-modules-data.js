@@ -9,7 +9,7 @@ window.StudiengangModules = [
     ects: 7,
     standardcategory: "cs-pure",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   {
@@ -18,7 +18,7 @@ window.StudiengangModules = [
     ects: 7,
     standardcategory: "math",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   {
@@ -27,7 +27,7 @@ window.StudiengangModules = [
     ects: 7,
     standardcategory: "cs-cse",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   {
@@ -36,7 +36,7 @@ window.StudiengangModules = [
     ects: 7,
     standardcategory: "math",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   // #endregion 1. Semester
@@ -48,7 +48,7 @@ window.StudiengangModules = [
     ects: 7,
     standardcategory: "math",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -57,7 +57,7 @@ window.StudiengangModules = [
     ects: 7,
     standardcategory: "cs-cse",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -66,7 +66,7 @@ window.StudiengangModules = [
     ects: 7,
     standardcategory: "cs-pure",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -75,7 +75,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "algo",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   // #endregion 2. Semester
@@ -87,7 +87,7 @@ window.StudiengangModules = [
     ects: 8,
     standardcategory: "cs-cse",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 1,
   },
   {
@@ -96,7 +96,7 @@ window.StudiengangModules = [
     ects: 5,
     standardcategory: "math",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 1,
   },
   {
@@ -105,7 +105,7 @@ window.StudiengangModules = [
     ects: 7,
     standardcategory: "cs-pure",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 1,
   },
   {
@@ -114,7 +114,7 @@ window.StudiengangModules = [
     ects: 7,
     standardcategory: "cs-cse",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 1,
   },
   // #endregion 3. Semester
@@ -126,7 +126,7 @@ window.StudiengangModules = [
     ects: 5,
     standardcategory: "math",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 2,
   },
   {
@@ -135,7 +135,7 @@ window.StudiengangModules = [
     ects: 7,
     standardcategory: "cs-cse-wahl",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 2,
   },
   {
@@ -144,7 +144,7 @@ window.StudiengangModules = [
     ects: 7,
     standardcategory: "cs-cse-wahl",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 2,
   },
   {
@@ -153,7 +153,7 @@ window.StudiengangModules = [
     ects: 7,
     standardcategory: "cs-cse-wahl",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 2,
   },
   {
@@ -162,7 +162,7 @@ window.StudiengangModules = [
     ects: 5,
     standardcategory: "ergaenzung",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 2,
   },
   {
@@ -171,7 +171,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "wissenschaft",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 2,
   },
   // #endregion 4. Semester
@@ -183,7 +183,7 @@ window.StudiengangModules = [
     ects: 32,
     standardcategory: "spezialisierung",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     inhalt: [
@@ -198,7 +198,7 @@ window.StudiengangModules = [
     ects: 12,
     standardcategory: "wahlfaecher",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
   },
   {
@@ -207,7 +207,7 @@ window.StudiengangModules = [
     ects: 10,
     standardcategory: "wissenschaft",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
   },
   {
@@ -216,7 +216,7 @@ window.StudiengangModules = [
     ects: 2,
     standardcategory: "wissenschaft",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
   },
   // #endregion 5.-6. Semester - Abschluss und Wahl/Spezialisierung

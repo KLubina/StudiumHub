@@ -9,7 +9,7 @@ window.StudiengangModules = [
     ects: 10,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   {
@@ -18,7 +18,7 @@ window.StudiengangModules = [
     ects: 7,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   {
@@ -27,7 +27,7 @@ window.StudiengangModules = [
     ects: 7,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   {
@@ -36,7 +36,7 @@ window.StudiengangModules = [
     ects: 5,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
 
@@ -49,7 +49,7 @@ window.StudiengangModules = [
     ects: 10,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -58,7 +58,7 @@ window.StudiengangModules = [
     ects: 7,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -67,7 +67,7 @@ window.StudiengangModules = [
     ects: 5,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -76,7 +76,7 @@ window.StudiengangModules = [
     ects: 8,
     standardcategory: "Ergänzungsfächer",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -85,7 +85,7 @@ window.StudiengangModules = [
     ects: 7,
     standardcategory: "Ergänzungsfächer",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
 
@@ -98,7 +98,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 1,
   },
   {
@@ -107,7 +107,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 1,
   },
   {
@@ -116,7 +116,7 @@ window.StudiengangModules = [
     ects: 7,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 1,
   },
   {
@@ -125,7 +125,7 @@ window.StudiengangModules = [
     ects: 7,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 1,
   },
   {
@@ -134,7 +134,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "Wahlpflichtfächer",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 1,
   },
 
@@ -147,7 +147,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 2,
   },
   {
@@ -156,7 +156,7 @@ window.StudiengangModules = [
     ects: 7,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 2,
   },
   {
@@ -165,7 +165,7 @@ window.StudiengangModules = [
     ects: 8,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 2,
   },
   {
@@ -174,7 +174,7 @@ window.StudiengangModules = [
     ects: 2,
     standardcategory: "Wissenschaftliche Arbeit",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 2,
   },
 
@@ -187,7 +187,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "Wahlfächer",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 1,
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "",
@@ -198,7 +198,7 @@ window.StudiengangModules = [
     ects: 5,
     standardcategory: "Wahlfächer",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 1,
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "",
@@ -209,7 +209,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Wahlfächer",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 1,
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "",
@@ -221,7 +221,7 @@ window.StudiengangModules = [
     ects: 8,
     standardcategory: "Kernfächer",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 1,
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Angewandte Mathematik",
@@ -232,7 +232,7 @@ window.StudiengangModules = [
     ects: 9,
     standardcategory: "Kernfächer",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 1,
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Angewandte Mathematik",
@@ -243,7 +243,7 @@ window.StudiengangModules = [
     ects: 7,
     standardcategory: "Kernfächer",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 1,
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Reine Mathematik",
@@ -254,7 +254,7 @@ window.StudiengangModules = [
     ects: 9,
     standardcategory: "Kernfächer",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 1,
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Reine Mathematik",
@@ -266,7 +266,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "Wahlpflichtfächer",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 1,
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "",
@@ -281,7 +281,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "Wissenschaftliche Arbeit",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 2,
   },
   {
@@ -290,7 +290,7 @@ window.StudiengangModules = [
     ects: 2,
     standardcategory: "Wissenschaftliche Arbeit",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 2,
   },
   {
@@ -299,7 +299,7 @@ window.StudiengangModules = [
     ects: 16,
     standardcategory: "Wissenschaftliche Arbeit",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 2,
   },
   // #endregion 6. Semester

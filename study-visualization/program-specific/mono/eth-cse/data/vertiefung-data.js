@@ -9,7 +9,7 @@ window.CSE_VertiefungsgebieteModules = [
     ects: 10,
     standardcategory: "vertiefung",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Vertiefungsgebiete",
@@ -21,7 +21,7 @@ window.CSE_VertiefungsgebieteModules = [
     ects: 10,
     standardcategory: "vertiefung",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Vertiefungsgebiete",
@@ -33,7 +33,7 @@ window.CSE_VertiefungsgebieteModules = [
     ects: 6,
     standardcategory: "vertiefung",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Vertiefungsgebiete",
@@ -47,7 +47,7 @@ window.CSE_VertiefungsgebieteModules = [
     ects: 3,
     standardcategory: "vertiefung",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Vertiefungsgebiete",
@@ -59,7 +59,7 @@ window.CSE_VertiefungsgebieteModules = [
     ects: 4,
     standardcategory: "vertiefung",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Vertiefungsgebiete",
@@ -73,7 +73,7 @@ window.CSE_VertiefungsgebieteModules = [
     ects: 6,
     standardcategory: "vertiefung",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Vertiefungsgebiete",
@@ -85,7 +85,7 @@ window.CSE_VertiefungsgebieteModules = [
     ects: 6,
     standardcategory: "vertiefung",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Vertiefungsgebiete",
@@ -97,7 +97,7 @@ window.CSE_VertiefungsgebieteModules = [
     ects: 4,
     standardcategory: "vertiefung",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Vertiefungsgebiete",
@@ -111,7 +111,7 @@ window.CSE_VertiefungsgebieteModules = [
     ects: 3,
     standardcategory: "vertiefung",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Vertiefungsgebiete",
@@ -123,7 +123,7 @@ window.CSE_VertiefungsgebieteModules = [
     ects: 4,
     standardcategory: "vertiefung",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Vertiefungsgebiete",
@@ -137,7 +137,7 @@ window.CSE_VertiefungsgebieteModules = [
     ects: 6,
     standardcategory: "vertiefung",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Vertiefungsgebiete",
@@ -149,7 +149,7 @@ window.CSE_VertiefungsgebieteModules = [
     ects: 6,
     standardcategory: "vertiefung",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Vertiefungsgebiete",
@@ -161,7 +161,7 @@ window.CSE_VertiefungsgebieteModules = [
     ects: 4,
     standardcategory: "vertiefung",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Vertiefungsgebiete",
@@ -173,7 +173,7 @@ window.CSE_VertiefungsgebieteModules = [
     ects: 4,
     standardcategory: "vertiefung",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Vertiefungsgebiete",
@@ -187,7 +187,7 @@ window.CSE_VertiefungsgebieteModules = [
     ects: 4,
     standardcategory: "vertiefung",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Vertiefungsgebiete",
@@ -199,7 +199,7 @@ window.CSE_VertiefungsgebieteModules = [
     ects: 5,
     standardcategory: "vertiefung",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Vertiefungsgebiete",
@@ -211,7 +211,7 @@ window.CSE_VertiefungsgebieteModules = [
     ects: 8,
     standardcategory: "vertiefung",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Vertiefungsgebiete",
@@ -223,7 +223,7 @@ window.CSE_VertiefungsgebieteModules = [
     ects: 8,
     standardcategory: "vertiefung",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Vertiefungsgebiete",
@@ -235,7 +235,7 @@ window.CSE_VertiefungsgebieteModules = [
     ects: 8,
     standardcategory: "vertiefung",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Vertiefungsgebiete",
@@ -247,7 +247,7 @@ window.CSE_VertiefungsgebieteModules = [
     ects: 4,
     standardcategory: "vertiefung",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Vertiefungsgebiete",
@@ -259,7 +259,7 @@ window.CSE_VertiefungsgebieteModules = [
     ects: 4,
     standardcategory: "vertiefung",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Vertiefungsgebiete",
@@ -271,7 +271,7 @@ window.CSE_VertiefungsgebieteModules = [
     ects: 4,
     standardcategory: "vertiefung",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Vertiefungsgebiete",
@@ -283,7 +283,7 @@ window.CSE_VertiefungsgebieteModules = [
     ects: 10,
     standardcategory: "vertiefung",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Vertiefungsgebiete",
@@ -295,7 +295,7 @@ window.CSE_VertiefungsgebieteModules = [
     ects: 4,
     standardcategory: "vertiefung",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Vertiefungsgebiete",
@@ -309,7 +309,7 @@ window.CSE_VertiefungsgebieteModules = [
     ects: 8,
     standardcategory: "vertiefung",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Vertiefungsgebiete",
@@ -321,7 +321,7 @@ window.CSE_VertiefungsgebieteModules = [
     ects: 8,
     standardcategory: "vertiefung",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Vertiefungsgebiete",
@@ -333,7 +333,7 @@ window.CSE_VertiefungsgebieteModules = [
     ects: 8,
     standardcategory: "vertiefung",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Vertiefungsgebiete",
@@ -347,7 +347,7 @@ window.CSE_VertiefungsgebieteModules = [
     ects: 4,
     standardcategory: "vertiefung",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Vertiefungsgebiete",
@@ -359,7 +359,7 @@ window.CSE_VertiefungsgebieteModules = [
     ects: 6,
     standardcategory: "vertiefung",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Vertiefungsgebiete",
@@ -373,7 +373,7 @@ window.CSE_VertiefungsgebieteModules = [
     ects: 6,
     standardcategory: "vertiefung",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Vertiefungsgebiete",
@@ -385,7 +385,7 @@ window.CSE_VertiefungsgebieteModules = [
     ects: 3,
     standardcategory: "vertiefung",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Vertiefungsgebiete",
@@ -399,7 +399,7 @@ window.CSE_VertiefungsgebieteModules = [
     ects: 3,
     standardcategory: "vertiefung",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Vertiefungsgebiete",
@@ -411,7 +411,7 @@ window.CSE_VertiefungsgebieteModules = [
     ects: 6,
     standardcategory: "vertiefung",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Vertiefungsgebiete",
@@ -423,7 +423,7 @@ window.CSE_VertiefungsgebieteModules = [
     ects: 3,
     standardcategory: "vertiefung",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Vertiefungsgebiete",
@@ -435,7 +435,7 @@ window.CSE_VertiefungsgebieteModules = [
     ects: 4,
     standardcategory: "vertiefung",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Vertiefungsgebiete",
@@ -447,7 +447,7 @@ window.CSE_VertiefungsgebieteModules = [
     ects: 3,
     standardcategory: "vertiefung",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Vertiefungsgebiete",
@@ -459,7 +459,7 @@ window.CSE_VertiefungsgebieteModules = [
     ects: 3,
     standardcategory: "vertiefung",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Vertiefungsgebiete",
@@ -471,7 +471,7 @@ window.CSE_VertiefungsgebieteModules = [
     ects: 6,
     standardcategory: "vertiefung",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Vertiefungsgebiete",
@@ -483,7 +483,7 @@ window.CSE_VertiefungsgebieteModules = [
     ects: 3,
     standardcategory: "vertiefung",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Vertiefungsgebiete",
@@ -497,7 +497,7 @@ window.CSE_VertiefungsgebieteModules = [
     ects: 6,
     standardcategory: "vertiefung",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Vertiefungsgebiete",
@@ -509,7 +509,7 @@ window.CSE_VertiefungsgebieteModules = [
     ects: 6,
     standardcategory: "vertiefung",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Vertiefungsgebiete",
@@ -521,7 +521,7 @@ window.CSE_VertiefungsgebieteModules = [
     ects: 4,
     standardcategory: "vertiefung",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Vertiefungsgebiete",
@@ -533,7 +533,7 @@ window.CSE_VertiefungsgebieteModules = [
     ects: 6,
     standardcategory: "vertiefung",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Vertiefungsgebiete",

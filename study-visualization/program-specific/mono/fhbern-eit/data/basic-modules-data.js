@@ -12,7 +12,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "Grundlagenfächer",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   {
@@ -21,7 +21,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "Grundlagenfächer",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   {
@@ -30,7 +30,7 @@ window.StudiengangModules = [
     ects: 2,
     standardcategory: "Grundlagenfächer",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   {
@@ -39,7 +39,7 @@ window.StudiengangModules = [
     ects: 2,
     standardcategory: "Grundlagenfächer",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
 
@@ -50,7 +50,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "Grundlagenfächer",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   {
@@ -59,7 +59,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "Grundlagenfächer",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
 
@@ -70,7 +70,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "Grundlagenfächer",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   {
@@ -79,7 +79,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "Praktika und Projekte",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   {
@@ -88,7 +88,7 @@ window.StudiengangModules = [
     ects: 2,
     standardcategory: "Sprachen und Soft Skills",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
 
@@ -104,7 +104,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "Grundlagenfächer",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -113,7 +113,7 @@ window.StudiengangModules = [
     ects: 2,
     standardcategory: "Grundlagenfächer",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -122,7 +122,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "Grundlagenfächer",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -131,7 +131,7 @@ window.StudiengangModules = [
     ects: 2,
     standardcategory: "Grundlagenfächer",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
 
@@ -142,7 +142,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "Grundlagenfächer",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -151,7 +151,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "Grundlagenfächer",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
 
@@ -162,7 +162,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "Grundlagenfächer",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -171,7 +171,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "Praktika und Projekte",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -180,7 +180,7 @@ window.StudiengangModules = [
     ects: 2,
     standardcategory: "Sprachen und Soft Skills",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
 
@@ -196,7 +196,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "Grundlagenfächer",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 3,
   },
   {
@@ -205,7 +205,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "Grundlagenfächer",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 3,
   },
   {
@@ -214,7 +214,7 @@ window.StudiengangModules = [
     ects: 2,
     standardcategory: "Grundlagenfächer",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 3,
   },
 
@@ -225,7 +225,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "Grundlagenfächer",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 3,
   },
   {
@@ -234,7 +234,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "Grundlagenfächer",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 3,
   },
   {
@@ -243,7 +243,7 @@ window.StudiengangModules = [
     ects: 2,
     standardcategory: "Grundlagenfächer",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 3,
   },
 
@@ -254,7 +254,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "Praktika und Projekte",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 3,
   },
   {
@@ -263,7 +263,7 @@ window.StudiengangModules = [
     ects: 2,
     standardcategory: "Sprachen und Soft Skills",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 3,
   },
   {
@@ -272,7 +272,7 @@ window.StudiengangModules = [
     ects: 2,
     standardcategory: "Sprachen und Soft Skills",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 3,
   },
 
@@ -288,7 +288,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "Grundlagenfächer",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 4,
   },
   {
@@ -297,7 +297,7 @@ window.StudiengangModules = [
     ects: 2,
     standardcategory: "Grundlagenfächer",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 4,
   },
 
@@ -308,7 +308,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "Grundlagenfächer",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 4,
   },
   {
@@ -317,7 +317,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "Grundlagenfächer",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 4,
   },
   {
@@ -326,7 +326,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "Grundlagenfächer",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 4,
   },
 
@@ -337,7 +337,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "Grundlagenfächer",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 4,
   },
   {
@@ -346,7 +346,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "Praktika und Projekte",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 4,
   },
   {
@@ -355,7 +355,7 @@ window.StudiengangModules = [
     ects: 2,
     standardcategory: "Sprachen und Soft Skills",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 4,
   },
 
@@ -371,7 +371,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "Praktika und Projekte",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 5,
   },
   {
@@ -380,7 +380,7 @@ window.StudiengangModules = [
     ects: 2,
     standardcategory: "Sprachen und Soft Skills",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 5,
   },
   {
@@ -389,7 +389,7 @@ window.StudiengangModules = [
     ects: 2,
     standardcategory: "Sprachen und Soft Skills",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 5,
   },
 
@@ -400,7 +400,7 @@ window.StudiengangModules = [
     ects: 16,
     standardcategory: "Vertiefungsrichtungen",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 5,
     isPlaceholder: true,
   },
@@ -410,7 +410,7 @@ window.StudiengangModules = [
     ects: 2,
     standardcategory: "Fachliche Wahlmodule",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 5,
     isPlaceholder: true,
   },
@@ -420,7 +420,7 @@ window.StudiengangModules = [
     ects: 2,
     standardcategory: "Fachliche Wahlmodule",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 5,
     isPlaceholder: true,
   },
@@ -437,7 +437,7 @@ window.StudiengangModules = [
     ects: 12,
     standardcategory: "Abschlussarbeit",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 6,
   },
 
@@ -448,7 +448,7 @@ window.StudiengangModules = [
     ects: 12,
     standardcategory: "Vertiefungsrichtungen",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 6,
     isPlaceholder: true,
   },
@@ -458,7 +458,7 @@ window.StudiengangModules = [
     ects: 2,
     standardcategory: "Fachliche Wahlmodule",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 6,
     isPlaceholder: true,
   },
@@ -468,7 +468,7 @@ window.StudiengangModules = [
     ects: 2,
     standardcategory: "Fachliche Wahlmodule",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 6,
     isPlaceholder: true,
   },

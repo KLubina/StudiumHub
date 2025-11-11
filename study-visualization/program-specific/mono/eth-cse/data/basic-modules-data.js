@@ -9,7 +9,7 @@ window.StudiengangModules = [
     name: "Physik I",
     ects: 4,
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   {
@@ -17,7 +17,7 @@ window.StudiengangModules = [
     name: "Informatik",
     ects: 4,
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   {
@@ -25,7 +25,7 @@ window.StudiengangModules = [
     name: "Lineare Algebra",
     ects: 5,
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   {
@@ -33,7 +33,7 @@ window.StudiengangModules = [
     name: "Diskrete Mathematik",
     ects: 7,
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   {
@@ -41,7 +41,7 @@ window.StudiengangModules = [
     name: "Analysis I",
     ects: 8,
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   // #endregion 1. Semester
@@ -52,7 +52,7 @@ window.StudiengangModules = [
     name: "Physik II",
     ects: 4,
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -60,7 +60,7 @@ window.StudiengangModules = [
     name: "Mathematische Methoden (ehem. Komplexe Analysis)",
     ects: 4,
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -68,7 +68,7 @@ window.StudiengangModules = [
     name: "Chemie",
     ects: 4,
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -76,7 +76,7 @@ window.StudiengangModules = [
     name: "Analysis II",
     ects: 8,
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -84,7 +84,7 @@ window.StudiengangModules = [
     name: "Datenstrukturen und Algorithmen",
     ects: 8,
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   // #endregion 2. Semester
@@ -95,49 +95,49 @@ window.StudiengangModules = [
     name: "Analysis III",
     ects: 4,
     // KONTEXT
-    jahr: 2,
+    year: 2,
   },
   {
     // PFLICHTFELDER
     name: "Introduction to Mathematical Optimization",
     ects: 5,
     // KONTEXT
-    jahr: 2,
+    year: 2,
   },
   {
     // PFLICHTFELDER
     name: "Numerische Methoden für CSE",
     ects: 9,
     // KONTEXT
-    jahr: 2,
+    year: 2,
   },
   {
     // PFLICHTFELDER
     name: "Wahrscheinlichkeitstheorie und Statistik (ehem. Stochastik)",
     ects: 4,
     // KONTEXT
-    jahr: 2,
+    year: 2,
   },
   {
     // PFLICHTFELDER
     name: "Numerical Methods for Partial Differential Equations",
     ects: 10,
     // KONTEXT
-    jahr: 2,
+    year: 2,
   },
   {
     // PFLICHTFELDER
     name: "Programmiertechniken für physikalische Simulationen",
     ects: 5,
     // KONTEXT
-    jahr: 2,
+    year: 2,
   },
   {
     // PFLICHTFELDER
     name: "Systems Programming and Computer Architecture",
     ects: 7,
     // KONTEXT
-    jahr: 2,
+    year: 2,
   },
   {
     // PFLICHTFELDER
@@ -145,21 +145,21 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "wissenschaftliche-arbeit",
     // KONTEXT
-    jahr: 2,
+    year: 2,
   },
   {
     // PFLICHTFELDER
     name: "Fluid Dynamics I",
     ects: 8,
     // KONTEXT
-    jahr: 2,
+    year: 2,
   },
   {
     // PFLICHTFELDER
     name: "Statistische Physik und Computer Simulation",
     ects: 5,
     // KONTEXT
-    jahr: 2,
+    year: 2,
   },
   // #endregion 3.-4. Semester
 
@@ -170,7 +170,7 @@ window.StudiengangModules = [
     ects: 0,
     standardcategory: "Kernfächer",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     isPlaceholder: true,
@@ -181,7 +181,7 @@ window.StudiengangModules = [
     ects: 0,
     standardcategory: "Vertiefungsgebiet",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     isPlaceholder: true,
@@ -192,7 +192,7 @@ window.StudiengangModules = [
     ects: 0,
     standardcategory: "Wahlfächer",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     isPlaceholder: true,
@@ -206,7 +206,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "wissenschaftliche-arbeit",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Abschluss",
@@ -217,7 +217,7 @@ window.StudiengangModules = [
     ects: 14,
     standardcategory: "wissenschaftliche-arbeit",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Abschluss",

@@ -12,7 +12,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Elektrotechnik und Elektronik",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   {
@@ -21,7 +21,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Elektrotechnik und Elektronik",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
 
@@ -32,7 +32,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Grundlagenfächer",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
 
@@ -43,7 +43,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "Kontextstudium",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
 
@@ -54,7 +54,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "Informatik und Programmierung",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
 
@@ -70,7 +70,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "Kontextstudium",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
 
@@ -81,7 +81,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Grundlagenfächer",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -90,7 +90,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Grundlagenfächer",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -99,7 +99,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Grundlagenfächer",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
 
@@ -110,7 +110,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Elektrotechnik und Elektronik",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -119,7 +119,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Elektrotechnik und Elektronik",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
 
@@ -130,7 +130,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Informatik und Programmierung",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -139,7 +139,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Informatik und Programmierung",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -148,7 +148,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Informatik und Programmierung",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
 
@@ -164,7 +164,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "Produktentwicklung und Projekte",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 3,
   },
 
@@ -175,7 +175,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "Grundlagenfächer",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 3,
   },
   {
@@ -184,7 +184,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Grundlagenfächer",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 3,
   },
   {
@@ -193,7 +193,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Grundlagenfächer",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 3,
   },
 
@@ -204,7 +204,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Elektrotechnik und Elektronik",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 3,
   },
   {
@@ -213,7 +213,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "Elektrotechnik und Elektronik",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 3,
   },
 
@@ -224,7 +224,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Informatik und Programmierung",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 3,
   },
 
@@ -240,7 +240,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Produktentwicklung und Projekte",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 4,
   },
 
@@ -251,7 +251,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Elektrotechnik und Elektronik",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 4,
   },
   {
@@ -260,7 +260,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Elektrotechnik und Elektronik",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 4,
   },
   {
@@ -269,7 +269,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "Elektrotechnik und Elektronik",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 4,
   },
   {
@@ -278,7 +278,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Elektrotechnik und Elektronik",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 4,
   },
 
@@ -289,7 +289,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Informatik und Programmierung",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 4,
   },
   {
@@ -298,7 +298,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Informatik und Programmierung",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 4,
   },
   {
@@ -307,7 +307,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Informatik und Programmierung",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 4,
   },
 
@@ -322,7 +322,7 @@ window.StudiengangModules = [
     ects: 12,
     standardcategory: "Abschlussarbeit",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
   },
   {
@@ -331,7 +331,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "Produktentwicklung und Projekte",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
   },
 
@@ -342,7 +342,7 @@ window.StudiengangModules = [
     ects: 9,
     standardcategory: "Vertiefungsrichtungen",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     isPlaceholder: true,
   },
@@ -352,7 +352,7 @@ window.StudiengangModules = [
     ects: 15,
     standardcategory: "Erweiterungsmodule",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     isPlaceholder: true,
   },
@@ -362,7 +362,7 @@ window.StudiengangModules = [
     ects: 15,
     standardcategory: "Zusatzmodule",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     isPlaceholder: true,
   },

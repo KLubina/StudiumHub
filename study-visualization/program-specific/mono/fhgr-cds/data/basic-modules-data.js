@@ -9,7 +9,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "grundlagen",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   {
@@ -18,7 +18,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "grundlagen",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   {
@@ -27,7 +27,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "grundlagen",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   {
@@ -36,7 +36,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "grundlagen",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   {
@@ -45,7 +45,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "grundlagen",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   {
@@ -54,7 +54,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "grundlagen",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
 
@@ -67,7 +67,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "grundlagen",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -76,7 +76,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "grundlagen",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -85,7 +85,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "grundlagen",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -94,7 +94,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "grundlagen",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -103,7 +103,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "grundlagen",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
 
@@ -116,7 +116,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "grundlagen",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 3,
   },
   {
@@ -125,7 +125,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "grundlagen",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 3,
   },
   {
@@ -134,7 +134,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "grundlagen",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 3,
   },
   {
@@ -143,7 +143,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "grundlagen",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 3,
   },
   {
@@ -152,7 +152,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "grundlagen",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 3,
   },
   {
@@ -161,7 +161,7 @@ window.StudiengangModules = [
     ects: 2,
     standardcategory: "grundlagen",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 3,
   },
 
@@ -174,7 +174,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "schwerpunkte",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 4,
   },
   {
@@ -183,7 +183,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "grundlagen",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 4,
   },
   {
@@ -192,7 +192,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "grundlagen",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 4,
   },
   {
@@ -201,7 +201,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "grundlagen",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 4,
   },
   {
@@ -210,7 +210,7 @@ window.StudiengangModules = [
     ects: 5,
     standardcategory: "grundlagen",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 4,
   },
   {
@@ -219,7 +219,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "grundlagen",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 4,
   },
 
@@ -232,7 +232,7 @@ window.StudiengangModules = [
     ects: 8,
     standardcategory: "schwerpunkte",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 5,
   },
   {
@@ -241,7 +241,7 @@ window.StudiengangModules = [
     ects: 8,
     standardcategory: "schwerpunkte",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 5,
   },
   {
@@ -250,7 +250,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "grundlagen",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 5,
   },
   {
@@ -259,7 +259,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "grundlagen",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 5,
   },
   {
@@ -268,7 +268,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "grundlagen",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 5,
   },
 
@@ -281,7 +281,7 @@ window.StudiengangModules = [
     ects: 8,
     standardcategory: "schwerpunkte",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 6,
   },
   {
@@ -290,7 +290,7 @@ window.StudiengangModules = [
     ects: 8,
     standardcategory: "schwerpunkte",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 6,
   },
   {
@@ -299,7 +299,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "labor",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 6,
   },
   { 
@@ -308,7 +308,7 @@ window.StudiengangModules = [
     ects: 4, 
     standardcategory: "wahlmodul",
     // KONTEXT
-    jahr: 3, 
+    year: 3, 
     semester: 6 
   },
   {
@@ -317,7 +317,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "labor",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 6,
   },
 
@@ -330,7 +330,7 @@ window.StudiengangModules = [
     ects: 8, 
     standardcategory: "schwerpunkte",
     // KONTEXT
-    jahr: 4, 
+    year: 4, 
     semester: 7 
   },
   {
@@ -339,7 +339,7 @@ window.StudiengangModules = [
     ects: 8,
     standardcategory: "schwerpunkte",
     // KONTEXT
-    jahr: 4,
+    year: 4,
     semester: 7,
   },
   { 
@@ -348,7 +348,7 @@ window.StudiengangModules = [
     ects: 6, 
     standardcategory: "labor",
     // KONTEXT
-    jahr: 4, 
+    year: 4, 
     semester: 7 
   },
   { 
@@ -357,7 +357,7 @@ window.StudiengangModules = [
     ects: 4, 
     standardcategory: "wahlmodul",
     // KONTEXT
-    jahr: 4, 
+    year: 4, 
     semester: 7 
   },
 
@@ -370,7 +370,7 @@ window.StudiengangModules = [
     ects: 8,
     standardcategory: "schwerpunkte",
     // KONTEXT
-    jahr: 4,
+    year: 4,
     semester: 8,
   },
   {
@@ -379,7 +379,7 @@ window.StudiengangModules = [
     ects: 8,
     standardcategory: "schwerpunkte",
     // KONTEXT
-    jahr: 4,
+    year: 4,
     semester: 8,
   },
   {
@@ -388,7 +388,7 @@ window.StudiengangModules = [
     ects: 14,
     standardcategory: "projektarbeit",
     // KONTEXT
-    jahr: 4,
+    year: 4,
     semester: 8,
   },
   // #endregion 8. Semester

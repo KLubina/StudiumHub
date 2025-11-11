@@ -9,7 +9,7 @@ window.StudiengangModules = [
     ects: 7,
     standardcategory: "Basisprüfungsblock 1",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   {
@@ -18,7 +18,7 @@ window.StudiengangModules = [
     ects: 10,
     standardcategory: "Basisprüfungsblock 1",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   {
@@ -27,7 +27,7 @@ window.StudiengangModules = [
     ects: 5,
     standardcategory: "Basisprüfungsblock 1",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   {
@@ -36,7 +36,7 @@ window.StudiengangModules = [
     ects: 7,
     standardcategory: "Basisprüfungsblock 2",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
 
@@ -49,7 +49,7 @@ window.StudiengangModules = [
     ects: 7,
     standardcategory: "Basisprüfungsblock 2",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -58,7 +58,7 @@ window.StudiengangModules = [
     ects: 10,
     standardcategory: "Basisprüfungsblock 2",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -67,7 +67,7 @@ window.StudiengangModules = [
     ects: 7,
     standardcategory: "Basisprüfungsblock 2",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -76,7 +76,7 @@ window.StudiengangModules = [
     ects: 5,
     standardcategory: "Basisprüfungsblock 2",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
 
@@ -89,7 +89,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "Prüfungsblock I",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 1,
   },
   {
@@ -98,7 +98,7 @@ window.StudiengangModules = [
     ects: 5,
     standardcategory: "Praktika",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 1,
   },
   {
@@ -107,7 +107,7 @@ window.StudiengangModules = [
     ects: 5,
     standardcategory: "Prüfungsblock I",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 1,
   },
   {
@@ -116,7 +116,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "Prüfungsblock IIa",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 1,
   },
   {
@@ -125,7 +125,7 @@ window.StudiengangModules = [
     ects: 7,
     standardcategory: "Prüfungsblock I",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 1,
   },
 
@@ -138,7 +138,7 @@ window.StudiengangModules = [
     ects: 8,
     standardcategory: "Prüfungsblock IIa",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 2,
   },
   {
@@ -147,7 +147,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "Prüfungsblock IIb",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 2,
   },
   {
@@ -156,7 +156,7 @@ window.StudiengangModules = [
     ects: 5,
     standardcategory: "Prüfungsblock IIb",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 2,
   },
   {
@@ -165,7 +165,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "Praktika",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 2,
   },
   {
@@ -174,7 +174,7 @@ window.StudiengangModules = [
     ects: 2,
     standardcategory: "Wissenschaft im Kontext",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 2,
   },
   {
@@ -183,7 +183,7 @@ window.StudiengangModules = [
     ects: 8,
     standardcategory: "Prüfungsblock IIa",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 2,
   },
 
@@ -196,7 +196,7 @@ window.StudiengangModules = [
     ects: 2,
     standardcategory: "Wissenschaft im Kontext",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 1,
   },
   {
@@ -205,7 +205,7 @@ window.StudiengangModules = [
     ects: 8,
     standardcategory: "Wissenschaftliche Arbeit",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 1,
   },
   {
@@ -214,7 +214,7 @@ window.StudiengangModules = [
     ects: 8,
     standardcategory: "Kernfächer",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 1,
   },
   {
@@ -223,7 +223,7 @@ window.StudiengangModules = [
     ects: 8,
     standardcategory: "Kernfächer",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 1,
   },
   {
@@ -232,7 +232,7 @@ window.StudiengangModules = [
     ects: 8,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 1,
   },
 
@@ -245,7 +245,7 @@ window.StudiengangModules = [
     ects: 8,
     standardcategory: "Kernfächer",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 2,
   },
   {
@@ -254,7 +254,7 @@ window.StudiengangModules = [
     ects: 20,
     standardcategory: "Wahlfächer",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 2,
   },
   // #endregion 6. Semester

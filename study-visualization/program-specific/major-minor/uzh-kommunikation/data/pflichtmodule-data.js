@@ -64,7 +64,7 @@ window.KommunikationPflichtmoduleData = [
     name: "Bachelorarbeit",
     ects: 15,
     standardcategory: "Bachelor-Arbeit",
-    jahr: 3,
+    year: 3,
     semester: 1
   },
   // fs2026 Pflichtmodule
@@ -96,7 +96,7 @@ window.KommunikationPflichtmoduleData = [
     name: "Bachelorarbeit",
     ects: 15,
     standardcategory: "Bachelor-Arbeit",
-    jahr: 3,
+    year: 3,
     semester: 2
   }
 ];

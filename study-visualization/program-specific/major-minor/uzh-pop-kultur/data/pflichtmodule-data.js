@@ -28,14 +28,14 @@ window.PopKulturPflichtmoduleData = [
     name: "Bachelorkolloquium",
     ects: 3,
     standardcategory: "Pflichtmodule",
-    jahr: 3,
+    year: 3,
     semester: 1
   },
   {
     name: "Bachelorarbeit",
     ects: 15,
     standardcategory: "Bachelor-Arbeit",
-    jahr: 3,
+    year: 3,
     semester: 1
   },
   // fs2026 Pflichtmodule
@@ -61,14 +61,14 @@ window.PopKulturPflichtmoduleData = [
     name: "Bachelorkolloquium",
     ects: 3,
     standardcategory: "Pflichtmodule",
-    jahr: 3,
+    year: 3,
     semester: 2
   },
   {
     name: "Bachelorarbeit",
     ects: 15,
     standardcategory: "Bachelor-Arbeit",
-    jahr: 3,
+    year: 3,
     semester: 2
   }
 ];

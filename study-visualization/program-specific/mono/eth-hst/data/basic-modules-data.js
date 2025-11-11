@@ -10,7 +10,7 @@ window.StudiengangModules = [
     ects: 5,
     standardcategory: "Basisprüfungsblock 1",
     // KONTEXT 
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   {
@@ -19,7 +19,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "Basisprüfungsblock 1",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   {
@@ -28,7 +28,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "Basisprüfungsblock 1",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   {
@@ -37,7 +37,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "Basisprüfungsblock 1",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   // #endregion 1. Semester - Basisprüfungsblock 1
@@ -50,7 +50,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "Basisprüfungsblock 2",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   {
@@ -59,7 +59,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "Basisprüfungsblock 2",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   // #endregion 1. Semester - Basisprüfungsblock 2
@@ -72,7 +72,7 @@ window.StudiengangModules = [
     ects: 2,
     standardcategory: "Basisprüfungsblock 2",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -81,7 +81,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Basisprüfungsblock 2",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -90,7 +90,7 @@ window.StudiengangModules = [
     ects: 5,
     standardcategory: "Basisprüfungsblock 2",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -99,7 +99,7 @@ window.StudiengangModules = [
     ects: 5,
     standardcategory: "Basisprüfungsblock 2",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -108,7 +108,7 @@ window.StudiengangModules = [
     ects: 5,
     standardcategory: "Basisprüfungsblock 2",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -117,7 +117,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Basisprüfungsblock 2",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -126,7 +126,7 @@ window.StudiengangModules = [
     ects: 2,
     standardcategory: "Basisprüfungsblock 2",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
 
@@ -136,7 +136,7 @@ window.StudiengangModules = [
     ects: 2,
     standardcategory: "Praktikum des Basisjahres",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -145,7 +145,7 @@ window.StudiengangModules = [
     ects: 2,
     standardcategory: "Praktikum des Basisjahres",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   // #endregion 2. Semester - Basisprüfungsblock 2
@@ -158,7 +158,7 @@ window.StudiengangModules = [
     ects: 5,
     standardcategory: "Kernfächer Block A",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 1,
   },
   {
@@ -167,7 +167,7 @@ window.StudiengangModules = [
     ects: 5,
     standardcategory: "Kernfächer Block A",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 1,
   },
   {
@@ -176,7 +176,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Kernfächer Block A",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 1,
   },
   // #endregion 3. Semester - Kernfächer Block A
@@ -189,7 +189,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "Kernfächer Block B",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 1,
   },
   {
@@ -198,7 +198,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "Kernfächer Block B",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 2,
   },
   {
@@ -207,7 +207,7 @@ window.StudiengangModules = [
     ects: 2,
     standardcategory: "Kernfächer Block B",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 2,
   },
   {
@@ -216,7 +216,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "Kernfächer Block B",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 2,
   },
   // #endregion 3. Semester - Kernfächer Block B
@@ -229,7 +229,7 @@ window.StudiengangModules = [
     ects: 5,
     standardcategory: "Kernfächer Block C",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 2,
   },
   {
@@ -238,7 +238,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "Kernfächer Block C",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 2,
   },
   {
@@ -247,7 +247,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "Kernfächer Block C",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 2,
   },
   // #endregion 4. Semester - Kernfächer Block C
@@ -260,7 +260,7 @@ window.StudiengangModules = [
     ects: 2,
     standardcategory: "Einzelfächer und Praktika",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 1,
   },
   {
@@ -269,7 +269,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "Einzelfächer und Praktika",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 1,
   },
   {
@@ -278,7 +278,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Einzelfächer und Praktika",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 2,
   },
   // #endregion 3.-4. Semester - Einzelfächer und Praktika
@@ -291,7 +291,7 @@ window.StudiengangModules = [
     ects: 0,
     standardcategory: "Schwerpunktfächer",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     isPlaceholder: true,
@@ -302,7 +302,7 @@ window.StudiengangModules = [
     ects: 0,
     standardcategory: "Wahlfächer",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     isPlaceholder: true,
@@ -317,7 +317,7 @@ window.StudiengangModules = [
     ects: 15,
     standardcategory: "Wissenschaftliche Arbeit",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
   },
   // #endregion Bachelorarbeit

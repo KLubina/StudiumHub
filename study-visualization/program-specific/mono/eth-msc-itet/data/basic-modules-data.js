@@ -10,7 +10,7 @@ window.StudiengangModules = [
         ects: 0,
         standardcategory: "Kernfächer",
         // KONTEXT
-        jahr: 1,
+        year: 1,
         semester: 0,
         // STUDIENGANGSPEZIFISCH
         isPlaceholder: true,
@@ -21,7 +21,7 @@ window.StudiengangModules = [
         ects: 0,
         standardcategory: "Vertiefungsfächer",
         // KONTEXT
-        jahr: 1,
+        year: 1,
         semester: 0,
         // STUDIENGANGSPEZIFISCH
         isPlaceholder: true,
@@ -34,7 +34,7 @@ window.StudiengangModules = [
         ects: 12,
         standardcategory: "Fixe Module",
         // KONTEXT
-        jahr: 1,
+        year: 1,
         semester: 1,
     },
     // #endregion 1.-2. Semester (Kern-/Vertiefungsfächer als Wahlmodule)
@@ -47,7 +47,7 @@ window.StudiengangModules = [
         ects: 12,
         standardcategory: "Fixe Module",
         // KONTEXT
-        jahr: 2,
+        year: 2,
         semester: 1,
         // STUDIENGANGSPEZIFISCH
         inhalt: [
@@ -62,7 +62,7 @@ window.StudiengangModules = [
         ects: 2,
         standardcategory: "Fixe Module",
         // KONTEXT
-        jahr: 2,
+        year: 2,
         semester: 1,
     },
     // #endregion 3. Semester
@@ -72,7 +72,7 @@ window.StudiengangModules = [
         ects: 30,
         standardcategory: "Fixe Module",
         // KONTEXT
-        jahr: 2,
+        year: 2,
         semester: 2,
     }
     // #region 4. Semester

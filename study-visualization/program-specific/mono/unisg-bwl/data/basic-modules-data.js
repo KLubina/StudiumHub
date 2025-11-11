@@ -10,7 +10,7 @@ window.StudiengangModules = [
     ects: 5.5,
     standardcategory: "kernfach",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   {
@@ -19,7 +19,7 @@ window.StudiengangModules = [
     ects: 3.5,
     standardcategory: "methoden",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   {
@@ -28,7 +28,7 @@ window.StudiengangModules = [
     ects: 5.5,
     standardcategory: "grundlagen",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   {
@@ -37,7 +37,7 @@ window.StudiengangModules = [
     ects: 5.5,
     standardcategory: "grundlagen",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   {
@@ -46,7 +46,7 @@ window.StudiengangModules = [
     ects: 3.0,
     standardcategory: "kontext",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   {
@@ -55,7 +55,7 @@ window.StudiengangModules = [
     ects: 2.0,
     standardcategory: "kontext",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   { 
@@ -64,7 +64,7 @@ window.StudiengangModules = [
     ects: 5.0, 
     standardcategory: "methoden",
     // KONTEXT
-    jahr: 1, 
+    year: 1, 
     semester: 1 
   },
   // #endregion 1. Semester
@@ -77,7 +77,7 @@ window.StudiengangModules = [
     ects: 5.5,
     standardcategory: "kernfach",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -86,7 +86,7 @@ window.StudiengangModules = [
     ects: 3.5,
     standardcategory: "methoden",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -95,7 +95,7 @@ window.StudiengangModules = [
     ects: 5.5,
     standardcategory: "grundlagen",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -104,7 +104,7 @@ window.StudiengangModules = [
     ects: 5.5,
     standardcategory: "grundlagen",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -113,7 +113,7 @@ window.StudiengangModules = [
     ects: 4.0,
     standardcategory: "kontext",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -122,7 +122,7 @@ window.StudiengangModules = [
     ects: 2.0,
     standardcategory: "kontext",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   { 
@@ -131,7 +131,7 @@ window.StudiengangModules = [
     ects: 5.0, 
     standardcategory: "methoden",
     // KONTEXT
-    jahr: 1, 
+    year: 1, 
     semester: 2 
   },
   // #endregion 2. Semester
@@ -144,7 +144,7 @@ window.StudiengangModules = [
     ects: 4.0,
     standardcategory: "kernfach",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 0,
     bereich: "Pflichtbereich",
   },
@@ -154,7 +154,7 @@ window.StudiengangModules = [
     ects: 4.0,
     standardcategory: "kernfach",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 0,
     bereich: "Pflichtbereich",
   },
@@ -164,7 +164,7 @@ window.StudiengangModules = [
     ects: 4.0,
     standardcategory: "kernfach",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 0,
     bereich: "Pflichtbereich",
   },
@@ -174,7 +174,7 @@ window.StudiengangModules = [
     ects: 8.0,
     standardcategory: "methoden",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 0,
     bereich: "Pflichtbereich",
   },
@@ -184,7 +184,7 @@ window.StudiengangModules = [
     ects: 4.0,
     standardcategory: "kernfach",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 0,
     bereich: "Pflichtbereich",
   },
@@ -194,7 +194,7 @@ window.StudiengangModules = [
     ects: 4.0,
     standardcategory: "grundlagen",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 0,
     bereich: "Pflichtbereich",
   },
@@ -204,7 +204,7 @@ window.StudiengangModules = [
     ects: 4.0,
     standardcategory: "kernfach",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 0,
     bereich: "Pflichtbereich",
   },
@@ -214,7 +214,7 @@ window.StudiengangModules = [
     ects: 4.0,
     standardcategory: "methoden",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 0,
     bereich: "Pflichtbereich",
   },
@@ -224,7 +224,7 @@ window.StudiengangModules = [
     ects: 4.0,
     standardcategory: "methoden",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 0,
     bereich: "Pflichtbereich",
   },
@@ -234,7 +234,7 @@ window.StudiengangModules = [
     ects: 4.0,
     standardcategory: "grundlagen",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 0,
     bereich: "Pflichtbereich",
   },
@@ -244,7 +244,7 @@ window.StudiengangModules = [
     ects: 4.0,
     standardcategory: "kernfach",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 0,
     bereich: "Pflichtbereich",
   },
@@ -254,7 +254,7 @@ window.StudiengangModules = [
     ects: 8.0,
     standardcategory: "grundlagen",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 0,
     bereich: "Pflichtbereich",
   },
@@ -264,7 +264,7 @@ window.StudiengangModules = [
     ects: 8.0,
     standardcategory: "methoden",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 0,
     bereich: "Pflichtbereich",
   },
@@ -278,7 +278,7 @@ window.StudiengangModules = [
     ects: 12.0,
     standardcategory: "bachelor",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 0,
     bereich: "Bachelor",
   },
@@ -292,7 +292,7 @@ window.StudiengangModules = [
     ects: 3.0,
     standardcategory: "kontext",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 0,
     bereich: "Kontextstudium",
   },
@@ -302,7 +302,7 @@ window.StudiengangModules = [
     ects: 3.0,
     standardcategory: "kontext",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 0,
     bereich: "Kontextstudium",
   },
@@ -312,7 +312,7 @@ window.StudiengangModules = [
     ects: 3.0,
     standardcategory: "kontext",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 0,
     bereich: "Kontextstudium",
   },
@@ -322,7 +322,7 @@ window.StudiengangModules = [
     ects: 6.0,
     standardcategory: "kontext",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 0,
     bereich: "Kontextstudium",
   },
@@ -332,7 +332,7 @@ window.StudiengangModules = [
     ects: 3.0,
     standardcategory: "kontext",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 0,
     bereich: "Kontextstudium",
   },
@@ -342,7 +342,7 @@ window.StudiengangModules = [
     ects: 3.0,
     standardcategory: "kontext",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 0,
     bereich: "Kontextstudium",
   },
@@ -352,7 +352,7 @@ window.StudiengangModules = [
     ects: 3.0,
     standardcategory: "kontext",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 0,
     bereich: "Kontextstudium",
   },
@@ -366,7 +366,7 @@ window.StudiengangModules = [
     ects: 4.0,
     standardcategory: "kernfach",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 0,
     bereich: "Pflichtwahlbereich",
   },
@@ -376,7 +376,7 @@ window.StudiengangModules = [
     ects: 4.0,
     standardcategory: "kernfach",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 0,
     bereich: "Pflichtwahlbereich",
   },
@@ -386,7 +386,7 @@ window.StudiengangModules = [
     ects: 4.0,
     standardcategory: "methoden",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 0,
     bereich: "Pflichtwahlbereich",
   },
@@ -396,7 +396,7 @@ window.StudiengangModules = [
     ects: 4.0,
     standardcategory: "kernfach",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 0,
     bereich: "Pflichtwahlbereich",
   },
@@ -406,7 +406,7 @@ window.StudiengangModules = [
     ects: 4.0,
     standardcategory: "kernfach",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 0,
     bereich: "Pflichtwahlbereich",
   },

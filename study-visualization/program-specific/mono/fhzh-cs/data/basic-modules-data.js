@@ -9,7 +9,7 @@ window.StudiengangModules = [
     ects: 2,
     standardcategory: "kontext",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   {
@@ -18,7 +18,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "projekt",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   { 
@@ -27,7 +27,7 @@ window.StudiengangModules = [
     ects: 6, 
     standardcategory: "fach",
     // KONTEXT
-    jahr: 1, 
+    year: 1, 
     semester: 1 
   },
   { 
@@ -36,7 +36,7 @@ window.StudiengangModules = [
     ects: 4, 
     standardcategory: "fach",
     // KONTEXT
-    jahr: 1, 
+    year: 1, 
     semester: 1 
   },
   {
@@ -45,7 +45,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "fach",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   { 
@@ -54,7 +54,7 @@ window.StudiengangModules = [
     ects: 4, 
     standardcategory: "mathe-nawi",
     // KONTEXT
-    jahr: 1, 
+    year: 1, 
     semester: 1 
   },
   {
@@ -63,7 +63,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "mathe-nawi",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   {
@@ -72,7 +72,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "mathe-nawi",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
 
@@ -85,7 +85,7 @@ window.StudiengangModules = [
     ects: 2,
     standardcategory: "kontext",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -94,7 +94,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "projekt",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   { 
@@ -103,7 +103,7 @@ window.StudiengangModules = [
     ects: 6, 
     standardcategory: "fach",
     // KONTEXT
-    jahr: 1, 
+    year: 1, 
     semester: 2 
   },
   {
@@ -112,7 +112,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "fach",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -121,7 +121,7 @@ window.StudiengangModules = [
     ects: 2,
     standardcategory: "fach",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -130,7 +130,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "fach",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   { 
@@ -139,7 +139,7 @@ window.StudiengangModules = [
     ects: 3, 
     standardcategory: "mathe-nawi",
     // KONTEXT
-    jahr: 1, 
+    year: 1, 
     semester: 2 
   },
   {
@@ -148,7 +148,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "mathe-nawi",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
 
@@ -161,7 +161,7 @@ window.StudiengangModules = [
     ects: 2,
     standardcategory: "kontext",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 3,
   },
   {
@@ -170,7 +170,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "projekt",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 3,
   },
   {
@@ -179,7 +179,7 @@ window.StudiengangModules = [
     ects: 5,
     standardcategory: "fach",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 3,
   },
   { 
@@ -188,7 +188,7 @@ window.StudiengangModules = [
     ects: 4, 
     standardcategory: "fach",
     // KONTEXT
-    jahr: 2, 
+    year: 2, 
     semester: 3 
   },
   { 
@@ -197,7 +197,7 @@ window.StudiengangModules = [
     ects: 3, 
     standardcategory: "fach",
     // KONTEXT
-    jahr: 2, 
+    year: 2, 
     semester: 3 
   },
   {
@@ -206,7 +206,7 @@ window.StudiengangModules = [
     ects: 5,
     standardcategory: "projekt",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 3,
   },
   {
@@ -215,7 +215,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "mathe-nawi",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 3,
   },
   {
@@ -224,7 +224,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "mathe-nawi",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 3,
   },
 
@@ -237,7 +237,7 @@ window.StudiengangModules = [
     ects: 2,
     standardcategory: "kontext",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 4,
   },
   {
@@ -246,7 +246,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "projekt",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 4,
   },
   {
@@ -255,7 +255,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "fach",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 4,
   },
   { 
@@ -264,7 +264,7 @@ window.StudiengangModules = [
     ects: 4, 
     standardcategory: "fach",
     // KONTEXT
-    jahr: 2, 
+    year: 2, 
     semester: 4 
   },
   { 
@@ -273,7 +273,7 @@ window.StudiengangModules = [
     ects: 3, 
     standardcategory: "fach",
     // KONTEXT
-    jahr: 2, 
+    year: 2, 
     semester: 4 
   },
   { 
@@ -282,7 +282,7 @@ window.StudiengangModules = [
     ects: 4, 
     standardcategory: "fach",
     // KONTEXT
-    jahr: 2, 
+    year: 2, 
     semester: 4 
   },
   {
@@ -291,7 +291,7 @@ window.StudiengangModules = [
     ects: 5,
     standardcategory: "fach",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 4,
   },
   {
@@ -300,7 +300,7 @@ window.StudiengangModules = [
     ects: 2,
     standardcategory: "mathe-nawi",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 4,
   },
   {
@@ -309,7 +309,7 @@ window.StudiengangModules = [
     ects: 2,
     standardcategory: "mathe-nawi",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 4,
   },
 
@@ -322,7 +322,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "kontext",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 5,
   },
   {
@@ -331,7 +331,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "kontext",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 5,
   },
   {
@@ -340,7 +340,7 @@ window.StudiengangModules = [
     ects: 8,
     standardcategory: "projekt",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 5,
   },
   { 
@@ -349,7 +349,7 @@ window.StudiengangModules = [
     ects: 6, 
     standardcategory: "fach",
     // KONTEXT
-    jahr: 3, 
+    year: 3, 
     semester: 5 
   },
   {
@@ -358,7 +358,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "fach",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 5,
   },
 
@@ -371,7 +371,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "kontext",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 6,
   },
   {
@@ -380,7 +380,7 @@ window.StudiengangModules = [
     ects: 12,
     standardcategory: "projekt",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 6,
   },
   { 
@@ -389,7 +389,7 @@ window.StudiengangModules = [
     ects: 6, 
     standardcategory: "fach",
     // KONTEXT
-    jahr: 3, 
+    year: 3, 
     semester: 6 
   },
   { 
@@ -398,7 +398,7 @@ window.StudiengangModules = [
     ects: 4, 
     standardcategory: "fach",
     // KONTEXT
-    jahr: 3, 
+    year: 3, 
     semester: 6 
   },
   { 
@@ -407,7 +407,7 @@ window.StudiengangModules = [
     ects: 4, 
     standardcategory: "fach",
     // KONTEXT
-    jahr: 3, 
+    year: 3, 
     semester: 6 
   },
   // #endregion 6. Semester (30 ECTS, 18 Wochenlektionen)

@@ -9,7 +9,7 @@ window.CSE_WahlfaecherModules = [
     ects: 4,
     standardcategory: "wahl",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
@@ -21,7 +21,7 @@ window.CSE_WahlfaecherModules = [
     ects: 4,
     standardcategory: "wahl",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
@@ -33,7 +33,7 @@ window.CSE_WahlfaecherModules = [
     ects: 4,
     standardcategory: "wahl",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
@@ -45,7 +45,7 @@ window.CSE_WahlfaecherModules = [
     ects: 4,
     standardcategory: "wahl",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
@@ -57,7 +57,7 @@ window.CSE_WahlfaecherModules = [
     ects: 4,
     standardcategory: "wahl",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
@@ -69,7 +69,7 @@ window.CSE_WahlfaecherModules = [
     ects: 4,
     standardcategory: "wahl",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
@@ -81,7 +81,7 @@ window.CSE_WahlfaecherModules = [
     ects: 4,
     standardcategory: "wahl",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
@@ -93,7 +93,7 @@ window.CSE_WahlfaecherModules = [
     ects: 4,
     standardcategory: "wahl",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
@@ -105,7 +105,7 @@ window.CSE_WahlfaecherModules = [
     ects: 6,
     standardcategory: "wahl",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
@@ -117,7 +117,7 @@ window.CSE_WahlfaecherModules = [
     ects: 6,
     standardcategory: "wahl",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
@@ -129,7 +129,7 @@ window.CSE_WahlfaecherModules = [
     ects: 6,
     standardcategory: "wahl",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
@@ -141,7 +141,7 @@ window.CSE_WahlfaecherModules = [
     ects: 6,
     standardcategory: "wahl",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
@@ -153,7 +153,7 @@ window.CSE_WahlfaecherModules = [
     ects: 7,
     standardcategory: "wahl",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
@@ -165,7 +165,7 @@ window.CSE_WahlfaecherModules = [
     ects: 8,
     standardcategory: "wahl",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
@@ -177,7 +177,7 @@ window.CSE_WahlfaecherModules = [
     ects: 8,
     standardcategory: "wahl",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
@@ -189,7 +189,7 @@ window.CSE_WahlfaecherModules = [
     ects: 10,
     standardcategory: "wahl",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
@@ -201,7 +201,7 @@ window.CSE_WahlfaecherModules = [
     ects: 8,
     standardcategory: "wahl",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
@@ -213,7 +213,7 @@ window.CSE_WahlfaecherModules = [
     ects: 6,
     standardcategory: "wahl",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
@@ -225,7 +225,7 @@ window.CSE_WahlfaecherModules = [
     ects: 6,
     standardcategory: "wahl",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
@@ -237,7 +237,7 @@ window.CSE_WahlfaecherModules = [
     ects: 5,
     standardcategory: "wahl",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
@@ -249,7 +249,7 @@ window.CSE_WahlfaecherModules = [
     ects: 4,
     standardcategory: "wahl",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
@@ -261,7 +261,7 @@ window.CSE_WahlfaecherModules = [
     ects: 6,
     standardcategory: "wahl",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
@@ -273,7 +273,7 @@ window.CSE_WahlfaecherModules = [
     ects: 6,
     standardcategory: "wahl",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
@@ -285,7 +285,7 @@ window.CSE_WahlfaecherModules = [
     ects: 8,
     standardcategory: "wahl",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
@@ -297,7 +297,7 @@ window.CSE_WahlfaecherModules = [
     ects: 10,
     standardcategory: "wahl",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
@@ -309,7 +309,7 @@ window.CSE_WahlfaecherModules = [
     ects: 4,
     standardcategory: "wahl",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
@@ -321,7 +321,7 @@ window.CSE_WahlfaecherModules = [
     ects: 3,
     standardcategory: "wahl",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
@@ -333,7 +333,7 @@ window.CSE_WahlfaecherModules = [
     ects: 5,
     standardcategory: "wahl",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
@@ -345,7 +345,7 @@ window.CSE_WahlfaecherModules = [
     ects: 5,
     standardcategory: "wahl",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
@@ -357,7 +357,7 @@ window.CSE_WahlfaecherModules = [
     ects: 5,
     standardcategory: "wahl",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
@@ -369,7 +369,7 @@ window.CSE_WahlfaecherModules = [
     ects: 4,
     standardcategory: "wahl",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
@@ -381,7 +381,7 @@ window.CSE_WahlfaecherModules = [
     ects: 4,
     standardcategory: "wahl",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
@@ -393,7 +393,7 @@ window.CSE_WahlfaecherModules = [
     ects: 3,
     standardcategory: "wahl",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
@@ -407,7 +407,7 @@ window.CSE_WahlfaecherModules = [
     ects: 4,
     standardcategory: "wahl",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
@@ -419,7 +419,7 @@ window.CSE_WahlfaecherModules = [
     ects: 4,
     standardcategory: "wahl",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
@@ -431,7 +431,7 @@ window.CSE_WahlfaecherModules = [
     ects: 9,
     standardcategory: "wahl",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
@@ -443,7 +443,7 @@ window.CSE_WahlfaecherModules = [
     ects: 6,
     standardcategory: "wahl",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
@@ -455,7 +455,7 @@ window.CSE_WahlfaecherModules = [
     ects: 6,
     standardcategory: "wahl",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
@@ -467,7 +467,7 @@ window.CSE_WahlfaecherModules = [
     ects: 6,
     standardcategory: "wahl",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
@@ -479,7 +479,7 @@ window.CSE_WahlfaecherModules = [
     ects: 6,
     standardcategory: "wahl",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
@@ -491,7 +491,7 @@ window.CSE_WahlfaecherModules = [
     ects: 3,
     standardcategory: "wahl",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
@@ -503,7 +503,7 @@ window.CSE_WahlfaecherModules = [
     ects: 8,
     standardcategory: "wahl",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
@@ -515,7 +515,7 @@ window.CSE_WahlfaecherModules = [
     ects: 8,
     standardcategory: "wahl",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
@@ -527,7 +527,7 @@ window.CSE_WahlfaecherModules = [
     ects: 8,
     standardcategory: "wahl",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
@@ -539,7 +539,7 @@ window.CSE_WahlfaecherModules = [
     ects: 5,
     standardcategory: "wahl",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
@@ -551,7 +551,7 @@ window.CSE_WahlfaecherModules = [
     ects: 4,
     standardcategory: "wahl",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
@@ -563,7 +563,7 @@ window.CSE_WahlfaecherModules = [
     ects: 4,
     standardcategory: "wahl",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
@@ -575,7 +575,7 @@ window.CSE_WahlfaecherModules = [
     ects: 10,
     standardcategory: "wahl",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
@@ -587,7 +587,7 @@ window.CSE_WahlfaecherModules = [
     ects: 7,
     standardcategory: "wahl",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
@@ -599,7 +599,7 @@ window.CSE_WahlfaecherModules = [
     ects: 6,
     standardcategory: "wahl",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
@@ -611,7 +611,7 @@ window.CSE_WahlfaecherModules = [
     ects: 6,
     standardcategory: "wahl",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
@@ -623,7 +623,7 @@ window.CSE_WahlfaecherModules = [
     ects: 4,
     standardcategory: "wahl",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",
@@ -635,7 +635,7 @@ window.CSE_WahlfaecherModules = [
     ects: 5,
     standardcategory: "wahl",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Wahlfächer",

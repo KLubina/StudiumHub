@@ -18,14 +18,14 @@ window.EthnologiePflichtmodulesData = [
     name: "Bachelorarbeit",
     ects: 15,
     standardcategory: "Bachelor-Arbeit",
-    jahr: 3,
+    year: 3,
     semester: 1
   },
   {
     name: "Ba-Kolloquium",
     ects: 3,
     standardcategory: "Pflichtmodule",
-    jahr: 3,
+    year: 3,
     semester: 1
   },
   {
@@ -44,14 +44,14 @@ window.EthnologiePflichtmodulesData = [
     name: "Bachelorarbeit",
     ects: 15,
     standardcategory: "Bachelor-Arbeit",
-    jahr: 3,
+    year: 3,
     semester: 2
   },
   {
     name: "Ba-Kolloquium",
     ects: 3,
     standardcategory: "Pflichtmodule",
-    jahr: 3,
+    year: 3,
     semester: 2
   }
 ];

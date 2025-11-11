@@ -9,7 +9,7 @@ window.StudiengangModules = [
     ects: 8,
     standardcategory: "foundations",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   {
@@ -18,7 +18,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "professional",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   {
@@ -27,7 +27,7 @@ window.StudiengangModules = [
     ects: 8,
     standardcategory: "systems",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   {
@@ -36,7 +36,7 @@ window.StudiengangModules = [
     ects: 8,
     standardcategory: "foundations",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
 
@@ -49,7 +49,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "foundations",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -58,7 +58,7 @@ window.StudiengangModules = [
     ects: 8,
     standardcategory: "programming",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -67,7 +67,7 @@ window.StudiengangModules = [
     ects: 8,
     standardcategory: "programming",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -76,7 +76,7 @@ window.StudiengangModules = [
     ects: 8,
     standardcategory: "systems",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
 
@@ -89,7 +89,7 @@ window.StudiengangModules = [
     ects: 8,
     standardcategory: "systems",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 3,
   },
   {
@@ -98,7 +98,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "systems",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 3,
   },
   {
@@ -107,7 +107,7 @@ window.StudiengangModules = [
     ects: 10,
     standardcategory: "webmobile",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 3,
   },
   {
@@ -116,7 +116,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "security",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 3,
   },
 
@@ -129,7 +129,7 @@ window.StudiengangModules = [
     ects: 8,
     standardcategory: "programming",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 4,
   },
   {
@@ -138,7 +138,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "programming",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 4,
   },
   {
@@ -147,7 +147,7 @@ window.StudiengangModules = [
     ects: 8,
     standardcategory: "programming",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 4,
   },
   {
@@ -156,7 +156,7 @@ window.StudiengangModules = [
     ects: 8,
     standardcategory: "security",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 4,
   },
 
@@ -169,7 +169,7 @@ window.StudiengangModules = [
     ects: 10,
     standardcategory: "webmobile",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 5,
   },
   {
@@ -178,7 +178,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "professional",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 5,
   },
   {
@@ -187,7 +187,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "professional",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 5,
   },
   {
@@ -196,7 +196,7 @@ window.StudiengangModules = [
     ects: 8,
     standardcategory: "webmobile",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 5,
   },
 
@@ -209,7 +209,7 @@ window.StudiengangModules = [
     ects: 15,
     standardcategory: "project",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 6,
   },
   {
@@ -218,7 +218,7 @@ window.StudiengangModules = [
     ects: 9,
     standardcategory: "professional",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 6,
   },
   {
@@ -227,7 +227,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "professional",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 6,
   },
   // #endregion 6. Semester

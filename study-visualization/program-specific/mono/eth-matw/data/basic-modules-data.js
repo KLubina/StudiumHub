@@ -9,7 +9,7 @@ window.StudiengangModules = [
     ects: 8,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   {
@@ -18,7 +18,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   {
@@ -27,7 +27,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   {
@@ -36,7 +36,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   {
@@ -45,7 +45,7 @@ window.StudiengangModules = [
     ects: 2,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   {
@@ -54,7 +54,7 @@ window.StudiengangModules = [
     ects: 2,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
   {
@@ -63,7 +63,7 @@ window.StudiengangModules = [
     ects: 7,
     standardcategory: "Obligatorische Praktikum",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 1,
   },
 
@@ -76,7 +76,7 @@ window.StudiengangModules = [
     ects: 8,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -85,7 +85,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -94,7 +94,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -103,7 +103,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -112,7 +112,7 @@ window.StudiengangModules = [
     ects: 2,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -121,7 +121,7 @@ window.StudiengangModules = [
     ects: 2,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
   {
@@ -130,7 +130,7 @@ window.StudiengangModules = [
     ects: 7,
     standardcategory: "Obligatorische Praktikum",
     // KONTEXT
-    jahr: 1,
+    year: 1,
     semester: 2,
   },
 
@@ -143,7 +143,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 1,
   },
   {
@@ -152,7 +152,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 1,
   },
   {
@@ -161,7 +161,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 1,
   },
   {
@@ -170,7 +170,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 1,
   },
   {
@@ -179,7 +179,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 1,
   },
   {
@@ -188,7 +188,7 @@ window.StudiengangModules = [
     ects: 2,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 1,
   },
   {
@@ -197,7 +197,7 @@ window.StudiengangModules = [
     ects: 2,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 1,
   },
   {
@@ -206,7 +206,7 @@ window.StudiengangModules = [
     ects: 8,
     standardcategory: "Obligatorische Praktikum",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 1,
   },
 
@@ -219,7 +219,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 2,
   },
   {
@@ -228,7 +228,7 @@ window.StudiengangModules = [
     ects: 5,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 2,
   },
   {
@@ -237,7 +237,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 2,
   },
   {
@@ -246,7 +246,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 2,
   },
   {
@@ -255,7 +255,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 2,
   },
   {
@@ -264,7 +264,7 @@ window.StudiengangModules = [
     ects: 1,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 2,
   },
   {
@@ -273,7 +273,7 @@ window.StudiengangModules = [
     ects: 8,
     standardcategory: "Obligatorische Praktikum",
     // KONTEXT
-    jahr: 2,
+    year: 2,
     semester: 2,
   },
 
@@ -286,7 +286,7 @@ window.StudiengangModules = [
     ects: 7,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 1,
   },
   {
@@ -295,7 +295,7 @@ window.StudiengangModules = [
     ects: 7,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 1,
   },
   {
@@ -304,7 +304,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 1,
   },
   {
@@ -313,7 +313,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 1,
   },
   {
@@ -322,7 +322,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "Wissenschaftliche Arbeit",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 1,
   },
 
@@ -335,7 +335,7 @@ window.StudiengangModules = [
     ects: 8,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 2,
   },
   {
@@ -344,7 +344,7 @@ window.StudiengangModules = [
     ects: 7,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 2,
   },
   {
@@ -353,7 +353,7 @@ window.StudiengangModules = [
     ects: 4,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 2,
   },
   {
@@ -362,7 +362,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 2,
   },
   {
@@ -371,7 +371,7 @@ window.StudiengangModules = [
     ects: 12,
     standardcategory: "Wissenschaftliche Arbeit",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 2,
   },
   // #endregion 6. Semester

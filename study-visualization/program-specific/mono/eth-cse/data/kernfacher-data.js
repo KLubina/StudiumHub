@@ -9,7 +9,7 @@ window.CSE_KernfaecherModules = [
     ects: 7,
     standardcategory: "kern",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Kernfächer",
@@ -21,7 +21,7 @@ window.CSE_KernfaecherModules = [
     ects: 7,
     standardcategory: "kern",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Kernfächer",
@@ -33,7 +33,7 @@ window.CSE_KernfaecherModules = [
     ects: 6,
     standardcategory: "kern",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Kernfächer",
@@ -45,7 +45,7 @@ window.CSE_KernfaecherModules = [
     ects: 8,
     standardcategory: "kern",
     // KONTEXT
-    jahr: 3,
+    year: 3,
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     bereich: "Kernfächer",

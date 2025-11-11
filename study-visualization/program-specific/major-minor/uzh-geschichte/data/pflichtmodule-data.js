@@ -8,7 +8,7 @@ window.GeschichtePflichtmoduleData = [
     ects: 15,
     standardcategory: "Pflichtmodule",
     semester: 1,
-    jahr: 3
+    year: 3
   },
   {
     name: "Basismodul I",
@@ -45,7 +45,7 @@ window.GeschichtePflichtmoduleData = [
     ects: 9,
     standardcategory: "Pflichtmodule",
     semester: 1,
-    jahr: 3
+    year: 3
   },
   // fs2026 Pflichtmodule
   {
@@ -53,7 +53,7 @@ window.GeschichtePflichtmoduleData = [
     ects: 15,
     standardcategory: "Pflichtmodule",
     semester: 2,
-    jahr: 3
+    year: 3
   },
   {
     name: "Basismodul I",
@@ -90,6 +90,6 @@ window.GeschichtePflichtmoduleData = [
     ects: 9,
     standardcategory: "Pflichtmodule",
     semester: 2,
-    jahr: 3
+    year: 3
   }
 ];
