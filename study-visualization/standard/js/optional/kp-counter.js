@@ -13,6 +13,9 @@ window.StudienplanKPCounter = {
 
         // Berechne und zeige Gesamt-KP
         this.updateTotalKP();
+
+        // Starte Beobachtung des DOM, damit Änderungen an Modulen automatisch nachgezählt werden
+        this.startMutationObserver();
     },
 
     createCounterBox() {
@@ -47,6 +50,32 @@ window.StudienplanKPCounter = {
         if (counterBox) {
             counterBox.innerHTML = `<div id="kp-total">Gesamt: <strong>${total} KP</strong> (mind. 180 KP erforderlich)</div>`;
         }
+    }
+
+    // Alias-Methode für Abwärtskompatibilität (anderes Modul ruft updateCounter())
+    ,updateCounter() {
+        this.updateTotalKP();
+    }
+
+    // Beobachtet DOM-Änderungen und aktualisiert den KP-Counter bei hinzugefügten/entfernten Modulen
+    ,startMutationObserver() {
+        if (this._observer) return;
+
+        const observer = new MutationObserver((mutations) => {
+            // Debounce: kurz warten, falls mehrere Änderungen in Folge auftreten
+            if (this._debounceTimer) clearTimeout(this._debounceTimer);
+            this._debounceTimer = setTimeout(() => {
+                // Prüfe ob relevante Änderungen vorhanden sind
+                const relevant = mutations.some(m => {
+                    return Array.from(m.addedNodes).some(n => n.nodeType === 1 && n.classList && n.classList.contains('modul')) ||
+                           Array.from(m.removedNodes).some(n => n.nodeType === 1 && n.classList && n.classList.contains('modul'));
+                });
+                if (relevant) this.updateTotalKP();
+            }, 50);
+        });
+
+        observer.observe(document.body, { childList: true, subtree: true });
+        this._observer = observer;
     }
 };
 
