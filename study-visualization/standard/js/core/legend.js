@@ -28,8 +28,6 @@ window.StudienplanLegend = {
         if (window.CSEColorConfig && window.CSEColorConfig.colors && window.CSEColorConfig.colors.themenbereiche[category]) {
             return window.CSEColorConfig.colors.themenbereiche[category].label;
         }
-
-        return names[category] || category;
     }
 };
 
