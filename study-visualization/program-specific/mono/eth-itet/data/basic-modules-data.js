@@ -354,6 +354,7 @@ window.StudiengangModules = [
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     isPlaceholder: true,
+    wahlmodulSource: "./kernfacher-data.js"
   },
   {
     // PFLICHTFELDER
@@ -366,6 +367,7 @@ window.StudiengangModules = [
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     isPlaceholder: true,
+    wahlmodulSource: "./weitere-wahl-grundlagenfacher-data.js"
   },
   {
     // PFLICHTFELDER
@@ -378,6 +380,20 @@ window.StudiengangModules = [
     semester: 0,
     // STUDIENGANGSPEZIFISCH
     isPlaceholder: true,
+    wahlmodulSource: "./praktika-seminar-projekt-data.js"
+  },
+  {
+    // PFLICHTFELDER
+    name: "Wahlfächer",
+    ects: 0,
+    standardcategory: "Wahl Praktika-Projekte-Seminare",
+    secondcategory: "Praktika & Projekte",
+    // KONTEXT
+    year: 3,
+    semester: 0,
+    // STUDIENGANGSPEZIFISCH
+    isPlaceholder: true,
+    wahlmodulSource: "./wahlfacher-data.js"
   },
 
   {
