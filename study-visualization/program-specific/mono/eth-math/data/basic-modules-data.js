@@ -13,23 +13,29 @@ window.StudiengangModules = [
     semester: 1,
   },
   {
+    // PFLICHTFELDER
     name: "Lineare Algebra I",
     kp: 7,
     kategorie: "Obligatorische Fächer",
+    // KONTEXT
     jahr: 1,
     semester: 1,
   },
   {
+    // PFLICHTFELDER
     name: "Physik I",
     kp: 7,
     kategorie: "Obligatorische Fächer",
+    // KONTEXT
     jahr: 1,
     semester: 1,
   },
   {
+    // PFLICHTFELDER
     name: "Informatik",
     kp: 5,
     kategorie: "Obligatorische Fächer",
+    // KONTEXT
     jahr: 1,
     semester: 1,
   },
@@ -38,37 +44,47 @@ window.StudiengangModules = [
 
   // #region 2. Semester
   {
+    // PFLICHTFELDER
     name: "Analysis II: mehrere Variablen",
     kp: 10,
     kategorie: "Obligatorische Fächer",
+    // KONTEXT
     jahr: 1,
     semester: 2,
   },
   {
+    // PFLICHTFELDER
     name: "Lineare Algebra II",
     kp: 7,
     kategorie: "Obligatorische Fächer",
+    // KONTEXT
     jahr: 1,
     semester: 2,
   },
   {
+    // PFLICHTFELDER
     name: "Grundstrukturen",
     kp: 5,
     kategorie: "Obligatorische Fächer",
+    // KONTEXT
     jahr: 1,
     semester: 2,
   },
   {
+    // PFLICHTFELDER
     name: "Datenstrukturen & Algorithmen",
     kp: 8,
     kategorie: "Ergänzungsfächer",
+    // KONTEXT
     jahr: 1,
     semester: 2,
   },
   {
+    // PFLICHTFELDER
     name: "Physik II",
     kp: 7,
     kategorie: "Ergänzungsfächer",
+    // KONTEXT
     jahr: 1,
     semester: 2,
   },
@@ -77,37 +93,47 @@ window.StudiengangModules = [
 
   // #region 3. Semester
   {
+    // PFLICHTFELDER
     name: "Funktionentheorie",
     kp: 6,
     kategorie: "Obligatorische Fächer",
+    // KONTEXT
     jahr: 2,
     semester: 1,
   },
   {
+    // PFLICHTFELDER
     name: "Analysis III (Maßtheorie)",
     kp: 6,
     kategorie: "Obligatorische Fächer",
+    // KONTEXT
     jahr: 2,
     semester: 1,
   },
   {
+    // PFLICHTFELDER
     name: "Algebra I",
     kp: 7,
     kategorie: "Obligatorische Fächer",
+    // KONTEXT
     jahr: 2,
     semester: 1,
   },
   {
+    // PFLICHTFELDER
     name: "Numerische Mathematik I",
     kp: 7,
     kategorie: "Obligatorische Fächer",
+    // KONTEXT
     jahr: 2,
     semester: 1,
   },
   {
+    // PFLICHTFELDER
     name: "Geometrie",
     kp: 6,
     kategorie: "Wahlpflichtfächer",
+    // KONTEXT
     jahr: 2,
     semester: 1,
   },
@@ -116,30 +142,38 @@ window.StudiengangModules = [
 
   // #region 4. Semester
   {
+    // PFLICHTFELDER
     name: "Analysis IV",
     kp: 6,
     kategorie: "Obligatorische Fächer",
+    // KONTEXT
     jahr: 2,
     semester: 2,
   },
   {
+    // PFLICHTFELDER
     name: "Topologie",
     kp: 7,
     kategorie: "Obligatorische Fächer",
+    // KONTEXT
     jahr: 2,
     semester: 2,
   },
   {
+    // PFLICHTFELDER
     name: "Wahrscheinlichkeit und Statistik",
     kp: 8,
     kategorie: "Obligatorische Fächer",
+    // KONTEXT
     jahr: 2,
     semester: 2,
   },
   {
+    // PFLICHTFELDER
     name: "Semesterarbeit",
     kp: 2,
     kategorie: "Wissenschaftliche Arbeit",
+    // KONTEXT
     jahr: 2,
     semester: 2,
   },
@@ -148,69 +182,93 @@ window.StudiengangModules = [
 
   // #region 5. Semester
   {
+    // PFLICHTFELDER
     name: "Time Series Analysis",
     kp: 4,
     kategorie: "Wahlfächer",
+    // KONTEXT
     jahr: 3,
     semester: 1,
+    // STUDIENGANGSPEZIFISCH
     fachgebiet: "",
   },
   {
+    // PFLICHTFELDER
     name: "Applied Statistical Regression",
     kp: 5,
     kategorie: "Wahlfächer",
+    // KONTEXT
     jahr: 3,
     semester: 1,
+    // STUDIENGANGSPEZIFISCH
     fachgebiet: "",
   },
   {
+    // PFLICHTFELDER
     name: "Markov Processes",
     kp: 3,
     kategorie: "Wahlfächer",
+    // KONTEXT
     jahr: 3,
     semester: 1,
+    // STUDIENGANGSPEZIFISCH
     fachgebiet: "",
   },
 
   {
+    // PFLICHTFELDER
     name: "Computational Statistics",
     kp: 8,
     kategorie: "Kernfächer",
+    // KONTEXT
     jahr: 3,
     semester: 1,
+    // STUDIENGANGSPEZIFISCH
     fachgebiet: "Angewandte Mathematik",
   },
   {
+    // PFLICHTFELDER
     name: "Probability Theory",
     kp: 9,
     kategorie: "Kernfächer",
+    // KONTEXT
     jahr: 3,
     semester: 1,
+    // STUDIENGANGSPEZIFISCH
     fachgebiet: "Angewandte Mathematik",
   },
   {
+    // PFLICHTFELDER
     name: "Number Theory",
     kp: 7,
     kategorie: "Kernfächer",
+    // KONTEXT
     jahr: 3,
     semester: 1,
+    // STUDIENGANGSPEZIFISCH
     fachgebiet: "Reine Mathematik",
   },
   {
+    // PFLICHTFELDER
     name: "Algebraic Geometry",
     kp: 9,
     kategorie: "Kernfächer",
+    // KONTEXT
     jahr: 3,
     semester: 1,
+    // STUDIENGANGSPEZIFISCH
     fachgebiet: "Reine Mathematik",
   },
 
   {
+    // PFLICHTFELDER
     name: "Numerical Analysis II",
     kp: 6,
     kategorie: "Wahlpflichtfächer",
+    // KONTEXT
     jahr: 3,
     semester: 1,
+    // STUDIENGANGSPEZIFISCH
     fachgebiet: "",
   },
 
@@ -218,23 +276,29 @@ window.StudiengangModules = [
 
   // #region 6. Semester
   {
+    // PFLICHTFELDER
     name: "Wissenschaft im Kontext",
     kp: 6,
     kategorie: "Wissenschaftliche Arbeit",
+    // KONTEXT
     jahr: 3,
     semester: 2,
   },
   {
+    // PFLICHTFELDER
     name: "Seminar",
     kp: 2,
     kategorie: "Wissenschaftliche Arbeit",
+    // KONTEXT
     jahr: 3,
     semester: 2,
   },
   {
+    // PFLICHTFELDER
     name: "Bachelorarbeit",
     kp: 16,
     kategorie: "Wissenschaftliche Arbeit",
+    // KONTEXT
     jahr: 3,
     semester: 2,
   },
