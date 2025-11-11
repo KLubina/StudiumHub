@@ -1,36 +1,47 @@
-/* Color Manager - StudienplanBase Integration */
+/* Color Manager - Integration with StudienplanBase */
 
-StudienplanBase.prototype.initializeColorManager = function() {
-    console.log('🎨 [ColorManager] initializeColorManager called', {
-        enableColorManager: this.config.enableColorManager,
-        colorManagerExists: !!this.colorManager
+(function () {
+  if (typeof StudienplanBase === "undefined") {
+    console.warn(
+      "[ColorManager] StudienplanBase nicht gefunden – Integration übersprungen."
+    );
+    return;
+  }
+
+  StudienplanBase.prototype.initializeColorManager = function () {
+    if (!this.config || !this.config.enableColorManager) {
+      return;
+    }
+
+    if (this.colorManagerInstance) {
+      this.colorManagerInstance.refreshCurrentMode({
+        updateLegend: true,
+        updateButtons: true,
+      });
+      return;
+    }
+
+    this.colorManagerInstance = new StudiengangColorManager(this);
+    const initialized = this.colorManagerInstance.init();
+    if (!initialized) {
+      this.colorManagerInstance = null;
+    }
+  };
+
+  StudienplanBase.prototype.updateColorManager = function () {
+    if (!this.colorManagerInstance) return;
+    this.colorManagerInstance.refreshCurrentMode({
+      updateLegend: false,
+      updateButtons: false,
     });
+  };
 
-    if (!this.config.enableColorManager || this.colorManager) return;
+  const originalCreateLegend = StudienplanBase.prototype.createLegend;
+  StudienplanBase.prototype.createLegend = function () {
+    originalCreateLegend.call(this);
+    if (this.colorManagerInstance) {
+      this.colorManagerInstance.renderLegendForCurrentMode();
+    }
+  };
+})();
 
-    console.log('🎨 [ColorManager] Creating ColorManager instance');
-    this.colorManager = new StudienplanBaseColorManager(this);
-
-    setTimeout(() => {
-        console.log('🎨 [ColorManager] Adding controls and applying colors');
-        this.colorManager.addControls();
-        this.colorManager.applyColors();
-    }, 100);
-};
-
-// Auto-Integration
-if (!StudienplanBase.prototype._colorManagerIntegrated) {
-    console.log('🎨 [ColorManager] Patching StudienplanBase.prototype.initialize');
-    const originalInit = StudienplanBase.prototype.initialize;
-    StudienplanBase.prototype.initialize = function() {
-        console.log('🎨 [ColorManager] Patched initialize() called, enableColorManager:', this.config?.enableColorManager);
-        originalInit.call(this);
-        if (this.config.enableColorManager) {
-            console.log('🎨 [ColorManager] Calling initializeColorManager()');
-            this.initializeColorManager();
-        } else {
-            console.log('🎨 [ColorManager] Skipping initializeColorManager (enableColorManager is false)');
-        }
-    };
-    StudienplanBase.prototype._colorManagerIntegrated = true;
-}

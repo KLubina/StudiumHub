@@ -10,3 +10,18 @@ window.ITETThirdCategoryConfig = {
     { name: "Physik", klasse: "physik" },
   ],
 };
+
+window.StudiengangColorManagerModes = window.StudiengangColorManagerModes || {};
+window.StudiengangColorManagerModes.themenbereiche = {
+  label: "Themenbereiche",
+  categoryField: "thirdcategory",
+  valueType: "class",
+  order: 2,
+  css: {
+    classes: "colormanagement/thirdcategory-colors/classes.css",
+    colors: "colormanagement/thirdcategory-colors/colors.css",
+  },
+  getCategories() {
+    return window.ITETThirdCategoryConfig?.kategorien || [];
+  },
+};

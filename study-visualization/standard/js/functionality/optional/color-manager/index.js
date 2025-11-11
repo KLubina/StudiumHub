@@ -1,20 +1,16 @@
-/* Color Manager - Main Entry Point */
+/* Color Manager - Entry Point */
 
-const colorManagerModules = [
-    'ColorManager.js',
-    'LegendUpdater.js',
-    'Controls.js',
-    'Integration.js'
-];
+window.subModulesReady.colorManager = (async () => {
+  const loadScript = (src) =>
+    new Promise((resolve) => {
+      const script = document.createElement("script");
+      script.src = src;
+      script.onload = () => resolve();
+      script.onerror = () => resolve();
+      document.head.appendChild(script);
+    });
 
-window.subModulesReady.colorManager = Promise.all(
-    colorManagerModules.map(module => {
-        return new Promise((resolve) => {
-            const script = document.createElement('script');
-            script.src = `js/functionality/optional/color-manager/${module}`;
-            script.onload = () => resolve();
-            script.onerror = () => resolve();
-            document.head.appendChild(script);
-        });
-    })
-);
+  await loadScript("js/functionality/optional/color-manager/ColorManager.js");
+  await loadScript("js/functionality/optional/color-manager/Integration.js");
+})();
+
