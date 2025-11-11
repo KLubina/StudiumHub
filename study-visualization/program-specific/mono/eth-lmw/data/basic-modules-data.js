@@ -6,7 +6,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Ökonomie",
-    kp: 3,
+    ects: 3,
     standardcategory: "Basisprüfung",
     // KONTEXT
     jahr: 1,
@@ -17,7 +17,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Mathematik I: Analysis I und Lineare Algebra",
-    kp: 6,
+    ects: 6,
     standardcategory: "Basisprüfung",
     // KONTEXT
     jahr: 1,
@@ -28,7 +28,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Mathematics IV: Statistics",
-    kp: 4,
+    ects: 4,
     standardcategory: "Basisprüfung",
     // KONTEXT
     jahr: 1,
@@ -39,7 +39,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Welternährungssystem",
-    kp: 4,
+    ects: 4,
     standardcategory: "Basisprüfung",
     // KONTEXT
     jahr: 1,
@@ -50,7 +50,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Chemie I",
-    kp: 4,
+    ects: 4,
     standardcategory: "Basisprüfung",
     // KONTEXT
     jahr: 1,
@@ -61,7 +61,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Allgemeine Biologie I",
-    kp: 3,
+    ects: 3,
     standardcategory: "Basisprüfung",
     // KONTEXT
     jahr: 1,
@@ -73,7 +73,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Einsatz von Informatikmitteln",
-    kp: 2,
+    ects: 2,
     standardcategory: "Zusatzfach Basisjahr",
     // KONTEXT
     jahr: 1,
@@ -84,7 +84,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Grundlagen der Mikroskopie und Pflanzenbiologie",
-    kp: 1,
+    ects: 1,
     standardcategory: "Zusatzfach Basisjahr",
     // KONTEXT
     jahr: 1,
@@ -99,7 +99,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Mathematik II: Analysis II",
-    kp: 7,
+    ects: 7,
     standardcategory: "Basisprüfung",
     // KONTEXT
     jahr: 1,
@@ -110,7 +110,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Physik I",
-    kp: 5,
+    ects: 5,
     standardcategory: "Basisprüfung",
     // KONTEXT
     jahr: 1,
@@ -121,7 +121,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Chemie II",
-    kp: 5,
+    ects: 5,
     standardcategory: "Basisprüfung",
     // KONTEXT
     jahr: 1,
@@ -132,7 +132,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Allgemeine Biologie II",
-    kp: 4,
+    ects: 4,
     standardcategory: "Basisprüfung",
     // KONTEXT
     jahr: 1,
@@ -143,7 +143,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Grundlagen in Lebensmittelwissenschaften",
-    kp: 3,
+    ects: 3,
     standardcategory: "Basisprüfung",
     // KONTEXT
     jahr: 1,
@@ -154,7 +154,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Kulturpflanzen im World Food System",
-    kp: 2,
+    ects: 2,
     standardcategory: "Basisprüfung",
     // KONTEXT
     jahr: 1,
@@ -165,7 +165,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Nutztierwissenschaften im World Food System",
-    kp: 2,
+    ects: 2,
     standardcategory: "Basisprüfung",
     // KONTEXT
     jahr: 1,
@@ -176,7 +176,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Grundzüge des Rechts",
-    kp: 2,
+    ects: 2,
     standardcategory: "Basisprüfung",
     // KONTEXT
     jahr: 1,
@@ -188,7 +188,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Praktikum Chemie",
-    kp: 3,
+    ects: 3,
     standardcategory: "Zusatzfach Basisjahr",
     // KONTEXT
     jahr: 1,
@@ -203,7 +203,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Statistik II",
-    kp: 3,
+    ects: 3,
     standardcategory: "Obligatorisches Fach",
     // KONTEXT
     jahr: 2,
@@ -214,7 +214,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Physik II",
-    kp: 5,
+    ects: 5,
     standardcategory: "Obligatorisches Fach",
     // KONTEXT
     jahr: 2,
@@ -225,7 +225,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Organic Chemistry",
-    kp: 2,
+    ects: 2,
     standardcategory: "Obligatorisches Fach",
     // KONTEXT
     jahr: 2,
@@ -236,7 +236,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Biochemie und Molekulare Biologie",
-    kp: 4,
+    ects: 4,
     standardcategory: "Obligatorisches Fach",
     // KONTEXT
     jahr: 2,
@@ -247,7 +247,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Mikrobiologie",
-    kp: 2,
+    ects: 2,
     standardcategory: "Obligatorisches Fach",
     // KONTEXT
     jahr: 2,
@@ -258,7 +258,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Physiology",
-    kp: 3,
+    ects: 3,
     standardcategory: "Obligatorisches Fach",
     // KONTEXT
     jahr: 2,
@@ -269,7 +269,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Ausgewählte Kapitel der Physikalischen Chemie",
-    kp: 2,
+    ects: 2,
     standardcategory: "Obligatorisches Fach",
     // KONTEXT
     jahr: 2,
@@ -280,7 +280,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Praktikum Physik für LMW",
-    kp: 2,
+    ects: 2,
     standardcategory: "Weitere Fächer",
     // KONTEXT
     jahr: 2,
@@ -291,7 +291,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Praktikum Mikrobiologie",
-    kp: 2,
+    ects: 2,
     standardcategory: "Weitere Fächer",
     // KONTEXT
     jahr: 2,
@@ -302,7 +302,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Lebensmittelchemie I",
-    kp: 3,
+    ects: 3,
     standardcategory: "Kernfach",
     // KONTEXT
     jahr: 2,
@@ -313,7 +313,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Introduction to Nutritional Science",
-    kp: 3,
+    ects: 3,
     standardcategory: "Kernfach",
     // KONTEXT
     jahr: 2,
@@ -328,7 +328,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Agrarökonomie im World Food System",
-    kp: 2,
+    ects: 2,
     standardcategory: "Grundlagenfach II",
     // KONTEXT
     jahr: 2,
@@ -339,7 +339,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Physiology and Anatomy II",
-    kp: 3,
+    ects: 3,
     standardcategory: "Grundlagenfach II",
     // KONTEXT
     jahr: 2,
@@ -350,7 +350,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Molecular Biology",
-    kp: 2,
+    ects: 2,
     standardcategory: "Grundlagenfach II",
     // KONTEXT
     jahr: 2,
@@ -361,7 +361,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Lebensmittelanalytik I",
-    kp: 3,
+    ects: 3,
     standardcategory: "Fachgrundlage",
     // KONTEXT
     jahr: 2,
@@ -372,7 +372,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Lebensmittel-Technologie",
-    kp: 3,
+    ects: 3,
     standardcategory: "Fachgrundlage",
     // KONTEXT
     jahr: 2,
@@ -383,7 +383,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Lebensmittel-Verfahrenstechnik I",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fachgrundlage",
     // KONTEXT
     jahr: 2,
@@ -394,7 +394,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Lebensmittelchemie-Praktikum",
-    kp: 3,
+    ects: 3,
     standardcategory: "Laborpraktikum",
     // KONTEXT
     jahr: 2,
@@ -405,7 +405,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Exkursionen I",
-    kp: 1,
+    ects: 1,
     standardcategory: "Exkursionen",
     // KONTEXT
     jahr: 2,
@@ -420,7 +420,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Lebensmittel-Mikrobiologie I",
-    kp: 3,
+    ects: 3,
     standardcategory: "Fachgrundlage",
     // KONTEXT
     jahr: 3,
@@ -431,7 +431,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Food Biotechnology",
-    kp: 3,
+    ects: 3,
     standardcategory: "Fachgrundlage",
     // KONTEXT
     jahr: 3,
@@ -442,7 +442,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Wissenschaftliches Arbeiten in den Lebensmittelwissenschaften",
-    kp: 3,
+    ects: 3,
     standardcategory: "Lebensmittelwissenschaftliches Fach",
     // KONTEXT
     jahr: 3,
@@ -453,7 +453,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Lebensmittelchemie II",
-    kp: 3,
+    ects: 3,
     standardcategory: "Lebensmittelwissenschaftliches Fach",
     // KONTEXT
     jahr: 3,
@@ -464,7 +464,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Lebensmittelanalytik II",
-    kp: 3,
+    ects: 3,
     standardcategory: "Lebensmittelwissenschaftliches Fach",
     // KONTEXT
     jahr: 3,
@@ -475,7 +475,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Food Materials Science",
-    kp: 4,
+    ects: 4,
     standardcategory: "Lebensmittelwissenschaftliches Fach",
     // KONTEXT
     jahr: 3,
@@ -486,7 +486,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Lebensmittel-Verfahrenstechnik II",
-    kp: 3,
+    ects: 3,
     standardcategory: "Lebensmittelwissenschaftliches Fach",
     // KONTEXT
     jahr: 3,
@@ -497,7 +497,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Experimentelle Lebensmittel-Mikrobiologie",
-    kp: 3,
+    ects: 3,
     standardcategory: "Laborpraktikum",
     // KONTEXT
     jahr: 3,
@@ -508,7 +508,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Lebensmittel-Technologiepraktikum",
-    kp: 2,
+    ects: 2,
     standardcategory: "Laborpraktikum",
     // KONTEXT
     jahr: 3,
@@ -523,7 +523,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Lebensmittel-Mikrobiologie II",
-    kp: 3,
+    ects: 3,
     standardcategory: "Lebensmittelwissenschaftliches Fach",
     // KONTEXT
     jahr: 3,
@@ -534,7 +534,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Food and Beverage Fermentation",
-    kp: 5,
+    ects: 5,
     standardcategory: "Lebensmittelwissenschaftliches Fach",
     // KONTEXT
     jahr: 3,
@@ -545,7 +545,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Advanced Topics in Nutritional Science",
-    kp: 3,
+    ects: 3,
     standardcategory: "Lebensmittelwissenschaftliches Fach",
     // KONTEXT
     jahr: 3,
@@ -556,7 +556,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Introduction to Toxicology",
-    kp: 3,
+    ects: 3,
     standardcategory: "Lebensmittelwissenschaftliches Fach",
     // KONTEXT
     jahr: 3,
@@ -567,7 +567,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Lebensmittel-Sensorik",
-    kp: 2,
+    ects: 2,
     standardcategory: "Lebensmittelwissenschaftliches Fach",
     // KONTEXT
     jahr: 3,
@@ -578,7 +578,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Consumer Behaviour II",
-    kp: 2,
+    ects: 2,
     standardcategory: "Lebensmittelwissenschaftliches Fach",
     // KONTEXT
     jahr: 3,
@@ -589,7 +589,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Lebensmittel-Verfahrenstechnik III",
-    kp: 3,
+    ects: 3,
     standardcategory: "Lebensmittelwissenschaftliches Fach",
     // KONTEXT
     jahr: 3,
@@ -600,7 +600,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Lebensmittel-Verfahrenstechnikpraktikum",
-    kp: 3,
+    ects: 3,
     standardcategory: "Laborpraktikum",
     // KONTEXT
     jahr: 3,
@@ -611,7 +611,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Food Biotechnology Laboratory Course",
-    kp: 3,
+    ects: 3,
     standardcategory: "Laborpraktikum",
     // KONTEXT
     jahr: 3,
@@ -622,7 +622,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Laborpraktikum Toxikologie und Ernährung",
-    kp: 3,
+    ects: 3,
     standardcategory: "Laborpraktikum",
     // KONTEXT
     jahr: 3,
@@ -633,7 +633,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Exkursionen II",
-    kp: 1,
+    ects: 1,
     standardcategory: "Exkursionen",
     // KONTEXT
     jahr: 3,
@@ -648,7 +648,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Wissenschaft im Kontext",
-    kp: 6,
+    ects: 6,
     standardcategory: "Wissenschaft im Kontext",
     // KONTEXT
     jahr: 3,
@@ -663,7 +663,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Wahlfächer",
-    kp: 0,
+    ects: 0,
     standardcategory: "Wahlfächer",
     // KONTEXT
     jahr: 3,
@@ -678,7 +678,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Bachelor-Arbeit",
-    kp: 15,
+    ects: 15,
     standardcategory: "Bachelor-Arbeit",
     // KONTEXT
     jahr: 3,

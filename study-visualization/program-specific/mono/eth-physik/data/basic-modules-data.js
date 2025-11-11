@@ -6,7 +6,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Physik I",
-    kp: 7,
+    ects: 7,
     standardcategory: "Basisprüfungsblock 1",
     // KONTEXT
     jahr: 1,
@@ -15,7 +15,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Analysis I",
-    kp: 10,
+    ects: 10,
     standardcategory: "Basisprüfungsblock 1",
     // KONTEXT
     jahr: 1,
@@ -24,7 +24,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Informatik",
-    kp: 5,
+    ects: 5,
     standardcategory: "Basisprüfungsblock 1",
     // KONTEXT
     jahr: 1,
@@ -33,7 +33,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Lineare Algebra I",
-    kp: 7,
+    ects: 7,
     standardcategory: "Basisprüfungsblock 2",
     // KONTEXT
     jahr: 1,
@@ -46,7 +46,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Lineare Algebra II",
-    kp: 7,
+    ects: 7,
     standardcategory: "Basisprüfungsblock 2",
     // KONTEXT
     jahr: 1,
@@ -55,7 +55,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Analysis II",
-    kp: 10,
+    ects: 10,
     standardcategory: "Basisprüfungsblock 2",
     // KONTEXT
     jahr: 1,
@@ -64,7 +64,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Physik II",
-    kp: 7,
+    ects: 7,
     standardcategory: "Basisprüfungsblock 2",
     // KONTEXT
     jahr: 1,
@@ -73,7 +73,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Datenanalyse",
-    kp: 5,
+    ects: 5,
     standardcategory: "Basisprüfungsblock 2",
     // KONTEXT
     jahr: 1,
@@ -86,7 +86,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Allgemeine Mechanik",
-    kp: 6,
+    ects: 6,
     standardcategory: "Prüfungsblock I",
     // KONTEXT
     jahr: 2,
@@ -95,7 +95,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Physikpraktikum 1",
-    kp: 5,
+    ects: 5,
     standardcategory: "Praktika",
     // KONTEXT
     jahr: 2,
@@ -104,7 +104,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Funktionentheorie",
-    kp: 5,
+    ects: 5,
     standardcategory: "Prüfungsblock I",
     // KONTEXT
     jahr: 2,
@@ -113,7 +113,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Mathematische Methoden der Physik I",
-    kp: 6,
+    ects: 6,
     standardcategory: "Prüfungsblock IIa",
     // KONTEXT
     jahr: 2,
@@ -122,7 +122,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Physik III",
-    kp: 7,
+    ects: 7,
     standardcategory: "Prüfungsblock I",
     // KONTEXT
     jahr: 2,
@@ -135,7 +135,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Elektrodynamik",
-    kp: 8,
+    ects: 8,
     standardcategory: "Prüfungsblock IIa",
     // KONTEXT
     jahr: 2,
@@ -144,7 +144,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Theorie der Wärme",
-    kp: 6,
+    ects: 6,
     standardcategory: "Prüfungsblock IIb",
     // KONTEXT
     jahr: 2,
@@ -153,7 +153,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Numerische Methoden",
-    kp: 5,
+    ects: 5,
     standardcategory: "Prüfungsblock IIb",
     // KONTEXT
     jahr: 2,
@@ -162,7 +162,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Physikpraktikum 2",
-    kp: 6,
+    ects: 6,
     standardcategory: "Praktika",
     // KONTEXT
     jahr: 2,
@@ -171,7 +171,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "GESS: Wissenschaft im Kontext",
-    kp: 2,
+    ects: 2,
     standardcategory: "Wissenschaft im Kontext",
     // KONTEXT
     jahr: 2,
@@ -180,7 +180,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Mathematische Methoden der Physik II",
-    kp: 8,
+    ects: 8,
     standardcategory: "Prüfungsblock IIa",
     // KONTEXT
     jahr: 2,
@@ -193,7 +193,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "GESS: Wissenschaft im Kontext",
-    kp: 2,
+    ects: 2,
     standardcategory: "Wissenschaft im Kontext",
     // KONTEXT
     jahr: 3,
@@ -202,7 +202,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Experimentelle oder theoretische Arbeit",
-    kp: 8,
+    ects: 8,
     standardcategory: "Wissenschaftliche Arbeit",
     // KONTEXT
     jahr: 3,
@@ -211,7 +211,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Kernfach I (experimentell)",
-    kp: 8,
+    ects: 8,
     standardcategory: "Kernfächer",
     // KONTEXT
     jahr: 3,
@@ -220,7 +220,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Kernfach II (experimentell oder theoretisch)",
-    kp: 8,
+    ects: 8,
     standardcategory: "Kernfächer",
     // KONTEXT
     jahr: 3,
@@ -229,7 +229,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Quantenmechanik I",
-    kp: 8,
+    ects: 8,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 3,
@@ -242,7 +242,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Kernfach III",
-    kp: 8,
+    ects: 8,
     standardcategory: "Kernfächer",
     // KONTEXT
     jahr: 3,
@@ -251,7 +251,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Wahlfächer",
-    kp: 20,
+    ects: 20,
     standardcategory: "Wahlfächer",
     // KONTEXT
     jahr: 3,

@@ -6,7 +6,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Analysis I",
-    kp: 7,
+    ects: 7,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 1,
@@ -15,7 +15,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Mechanik I",
-    kp: 6,
+    ects: 6,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 1,
@@ -24,7 +24,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Chemie",
-    kp: 4,
+    ects: 4,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 1,
@@ -33,7 +33,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Informatik I",
-    kp: 4,
+    ects: 4,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 1,
@@ -42,7 +42,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Lineare Algebra I",
-    kp: 3,
+    ects: 3,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 1,
@@ -51,7 +51,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Engineering Design and Material Selection",
-    kp: 4,
+    ects: 4,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 1,
@@ -64,7 +64,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Analysis II",
-    kp: 7,
+    ects: 7,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 1,
@@ -73,7 +73,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Mechanik II",
-    kp: 6,
+    ects: 6,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 1,
@@ -82,7 +82,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Maschinenkonstruktion",
-    kp: 5,
+    ects: 5,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 1,
@@ -91,7 +91,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Physik",
-    kp: 5,
+    ects: 5,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 1,
@@ -100,7 +100,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Informatik II",
-    kp: 4,
+    ects: 4,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 1,
@@ -109,7 +109,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Lineare Algebra II",
-    kp: 3,
+    ects: 3,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 1,
@@ -118,7 +118,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Praktikum Physik",
-    kp: 1,
+    ects: 1,
     standardcategory: "Obligatorische Praktikum",
     // KONTEXT
     jahr: 1,
@@ -127,7 +127,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Wissenschaft im Kontext",
-    kp: 6,
+    ects: 6,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 1,
@@ -140,7 +140,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Mechanik III",
-    kp: 6,
+    ects: 6,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 2,
@@ -149,7 +149,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Elektrotechnik",
-    kp: 4,
+    ects: 4,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 2,
@@ -158,7 +158,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Thermodynamik I",
-    kp: 4,
+    ects: 4,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 2,
@@ -167,7 +167,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Regelungstechnik I",
-    kp: 4,
+    ects: 4,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 2,
@@ -176,7 +176,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Analysis III",
-    kp: 4,
+    ects: 4,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 2,
@@ -185,7 +185,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Innovationsprojekt",
-    kp: 3,
+    ects: 3,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 2,
@@ -198,7 +198,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Fluiddynamik",
-    kp: 8,
+    ects: 8,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 2,
@@ -207,7 +207,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Werkstoffe und Fertigung",
-    kp: 6,
+    ects: 6,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 2,
@@ -216,7 +216,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Stochastics and Machine Learning",
-    kp: 5,
+    ects: 5,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 2,
@@ -225,7 +225,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Thermodynamik II",
-    kp: 4,
+    ects: 4,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 2,
@@ -234,7 +234,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Quantenmechanik",
-    kp: 4,
+    ects: 4,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 2,
@@ -243,7 +243,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Thermodynamik III",
-    kp: 3,
+    ects: 3,
     standardcategory: "Obligatorische Fächer",
     // KONTEXT
     jahr: 2,
@@ -255,7 +255,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Wahlfächer",
-    kp: 24,
+    ects: 24,
     standardcategory: "Wahlfächer",
     // KONTEXT
     jahr: 3,
@@ -264,7 +264,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Fokus-Vertiefung",
-    kp: 20,
+    ects: 20,
     standardcategory: "Fokus-Vertiefung",
     // KONTEXT
     jahr: 3,
@@ -273,7 +273,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Bachelor-Arbeit",
-    kp: 16,
+    ects: 16,
     standardcategory: "Wissenschaftliche Arbeit",
     // KONTEXT
     jahr: 3,

@@ -6,7 +6,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Algorithmen und Datenstrukturen",
-    kp: 6,
+    ects: 6,
     standardcategory: "grundlagen",
     // KONTEXT
     jahr: 1,
@@ -15,7 +15,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Mathematik I",
-    kp: 6,
+    ects: 6,
     standardcategory: "grundlagen",
     // KONTEXT
     jahr: 1,
@@ -24,7 +24,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Computer Science",
-    kp: 6,
+    ects: 6,
     standardcategory: "grundlagen",
     // KONTEXT
     jahr: 1,
@@ -33,7 +33,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Einführung in Computational und Data Science",
-    kp: 6,
+    ects: 6,
     standardcategory: "grundlagen",
     // KONTEXT
     jahr: 1,
@@ -42,7 +42,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Programmierung und Prompt Engineering I",
-    kp: 6,
+    ects: 6,
     standardcategory: "grundlagen",
     // KONTEXT
     jahr: 1,
@@ -51,7 +51,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "First Certificate in English B2",
-    kp: 3,
+    ects: 3,
     standardcategory: "grundlagen",
     // KONTEXT
     jahr: 1,
@@ -64,7 +64,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Mathematik II",
-    kp: 6,
+    ects: 6,
     standardcategory: "grundlagen",
     // KONTEXT
     jahr: 1,
@@ -73,7 +73,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Datenbanken und Datenverarbeitung",
-    kp: 6,
+    ects: 6,
     standardcategory: "grundlagen",
     // KONTEXT
     jahr: 1,
@@ -82,7 +82,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Effiziente Algorithmen",
-    kp: 6,
+    ects: 6,
     standardcategory: "grundlagen",
     // KONTEXT
     jahr: 1,
@@ -91,7 +91,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Programmierung und Prompt Engineering II",
-    kp: 6,
+    ects: 6,
     standardcategory: "grundlagen",
     // KONTEXT
     jahr: 1,
@@ -100,7 +100,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Numerische Methoden",
-    kp: 6,
+    ects: 6,
     standardcategory: "grundlagen",
     // KONTEXT
     jahr: 1,
@@ -113,7 +113,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Innovationsmanagement und Design Thinking",
-    kp: 4,
+    ects: 4,
     standardcategory: "grundlagen",
     // KONTEXT
     jahr: 2,
@@ -122,7 +122,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Applied English for Computational and Data Scientists",
-    kp: 6,
+    ects: 6,
     standardcategory: "grundlagen",
     // KONTEXT
     jahr: 2,
@@ -131,7 +131,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Fortgeschrittene Numerische Methoden",
-    kp: 6,
+    ects: 6,
     standardcategory: "grundlagen",
     // KONTEXT
     jahr: 2,
@@ -140,7 +140,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Machine Learning",
-    kp: 6,
+    ects: 6,
     standardcategory: "grundlagen",
     // KONTEXT
     jahr: 2,
@@ -149,7 +149,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Modellierung und Simulation I",
-    kp: 6,
+    ects: 6,
     standardcategory: "grundlagen",
     // KONTEXT
     jahr: 2,
@@ -158,7 +158,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Mathematik III",
-    kp: 2,
+    ects: 2,
     standardcategory: "grundlagen",
     // KONTEXT
     jahr: 2,
@@ -171,7 +171,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Algorithmen des wissenschaftlichen Rechnens",
-    kp: 4,
+    ects: 4,
     standardcategory: "schwerpunkte",
     // KONTEXT
     jahr: 2,
@@ -180,7 +180,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Data Science und Informatik bei Banken und Versicherungen",
-    kp: 6,
+    ects: 6,
     standardcategory: "grundlagen",
     // KONTEXT
     jahr: 2,
@@ -189,7 +189,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Deep Learning",
-    kp: 6,
+    ects: 6,
     standardcategory: "grundlagen",
     // KONTEXT
     jahr: 2,
@@ -198,7 +198,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "High Performance Computing",
-    kp: 6,
+    ects: 6,
     standardcategory: "grundlagen",
     // KONTEXT
     jahr: 2,
@@ -207,7 +207,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Hyperautomation und Robotics Process Automation (RPA)",
-    kp: 5,
+    ects: 5,
     standardcategory: "grundlagen",
     // KONTEXT
     jahr: 2,
@@ -216,7 +216,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Natural Language Processing",
-    kp: 3,
+    ects: 3,
     standardcategory: "grundlagen",
     // KONTEXT
     jahr: 2,
@@ -229,7 +229,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Computational Steering",
-    kp: 8,
+    ects: 8,
     standardcategory: "schwerpunkte",
     // KONTEXT
     jahr: 3,
@@ -238,7 +238,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Modellierung und Simulation II",
-    kp: 8,
+    ects: 8,
     standardcategory: "schwerpunkte",
     // KONTEXT
     jahr: 3,
@@ -247,7 +247,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Agiles Projektmanagement und Nachhaltigkeit",
-    kp: 6,
+    ects: 6,
     standardcategory: "grundlagen",
     // KONTEXT
     jahr: 3,
@@ -256,7 +256,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Data Science und Informatik in der Biologie",
-    kp: 4,
+    ects: 4,
     standardcategory: "grundlagen",
     // KONTEXT
     jahr: 3,
@@ -265,7 +265,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Data Science und Informatik in der Medizin",
-    kp: 4,
+    ects: 4,
     standardcategory: "grundlagen",
     // KONTEXT
     jahr: 3,
@@ -278,7 +278,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Uncertainty Quantification und Explainable AI",
-    kp: 8,
+    ects: 8,
     standardcategory: "schwerpunkte",
     // KONTEXT
     jahr: 3,
@@ -287,7 +287,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Scientific Visualization",
-    kp: 8,
+    ects: 8,
     standardcategory: "schwerpunkte",
     // KONTEXT
     jahr: 3,
@@ -296,7 +296,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Projektarbeit Computational and Data Science",
-    kp: 6,
+    ects: 6,
     standardcategory: "labor",
     // KONTEXT
     jahr: 3,
@@ -305,7 +305,7 @@ window.StudiengangModules = [
   { 
     // PFLICHTFELDER
     name: "Wahlmodul", 
-    kp: 4, 
+    ects: 4, 
     standardcategory: "wahlmodul",
     // KONTEXT
     jahr: 3, 
@@ -314,7 +314,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Wissenschaftliches Arbeiten und Exposé zur Bachelorarbeit",
-    kp: 4,
+    ects: 4,
     standardcategory: "labor",
     // KONTEXT
     jahr: 3,
@@ -327,7 +327,7 @@ window.StudiengangModules = [
   { 
     // PFLICHTFELDER
     name: "Big Data", 
-    kp: 8, 
+    ects: 8, 
     standardcategory: "schwerpunkte",
     // KONTEXT
     jahr: 4, 
@@ -336,7 +336,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Reinforcement Learning",
-    kp: 8,
+    ects: 8,
     standardcategory: "schwerpunkte",
     // KONTEXT
     jahr: 4,
@@ -345,7 +345,7 @@ window.StudiengangModules = [
   { 
     // PFLICHTFELDER
     name: "Fachpraktikum", 
-    kp: 6, 
+    ects: 6, 
     standardcategory: "labor",
     // KONTEXT
     jahr: 4, 
@@ -354,7 +354,7 @@ window.StudiengangModules = [
   { 
     // PFLICHTFELDER
     name: "Wahlmodul", 
-    kp: 4, 
+    ects: 4, 
     standardcategory: "wahlmodul",
     // KONTEXT
     jahr: 4, 
@@ -367,7 +367,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Datenvisualisierung",
-    kp: 8,
+    ects: 8,
     standardcategory: "schwerpunkte",
     // KONTEXT
     jahr: 4,
@@ -376,7 +376,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Time Series Analysis",
-    kp: 8,
+    ects: 8,
     standardcategory: "schwerpunkte",
     // KONTEXT
     jahr: 4,
@@ -385,7 +385,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Bachelor Thesis",
-    kp: 14,
+    ects: 14,
     standardcategory: "projektarbeit",
     // KONTEXT
     jahr: 4,

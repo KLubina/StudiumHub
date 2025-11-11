@@ -5,17 +5,17 @@
 window.ITETWeitereWahlGrundlagenData = [
   {
     name: "Computational Thinking",
-    kp: 4,
+    ects: 4,
     standardcategory: "Weitere Wahl-Grundlagenfächer"
   },
   {
     name: "High-Frequency Design Techniques",
-    kp: 4,
+    ects: 4,
     standardcategory: "Weitere Wahl-Grundlagenfächer"
   },
   {
     name: "Introduction to Electric Power Transmission: System & Technology",
-    kp: 4,
+    ects: 4,
     standardcategory: "Weitere Wahl-Grundlagenfächer"
   }
 ];

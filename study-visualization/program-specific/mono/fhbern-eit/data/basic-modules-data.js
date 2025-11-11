@@ -9,7 +9,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Lineare Algebra und Geometrie 1",
-    kp: 4,
+    ects: 4,
     standardcategory: "Grundlagenfächer",
     // KONTEXT
     jahr: 1,
@@ -18,7 +18,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Analysis 1",
-    kp: 4,
+    ects: 4,
     standardcategory: "Grundlagenfächer",
     // KONTEXT
     jahr: 1,
@@ -27,7 +27,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Physik 1",
-    kp: 2,
+    ects: 2,
     standardcategory: "Grundlagenfächer",
     // KONTEXT
     jahr: 1,
@@ -36,7 +36,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Chemie & Werkstoffe 1",
-    kp: 2,
+    ects: 2,
     standardcategory: "Grundlagenfächer",
     // KONTEXT
     jahr: 1,
@@ -47,7 +47,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Elektronik Grundlagen",
-    kp: 4,
+    ects: 4,
     standardcategory: "Grundlagenfächer",
     // KONTEXT
     jahr: 1,
@@ -56,7 +56,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Grundlagen der Elektrotechnik",
-    kp: 4,
+    ects: 4,
     standardcategory: "Grundlagenfächer",
     // KONTEXT
     jahr: 1,
@@ -67,7 +67,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Funktionale Softwareentwicklung in C",
-    kp: 4,
+    ects: 4,
     standardcategory: "Grundlagenfächer",
     // KONTEXT
     jahr: 1,
@@ -76,7 +76,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Labor-Projekte",
-    kp: 4,
+    ects: 4,
     standardcategory: "Praktika und Projekte",
     // KONTEXT
     jahr: 1,
@@ -85,7 +85,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Special Week Projektmanagement",
-    kp: 2,
+    ects: 2,
     standardcategory: "Sprachen und Soft Skills",
     // KONTEXT
     jahr: 1,
@@ -101,7 +101,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Analysis 2",
-    kp: 6,
+    ects: 6,
     standardcategory: "Grundlagenfächer",
     // KONTEXT
     jahr: 1,
@@ -110,7 +110,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Lineare Algebra & Geometrie 2",
-    kp: 2,
+    ects: 2,
     standardcategory: "Grundlagenfächer",
     // KONTEXT
     jahr: 1,
@@ -119,7 +119,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Physik 2",
-    kp: 4,
+    ects: 4,
     standardcategory: "Grundlagenfächer",
     // KONTEXT
     jahr: 1,
@@ -128,7 +128,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Chemie & Werkstoffe 2",
-    kp: 2,
+    ects: 2,
     standardcategory: "Grundlagenfächer",
     // KONTEXT
     jahr: 1,
@@ -139,7 +139,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Entwurf elektronischer Schaltungen",
-    kp: 4,
+    ects: 4,
     standardcategory: "Grundlagenfächer",
     // KONTEXT
     jahr: 1,
@@ -148,7 +148,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Wechselstromtechnik",
-    kp: 4,
+    ects: 4,
     standardcategory: "Grundlagenfächer",
     // KONTEXT
     jahr: 1,
@@ -159,7 +159,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Hardwarenahe Softwareentwicklung",
-    kp: 4,
+    ects: 4,
     standardcategory: "Grundlagenfächer",
     // KONTEXT
     jahr: 1,
@@ -168,7 +168,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Labor-Projekte",
-    kp: 4,
+    ects: 4,
     standardcategory: "Praktika und Projekte",
     // KONTEXT
     jahr: 1,
@@ -177,7 +177,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Rhetorik & Präsentationstechnik",
-    kp: 2,
+    ects: 2,
     standardcategory: "Sprachen und Soft Skills",
     // KONTEXT
     jahr: 1,
@@ -193,7 +193,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Mathematik der Signalverarbeitung",
-    kp: 6,
+    ects: 6,
     standardcategory: "Grundlagenfächer",
     // KONTEXT
     jahr: 2,
@@ -202,7 +202,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Kontinuierliche Signale und Systeme",
-    kp: 4,
+    ects: 4,
     standardcategory: "Grundlagenfächer",
     // KONTEXT
     jahr: 2,
@@ -211,7 +211,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Physik 3",
-    kp: 2,
+    ects: 2,
     standardcategory: "Grundlagenfächer",
     // KONTEXT
     jahr: 2,
@@ -222,7 +222,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Elektrische und magnetische Felder",
-    kp: 4,
+    ects: 4,
     standardcategory: "Grundlagenfächer",
     // KONTEXT
     jahr: 2,
@@ -231,7 +231,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Elektronische Systeme",
-    kp: 4,
+    ects: 4,
     standardcategory: "Grundlagenfächer",
     // KONTEXT
     jahr: 2,
@@ -240,7 +240,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Communication Networks",
-    kp: 2,
+    ects: 2,
     standardcategory: "Grundlagenfächer",
     // KONTEXT
     jahr: 2,
@@ -251,7 +251,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "SW-Projekte",
-    kp: 4,
+    ects: 4,
     standardcategory: "Praktika und Projekte",
     // KONTEXT
     jahr: 2,
@@ -260,7 +260,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "International English",
-    kp: 2,
+    ects: 2,
     standardcategory: "Sprachen und Soft Skills",
     // KONTEXT
     jahr: 2,
@@ -269,7 +269,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Special Week Start-up Gründung BWL",
-    kp: 2,
+    ects: 2,
     standardcategory: "Sprachen und Soft Skills",
     // KONTEXT
     jahr: 2,
@@ -285,7 +285,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Wahrscheinlichkeit, Statistik und dynamische Systeme",
-    kp: 6,
+    ects: 6,
     standardcategory: "Grundlagenfächer",
     // KONTEXT
     jahr: 2,
@@ -294,7 +294,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Physik 4",
-    kp: 2,
+    ects: 2,
     standardcategory: "Grundlagenfächer",
     // KONTEXT
     jahr: 2,
@@ -305,7 +305,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Digitale Signalverarbeitung",
-    kp: 4,
+    ects: 4,
     standardcategory: "Grundlagenfächer",
     // KONTEXT
     jahr: 2,
@@ -314,7 +314,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Regelungstechnik",
-    kp: 4,
+    ects: 4,
     standardcategory: "Grundlagenfächer",
     // KONTEXT
     jahr: 2,
@@ -323,7 +323,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Anwendung elektronischer Systeme",
-    kp: 4,
+    ects: 4,
     standardcategory: "Grundlagenfächer",
     // KONTEXT
     jahr: 2,
@@ -334,7 +334,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Einstieg in OOP",
-    kp: 4,
+    ects: 4,
     standardcategory: "Grundlagenfächer",
     // KONTEXT
     jahr: 2,
@@ -343,7 +343,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "System-Projekte",
-    kp: 6,
+    ects: 6,
     standardcategory: "Praktika und Projekte",
     // KONTEXT
     jahr: 2,
@@ -352,7 +352,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Technical English",
-    kp: 2,
+    ects: 2,
     standardcategory: "Sprachen und Soft Skills",
     // KONTEXT
     jahr: 2,
@@ -368,7 +368,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Projektarbeit",
-    kp: 6,
+    ects: 6,
     standardcategory: "Praktika und Projekte",
     // KONTEXT
     jahr: 3,
@@ -377,7 +377,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Volkswirtschaftslehre",
-    kp: 2,
+    ects: 2,
     standardcategory: "Sprachen und Soft Skills",
     // KONTEXT
     jahr: 3,
@@ -386,7 +386,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Special Week Nachhaltigkeit",
-    kp: 2,
+    ects: 2,
     standardcategory: "Sprachen und Soft Skills",
     // KONTEXT
     jahr: 3,
@@ -397,7 +397,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Vertiefungsrichtung",
-    kp: 16,
+    ects: 16,
     standardcategory: "Vertiefungsrichtungen",
     // KONTEXT
     jahr: 3,
@@ -407,7 +407,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Wahlmodul",
-    kp: 2,
+    ects: 2,
     standardcategory: "Fachliche Wahlmodule",
     // KONTEXT
     jahr: 3,
@@ -417,7 +417,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Wahlmodul",
-    kp: 2,
+    ects: 2,
     standardcategory: "Fachliche Wahlmodule",
     // KONTEXT
     jahr: 3,
@@ -434,7 +434,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Bachelor-Thesis",
-    kp: 12,
+    ects: 12,
     standardcategory: "Abschlussarbeit",
     // KONTEXT
     jahr: 3,
@@ -445,7 +445,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Vertiefungsrichtung",
-    kp: 12,
+    ects: 12,
     standardcategory: "Vertiefungsrichtungen",
     // KONTEXT
     jahr: 3,
@@ -455,7 +455,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Wahlmodul",
-    kp: 2,
+    ects: 2,
     standardcategory: "Fachliche Wahlmodule",
     // KONTEXT
     jahr: 3,
@@ -465,7 +465,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Wahlmodul",
-    kp: 2,
+    ects: 2,
     standardcategory: "Fachliche Wahlmodule",
     // KONTEXT
     jahr: 3,

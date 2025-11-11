@@ -6,7 +6,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Introduction to Management",
-    kp: 3,
+    ects: 3,
     standardcategory: "Core Courses",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Management & HR",
@@ -14,7 +14,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Human Resource Management: Leading Teams",
-    kp: 3,
+    ects: 3,
     standardcategory: "Core Courses",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Management & HR",
@@ -22,7 +22,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Responsible Leadership",
-    kp: 3,
+    ects: 3,
     standardcategory: "Core Courses",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Management & HR",
@@ -32,7 +32,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Strategic Management",
-    kp: 3,
+    ects: 3,
     standardcategory: "Core Courses",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Strategy & Technology",
@@ -40,7 +40,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Corporate Sustainability",
-    kp: 3,
+    ects: 3,
     standardcategory: "Core Courses",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Strategy & Technology",
@@ -48,7 +48,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Technology and Innovation Management",
-    kp: 3,
+    ects: 3,
     standardcategory: "Core Courses",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Strategy & Technology",
@@ -56,7 +56,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Introduction to Marketing",
-    kp: 3,
+    ects: 3,
     standardcategory: "Core Courses",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Strategy & Technology",
@@ -64,7 +64,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Entrepreneurship",
-    kp: 3,
+    ects: 3,
     standardcategory: "Core Courses",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Strategy & Technology",
@@ -74,7 +74,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Management of Digital Transformation",
-    kp: 3,
+    ects: 3,
     standardcategory: "Core Courses",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Operations & IT",
@@ -82,7 +82,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Production and Operations Management",
-    kp: 3,
+    ects: 3,
     standardcategory: "Core Courses",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Operations & IT",
@@ -90,7 +90,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Strategic Supply Chain Management",
-    kp: 3,
+    ects: 3,
     standardcategory: "Core Courses",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Operations & IT",
@@ -100,7 +100,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Operations Research",
-    kp: 3,
+    ects: 3,
     standardcategory: "Core Courses",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Methods",
@@ -108,7 +108,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Economic Dynamics and Complexity",
-    kp: 3,
+    ects: 3,
     standardcategory: "Core Courses",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Methods",
@@ -116,7 +116,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Empirical Methods in Management",
-    kp: 3,
+    ects: 3,
     standardcategory: "Core Courses",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Methods",
@@ -124,7 +124,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Principles of Econometrics",
-    kp: 3,
+    ects: 3,
     standardcategory: "Core Courses",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Methods",
@@ -134,7 +134,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Principles of Macroeconomics",
-    kp: 3,
+    ects: 3,
     standardcategory: "Core Courses",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Economics",
@@ -142,7 +142,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Principles of Microeconomics",
-    kp: 3,
+    ects: 3,
     standardcategory: "Core Courses",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Economics",
@@ -150,7 +150,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Sustainability Economics",
-    kp: 3,
+    ects: 3,
     standardcategory: "Core Courses",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Economics",
@@ -158,7 +158,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Economic Growth, Cycles and Policy",
-    kp: 3,
+    ects: 3,
     standardcategory: "Core Courses",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Economics",
@@ -166,7 +166,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Markets and Games",
-    kp: 3,
+    ects: 3,
     standardcategory: "Core Courses",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Economics",
@@ -176,7 +176,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Accounting for Managers",
-    kp: 3,
+    ects: 3,
     standardcategory: "Core Courses",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Finance",
@@ -184,7 +184,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Introduction to Finance",
-    kp: 3,
+    ects: 3,
     standardcategory: "Core Courses",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Finance",
@@ -192,7 +192,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Advanced Finance",
-    kp: 3,
+    ects: 3,
     standardcategory: "Core Courses",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Finance",
@@ -202,7 +202,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Social Data Science",
-    kp: 2,
+    ects: 2,
     standardcategory: "Elective Courses",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Systems Design & Risks",
@@ -210,7 +210,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Risk and Insurance Economics",
-    kp: 3,
+    ects: 3,
     standardcategory: "Elective Courses",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Systems Design & Risks",
@@ -218,7 +218,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Semester Project Small",
-    kp: 3,
+    ects: 3,
     standardcategory: "Elective Courses",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Additional Courses",
@@ -226,7 +226,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Semester Project Large",
-    kp: 6,
+    ects: 6,
     standardcategory: "Elective Courses",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Additional Courses",
@@ -236,7 +236,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Supplementary Courses",
-    kp: 12,
+    ects: 12,
     standardcategory: "Supplementary Courses",
   },
 
@@ -244,13 +244,13 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Master's Thesis",
-    kp: 30,
+    ects: 30,
     standardcategory: "Master's Thesis",
   },
   {
     // PFLICHTFELDER
     name: "Internship",
-    kp: 6,
+    ects: 6,
     standardcategory: "Internship",
   },
 ];

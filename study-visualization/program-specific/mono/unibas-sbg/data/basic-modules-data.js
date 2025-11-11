@@ -8,7 +8,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Informationskompetenz",
-    kp: 3,
+    ects: 3,
     standardcategory: "Grundlagenmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Einführung in das Studium Sport, Bewegung und Gesundheit",
@@ -16,7 +16,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Präsentations- und Kommunikationskompetenz",
-    kp: 3,
+    ects: 3,
     standardcategory: "Grundlagenmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Einführung in das Studium Sport, Bewegung und Gesundheit",
@@ -26,7 +26,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Empirische Forschungsmethoden und Statistik",
-    kp: 6,
+    ects: 6,
     standardcategory: "Grundlagenmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Grundlagen des wissenschaftlichen Arbeitens",
@@ -36,7 +36,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Einführung in die Forschungsmethoden",
-    kp: 6,
+    ects: 6,
     standardcategory: "Grundlagenmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Grundlagen der Forschungsmethoden",
@@ -46,7 +46,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Anatomie der Organe",
-    kp: 6,
+    ects: 6,
     standardcategory: "Grundlagenmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Anatomische Grundlagen",
@@ -54,7 +54,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Anatomie des Bewegungsapparates",
-    kp: 6,
+    ects: 6,
     standardcategory: "Grundlagenmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Anatomische Grundlagen",
@@ -64,7 +64,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Physiologie von Gewebe und Zellen",
-    kp: 6,
+    ects: 6,
     standardcategory: "Grundlagenmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Physiologische Grundlagen",
@@ -72,7 +72,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Physiologie der Organe",
-    kp: 6,
+    ects: 6,
     standardcategory: "Grundlagenmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Physiologische Grundlagen",
@@ -82,7 +82,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Bewegungswissenschaft: Motorische Kontrolle",
-    kp: 3,
+    ects: 3,
     standardcategory: "Grundlagenmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Trainings- und bewegungswissenschaftliche Grundlagen",
@@ -90,7 +90,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Trainingswissenschaftliche Grundlagen",
-    kp: 3,
+    ects: 3,
     standardcategory: "Grundlagenmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Trainings- und bewegungswissenschaftliche Grundlagen",
@@ -100,7 +100,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Grundlagen der Sportpädagogik",
-    kp: 3,
+    ects: 3,
     standardcategory: "Grundlagenmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Erziehungs-, geistes- und kulturwissenschaftliche Grundlagen",
@@ -108,7 +108,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Grundlagen der Sportsoziologie und -geschichte",
-    kp: 3,
+    ects: 3,
     standardcategory: "Grundlagenmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Erziehungs-, geistes- und kulturwissenschaftliche Grundlagen",
@@ -118,7 +118,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Grundlagen der Sportpsychologie",
-    kp: 3,
+    ects: 3,
     standardcategory: "Grundlagenmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Sozial- und verhaltenswissenschaftliche Grundlagen",
@@ -126,7 +126,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Grundlagen psychosozialer Gesundheit",
-    kp: 3,
+    ects: 3,
     standardcategory: "Grundlagenmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Sozial- und verhaltenswissenschaftliche Grundlagen",
@@ -136,7 +136,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Geräteturnen - basic",
-    kp: 1,
+    ects: 1,
     standardcategory: "Grundlagenmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Grundlagen Einzelsportarten",
@@ -144,7 +144,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Leichtathletik - basic",
-    kp: 1,
+    ects: 1,
     standardcategory: "Grundlagenmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Grundlagen Einzelsportarten",
@@ -152,7 +152,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Schwimmen - basic",
-    kp: 1,
+    ects: 1,
     standardcategory: "Grundlagenmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Grundlagen Einzelsportarten",
@@ -160,7 +160,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Tanz - basic",
-    kp: 1,
+    ects: 1,
     standardcategory: "Grundlagenmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Grundlagen Einzelsportarten",
@@ -170,7 +170,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Grundlagen der Sportspiele",
-    kp: 2,
+    ects: 2,
     standardcategory: "Grundlagenmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Grundlagen Sportspiele",
@@ -178,7 +178,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Sportspiel 1 - basic",
-    kp: 1,
+    ects: 1,
     standardcategory: "Grundlagenmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Grundlagen Sportspiele",
@@ -186,7 +186,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Sportspiel 2 - basic",
-    kp: 1,
+    ects: 1,
     standardcategory: "Grundlagenmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Grundlagen Sportspiele",
@@ -198,7 +198,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Kraft, Schnelligkeit",
-    kp: 6,
+    ects: 6,
     standardcategory: "Vertiefungsmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Trainingswissenschaft: Schwerpunkt Leistungsdiagnostik",
@@ -206,7 +206,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Ausdauer",
-    kp: 6,
+    ects: 6,
     standardcategory: "Vertiefungsmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Trainingswissenschaft: Schwerpunkt Leistungsdiagnostik",
@@ -216,7 +216,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Gleichgewicht, Gang",
-    kp: 3,
+    ects: 3,
     standardcategory: "Vertiefungsmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Bewegungswissenschaft und Biomechanik",
@@ -224,7 +224,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Technische Aspekte",
-    kp: 3,
+    ects: 3,
     standardcategory: "Vertiefungsmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Bewegungswissenschaft und Biomechanik",
@@ -234,7 +234,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Herz, Lunge und Gefässe",
-    kp: 3,
+    ects: 3,
     standardcategory: "Vertiefungsmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Sport- und Bewegungsphysiologie",
@@ -242,7 +242,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Muskel, Stoffwechsel und Hormone",
-    kp: 3,
+    ects: 3,
     standardcategory: "Vertiefungsmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Sport- und Bewegungsphysiologie",
@@ -252,7 +252,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Körperkomposition, Energieumsatz",
-    kp: 3,
+    ects: 3,
     standardcategory: "Vertiefungsmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Sportmedizinische Messmethoden",
@@ -260,7 +260,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Sportmedizinische Diagnostik",
-    kp: 3,
+    ects: 3,
     standardcategory: "Vertiefungsmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Sportmedizinische Messmethoden",
@@ -270,7 +270,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Erziehungs-/Kulturwiss. Theorien",
-    kp: 6,
+    ects: 6,
     standardcategory: "Vertiefungsmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Erziehungs-, geistes- und kulturwissenschaftliche Vertiefung",
@@ -278,7 +278,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Erziehungs-/Kulturwiss. Anwendung",
-    kp: 6,
+    ects: 6,
     standardcategory: "Vertiefungsmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Erziehungs-, geistes- und kulturwissenschaftliche Vertiefung",
@@ -288,7 +288,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Sozial-/Verhaltenswiss. Theorien",
-    kp: 6,
+    ects: 6,
     standardcategory: "Vertiefungsmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Sozial- und verhaltenswissenschaftliche Vertiefung",
@@ -296,7 +296,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Sozial-/Verhaltenswiss. Anwendung",
-    kp: 6,
+    ects: 6,
     standardcategory: "Vertiefungsmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Sozial- und verhaltenswissenschaftliche Vertiefung",
@@ -306,7 +306,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Ernährung, Sport und Gesundheit",
-    kp: 3,
+    ects: 3,
     standardcategory: "Vertiefungsmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Prävention und Lebensstil",
@@ -314,7 +314,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Public Health und Präventivmedizin",
-    kp: 3,
+    ects: 3,
     standardcategory: "Vertiefungsmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Prävention und Lebensstil",
@@ -322,7 +322,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Personal Health Coaching",
-    kp: 2,
+    ects: 2,
     standardcategory: "Vertiefungsmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Prävention und Lebensstil",
@@ -332,7 +332,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Trainingswissenschaft im Leistungssport",
-    kp: 3,
+    ects: 3,
     standardcategory: "Vertiefungsmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet:
@@ -341,7 +341,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Funktionelle Anatomie",
-    kp: 3,
+    ects: 3,
     standardcategory: "Vertiefungsmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet:
@@ -352,7 +352,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Medienkonzeption und Mediendidaktik",
-    kp: 3,
+    ects: 3,
     standardcategory: "Vertiefungsmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Mediendidaktik und Medienpraxis",
@@ -360,7 +360,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Medienpraxis",
-    kp: 3,
+    ects: 3,
     standardcategory: "Vertiefungsmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Mediendidaktik und Medienpraxis",
@@ -370,7 +370,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Schwimmen - advanced",
-    kp: 2,
+    ects: 2,
     standardcategory: "Vertiefungsmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Vertiefung Einzelsportarten",
@@ -378,7 +378,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Tanz - advanced",
-    kp: 2,
+    ects: 2,
     standardcategory: "Vertiefungsmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Vertiefung Einzelsportarten",
@@ -386,7 +386,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Geräteturnen - advanced",
-    kp: 2,
+    ects: 2,
     standardcategory: "Vertiefungsmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Vertiefung Einzelsportarten",
@@ -394,7 +394,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Leichtathletik - advanced",
-    kp: 2,
+    ects: 2,
     standardcategory: "Vertiefungsmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Vertiefung Einzelsportarten",
@@ -404,7 +404,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Sportartbez. Verhaltens- und Bewegungsanalysen",
-    kp: 2,
+    ects: 2,
     standardcategory: "Vertiefungsmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Vertiefung Sportspiele",
@@ -412,7 +412,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Basketball - advanced",
-    kp: 2,
+    ects: 2,
     standardcategory: "Vertiefungsmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Vertiefung Sportspiele",
@@ -420,7 +420,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Fussball - advanced",
-    kp: 2,
+    ects: 2,
     standardcategory: "Vertiefungsmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Vertiefung Sportspiele",
@@ -428,7 +428,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Handball - advanced",
-    kp: 2,
+    ects: 2,
     standardcategory: "Vertiefungsmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Vertiefung Sportspiele",
@@ -436,7 +436,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Volleyball - advanced",
-    kp: 2,
+    ects: 2,
     standardcategory: "Vertiefungsmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Vertiefung Sportspiele",
@@ -446,7 +446,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Training konditioneller und koordinativer Fähigkeiten",
-    kp: 2,
+    ects: 2,
     standardcategory: "Vertiefungsmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Koordinative Fähigkeiten",
@@ -454,7 +454,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Trainingsplanung, -durchführung und -auswertung",
-    kp: 2,
+    ects: 2,
     standardcategory: "Vertiefungsmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Koordinative Fähigkeiten",
@@ -464,7 +464,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Trends im Fitness- und Wellnessbereich",
-    kp: 2,
+    ects: 2,
     standardcategory: "Vertiefungsmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Fitness- und Wellnesssport",
@@ -472,7 +472,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Training in Fitness- und Wellnesseinrichtungen",
-    kp: 2,
+    ects: 2,
     standardcategory: "Vertiefungsmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Fitness- und Wellnesssport",
@@ -480,7 +480,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Aquatraining / Aquafit",
-    kp: 2,
+    ects: 2,
     standardcategory: "Vertiefungsmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Fitness- und Wellnesssport",
@@ -488,7 +488,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Group Fitness - basic",
-    kp: 1,
+    ects: 1,
     standardcategory: "Vertiefungsmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Fitness- und Wellnesssport",
@@ -498,7 +498,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Aspekte der Bewegungstherapie",
-    kp: 2,
+    ects: 2,
     standardcategory: "Vertiefungsmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Gesundheitssport",
@@ -506,7 +506,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Mentale Prozesse im Sport",
-    kp: 2,
+    ects: 2,
     standardcategory: "Vertiefungsmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Gesundheitssport",
@@ -514,7 +514,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Regenerations- und Entspannungstechniken",
-    kp: 2,
+    ects: 2,
     standardcategory: "Vertiefungsmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Gesundheitssport",
@@ -524,7 +524,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Winter Camp: Bewegte Naturerlebnisse",
-    kp: 2,
+    ects: 2,
     standardcategory: "Vertiefungsmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Outdoor",
@@ -532,7 +532,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Ski oder Snowboard",
-    kp: 2,
+    ects: 2,
     standardcategory: "Vertiefungsmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Outdoor",
@@ -540,7 +540,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Sommer Camp",
-    kp: 2,
+    ects: 2,
     standardcategory: "Vertiefungsmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Outdoor",
@@ -548,7 +548,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Outdoor-Kurs (Eissport/Kampfsport/etc.)",
-    kp: 2,
+    ects: 2,
     standardcategory: "Vertiefungsmodule",
     // STUDIENGANGSPEZIFISCH
     fachgebiet: "Outdoor",
@@ -558,7 +558,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Profilmodul",
-    kp: 24,
+    ects: 24,
     standardcategory: "Profilmodul",
   },
 
@@ -566,7 +566,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Wahlbereich",
-    kp: 20,
+    ects: 20,
     standardcategory: "Wahlbereich",
   },
 ];

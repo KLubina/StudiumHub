@@ -6,7 +6,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Einführung in die Programmierung",
-    kp: 7,
+    ects: 7,
     standardcategory: "cs-pure",
     // KONTEXT
     jahr: 1,
@@ -15,7 +15,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Lineare Algebra",
-    kp: 7,
+    ects: 7,
     standardcategory: "math",
     // KONTEXT
     jahr: 1,
@@ -24,7 +24,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Datenstrukturen und Algorithmen",
-    kp: 7,
+    ects: 7,
     standardcategory: "cs-cse",
     // KONTEXT
     jahr: 1,
@@ -33,7 +33,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Diskrete Mathematik",
-    kp: 7,
+    ects: 7,
     standardcategory: "math",
     // KONTEXT
     jahr: 1,
@@ -45,7 +45,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Analysis I",
-    kp: 7,
+    ects: 7,
     standardcategory: "math",
     // KONTEXT
     jahr: 1,
@@ -54,7 +54,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Parallele Programmierung",
-    kp: 7,
+    ects: 7,
     standardcategory: "cs-cse",
     // KONTEXT
     jahr: 1,
@@ -63,7 +63,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Digital Design and Computer Architecture",
-    kp: 7,
+    ects: 7,
     standardcategory: "cs-pure",
     // KONTEXT
     jahr: 1,
@@ -72,7 +72,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Algorithmen und Wahrscheinlichkeit",
-    kp: 4,
+    ects: 4,
     standardcategory: "algo",
     // KONTEXT
     jahr: 1,
@@ -84,7 +84,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Numerische Methoden für CSE",
-    kp: 8,
+    ects: 8,
     standardcategory: "cs-cse",
     // KONTEXT
     jahr: 2,
@@ -93,7 +93,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Analysis II",
-    kp: 5,
+    ects: 5,
     standardcategory: "math",
     // KONTEXT
     jahr: 2,
@@ -102,7 +102,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Theoretische Informatik",
-    kp: 7,
+    ects: 7,
     standardcategory: "cs-pure",
     // KONTEXT
     jahr: 2,
@@ -111,7 +111,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Systemnahe Programmierung und Rechnerarchitektur",
-    kp: 7,
+    ects: 7,
     standardcategory: "cs-cse",
     // KONTEXT
     jahr: 2,
@@ -123,7 +123,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Wahrscheinlichkeit und Statistik",
-    kp: 5,
+    ects: 5,
     standardcategory: "math",
     // KONTEXT
     jahr: 2,
@@ -132,7 +132,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Computernetzwerke",
-    kp: 7,
+    ects: 7,
     standardcategory: "cs-cse-wahl",
     // KONTEXT
     jahr: 2,
@@ -141,7 +141,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Datenmodellierung und Datenbanken",
-    kp: 7,
+    ects: 7,
     standardcategory: "cs-cse-wahl",
     // KONTEXT
     jahr: 2,
@@ -150,7 +150,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Formale Methoden und Funktionale Programmierung",
-    kp: 7,
+    ects: 7,
     standardcategory: "cs-cse-wahl",
     // KONTEXT
     jahr: 2,
@@ -159,7 +159,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Ergänzung",
-    kp: 5,
+    ects: 5,
     standardcategory: "ergaenzung",
     // KONTEXT
     jahr: 2,
@@ -168,7 +168,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Wissenschaft im Kontext",
-    kp: 6,
+    ects: 6,
     standardcategory: "wissenschaft",
     // KONTEXT
     jahr: 2,
@@ -180,7 +180,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Spezialisierung",
-    kp: 32,
+    ects: 32,
     standardcategory: "spezialisierung",
     // KONTEXT
     jahr: 3,
@@ -195,7 +195,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Wahlfächer",
-    kp: 12,
+    ects: 12,
     standardcategory: "wahlfaecher",
     // KONTEXT
     jahr: 3,
@@ -204,7 +204,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Bachelorarbeit",
-    kp: 10,
+    ects: 10,
     standardcategory: "wissenschaft",
     // KONTEXT
     jahr: 3,
@@ -213,7 +213,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Seminar",
-    kp: 2,
+    ects: 2,
     standardcategory: "wissenschaft",
     // KONTEXT
     jahr: 3,

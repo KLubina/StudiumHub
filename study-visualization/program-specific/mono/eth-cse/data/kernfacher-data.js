@@ -6,7 +6,7 @@ window.CSE_KernfaecherModules = [
   {
     // PFLICHTFELDER
     name: "Design of High Performance Computing",
-    kp: 7,
+    ects: 7,
     standardcategory: "kern",
     // KONTEXT
     jahr: 3,
@@ -18,7 +18,7 @@ window.CSE_KernfaecherModules = [
   {
     // PFLICHTFELDER
     name: "HPC Lab for CSE",
-    kp: 7,
+    ects: 7,
     standardcategory: "kern",
     // KONTEXT
     jahr: 3,
@@ -30,7 +30,7 @@ window.CSE_KernfaecherModules = [
   {
     // PFLICHTFELDER
     name: "Software Engineering",
-    kp: 6,
+    ects: 6,
     standardcategory: "kern",
     // KONTEXT
     jahr: 3,
@@ -42,7 +42,7 @@ window.CSE_KernfaecherModules = [
   {
     // PFLICHTFELDER
     name: "Introduction to Machine Learning",
-    kp: 8,
+    ects: 8,
     standardcategory: "kern",
     // KONTEXT
     jahr: 3,

@@ -6,7 +6,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Communication Competence 1",
-    kp: 2,
+    ects: 2,
     standardcategory: "kontext",
     // KONTEXT
     jahr: 1,
@@ -15,7 +15,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Software-Projekt 1",
-    kp: 4,
+    ects: 4,
     standardcategory: "projekt",
     // KONTEXT
     jahr: 1,
@@ -24,7 +24,7 @@ window.StudiengangModules = [
   { 
     // PFLICHTFELDER
     name: "Programmieren 1", 
-    kp: 6, 
+    ects: 6, 
     standardcategory: "fach",
     // KONTEXT
     jahr: 1, 
@@ -33,7 +33,7 @@ window.StudiengangModules = [
   { 
     // PFLICHTFELDER
     name: "Datenbanken", 
-    kp: 4, 
+    ects: 4, 
     standardcategory: "fach",
     // KONTEXT
     jahr: 1, 
@@ -42,7 +42,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Information & Codierung",
-    kp: 4,
+    ects: 4,
     standardcategory: "fach",
     // KONTEXT
     jahr: 1,
@@ -51,7 +51,7 @@ window.StudiengangModules = [
   { 
     // PFLICHTFELDER
     name: "Analysis 1", 
-    kp: 4, 
+    ects: 4, 
     standardcategory: "mathe-nawi",
     // KONTEXT
     jahr: 1, 
@@ -60,7 +60,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Diskrete Mathematik",
-    kp: 3,
+    ects: 3,
     standardcategory: "mathe-nawi",
     // KONTEXT
     jahr: 1,
@@ -69,7 +69,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Grundlagen der Elektrotechnik und Digitaltechnik",
-    kp: 3,
+    ects: 3,
     standardcategory: "mathe-nawi",
     // KONTEXT
     jahr: 1,
@@ -82,7 +82,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Communication Competence 2",
-    kp: 2,
+    ects: 2,
     standardcategory: "kontext",
     // KONTEXT
     jahr: 1,
@@ -91,7 +91,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Software-Projekt 2",
-    kp: 4,
+    ects: 4,
     standardcategory: "projekt",
     // KONTEXT
     jahr: 1,
@@ -100,7 +100,7 @@ window.StudiengangModules = [
   { 
     // PFLICHTFELDER
     name: "Programmieren 2", 
-    kp: 6, 
+    ects: 6, 
     standardcategory: "fach",
     // KONTEXT
     jahr: 1, 
@@ -109,7 +109,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Systemnahe Programmierung",
-    kp: 6,
+    ects: 6,
     standardcategory: "fach",
     // KONTEXT
     jahr: 1,
@@ -118,7 +118,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Kommunikationstechnik",
-    kp: 2,
+    ects: 2,
     standardcategory: "fach",
     // KONTEXT
     jahr: 1,
@@ -127,7 +127,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Theoretische Informatik",
-    kp: 4,
+    ects: 4,
     standardcategory: "fach",
     // KONTEXT
     jahr: 1,
@@ -136,7 +136,7 @@ window.StudiengangModules = [
   { 
     // PFLICHTFELDER
     name: "Analysis 2", 
-    kp: 3, 
+    ects: 3, 
     standardcategory: "mathe-nawi",
     // KONTEXT
     jahr: 1, 
@@ -145,7 +145,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Lineare Algebra",
-    kp: 3,
+    ects: 3,
     standardcategory: "mathe-nawi",
     // KONTEXT
     jahr: 1,
@@ -158,7 +158,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Communication Competence 3",
-    kp: 2,
+    ects: 2,
     standardcategory: "kontext",
     // KONTEXT
     jahr: 2,
@@ -167,7 +167,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Software-Projekt 3",
-    kp: 4,
+    ects: 4,
     standardcategory: "projekt",
     // KONTEXT
     jahr: 2,
@@ -176,7 +176,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Software-Entwicklung 1",
-    kp: 5,
+    ects: 5,
     standardcategory: "fach",
     // KONTEXT
     jahr: 2,
@@ -185,7 +185,7 @@ window.StudiengangModules = [
   { 
     // PFLICHTFELDER
     name: "Web-Entwicklung", 
-    kp: 4, 
+    ects: 4, 
     standardcategory: "fach",
     // KONTEXT
     jahr: 2, 
@@ -194,7 +194,7 @@ window.StudiengangModules = [
   { 
     // PFLICHTFELDER
     name: "Computertechnik 1", 
-    kp: 3, 
+    ects: 3, 
     standardcategory: "fach",
     // KONTEXT
     jahr: 2, 
@@ -203,7 +203,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Algorithmen & Datenstrukturen",
-    kp: 5,
+    ects: 5,
     standardcategory: "projekt",
     // KONTEXT
     jahr: 2,
@@ -212,7 +212,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Stochastik und Statistik",
-    kp: 4,
+    ects: 4,
     standardcategory: "mathe-nawi",
     // KONTEXT
     jahr: 2,
@@ -221,7 +221,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Höhere Mathematik für Informatiker 1",
-    kp: 3,
+    ects: 3,
     standardcategory: "mathe-nawi",
     // KONTEXT
     jahr: 2,
@@ -234,7 +234,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Wirtschaft für Ingenieure",
-    kp: 2,
+    ects: 2,
     standardcategory: "kontext",
     // KONTEXT
     jahr: 2,
@@ -243,7 +243,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Software-Projekt 4",
-    kp: 4,
+    ects: 4,
     standardcategory: "projekt",
     // KONTEXT
     jahr: 2,
@@ -252,7 +252,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Software-Entwicklung 2",
-    kp: 4,
+    ects: 4,
     standardcategory: "fach",
     // KONTEXT
     jahr: 2,
@@ -261,7 +261,7 @@ window.StudiengangModules = [
   { 
     // PFLICHTFELDER
     name: "Betriebssysteme", 
-    kp: 4, 
+    ects: 4, 
     standardcategory: "fach",
     // KONTEXT
     jahr: 2, 
@@ -270,7 +270,7 @@ window.StudiengangModules = [
   { 
     // PFLICHTFELDER
     name: "Computertechnik 2", 
-    kp: 3, 
+    ects: 3, 
     standardcategory: "fach",
     // KONTEXT
     jahr: 2, 
@@ -279,7 +279,7 @@ window.StudiengangModules = [
   { 
     // PFLICHTFELDER
     name: "IT-Sicherheit", 
-    kp: 4, 
+    ects: 4, 
     standardcategory: "fach",
     // KONTEXT
     jahr: 2, 
@@ -288,7 +288,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Maschinelles Lernen & Data Mining",
-    kp: 5,
+    ects: 5,
     standardcategory: "fach",
     // KONTEXT
     jahr: 2,
@@ -297,7 +297,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Höhere Mathematik für Informatiker 2",
-    kp: 2,
+    ects: 2,
     standardcategory: "mathe-nawi",
     // KONTEXT
     jahr: 2,
@@ -306,7 +306,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Physik Engines",
-    kp: 2,
+    ects: 2,
     standardcategory: "mathe-nawi",
     // KONTEXT
     jahr: 2,
@@ -319,7 +319,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Wahlpflichtmodul",
-    kp: 6,
+    ects: 6,
     standardcategory: "kontext",
     // KONTEXT
     jahr: 3,
@@ -328,7 +328,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Wahlpflichtmodul",
-    kp: 6,
+    ects: 6,
     standardcategory: "kontext",
     // KONTEXT
     jahr: 3,
@@ -337,7 +337,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Projektarbeit in Informatik",
-    kp: 8,
+    ects: 8,
     standardcategory: "projekt",
     // KONTEXT
     jahr: 3,
@@ -346,7 +346,7 @@ window.StudiengangModules = [
   { 
     // PFLICHTFELDER
     name: "Wahlpflichtmodul", 
-    kp: 6, 
+    ects: 6, 
     standardcategory: "fach",
     // KONTEXT
     jahr: 3, 
@@ -355,7 +355,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Wahlpflichtmodul SG-übergreifend",
-    kp: 4,
+    ects: 4,
     standardcategory: "fach",
     // KONTEXT
     jahr: 3,
@@ -368,7 +368,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Wahlpflichtmodul",
-    kp: 4,
+    ects: 4,
     standardcategory: "kontext",
     // KONTEXT
     jahr: 3,
@@ -377,7 +377,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Bachelorarbeit in Informatik",
-    kp: 12,
+    ects: 12,
     standardcategory: "projekt",
     // KONTEXT
     jahr: 3,
@@ -386,7 +386,7 @@ window.StudiengangModules = [
   { 
     // PFLICHTFELDER
     name: "Wahlpflichtmodul", 
-    kp: 6, 
+    ects: 6, 
     standardcategory: "fach",
     // KONTEXT
     jahr: 3, 
@@ -395,7 +395,7 @@ window.StudiengangModules = [
   { 
     // PFLICHTFELDER
     name: "Wahlpflichtmodul", 
-    kp: 4, 
+    ects: 4, 
     standardcategory: "fach",
     // KONTEXT
     jahr: 3, 
@@ -404,7 +404,7 @@ window.StudiengangModules = [
   { 
     // PFLICHTFELDER
     name: "Wahlpflichtmodul", 
-    kp: 4, 
+    ects: 4, 
     standardcategory: "fach",
     // KONTEXT
     jahr: 3, 

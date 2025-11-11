@@ -8,7 +8,7 @@ window.MASCH_VertiefungsgebieteModules = [
   {
     // PFLICHTFELDER
     name: "Engineering Design Optimization",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     // KONTEXT
     jahr: 3,
@@ -19,7 +19,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Machine Learning for Mechanical Engineering",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -28,7 +28,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Coaching Innovations-Projekte",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -37,7 +37,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Praxiskurs zu Fokusprojekten mit Schwerpunkt CAD und CAE mit Siemens NX",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -46,7 +46,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Continuum Mechanics I",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -55,7 +55,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Applied Finite Element Analysis",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -64,7 +64,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Lightweight Structures",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -73,7 +73,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Strukturlabor",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -82,7 +82,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Nonlinear Dynamics and Chaos I",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -91,7 +91,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Metal Additive Manufacturing - Mechanical Integrity and Process Simulation",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -100,7 +100,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Produktionsmaschinen I",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -109,7 +109,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Sustainable Materials",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -120,7 +120,7 @@ window.MASCH_VertiefungsgebieteModules = [
   // Frühlingssemester
   {
     name: "Product Development and Engineering Design",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -129,7 +129,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Visualization, Simulation and Interaction - Virtual Reality I",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -138,7 +138,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Optimization and Machine Learning",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -147,7 +147,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Grundlagen zum Bemessen von Kunststoffbauteilen",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -156,7 +156,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Interdisciplinary Product Development: Definition, Realisation and Validation",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -165,7 +165,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Informationstechnologien im digitalen Produkt",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -174,7 +174,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Introduction to Finite Element Analysis",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -183,7 +183,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Nonlinear FEA",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -192,7 +192,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Continuum Mechanics II",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -201,7 +201,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Advanced Dynamics",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -210,7 +210,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Case Studies in Computer Aided Engineering - Applied FEM",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -219,7 +219,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Experimental Mechanics",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -228,7 +228,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Metal Additive Manufacturing - Fundamentals and Process Technology",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -237,7 +237,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Materials for Mechanical Engineers",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -246,7 +246,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Digital Twins of Production Processes",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -255,7 +255,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Industrial Robotics and Automation",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -267,7 +267,7 @@ window.MASCH_VertiefungsgebieteModules = [
 
   {
     name: "Microsystems I: Process Technology and Integration",
-    kp: 6,
+    ects: 6,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -276,7 +276,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Microrobotics",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -285,7 +285,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Studies on Micro and Nano Systems",
-    kp: 5,
+    ects: 5,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -294,7 +294,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Introduction to Photonics",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -303,7 +303,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Molecular Health Sensors and Devices",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -312,7 +312,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Solid State Electronics and Optics",
-    kp: 6,
+    ects: 6,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -321,7 +321,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Applied Analysis of Variance and Experimental Design",
-    kp: 5,
+    ects: 5,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -330,7 +330,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Microsystems II: Devices and Applications",
-    kp: 6,
+    ects: 6,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -339,7 +339,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Nanorobotics",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -348,7 +348,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Macromolecular Engineering: Networks and Gels",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -357,7 +357,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Nanophotonics: from Fundamentals to Applications",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -370,7 +370,7 @@ window.MASCH_VertiefungsgebieteModules = [
   // Core
   {
     name: "Introduction into Process Engineering",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -379,7 +379,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Mass Transfer",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -388,7 +388,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Introduction to Energy Systems",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -397,7 +397,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Experimental Methods for Engineers",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -408,7 +408,7 @@ window.MASCH_VertiefungsgebieteModules = [
   // Elective
   {
     name: "Combustion and Reactive Processes in Energy and Materials Technology",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -417,7 +417,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Turbulent Flow",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -426,7 +426,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Computational Methods for Flow, Heat and Mass Transfer Problems",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -435,7 +435,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "CO2 Capture and Storage and the Industry of carbon-based resources",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -444,7 +444,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Multiphase Flows",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -453,7 +453,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Nuclear Energy Conversion",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -462,7 +462,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Electrochemical Energy Systems",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -471,7 +471,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Introduction to Modelling and Optimization of Sustainable Energy Systems",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -480,7 +480,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Hydrodynamics and Cavitation",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -492,7 +492,7 @@ window.MASCH_VertiefungsgebieteModules = [
 
   {
     name: "Studies on Engineering for Health",
-    kp: 5,
+    ects: 5,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -501,7 +501,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Molecular Sensors: From Fundamentals to Health and Environmental Applications",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -510,7 +510,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "International Engineering: from Hubris to Hope",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -519,7 +519,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Biomedical Imaging",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -528,7 +528,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Bioelectronics and Biosensors",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -537,7 +537,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Materials and Mechanics in Medicine",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -546,7 +546,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Bewegungs- und Sportbiomechanik",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -555,7 +555,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Physical Human Robot Interaction (pHRI)",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -564,7 +564,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Biocompatible Materials",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -573,7 +573,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Introduction to Robotics and Mechatronics",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -582,7 +582,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Biofluiddynamics",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -591,7 +591,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Research Beyond the Lab: Open Science and Research Methods for a Global Engineer",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -600,7 +600,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Imaging and Computing in Medicine",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -609,7 +609,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Biomechatronics",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -618,7 +618,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Assistive Technology Challenge",
-    kp: 6,
+    ects: 6,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -630,7 +630,7 @@ window.MASCH_VertiefungsgebieteModules = [
 
   {
     name: "Dynamic Programming and Optimal Control",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -639,7 +639,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Signals and Systems",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -648,7 +648,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Embedded Control Systems",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -657,7 +657,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Studies on Mechatronics",
-    kp: 5,
+    ects: 5,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -666,7 +666,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Robot Dynamics",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -675,7 +675,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Embedded Systems",
-    kp: 6,
+    ects: 6,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -684,7 +684,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Image Analysis and Computer Vision",
-    kp: 6,
+    ects: 6,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -693,7 +693,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Fundamentals of Electric Machines",
-    kp: 6,
+    ects: 6,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -702,7 +702,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Recursive Estimation",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -711,7 +711,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Control Systems II",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -720,7 +720,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Soft and Biohybrid Robotics",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -729,7 +729,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Model Predictive Control",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -738,7 +738,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Programming for Robotics - Introduction to ROS",
-    kp: 1,
+    ects: 1,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -747,7 +747,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Autonomous Mobile Robots",
-    kp: 5,
+    ects: 5,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -756,7 +756,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Introduction to Machine Learning",
-    kp: 8,
+    ects: 8,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,
@@ -765,7 +765,7 @@ window.MASCH_VertiefungsgebieteModules = [
   },
   {
     name: "Rehabilitation Engineering I: Motor Functions",
-    kp: 4,
+    ects: 4,
     standardcategory: "Fokus-Vertiefung",
     jahr: 3,
     semester: 0,

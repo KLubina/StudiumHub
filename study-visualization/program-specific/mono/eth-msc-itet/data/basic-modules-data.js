@@ -7,7 +7,7 @@ window.StudiengangModules = [
     {
         // PFLICHTFELDER
         name: "Kernfächer",
-        kp: 0,
+        ects: 0,
         standardcategory: "Kernfächer",
         // KONTEXT
         jahr: 1,
@@ -18,7 +18,7 @@ window.StudiengangModules = [
     {
         // PFLICHTFELDER
         name: "Vertiefungsfächer",
-        kp: 0,
+        ects: 0,
         standardcategory: "Vertiefungsfächer",
         // KONTEXT
         jahr: 1,
@@ -31,7 +31,7 @@ window.StudiengangModules = [
     {
         // PFLICHTFELDER
         name: "Semesterprojekt",
-        kp: 12,
+        ects: 12,
         standardcategory: "Fixe Module",
         // KONTEXT
         jahr: 1,
@@ -44,7 +44,7 @@ window.StudiengangModules = [
     {
         // PFLICHTFELDER
         name: "Eines der folgenden",
-        kp: 12,
+        ects: 12,
         standardcategory: "Fixe Module",
         // KONTEXT
         jahr: 2,
@@ -59,7 +59,7 @@ window.StudiengangModules = [
     {
         // PFLICHTFELDER
         name: "Wissenschaft im Kontext",
-        kp: 2,
+        ects: 2,
         standardcategory: "Fixe Module",
         // KONTEXT
         jahr: 2,
@@ -69,7 +69,7 @@ window.StudiengangModules = [
     {
         // PFLICHTFELDER
         name: "Master-Arbeit",
-        kp: 30,
+        ects: 30,
         standardcategory: "Fixe Module",
         // KONTEXT
         jahr: 2,

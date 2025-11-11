@@ -82,204 +82,204 @@ window.UzhCommonMinorData = {
     // Detaillierte Modul-Daten (identisch für alle UZH BA Programme)
     minorBereiche: {
         "Allgemeine und Vergleichende Literaturwissenschaft": [
-            { name: "Allgemeine und Vergleichende Literaturwissenschaft Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Allgemeine und Vergleichende Literaturwissenschaft Minor", ects: 60, standardcategory: "Minor" }
         ],
         "Altertumswissenschaften": [
-            { name: "Altertumswissenschaften Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Altertumswissenschaften Minor", ects: 60, standardcategory: "Minor" }
         ],
         "Archäologien": [
-            { name: "Archäologien Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Archäologien Minor", ects: 60, standardcategory: "Minor" }
         ],
         "Computerlinguistik und Sprachtechnologie": [
-            { name: "Computerlinguistik und Sprachtechnologie Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Computerlinguistik und Sprachtechnologie Minor", ects: 60, standardcategory: "Minor" }
         ],
         "Deutsche Sprach- und Literaturwissenschaft": [
-            { name: "Deutsche Sprach- und Literaturwissenschaft Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Deutsche Sprach- und Literaturwissenschaft Minor", ects: 60, standardcategory: "Minor" }
         ],
         "Englische Sprach- und Literaturwissenschaft": [
-            { name: "Englische Sprach- und Literaturwissenschaft Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Englische Sprach- und Literaturwissenschaft Minor", ects: 60, standardcategory: "Minor" }
         ],
         "Erziehungswissenschaft": [
-            { name: "Erziehungswissenschaft Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Erziehungswissenschaft Minor", ects: 60, standardcategory: "Minor" }
         ],
         "Ethnologie": [
-            { name: "Ethnologie Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Ethnologie Minor", ects: 60, standardcategory: "Minor" }
         ],
         "Filmwissenschaft": [
-            { name: "Filmwissenschaft Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Filmwissenschaft Minor", ects: 60, standardcategory: "Minor" }
         ],
         "Französische Sprach- und Literaturwissenschaft": [
-            { name: "Französische Sprach- und Literaturwissenschaft Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Französische Sprach- und Literaturwissenschaft Minor", ects: 60, standardcategory: "Minor" }
         ],
         "Geschichte": [
-            { name: "Geschichte Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Geschichte Minor", ects: 60, standardcategory: "Minor" }
         ],
         "Geschichte der Neuzeit": [
-            { name: "Geschichte der Neuzeit Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Geschichte der Neuzeit Minor", ects: 60, standardcategory: "Minor" }
         ],
         "Griechische Philologie": [
-            { name: "Griechische Philologie Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Griechische Philologie Minor", ects: 60, standardcategory: "Minor" }
         ],
         "Iberoromanische Sprach- und Literaturwissenschaft": [
-            { name: "Iberoromanische Sprach- und Literaturwissenschaft Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Iberoromanische Sprach- und Literaturwissenschaft Minor", ects: 60, standardcategory: "Minor" }
         ],
         "Indologie": [
-            { name: "Indologie Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Indologie Minor", ects: 60, standardcategory: "Minor" }
         ],
         "Interdisziplinäre Archäologische Wissenschaften": [
-            { name: "Interdisziplinäre Archäologische Wissenschaften Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Interdisziplinäre Archäologische Wissenschaften Minor", ects: 60, standardcategory: "Minor" }
         ],
         "Islamwissenschaft": [
-            { name: "Islamwissenschaft Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Islamwissenschaft Minor", ects: 60, standardcategory: "Minor" }
         ],
         "Italienische Sprach- und Literaturwissenschaft": [
-            { name: "Italienische Sprach- und Literaturwissenschaft Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Italienische Sprach- und Literaturwissenschaft Minor", ects: 60, standardcategory: "Minor" }
         ],
         "Japanologie": [
-            { name: "Japanologie Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Japanologie Minor", ects: 60, standardcategory: "Minor" }
         ],
         "Kommunikationswissenschaft und Medienforschung": [
-            { name: "Kommunikationswissenschaft und Medienforschung Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Kommunikationswissenschaft und Medienforschung Minor", ects: 60, standardcategory: "Minor" }
         ],
         "Kunstgeschichte": [
-            { name: "Kunstgeschichte Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Kunstgeschichte Minor", ects: 60, standardcategory: "Minor" }
         ],
         "Kunstgeschichte Ostasiens": [
-            { name: "Kunstgeschichte Ostasiens Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Kunstgeschichte Ostasiens Minor", ects: 60, standardcategory: "Minor" }
         ],
         "Lateinische Philologie": [
-            { name: "Lateinische Philologie Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Lateinische Philologie Minor", ects: 60, standardcategory: "Minor" }
         ],
         "Musikwissenschaft": [
-            { name: "Musikwissenschaft Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Musikwissenschaft Minor", ects: 60, standardcategory: "Minor" }
         ],
         "Nah- und Mitteloststudien": [
-            { name: "Nah- und Mitteloststudien Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Nah- und Mitteloststudien Minor", ects: 60, standardcategory: "Minor" }
         ],
         "Philosophie": [
-            { name: "Philosophie Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Philosophie Minor", ects: 60, standardcategory: "Minor" }
         ],
         "Politikwissenschaft": [
-            { name: "Politikwissenschaft Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Politikwissenschaft Minor", ects: 60, standardcategory: "Minor" }
         ],
         "Populäre Kulturen": [
-            { name: "Populäre Kulturen Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Populäre Kulturen Minor", ects: 60, standardcategory: "Minor" }
         ],
         "Rätoromanische Sprach- und Literaturwissenschaft": [
-            { name: "Rätoromanische Sprach- und Literaturwissenschaft Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Rätoromanische Sprach- und Literaturwissenschaft Minor", ects: 60, standardcategory: "Minor" }
         ],
         "Sinologie": [
-            { name: "Sinologie Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Sinologie Minor", ects: 60, standardcategory: "Minor" }
         ],
         "Skandinavistik": [
-            { name: "Skandinavistik Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Skandinavistik Minor", ects: 60, standardcategory: "Minor" }
         ],
         "Slavische Sprach- und Literaturwissenschaft": [
-            { name: "Slavische Sprach- und Literaturwissenschaft Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Slavische Sprach- und Literaturwissenschaft Minor", ects: 60, standardcategory: "Minor" }
         ],
         "Soziologie": [
-            { name: "Soziologie Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Soziologie Minor", ects: 60, standardcategory: "Minor" }
         ],
         "Vergleichende Germanische Sprachwissenschaft": [
-            { name: "Vergleichende Germanische Sprachwissenschaft Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Vergleichende Germanische Sprachwissenschaft Minor", ects: 60, standardcategory: "Minor" }
         ],
         "Vergleichende Romanische Sprachwissenschaft": [
-            { name: "Vergleichende Romanische Sprachwissenschaft Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Vergleichende Romanische Sprachwissenschaft Minor", ects: 60, standardcategory: "Minor" }
         ],
         "Vergleichende Sprachwissenschaft": [
-            { name: "Vergleichende Sprachwissenschaft Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Vergleichende Sprachwissenschaft Minor", ects: 60, standardcategory: "Minor" }
         ],
 
         /* ---- Weitere Fakultäten (60 ECTS) ---- */
         "Angewandte Mathematik und Machine Learning": [
-            { name: "Angewandte Mathematik und Machine Learning Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Angewandte Mathematik und Machine Learning Minor", ects: 60, standardcategory: "Minor" }
         ],
         "Antike Religionsgeschichte": [
-            { name: "Antike Religionsgeschichte Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Antike Religionsgeschichte Minor", ects: 60, standardcategory: "Minor" }
         ],
         "Applied Probability and Statistics": [
-            { name: "Applied Probability and Statistics Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Applied Probability and Statistics Minor", ects: 60, standardcategory: "Minor" }
         ],
         "Astronomie und Astrobiologie": [
-            { name: "Astronomie und Astrobiologie Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Astronomie und Astrobiologie Minor", ects: 60, standardcategory: "Minor" }
         ],
         "Banking and Finance": [
-            { name: "Banking and Finance Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Banking and Finance Minor", ects: 60, standardcategory: "Minor" }
         ],
         "Betriebswirtschaftslehre": [
-            { name: "Betriebswirtschaftslehre Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Betriebswirtschaftslehre Minor", ects: 60, standardcategory: "Minor" }
         ],
         "Bibelwissenschaft": [
-            { name: "Bibelwissenschaft Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Bibelwissenschaft Minor", ects: 60, standardcategory: "Minor" }
         ],
         "Biochemie": [
-            { name: "Biochemie Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Biochemie Minor", ects: 60, standardcategory: "Minor" }
         ],
         "Biodiversität": [
-            { name: "Biodiversität Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Biodiversität Minor", ects: 60, standardcategory: "Minor" }
         ],
         "Biologie": [
-            { name: "Biologie Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Biologie Minor", ects: 60, standardcategory: "Minor" }
         ],
         "Biologie (30 ECTS)": [
-            { name: "Biologie Minor", kp: 30, standardcategory: "Minor" }
+            { name: "Biologie Minor", ects: 30, standardcategory: "Minor" }
         ],
         "Biomedizin": [
-            { name: "Biomedizin Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Biomedizin Minor", ects: 60, standardcategory: "Minor" }
         ],
         "Chemie": [
-            { name: "Chemie Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Chemie Minor", ects: 60, standardcategory: "Minor" }
         ],
         "Christentumsgeschichte": [
-            { name: "Christentumsgeschichte Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Christentumsgeschichte Minor", ects: 60, standardcategory: "Minor" }
         ],
         "Computational Science": [
-            { name: "Computational Science Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Computational Science Minor", ects: 60, standardcategory: "Minor" }
         ],
         "Erdsystemwissenschaften": [
-            { name: "Erdsystemwissenschaften Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Erdsystemwissenschaften Minor", ects: 60, standardcategory: "Minor" }
         ],
         "Geographie": [
-            { name: "Geographie Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Geographie Minor", ects: 60, standardcategory: "Minor" }
         ],
         "Hebräische Sprache und Literatur": [
-            { name: "Hebräische Sprache und Literatur Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Hebräische Sprache und Literatur Minor", ects: 60, standardcategory: "Minor" }
         ],
         "Hermeneutik": [
-            { name: "Hermeneutik Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Hermeneutik Minor", ects: 60, standardcategory: "Minor" }
         ],
         "Informatik": [
-            { name: "Informatik Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Informatik Minor", ects: 60, standardcategory: "Minor" }
         ],
         "Mathematik": [
-            { name: "Mathematik Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Mathematik Minor", ects: 60, standardcategory: "Minor" }
         ],
         "Mensch und Computer": [
-            { name: "Mensch und Computer Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Mensch und Computer Minor", ects: 60, standardcategory: "Minor" }
         ],
         "Physik": [
-            { name: "Physik Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Physik Minor", ects: 60, standardcategory: "Minor" }
         ],
         "Rechtswissenschaft": [
-            { name: "Rechtswissenschaft Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Rechtswissenschaft Minor", ects: 60, standardcategory: "Minor" }
         ],
         "Rechtswissenschaft (30 ECTS)": [
-            { name: "Rechtswissenschaft Minor", kp: 30, standardcategory: "Minor" }
+            { name: "Rechtswissenschaft Minor", ects: 30, standardcategory: "Minor" }
         ],
         "Religionswissenschaft": [
-            { name: "Religionswissenschaft Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Religionswissenschaft Minor", ects: 60, standardcategory: "Minor" }
         ],
         "Systematisch-Praktische Theologie": [
-            { name: "Systematisch-Praktische Theologie Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Systematisch-Praktische Theologie Minor", ects: 60, standardcategory: "Minor" }
         ],
         "Umweltwissenschaften": [
-            { name: "Umweltwissenschaften Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Umweltwissenschaften Minor", ects: 60, standardcategory: "Minor" }
         ],
         "Umweltwissenschaften (30 ECTS)": [
-            { name: "Umweltwissenschaften Minor", kp: 30, standardcategory: "Minor" }
+            { name: "Umweltwissenschaften Minor", ects: 30, standardcategory: "Minor" }
         ],
         "Volkswirtschaftslehre": [
-            { name: "Volkswirtschaftslehre Minor", kp: 60, standardcategory: "Minor" }
+            { name: "Volkswirtschaftslehre Minor", ects: 60, standardcategory: "Minor" }
         ]
     },
 };

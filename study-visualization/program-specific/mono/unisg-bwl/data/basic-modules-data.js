@@ -7,7 +7,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Betriebswirtschaftslehre (Einführung in die Managementlehre)",
-    kp: 5.5,
+    ects: 5.5,
     standardcategory: "kernfach",
     // KONTEXT
     jahr: 1,
@@ -16,7 +16,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Mathematik A",
-    kp: 3.5,
+    ects: 3.5,
     standardcategory: "methoden",
     // KONTEXT
     jahr: 1,
@@ -25,7 +25,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Einführung ins Privatrecht",
-    kp: 5.5,
+    ects: 5.5,
     standardcategory: "grundlagen",
     // KONTEXT
     jahr: 1,
@@ -34,7 +34,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "VWL A: Mikroökonomik I",
-    kp: 5.5,
+    ects: 5.5,
     standardcategory: "grundlagen",
     // KONTEXT
     jahr: 1,
@@ -43,7 +43,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Einführung in das wissenschaftliche Schreiben",
-    kp: 3.0,
+    ects: 3.0,
     standardcategory: "kontext",
     // KONTEXT
     jahr: 1,
@@ -52,7 +52,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Geschichte: Die Geschichte des Nationalismus in Europa seit 1750",
-    kp: 2.0,
+    ects: 2.0,
     standardcategory: "kontext",
     // KONTEXT
     jahr: 1,
@@ -61,7 +61,7 @@ window.StudiengangModules = [
   { 
     // PFLICHTFELDER
     name: "Skills", 
-    kp: 5.0, 
+    ects: 5.0, 
     standardcategory: "methoden",
     // KONTEXT
     jahr: 1, 
@@ -74,7 +74,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Betriebswirtschaftslehre (Wirtschaftsethik und Finanzielle Führung)",
-    kp: 5.5,
+    ects: 5.5,
     standardcategory: "kernfach",
     // KONTEXT
     jahr: 1,
@@ -83,7 +83,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Mathematik B",
-    kp: 3.5,
+    ects: 3.5,
     standardcategory: "methoden",
     // KONTEXT
     jahr: 1,
@@ -92,7 +92,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Einführung ins Bundesstaatsrecht",
-    kp: 5.5,
+    ects: 5.5,
     standardcategory: "grundlagen",
     // KONTEXT
     jahr: 1,
@@ -101,7 +101,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "VWL B: Makroökonomik I",
-    kp: 5.5,
+    ects: 5.5,
     standardcategory: "grundlagen",
     // KONTEXT
     jahr: 1,
@@ -110,7 +110,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Integrationsprojekt",
-    kp: 4.0,
+    ects: 4.0,
     standardcategory: "kontext",
     // KONTEXT
     jahr: 1,
@@ -119,7 +119,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Geschichte: Geschichte des politischen Denkens vor ca. 1750",
-    kp: 2.0,
+    ects: 2.0,
     standardcategory: "kontext",
     // KONTEXT
     jahr: 1,
@@ -128,7 +128,7 @@ window.StudiengangModules = [
   { 
     // PFLICHTFELDER
     name: "Skills", 
-    kp: 5.0, 
+    ects: 5.0, 
     standardcategory: "methoden",
     // KONTEXT
     jahr: 1, 
@@ -141,7 +141,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Accounting, Controlling, Auditing",
-    kp: 4.0,
+    ects: 4.0,
     standardcategory: "kernfach",
     // KONTEXT
     jahr: 2,
@@ -151,7 +151,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Corporate Finance (BBWL)",
-    kp: 4.0,
+    ects: 4.0,
     standardcategory: "kernfach",
     // KONTEXT
     jahr: 2,
@@ -161,7 +161,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Introduction to Operations Management",
-    kp: 4.0,
+    ects: 4.0,
     standardcategory: "kernfach",
     // KONTEXT
     jahr: 2,
@@ -171,7 +171,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Fundamentals and Methods of Computer Science for Business Studies",
-    kp: 8.0,
+    ects: 8.0,
     standardcategory: "methoden",
     // KONTEXT
     jahr: 2,
@@ -181,7 +181,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Leadership und Human Resource Management",
-    kp: 4.0,
+    ects: 4.0,
     standardcategory: "kernfach",
     // KONTEXT
     jahr: 2,
@@ -191,7 +191,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Makroökonomik II: Vorlesung und Selbststudium",
-    kp: 4.0,
+    ects: 4.0,
     standardcategory: "grundlagen",
     // KONTEXT
     jahr: 2,
@@ -201,7 +201,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Marketing",
-    kp: 4.0,
+    ects: 4.0,
     standardcategory: "kernfach",
     // KONTEXT
     jahr: 2,
@@ -211,7 +211,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Methoden: Empirische Sozialforschung",
-    kp: 4.0,
+    ects: 4.0,
     standardcategory: "methoden",
     // KONTEXT
     jahr: 2,
@@ -221,7 +221,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Methoden: Statistik",
-    kp: 4.0,
+    ects: 4.0,
     standardcategory: "methoden",
     // KONTEXT
     jahr: 2,
@@ -231,7 +231,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Mikroökonomik II",
-    kp: 4.0,
+    ects: 4.0,
     standardcategory: "grundlagen",
     // KONTEXT
     jahr: 2,
@@ -241,7 +241,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Strategisches Management",
-    kp: 4.0,
+    ects: 4.0,
     standardcategory: "kernfach",
     // KONTEXT
     jahr: 2,
@@ -251,7 +251,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Business and Tax Law",
-    kp: 8.0,
+    ects: 8.0,
     standardcategory: "grundlagen",
     // KONTEXT
     jahr: 2,
@@ -261,7 +261,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Capstone-Projekt: Unternehmerische Informatik",
-    kp: 8.0,
+    ects: 8.0,
     standardcategory: "methoden",
     // KONTEXT
     jahr: 2,
@@ -275,7 +275,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Bachelor-Arbeit",
-    kp: 12.0,
+    ects: 12.0,
     standardcategory: "bachelor",
     // KONTEXT
     jahr: 2,
@@ -289,7 +289,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Dark Continent - A History of Europe, 1914-present",
-    kp: 3.0,
+    ects: 3.0,
     standardcategory: "kontext",
     // KONTEXT
     jahr: 2,
@@ -299,7 +299,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Grundzüge der Unternehmensgeschichte (19.-20. Jahrhundert)",
-    kp: 3.0,
+    ects: 3.0,
     standardcategory: "kontext",
     // KONTEXT
     jahr: 2,
@@ -309,7 +309,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Die Geopolitik ist zurück auf dem Balkan - historische Voraussetzungen und künftige Risiken für Europa",
-    kp: 3.0,
+    ects: 3.0,
     standardcategory: "kontext",
     // KONTEXT
     jahr: 2,
@@ -319,7 +319,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Unternehmer-Biographien - ein Schlüssel zur Wirtschaftsgeschichte",
-    kp: 6.0,
+    ects: 6.0,
     standardcategory: "kontext",
     // KONTEXT
     jahr: 2,
@@ -329,7 +329,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Direkte Demokratie - ein politisches Erfolgsmodell? Seine Geschichte und Grenzen",
-    kp: 3.0,
+    ects: 3.0,
     standardcategory: "kontext",
     // KONTEXT
     jahr: 2,
@@ -339,7 +339,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Pulverfass Balkan - Kleinstaatenpolitik und Grossmachtrivalität vor und während des Ersten Weltkriegs",
-    kp: 3.0,
+    ects: 3.0,
     standardcategory: "kontext",
     // KONTEXT
     jahr: 2,
@@ -349,7 +349,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Increasing Racial and Ethnic Equity in Switzerland",
-    kp: 3.0,
+    ects: 3.0,
     standardcategory: "kontext",
     // KONTEXT
     jahr: 2,
@@ -363,7 +363,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Business-to-IT-Innovation: Was (zukünftige) Managerinnen und Manager wissen sollten",
-    kp: 4.0,
+    ects: 4.0,
     standardcategory: "kernfach",
     // KONTEXT
     jahr: 2,
@@ -373,7 +373,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Controlling mit SAP",
-    kp: 4.0,
+    ects: 4.0,
     standardcategory: "kernfach",
     // KONTEXT
     jahr: 2,
@@ -383,7 +383,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Machine Learning in Finance",
-    kp: 4.0,
+    ects: 4.0,
     standardcategory: "methoden",
     // KONTEXT
     jahr: 2,
@@ -393,7 +393,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Risk Management",
-    kp: 4.0,
+    ects: 4.0,
     standardcategory: "kernfach",
     // KONTEXT
     jahr: 2,
@@ -403,7 +403,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Business and Market Research",
-    kp: 4.0,
+    ects: 4.0,
     standardcategory: "kernfach",
     // KONTEXT
     jahr: 2,

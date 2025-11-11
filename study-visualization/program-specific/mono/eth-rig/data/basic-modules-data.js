@@ -6,7 +6,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Analysis I",
-    kp: 7,
+    ects: 7,
     standardcategory: "grundlagen",
     // KONTEXT
     jahr: 1,
@@ -15,7 +15,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Lineare Algebra",
-    kp: 5,
+    ects: 5,
     standardcategory: "grundlagen",
     // KONTEXT
     jahr: 1,
@@ -24,7 +24,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Informatik I",
-    kp: 5,
+    ects: 5,
     standardcategory: "grundlagen",
     // KONTEXT
     jahr: 1,
@@ -33,7 +33,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Raum- und Landschaftsentwicklung GZ",
-    kp: 5,
+    ects: 5,
     standardcategory: "obligatorisch",
     // KONTEXT
     jahr: 1,
@@ -42,7 +42,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Kartografie GZ",
-    kp: 5,
+    ects: 5,
     standardcategory: "obligatorisch",
     // KONTEXT
     jahr: 1,
@@ -51,7 +51,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Ökologie und Bodenkunde",
-    kp: 3,
+    ects: 3,
     standardcategory: "obligatorisch",
     // KONTEXT
     jahr: 1,
@@ -63,7 +63,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Analysis II",
-    kp: 7,
+    ects: 7,
     standardcategory: "grundlagen",
     // KONTEXT
     jahr: 1,
@@ -72,7 +72,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Physik I",
-    kp: 4,
+    ects: 4,
     standardcategory: "grundlagen",
     // KONTEXT
     jahr: 1,
@@ -81,7 +81,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Statistik und Wahrscheinlichkeitsrechnung",
-    kp: 5,
+    ects: 5,
     standardcategory: "grundlagen",
     // KONTEXT
     jahr: 1,
@@ -90,7 +90,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Informatik II",
-    kp: 4,
+    ects: 4,
     standardcategory: "grundlagen",
     // KONTEXT
     jahr: 1,
@@ -99,7 +99,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Geodätische Messtechnik GZ",
-    kp: 6,
+    ects: 6,
     standardcategory: "obligatorisch",
     // KONTEXT
     jahr: 1,
@@ -108,7 +108,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Projektmanagement",
-    kp: 2,
+    ects: 2,
     standardcategory: "obligatorisch",
     // KONTEXT
     jahr: 1,
@@ -117,7 +117,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Recht",
-    kp: 2,
+    ects: 2,
     standardcategory: "obligatorisch",
     // KONTEXT
     jahr: 1,
@@ -129,7 +129,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Physik II",
-    kp: 4,
+    ects: 4,
     standardcategory: "grundlagen",
     // KONTEXT
     jahr: 2,
@@ -138,7 +138,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Operations Research",
-    kp: 3,
+    ects: 3,
     standardcategory: "obligatorisch",
     // KONTEXT
     jahr: 2,
@@ -147,7 +147,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Parameterschätzung",
-    kp: 4,
+    ects: 4,
     standardcategory: "obligatorisch",
     // KONTEXT
     jahr: 2,
@@ -156,7 +156,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Multivariate Statistik & Machine Learning",
-    kp: 4,
+    ects: 4,
     standardcategory: "obligatorisch",
     // KONTEXT
     jahr: 2,
@@ -165,7 +165,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Satellitengeodäsie",
-    kp: 4,
+    ects: 4,
     standardcategory: "obligatorisch",
     // KONTEXT
     jahr: 2,
@@ -174,7 +174,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Erdbeobachtung",
-    kp: 4,
+    ects: 4,
     standardcategory: "obligatorisch",
     // KONTEXT
     jahr: 2,
@@ -183,7 +183,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Ökonomie",
-    kp: 3,
+    ects: 3,
     standardcategory: "obligatorisch",
     // KONTEXT
     jahr: 2,
@@ -192,7 +192,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Projekt",
-    kp: 4,
+    ects: 4,
     standardcategory: "selbstaendig",
     // KONTEXT
     jahr: 2,
@@ -204,7 +204,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Systems Engineering",
-    kp: 3,
+    ects: 3,
     standardcategory: "obligatorisch",
     // KONTEXT
     jahr: 2,
@@ -213,7 +213,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Verkehr GZ",
-    kp: 4,
+    ects: 4,
     standardcategory: "obligatorisch",
     // KONTEXT
     jahr: 2,
@@ -222,7 +222,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Analysis III",
-    kp: 3,
+    ects: 3,
     standardcategory: "grundlagen",
     // KONTEXT
     jahr: 2,
@@ -231,7 +231,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Wahlmodule",
-    kp: 18,
+    ects: 18,
     standardcategory: "wahlmodule",
     // KONTEXT
     jahr: 2,
@@ -243,7 +243,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Wahlmodule",
-    kp: 15,
+    ects: 15,
     standardcategory: "wahlmodule",
     // KONTEXT
     jahr: 3,
@@ -252,7 +252,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Freie Wahl + SIP",
-    kp: 7,
+    ects: 7,
     standardcategory: "freie-wahl",
     // KONTEXT
     jahr: 3,
@@ -264,7 +264,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Bachelor-Arbeit",
-    kp: 10,
+    ects: 10,
     standardcategory: "selbstaendig",
     // KONTEXT
     jahr: 3,
@@ -273,7 +273,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Wahlmodule",
-    kp: 12,
+    ects: 12,
     standardcategory: "wahlmodule",
     // KONTEXT
     jahr: 3,
@@ -282,7 +282,7 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Freie Wahl + SIP",
-    kp: 8,
+    ects: 8,
     standardcategory: "freie-wahl",
     // KONTEXT
     jahr: 3,
