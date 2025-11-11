@@ -15,8 +15,16 @@ window.StudienplanModule = {
         const size = baseSize * scale;
         const style = `width: ${size}px; height: ${size}px;`;
 
+        // Platzhalter-Module speziell markieren
+        let placeholderClass = '';
+        let wahlmodulSourceAttr = '';
+        if (module.isPlaceholder && module.wahlmodulSource) {
+            placeholderClass = 'modul-platzhalter';
+            wahlmodulSourceAttr = `data-wahlmodul-source="${module.wahlmodulSource}"`;
+        }
+
         return `
-            <div class="modul ${category}" data-ects="${ects}" style="${style}">
+            <div class="modul ${category} ${placeholderClass}" data-ects="${ects}" style="${style}" ${wahlmodulSourceAttr}>
                 <div class="modul-titel">${name}</div>
                 <div class="modul-kp">${ects} KP</div>
             </div>
