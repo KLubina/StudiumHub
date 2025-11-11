@@ -2,13 +2,11 @@
 /* Module categories and their CSS class mappings */
 
 window.StudiengangCategoriesConfig = {
-    // Category definitions
+    // Category definitions — reduced to the categories actually present in the data files
+    // (Pflichtmodule, Wahlmodule, Wahlpflichtmodule)
     kategorien: [
-        { name: "Populäre Kulturen (Major)", klasse: "major-popkultur" },
-        { name: "Minor", klasse: "minor" },
         { name: "Pflichtmodule", klasse: "pflicht" },
-        { name: "Qualitative Methoden", klasse: "methoden" },
-        { name: "Wahlpflichtmodule", klasse: "wahlpflicht" },
-        { name: "Bachelor-Arbeit", klasse: "ba-arbeit" }
+        { name: "Wahlmodule", klasse: "wahlmodule" },
+        { name: "Wahlpflichtmodule", klasse: "wahlpflicht" }
     ]
 };

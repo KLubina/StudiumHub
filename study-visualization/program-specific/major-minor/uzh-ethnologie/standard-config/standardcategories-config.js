@@ -2,14 +2,11 @@
 /* Module categories and their CSS class mappings */
 
 window.StudiengangCategoriesConfig = {
-    // Category definitions
+    // Category definitions — reduced to the categories actually present in the data files
+    // (Pflichtmodule, Wahlmodule, Wahlpflichtmodule)
     kategorien: [
-        { name: "Ethnologie (Major)", klasse: "major-ethnologie" },
-        { name: "Minor", klasse: "minor" },
         { name: "Pflichtmodule", klasse: "pflicht" },
-        { name: "Kernbereiche", klasse: "kernbereiche" },
-        { name: "Sprachen & Regionen", klasse: "sprachen" },
         { name: "Wahlmodule", klasse: "wahlmodule" },
-        { name: "Bachelor-Arbeit", klasse: "ba-arbeit" }
+        { name: "Wahlpflichtmodule", klasse: "wahlpflicht" }
     ]
 };
