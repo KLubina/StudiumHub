@@ -1,8 +1,9 @@
 /* ==== UZH POLISCI - COLOR VARIABLES (pruned) ==== */
-/* Only variables needed for implemented categories: Pflicht, Wahlpflicht, Wahlmodule */
+/* Only variables needed for implemented categories: Pflicht, Wahlmodule, Vertiefungsmodule */
 
 [data-studiengang="uzh-polisci"] {
     --color-pflicht: #e84393;
-    --color-wahlpflicht: #fd79a8;
     --color-wahl: #fdcb6e;
+    /* New: color for Vertiefungsmodule */
+    --color-vertiefung: #2dd4bf; /* teal-ish, good contrast */
 }

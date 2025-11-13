@@ -1,6 +1,6 @@
 /* ==== UZH POLISCI - CSS CLASSES ==== */
 /* Program-specific CSS classes for Politikwissenschaft (Major-Minor)
-   Only keep selectors for implemented categories: Pflicht, Wahlpflicht, Wahlmodule */
+    Only keep selectors for implemented categories: Pflicht, Wahlmodule, Vertiefungsmodule */
 
 /* Pflicht */
 [data-studiengang="uzh-polisci"] .modul.pflicht,
@@ -9,16 +9,18 @@
     color: var(--color-pflicht-text, white);
 }
 
-/* Wahlpflicht */
-[data-studiengang="uzh-polisci"] .modul.wahlpflicht,
-[data-studiengang="uzh-polisci"] .legende-item.wahlpflicht {
-    background-color: var(--color-wahlpflicht);
-    color: var(--color-wahlpflicht-text, white);
-}
+/* Wahlpflicht category removed */
 
 /* Wahlmodule */
 [data-studiengang="uzh-polisci"] .modul.wahlmodule,
 [data-studiengang="uzh-polisci"] .legende-item.wahlmodule {
     background-color: var(--color-wahl);
     color: var(--color-wahl-text, white);
+}
+
+/* Vertiefungsmodule */
+[data-studiengang="uzh-polisci"] .modul.vertiefung,
+[data-studiengang="uzh-polisci"] .legende-item.vertiefung {
+    background-color: var(--color-vertiefung);
+    color: var(--color-vertiefung-text, white);
 }
