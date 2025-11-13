@@ -76,20 +76,38 @@ window.StudienplanWahlmodule = {
             const script = document.createElement('script');
             script.src = fullPath;
             script.onload = () => {
-                // Versuche verschiedene globale Variablen zu finden
-                const possibleVars = [
-                    'ITETWahlfaecherData',
-                    'ITETModuleData', // Kernfächer
-                    'ITETWeitereWahlGrundlagenData',
-                    'ITETPraktikaSeminarProjektData',
-                    'WahlmoduleData'
-                ];
+                // Mappe Dateinamen zu erwarteten Variablennamen
+                const sourceToVarMap = {
+                    'wahlmodule-data.js': 'PolisciWahlmoduleData',
+                    'seminar-data.js': 'PolisciSeminarData',
+                    'vertiefungsmodule-data.js': 'PolisciVertiefungsmoduleData',
+                    'specialisationmodule-data.js': 'SpecialisationModuleData'
+                };
 
+                // Versuche zuerst die spezifische Variable basierend auf dem Dateinamen
                 let modules = null;
-                for (const varName of possibleVars) {
-                    if (window[varName]) {
-                        modules = window[varName];
-                        break;
+                const fileName = source.split('/').pop();
+                const expectedVar = sourceToVarMap[fileName];
+
+                if (expectedVar && window[expectedVar]) {
+                    modules = window[expectedVar];
+                }
+
+                // Fallback: Versuche verschiedene globale Variablen zu finden
+                if (!modules) {
+                    const possibleVars = [
+                        'ITETWahlfaecherData',
+                        'ITETModuleData', // Kernfächer
+                        'ITETWeitereWahlGrundlagenData',
+                        'ITETPraktikaSeminarProjektData',
+                        'WahlmoduleData'
+                    ];
+
+                    for (const varName of possibleVars) {
+                        if (window[varName]) {
+                            modules = window[varName];
+                            break;
+                        }
                     }
                 }
 

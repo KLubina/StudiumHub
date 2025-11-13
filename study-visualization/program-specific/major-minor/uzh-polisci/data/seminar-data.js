@@ -69,6 +69,3 @@ window.PolisciSeminarData = [
     standardcategory: "Vertiefungsmodule",
   },
 ];
-
-// Export für wahlmodule.js - der Code erkennt nur spezifische Variablennamen
-window.WahlmoduleData = window.PolisciSeminarData;

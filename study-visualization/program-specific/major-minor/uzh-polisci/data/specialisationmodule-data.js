@@ -96,6 +96,3 @@ window.SpecialisationModuleData = [
     semester: 2,
   },
 ];
-
-// Export für wahlmodule.js - der Code erkennt nur spezifische Variablennamen
-window.WahlmoduleData = window.SpecialisationModuleData;
