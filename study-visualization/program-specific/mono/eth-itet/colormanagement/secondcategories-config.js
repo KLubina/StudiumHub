@@ -1,23 +1,20 @@
-/* ==== SECONDCATEGORIES CONFIGURATION ==== */
-/* Modul-Kategorien Definition - wird in der Legende angezeigt */
-/* KISS Principle: Nur Kategorien definieren, Farben kommen von thirdcategory */
 
 window.ITETSecondCategoryConfig = {
   kategorien: [
-    { name: "Basisprüfungsblock A", klasse: "basisprüfungsblock-A" },
-    { name: "Basisprüfungsblock B", klasse: "basisprüfungsblock-B" },
-
-    { name: "Prüfungsblock 1", klasse: "prüfungsblock-1" },
-    { name: "Prüfungsblock 2", klasse: "prüfungsblock-2" },
-    { name: "Prüfungsblock 3", klasse: "prüfungsblock-3" },
+    { name: "Basisprüfungsblock A", klasse: "basisprufungsblock-a" },
+    { name: "Basisprüfungsblock B", klasse: "basisprufungsblock-b" },
+    { name: "Prüfungsblock 1", klasse: "prufungsblock-1" },
+    { name: "Prüfungsblock 2", klasse: "prufungsblock-2" },
+    { name: "Prüfungsblock 3", klasse: "prufungsblock-3" },
   ],
 };
 
+
 window.StudiengangColorManagerModes = window.StudiengangColorManagerModes || {};
-window.StudiengangColorManagerModes.organisation = {
+window.StudiengangColorManagerModes.prufungsbloecke = {
   label: "Prüfungsblöcke",
   categoryField: "secondcategory",
-  valueType: "name",
+  valueType: "class",
   order: 1,
   css: {
     classes: "colormanagement/secondcategory-colors/classes.css",
