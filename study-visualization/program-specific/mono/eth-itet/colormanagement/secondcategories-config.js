@@ -4,19 +4,18 @@
 
 window.ITETSecondCategoryConfig = {
   kategorien: [
-    { name: "Obligatorisch", klasse: "obligatorisch" },
-    { name: "Obligatorisch Praktikum", klasse: "obligatorisch-praktikum" },
-    { name: "Kern", klasse: "kern" },
-    { name: "Wahl", klasse: "wahl" },
-    { name: "Praktika & Projekte", klasse: "wahl-praktika-projekte" },
-    { name: "Weitere Grundlagen", klasse: "weitere-wahl-grundlagen" },
-    { name: "Wissenschaftliche Arbeit", klasse: "wissenschaft" },
+    { name: "Basisprüfungsblock A", klasse: "basisprüfungsblock-A" },
+    { name: "Basisprüfungsblock B", klasse: "basisprüfungsblock-B" },
+
+    { name: "Prüfungsblock 1", klasse: "prüfungsblock-1" },
+    { name: "Prüfungsblock 2", klasse: "prüfungsblock-2" },
+    { name: "Prüfungsblock 3", klasse: "prüfungsblock-3" },
   ],
 };
 
 window.StudiengangColorManagerModes = window.StudiengangColorManagerModes || {};
 window.StudiengangColorManagerModes.organisation = {
-  label: "Organisation",
+  label: "Prüfungsblöcke",
   categoryField: "secondcategory",
   valueType: "name",
   order: 1,

@@ -2,44 +2,32 @@
 /* Program-specific CSS classes for ITET - Simplified */
 
 /* ITET-specific classes */
-[data-studiengang="eth-itet"] .modul.obligatorisch,
-[data-studiengang="eth-itet"] .legende-item.obligatorisch {
-    background-color: var(--color-obligatorisch);
+[data-studiengang="eth-itet"] .modul.basisprüfungsblock-a,
+[data-studiengang="eth-itet"] .legende-item.basisprüfungsblock-a {
+    background-color: var(--color-basisprüfungsblock-a);
     color: white;
 }
 
-[data-studiengang="eth-itet"] .modul.obligatorisch-praktikum,
-[data-studiengang="eth-itet"] .legende-item.obligatorisch-praktikum {
-    background-color: var(--color-obligatorisch-praktikum);
+[data-studiengang="eth-itet"] .modul.basisprüfungsblock-b,
+[data-studiengang="eth-itet"] .legende-item.basisprüfungsblock-b {
+    background-color: var(--color-basisprüfungsblock-b);
     color: white;
 }
 
-[data-studiengang="eth-itet"] .modul.kern,
-[data-studiengang="eth-itet"] .legende-item.kern {
-    background-color: var(--color-kern);
+[data-studiengang="eth-itet"] .modul.prufungsblock-1,
+[data-studiengang="eth-itet"] .legende-item.prufungsblock-1 {
+    background-color: var(--color-prufungsblock-1);
     color: white;
 }
 
-[data-studiengang="eth-itet"] .modul.wahl,
-[data-studiengang="eth-itet"] .legende-item.wahl {
-    background-color: var(--color-wahl);
+[data-studiengang="eth-itet"] .modul.prufungsblock-2,
+[data-studiengang="eth-itet"] .legende-item.prufungsblock-2 {
+    background-color: var(--color-prufungsblock-2);
     color: white;
 }
 
-[data-studiengang="eth-itet"] .modul.wahl-praktika-projekte,
-[data-studiengang="eth-itet"] .legende-item.wahl-praktika-projekte {
-    background-color: var(--color-wahl-praktika-projekte);
-    color: white;
-}
-
-[data-studiengang="eth-itet"] .modul.weitere-wahl-grundlagen,
-[data-studiengang="eth-itet"] .legende-item.weitere-wahl-grundlagen {
-    background-color: var(--color-weitere-wahl-grundlagen);
-    color: white;
-}
-
-[data-studiengang="eth-itet"] .modul.wissenschaft,
-[data-studiengang="eth-itet"] .legende-item.wissenschaft {
-    background-color: var(--color-wissenschaft);
+[data-studiengang="eth-itet"] .modul.prufungsblock-3,
+[data-studiengang="eth-itet"] .legende-item.prufungsblock-3 {
+    background-color: var(--color-prufungsblock-3);
     color: white;
 }

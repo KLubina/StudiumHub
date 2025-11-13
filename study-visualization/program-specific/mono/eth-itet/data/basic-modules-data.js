@@ -12,7 +12,7 @@ window.StudiengangModules = [
     name: "Technische Mechanik",
     ects: 4,
     standardcategory: "Obligatorische Fächer",
-    secondcategory: "Obligatorisch",
+    secondcategory: "Basisprüfungsblock A",
     thirdcategory: "physik",
     // KONTEXT
     year: 1,
@@ -25,7 +25,7 @@ window.StudiengangModules = [
     name: "Netzwerke und Schaltungen I",
     ects: 4,
     standardcategory: "Obligatorische Fächer",
-    secondcategory: "Obligatorisch",
+    secondcategory: "Basisprüfungsblock A",
     thirdcategory: "elektrotechnik",
     // KONTEXT
     year: 1,
@@ -38,7 +38,7 @@ window.StudiengangModules = [
     name: "Digitaltechnik",
     ects: 4,
     standardcategory: "Obligatorische Fächer",
-    secondcategory: "Obligatorisch",
+    secondcategory: "Basisprüfungsblock A",
     thirdcategory: "it",
     // KONTEXT
     year: 1,
@@ -49,7 +49,6 @@ window.StudiengangModules = [
     name: "Digitaltechnik Praktikum",
     ects: 1,
     standardcategory: "Obligatorische Praktikum",
-    secondcategory: "Obligatorisch Praktikum",
     thirdcategory: "it",
     // KONTEXT
     year: 1,
@@ -60,7 +59,6 @@ window.StudiengangModules = [
     name: "Vorkurs Informatik",
     ects: 1,
     standardcategory: "Obligatorische Praktikum",
-    secondcategory: "Obligatorisch Praktikum",
     thirdcategory: "it",
     // KONTEXT
     year: 1,
@@ -73,7 +71,7 @@ window.StudiengangModules = [
     name: "Analysis 1",
     ects: 8,
     standardcategory: "Obligatorische Fächer",
-    secondcategory: "Obligatorisch",
+    secondcategory: "Basisprüfungsblock B",
     thirdcategory: "mathematik",
     // KONTEXT
     year: 1,
@@ -84,7 +82,7 @@ window.StudiengangModules = [
     name: "Lineare Algebra",
     ects: 5,
     standardcategory: "Obligatorische Fächer",
-    secondcategory: "Obligatorisch",
+    secondcategory: "Basisprüfungsblock A",
     thirdcategory: "mathematik",
     // KONTEXT
     year: 1,
@@ -102,7 +100,7 @@ window.StudiengangModules = [
     name: "Physik I",
     ects: 4,
     standardcategory: "Obligatorische Fächer",
-    secondcategory: "Obligatorisch",
+    secondcategory: "Basisprüfungsblock B",
     thirdcategory: "physik",
     // KONTEXT
     year: 1,
@@ -115,7 +113,7 @@ window.StudiengangModules = [
     name: "Netzwerke und Schaltungen II",
     ects: 8,
     standardcategory: "Obligatorische Fächer",
-    secondcategory: "Obligatorisch",
+    secondcategory: "Basisprüfungsblock B",
     thirdcategory: "elektrotechnik",
     // KONTEXT
     year: 1,
@@ -126,7 +124,6 @@ window.StudiengangModules = [
     name: "Netzwerke und Schaltungen Praktikum",
     ects: 1,
     standardcategory: "Obligatorische Praktikum",
-    secondcategory: "Obligatorisch Praktikum",
     thirdcategory: "elektrotechnik",
     // KONTEXT
     year: 1,
@@ -139,7 +136,7 @@ window.StudiengangModules = [
     name: "Informatik I",
     ects: 4,
     standardcategory: "Obligatorische Fächer",
-    secondcategory: "Obligatorisch",
+    secondcategory: "Basisprüfungsblock B",
     thirdcategory: "it",
     // KONTEXT
     year: 1,
@@ -152,7 +149,7 @@ window.StudiengangModules = [
     name: "Analysis 2",
     ects: 8,
     standardcategory: "Obligatorische Fächer",
-    secondcategory: "Obligatorisch",
+    secondcategory: "Basisprüfungsblock B",
     thirdcategory: "mathematik",
     // KONTEXT
     year: 1,
@@ -163,7 +160,7 @@ window.StudiengangModules = [
     name: "Mathematische Methoden",
     ects: 4,
     standardcategory: "Obligatorische Fächer",
-    secondcategory: "Obligatorisch",
+    secondcategory: "Basisprüfungsblock B",
     thirdcategory: "mathematik",
     // KONTEXT
     year: 1,
@@ -181,7 +178,7 @@ window.StudiengangModules = [
     name: "Physik II",
     ects: 8,
     standardcategory: "Obligatorische Fächer",
-    secondcategory: "Obligatorisch",
+    secondcategory: "Prüfungsblock 1",
     thirdcategory: "physik",
     // KONTEXT
     year: 2,
@@ -194,7 +191,7 @@ window.StudiengangModules = [
     name: "Signal- und Systemtheorie I",
     ects: 4,
     standardcategory: "Obligatorische Fächer",
-    secondcategory: "Obligatorisch",
+    secondcategory: "Prüfungsblock 1",
     thirdcategory: "elektrotechnik",
     // KONTEXT
     year: 2,
@@ -229,7 +226,7 @@ window.StudiengangModules = [
     name: "Informatik II",
     ects: 4,
     standardcategory: "Obligatorische Fächer",
-    secondcategory: "Obligatorisch",
+    secondcategory: "Prüfungsblock 1",
     thirdcategory: "it",
     // KONTEXT
     year: 2,
@@ -242,7 +239,7 @@ window.StudiengangModules = [
     name: "Analysis 3",
     ects: 4,
     standardcategory: "Obligatorische Fächer",
-    secondcategory: "Obligatorisch",
+    secondcategory: "Prüfungsblock 1",
     thirdcategory: "mathematik",
     // KONTEXT
     year: 2,
@@ -253,7 +250,7 @@ window.StudiengangModules = [
     name: "Diskrete Mathematik",
     ects: 4,
     standardcategory: "Obligatorische Fächer",
-    secondcategory: "Obligatorisch",
+    secondcategory: "Prüfungsblock 2",
     thirdcategory: "mathematik",
     // KONTEXT
     year: 2,
@@ -271,7 +268,7 @@ window.StudiengangModules = [
     name: "Elektromagnetische Felder und Wellen",
     ects: 4,
     standardcategory: "Obligatorische Fächer",
-    secondcategory: "Obligatorisch",
+    secondcategory: "Prüfungsblock 3",
     thirdcategory: "physik",
     // KONTEXT
     year: 2,
@@ -284,7 +281,7 @@ window.StudiengangModules = [
     name: "Signal- und Systemtheorie II",
     ects: 4,
     standardcategory: "Obligatorische Fächer",
-    secondcategory: "Obligatorisch",
+    secondcategory: "Prüfungsblock 2",
     thirdcategory: "elektrotechnik",
     // KONTEXT
     year: 2,
@@ -295,7 +292,7 @@ window.StudiengangModules = [
     name: "Halbleiterelemente",
     ects: 4,
     standardcategory: "Obligatorische Fächer",
-    secondcategory: "Obligatorisch",
+    secondcategory: "Prüfungsblock 3",
     thirdcategory: "elektrotechnik",
     // KONTEXT
     year: 2,
@@ -308,7 +305,7 @@ window.StudiengangModules = [
     name: "Technische Informatik",
     ects: 4,
     standardcategory: "Obligatorische Fächer",
-    secondcategory: "Obligatorisch",
+    secondcategory: "Prüfungsblock 2",
     thirdcategory: "it",
     // KONTEXT
     year: 2,
@@ -321,7 +318,7 @@ window.StudiengangModules = [
     name: "Numerische Methoden",
     ects: 4,
     standardcategory: "Obligatorische Fächer",
-    secondcategory: "Obligatorisch",
+    secondcategory: "Prüfungsblock 3",
     thirdcategory: "mathematik",
     // KONTEXT
     year: 2,
@@ -332,7 +329,7 @@ window.StudiengangModules = [
     name: "Wahrscheinlichkeitstheorie und Statistik",
     ects: 4,
     standardcategory: "Obligatorische Fächer",
-    secondcategory: "Obligatorisch",
+    secondcategory: "Prüfungsblock 3",
     thirdcategory: "mathematik",
     // KONTEXT
     year: 2,
