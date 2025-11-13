@@ -50,7 +50,67 @@ window.PolisciPflichtmoduleData = [
     ects: 6,
     standardcategory: "Pflichtmodule",
     year: 2,
-    semester: 2
+    semester: 1
+  },
+  // Platzhalter für Vertiefungmodul 2. Jahr 1. Semester
+  {
+    name: "Vertiefungmodul",
+    ects: 0,
+    standardcategory: "Vertiefungsmodule",
+    year: 2,
+    semester: 1,
+    isPlaceholder: true,
+    wahlmodulSource: "vertiefungsmodule-data.js"
+  },
+  // Platzhalter für Seminarmodul 2. Jahr 1. Semester
+  {
+    name: "Seminarmodul",
+    ects: 0,
+    standardcategory: "Vertiefungsmodule",
+    year: 2,
+    semester: 1,
+    isPlaceholder: true,
+    wahlmodulSource: "seminar-data.js"
+  },
+  // Platzhalter für Vertiefungmodul 2. Jahr 2. Semester
+  {
+    name: "Vertiefungmodul",
+    ects: 0,
+    standardcategory: "Vertiefungsmodule",
+    year: 2,
+    semester: 2,
+    isPlaceholder: true,
+    wahlmodulSource: "vertiefungsmodule-data.js"
+  },
+  // Platzhalter für Seminarmodul 2. Jahr 2. Semester
+  {
+    name: "Seminarmodul",
+    ects: 0,
+    standardcategory: "Vertiefungsmodule",
+    year: 2,
+    semester: 2,
+    isPlaceholder: true,
+    wahlmodulSource: "seminar-data.js"
+  },
+  // Platzhalter für Spezialisierungsmodul 3. Jahr 1. Semester
+  {
+    name: "Spezialisierungsmodul",
+    ects: 0,
+    standardcategory: "Wahlmodule",
+    year: 3,
+    semester: 1,
+    isPlaceholder: true,
+    wahlmodulSource: "specialisationmodule-data.js"
+  },
+  // Platzhalter für Wahlmodule 3. Jahr 1. Semester
+  {
+    name: "Wahlmodule",
+    ects: 0,
+    standardcategory: "Wahlmodule",
+    year: 3,
+    semester: 1,
+    isPlaceholder: true,
+    wahlmodulSource: "wahlmodule-data.js"
   },
   // fs2028 Pflichtmodule
   {
