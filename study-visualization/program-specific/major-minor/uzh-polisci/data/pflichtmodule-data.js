@@ -1,9 +1,3 @@
-/* ==== POLITIKWISSENSCHAFT PFLICHTMODULE DATA ==== */
-// Pflichtmodule für Politikwissenschaft (HS 2025 + FS 2026)
-
-/* ==== POLITIKWISSENSCHAFT PFLICHTMODULE DATA ==== */
-// Pflichtmodule für Politikwissenschaft (HS 2025 + FS 2026)
-
 window.PolisciPflichtmoduleData = [
   // hs2025 Pflichtmodule
   {
@@ -14,24 +8,17 @@ window.PolisciPflichtmoduleData = [
     semester: 1
   },
   {
-    name: "Einführung in die Schweizer Politik",
+    name: "EinfÃ¼hrung in die Schweizer Politik",
     ects: 3,
     standardcategory: "Pflichtmodule",
     year: 1,
     semester: 1
   },
   {
-    name: "Einführung Methoden und Statistik",
+    name: "EinfÃ¼hrung Methoden und Statistik",
     ects: 3,
     standardcategory: "Pflichtmodule",
     year: 1,
-    semester: 1
-  },
-  {
-    name: "Fortgeschrittene Methoden und Statistik",
-    ects: 6,
-    standardcategory: "Pflichtmodule",
-    year: 2,
     semester: 1
   },
   // fs2026 Pflichtmodule
@@ -49,13 +36,23 @@ window.PolisciPflichtmoduleData = [
     year: 1,
     semester: 2
   },
+  // hs2026 Pflichtmodule
   {
-    name: "Einführung in die qualitativen Methoden",
+    name: "Fortgeschrittene Methoden und Statistik",
+    ects: 6,
+    standardcategory: "Pflichtmodule",
+    year: 2,
+    semester: 1
+  },
+  // fs2027 Pflichtmodule
+  {
+    name: "EinfÃ¼hrung in die qualitativen Methoden",
     ects: 6,
     standardcategory: "Pflichtmodule",
     year: 2,
     semester: 2
   },
+  // fs2028 Pflichtmodule
   {
     name: "Bachelorarbeit",
     ects: 15,
