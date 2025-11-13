@@ -11,6 +11,10 @@ window.StudiengangModules = [
     // KONTEXT
     year: 1,
     semester: 1,
+    // SPECIFIC
+    standardcategory: "",
+    secondcategory: "",
+    thirdcategory: "",
   },
   {
     // PFLICHTFELDER
@@ -19,6 +23,10 @@ window.StudiengangModules = [
     // KONTEXT
     year: 1,
     semester: 1,
+    // SPECIFIC
+    standardcategory: "",
+    secondcategory: "",
+    thirdcategory: "",
   },
   {
     // PFLICHTFELDER
@@ -27,6 +35,10 @@ window.StudiengangModules = [
     // KONTEXT
     year: 1,
     semester: 1,
+    // SPECIFIC
+    standardcategory: "",
+    secondcategory: "",
+    thirdcategory: "",
   },
   {
     // PFLICHTFELDER
@@ -35,6 +47,10 @@ window.StudiengangModules = [
     // KONTEXT
     year: 1,
     semester: 1,
+    // SPECIFIC
+    standardcategory: "",
+    secondcategory: "",
+    thirdcategory: "",
   },
   {
     // PFLICHTFELDER
@@ -43,6 +59,10 @@ window.StudiengangModules = [
     // KONTEXT
     year: 1,
     semester: 1,
+    // SPECIFIC
+    standardcategory: "",
+    secondcategory: "",
+    thirdcategory: "",
   },
   // #endregion 1. Semester
 
@@ -54,6 +74,10 @@ window.StudiengangModules = [
     // KONTEXT
     year: 1,
     semester: 2,
+    // SPECIFIC
+    standardcategory: "",
+    secondcategory: "",
+    thirdcategory: "",
   },
   {
     // PFLICHTFELDER
@@ -62,6 +86,10 @@ window.StudiengangModules = [
     // KONTEXT
     year: 1,
     semester: 2,
+    // SPECIFIC
+    standardcategory: "",
+    secondcategory: "",
+    thirdcategory: "",
   },
   {
     // PFLICHTFELDER
@@ -70,6 +98,10 @@ window.StudiengangModules = [
     // KONTEXT
     year: 1,
     semester: 2,
+    // SPECIFIC
+    standardcategory: "",
+    secondcategory: "",
+    thirdcategory: "",
   },
   {
     // PFLICHTFELDER
@@ -78,6 +110,10 @@ window.StudiengangModules = [
     // KONTEXT
     year: 1,
     semester: 2,
+    // SPECIFIC
+    standardcategory: "",
+    secondcategory: "",
+    thirdcategory: "",
   },
   {
     // PFLICHTFELDER
@@ -86,6 +122,10 @@ window.StudiengangModules = [
     // KONTEXT
     year: 1,
     semester: 2,
+    // SPECIFIC
+    standardcategory: "",
+    secondcategory: "",
+    thirdcategory: "",
   },
   // #endregion 2. Semester
 
@@ -96,6 +136,10 @@ window.StudiengangModules = [
     ects: 4,
     // KONTEXT
     year: 2,
+    // SPECIFIC
+    standardcategory: "",
+    secondcategory: "",
+    thirdcategory: "",
   },
   {
     // PFLICHTFELDER
@@ -103,6 +147,10 @@ window.StudiengangModules = [
     ects: 5,
     // KONTEXT
     year: 2,
+    // SPECIFIC
+    standardcategory: "",
+    secondcategory: "",
+    thirdcategory: "",
   },
   {
     // PFLICHTFELDER
@@ -110,6 +158,10 @@ window.StudiengangModules = [
     ects: 9,
     // KONTEXT
     year: 2,
+    // SPECIFIC
+    standardcategory: "",
+    secondcategory: "",
+    thirdcategory: "",
   },
   {
     // PFLICHTFELDER
@@ -117,6 +169,10 @@ window.StudiengangModules = [
     ects: 4,
     // KONTEXT
     year: 2,
+    // SPECIFIC
+    standardcategory: "",
+    secondcategory: "",
+    thirdcategory: "",
   },
   {
     // PFLICHTFELDER
@@ -124,6 +180,10 @@ window.StudiengangModules = [
     ects: 10,
     // KONTEXT
     year: 2,
+    // SPECIFIC
+    standardcategory: "",
+    secondcategory: "",
+    thirdcategory: "",
   },
   {
     // PFLICHTFELDER
@@ -131,6 +191,10 @@ window.StudiengangModules = [
     ects: 5,
     // KONTEXT
     year: 2,
+    // SPECIFIC
+    standardcategory: "",
+    secondcategory: "",
+    thirdcategory: "",
   },
   {
     // PFLICHTFELDER
@@ -138,6 +202,10 @@ window.StudiengangModules = [
     ects: 7,
     // KONTEXT
     year: 2,
+    // SPECIFIC
+    standardcategory: "",
+    secondcategory: "",
+    thirdcategory: "",
   },
   {
     // PFLICHTFELDER
@@ -153,6 +221,10 @@ window.StudiengangModules = [
     ects: 8,
     // KONTEXT
     year: 2,
+    // SPECIFIC
+    standardcategory: "",
+    secondcategory: "",
+    thirdcategory: "",
   },
   {
     // PFLICHTFELDER
@@ -160,6 +232,10 @@ window.StudiengangModules = [
     ects: 5,
     // KONTEXT
     year: 2,
+    // SPECIFIC
+    standardcategory: "",
+    secondcategory: "",
+    thirdcategory: "",
   },
   // #endregion 3.-4. Semester
 
