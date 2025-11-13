@@ -24,3 +24,24 @@
     background-color: var(--color-vertiefung);
     color: var(--color-vertiefung-text, white);
 }
+
+/* Bachelor-Arbeit */
+[data-studiengang="uzh-polisci"] .modul.bachelor-arbeit,
+[data-studiengang="uzh-polisci"] .legende-item.bachelor-arbeit {
+    background-color: var(--color-bachelor-arbeit);
+    color: var(--color-bachelor-arbeit-text, white);
+}
+
+/* Seminare */
+[data-studiengang="uzh-polisci"] .modul.seminar,
+[data-studiengang="uzh-polisci"] .legende-item.seminar {
+    background-color: var(--color-seminar);
+    color: var(--color-seminar-text, white);
+}
+
+/* Spezialisierungsmodule */
+[data-studiengang="uzh-polisci"] .modul.spezialisierung,
+[data-studiengang="uzh-polisci"] .legende-item.spezialisierung {
+    background-color: var(--color-spezialisierung);
+    color: var(--color-spezialisierung-text, white);
+}

@@ -66,7 +66,7 @@ window.PolisciPflichtmoduleData = [
   {
     name: "Seminarmodul",
     ects: 0,
-    standardcategory: "Vertiefungsmodule",
+    standardcategory: "Seminare",
     year: 2,
     semester: 1,
     isPlaceholder: true,
@@ -86,7 +86,7 @@ window.PolisciPflichtmoduleData = [
   {
     name: "Seminarmodul",
     ects: 0,
-    standardcategory: "Vertiefungsmodule",
+    standardcategory: "Seminare",
     year: 2,
     semester: 2,
     isPlaceholder: true,
@@ -96,7 +96,7 @@ window.PolisciPflichtmoduleData = [
   {
     name: "Spezialisierungsmodul",
     ects: 0,
-    standardcategory: "Wahlmodule",
+    standardcategory: "Spezialisierungsmodule",
     year: 3,
     semester: 1,
     isPlaceholder: true,
