@@ -81,6 +81,24 @@ window.PolisciWahlpflichtmoduleData = [
     standardcategory: "Wahlpflichtmodule",
     semester: 1
   },
+  {
+    name: "EEE 262 Umweltpolitik der Schweiz",
+    ects: 3,
+    standardcategory: "Wahlpflichtmodule",
+    semester: 1
+  },
+  {
+    name: "Geschichte Indiens/Südasiens",
+    ects: 3,
+    standardcategory: "Wahlpflichtmodule",
+    semester: 1
+  },
+  {
+    name: "Social Transformation in Modern South Asia",
+    ects: 6,
+    standardcategory: "Wahlpflichtmodule",
+    semester: 1
+  },
   // fs2026 Wahlpflichtmodule
   {
     name: "Sicherheit und Konflikt",
