@@ -29,13 +29,6 @@ window.GeschichtePflichtmoduleData = [
     year: 1
   },
   {
-    name: "Grundlagen Latein",
-    ects: 6,
-    standardcategory: "Pflichtmodule",
-    semester: 2,
-    year: 1
-  },
-  {
     name: "Einführungsvorlesung Frühling",
     ects: 3,
     standardcategory: "Pflichtmodule",
