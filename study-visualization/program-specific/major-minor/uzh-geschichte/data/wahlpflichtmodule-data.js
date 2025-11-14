@@ -3,12 +3,7 @@
 
 window.GeschichteWahlpflichtmoduleData = [
   // hs2025 Wahlpflichtmodule
-  {
-    name: "Academic English C1 (Part1)",
-    ects: 3,
-    standardcategory: "Wahlpflichtmodule",
-    semester: 1
-  },
+  // #region Modulgruppe Altertum,Mittelalter,Neuzeit
   {
     name: "Alte Geschichte 1",
     ects: 9,
@@ -30,48 +25,6 @@ window.GeschichteWahlpflichtmoduleData = [
   {
     name: "Alte Geschichte 4",
     ects: 9,
-    standardcategory: "Wahlpflichtmodule",
-    semester: 1
-  },
-  {
-    name: "Arabisch 1",
-    ects: 9,
-    standardcategory: "Wahlpflichtmodule",
-    semester: 1
-  },
-  {
-    name: "Arabisch 3",
-    ects: 9,
-    standardcategory: "Wahlpflichtmodule",
-    semester: 1
-  },
-  {
-    name: "BKMS Grundstufe 1",
-    ects: 6,
-    standardcategory: "Wahlpflichtmodule",
-    semester: 1
-  },
-  {
-    name: "BKMS Mittelstufe 1",
-    ects: 6,
-    standardcategory: "Wahlpflichtmodule",
-    semester: 1
-  },
-  {
-    name: "Français B2 (partie I)",
-    ects: 3,
-    standardcategory: "Wahlpflichtmodule",
-    semester: 1
-  },
-  {
-    name: "Geschichte Chinas (Einführung)",
-    ects: 3,
-    standardcategory: "Wahlpflichtmodule",
-    semester: 1
-  },
-  {
-    name: "Geschichte Indiens/Südasiens",
-    ects: 3,
     standardcategory: "Wahlpflichtmodule",
     semester: 1
   },
@@ -162,6 +115,59 @@ window.GeschichteWahlpflichtmoduleData = [
   {
     name: "Geschichte des Mittelalters 4",
     ects: 9,
+    standardcategory: "Wahlpflichtmodule",
+    semester: 1
+  },
+  // #endregion
+
+  // #region Sonstige Geschichte
+  {
+    name: "Geschichte Chinas (Einführung)",
+    ects: 3,
+    standardcategory: "Wahlpflichtmodule",
+    semester: 1
+  },
+  {
+    name: "Geschichte Indiens/Südasiens",
+    ects: 3,
+    standardcategory: "Wahlpflichtmodule",
+    semester: 1
+  },
+
+  // #region Sprachen
+  {
+    name: "Academic English C1 (Part1)",
+    ects: 3,
+    standardcategory: "Wahlpflichtmodule",
+    semester: 1
+  },
+  {
+    name: "Arabisch 1",
+    ects: 9,
+    standardcategory: "Wahlpflichtmodule",
+    semester: 1
+  },
+  {
+    name: "Arabisch 3",
+    ects: 9,
+    standardcategory: "Wahlpflichtmodule",
+    semester: 1
+  },
+  {
+    name: "BKMS Grundstufe 1",
+    ects: 6,
+    standardcategory: "Wahlpflichtmodule",
+    semester: 1
+  },
+  {
+    name: "BKMS Mittelstufe 1",
+    ects: 6,
+    standardcategory: "Wahlpflichtmodule",
+    semester: 1
+  },
+  {
+    name: "Français B2 (partie I)",
+    ects: 3,
     standardcategory: "Wahlpflichtmodule",
     semester: 1
   },
@@ -267,13 +273,10 @@ window.GeschichteWahlpflichtmoduleData = [
     standardcategory: "Wahlpflichtmodule",
     semester: 1
   },
+  //#endregion
+
   // fs2026 Wahlpflichtmodule
-  {
-    name: "Academic English C1 (Part2)",
-    ects: 3,
-    standardcategory: "Wahlpflichtmodule",
-    semester: 2
-  },
+  //#region Modulgruppe Altertum, Mittelalter und Neuzeit
   {
     name: "Alte Geschichte 5",
     ects: 9,
@@ -295,36 +298,6 @@ window.GeschichteWahlpflichtmoduleData = [
   {
     name: "Alte Geschichte 8",
     ects: 9,
-    standardcategory: "Wahlpflichtmodule",
-    semester: 2
-  },
-  {
-    name: "Arabisch 2",
-    ects: 9,
-    standardcategory: "Wahlpflichtmodule",
-    semester: 2
-  },
-  {
-    name: "BKMS Grundstufe 2",
-    ects: 6,
-    standardcategory: "Wahlpflichtmodule",
-    semester: 2
-  },
-  {
-    name: "BKMS Mittelstufe 2",
-    ects: 6,
-    standardcategory: "Wahlpflichtmodule",
-    semester: 2
-  },
-  {
-    name: "Einführung in die Geschichte Osteuropas",
-    ects: 6,
-    standardcategory: "Wahlpflichtmodule",
-    semester: 2
-  },
-  {
-    name: "Français C1 (partie II)",
-    ects: 3,
     standardcategory: "Wahlpflichtmodule",
     semester: 2
   },
@@ -418,6 +391,38 @@ window.GeschichteWahlpflichtmoduleData = [
     standardcategory: "Wahlpflichtmodule",
     semester: 2
   },
+  // #region Sprachen
+  {
+    name: "Academic English C1 (Part2)",
+    ects: 3,
+    standardcategory: "Wahlpflichtmodule",
+    semester: 2
+  },
+  {
+    name: "Arabisch 2",
+    ects: 9,
+    standardcategory: "Wahlpflichtmodule",
+    semester: 2
+  },
+  {
+    name: "BKMS Grundstufe 2",
+    ects: 6,
+    standardcategory: "Wahlpflichtmodule",
+    semester: 2
+  },
+  {
+    name: "BKMS Mittelstufe 2",
+    ects: 6,
+    standardcategory: "Wahlpflichtmodule",
+    semester: 2
+  },
+
+  {
+    name: "Français C1 (partie II)",
+    ects: 3,
+    standardcategory: "Wahlpflichtmodule",
+    semester: 2
+  },
   {
     name: "Griechisch II (Graecum)",
     ects: 6,
@@ -507,5 +512,14 @@ window.GeschichteWahlpflichtmoduleData = [
     ects: 6,
     standardcategory: "Wahlpflichtmodule",
     semester: 2
-  }
+  },
+  //#endregion
+  //#region Sonstige Geschichte
+  {
+    name: "Einführung in die Geschichte Osteuropas",
+    ects: 6,
+    standardcategory: "Wahlpflichtmodule",
+    semester: 2
+  },
+  //#endregion
 ];
