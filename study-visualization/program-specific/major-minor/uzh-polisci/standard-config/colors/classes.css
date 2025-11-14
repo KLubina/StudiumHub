@@ -1,6 +1,6 @@
 /* ==== UZH POLISCI - CSS CLASSES ==== */
 /* Program-specific CSS classes for Politikwissenschaft (Major-Minor)
-   Only keep selectors for implemented categories: Pflicht, Wahlpflicht, Wahlmodule */
+    Only keep selectors for implemented categories: Pflicht, Wahlmodule, Vertiefungsmodule */
 
 /* Pflicht */
 [data-studiengang="uzh-polisci"] .modul.pflicht,
@@ -9,16 +9,39 @@
     color: var(--color-pflicht-text, white);
 }
 
-/* Wahlpflicht */
-[data-studiengang="uzh-polisci"] .modul.wahlpflicht,
-[data-studiengang="uzh-polisci"] .legende-item.wahlpflicht {
-    background-color: var(--color-wahlpflicht);
-    color: var(--color-wahlpflicht-text, white);
-}
+/* Wahlpflicht category removed */
 
 /* Wahlmodule */
 [data-studiengang="uzh-polisci"] .modul.wahlmodule,
 [data-studiengang="uzh-polisci"] .legende-item.wahlmodule {
     background-color: var(--color-wahl);
     color: var(--color-wahl-text, white);
+}
+
+/* Vertiefungsmodule */
+[data-studiengang="uzh-polisci"] .modul.vertiefung,
+[data-studiengang="uzh-polisci"] .legende-item.vertiefung {
+    background-color: var(--color-vertiefung);
+    color: var(--color-vertiefung-text, white);
+}
+
+/* Bachelor-Arbeit */
+[data-studiengang="uzh-polisci"] .modul.bachelor-arbeit,
+[data-studiengang="uzh-polisci"] .legende-item.bachelor-arbeit {
+    background-color: var(--color-bachelor-arbeit);
+    color: var(--color-bachelor-arbeit-text, white);
+}
+
+/* Seminare */
+[data-studiengang="uzh-polisci"] .modul.seminar,
+[data-studiengang="uzh-polisci"] .legende-item.seminar {
+    background-color: var(--color-seminar);
+    color: var(--color-seminar-text, white);
+}
+
+/* Spezialisierungsmodule */
+[data-studiengang="uzh-polisci"] .modul.spezialisierung,
+[data-studiengang="uzh-polisci"] .legende-item.spezialisierung {
+    background-color: var(--color-spezialisierung);
+    color: var(--color-spezialisierung-text, white);
 }

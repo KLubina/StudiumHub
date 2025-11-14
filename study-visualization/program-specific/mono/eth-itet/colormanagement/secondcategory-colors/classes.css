@@ -2,15 +2,15 @@
 /* Program-specific CSS classes for ITET - Simplified */
 
 /* ITET-specific classes */
-[data-studiengang="eth-itet"] .modul.basisprüfungsblock-a,
-[data-studiengang="eth-itet"] .legende-item.basisprüfungsblock-a {
-    background-color: var(--color-basisprüfungsblock-a);
+[data-studiengang="eth-itet"] .modul.basisprufungsblock-a,
+[data-studiengang="eth-itet"] .legende-item.basisprufungsblock-a {
+    background-color: var(--color-basisprufungsblock-a);
     color: white;
 }
 
-[data-studiengang="eth-itet"] .modul.basisprüfungsblock-b,
-[data-studiengang="eth-itet"] .legende-item.basisprüfungsblock-b {
-    background-color: var(--color-basisprüfungsblock-b);
+[data-studiengang="eth-itet"] .modul.basisprufungsblock-b,
+[data-studiengang="eth-itet"] .legende-item.basisprufungsblock-b {
+    background-color: var(--color-basisprufungsblock-b);
     color: white;
 }
 

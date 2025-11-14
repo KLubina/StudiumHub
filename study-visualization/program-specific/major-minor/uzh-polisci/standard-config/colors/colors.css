@@ -1,8 +1,15 @@
 /* ==== UZH POLISCI - COLOR VARIABLES (pruned) ==== */
-/* Only variables needed for implemented categories: Pflicht, Wahlpflicht, Wahlmodule */
+/* Only variables needed for implemented categories: Pflicht, Wahlmodule, Vertiefungsmodule */
 
 [data-studiengang="uzh-polisci"] {
-    --color-pflicht: #e84393;
-    --color-wahlpflicht: #fd79a8;
-    --color-wahl: #fdcb6e;
+    --color-pflicht: #1e40af;
+    --color-wahl: #dc2626;
+    /* New: color for Vertiefungsmodule */
+    --color-vertiefung: #16a34a; /* teal-ish, good contrast */
+    /* New: color for Bachelor-Arbeit */
+    --color-bachelor-arbeit: #7c2d12;
+    /* New: color for Seminare */
+    --color-seminar: #6b7280;
+    /* New: color for Spezialisierungsmodule */
+    --color-spezialisierung: #ea580c;
 }

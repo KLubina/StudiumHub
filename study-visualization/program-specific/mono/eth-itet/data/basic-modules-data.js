@@ -12,7 +12,7 @@ window.StudiengangModules = [
     name: "Technische Mechanik",
     ects: 4,
     standardcategory: "Obligatorische Fächer",
-    secondcategory: "basisprüfungsblock-a",
+    secondcategory: "basisprufungsblock-a",
     thirdcategory: "physik",
     // KONTEXT
     year: 1,
@@ -25,7 +25,7 @@ window.StudiengangModules = [
     name: "Netzwerke und Schaltungen I",
     ects: 4,
     standardcategory: "Obligatorische Fächer",
-    secondcategory: "basisprüfungsblock-a",
+    secondcategory: "basisprufungsblock-a",
     thirdcategory: "elektrotechnik",
     // KONTEXT
     year: 1,
@@ -38,7 +38,7 @@ window.StudiengangModules = [
     name: "Digitaltechnik",
     ects: 4,
     standardcategory: "Obligatorische Fächer",
-    secondcategory: "basisprüfungsblock-a",
+    secondcategory: "basisprufungsblock-a",
     thirdcategory: "it",
     // KONTEXT
     year: 1,
@@ -71,7 +71,7 @@ window.StudiengangModules = [
     name: "Analysis 1",
     ects: 8,
     standardcategory: "Obligatorische Fächer",
-    secondcategory: "basisprüfungsblock-b",
+    secondcategory: "basisprufungsblock-b",
     thirdcategory: "mathematik",
     // KONTEXT
     year: 1,
@@ -82,7 +82,7 @@ window.StudiengangModules = [
     name: "Lineare Algebra",
     ects: 5,
     standardcategory: "Obligatorische Fächer",
-    secondcategory: "basisprüfungsblock-a",
+    secondcategory: "basisprufungsblock-a",
     thirdcategory: "mathematik",
     // KONTEXT
     year: 1,
@@ -100,7 +100,7 @@ window.StudiengangModules = [
     name: "Physik I",
     ects: 4,
     standardcategory: "Obligatorische Fächer",
-    secondcategory: "basisprüfungsblock-b",
+    secondcategory: "basisprufungsblock-b",
     thirdcategory: "physik",
     // KONTEXT
     year: 1,
@@ -113,7 +113,7 @@ window.StudiengangModules = [
     name: "Netzwerke und Schaltungen II",
     ects: 8,
     standardcategory: "Obligatorische Fächer",
-    secondcategory: "basisprüfungsblock-b",
+    secondcategory: "basisprufungsblock-b",
     thirdcategory: "elektrotechnik",
     // KONTEXT
     year: 1,
@@ -136,7 +136,7 @@ window.StudiengangModules = [
     name: "Informatik I",
     ects: 4,
     standardcategory: "Obligatorische Fächer",
-    secondcategory: "basisprüfungsblock-b",
+    secondcategory: "basisprufungsblock-b",
     thirdcategory: "it",
     // KONTEXT
     year: 1,
@@ -149,7 +149,7 @@ window.StudiengangModules = [
     name: "Analysis 2",
     ects: 8,
     standardcategory: "Obligatorische Fächer",
-    secondcategory: "basisprüfungsblock-b",
+    secondcategory: "basisprufungsblock-b",
     thirdcategory: "mathematik",
     // KONTEXT
     year: 1,
@@ -160,7 +160,7 @@ window.StudiengangModules = [
     name: "Mathematische Methoden",
     ects: 4,
     standardcategory: "Obligatorische Fächer",
-    secondcategory: "basisprüfungsblock-b",
+    secondcategory: "basisprufungsblock-b",
     thirdcategory: "mathematik",
     // KONTEXT
     year: 1,
@@ -344,7 +344,6 @@ window.StudiengangModules = [
     name: "Kernfächer nach Schwerpunkt",
     ects: 0,
     standardcategory: "Kernfächer nach Schwerpunkt",
-    secondcategory: "Kern",
     // KONTEXT
     year: 3,
     semester: 0,
@@ -357,7 +356,6 @@ window.StudiengangModules = [
     name: "Weitere Wahl-Grundlagenfächer",
     ects: 0,
     standardcategory: "Weitere Wahl-Grundlagenfächer",
-    secondcategory: "Weitere Grundlagen",
     // KONTEXT
     year: 3,
     semester: 0,
@@ -370,7 +368,6 @@ window.StudiengangModules = [
     name: "Wahl Praktika-Projekte-Seminare",
     ects: 0,
     standardcategory: "Wahl Praktika-Projekte-Seminare",
-    secondcategory: "Praktika & Projekte",
     // KONTEXT
     year: 3,
     semester: 0,
@@ -383,7 +380,6 @@ window.StudiengangModules = [
     name: "Wahlfächer",
     ects: 0,
     standardcategory: "Wahl Praktika-Projekte-Seminare",
-    secondcategory: "Praktika & Projekte",
     // KONTEXT
     year: 3,
     semester: 0,
@@ -397,7 +393,6 @@ window.StudiengangModules = [
     name: "Bachelorarbeit",
     ects: 12,
     standardcategory: "Wissenschaftliche Arbeit",
-    secondcategory: "Wissenschaftliche Arbeit",
     // KONTEXT
     year: 3,
     semester: 0,
@@ -407,7 +402,6 @@ window.StudiengangModules = [
     name: "Science in Perspective",
     ects: 6,
     standardcategory: "Wissenschaftliche Arbeit",
-    secondcategory: "Wissenschaftliche Arbeit",
     // KONTEXT
     year: 3,
     semester: 0,
