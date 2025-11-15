@@ -79,7 +79,12 @@ window.StudienplanConfigLoader = {
             }
 
             // Lade Modul-Details falls vorhanden (für Module Details Modal)
-            const detailsPath = `../program-specific/${studyModel}/${studiengang}/data/basic-modules-details.js`;
+            let detailsPath;
+            if (studyModel === 'major-minor') {
+                detailsPath = `../program-specific/${studyModel}/${studiengang}/data/pflichtmodule-details.js`;
+            } else {
+                detailsPath = `../program-specific/${studyModel}/${studiengang}/data/basic-modules-details.js`;
+            }
             try {
                 await this.loadScript(detailsPath);
             } catch (e) {

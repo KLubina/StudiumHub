@@ -3,7 +3,7 @@
 
 window.StudiengangFeaturesConfig = {
     // Core features
-    enableTooltips: false,
+    enableTooltips: true,
 
     // Optional features
     enableColorManager: false,

@@ -133,7 +133,13 @@ window.StudienplanTooltip = {
                     detailsHTML += `<p><a href="${details.pruefungen}" target="_blank">📝 Alte Prüfungen</a></p>`;
                 }
                 if (details.link) {
-                    detailsHTML += `<p><a href="${details.link}" target="_blank">📖 VVZ Seite</a></p>`;
+                    if (Array.isArray(details.link)) {
+                        details.link.forEach(link => {
+                            detailsHTML += `<p><a href="${link}" target="_blank">📖 VVZ Seite</a></p>`;
+                        });
+                    } else {
+                        detailsHTML += `<p><a href="${details.link}" target="_blank">📖 VVZ Seite</a></p>`;
+                    }
                 }
             }
         } else {

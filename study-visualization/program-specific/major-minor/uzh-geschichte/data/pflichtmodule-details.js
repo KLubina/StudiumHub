@@ -19,6 +19,11 @@ window.StudiengangModuleDetails = {
     inhalt: "Das Modul bietet eine Einführung in grundlegende Themen der Geschichtswissenschaft. Die Studierenden können das in der Vorlesung vermittelte Fachwissen zu grundlegenden Themen der Geschichtswissenschaft reflektiert wiedergeben.",
     link: "https://studentservices.uzh.ch/uzh/anonym/vvz/index.html?sap-language=DE&sap-ui-language=DE#/details/2025/003/SM/50942001/50000007/Philosophische%2520Fakult%25C3%25A4t/50890575/Bachelor%2520of%2520Arts%2520(RVO19)/50891442/Geschichte",
   },
+    "Einführungsvorlesung Frühling": {
+    kurzbeschreibung: "Das Modul bietet eine Einführung in grundlegende Themen der Geschichtswissenschaft",
+    inhalt: "Die Studierenden können das in der Vorlesung vermittelte Fachwissen zu grundlegenden Themen der Geschichtswissenschaft reflektiert wiedergeben.",
+    link: "https://studentservices.uzh.ch/uzh/anonym/vvz/index.html?sap-language=DE&sap-ui-language=DE#/details/2024/004/SM/50942003/50000007/Philosophische%2520Fakult%25C3%25A4t/50890575/Bachelor%2520of%2520Arts%2520(RVO19)/50891442/Geschichte",
+  },
   "Methoden und Theorie": {
     kurzbeschreibung: "Intensive Auseinandersetzung mit Methoden und Theorien der Geschichtswissenschaft",
     inhalt: "Das Seminar \"Methoden und Theorie\" ermöglicht eine intensive Auseinandersetzung mit Methoden und Theorien der Geschichtswissenschaft. Die Studierenden können die im Seminar behandelten methodisch-theoretischen Konzepte der Geschichtswissenschaft in der eigenen Arbeit anwenden.",
