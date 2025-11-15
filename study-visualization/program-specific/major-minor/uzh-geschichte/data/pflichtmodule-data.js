@@ -5,35 +5,35 @@ window.GeschichtePflichtmoduleData = [
     ects: 3,
     standardcategory: "Pflichtmodule",
     semester: 1,
-    year: 1
+    year: 1,
   },
   {
     name: "Basismodul I",
     ects: 9,
     standardcategory: "Pflichtmodule",
     semester: 1,
-    year: 1
+    year: 1,
   },
   {
     name: "Grundlagen Latein",
     ects: 6,
     standardcategory: "Pflichtmodule",
     semester: 1,
-    year: 1
+    year: 1,
   },
   {
     name: "Basismodul II",
     ects: 9,
     standardcategory: "Pflichtmodule",
     semester: 2,
-    year: 1
+    year: 1,
   },
   {
     name: "Einführungsvorlesung Frühling",
     ects: 3,
     standardcategory: "Pflichtmodule",
     semester: 2,
-    year: 1
+    year: 1,
   },
 
   // Jahr 2
@@ -42,14 +42,57 @@ window.GeschichtePflichtmoduleData = [
     ects: 9,
     standardcategory: "Pflichtmodule",
     semester: 2,
-    year: 2
+    year: 2,
   },
   {
     name: "Mündliche Prüfung",
     ects: 9,
     standardcategory: "Pflichtmodule",
     semester: 2,
-    year: 2
+    year: 2,
+  },
+
+  {
+    name: "Alte Geschichte",
+    ects: 9,
+    standardcategory: "Wahlpflichtmodule",
+    semester: 1,
+    year: 2,
+  },
+  {
+    name: "Alte Geschichte",
+    ects: 9,
+    standardcategory: "Wahlpflichtmodule",
+    semester: 2,
+    year: 2,
+  },
+  {
+    name: "Geschichte der Neuzeit",
+    ects: 9,
+    standardcategory: "Wahlpflichtmodule",
+    semester: 1,
+    year: 2,
+  },
+  {
+    name: "Geschichte der Neuzeit",
+    ects: 9,
+    standardcategory: "Wahlpflichtmodule",
+    semester: 2,
+    year: 2,
+  },
+  {
+    name: "Geschichte des Mittelalters",
+    ects: 9,
+    standardcategory: "Wahlpflichtmodule",
+    semester: 1,
+    year: 2,
+  },
+  {
+    name: "Geschichte des Mittelalters",
+    ects: 9,
+    standardcategory: "Wahlpflichtmodule",
+    semester: 2,
+    year: 2,
   },
 
   // Jahr 3
@@ -58,13 +101,56 @@ window.GeschichtePflichtmoduleData = [
     ects: 9,
     standardcategory: "Pflichtmodule",
     semester: 1,
-    year: 3
+    year: 3,
   },
   {
     name: "Bachelorarbeit",
     ects: 15,
     standardcategory: "Pflichtmodule",
     semester: 2,
-    year: 3
-  }
+    year: 3,
+  },
+
+  {
+    name: "Alte Geschichte",
+    ects: 9,
+    standardcategory: "Wahlpflichtmodule",
+    semester: 1,
+    year: 3,
+  },
+  {
+    name: "Alte Geschichte",
+    ects: 9,
+    standardcategory: "Wahlpflichtmodule",
+    semester: 2,
+    year: 3,
+  },
+  {
+    name: "Geschichte der Neuzeit",
+    ects: 9,
+    standardcategory: "Wahlpflichtmodule",
+    semester: 1,
+    year: 3,
+  },
+  {
+    name: "Geschichte der Neuzeit",
+    ects: 9,
+    standardcategory: "Wahlpflichtmodule",
+    semester: 2,
+    year: 3,
+  },
+  {
+    name: "Geschichte des Mittelalters",
+    ects: 9,
+    standardcategory: "Wahlpflichtmodule",
+    semester: 1,
+    year: 3,
+  },
+  {
+    name: "Geschichte des Mittelalters",
+    ects: 9,
+    standardcategory: "Wahlpflichtmodule",
+    semester: 2,
+    year: 3,
+  },
 ];

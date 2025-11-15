@@ -29,4 +29,19 @@ window.StudiengangModuleDetails = {
     inhalt: "Die Studierenden machen sich mit wichtigen geschichtswissenschaftlichen Werken vertraut. Sie sind in der Lage, die Inhalte der gelesenen Titel strukturiert darzustellen, in den historiographischen Kontext einzuordnen und mit dem Prüfenden bzw. der Prüfenden reflektiert über die Inhalte zu diskutieren.",
     link: "https://studentservices.uzh.ch/uzh/anonym/vvz/index.html?sap-language=DE&sap-ui-language=DE#/details/2025/003/SM/50941994/50000007/Philosophische%2520Fakult%25C3%25A4t/50890575/Bachelor%2520of%2520Arts%2520(RVO19)/50891442/Geschichte",
   },
+  "Geschichte des Altertums": {
+    kurzbeschreibung: "",
+    inhalt: "",
+    link: "https://studentservices.uzh.ch/uzh/anonym/vvz/index.html?sap-language=DE&sap-ui-language=DE#/details/2025/003/CGStudyProgramDetail/50891442/50000007/Philosophische%2520Fakult%25C3%25A4t/50890575/Bachelor%2520of%2520Arts%2520(RVO19)/true/50891447/Altertum/2025/003",
+  },
+  "Geschichte des Mittelalters": {
+    kurzbeschreibung: "",
+    inhalt: "",
+    link: "https://studentservices.uzh.ch/uzh/anonym/vvz/index.html?sap-language=DE&sap-ui-language=DE#/details/2025/003/CGStudyProgramDetail/50891442/50000007/Philosophische%2520Fakult%25C3%25A4t/50890575/Bachelor%2520of%2520Arts%2520(RVO19)/true/50892438/Mittelalter/2025/003",
+  },
+  "Geschichte der Neuzeit": {
+    kurzbeschreibung: "",
+    inhalt: "",
+    link: "https://studentservices.uzh.ch/uzh/anonym/vvz/index.html?sap-language=DE&sap-ui-language=DE#/details/2025/003/CGStudyProgramDetail/50891442/50000007/Philosophische%2520Fakult%25C3%25A4t/50890575/Bachelor%2520of%2520Arts%2520(RVO19)/true/50901377/Neuzeit/2025/003",
+  }
 };
