@@ -38,17 +38,10 @@ window.GeschichtePflichtmoduleData = [
 
   // Jahr 2
   {
-    name: "Methoden und Theorie",
-    ects: 9,
-    standardcategory: "Pflichtmodule",
-    semester: 2,
-    year: 2,
-  },
-  {
     name: "Mündliche Prüfung",
     ects: 9,
     standardcategory: "Pflichtmodule",
-    semester: 2,
+    semester: 1,
     year: 2,
   },
 
@@ -60,6 +53,27 @@ window.GeschichtePflichtmoduleData = [
     year: 2,
   },
   {
+    name: "Geschichte der Neuzeit",
+    ects: 9,
+    standardcategory: "Wahlpflichtmodule",
+    semester: 1,
+    year: 2,
+  },
+  {
+    name: "Geschichte des Mittelalters",
+    ects: 9,
+    standardcategory: "Wahlpflichtmodule",
+    semester: 1,
+    year: 2,
+  },
+  {
+    name: "Methoden und Theorie",
+    ects: 9,
+    standardcategory: "Pflichtmodule",
+    semester: 2,
+    year: 2,
+  },
+  {
     name: "Alte Geschichte",
     ects: 9,
     standardcategory: "Wahlpflichtmodule",
@@ -70,21 +84,7 @@ window.GeschichtePflichtmoduleData = [
     name: "Geschichte der Neuzeit",
     ects: 9,
     standardcategory: "Wahlpflichtmodule",
-    semester: 1,
-    year: 2,
-  },
-  {
-    name: "Geschichte der Neuzeit",
-    ects: 9,
-    standardcategory: "Wahlpflichtmodule",
     semester: 2,
-    year: 2,
-  },
-  {
-    name: "Geschichte des Mittelalters",
-    ects: 9,
-    standardcategory: "Wahlpflichtmodule",
-    semester: 1,
     year: 2,
   },
   {
@@ -103,13 +103,6 @@ window.GeschichtePflichtmoduleData = [
     semester: 1,
     year: 3,
   },
-  {
-    name: "Bachelorarbeit",
-    ects: 15,
-    standardcategory: "Pflichtmodule",
-    semester: 2,
-    year: 3,
-  },
 
   {
     name: "Alte Geschichte",
@@ -119,6 +112,27 @@ window.GeschichtePflichtmoduleData = [
     year: 3,
   },
   {
+    name: "Geschichte der Neuzeit",
+    ects: 9,
+    standardcategory: "Wahlpflichtmodule",
+    semester: 1,
+    year: 3,
+  },
+  {
+    name: "Geschichte des Mittelalters",
+    ects: 9,
+    standardcategory: "Wahlpflichtmodule",
+    semester: 1,
+    year: 3,
+  },
+  {
+    name: "Bachelorarbeit",
+    ects: 15,
+    standardcategory: "Pflichtmodule",
+    semester: 2,
+    year: 3,
+  },
+  {
     name: "Alte Geschichte",
     ects: 9,
     standardcategory: "Wahlpflichtmodule",
@@ -129,21 +143,7 @@ window.GeschichtePflichtmoduleData = [
     name: "Geschichte der Neuzeit",
     ects: 9,
     standardcategory: "Wahlpflichtmodule",
-    semester: 1,
-    year: 3,
-  },
-  {
-    name: "Geschichte der Neuzeit",
-    ects: 9,
-    standardcategory: "Wahlpflichtmodule",
     semester: 2,
-    year: 3,
-  },
-  {
-    name: "Geschichte des Mittelalters",
-    ects: 9,
-    standardcategory: "Wahlpflichtmodule",
-    semester: 1,
     year: 3,
   },
   {
