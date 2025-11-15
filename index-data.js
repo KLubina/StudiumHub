@@ -26,13 +26,11 @@
           key: "eth-msc-itet",
           title: "MSc ITET",
           subtitle: "ETH Zürich",
-          featured: true,
         },
         {
           key: "eth-mtec",
           title: "MSc MTEC",
           subtitle: "ETH Zürich",
-          featured: true,
         },
         // Unis
         {
@@ -111,7 +109,7 @@
           subtitle: "Universität Zürich",
           category: "Unis",
           studyModel: "major-minor",
-
+          featured: true,
         },
         {
           key: "uzh-ethnologie",
