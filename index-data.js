@@ -117,7 +117,6 @@
           subtitle: "Universität Zürich",
           category: "Unis",
           studyModel: "major-minor",
-
         },
         {
           key: "uzh-kommunikation",
@@ -141,6 +140,13 @@
           subtitle: "Universität Zürich",
           category: "Unis",
           studyModel: "major-minor",
+
+        },
+        {
+          key: "uzh-humanmedizin",
+          title: "Bachelor Humanmedizin",
+          subtitle: "Universität Zürich",
+          category: "Unis",
 
         },
         {

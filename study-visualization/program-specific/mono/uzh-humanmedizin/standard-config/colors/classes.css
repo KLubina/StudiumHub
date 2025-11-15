@@ -1,0 +1,26 @@
+/* ==== UZH-HUMANMEDIZIN - CSS CLASSES ==== */
+/* Program-specific CSS classes */
+
+[data-studiengang="uzh-humanmedizin"] .modul.med-grundlagen,
+[data-studiengang="uzh-humanmedizin"] .legende-item.med-grundlagen {
+    background-color: var(--color-med-grundlagen);
+    color: var(--color-med-grundlagen-text, white);
+}
+
+[data-studiengang="uzh-humanmedizin"] .modul.med-klinik,
+[data-studiengang="uzh-humanmedizin"] .legende-item.med-klinik {
+    background-color: var(--color-med-klinik);
+    color: var(--color-med-klinik-text, white);
+}
+
+[data-studiengang="uzh-humanmedizin"] .modul.med-wahl,
+[data-studiengang="uzh-humanmedizin"] .legende-item.med-wahl {
+    background-color: var(--color-med-wahl);
+    color: var(--color-med-wahl-text, white);
+}
+
+[data-studiengang="uzh-humanmedizin"] .modul.med-praktika,
+[data-studiengang="uzh-humanmedizin"] .legende-item.med-praktika {
+    background-color: var(--color-med-praktika);
+    color: var(--color-med-praktika-text, white);
+}

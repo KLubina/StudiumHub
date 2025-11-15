@@ -1,0 +1,10 @@
+/* ==== UZH-HUMANMEDIZIN - COLOR VARIABLES ==== */
+/* UZH Humanmedizin Program */
+
+[data-studiengang="uzh-humanmedizin"] {
+    /* Category-specific colors */
+    --color-med-grundlagen: #1e3a8a;
+    --color-med-klinik: #0891b2;
+    --color-med-wahl: #06b6d4;
+    --color-med-praktika: #7c3aed;
+}
