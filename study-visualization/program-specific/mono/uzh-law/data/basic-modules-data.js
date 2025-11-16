@@ -23,7 +23,7 @@ window.StudiengangModules = [
   },
   {
     name: "Privatrecht I",
-    ects: 4.5,
+    ects: 2.25,
     standardcategory: "Pflicht",
     secondcategory: "assessmentstufe",
     thirdcategory: "privatrecht",
@@ -32,7 +32,7 @@ window.StudiengangModules = [
   },
   {
     name: "Strafrecht I",
-    ects: 12,
+    ects: 6,
     standardcategory: "Pflicht",
     secondcategory: "assessmentstufe",
     thirdcategory: "strafrecht",
@@ -41,7 +41,7 @@ window.StudiengangModules = [
   },
   {
     name: "Öffentliches Recht I",
-    ects: 18,
+    ects: 9,
     standardcategory: "Pflicht",
     secondcategory: "assessmentstufe",
     thirdcategory: "oeffentliches-recht",
@@ -50,7 +50,7 @@ window.StudiengangModules = [
   },
   {
     name: "Römisches Privatrecht",
-    ects: 7.5,
+    ects: 3.75,
     standardcategory: "Pflicht",
     secondcategory: "assessmentstufe",
     thirdcategory: "privatrecht",
@@ -59,7 +59,7 @@ window.StudiengangModules = [
   },
   {
     name: "Rechtsgeschichte (BLaw)",
-    ects: 6,
+    ects: 3,
     standardcategory: "Pflicht",
     secondcategory: "assessmentstufe",
     thirdcategory: "geschichte",
@@ -71,7 +71,7 @@ window.StudiengangModules = [
   // #region 2. Semester
   {
     name: "Privatrecht I",
-    ects: 4.5,
+    ects: 2.25,
     standardcategory: "Pflicht",
     secondcategory: "assessmentstufe",
     thirdcategory: "privatrecht",
@@ -80,7 +80,7 @@ window.StudiengangModules = [
   },
   {
     name: "Strafrecht I",
-    ects: 12,
+    ects: 6,
     standardcategory: "Pflicht",
     secondcategory: "assessmentstufe",
     thirdcategory: "strafrecht",
@@ -89,7 +89,7 @@ window.StudiengangModules = [
   },
   {
     name: "Öffentliches Recht I",
-    ects: 18,
+    ects: 9,
     standardcategory: "Pflicht",
     secondcategory: "assessmentstufe",
     thirdcategory: "oeffentliches-recht",
@@ -98,7 +98,7 @@ window.StudiengangModules = [
   },
   {
     name: "Römisches Privatrecht",
-    ects: 7.5,
+    ects: 3.75,
     standardcategory: "Pflicht",
     secondcategory: "assessmentstufe",
     thirdcategory: "privatrecht",
@@ -107,7 +107,7 @@ window.StudiengangModules = [
   },
   {
     name: "Rechtsgeschichte (BLaw)",
-    ects: 6,
+    ects: 3,
     standardcategory: "Pflicht",
     secondcategory: "assessmentstufe",
     thirdcategory: "geschichte",
@@ -137,7 +137,7 @@ window.StudiengangModules = [
   // #region 3. Semester
   {
     name: "Privatrecht II",
-    ects: 19.5,
+    ects: 9.75,
     standardcategory: "Pflicht",
     secondcategory: "aufbaustufe",
     thirdcategory: "privatrecht",
@@ -146,7 +146,7 @@ window.StudiengangModules = [
   },
   {
     name: "Strafrecht II",
-    ects: 15,
+    ects: 7.5,
     standardcategory: "Pflicht",
     secondcategory: "aufbaustufe",
     thirdcategory: "strafrecht",
@@ -155,7 +155,7 @@ window.StudiengangModules = [
   },
   {
     name: "Öffentliches Recht II",
-    ects: 12,
+    ects: 6,
     standardcategory: "Pflicht",
     secondcategory: "aufbaustufe",
     thirdcategory: "oeffentliches-recht",
@@ -185,7 +185,7 @@ window.StudiengangModules = [
   // #region 4. Semester
   {
     name: "Privatrecht II",
-    ects: 19.5,
+    ects: 9.75,
     standardcategory: "Pflicht",
     secondcategory: "aufbaustufe",
     thirdcategory: "privatrecht",
@@ -194,7 +194,7 @@ window.StudiengangModules = [
   },
   {
     name: "Strafrecht II",
-    ects: 15,
+    ects: 7.5,
     standardcategory: "Pflicht",
     secondcategory: "aufbaustufe",
     thirdcategory: "strafrecht",
@@ -203,7 +203,7 @@ window.StudiengangModules = [
   },
   {
     name: "Öffentliches Recht II",
-    ects: 12,
+    ects: 6,
     standardcategory: "Pflicht",
     secondcategory: "aufbaustufe",
     thirdcategory: "oeffentliches-recht",
@@ -260,7 +260,7 @@ window.StudiengangModules = [
   // #region 5. Semester
   {
     name: "Privatrecht III",
-    ects: 16.5,
+    ects: 8.25,
     standardcategory: "Pflicht",
     secondcategory: "aufbaustufe",
     thirdcategory: "privatrecht",
@@ -269,7 +269,7 @@ window.StudiengangModules = [
   },
   {
     name: "Internationales Privatrecht",
-    ects: 6,
+    ects: 3,
     standardcategory: "Pflicht",
     secondcategory: "aufbaustufe",
     thirdcategory: "international",
@@ -278,7 +278,7 @@ window.StudiengangModules = [
   },
   {
     name: "Handels- und Wirtschaftsrecht I",
-    ects: 12,
+    ects: 6,
     standardcategory: "Pflicht",
     secondcategory: "aufbaustufe",
     thirdcategory: "handelsrecht",
@@ -287,7 +287,7 @@ window.StudiengangModules = [
   },
   {
     name: "Völkerrecht/Europarecht",
-    ects: 9,
+    ects: 4.5,
     standardcategory: "Pflicht",
     secondcategory: "aufbaustufe",
     thirdcategory: "voelkerrecht",
@@ -317,7 +317,7 @@ window.StudiengangModules = [
   // #region 6. Semester
   {
     name: "Privatrecht III",
-    ects: 16.5,
+    ects: 8.25,
     standardcategory: "Pflicht",
     secondcategory: "aufbaustufe",
     thirdcategory: "privatrecht",
@@ -326,7 +326,7 @@ window.StudiengangModules = [
   },
   {
     name: "Internationales Privatrecht",
-    ects: 6,
+    ects: 3,
     standardcategory: "Pflicht",
     secondcategory: "aufbaustufe",
     thirdcategory: "international",
@@ -335,7 +335,7 @@ window.StudiengangModules = [
   },
   {
     name: "Handels- und Wirtschaftsrecht I",
-    ects: 12,
+    ects: 6,
     standardcategory: "Pflicht",
     secondcategory: "aufbaustufe",
     thirdcategory: "handelsrecht",
@@ -344,7 +344,7 @@ window.StudiengangModules = [
   },
   {
     name: "Völkerrecht/Europarecht",
-    ects: 9,
+    ects: 4.5,
     standardcategory: "Pflicht",
     secondcategory: "aufbaustufe",
     thirdcategory: "voelkerrecht",
