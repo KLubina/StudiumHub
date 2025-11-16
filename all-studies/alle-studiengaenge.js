@@ -3,7 +3,8 @@
 (function () {
   let allData = [];
   let currentFilters = {
-    uni: '',
+    type: '',
+    institution: '',
     category: ''
   };
 
@@ -16,26 +17,42 @@
   });
 
   function initializeData() {
-    allData = window.AlleSchweizerStudiengaenge.universitaeten;
+    // Kombiniere Uni und FH Daten
+    const uniData = window.AlleSchweizerStudiengaenge.universitaeten.map(uni => ({
+      ...uni,
+      type: 'uni'
+    }));
+
+    const fhData = window.AlleFHStudiengaenge.fachhochschulen.map(fh => ({
+      ...fh,
+      type: 'fh'
+    }));
+
+    allData = [...uniData, ...fhData];
   }
 
   function populateFilters() {
-    const uniFilter = document.getElementById('uniFilter');
+    const institutionFilter = document.getElementById('institutionFilter');
     const categoryFilter = document.getElementById('categoryFilter');
 
-    // Sammle alle Universitäten
-    const universities = allData.map(uni => uni.name);
-    universities.forEach(uniName => {
+    // Sammle alle Hochschulen (sortiert nach Typ und Name)
+    const institutions = allData.map(inst => ({
+      name: inst.name,
+      type: inst.type
+    }));
+
+    institutions.forEach(inst => {
       const option = document.createElement('option');
-      option.value = uniName;
-      option.textContent = uniName;
-      uniFilter.appendChild(option);
+      option.value = inst.name;
+      const prefix = inst.type === 'uni' ? '[Uni] ' : '[FH] ';
+      option.textContent = prefix + inst.name;
+      institutionFilter.appendChild(option);
     });
 
     // Sammle alle Kategorien (einzigartig)
     const categories = new Set();
-    allData.forEach(uni => {
-      uni.kategorien.forEach(kat => {
+    allData.forEach(inst => {
+      inst.kategorien.forEach(kat => {
         categories.add(kat.name);
       });
     });
@@ -50,11 +67,17 @@
   }
 
   function setupEventListeners() {
-    const uniFilter = document.getElementById('uniFilter');
+    const typeFilter = document.getElementById('typeFilter');
+    const institutionFilter = document.getElementById('institutionFilter');
     const categoryFilter = document.getElementById('categoryFilter');
 
-    uniFilter.addEventListener('change', function (e) {
-      currentFilters.uni = e.target.value;
+    typeFilter.addEventListener('change', function (e) {
+      currentFilters.type = e.target.value;
+      renderStudiengaenge();
+    });
+
+    institutionFilter.addEventListener('change', function (e) {
+      currentFilters.institution = e.target.value;
       renderStudiengaenge();
     });
 
@@ -67,17 +90,22 @@
   function filterData() {
     let filtered = JSON.parse(JSON.stringify(allData)); // Deep copy
 
-    // Filter nach Universität
-    if (currentFilters.uni) {
-      filtered = filtered.filter(uni => uni.name === currentFilters.uni);
+    // Filter nach Hochschultyp (Uni/FH)
+    if (currentFilters.type) {
+      filtered = filtered.filter(inst => inst.type === currentFilters.type);
+    }
+
+    // Filter nach Hochschule
+    if (currentFilters.institution) {
+      filtered = filtered.filter(inst => inst.name === currentFilters.institution);
     }
 
     // Filter nach Kategorie
     if (currentFilters.category) {
-      filtered.forEach(uni => {
-        uni.kategorien = uni.kategorien.filter(kat => kat.name === currentFilters.category);
+      filtered.forEach(inst => {
+        inst.kategorien = inst.kategorien.filter(kat => kat.name === currentFilters.category);
       });
-      filtered = filtered.filter(uni => uni.kategorien.length > 0);
+      filtered = filtered.filter(inst => inst.kategorien.length > 0);
     }
 
     return filtered;
@@ -179,12 +207,13 @@
     name.className = 'studiengang-name';
     name.textContent = studiengang.name;
 
-    const ects = document.createElement('div');
-    ects.className = 'studiengang-ects';
-    ects.textContent = studiengang.ects;
+    const info = document.createElement('div');
+    info.className = 'studiengang-ects';
+    // FH verwendet 'grad', Uni verwendet 'ects'
+    info.textContent = studiengang.ects || studiengang.grad || '';
 
     item.appendChild(name);
-    item.appendChild(ects);
+    item.appendChild(info);
 
     if (studiengang.beschreibung) {
       const beschreibung = document.createElement('div');

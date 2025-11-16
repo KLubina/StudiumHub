@@ -1,0 +1,404 @@
+// Alle FH-Studiengänge (Fachhochschulen) in der Deutsch-Schweiz
+// Datenquellen: BFH, FH Graubünden, FHNW, OST, ZHAW, ZHdK
+
+(function (global) {
+  const AlleFHStudiengaenge = {
+    fachhochschulen: [
+      {
+        name: "Berner Fachhochschule (BFH)",
+        website: "https://www.bfh.ch/de/studium/alle-studiengaenge/",
+        kategorien: [
+          {
+            name: "3. Wirtschaftswissenschaften",
+            studiengaenge: [
+              { name: "Digital Business & AI", grad: "Bachelor of Science" },
+              { name: "Betriebsökonomie", grad: "Bachelor of Science" },
+              { name: "Food Science & Management", grad: "Bachelor of Science" },
+              { name: "International Business Administration", grad: "Bachelor of Science" }
+            ]
+          },
+          {
+            name: "4. Geistes- und Kulturwissenschaften",
+            studiengaenge: [
+              { name: "Vermittlung in Kunst und Design", grad: "Bachelor of Arts" },
+              { name: "Literarisches Schreiben", grad: "Bachelor" }
+            ]
+          },
+          {
+            name: "5. Sozialwissenschaften",
+            studiengaenge: [
+              { name: "Fine Arts", grad: "Bachelor of Arts" },
+              { name: "Musik Klassik", grad: "Bachelor of Arts" },
+              { name: "Jazz and Contemporary Music", grad: "Bachelor of Arts" },
+              { name: "Musik und Bewegung", grad: "Bachelor of Arts" },
+              { name: "Sound Arts", grad: "Bachelor of Arts" },
+              { name: "Theater/Schauspiel", grad: "Bachelor of Arts" },
+              { name: "Transformation Design", grad: "Bachelor of Arts" },
+              { name: "Visuelle Kommunikation", grad: "Bachelor of Arts" },
+              { name: "Konservierung", grad: "Bachelor of Arts" }
+            ]
+          },
+          {
+            name: "8. Naturwissenschaften",
+            studiengaenge: [
+              { name: "Agronomie", grad: "Bachelor of Science" },
+              { name: "Waldwissenschaften", grad: "Bachelor of Science" },
+              { name: "Umwelt- und Ressourcenmanagement", grad: "Bachelor of Science" }
+            ]
+          },
+          {
+            name: "9. Mathematik und Informatik",
+            studiengaenge: [
+              { name: "Data Engineering", grad: "Bachelor of Science" },
+              { name: "Multimedia Production", grad: "Bachelor of Science" },
+              { name: "Medizininformatik", grad: "Bachelor of Science" },
+              { name: "Informatik", grad: "Bachelor of Science" }
+            ]
+          },
+          {
+            name: "10. Medizin und Gesundheitswissenschaften",
+            studiengaenge: [
+              { name: "Ernährung und Diätetik", grad: "Bachelor of Science" },
+              { name: "Hebamme", grad: "Bachelor of Science" },
+              { name: "Hebamme für dipl. Pflegefachpersonen", grad: "Bachelor of Science" },
+              { name: "Pflege", grad: "Bachelor of Science" },
+              { name: "Pflege für FaGe und FaBe", grad: "Bachelor of Science" },
+              { name: "Physiotherapie", grad: "Bachelor of Science" }
+            ]
+          },
+          {
+            name: "11. Ingenieurwissenschaften",
+            studiengaenge: [
+              { name: "Bauingenieurwesen", grad: "Bachelor of Science" },
+              { name: "Architektur", grad: "Bachelor of Arts" },
+              { name: "Landschaftsarchitektur", grad: "Bachelor of Arts" },
+              { name: "Elektrotechnik und Informationstechnologie", grad: "Bachelor of Science" },
+              { name: "Automobil- und Fahrzeugtechnik", grad: "Bachelor of Science" },
+              { name: "Mechatronik und Systemtechnik (Medizintechnik | Robotik | Uhren- & Mikrotechnik)", grad: "Bachelor of Science" },
+              { name: "Maschinentechnik", grad: "Bachelor of Science" },
+              { name: "Wirtschaftsingenieurwesen", grad: "Bachelor of Science" }
+            ]
+          },
+          {
+            name: "12. Sportwissenschaften",
+            studiengaenge: [
+              { name: "Sport", grad: "Bachelor of Science" }
+            ]
+          }
+        ]
+      },
+      {
+        name: "FH Graubünden (FHGR)",
+        website: "https://www.fhgr.ch/studium/bachelorangebot/",
+        kategorien: [
+          {
+            name: "3. Wirtschaftswissenschaften",
+            studiengaenge: [
+              { name: "Betriebsökonomie", grad: "Bachelor" },
+              { name: "Digital Business Management", grad: "Bachelor" },
+              { name: "Digital Supply Chain Management", grad: "Bachelor" },
+              { name: "Information Science", grad: "Bachelor" },
+              { name: "Sport Management", grad: "Bachelor" },
+              { name: "Tourismus", grad: "Bachelor" }
+            ]
+          },
+          {
+            name: "9. Mathematik und Informatik",
+            studiengaenge: [
+              { name: "Artificial Intelligence in Software Engineering", grad: "Bachelor" },
+              { name: "Computational and Data Science", grad: "Bachelor" },
+              { name: "Multimedia Production", grad: "Bachelor" }
+            ]
+          },
+          {
+            name: "11. Ingenieurwissenschaften",
+            studiengaenge: [
+              { name: "Architektur", grad: "Bachelor" },
+              { name: "Bauingenieurwesen", grad: "Bachelor" },
+              { name: "Engineering (Vertiefungen: Optoelectronics (Photonics), Mobile Robotics, Medizintechnik)", grad: "Bachelor" },
+              { name: "MedTech", grad: "Bachelor" },
+              { name: "Mobile Robotics", grad: "Bachelor" },
+              { name: "Optoelectronics (Photonics)", grad: "Bachelor" }
+            ]
+          }
+        ]
+      },
+      {
+        name: "Fachhochschule Nordwestschweiz (FHNW)",
+        website: "https://www.fhnw.ch/de/studium/bachelor",
+        kategorien: [
+          {
+            name: "3. Wirtschaftswissenschaften",
+            studiengaenge: [
+              { name: "International Business Management (trinational)", grad: "Bachelor of Science" },
+              { name: "Business Administration (International Management)", grad: "Bachelor of Science" },
+              { name: "Betriebsökonomie", grad: "Bachelor of Science" },
+              { name: "Wirtschaftsinformatik", grad: "Bachelor of Science" },
+              { name: "Business Information Technology", grad: "Bachelor of Science" },
+              { name: "Wirtschaftsrecht", grad: "Bachelor of Science" },
+              { name: "Business Artificial Intelligence", grad: "Bachelor of Science" }
+            ]
+          },
+          {
+            name: "4. Geistes- und Kulturwissenschaften",
+            studiengaenge: [
+              { name: "Bildende Kunst", grad: "Bachelor of Arts" },
+              { name: "Industrial Design", grad: "Bachelor of Arts" },
+              { name: "Innenarchitektur und Szenografie", grad: "Bachelor of Arts" },
+              { name: "Mode-Design", grad: "Bachelor of Arts" },
+              { name: "Prozessgestaltung am HyperWerk", grad: "Bachelor of Arts" },
+              { name: "Vermittlung in Kunst und Design", grad: "Bachelor of Arts" },
+              { name: "Visuelle Kommunikation und digitale Räume", grad: "Bachelor of Arts" },
+              { name: "Musik und Bewegung", grad: "Bachelor of Arts" },
+              { name: "Musik", grad: "Bachelor of Arts" }
+            ]
+          },
+          {
+            name: "5. Sozialwissenschaften",
+            studiengaenge: [
+              { name: "Soziale Arbeit", grad: "Bachelor of Arts" }
+            ]
+          },
+          {
+            name: "6. Erziehungs- und Bildungswissenschaften",
+            studiengaenge: [
+              { name: "Kindergarten-/Unterstufe", grad: "Bachelor of Arts" },
+              { name: "Primarstufe", grad: "Bachelor of Arts" },
+              { name: "Sekundarstufe I", grad: "Bachelor/Master of Arts" },
+              { name: "Logopädie", grad: "Bachelor of Arts" }
+            ]
+          },
+          {
+            name: "7. Psychologie",
+            studiengaenge: [
+              { name: "Arbeits-, Organisations- und Personalpsychologie", grad: "Bachelor of Science" },
+              { name: "Wirtschaftspsychologie", grad: "Bachelor of Science" }
+            ]
+          },
+          {
+            name: "8. Naturwissenschaften",
+            studiengaenge: [
+              { name: "Life Sciences", grad: "Bachelor" }
+            ]
+          },
+          {
+            name: "9. Mathematik und Informatik",
+            studiengaenge: [
+              { name: "iCompetence", grad: "Bachelor of Science" },
+              { name: "Artificial Intelligence & High Performance Computing", grad: "Bachelor of Science" },
+              { name: "Informatik", grad: "Bachelor of Science" },
+              { name: "Data Science & Artificial Intelligence", grad: "Bachelor of Science" },
+              { name: "Security, Platforms & DevOps", grad: "Bachelor of Science" },
+              { name: "Software Engineering & Intelligent Technologies", grad: "Bachelor of Science" },
+              { name: "Game Technologies & Extended Reality", grad: "Bachelor of Science" }
+            ]
+          },
+          {
+            name: "11. Ingenieurwissenschaften",
+            studiengaenge: [
+              { name: "Architektur", grad: "Bachelor of Arts" },
+              { name: "Bauingenieurwesen", grad: "Bachelor of Science" },
+              { name: "Bauingenieurwesen Trinational", grad: "Bachelor of Science" },
+              { name: "Geomatik", grad: "Bachelor of Science" },
+              { name: "Materials Engineering", grad: "Bachelor of Science" },
+              { name: "Mechatronik Trinational", grad: "Bachelor of Science" },
+              { name: "Optometrie", grad: "Bachelor of Science" },
+              { name: "Systemtechnik", grad: "Bachelor of Science" },
+              { name: "Wirtschaftsingenieurwesen", grad: "Bachelor of Science" },
+              { name: "Elektro- und Informationstechnik", grad: "Bachelor of Science" },
+              { name: "Maschinenbau", grad: "Bachelor of Science" },
+              { name: "Energie- und Umwelttechnik", grad: "Bachelor of Science" }
+            ]
+          }
+        ]
+      },
+      {
+        name: "OST – Ostschweizer Fachhochschule",
+        website: "https://www.ost.ch/de/studium/bachelor",
+        kategorien: [
+          {
+            name: "3. Wirtschaftswissenschaften",
+            studiengaenge: [
+              { name: "Betriebsökonomie", grad: "BSc" },
+              { name: "Management und Recht", grad: "BSc" },
+              { name: "Wirtschaftsinformatik", grad: "BSc" }
+            ]
+          },
+          {
+            name: "5. Sozialwissenschaften",
+            studiengaenge: [
+              { name: "Soziale Arbeit", grad: "BSc" }
+            ]
+          },
+          {
+            name: "9. Mathematik und Informatik",
+            studiengaenge: [
+              { name: "Artificial Intelligence", grad: "Bachelor" },
+              { name: "Digital Design", grad: "BSc" },
+              { name: "Informatik", grad: "BSc" }
+            ]
+          },
+          {
+            name: "10. Medizin und Gesundheitswissenschaften",
+            studiengaenge: [
+              { name: "Ergotherapie", grad: "BSc" },
+              { name: "Pflege", grad: "BSc" },
+              { name: "Physiotherapie", grad: "BSc" }
+            ]
+          },
+          {
+            name: "11. Ingenieurwissenschaften",
+            studiengaenge: [
+              { name: "Architektur", grad: "BA" },
+              { name: "Bauingenieurwesen", grad: "BSc" },
+              { name: "Landschaftsarchitektur", grad: "BSc" },
+              { name: "Stadt-, Verkehrs- und Raumplanung", grad: "BSc" },
+              { name: "Electrical and Computer Engineering", grad: "Bachelor" },
+              { name: "Erneuerbare Energien und Umwelttechnik", grad: "Bachelor" },
+              { name: "Maschinentechnik | Innovation", grad: "Bachelor" },
+              { name: "Mechatronik", grad: "Bachelor" },
+              { name: "Wirtschaftsingenieurwesen", grad: "Bachelor" }
+            ]
+          }
+        ]
+      },
+      {
+        name: "ZHAW – Zürcher Hochschule für Angewandte Wissenschaften",
+        website: "https://www.zhaw.ch/de/studium/bachelorstudiengaenge",
+        kategorien: [
+          {
+            name: "3. Wirtschaftswissenschaften",
+            studiengaenge: [
+              { name: "Angewandtes Recht", grad: "BA" },
+              { name: "Betriebsökonomie", grad: "BSc" },
+              { name: "International Management", grad: "BSc" },
+              { name: "Wirtschaftsinformatik", grad: "BSc" },
+              { name: "Wirtschaftsingenieurwesen", grad: "BSc" },
+              { name: "Wirtschaftsrecht", grad: "BSc" }
+            ]
+          },
+          {
+            name: "4. Geistes- und Kulturwissenschaften",
+            studiengaenge: [
+              { name: "Kommunikation und Medien", grad: "BA" },
+              { name: "Mehrsprachige Kommunikation", grad: "BA" }
+            ]
+          },
+          {
+            name: "5. Sozialwissenschaften",
+            studiengaenge: [
+              { name: "Soziale Arbeit", grad: "BA" },
+              { name: "Sprachliche Integration", grad: "BA" }
+            ]
+          },
+          {
+            name: "8. Naturwissenschaften",
+            studiengaenge: [
+              { name: "Applied Digital Life Sciences", grad: "BSc" },
+              { name: "Biomedizinische Labordiagnostik", grad: "BSc" },
+              { name: "Biotechnologie", grad: "BSc" },
+              { name: "Chemie", grad: "BSc" },
+              { name: "Food Science", grad: "BSc" },
+              { name: "Umweltingenieurwesen", grad: "BSc" }
+            ]
+          },
+          {
+            name: "9. Mathematik und Informatik",
+            studiengaenge: [
+              { name: "Data Science", grad: "BSc" },
+              { name: "Informatik", grad: "BSc" },
+              { name: "Medizininformatik", grad: "BSc" }
+            ]
+          },
+          {
+            name: "10. Medizin und Gesundheitswissenschaften",
+            studiengaenge: [
+              { name: "Ergotherapie", grad: "BSc" },
+              { name: "Gesundheitsförderung und Prävention", grad: "BSc" },
+              { name: "Hebamme", grad: "BSc" },
+              { name: "Pflege", grad: "BSc" },
+              { name: "Pflege für diplomierte Pflegende", grad: "BSc" },
+              { name: "Physiotherapie", grad: "BSc" }
+            ]
+          },
+          {
+            name: "11. Ingenieurwissenschaften",
+            studiengaenge: [
+              { name: "Architektur", grad: "BSc" },
+              { name: "Bauingenieurwesen", grad: "BSc" },
+              { name: "Facility Management", grad: "BSc" },
+              { name: "Aviatik", grad: "BSc" },
+              { name: "Elektrotechnik", grad: "BSc" },
+              { name: "Energie- und Umwelttechnik", grad: "BSc" },
+              { name: "Maschinentechnik", grad: "BSc" },
+              { name: "Mobility Science", grad: "BSc" },
+              { name: "Systemtechnik (Robotik & Mechatronik / Medizintechnik)", grad: "BSc" }
+            ]
+          }
+        ]
+      },
+      {
+        name: "ZHdK – Zürcher Hochschule der Künste",
+        website: "https://www.zhdk.ch/studium/alle-majors-und-minors?bachelorMaster=1&majorMinor=1",
+        kategorien: [
+          {
+            name: "4. Geistes- und Kulturwissenschaften",
+            studiengaenge: [
+              { name: "Art Education", grad: "BA" },
+              { name: "Contemporary Dance", grad: "BA" },
+              { name: "Film", grad: "BA" },
+              { name: "Film, Production Design", grad: "BA" },
+              { name: "Theater, Regie", grad: "BA" },
+              { name: "Theater, Schauspiel", grad: "BA" },
+              { name: "Theater, Szenischer Raum", grad: "BA" },
+              { name: "Theater, Theaterpädagogik", grad: "BA" },
+              { name: "Design, Cast / Audiovisual Media", grad: "BA" },
+              { name: "Design, Game Design", grad: "BA" },
+              { name: "Design, Industrial Design", grad: "BA" },
+              { name: "Design, Interaction Design", grad: "BA" },
+              { name: "Design, Knowledge Visualization", grad: "BA" },
+              { name: "Design, Trends & Identity", grad: "BA" },
+              { name: "Design, Visual Communication", grad: "BA" },
+              { name: "Fine Arts", grad: "BA" },
+              { name: "Creative Music Practices", grad: "BA" },
+              { name: "Musik, Akkordeon", grad: "BA" },
+              { name: "Musik, Blockflöte", grad: "BA" },
+              { name: "Musik, Cembalo", grad: "BA" },
+              { name: "Musik, Chorleitung", grad: "BA" },
+              { name: "Musik, Dirigieren", grad: "BA" },
+              { name: "Musik, Fagott", grad: "BA" },
+              { name: "Musik, Gitarre", grad: "BA" },
+              { name: "Musik, Gesang", grad: "BA" },
+              { name: "Musik, Harfe", grad: "BA" },
+              { name: "Musik, Horn", grad: "BA" },
+              { name: "Musik, Jazz", grad: "BA" },
+              { name: "Musik, Klarinette", grad: "BA" },
+              { name: "Musik, Klavier", grad: "BA" },
+              { name: "Musik, Komposition für Film, Theater und Medien", grad: "BA" },
+              { name: "Musik, Kontrabass", grad: "BA" },
+              { name: "Musik, Oboe", grad: "BA" },
+              { name: "Musik, Orgel", grad: "BA" },
+              { name: "Musik, Orgel und Chorleitung", grad: "BA" },
+              { name: "Musik, Posaune", grad: "BA" },
+              { name: "Musik, Pop", grad: "BA" },
+              { name: "Musik, Querflöte", grad: "BA" },
+              { name: "Musik, Saxophon", grad: "BA" },
+              { name: "Musik, Schlagzeug", grad: "BA" },
+              { name: "Musik, Schulmusik", grad: "BA" },
+              { name: "Musik, Tonmeister:in", grad: "BA" },
+              { name: "Musik, Trompete", grad: "BA" },
+              { name: "Musik, Tuba", grad: "BA" },
+              { name: "Musik, Viola", grad: "BA" },
+              { name: "Musik, Violine", grad: "BA" },
+              { name: "Musik, Violoncello", grad: "BA" },
+              { name: "Musik und Bewegung", grad: "BA" }
+            ]
+          }
+        ]
+      }
+    ]
+  };
+
+  // Expose to global scope
+  global.AlleFHStudiengaenge = AlleFHStudiengaenge;
+})(window);

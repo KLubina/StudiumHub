@@ -10,14 +10,14 @@
 
     <link rel="stylesheet" href="alle-studiengaenge.css">
 
-    <title>Alle Uni-Studiengänge in der Deutsch-Schweiz | StudiumHub</title>
+    <title>Alle Studiengänge (Uni & FH) in der Deutsch-Schweiz | StudiumHub</title>
 </head>
 
 <body>
     <header>
         <div class="container">
             <a href="../index.html" class="back-link">← Zurück zu StudiumHub</a>
-            <h1>Alle Uni-Studiengänge in der Deutsch-Schweiz</h1>
+            <h1>Alle Studiengänge (Uni & FH) in der Deutsch-Schweiz</h1>
             <div class="subtitle">
                 <a href="https://www.berufsberatung.ch/dyn/show/5435" target="_blank" rel="noopener noreferrer" style="color: white; font-size: 0.9rem;">
                     Quelle: berufsberatung.ch
@@ -34,8 +34,13 @@
         <!-- Filter -->
         <div class="controls">
             <div class="filter-container">
-                <select id="uniFilter">
-                    <option value="">Alle Universitäten</option>
+                <select id="typeFilter">
+                    <option value="">Alle Hochschultypen</option>
+                    <option value="uni">Universitäten</option>
+                    <option value="fh">Fachhochschulen</option>
+                </select>
+                <select id="institutionFilter">
+                    <option value="">Alle Hochschulen</option>
                 </select>
                 <select id="categoryFilter">
                     <option value="">Alle Fachbereiche</option>
@@ -48,6 +53,7 @@
     </div>
 
     <script src="alle-studiengaenge-data.js"></script>
+    <script src="alle-fh-studiengaenge-data.js"></script>
     <script src="alle-studiengaenge.js"></script>
 </body>
 
