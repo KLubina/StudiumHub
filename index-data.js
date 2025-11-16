@@ -150,6 +150,14 @@
 
         },
         {
+          key: "uzh-law",
+          title: "Bachelor Rechtswissenschaften",
+          subtitle: "Universität Zürich",
+          category: "Unis",
+          studyModel: "mono",
+
+        },
+        {
           key: "unibas-sbg",
           title: "BSc Sport, Bewegung und Gesundheit",
           subtitle: "Universität Basel",

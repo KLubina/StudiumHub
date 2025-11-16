@@ -1,0 +1,19 @@
+/* ==== UZH LAW - CSS CLASSES ==== */
+
+[data-studiengang="uzh-law"] .modul.pflicht,
+[data-studiengang="uzh-law"] .legende-item.pflicht {
+    background-color: var(--color-pflicht);
+    color: white;
+}
+
+[data-studiengang="uzh-law"] .modul.wahlpflicht,
+[data-studiengang="uzh-law"] .legende-item.wahlpflicht {
+    background-color: var(--color-wahlpflicht);
+    color: white;
+}
+
+[data-studiengang="uzh-law"] .modul.wahl,
+[data-studiengang="uzh-law"] .legende-item.wahl {
+    background-color: var(--color-wahl);
+    color: white;
+}

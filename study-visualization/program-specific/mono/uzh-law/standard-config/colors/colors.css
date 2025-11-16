@@ -1,0 +1,7 @@
+/* ==== UZH LAW - COLOR VARIABLES ==== */
+
+[data-studiengang="uzh-law"] {
+    --color-pflicht: #1e40af;
+    --color-wahlpflicht: #059669;
+    --color-wahl: #f59e0b;
+}
