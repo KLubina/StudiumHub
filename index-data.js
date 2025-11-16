@@ -58,6 +58,7 @@
           title: "BSc CSE",
           subtitle: "ETH Zürich",
           category: "Unis",
+          featured: true,
 
         },
         {
