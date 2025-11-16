@@ -135,13 +135,6 @@ window.StudiengangModules = [
     year: 2,
     semester: 1,
   },
-  {
-    name: "Wahlmodul",
-    ects: 6,
-    standardcategory: "Wahl",
-    year: 2,
-    semester: 1,
-  },
   // #endregion 3. Semester
 
   // #region 4. Semester
@@ -194,13 +187,6 @@ window.StudiengangModules = [
     year: 2,
     semester: 2,
   },
-  {
-    name: "Wahlmodul",
-    ects: 6,
-    standardcategory: "Wahl",
-    year: 2,
-    semester: 2,
-  },
   // #endregion 4. Semester
 
   // #region 5. Semester
@@ -236,13 +222,6 @@ window.StudiengangModules = [
     name: "Bachelorarbeit",
     ects: 6,
     standardcategory: "Pflicht",
-    year: 3,
-    semester: 1,
-  },
-  {
-    name: "Wahlmodul",
-    ects: 6,
-    standardcategory: "Wahl",
     year: 3,
     semester: 1,
   },
@@ -302,13 +281,6 @@ window.StudiengangModules = [
     name: "Bachelorarbeit",
     ects: 6,
     standardcategory: "Pflicht",
-    year: 3,
-    semester: 2,
-  },
-  {
-    name: "Wahlmodul",
-    ects: 6,
-    standardcategory: "Wahl",
     year: 3,
     semester: 2,
   },
