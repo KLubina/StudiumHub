@@ -1,5 +1,5 @@
 // Alle FH-Studiengänge (Fachhochschulen) in der Deutsch-Schweiz
-// Datenquellen: BFH, FH Graubünden, FHNW, OST, ZHAW, ZHdK
+// Datenquellen: BFH, FH Graubünden, FHNW, HSLU, OST, ZHAW, ZHdK
 
 (function (global) {
   const AlleFHStudiengaenge = {
@@ -392,6 +392,72 @@
               { name: "Musik, Violine", grad: "BA" },
               { name: "Musik, Violoncello", grad: "BA" },
               { name: "Musik und Bewegung", grad: "BA" }
+            ]
+          }
+        ]
+      },
+      {
+        name: "Hochschule Luzern (HSLU)",
+        website: "https://www.hslu.ch/de-ch/hochschule-luzern/studium/#?filters=16",
+        kategorien: [
+          {
+            name: "3. Wirtschaftswissenschaften",
+            studiengaenge: [
+              { name: "Business Administration", grad: "Bachelor of Science" },
+              { name: "Business IT & Digital Transformation", grad: "Bachelor" },
+              { name: "Business Psychology", grad: "Bachelor of Science" },
+              { name: "Economics and Data Science in Mobility", grad: "Bachelor of Science" },
+              { name: "Hospitality Management", grad: "Bachelor of Science" },
+              { name: "International Business Administration", grad: "Bachelor of Science" },
+              { name: "International IT Management", grad: "Bachelor" },
+              { name: "International Sustainable Tourism", grad: "Bachelor of Science" },
+              { name: "Wirtschaftsinformatik", grad: "Bachelor" }
+            ]
+          },
+          {
+            name: "4. Geistes- und Kulturwissenschaften",
+            studiengaenge: [
+              { name: "Architektur", grad: "Bachelor of Arts" },
+              { name: "Innenarchitektur", grad: "Bachelor of Arts" },
+              { name: "Music", grad: "Bachelor of Arts" },
+              { name: "Musik und Bewegung", grad: "Bachelor of Arts" }
+            ]
+          },
+          {
+            name: "5. Sozialwissenschaften",
+            studiengaenge: [
+              { name: "Soziale Arbeit", grad: "Bachelor" },
+              { name: "Soziale Arbeit neue Konzepte und Innovation", grad: "Bachelor" }
+            ]
+          },
+          {
+            name: "9. Mathematik und Informatik",
+            studiengaenge: [
+              { name: "Artificial Intelligence & Machine Learning", grad: "Bachelor" },
+              { name: "Digital Engineer", grad: "Bachelor" },
+              { name: "Digital Ideation", grad: "Bachelor" },
+              { name: "Immersive Technologies", grad: "Bachelor" },
+              { name: "Informatik", grad: "Bachelor" },
+              { name: "Information & Cyber Security", grad: "Bachelor" }
+            ]
+          },
+          {
+            name: "10. Medizin und Gesundheitswissenschaften",
+            studiengaenge: [
+              { name: "Medizintechnik", grad: "Bachelor of Science" },
+              { name: "Pflege", grad: "Bachelor of Science" }
+            ]
+          },
+          {
+            name: "11. Ingenieurwissenschaften",
+            studiengaenge: [
+              { name: "Bauingenieurwesen", grad: "Bachelor of Science" },
+              { name: "Digital Construction", grad: "Bachelor" },
+              { name: "Elektrotechnik und Informationstechnologie", grad: "Bachelor" },
+              { name: "Energie- und Umwelttechnik", grad: "Bachelor of Science" },
+              { name: "Gebäudetechnik", grad: "Bachelor of Science" },
+              { name: "Maschinentechnik", grad: "Bachelor" },
+              { name: "Wirtschaftsingenieurwesen", grad: "Bachelor of Science" }
             ]
           }
         ]
