@@ -50,7 +50,7 @@ window.PolisciPflichtmoduleData = [
     ects: 6,
     standardcategory: "Pflichtmodule",
     year: 2,
-    semester: 1
+    semester: 2
   },
   // Platzhalter für Vertiefungmodul 2. Jahr 1. Semester
   {
