@@ -24,4 +24,14 @@ window.StudiengangModuleDetails = {
     inhalt: "- Das Modul gibt eine vertiefte Einführung in Theorien, Systeme und Prozesse der Politikwissenschaft, sowie in ihre Teildisziplinen.\n- Behandelt werden u.a. folgende Themen: Politisches Handeln, Werte, Interessen, politische Partizipation, Parteien und Parteiensysteme, soziale Bewegungen, Interessengruppen und Medien.\n- Dabei werden auch verschiedene Politikfelder behandelt: Gesellschaftspolitik, Migration, Umwelt, Entwicklung, Gender, Wirtschaftspolitik, Wohlfahrtstaat, Krieg, Frieden, internationale Regime und Organisationen, Globalisierung.",
     link: "https://studentservices.uzh.ch/uzh/anonym/vvz/index.html?sap-language=DE&sap-ui-language=DE#/details/2024/004/SM/50942115/50000007/Philosophische%2520Fakult%25C3%25A4t/50890576/Bachelor%2520of%2520Arts%2520in%2520Sozialwissenschaften%2520(RVO19)/50893129/Politikwissenschaft",
   },
+  "Fortgeschrittene Methoden und Statistik": {
+    kurzbeschreibung: "Statistische Modellierung in der Politikwissenschaft mit Fokus auf lineare Regression und R-Programmierung",
+    inhalt: "- Einführung in die Rolle statistischer Modelle in der Politikwissenschaft\n- Lineare Regressionsanalyse und deren Erweiterungen: polynomiale Regression, kategoriale Prädiktoren, Interaktionen, Zeitreihendaten\n- Regressionsdiagnostik und Interpretation\n- Fortgeschrittene Programmierung in R\n- Praktische Beispiele und semesterbegleitende Übungen",
+    link: "https://studentservices.uzh.ch/uzh/anonym/vvz/index.html?sap-language=DE&amp;sap-ui-language=DE#/details/2025/003/SM/50942119/50000007/Philosophische%2520Fakult%25C3%25A4t/50890576/Bachelor%2520of%2520Arts%2520in%2520Sozialwissenschaften%2520(RVO19)/50893129/Politikwissenschaft"
+  },
+  "Einführung in die qualitativen Methoden": {
+    kurzbeschreibung: "Grundlagen qualitativer Forschung in der empirischen Politikwissenschaft",
+    inhalt: "- Einführung in erkenntnistheoretische Grundlagen qualitativer Forschung\n- Typische Untersuchungsdesigns: Fallstudien, Dokumentenanalyse, Interviews, Beobachtung\n- Methoden der Datenanalyse: Objektive Hermeneutik, Qualitative Inhaltsanalyse, Grounded Theory\n- Qualitätskriterien qualitativer Forschung und Triangulation\n- Kombination qualitativer und quantitativer Methoden (mixed-methods)\n- Semesterbegleitende schriftliche Übungen",
+    link: "https://studentservices.uzh.ch/uzh/anonym/vvz/index.html?sap-language=DE&amp;sap-ui-language=DE#/details/2024/004/SM/50942120/50000007/Philosophische%2520Fakult%25C3%25A4t/50890576/Bachelor%2520of%2520Arts%2520in%2520Sozialwissenschaften%2520(RVO19)/50893129/Politikwissenschaft"
+  }
 };
