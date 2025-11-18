@@ -75,6 +75,14 @@ window.StudienplanTooltip = {
             container.appendChild(indicator);
         }
 
+        if (details.skript) {
+            const indicator = document.createElement('div');
+            indicator.className = 'script-indicator';
+            indicator.title = 'Skript verfügbar';
+            indicator.textContent = '📄';
+            container.appendChild(indicator);
+        }
+
         if (details.pruefungen) {
             const indicator = document.createElement('div');
             indicator.className = 'exam-indicator';
@@ -124,10 +132,13 @@ window.StudienplanTooltip = {
             }
 
             // Links
-            if (details.vorlesungslink || details.pruefungen || details.link) {
+            if (details.vorlesungslink || details.pruefungen || details.skript || details.link) {
                 detailsHTML += '<h4>Ressourcen</h4>';
                 if (details.vorlesungslink) {
                     detailsHTML += `<p><a href="${details.vorlesungslink}" target="_blank">🎥 Vorlesungsvideos</a></p>`;
+                }
+                if (details.skript) {
+                    detailsHTML += `<p><a href="${details.skript}" target="_blank">📄 Skript</a></p>`;
                 }
                 if (details.pruefungen) {
                     detailsHTML += `<p><a href="${details.pruefungen}" target="_blank">📝 Alte Prüfungen</a></p>`;

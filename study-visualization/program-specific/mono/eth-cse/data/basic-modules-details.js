@@ -16,6 +16,8 @@ window.StudiengangModuleDetails = {
       "• Einführung in gewöhnliche Differentialgleichungen",
     vorlesungslink:
       "https://video.ethz.ch/lectures/d-math/2016/autumn/401-1261-07L/a65b10a4-c135-3bca-a4f5-c37d9f8b0913.html",
+    skript:
+      "https://github.com/KLubina/StudiumHub/tree/main/scripts/CSE-scripts/1.Sem/Analysis%20I",
     pruefungen:
       "https://github.com/KLubina/StudiumHub/tree/main/old-exams/CSE-old-exams/1.Sem/Analysis%20I",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=193410&semkez=2025W&ansicht=LEHRVERANSTALTUNGEN&lang=de",
