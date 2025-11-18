@@ -2,6 +2,7 @@
 
 (function () {
   let allData = [];
+  let currentView = 'institution'; // 'institution' oder 'category'
   let currentFilters = {
     type: '',
     institution: '',
@@ -70,6 +71,23 @@
     const typeFilter = document.getElementById('typeFilter');
     const institutionFilter = document.getElementById('institutionFilter');
     const categoryFilter = document.getElementById('categoryFilter');
+    const viewByInstitution = document.getElementById('viewByInstitution');
+    const viewByCategory = document.getElementById('viewByCategory');
+
+    // View Toggle
+    viewByInstitution.addEventListener('click', function () {
+      currentView = 'institution';
+      viewByInstitution.classList.add('active');
+      viewByCategory.classList.remove('active');
+      renderStudiengaenge();
+    });
+
+    viewByCategory.addEventListener('click', function () {
+      currentView = 'category';
+      viewByCategory.classList.add('active');
+      viewByInstitution.classList.remove('active');
+      renderStudiengaenge();
+    });
 
     typeFilter.addEventListener('change', function (e) {
       currentFilters.type = e.target.value;
@@ -129,12 +147,49 @@
       return;
     }
 
+    // Wähle Ansicht
+    if (currentView === 'category') {
+      renderByCategory(filteredData, container);
+    } else {
+      renderByInstitution(filteredData, container);
+    }
+  }
+
+  function renderByInstitution(filteredData, container) {
     // Rendere jede Universität
     filteredData.forEach(uni => {
       if (uni.kategorien.length > 0) {
         const uniSection = createUniSection(uni);
         container.appendChild(uniSection);
       }
+    });
+  }
+
+  function renderByCategory(filteredData, container) {
+    // Gruppiere nach Kategorien
+    const categoryMap = new Map();
+
+    filteredData.forEach(inst => {
+      inst.kategorien.forEach(kategorie => {
+        if (!categoryMap.has(kategorie.name)) {
+          categoryMap.set(kategorie.name, []);
+        }
+        categoryMap.get(kategorie.name).push({
+          institution: inst.name,
+          type: inst.type,
+          website: inst.website,
+          studiengaenge: kategorie.studiengaenge
+        });
+      });
+    });
+
+    // Sortiere Kategorien
+    const sortedCategories = Array.from(categoryMap.keys()).sort();
+
+    // Rendere jede Kategorie
+    sortedCategories.forEach(categoryName => {
+      const categorySection = createCategorySectionGrouped(categoryName, categoryMap.get(categoryName));
+      container.appendChild(categorySection);
     });
   }
 
@@ -223,5 +278,65 @@
     }
 
     return item;
+  }
+
+  function createCategorySectionGrouped(categoryName, institutions) {
+    const section = document.createElement('div');
+    section.className = 'uni-section';
+
+    // Category Header
+    const header = document.createElement('div');
+    header.className = 'uni-header';
+    header.innerHTML = `
+      <div>
+        <div class="uni-title">${categoryName}</div>
+        <div class="uni-website" style="color: #999;">
+          ${institutions.length} Hochschule${institutions.length > 1 ? 'n' : ''}
+        </div>
+      </div>
+      <span class="toggle-icon">▼</span>
+    `;
+
+    // Toggle Funktionalität
+    header.addEventListener('click', function () {
+      section.classList.toggle('collapsed');
+    });
+
+    // Content
+    const content = document.createElement('div');
+    content.className = 'uni-content';
+
+    // Rendere jede Institution
+    institutions.forEach(inst => {
+      const instSection = document.createElement('div');
+      instSection.className = 'category-section';
+
+      const instTitle = document.createElement('div');
+      instTitle.className = 'category-title';
+      const typeLabel = inst.type === 'uni' ? '[Uni]' : '[FH]';
+      instTitle.innerHTML = `
+        ${typeLabel} ${inst.institution}
+        <a href="${inst.website}" target="_blank" rel="noopener noreferrer" style="margin-left: 10px; font-size: 0.85em; color: #0066cc;">
+          → Website
+        </a>
+      `;
+
+      const list = document.createElement('div');
+      list.className = 'studiengang-list';
+
+      inst.studiengaenge.forEach(studiengang => {
+        const item = createStudiengangItem(studiengang);
+        list.appendChild(item);
+      });
+
+      instSection.appendChild(instTitle);
+      instSection.appendChild(list);
+      content.appendChild(instSection);
+    });
+
+    section.appendChild(header);
+    section.appendChild(content);
+
+    return section;
   }
 })();

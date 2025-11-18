@@ -56,6 +56,34 @@ h1 {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.view-toggle {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.view-btn {
+    flex: 1;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 2px solid #003366;
+    background-color: white;
+    color: #003366;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.view-btn:hover {
+    background-color: #f0f0f0;
+}
+
+.view-btn.active {
+    background-color: #003366;
+    color: white;
+}
+
 .filter-container {
     display: flex;
     gap: 10px;
@@ -231,6 +259,10 @@ h1 {
 
     .studiengang-list {
         grid-template-columns: 1fr;
+    }
+
+    .view-toggle {
+        flex-direction: column;
     }
 
     .filter-container {
