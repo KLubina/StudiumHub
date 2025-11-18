@@ -74,7 +74,7 @@
               { name: "Landschaftsarchitektur", grad: "Bachelor of Arts" },
               { name: "Elektrotechnik und Informationstechnologie", grad: "Bachelor of Science" },
               { name: "Automobil- und Fahrzeugtechnik", grad: "Bachelor of Science" },
-              { name: "Mechatronik und Systemtechnik (Medizintechnik | Robotik | Uhren- & Mikrotechnik)", grad: "Bachelor of Science" },
+              { name: "Mechatronik und Systemtechnik", grad: "Bachelor of Science" },
               { name: "Maschinentechnik", grad: "Bachelor of Science" },
               { name: "Wirtschaftsingenieurwesen", grad: "Bachelor of Science" }
             ]
@@ -115,10 +115,9 @@
             studiengaenge: [
               { name: "Architektur", grad: "Bachelor" },
               { name: "Bauingenieurwesen", grad: "Bachelor" },
-              { name: "Engineering (Vertiefungen: Optoelectronics (Photonics), Mobile Robotics, Medizintechnik)", grad: "Bachelor" },
               { name: "MedTech", grad: "Bachelor" },
               { name: "Mobile Robotics", grad: "Bachelor" },
-              { name: "Optoelectronics (Photonics)", grad: "Bachelor" }
+              { name: "Optoelectronics", grad: "Bachelor" }
             ]
           }
         ]
@@ -255,7 +254,7 @@
               { name: "Stadt-, Verkehrs- und Raumplanung", grad: "BSc" },
               { name: "Electrical and Computer Engineering", grad: "Bachelor" },
               { name: "Erneuerbare Energien und Umwelttechnik", grad: "Bachelor" },
-              { name: "Maschinentechnik | Innovation", grad: "Bachelor" },
+              { name: "Maschinentechnik", grad: "Bachelor" },
               { name: "Mechatronik", grad: "Bachelor" },
               { name: "Wirtschaftsingenieurwesen", grad: "Bachelor" }
             ]
@@ -332,7 +331,7 @@
               { name: "Energie- und Umwelttechnik", grad: "BSc" },
               { name: "Maschinentechnik", grad: "BSc" },
               { name: "Mobility Science", grad: "BSc" },
-              { name: "Systemtechnik (Robotik & Mechatronik / Medizintechnik)", grad: "BSc" }
+              { name: "Systemtechnik", grad: "BSc" }
             ]
           }
         ]
