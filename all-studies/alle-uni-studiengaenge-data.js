@@ -131,7 +131,8 @@
           {
             name: "3. Wirtschaftswissenschaften",
             studiengaenge: [
-              { name: "Wirtschaftswissenschaften", ects: "180/120/60 ECTS" }
+              { name: "Wirtschaftswissenschaften", ects: "180/120/60 ECTS" },
+              { name: "Gesundheitswissenschaften", ects: "180 ECTS" }
             ]
           },
           {
@@ -162,12 +163,6 @@
             name: "7. Psychologie",
             studiengaenge: [
               { name: "Psychologie", ects: "120/60 ECTS" }
-            ]
-          },
-          {
-            name: "10. Medizin und Gesundheitswissenschaften",
-            studiengaenge: [
-              { name: "Gesundheitswissenschaften", ects: "180 ECTS" }
             ]
           }
         ]
@@ -278,7 +273,8 @@
               { name: "Chemie und Molekulare Wissenschaften", ects: "180/60/30/15 ECTS" },
               { name: "Erdwissenschaften (Geologie)", ects: "180/120/60/30/15 ECTS" },
               { name: "Geographie", ects: "120 ECTS" },
-              { name: "Physik", ects: "120 ECTS" }
+              { name: "Physik", ects: "120 ECTS" },
+              { name: "Pharmazeutische Wissenschaften", ects: "180 ECTS" }
             ]
           },
           {
@@ -292,7 +288,6 @@
             name: "10. Medizin und Gesundheitswissenschaften",
             studiengaenge: [
               { name: "Humanmedizin", ects: "180 ECTS" },
-              { name: "Pharmazeutische Wissenschaften", ects: "180 ECTS" },
               { name: "Veterinärmedizin", ects: "180 ECTS" },
               { name: "Zahnmedizin", ects: "180 ECTS" }
             ]
@@ -301,24 +296,6 @@
             name: "12. Sportwissenschaften",
             studiengaenge: [
               { name: "Sportwissenschaft", ects: "120/60/30 ECTS" }
-            ]
-          },
-          {
-            name: "Spezialisierte Minors",
-            studiengaenge: [
-              { name: "Basis Antike mit Schwerpunkt Griechisch", ects: "60/30 ECTS" },
-              { name: "Basis Antike mit Schwerpunkt Latein", ects: "60/30 ECTS" },
-              { name: "Chinesische Sprache und Gesellschaft", ects: "30 ECTS" },
-              { name: "Digitalization and Applied Data Science in Business, Economics and the Social Sciences", ects: "30 ECTS" },
-              { name: "Klassische Philologie mit Schwerpunkt Griechisch", ects: "60/30 ECTS" },
-              { name: "Klassische Philologie mit Schwerpunkt Latein", ects: "60/30 ECTS" },
-              { name: "Kulturgeschichte und Archäologie des vorislamischen Palästina/Israel", ects: "60/30 ECTS" },
-              { name: "Nachhaltige Entwicklung", ects: "60/30/15 ECTS" },
-              { name: "Obligationenrecht und Wirtschaftsrecht", ects: "30 ECTS" },
-              { name: "Philosophie des Geistes", ects: "60 ECTS" },
-              { name: "Staatsrecht und Staatstheorie", ects: "30 ECTS" },
-              { name: "Wirtschaftsinformatik", ects: "30/15 ECTS" },
-              { name: "Wissenschaftsphilosophie", ects: "60 ECTS" }
             ]
           }
         ]
@@ -419,7 +396,8 @@
               { name: "Erdwissenschaften", ects: "150/60 ECTS" },
               { name: "Geographie", ects: "120/60 ECTS" },
               { name: "Physik", ects: "150/60 ECTS" },
-              { name: "Umweltwissenschaften und Umweltgeisteswissenschaften", ects: "60 ECTS" }
+              { name: "Umweltwissenschaften und Umweltgeisteswissenschaften", ects: "60 ECTS" },
+              { name: "Biomedizinische Wissenschaften", ects: "120 ECTS" }
             ]
           },
           {
@@ -433,7 +411,6 @@
             name: "10. Medizin und Gesundheitswissenschaften",
             studiengaenge: [
               { name: "Humanmedizin", ects: "180 ECTS" },
-              { name: "Biomedizinische Wissenschaften", ects: "120 ECTS" }
             ]
           },
           {
@@ -462,7 +439,8 @@
               { name: "Agrarwissenschaften", ects: "180 ECTS" },
               { name: "Erd- und Klimawissenschaften", ects: "180 ECTS" },
               { name: "Umweltnaturwissenschaften", ects: "180 ECTS" },
-              { name: "Lebensmittelwissenschaften und Ernährung", ects: "180 ECTS" }
+              { name: "Lebensmittelwissenschaften und Ernährung", ects: "180 ECTS" },
+              { name: "Gesundheitswissenschaften und Technologie", ects: "180 ECTS" }
             ]
           },
           {
@@ -476,7 +454,6 @@
             name: "10. Medizin und Gesundheitswissenschaften",
             studiengaenge: [
               { name: "Humanmedizin", ects: "180 ECTS" },
-              { name: "Gesundheitswissenschaften und Technologie", ects: "180 ECTS" }
             ]
           },
           {
