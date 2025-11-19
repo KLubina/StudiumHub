@@ -46,7 +46,7 @@ window.GeschichtePflichtmoduleData = [
   },
 
   {
-    name: "Alte Geschichte",
+    name: "Geschichte des Altertums",
     ects: 9,
     standardcategory: "Wahlpflichtmodule",
     semester: 1,
@@ -74,7 +74,7 @@ window.GeschichtePflichtmoduleData = [
     year: 2,
   },
   {
-    name: "Alte Geschichte",
+    name: "Geschichte des Altertums",
     ects: 9,
     standardcategory: "Wahlpflichtmodule",
     semester: 2,
@@ -105,7 +105,7 @@ window.GeschichtePflichtmoduleData = [
   },
 
   {
-    name: "Alte Geschichte",
+    name: "Geschichte des Altertums",
     ects: 9,
     standardcategory: "Wahlpflichtmodule",
     semester: 1,
@@ -133,7 +133,7 @@ window.GeschichtePflichtmoduleData = [
     year: 3,
   },
   {
-    name: "Alte Geschichte",
+    name: "Geschichte des Altertums",
     ects: 9,
     standardcategory: "Wahlpflichtmodule",
     semester: 2,
