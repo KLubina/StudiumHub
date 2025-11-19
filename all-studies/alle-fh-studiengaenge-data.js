@@ -14,7 +14,8 @@
               { name: "Digital Business & AI", grad: "Bachelor of Science" },
               { name: "Betriebsökonomie", grad: "Bachelor of Science" },
               { name: "Food Science & Management", grad: "Bachelor of Science" },
-              { name: "International Business Administration", grad: "Bachelor of Science" }
+              { name: "International Business Administration", grad: "Bachelor of Science" },
+              { name: "Wirtschaftsingenieurwesen", grad: "Bachelor of Science" }
             ]
           },
           {
@@ -75,8 +76,7 @@
               { name: "Elektrotechnik und Informationstechnologie", grad: "Bachelor of Science" },
               { name: "Automobil- und Fahrzeugtechnik", grad: "Bachelor of Science" },
               { name: "Mechatronik und Systemtechnik", grad: "Bachelor of Science" },
-              { name: "Maschinentechnik", grad: "Bachelor of Science" },
-              { name: "Wirtschaftsingenieurwesen", grad: "Bachelor of Science" }
+              { name: "Maschinentechnik", grad: "Bachelor of Science" }
             ]
           },
           {
