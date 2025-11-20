@@ -135,7 +135,9 @@
               { name: "Wirtschaftsinformatik", grad: "Bachelor of Science" },
               { name: "Business Information Technology", grad: "Bachelor of Science" },
               { name: "Wirtschaftsrecht", grad: "Bachelor of Science" },
-              { name: "Business Artificial Intelligence", grad: "Bachelor of Science" }
+              { name: "Business Artificial Intelligence", grad: "Bachelor of Science" },
+              { name: "Arbeits-, Organisations- und Personalpsychologie", grad: "Bachelor of Science" },
+              { name: "Wirtschaftspsychologie", grad: "Bachelor of Science" }
             ]
           },
           {
@@ -165,13 +167,6 @@
               { name: "Primarstufe", grad: "Bachelor of Arts" },
               { name: "Sekundarstufe I", grad: "Bachelor/Master of Arts" },
               { name: "Logopädie", grad: "Bachelor of Arts" }
-            ]
-          },
-          {
-            name: "7. Psychologie",
-            studiengaenge: [
-              { name: "Arbeits-, Organisations- und Personalpsychologie", grad: "Bachelor of Science" },
-              { name: "Wirtschaftspsychologie", grad: "Bachelor of Science" }
             ]
           },
           {
@@ -273,7 +268,8 @@
               { name: "International Management", grad: "BSc" },
               { name: "Wirtschaftsinformatik", grad: "BSc" },
               { name: "Wirtschaftsingenieurwesen", grad: "BSc" },
-              { name: "Wirtschaftsrecht", grad: "BSc" }
+              { name: "Wirtschaftsrecht", grad: "BSc" },
+              { name: "Facility Management", grad: "BSc" }
             ]
           },
           {
@@ -325,7 +321,6 @@
             studiengaenge: [
               { name: "Architektur", grad: "BSc" },
               { name: "Bauingenieurwesen", grad: "BSc" },
-              { name: "Facility Management", grad: "BSc" },
               { name: "Aviatik", grad: "BSc" },
               { name: "Elektrotechnik", grad: "BSc" },
               { name: "Energie- und Umwelttechnik", grad: "BSc" },
@@ -371,7 +366,8 @@
               { name: "International Business Administration", grad: "Bachelor of Science" },
               { name: "International IT Management", grad: "Bachelor" },
               { name: "International Sustainable Tourism", grad: "Bachelor of Science" },
-              { name: "Wirtschaftsinformatik", grad: "Bachelor" }
+              { name: "Wirtschaftsinformatik", grad: "Bachelor" },
+              { name: "Wirtschaftsingenieurwesen", grad: "Bachelor of Science" }
             ]
           },
           {
@@ -404,7 +400,6 @@
           {
             name: "10. Medizin und Gesundheitswissenschaften",
             studiengaenge: [
-              { name: "Medizintechnik", grad: "Bachelor of Science" },
               { name: "Pflege", grad: "Bachelor of Science" }
             ]
           },
@@ -417,7 +412,7 @@
               { name: "Energie- und Umwelttechnik", grad: "Bachelor of Science" },
               { name: "Gebäudetechnik", grad: "Bachelor of Science" },
               { name: "Maschinentechnik", grad: "Bachelor" },
-              { name: "Wirtschaftsingenieurwesen", grad: "Bachelor of Science" }
+              { name: "Medizintechnik", grad: "Bachelor of Science" }
             ]
           }
         ]
