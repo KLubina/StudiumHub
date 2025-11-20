@@ -9,7 +9,11 @@
         website: "https://www.unibas.ch/de/Studium/Vor-dem-Studium/Studienangebot.html",
         kategorien: [
           {
-            name: "1. Theologie und Religionswissenschaften",
+            name: "1. Wissenschaften vom Menschen und seiner Kultur",
+            studiengaenge: []
+          },
+          {
+            name: "  1.1 Theologie und Religionswissenschaften",
             studiengaenge: [
               { name: "Theologie", ects: "180 KP" },
               { name: "Theologie 75 KP", ects: "75 KP", beschreibung: "ausserfakultäres Bachelorstudienfach 75 KP" },
@@ -18,21 +22,7 @@
             ]
           },
           {
-            name: "2. Rechtswissenschaften",
-            studiengaenge: [
-              { name: "Rechtswissenschaft", ects: "180 KP" },
-              { name: "Rechtswissenschaft 75 KP", ects: "75 KP", beschreibung: "ausserfakultäres Bachelorstudienfach 75 KP" }
-            ]
-          },
-          {
-            name: "3. Wirtschaftswissenschaften",
-            studiengaenge: [
-              { name: "Wirtschaftswissenschaften", ects: "180 KP" },
-              { name: "Wirtschaftswissenschaften 75 KP", ects: "75 KP", beschreibung: "ausserfakultäres Bachelorstudienfach 75 KP" }
-            ]
-          },
-          {
-            name: "4. Geistes- und Kulturwissenschaften",
+            name: "  1.2 Geistes- und Kulturwissenschaften",
             studiengaenge: [
               { name: "Altertumswissenschaften", ects: "150 KP" },
               { name: "Altertumswissenschaften 75 KP", ects: "75 KP", beschreibung: "Studienfach 75 KP" },
@@ -55,12 +45,26 @@
             ]
           },
           {
-            name: "5. Sozialwissenschaften",
+            name: "  1.3 Sozialwissenschaften",
             studiengaenge: [
               { name: "Ethnologie 75 KP", ects: "75 KP", beschreibung: "anderes Fach 75 KP" },
               { name: "Kulturanthropologie 75 KP", ects: "75 KP", beschreibung: "anderes Fach 75 KP" },
               { name: "Politikwissenschaft 75 KP", ects: "75 KP", beschreibung: "anderes Fach 75 KP" },
               { name: "Soziologie 75 KP", ects: "75 KP", beschreibung: "anderes Fach 75 KP" }
+            ]
+          },
+          {
+            name: "2. Rechtswissenschaften",
+            studiengaenge: [
+              { name: "Rechtswissenschaft", ects: "180 KP" },
+              { name: "Rechtswissenschaft 75 KP", ects: "75 KP", beschreibung: "ausserfakultäres Bachelorstudienfach 75 KP" }
+            ]
+          },
+          {
+            name: "3. Wirtschaftswissenschaften",
+            studiengaenge: [
+              { name: "Wirtschaftswissenschaften", ects: "180 KP" },
+              { name: "Wirtschaftswissenschaften 75 KP", ects: "75 KP", beschreibung: "ausserfakultäres Bachelorstudienfach 75 KP" }
             ]
           },
           {
@@ -115,11 +119,39 @@
         website: "https://www.unilu.ch/fileadmin/universitaet/dienste/unikomm/dokumente/Studienbroschueren/Studienprogramme_Bachelor.pdf",
         kategorien: [
           {
-            name: "1. Theologie und Religionswissenschaften",
+            name: "1. Wissenschaften vom Menschen und seiner Kultur",
+            studiengaenge: []
+          },
+          {
+            name: "  1.1 Theologie und Religionswissenschaften",
             studiengaenge: [
               { name: "Theologie", ects: "180/120/60 ECTS" },
               { name: "Religionspädagogik", ects: "180/60 ECTS" },
               { name: "Judaistik", ects: "120/60 ECTS" }
+            ]
+          },
+          {
+            name: "  1.2 Geistes- und Kulturwissenschaften",
+            studiengaenge: [
+              { name: "Geschichte", ects: "120/60 ECTS" },
+              { name: "Philosophie", ects: "120/60 ECTS" }
+            ]
+          },
+          {
+            name: "  1.3 Sozialwissenschaften",
+            studiengaenge: [
+              { name: "Ethnologie", ects: "120/60 ECTS" },
+              { name: "Gesellschafts- und Kommunikationswissenschaften", ects: "180 ECTS" },
+              { name: "Kulturwissenschaften", ects: "180 ECTS" },
+              { name: "Politikwissenschaft", ects: "120/60 ECTS" },
+              { name: "Soziologie", ects: "120/60 ECTS" },
+              { name: "Philosophy, Politics and Economics", ects: "180 ECTS" }
+            ]
+          },
+          {
+            name: "  1.4 Erziehungs- und Bildungswissenschaften",
+            studiengaenge: [
+              { name: "Ethik", ects: "60 ECTS" }
             ]
           },
           {
@@ -136,30 +168,6 @@
             ]
           },
           {
-            name: "4. Geistes- und Kulturwissenschaften",
-            studiengaenge: [
-              { name: "Geschichte", ects: "120/60 ECTS" },
-              { name: "Philosophie", ects: "120/60 ECTS" }
-            ]
-          },
-          {
-            name: "5. Sozialwissenschaften",
-            studiengaenge: [
-              { name: "Ethnologie", ects: "120/60 ECTS" },
-              { name: "Gesellschafts- und Kommunikationswissenschaften", ects: "180 ECTS" },
-              { name: "Kulturwissenschaften", ects: "180 ECTS" },
-              { name: "Politikwissenschaft", ects: "120/60 ECTS" },
-              { name: "Soziologie", ects: "120/60 ECTS" },
-              { name: "Philosophy, Politics and Economics", ects: "180 ECTS" }
-            ]
-          },
-          {
-            name: "6. Erziehungs- und Bildungswissenschaften",
-            studiengaenge: [
-              { name: "Ethik", ects: "60 ECTS" }
-            ]
-          },
-          {
             name: "7. Psychologie",
             studiengaenge: [
               { name: "Psychologie", ects: "120/60 ECTS" }
@@ -171,6 +179,16 @@
         name: "Universität St. Gallen",
         website: "https://www.unisg.ch/de/studium/programme/bachelor/",
         kategorien: [
+          {
+            name: "1. Wissenschaften vom Menschen und seiner Kultur",
+            studiengaenge: []
+          },
+          {
+            name: "  1.3 Sozialwissenschaften",
+            studiengaenge: [
+              { name: "Bachelor Major International Affairs (BIA)", ects: "" }
+            ]
+          },
           {
             name: "2. Rechtswissenschaften",
             studiengaenge: [
@@ -186,12 +204,6 @@
             ]
           },
           {
-            name: "5. Sozialwissenschaften",
-            studiengaenge: [
-              { name: "Bachelor Major International Affairs (BIA)", ects: "" }
-            ]
-          },
-          {
             name: "9. Mathematik und Informatik",
             studiengaenge: [
               { name: "Bachelor in Informatik (BCS)", ects: "" }
@@ -204,7 +216,11 @@
         website: "https://www.unibe.ch/unibe/portal/content/e1006/e251033/e265838/Bachelor-d_25-26_ger.pdf",
         kategorien: [
           {
-            name: "1. Theologie und Religionswissenschaften",
+            name: "1. Wissenschaften vom Menschen und seiner Kultur",
+            studiengaenge: []
+          },
+          {
+            name: "  1.1 Theologie und Religionswissenschaften",
             studiengaenge: [
               { name: "Theologie", ects: "180 ECTS" },
               { name: "Interreligiöse Studien", ects: "120 ECTS" },
@@ -213,20 +229,7 @@
             ]
           },
           {
-            name: "2. Rechtswissenschaften",
-            studiengaenge: [
-              { name: "Rechtswissenschaft", ects: "180 ECTS" }
-            ]
-          },
-          {
-            name: "3. Wirtschaftswissenschaften",
-            studiengaenge: [
-              { name: "Betriebswirtschaftslehre", ects: "120/60/30/15 ECTS" },
-              { name: "Volkswirtschaftslehre", ects: "120/60/30/15 ECTS" }
-            ]
-          },
-          {
-            name: "4. Geistes- und Kulturwissenschaften",
+            name: "  1.2 Geistes- und Kulturwissenschaften",
             studiengaenge: [
               { name: "Archäologie", ects: "120 ECTS" },
               { name: "Deutsche Sprach- und Literaturwissenschaft", ects: "120/60/30 ECTS" },
@@ -246,7 +249,7 @@
             ]
           },
           {
-            name: "5. Sozialwissenschaften",
+            name: "  1.3 Sozialwissenschaften",
             studiengaenge: [
               { name: "Sozialanthropologie", ects: "120/60/30 ECTS" },
               { name: "Sozialwissenschaften", ects: "120/60/30/15 ECTS" },
@@ -254,9 +257,22 @@
             ]
           },
           {
-            name: "6. Erziehungs- und Bildungswissenschaften",
+            name: "  1.4 Erziehungs- und Bildungswissenschaften",
             studiengaenge: [
               { name: "Erziehungswissenschaft", ects: "120/60/30 ECTS" }
+            ]
+          },
+          {
+            name: "2. Rechtswissenschaften",
+            studiengaenge: [
+              { name: "Rechtswissenschaft", ects: "180 ECTS" }
+            ]
+          },
+          {
+            name: "3. Wirtschaftswissenschaften",
+            studiengaenge: [
+              { name: "Betriebswirtschaftslehre", ects: "120/60/30/15 ECTS" },
+              { name: "Volkswirtschaftslehre", ects: "120/60/30/15 ECTS" }
             ]
           },
           {
@@ -305,7 +321,11 @@
         website: "https://studies.unifr.ch/de/studienangebot/courses/",
         kategorien: [
           {
-            name: "1. Theologie und Religionswissenschaften",
+            name: "1. Wissenschaften vom Menschen und seiner Kultur",
+            studiengaenge: []
+          },
+          {
+            name: "  1.1 Theologie und Religionswissenschaften",
             studiengaenge: [
               { name: "Theologie", ects: "180/60 ECTS" },
               { name: "Theologische Studien", ects: "120 ECTS" },
@@ -314,23 +334,7 @@
             ]
           },
           {
-            name: "2. Rechtswissenschaften",
-            studiengaenge: [
-              { name: "Rechtswissenschaft", ects: "180/60 ECTS" },
-              { name: "Rechtswissenschaft im Teilzeitstudium", ects: "180 ECTS" }
-            ]
-          },
-          {
-            name: "3. Wirtschaftswissenschaften",
-            studiengaenge: [
-              { name: "Betriebswirtschaftslehre", ects: "180/60 ECTS" },
-              { name: "Volkswirtschaftslehre", ects: "180/60 ECTS" },
-              { name: "Wirtschafts- und Rechtswissenschaftliche Studien", ects: "120 ECTS" },
-              { name: "Wirtschaftsinformatik", ects: "180/60 ECTS" }
-            ]
-          },
-          {
-            name: "4. Geistes- und Kulturwissenschaften",
+            name: "  1.2 Geistes- und Kulturwissenschaften",
             studiengaenge: [
               { name: "Englische Sprache und Literatur", ects: "120/60 ECTS" },
               { name: "Französisch", ects: "120/60 ECTS" },
@@ -355,7 +359,7 @@
             ]
           },
           {
-            name: "5. Sozialwissenschaften",
+            name: "  1.3 Sozialwissenschaften",
             studiengaenge: [
               { name: "Soziologie (FR)", ects: "120 ECTS" },
               { name: "Soziologie", ects: "120/60 ECTS" },
@@ -370,7 +374,7 @@
             ]
           },
           {
-            name: "6. Erziehungs- und Bildungswissenschaften",
+            name: "  1.4 Erziehungs- und Bildungswissenschaften",
             studiengaenge: [
               { name: "Sonderpädagogik und Sozialpädagogik", ects: "180 ECTS" },
               { name: "Logopädie", ects: "180 ECTS" },
@@ -379,6 +383,22 @@
               { name: "Pädagogik / Psychologie", ects: "120/60 ECTS" },
               { name: "Ausbildung für den Unterricht auf der Primarstufe", ects: "180 ECTS" },
               { name: "Ausbildung für den Unterricht auf der Sekundarstufe I", ects: "150 ECTS" }
+            ]
+          },
+          {
+            name: "2. Rechtswissenschaften",
+            studiengaenge: [
+              { name: "Rechtswissenschaft", ects: "180/60 ECTS" },
+              { name: "Rechtswissenschaft im Teilzeitstudium", ects: "180 ECTS" }
+            ]
+          },
+          {
+            name: "3. Wirtschaftswissenschaften",
+            studiengaenge: [
+              { name: "Betriebswirtschaftslehre", ects: "180/60 ECTS" },
+              { name: "Volkswirtschaftslehre", ects: "180/60 ECTS" },
+              { name: "Wirtschafts- und Rechtswissenschaftliche Studien", ects: "120 ECTS" },
+              { name: "Wirtschaftsinformatik", ects: "180/60 ECTS" }
             ]
           },
           {
@@ -475,7 +495,11 @@
         website: "https://www.uzh.ch/de/studies/programs/bachelor.html",
         kategorien: [
           {
-            name: "1. Theologie und Religionswissenschaften",
+            name: "1. Wissenschaften vom Menschen und seiner Kultur",
+            studiengaenge: []
+          },
+          {
+            name: "  1.1 Theologie und Religionswissenschaften",
             studiengaenge: [
               { name: "Religionswissenschaft", ects: "120 ECTS" },
               { name: "Religious Studies and Theology", ects: "180 ECTS" },
@@ -483,22 +507,7 @@
             ]
           },
           {
-            name: "2. Rechtswissenschaften",
-            studiengaenge: [
-              { name: "Rechtswissenschaft", ects: "180 ECTS" }
-            ]
-          },
-          {
-            name: "3. Wirtschaftswissenschaften",
-            studiengaenge: [
-              { name: "Banking and Finance", ects: "150 ECTS" },
-              { name: "Betriebswirtschaftslehre", ects: "150 ECTS" },
-              { name: "Volkswirtschaftslehre", ects: "150 ECTS" },
-              { name: "Wirtschaftsinformatik", ects: "150 ECTS" }
-            ]
-          },
-          {
-            name: "4. Geistes- und Kulturwissenschaften",
+            name: "  1.2 Geistes- und Kulturwissenschaften",
             studiengaenge: [
               { name: "Archäologien", ects: "120 ECTS" },
               { name: "Computerlinguistik und Sprachtechnologie", ects: "120 ECTS" },
@@ -526,7 +535,7 @@
             ]
           },
           {
-            name: "5. Sozialwissenschaften",
+            name: "  1.3 Sozialwissenschaften",
             studiengaenge: [
               { name: "Ethnologie", ects: "120 ECTS" },
               { name: "Kommunikationswissenschaft und Medienforschung", ects: "120 ECTS" },
@@ -536,10 +545,25 @@
             ]
           },
           {
-            name: "6. Erziehungs- und Bildungswissenschaften",
+            name: "  1.4 Erziehungs- und Bildungswissenschaften",
             studiengaenge: [
               { name: "Erziehungswissenschaft", ects: "120 ECTS" },
               { name: "Fachwissenschaft Pädagogik und Psychologie", ects: "120 ECTS" }
+            ]
+          },
+          {
+            name: "2. Rechtswissenschaften",
+            studiengaenge: [
+              { name: "Rechtswissenschaft", ects: "180 ECTS" }
+            ]
+          },
+          {
+            name: "3. Wirtschaftswissenschaften",
+            studiengaenge: [
+              { name: "Banking and Finance", ects: "150 ECTS" },
+              { name: "Betriebswirtschaftslehre", ects: "150 ECTS" },
+              { name: "Volkswirtschaftslehre", ects: "150 ECTS" },
+              { name: "Wirtschaftsinformatik", ects: "150 ECTS" }
             ]
           },
           {

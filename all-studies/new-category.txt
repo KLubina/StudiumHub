@@ -1,5 +1,5 @@
-Wissenschaften vom Menschen und seiner Kultur
-1. Theologie und Religionswissenschaften
-4. Geistes- und Kulturwissenschaften
-5. Sozialwissenschaften
-6. Erziehungs- und Bildungswissenschaften
+1. Wissenschaften vom Menschen und seiner Kultur
+1.1 Theologie und Religionswissenschaften
+1.2 Geistes- und Kulturwissenschaften
+1.3 Sozialwissenschaften
+1.4 Erziehungs- und Bildungswissenschaften
