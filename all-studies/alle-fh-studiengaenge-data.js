@@ -9,10 +9,6 @@
         website: "https://www.bfh.ch/de/studium/alle-studiengaenge/",
         kategorien: [
           {
-            name: "1. Wissenschaften vom Menschen und seiner Kultur",
-            studiengaenge: []
-          },
-          {
             name: "  1.2 Geistes- und Kulturwissenschaften",
             studiengaenge: [
               { name: "Vermittlung in Kunst und Design", grad: "Bachelor of Arts" },
@@ -131,10 +127,6 @@
         website: "https://www.fhnw.ch/de/studium/bachelor",
         kategorien: [
           {
-            name: "1. Wissenschaften vom Menschen und seiner Kultur",
-            studiengaenge: []
-          },
-          {
             name: "  1.2 Geistes- und Kulturwissenschaften",
             studiengaenge: [
               { name: "Bildende Kunst", grad: "Bachelor of Arts" },
@@ -219,10 +211,6 @@
         website: "https://www.ost.ch/de/studium/bachelor",
         kategorien: [
           {
-            name: "1. Wissenschaften vom Menschen und seiner Kultur",
-            studiengaenge: []
-          },
-          {
             name: "  1.3 Sozialwissenschaften",
             studiengaenge: [
               { name: "Soziale Arbeit", grad: "BSc" }
@@ -272,10 +260,6 @@
         name: "ZHAW – Zürcher Hochschule für Angewandte Wissenschaften",
         website: "https://www.zhaw.ch/de/studium/bachelorstudiengaenge",
         kategorien: [
-          {
-            name: "1. Wissenschaften vom Menschen und seiner Kultur",
-            studiengaenge: []
-          },
           {
             name: "  1.2 Geistes- und Kulturwissenschaften",
             studiengaenge: [
@@ -352,10 +336,6 @@
         website: "https://www.zhdk.ch/studium/alle-majors-und-minors?bachelorMaster=1&majorMinor=1",
         kategorien: [
           {
-            name: "1. Wissenschaften vom Menschen und seiner Kultur",
-            studiengaenge: []
-          },
-          {
             name: "  1.2 Geistes- und Kulturwissenschaften",
             studiengaenge: [
               { name: "Art Education", grad: "BA" },
@@ -375,10 +355,6 @@
         name: "Hochschule Luzern (HSLU)",
         website: "https://www.hslu.ch/de-ch/hochschule-luzern/studium/#?filters=16",
         kategorien: [
-          {
-            name: "1. Wissenschaften vom Menschen und seiner Kultur",
-            studiengaenge: []
-          },
           {
             name: "  1.2 Geistes- und Kulturwissenschaften",
             studiengaenge: [

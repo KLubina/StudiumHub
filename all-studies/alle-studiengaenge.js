@@ -183,14 +183,69 @@
       });
     });
 
-    // Sortiere Kategorien
-    const sortedCategories = Array.from(categoryMap.keys()).sort();
+    // Gruppiere Unterkategorien unter Obergruppen
+    const hierarchicalCategories = new Map();
 
-    // Rendere jede Kategorie
-    sortedCategories.forEach(categoryName => {
-      const categorySection = createCategorySectionGrouped(categoryName, categoryMap.get(categoryName));
-      container.appendChild(categorySection);
+    categoryMap.forEach((institutions, categoryName) => {
+      // Prüfe ob es eine Unterkategorie ist (beginnt mit Leerzeichen)
+      if (categoryName.startsWith('  ')) {
+        // Extrahiere die Obergruppen-Nummer (z.B. "1" aus "  1.1 ...")
+        const match = categoryName.match(/^\s+(\d+)\./);
+        if (match) {
+          const mainGroupNum = match[1];
+          const mainGroupName = getMainGroupName(mainGroupNum);
+
+          if (!hierarchicalCategories.has(mainGroupName)) {
+            hierarchicalCategories.set(mainGroupName, {
+              isParent: true,
+              subcategories: new Map()
+            });
+          }
+
+          hierarchicalCategories.get(mainGroupName).subcategories.set(categoryName, institutions);
+        }
+      } else {
+        // Normale Kategorie (keine Unterkategorie)
+        if (!hierarchicalCategories.has(categoryName)) {
+          hierarchicalCategories.set(categoryName, {
+            isParent: false,
+            institutions: institutions
+          });
+        }
+      }
     });
+
+    // Sortiere und rendere
+    const sortedMainCategories = Array.from(hierarchicalCategories.keys()).sort();
+
+    sortedMainCategories.forEach(mainCategoryName => {
+      const categoryData = hierarchicalCategories.get(mainCategoryName);
+
+      if (categoryData.isParent) {
+        // Rendere Obergruppe mit Unterkategorien
+        const parentSection = createParentCategorySection(mainCategoryName, categoryData.subcategories);
+        container.appendChild(parentSection);
+      } else {
+        // Rendere normale Kategorie
+        const categorySection = createCategorySectionGrouped(mainCategoryName, categoryData.institutions);
+        container.appendChild(categorySection);
+      }
+    });
+  }
+
+  function getMainGroupName(groupNum) {
+    const groupNames = {
+      '1': '1. Wissenschaften vom Menschen und seiner Kultur',
+      '2': '2. Rechtswissenschaften',
+      '3': '3. Wirtschaftswissenschaften',
+      '7': '7. Psychologie',
+      '8': '8. Naturwissenschaften',
+      '9': '9. Mathematik und Informatik',
+      '10': '10. Medizin und Gesundheitswissenschaften',
+      '11': '11. Ingenieurwissenschaften',
+      '12': '12. Sportwissenschaften'
+    };
+    return groupNames[groupNum] || `${groupNum}. Kategorie`;
   }
 
   function createUniSection(uni) {
@@ -278,6 +333,105 @@
     }
 
     return item;
+  }
+
+  function createParentCategorySection(mainCategoryName, subcategories) {
+    const section = document.createElement('div');
+    section.className = 'uni-section';
+
+    // Main Category Header
+    const header = document.createElement('div');
+    header.className = 'uni-header';
+
+    // Zähle Gesamtzahl der Hochschulen in allen Unterkategorien
+    let totalInstitutions = 0;
+    subcategories.forEach(institutions => {
+      totalInstitutions += institutions.length;
+    });
+
+    header.innerHTML = `
+      <div>
+        <div class="uni-title">${mainCategoryName}</div>
+        <div class="uni-website" style="color: #999;">
+          ${totalInstitutions} Hochschule${totalInstitutions > 1 ? 'n' : ''}
+        </div>
+      </div>
+      <span class="toggle-icon">▼</span>
+    `;
+
+    // Toggle Funktionalität
+    header.addEventListener('click', function () {
+      section.classList.toggle('collapsed');
+    });
+
+    // Content
+    const content = document.createElement('div');
+    content.className = 'uni-content';
+
+    // Sortiere Unterkategorien
+    const sortedSubcategories = Array.from(subcategories.keys()).sort();
+
+    // Rendere jede Unterkategorie
+    sortedSubcategories.forEach(subcategoryName => {
+      const institutions = subcategories.get(subcategoryName);
+
+      // Unterkategorie Section (nested)
+      const subcatSection = document.createElement('div');
+      subcatSection.className = 'category-section nested-category';
+
+      const subcatHeader = document.createElement('div');
+      subcatHeader.className = 'category-title subcategory-header';
+      subcatHeader.innerHTML = `
+        <span>${subcategoryName.trim()}</span>
+        <span class="subcategory-toggle">▼</span>
+      `;
+
+      const subcatContent = document.createElement('div');
+      subcatContent.className = 'subcategory-content';
+
+      // Rendere Institutionen in dieser Unterkategorie
+      institutions.forEach(inst => {
+        const instSection = document.createElement('div');
+        instSection.className = 'institution-section';
+
+        const instTitle = document.createElement('div');
+        instTitle.className = 'institution-name';
+        const typeLabel = inst.type === 'uni' ? '[Uni]' : '[FH]';
+        instTitle.innerHTML = `
+          ${typeLabel} ${inst.institution}
+          <a href="${inst.website}" target="_blank" rel="noopener noreferrer" style="margin-left: 10px; font-size: 0.85em; color: #0066cc;">
+            → Website
+          </a>
+        `;
+
+        const list = document.createElement('div');
+        list.className = 'studiengang-list';
+
+        inst.studiengaenge.forEach(studiengang => {
+          const item = createStudiengangItem(studiengang);
+          list.appendChild(item);
+        });
+
+        instSection.appendChild(instTitle);
+        instSection.appendChild(list);
+        subcatContent.appendChild(instSection);
+      });
+
+      // Toggle für Unterkategorie
+      subcatHeader.addEventListener('click', function (e) {
+        e.stopPropagation();
+        subcatSection.classList.toggle('collapsed');
+      });
+
+      subcatSection.appendChild(subcatHeader);
+      subcatSection.appendChild(subcatContent);
+      content.appendChild(subcatSection);
+    });
+
+    section.appendChild(header);
+    section.appendChild(content);
+
+    return section;
   }
 
   function createCategorySectionGrouped(categoryName, institutions) {

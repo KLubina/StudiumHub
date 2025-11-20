@@ -247,6 +247,66 @@ h1 {
     display: none !important;
 }
 
+/* ==== NESTED CATEGORIES (Hierarchisch) ==== */
+.nested-category {
+    margin: 15px 0;
+    background-color: #fafafa;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.subcategory-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 15px;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #e0e0e0;
+    transition: background-color 0.3s;
+}
+
+.subcategory-header:hover {
+    background-color: #ebebeb;
+}
+
+.subcategory-toggle {
+    font-size: 1.2rem;
+    transition: transform 0.3s;
+}
+
+.nested-category.collapsed .subcategory-toggle {
+    transform: rotate(-90deg);
+}
+
+.subcategory-content {
+    max-height: 5000px;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.nested-category.collapsed .subcategory-content {
+    max-height: 0;
+}
+
+.institution-section {
+    padding: 15px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.institution-section:last-child {
+    border-bottom: none;
+}
+
+.institution-name {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #004080;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #ccc;
+}
+
 /* ==== RESPONSIVE DESIGN ==== */
 @media (max-width: 768px) {
     h1 {

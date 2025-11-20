@@ -9,10 +9,6 @@
         website: "https://www.unibas.ch/de/Studium/Vor-dem-Studium/Studienangebot.html",
         kategorien: [
           {
-            name: "1. Wissenschaften vom Menschen und seiner Kultur",
-            studiengaenge: []
-          },
-          {
             name: "  1.1 Theologie und Religionswissenschaften",
             studiengaenge: [
               { name: "Theologie", ects: "180 KP" },
@@ -119,10 +115,6 @@
         website: "https://www.unilu.ch/fileadmin/universitaet/dienste/unikomm/dokumente/Studienbroschueren/Studienprogramme_Bachelor.pdf",
         kategorien: [
           {
-            name: "1. Wissenschaften vom Menschen und seiner Kultur",
-            studiengaenge: []
-          },
-          {
             name: "  1.1 Theologie und Religionswissenschaften",
             studiengaenge: [
               { name: "Theologie", ects: "180/120/60 ECTS" },
@@ -180,10 +172,6 @@
         website: "https://www.unisg.ch/de/studium/programme/bachelor/",
         kategorien: [
           {
-            name: "1. Wissenschaften vom Menschen und seiner Kultur",
-            studiengaenge: []
-          },
-          {
             name: "  1.3 Sozialwissenschaften",
             studiengaenge: [
               { name: "Bachelor Major International Affairs (BIA)", ects: "" }
@@ -215,10 +203,6 @@
         name: "Universität Bern",
         website: "https://www.unibe.ch/unibe/portal/content/e1006/e251033/e265838/Bachelor-d_25-26_ger.pdf",
         kategorien: [
-          {
-            name: "1. Wissenschaften vom Menschen und seiner Kultur",
-            studiengaenge: []
-          },
           {
             name: "  1.1 Theologie und Religionswissenschaften",
             studiengaenge: [
@@ -320,10 +304,6 @@
         name: "Universität Freiburg",
         website: "https://studies.unifr.ch/de/studienangebot/courses/",
         kategorien: [
-          {
-            name: "1. Wissenschaften vom Menschen und seiner Kultur",
-            studiengaenge: []
-          },
           {
             name: "  1.1 Theologie und Religionswissenschaften",
             studiengaenge: [
@@ -494,10 +474,6 @@
         name: "Universität Zürich (UZH)",
         website: "https://www.uzh.ch/de/studies/programs/bachelor.html",
         kategorien: [
-          {
-            name: "1. Wissenschaften vom Menschen und seiner Kultur",
-            studiengaenge: []
-          },
           {
             name: "  1.1 Theologie und Religionswissenschaften",
             studiengaenge: [
