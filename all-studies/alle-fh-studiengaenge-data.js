@@ -9,14 +9,64 @@
         website: "https://www.bfh.ch/de/studium/alle-studiengaenge/",
         kategorien: [
           {
-            name: "  1.2 Geistes- und Kulturwissenschaften",
+            name: "1. Wirtschaftswissenschaften",
+            studiengaenge: [
+              { name: "Digital Business & AI", grad: "Bachelor of Science" },
+              { name: "Betriebsökonomie", grad: "Bachelor of Science" },
+              { name: "Food Science & Management", grad: "Bachelor of Science" },
+              { name: "International Business Administration", grad: "Bachelor of Science" },
+              { name: "Wirtschaftsingenieurwesen", grad: "Bachelor of Science" }
+            ]
+          },
+          {
+            name: "2. Medizin und Gesundheitswissenschaften",
+            studiengaenge: [
+              { name: "Ernährung und Diätetik", grad: "Bachelor of Science" },
+              { name: "Hebamme", grad: "Bachelor of Science" },
+              { name: "Hebamme für dipl. Pflegefachpersonen", grad: "Bachelor of Science" },
+              { name: "Pflege", grad: "Bachelor of Science" },
+              { name: "Pflege für FaGe und FaBe", grad: "Bachelor of Science" },
+              { name: "Physiotherapie", grad: "Bachelor of Science" }
+            ]
+          },
+          {
+            name: "5. Naturwissenschaften",
+            studiengaenge: [
+              { name: "Agronomie", grad: "Bachelor of Science" },
+              { name: "Waldwissenschaften", grad: "Bachelor of Science" },
+              { name: "Umwelt- und Ressourcenmanagement", grad: "Bachelor of Science" }
+            ]
+          },
+          {
+            name: "6. Mathematik und Informatik",
+            studiengaenge: [
+              { name: "Data Engineering", grad: "Bachelor of Science" },
+              { name: "Multimedia Production", grad: "Bachelor of Science" },
+              { name: "Medizininformatik", grad: "Bachelor of Science" },
+              { name: "Informatik", grad: "Bachelor of Science" }
+            ]
+          },
+          {
+            name: "7. Ingenieurwissenschaften",
+            studiengaenge: [
+              { name: "Bauingenieurwesen", grad: "Bachelor of Science" },
+              { name: "Architektur", grad: "Bachelor of Arts" },
+              { name: "Landschaftsarchitektur", grad: "Bachelor of Arts" },
+              { name: "Elektrotechnik und Informationstechnologie", grad: "Bachelor of Science" },
+              { name: "Automobil- und Fahrzeugtechnik", grad: "Bachelor of Science" },
+              { name: "Mechatronik und Systemtechnik", grad: "Bachelor of Science" },
+              { name: "Maschinentechnik", grad: "Bachelor of Science" }
+            ]
+          },
+          {
+            name: "8.2 Geistes- und Kulturwissenschaften",
             studiengaenge: [
               { name: "Vermittlung in Kunst und Design", grad: "Bachelor of Arts" },
               { name: "Literarisches Schreiben", grad: "Bachelor" }
             ]
           },
           {
-            name: "  1.3 Sozialwissenschaften",
+            name: "8.3 Sozialwissenschaften",
             studiengaenge: [
               { name: "Fine Arts", grad: "Bachelor of Arts" },
               { name: "Musik Klassik", grad: "Bachelor of Arts" },
@@ -30,57 +80,7 @@
             ]
           },
           {
-            name: "2. Wirtschaftswissenschaften",
-            studiengaenge: [
-              { name: "Digital Business & AI", grad: "Bachelor of Science" },
-              { name: "Betriebsökonomie", grad: "Bachelor of Science" },
-              { name: "Food Science & Management", grad: "Bachelor of Science" },
-              { name: "International Business Administration", grad: "Bachelor of Science" },
-              { name: "Wirtschaftsingenieurwesen", grad: "Bachelor of Science" }
-            ]
-          },
-          {
-            name: "8. Naturwissenschaften",
-            studiengaenge: [
-              { name: "Agronomie", grad: "Bachelor of Science" },
-              { name: "Waldwissenschaften", grad: "Bachelor of Science" },
-              { name: "Umwelt- und Ressourcenmanagement", grad: "Bachelor of Science" }
-            ]
-          },
-          {
-            name: "9. Mathematik und Informatik",
-            studiengaenge: [
-              { name: "Data Engineering", grad: "Bachelor of Science" },
-              { name: "Multimedia Production", grad: "Bachelor of Science" },
-              { name: "Medizininformatik", grad: "Bachelor of Science" },
-              { name: "Informatik", grad: "Bachelor of Science" }
-            ]
-          },
-          {
-            name: "10. Medizin und Gesundheitswissenschaften",
-            studiengaenge: [
-              { name: "Ernährung und Diätetik", grad: "Bachelor of Science" },
-              { name: "Hebamme", grad: "Bachelor of Science" },
-              { name: "Hebamme für dipl. Pflegefachpersonen", grad: "Bachelor of Science" },
-              { name: "Pflege", grad: "Bachelor of Science" },
-              { name: "Pflege für FaGe und FaBe", grad: "Bachelor of Science" },
-              { name: "Physiotherapie", grad: "Bachelor of Science" }
-            ]
-          },
-          {
-            name: "11. Ingenieurwissenschaften",
-            studiengaenge: [
-              { name: "Bauingenieurwesen", grad: "Bachelor of Science" },
-              { name: "Architektur", grad: "Bachelor of Arts" },
-              { name: "Landschaftsarchitektur", grad: "Bachelor of Arts" },
-              { name: "Elektrotechnik und Informationstechnologie", grad: "Bachelor of Science" },
-              { name: "Automobil- und Fahrzeugtechnik", grad: "Bachelor of Science" },
-              { name: "Mechatronik und Systemtechnik", grad: "Bachelor of Science" },
-              { name: "Maschinentechnik", grad: "Bachelor of Science" }
-            ]
-          },
-          {
-            name: "12. Sportwissenschaften",
+            name: "9. Sportwissenschaften",
             studiengaenge: [
               { name: "Sport", grad: "Bachelor of Science" }
             ]
@@ -92,7 +92,7 @@
         website: "https://www.fhgr.ch/studium/bachelorangebot/",
         kategorien: [
           {
-            name: "3. Wirtschaftswissenschaften",
+            name: "1. Wirtschaftswissenschaften",
             studiengaenge: [
               { name: "Betriebsökonomie", grad: "Bachelor" },
               { name: "Digital Business Management", grad: "Bachelor" },
@@ -103,7 +103,7 @@
             ]
           },
           {
-            name: "9. Mathematik und Informatik",
+            name: "6. Mathematik und Informatik",
             studiengaenge: [
               { name: "Artificial Intelligence in Software Engineering", grad: "Bachelor" },
               { name: "Computational and Data Science", grad: "Bachelor" },
@@ -111,7 +111,7 @@
             ]
           },
           {
-            name: "11. Ingenieurwissenschaften",
+            name: "7. Ingenieurwissenschaften",
             studiengaenge: [
               { name: "Architektur", grad: "Bachelor" },
               { name: "Bauingenieurwesen", grad: "Bachelor" },
@@ -127,36 +127,7 @@
         website: "https://www.fhnw.ch/de/studium/bachelor",
         kategorien: [
           {
-            name: "  1.2 Geistes- und Kulturwissenschaften",
-            studiengaenge: [
-              { name: "Bildende Kunst", grad: "Bachelor of Arts" },
-              { name: "Industrial Design", grad: "Bachelor of Arts" },
-              { name: "Innenarchitektur und Szenografie", grad: "Bachelor of Arts" },
-              { name: "Mode-Design", grad: "Bachelor of Arts" },
-              { name: "Prozessgestaltung am HyperWerk", grad: "Bachelor of Arts" },
-              { name: "Vermittlung in Kunst und Design", grad: "Bachelor of Arts" },
-              { name: "Visuelle Kommunikation und digitale Räume", grad: "Bachelor of Arts" },
-              { name: "Musik und Bewegung", grad: "Bachelor of Arts" },
-              { name: "Musik", grad: "Bachelor of Arts" }
-            ]
-          },
-          {
-            name: "  1.3 Sozialwissenschaften",
-            studiengaenge: [
-              { name: "Soziale Arbeit", grad: "Bachelor of Arts" }
-            ]
-          },
-          {
-            name: "  1.4 Erziehungs- und Bildungswissenschaften",
-            studiengaenge: [
-              { name: "Kindergarten-/Unterstufe", grad: "Bachelor of Arts" },
-              { name: "Primarstufe", grad: "Bachelor of Arts" },
-              { name: "Sekundarstufe I", grad: "Bachelor/Master of Arts" },
-              { name: "Logopädie", grad: "Bachelor of Arts" }
-            ]
-          },
-          {
-            name: "2. Wirtschaftswissenschaften",
+            name: "1. Wirtschaftswissenschaften",
             studiengaenge: [
               { name: "International Business Management (trinational)", grad: "Bachelor of Science" },
               { name: "Business Administration (International Management)", grad: "Bachelor of Science" },
@@ -170,13 +141,13 @@
             ]
           },
           {
-            name: "8. Naturwissenschaften",
+            name: "5. Naturwissenschaften",
             studiengaenge: [
               { name: "Life Sciences", grad: "Bachelor" }
             ]
           },
           {
-            name: "9. Mathematik und Informatik",
+            name: "6. Mathematik und Informatik",
             studiengaenge: [
               { name: "iCompetence", grad: "Bachelor of Science" },
               { name: "Artificial Intelligence & High Performance Computing", grad: "Bachelor of Science" },
@@ -188,7 +159,7 @@
             ]
           },
           {
-            name: "11. Ingenieurwissenschaften",
+            name: "7. Ingenieurwissenschaften",
             studiengaenge: [
               { name: "Architektur", grad: "Bachelor of Arts" },
               { name: "Bauingenieurwesen", grad: "Bachelor of Science" },
@@ -203,6 +174,35 @@
               { name: "Maschinenbau", grad: "Bachelor of Science" },
               { name: "Energie- und Umwelttechnik", grad: "Bachelor of Science" }
             ]
+          },
+          {
+            name: "8.2 Geistes- und Kulturwissenschaften",
+            studiengaenge: [
+              { name: "Bildende Kunst", grad: "Bachelor of Arts" },
+              { name: "Industrial Design", grad: "Bachelor of Arts" },
+              { name: "Innenarchitektur und Szenografie", grad: "Bachelor of Arts" },
+              { name: "Mode-Design", grad: "Bachelor of Arts" },
+              { name: "Prozessgestaltung am HyperWerk", grad: "Bachelor of Arts" },
+              { name: "Vermittlung in Kunst und Design", grad: "Bachelor of Arts" },
+              { name: "Visuelle Kommunikation und digitale Räume", grad: "Bachelor of Arts" },
+              { name: "Musik und Bewegung", grad: "Bachelor of Arts" },
+              { name: "Musik", grad: "Bachelor of Arts" }
+            ]
+          },
+          {
+            name: "8.3 Sozialwissenschaften",
+            studiengaenge: [
+              { name: "Soziale Arbeit", grad: "Bachelor of Arts" }
+            ]
+          },
+          {
+            name: "8.4 Erziehungs- und Bildungswissenschaften",
+            studiengaenge: [
+              { name: "Kindergarten-/Unterstufe", grad: "Bachelor of Arts" },
+              { name: "Primarstufe", grad: "Bachelor of Arts" },
+              { name: "Sekundarstufe I", grad: "Bachelor/Master of Arts" },
+              { name: "Logopädie", grad: "Bachelor of Arts" }
+            ]
           }
         ]
       },
@@ -211,13 +211,7 @@
         website: "https://www.ost.ch/de/studium/bachelor",
         kategorien: [
           {
-            name: "  1.3 Sozialwissenschaften",
-            studiengaenge: [
-              { name: "Soziale Arbeit", grad: "BSc" }
-            ]
-          },
-          {
-            name: "2. Wirtschaftswissenschaften",
+            name: "1. Wirtschaftswissenschaften",
             studiengaenge: [
               { name: "Betriebsökonomie", grad: "BSc" },
               { name: "Management und Recht", grad: "BSc" },
@@ -225,15 +219,7 @@
             ]
           },
           {
-            name: "9. Mathematik und Informatik",
-            studiengaenge: [
-              { name: "Artificial Intelligence", grad: "Bachelor" },
-              { name: "Digital Design", grad: "BSc" },
-              { name: "Informatik", grad: "BSc" }
-            ]
-          },
-          {
-            name: "10. Medizin und Gesundheitswissenschaften",
+            name: "2. Medizin und Gesundheitswissenschaften",
             studiengaenge: [
               { name: "Ergotherapie", grad: "BSc" },
               { name: "Pflege", grad: "BSc" },
@@ -241,7 +227,15 @@
             ]
           },
           {
-            name: "11. Ingenieurwissenschaften",
+            name: "6. Mathematik und Informatik",
+            studiengaenge: [
+              { name: "Artificial Intelligence", grad: "Bachelor" },
+              { name: "Digital Design", grad: "BSc" },
+              { name: "Informatik", grad: "BSc" }
+            ]
+          },
+          {
+            name: "7. Ingenieurwissenschaften",
             studiengaenge: [
               { name: "Architektur", grad: "BA" },
               { name: "Bauingenieurwesen", grad: "BSc" },
@@ -253,6 +247,12 @@
               { name: "Mechatronik", grad: "Bachelor" },
               { name: "Wirtschaftsingenieurwesen", grad: "Bachelor" }
             ]
+          },
+          {
+            name: "8.3 Sozialwissenschaften",
+            studiengaenge: [
+              { name: "Soziale Arbeit", grad: "BSc" }
+            ]
           }
         ]
       },
@@ -261,21 +261,7 @@
         website: "https://www.zhaw.ch/de/studium/bachelorstudiengaenge",
         kategorien: [
           {
-            name: "  1.2 Geistes- und Kulturwissenschaften",
-            studiengaenge: [
-              { name: "Kommunikation und Medien", grad: "BA" },
-              { name: "Mehrsprachige Kommunikation", grad: "BA" }
-            ]
-          },
-          {
-            name: "  1.3 Sozialwissenschaften",
-            studiengaenge: [
-              { name: "Soziale Arbeit", grad: "BA" },
-              { name: "Sprachliche Integration", grad: "BA" }
-            ]
-          },
-          {
-            name: "2. Wirtschaftswissenschaften",
+            name: "1. Wirtschaftswissenschaften",
             studiengaenge: [
               { name: "Angewandtes Recht", grad: "BA" },
               { name: "Betriebsökonomie", grad: "BSc" },
@@ -287,26 +273,7 @@
             ]
           },
           {
-            name: "8. Naturwissenschaften",
-            studiengaenge: [
-              { name: "Applied Digital Life Sciences", grad: "BSc" },
-              { name: "Biomedizinische Labordiagnostik", grad: "BSc" },
-              { name: "Biotechnologie", grad: "BSc" },
-              { name: "Chemie", grad: "BSc" },
-              { name: "Food Science", grad: "BSc" },
-              { name: "Umweltingenieurwesen", grad: "BSc" }
-            ]
-          },
-          {
-            name: "9. Mathematik und Informatik",
-            studiengaenge: [
-              { name: "Data Science", grad: "BSc" },
-              { name: "Informatik", grad: "BSc" },
-              { name: "Medizininformatik", grad: "BSc" }
-            ]
-          },
-          {
-            name: "10. Medizin und Gesundheitswissenschaften",
+            name: "2. Medizin und Gesundheitswissenschaften",
             studiengaenge: [
               { name: "Ergotherapie", grad: "BSc" },
               { name: "Gesundheitsförderung und Prävention", grad: "BSc" },
@@ -317,7 +284,26 @@
             ]
           },
           {
-            name: "11. Ingenieurwissenschaften",
+            name: "5. Naturwissenschaften",
+            studiengaenge: [
+              { name: "Applied Digital Life Sciences", grad: "BSc" },
+              { name: "Biomedizinische Labordiagnostik", grad: "BSc" },
+              { name: "Biotechnologie", grad: "BSc" },
+              { name: "Chemie", grad: "BSc" },
+              { name: "Food Science", grad: "BSc" },
+              { name: "Umweltingenieurwesen", grad: "BSc" }
+            ]
+          },
+          {
+            name: "6. Mathematik und Informatik",
+            studiengaenge: [
+              { name: "Data Science", grad: "BSc" },
+              { name: "Informatik", grad: "BSc" },
+              { name: "Medizininformatik", grad: "BSc" }
+            ]
+          },
+          {
+            name: "7. Ingenieurwissenschaften",
             studiengaenge: [
               { name: "Architektur", grad: "BSc" },
               { name: "Bauingenieurwesen", grad: "BSc" },
@@ -328,6 +314,20 @@
               { name: "Mobility Science", grad: "BSc" },
               { name: "Systemtechnik", grad: "BSc" }
             ]
+          },
+          {
+            name: "8.2 Geistes- und Kulturwissenschaften",
+            studiengaenge: [
+              { name: "Kommunikation und Medien", grad: "BA" },
+              { name: "Mehrsprachige Kommunikation", grad: "BA" }
+            ]
+          },
+          {
+            name: "8.3 Sozialwissenschaften",
+            studiengaenge: [
+              { name: "Soziale Arbeit", grad: "BA" },
+              { name: "Sprachliche Integration", grad: "BA" }
+            ]
           }
         ]
       },
@@ -336,7 +336,7 @@
         website: "https://www.zhdk.ch/studium/alle-majors-und-minors?bachelorMaster=1&majorMinor=1",
         kategorien: [
           {
-            name: "  1.2 Geistes- und Kulturwissenschaften",
+            name: "8.2 Geistes- und Kulturwissenschaften",
             studiengaenge: [
               { name: "Art Education", grad: "BA" },
               { name: "Contemporary Dance", grad: "BA" },
@@ -356,23 +356,7 @@
         website: "https://www.hslu.ch/de-ch/hochschule-luzern/studium/#?filters=16",
         kategorien: [
           {
-            name: "  1.2 Geistes- und Kulturwissenschaften",
-            studiengaenge: [
-              { name: "Architektur", grad: "Bachelor of Arts" },
-              { name: "Innenarchitektur", grad: "Bachelor of Arts" },
-              { name: "Music", grad: "Bachelor of Arts" },
-              { name: "Musik und Bewegung", grad: "Bachelor of Arts" }
-            ]
-          },
-          {
-            name: "  1.3 Sozialwissenschaften",
-            studiengaenge: [
-              { name: "Soziale Arbeit", grad: "Bachelor" },
-              { name: "Soziale Arbeit neue Konzepte und Innovation", grad: "Bachelor" }
-            ]
-          },
-          {
-            name: "2. Wirtschaftswissenschaften",
+            name: "1. Wirtschaftswissenschaften",
             studiengaenge: [
               { name: "Business Administration", grad: "Bachelor of Science" },
               { name: "Business IT & Digital Transformation", grad: "Bachelor" },
@@ -387,7 +371,13 @@
             ]
           },
           {
-            name: "9. Mathematik und Informatik",
+            name: "2. Medizin und Gesundheitswissenschaften",
+            studiengaenge: [
+              { name: "Pflege", grad: "Bachelor of Science" }
+            ]
+          },
+          {
+            name: "6. Mathematik und Informatik",
             studiengaenge: [
               { name: "Artificial Intelligence & Machine Learning", grad: "Bachelor" },
               { name: "Digital Engineer", grad: "Bachelor" },
@@ -398,13 +388,7 @@
             ]
           },
           {
-            name: "10. Medizin und Gesundheitswissenschaften",
-            studiengaenge: [
-              { name: "Pflege", grad: "Bachelor of Science" }
-            ]
-          },
-          {
-            name: "11. Ingenieurwissenschaften",
+            name: "7. Ingenieurwissenschaften",
             studiengaenge: [
               { name: "Bauingenieurwesen", grad: "Bachelor of Science" },
               { name: "Digital Construction", grad: "Bachelor" },
@@ -413,6 +397,22 @@
               { name: "Gebäudetechnik", grad: "Bachelor of Science" },
               { name: "Maschinentechnik", grad: "Bachelor" },
               { name: "Medizintechnik", grad: "Bachelor of Science" }
+            ]
+          },
+          {
+            name: "8.2 Geistes- und Kulturwissenschaften",
+            studiengaenge: [
+              { name: "Architektur", grad: "Bachelor of Arts" },
+              { name: "Innenarchitektur", grad: "Bachelor of Arts" },
+              { name: "Music", grad: "Bachelor of Arts" },
+              { name: "Musik und Bewegung", grad: "Bachelor of Arts" }
+            ]
+          },
+          {
+            name: "8.3 Sozialwissenschaften",
+            studiengaenge: [
+              { name: "Soziale Arbeit", grad: "Bachelor" },
+              { name: "Soziale Arbeit neue Konzepte und Innovation", grad: "Bachelor" }
             ]
           }
         ]
