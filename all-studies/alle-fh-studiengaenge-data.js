@@ -59,24 +59,29 @@
             ]
           },
           {
-            name: "8.2 Geistes- und Kulturwissenschaften",
-            studiengaenge: [
-              { name: "Vermittlung in Kunst und Design", grad: "Bachelor of Arts" },
-              { name: "Literarisches Schreiben", grad: "Bachelor" }
-            ]
-          },
-          {
-            name: "8.3 Sozialwissenschaften",
-            studiengaenge: [
-              { name: "Fine Arts", grad: "Bachelor of Arts" },
-              { name: "Musik Klassik", grad: "Bachelor of Arts" },
-              { name: "Jazz and Contemporary Music", grad: "Bachelor of Arts" },
-              { name: "Musik und Bewegung", grad: "Bachelor of Arts" },
-              { name: "Sound Arts", grad: "Bachelor of Arts" },
-              { name: "Theater/Schauspiel", grad: "Bachelor of Arts" },
-              { name: "Transformation Design", grad: "Bachelor of Arts" },
-              { name: "Visuelle Kommunikation", grad: "Bachelor of Arts" },
-              { name: "Konservierung", grad: "Bachelor of Arts" }
+            name: "8. Wissenschaften vom Menschen und seiner Kultur",
+            unterkategorien: [
+              {
+                name: "Geistes- und Kulturwissenschaften",
+                studiengaenge: [
+                  { name: "Vermittlung in Kunst und Design", grad: "Bachelor of Arts" },
+                  { name: "Literarisches Schreiben", grad: "Bachelor" }
+                ]
+              },
+              {
+                name: "Sozialwissenschaften",
+                studiengaenge: [
+                  { name: "Fine Arts", grad: "Bachelor of Arts" },
+                  { name: "Musik Klassik", grad: "Bachelor of Arts" },
+                  { name: "Jazz and Contemporary Music", grad: "Bachelor of Arts" },
+                  { name: "Musik und Bewegung", grad: "Bachelor of Arts" },
+                  { name: "Sound Arts", grad: "Bachelor of Arts" },
+                  { name: "Theater/Schauspiel", grad: "Bachelor of Arts" },
+                  { name: "Transformation Design", grad: "Bachelor of Arts" },
+                  { name: "Visuelle Kommunikation", grad: "Bachelor of Arts" },
+                  { name: "Konservierung", grad: "Bachelor of Arts" }
+                ]
+              }
             ]
           },
           {
@@ -176,32 +181,37 @@
             ]
           },
           {
-            name: "8.2 Geistes- und Kulturwissenschaften",
-            studiengaenge: [
-              { name: "Bildende Kunst", grad: "Bachelor of Arts" },
-              { name: "Industrial Design", grad: "Bachelor of Arts" },
-              { name: "Innenarchitektur und Szenografie", grad: "Bachelor of Arts" },
-              { name: "Mode-Design", grad: "Bachelor of Arts" },
-              { name: "Prozessgestaltung am HyperWerk", grad: "Bachelor of Arts" },
-              { name: "Vermittlung in Kunst und Design", grad: "Bachelor of Arts" },
-              { name: "Visuelle Kommunikation und digitale Räume", grad: "Bachelor of Arts" },
-              { name: "Musik und Bewegung", grad: "Bachelor of Arts" },
-              { name: "Musik", grad: "Bachelor of Arts" }
-            ]
-          },
-          {
-            name: "8.3 Sozialwissenschaften",
-            studiengaenge: [
-              { name: "Soziale Arbeit", grad: "Bachelor of Arts" }
-            ]
-          },
-          {
-            name: "8.4 Erziehungs- und Bildungswissenschaften",
-            studiengaenge: [
-              { name: "Kindergarten-/Unterstufe", grad: "Bachelor of Arts" },
-              { name: "Primarstufe", grad: "Bachelor of Arts" },
-              { name: "Sekundarstufe I", grad: "Bachelor/Master of Arts" },
-              { name: "Logopädie", grad: "Bachelor of Arts" }
+            name: "8. Wissenschaften vom Menschen und seiner Kultur",
+            unterkategorien: [
+              {
+                name: "Geistes- und Kulturwissenschaften",
+                studiengaenge: [
+                  { name: "Bildende Kunst", grad: "Bachelor of Arts" },
+                  { name: "Industrial Design", grad: "Bachelor of Arts" },
+                  { name: "Innenarchitektur und Szenografie", grad: "Bachelor of Arts" },
+                  { name: "Mode-Design", grad: "Bachelor of Arts" },
+                  { name: "Prozessgestaltung am HyperWerk", grad: "Bachelor of Arts" },
+                  { name: "Vermittlung in Kunst und Design", grad: "Bachelor of Arts" },
+                  { name: "Visuelle Kommunikation und digitale Räume", grad: "Bachelor of Arts" },
+                  { name: "Musik und Bewegung", grad: "Bachelor of Arts" },
+                  { name: "Musik", grad: "Bachelor of Arts" }
+                ]
+              },
+              {
+                name: "Sozialwissenschaften",
+                studiengaenge: [
+                  { name: "Soziale Arbeit", grad: "Bachelor of Arts" }
+                ]
+              },
+              {
+                name: "Erziehungs- und Bildungswissenschaften",
+                studiengaenge: [
+                  { name: "Kindergarten-/Unterstufe", grad: "Bachelor of Arts" },
+                  { name: "Primarstufe", grad: "Bachelor of Arts" },
+                  { name: "Sekundarstufe I", grad: "Bachelor/Master of Arts" },
+                  { name: "Logopädie", grad: "Bachelor of Arts" }
+                ]
+              }
             ]
           }
         ]
@@ -249,9 +259,14 @@
             ]
           },
           {
-            name: "8.3 Sozialwissenschaften",
-            studiengaenge: [
-              { name: "Soziale Arbeit", grad: "BSc" }
+            name: "8. Wissenschaften vom Menschen und seiner Kultur",
+            unterkategorien: [
+              {
+                name: "Sozialwissenschaften",
+                studiengaenge: [
+                  { name: "Soziale Arbeit", grad: "BSc" }
+                ]
+              }
             ]
           }
         ]
@@ -316,17 +331,22 @@
             ]
           },
           {
-            name: "8.2 Geistes- und Kulturwissenschaften",
-            studiengaenge: [
-              { name: "Kommunikation und Medien", grad: "BA" },
-              { name: "Mehrsprachige Kommunikation", grad: "BA" }
-            ]
-          },
-          {
-            name: "8.3 Sozialwissenschaften",
-            studiengaenge: [
-              { name: "Soziale Arbeit", grad: "BA" },
-              { name: "Sprachliche Integration", grad: "BA" }
+            name: "8. Wissenschaften vom Menschen und seiner Kultur",
+            unterkategorien: [
+              {
+                name: "Geistes- und Kulturwissenschaften",
+                studiengaenge: [
+                  { name: "Kommunikation und Medien", grad: "BA" },
+                  { name: "Mehrsprachige Kommunikation", grad: "BA" }
+                ]
+              },
+              {
+                name: "Sozialwissenschaften",
+                studiengaenge: [
+                  { name: "Soziale Arbeit", grad: "BA" },
+                  { name: "Sprachliche Integration", grad: "BA" }
+                ]
+              }
             ]
           }
         ]
@@ -336,17 +356,22 @@
         website: "https://www.zhdk.ch/studium/alle-majors-und-minors?bachelorMaster=1&majorMinor=1",
         kategorien: [
           {
-            name: "8.2 Geistes- und Kulturwissenschaften",
-            studiengaenge: [
-              { name: "Art Education", grad: "BA" },
-              { name: "Contemporary Dance", grad: "BA" },
-              { name: "Film", grad: "BA" },
-              { name: "Theater", grad: "BA" },
-              { name: "Design", grad: "BA" },
-              { name: "Fine Arts", grad: "BA" },
-              { name: "Creative Music Practices", grad: "BA" },
-              { name: "Musik", grad: "BA" },
-              { name: "Musik und Bewegung", grad: "BA" }
+            name: "8. Wissenschaften vom Menschen und seiner Kultur",
+            unterkategorien: [
+              {
+                name: "Geistes- und Kulturwissenschaften",
+                studiengaenge: [
+                  { name: "Art Education", grad: "BA" },
+                  { name: "Contemporary Dance", grad: "BA" },
+                  { name: "Film", grad: "BA" },
+                  { name: "Theater", grad: "BA" },
+                  { name: "Design", grad: "BA" },
+                  { name: "Fine Arts", grad: "BA" },
+                  { name: "Creative Music Practices", grad: "BA" },
+                  { name: "Musik", grad: "BA" },
+                  { name: "Musik und Bewegung", grad: "BA" }
+                ]
+              }
             ]
           }
         ]
@@ -400,19 +425,24 @@
             ]
           },
           {
-            name: "8.2 Geistes- und Kulturwissenschaften",
-            studiengaenge: [
-              { name: "Architektur", grad: "Bachelor of Arts" },
-              { name: "Innenarchitektur", grad: "Bachelor of Arts" },
-              { name: "Music", grad: "Bachelor of Arts" },
-              { name: "Musik und Bewegung", grad: "Bachelor of Arts" }
-            ]
-          },
-          {
-            name: "8.3 Sozialwissenschaften",
-            studiengaenge: [
-              { name: "Soziale Arbeit", grad: "Bachelor" },
-              { name: "Soziale Arbeit neue Konzepte und Innovation", grad: "Bachelor" }
+            name: "8. Wissenschaften vom Menschen und seiner Kultur",
+            unterkategorien: [
+              {
+                name: "Geistes- und Kulturwissenschaften",
+                studiengaenge: [
+                  { name: "Architektur", grad: "Bachelor of Arts" },
+                  { name: "Innenarchitektur", grad: "Bachelor of Arts" },
+                  { name: "Music", grad: "Bachelor of Arts" },
+                  { name: "Musik und Bewegung", grad: "Bachelor of Arts" }
+                ]
+              },
+              {
+                name: "Sozialwissenschaften",
+                studiengaenge: [
+                  { name: "Soziale Arbeit", grad: "Bachelor" },
+                  { name: "Soziale Arbeit neue Konzepte und Innovation", grad: "Bachelor" }
+                ]
+              }
             ]
           }
         ]

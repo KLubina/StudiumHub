@@ -167,52 +167,48 @@
 
   function renderByCategory(filteredData, container) {
     // Gruppiere nach Kategorien
-    const categoryMap = new Map();
+    const hierarchicalCategories = new Map();
 
     filteredData.forEach(inst => {
       inst.kategorien.forEach(kategorie => {
-        if (!categoryMap.has(kategorie.name)) {
-          categoryMap.set(kategorie.name, []);
-        }
-        categoryMap.get(kategorie.name).push({
-          institution: inst.name,
-          type: inst.type,
-          website: inst.website,
-          studiengaenge: kategorie.studiengaenge
-        });
-      });
-    });
-
-    // Gruppiere Unterkategorien unter Obergruppen
-    const hierarchicalCategories = new Map();
-
-    categoryMap.forEach((institutions, categoryName) => {
-      // Prüfe ob es eine Unterkategorie ist (beginnt mit Leerzeichen)
-      if (categoryName.startsWith('  ')) {
-        // Extrahiere die Obergruppen-Nummer (z.B. "1" aus "  1.1 ...")
-        const match = categoryName.match(/^\s+(\d+)\./);
-        if (match) {
-          const mainGroupNum = match[1];
-          const mainGroupName = getMainGroupName(mainGroupNum);
-
-          if (!hierarchicalCategories.has(mainGroupName)) {
-            hierarchicalCategories.set(mainGroupName, {
+        // Check if category has subcategories (unterkategorien)
+        if (kategorie.unterkategorien && kategorie.unterkategorien.length > 0) {
+          // Category with subcategories - create hierarchical structure
+          if (!hierarchicalCategories.has(kategorie.name)) {
+            hierarchicalCategories.set(kategorie.name, {
               isParent: true,
               subcategories: new Map()
             });
           }
 
-          hierarchicalCategories.get(mainGroupName).subcategories.set(categoryName, institutions);
-        }
-      } else {
-        // Normale Kategorie (keine Unterkategorie)
-        if (!hierarchicalCategories.has(categoryName)) {
-          hierarchicalCategories.set(categoryName, {
-            isParent: false,
-            institutions: institutions
+          // Add each subcategory
+          kategorie.unterkategorien.forEach(unterkategorie => {
+            if (!hierarchicalCategories.get(kategorie.name).subcategories.has(unterkategorie.name)) {
+              hierarchicalCategories.get(kategorie.name).subcategories.set(unterkategorie.name, []);
+            }
+            hierarchicalCategories.get(kategorie.name).subcategories.get(unterkategorie.name).push({
+              institution: inst.name,
+              type: inst.type,
+              website: inst.website,
+              studiengaenge: unterkategorie.studiengaenge
+            });
+          });
+        } else {
+          // Regular category without subcategories
+          if (!hierarchicalCategories.has(kategorie.name)) {
+            hierarchicalCategories.set(kategorie.name, {
+              isParent: false,
+              institutions: []
+            });
+          }
+          hierarchicalCategories.get(kategorie.name).institutions.push({
+            institution: inst.name,
+            type: inst.type,
+            website: inst.website,
+            studiengaenge: kategorie.studiengaenge
           });
         }
-      }
+      });
     });
 
     // Sortiere und rendere
@@ -231,21 +227,6 @@
         container.appendChild(categorySection);
       }
     });
-  }
-
-  function getMainGroupName(groupNum) {
-    const groupNames = {
-      '1': '1. Wissenschaften vom Menschen und seiner Kultur',
-      '2': '2. Rechtswissenschaften',
-      '3': '3. Wirtschaftswissenschaften',
-      '7': '7. Psychologie',
-      '8': '8. Naturwissenschaften',
-      '9': '9. Mathematik und Informatik',
-      '10': '10. Medizin und Gesundheitswissenschaften',
-      '11': '11. Ingenieurwissenschaften',
-      '12': '12. Sportwissenschaften'
-    };
-    return groupNames[groupNum] || `${groupNum}. Kategorie`;
   }
 
   function createUniSection(uni) {
@@ -295,16 +276,43 @@
     title.className = 'category-title';
     title.textContent = kategorie.name;
 
-    const list = document.createElement('div');
-    list.className = 'studiengang-list';
-
-    kategorie.studiengaenge.forEach(studiengang => {
-      const item = createStudiengangItem(studiengang);
-      list.appendChild(item);
-    });
-
     section.appendChild(title);
-    section.appendChild(list);
+
+    // Check if category has subcategories (unterkategorien)
+    if (kategorie.unterkategorien && kategorie.unterkategorien.length > 0) {
+      // Render subcategories
+      kategorie.unterkategorien.forEach(unterkategorie => {
+        const subSection = document.createElement('div');
+        subSection.className = 'subcategory-section';
+
+        const subTitle = document.createElement('div');
+        subTitle.className = 'subcategory-title';
+        subTitle.textContent = unterkategorie.name;
+
+        const list = document.createElement('div');
+        list.className = 'studiengang-list';
+
+        unterkategorie.studiengaenge.forEach(studiengang => {
+          const item = createStudiengangItem(studiengang);
+          list.appendChild(item);
+        });
+
+        subSection.appendChild(subTitle);
+        subSection.appendChild(list);
+        section.appendChild(subSection);
+      });
+    } else {
+      // Render study programs directly (no subcategories)
+      const list = document.createElement('div');
+      list.className = 'studiengang-list';
+
+      kategorie.studiengaenge.forEach(studiengang => {
+        const item = createStudiengangItem(studiengang);
+        list.appendChild(item);
+      });
+
+      section.appendChild(list);
+    }
 
     return section;
   }
