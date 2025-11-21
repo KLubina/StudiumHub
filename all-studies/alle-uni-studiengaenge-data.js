@@ -54,8 +54,8 @@
             name: "6. Mathematik und Informatik",
             studiengaenge: [
               { name: "Computational Sciences", ects: "180 KP" },
-              { name: "Computer Science / Informatik", ects: "180 KP" },
-              { name: "Computer Science / Informatik 75 KP", ects: "75 KP", beschreibung: "ausserfakultäres Bachelorstudienfach 75 KP" },
+              { name: "Informatik", ects: "180 KP" },
+              { name: "Informatik 75 KP", ects: "75 KP", beschreibung: "ausserfakultäres Bachelorstudienfach 75 KP" },
               { name: "Mathematik", ects: "180 KP" },
               { name: "Mathematik 75 KP", ects: "75 KP", beschreibung: "ausserfakultäres Bachelorstudienfach 75 KP" }
             ]
@@ -109,8 +109,8 @@
           {
             name: "9. Sportwissenschaften",
             studiengaenge: [
-              { name: "Sport, Bewegung & Gesundheit: Studienrichtung Prävention und Gesundheitsförderung", ects: "180 KP" },
-              { name: "Sport, Bewegung & Gesundheit: Studienrichtung Sportwissenschaft (mit Zweitfach)", ects: "99 KP", beschreibung: "ausserfakultäres Bachelorstudienfach 75 KP" }
+              { name: "Sport, Bewegung & Gesundheit", ects: "180 KP" },
+              { name: "Sport, Bewegung & Gesundheit mit Zweitfach", ects: "99 KP", beschreibung: "ausserfakultäres Bachelorstudienfach 75 KP" }
             ]
           }
         ]
@@ -184,21 +184,21 @@
           {
             name: "1. Wirtschaftswissenschaften",
             studiengaenge: [
-              { name: "Bachelor Major Betriebswirtschaftslehre (BWL)", ects: "" },
-              { name: "Bachelor Major Volkswirtschaftslehre (VWL)", ects: "" }
+              { name: "Betriebswirtschaftslehre", ects: "180 ECTS" },
+              { name: "Volkswirtschaftslehre", ects: "180 ECTS" }
             ]
           },
           {
             name: "4. Rechtswissenschaften",
             studiengaenge: [
-              { name: "Bachelor Major Rechtswissenschaft (BLaw)", ects: "" },
-              { name: "Bachelor Major Rechtswissenschaft mit Wirtschaftswissenschaften (BLE)", ects: "" }
+              { name: "Rechtswissenschaft", ects: "180 ECTS" },
+              { name: "Rechtswissenschaft mit Wirtschaftswissenschaften", ects: "" }
             ]
           },
           {
             name: "6. Mathematik und Informatik",
             studiengaenge: [
-              { name: "Bachelor in Informatik (BCS)", ects: "" }
+              { name: "Informatik", ects: "180 ECTS" }
             ]
           },
           {
@@ -207,7 +207,7 @@
               {
                 name: "Sozialwissenschaften",
                 studiengaenge: [
-                  { name: "Bachelor Major International Affairs (BIA)", ects: "" }
+                  { name: "International Affairs", ects: "180 ECTS" }
                 ]
               }
             ]
@@ -431,7 +431,7 @@
                   { name: "Logopädie", ects: "180 ECTS" },
                   { name: "Sonderpädagogik", ects: "60 ECTS" },
                   { name: "Erziehungswissenschaften", ects: "120/60 ECTS" },
-                  { name: "Pädagogik / Psychologie", ects: "120/60 ECTS" },
+                  { name: "Pädagogik/Psychologie", ects: "120/60 ECTS" },
                   { name: "Ausbildung für den Unterricht auf der Primarstufe", ects: "180 ECTS" },
                   { name: "Ausbildung für den Unterricht auf der Sekundarstufe I", ects: "150 ECTS" }
                 ]
@@ -505,7 +505,8 @@
               { name: "Banking and Finance", ects: "150 ECTS" },
               { name: "Betriebswirtschaftslehre", ects: "150 ECTS" },
               { name: "Volkswirtschaftslehre", ects: "150 ECTS" },
-              { name: "Wirtschaftsinformatik", ects: "150 ECTS" }
+              { name: "Wirtschaftsinformatik", ects: "150 ECTS" },
+              { name: "Wirtschaftschemie", ects: "180 ECTS" }
             ]
           },
           {
@@ -541,7 +542,6 @@
               { name: "Erdsystemwissenschaften", ects: "180 ECTS" },
               { name: "Geographie", ects: "180/150/120 ECTS" },
               { name: "Physik", ects: "180/150/120 ECTS" },
-              { name: "Wirtschaftschemie", ects: "180 ECTS" }
             ]
           },
           {
