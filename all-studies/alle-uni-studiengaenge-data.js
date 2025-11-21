@@ -192,7 +192,7 @@
             name: "4. Rechtswissenschaften",
             studiengaenge: [
               { name: "Rechtswissenschaft", ects: "180 ECTS" },
-              { name: "Rechtswissenschaft mit Wirtschaftswissenschaften", ects: "" }
+              { name: "Rechtswissenschaft mit Wirtschaftswissenschaften", ects: "180 ECTS" }
             ]
           },
           {
