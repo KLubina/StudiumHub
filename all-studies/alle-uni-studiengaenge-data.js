@@ -317,6 +317,24 @@
             studiengaenge: [
               { name: "Sportwissenschaft", ects: "120/60/30 ECTS" }
             ]
+          },
+          {
+            name: "Spezialisierte Minors",
+            studiengaenge: [
+              { name: "Basis Antike mit Schwerpunkt Griechisch", ects: "60/30 ECTS" },
+              { name: "Basis Antike mit Schwerpunkt Latein", ects: "60/30 ECTS" },
+              { name: "Chinesische Sprache und Gesellschaft", ects: "30 ECTS" },
+              { name: "Digitalization and Applied Data Science in Business, Economics and the Social Sciences", ects: "30 ECTS" },
+              { name: "Klassische Philologie mit Schwerpunkt Griechisch", ects: "60/30 ECTS" },
+              { name: "Klassische Philologie mit Schwerpunkt Latein", ects: "60/30 ECTS" },
+              { name: "Kulturgeschichte und Archäologie des vorislamischen Palästina/Israel", ects: "60/30 ECTS" },
+              { name: "Nachhaltige Entwicklung", ects: "60/30/15 ECTS" },
+              { name: "Obligationenrecht und Wirtschaftsrecht", ects: "30 ECTS" },
+              { name: "Philosophie des Geistes", ects: "60 ECTS" },
+              { name: "Staatsrecht und Staatstheorie", ects: "30 ECTS" },
+              { name: "Wirtschaftsinformatik", ects: "30/15 ECTS" },
+              { name: "Wissenschaftsphilosophie", ects: "60 ECTS" }
+            ]
           }
         ]
       },
@@ -462,11 +480,9 @@
               { name: "Biologie", ects: "180 ECTS" },
               { name: "Biochemie", ects: "180 ECTS" },
               { name: "Chemie", ects: "180 ECTS" },
-              { name: "Chemieingenieurwissenschaften", ects: "180 ECTS" },
               { name: "Interdisziplinäre Naturwissenschaften", ects: "180 ECTS" },
               { name: "Pharmazeutische Wissenschaften", ects: "180 ECTS" },
               { name: "Physik", ects: "180 ECTS" },
-              { name: "Rechnergestützte Wissenschaften", ects: "180 ECTS" },
               { name: "Agrarwissenschaften", ects: "180 ECTS" },
               { name: "Erd- und Klimawissenschaften", ects: "180 ECTS" },
               { name: "Umweltnaturwissenschaften", ects: "180 ECTS" },
@@ -478,7 +494,8 @@
             name: "6. Mathematik und Informatik",
             studiengaenge: [
               { name: "Mathematik", ects: "180 ECTS" },
-              { name: "Informatik", ects: "180 ECTS" }
+              { name: "Informatik", ects: "180 ECTS" },
+              { name: "Rechnergestützte Wissenschaften", ects: "180 ECTS" }
             ]
           },
           {
@@ -490,7 +507,8 @@
               { name: "Umweltingenieurwissenschaften", ects: "180 ECTS" },
               { name: "Elektrotechnik und Informationstechnologie", ects: "180 ECTS" },
               { name: "Maschineningenieurwissenschaften", ects: "180 ECTS" },
-              { name: "Materialwissenschaft", ects: "180 ECTS" }
+              { name: "Materialwissenschaft", ects: "180 ECTS" },
+              { name: "Chemieingenieurwissenschaften", ects: "180 ECTS" }
             ]
           }
         ]
