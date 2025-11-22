@@ -58,41 +58,52 @@
             name: "8. Wissenschaften vom Menschen und seiner Kultur",
             unterkategorien: [
               {
-                name: "Theologie und Religionswissenschaften",
+                name: "Sprachwissenschaften",
                 studiengaenge: [
-                  { name: "Theologie", ects: "180 KP" },
-                  { name: "Theologie 75 KP", ects: "75 KP", beschreibung: "ausserfakultäres Bachelorstudienfach 75 KP" },
-                  { name: "Religionswissenschaft 75 KP", ects: "75 KP", beschreibung: "anderes Fach 75 KP" },
-                  { name: "Jüdische Studien 75 KP", ects: "75 KP", beschreibung: "anderes Fach 75 KP" }
-                ]
-              },
-              {
-                name: "Geistes- und Kulturwissenschaften",
-                studiengaenge: [
-                  { name: "Altertumswissenschaften", ects: "150 KP" },
-                  { name: "Altertumswissenschaften 75 KP", ects: "75 KP", beschreibung: "Studienfach 75 KP" },
                   { name: "Deutsche Philologie 75 KP", ects: "75 KP", beschreibung: "anderes Fach 75 KP" },
                   { name: "Englisch 75 KP", ects: "75 KP", beschreibung: "anderes Fach 75 KP" },
                   { name: "Französistik 75 KP", ects: "75 KP", beschreibung: "anderes Fach 75 KP" },
-                  { name: "Geschichte 75 KP", ects: "75 KP", beschreibung: "anderes Fach 75 KP" },
-                  { name: "Geschlechterforschung 75 KP", ects: "75 KP", beschreibung: "anderes Fach 75 KP" },
                   { name: "Hispanistik 75 KP", ects: "75 KP", beschreibung: "anderes Fach 75 KP" },
                   { name: "Italianistik 75 KP", ects: "75 KP", beschreibung: "anderes Fach 75 KP" },
+                  { name: "Nordistik 75 KP", ects: "75 KP", beschreibung: "anderes Fach 75 KP" }
+                ]
+              },
+              {
+                name: "Geschichtswissenschaften",
+                studiengaenge: [
+                  { name: "Altertumswissenschaften", ects: "150 KP" },
+                  { name: "Altertumswissenschaften 75 KP", ects: "75 KP", beschreibung: "Studienfach 75 KP" },
+                  { name: "Geschichte 75 KP", ects: "75 KP", beschreibung: "anderes Fach 75 KP" },
+                  { name: "Prähistorische und Naturwissenschaftliche Archäologie", ects: "180 KP" }
+                ]
+              },
+              {
+                name: "Philosophie",
+                studiengaenge: [
+                  { name: "Philosophie 75 KP", ects: "75 KP", beschreibung: "anderes Fach 75 KP" }
+                ]
+              },
+              {
+                name: "Kunstwissenschaften",
+                studiengaenge: [
                   { name: "Kunstgeschichte 75 KP", ects: "75 KP", beschreibung: "anderes Fach 75 KP" },
                   { name: "Medienwissenschaft 75 KP", ects: "75 KP", beschreibung: "anderes Fach 75 KP" },
-                  { name: "Musikwissenschaft 75 KP", ects: "75 KP", beschreibung: "anderes Fach 75 KP" },
+                  { name: "Musikwissenschaft 75 KP", ects: "75 KP", beschreibung: "anderes Fach 75 KP" }
+                ]
+              },
+              {
+                name: "Regionalstudien",
+                studiengaenge: [
                   { name: "Nahoststudien 75 KP", ects: "75 KP", beschreibung: "anderes Fach 75 KP" },
-                  { name: "Nordistik 75 KP", ects: "75 KP", beschreibung: "anderes Fach 75 KP" },
                   { name: "Osteuropäische Kulturen 75 KP", ects: "75 KP", beschreibung: "anderes Fach 75 KP" },
-                  { name: "Osteuropa-Studien", ects: "180 KP" },
-                  { name: "Philosophie 75 KP", ects: "75 KP", beschreibung: "anderes Fach 75 KP" },
-                  { name: "Prähistorische und Naturwissenschaftliche Archäologie", ects: "180 KP" }
+                  { name: "Osteuropa-Studien", ects: "180 KP" }
                 ]
               },
               {
                 name: "Sozialwissenschaften",
                 studiengaenge: [
                   { name: "Ethnologie 75 KP", ects: "75 KP", beschreibung: "anderes Fach 75 KP" },
+                  { name: "Geschlechterforschung 75 KP", ects: "75 KP", beschreibung: "anderes Fach 75 KP" },
                   { name: "Kulturanthropologie 75 KP", ects: "75 KP", beschreibung: "anderes Fach 75 KP" },
                   { name: "Politikwissenschaft 75 KP", ects: "75 KP", beschreibung: "anderes Fach 75 KP" },
                   { name: "Soziologie 75 KP", ects: "75 KP", beschreibung: "anderes Fach 75 KP" }
@@ -102,6 +113,15 @@
                 name: "Psychologie",
                 studiengaenge: [
                   { name: "Psychologie", ects: "180 KP" }
+                ]
+              },
+              {
+                name: "Theologie und Religionswissenschaften",
+                studiengaenge: [
+                  { name: "Theologie", ects: "180 KP" },
+                  { name: "Theologie 75 KP", ects: "75 KP", beschreibung: "ausserfakultäres Bachelorstudienfach 75 KP" },
+                  { name: "Religionswissenschaft 75 KP", ects: "75 KP", beschreibung: "anderes Fach 75 KP" },
+                  { name: "Jüdische Studien 75 KP", ects: "75 KP", beschreibung: "anderes Fach 75 KP" }
                 ]
               }
             ]
@@ -136,17 +156,14 @@
             name: "8. Wissenschaften vom Menschen und seiner Kultur",
             unterkategorien: [
               {
-                name: "Theologie und Religionswissenschaften",
+                name: "Geschichtswissenschaften",
                 studiengaenge: [
-                  { name: "Theologie", ects: "180/120/60 ECTS" },
-                  { name: "Religionspädagogik", ects: "180/60 ECTS" },
-                  { name: "Judaistik", ects: "120/60 ECTS" }
+                  { name: "Geschichte", ects: "120/60 ECTS" }
                 ]
               },
               {
-                name: "Geistes- und Kulturwissenschaften",
+                name: "Philosophie",
                 studiengaenge: [
-                  { name: "Geschichte", ects: "120/60 ECTS" },
                   { name: "Philosophie", ects: "120/60 ECTS" }
                 ]
               },
@@ -156,13 +173,13 @@
                   { name: "Ethnologie", ects: "120/60 ECTS" },
                   { name: "Gesellschafts- und Kommunikationswissenschaften", ects: "180 ECTS" },
                   { name: "Kulturwissenschaften", ects: "180 ECTS" },
+                  { name: "Philosophy, Politics and Economics", ects: "180 ECTS" },
                   { name: "Politikwissenschaft", ects: "120/60 ECTS" },
-                  { name: "Soziologie", ects: "120/60 ECTS" },
-                  { name: "Philosophy, Politics and Economics", ects: "180 ECTS" }
+                  { name: "Soziologie", ects: "120/60 ECTS" }
                 ]
               },
               {
-                name: "Erziehungs- und Bildungswissenschaften",
+                name: "Bildungswissenschaften",
                 studiengaenge: [
                   { name: "Ethik", ects: "60 ECTS" }
                 ]
@@ -171,6 +188,14 @@
                 name: "Psychologie",
                 studiengaenge: [
                   { name: "Psychologie", ects: "120/60 ECTS" }
+                ]
+              },
+              {
+                name: "Theologie und Religionswissenschaften",
+                studiengaenge: [
+                  { name: "Theologie", ects: "180/120/60 ECTS" },
+                  { name: "Religionspädagogik", ects: "180/60 ECTS" },
+                  { name: "Judaistik", ects: "120/60 ECTS" }
                 ]
               }
             ]
@@ -266,53 +291,65 @@
             name: "8. Wissenschaften vom Menschen und seiner Kultur",
             unterkategorien: [
               {
-                name: "Theologie und Religionswissenschaften",
+                name: "Sprachwissenschaften",
                 studiengaenge: [
-                  { name: "Theologie", ects: "180 ECTS" },
-                  { name: "Interreligiöse Studien", ects: "120 ECTS" },
-                  { name: "Islamic and Middle Eastern Studies", ects: "120 ECTS" },
-                  { name: "Religionswissenschaft", ects: "120/60/30 ECTS" }
-                ]
-              },
-              {
-                name: "Geistes- und Kulturwissenschaften",
-                studiengaenge: [
-                  { name: "Archäologie", ects: "120 ECTS" },
+                  { name: "Basis Antike mit Schwerpunkt Griechisch", ects: "60/30 ECTS" },
+                  { name: "Basis Antike mit Schwerpunkt Latein", ects: "60/30 ECTS" },
                   { name: "Deutsche Sprach- und Literaturwissenschaft", ects: "120/60/30 ECTS" },
                   { name: "English", ects: "120 ECTS" },
                   { name: "Französische Sprach- und Literaturwissenschaft", ects: "120/60/30 ECTS" },
-                  { name: "Geschichte", ects: "180/120 ECTS" },
                   { name: "Italienische Sprach- und Literaturwissenschaft", ects: "120/60/30 ECTS" },
                   { name: "Klassische Philologie", ects: "120 ECTS" },
-                  { name: "Kunstgeschichte", ects: "120/60/30 ECTS" },
-                  { name: "Linguistik", ects: "120 ECTS" },
-                  { name: "Musikwissenschaft", ects: "120/60/30 ECTS" },
-                  { name: "Osteuropa-Studien", ects: "120 ECTS" },
-                  { name: "Philosophie", ects: "120 ECTS" },
-                  { name: "Slavistik", ects: "120 ECTS" },
-                  { name: "Spanische Sprach- und Literaturwissenschaft", ects: "120/60/30 ECTS" },
-                  { name: "Theaterwissenschaft", ects: "120/60/30 ECTS" },
-                  { name: "Basis Antike mit Schwerpunkt Griechisch", ects: "60/30 ECTS" },
-                  { name: "Basis Antike mit Schwerpunkt Latein", ects: "60/30 ECTS" },
-                  { name: "Chinesische Sprache und Gesellschaft", ects: "30 ECTS" },
                   { name: "Klassische Philologie mit Schwerpunkt Griechisch", ects: "60/30 ECTS" },
                   { name: "Klassische Philologie mit Schwerpunkt Latein", ects: "60/30 ECTS" },
-                  { name: "Kulturgeschichte und Archäologie des vorislamischen Palästina/Israel", ects: "60/30 ECTS" },
+                  { name: "Linguistik", ects: "120 ECTS" },
+                  { name: "Slavistik", ects: "120 ECTS" },
+                  { name: "Spanische Sprach- und Literaturwissenschaft", ects: "120/60/30 ECTS" }
+                ]
+              },
+              {
+                name: "Geschichtswissenschaften",
+                studiengaenge: [
+                  { name: "Archäologie", ects: "120 ECTS" },
+                  { name: "Geschichte", ects: "180/120 ECTS" },
+                  { name: "Kulturgeschichte und Archäologie des vorislamischen Palästina/Israel", ects: "60/30 ECTS" }
+                ]
+              },
+              {
+                name: "Philosophie",
+                studiengaenge: [
+                  { name: "Philosophie", ects: "120 ECTS" },
                   { name: "Philosophie des Geistes", ects: "60 ECTS" },
                   { name: "Wissenschaftsphilosophie", ects: "60 ECTS" }
                 ]
               },
               {
+                name: "Kunstwissenschaften",
+                studiengaenge: [
+                  { name: "Kunstgeschichte", ects: "120/60/30 ECTS" },
+                  { name: "Musikwissenschaft", ects: "120/60/30 ECTS" },
+                  { name: "Theaterwissenschaft", ects: "120/60/30 ECTS" }
+                ]
+              },
+              {
+                name: "Regionalstudien",
+                studiengaenge: [
+                  { name: "Chinesische Sprache und Gesellschaft", ects: "30 ECTS" },
+                  { name: "Islamic and Middle Eastern Studies", ects: "120 ECTS" },
+                  { name: "Osteuropa-Studien", ects: "120 ECTS" }
+                ]
+              },
+              {
                 name: "Sozialwissenschaften",
                 studiengaenge: [
+                  { name: "Politik- und Verwaltungswissenschaft", ects: "120 ECTS" },
                   { name: "Sozialanthropologie", ects: "120/60/30 ECTS" },
                   { name: "Sozialwissenschaften", ects: "120/60/30/15 ECTS" },
-                  { name: "Politik- und Verwaltungswissenschaft", ects: "120 ECTS" },
                   { name: "Staatsrecht und Staatstheorie", ects: "30 ECTS" }
                 ]
               },
               {
-                name: "Erziehungs- und Bildungswissenschaften",
+                name: "Bildungswissenschaften",
                 studiengaenge: [
                   { name: "Erziehungswissenschaft", ects: "120/60/30 ECTS" }
                 ]
@@ -321,6 +358,14 @@
                 name: "Psychologie",
                 studiengaenge: [
                   { name: "Psychologie", ects: "120 ECTS" }
+                ]
+              },
+              {
+                name: "Theologie und Religionswissenschaften",
+                studiengaenge: [
+                  { name: "Theologie", ects: "180 ECTS" },
+                  { name: "Interreligiöse Studien", ects: "120 ECTS" },
+                  { name: "Religionswissenschaft", ects: "120/60/30 ECTS" }
                 ]
               }
             ]
@@ -383,19 +428,13 @@
             name: "8. Wissenschaften vom Menschen und seiner Kultur",
             unterkategorien: [
               {
-                name: "Theologie und Religionswissenschaften",
+                name: "Sprachwissenschaften",
                 studiengaenge: [
-                  { name: "Theologie", ects: "180/60 ECTS" },
-                  { name: "Theologische Studien", ects: "120 ECTS" },
-                  { name: "Interreligiöse Studien", ects: "120/60 ECTS" },
-                  { name: "Religionswissenschaft", ects: "120/60 ECTS" }
-                ]
-              },
-              {
-                name: "Geistes- und Kulturwissenschaften",
-                studiengaenge: [
+                  { name: "Deutsch als Fremdsprache", ects: "60 ECTS" },
+                  { name: "Deutsch und Französisch: Zweisprachigkeit und Kulturkontakt", ects: "180 ECTS" },
                   { name: "Englische Sprache und Literatur", ects: "120/60 ECTS" },
                   { name: "Französisch", ects: "120/60 ECTS" },
+                  { name: "Französisch als Fremdsprache", ects: "60 ECTS" },
                   { name: "Germanistik", ects: "120/60 ECTS" },
                   { name: "Germanistische Literaturwissenschaft", ects: "60 ECTS" },
                   { name: "Griechische Sprache und Kultur", ects: "60 ECTS" },
@@ -404,49 +443,75 @@
                   { name: "Lateinische Sprache und Kultur", ects: "60 ECTS" },
                   { name: "Rätoromanisch", ects: "60 ECTS" },
                   { name: "Slavistik", ects: "120/60 ECTS" },
-                  { name: "Spanisch", ects: "120/60 ECTS" },
-                  { name: "Deutsch und Französisch: Zweisprachigkeit und Kulturkontakt", ects: "180 ECTS" },
-                  { name: "Deutsch als Fremdsprache", ects: "60 ECTS" },
-                  { name: "Französisch als Fremdsprache", ects: "60 ECTS" },
+                  { name: "Spanisch", ects: "120/60 ECTS" }
+                ]
+              },
+              {
+                name: "Geschichtswissenschaften",
+                studiengaenge: [
                   { name: "Geschichte", ects: "120/60 ECTS" },
                   { name: "Geschichte der Moderne", ects: "120 ECTS" },
-                  { name: "Zeitgeschichte", ects: "120/60 ECTS" },
-                  { name: "Kunstgeschichte", ects: "120/60 ECTS" },
-                  { name: "Musikwissenschaft und Geschichte des Musiktheaters", ects: "120/60 ECTS" },
+                  { name: "Zeitgeschichte", ects: "120/60 ECTS" }
+                ]
+              },
+              {
+                name: "Philosophie",
+                studiengaenge: [
                   { name: "Philosophie", ects: "120/60 ECTS" }
+                ]
+              },
+              {
+                name: "Kunstwissenschaften",
+                studiengaenge: [
+                  { name: "Kunstgeschichte", ects: "120/60 ECTS" },
+                  { name: "Musikwissenschaft und Geschichte des Musiktheaters", ects: "120/60 ECTS" }
+                ]
+              },
+              {
+                name: "Regionalstudien",
+                studiengaenge: [
+                  { name: "Osteuropa-Studien", ects: "120/60 ECTS" }
                 ]
               },
               {
                 name: "Sozialwissenschaften",
                 studiengaenge: [
-                  { name: "Soziologie (FR)", ects: "120 ECTS" },
-                  { name: "Soziologie", ects: "120/60 ECTS" },
-                  { name: "Sozialarbeit und Sozialpolitik (FR)", ects: "120/60 ECTS" },
-                  { name: "Sozialarbeit und Sozialpolitik", ects: "120/60 ECTS" },
-                  { name: "Osteuropa-Studien", ects: "120/60 ECTS" },
+                  { name: "Business Communication", ects: "60 ECTS" },
+                  { name: "Kommunikationswissenschaft", ects: "90 ECTS" },
+                  { name: "Kommunikationswissenschaft und Medienforschung", ects: "120/60 ECTS" },
                   { name: "Politik und Gesellschaft", ects: "60 ECTS" },
                   { name: "Sozialanthropologie", ects: "120/60 ECTS" },
-                  { name: "Kommunikationswissenschaft und Medienforschung", ects: "120/60 ECTS" },
-                  { name: "Kommunikationswissenschaft", ects: "90 ECTS" },
-                  { name: "Business Communication", ects: "60 ECTS" }
+                  { name: "Sozialarbeit und Sozialpolitik", ects: "120/60 ECTS" },
+                  { name: "Sozialarbeit und Sozialpolitik (FR)", ects: "120/60 ECTS" },
+                  { name: "Soziologie", ects: "120/60 ECTS" },
+                  { name: "Soziologie (FR)", ects: "120 ECTS" }
                 ]
               },
               {
-                name: "Erziehungs- und Bildungswissenschaften",
+                name: "Bildungswissenschaften",
                 studiengaenge: [
-                  { name: "Sonderpädagogik und Sozialpädagogik", ects: "180 ECTS" },
-                  { name: "Logopädie", ects: "180 ECTS" },
-                  { name: "Sonderpädagogik", ects: "60 ECTS" },
-                  { name: "Erziehungswissenschaften", ects: "120/60 ECTS" },
-                  { name: "Pädagogik/Psychologie", ects: "120/60 ECTS" },
                   { name: "Ausbildung für den Unterricht auf der Primarstufe", ects: "180 ECTS" },
-                  { name: "Ausbildung für den Unterricht auf der Sekundarstufe I", ects: "150 ECTS" }
+                  { name: "Ausbildung für den Unterricht auf der Sekundarstufe I", ects: "150 ECTS" },
+                  { name: "Erziehungswissenschaften", ects: "120/60 ECTS" },
+                  { name: "Logopädie", ects: "180 ECTS" },
+                  { name: "Pädagogik/Psychologie", ects: "120/60 ECTS" },
+                  { name: "Sonderpädagogik", ects: "60 ECTS" },
+                  { name: "Sonderpädagogik und Sozialpädagogik", ects: "180 ECTS" }
                 ]
               },
               {
                 name: "Psychologie",
                 studiengaenge: [
                   { name: "Psychologie", ects: "180/60 ECTS" }
+                ]
+              },
+              {
+                name: "Theologie und Religionswissenschaften",
+                studiengaenge: [
+                  { name: "Theologie", ects: "180/60 ECTS" },
+                  { name: "Theologische Studien", ects: "120 ECTS" },
+                  { name: "Interreligiöse Studien", ects: "120/60 ECTS" },
+                  { name: "Religionswissenschaft", ects: "120/60 ECTS" }
                 ]
               }
             ]
@@ -563,39 +628,51 @@
             name: "8. Wissenschaften vom Menschen und seiner Kultur",
             unterkategorien: [
               {
-                name: "Theologie und Religionswissenschaften",
+                name: "Sprachwissenschaften",
                 studiengaenge: [
-                  { name: "Religionswissenschaft", ects: "120 ECTS" },
-                  { name: "Religious Studies and Theology", ects: "180 ECTS" },
-                  { name: "Theologie", ects: "180/120 ECTS" }
-                ]
-              },
-              {
-                name: "Geistes- und Kulturwissenschaften",
-                studiengaenge: [
-                  { name: "Archäologien", ects: "120 ECTS" },
                   { name: "Computerlinguistik und Sprachtechnologie", ects: "120 ECTS" },
                   { name: "Deutsche Sprach- und Literaturwissenschaft", ects: "120 ECTS" },
                   { name: "Englische Sprach- und Literaturwissenschaft", ects: "120 ECTS" },
-                  { name: "Filmwissenschaft", ects: "120 ECTS" },
                   { name: "Französische Sprach- und Literaturwissenschaft", ects: "120 ECTS" },
-                  { name: "Geschichte", ects: "120 ECTS" },
                   { name: "Griechische Philologie", ects: "120 ECTS" },
                   { name: "Iberoromanische Sprach- und Literaturwissenschaft", ects: "120 ECTS" },
-                  { name: "Indologie", ects: "120 ECTS" },
                   { name: "Italienische Sprach- und Literaturwissenschaft", ects: "120 ECTS" },
-                  { name: "Japanologie", ects: "120 ECTS" },
-                  { name: "Kunstgeschichte", ects: "120 ECTS" },
                   { name: "Lateinische Philologie", ects: "120 ECTS" },
-                  { name: "Musikwissenschaft", ects: "120 ECTS" },
-                  { name: "Nah- und Mitteloststudien", ects: "120 ECTS" },
-                  { name: "Osteuropastudien", ects: "120 ECTS" },
-                  { name: "Philosophie", ects: "120 ECTS" },
-                  { name: "Sinologie", ects: "120 ECTS" },
-                  { name: "Skandinavistik", ects: "120 ECTS" },
                   { name: "Slavische Sprach- und Literaturwissenschaft", ects: "120 ECTS" },
                   { name: "Vergleichende Romanische Sprachwissenschaft", ects: "120 ECTS" },
                   { name: "Vergleichende Sprachwissenschaft", ects: "120 ECTS" }
+                ]
+              },
+              {
+                name: "Geschichtswissenschaften",
+                studiengaenge: [
+                  { name: "Archäologien", ects: "120 ECTS" },
+                  { name: "Geschichte", ects: "120 ECTS" }
+                ]
+              },
+              {
+                name: "Philosophie",
+                studiengaenge: [
+                  { name: "Philosophie", ects: "120 ECTS" }
+                ]
+              },
+              {
+                name: "Kunstwissenschaften",
+                studiengaenge: [
+                  { name: "Filmwissenschaft", ects: "120 ECTS" },
+                  { name: "Kunstgeschichte", ects: "120 ECTS" },
+                  { name: "Musikwissenschaft", ects: "120 ECTS" }
+                ]
+              },
+              {
+                name: "Regionalstudien",
+                studiengaenge: [
+                  { name: "Indologie", ects: "120 ECTS" },
+                  { name: "Japanologie", ects: "120 ECTS" },
+                  { name: "Nah- und Mitteloststudien", ects: "120 ECTS" },
+                  { name: "Osteuropastudien", ects: "120 ECTS" },
+                  { name: "Sinologie", ects: "120 ECTS" },
+                  { name: "Skandinavistik", ects: "120 ECTS" }
                 ]
               },
               {
@@ -609,7 +686,7 @@
                 ]
               },
               {
-                name: "Erziehungs- und Bildungswissenschaften",
+                name: "Bildungswissenschaften",
                 studiengaenge: [
                   { name: "Erziehungswissenschaft", ects: "120 ECTS" },
                   { name: "Fachwissenschaft Pädagogik und Psychologie", ects: "120 ECTS" }
@@ -619,6 +696,14 @@
                 name: "Psychologie",
                 studiengaenge: [
                   { name: "Psychologie", ects: "120 ECTS" }
+                ]
+              },
+              {
+                name: "Theologie und Religionswissenschaften",
+                studiengaenge: [
+                  { name: "Religionswissenschaft", ects: "120 ECTS" },
+                  { name: "Religious Studies and Theology", ects: "180 ECTS" },
+                  { name: "Theologie", ects: "180/120 ECTS" }
                 ]
               }
             ]
