@@ -39,15 +39,6 @@
             ]
           },
           {
-            name: "6. Mathematik und Informatik",
-            studiengaenge: [
-              { name: "Data Engineering", grad: "Bachelor of Science" },
-              { name: "Multimedia Production", grad: "Bachelor of Science" },
-              { name: "Medizininformatik", grad: "Bachelor of Science" },
-              { name: "Informatik", grad: "Bachelor of Science" }
-            ]
-          },
-          {
             name: "7. Ingenieurwissenschaften",
             studiengaenge: [
               { name: "Bauingenieurwesen", grad: "Bachelor of Science" },
@@ -56,7 +47,11 @@
               { name: "Elektrotechnik und Informationstechnologie", grad: "Bachelor of Science" },
               { name: "Automobil- und Fahrzeugtechnik", grad: "Bachelor of Science" },
               { name: "Mechatronik und Systemtechnik", grad: "Bachelor of Science" },
-              { name: "Maschinentechnik", grad: "Bachelor of Science" }
+              { name: "Maschinentechnik", grad: "Bachelor of Science" },
+              { name: "Data Engineering", grad: "Bachelor of Science" },
+              { name: "Multimedia Production", grad: "Bachelor of Science" },
+              { name: "Medizininformatik", grad: "Bachelor of Science" },
+              { name: "Informatik", grad: "Bachelor of Science" }
             ]
           },
           {
@@ -106,21 +101,16 @@
             ]
           },
           {
-            name: "6. Mathematik und Informatik",
-            studiengaenge: [
-              { name: "Artificial Intelligence in Software Engineering", grad: "Bachelor" },
-              { name: "Computational and Data Science", grad: "Bachelor" },
-              { name: "Multimedia Production", grad: "Bachelor" }
-            ]
-          },
-          {
             name: "7. Ingenieurwissenschaften",
             studiengaenge: [
               { name: "Architektur", grad: "Bachelor" },
               { name: "Bauingenieurwesen", grad: "Bachelor" },
               { name: "MedTech", grad: "Bachelor" },
               { name: "Mobile Robotics", grad: "Bachelor" },
-              { name: "Optoelectronics", grad: "Bachelor" }
+              { name: "Optoelectronics", grad: "Bachelor" },
+              { name: "Artificial Intelligence in Software Engineering", grad: "Bachelor" },
+              { name: "Computational and Data Science", grad: "Bachelor" },
+              { name: "Multimedia Production", grad: "Bachelor" }
             ]
           }
         ]
@@ -152,18 +142,6 @@
             ]
           },
           {
-            name: "6. Mathematik und Informatik",
-            studiengaenge: [
-              { name: "iCompetence", grad: "Bachelor of Science" },
-              { name: "Artificial Intelligence & High Performance Computing", grad: "Bachelor of Science" },
-              { name: "Informatik", grad: "Bachelor of Science" },
-              { name: "Data Science & Artificial Intelligence", grad: "Bachelor of Science" },
-              { name: "Security, Platforms & DevOps", grad: "Bachelor of Science" },
-              { name: "Software Engineering & Intelligent Technologies", grad: "Bachelor of Science" },
-              { name: "Game Technologies & Extended Reality", grad: "Bachelor of Science" }
-            ]
-          },
-          {
             name: "7. Ingenieurwissenschaften",
             studiengaenge: [
               { name: "Architektur", grad: "Bachelor of Arts" },
@@ -177,7 +155,14 @@
               { name: "Wirtschaftsingenieurwesen", grad: "Bachelor of Science" },
               { name: "Elektro- und Informationstechnik", grad: "Bachelor of Science" },
               { name: "Maschinenbau", grad: "Bachelor of Science" },
-              { name: "Energie- und Umwelttechnik", grad: "Bachelor of Science" }
+              { name: "Energie- und Umwelttechnik", grad: "Bachelor of Science" },
+              { name: "iCompetence", grad: "Bachelor of Science" },
+              { name: "Artificial Intelligence & High Performance Computing", grad: "Bachelor of Science" },
+              { name: "Informatik", grad: "Bachelor of Science" },
+              { name: "Data Science & Artificial Intelligence", grad: "Bachelor of Science" },
+              { name: "Security, Platforms & DevOps", grad: "Bachelor of Science" },
+              { name: "Software Engineering & Intelligent Technologies", grad: "Bachelor of Science" },
+              { name: "Game Technologies & Extended Reality", grad: "Bachelor of Science" }
             ]
           },
           {
@@ -227,7 +212,8 @@
             studiengaenge: [
               { name: "Betriebsökonomie", grad: "BSc" },
               { name: "Management und Recht", grad: "BSc" },
-              { name: "Wirtschaftsinformatik", grad: "BSc" }
+              { name: "Wirtschaftsinformatik", grad: "BSc" },
+              { name: "Wirtschaftsingenieurwesen", grad: "Bachelor" },
             ]
           },
           {
@@ -236,14 +222,6 @@
               { name: "Ergotherapie", grad: "BSc" },
               { name: "Pflege", grad: "BSc" },
               { name: "Physiotherapie", grad: "BSc" }
-            ]
-          },
-          {
-            name: "6. Mathematik und Informatik",
-            studiengaenge: [
-              { name: "Artificial Intelligence", grad: "Bachelor" },
-              { name: "Digital Design", grad: "BSc" },
-              { name: "Informatik", grad: "BSc" }
             ]
           },
           {
@@ -257,7 +235,9 @@
               { name: "Erneuerbare Energien und Umwelttechnik", grad: "Bachelor" },
               { name: "Maschinentechnik", grad: "Bachelor" },
               { name: "Mechatronik", grad: "Bachelor" },
-              { name: "Wirtschaftsingenieurwesen", grad: "Bachelor" }
+              { name: "Artificial Intelligence", grad: "Bachelor" },
+              { name: "Digital Design", grad: "BSc" },
+              { name: "Informatik", grad: "BSc" }
             ]
           },
           {
@@ -309,16 +289,7 @@
               { name: "Biomedizinische Labordiagnostik", grad: "BSc" },
               { name: "Biotechnologie", grad: "BSc" },
               { name: "Chemie", grad: "BSc" },
-              { name: "Food Science", grad: "BSc" },
-              { name: "Umweltingenieurwesen", grad: "BSc" }
-            ]
-          },
-          {
-            name: "6. Mathematik und Informatik",
-            studiengaenge: [
-              { name: "Data Science", grad: "BSc" },
-              { name: "Informatik", grad: "BSc" },
-              { name: "Medizininformatik", grad: "BSc" }
+              { name: "Food Science", grad: "BSc" }            
             ]
           },
           {
@@ -331,7 +302,11 @@
               { name: "Energie- und Umwelttechnik", grad: "BSc" },
               { name: "Maschinentechnik", grad: "BSc" },
               { name: "Mobility Science", grad: "BSc" },
-              { name: "Systemtechnik", grad: "BSc" }
+              { name: "Systemtechnik", grad: "BSc" },
+              { name: "Data Science", grad: "BSc" },
+              { name: "Informatik", grad: "BSc" },
+              { name: "Medizininformatik", grad: "BSc" },
+              { name: "Umweltingenieurwesen", grad: "BSc" }
             ]
           },
           {
@@ -410,17 +385,6 @@
             ]
           },
           {
-            name: "6. Mathematik und Informatik",
-            studiengaenge: [
-              { name: "Artificial Intelligence & Machine Learning", grad: "Bachelor" },
-              { name: "Digital Engineer", grad: "Bachelor" },
-              { name: "Digital Ideation", grad: "Bachelor" },
-              { name: "Immersive Technologies", grad: "Bachelor" },
-              { name: "Informatik", grad: "Bachelor" },
-              { name: "Information & Cyber Security", grad: "Bachelor" }
-            ]
-          },
-          {
             name: "7. Ingenieurwissenschaften",
             studiengaenge: [
               { name: "Bauingenieurwesen", grad: "Bachelor of Science" },
@@ -430,7 +394,13 @@
               { name: "Gebäudetechnik", grad: "Bachelor of Science" },
               { name: "Maschinentechnik", grad: "Bachelor" },
               { name: "Medizintechnik", grad: "Bachelor of Science" },
-              { name: "Architektur", grad: "Bachelor of Arts" }
+              { name: "Architektur", grad: "Bachelor of Arts" },
+              { name: "Artificial Intelligence & Machine Learning", grad: "Bachelor" },
+              { name: "Digital Engineer", grad: "Bachelor" },
+              { name: "Digital Ideation", grad: "Bachelor" },
+              { name: "Immersive Technologies", grad: "Bachelor" },
+              { name: "Informatik", grad: "Bachelor" },
+              { name: "Information & Cyber Security", grad: "Bachelor" }
             ]
           },
           {

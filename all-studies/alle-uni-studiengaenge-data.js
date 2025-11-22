@@ -42,17 +42,17 @@
               { name: "Nanowissenschaften", ects: "180 KP" },
               { name: "Pharmazeutische Wissenschaften", ects: "180 KP" },
               { name: "Physik", ects: "180 KP" },
-              { name: "Physik 75 KP", ects: "75 KP", beschreibung: "ausserfakultäres Bachelorstudienfach 75 KP" }
+              { name: "Physik 75 KP", ects: "75 KP", beschreibung: "ausserfakultäres Bachelorstudienfach 75 KP" },
+              { name: "Mathematik", ects: "180 KP" },
+              { name: "Mathematik 75 KP", ects: "75 KP", beschreibung: "ausserfakultäres Bachelorstudienfach 75 KP" }
             ]
           },
           {
-            name: "6. Mathematik und Informatik",
+            name: "7. Ingenieurwissenschaften",
             studiengaenge: [
               { name: "Computational Sciences", ects: "180 KP" },
               { name: "Informatik", ects: "180 KP" },
-              { name: "Informatik 75 KP", ects: "75 KP", beschreibung: "ausserfakultäres Bachelorstudienfach 75 KP" },
-              { name: "Mathematik", ects: "180 KP" },
-              { name: "Mathematik 75 KP", ects: "75 KP", beschreibung: "ausserfakultäres Bachelorstudienfach 75 KP" }
+              { name: "Informatik 75 KP", ects: "75 KP", beschreibung: "ausserfakultäres Bachelorstudienfach 75 KP" }
             ]
           },
           {
@@ -221,7 +221,7 @@
             ]
           },
           {
-            name: "6. Mathematik und Informatik",
+            name: "7. Ingenieurwissenschaften",
             studiengaenge: [
               { name: "Informatik", ects: "180 ECTS" }
             ]
@@ -279,14 +279,14 @@
               { name: "Geographie", ects: "120 ECTS" },
               { name: "Physik", ects: "120 ECTS" },
               { name: "Pharmazeutische Wissenschaften", ects: "180 ECTS" },
-              { name: "Nachhaltige Entwicklung", ects: "60/30/15 ECTS" }
+              { name: "Nachhaltige Entwicklung", ects: "60/30/15 ECTS" },
+              { name: "Mathematik", ects: "120/90/60/30/15 ECTS" }
             ]
           },
           {
-            name: "6. Mathematik und Informatik",
+            name: "7. Ingenieurwissenschaften",
             studiengaenge: [
               { name: "Informatik", ects: "120 ECTS" },
-              { name: "Mathematik", ects: "120/90/60/30/15 ECTS" }
             ]
           },
           {
@@ -418,13 +418,13 @@
               { name: "Geographie", ects: "120/60 ECTS" },
               { name: "Physik", ects: "150/60 ECTS" },
               { name: "Umweltwissenschaften und Umweltgeisteswissenschaften", ects: "60 ECTS" },
-              { name: "Biomedizinische Wissenschaften", ects: "120 ECTS" }
+              { name: "Biomedizinische Wissenschaften", ects: "120 ECTS" },
+              { name: "Mathematik", ects: "120/60 ECTS" }
             ]
           },
           {
-            name: "6. Mathematik und Informatik",
+            name: "7. Ingenieurwissenschaften",
             studiengaenge: [
-              { name: "Mathematik", ects: "120/60 ECTS" },
               { name: "Informatik", ects: "120/60 ECTS" }
             ]
           },
@@ -553,15 +553,8 @@
               { name: "Erd- und Klimawissenschaften", ects: "180 ECTS" },
               { name: "Umweltnaturwissenschaften", ects: "180 ECTS" },
               { name: "Lebensmittelwissenschaften und Ernährung", ects: "180 ECTS" },
-              { name: "Gesundheitswissenschaften und Technologie", ects: "180 ECTS" }
-            ]
-          },
-          {
-            name: "6. Mathematik und Informatik",
-            studiengaenge: [
-              { name: "Mathematik", ects: "180 ECTS" },
-              { name: "Informatik", ects: "180 ECTS" },
-              { name: "Rechnergestützte Wissenschaften", ects: "180 ECTS" }
+              { name: "Gesundheitswissenschaften und Technologie", ects: "180 ECTS" },
+              { name: "Mathematik", ects: "180 ECTS" }
             ]
           },
           {
@@ -574,7 +567,9 @@
               { name: "Elektrotechnik und Informationstechnologie", ects: "180 ECTS" },
               { name: "Maschineningenieurwissenschaften", ects: "180 ECTS" },
               { name: "Materialwissenschaft", ects: "180 ECTS" },
-              { name: "Chemieingenieurwissenschaften", ects: "180 ECTS" }
+              { name: "Chemieingenieurwissenschaften", ects: "180 ECTS" },
+              { name: "Informatik", ects: "180 ECTS" },
+              { name: "Rechnergestützte Wissenschaften", ects: "180 ECTS" }
             ]
           }
         ]
@@ -622,13 +617,13 @@
               { name: "Erdsystemwissenschaften", ects: "180 ECTS" },
               { name: "Geographie", ects: "180/150/120 ECTS" },
               { name: "Physik", ects: "180/150/120 ECTS" },
+              { name: "Mathematik", ects: "180/150/120 ECTS" }
             ]
           },
           {
-            name: "6. Mathematik und Informatik",
+            name: "7. Ingenieurwissenschaften",
             studiengaenge: [
               { name: "Angewandte Mathematik und Machine Learning", ects: "180/150/120 ECTS" },
-              { name: "Mathematik", ects: "180/150/120 ECTS" },
               { name: "Softwaresysteme", ects: "150 ECTS" }
             ]
           },
