@@ -1,5 +1,30 @@
 // Filter Management
 const Filters = {
+  // Helper function to check if a studiengang is a minor (< 60 ECTS)
+  isMinor(studiengang) {
+    const ectsText = studiengang.ects || studiengang.grad || '';
+
+    // Extract ECTS numbers from text (e.g., "60 ECTS", "120/60 ECTS", "75 KP")
+    const numbers = ectsText.match(/\d+/g);
+
+    if (!numbers || numbers.length === 0) {
+      return false; // No ECTS info, assume it's not a minor
+    }
+
+    // Check if any of the extracted numbers is less than 60
+    const hasMinorEcts = numbers.some(num => parseInt(num) < 60);
+
+    // Also check if it contains "/" which indicates multiple options
+    // In that case, check if the smallest value is less than 60
+    if (ectsText.includes('/')) {
+      const minValue = Math.min(...numbers.map(n => parseInt(n)));
+      return minValue < 60;
+    }
+
+    // For single values, check if it's less than 60
+    return hasMinorEcts;
+  },
+
   populateFilters() {
     const institutionFilter = document.getElementById('institutionFilter');
     const categoryFilter = document.getElementById('categoryFilter');
@@ -51,6 +76,7 @@ const Filters = {
   filterData() {
     const allData = State.getData();
     const currentFilters = State.getFilters();
+    const showMinors = State.getShowMinors();
     let filtered = JSON.parse(JSON.stringify(allData)); // Deep copy
 
     // Filter nach Hochschultyp (Uni/FH)
@@ -68,6 +94,37 @@ const Filters = {
       filtered.forEach(inst => {
         inst.kategorien = inst.kategorien.filter(kat => kat.name === currentFilters.category);
       });
+      filtered = filtered.filter(inst => inst.kategorien.length > 0);
+    }
+
+    // Filter Minors (wenn nicht angezeigt werden sollen)
+    if (!showMinors) {
+      filtered.forEach(inst => {
+        inst.kategorien.forEach(kat => {
+          // Filter direkte Studiengänge
+          if (kat.studiengaenge) {
+            kat.studiengaenge = kat.studiengaenge.filter(sg => !this.isMinor(sg));
+          }
+          // Filter Studiengänge in Unterkategorien
+          if (kat.unterkategorien) {
+            kat.unterkategorien.forEach(unterkat => {
+              if (unterkat.studiengaenge) {
+                unterkat.studiengaenge = unterkat.studiengaenge.filter(sg => !this.isMinor(sg));
+              }
+            });
+            // Entferne leere Unterkategorien
+            kat.unterkategorien = kat.unterkategorien.filter(unterkat =>
+              unterkat.studiengaenge && unterkat.studiengaenge.length > 0
+            );
+          }
+        });
+        // Entferne leere Kategorien
+        inst.kategorien = inst.kategorien.filter(kat =>
+          (kat.studiengaenge && kat.studiengaenge.length > 0) ||
+          (kat.unterkategorien && kat.unterkategorien.length > 0)
+        );
+      });
+      // Entferne leere Institutionen
       filtered = filtered.filter(inst => inst.kategorien.length > 0);
     }
 

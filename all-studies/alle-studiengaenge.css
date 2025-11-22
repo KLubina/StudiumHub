@@ -107,6 +107,30 @@ h1 {
     border-color: #003366;
 }
 
+.minor-filter {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 15px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+    border: 2px solid #ddd;
+    transition: all 0.3s;
+}
+
+.minor-filter:hover {
+    background-color: #f0f0f0;
+    border-color: #003366;
+}
+
+.minor-filter input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
 /* ==== UNIVERSITÄT SECTION ==== */
 .uni-section {
     margin-bottom: 40px;

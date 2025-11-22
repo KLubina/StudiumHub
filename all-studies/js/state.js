@@ -7,6 +7,7 @@ const State = {
     institution: '',
     category: ''
   },
+  showMinors: false, // Minors standardmäßig ausgeblendet
 
   initializeData() {
     // Kombiniere Uni und FH Daten
@@ -41,5 +42,13 @@ const State = {
 
   getFilters() {
     return this.currentFilters;
+  },
+
+  setShowMinors(value) {
+    this.showMinors = value;
+  },
+
+  getShowMinors() {
+    return this.showMinors;
   }
 };
