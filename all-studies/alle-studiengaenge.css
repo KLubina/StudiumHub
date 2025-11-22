@@ -307,7 +307,59 @@ h1 {
     border-bottom: 1px solid #ccc;
 }
 
+/* ==== FLOATING NAVIGATION ==== */
+.floating-nav {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    max-width: 250px;
+    max-height: 70vh;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.floating-nav-header {
+    background-color: #003366;
+    color: white;
+    padding: 12px 15px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    border-radius: 8px 8px 0 0;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.floating-nav-content {
+    padding: 10px 0;
+}
+
+.floating-nav-item {
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    color: #333;
+    border-left: 3px solid transparent;
+    transition: all 0.2s;
+}
+
+.floating-nav-item:hover {
+    background-color: #f0f0f0;
+    border-left-color: #003366;
+    padding-left: 20px;
+}
+
 /* ==== RESPONSIVE DESIGN ==== */
+@media (max-width: 1024px) {
+    .floating-nav {
+        display: none;
+    }
+}
+
 @media (max-width: 768px) {
     h1 {
         font-size: 1.5rem;

@@ -144,6 +144,7 @@
           <p>Bitte versuche es mit anderen Filterkriterien.</p>
         </div>
       `;
+      updateFloatingNav([]);
       return;
     }
 
@@ -153,6 +154,9 @@
     } else {
       renderByInstitution(filteredData, container);
     }
+
+    // Aktualisiere schwebende Navigation
+    updateFloatingNav(filteredData);
   }
 
   function renderByInstitution(filteredData, container) {
@@ -232,6 +236,7 @@
   function createUniSection(uni) {
     const section = document.createElement('div');
     section.className = 'uni-section';
+    section.id = 'section-' + sanitizeId(uni.name);
 
     // Header
     const header = document.createElement('div');
@@ -346,6 +351,7 @@
   function createParentCategorySection(mainCategoryName, subcategories) {
     const section = document.createElement('div');
     section.className = 'uni-section';
+    section.id = 'section-' + sanitizeId(mainCategoryName);
 
     // Main Category Header
     const header = document.createElement('div');
@@ -436,6 +442,7 @@
   function createCategorySectionGrouped(categoryName, institutions) {
     const section = document.createElement('div');
     section.className = 'uni-section';
+    section.id = 'section-' + sanitizeId(categoryName);
 
     // Category Header
     const header = document.createElement('div');
@@ -488,5 +495,67 @@
     section.appendChild(content);
 
     return section;
+  }
+
+  // Helper-Funktion: Sanitize ID
+  function sanitizeId(text) {
+    return text
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, '-')
+      .replace(/^-|-$/g, '');
+  }
+
+  // Aktualisiere schwebende Navigation
+  function updateFloatingNav(data) {
+    const navContent = document.getElementById('floatingNavContent');
+    navContent.innerHTML = '';
+
+    if (data.length === 0) {
+      return;
+    }
+
+    if (currentView === 'category') {
+      // Nach Kategorie: Zeige Kategorien
+      const categories = new Set();
+      data.forEach(inst => {
+        inst.kategorien.forEach(kat => {
+          categories.add(kat.name);
+        });
+      });
+
+      const sortedCategories = Array.from(categories).sort();
+      sortedCategories.forEach(catName => {
+        const item = document.createElement('div');
+        item.className = 'floating-nav-item';
+        item.textContent = catName;
+        item.onclick = () => scrollToSection(catName);
+        navContent.appendChild(item);
+      });
+    } else {
+      // Nach Institution: Zeige Institutionen
+      data.forEach(inst => {
+        const item = document.createElement('div');
+        item.className = 'floating-nav-item';
+        const prefix = inst.type === 'uni' ? '[Uni] ' : '[FH] ';
+        item.textContent = prefix + inst.name;
+        item.onclick = () => scrollToSection(inst.name);
+        navContent.appendChild(item);
+      });
+    }
+  }
+
+  // Scroll zu Sektion
+  function scrollToSection(name) {
+    const sectionId = 'section-' + sanitizeId(name);
+    const section = document.getElementById(sectionId);
+
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+      // Öffne die Sektion falls sie collapsed ist
+      if (section.classList.contains('collapsed')) {
+        section.classList.remove('collapsed');
+      }
+    }
   }
 })();
