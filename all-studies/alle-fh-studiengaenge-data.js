@@ -10,7 +10,7 @@
         website: "https://www.bfh.ch/de/studium/alle-studiengaenge/",
         kategorien: [
           {
-            name: "1. Wirtschaftswissenschaften",
+            name: "2. Wirtschaftswissenschaften",
             studiengaenge: [
               { name: "Digital Business & AI", grad: "Bachelor of Science" },
               { name: "Betriebsökonomie", grad: "Bachelor of Science" },
@@ -20,7 +20,7 @@
             ]
           },
           {
-            name: "2. Medizin und Gesundheitswissenschaften",
+            name: "5. Medizin und Gesundheitswissenschaften",
             studiengaenge: [
               { name: "Ernährung und Diätetik", grad: "Bachelor of Science" },
               { name: "Hebamme", grad: "Bachelor of Science" },
@@ -31,7 +31,7 @@
             ]
           },
           {
-            name: "5. Naturwissenschaften",
+            name: "3. Naturwissenschaften",
             studiengaenge: [
               { name: "Agronomie", grad: "Bachelor of Science" },
               { name: "Waldwissenschaften", grad: "Bachelor of Science" },
@@ -39,7 +39,7 @@
             ]
           },
           {
-            name: "7. Ingenieurwissenschaften",
+            name: "1. Ingenieurwissenschaften",
             unterkategorien: [
               {
                 name: "Informatik",
@@ -67,7 +67,7 @@
             ]
           },
           {
-            name: "8. Wissenschaften vom Menschen und seiner Kultur",
+            name: "6. Wissenschaften vom Menschen und seiner Kultur",
             unterkategorien: [
               {
                 name: "Kunstwissenschaften",
@@ -88,7 +88,7 @@
             ]
           },
           {
-            name: "9. Sportwissenschaften",
+            name: "7. Sportwissenschaften",
             studiengaenge: [
               { name: "Sport", grad: "Bachelor of Science" }
             ]
@@ -102,7 +102,7 @@
         website: "https://www.fhgr.ch/studium/bachelorangebot/",
         kategorien: [
           {
-            name: "1. Wirtschaftswissenschaften",
+            name: "2. Wirtschaftswissenschaften",
             studiengaenge: [
               { name: "Betriebsökonomie", grad: "Bachelor" },
               { name: "Digital Business Management", grad: "Bachelor" },
@@ -113,7 +113,7 @@
             ]
           },
           {
-            name: "7. Ingenieurwissenschaften",
+            name: "1. Ingenieurwissenschaften",
             unterkategorien: [
               {
                 name: "Informatik",
@@ -146,7 +146,7 @@
         website: "https://www.fhnw.ch/de/studium/bachelor",
         kategorien: [
           {
-            name: "1. Wirtschaftswissenschaften",
+            name: "2. Wirtschaftswissenschaften",
             studiengaenge: [
               { name: "International Business Management (trinational)", grad: "Bachelor of Science" },
               { name: "Business Administration (International Management)", grad: "Bachelor of Science" },
@@ -160,13 +160,13 @@
             ]
           },
           {
-            name: "5. Naturwissenschaften",
+            name: "3. Naturwissenschaften",
             studiengaenge: [
               { name: "Life Sciences", grad: "Bachelor" }
             ]
           },
           {
-            name: "7. Ingenieurwissenschaften",
+            name: "1. Ingenieurwissenschaften",
             unterkategorien: [
               {
                 name: "Informatik",
@@ -202,7 +202,7 @@
             ]
           },
           {
-            name: "8. Wissenschaften vom Menschen und seiner Kultur",
+            name: "6. Wissenschaften vom Menschen und seiner Kultur",
             unterkategorien: [
               {
                 name: "Kunstwissenschaften",
@@ -244,7 +244,7 @@
         website: "https://www.ost.ch/de/studium/bachelor",
         kategorien: [
           {
-            name: "1. Wirtschaftswissenschaften",
+            name: "2. Wirtschaftswissenschaften",
             studiengaenge: [
               { name: "Betriebsökonomie", grad: "BSc" },
               { name: "Management und Recht", grad: "BSc" },
@@ -253,7 +253,7 @@
             ]
           },
           {
-            name: "2. Medizin und Gesundheitswissenschaften",
+            name: "5. Medizin und Gesundheitswissenschaften",
             studiengaenge: [
               { name: "Ergotherapie", grad: "BSc" },
               { name: "Pflege", grad: "BSc" },
@@ -261,7 +261,7 @@
             ]
           },
           {
-            name: "7. Ingenieurwissenschaften",
+            name: "1. Ingenieurwissenschaften",
             unterkategorien: [
               {
                 name: "Informatik",
@@ -289,7 +289,7 @@
             ]
           },
           {
-            name: "8. Wissenschaften vom Menschen und seiner Kultur",
+            name: "6. Wissenschaften vom Menschen und seiner Kultur",
             unterkategorien: [
               {
                 name: "Sozialwissenschaften",
@@ -308,7 +308,7 @@
         website: "https://www.zhaw.ch/de/studium/bachelorstudiengaenge",
         kategorien: [
           {
-            name: "1. Wirtschaftswissenschaften",
+            name: "2. Wirtschaftswissenschaften",
             studiengaenge: [
               { name: "Angewandtes Recht", grad: "BA" },
               { name: "Betriebsökonomie", grad: "BSc" },
@@ -320,7 +320,7 @@
             ]
           },
           {
-            name: "2. Medizin und Gesundheitswissenschaften",
+            name: "5. Medizin und Gesundheitswissenschaften",
             studiengaenge: [
               { name: "Ergotherapie", grad: "BSc" },
               { name: "Gesundheitsförderung und Prävention", grad: "BSc" },
@@ -331,7 +331,7 @@
             ]
           },
           {
-            name: "5. Naturwissenschaften",
+            name: "3. Naturwissenschaften",
             studiengaenge: [
               { name: "Applied Digital Life Sciences", grad: "BSc" },
               { name: "Biomedizinische Labordiagnostik", grad: "BSc" },
@@ -341,7 +341,7 @@
             ]
           },
           {
-            name: "7. Ingenieurwissenschaften",
+            name: "1. Ingenieurwissenschaften",
             unterkategorien: [
               {
                 name: "Informatik",
@@ -370,7 +370,7 @@
             ]
           },
           {
-            name: "8. Wissenschaften vom Menschen und seiner Kultur",
+            name: "6. Wissenschaften vom Menschen und seiner Kultur",
             unterkategorien: [
               {
                 name: "Kunstwissenschaften",
@@ -397,7 +397,7 @@
         website: "https://www.zhdk.ch/studium/alle-majors-und-minors?bachelorMaster=1&majorMinor=1",
         kategorien: [
           {
-            name: "8. Wissenschaften vom Menschen und seiner Kultur",
+            name: "6. Wissenschaften vom Menschen und seiner Kultur",
             unterkategorien: [
               {
                 name: "Kunstwissenschaften",
@@ -424,7 +424,7 @@
         website: "https://www.hslu.ch/de-ch/hochschule-luzern/studium/#?filters=16",
         kategorien: [
           {
-            name: "1. Wirtschaftswissenschaften",
+            name: "2. Wirtschaftswissenschaften",
             studiengaenge: [
               { name: "Business Administration", grad: "Bachelor of Science" },
               { name: "Business IT & Digital Transformation", grad: "Bachelor" },
@@ -439,13 +439,13 @@
             ]
           },
           {
-            name: "2. Medizin und Gesundheitswissenschaften",
+            name: "5. Medizin und Gesundheitswissenschaften",
             studiengaenge: [
               { name: "Pflege", grad: "Bachelor of Science" }
             ]
           },
           {
-            name: "7. Ingenieurwissenschaften",
+            name: "1. Ingenieurwissenschaften",
             unterkategorien: [
               {
                 name: "Informatik",
@@ -476,7 +476,7 @@
             ]
           },
           {
-            name: "8. Wissenschaften vom Menschen und seiner Kultur",
+            name: "6. Wissenschaften vom Menschen und seiner Kultur",
             unterkategorien: [
               {
                 name: "Kunstwissenschaften",

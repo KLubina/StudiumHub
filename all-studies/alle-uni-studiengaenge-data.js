@@ -10,14 +10,14 @@
         website: "https://www.unibas.ch/de/Studium/Vor-dem-Studium/Studienangebot.html",
         kategorien: [
           {
-            name: "1. Wirtschaftswissenschaften",
+            name: "2. Wirtschaftswissenschaften",
             studiengaenge: [
               { name: "Wirtschaftswissenschaften", ects: "180 KP" },
               { name: "Wirtschaftswissenschaften 75 KP", ects: "75 KP", beschreibung: "ausserfakultäres Bachelorstudienfach 75 KP" }
             ]
           },
           {
-            name: "2. Medizin und Gesundheitswissenschaften",
+            name: "5. Medizin und Gesundheitswissenschaften",
             studiengaenge: [
               { name: "Humanmedizin", ects: "180 KP" },
               { name: "Zahnmedizin", ects: "180 KP" }
@@ -31,7 +31,7 @@
             ]
           },
           {
-            name: "5. Naturwissenschaften",
+            name: "3. Naturwissenschaften",
             studiengaenge: [
               { name: "Biologie", ects: "180 KP" },
               { name: "Biologie 75 KP", ects: "75 KP", beschreibung: "ausserfakultäres Bachelorstudienfach 75 KP" },
@@ -48,7 +48,7 @@
             ]
           },
           {
-            name: "7. Ingenieurwissenschaften",
+            name: "1. Ingenieurwissenschaften",
             unterkategorien: [
               {
                 name: "Informatik",
@@ -61,7 +61,7 @@
             ]
           },
           {
-            name: "8. Wissenschaften vom Menschen und seiner Kultur",
+            name: "6. Wissenschaften vom Menschen und seiner Kultur",
             unterkategorien: [
               {
                 name: "Sprachwissenschaften",
@@ -133,7 +133,7 @@
             ]
           },
           {
-            name: "9. Sportwissenschaften",
+            name: "7. Sportwissenschaften",
             studiengaenge: [
               { name: "Sport, Bewegung & Gesundheit", ects: "180 KP" },
               { name: "Sport, Bewegung & Gesundheit mit Zweitfach", ects: "99 KP", beschreibung: "ausserfakultäres Bachelorstudienfach 75 KP" }
@@ -148,7 +148,7 @@
         website: "https://www.unilu.ch/fileadmin/universitaet/dienste/unikomm/dokumente/Studienbroschueren/Studienprogramme_Bachelor.pdf",
         kategorien: [
           {
-            name: "1. Wirtschaftswissenschaften",
+            name: "2. Wirtschaftswissenschaften",
             studiengaenge: [
               { name: "Wirtschaftswissenschaften", ects: "180/120/60 ECTS" },
               { name: "Gesundheitswissenschaften", ects: "180 ECTS" }
@@ -161,7 +161,7 @@
             ]
           },
           {
-            name: "8. Wissenschaften vom Menschen und seiner Kultur",
+            name: "6. Wissenschaften vom Menschen und seiner Kultur",
             unterkategorien: [
               {
                 name: "Geschichtswissenschaften",
@@ -212,7 +212,7 @@
         website: "https://www.unisg.ch/de/studium/programme/bachelor/",
         kategorien: [
           {
-            name: "1. Wirtschaftswissenschaften",
+            name: "2. Wirtschaftswissenschaften",
             studiengaenge: [
               { name: "Betriebswirtschaftslehre", ects: "180 ECTS" },
               { name: "Volkswirtschaftslehre", ects: "180 ECTS" }
@@ -226,7 +226,7 @@
             ]
           },
           {
-            name: "7. Ingenieurwissenschaften",
+            name: "1. Ingenieurwissenschaften",
             unterkategorien: [
               {
                 name: "Informatik",
@@ -237,7 +237,7 @@
             ]
           },
           {
-            name: "8. Wissenschaften vom Menschen und seiner Kultur",
+            name: "6. Wissenschaften vom Menschen und seiner Kultur",
             unterkategorien: [
               {
                 name: "Sozialwissenschaften",
@@ -256,7 +256,7 @@
         website: "https://www.unibe.ch/unibe/portal/content/e1006/e251033/e265838/Bachelor-d_25-26_ger.pdf",
         kategorien: [
           {
-            name: "1. Wirtschaftswissenschaften",
+            name: "2. Wirtschaftswissenschaften",
             studiengaenge: [
               { name: "Betriebswirtschaftslehre", ects: "120/60/30/15 ECTS" },
               { name: "Volkswirtschaftslehre", ects: "120/60/30/15 ECTS" },
@@ -266,7 +266,7 @@
             ]
           },
           {
-            name: "2. Medizin und Gesundheitswissenschaften",
+            name: "5. Medizin und Gesundheitswissenschaften",
             studiengaenge: [
               { name: "Humanmedizin", ects: "180 ECTS" },
               { name: "Veterinärmedizin", ects: "180 ECTS" },
@@ -280,7 +280,7 @@
             ]
           },
           {
-            name: "5. Naturwissenschaften",
+            name: "3. Naturwissenschaften",
             studiengaenge: [
               { name: "Biochemie und Molekularbiologie", ects: "180/60/30/15 ECTS" },
               { name: "Biologie", ects: "180 ECTS" },
@@ -294,7 +294,7 @@
             ]
           },
           {
-            name: "7. Ingenieurwissenschaften",
+            name: "1. Ingenieurwissenschaften",
             unterkategorien: [
               {
                 name: "Informatik",
@@ -305,7 +305,7 @@
             ]
           },
           {
-            name: "8. Wissenschaften vom Menschen und seiner Kultur",
+            name: "6. Wissenschaften vom Menschen und seiner Kultur",
             unterkategorien: [
               {
                 name: "Sprachwissenschaften",
@@ -388,7 +388,7 @@
             ]
           },
           {
-            name: "9. Sportwissenschaften",
+            name: "7. Sportwissenschaften",
             studiengaenge: [
               { name: "Sportwissenschaft", ects: "120/60/30 ECTS" }
             ]
@@ -402,7 +402,7 @@
         website: "https://studies.unifr.ch/de/studienangebot/courses/",
         kategorien: [
           {
-            name: "1. Wirtschaftswissenschaften",
+            name: "2. Wirtschaftswissenschaften",
             studiengaenge: [
               { name: "Betriebswirtschaftslehre", ects: "180/60 ECTS" },
               { name: "Volkswirtschaftslehre", ects: "180/60 ECTS" },
@@ -411,7 +411,7 @@
             ]
           },
           {
-            name: "2. Medizin und Gesundheitswissenschaften",
+            name: "5. Medizin und Gesundheitswissenschaften",
             studiengaenge: [
               { name: "Humanmedizin", ects: "180 ECTS" },
             ]
@@ -424,7 +424,7 @@
             ]
           },
           {
-            name: "5. Naturwissenschaften",
+            name: "3. Naturwissenschaften",
             studiengaenge: [
               { name: "Biochemie", ects: "120/60 ECTS" },
               { name: "Biologie", ects: "120/60 ECTS" },
@@ -438,7 +438,7 @@
             ]
           },
           {
-            name: "7. Ingenieurwissenschaften",
+            name: "1. Ingenieurwissenschaften",
             unterkategorien: [
               {
                 name: "Informatik",
@@ -449,7 +449,7 @@
             ]
           },
           {
-            name: "8. Wissenschaften vom Menschen und seiner Kultur",
+            name: "6. Wissenschaften vom Menschen und seiner Kultur",
             unterkategorien: [
               {
                 name: "Sprachwissenschaften",
@@ -541,7 +541,7 @@
             ]
           },
           {
-            name: "9. Sportwissenschaften",
+            name: "7. Sportwissenschaften",
             studiengaenge: [
               { name: "Sport- und Bewegungswissenschaften", ects: "180/120/60 ECTS" }
             ]
@@ -555,13 +555,13 @@
         website: "https://ethz.ch/studierende/de/studium/studiengaenge.html",
         kategorien: [
           {
-            name: "2. Medizin und Gesundheitswissenschaften",
+            name: "5. Medizin und Gesundheitswissenschaften",
             studiengaenge: [
               { name: "Humanmedizin", ects: "180 ECTS" },
             ]
           },
           {
-            name: "5. Naturwissenschaften",
+            name: "3. Naturwissenschaften",
             studiengaenge: [
               { name: "Biologie", ects: "180 ECTS" },
               { name: "Biochemie", ects: "180 ECTS" },
@@ -578,7 +578,7 @@
             ]
           },
           {
-            name: "7. Ingenieurwissenschaften",
+            name: "1. Ingenieurwissenschaften",
             unterkategorien: [
               {
                 name: "Informatik",
@@ -613,7 +613,7 @@
         website: "https://www.uzh.ch/de/studies/programs/bachelor.html",
         kategorien: [
           {
-            name: "1. Wirtschaftswissenschaften",
+            name: "2. Wirtschaftswissenschaften",
             studiengaenge: [
               { name: "Banking and Finance", ects: "150 ECTS" },
               { name: "Betriebswirtschaftslehre", ects: "150 ECTS" },
@@ -623,7 +623,7 @@
             ]
           },
           {
-            name: "2. Medizin und Gesundheitswissenschaften",
+            name: "5. Medizin und Gesundheitswissenschaften",
             studiengaenge: [
               { name: "Chiropraktik", ects: "180 ECTS" },
               { name: "Humanmedizin", ects: "180 ECTS" },
@@ -638,7 +638,7 @@
             ]
           },
           {
-            name: "5. Naturwissenschaften",
+            name: "3. Naturwissenschaften",
             studiengaenge: [
               { name: "Astronomie und Astrophysik", ects: "180/150 ECTS" },
               { name: "Biochemie", ects: "180 ECTS" },
@@ -653,7 +653,7 @@
             ]
           },
           {
-            name: "7. Ingenieurwissenschaften",
+            name: "1. Ingenieurwissenschaften",
             unterkategorien: [
               {
                 name: "Informatik",
@@ -665,7 +665,7 @@
             ]
           },
           {
-            name: "8. Wissenschaften vom Menschen und seiner Kultur",
+            name: "6. Wissenschaften vom Menschen und seiner Kultur",
             unterkategorien: [
               {
                 name: "Sprachwissenschaften",
