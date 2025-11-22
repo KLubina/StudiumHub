@@ -268,7 +268,7 @@
               { name: "Biochemie und Molekularbiologie", ects: "180/60/30/15 ECTS" },
               { name: "Biologie", ects: "180 ECTS" },
               { name: "Chemie und Molekulare Wissenschaften", ects: "180/60/30/15 ECTS" },
-              { name: "Erdwissenschaften (Geologie)", ects: "180/120/60/30/15 ECTS" },
+              { name: "Erdwissenschaften", ects: "180/120/60/30/15 ECTS" },
               { name: "Geographie", ects: "120 ECTS" },
               { name: "Physik", ects: "120 ECTS" },
               { name: "Pharmazeutische Wissenschaften", ects: "180 ECTS" },
