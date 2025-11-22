@@ -164,7 +164,8 @@
               {
                 name: "Philosophie",
                 studiengaenge: [
-                  { name: "Philosophie", ects: "120/60 ECTS" }
+                  { name: "Philosophie", ects: "120/60 ECTS" },
+                  { name: "Ethik", ects: "60 ECTS" }
                 ]
               },
               {
@@ -176,12 +177,6 @@
                   { name: "Philosophy, Politics and Economics", ects: "180 ECTS" },
                   { name: "Politikwissenschaft", ects: "120/60 ECTS" },
                   { name: "Soziologie", ects: "120/60 ECTS" }
-                ]
-              },
-              {
-                name: "Bildungswissenschaften",
-                studiengaenge: [
-                  { name: "Ethik", ects: "60 ECTS" }
                 ]
               },
               {

@@ -62,7 +62,7 @@
             name: "8. Wissenschaften vom Menschen und seiner Kultur",
             unterkategorien: [
               {
-                name: "Geistes- und Kulturwissenschaften",
+                name: "Kulturwissenschaften",
                 studiengaenge: [
                   { name: "Vermittlung in Kunst und Design", grad: "Bachelor of Arts" },
                   { name: "Literarisches Schreiben", grad: "Bachelor" }
@@ -184,7 +184,7 @@
             name: "8. Wissenschaften vom Menschen und seiner Kultur",
             unterkategorien: [
               {
-                name: "Geistes- und Kulturwissenschaften",
+                name: "Kulturwissenschaften",
                 studiengaenge: [
                   { name: "Bildende Kunst", grad: "Bachelor of Arts" },
                   { name: "Industrial Design", grad: "Bachelor of Arts" },
@@ -204,7 +204,7 @@
                 ]
               },
               {
-                name: "Erziehungs- und Bildungswissenschaften",
+                name: "Bildungswissenschaften",
                 studiengaenge: [
                   { name: "Kindergarten-/Unterstufe", grad: "Bachelor of Arts" },
                   { name: "Primarstufe", grad: "Bachelor of Arts" },
@@ -334,7 +334,7 @@
             name: "8. Wissenschaften vom Menschen und seiner Kultur",
             unterkategorien: [
               {
-                name: "Geistes- und Kulturwissenschaften",
+                name: "Kulturwissenschaften",
                 studiengaenge: [
                   { name: "Kommunikation und Medien", grad: "BA" },
                   { name: "Mehrsprachige Kommunikation", grad: "BA" }
@@ -359,7 +359,7 @@
             name: "8. Wissenschaften vom Menschen und seiner Kultur",
             unterkategorien: [
               {
-                name: "Geistes- und Kulturwissenschaften",
+                name: "Kulturwissenschaften",
                 studiengaenge: [
                   { name: "Art Education", grad: "BA" },
                   { name: "Contemporary Dance", grad: "BA" },
@@ -428,7 +428,7 @@
             name: "8. Wissenschaften vom Menschen und seiner Kultur",
             unterkategorien: [
               {
-                name: "Geistes- und Kulturwissenschaften",
+                name: "Kulturwissenschaften",
                 studiengaenge: [
                   { name: "Architektur", grad: "Bachelor of Arts" },
                   { name: "Innenarchitektur", grad: "Bachelor of Arts" },
