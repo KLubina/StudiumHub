@@ -30,7 +30,7 @@ const DOMBuilders = {
     content.className = 'uni-content';
 
     uni.kategorien.forEach(kategorie => {
-      const categorySection = this.createCategorySection(kategorie);
+      const categorySection = this.createCategorySection(kategorie, uni.name);
       content.appendChild(categorySection);
     });
 
@@ -40,7 +40,7 @@ const DOMBuilders = {
     return section;
   },
 
-  createCategorySection(kategorie) {
+  createCategorySection(kategorie, institutionName) {
     const section = document.createElement('div');
     section.className = 'category-section';
 
@@ -65,7 +65,7 @@ const DOMBuilders = {
         list.className = 'studiengang-list';
 
         unterkategorie.studiengaenge.forEach(studiengang => {
-          const item = this.createStudiengangItem(studiengang);
+          const item = this.createStudiengangItem(studiengang, institutionName);
           list.appendChild(item);
         });
 
@@ -81,7 +81,7 @@ const DOMBuilders = {
       list.className = 'studiengang-list';
 
       kategorie.studiengaenge.forEach(studiengang => {
-        const item = this.createStudiengangItem(studiengang);
+        const item = this.createStudiengangItem(studiengang, institutionName);
         list.appendChild(item);
       });
 
@@ -91,7 +91,7 @@ const DOMBuilders = {
     return section;
   },
 
-  createStudiengangItem(studiengang) {
+  createStudiengangItem(studiengang, institutionName) {
     const item = document.createElement('div');
     item.className = 'studiengang-item';
 
@@ -112,6 +112,19 @@ const DOMBuilders = {
       beschreibung.className = 'studiengang-beschreibung';
       beschreibung.textContent = studiengang.beschreibung;
       item.appendChild(beschreibung);
+    }
+
+    // Check if visualization exists and add link
+    if (window.StudiengangMapping) {
+      const vizUrl = window.StudiengangMapping.getVisualizationUrl(studiengang.name, institutionName);
+      if (vizUrl) {
+        const vizLink = document.createElement('a');
+        vizLink.href = vizUrl;
+        vizLink.className = 'viz-link';
+        vizLink.textContent = '→ Visualisierung ansehen';
+        vizLink.style.cssText = 'margin-top: 5px; display: inline-block; color: #0066cc; text-decoration: none; font-size: 0.9em;';
+        item.appendChild(vizLink);
+      }
     }
 
     return item;
@@ -182,7 +195,7 @@ const DOMBuilders = {
         list.className = 'studiengang-list';
 
         inst.studiengaenge.forEach(studiengang => {
-          const item = this.createStudiengangItem(studiengang);
+          const item = this.createStudiengangItem(studiengang, inst.institution);
           list.appendChild(item);
         });
 
@@ -222,7 +235,7 @@ const DOMBuilders = {
         list.className = 'studiengang-list';
 
         inst.studiengaenge.forEach(studiengang => {
-          const item = this.createStudiengangItem(studiengang);
+          const item = this.createStudiengangItem(studiengang, inst.institution);
           list.appendChild(item);
         });
 
@@ -281,7 +294,7 @@ const DOMBuilders = {
       list.className = 'studiengang-list';
 
       inst.studiengaenge.forEach(studiengang => {
-        const item = this.createStudiengangItem(studiengang);
+        const item = this.createStudiengangItem(studiengang, inst.institution);
         list.appendChild(item);
       });
 
