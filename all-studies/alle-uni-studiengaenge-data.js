@@ -222,7 +222,9 @@
             name: "1. Wirtschaftswissenschaften",
             studiengaenge: [
               { name: "Betriebswirtschaftslehre", ects: "120/60/30/15 ECTS" },
-              { name: "Volkswirtschaftslehre", ects: "120/60/30/15 ECTS" }
+              { name: "Volkswirtschaftslehre", ects: "120/60/30/15 ECTS" },
+              { name: "Digitalization and Applied Data Science in Business, Economics and the Social Sciences", ects: "30 ECTS" },
+              { name: "Wirtschaftsinformatik", ects: "30/15 ECTS" }
             ]
           },
           {
@@ -236,7 +238,9 @@
           {
             name: "4. Rechtswissenschaften",
             studiengaenge: [
-              { name: "Rechtswissenschaft", ects: "180 ECTS" }
+              { name: "Rechtswissenschaft", ects: "180 ECTS" },
+              { name: "Obligationenrecht und Wirtschaftsrecht", ects: "30 ECTS" },
+              { name: "Staatsrecht und Staatstheorie", ects: "30 ECTS" }
             ]
           },
           {
@@ -248,7 +252,8 @@
               { name: "Erdwissenschaften (Geologie)", ects: "180/120/60/30/15 ECTS" },
               { name: "Geographie", ects: "120 ECTS" },
               { name: "Physik", ects: "120 ECTS" },
-              { name: "Pharmazeutische Wissenschaften", ects: "180 ECTS" }
+              { name: "Pharmazeutische Wissenschaften", ects: "180 ECTS" },
+              { name: "Nachhaltige Entwicklung", ects: "60/30/15 ECTS" }
             ]
           },
           {
@@ -287,7 +292,15 @@
                   { name: "Philosophie", ects: "120 ECTS" },
                   { name: "Slavistik", ects: "120 ECTS" },
                   { name: "Spanische Sprach- und Literaturwissenschaft", ects: "120/60/30 ECTS" },
-                  { name: "Theaterwissenschaft", ects: "120/60/30 ECTS" }
+                  { name: "Theaterwissenschaft", ects: "120/60/30 ECTS" },
+                  { name: "Basis Antike mit Schwerpunkt Griechisch", ects: "60/30 ECTS" },
+                  { name: "Basis Antike mit Schwerpunkt Latein", ects: "60/30 ECTS" },
+                  { name: "Chinesische Sprache und Gesellschaft", ects: "30 ECTS" },
+                  { name: "Klassische Philologie mit Schwerpunkt Griechisch", ects: "60/30 ECTS" },
+                  { name: "Klassische Philologie mit Schwerpunkt Latein", ects: "60/30 ECTS" },
+                  { name: "Kulturgeschichte und Archäologie des vorislamischen Palästina/Israel", ects: "60/30 ECTS" },
+                  { name: "Philosophie des Geistes", ects: "60 ECTS" },
+                  { name: "Wissenschaftsphilosophie", ects: "60 ECTS" }
                 ]
               },
               {
@@ -316,24 +329,6 @@
             name: "9. Sportwissenschaften",
             studiengaenge: [
               { name: "Sportwissenschaft", ects: "120/60/30 ECTS" }
-            ]
-          },
-          {
-            name: "Spezialisierte Minors",
-            studiengaenge: [
-              { name: "Basis Antike mit Schwerpunkt Griechisch", ects: "60/30 ECTS" },
-              { name: "Basis Antike mit Schwerpunkt Latein", ects: "60/30 ECTS" },
-              { name: "Chinesische Sprache und Gesellschaft", ects: "30 ECTS" },
-              { name: "Digitalization and Applied Data Science in Business, Economics and the Social Sciences", ects: "30 ECTS" },
-              { name: "Klassische Philologie mit Schwerpunkt Griechisch", ects: "60/30 ECTS" },
-              { name: "Klassische Philologie mit Schwerpunkt Latein", ects: "60/30 ECTS" },
-              { name: "Kulturgeschichte und Archäologie des vorislamischen Palästina/Israel", ects: "60/30 ECTS" },
-              { name: "Nachhaltige Entwicklung", ects: "60/30/15 ECTS" },
-              { name: "Obligationenrecht und Wirtschaftsrecht", ects: "30 ECTS" },
-              { name: "Philosophie des Geistes", ects: "60 ECTS" },
-              { name: "Staatsrecht und Staatstheorie", ects: "30 ECTS" },
-              { name: "Wirtschaftsinformatik", ects: "30/15 ECTS" },
-              { name: "Wissenschaftsphilosophie", ects: "60 ECTS" }
             ]
           }
         ]
