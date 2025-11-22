@@ -4,6 +4,7 @@
 (function (global) {
   const AlleSchweizerStudiengaenge = {
     universitaeten: [
+      // #region Universität Basel
       {
         name: "Universität Basel",
         website: "https://www.unibas.ch/de/Studium/Vor-dem-Studium/Studienangebot.html",
@@ -135,6 +136,8 @@
           }
         ]
       },
+      // #endregion
+      // #region Universität Luzern
       {
         name: "Universität Luzern",
         website: "https://www.unilu.ch/fileadmin/universitaet/dienste/unikomm/dokumente/Studienbroschueren/Studienprogramme_Bachelor.pdf",
@@ -197,6 +200,8 @@
           }
         ]
       },
+      // #endregion
+      // #region Universität St. Gallen
       {
         name: "Universität St. Gallen",
         website: "https://www.unisg.ch/de/studium/programme/bachelor/",
@@ -234,6 +239,8 @@
           }
         ]
       },
+      // #endregion
+      // #region Universität Bern
       {
         name: "Universität Bern",
         website: "https://www.unibe.ch/unibe/portal/content/e1006/e251033/e265838/Bachelor-d_25-26_ger.pdf",
@@ -373,6 +380,8 @@
           }
         ]
       },
+      // #endregion
+      // #region Universität Freiburg
       {
         name: "Universität Freiburg",
         website: "https://studies.unifr.ch/de/studienangebot/courses/",
@@ -519,6 +528,8 @@
           }
         ]
       },
+      // #endregion
+      // #region ETH Zürich
       {
         name: "ETH Zürich",
         website: "https://ethz.ch/studierende/de/studium/studiengaenge.html",
@@ -568,6 +579,8 @@
           }
         ]
       },
+      // #endregion
+      // #region Universität Zürich
       {
         name: "Universität Zürich",
         website: "https://www.uzh.ch/de/studies/programs/bachelor.html",
@@ -705,6 +718,7 @@
           }
         ]
       }
+      // #endregion
     ]
   };
 

@@ -4,6 +4,7 @@
 (function (global) {
   const AlleFHStudiengaenge = {
     fachhochschulen: [
+      // #region Berner Fachhochschule
       {
         name: "Berner Fachhochschule",
         website: "https://www.bfh.ch/de/studium/alle-studiengaenge/",
@@ -87,6 +88,8 @@
           }
         ]
       },
+      // #endregion
+      // #region FH Graubünden
       {
         name: "FH Graubünden",
         website: "https://www.fhgr.ch/studium/bachelorangebot/",
@@ -122,6 +125,8 @@
           }
         ]
       },
+      // #endregion
+      // #region Fachhochschule Nordwestschweiz
       {
         name: "Fachhochschule Nordwestschweiz",
         website: "https://www.fhnw.ch/de/studium/bachelor",
@@ -211,6 +216,8 @@
           }
         ]
       },
+      // #endregion
+      // #region Ostschweizer Fachhochschule
       {
         name: "Ostschweizer Fachhochschule",
         website: "https://www.ost.ch/de/studium/bachelor",
@@ -266,6 +273,8 @@
           }
         ]
       },
+      // #endregion
+      // #region ZHAW
       {
         name: "ZHAW",
         website: "https://www.zhaw.ch/de/studium/bachelorstudiengaenge",
@@ -346,8 +355,10 @@
           }
         ]
       },
+      // #endregion
+      // #region ZHdK
       {
-        name: "ZHdK – Zürcher Hochschule der Künste",
+        name: "ZHdK",
         website: "https://www.zhdk.ch/studium/alle-majors-und-minors?bachelorMaster=1&majorMinor=1",
         kategorien: [
           {
@@ -371,8 +382,10 @@
           }
         ]
       },
+      // #endregion
+      // #region HSLU
       {
-        name: "Hochschule Luzern (HSLU)",
+        name: "HSLU",
         website: "https://www.hslu.ch/de-ch/hochschule-luzern/studium/#?filters=16",
         kategorien: [
           {
@@ -442,6 +455,7 @@
           }
         ]
       }
+      // #endregion
     ]
   };
 
