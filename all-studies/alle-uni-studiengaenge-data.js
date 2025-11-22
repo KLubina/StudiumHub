@@ -23,12 +23,6 @@
             ]
           },
           {
-            name: "3. Psychologie",
-            studiengaenge: [
-              { name: "Psychologie", ects: "180 KP" }
-            ]
-          },
-          {
             name: "4. Rechtswissenschaften",
             studiengaenge: [
               { name: "Rechtswissenschaft", ects: "180 KP" },
@@ -103,6 +97,12 @@
                   { name: "Politikwissenschaft 75 KP", ects: "75 KP", beschreibung: "anderes Fach 75 KP" },
                   { name: "Soziologie 75 KP", ects: "75 KP", beschreibung: "anderes Fach 75 KP" }
                 ]
+              },
+              {
+                name: "Psychologie",
+                studiengaenge: [
+                  { name: "Psychologie", ects: "180 KP" }
+                ]
               }
             ]
           },
@@ -124,12 +124,6 @@
             studiengaenge: [
               { name: "Wirtschaftswissenschaften", ects: "180/120/60 ECTS" },
               { name: "Gesundheitswissenschaften", ects: "180 ECTS" }
-            ]
-          },
-          {
-            name: "3. Psychologie",
-            studiengaenge: [
-              { name: "Psychologie", ects: "120/60 ECTS" }
             ]
           },
           {
@@ -171,6 +165,12 @@
                 name: "Erziehungs- und Bildungswissenschaften",
                 studiengaenge: [
                   { name: "Ethik", ects: "60 ECTS" }
+                ]
+              },
+              {
+                name: "Psychologie",
+                studiengaenge: [
+                  { name: "Psychologie", ects: "120/60 ECTS" }
                 ]
               }
             ]
@@ -231,12 +231,6 @@
               { name: "Humanmedizin", ects: "180 ECTS" },
               { name: "Veterinärmedizin", ects: "180 ECTS" },
               { name: "Zahnmedizin", ects: "180 ECTS" }
-            ]
-          },
-          {
-            name: "3. Psychologie",
-            studiengaenge: [
-              { name: "Psychologie", ects: "120 ECTS" }
             ]
           },
           {
@@ -309,6 +303,12 @@
                 studiengaenge: [
                   { name: "Erziehungswissenschaft", ects: "120/60/30 ECTS" }
                 ]
+              },
+              {
+                name: "Psychologie",
+                studiengaenge: [
+                  { name: "Psychologie", ects: "120 ECTS" }
+                ]
               }
             ]
           },
@@ -355,12 +355,6 @@
             name: "2. Medizin und Gesundheitswissenschaften",
             studiengaenge: [
               { name: "Humanmedizin", ects: "180 ECTS" },
-            ]
-          },
-          {
-            name: "3. Psychologie",
-            studiengaenge: [
-              { name: "Psychologie", ects: "180/60 ECTS" }
             ]
           },
           {
@@ -453,6 +447,12 @@
                   { name: "Ausbildung für den Unterricht auf der Primarstufe", ects: "180 ECTS" },
                   { name: "Ausbildung für den Unterricht auf der Sekundarstufe I", ects: "150 ECTS" }
                 ]
+              },
+              {
+                name: "Psychologie",
+                studiengaenge: [
+                  { name: "Psychologie", ects: "180/60 ECTS" }
+                ]
               }
             ]
           },
@@ -537,12 +537,6 @@
             ]
           },
           {
-            name: "3. Psychologie",
-            studiengaenge: [
-              { name: "Psychologie", ects: "120 ECTS" }
-            ]
-          },
-          {
             name: "4. Rechtswissenschaften",
             studiengaenge: [
               { name: "Rechtswissenschaft", ects: "180 ECTS" }
@@ -624,6 +618,12 @@
                 studiengaenge: [
                   { name: "Erziehungswissenschaft", ects: "120 ECTS" },
                   { name: "Fachwissenschaft Pädagogik und Psychologie", ects: "120 ECTS" }
+                ]
+              },
+              {
+                name: "Psychologie",
+                studiengaenge: [
+                  { name: "Psychologie", ects: "120 ECTS" }
                 ]
               }
             ]
