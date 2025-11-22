@@ -156,7 +156,8 @@
               { name: "Wirtschaftsrecht", grad: "Bachelor of Science" },
               { name: "Business Artificial Intelligence", grad: "Bachelor of Science" },
               { name: "Arbeits-, Organisations- und Personalpsychologie", grad: "Bachelor of Science" },
-              { name: "Wirtschaftspsychologie", grad: "Bachelor of Science" }
+              { name: "Wirtschaftspsychologie", grad: "Bachelor of Science" },
+              { name: "Wirtschaftsingenieurwesen", grad: "Bachelor of Science" }
             ]
           },
           {
@@ -197,8 +198,7 @@
               { name: "Materials Engineering", grad: "Bachelor of Science" },
               { name: "Mechatronik Trinational", grad: "Bachelor of Science" },
               { name: "Optometrie", grad: "Bachelor of Science" },
-              { name: "Systemtechnik", grad: "Bachelor of Science" },
-              { name: "Wirtschaftsingenieurwesen", grad: "Bachelor of Science" }
+              { name: "Systemtechnik", grad: "Bachelor of Science" }
             ]
           },
           {
