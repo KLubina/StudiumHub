@@ -1,0 +1,30 @@
+/* ==== ETH CHAB - CSS CLASSES ==== */
+/* Program-specific CSS classes for Chemieingenieurwissenschaften */
+
+/* Obligatorische Fächer und Prüfungsblöcke */
+[data-studiengang="eth-chab"] .modul.obligatorisch,
+[data-studiengang="eth-chab"] .legende-item.obligatorisch {
+    background-color: var(--color-obligatorisch);
+    color: white;
+}
+
+/* Praktika */
+[data-studiengang="eth-chab"] .modul.praktikum,
+[data-studiengang="eth-chab"] .legende-item.praktikum {
+    background-color: var(--color-praktikum);
+    color: white;
+}
+
+/* Wissenschaft im Kontext */
+[data-studiengang="eth-chab"] .modul.wik,
+[data-studiengang="eth-chab"] .legende-item.wik {
+    background-color: var(--color-wik);
+    color: white;
+}
+
+/* Ergänzungsfächer */
+[data-studiengang="eth-chab"] .modul.ergaenzung,
+[data-studiengang="eth-chab"] .legende-item.ergaenzung {
+    background-color: var(--color-ergaenzung);
+    color: white;
+}

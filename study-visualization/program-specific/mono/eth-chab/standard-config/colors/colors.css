@@ -1,0 +1,18 @@
+/* ==== ETH CHAB - COLOR VARIABLES ==== */
+/* Chemieingenieurwissenschaften */
+
+[data-studiengang="eth-chab"] {
+    /* Basis colors */
+    --color-obligatorisch: #4A90E2;
+    --color-praktikum: #E67E22;
+    --color-wik: #95A5A6;
+    --color-ergaenzung: #16A085;
+
+    /* Subject-specific colors */
+    --color-chemie: #9C27B0;
+    --color-physik: #2196F3;
+    --color-mathematik: #00a99d;
+    --color-biologie: #4CAF50;
+    --color-verfahrenstechnik: #FF5722;
+    --color-technik: #F44336;
+}
