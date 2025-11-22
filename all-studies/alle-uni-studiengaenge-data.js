@@ -224,7 +224,8 @@
               { name: "Betriebswirtschaftslehre", ects: "120/60/30/15 ECTS" },
               { name: "Volkswirtschaftslehre", ects: "120/60/30/15 ECTS" },
               { name: "Digitalization and Applied Data Science in Business, Economics and the Social Sciences", ects: "30 ECTS" },
-              { name: "Wirtschaftsinformatik", ects: "30/15 ECTS" }
+              { name: "Wirtschaftsinformatik", ects: "30/15 ECTS" },
+              { name: "Obligationenrecht und Wirtschaftsrecht", ects: "30 ECTS" }
             ]
           },
           {
@@ -238,9 +239,7 @@
           {
             name: "4. Rechtswissenschaften",
             studiengaenge: [
-              { name: "Rechtswissenschaft", ects: "180 ECTS" },
-              { name: "Obligationenrecht und Wirtschaftsrecht", ects: "30 ECTS" },
-              { name: "Staatsrecht und Staatstheorie", ects: "30 ECTS" }
+              { name: "Rechtswissenschaft", ects: "180 ECTS" }
             ]
           },
           {
@@ -308,7 +307,8 @@
                 studiengaenge: [
                   { name: "Sozialanthropologie", ects: "120/60/30 ECTS" },
                   { name: "Sozialwissenschaften", ects: "120/60/30/15 ECTS" },
-                  { name: "Politik- und Verwaltungswissenschaft", ects: "120 ECTS" }
+                  { name: "Politik- und Verwaltungswissenschaft", ects: "120 ECTS" },
+                  { name: "Staatsrecht und Staatstheorie", ects: "30 ECTS" }
                 ]
               },
               {
