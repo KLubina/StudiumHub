@@ -416,7 +416,8 @@
               { name: "Energie- und Umwelttechnik", grad: "Bachelor of Science" },
               { name: "Gebäudetechnik", grad: "Bachelor of Science" },
               { name: "Maschinentechnik", grad: "Bachelor" },
-              { name: "Medizintechnik", grad: "Bachelor of Science" }
+              { name: "Medizintechnik", grad: "Bachelor of Science" },
+              { name: "Architektur", grad: "Bachelor of Arts" }
             ]
           },
           {
@@ -425,7 +426,6 @@
               {
                 name: "Kunstwissenschaften",
                 studiengaenge: [
-                  { name: "Architektur", grad: "Bachelor of Arts" },
                   { name: "Innenarchitektur", grad: "Bachelor of Arts" },
                   { name: "Music", grad: "Bachelor of Arts" },
                   { name: "Musik und Bewegung", grad: "Bachelor of Arts" }
