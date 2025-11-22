@@ -2,7 +2,7 @@
 
 (function () {
   let allData = [];
-  let currentView = 'institution'; // 'institution' oder 'category'
+  let currentView = 'category'; // 'institution' oder 'category'
   let currentFilters = {
     type: '',
     institution: '',
@@ -14,6 +14,7 @@
     initializeData();
     populateFilters();
     setupEventListeners();
+    updateFilterVisibility();
     renderStudiengaenge();
   });
 
@@ -67,6 +68,16 @@
     });
   }
 
+  function updateFilterVisibility() {
+    const categoryFilter = document.getElementById('categoryFilter');
+    // Hide category filter when viewing by institution
+    if (currentView === 'institution') {
+      categoryFilter.style.display = 'none';
+    } else {
+      categoryFilter.style.display = '';
+    }
+  }
+
   function setupEventListeners() {
     const typeFilter = document.getElementById('typeFilter');
     const institutionFilter = document.getElementById('institutionFilter');
@@ -79,6 +90,7 @@
       currentView = 'institution';
       viewByInstitution.classList.add('active');
       viewByCategory.classList.remove('active');
+      updateFilterVisibility();
       renderStudiengaenge();
     });
 
@@ -86,6 +98,7 @@
       currentView = 'category';
       viewByCategory.classList.add('active');
       viewByInstitution.classList.remove('active');
+      updateFilterVisibility();
       renderStudiengaenge();
     });
 
