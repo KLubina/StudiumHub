@@ -235,7 +235,7 @@
 
   function createUniSection(uni) {
     const section = document.createElement('div');
-    section.className = 'uni-section';
+    section.className = 'uni-section collapsed';
     section.id = 'section-' + sanitizeId(uni.name);
 
     // Header
@@ -350,7 +350,7 @@
 
   function createParentCategorySection(mainCategoryName, subcategories) {
     const section = document.createElement('div');
-    section.className = 'uni-section';
+    section.className = 'uni-section collapsed';
     section.id = 'section-' + sanitizeId(mainCategoryName);
 
     // Main Category Header
@@ -382,7 +382,7 @@
 
       // Unterkategorie Section (nested)
       const subcatSection = document.createElement('div');
-      subcatSection.className = 'category-section nested-category';
+      subcatSection.className = 'category-section nested-category collapsed';
 
       const subcatHeader = document.createElement('div');
       subcatHeader.className = 'category-title subcategory-header';
@@ -441,7 +441,7 @@
 
   function createCategorySectionGrouped(categoryName, institutions) {
     const section = document.createElement('div');
-    section.className = 'uni-section';
+    section.className = 'uni-section collapsed';
     section.id = 'section-' + sanitizeId(categoryName);
 
     // Category Header
