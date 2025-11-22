@@ -64,13 +64,6 @@
               {
                 name: "Kunstwissenschaften",
                 studiengaenge: [
-                  { name: "Vermittlung in Kunst und Design", grad: "Bachelor of Arts" },
-                  { name: "Literarisches Schreiben", grad: "Bachelor" }
-                ]
-              },
-              {
-                name: "Sozialwissenschaften",
-                studiengaenge: [
                   { name: "Fine Arts", grad: "Bachelor of Arts" },
                   { name: "Musik Klassik", grad: "Bachelor of Arts" },
                   { name: "Jazz and Contemporary Music", grad: "Bachelor of Arts" },
@@ -79,7 +72,9 @@
                   { name: "Theater/Schauspiel", grad: "Bachelor of Arts" },
                   { name: "Transformation Design", grad: "Bachelor of Arts" },
                   { name: "Visuelle Kommunikation", grad: "Bachelor of Arts" },
-                  { name: "Konservierung", grad: "Bachelor of Arts" }
+                  { name: "Konservierung", grad: "Bachelor of Arts" },
+                  { name: "Vermittlung in Kunst und Design", grad: "Bachelor of Arts" },
+                  { name: "Literarisches Schreiben", grad: "Bachelor" }
                 ]
               }
             ]

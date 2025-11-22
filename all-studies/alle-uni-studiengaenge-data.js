@@ -635,7 +635,8 @@
                   { name: "Lateinische Philologie", ects: "120 ECTS" },
                   { name: "Slavische Sprach- und Literaturwissenschaft", ects: "120 ECTS" },
                   { name: "Vergleichende Romanische Sprachwissenschaft", ects: "120 ECTS" },
-                  { name: "Vergleichende Sprachwissenschaft", ects: "120 ECTS" }
+                  { name: "Vergleichende Sprachwissenschaft", ects: "120 ECTS" },
+                  { name: "Skandinavistik", ects: "120 ECTS" }
                 ]
               },
               {
@@ -667,7 +668,6 @@
                   { name: "Nah- und Mitteloststudien", ects: "120 ECTS" },
                   { name: "Osteuropastudien", ects: "120 ECTS" },
                   { name: "Sinologie", ects: "120 ECTS" },
-                  { name: "Skandinavistik", ects: "120 ECTS" }
                 ]
               },
               {
