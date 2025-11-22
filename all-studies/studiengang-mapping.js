@@ -44,6 +44,10 @@
       key: "eth-physik",
       institution: "ETH Zürich"
     },
+    "Chemieingenieurwissenschaften": {
+      key: "eth-chab",
+      institution: "ETH Zürich"
+    },
 
     // Universität Zürich
     "Geschichte": {

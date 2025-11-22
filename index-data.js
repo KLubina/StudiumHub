@@ -97,6 +97,13 @@
 
         },
         {
+          key: "eth-chab",
+          title: "BSc Chemieingenieurwissenschaften",
+          subtitle: "ETH Zürich",
+          category: "Unis",
+
+        },
+        {
           key: "uzh-geschichte",
           title: "Bachelor Geschichte",
           subtitle: "Universität Zürich",
