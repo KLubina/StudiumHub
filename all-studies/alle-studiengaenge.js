@@ -351,18 +351,9 @@
     const header = document.createElement('div');
     header.className = 'uni-header';
 
-    // Zähle Gesamtzahl der Hochschulen in allen Unterkategorien
-    let totalInstitutions = 0;
-    subcategories.forEach(institutions => {
-      totalInstitutions += institutions.length;
-    });
-
     header.innerHTML = `
       <div>
         <div class="uni-title">${mainCategoryName}</div>
-        <div class="uni-website" style="color: #999;">
-          ${totalInstitutions} Hochschule${totalInstitutions > 1 ? 'n' : ''}
-        </div>
       </div>
       <span class="toggle-icon">▼</span>
     `;
@@ -452,9 +443,6 @@
     header.innerHTML = `
       <div>
         <div class="uni-title">${categoryName}</div>
-        <div class="uni-website" style="color: #999;">
-          ${institutions.length} Hochschule${institutions.length > 1 ? 'n' : ''}
-        </div>
       </div>
       <span class="toggle-icon">▼</span>
     `;
