@@ -181,7 +181,8 @@
           if (!hierarchicalCategories.has(kategorie.name)) {
             hierarchicalCategories.set(kategorie.name, {
               isParent: true,
-              subcategories: new Map()
+              subcategories: new Map(),
+              directPrograms: []
             });
           }
 
@@ -197,6 +198,16 @@
               studiengaenge: unterkategorie.studiengaenge
             });
           });
+
+          // Also add direct study programs if they exist (mixed structure)
+          if (kategorie.studiengaenge && kategorie.studiengaenge.length > 0) {
+            hierarchicalCategories.get(kategorie.name).directPrograms.push({
+              institution: inst.name,
+              type: inst.type,
+              website: inst.website,
+              studiengaenge: kategorie.studiengaenge
+            });
+          }
         } else {
           // Regular category without subcategories
           if (!hierarchicalCategories.has(kategorie.name)) {
@@ -223,7 +234,7 @@
 
       if (categoryData.isParent) {
         // Rendere Obergruppe mit Unterkategorien
-        const parentSection = createParentCategorySection(mainCategoryName, categoryData.subcategories);
+        const parentSection = createParentCategorySection(mainCategoryName, categoryData.subcategories, categoryData.directPrograms);
         container.appendChild(parentSection);
       } else {
         // Rendere normale Kategorie
@@ -306,8 +317,10 @@
         subSection.appendChild(list);
         section.appendChild(subSection);
       });
-    } else {
-      // Render study programs directly (no subcategories)
+    }
+
+    // Also render direct study programs if they exist (mixed structure support)
+    if (kategorie.studiengaenge && kategorie.studiengaenge.length > 0) {
       const list = document.createElement('div');
       list.className = 'studiengang-list';
 
@@ -348,7 +361,7 @@
     return item;
   }
 
-  function createParentCategorySection(mainCategoryName, subcategories) {
+  function createParentCategorySection(mainCategoryName, subcategories, directPrograms) {
     const section = document.createElement('div');
     section.className = 'uni-section collapsed';
     section.id = 'section-' + sanitizeId(mainCategoryName);
@@ -432,6 +445,36 @@
       subcatSection.appendChild(subcatContent);
       content.appendChild(subcatSection);
     });
+
+    // Rendere direkte Studiengänge (mixed structure support)
+    if (directPrograms && directPrograms.length > 0) {
+      directPrograms.forEach(inst => {
+        const instSection = document.createElement('div');
+        instSection.className = 'category-section';
+
+        const instTitle = document.createElement('div');
+        instTitle.className = 'category-title';
+        const typeLabel = inst.type === 'uni' ? '[Uni]' : '[FH]';
+        instTitle.innerHTML = `
+          ${typeLabel} ${inst.institution}
+          <a href="${inst.website}" target="_blank" rel="noopener noreferrer" style="margin-left: 10px; font-size: 0.85em; color: #0066cc;">
+            → Website
+          </a>
+        `;
+
+        const list = document.createElement('div');
+        list.className = 'studiengang-list';
+
+        inst.studiengaenge.forEach(studiengang => {
+          const item = createStudiengangItem(studiengang);
+          list.appendChild(item);
+        });
+
+        instSection.appendChild(instTitle);
+        instSection.appendChild(list);
+        content.appendChild(instSection);
+      });
+    }
 
     section.appendChild(header);
     section.appendChild(content);

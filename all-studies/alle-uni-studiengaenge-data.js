@@ -49,10 +49,15 @@
           },
           {
             name: "7. Ingenieurwissenschaften",
-            studiengaenge: [
-              { name: "Computational Sciences", ects: "180 KP" },
-              { name: "Informatik", ects: "180 KP" },
-              { name: "Informatik 75 KP", ects: "75 KP", beschreibung: "ausserfakultäres Bachelorstudienfach 75 KP" }
+            unterkategorien: [
+              {
+                name: "Informatik",
+                studiengaenge: [
+                  { name: "Computational Sciences", ects: "180 KP" },
+                  { name: "Informatik", ects: "180 KP" },
+                  { name: "Informatik 75 KP", ects: "75 KP", beschreibung: "ausserfakultäres Bachelorstudienfach 75 KP" }
+                ]
+              }
             ]
           },
           {
@@ -222,8 +227,13 @@
           },
           {
             name: "7. Ingenieurwissenschaften",
-            studiengaenge: [
-              { name: "Informatik", ects: "180 ECTS" }
+            unterkategorien: [
+              {
+                name: "Informatik",
+                studiengaenge: [
+                  { name: "Informatik", ects: "180 ECTS" }
+                ]
+              }
             ]
           },
           {
@@ -285,8 +295,13 @@
           },
           {
             name: "7. Ingenieurwissenschaften",
-            studiengaenge: [
-              { name: "Informatik", ects: "120 ECTS" },
+            unterkategorien: [
+              {
+                name: "Informatik",
+                studiengaenge: [
+                  { name: "Informatik", ects: "120 ECTS" }
+                ]
+              }
             ]
           },
           {
@@ -424,8 +439,13 @@
           },
           {
             name: "7. Ingenieurwissenschaften",
-            studiengaenge: [
-              { name: "Informatik", ects: "120/60 ECTS" }
+            unterkategorien: [
+              {
+                name: "Informatik",
+                studiengaenge: [
+                  { name: "Informatik", ects: "120/60 ECTS" }
+                ]
+              }
             ]
           },
           {
@@ -559,17 +579,29 @@
           },
           {
             name: "7. Ingenieurwissenschaften",
+            unterkategorien: [
+              {
+                name: "Informatik",
+                studiengaenge: [
+                  { name: "Informatik", ects: "180 ECTS" },
+                  { name: "Rechnergestützte Wissenschaften", ects: "180 ECTS" }
+                ]
+              },
+              {
+                name: "Bauingenieurwesen",
+                studiengaenge: [
+                  { name: "Architektur", ects: "180 ECTS" },
+                  { name: "Bauingenieurwissenschaften", ects: "180 ECTS" },
+                  { name: "Raumbezogene Ingenieurwissenschaften", ects: "180 ECTS" },
+                  { name: "Umweltingenieurwissenschaften", ects: "180 ECTS" }
+                ]
+              }
+            ],
             studiengaenge: [
-              { name: "Architektur", ects: "180 ECTS" },
-              { name: "Bauingenieurwissenschaften", ects: "180 ECTS" },
-              { name: "Raumbezogene Ingenieurwissenschaften", ects: "180 ECTS" },
-              { name: "Umweltingenieurwissenschaften", ects: "180 ECTS" },
               { name: "Elektrotechnik und Informationstechnologie", ects: "180 ECTS" },
               { name: "Maschineningenieurwissenschaften", ects: "180 ECTS" },
               { name: "Materialwissenschaft", ects: "180 ECTS" },
-              { name: "Chemieingenieurwissenschaften", ects: "180 ECTS" },
-              { name: "Informatik", ects: "180 ECTS" },
-              { name: "Rechnergestützte Wissenschaften", ects: "180 ECTS" }
+              { name: "Chemieingenieurwissenschaften", ects: "180 ECTS" }
             ]
           }
         ]
@@ -622,9 +654,14 @@
           },
           {
             name: "7. Ingenieurwissenschaften",
-            studiengaenge: [
-              { name: "Angewandte Mathematik und Machine Learning", ects: "180/150/120 ECTS" },
-              { name: "Softwaresysteme", ects: "150 ECTS" }
+            unterkategorien: [
+              {
+                name: "Informatik",
+                studiengaenge: [
+                  { name: "Angewandte Mathematik und Machine Learning", ects: "180/150/120 ECTS" },
+                  { name: "Softwaresysteme", ects: "150 ECTS" }
+                ]
+              }
             ]
           },
           {
