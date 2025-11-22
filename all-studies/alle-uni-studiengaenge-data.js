@@ -569,7 +569,7 @@
         ]
       },
       {
-        name: "Universität Zürich (UZH)",
+        name: "Universität Zürich",
         website: "https://www.uzh.ch/de/studies/programs/bachelor.html",
         kategorien: [
           {

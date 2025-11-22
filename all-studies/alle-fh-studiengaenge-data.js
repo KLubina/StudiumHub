@@ -5,7 +5,7 @@
   const AlleFHStudiengaenge = {
     fachhochschulen: [
       {
-        name: "Berner Fachhochschule (BFH)",
+        name: "Berner Fachhochschule",
         website: "https://www.bfh.ch/de/studium/alle-studiengaenge/",
         kategorien: [
           {
@@ -88,7 +88,7 @@
         ]
       },
       {
-        name: "FH Graubünden (FHGR)",
+        name: "FH Graubünden",
         website: "https://www.fhgr.ch/studium/bachelorangebot/",
         kategorien: [
           {
@@ -123,7 +123,7 @@
         ]
       },
       {
-        name: "Fachhochschule Nordwestschweiz (FHNW)",
+        name: "Fachhochschule Nordwestschweiz",
         website: "https://www.fhnw.ch/de/studium/bachelor",
         kategorien: [
           {
@@ -212,7 +212,7 @@
         ]
       },
       {
-        name: "OST – Ostschweizer Fachhochschule",
+        name: "Ostschweizer Fachhochschule",
         website: "https://www.ost.ch/de/studium/bachelor",
         kategorien: [
           {
@@ -267,7 +267,7 @@
         ]
       },
       {
-        name: "ZHAW – Zürcher Hochschule für Angewandte Wissenschaften",
+        name: "ZHAW",
         website: "https://www.zhaw.ch/de/studium/bachelorstudiengaenge",
         kategorien: [
           {
