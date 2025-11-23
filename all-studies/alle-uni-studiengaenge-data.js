@@ -30,15 +30,40 @@
           },
           {
             name: "3. Naturwissenschaften",
-            studiengaenge: [
-              { name: "Biologie", ects: "180 KP/75 KP" },
-              { name: "Chemie", ects: "180 KP/75 KP" },
-              { name: "Geographie", ects: "75 KP", beschreibung: "ausserfakultäres Bachelorstudienfach 75 KP" },
-              { name: "Geowissenschaften", ects: "180 KP" },
-              { name: "Nanowissenschaften", ects: "180 KP" },
-              { name: "Pharmazeutische Wissenschaften", ects: "180 KP" },
-              { name: "Physik", ects: "180 KP/75 KP" },
-              { name: "Mathematik", ects: "180 KP/75 KP" }
+            unterkategorien: [
+              {
+                name: "Geografie",
+                studiengaenge: [
+                  { name: "Geographie", ects: "75 KP", beschreibung: "ausserfakultäres Bachelorstudienfach 75 KP" },
+                  { name: "Geowissenschaften", ects: "180 KP" }
+                ]
+              },
+              {
+                name: "Biologie",
+                studiengaenge: [
+                  { name: "Biologie", ects: "180 KP/75 KP" }
+                ]
+              },
+              {
+                name: "Chemie",
+                studiengaenge: [
+                  { name: "Chemie", ects: "180 KP/75 KP" },
+                  { name: "Nanowissenschaften", ects: "180 KP" },
+                  { name: "Pharmazeutische Wissenschaften", ects: "180 KP" }
+                ]
+              },
+              {
+                name: "Physik",
+                studiengaenge: [
+                  { name: "Physik", ects: "180 KP/75 KP" }
+                ]
+              },
+              {
+                name: "Mathematik",
+                studiengaenge: [
+                  { name: "Mathematik", ects: "180 KP/75 KP" }
+                ]
+              }
             ]
           },
           {
@@ -272,16 +297,41 @@
           },
           {
             name: "3. Naturwissenschaften",
-            studiengaenge: [
-              { name: "Biochemie und Molekularbiologie", ects: "180/60/30/15 ECTS" },
-              { name: "Biologie", ects: "180 ECTS" },
-              { name: "Chemie und Molekulare Wissenschaften", ects: "180/60/30/15 ECTS" },
-              { name: "Erdwissenschaften", ects: "180/120/60/30/15 ECTS" },
-              { name: "Geographie", ects: "120 ECTS" },
-              { name: "Physik", ects: "120 ECTS" },
-              { name: "Pharmazeutische Wissenschaften", ects: "180 ECTS" },
-              { name: "Nachhaltige Entwicklung", ects: "60/30/15 ECTS" },
-              { name: "Mathematik", ects: "120/90/60/30/15 ECTS" }
+            unterkategorien: [
+              {
+                name: "Geografie",
+                studiengaenge: [
+                  { name: "Geographie", ects: "120 ECTS" },
+                  { name: "Erdwissenschaften", ects: "180/120/60/30/15 ECTS" },
+                  { name: "Nachhaltige Entwicklung", ects: "60/30/15 ECTS" }
+                ]
+              },
+              {
+                name: "Biologie",
+                studiengaenge: [
+                  { name: "Biologie", ects: "180 ECTS" },
+                  { name: "Biochemie und Molekularbiologie", ects: "180/60/30/15 ECTS" }
+                ]
+              },
+              {
+                name: "Chemie",
+                studiengaenge: [
+                  { name: "Chemie und Molekulare Wissenschaften", ects: "180/60/30/15 ECTS" },
+                  { name: "Pharmazeutische Wissenschaften", ects: "180 ECTS" }
+                ]
+              },
+              {
+                name: "Physik",
+                studiengaenge: [
+                  { name: "Physik", ects: "120 ECTS" }
+                ]
+              },
+              {
+                name: "Mathematik",
+                studiengaenge: [
+                  { name: "Mathematik", ects: "120/90/60/30/15 ECTS" }
+                ]
+              }
             ]
           },
           {
@@ -416,16 +466,41 @@
           },
           {
             name: "3. Naturwissenschaften",
-            studiengaenge: [
-              { name: "Biochemie", ects: "120/60 ECTS" },
-              { name: "Biologie", ects: "120/60 ECTS" },
-              { name: "Chemie", ects: "150/120/60 ECTS" },
-              { name: "Erdwissenschaften", ects: "150/60 ECTS" },
-              { name: "Geographie", ects: "120/60 ECTS" },
-              { name: "Physik", ects: "150/60 ECTS" },
-              { name: "Umweltwissenschaften und Umweltgeisteswissenschaften", ects: "60 ECTS" },
-              { name: "Biomedizinische Wissenschaften", ects: "120 ECTS" },
-              { name: "Mathematik", ects: "120/60 ECTS" }
+            unterkategorien: [
+              {
+                name: "Geografie",
+                studiengaenge: [
+                  { name: "Geographie", ects: "120/60 ECTS" },
+                  { name: "Erdwissenschaften", ects: "150/60 ECTS" },
+                  { name: "Umweltwissenschaften und Umweltgeisteswissenschaften", ects: "60 ECTS" }
+                ]
+              },
+              {
+                name: "Biologie",
+                studiengaenge: [
+                  { name: "Biologie", ects: "120/60 ECTS" },
+                  { name: "Biochemie", ects: "120/60 ECTS" },
+                  { name: "Biomedizinische Wissenschaften", ects: "120 ECTS" }
+                ]
+              },
+              {
+                name: "Chemie",
+                studiengaenge: [
+                  { name: "Chemie", ects: "150/120/60 ECTS" }
+                ]
+              },
+              {
+                name: "Physik",
+                studiengaenge: [
+                  { name: "Physik", ects: "150/60 ECTS" }
+                ]
+              },
+              {
+                name: "Mathematik",
+                studiengaenge: [
+                  { name: "Mathematik", ects: "120/60 ECTS" }
+                ]
+              }
             ]
           },
           {
@@ -553,19 +628,49 @@
           },
           {
             name: "3. Naturwissenschaften",
-            studiengaenge: [
-              { name: "Biologie", ects: "180 ECTS" },
-              { name: "Biochemie", ects: "180 ECTS" },
-              { name: "Chemie", ects: "180 ECTS" },
-              { name: "Interdisziplinäre Naturwissenschaften", ects: "180 ECTS" },
-              { name: "Pharmazeutische Wissenschaften", ects: "180 ECTS" },
-              { name: "Physik", ects: "180 ECTS" },
-              { name: "Agrarwissenschaften", ects: "180 ECTS" },
-              { name: "Erd- und Klimawissenschaften", ects: "180 ECTS" },
-              { name: "Umweltnaturwissenschaften", ects: "180 ECTS" },
-              { name: "Lebensmittelwissenschaften und Ernährung", ects: "180 ECTS" },
-              { name: "Gesundheitswissenschaften und Technologie", ects: "180 ECTS" },
-              { name: "Mathematik", ects: "180 ECTS" }
+            unterkategorien: [
+              {
+                name: "Geografie",
+                studiengaenge: [
+                  { name: "Erd- und Klimawissenschaften", ects: "180 ECTS" },
+                  { name: "Umweltnaturwissenschaften", ects: "180 ECTS" }
+                ]
+              },
+              {
+                name: "Biologie",
+                studiengaenge: [
+                  { name: "Biologie", ects: "180 ECTS" },
+                  { name: "Biochemie", ects: "180 ECTS" }
+                ]
+              },
+              {
+                name: "Chemie",
+                studiengaenge: [
+                  { name: "Chemie", ects: "180 ECTS" },
+                  { name: "Pharmazeutische Wissenschaften", ects: "180 ECTS" }
+                ]
+              },
+              {
+                name: "Physik",
+                studiengaenge: [
+                  { name: "Physik", ects: "180 ECTS" }
+                ]
+              },
+              {
+                name: "Mathematik",
+                studiengaenge: [
+                  { name: "Mathematik", ects: "180 ECTS" }
+                ]
+              },
+              {
+                name: "Weitere",
+                studiengaenge: [
+                  { name: "Interdisziplinäre Naturwissenschaften", ects: "180 ECTS" },
+                  { name: "Agrarwissenschaften", ects: "180 ECTS" },
+                  { name: "Lebensmittelwissenschaften und Ernährung", ects: "180 ECTS" },
+                  { name: "Gesundheitswissenschaften und Technologie", ects: "180 ECTS" }
+                ]
+              }
             ]
           },
           {
@@ -630,17 +735,42 @@
           },
           {
             name: "3. Naturwissenschaften",
-            studiengaenge: [
-              { name: "Astronomie und Astrophysik", ects: "180/150 ECTS" },
-              { name: "Biochemie", ects: "180 ECTS" },
-              { name: "Biodiversität", ects: "180/150/120 ECTS" },
-              { name: "Biologie", ects: "180/150/120 ECTS" },
-              { name: "Biomedizin", ects: "180/150 ECTS" },
-              { name: "Chemie", ects: "180/150/120 ECTS" },
-              { name: "Erdsystemwissenschaften", ects: "180 ECTS" },
-              { name: "Geographie", ects: "180/150/120 ECTS" },
-              { name: "Physik", ects: "180/150/120 ECTS" },
-              { name: "Mathematik", ects: "180/150/120 ECTS" }
+            unterkategorien: [
+              {
+                name: "Geografie",
+                studiengaenge: [
+                  { name: "Geographie", ects: "180/150/120 ECTS" },
+                  { name: "Erdsystemwissenschaften", ects: "180 ECTS" }
+                ]
+              },
+              {
+                name: "Biologie",
+                studiengaenge: [
+                  { name: "Biologie", ects: "180/150/120 ECTS" },
+                  { name: "Biochemie", ects: "180 ECTS" },
+                  { name: "Biodiversität", ects: "180/150/120 ECTS" },
+                  { name: "Biomedizin", ects: "180/150 ECTS" }
+                ]
+              },
+              {
+                name: "Chemie",
+                studiengaenge: [
+                  { name: "Chemie", ects: "180/150/120 ECTS" }
+                ]
+              },
+              {
+                name: "Physik",
+                studiengaenge: [
+                  { name: "Physik", ects: "180/150/120 ECTS" },
+                  { name: "Astronomie und Astrophysik", ects: "180/150 ECTS" }
+                ]
+              },
+              {
+                name: "Mathematik",
+                studiengaenge: [
+                  { name: "Mathematik", ects: "180/150/120 ECTS" }
+                ]
+              }
             ]
           },
           {
