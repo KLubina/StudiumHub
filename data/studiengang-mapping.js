@@ -162,31 +162,31 @@
     if (mapping && (!mapping.institution || mapping.institution === institutionName)) {
       const studyModel = mapping.studyModel || 'mono';
       const folder = studyModel === 'major-minor' ? 'major-minor' : 'mono';
-      return `../study-visualization/standard/studienplan-template.html?studiengang=${encodeURIComponent(mapping.key)}`;
+      return `study-visualization/standard/studienplan-template.html?studiengang=${encodeURIComponent(mapping.key)}`;
     }
 
     // Special handling for EIT at different institutions
     if (studiengangName === "Elektrotechnik und Informationstechnologie" ||
         studiengangName === "Elektro- und Informationstechnik") {
       if (institutionName === "Berner Fachhochschule") {
-        return `../study-visualization/standard/studienplan-template.html?studiengang=fhbern-eit`;
+        return `study-visualization/standard/studienplan-template.html?studiengang=fhbern-eit`;
       } else if (institutionName === "Hochschule Luzern") {
-        return `../study-visualization/standard/studienplan-template.html?studiengang=fhlu-eit`;
+        return `study-visualization/standard/studienplan-template.html?studiengang=fhlu-eit`;
       } else if (institutionName === "OST Ostschweizer Fachhochschule") {
-        return `../study-visualization/standard/studienplan-template.html?studiengang=ost-eit`;
+        return `study-visualization/standard/studienplan-template.html?studiengang=ost-eit`;
       } else if (institutionName === "Fachhochschule Nordwestschweiz") {
-        return `../study-visualization/standard/studienplan-template.html?studiengang=fhnw-eit`;
+        return `study-visualization/standard/studienplan-template.html?studiengang=fhnw-eit`;
       } else if (institutionName === "ETH Zürich") {
-        return `../study-visualization/standard/studienplan-template.html?studiengang=eth-itet`;
+        return `study-visualization/standard/studienplan-template.html?studiengang=eth-itet`;
       }
     }
 
     // Special handling for Informatik at different institutions
     if (studiengangName === "Informatik") {
       if (institutionName === "ZHAW") {
-        return `../study-visualization/standard/studienplan-template.html?studiengang=fhzh-cs`;
+        return `study-visualization/standard/studienplan-template.html?studiengang=fhzh-cs`;
       } else if (institutionName === "ETH Zürich") {
-        return `../study-visualization/standard/studienplan-template.html?studiengang=eth-cs`;
+        return `study-visualization/standard/studienplan-template.html?studiengang=eth-cs`;
       }
     }
 
