@@ -88,12 +88,23 @@ const Rendering = {
               institutions: []
             });
           }
-          hierarchicalCategories.get(kategorie.name).institutions.push({
-            institution: inst.name,
-            type: inst.type,
-            website: inst.website,
-            studiengaenge: kategorie.studiengaenge
-          });
+          const categoryEntry = hierarchicalCategories.get(kategorie.name);
+          // If category was previously created as parent, add to directPrograms instead
+          if (categoryEntry.isParent) {
+            categoryEntry.directPrograms.push({
+              institution: inst.name,
+              type: inst.type,
+              website: inst.website,
+              studiengaenge: kategorie.studiengaenge
+            });
+          } else {
+            categoryEntry.institutions.push({
+              institution: inst.name,
+              type: inst.type,
+              website: inst.website,
+              studiengaenge: kategorie.studiengaenge
+            });
+          }
         }
       });
     });
