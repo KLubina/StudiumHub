@@ -1,0 +1,26 @@
+/* ==== FHNW-EIT - CSS CLASSES ==== */
+/* Program-specific CSS classes */
+
+[data-studiengang="fhnw-eit"] .modul.grundlagen,
+[data-studiengang="fhnw-eit"] .legende-item.grundlagen {
+    background-color: var(--color-grundlagen);
+    color: var(--color-grundlagen-text, white);
+}
+
+[data-studiengang="fhnw-eit"] .modul.projekte,
+[data-studiengang="fhnw-eit"] .legende-item.projekte {
+    background-color: var(--color-projekte);
+    color: var(--color-projekte-text, white);
+}
+
+[data-studiengang="fhnw-eit"] .modul.vertiefung,
+[data-studiengang="fhnw-eit"] .legende-item.vertiefung {
+    background-color: var(--color-vertiefung);
+    color: var(--color-vertiefung-text, white);
+}
+
+[data-studiengang="fhnw-eit"] .modul.kontext,
+[data-studiengang="fhnw-eit"] .legende-item.kontext {
+    background-color: var(--color-kontext);
+    color: var(--color-kontext-text, white);
+}

@@ -1,0 +1,13 @@
+/* ==== FHNW-EIT - COLOR VARIABLES ==== */
+/* FHNW Elektro- und Informationstechnik Program */
+
+[data-studiengang="fhnw-eit"] {
+    /* Primary program color */
+    --color-primary: #0369a1;
+
+    /* Category colors */
+    --color-grundlagen: #dc2626;
+    --color-projekte: #7c3aed;
+    --color-vertiefung: #0284c7;
+    --color-kontext: #059669;
+}

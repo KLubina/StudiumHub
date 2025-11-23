@@ -135,6 +135,12 @@
       institution: "OST Ostschweizer Fachhochschule"
     },
 
+    // FH - Fachhochschule Nordwestschweiz
+    "Elektro- und Informationstechnik": {
+      key: "fhnw-eit",
+      institution: "Fachhochschule Nordwestschweiz"
+    },
+
     // Private - Hochschulinstitut Schaffhausen
     "IT": {
       key: "hssh-it",
@@ -160,13 +166,16 @@
     }
 
     // Special handling for EIT at different institutions
-    if (studiengangName === "Elektrotechnik und Informationstechnologie") {
+    if (studiengangName === "Elektrotechnik und Informationstechnologie" ||
+        studiengangName === "Elektro- und Informationstechnik") {
       if (institutionName === "Berner Fachhochschule") {
         return `../study-visualization/standard/studienplan-template.html?studiengang=fhbern-eit`;
       } else if (institutionName === "Hochschule Luzern") {
         return `../study-visualization/standard/studienplan-template.html?studiengang=fhlu-eit`;
       } else if (institutionName === "OST Ostschweizer Fachhochschule") {
         return `../study-visualization/standard/studienplan-template.html?studiengang=ost-eit`;
+      } else if (institutionName === "Fachhochschule Nordwestschweiz") {
+        return `../study-visualization/standard/studienplan-template.html?studiengang=fhnw-eit`;
       } else if (institutionName === "ETH Zürich") {
         return `../study-visualization/standard/studienplan-template.html?studiengang=eth-itet`;
       }
