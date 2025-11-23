@@ -45,13 +45,3 @@
     color: #666;
     font-weight: 500;
 }
-
-.visualization-card-type {
-    display: inline-block;
-    font-size: 0.75rem;
-    background-color: #003366;
-    color: white;
-    padding: 3px 8px;
-    border-radius: 3px;
-    margin-top: 10px;
-}
