@@ -5,7 +5,6 @@ const EventHandlers = {
     const institutionFilter = document.getElementById('institutionFilter');
     const categoryFilter = document.getElementById('categoryFilter');
     const showMinorsCheckbox = document.getElementById('showMinors');
-    const showSonstigeCheckbox = document.getElementById('showSonstige');
     const viewByInstitution = document.getElementById('viewByInstitution');
     const viewByCategory = document.getElementById('viewByCategory');
     const viewAllVisualizations = document.getElementById('viewAllVisualizations');
@@ -58,11 +57,6 @@ const EventHandlers = {
 
     showMinorsCheckbox.addEventListener('change', function (e) {
       State.setShowMinors(e.target.checked);
-      Rendering.renderStudiengaenge();
-    });
-
-    showSonstigeCheckbox.addEventListener('change', function (e) {
-      State.setShowSonstige(e.target.checked);
       Rendering.renderStudiengaenge();
     });
   }
