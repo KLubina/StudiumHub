@@ -3,7 +3,7 @@ const State = {
   allData: [],
   currentView: 'category', // 'institution' oder 'category'
   currentFilters: {
-    type: '',
+    type: 'uni', // Standardmäßig nur Universitäten anzeigen
     institution: '',
     category: ''
   },
