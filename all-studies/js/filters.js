@@ -1,6 +1,9 @@
 // Filter Management
 const Filters = {
   // Helper function to check if a studiengang is a minor (<= 60 ECTS)
+  // A minor is defined as a program where the MAXIMUM ECTS value is <= 60
+  // Example: 60/30/15 ECTS → max 60 → is a minor
+  // Example: 180/90/60 ECTS → max 180 → is NOT a minor
   isMinor(studiengang) {
     const ectsText = studiengang.ects || studiengang.grad || '';
 
@@ -11,18 +14,9 @@ const Filters = {
       return false; // No ECTS info, assume it's not a minor
     }
 
-    // Check if any of the extracted numbers is less than or equal to 60
-    const hasMinorEcts = numbers.some(num => parseInt(num) <= 60);
-
-    // Also check if it contains "/" which indicates multiple options
-    // In that case, check if the smallest value is less than or equal to 60
-    if (ectsText.includes('/')) {
-      const minValue = Math.min(...numbers.map(n => parseInt(n)));
-      return minValue <= 60;
-    }
-
-    // For single values, check if it's less than or equal to 60
-    return hasMinorEcts;
+    // Check if the MAXIMUM ECTS value is <= 60
+    const maxValue = Math.max(...numbers.map(n => parseInt(n)));
+    return maxValue <= 60;
   },
 
   populateFilters() {
