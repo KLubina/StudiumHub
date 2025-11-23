@@ -8,35 +8,81 @@
     <link rel="icon" type="image/svg+xml" href="https://www.svgrepo.com/show/400288/graduationcap.svg">
     <link rel="icon" type="image/png" sizes="256x256" href="https://images.emojiterra.com/mozilla/512px/1f393.png">
 
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="study-card-colors.css">
+    <link rel="stylesheet" href="all-studies/alle-studiengaenge.css">
 
-    <title>StudiumHub</title>
+    <title>Alle staatlichen Studiengänge in der Deutsch-Schweiz | StudiumHub</title>
 </head>
 
 <body>
     <header>
         <div class="container">
-            <h1>StudiumHub</h1>
+            <!-- <a href="../index.html" class="back-link">← Zurück zu StudiumHub</a> -->
+            <h1>Alle staatlichen Studiengänge in der Deutsch-Schweiz</h1>
             <div class="subtitle">
-                <a href="all-studies/alle-studiengaenge.html" style="color: white; text-decoration: underline;">
-                    → Alle staatlichen Studiengänge in der Deutsch-Schweiz durchsuchen
+                <a href="https://www.berufsberatung.ch/dyn/show/5435" target="_blank" rel="noopener noreferrer" style="color: white; font-size: 0.9rem;">
+                    Quelle: berufsberatung.ch
+                </a>
+                <br>
+                <a href="https://www.swissuniversities.ch/themen/lehre-studium/akkreditierte-schweizer-hochschulen" target="_blank" rel="noopener noreferrer" style="color: white; font-size: 0.9rem;">
+                    Akkreditierte Schweizer Hochschulen
                 </a>
             </div>
         </div>
     </header>
 
     <div class="container">
-        <div class="description">
+        <!-- Filter -->
+        <div class="controls">
+            <div class="view-toggle">
+                <button id="viewByInstitution" class="view-btn">Nach Hochschule</button>
+                <button id="viewByCategory" class="view-btn active">Nach Kategorie</button>
+            </div>
+            <div class="filter-container">
+                <select id="typeFilter">
+                    <option value="">Alle Hochschultypen</option>
+                    <option value="uni">Universitäten</option>
+                    <option value="fh">Fachhochschulen</option>
+                </select>
+                <select id="institutionFilter">
+                    <option value="">Alle Hochschulen</option>
+                </select>
+                <select id="categoryFilter">
+                    <option value="">Alle Fachbereiche</option>
+                </select>
+                <label class="minor-filter">
+                    <input type="checkbox" id="showMinors">
+                    Minors einblenden (≤ 60 ECTS)
+                </label>
+                <label class="minor-filter">
+                    <input type="checkbox" id="showSonstige">
+                    Sonstige Studiengänge einblenden
+                </label>
+            </div>
         </div>
 
-        <div class="featured-cards"></div>
-        <div class="cards-container"></div>
-        <noscript>
-        </noscript>
+        <!-- Studiengänge werden hier angezeigt -->
+        <div id="studiengaengeContainer"></div>
     </div>
 
-    <script src="index-data.js"></script>
-    <script src="index.js"></script>
+    <!-- Schwebende Navigation -->
+    <nav id="floatingNav" class="floating-nav">
+        <div class="floating-nav-header">Schnellnavigation</div>
+        <div id="floatingNavContent" class="floating-nav-content"></div>
+    </nav>
+
+    <script src="all-studies/alle-uni-studiengaenge-data.js"></script>
+    <script src="all-studies/alle-fh-studiengaenge-data.js"></script>
+    <script src="all-studies/alle-sonstige-studiengaenge-data.js"></script>
+    <script src="all-studies/studiengang-mapping.js"></script>
+    <!-- Modularized Scripts -->
+    <script src="all-studies/js/utils.js"></script>
+    <script src="all-studies/js/state.js"></script>
+    <script src="all-studies/js/filters.js"></script>
+    <script src="all-studies/js/dom-builders.js"></script>
+    <script src="all-studies/js/navigation.js"></script>
+    <script src="all-studies/js/rendering.js"></script>
+    <script src="all-studies/js/event-handlers.js"></script>
+    <script src="all-studies/js/main.js"></script>
 </body>
+
 </html>

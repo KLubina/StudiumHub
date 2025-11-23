@@ -8,6 +8,7 @@ const State = {
     category: ''
   },
   showMinors: false, // Minors standardmäßig ausgeblendet
+  showSonstige: false, // Sonstige Studiengänge standardmäßig ausgeblendet
 
   initializeData() {
     // Kombiniere Uni und FH Daten
@@ -21,7 +22,12 @@ const State = {
       type: 'fh'
     }));
 
-    this.allData = [...uniData, ...fhData];
+    const sonstigeData = window.AlleSonstigeStudiengaenge.sonstige.map(sonstige => ({
+      ...sonstige,
+      type: 'sonstige'
+    }));
+
+    this.allData = [...uniData, ...fhData, ...sonstigeData];
   },
 
   setView(view) {
@@ -50,5 +56,13 @@ const State = {
 
   getShowMinors() {
     return this.showMinors;
+  },
+
+  setShowSonstige(value) {
+    this.showSonstige = value;
+  },
+
+  getShowSonstige() {
+    return this.showSonstige;
   }
 };

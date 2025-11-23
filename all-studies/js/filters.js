@@ -71,7 +71,13 @@ const Filters = {
     const allData = State.getData();
     const currentFilters = State.getFilters();
     const showMinors = State.getShowMinors();
+    const showSonstige = State.getShowSonstige();
     let filtered = JSON.parse(JSON.stringify(allData)); // Deep copy
+
+    // Filter "Sonstige" Studiengänge (wenn nicht angezeigt werden sollen)
+    if (!showSonstige) {
+      filtered = filtered.filter(inst => inst.type !== 'sonstige');
+    }
 
     // Filter nach Hochschultyp (Uni/FH)
     if (currentFilters.type) {

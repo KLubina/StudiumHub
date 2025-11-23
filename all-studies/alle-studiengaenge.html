@@ -8,7 +8,7 @@
     <link rel="icon" type="image/svg+xml" href="https://www.svgrepo.com/show/400288/graduationcap.svg">
     <link rel="icon" type="image/png" sizes="256x256" href="https://images.emojiterra.com/mozilla/512px/1f393.png">
 
-    <link rel="stylesheet" href="alle-studiengaenge.css">
+    <link rel="stylesheet" href="all-studies/alle-studiengaenge.css">
 
     <title>Alle staatlichen Studiengänge in der Deutsch-Schweiz | StudiumHub</title>
 </head>
@@ -16,7 +16,7 @@
 <body>
     <header>
         <div class="container">
-            <a href="../index.html" class="back-link">← Zurück zu StudiumHub</a>
+            <!-- <a href="../index.html" class="back-link">← Zurück zu StudiumHub</a> -->
             <h1>Alle staatlichen Studiengänge in der Deutsch-Schweiz</h1>
             <div class="subtitle">
                 <a href="https://www.berufsberatung.ch/dyn/show/5435" target="_blank" rel="noopener noreferrer" style="color: white; font-size: 0.9rem;">
@@ -53,6 +53,10 @@
                     <input type="checkbox" id="showMinors">
                     Minors einblenden (≤ 60 ECTS)
                 </label>
+                <label class="minor-filter">
+                    <input type="checkbox" id="showSonstige">
+                    Sonstige Studiengänge einblenden
+                </label>
             </div>
         </div>
 
@@ -66,18 +70,19 @@
         <div id="floatingNavContent" class="floating-nav-content"></div>
     </nav>
 
-    <script src="alle-uni-studiengaenge-data.js"></script>
-    <script src="alle-fh-studiengaenge-data.js"></script>
-    <script src="studiengang-mapping.js"></script>
+    <script src="all-studies/alle-uni-studiengaenge-data.js"></script>
+    <script src="all-studies/alle-fh-studiengaenge-data.js"></script>
+    <script src="all-studies/alle-sonstige-studiengaenge-data.js"></script>
+    <script src="all-studies/studiengang-mapping.js"></script>
     <!-- Modularized Scripts -->
-    <script src="js/utils.js"></script>
-    <script src="js/state.js"></script>
-    <script src="js/filters.js"></script>
-    <script src="js/dom-builders.js"></script>
-    <script src="js/navigation.js"></script>
-    <script src="js/rendering.js"></script>
-    <script src="js/event-handlers.js"></script>
-    <script src="js/main.js"></script>
+    <script src="all-studies/js/utils.js"></script>
+    <script src="all-studies/js/state.js"></script>
+    <script src="all-studies/js/filters.js"></script>
+    <script src="all-studies/js/dom-builders.js"></script>
+    <script src="all-studies/js/navigation.js"></script>
+    <script src="all-studies/js/rendering.js"></script>
+    <script src="all-studies/js/event-handlers.js"></script>
+    <script src="all-studies/js/main.js"></script>
 </body>
 
 </html>
