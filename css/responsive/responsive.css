@@ -1,0 +1,32 @@
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .floating-nav {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    .studiengang-list {
+        grid-template-columns: 1fr;
+    }
+
+    .view-toggle {
+        flex-direction: column;
+    }
+
+    .filter-container {
+        flex-direction: column;
+    }
+
+    .filter-container select {
+        min-width: 100%;
+    }
+}

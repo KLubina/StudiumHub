@@ -1,0 +1,38 @@
+/* Studiengang Cards & List */
+.studiengang-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+.studiengang-item {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #003366;
+    border-radius: 3px;
+    transition: all 0.3s;
+}
+
+.studiengang-item:hover {
+    background-color: #f0f0f0;
+    transform: translateX(5px);
+}
+
+.studiengang-name {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.studiengang-ects {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.studiengang-beschreibung {
+    font-size: 0.85rem;
+    color: #777;
+    font-style: italic;
+    margin-top: 3px;
+}

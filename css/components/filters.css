@@ -1,0 +1,83 @@
+/* Filter Controls */
+.controls {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.view-toggle {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.view-btn {
+    flex: 1;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 2px solid #003366;
+    background-color: white;
+    color: #003366;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.view-btn:hover {
+    background-color: #f0f0f0;
+}
+
+.view-btn.active {
+    background-color: #003366;
+    color: white;
+}
+
+.filter-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.filter-container select {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+.filter-container select:focus {
+    outline: none;
+    border-color: #003366;
+}
+
+.minor-filter {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 15px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+    border: 2px solid #ddd;
+    transition: all 0.3s;
+}
+
+.minor-filter:hover {
+    background-color: #f0f0f0;
+    border-color: #003366;
+}
+
+.minor-filter input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}

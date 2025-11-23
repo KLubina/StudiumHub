@@ -1,0 +1,26 @@
+/* Header & Navigation */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 20px 0;
+    margin-bottom: 30px;
+}
+
+header .container {
+    position: relative;
+}
+
+.back-link {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-bottom: 10px;
+    opacity: 0.9;
+    transition: opacity 0.3s;
+}
+
+.back-link:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
