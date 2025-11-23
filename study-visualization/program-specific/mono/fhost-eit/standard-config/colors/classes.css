@@ -1,0 +1,26 @@
+/* ==== FHOST-EIT - CSS CLASSES ==== */
+/* Program-specific CSS classes */
+
+[data-studiengang="fhost-eit"] .modul.grundlagen,
+[data-studiengang="fhost-eit"] .legende-item.grundlagen {
+    background-color: var(--color-grundlagen);
+    color: var(--color-grundlagen-text, white);
+}
+
+[data-studiengang="fhost-eit"] .modul.sprachen,
+[data-studiengang="fhost-eit"] .legende-item.sprachen {
+    background-color: var(--color-sprachen);
+    color: var(--color-sprachen-text, white);
+}
+
+[data-studiengang="fhost-eit"] .modul.wahlmodule,
+[data-studiengang="fhost-eit"] .legende-item.wahlmodule {
+    background-color: var(--color-wahlmodule);
+    color: var(--color-wahlmodule-text, white);
+}
+
+[data-studiengang="fhost-eit"] .modul.abschluss,
+[data-studiengang="fhost-eit"] .legende-item.abschluss {
+    background-color: var(--color-abschluss);
+    color: var(--color-abschluss-text, white);
+}

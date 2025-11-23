@@ -173,7 +173,7 @@
       } else if (institutionName === "Hochschule Luzern") {
         return `study-visualization/standard/studienplan-template.html?studiengang=fhlu-eit`;
       } else if (institutionName === "OST Ostschweizer Fachhochschule") {
-        return `study-visualization/standard/studienplan-template.html?studiengang=ost-eit`;
+        return `study-visualization/standard/studienplan-template.html?studiengang=fhost-eit`;
       } else if (institutionName === "Fachhochschule Nordwestschweiz") {
         return `study-visualization/standard/studienplan-template.html?studiengang=fhnw-eit`;
       } else if (institutionName === "ETH Zürich") {
