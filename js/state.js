@@ -21,12 +21,7 @@ const State = {
       type: 'fh'
     }));
 
-    const sonstigeData = window.AlleSonstigeStudiengaenge.sonstige.map(sonstige => ({
-      ...sonstige,
-      type: 'sonstige'
-    }));
-
-    this.allData = [...uniData, ...fhData, ...sonstigeData];
+    this.allData = [...uniData, ...fhData];
   },
 
   setView(view) {
