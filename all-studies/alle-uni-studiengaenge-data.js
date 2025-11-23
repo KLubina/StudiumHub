@@ -12,8 +12,7 @@
           {
             name: "2. Wirtschaftswissenschaften",
             studiengaenge: [
-              { name: "Wirtschaftswissenschaften", ects: "180 KP" },
-              { name: "Wirtschaftswissenschaften 75 KP", ects: "75 KP", beschreibung: "ausserfakultäres Bachelorstudienfach 75 KP" }
+              { name: "Wirtschaftswissenschaften", ects: "180 KP/75 KP" }
             ]
           },
           {
@@ -26,25 +25,20 @@
           {
             name: "4. Rechtswissenschaften",
             studiengaenge: [
-              { name: "Rechtswissenschaft", ects: "180 KP" },
-              { name: "Rechtswissenschaft 75 KP", ects: "75 KP", beschreibung: "ausserfakultäres Bachelorstudienfach 75 KP" }
+              { name: "Rechtswissenschaft", ects: "180 KP/75 KP" }
             ]
           },
           {
             name: "3. Naturwissenschaften",
             studiengaenge: [
-              { name: "Biologie", ects: "180 KP" },
-              { name: "Biologie 75 KP", ects: "75 KP", beschreibung: "ausserfakultäres Bachelorstudienfach 75 KP" },
-              { name: "Chemie", ects: "180 KP" },
-              { name: "Chemie 75 KP", ects: "75 KP", beschreibung: "ausserfakultäres Bachelorstudienfach 75 KP" },
-              { name: "Geographie 75 KP", ects: "75 KP", beschreibung: "ausserfakultäres Bachelorstudienfach 75 KP" },
+              { name: "Biologie", ects: "180 KP/75 KP" },
+              { name: "Chemie", ects: "180 KP/75 KP" },
+              { name: "Geographie", ects: "75 KP", beschreibung: "ausserfakultäres Bachelorstudienfach 75 KP" },
               { name: "Geowissenschaften", ects: "180 KP" },
               { name: "Nanowissenschaften", ects: "180 KP" },
               { name: "Pharmazeutische Wissenschaften", ects: "180 KP" },
-              { name: "Physik", ects: "180 KP" },
-              { name: "Physik 75 KP", ects: "75 KP", beschreibung: "ausserfakultäres Bachelorstudienfach 75 KP" },
-              { name: "Mathematik", ects: "180 KP" },
-              { name: "Mathematik 75 KP", ects: "75 KP", beschreibung: "ausserfakultäres Bachelorstudienfach 75 KP" }
+              { name: "Physik", ects: "180 KP/75 KP" },
+              { name: "Mathematik", ects: "180 KP/75 KP" }
             ]
           },
           {
@@ -54,8 +48,7 @@
                 name: "Informatik",
                 studiengaenge: [
                   { name: "Computational Sciences", ects: "180 KP" },
-                  { name: "Informatik", ects: "180 KP" },
-                  { name: "Informatik 75 KP", ects: "75 KP", beschreibung: "ausserfakultäres Bachelorstudienfach 75 KP" }
+                  { name: "Informatik", ects: "180 KP/75 KP" }
                 ]
               }
             ]
@@ -66,53 +59,53 @@
               {
                 name: "Sprachwissenschaften",
                 studiengaenge: [
-                  { name: "Deutsche Philologie 75 KP", ects: "75 KP", beschreibung: "anderes Fach 75 KP" },
-                  { name: "Englisch 75 KP", ects: "75 KP", beschreibung: "anderes Fach 75 KP" },
-                  { name: "Französistik 75 KP", ects: "75 KP", beschreibung: "anderes Fach 75 KP" },
-                  { name: "Hispanistik 75 KP", ects: "75 KP", beschreibung: "anderes Fach 75 KP" },
-                  { name: "Italianistik 75 KP", ects: "75 KP", beschreibung: "anderes Fach 75 KP" },
-                  { name: "Nordistik 75 KP", ects: "75 KP", beschreibung: "anderes Fach 75 KP" }
+                  { name: "Deutsche Philologie", ects: "75 KP", beschreibung: "anderes Fach 75 KP" },
+                  { name: "Englisch", ects: "75 KP", beschreibung: "anderes Fach 75 KP" },
+                  { name: "Französistik", ects: "75 KP", beschreibung: "anderes Fach 75 KP" },
+                  { name: "Hispanistik", ects: "75 KP", beschreibung: "anderes Fach 75 KP" },
+                  { name: "Italianistik", ects: "75 KP", beschreibung: "anderes Fach 75 KP" },
+                  { name: "Nordistik", ects: "75 KP", beschreibung: "anderes Fach 75 KP" }
                 ]
               },
               {
                 name: "Geschichtswissenschaften",
                 studiengaenge: [
                   { name: "Altertumswissenschaften", ects: "150 KP" },
-                  { name: "Altertumswissenschaften 75 KP", ects: "75 KP", beschreibung: "Studienfach 75 KP" },
-                  { name: "Geschichte 75 KP", ects: "75 KP", beschreibung: "anderes Fach 75 KP" },
+                  { name: "Altertumswissenschaften", ects: "75 KP", beschreibung: "Studienfach 75 KP" },
+                  { name: "Geschichte", ects: "75 KP", beschreibung: "anderes Fach 75 KP" },
                   { name: "Prähistorische und Naturwissenschaftliche Archäologie", ects: "180 KP" }
                 ]
               },
               {
                 name: "Philosophie",
                 studiengaenge: [
-                  { name: "Philosophie 75 KP", ects: "75 KP", beschreibung: "anderes Fach 75 KP" }
+                  { name: "Philosophie", ects: "75 KP", beschreibung: "anderes Fach 75 KP" }
                 ]
               },
               {
                 name: "Kunstwissenschaften",
                 studiengaenge: [
-                  { name: "Kunstgeschichte 75 KP", ects: "75 KP", beschreibung: "anderes Fach 75 KP" },
-                  { name: "Medienwissenschaft 75 KP", ects: "75 KP", beschreibung: "anderes Fach 75 KP" },
-                  { name: "Musikwissenschaft 75 KP", ects: "75 KP", beschreibung: "anderes Fach 75 KP" }
+                  { name: "Kunstgeschichte", ects: "75 KP", beschreibung: "anderes Fach 75 KP" },
+                  { name: "Medienwissenschaft", ects: "75 KP", beschreibung: "anderes Fach 75 KP" },
+                  { name: "Musikwissenschaft", ects: "75 KP", beschreibung: "anderes Fach 75 KP" }
                 ]
               },
               {
                 name: "Regionalstudien",
                 studiengaenge: [
-                  { name: "Nahoststudien 75 KP", ects: "75 KP", beschreibung: "anderes Fach 75 KP" },
-                  { name: "Osteuropäische Kulturen 75 KP", ects: "75 KP", beschreibung: "anderes Fach 75 KP" },
+                  { name: "Nahoststudien", ects: "75 KP", beschreibung: "anderes Fach 75 KP" },
+                  { name: "Osteuropäische Kulturen", ects: "75 KP", beschreibung: "anderes Fach 75 KP" },
                   { name: "Osteuropa-Studien", ects: "180 KP" }
                 ]
               },
               {
                 name: "Sozialwissenschaften",
                 studiengaenge: [
-                  { name: "Ethnologie 75 KP", ects: "75 KP", beschreibung: "anderes Fach 75 KP" },
-                  { name: "Geschlechterforschung 75 KP", ects: "75 KP", beschreibung: "anderes Fach 75 KP" },
-                  { name: "Kulturanthropologie 75 KP", ects: "75 KP", beschreibung: "anderes Fach 75 KP" },
-                  { name: "Politikwissenschaft 75 KP", ects: "75 KP", beschreibung: "anderes Fach 75 KP" },
-                  { name: "Soziologie 75 KP", ects: "75 KP", beschreibung: "anderes Fach 75 KP" }
+                  { name: "Ethnologie", ects: "75 KP", beschreibung: "anderes Fach 75 KP" },
+                  { name: "Geschlechterforschung", ects: "75 KP", beschreibung: "anderes Fach 75 KP" },
+                  { name: "Kulturanthropologie", ects: "75 KP", beschreibung: "anderes Fach 75 KP" },
+                  { name: "Politikwissenschaft", ects: "75 KP", beschreibung: "anderes Fach 75 KP" },
+                  { name: "Soziologie", ects: "75 KP", beschreibung: "anderes Fach 75 KP" }
                 ]
               },
               {
@@ -124,10 +117,9 @@
               {
                 name: "Theologie und Religionswissenschaften",
                 studiengaenge: [
-                  { name: "Theologie", ects: "180 KP" },
-                  { name: "Theologie 75 KP", ects: "75 KP", beschreibung: "ausserfakultäres Bachelorstudienfach 75 KP" },
-                  { name: "Religionswissenschaft 75 KP", ects: "75 KP", beschreibung: "anderes Fach 75 KP" },
-                  { name: "Jüdische Studien 75 KP", ects: "75 KP", beschreibung: "anderes Fach 75 KP" }
+                  { name: "Theologie", ects: "180 KP/75 KP" },
+                  { name: "Religionswissenschaft", ects: "75 KP", beschreibung: "anderes Fach 75 KP" },
+                  { name: "Jüdische Studien", ects: "75 KP", beschreibung: "anderes Fach 75 KP" }
                 ]
               }
             ]
@@ -135,8 +127,7 @@
           {
             name: "7. Sportwissenschaften",
             studiengaenge: [
-              { name: "Sport, Bewegung & Gesundheit", ects: "180 KP" },
-              { name: "Sport, Bewegung & Gesundheit mit Zweitfach", ects: "99 KP", beschreibung: "ausserfakultäres Bachelorstudienfach 75 KP" }
+              { name: "Sport, Bewegung & Gesundheit", ects: "180 KP/99 KP" }
             ]
           }
         ]
