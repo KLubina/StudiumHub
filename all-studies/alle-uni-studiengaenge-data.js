@@ -640,14 +640,17 @@
                 name: "Biologie",
                 studiengaenge: [
                   { name: "Biologie", ects: "180 ECTS" },
-                  { name: "Biochemie", ects: "180 ECTS" }
+                  { name: "Biochemie", ects: "180 ECTS" },
+                  { name: "Agrarwissenschaften", ects: "180 ECTS" },
+                  { name: "Gesundheitswissenschaften und Technologie", ects: "180 ECTS" }
                 ]
               },
               {
                 name: "Chemie",
                 studiengaenge: [
                   { name: "Chemie", ects: "180 ECTS" },
-                  { name: "Pharmazeutische Wissenschaften", ects: "180 ECTS" }
+                  { name: "Pharmazeutische Wissenschaften", ects: "180 ECTS" },
+                  { name: "Lebensmittelwissenschaften und Ernährung", ects: "180 ECTS" }
                 ]
               },
               {
@@ -661,16 +664,10 @@
                 studiengaenge: [
                   { name: "Mathematik", ects: "180 ECTS" }
                 ]
-              },
-              {
-                name: "Weitere",
-                studiengaenge: [
-                  { name: "Interdisziplinäre Naturwissenschaften", ects: "180 ECTS" },
-                  { name: "Agrarwissenschaften", ects: "180 ECTS" },
-                  { name: "Lebensmittelwissenschaften und Ernährung", ects: "180 ECTS" },
-                  { name: "Gesundheitswissenschaften und Technologie", ects: "180 ECTS" }
-                ]
               }
+            ],
+            studiengaenge: [
+              { name: "Interdisziplinäre Naturwissenschaften", ects: "180 ECTS" }
             ]
           },
           {
