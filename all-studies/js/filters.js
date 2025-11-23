@@ -1,6 +1,6 @@
 // Filter Management
 const Filters = {
-  // Helper function to check if a studiengang is a minor (< 60 ECTS)
+  // Helper function to check if a studiengang is a minor (<= 60 ECTS)
   isMinor(studiengang) {
     const ectsText = studiengang.ects || studiengang.grad || '';
 
@@ -11,17 +11,17 @@ const Filters = {
       return false; // No ECTS info, assume it's not a minor
     }
 
-    // Check if any of the extracted numbers is less than 60
-    const hasMinorEcts = numbers.some(num => parseInt(num) < 60);
+    // Check if any of the extracted numbers is less than or equal to 60
+    const hasMinorEcts = numbers.some(num => parseInt(num) <= 60);
 
     // Also check if it contains "/" which indicates multiple options
-    // In that case, check if the smallest value is less than 60
+    // In that case, check if the smallest value is less than or equal to 60
     if (ectsText.includes('/')) {
       const minValue = Math.min(...numbers.map(n => parseInt(n)));
-      return minValue < 60;
+      return minValue <= 60;
     }
 
-    // For single values, check if it's less than 60
+    // For single values, check if it's less than or equal to 60
     return hasMinorEcts;
   },
 
