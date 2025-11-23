@@ -129,6 +129,12 @@
       institution: "Hochschule Luzern"
     },
 
+    // FH - OST Ostschweizer Fachhochschule
+    "Electrical and Computer Engineering": {
+      key: "ost-eit",
+      institution: "OST Ostschweizer Fachhochschule"
+    },
+
     // Private - Hochschulinstitut Schaffhausen
     "IT": {
       key: "hssh-it",
@@ -159,6 +165,8 @@
         return `../study-visualization/standard/studienplan-template.html?studiengang=fhbern-eit`;
       } else if (institutionName === "Hochschule Luzern") {
         return `../study-visualization/standard/studienplan-template.html?studiengang=fhlu-eit`;
+      } else if (institutionName === "OST Ostschweizer Fachhochschule") {
+        return `../study-visualization/standard/studienplan-template.html?studiengang=ost-eit`;
       } else if (institutionName === "ETH Zürich") {
         return `../study-visualization/standard/studienplan-template.html?studiengang=eth-itet`;
       }
