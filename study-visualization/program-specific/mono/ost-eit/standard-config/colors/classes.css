@@ -1,0 +1,26 @@
+/* ==== OST-EIT - CSS CLASSES ==== */
+/* Program-specific CSS classes */
+
+[data-studiengang="ost-eit"] .modul.grundlagen,
+[data-studiengang="ost-eit"] .legende-item.grundlagen {
+    background-color: var(--color-grundlagen);
+    color: var(--color-grundlagen-text, white);
+}
+
+[data-studiengang="ost-eit"] .modul.sprachen,
+[data-studiengang="ost-eit"] .legende-item.sprachen {
+    background-color: var(--color-sprachen);
+    color: var(--color-sprachen-text, white);
+}
+
+[data-studiengang="ost-eit"] .modul.wahlmodule,
+[data-studiengang="ost-eit"] .legende-item.wahlmodule {
+    background-color: var(--color-wahlmodule);
+    color: var(--color-wahlmodule-text, white);
+}
+
+[data-studiengang="ost-eit"] .modul.abschluss,
+[data-studiengang="ost-eit"] .legende-item.abschluss {
+    background-color: var(--color-abschluss);
+    color: var(--color-abschluss-text, white);
+}
