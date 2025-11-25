@@ -5,7 +5,7 @@ window.StudiengangGeneralConfig = {
     // Program identification
     title: "Bachelor Humanmedizin",
     // Optional HTML subtitle (renders clickable links when provided)
-    subtitleHtml: `<a href="https://www.med.uzh.ch/dam/jcr:ffffffff-c4b3-d46e-0000-000016d79dfa/curriculum_med_2012.pdf" target="_blank" rel="noopener">Curriculum</a> | <a href="https://www.swissuniversities.ch/fileadmin/swissuniversities/Dokumente/Lehre/Medizin/Beispielaufgaben2025.pdf" target="_blank" rel="noopener">NC Beispielaufgaben 2025</a> | <a href="https://emscoaches.ch/numerus-clausus-ems-durchschnittswerte/#:~:text=%E2%80%9EFiguren%20lernen%E2%80%9C%20zeigt%202024%20einen,im%20Numerus%20Clausus%202024%20wider." target="_blank" rel="noopener">Auswertungen 22-24</a>
+    subtitleHtml: `<a href="https://www.med.uzh.ch/dam/jcr:ffffffff-c4b3-d46e-0000-000016d79dfa/curriculum_med_2012.pdf" target="_blank" rel="noopener">Curriculum</a> | <a href="https://www.swissuniversities.ch/fileadmin/swissuniversities/Dokumente/Lehre/Medizin/Beispielaufgaben2025.pdf" target="_blank" rel="noopener">NC Beispielaufgaben 2025</a> | <a href="https://emscoaches.ch/numerus-clausus-ems-durchschnittswerte/#toc_Veranderungen_in_den_Untertests" target="_blank" rel="noopener">Auswertungen 22-24</a>
 <br><br>
 EMS:
 <br>
