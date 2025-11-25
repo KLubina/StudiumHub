@@ -15,9 +15,9 @@ https://www.swissuniversities.ch/fileadmin/swissuniversities/Dokumente/Lehre/Med
 <a href="https://github.com/KLubina/StudiumHub/blob/main/scripts/HumanMed-scripts/EMS/3.3%20EMS%20-%20Teil%20A%ekte%20im%20Raum.pdfTeil A - Objekte im Raum.pdf</a><br>
 <a href="https://github.com/KLubina/StudiumHub/blob/main/scripts/HumanMedEMS/3.4%20EMS%20-%20Teil%20A%20-%20Quantitative%20und%20formale%20Probleme.pdfTeil A - Quantitative und formale Probleme.pdf</a><br>
 <a href="https://github.com/KLubina/StudiumHub/blob/main/scripts/HumanMed-scripts/EMS/3.5%20EMS%20-%20Teil%20Akten%20lernen.pdfTeil A - Fakten lernen.pdf</a><br>
-<atps://github.com/KLubina/StudiumHub/blob/main/scripts/HumanMed-scripts/EMS/3.6%20EMS%20-%20Teil%20A%20-%20Figuren%20lernen.pdf<br>
+<a href="https://github.com/KLubina/StudiumHub/blob/main/scripts/HumanMed-scripts/EMS/3.6%20EMS%20-%20Teil%20A%20-%20Figuren%20lernen.pdf<br>
 <a href="https://github.com/KLubina/StudiumHub/blob/main/scripts/HumanMed-scripts/EMS/4.1%20EMS%20-%20Teil%20extverstaendnis.pdfTeil B - Textverständnis.pdf</a><br>
 <a href="https://github.com/KLubina/StudiumHub/blob/main/scripts/HumanMed-scripts/EMS/4.2%20EMS%20-%20Teil%20B%20-%20Figrnen.pdfTeil B - Figuren lernen.pdf</a><br>
 <a href="https://github.com/KLubina/StudiumHub/blob/main/scripts/HumanMed-scripts/EMS/4.3%20EMS%20-%20Teil%20B%20-%20Fakten%20lernen.pdf" target="_blank" rel="noopeneref="https://github.com/KLubina/StudiumHub/blob/main/scripts/HumanMed-scripts/EMS/4.4%20EMS%2020B%20-%20Diagramme%20und%20Tabellen.pdfTeil B - Diagramme und Tabellen.pdf</a><br>
-<a href="ithub.com/KLubina/StudiumHub/blob/main/scripts/HumanMed-scripts/EMS/4.5%20EMS%20-%20Teil%20B%20-%20Konzentriertes%20und%20sorgfaeltiges%20Arbeiten.pdfTeil B - Konzentriertes und sorgfältiges Arbeiten.pdf</a>`
+<a href="https://github.com/KLubina/StudiumHub/blob/main/scripts/HumanMed-scripts/EMS/4.5%20EMS%20-%20Teil%20B%20-%20Konzentriertes%20und%20sorgfaeltiges%20Arbeiten.pdfTeil B - Konzentriertes und sorgfältiges Arbeiten.pdf</a>`
 };
