@@ -144,6 +144,10 @@
       key: "fhnw-eit",
       institution: "Fachhochschule Nordwestschweiz"
     },
+    "Informatik (FHNW)": {
+      key: "fhnw-cs",
+      institution: "Fachhochschule Nordwestschweiz"
+    },
 
     // Private - Hochschulinstitut Schaffhausen
     "IT": {
@@ -193,6 +197,8 @@
         return `study-visualization/standard/studienplan-template.html?studiengang=eth-cs`;
       } else if (institutionName === "Berner Fachhochschule") {
         return `study-visualization/standard/studienplan-template.html?studiengang=fhbern-cs`;
+      } else if (institutionName === "Fachhochschule Nordwestschweiz") {
+        return `study-visualization/standard/studienplan-template.html?studiengang=fhnw-cs`;
       }
     }
 

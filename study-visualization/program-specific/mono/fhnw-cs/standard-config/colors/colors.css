@@ -1,0 +1,13 @@
+/* ==== FHNW-CS - COLOR VARIABLES ==== */
+/* Fachhochschule Nordwestschweiz - BSc Informatik Program */
+
+[data-studiengang="fhnw-cs"] {
+    /* Primary program color */
+    --color-primary: #1d4ed8;
+
+    /* Category colors */
+    --color-fachgrundlagen: #0284c7;
+    --color-vertiefung: #8b5cf6;
+    --color-projekt: #7c3aed;
+    --color-kontext: #059669;
+}
