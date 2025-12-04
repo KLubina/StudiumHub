@@ -5,7 +5,7 @@ window.StudiengangModules = [
   // #region 1. Semester (30 ECTS, 30 Wochenlektionen)
   {
     // PFLICHTFELDER
-    name: "Communication Competence 1",
+    name: "Wirtschaft für Ingenieure",
     ects: 2,
     standardcategory: "kontext",
     // KONTEXT
@@ -21,23 +21,23 @@ window.StudiengangModules = [
     year: 1,
     semester: 1,
   },
-  { 
+  {
     // PFLICHTFELDER
-    name: "Programmieren 1", 
-    ects: 6, 
+    name: "Programmieren 1",
+    ects: 6,
     standardcategory: "fach",
     // KONTEXT
-    year: 1, 
-    semester: 1 
+    year: 1,
+    semester: 1,
   },
-  { 
+  {
     // PFLICHTFELDER
-    name: "Datenbanken", 
-    ects: 4, 
+    name: "Datenbanken",
+    ects: 4,
     standardcategory: "fach",
     // KONTEXT
-    year: 1, 
-    semester: 1 
+    year: 1,
+    semester: 1,
   },
   {
     // PFLICHTFELDER
@@ -48,14 +48,14 @@ window.StudiengangModules = [
     year: 1,
     semester: 1,
   },
-  { 
+  {
     // PFLICHTFELDER
-    name: "Analysis 1", 
-    ects: 4, 
+    name: "Analysis 1",
+    ects: 4,
     standardcategory: "mathe-nawi",
     // KONTEXT
-    year: 1, 
-    semester: 1 
+    year: 1,
+    semester: 1,
   },
   {
     // PFLICHTFELDER
@@ -81,7 +81,7 @@ window.StudiengangModules = [
   // #region 2. Semester (30 ECTS, 30 Wochenlektionen)
   {
     // PFLICHTFELDER
-    name: "Communication Competence 2",
+    name: "Communication Competence Basic",
     ects: 2,
     standardcategory: "kontext",
     // KONTEXT
@@ -97,14 +97,14 @@ window.StudiengangModules = [
     year: 1,
     semester: 2,
   },
-  { 
+  {
     // PFLICHTFELDER
-    name: "Programmieren 2", 
-    ects: 6, 
+    name: "Programmieren 2",
+    ects: 6,
     standardcategory: "fach",
     // KONTEXT
-    year: 1, 
-    semester: 2 
+    year: 1,
+    semester: 2,
   },
   {
     // PFLICHTFELDER
@@ -133,14 +133,14 @@ window.StudiengangModules = [
     year: 1,
     semester: 2,
   },
-  { 
+  {
     // PFLICHTFELDER
-    name: "Analysis 2", 
-    ects: 3, 
+    name: "Analysis 2",
+    ects: 3,
     standardcategory: "mathe-nawi",
     // KONTEXT
-    year: 1, 
-    semester: 2 
+    year: 1,
+    semester: 2,
   },
   {
     // PFLICHTFELDER
@@ -157,7 +157,7 @@ window.StudiengangModules = [
   // #region 3. Semester (30 ECTS, 30 Wochenlektionen)
   {
     // PFLICHTFELDER
-    name: "Communication Competence 3",
+    name: "Wahlpflichtmodul Kommunikation",
     ects: 2,
     standardcategory: "kontext",
     // KONTEXT
@@ -182,29 +182,29 @@ window.StudiengangModules = [
     year: 2,
     semester: 3,
   },
-  { 
+  {
     // PFLICHTFELDER
-    name: "Web-Entwicklung", 
-    ects: 4, 
+    name: "Web-Entwicklung",
+    ects: 4,
     standardcategory: "fach",
     // KONTEXT
-    year: 2, 
-    semester: 3 
+    year: 2,
+    semester: 3,
   },
-  { 
+  {
     // PFLICHTFELDER
-    name: "Computertechnik 1", 
-    ects: 3, 
+    name: "Computertechnik 1",
+    ects: 3,
     standardcategory: "fach",
     // KONTEXT
-    year: 2, 
-    semester: 3 
+    year: 2,
+    semester: 3,
   },
   {
     // PFLICHTFELDER
     name: "Algorithmen & Datenstrukturen",
     ects: 5,
-    standardcategory: "projekt",
+    standardcategory: "fach",
     // KONTEXT
     year: 2,
     semester: 3,
@@ -233,7 +233,7 @@ window.StudiengangModules = [
   // #region 4. Semester (30 ECTS, 30 Wochenlektionen)
   {
     // PFLICHTFELDER
-    name: "Wirtschaft für Ingenieure",
+    name: "Wahlpflichtmodul Kommunikation",
     ects: 2,
     standardcategory: "kontext",
     // KONTEXT
@@ -258,32 +258,32 @@ window.StudiengangModules = [
     year: 2,
     semester: 4,
   },
-  { 
+  {
     // PFLICHTFELDER
-    name: "Betriebssysteme", 
-    ects: 4, 
+    name: "Betriebssysteme",
+    ects: 4,
     standardcategory: "fach",
     // KONTEXT
-    year: 2, 
-    semester: 4 
+    year: 2,
+    semester: 4,
   },
-  { 
+  {
     // PFLICHTFELDER
-    name: "Computertechnik 2", 
-    ects: 3, 
+    name: "Computertechnik 2",
+    ects: 3,
     standardcategory: "fach",
     // KONTEXT
-    year: 2, 
-    semester: 4 
+    year: 2,
+    semester: 4,
   },
-  { 
+  {
     // PFLICHTFELDER
-    name: "IT-Sicherheit", 
-    ects: 4, 
+    name: "IT-Sicherheit",
+    ects: 4,
     standardcategory: "fach",
     // KONTEXT
-    year: 2, 
-    semester: 4 
+    year: 2,
+    semester: 4,
   },
   {
     // PFLICHTFELDER
@@ -326,7 +326,7 @@ window.StudiengangModules = [
     semester: 5,
     // WAHLMODULE
     isPlaceholder: true,
-    wahlmodulSource: "wahlmodule-data.js"
+    wahlmodulSource: "wahlmodule-data.js",
   },
   {
     // PFLICHTFELDER
@@ -338,7 +338,7 @@ window.StudiengangModules = [
     semester: 5,
     // WAHLMODULE
     isPlaceholder: true,
-    wahlmodulSource: "wahlmodule-data.js"
+    wahlmodulSource: "wahlmodule-data.js",
   },
   {
     // PFLICHTFELDER
@@ -350,7 +350,7 @@ window.StudiengangModules = [
     semester: 5,
     // WAHLMODULE
     isPlaceholder: true,
-    wahlmodulSource: "wahlmodule-data.js"
+    wahlmodulSource: "wahlmodule-data.js",
   },
   {
     // PFLICHTFELDER
@@ -362,25 +362,13 @@ window.StudiengangModules = [
     semester: 5,
     // WAHLMODULE
     isPlaceholder: true,
-    wahlmodulSource: "wahlmodule-data.js"
-  },
-  {
-    // PFLICHTFELDER
-    name: "Wahlpflichtmodul",
-    ects: 4,
-    standardcategory: "wahlpflicht",
-    // KONTEXT
-    year: 3,
-    semester: 5,
-    // WAHLMODULE
-    isPlaceholder: true,
-    wahlmodulSource: "wahlmodule-data.js"
+    wahlmodulSource: "wahlmodule-data.js",
   },
   {
     // PFLICHTFELDER
     name: "Interdisziplinäres Wahlpflichtmodul",
     ects: 4,
-    standardcategory: "kontext",
+    standardcategory: "wahlpflicht",
     // KONTEXT
     year: 3,
     semester: 5,
@@ -394,7 +382,24 @@ window.StudiengangModules = [
     year: 3,
     semester: 5,
   },
-
+    {
+    // PFLICHTFELDER
+    name: "Wahlpflichtmodul Kontext",
+    ects: 2,
+    standardcategory: "kontext",
+    // KONTEXT
+    year: 3,
+    semester: 5,
+  },
+    {
+    // PFLICHTFELDER
+    name: "Wahlpflichtmodul Kontext",
+    ects: 2,
+    standardcategory: "kontext",
+    // KONTEXT
+    year: 3,
+    semester: 5,
+  },
   // #endregion 5. Semester (30 ECTS, 24 Wochenlektionen)
 
   // #region 6. Semester (30 ECTS, 18 Wochenlektionen)
@@ -408,7 +413,7 @@ window.StudiengangModules = [
     semester: 6,
     // WAHLMODULE
     isPlaceholder: true,
-    wahlmodulSource: "wahlmodule-data.js"
+    wahlmodulSource: "wahlmodule-data.js",
   },
   {
     // PFLICHTFELDER
@@ -420,7 +425,7 @@ window.StudiengangModules = [
     semester: 6,
     // WAHLMODULE
     isPlaceholder: true,
-    wahlmodulSource: "wahlmodule-data.js"
+    wahlmodulSource: "wahlmodule-data.js",
   },
   {
     // PFLICHTFELDER
@@ -432,7 +437,7 @@ window.StudiengangModules = [
     semester: 6,
     // WAHLMODULE
     isPlaceholder: true,
-    wahlmodulSource: "wahlmodule-data.js"
+    wahlmodulSource: "wahlmodule-data.js",
   },
   {
     // PFLICHTFELDER
@@ -444,7 +449,16 @@ window.StudiengangModules = [
     semester: 6,
     // WAHLMODULE
     isPlaceholder: true,
-    wahlmodulSource: "wahlmodule-data.js"
+    wahlmodulSource: "wahlmodule-data.js",
+  },
+  {
+    // PFLICHTFELDER
+    name: "Wahlpflichtmodul Kontext",
+    ects: 2,
+    standardcategory: "kontext",
+    // KONTEXT
+    year: 3,
+    semester: 6,
   },
   {
     // PFLICHTFELDER
