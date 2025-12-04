@@ -1,0 +1,38 @@
+/* ==== OST-CS - CSS CLASSES ==== */
+/* Program-specific CSS classes */
+
+[data-studiengang="ost-cs"] .modul.kommunikation,
+[data-studiengang="ost-cs"] .legende-item.kommunikation {
+    background-color: var(--color-kommunikation);
+    color: var(--color-kommunikation-text, white);
+}
+
+[data-studiengang="ost-cs"] .modul.rahmen,
+[data-studiengang="ost-cs"] .legende-item.rahmen {
+    background-color: var(--color-rahmen);
+    color: var(--color-rahmen-text, white);
+}
+
+[data-studiengang="ost-cs"] .modul.mathe,
+[data-studiengang="ost-cs"] .legende-item.mathe {
+    background-color: var(--color-mathe);
+    color: var(--color-mathe-text, white);
+}
+
+[data-studiengang="ost-cs"] .modul.aufbau,
+[data-studiengang="ost-cs"] .legende-item.aufbau {
+    background-color: var(--color-aufbau);
+    color: var(--color-aufbau-text, white);
+}
+
+[data-studiengang="ost-cs"] .modul.pflicht,
+[data-studiengang="ost-cs"] .legende-item.pflicht {
+    background-color: var(--color-pflicht);
+    color: var(--color-pflicht-text, white);
+}
+
+[data-studiengang="ost-cs"] .modul.gww,
+[data-studiengang="ost-cs"] .legende-item.gww {
+    background-color: var(--color-gww);
+    color: var(--color-gww-text, white);
+}

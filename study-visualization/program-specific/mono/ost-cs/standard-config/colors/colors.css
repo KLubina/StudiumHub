@@ -1,0 +1,15 @@
+/* ==== OST-CS - COLOR VARIABLES ==== */
+/* OST Ostschweizer Fachhochschule - BSc Informatik Program */
+
+[data-studiengang="ost-cs"] {
+    /* Primary program color */
+    --color-primary: #0066b3;
+
+    /* Category colors */
+    --color-kommunikation: #16a34a;
+    --color-rahmen: #0284c7;
+    --color-mathe: #dc2626;
+    --color-aufbau: #7c3aed;
+    --color-pflicht: #ea580c;
+    --color-gww: #0891b2;
+}

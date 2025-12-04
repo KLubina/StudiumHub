@@ -142,6 +142,10 @@
       key: "ost-eit",
       institution: "OST Ostschweizer Fachhochschule"
     },
+    "Informatik (OST)": {
+      key: "ost-cs",
+      institution: "Ostschweizer Fachhochschule"
+    },
 
     // FH - Fachhochschule Nordwestschweiz
     "Elektro- und Informationstechnik": {
@@ -205,6 +209,8 @@
         return `study-visualization/standard/studienplan-template.html?studiengang=fhnw-cs`;
       } else if (institutionName === "Hochschule Luzern" || institutionName === "HSLU") {
         return `study-visualization/standard/studienplan-template.html?studiengang=hslu-cs`;
+      } else if (institutionName === "Ostschweizer Fachhochschule" || institutionName === "OST") {
+        return `study-visualization/standard/studienplan-template.html?studiengang=ost-cs`;
       }
     }
 
