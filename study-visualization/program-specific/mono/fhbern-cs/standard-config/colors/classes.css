@@ -1,0 +1,44 @@
+/* ==== FHBERN-CS - CSS CLASSES ==== */
+/* Program-specific CSS classes */
+
+[data-studiengang="fhbern-cs"] .modul.projekt,
+[data-studiengang="fhbern-cs"] .legende-item.projekt {
+    background-color: var(--color-projekt);
+    color: var(--color-projekt-text, white);
+}
+
+[data-studiengang="fhbern-cs"] .modul.fach,
+[data-studiengang="fhbern-cs"] .legende-item.fach {
+    background-color: var(--color-fach);
+    color: var(--color-fach-text, white);
+}
+
+[data-studiengang="fhbern-cs"] .modul.fachwahlmodule,
+[data-studiengang="fhbern-cs"] .legende-item.fachwahlmodule {
+    background-color: var(--color-fachwahlmodule);
+    color: var(--color-fachwahlmodule-text, white);
+}
+
+[data-studiengang="fhbern-cs"] .modul.vertiefung,
+[data-studiengang="fhbern-cs"] .legende-item.vertiefung {
+    background-color: var(--color-vertiefung);
+    color: var(--color-vertiefung-text, white);
+}
+
+[data-studiengang="fhbern-cs"] .modul.mathe,
+[data-studiengang="fhbern-cs"] .legende-item.mathe {
+    background-color: var(--color-mathe);
+    color: var(--color-mathe-text, white);
+}
+
+[data-studiengang="fhbern-cs"] .modul.kommunikation,
+[data-studiengang="fhbern-cs"] .legende-item.kommunikation {
+    background-color: var(--color-kommunikation);
+    color: var(--color-kommunikation-text, white);
+}
+
+[data-studiengang="fhbern-cs"] .modul.special-weeks,
+[data-studiengang="fhbern-cs"] .legende-item.special-weeks {
+    background-color: var(--color-special-weeks);
+    color: var(--color-special-weeks-text, white);
+}

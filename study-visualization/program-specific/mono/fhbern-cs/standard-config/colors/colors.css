@@ -1,0 +1,16 @@
+/* ==== FHBERN-CS - COLOR VARIABLES ==== */
+/* Berner Fachhochschule - BSc Informatik Program */
+
+[data-studiengang="fhbern-cs"] {
+    /* Primary program color */
+    --color-primary: #1d4ed8;
+
+    /* Category colors */
+    --color-projekt: #7c3aed;
+    --color-fach: #0284c7;
+    --color-fachwahlmodule: #0891b2;
+    --color-vertiefung: #8b5cf6;
+    --color-mathe: #dc2626;
+    --color-kommunikation: #059669;
+    --color-special-weeks: #ea580c;
+}

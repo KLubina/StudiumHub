@@ -110,6 +110,10 @@
       key: "fhbern-eit",
       institution: "Berner Fachhochschule"
     },
+    "Informatik (BFH)": {
+      key: "fhbern-cs",
+      institution: "Berner Fachhochschule"
+    },
 
     // FH - Fachhochschule Graubünden
     "Computational and Data Science": {
@@ -187,6 +191,8 @@
         return `study-visualization/standard/studienplan-template.html?studiengang=fhzh-cs`;
       } else if (institutionName === "ETH Zürich") {
         return `study-visualization/standard/studienplan-template.html?studiengang=eth-cs`;
+      } else if (institutionName === "Berner Fachhochschule") {
+        return `study-visualization/standard/studienplan-template.html?studiengang=fhbern-cs`;
       }
     }
 
