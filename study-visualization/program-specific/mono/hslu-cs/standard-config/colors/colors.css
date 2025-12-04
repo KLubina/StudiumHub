@@ -1,0 +1,13 @@
+/* ==== HSLU-CS - COLOR VARIABLES ==== */
+/* Hochschule Luzern - BSc Informatik Program */
+
+[data-studiengang="hslu-cs"] {
+    /* Primary program color */
+    --color-primary: #1d4ed8;
+
+    /* Category colors */
+    --color-kern: #0284c7;
+    --color-projekt: #7c3aed;
+    --color-major: #8b5cf6;
+    --color-erweiterung: #059669;
+}

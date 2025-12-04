@@ -81,7 +81,9 @@ window.StudienplanWahlmodule = {
                     'wahlmodule-data.js': 'PolisciWahlmoduleData',
                     'seminar-data.js': 'PolisciSeminarData',
                     'vertiefungsmodule-data.js': 'PolisciVertiefungsmoduleData',
-                    'specialisationmodule-data.js': 'SpecialisationModuleData'
+                    'specialisationmodule-data.js': 'SpecialisationModuleData',
+                    'major-modules-data.js': 'StudiengangWahlmoduleData',
+                    'erweiterung-modules-data.js': 'StudiengangErweiterungWahlmoduleData'
                 };
 
                 // Versuche zuerst die spezifische Variable basierend auf dem Dateinamen

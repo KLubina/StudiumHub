@@ -132,6 +132,10 @@
       key: "fhlu-eit",
       institution: "Hochschule Luzern"
     },
+    "Informatik (HSLU)": {
+      key: "hslu-cs",
+      institution: "Hochschule Luzern"
+    },
 
     // FH - OST Ostschweizer Fachhochschule
     "Electrical and Computer Engineering": {
@@ -199,6 +203,8 @@
         return `study-visualization/standard/studienplan-template.html?studiengang=fhbern-cs`;
       } else if (institutionName === "Fachhochschule Nordwestschweiz") {
         return `study-visualization/standard/studienplan-template.html?studiengang=fhnw-cs`;
+      } else if (institutionName === "Hochschule Luzern" || institutionName === "HSLU") {
+        return `study-visualization/standard/studienplan-template.html?studiengang=hslu-cs`;
       }
     }
 
