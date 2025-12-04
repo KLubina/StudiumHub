@@ -7,6 +7,7 @@ window.StudiengangCategoriesConfig = {
         { name: "Kontextmodule", klasse: "kontext" },
         { name: "Projektmodule", klasse: "projekt" },
         { name: "Fachmodule", klasse: "fach" },
-        { name: "Mathematisch-Naturwiss. Module", klasse: "mathe-nawi" }
+        { name: "Mathematisch-Naturwiss. Module", klasse: "mathe-nawi" },
+        { name: "Wahlpflichtmodule", klasse: "wahlpflicht" }
     ]
 };

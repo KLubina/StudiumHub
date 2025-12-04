@@ -7,6 +7,6 @@ window.StudiengangFeaturesConfig = {
 
     // Optional features
     enableColorManager: false,
-    enableWahlmodule: false,
-    enableKPCounter: false
+    enableWahlmodule: true,
+    enableKPCounter: true
 };

@@ -319,16 +319,67 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Wahlpflichtmodul",
-    ects: 6,
-    standardcategory: "kontext",
+    ects: 4,
+    standardcategory: "wahlpflicht",
     // KONTEXT
     year: 3,
     semester: 5,
+    // WAHLMODULE
+    isPlaceholder: true,
+    wahlmodulSource: "wahlmodule-data.js"
   },
   {
     // PFLICHTFELDER
     name: "Wahlpflichtmodul",
-    ects: 6,
+    ects: 4,
+    standardcategory: "wahlpflicht",
+    // KONTEXT
+    year: 3,
+    semester: 5,
+    // WAHLMODULE
+    isPlaceholder: true,
+    wahlmodulSource: "wahlmodule-data.js"
+  },
+  {
+    // PFLICHTFELDER
+    name: "Wahlpflichtmodul",
+    ects: 4,
+    standardcategory: "wahlpflicht",
+    // KONTEXT
+    year: 3,
+    semester: 5,
+    // WAHLMODULE
+    isPlaceholder: true,
+    wahlmodulSource: "wahlmodule-data.js"
+  },
+  {
+    // PFLICHTFELDER
+    name: "Wahlpflichtmodul",
+    ects: 4,
+    standardcategory: "wahlpflicht",
+    // KONTEXT
+    year: 3,
+    semester: 5,
+    // WAHLMODULE
+    isPlaceholder: true,
+    wahlmodulSource: "wahlmodule-data.js"
+  },
+  {
+    // PFLICHTFELDER
+    name: "Wahlpflichtmodul",
+    ects: 4,
+    standardcategory: "wahlpflicht",
+    // KONTEXT
+    year: 3,
+    semester: 5,
+    // WAHLMODULE
+    isPlaceholder: true,
+    wahlmodulSource: "wahlmodule-data.js"
+  },
+  {
+    // PFLICHTFELDER
+    name: "Interdisziplinäres Wahlpflichtmodul",
+    ects: 4,
     standardcategory: "kontext",
     // KONTEXT
     year: 3,
@@ -337,26 +388,8 @@ window.StudiengangModules = [
   {
     // PFLICHTFELDER
     name: "Projektarbeit in Informatik",
-    ects: 8,
+    ects: 6,
     standardcategory: "projekt",
-    // KONTEXT
-    year: 3,
-    semester: 5,
-  },
-  { 
-    // PFLICHTFELDER
-    name: "Wahlpflichtmodul", 
-    ects: 6, 
-    standardcategory: "fach",
-    // KONTEXT
-    year: 3, 
-    semester: 5 
-  },
-  {
-    // PFLICHTFELDER
-    name: "Wahlpflichtmodul SG-übergreifend",
-    ects: 4,
-    standardcategory: "fach",
     // KONTEXT
     year: 3,
     semester: 5,
@@ -369,10 +402,49 @@ window.StudiengangModules = [
     // PFLICHTFELDER
     name: "Wahlpflichtmodul",
     ects: 4,
-    standardcategory: "kontext",
+    standardcategory: "wahlpflicht",
     // KONTEXT
     year: 3,
     semester: 6,
+    // WAHLMODULE
+    isPlaceholder: true,
+    wahlmodulSource: "wahlmodule-data.js"
+  },
+  {
+    // PFLICHTFELDER
+    name: "Wahlpflichtmodul",
+    ects: 4,
+    standardcategory: "wahlpflicht",
+    // KONTEXT
+    year: 3,
+    semester: 6,
+    // WAHLMODULE
+    isPlaceholder: true,
+    wahlmodulSource: "wahlmodule-data.js"
+  },
+  {
+    // PFLICHTFELDER
+    name: "Wahlpflichtmodul",
+    ects: 4,
+    standardcategory: "wahlpflicht",
+    // KONTEXT
+    year: 3,
+    semester: 6,
+    // WAHLMODULE
+    isPlaceholder: true,
+    wahlmodulSource: "wahlmodule-data.js"
+  },
+  {
+    // PFLICHTFELDER
+    name: "Wahlpflichtmodul",
+    ects: 4,
+    standardcategory: "wahlpflicht",
+    // KONTEXT
+    year: 3,
+    semester: 6,
+    // WAHLMODULE
+    isPlaceholder: true,
+    wahlmodulSource: "wahlmodule-data.js"
   },
   {
     // PFLICHTFELDER
@@ -382,33 +454,6 @@ window.StudiengangModules = [
     // KONTEXT
     year: 3,
     semester: 6,
-  },
-  { 
-    // PFLICHTFELDER
-    name: "Wahlpflichtmodul", 
-    ects: 6, 
-    standardcategory: "fach",
-    // KONTEXT
-    year: 3, 
-    semester: 6 
-  },
-  { 
-    // PFLICHTFELDER
-    name: "Wahlpflichtmodul", 
-    ects: 4, 
-    standardcategory: "fach",
-    // KONTEXT
-    year: 3, 
-    semester: 6 
-  },
-  { 
-    // PFLICHTFELDER
-    name: "Wahlpflichtmodul", 
-    ects: 4, 
-    standardcategory: "fach",
-    // KONTEXT
-    year: 3, 
-    semester: 6 
   },
   // #endregion 6. Semester (30 ECTS, 18 Wochenlektionen)
 ];

@@ -24,3 +24,9 @@
     background-color: var(--color-mathe-nawi);
     color: var(--color-mathe-nawi-text, white);
 }
+
+[data-studiengang="fhzh-cs"] .modul.wahlpflicht,
+[data-studiengang="fhzh-cs"] .legende-item.wahlpflicht {
+    background-color: var(--color-wahlpflicht);
+    color: var(--color-wahlpflicht-text, white);
+}
