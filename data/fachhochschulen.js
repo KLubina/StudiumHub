@@ -10,7 +10,7 @@
         website: "https://www.bfh.ch/de/studium/alle-studiengaenge/",
         kategorien: [
           {
-            name: "2. Wirtschaftswissenschaften",
+            name: "3. Wirtschaftswissenschaften",
             studiengaenge: [
               { name: "Digital Business & AI", grad: "Bachelor of Science" },
               { name: "Betriebsökonomie", grad: "Bachelor of Science" },
@@ -31,7 +31,7 @@
             ]
           },
           {
-            name: "3. Naturwissenschaften",
+            name: "2. Naturwissenschaften",
             studiengaenge: [
               { name: "Agronomie", grad: "Bachelor of Science" },
               { name: "Waldwissenschaften", grad: "Bachelor of Science" },
@@ -102,7 +102,7 @@
         website: "https://www.fhgr.ch/studium/bachelorangebot/",
         kategorien: [
           {
-            name: "2. Wirtschaftswissenschaften",
+            name: "3. Wirtschaftswissenschaften",
             studiengaenge: [
               { name: "Betriebsökonomie", grad: "Bachelor" },
               { name: "Digital Business Management", grad: "Bachelor" },
@@ -146,7 +146,7 @@
         website: "https://www.fhnw.ch/de/studium/bachelor",
         kategorien: [
           {
-            name: "2. Wirtschaftswissenschaften",
+            name: "3. Wirtschaftswissenschaften",
             studiengaenge: [
               { name: "International Business Management (trinational)", grad: "Bachelor of Science" },
               { name: "Business Administration (International Management)", grad: "Bachelor of Science" },
@@ -161,7 +161,7 @@
             ]
           },
           {
-            name: "3. Naturwissenschaften",
+            name: "2. Naturwissenschaften",
             studiengaenge: [
               { name: "Life Sciences", grad: "Bachelor" }
             ]
@@ -244,7 +244,7 @@
         website: "https://www.ost.ch/de/studium/bachelor",
         kategorien: [
           {
-            name: "2. Wirtschaftswissenschaften",
+            name: "3. Wirtschaftswissenschaften",
             studiengaenge: [
               { name: "Betriebsökonomie", grad: "BSc" },
               { name: "Management und Recht", grad: "BSc" },
@@ -308,7 +308,7 @@
         website: "https://www.zhaw.ch/de/studium/bachelorstudiengaenge",
         kategorien: [
           {
-            name: "2. Wirtschaftswissenschaften",
+            name: "3. Wirtschaftswissenschaften",
             studiengaenge: [
               { name: "Angewandtes Recht", grad: "BA" },
               { name: "Betriebsökonomie", grad: "BSc" },
@@ -331,7 +331,7 @@
             ]
           },
           {
-            name: "3. Naturwissenschaften",
+            name: "2. Naturwissenschaften",
             studiengaenge: [
               { name: "Applied Digital Life Sciences", grad: "BSc" },
               { name: "Biomedizinische Labordiagnostik", grad: "BSc" },
@@ -424,7 +424,7 @@
         website: "https://www.hslu.ch/de-ch/hochschule-luzern/studium/#?filters=16",
         kategorien: [
           {
-            name: "2. Wirtschaftswissenschaften",
+            name: "3. Wirtschaftswissenschaften",
             studiengaenge: [
               { name: "Business Administration", grad: "Bachelor of Science" },
               { name: "Business IT & Digital Transformation", grad: "Bachelor" },

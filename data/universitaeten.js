@@ -10,7 +10,7 @@
         website: "https://www.unibas.ch/de/Studium/Vor-dem-Studium/Studienangebot.html",
         kategorien: [
           {
-            name: "2. Wirtschaftswissenschaften",
+            name: "3. Wirtschaftswissenschaften",
             studiengaenge: [
               { name: "Wirtschaftswissenschaften", ects: "180 KP/75 KP" }
             ]
@@ -29,7 +29,7 @@
             ]
           },
           {
-            name: "3. Naturwissenschaften",
+            name: "2. Naturwissenschaften",
             unterkategorien: [
               {
                 name: "Geografie",
@@ -164,7 +164,7 @@
         website: "https://www.unilu.ch/fileadmin/universitaet/dienste/unikomm/dokumente/Studienbroschueren/Studienprogramme_Bachelor.pdf",
         kategorien: [
           {
-            name: "2. Wirtschaftswissenschaften",
+            name: "3. Wirtschaftswissenschaften",
             studiengaenge: [
               { name: "Wirtschaftswissenschaften", ects: "180/120/60 ECTS" },
               { name: "Gesundheitswissenschaften", ects: "180 ECTS" }
@@ -228,7 +228,7 @@
         website: "https://www.unisg.ch/de/studium/programme/bachelor/",
         kategorien: [
           {
-            name: "2. Wirtschaftswissenschaften",
+            name: "3. Wirtschaftswissenschaften",
             studiengaenge: [
               { name: "Betriebswirtschaftslehre", ects: "180 ECTS" },
               { name: "Volkswirtschaftslehre", ects: "180 ECTS" }
@@ -272,7 +272,7 @@
         website: "https://www.unibe.ch/unibe/portal/content/e1006/e251033/e265838/Bachelor-d_25-26_ger.pdf",
         kategorien: [
           {
-            name: "2. Wirtschaftswissenschaften",
+            name: "3. Wirtschaftswissenschaften",
             studiengaenge: [
               { name: "Betriebswirtschaftslehre", ects: "120/60/30/15 ECTS" },
               { name: "Volkswirtschaftslehre", ects: "120/60/30/15 ECTS" },
@@ -296,7 +296,7 @@
             ]
           },
           {
-            name: "3. Naturwissenschaften",
+            name: "2. Naturwissenschaften",
             unterkategorien: [
               {
                 name: "Geografie",
@@ -443,7 +443,7 @@
         website: "https://studies.unifr.ch/de/studienangebot/courses/",
         kategorien: [
           {
-            name: "2. Wirtschaftswissenschaften",
+            name: "3. Wirtschaftswissenschaften",
             studiengaenge: [
               { name: "Betriebswirtschaftslehre", ects: "180/60 ECTS" },
               { name: "Volkswirtschaftslehre", ects: "180/60 ECTS" },
@@ -465,7 +465,7 @@
             ]
           },
           {
-            name: "3. Naturwissenschaften",
+            name: "2. Naturwissenschaften",
             unterkategorien: [
               {
                 name: "Geografie",
@@ -627,7 +627,7 @@
             ]
           },
           {
-            name: "3. Naturwissenschaften",
+            name: "2. Naturwissenschaften",
             unterkategorien: [
               {
                 name: "Geografie",
@@ -706,7 +706,7 @@
         website: "https://www.uzh.ch/de/studies/programs/bachelor.html",
         kategorien: [
           {
-            name: "2. Wirtschaftswissenschaften",
+            name: "3. Wirtschaftswissenschaften",
             studiengaenge: [
               { name: "Banking and Finance", ects: "150 ECTS" },
               { name: "Betriebswirtschaftslehre", ects: "150 ECTS" },
@@ -731,7 +731,7 @@
             ]
           },
           {
-            name: "3. Naturwissenschaften",
+            name: "2. Naturwissenschaften",
             unterkategorien: [
               {
                 name: "Geografie",
