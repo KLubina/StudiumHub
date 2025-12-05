@@ -20,7 +20,7 @@
             ]
           },
           {
-            name: "5. Medizin und Gesundheitswissenschaften",
+            name: "5. Medizin",
             studiengaenge: [
               { name: "Ernährung und Diätetik", grad: "Bachelor of Science" },
               { name: "Hebamme", grad: "Bachelor of Science" },
@@ -253,7 +253,7 @@
             ]
           },
           {
-            name: "5. Medizin und Gesundheitswissenschaften",
+            name: "5. Medizin",
             studiengaenge: [
               { name: "Ergotherapie", grad: "BSc" },
               { name: "Pflege", grad: "BSc" },
@@ -320,7 +320,7 @@
             ]
           },
           {
-            name: "5. Medizin und Gesundheitswissenschaften",
+            name: "5. Medizin",
             studiengaenge: [
               { name: "Ergotherapie", grad: "BSc" },
               { name: "Gesundheitsförderung und Prävention", grad: "BSc" },
@@ -439,7 +439,7 @@
             ]
           },
           {
-            name: "5. Medizin und Gesundheitswissenschaften",
+            name: "5. Medizin",
             studiengaenge: [
               { name: "Pflege", grad: "Bachelor of Science" }
             ]

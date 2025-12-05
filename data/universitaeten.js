@@ -16,7 +16,7 @@
             ]
           },
           {
-            name: "5. Medizin und Gesundheitswissenschaften",
+            name: "5. Medizin",
             studiengaenge: [
               { name: "Humanmedizin", ects: "180 KP" },
               { name: "Zahnmedizin", ects: "180 KP" }
@@ -282,7 +282,7 @@
             ]
           },
           {
-            name: "5. Medizin und Gesundheitswissenschaften",
+            name: "5. Medizin",
             studiengaenge: [
               { name: "Humanmedizin", ects: "180 ECTS" },
               { name: "Veterinärmedizin", ects: "180 ECTS" },
@@ -452,7 +452,7 @@
             ]
           },
           {
-            name: "5. Medizin und Gesundheitswissenschaften",
+            name: "5. Medizin",
             studiengaenge: [
               { name: "Humanmedizin", ects: "180 ECTS" },
             ]
@@ -621,7 +621,7 @@
         website: "https://ethz.ch/studierende/de/studium/studiengaenge.html",
         kategorien: [
           {
-            name: "5. Medizin und Gesundheitswissenschaften",
+            name: "5. Medizin",
             studiengaenge: [
               { name: "Humanmedizin", ects: "180 ECTS" },
             ]
@@ -716,7 +716,7 @@
             ]
           },
           {
-            name: "5. Medizin und Gesundheitswissenschaften",
+            name: "5. Medizin",
             studiengaenge: [
               { name: "Chiropraktik", ects: "180 ECTS" },
               { name: "Humanmedizin", ects: "180 ECTS" },
