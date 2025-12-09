@@ -157,6 +157,12 @@
       institution: "Fachhochschule Nordwestschweiz"
     },
 
+    // FH - FFHS (Fernfachhochschule Schweiz)
+    "Informatik (FFHS)": {
+      key: "ffhs-informatik",
+      institution: "FFHS"
+    },
+
     // Private - Hochschulinstitut Schaffhausen
     "IT": {
       key: "hssh-it",
@@ -211,6 +217,8 @@
         return `study-visualization/standard/studienplan-template.html?studiengang=hslu-cs`;
       } else if (institutionName === "Ostschweizer Fachhochschule" || institutionName === "OST") {
         return `study-visualization/standard/studienplan-template.html?studiengang=ost-cs`;
+      } else if (institutionName === "FFHS") {
+        return `study-visualization/standard/studienplan-template.html?studiengang=ffhs-informatik`;
       }
     }
 

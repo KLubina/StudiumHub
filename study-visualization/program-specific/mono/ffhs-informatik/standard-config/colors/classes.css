@@ -1,0 +1,38 @@
+/* ==== FFHS-INFORMATIK - CSS CLASSES ==== */
+/* Program-specific CSS classes */
+
+[data-studiengang="ffhs-informatik"] .modul.pflicht,
+[data-studiengang="ffhs-informatik"] .legende-item.pflicht {
+    background-color: var(--color-pflicht);
+    color: var(--color-pflicht-text, white);
+}
+
+[data-studiengang="ffhs-informatik"] .modul.mathe,
+[data-studiengang="ffhs-informatik"] .legende-item.mathe {
+    background-color: var(--color-mathe);
+    color: var(--color-mathe-text, white);
+}
+
+[data-studiengang="ffhs-informatik"] .modul.projekt,
+[data-studiengang="ffhs-informatik"] .legende-item.projekt {
+    background-color: var(--color-projekt);
+    color: var(--color-projekt-text, white);
+}
+
+[data-studiengang="ffhs-informatik"] .modul.vertiefung,
+[data-studiengang="ffhs-informatik"] .legende-item.vertiefung {
+    background-color: var(--color-vertiefung);
+    color: var(--color-vertiefung-text, white);
+}
+
+[data-studiengang="ffhs-informatik"] .modul.wahl,
+[data-studiengang="ffhs-informatik"] .legende-item.wahl {
+    background-color: var(--color-wahl);
+    color: var(--color-wahl-text, white);
+}
+
+[data-studiengang="ffhs-informatik"] .modul.thesis,
+[data-studiengang="ffhs-informatik"] .legende-item.thesis {
+    background-color: var(--color-thesis);
+    color: var(--color-thesis-text, white);
+}

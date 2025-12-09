@@ -1,0 +1,15 @@
+/* ==== FFHS-INFORMATIK - COLOR VARIABLES ==== */
+/* FFHS - BSc Informatik Program */
+
+[data-studiengang="ffhs-informatik"] {
+    /* Primary program color */
+    --color-primary: #0066cc;
+
+    /* Category colors */
+    --color-pflicht: #0284c7;
+    --color-mathe: #dc2626;
+    --color-projekt: #7c3aed;
+    --color-vertiefung: #8b5cf6;
+    --color-wahl: #0891b2;
+    --color-thesis: #ea580c;
+}
