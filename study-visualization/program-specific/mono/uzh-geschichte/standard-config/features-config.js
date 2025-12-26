@@ -11,5 +11,5 @@ window.StudiengangFeaturesConfig = {
     enableKPCounter: true,
     
     // Major-Minor specific
-    enableMajorMinorSelector: true
+    enableMajorMinorSelector: false
 };

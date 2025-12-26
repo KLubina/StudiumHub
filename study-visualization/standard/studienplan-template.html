@@ -21,7 +21,6 @@
     <link rel="stylesheet" href="css/optional/kp-counter.css">
     <link rel="stylesheet" href="css/optional/module-lists.css">
     <link rel="stylesheet" href="css/optional/indicators.css">
-    <link rel="stylesheet" href="css/optional/major-minor-selector.css">
     <link rel="stylesheet" href="css/optional/color-manager.css">
     <link rel="stylesheet" href="css/optional/wahlmodule.css">
 
@@ -42,11 +41,6 @@
 
     <h1 id="studienplan-title">Studienplan</h1>
     <h2 id="studienplan-subtitle">mind. 180 KP insgesamt</h2>
-
-    <!-- Major/Minor Selector (nur für major-minor Studiengänge) -->
-    <div id="major-minor-selector" class="major-minor-selector" style="display: none;">
-        <!-- JavaScript wird hier den Selector einfügen -->
-    </div>
 
     <div class="container">
         <div class="studienplan" id="studienplan">
@@ -76,15 +70,13 @@
         // NEU: Data-Attribut setzen für CSS-Variablen
         document.body.setAttribute('data-studiengang', studiengang);
 
-        // Bestimme ob major-minor oder mono Modell
-        const majorMinorPrograms = ['sozwi', 'uzh-geschichte', 'uzh-polisci', 'uzh-ethnologie',
-                                    'uzh-kommunikation', 'uzh-pop-kultur', 'uzh-soziologie'];
-        const studyModel = majorMinorPrograms.includes(studiengang) ? 'major-minor' : 'mono';
+        // Alle Programme verwenden das mono-Modell
+        const studyModel = 'mono';
 
         // UZH Common CSS laden (nur für UZH Programme)
         const uzhCommonCSS = document.getElementById('uzh-common-css');
         if (studiengang.startsWith('uzh-')) {
-            uzhCommonCSS.href = `../program-specific/major-minor/uzh-common/uzh-common.css`;
+            uzhCommonCSS.href = `../program-specific/mono/uzh-common/uzh-common.css`;
         }
 
         // Program-specific CSS laden (colors, classes, layout)

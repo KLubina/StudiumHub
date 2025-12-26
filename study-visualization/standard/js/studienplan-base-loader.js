@@ -67,7 +67,6 @@ window.baseModulesReady = (async () => {
         'tooltip.js',
         'kp-counter.js',
         'color-manager.js',
-        'major-minor-selector.js',
         'wahlmodule.js'
     ];
 

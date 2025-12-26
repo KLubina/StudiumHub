@@ -63,9 +63,7 @@ window.StudienplanWahlmodule = {
         // Bestimme den Basis-Pfad (relativ zum aktuellen Studiengang)
         const urlParams = new URLSearchParams(window.location.search);
         const studiengang = urlParams.get('studiengang') || 'eth-cs';
-        const majorMinorPrograms = ['sozwi', 'uzh-geschichte', 'uzh-polisci', 'uzh-ethnologie',
-                                    'uzh-kommunikation', 'uzh-pop-kultur', 'uzh-soziologie'];
-        const studyModel = majorMinorPrograms.includes(studiengang) ? 'major-minor' : 'mono';
+        const studyModel = 'mono';
         
         // Konstruiere vollständigen Pfad
         const basePath = `../program-specific/${studyModel}/${studiengang}/data/`;

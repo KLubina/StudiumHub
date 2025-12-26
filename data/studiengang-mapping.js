@@ -52,33 +52,27 @@
     // Universität Zürich
     "Geschichte": {
       key: "uzh-geschichte",
-      institution: "Universität Zürich",
-      studyModel: "major-minor"
+      institution: "Universität Zürich"
     },
     "Politikwissenschaft": {
       key: "uzh-polisci",
-      institution: "Universität Zürich",
-      studyModel: "major-minor"
+      institution: "Universität Zürich"
     },
     "Ethnologie": {
       key: "uzh-ethnologie",
-      institution: "Universität Zürich",
-      studyModel: "major-minor"
+      institution: "Universität Zürich"
     },
     "Kommunikationswissenschaft": {
       key: "uzh-kommunikation",
-      institution: "Universität Zürich",
-      studyModel: "major-minor"
+      institution: "Universität Zürich"
     },
     "Populäre Kulturen": {
       key: "uzh-pop-kultur",
-      institution: "Universität Zürich",
-      studyModel: "major-minor"
+      institution: "Universität Zürich"
     },
     "Soziologie": {
       key: "uzh-soziologie",
-      institution: "Universität Zürich",
-      studyModel: "major-minor"
+      institution: "Universität Zürich"
     },
     "Humanmedizin": {
       key: "uzh-humanmedizin",
@@ -182,8 +176,6 @@
     let mapping = this[studiengangName];
 
     if (mapping && (!mapping.institution || mapping.institution === institutionName)) {
-      const studyModel = mapping.studyModel || 'mono';
-      const folder = studyModel === 'major-minor' ? 'major-minor' : 'mono';
       return `study-visualization/standard/studienplan-template.html?studiengang=${encodeURIComponent(mapping.key)}`;
     }
 
