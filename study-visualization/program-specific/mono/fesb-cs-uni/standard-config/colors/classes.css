@@ -1,0 +1,51 @@
+/* ==== FESB-CS-UNI - CSS CLASSES ==== */
+/* Program-specific CSS classes for Računarstvo (sveučilišni) */
+
+/* Mathematik & Physik */
+[data-studiengang="fesb-cs-uni"] .modul.math,
+[data-studiengang="fesb-cs-uni"] .legende-item.math {
+    background-color: var(--color-math);
+    color: white;
+}
+
+/* Programmierung */
+[data-studiengang="fesb-cs-uni"] .modul.programming,
+[data-studiengang="fesb-cs-uni"] .legende-item.programming {
+    background-color: var(--color-programming);
+    color: white;
+}
+
+/* Systeme & Algorithmen */
+[data-studiengang="fesb-cs-uni"] .modul.systems,
+[data-studiengang="fesb-cs-uni"] .legende-item.systems {
+    background-color: var(--color-systems);
+    color: white;
+}
+
+/* Datenbanken & Web */
+[data-studiengang="fesb-cs-uni"] .modul.databases,
+[data-studiengang="fesb-cs-uni"] .legende-item.databases {
+    background-color: var(--color-databases);
+    color: white;
+}
+
+/* Sprachen & Soft Skills */
+[data-studiengang="fesb-cs-uni"] .modul.languages,
+[data-studiengang="fesb-cs-uni"] .legende-item.languages {
+    background-color: var(--color-languages);
+    color: white;
+}
+
+/* Wahlfächer */
+[data-studiengang="fesb-cs-uni"] .modul.electives,
+[data-studiengang="fesb-cs-uni"] .legende-item.electives {
+    background-color: var(--color-electives);
+    color: white;
+}
+
+/* Abschluss */
+[data-studiengang="fesb-cs-uni"] .modul.thesis,
+[data-studiengang="fesb-cs-uni"] .legende-item.thesis {
+    background-color: var(--color-thesis);
+    color: white;
+}

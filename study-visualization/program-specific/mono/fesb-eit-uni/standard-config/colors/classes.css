@@ -1,0 +1,65 @@
+/* ==== FESB-EIT-UNI - CSS CLASSES ==== */
+/* Program-specific CSS classes for Elektrotehnika i informacijska tehnologija */
+
+/* Math & Physics */
+[data-studiengang="fesb-eit-uni"] .modul.math,
+[data-studiengang="fesb-eit-uni"] .legende-item.math {
+    background-color: var(--color-math);
+    color: white;
+}
+
+/* Elektrotechnik */
+[data-studiengang="fesb-eit-uni"] .modul.electrical,
+[data-studiengang="fesb-eit-uni"] .legende-item.electrical {
+    background-color: var(--color-electrical);
+    color: white;
+}
+
+/* Informatik & Programmierung */
+[data-studiengang="fesb-eit-uni"] .modul.programming,
+[data-studiengang="fesb-eit-uni"] .legende-item.programming {
+    background-color: var(--color-programming);
+    color: white;
+}
+
+/* Kommunikation & Sprachen */
+[data-studiengang="fesb-eit-uni"] .modul.languages,
+[data-studiengang="fesb-eit-uni"] .legende-item.languages {
+    background-color: var(--color-languages);
+    color: white;
+}
+
+/* Vertiefung: Automatika i sustavi */
+[data-studiengang="fesb-eit-uni"] .modul.automation,
+[data-studiengang="fesb-eit-uni"] .legende-item.automation {
+    background-color: var(--color-automation);
+    color: white;
+}
+
+/* Vertiefung: Elektronika i računalno inženjerstvo */
+[data-studiengang="fesb-eit-uni"] .modul.electronics,
+[data-studiengang="fesb-eit-uni"] .legende-item.electronics {
+    background-color: var(--color-electronics);
+    color: white;
+}
+
+/* Vertiefung: Elektrotehnika */
+[data-studiengang="fesb-eit-uni"] .modul.power,
+[data-studiengang="fesb-eit-uni"] .legende-item.power {
+    background-color: var(--color-power);
+    color: white;
+}
+
+/* Vertiefung: Komunikacijska i informacijska tehnologija */
+[data-studiengang="fesb-eit-uni"] .modul.communications,
+[data-studiengang="fesb-eit-uni"] .legende-item.communications {
+    background-color: var(--color-communications);
+    color: white;
+}
+
+/* Abschlussarbeit */
+[data-studiengang="fesb-eit-uni"] .modul.thesis,
+[data-studiengang="fesb-eit-uni"] .legende-item.thesis {
+    background-color: var(--color-thesis);
+    color: white;
+}

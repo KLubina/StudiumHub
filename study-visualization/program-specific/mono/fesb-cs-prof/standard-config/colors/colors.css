@@ -1,0 +1,13 @@
+/* ==== FESB-CS-PROF - COLOR VARIABLES ==== */
+/* Računarstvo (stručni prijediplomski studij) */
+
+[data-studiengang="fesb-cs-prof"] {
+    /* Category-specific colors */
+    --color-math: #3b82f6;
+    --color-programming: #8b5cf6;
+    --color-systems: #10b981;
+    --color-databases: #f59e0b;
+    --color-languages: #06b6d4;
+    --color-electives: #ec4899;
+    --color-thesis: #84cc16;
+}

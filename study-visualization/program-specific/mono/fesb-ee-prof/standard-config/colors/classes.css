@@ -1,0 +1,65 @@
+/* ==== FESB-EE-PROF - CSS CLASSES ==== */
+/* Program-specific CSS classes for Elektrotehnika (stručni) */
+
+/* Mathematik, Physik & Grundlagen */
+[data-studiengang="fesb-ee-prof"] .modul.math,
+[data-studiengang="fesb-ee-prof"] .legende-item.math {
+    background-color: var(--color-math);
+    color: white;
+}
+
+/* Elektrotechnik & Energietechnik */
+[data-studiengang="fesb-ee-prof"] .modul.power,
+[data-studiengang="fesb-ee-prof"] .legende-item.power {
+    background-color: var(--color-power);
+    color: white;
+}
+
+/* Elektronik & Messtechnik */
+[data-studiengang="fesb-ee-prof"] .modul.electronics,
+[data-studiengang="fesb-ee-prof"] .legende-item.electronics {
+    background-color: var(--color-electronics);
+    color: white;
+}
+
+/* Informatik & Programmierung */
+[data-studiengang="fesb-ee-prof"] .modul.programming,
+[data-studiengang="fesb-ee-prof"] .legende-item.programming {
+    background-color: var(--color-programming);
+    color: white;
+}
+
+/* Sprachen & Wirtschaft */
+[data-studiengang="fesb-ee-prof"] .modul.languages,
+[data-studiengang="fesb-ee-prof"] .legende-item.languages {
+    background-color: var(--color-languages);
+    color: white;
+}
+
+/* Modul A - Elektroenergetik */
+[data-studiengang="fesb-ee-prof"] .modul.moduleA,
+[data-studiengang="fesb-ee-prof"] .legende-item.moduleA {
+    background-color: var(--color-moduleA);
+    color: white;
+}
+
+/* Modul B - Elektronika */
+[data-studiengang="fesb-ee-prof"] .modul.moduleB,
+[data-studiengang="fesb-ee-prof"] .legende-item.moduleB {
+    background-color: var(--color-moduleB);
+    color: white;
+}
+
+/* Wahlfächer */
+[data-studiengang="fesb-ee-prof"] .modul.electives,
+[data-studiengang="fesb-ee-prof"] .legende-item.electives {
+    background-color: var(--color-electives);
+    color: white;
+}
+
+/* Abschluss */
+[data-studiengang="fesb-ee-prof"] .modul.thesis,
+[data-studiengang="fesb-ee-prof"] .legende-item.thesis {
+    background-color: var(--color-thesis);
+    color: white;
+}

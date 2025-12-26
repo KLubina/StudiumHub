@@ -1,0 +1,15 @@
+/* ==== FESB-EE-PROF - COLOR VARIABLES ==== */
+/* Elektrotehnika (stručni prijediplomski studij) */
+
+[data-studiengang="fesb-ee-prof"] {
+    /* Category-specific colors */
+    --color-math: #3b82f6;
+    --color-power: #ef4444;
+    --color-electronics: #ec4899;
+    --color-programming: #8b5cf6;
+    --color-languages: #06b6d4;
+    --color-moduleA: #f59e0b;
+    --color-moduleB: #10b981;
+    --color-electives: #6366f1;
+    --color-thesis: #84cc16;
+}

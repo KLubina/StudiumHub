@@ -1,0 +1,15 @@
+/* ==== FESB-EIT-UNI - COLOR VARIABLES ==== */
+/* Elektrotehnika i informacijska tehnologija (sveučilišni) */
+
+[data-studiengang="fesb-eit-uni"] {
+    /* Category-specific colors */
+    --color-math: #3b82f6;
+    --color-electrical: #f59e0b;
+    --color-programming: #8b5cf6;
+    --color-languages: #06b6d4;
+    --color-automation: #10b981;
+    --color-electronics: #ec4899;
+    --color-power: #ef4444;
+    --color-communications: #6366f1;
+    --color-thesis: #84cc16;
+}
