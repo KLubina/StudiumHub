@@ -1,0 +1,79 @@
+# Računarstvo  
+**stručni prijediplomski studij**
+
+---
+
+## 1. Studienjahr
+
+### Semester I
+**Pflichtmodule**
+- Matematika – **7 ECTS**
+- Elektrotehnika – **6 ECTS**
+- Uvod u organizaciju digitalnih računala – **5 ECTS**
+- Programiranje 1 – **10 ECTS**
+- Engleski jezik 1 – **2 ECTS**
+
+---
+
+### Semester II
+**Pflichtmodule**
+- Primijenjena matematika – **5 ECTS**
+- Osnove elektronike – **5 ECTS**
+- Digitalna tehnika – **7 ECTS**
+- Programiranje 2 – **10 ECTS**
+- Engleski jezik 2 – **3 ECTS**
+
+---
+
+## 2. Studienjahr
+
+### Semester III
+**Pflichtmodule**
+- Uvod u poduzetništvo – **4 ECTS**
+- Arhitektura digitalnih računala – **6 ECTS**
+- Baze podataka – **5 ECTS**
+- Algoritmi i strukture podataka – **5 ECTS**
+- Programiranje za Unix – **5 ECTS**
+- Programiranje za Internet – **5 ECTS**
+
+---
+
+### Semester IV
+**Pflichtmodule**
+- Računalne mreže – **5 ECTS**
+- Operacijski sustavi – **7 ECTS**
+- Objektno orijentirano programiranje – **7 ECTS**
+- Programiranje u Javi – **6 ECTS**
+- Multimedijske mreže i sustavi – **5 ECTS**
+
+---
+
+## 3. Studienjahr
+
+### Semester V
+**Pflichtmodule**
+- Programsko inženjerstvo – **5 ECTS**
+- Uvod u distribuirane informacijske sustave – **5 ECTS**
+
+**Wahlmodule (4 wählen)**
+- Arhitektura osobnih računala – **5 ECTS**
+- Programiranje za Windows – **5 ECTS**
+- Baze podataka 2 – **5 ECTS**
+- Sigurnost računala i podataka – **5 ECTS**
+- Projektiranje i korištenje računalnih mreža – **5 ECTS**
+- Napredne web tehnologije – **5 ECTS**
+- Upravljanje poslovnim procesima – **5 ECTS**
+
+---
+
+### Semester VI
+**Pflichtmodule**
+- Projektiranje informacijskih sustava – **5 ECTS**
+- Stručna praksa – **10 ECTS**
+- Završni rad – **10 ECTS**
+
+**Wahlmodule (1 wählen)**
+- Mikrokontrolerom upravljani mobilni roboti – **5 ECTS**
+- Mobilne komunikacijske mreže – **5 ECTS**
+- Osnove programiranja 3D računalnih igara – **5 ECTS**
+- Programiranje za Android – **5 ECTS**

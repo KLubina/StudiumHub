@@ -1,0 +1,202 @@
+# Elektrotehnika i informacijska tehnologija  
+**Sveučilišni prijediplomski studij**
+
+---
+
+## 1. Studienjahr
+
+### Semester I
+**Pflichtmodule**
+- Matematika 1 – **7 ECTS**
+- Osnove elektrotehnike 1 – **7 ECTS**
+- Računala i programiranje – **6 ECTS**
+- Inženjerska grafika i prezentacija – **4 ECTS**
+- Komunikacijske vještine – **3 ECTS**
+- Engleski jezik 1 – **3 ECTS**
+
+*Keine Wahlmodule*
+
+---
+
+### Semester II
+**Pflichtmodule**
+- Matematika 2 – **7 ECTS**
+- Fizika 1 – **7 ECTS**
+- Osnove elektrotehnike 2 – **6 ECTS**
+- Digitalna elektronika – **6 ECTS**
+- Engleski jezik 2 – **4 ECTS**
+
+*Keine Wahlmodule*
+
+---
+
+## 2. Studienjahr
+
+### Semester III
+**Pflichtmodule**
+- Matematika 3 – **5 ECTS**
+- Fizika 2 – **7 ECTS**
+- Elektronički elementi i sklopovi – **6 ECTS**
+- Električna mjerenja – **6 ECTS**
+- Ekonomika i organizacija proizvodnje – **3 ECTS**
+- Engleski jezik 3 – **3 ECTS**
+
+*Keine Wahlmodule*
+
+---
+
+### Semester IV
+**Pflichtmodule**
+- Vjerojatnost i statistika – **5 ECTS**
+- Programiranje – **6 ECTS**
+- Teorija sustava – **5 ECTS**
+- Informacije i komunikacije – **5 ECTS**
+- Osnove elektroenergetike – **5 ECTS**
+- Elektrotehnički materijali i tehnologije – **4 ECTS**
+
+*Keine Wahlmodule*
+
+---
+
+# Studienrichtungen (3. Studienjahr)
+
+---
+
+## Smjer: Automatika i sustavi
+
+### Semester V
+**Pflichtmodule**
+- Automatska regulacija 1 – **5 ECTS**
+- Elektronički sklopovi – **5 ECTS**
+- Analiza mreža – **5 ECTS**
+- Simulacijsko modeliranje – **5 ECTS**
+- Objektno orijentirano programiranje – **5 ECTS**
+
+**Wahlmodule (1 wählen)**
+- Programiranje za Internet – **5 ECTS**
+- Numeričke metode u elektronici – **5 ECTS**
+- Računarske metode u biomehanici – **5 ECTS**
+- Arhitektura računala – **5 ECTS**
+- Tehnička mehanika – **5 ECTS**
+- Sigurnost računala i sustava – **5 ECTS**
+- Komunikacijski sustavi i protokoli – **5 ECTS**
+
+---
+
+### Semester VI
+**Pflichtmodule**
+- Impulsni i digitalni sklopovi – **4 ECTS**
+- Automatska regulacija 2 – **5 ECTS**
+- Digitalna instrumentacija 1 – **5 ECTS**
+- Završni rad – **12 ECTS**
+
+**Wahlmodule (1 wählen)**
+- Mjerni pretvornici i izvršne sprave – **4 ECTS**
+- Elementi automatizacije industrijskih procesa – **5 ECTS**
+- Digitalna obradba signala – **5 ECTS**
+- Bežične senzorske mreže – **5 ECTS**
+- Baze podataka – **6 ECTS**
+- Stručna praksa – **5 ECTS**
+
+---
+
+## Smjer: Elektronika i računalno inženjerstvo
+
+### Semester V
+**Pflichtmodule**
+- Računalne mreže – **5 ECTS**
+- Elektronički sklopovi – **5 ECTS**
+- Analiza mreža – **5 ECTS**
+- Arhitektura računala – **5 ECTS**
+- Objektno orijentirano programiranje – **5 ECTS**
+
+**Wahlmodule (1 wählen)**
+- Simulacijsko modeliranje – **5 ECTS**
+- Programiranje za Internet – **5 ECTS**
+- Komunikacijski sustavi i protokoli – **5 ECTS**
+- Automatska regulacija 1 – **5 ECTS**
+
+---
+
+### Semester VI
+**Pflichtmodule**
+- Impulsni i digitalni sklopovi – **4 ECTS**
+- Operacijski sustavi – **5 ECTS**
+- Digitalna instrumentacija 1 – **5 ECTS**
+- Završni rad – **12 ECTS**
+
+**Wahlmodule (1 wählen)**
+- Digitalna obradba signala – **5 ECTS**
+- Baze podataka – **5 ECTS**
+- Dijagnostičke metode u vozilima – **5 ECTS**
+- Stručna praksa – **5 ECTS**
+
+---
+
+## Smjer: Elektrotehnika
+
+### Semester V
+**Pflichtmodule**
+- Električne mreže – **6 ECTS**
+- Električni strojevi – **7 ECTS**
+- Elementi električnih postrojenja – **6 ECTS**
+- Energetska elektronika – **6 ECTS**
+- Regulacijska tehnika – **5 ECTS**
+
+---
+
+### Semester VI
+**Pflichtmodule**
+- Elektromotorni pogoni – **5 ECTS**
+- Elementi automatizacije industrijskih procesa – **5 ECTS**
+- Završni rad – **12 ECTS**
+
+**Wahlmodule (2 wählen)**
+- Električna rasvjeta – **5 ECTS**
+- Elektrotehnička sigurnost – **4 ECTS**
+- Distribucija električne energije – **4 ECTS**
+- Upravljanje sustavima energetske elektronike – **4 ECTS**
+- Elektronički pretvarači za napajanje – **4 ECTS**
+- Održavanje i ispitivanje električne opreme – **4 ECTS**
+- Brodska elektrotehnika – **4 ECTS**
+- Instrumentacija i ispitivanje radnog okoliša – **4 ECTS**
+- Instrumentacija za napredne elektroenergetske mreže – **4 ECTS**
+- Dijagnostičke metode u vozilima – **5 ECTS**
+- Stručna praksa – **5 ECTS**
+
+---
+
+## Smjer: Komunikacijska i informacijska tehnologija
+
+### Semester V
+**Pflichtmodule**
+- Teorija informacija – **5 ECTS**
+- Komunikacijski sustavi i protokoli – **5 ECTS**
+- Objektno orijentirano programiranje – **5 ECTS**
+- Arhitektura računala – **5 ECTS**
+- Analiza mreža – **5 ECTS**
+
+**Wahlmodule (1 wählen)**
+- Sigurnost računala i sustava – **5 ECTS**
+- Programiranje za Internet – **5 ECTS**
+- Poluvodički elektronički elementi – **5 ECTS**
+- Numeričke metode u elektronici – **5 ECTS**
+- Elektronički sklopovi – **5 ECTS**
+- Simulacijsko modeliranje – **5 ECTS**
+- Automatska regulacija 1 – **5 ECTS**
+
+---
+
+### Semester VI
+**Pflichtmodule**
+- Elektromagnetska polja – **5 ECTS**
+- Digitalna obradba signala – **5 ECTS**
+- Impulsni i digitalni sklopovi – **4 ECTS**
+- Završni rad – **12 ECTS**
+
+**Wahlmodule (1 wählen)**
+- Bežične senzorske mreže – **5 ECTS**
+- Baze podataka – **5 ECTS**
+- Uvod u bežične komunikacije – **5 ECTS**
+- Analiza mreža i linija primjenom računala – **5 ECTS**
+- Stručna praksta – **5 ECTS**

@@ -1,0 +1,81 @@
+# Računarstvo  
+**sveučilišni prijediplomski studij**
+
+---
+
+## 1. Studienjahr
+
+### Semester I
+**Pflichtmodule**
+- Matematika 1 – **7 ECTS**
+- Fizika 1 – **7 ECTS**
+- Elektrotehnika – **7 ECTS**
+- Uvod u računala i programiranje – **7 ECTS**
+- Engleski jezik 1 – **2 ECTS**
+
+---
+
+### Semester II
+**Pflichtmodule**
+- Matematika 2 – **7 ECTS**
+- Fizika 2 – **7 ECTS**
+- Elektronika – **7 ECTS**
+- Programiranje – **7 ECTS**
+- Engleski jezik 2 – **2 ECTS**
+
+---
+
+## 2. Studienjahr
+
+### Semester III
+**Pflichtmodule**
+- Diskretna matematika – **6 ECTS**
+- Diskretni sustavi i strukture – **7 ECTS**
+- Objektno orijentirano programiranje – **7 ECTS**
+- Strukture podataka – **6 ECTS**
+- Praktikum – **2 ECTS**
+- Komunikacijske vještine – **2 ECTS**
+
+---
+
+### Semester IV
+**Pflichtmodule**
+- Vjerojatnost i statistika – **5 ECTS**
+- Arhitektura digitalnih računala – **7 ECTS**
+- Algoritmi – **7 ECTS**
+- Baze podataka – **6 ECTS**
+- Signali i sustavi – **5 ECTS**
+
+---
+
+## 3. Studienjahr
+
+### Semester V
+**Pflichtmodule**
+- Operacijski sustavi – **7 ECTS**
+- Računalne mreže – **6 ECTS**
+- Programsko inženjerstvo – **7 ECTS**
+- Programiranje za Internet – **6 ECTS**
+
+**Wahlmodule (1 wählen)**
+- Programiranje za Unix – **4 ECTS**
+- Sigurnost računala i podataka – **4 ECTS**
+- Programiranje za Android – **4 ECTS**
+- Programiranje u Pythonu – **4 ECTS**
+
+---
+
+### Semester VI
+**Pflichtmodule**
+- Projektiranje informacijskih sustava – **5 ECTS**
+- Uvod u distribuirane informacijske sustave – **5 ECTS**
+- Poslovna informatika – **4 ECTS**
+- Završni rad – **12 ECTS**
+
+**Wahlmodule (1 wählen)**
+- Programiranje za Windows – **4 ECTS**
+- Komunikacijski protokoli i arhitekture – **4 ECTS**
+- Osnove ugradbenih računalnih sustava – **4 ECTS**
+- Obradba signala – **4 ECTS**
+- Inženjerska ekonomika – **4 ECTS**
+- Stručna praksa – **5 ECTS**

@@ -1,0 +1,166 @@
+# Elektrotehnika  
+**stručni prijediplomski studij**
+
+---
+
+## 1. Studienjahr
+
+### Semester I
+**Pflichtmodule**
+- Matematika – **7 ECTS**
+- Fizika – **5 ECTS**
+- Informatika – **5 ECTS**
+- Osnove elektrotehnike 1 – **7 ECTS**
+- Elektrotehnički materijali i tehnologije – **4 ECTS**
+- Engleski jezik 1 – **2 ECTS**
+
+*Keine Wahlmodule*
+
+---
+
+### Semester II
+**Pflichtmodule**
+- Primijenjena matematika – **5 ECTS**
+- Uvod u programiranje – **5 ECTS**
+- Osnove elektrotehnike 2 – **6 ECTS**
+- Elektronički elementi – **6 ECTS**
+- Električna mjerenja – **5 ECTS**
+- Engleski jezik 2 – **3 ECTS**
+
+*Keine Wahlmodule*
+
+---
+
+## 2. Studienjahr
+
+### Modul A
+
+#### Semester III
+**Pflichtmodule**
+- Električni strojevi i transformatori – **8 ECTS**
+- Električne mreže – **5 ECTS**
+- Električna postrojenja – **6 ECTS**
+- Energetska elektronika – **6 ECTS**
+- Regulacijska tehnika – **5 ECTS**
+
+*Keine Wahlmodule*
+
+---
+
+#### Semester IV
+**Pflichtmodule**
+- Elektromotorni pogoni – **5 ECTS**
+- Električne instalacije – **5 ECTS**
+- Mjerenja u elektroenergetici – **5 ECTS**
+- Distribucija električne energije – **5 ECTS**
+- Primjena procesnih računala – **5 ECTS**
+- Upravljanje i zaštita električnih postrojenja – **5 ECTS**
+
+*Keine Wahlmodule*
+
+---
+
+#### Semester V
+**Pflichtmodule**
+- Elektrotehnička sigurnost – **5 ECTS**
+- Mjerenje procesnih veličina – **5 ECTS**
+- Održavanje i ispitivanje električne opreme – **5 ECTS**
+- Elektronički pretvarači za napajanje – **5 ECTS**
+
+**Wahlmodule (2 wählen)**
+- Projektiranje niskonaponskih postrojenja – **5 ECTS**
+- Obnovljivi izvori energije – **5 ECTS**
+- Brodska elektrotehnika – **5 ECTS**
+- Zaštita u elektroenergetskom sustavu – **5 ECTS**
+
+---
+
+#### Semester VI
+**Pflichtmodule**
+- Stručna praksa – **10 ECTS**
+- Završni rad – **10 ECTS**
+
+**Wahlmodule (2 wählen)**
+- Upravljanje elektromotornim pogonima – **5 ECTS**
+- Tehnika visokog napona – **5 ECTS**
+- Elektroenergetski sustav i okoliš – **5 ECTS**
+- Energetski izvori – **5 ECTS**
+- Instrumentacija za napredne elektroenergetske mreže – **5 ECTS**
+- Mikroprocesorski sustavi – **5 ECTS**
+
+---
+
+## Modul B
+
+### Semester III
+**Pflichtmodule**
+- Elektronički sklopovi – **9 ECTS**
+- Signali i sustavi – **6 ECTS**
+- Automatika – **8 ECTS**
+- Uvod u poduzetništvo – **3 ECTS**
+- Osnove optoelektronike – **4 ECTS**
+
+*Keine Wahlmodule*
+
+---
+
+### Semester IV
+**Pflichtmodule**
+- Komunikacijski sustavi – **8 ECTS**
+- Digitalna tehnika – **7 ECTS**
+- Elektronički CAD – **5 ECTS**
+
+**Wahlmodule (2 wählen)**
+- Vođenje procesa – **5 ECTS**
+- Elementi robotike – **5 ECTS**
+- Računalne mreže – **5 ECTS**
+- Antene – **5 ECTS**
+- Multimedija – **5 ECTS**
+
+---
+
+### Semester V
+**Pflichtbestandteile**
+- Wahlpraktikum 1 – **5 ECTS**
+- Wahlpraktikum 2 – **5 ECTS**
+- Wahlfach 1 – **5 ECTS**
+- Wahlfach 2 – **5 ECTS**
+- Wahlfach 3 – **5 ECTS**
+- Wahlfach 4 – **5 ECTS**
+
+**Wahlpraktika (2 wählen)**
+- Praktikum iz biomehanike – **5 ECTS**
+- Praktikum iz digitalne obrade slike – **5 ECTS**
+- Praktikum iz mehatronike – **5 ECTS**
+- Praktikum iz elektromagnetskih simulacija – **5 ECTS**
+
+**Wahlfächer (4 wählen)**
+- Projektiranje elektroničkih sklopova – **5 ECTS**
+- Elektronička instrumentacija – **5 ECTS**
+- Elektromagnetska kompatibilnost – **5 ECTS**
+- Arhitektura računala – **5 ECTS**
+- Modeliranje i simuliranje sustava – **5 ECTS**
+- Sigurnost računala i podataka – **5 ECTS**
+- Projektiranje i korištenje računalnih mreža – **5 ECTS**
+- Projektiranje regulacijskih sustava – **5 ECTS**
+- Radiokomunikacije – **5 ECTS**
+- Analiza zračećih struktura primjenom računala – **5 ECTS**
+- Izloženost ljudi elektromagnetskom polju – **5 ECTS**
+
+---
+
+### Semester VI
+**Pflichtmodule**
+- Trgovačko pravo – **2 ECTS**
+- Stručna praksa – **10 ECTS**
+- Završni rad – **10 ECTS**
+
+**Wahlmodule (2 wählen)**
+- Programiranje za Internet – **4 ECTS**
+- Mjerna osjetila i mjerni pretvornici – **4 ECTS**
+- Mobilne komunikacijske mreže – **4 ECTS**
+- Optičke komunikacije – **4 ECTS**
+- Hidraulički i pneumatički uređaji – **4 ECTS**
+- Mikroregulatori i ugradivi mrežni sustavi – **4 ECTS**
+- Radiokomunikacije u pomorstvu – **4 ECTS**
+- Visokofrekvencijska elektronika – **4 ECTS**
