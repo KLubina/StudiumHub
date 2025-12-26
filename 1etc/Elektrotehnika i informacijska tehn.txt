@@ -1,0 +1,248 @@
+Elektrotehnika i informacijska tehnologija - sveučilišni prijediplomski studij
+
+2.12. Popis obveznih i izbornih predmeta
+POPIS PREDMETA
+Godina studija: 1.
+Semestar: I.
+STATUS KOD PREDMET SATI U SEMESTRU ECTS
+P S AV LV KV
+Obvezni
+FEMX01 Matematika 1 45 0 45 0 0 7
+FENA01 Osnove elektrotehnike 1 45 0 30 0 0 7
+FELA01 Računala i programiranje 30 0 0 30 0 6
+FELA08 Inženjerska grafika i prezentacija 15 0 0 30 0 4
+FEOA03 Komunikacijske vještine 0 30 0 0 0 3
+FEOA04 Engleski jezik 1 0 30 0 0 0 3
+Ukupno obvezni 135 60 75 60 0 30
+P = predavanja, S = seminar, AV = auditorne vježbe, LV = laboratorijske vježbe, KV = konstrukcije vježbe
+Nema izbornih predmeta
+POPIS PREDMETA
+Godina studija: 1.
+Semestar: II.
+STATUS KOD PREDMET SATI U SEMESTRU ECTS
+P S AV LV KV
+Obvezni
+FEMX02 Matematika 2 45 0 45 0 0 7
+FEMA01 Fizika 1 45 0 30 15 0 7
+FENA02 Osnove elektrotehnike 2 30 0 30 15 0 6
+FELA05 Digitalna elektronika 45 0 15 15 0 6
+FEOA05 Engleski jezik 2 0 30 0 0 0 4
+Ukupno obvezni 150 30 105 60 0 30
+P = predavanja, S = seminar, AV = auditorne vježbe, LV = laboratorijske vježbe, KV = konstrukcije vježbe
+Nema izbornih predmeta
+
+POPIS PREDMETA
+Godina studija: 2.
+Semestar: III.
+STATUS KOD PREDMET SATI U SEMESTRU ECTS
+P S AV LV KV
+Obvezni
+FEMX03 Matematika 3 30 0 30 0 0 5
+FEMA02 Fizika 2 45 0 30 15 0 7
+FELA03 Elektronički elementi i sklopovi 30 0 30 15 0 6
+FENA03 Električna mjerenja 45 0 0 30 0 6
+FETA01 Ekonomika i organizacija proizvodnje 30 0 0 0 0 3
+FEOA06 Engleski jezik 3 0 30 0 0 0 3
+Ukupno obvezni 180 30 90 60 0 30
+P = predavanja, S = seminar, AV = auditorne vježbe, LV = laboratorijske vježbe, KV = konstrukcije vježbe
+Nema izbornih predmeta
+POPIS PREDMETA
+Godina studija: 2.
+Semestar: IV.
+STATUS KOD PREDMET SATI U SEMESTRU ECTS
+P S AV LV KV
+Obvezni
+FEMX04 Vjerojatnost i statistika 30 0 30 0 0 5
+FELA04 Programiranje 30 0 0 30 0 6
+FELA09 Teorija sustava 45 0 0 15 0 5
+FELA07 Informacije i komunikacije 45 0 15 0 0 5
+FENA04 Osnove elektroenergetike 45 0 0 15 0 5
+FELA02 Elektrotehnički materijali i tehnologije 30 0 0 15 0 4
+Ukupno obvezni 240 0 60 60 0 30
+P = predavanja, S = seminar, AV = auditorne vježbe, LV = laboratorijske vježbe, KV = konstrukcije vježbe
+Nema izbornih predmeta
+
+Smjer: Automatika i sustavi
+POPIS PREDMETA
+Godina studija: 3.
+Semestar: V.
+STATUS KOD PREDMET SATI U SEMESTRU ECTS
+P S AV LV KV
+Obvezni
+FELA19 Automatska regulacija 1 45 0 0 15 0 5
+FELA10 Elektronički sklopovi 30 0 15 15 0 5
+FELA11 Analiza mreža 30 0 15 15 0 5
+FELA12 Simulacijsko modeliranje 45 0 0 15 0 5
+FELA13 Objektno orijentirano programiranje 30 0 0 30 0 5
+Izborni predmet 1.
+Ukupno obvezni 180 0 30 90 0 25
+Izborni*
+FELA14 Programiranje za Internet 30 0 0 30 0 5
+FELA15 Numeričke metode u elektronici 30 0 15 15 0 5
+FELA60 Računarske metode u biomehanici 15 0 0 45 0 5
+FELA17 Arhitektura računala 30 0 0 30 0 5
+FESA01 Tehnička mehanika 30 0 15 0 0 5
+FELA40 Sigurnost računala i sustava 30 0 0 30 0 5
+FELA30 Komunikacijski sustavi i protokoli 30 0 0 30 0 5
+P = predavanja, S = seminar, AV = auditorne vježbe, LV = laboratorijske vježbe, KV = konstrukcije vježbe
+* Izborni se predmeti mogu birati s predložene liste izbornih predmeta ovog smjera
+studija. Bira se jedan predmet.
+
+POPIS PREDMETA
+Godina studija: 3.
+Semestar: VI
+STATUS KOD PREDMET SATI U SEMESTRU ECTS
+P S AV LV KV
+Obvezni
+FELA18 Impulsni i digitalni sklopovi 30 0 15 15 0 4
+FELA38 Automatska regulacija 2 30 0 15 15 0 5
+FELA20 Digitalna instrumentacija 1 30 0 0 15 0 5
+Izborni predmet 1.
+FEXX01 Završni rad 12
+Ukupno obvezni 90 0 30 45 0 26
+Izborni*
+FELA24 Mjerni pretvornici i izvršne sprave 30 0 0 15 0 4
+FELA23 Elementi automatizacije industrijskih procesa 30 0 0 30 0 5
+FELA29 Digitalna obradba signala 30 0 15 15 0 5
+FELA43 Bežične senzorske mreže 30 0 0 30 0 5
+FELB08 Baze podataka 30 0 0 30 0 6
+FEXX06 Stručna praksa 0 0 0 0 0 5
+P = predavanja, S = seminar, AV = auditorne vježbe, LV = laboratorijske vježbe, KV = konstrukcije vježbe
+* Izborni se predmeti mogu birati s predložene liste izbornih predmeta ovog smjera
+studija. Bira se jedan predmet.
+
+Smjer: Elektronika i računalno inženjerstvo
+POPIS PREDMETA
+Godina studija: 3.
+Semestar: V.
+STATUS KOD PREDMET SATI U SEMESTRU ECTS
+P S AV LV KV
+Obvezni
+FELA28 Računalne mreže 45 0 0 15 0 5
+FELA10 Elektronički sklopovi 30 0 15 15 0 5
+FELA11 Analiza mreža 30 0 15 15 0 5
+FELA17 Arhitektura računala 30 0 0 30 0 5
+FELA13 Objektno orijentirano programiranje 30 0 0 30 0 5
+Izborni predmet 1.
+Ukupno obvezni 165 0 30 105 0 25
+Izborni*
+FELA12 Simulacijsko modeliranje 45 0 0 15 0 5
+FELA14 Programiranje za Internet 30 0 0 30 0 5
+FELA30 Komunikacijski sustavi i protokoli 30 0 0 30 0 5
+FELA19 Automatska regulacija 1 45 0 0 15 0 5
+P = predavanja, S = seminar, AV = auditorne vježbe, LV = laboratorijske vježbe, KV = konstrukcije vježbe
+* Izborni se predmeti mogu birati s predložene liste izbornih predmeta ovog smjera
+studija. Bira se jedan predmet.
+
+POPIS PREDMETA
+Godina studija: 3.
+Semestar: VI.
+STATUS KOD PREDMET SATI U SEMESTRU ECTS
+P S AV LV KV
+Obvezni
+FELA18 Impulsni i digitalni sklopovi 30 0 15 15 0 4
+FELA27 Operacijski sustavi 45 0 0 15 0 5
+FELA20 Digitalna instrumentacija 1 30 0 0 15 0 5
+Izborni predmet 1.
+FEXX01 Završni rad 12
+Ukupno obvezni 105 0 15 45 0 26
+Izborni*
+FELA29 Digitalna obradba signala 30 0 15 15 0 5
+FELA26 Baze podataka 30 0 0 30 0 5
+FENA25 Dijagnostičke metode u vozilima 30 0 0 30 0 5
+FEXX06 Stručna praksa 0 0 0 0 0 5
+P = predavanja, S = seminar, AV = auditorne vježbe, LV = laboratorijske vježbe, KV = konstrukcije vježbe
+* Izborni se predmeti mogu birati s predložene liste izbornih predmeta ovog smjera
+studija. Bira se jedan predmet.
+
+Smjer: Elektrotehnika
+POPIS PREDMETA
+Godina studija: 3.
+Semestar: V.
+STATUS KOD PREDMET SATI U SEMESTRU ECTS
+P S AV LV KV
+Obvezni
+FENA06 Električne mreže 45 0 0 15 0 6
+FENA07 Električni strojevi 45 0 15 15 0 7
+FENA08 Elementi električnih postrojenja 45 0 0 15 0 6
+FENA09 Energetska elektronika 30 0 0 30 0 6
+FENA10 Regulacijska tehnika 45 0 0 15 0 5
+Ukupno obvezni 210 0 15 90 0 30
+P = predavanja, S = seminar, AV = auditorne vježbe, LV = laboratorijske vježbe, KV = konstrukcije vježbe
+Nema izbornih predmeta
+POPIS PREDMETA
+Godina studija: 3.
+Semestar: VI.
+STATUS KOD PREDMET SATI U SEMESTRU ECTS
+P S AV LV KV
+Obvezni
+FENA11 Elektromotorni pogoni 30 0 15 15 0 5
+FELA23 Elementi automatizacije industrijskih procesa 30 0 0 30 0 5
+Izborni predmet 1.
+Izborni predmet 2.
+FEXX01 Završni rad 12
+Ukupno obvezni 60 0 15 45 0 22
+Izborni*
+FENA13 Električna rasvjeta 30 0 0 15 0 5
+FENA14 Elektrotehnička sigurnost 30 0 0 15 0 4
+FENA15 Distribucija električne energije 30 0 0 15 0 4
+FENA16 Upravljanje sustavima energetske elektronike 30 0 0 15 0 4
+FENA17 Elektronički pretvarači za napajanje 30 0 0 15 0 4
+FENA18 Održavanje i ispitivanje električne opreme 30 0 0 15 0 4
+FENA20 Brodska elektrotehnika 30 0 0 15 0 4
+FENA22 Instrumentacija i ispitivanje radnog okoliša 30 0 0 15 0 4
+FENA23 Instrumentacija za napredne
+elektroenergetske mreže 30 0 0 15 0 4
+FENA25 Dijagnostičke metode u vozilima 30 0 0 30 0 5
+FEXX06 Stručna praksa 0 0 0 0 0 5
+P = predavanja, S = seminar, AV = auditorne vježbe, LV = laboratorijske vježbe, KV = konstrukcije vježbe
+* Izborni se predmeti mogu birati s predložene liste izbornih predmeta ovog smjera
+studija. Biraju se dva predmeta.
+
+Smjer: Komunikacijska i informacijska tehnolija
+POPIS PREDMETA
+Godina studija: 3.
+Semestar: V.
+STATUS KOD PREDMET SATI U SEMESTRU ECTS
+P S AV LV KV
+Obvezni
+FELA33 Teorija informacija 30 0 0 30 0 5
+FELA30 Komunikacijski sustavi i protokoli 30 0 0 30 0 5
+FELA13 Objektno orijentirano programiranje 30 0 0 30 0 5
+FELA17 Arhitektura računala 30 0 0 30 0 5
+FELA11 Analiza mreža 30 0 15 15 0 5
+Izborni predmet 1.
+Ukupno obvezni 150 0 30 120 0 25
+Izborni*
+FELA40 Sigurnost računala i sustava 30 0 0 30 0 5
+FELA14 Programiranje za Internet 30 0 0 30 0 5
+FELA34 Poluvodički elektronički elementi 30 0 0 30 0 5
+FELA15 Numeričke metode u elektronici 30 0 15 15 0 5
+FELA10 Elektronički sklopovi 30 0 15 15 0 5
+FELA12 Simulacijsko modeliranje 45 0 0 15 0 5
+FELA19 Automatska regulacija 1 45 0 0 15 0 5
+P = predavanja, S = seminar, AV = auditorne vježbe, LV = laboratorijske vježbe, KV = konstrukcije vježbe
+*Izborni se predmeti mogu birati s predložene liste izbornih predmeta ovog smjera
+studija. Bira se jedan predmet.
+
+POPIS PREDMETA
+Godina studija: 3.
+Semestar: VI.
+STATUS KOD PREDMET SATI U SEMESTRU ECTS
+P S AV LV KV
+Obvezni
+FELA32 Elektromagnetska polja 30 0 15 15 0 5
+FELA29 Digitalna obradba signala 30 0 15 15 0 5
+FELA18 Impulsni i digitalni sklopovi 30 0 15 15 0 4
+Izborni predmet 1.
+FEXX01 Završni rad 12
+Ukupno obvezni 90 0 30 60 0 26
+Izborni*
+FELA43 Bežične senzorske mreže 30 0 0 30 0 5
+FELA26 Baze podataka 30 0 0 30 0 5
+FELA46 Uvod u bežične komunikacije 30 0 0 30 0 5
+FELA47 Analiza mreža i linija primjenom računala 30 0 15 15 0 5
+FEXX06 Stručna praksa 0 0 0 0 0 5
+P = predavanja, S = seminar, AV = auditorne vježbe, LV = laboratorijske vježbe, KV = konstrukcije vježbe
+* Izborni se predmeti mogu birati s predložene liste izbornih predmeta ovog smjera
+studija. Bira se jedan predmet.
