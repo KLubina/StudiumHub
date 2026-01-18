@@ -106,11 +106,11 @@
     },
 
     // FH - Berner Fachhochschule
-    "Elektrotechnik und Informationstechnologie (FH)": {
+    "Elektrotechnik und Informationstechnologie": {
       key: "fhbern-eit",
       institution: "Berner Fachhochschule"
     },
-    "Informatik (BFH)": {
+    "Informatik": {
       key: "fhbern-cs",
       institution: "Berner Fachhochschule"
     },
@@ -122,7 +122,7 @@
     },
 
     // FH - ZHAW
-    "Computer Science": {
+    "Informatik": {
       key: "fhzh-cs",
       institution: "ZHAW"
     },
@@ -132,11 +132,11 @@
     },
 
     // FH - Hochschule Luzern
-    "Elektrotechnik und Informationstechnologie (HSLU)": {
+    "Elektrotechnik und Informationstechnologie": {
       key: "fhlu-eit",
       institution: "Hochschule Luzern"
     },
-    "Informatik (HSLU)": {
+    "Informatik": {
       key: "hslu-cs",
       institution: "Hochschule Luzern"
     },
@@ -146,7 +146,7 @@
       key: "ost-eit",
       institution: "OST Ostschweizer Fachhochschule"
     },
-    "Informatik (OST)": {
+    "Informatik": {
       key: "ost-cs",
       institution: "Ostschweizer Fachhochschule"
     },
@@ -156,13 +156,13 @@
       key: "fhnw-eit",
       institution: "Fachhochschule Nordwestschweiz"
     },
-    "Informatik (FHNW)": {
+    "Informatik": {
       key: "fhnw-cs",
       institution: "Fachhochschule Nordwestschweiz"
     },
 
     // FH - FFHS (Fernfachhochschule Schweiz)
-    "Informatik (FFHS)": {
+    "Informatik": {
       key: "ffhs-informatik",
       institution: "FFHS"
     },

@@ -3,7 +3,7 @@
 
 window.StudiengangGeneralConfig = {
     // Program identification
-    title: "BSc Computer Science",
+    title: "BSc Informatik",
 
     // Optional HTML subtitle (renders clickable links when provided)
     subtitleHtml: `<a href="https://www.zhaw.ch/de/engineering/studium/bachelorstudium/informatik/curriculum-lehrplan#c113474" target="_blank" rel="noopener">Curriculum & Lehrplan</a>
