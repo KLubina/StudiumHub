@@ -1,7 +1,7 @@
 /* ==== FHZH ELEKTROTECHNIK WAHLMODULE DATA ==== */
 /* Wahlpflichtmodule für den ZHAW Elektrotechnik Studiengang */
 
-window.FHZHElektrotechnikWahlmoduleData = [
+window.WahlmoduleData = [
   // Automation & Robotik
   {
     name: "Automation 1",

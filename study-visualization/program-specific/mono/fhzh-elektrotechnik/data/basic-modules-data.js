@@ -99,6 +99,8 @@ window.StudiengangModules = [
     standardcategory: "wahlpflicht",
     year: 2,
     semester: 1,
+    isPlaceholder: true,
+    wahlmodulSource: "wahlmodule-data.js",
   },
   {
     name: "Elektronik 1",
@@ -151,6 +153,8 @@ window.StudiengangModules = [
     standardcategory: "wahlpflicht",
     year: 2,
     semester: 2,
+    isPlaceholder: true,
+    wahlmodulSource: "wahlmodule-data.js",
   },
   {
     name: "Digitaltechnik-Projekt",
@@ -196,6 +200,8 @@ window.StudiengangModules = [
     standardcategory: "wahlpflicht",
     year: 3,
     semester: 1,
+    isPlaceholder: true,
+    wahlmodulSource: "wahlmodule-data.js",
   },
   {
     name: "Electronics Project",
@@ -231,6 +237,8 @@ window.StudiengangModules = [
     standardcategory: "wahlpflicht",
     year: 3,
     semester: 1,
+    isPlaceholder: true,
+    wahlmodulSource: "wahlmodule-data.js",
   },
   // #endregion
 
@@ -241,6 +249,8 @@ window.StudiengangModules = [
     standardcategory: "wahlpflicht",
     year: 3,
     semester: 2,
+    isPlaceholder: true,
+    wahlmodulSource: "wahlmodule-data.js",
   },
   {
     name: "Electronics Project 2",
@@ -276,6 +286,8 @@ window.StudiengangModules = [
     standardcategory: "wahlpflicht",
     year: 3,
     semester: 2,
+    isPlaceholder: true,
+    wahlmodulSource: "wahlmodule-data.js",
   },
   // #endregion
 
@@ -286,6 +298,8 @@ window.StudiengangModules = [
     standardcategory: "wahlpflicht",
     year: 4,
     semester: 1,
+    isPlaceholder: true,
+    wahlmodulSource: "wahlmodule-data.js",
   },
   {
     name: "Projektarbeit Elektrotechnik",
@@ -300,6 +314,8 @@ window.StudiengangModules = [
     standardcategory: "wahlpflicht",
     year: 4,
     semester: 1,
+    isPlaceholder: true,
+    wahlmodulSource: "wahlmodule-data.js",
   },
   {
     name: "Wahlpflichtmodul",
@@ -307,6 +323,8 @@ window.StudiengangModules = [
     standardcategory: "wahlpflicht",
     year: 4,
     semester: 1,
+    isPlaceholder: true,
+    wahlmodulSource: "wahlmodule-data.js",
   },
   {
     name: "Wahlpflichtmodul",
@@ -314,6 +332,8 @@ window.StudiengangModules = [
     standardcategory: "wahlpflicht",
     year: 4,
     semester: 1,
+    isPlaceholder: true,
+    wahlmodulSource: "wahlmodule-data.js",
   },
   {
     name: "Interdisziplinäres Wahlpflichtmodul",
@@ -321,6 +341,8 @@ window.StudiengangModules = [
     standardcategory: "wahlpflicht",
     year: 4,
     semester: 1,
+    isPlaceholder: true,
+    wahlmodulSource: "wahlmodule-data.js",
   },
   // #endregion
 
@@ -338,6 +360,8 @@ window.StudiengangModules = [
     standardcategory: "wahlpflicht",
     year: 4,
     semester: 2,
+    isPlaceholder: true,
+    wahlmodulSource: "wahlmodule-data.js",
   },
   {
     name: "Wahlpflichtmodul",
@@ -345,6 +369,8 @@ window.StudiengangModules = [
     standardcategory: "wahlpflicht",
     year: 4,
     semester: 2,
+    isPlaceholder: true,
+    wahlmodulSource: "wahlmodule-data.js",
   },
   {
     name: "Wahlpflichtmodul",
@@ -352,6 +378,8 @@ window.StudiengangModules = [
     standardcategory: "wahlpflicht",
     year: 4,
     semester: 2,
+    isPlaceholder: true,
+    wahlmodulSource: "wahlmodule-data.js",
   },
   // #endregion
 ];
