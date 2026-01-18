@@ -580,9 +580,14 @@
               {
                 name: "Bildungswissenschaften",
                 studiengaenge: [
+                  { name: "Erziehungswissenschaften", ects: "120/60 ECTS" }
+                ]
+              },
+              {
+                name: "pädagogische Berufe",
+                studiengaenge: [
                   { name: "Ausbildung für den Unterricht auf der Primarstufe", ects: "180 ECTS" },
                   { name: "Ausbildung für den Unterricht auf der Sekundarstufe I", ects: "150 ECTS" },
-                  { name: "Erziehungswissenschaften", ects: "120/60 ECTS" },
                   { name: "Logopädie", ects: "180 ECTS" },
                   { name: "Pädagogik/Psychologie", ects: "120/60 ECTS" },
                   { name: "Sonderpädagogik", ects: "60 ECTS" },
