@@ -225,7 +225,7 @@
                 ]
               },
               {
-                name: "Bildungswissenschaften",
+                name: "pädagogische Berufe",
                 studiengaenge: [
                   { name: "Kindergarten-/Unterstufe", grad: "Bachelor of Arts" },
                   { name: "Primarstufe", grad: "Bachelor of Arts" },
