@@ -126,6 +126,10 @@
       key: "fhzh-cs",
       institution: "ZHAW"
     },
+    "Elektrotechnik": {
+      key: "fhzh-elektrotechnik",
+      institution: "ZHAW"
+    },
 
     // FH - Hochschule Luzern
     "Elektrotechnik und Informationstechnologie (HSLU)": {

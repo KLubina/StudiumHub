@@ -1,0 +1,16 @@
+/* ==== FHZH-ELEKTROTECHNIK - LAYOUT OVERRIDES ==== */
+/* Program-specific layout customizations */
+
+/* Bereich Titel with Elektrotechnik branding */
+[data-studiengang="fhzh-elektrotechnik"] .bereich-titel {
+    font-size: var(--font-size-small);
+    font-weight: bold;
+    color: var(--color-text);
+    margin: var(--spacing-md) 0 var(--spacing-xs) 0;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    background-color: #e8f4fd;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-left: 3px solid var(--color-obligatorisch);
+}

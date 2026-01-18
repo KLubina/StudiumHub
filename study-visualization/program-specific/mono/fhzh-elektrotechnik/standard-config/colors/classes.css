@@ -1,0 +1,32 @@
+/* ==== FHZH-ELEKTROTECHNIK - CSS CLASSES ==== */
+/* Program-specific CSS classes */
+
+[data-studiengang="fhzh-elektrotechnik"] .modul.kontext,
+[data-studiengang="fhzh-elektrotechnik"] .legende-item.kontext {
+    background-color: var(--color-kontext);
+    color: var(--color-kontext-text, white);
+}
+
+[data-studiengang="fhzh-elektrotechnik"] .modul.projekt,
+[data-studiengang="fhzh-elektrotechnik"] .legende-item.projekt {
+    background-color: var(--color-projekt);
+    color: var(--color-projekt-text, white);
+}
+
+[data-studiengang="fhzh-elektrotechnik"] .modul.fach,
+[data-studiengang="fhzh-elektrotechnik"] .legende-item.fach {
+    background-color: var(--color-fach);
+    color: var(--color-fach-text, white);
+}
+
+[data-studiengang="fhzh-elektrotechnik"] .modul.mathe-nawi,
+[data-studiengang="fhzh-elektrotechnik"] .legende-item.mathe-nawi {
+    background-color: var(--color-mathe-nawi);
+    color: var(--color-mathe-nawi-text, white);
+}
+
+[data-studiengang="fhzh-elektrotechnik"] .modul.wahlpflicht,
+[data-studiengang="fhzh-elektrotechnik"] .legende-item.wahlpflicht {
+    background-color: var(--color-wahlpflicht);
+    color: var(--color-wahlpflicht-text, white);
+}

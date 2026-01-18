@@ -1,0 +1,14 @@
+/* ==== FHZH-ELEKTROTECHNIK - COLOR VARIABLES ==== */
+/* FH Zürich Elektrotechnik Program */
+
+[data-studiengang="fhzh-elektrotechnik"] {
+    /* Primary program color */
+    --color-primary: #2563eb;
+
+    /* Category colors */
+    --color-kontext: #059669;
+    --color-projekt: #7c3aed;
+    --color-fach: #0284c7;
+    --color-mathe-nawi: #dc2626;
+    --color-wahlpflicht: #ea580c;
+}
