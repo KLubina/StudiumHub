@@ -2,47 +2,121 @@ window.StudiengangModuleDetails = {
   // #region 1. Semester
   "Wirtschaft für Ingenieure": {
     kurzbeschreibung: "Einführung in betriebswirtschaftliche Grundlagen für Ingenieure",
-    inhalt: "Die Ingenieure erhalten einen Einblick in die wichtigsten betriebswirtschaftlichen Grundlagen und Zusammenhänge. Sie sollen die Funktionsweise von Unternehmen verstehen, Strategien und Prozesse einordnen können sowie die Grundlagen von Finanz- und Betriebsbuchhaltung kennen. // Unterrichtssprache: DE",
+    inhalt: "► Betriebswirtschaftliche Grundlagen\n" +
+      "• Unternehmensfunktionen\n" +
+      "• Strategien und Prozesse\n" +
+      "• Finanz- und Betriebsbuchhaltung\n\n" +
+      "► Ingenieur-Perspektive\n" +
+      "• Unternehmensverständnis\n" +
+      "• Wirtschaftliche Zusammenhänge\n\n" +
+      "► Unterrichtssprache\n" +
+      "• DE",
     link: "https://storagemkbdata.blob.core.windows.net/soe/moddescversions/Modulbeschreibung_t.BA.XXK.WING.19HS.pdf"
   },
   "Software-Projekt 1": {
     kurzbeschreibung: "Erste Erfahrungen im Management und der Realisierung von Softwareprojekten im Team",
-    inhalt: "In diesem Modul werden erste Erfahrungen im Management und der Realisierung von Softwareprojekten im Team gesammelt. Es baut auf dem Fachwissen auf, das in anderen Kursen erworben wurde. Neben der Anwendung des objektorientierten Programmierens werden Teamarbeit, Selbstreflexion, die Kommunikation technischer Inhalte und das Codemanagement explizit adressiert. // Unterrichtssprache: DE",
+    inhalt: "► Softwareprojekt-Management\n" +
+      "• Teamarbeit\n" +
+      "• Projektmanagement\n" +
+      "• Selbstreflexion\n\n" +
+      "► Technische Fertigkeiten\n" +
+      "• Objektorientierte Programmierung\n" +
+      "• Kommunikation technischer Inhalte\n" +
+      "• Code-Management\n\n" +
+      "► Unterrichtssprache\n" +
+      "• DE",
     link: "https://storagemkbdata.blob.core.windows.net/soe/moddescversions/Modulbeschreibung_t.BA.IT.PM1.19HS.pdf"
   },
   "Programmieren 1": {
     kurzbeschreibung: "Grundlagen der objektorientierten Programmierung",
-    inhalt: "Qualitativ hochwertigen, verständlichen und gut wartbaren Programmcode zu erzeugen ist von zentraler Bedeutung bei der Umsetzung von Softwareprojekten. In diesem Modul werden die Grundlagen der objektorientierten Programmierung vermittelt, um qualitativ hochwertigen, verständlichen und gut wartbaren Programmcode im Umfang von einigen Klassen entwickeln und testen zu können. // Unterrichtssprache: DE",
+    inhalt: "► Objektorientierte Programmierung\n" +
+      "• OOP-Grundlagen\n" +
+      "• Klassen und Objekte\n" +
+      "• Qualitativ hochwertiger Code\n\n" +
+      "► Programmiertechniken\n" +
+      "• Testen und Debugging\n" +
+      "• Wartbare Programme\n\n" +
+      "► Unterrichtssprache\n" +
+      "• DE",
     link: "https://storagemkbdata.blob.core.windows.net/soe/moddescversions/Modulbeschreibung_t.BA.IT.PROG1.19HS.pdf"
   },
   "Datenbanken": {
     kurzbeschreibung: "Grundlagen der relationalen Datenbanken",
-    inhalt: "Grundlagen der relationalen Datenbanken: relationale Algebra, Entity-Relationship-Design, SQL DDL/DML, effiziente und korrekte Datenbankabfragen in SQL, Indexe, Trigger, Transaktionen/ACID. // Unterrichtssprache: DE",
+    inhalt: "► Relationale Datenbanken\n" +
+      "• Relationale Algebra\n" +
+      "• Entity-Relationship-Design\n" +
+      "• SQL DDL/DML\n\n" +
+      "► Datenbankoptimierung\n" +
+      "• Effiziente Abfragen\n" +
+      "• Indexe und Trigger\n" +
+      "• Transaktionen/ACID\n\n" +
+      "► Unterrichtssprache\n" +
+      "• DE",
     link: "https://storagemkbdata.blob.core.windows.net/soe/moddescversions/Modulbeschreibung_t.BA.XV.DB.22HS.pdf"
   },
   "Information & Codierung": {
     kurzbeschreibung: "Grundlagen der digitalen Informationsverarbeitung und Codierung",
-    inhalt: "In diesem Kurs werden die Grundlagen der digitalen Informationsverarbeitung und Codierung vermittelt. Digitale Grundeinheiten, Gatter, Logik sind darin ebenso Bestandteil wie auch Quellen- (Informationsgehalt, Entropie, Redundanz) und Kanalcodierungsverfahren mit Fehlererkennung. // Unterrichtssprache: DE",
+    inhalt: "► Digitale Informationsverarbeitung\n" +
+      "• Digitale Grundeinheiten\n" +
+      "• Gatter und Logik\n" +
+      "• Informationsgehalt und Entropie\n\n" +
+      "► Codierungsverfahren\n" +
+      "• Quellencodierung\n" +
+      "• Kanalcodierung\n" +
+      "• Fehlererkennung\n\n" +
+      "► Unterrichtssprache\n" +
+      "• DE",
     link: "https://storagemkbdata.blob.core.windows.net/soe/moddescversions/Modulbeschreibung_t.BA.IT.INCO.13HS.pdf"
   },
   "Analysis 1": {
     kurzbeschreibung: "Grundlegende Konzepte und Methoden der Differential- und Integralrechnung",
-    inhalt: "In diesem Modul werden grundlegende Konzepte und Methoden der Differential- und Integralrechnung einer reellen Variablen unterrichtet. // Unterrichtssprache: DE",
+    inhalt: "► Differentialrechnung\n" +
+      "• Grundlagen der Differentiation\n" +
+      "• Ableitungen und Anwendungen\n\n" +
+      "► Integralrechnung\n" +
+      "• Grundlagen der Integration\n" +
+      "• Integrale und Anwendungen\n\n" +
+      "► Unterrichtssprache\n" +
+      "• DE",
     link: "https://storagemkbdata.blob.core.windows.net/soe/moddescversions/Modulbeschreibung_t.BA.XXM1.AN1.19HS.pdf"
   },
   "Diskrete Mathematik": {
     kurzbeschreibung: "Mathematische Grundkenntnisse und Einführung in die diskrete Mathematik",
-    inhalt: "Das Modul vermittelt allgemeine mathematische Grundkenntnisse sowie eine Einführung in Themen der diskreten Mathematik. Die Veranstaltung ist speziell auf den Informatik Studiengang ausgelegt. Die vermittelten Grundlagen bilden das Fundament für folgende Fachvorlesungen (z.B. Theoretische Informatik, Programmierung). // Unterrichtssprache: DE",
+    inhalt: "► Mathematische Grundlagen\n" +
+      "• Allgemeine Mathematik\n" +
+      "• Diskrete Mathematik\n\n" +
+      "► Informatik-Anwendungen\n" +
+      "• Theoretische Informatik\n" +
+      "• Programmierung\n" +
+      "• Algorithmen\n\n" +
+      "► Unterrichtssprache\n" +
+      "• DE",
     link: "https://storagemkbdata.blob.core.windows.net/soe/moddescversions/Modulbeschreibung_t.BA.ITM.DM.19HS.pdf"
   },
   "Grundlagen der Elektrotechnik und Digitaltechnik": {
     kurzbeschreibung: "Physikalische Grundlagen der Elektro- und Digitaltechnik",
-    inhalt: "Ziel dieser Veranstaltung ist es, die physikalischen Grundlagen der Elektro- und Digitaltechnik zu vermitteln. Die Vorlesung vermittelt sowohl theoretische Grundlagen als auch praktisches Wissen (z.B. die Implementierung und Ausmessung einfacher Schaltungen). // Unterrichtssprache: DE",
+    inhalt: "► Elektrotechnik-Grundlagen\n" +
+      "• Physikalische Prinzipien\n" +
+      "• Elektrische Schaltungen\n\n" +
+      "► Digitaltechnik\n" +
+      "• Digitale Bauelemente\n" +
+      "• Schaltungsentwurf\n" +
+      "• Messungen\n\n" +
+      "► Unterrichtssprache\n" +
+      "• DE",
     link: "https://storagemkbdata.blob.core.windows.net/soe/moddescversions/Modulbeschreibung_t.BA.ITP.GED.19HS.pdf"
   },
   "Communication Competence Basic": {
     kurzbeschreibung: "Grundlegende Kompetenzen für wissenschaftliches Arbeiten und Kommunikation",
-    inhalt: "In diesem Modul erwerben die Studierenden grundlegende Kompetenzen für das wissenschaftliche Arbeiten und die professionelle Kommunikation im Ingenieurstudium. Im Fokus stehen der souveräne Umgang mit wissenschaftlichen Informationen und die Anwendung wirkungsvoller Kommunikationsstrategien (sowohl mündlich wie auch schriftlich) unter Einbezug relevanter KI-Tools.",
+    inhalt: "► Wissenschaftliches Arbeiten\n" +
+      "• Informationsmanagement\n" +
+      "• Recherche und Bewertung\n\n" +
+      "► Kommunikationsstrategien\n" +
+      "• Mündliche Kommunikation\n" +
+      "• Schriftliche Kommunikation\n" +
+      "• KI-Tools\n\n" +
+      "► Ingenieurstudium\n" +
+      "• Fachübergreifende Kompetenzen",
     link: "https://storagemkbdata.blob.core.windows.net/soe/moddescversions/Modulbeschreibung_t.BA.XXK.COMB.25HS.pdf"
   },
   // #endregion
@@ -50,12 +124,29 @@ window.StudiengangModuleDetails = {
   // #region 2. Semester
   "Software-Projekt 2": {
     kurzbeschreibung: "Vertiefung der Softwareprojekt-Erfahrungen und Anwendung von Fachwissen",
-    inhalt: "In diesem Modul wird das Fachwissen aus anderen Modulen in mehreren kleinen Projekten bzw. Übungen praktisch angewandt und vertieft sowie die Erfahrungen der Arbeit in Software-Projekten erweitert. Dies beinhaltet Softwareanalyse und Refactoring, Projektplanung und Fortschrittstracking, Anwendung von Entwicklungswerkzeugen im Team, Ideenfindung und Evaluation, Reflexion von Projektverlauf und -ergebniss. // Unterrichtssprache: DE",
+    inhalt: "► Softwareanalyse\n" +
+      "• Refactoring\n" +
+      "• Projektplanung\n" +
+      "• Fortschrittstracking\n\n" +
+      "► Teamarbeit\n" +
+      "• Entwicklungswerkzeuge\n" +
+      "• Ideenfindung und Evaluation\n" +
+      "• Reflexion\n\n" +
+      "► Unterrichtssprache\n" +
+      "• DE",
     link: "https://storagemkbdata.blob.core.windows.net/soe/moddescversions/Modulbeschreibung_t.BA.IT.PM2.19HS.pdf"
   },
   "Programmieren 2": {
     kurzbeschreibung: "Erweiterte Konzepte der objektorientierten Programmierung",
-    inhalt: "In diesem Modul werden die erweiterten Konzepte der objektorientierten Programmierung am Beispiel der Programmiersprache Java und der dazugehörigen Umgebung Java Standard Edition vermittelt. Übergeordnetes Ziel ist das Erstellen von qualitativ hochwertigen, verständlichen und gut wartbaren Programmcode unter Zuhilfenahme von verschiedenen, fortgeschrittenen Methoden, Techniken und Werkzeugen. // Unterrichtssprache: DE",
+    inhalt: "► Fortgeschrittene OOP\n" +
+      "• Java und Java SE\n" +
+      "• Erweiterte Konzepte\n" +
+      "• Qualitativ hochwertiger Code\n\n" +
+      "► Entwicklungswerkzeuge\n" +
+      "• Techniken und Methoden\n" +
+      "• Wartbare Programme\n\n" +
+      "► Unterrichtssprache\n" +
+      "• DE",
     link: "https://storagemkbdata.blob.core.windows.net/soe/moddescversions/Modulbeschreibung_t.BA.IT.PROG2.19HS.pdf"
   },
   "Systemnahe Programmierung": {
@@ -98,7 +189,20 @@ window.StudiengangModuleDetails = {
   },
   "Software-Entwicklung 1": {
     kurzbeschreibung: "Analyse- und Entwurfs-Kompetenzen für komplexere Softwaresysteme",
-    inhalt: "Das Modul \"Software-Entwicklung 1\" vermittelt die nötigen Analyse- und Entwurfs-Kompetenzen, um grössere und komplexere Softwaresysteme entwickeln und realisieren zu können. // Für die Analyse einer Problemstellung werden Use Cases und Domänenmodellierung angewendet. Die erhobenen Anforderungen an ein Softwaresystem werden dabei systematisch spezifiziert und geprüft. // Abgeleitet von den Anforderungen werden Techniken zum Entwurf einer geeigneten Softwarearchitektur und der Umsetzung in ein objektorientiertes Design vermittelt. Dabei werden bewährte Architektur und Design Patterns angewendet und auf eine hohe Softwarequalität (Erweiterbarkeit, Wartbarkeit) Wert gelegt. // Für die Modellierung und Kommunikation der Resultate aus der Analyse, der Softwarearchitektur und dem Design werden standardisierte Notationen (wie UML) verwendet. // Unterrichtssprache: DE",
+    inhalt: "► Analyse\n" +
+      "• Use Cases\n" +
+      "• Domänenmodellierung\n" +
+      "• Anforderungsspezifikation\n\n" +
+      "► Entwurf\n" +
+      "• Softwarearchitektur\n" +
+      "• Objektorientiertes Design\n" +
+      "• Architektur- und Design-Patterns\n\n" +
+      "► Qualität\n" +
+      "• Erweiterbarkeit\n" +
+      "• Wartbarkeit\n" +
+      "• UML-Notation\n\n" +
+      "► Unterrichtssprache\n" +
+      "• DE",
     link: "https://storagemkbdata.blob.core.windows.net/soe/moddescversions/Modulbeschreibung_t.BA.IT.SWEN1.19HS.pdf"
   },
   "Web-Entwicklung": {
@@ -113,7 +217,17 @@ window.StudiengangModuleDetails = {
   },
   "Algorithmen & Datenstrukturen": {
     kurzbeschreibung: "Grundlegende Algorithmen und Datenstrukturen der Informatik",
-    inhalt: "Im Modul werden grundlegene Algorithmen und Datenstrukturen der Informatik behandelt. Die Studierenden lernen insbesondere: Sie kennen und üben die Vorgehensweise, die bei algorithmisch komplexen Problemen angewendet wird. // Sie kennen die zentralen Datenstrukturen der Informatik und wie sie in Java umgesetzt werden. // Sie können den Rechenaufwand abschätzen. // Sie lernen grundlegende Entwurfsmuster anwenden. // Unterrichtssprache: DE",
+    inhalt: "► Algorithmisches Denken\n" +
+      "• Problemlösungsstrategien\n" +
+      "• Komplexe Probleme\n\n" +
+      "► Datenstrukturen\n" +
+      "• Grundlegende Strukturen\n" +
+      "• Java-Implementierung\n\n" +
+      "► Entwurfsmuster\n" +
+      "• Grundlegende Patterns\n" +
+      "• Rechenaufwand\n\n" +
+      "► Unterrichtssprache\n" +
+      "• DE",
     link: "https://storagemkbdata.blob.core.windows.net/soe/moddescversions/Modulbeschreibung_t.BA.IT.ADS.13HS.pdf"
   },
   "Stochastik und Statistik": {
@@ -141,12 +255,27 @@ window.StudiengangModuleDetails = {
   },
   "Software-Entwicklung 2": {
     kurzbeschreibung: "Agile Methodologien wie SCRUM und XP",
-    inhalt: "Heutzutage werden agile Methodologien wie SCRUM, XP etc. bei der Mehrzahl der Software-Projekte eingesetzt. In dieser Vorlesung lernen die Studierenden die wichtigsten agilen Prinzipien, Praktiken und Werte von SCRUM sowie XP kennen. // Unterrichtssprache: DE",
+    inhalt: "► Agile Methodologien\n" +
+      "• SCRUM-Prinzipien\n" +
+      "• XP-Praktiken\n" +
+      "• Agile Werte\n\n" +
+      "► Softwareentwicklung\n" +
+      "• Agile Prozesse\n" +
+      "• Teamarbeit\n\n" +
+      "► Unterrichtssprache\n" +
+      "• DE",
     link: "https://storagemkbdata.blob.core.windows.net/soe/moddescversions/Modulbeschreibung_t.BA.IT.SWEN2.19HS.pdf"
   },
   "Betriebssysteme": {
     kurzbeschreibung: "Verstehen und Beherrschen von Betriebssystem-Konzepten",
-    inhalt: "Betriebssysteme sind zentraler Bestandteil jeder IT-Umgebung. Daher ist das Verstehen und Beherrschen von Betriebssystem-Konzepten und entsprechenden Implementierungen unerlässlich. Dieses Modul widmet sich daher vollständig dieser Aufgabenstellung, in Theorie und Praxis. Zum Einsatz kommt dafür eine aktuelle Linux-Umgebung, aufgrund der Zugänglichkeit und der Bedeutung in der modernen IT. // Unterrichtssprache: DE",
+    inhalt: "► Betriebssystem-Konzepte\n" +
+      "• Grundlagen\n" +
+      "• Implementierungen\n\n" +
+      "► Linux-Umgebung\n" +
+      "• Praktische Anwendung\n" +
+      "• Moderne IT\n\n" +
+      "► Unterrichtssprache\n" +
+      "• DE",
     link: "https://storagemkbdata.blob.core.windows.net/soe/moddescversions/Modulbeschreibung_t.BA.IT.BSY.19HS.pdf"
   },
   "Computertechnik 2": {
@@ -156,12 +285,29 @@ window.StudiengangModuleDetails = {
   },
   "IT-Sicherheit": {
     kurzbeschreibung: "Grundlagen zu Entwicklung und Betrieb sicherer Systeme",
-    inhalt: "Enthält Grundlagen zu Entwicklung und Betrieb sicherer Systeme: Kryptographie (Secret- und Public-Key, Hashfunktionen, Signaturen/MAC), Sichere Protokolle (EAP, TLS), Authentifikation und Autorisierung. // Unterrichtssprache: DE",
+    inhalt: "► Kryptographie\n" +
+      "• Secret- und Public-Key\n" +
+      "• Hashfunktionen\n" +
+      "• Signaturen/MAC\n\n" +
+      "► Sichere Protokolle\n" +
+      "• EAP und TLS\n" +
+      "• Authentifikation\n" +
+      "• Autorisierung\n\n" +
+      "► Unterrichtssprache\n" +
+      "• DE",
     link: "https://storagemkbdata.blob.core.windows.net/soe/moddescversions/Modulbeschreibung_t.BA.IT.ITS.19HS.pdf"
   },
   "Maschinelles Lernen & Data Mining": {
     kurzbeschreibung: "Methoden des maschinellen Lernens und Data Mining",
-    inhalt: "Maschinelles Lernen und Data Mining sind existenzielle Bausteine erfolgreicher Datenprodukte und Datenanalyseprojekte. In diesem Modul lernen Sie Vorraussetzungen für dessen Einsatz und verschiedene wichtige Methoden des maschinellen Lernens kennen. Es werden theoretische Grundlagen, aber auch praktische Umsetzungen der Methoden gelehrt. // Unterrichtssprache: DE",
+    inhalt: "► Maschinelles Lernen\n" +
+      "• Grundlagen\n" +
+      "• Wichtige Methoden\n" +
+      "• Praktische Umsetzung\n\n" +
+      "► Data Mining\n" +
+      "• Datenprodukte\n" +
+      "• Datenanalyse\n\n" +
+      "► Unterrichtssprache\n" +
+      "• DE",
     link: "https://storagemkbdata.blob.core.windows.net/soe/moddescversions/Modulbeschreibung_t.BA.XX.MLDM.20HS.pdf"
   },
   "Höhere Mathematik für Informatiker 2": {
@@ -187,7 +333,15 @@ window.StudiengangModuleDetails = {
   // #region 6. Semester
   "Bachelorarbeit in Informatik": {
     kurzbeschreibung: "Selbstständige Bearbeitung einer praxisnahen technisch-wissenschaftlichen Fragestellung",
-    inhalt: "Die Bachelorarbeit ist die selbstständige Bearbeitung einer praxisnahen technischwissenschaftlichen Fragestellung. Die Studierenden wenden die im Studium erworbenen Kenntnisse an und weisen mit dem erfolgreichen Abschluss der Bachelorarbeit nach, ingenieurwissenschaftlich arbeiten zu können.",
+    inhalt: "► Selbständige Arbeit\n" +
+      "• Praxisnahe Fragestellung\n" +
+      "• Technisch-wissenschaftlich\n" +
+      "• Informatik-Thema\n\n" +
+      "► Durchführung\n" +
+      "• Anleitung durch Dozierende\n" +
+      "• Ingenieurwissenschaftliche Arbeit\n\n" +
+      "► Unterrichtssprache\n" +
+      "• DE/EN",
     link: "https://storagemkbdata.blob.core.windows.net/soe/moddescversions/Modulbeschreibung_t.BA.IT.BA.19HS.pdf"
   },
   // #endregion
