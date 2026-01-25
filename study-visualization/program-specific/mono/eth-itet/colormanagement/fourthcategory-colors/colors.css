@@ -1,0 +1,7 @@
+/* ==== ETH ITET - PRAKTISCH/THEORETISCH COLORS ==== */
+/* Praktisch, Theoretisch */
+
+[data-studiengang="eth-itet"] {
+    --color-praktisch: #4CAF50;
+    --color-theoretisch: #2196F3;
+}

@@ -1,0 +1,14 @@
+/* ==== ETH ITET - PRAKTISCH/THEORETISCH CSS CLASSES ==== */
+/* Module & Legende nach Praktisch/Theoretisch färben */
+
+[data-studiengang="eth-itet"] .modul.praktisch,
+[data-studiengang="eth-itet"] .legende-item.praktisch {
+    background-color: var(--color-praktisch);
+    color: white;
+}
+
+[data-studiengang="eth-itet"] .modul.theoretisch,
+[data-studiengang="eth-itet"] .legende-item.theoretisch {
+    background-color: var(--color-theoretisch);
+    color: white;
+}

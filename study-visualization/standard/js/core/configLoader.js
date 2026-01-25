@@ -40,6 +40,12 @@ window.StudienplanConfigLoader = {
             } catch (e) {
                 // Optional
             }
+            const fourthCategoriesPath = `../program-specific/${studyModel}/${studiengang}/colormanagement/fourthcategories-config.js`;
+            try {
+                await this.loadScript(fourthCategoriesPath);
+            } catch (e) {
+                // Optional
+            }
 
             // Lade Modul-Daten
             if (studyModel === 'major-minor') {
