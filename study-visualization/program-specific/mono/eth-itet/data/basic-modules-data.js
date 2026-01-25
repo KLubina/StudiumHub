@@ -14,6 +14,7 @@ window.StudiengangModules = [
     standardcategory: "Obligatorische Fächer",
     secondcategory: "basisprufungsblock-a",
     thirdcategory: "physik",
+    fourthcategory: "theoretisch",
     // KONTEXT
     year: 1,
     semester: 1,
@@ -27,6 +28,7 @@ window.StudiengangModules = [
     standardcategory: "Obligatorische Fächer",
     secondcategory: "basisprufungsblock-a",
     thirdcategory: "elektrotechnik",
+    fourthcategory: "praktisch",
     // KONTEXT
     year: 1,
     semester: 1,
@@ -40,6 +42,7 @@ window.StudiengangModules = [
     standardcategory: "Obligatorische Fächer",
     secondcategory: "basisprufungsblock-a",
     thirdcategory: "it",
+    fourthcategory: "praktisch",
     // KONTEXT
     year: 1,
     semester: 1,
@@ -50,6 +53,7 @@ window.StudiengangModules = [
     ects: 1,
     standardcategory: "Obligatorische Praktikum",
     thirdcategory: "it",
+    fourthcategory: "praktisch",
     // KONTEXT
     year: 1,
     semester: 1,
@@ -60,6 +64,7 @@ window.StudiengangModules = [
     ects: 1,
     standardcategory: "Obligatorische Praktikum",
     thirdcategory: "it",
+    fourthcategory: "praktisch",
     // KONTEXT
     year: 1,
     semester: 1,
@@ -73,6 +78,7 @@ window.StudiengangModules = [
     standardcategory: "Obligatorische Fächer",
     secondcategory: "basisprufungsblock-b",
     thirdcategory: "mathematik",
+    fourthcategory: "theoretisch",
     // KONTEXT
     year: 1,
     semester: 1,
@@ -84,6 +90,7 @@ window.StudiengangModules = [
     standardcategory: "Obligatorische Fächer",
     secondcategory: "basisprufungsblock-a",
     thirdcategory: "mathematik",
+    fourthcategory: "theoretisch",
     // KONTEXT
     year: 1,
     semester: 1,
@@ -102,6 +109,7 @@ window.StudiengangModules = [
     standardcategory: "Obligatorische Fächer",
     secondcategory: "basisprufungsblock-b",
     thirdcategory: "physik",
+    fourthcategory: "theoretisch",
     // KONTEXT
     year: 1,
     semester: 2,
@@ -115,6 +123,7 @@ window.StudiengangModules = [
     standardcategory: "Obligatorische Fächer",
     secondcategory: "basisprufungsblock-b",
     thirdcategory: "elektrotechnik",
+    fourthcategory: "praktisch",
     // KONTEXT
     year: 1,
     semester: 2,
@@ -125,6 +134,7 @@ window.StudiengangModules = [
     ects: 1,
     standardcategory: "Obligatorische Praktikum",
     thirdcategory: "elektrotechnik",
+    fourthcategory: "praktisch",
     // KONTEXT
     year: 1,
     semester: 2,
@@ -138,6 +148,7 @@ window.StudiengangModules = [
     standardcategory: "Obligatorische Fächer",
     secondcategory: "basisprufungsblock-b",
     thirdcategory: "it",
+    fourthcategory: "praktisch",
     // KONTEXT
     year: 1,
     semester: 2,
@@ -151,6 +162,7 @@ window.StudiengangModules = [
     standardcategory: "Obligatorische Fächer",
     secondcategory: "basisprufungsblock-b",
     thirdcategory: "mathematik",
+    fourthcategory: "theoretisch",
     // KONTEXT
     year: 1,
     semester: 2,
@@ -162,6 +174,7 @@ window.StudiengangModules = [
     standardcategory: "Obligatorische Fächer",
     secondcategory: "basisprufungsblock-b",
     thirdcategory: "mathematik",
+    fourthcategory: "theoretisch",
     // KONTEXT
     year: 1,
     semester: 2,
@@ -180,6 +193,7 @@ window.StudiengangModules = [
     standardcategory: "Obligatorische Fächer",
     secondcategory: "prufungsblock-1",
     thirdcategory: "physik",
+    fourthcategory: "theoretisch",
     // KONTEXT
     year: 2,
     semester: 1,
@@ -193,6 +207,7 @@ window.StudiengangModules = [
     standardcategory: "Obligatorische Fächer",
     secondcategory: "prufungsblock-1",
     thirdcategory: "elektrotechnik",
+    fourthcategory: "praktisch",
     // KONTEXT
     year: 2,
     semester: 1,
@@ -204,6 +219,7 @@ window.StudiengangModules = [
     standardcategory: "Obligatorische Fächer",
     secondcategory: "prufungsblock-2",
     thirdcategory: "elektrotechnik",
+    fourthcategory: "praktisch",
     // KONTEXT
     year: 2,
     semester: 1,
@@ -214,6 +230,7 @@ window.StudiengangModules = [
     ects: 1,
     standardcategory: "Obligatorische Praktikum",
     thirdcategory: "elektrotechnik",
+    fourthcategory: "praktisch",
     // KONTEXT
     year: 2,
     semester: 1,
@@ -227,6 +244,7 @@ window.StudiengangModules = [
     standardcategory: "Obligatorische Fächer",
     secondcategory: "prufungsblock-1",
     thirdcategory: "it",
+    fourthcategory: "praktisch",
     // KONTEXT
     year: 2,
     semester: 1,
@@ -240,6 +258,7 @@ window.StudiengangModules = [
     standardcategory: "Obligatorische Fächer",
     secondcategory: "prufungsblock-1",
     thirdcategory: "mathematik",
+    fourthcategory: "theoretisch",
     // KONTEXT
     year: 2,
     semester: 1,
@@ -251,6 +270,7 @@ window.StudiengangModules = [
     standardcategory: "Obligatorische Fächer",
     secondcategory: "prufungsblock-2",
     thirdcategory: "mathematik",
+    fourthcategory: "theoretisch",
     // KONTEXT
     year: 2,
     semester: 1,
@@ -269,6 +289,7 @@ window.StudiengangModules = [
     standardcategory: "Obligatorische Fächer",
     secondcategory: "prufungsblock-3",
     thirdcategory: "physik",
+    fourthcategory: "praktisch",
     // KONTEXT
     year: 2,
     semester: 2,
@@ -282,6 +303,7 @@ window.StudiengangModules = [
     standardcategory: "Obligatorische Fächer",
     secondcategory: "prufungsblock-2",
     thirdcategory: "elektrotechnik",
+    fourthcategory: "praktisch",
     // KONTEXT
     year: 2,
     semester: 2,
@@ -293,6 +315,7 @@ window.StudiengangModules = [
     standardcategory: "Obligatorische Fächer",
     secondcategory: "prufungsblock-3",
     thirdcategory: "elektrotechnik",
+    fourthcategory: "praktisch",
     // KONTEXT
     year: 2,
     semester: 2,
@@ -306,6 +329,7 @@ window.StudiengangModules = [
     standardcategory: "Obligatorische Fächer",
     secondcategory: "prufungsblock-2",
     thirdcategory: "it",
+    fourthcategory: "praktisch",
     // KONTEXT
     year: 2,
     semester: 2,
@@ -319,6 +343,7 @@ window.StudiengangModules = [
     standardcategory: "Obligatorische Fächer",
     secondcategory: "prufungsblock-3",
     thirdcategory: "mathematik",
+    fourthcategory: "praktisch",
     // KONTEXT
     year: 2,
     semester: 2,
@@ -330,6 +355,7 @@ window.StudiengangModules = [
     standardcategory: "Obligatorische Fächer",
     secondcategory: "prufungsblock-3",
     thirdcategory: "mathematik",
+    fourthcategory: "theoretisch",
     // KONTEXT
     year: 2,
     semester: 2,
