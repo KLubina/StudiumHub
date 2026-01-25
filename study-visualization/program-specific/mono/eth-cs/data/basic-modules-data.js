@@ -23,7 +23,7 @@ window.StudiengangModules = [
   },
   {
     // PFLICHTFELDER
-    name: "Datenstrukturen und Algorithmen",
+    name: "Algorithmen und Datenstrukturen",
     ects: 7,
     standardcategory: "cs-cse",
     // KONTEXT
@@ -83,7 +83,7 @@ window.StudiengangModules = [
   // #region 3. Semester
   {
     // PFLICHTFELDER
-    name: "Numerische Methoden für CSE",
+    name: "Numerische Methoden für Informatik",
     ects: 8,
     standardcategory: "cs-cse",
     // KONTEXT
@@ -110,7 +110,7 @@ window.StudiengangModules = [
   },
   {
     // PFLICHTFELDER
-    name: "Systemnahe Programmierung und Rechnerarchitektur",
+    name: "Systems Programming and Computer Architecture",
     ects: 7,
     standardcategory: "cs-cse",
     // KONTEXT
@@ -131,7 +131,7 @@ window.StudiengangModules = [
   },
   {
     // PFLICHTFELDER
-    name: "Computernetzwerke",
+    name: "Computer Networks",
     ects: 7,
     standardcategory: "cs-cse-wahl",
     // KONTEXT
@@ -140,7 +140,7 @@ window.StudiengangModules = [
   },
   {
     // PFLICHTFELDER
-    name: "Datenmodellierung und Datenbanken",
+    name: "Data Modelling and Databases",
     ects: 7,
     standardcategory: "cs-cse-wahl",
     // KONTEXT
@@ -149,7 +149,7 @@ window.StudiengangModules = [
   },
   {
     // PFLICHTFELDER
-    name: "Formale Methoden und Funktionale Programmierung",
+    name: "Formal Methods and Functional Programming",
     ects: 7,
     standardcategory: "cs-cse-wahl",
     // KONTEXT
