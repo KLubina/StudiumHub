@@ -1,0 +1,343 @@
+BSc Informatik ZHAW
+
+1. Semester
+
+Software-Projekt 1
+Die Studierenden arbeiten eigenständig in kleinen Teams, um Programmcode zu erstellen und zu analysieren. Dabei setzen sie die Lehrinhalte des parallelen Kurses "Programmieren 1" um.
+
+Neben der Anwendung des objektorientierten Programmierens werden Teamarbeit, Selbstreflexion, die Kommunikation technischer Inhalte und das Codemanagement explizit adressiert.
+
+Programmieren 1
+Die grundlegenden Techniken und Konzepte werden anhand von Beispielen eingeführt und mit Übungen vertieft. 
+
+Dies beinhaltet unter anderem Konzepte der objektorientierten Programmierung (Klassen, Objekte etc.)
+
+Grundlagen der Programmierung (Datentypen, Kontrollstrukturen etc.)
+
+grundlegende Prinzipien und Praktiken von Clean Code, Software Qualitätssicherung (Dokumentation und Unit-Test), Vererbung, Komposition und Polymorphie
+
+Datenbanken
+- relationale Algebra
+- Entity-Relationship-Design
+- SQL DDL/DML
+- effiziente und korrekte Datenbankabfragen in SQL
+- Indexe
+- Trigger
+- Transaktionen/ACID
+
+Information und Codierung
+	Digitale Informationsverarbeitung & Codierung
+		Algorithmus-Begriff, Euklidischer Algorithmus
+		Digitale Grundeinheiten: Bit, Byte, Wort
+		Komplement-Darstellung: Einer- und Zweierkomplement
+		Rechnen im Zahlenkreis: Carry, Borrow, Overflow, Sign Extension
+	Digitaltechnik
+		Logische Funktionen und Gatter: INV, AND, OR, NAND, NOR, XOR
+		Wahrheitstabellen und kombinatorische Schaltungen: Halb-/Voll-Addierer, Subtrahierer, Dekoder (z.B. BCD → 7-Segment), Komparator, Codeumwandlungen
+		Sequentielle Logik: Zähler, Schieberegister, einfacher Automat (z.B. Ampel)
+	Informationstheorie
+		Grundlagen nach Shannon
+		Entropie, Informationsgehalt, Redundanz
+		Berechnung der Entropie
+	Quellencodierung
+		Redundanz- und Irrelevanzreduktion, Präfixfreiheit
+		Huffman, Arithmetische Codierung, Lauflängencodierung, Lempel-Ziv
+		Überblick JPEG, MPEG (nur Ansätze)
+		Einsatzgebiete der Codierungen
+	Kanalcodierung
+		Kanalkapazität nach Shannon
+		Hamming-Distanz
+		Fehlererkennung: Parität, CRC, Checksumme
+		Fehlerkorrektur: Hamming-Code, Block-Code, Faltungscode (Überblick)
+
+Grundlagen der Elektrotechnik und Digitaltechnik
+	Grundlagen
+		Grundbegriffe: Ladung, Kraft, Energie, Leistung, Spannung
+		Strom und Widerstand: Widerstand, Strom, Ohmsches Gesetz
+		Schaltungen: Kirchhoffsche Gesetze, Reihen- und Parallelschaltungen
+		Reaktive Bauteile: Induktivität, Kapazität, Ein- und Ausschaltverhalten
+		Signalformen: Zeit- und Frequenzraum, Amplitude, Frequenz, Bandbreite, 	Fourier-Transformation, Spektrum
+		Filter: Hochpass, Tiefpass, Bezug zur Informatik
+	Halbleitertechnik
+		Dioden, Transistoren: Funktionsweise, Push-Pull und Open-Drain Outputs
+		Digitaltechnik: Logikgatter, Logikfamilien, Zusammenschaltung zu D-Flipflop, Zusammenhang Boolsche Algebra
+	Felder & Wellen
+		Elektrische und magnetische Felder
+		Elektromagnetische Wellen: Frequenz, Wellenlänge, Ausbreitungsgeschwindigkeit
+		Wechselwirkung mit Medium: Brechung, Reflexion, Dispersion, Absorption (z. B. Glasfaser), Dämpfung, SNR
+
+Analysis 1
+Diskrete Mathematik
+
+2. Semester
+
+Programmieren 2
+	Erweiterte Java-Sprachkonzepte
+		Verschachtelte-, Innere- & Anonyme-Klassen
+		Funktionale Programmierung: Lambda-Ausdrücke / Funktionale Interfaces
+		Methodenreferenzen, Funktionen als Argumente und Rückgabewerte
+		Funktionale Streams
+	Nebenläufigkeit
+		Grundlagen von Nebenläufigkeit
+		Der Thread Lebenszyklus
+		Thread-Management: Executor-Services / Thread-Pooling
+		Callables / Futures
+		Thread-Safety, Atomare Typen
+		Kooperation von Threads: Wechselseitiger Ausschluss & Zustandssynchronisation
+		Erweitertes Monitor-Konzept, Lock & Conditions
+		Vermeiden von Deadlocks
+	Einfache grafische Benutzeroberflächen (GUIs)
+		GUI-Prinzipien, -Architektur, -Komponenten und -Layout
+		Entwickeln von GUI-Anwendungen mittels JavaFX und FXML
+		Model-View-Controller / Presenter & Observer-Pattern
+		Dynamik von Benutzeroberflächen: Ereignisverarbeitung
+	Ein- und Ausgabe von Daten – Java IO
+		Umgang mit dem Filesystem (Dateien & Verzeichnisse)
+		Lesen und Schreiben von Dateien
+		Das Decorator Pattern
+		Umgang mit Resourcen, Properties & Resource-Bundle
+		Datencodierung und Zeichensätze
+	Mock-Testing
+		Prinzipien und Ökonomie von Software Testing
+		Testisolation: Testdoubles, Stubbing & Mocking
+		Zustandstests vs. Verhaltensverifikation
+		Erstellen von Mock-Tests
+
+Software-Projekt 2
+Die Studierenden erstellen und analysieren in Teams selbstständig einfache Anwendungen
+und wenden dabei die Lerninhalte aus anderen Modulen (insbesondere Programmieren 1 &
+2) konsequent an.
+
+Dies beinhaltet Softwareanalyse und Refactoring, Projektplanung und
+Fortschrittstracking, Anwendung von Entwicklungswerkzeugen im Team, Ideenfindung und
+Evaluation, Reflexion von Projektverlauf und Ergebnis.
+
+Systemnahe Programmierung
+C und Unix-ähnliche Betriebssysteme sind eng verwandt und sind in der heutigen Informatik
+unabdingbar.
+
+Grundlegende Programmelemente (Sprachelemente, Datentypen, Variablen, Konstanten,
+Deklarationen, Operatoren, Ausdrücke, Kontrollstrukturen, Strukturen), Funktionen, Arrays,
+Pointer, Memory Management, Modulare Programmierung (inkl. Präprozessor, Compiling
+und Linking). MISRA C.
+
+Prozesse und Threads. Koordination und Kooperation,
+Prozesssynchronisation, Interprozesskommunikation. Datenhandhabung,
+Speicherverwaltung, Datei-Systeme.
+
+Kommunikationstechnik
+Ziel dieses Moduls ist es, Konzepte, Begriffe, Protokolle und Mechanismen der
+Datenkommunikation für das berufliche Umfeld zu vermitteln, so dass die Studierenden
+Datenkommunikation richtig konzipieren, einsetzen und grundlegende Probleme lösen
+können.
+	Grundlagen der Kommunikationstechnik
+	Local Area Networks (Ethernet, Bridging)
+	Internet Protokolle (IP, Routing)
+	Transport Layer (UDP, TCP)
+	Netzwerk Applikationen, Infrastrukturdienste und Protokolle (DNS, DHCP, NAT, HTTP 	etc.)
+	Schnittstelle zum Transport Layer (Socket-API)
+
+Theoretische Informatik
+Motivation der theoretischen Informatik:
+- Formale Berechnungsmodelle - Grundlegende Prinzipien erkennen, unabhängig von Hard-
+und Software - Grenzen der automatischen Berechnungen
+
+(1) Formale Sprachen / Automatentheorie:
+- Grundlegende Definitionen der Formalen Sprachen - Reguläre Sprachen, endlicher
+Automat (DEA, NEA, e-NEA) - Kontextfreie Sprachen, Kellerautomaten - (Rekursive
+Sprachen), Turingmaschine (TM) - Chomsky-Hierarchie
+
+(2) Berechenbarkeit und Algorithmus-Begriff:
+- Berechenbare Funktionen Church'sche These - Äquivalenz von TM und Computer -
+Berechenbarkeit und Programmier-Sprachen: GOTO-, While- und Loop-Programme. -
+Algorithmus-Begriff - Primitive Rekursion - Nicht-Entscheidbarkeit und Entscheidbarkeit:
+Diagonalisierungssprache Ld, Satz von Rice, Fleissige Bieber - Semi-entscheidbare
+Probleme: Halteproblem, Game-of-Life, Collatz-Zahlen - Reduktion
+
+(3) Komplexitätstheorie
+- Komplexität von Algorithmen - O-Notation (Omega-Notation) - polynomiale Funktionen und
+exponentielle Funktionen - Klasse P, Klasse NP - NP-vollständig, NP-schwierig -
+(Polynomialzeit-Reduktion)
+
+3. Semester
+Software-Projekt 3
+In diesem Modul entwickeln Sie eine grössere objektorientierte Softwareapplikation. Dabei
+werden die vermittelten Analyse- und Entwurfs-Kompetenzen aus dem Modul SWEN1
+angewendet (Wissenstransfer).
+
+Software-Entwicklung 1
+Dieses Modul vermittelt die nötigen Analyse- und Entwurfs-Kompetenzen, um grössere und komplexere Softwareapplikationen entwickeln und realisieren zu können.
+
+	Einführung und Softwareentwicklungsprozessmodelle (4 Lektionen)
+		Überblick über Softwareentwicklungsprozessmodelle und deren Anwendungsgebiete (Wasserfall, iterativ-inkrementell und agile)
+		Ablauf und Artefakte in einem iterativ-inkrementellen, Use-Case-getriebenen und architekturzentrierten Softwareentwicklungsprozess
+
+	Anforderungsanalyse (16 Lektionen)
+		Einführung in Usability und UX (Contextual Inquiry, Personas und Szenarien, UI-Sketching & Prototyping)
+		Erhebung und Kommunikation von funktionalen Anforderungen mit Use Cases (UML-Use-Case-Diagramm, Use-Case-Spezifikation)
+		Erhebung und Kommunikation von nicht funktionalen Anforderungen
+		(Qualitätsanforderungen, Randbedingungen)
+		Modellierung der Fachlichkeit und Begriffe des Anwenders (Domänenmodell) und Einführung in Domain Driven Design (DDD, konzeptuelles UML-				Klassendiagramm)
+
+	Softwarearchitektur und Design (36 Lektionen)
+		Entwurf und Modellierung einer Softwarearchitektur (4+1 Sicht, UML-Paketdiagramm, UML-Deploymentdiagramm)
+		Einführung in Clean Architecture (SOLID Prinzipien, Schichtenarchitektur, Onion Architecture)
+		Use-Case-Realisierung und Klassendesign (Responsibility Driven Design (RDD), UML-Klassendiagramm, UML-Sequenzdiagramm, UML-					Kommunikationsdiagramm, UML-Zustandsdiagramm, UML-Aktivitätsdiagramm)
+		Entwurf mit Design Patterns (GoF: Factory, Singleton, Adaptor, Bridge, Composite, Decorator, Facade, Proxy, Chain of Responsibility, Observer, State, Strategy, Visitor)
+		Verschiedene Vertiefungsthemen wie zum Beispiel:Verteilte Systeme, GUI-Architekturen, Persistenz, Framework-Design
+
+Web-Entwicklung
+	Einführung in JavaScript mit Node.js (12 Lektionen)
+		- JS Engines, ECMAScript- und JavaScript-Versionen und Alternativen, Transpiler
+		- Grundlagen: Variablen, Datentypen, Arrays, Funktionen
+		- Objektmodell: Objekte, Konstruktoren, Prototypen, Klassen
+		- Asynchrone Ausführung von Funktionen, Callbacks, Event Queue, Promises
+		- Webserver mit Node.js: Modulsystem, JSON, RESTful APIs
+	JavaScript im Browser (8 Lektionen)
+		- Document Object Model
+		- Ereignisbehandlung im Browser
+		- Asynchrone Client-Server-Kommunikation (Ajax, Fetch-API)
+		- Zustand (Cookies, Sessions) und Authentisierung
+	Web Framework (8 Lektionen)
+		- Bau eines eigenen Frameworks für Single Page Applications
+		- Komponentenarchitektur und render-Methode
+		- Zustand von Komponenten, Properties, Komponententypen
+		- Lebenszyklus von Komponenten
+		- Ereignisbehandlung und Routnig
+		- Zustandscontainer
+Computertechnik 1
+	Organisation eines Computersystems
+		Informationsdarstellung und Übersetzung von Programmen
+		Hardware-Architektur: CPU, Memory, I/O, Bus
+		Komponenten und Funktionsweise einer CPU
+		Instruktionssatz: Codierung von Instruktionen und Operanden
+		Befehlsverarbeitung
+		Leistungsmerkmale von Prozessoren
+	Datentransfer und Speicherorganisation
+		Adressierungsarten
+		Speicherzugriff
+		Integer Datentypen, Arrays, Pointers
+		Memory Map
+		Endianess
+	Arithmetic Logic Unit (ALU)
+		Arithmetische und logische Operationen
+		Prozessorstatusregister und Flags
+		Rechnen mit der ALU
+		Integer Casting
+	Programmablaufsteuerung, Funktionen und Unterprogramme
+		Vergleichs- und Sprungbefehle
+		Strukturierte Codierung
+		Abbildung von KontrollstrukturenParameterübergabe und Stackframe
+	Exceptional Control Flow
+		Hardware Interrupts
+		Interrupt Service Routine
+		Vektortabelle
+		Exceptions (Traps)
+	Linking
+		Aufgaben und Funktionsweise eines Linkers
+		Address Resolution und Relocation
+		Linker Map und Symbol Table
+
+Algorithmen und Datenstrukturen
+	Allgemeine Konzepte 
+		- Asymptotische Komplexität (O-Notation) 
+		- Analyse von Algorithmen (Laufzeit und Speicherplatz)
+	Algorithmen-Paradigmen 
+		- Rekursion 
+		- Backtracking 
+		- Greedy-Algorithmen 
+		- Divide and Conquer
+	Datenstrukturen 
+		- Stack und Queue 
+		- Liste 
+		- Hash-Tabelle 
+		- Bäume 
+		- Graphen
+	Algorithmen 
+		- Suchen 
+		- Baum-Traversierung 
+		- Rotation in ausgeglichenen Suchbäumen 
+		- Hash-Tabellen 
+		- Kürzeste Wege in Graphen 
+		- Breiten und Tiefensuche in Graphen 
+		- Sortierverfahren 
+		- Untere Laufzeit-Schranke
+	Algorithmen in Java 
+		- Objects/equals/hashCode 
+		- Comparator/Comparable 
+		- Collections 
+		- Generics 
+		- Iterator
+
+4. Semester
+Software-Projekt 4
+	Die Studierenden führen in einem Team von etwa 7 (±2) Personen ein Software-Entwicklungsprojekt - von der Projektvision bis zur kundengerechten Software - mit SCRUM durch
+
+Software-Entwicklung 2
+	In dieser Vorlesung lernen die Studierenden die wichtigsten agilen Prinzipien, Praktiken und Werte von SCRUM sowie XP kennen
+
+Betriebssysteme
+	Analyse und Vergleich von MBR- und UEFI-Bootprozessen in Linux-Systemen: Funktionsweise, Vor- und Nachteile.
+	Entwicklung eines minimalistischen Bootloaders zur Initialisierung eines Testsystems.
+	Vergleich verschiedener Prozess-Scheduling-Algorithmen (z. B. Round-Robin, CFS, Priority) und deren Einfluss auf Systemleistung.
+	Messung und Steuerung von Prozessressourcen mittels cgroups: Limits, Prioritäten und Isolation.
+	Untersuchung der Speicherverwaltung in Linux: Virtueller Speicher, Paging, Swapping und Seitentabellen.
+	Entwicklung eines einfachen Linux-Kernelmoduls oder Gerätetreibers unter Nutzung von DKMS.
+	Vergleich von Dateisystemen und Overlay Filesystems hinsichtlich Performance, Zuverlässigkeit und RAM-/TMP-Usage.
+	Analyse und Nutzung des Logical Volume Managers (LVM): Partitionen, Volumes und Storage-Management.
+	Implementierung und Performanceanalyse virtueller Maschinen mit KVM/QEMU und Libvirt.
+	Untersuchung von Systemaufrufen und Netzwerktreibern im Betriebssystem: Funktionsweise und Performance-Effekte.
+
+Computertechnik 2
+Das Modul zeigt den Ausbau eines Prozessors zu einem vollständigen Computer System.
+	
+	Vom Prozessor zum System
+		Aufbau eines Microcontrollers
+		Funktionsweise Systembus
+		Memory Map und Adressdekodierung
+		Funktion und Verwendung von Kontroll- und Statusregistern.
+	Einsatz von Peripherieschaltungen
+		Anschluss von IOs über GPIO
+		Serieller Datentransfer: UART / SPI / I2C
+		Timer / Counter und ihre Anwendungen
+		Analog Digital Converter (ADC)
+		Hardware Abstraction
+	Speicherhierarchien
+		Speichertechnologien: Volatile (SRAM, DRAM) vs. non-volatile (ROM, Flash, EEPROM)
+		Anschluss von externen Speicherbausteinen
+		Cache: Temporal and Spatial Locality, Auswirkungen auf die Software
+	Ablaufsteuerung von Programmen
+		Strukturierung eines Programmes in Module
+		Software State-Machines (State-Event Model)
+		Erkennen von Events: Polling vs. Interrupt-driven IO
+		Interrupt Performance und Latency
+	Hardwarenahe Programmierpraktika
+		Arbeiten mit Cross-Compiler, Linker, Loader und Debugger
+
+IT-Sicherheit
+	- Einführung in die Kryptographie (Secret and Public Key Kryptographie, Hashfunktionen, Signaturen, Message Authentication Codes)
+	- Zertifikate und Public Key Infrastructure
+	- Sichere Protokolle (TLS, Quic, WPA2, etc.)
+	- Mechanismen zum Absichern von Netzwerken (Network Access Control, Firewall, VPN, etc.)
+	- Methoden zur Benutzerauthentisierung
+	- Autorisierungskonzepte in Unix und Windows
+	- Rechtliche Rahmenbedingungen mit Bezug auf Cybersecurity in der Schweiz
+
+Maschinelles Lernen & Data Mining
+In diesem Modul lernen Sie die Voraussetzungen für dessen Einsatz sowie verschiedene wichtige Algorithmen des maschinellen Lernens kennen.
+
+	Technische Umsetzung
+		Python-Code zur Datenvorverarbeitung schreiben
+		Zentrale ML-Algorithmen implementieren (überwacht, unüberwacht, Ensemble)
+		End-to-End-ML-Pipelines erstellen
+	Problemlösungsstrategie
+		Geschäftliche Probleme als ML-Probleme formulieren
+		Geeignete Algorithmen auswählen
+		Entscheidungen datengestützt begründen
+	Berufspraxis
+		Modellleistung mit branchenüblichen Metriken validieren
+		Fallstricke wie Überanpassung und Datenlecks vermeiden
+		Ergebnisse technisch und nicht-technisch präsentieren
+	Anwendung in der Praxis
+		Einsatz in Bereichen wie Gesundheitsprognosen, Finanzmodellierung oder Computer Vision
+		Portfolio-Projekte zur Demonstration der Fähigkeiten für zukünftige Arbeitgeber
