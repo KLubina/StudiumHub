@@ -1,24 +1,26 @@
 // State Management
 const State = {
   allData: [],
-  currentView: 'category', // 'institution' oder 'category'
+  currentView: "category", // 'institution' oder 'category'
   currentFilters: {
-    type: 'uni', // Standardmäßig nur Universitäten anzeigen
-    institution: '',
-    category: ''
+    type: "", // Standardmäßig alle Hochschultypen anzeigen
+    institution: "",
+    category: "",
   },
   showMinors: false, // Minors standardmäßig ausgeblendet
 
   initializeData() {
     // Kombiniere Uni und FH Daten
-    const uniData = window.AlleSchweizerStudiengaenge.universitaeten.map(uni => ({
-      ...uni,
-      type: 'uni'
-    }));
+    const uniData = window.AlleSchweizerStudiengaenge.universitaeten.map(
+      (uni) => ({
+        ...uni,
+        type: "uni",
+      }),
+    );
 
-    const fhData = window.AlleFHStudiengaenge.fachhochschulen.map(fh => ({
+    const fhData = window.AlleFHStudiengaenge.fachhochschulen.map((fh) => ({
       ...fh,
-      type: 'fh'
+      type: "fh",
     }));
 
     this.allData = [...uniData, ...fhData];
@@ -50,5 +52,5 @@ const State = {
 
   getShowMinors() {
     return this.showMinors;
-  }
+  },
 };
