@@ -2,12 +2,16 @@
 /* FHNW Elektro- und Informationstechnik Program */
 
 [data-studiengang="fhnw-eit"] {
-    /* Primary program color */
-    --color-primary: #0369a1;
+  /* Primary program color */
+  --color-primary: #0369a1;
 
-    /* Category colors */
-    --color-grundlagen: #dc2626;
-    --color-projekte: #7c3aed;
-    --color-vertiefung: #0284c7;
-    --color-kontext: #059669;
+  /* Category colors */
+  --color-math-nat: #dc2626; /* Red for Math & Natural Sciences */
+  --color-ee: #ea580c; /* Orange for Electrical Engineering */
+  --color-informatik: #7c3aed; /* Purple for Informatics */
+  --color-fachvertiefung: #0284c7; /* Sky for Specialization */
+  --color-fachergaenzung: #0891b2; /* Cyan for Supplementary */
+  --color-projekte-labor: #0f766e; /* Teal for Projects and Lab */
+  --color-kommunikation: #16a34a; /* Green for Communication */
+  --color-gsw: #7c2d12; /* Dark Brown for Humanities & Social Sciences */
 }

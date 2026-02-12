@@ -1,26 +1,50 @@
 /* ==== FHNW-EIT - CSS CLASSES ==== */
 /* Program-specific CSS classes */
 
-[data-studiengang="fhnw-eit"] .modul.grundlagen,
-[data-studiengang="fhnw-eit"] .legende-item.grundlagen {
-    background-color: var(--color-grundlagen);
-    color: var(--color-grundlagen-text, white);
+[data-studiengang="fhnw-eit"] .modul.math-nat,
+[data-studiengang="fhnw-eit"] .legende-item.math-nat {
+  background-color: var(--color-math-nat);
+  color: var(--color-math-nat-text, white);
 }
 
-[data-studiengang="fhnw-eit"] .modul.projekte,
-[data-studiengang="fhnw-eit"] .legende-item.projekte {
-    background-color: var(--color-projekte);
-    color: var(--color-projekte-text, white);
+[data-studiengang="fhnw-eit"] .modul.ee,
+[data-studiengang="fhnw-eit"] .legende-item.ee {
+  background-color: var(--color-ee);
+  color: var(--color-ee-text, white);
 }
 
-[data-studiengang="fhnw-eit"] .modul.vertiefung,
-[data-studiengang="fhnw-eit"] .legende-item.vertiefung {
-    background-color: var(--color-vertiefung);
-    color: var(--color-vertiefung-text, white);
+[data-studiengang="fhnw-eit"] .modul.informatik,
+[data-studiengang="fhnw-eit"] .legende-item.informatik {
+  background-color: var(--color-informatik);
+  color: var(--color-informatik-text, white);
 }
 
-[data-studiengang="fhnw-eit"] .modul.kontext,
-[data-studiengang="fhnw-eit"] .legende-item.kontext {
-    background-color: var(--color-kontext);
-    color: var(--color-kontext-text, white);
+[data-studiengang="fhnw-eit"] .modul.fachvertiefung,
+[data-studiengang="fhnw-eit"] .legende-item.fachvertiefung {
+  background-color: var(--color-fachvertiefung);
+  color: var(--color-fachvertiefung-text, white);
+}
+
+[data-studiengang="fhnw-eit"] .modul.fachergaenzung,
+[data-studiengang="fhnw-eit"] .legende-item.fachergaenzung {
+  background-color: var(--color-fachergaenzung);
+  color: var(--color-fachergaenzung-text, white);
+}
+
+[data-studiengang="fhnw-eit"] .modul.projekte-labor,
+[data-studiengang="fhnw-eit"] .legende-item.projekte-labor {
+  background-color: var(--color-projekte-labor);
+  color: var(--color-projekte-labor-text, white);
+}
+
+[data-studiengang="fhnw-eit"] .modul.kommunikation,
+[data-studiengang="fhnw-eit"] .legende-item.kommunikation {
+  background-color: var(--color-kommunikation);
+  color: var(--color-kommunikation-text, white);
+}
+
+[data-studiengang="fhnw-eit"] .modul.gsw,
+[data-studiengang="fhnw-eit"] .legende-item.gsw {
+  background-color: var(--color-gsw);
+  color: var(--color-gsw-text, white);
 }
