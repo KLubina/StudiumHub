@@ -1,22 +1,30 @@
 BSc Informatik ZHAW
 
-1. Semester
+# 1. Semester
 
-Software-Projekt 1
-Die Studierenden arbeiten eigenständig in kleinen Teams, um Programmcode zu erstellen und zu analysieren. Dabei setzen sie die Lehrinhalte des parallelen Kurses "Programmieren 1" um.
+# Software-Projekt 1
+Umsetzen der Lehrinhalte des parallelen Kurses "Programmieren 1".
 
-Neben der Anwendung des objektorientierten Programmierens werden Teamarbeit, Selbstreflexion, die Kommunikation technischer Inhalte und das Codemanagement explizit adressiert.
+Weiteres:
+- Teamarbeit
+- Selbstreflexion
+- Kommunikation technischer Inhalte
+- Codemanagement
 
-Programmieren 1
-Die grundlegenden Techniken und Konzepte werden anhand von Beispielen eingeführt und mit Übungen vertieft. 
+# Programmieren 1
 
-Dies beinhaltet unter anderem Konzepte der objektorientierten Programmierung (Klassen, Objekte etc.)
+Konzepte der objektorientierten Programmierung (Klassen, Objekte etc.)
 
 Grundlagen der Programmierung (Datentypen, Kontrollstrukturen etc.)
 
-grundlegende Prinzipien und Praktiken von Clean Code, Software Qualitätssicherung (Dokumentation und Unit-Test), Vererbung, Komposition und Polymorphie
+grundlegende Prinzipien und Praktiken von :
+- Clean Code
+- Software Qualitätssicherung (Dokumentation und Unit-Test)
+- Vererbung
+- Komposition
+- Polymorphie
 
-Datenbanken
+# Datenbanken
 - relationale Algebra
 - Entity-Relationship-Design
 - SQL DDL/DML
@@ -25,32 +33,32 @@ Datenbanken
 - Trigger
 - Transaktionen/ACID
 
-Information und Codierung
-	Digitale Informationsverarbeitung & Codierung
-		Algorithmus-Begriff, Euklidischer Algorithmus
-		Digitale Grundeinheiten: Bit, Byte, Wort
-		Komplement-Darstellung: Einer- und Zweierkomplement
-		Rechnen im Zahlenkreis: Carry, Borrow, Overflow, Sign Extension
-	Digitaltechnik
-		Logische Funktionen und Gatter: INV, AND, OR, NAND, NOR, XOR
-		Wahrheitstabellen und kombinatorische Schaltungen: Halb-/Voll-Addierer, Subtrahierer, Dekoder (z.B. BCD → 7-Segment), Komparator, Codeumwandlungen
-		Sequentielle Logik: Zähler, Schieberegister, einfacher Automat (z.B. Ampel)
-	Informationstheorie
-		Grundlagen nach Shannon
-		Entropie, Informationsgehalt, Redundanz
-		Berechnung der Entropie
-	Quellencodierung
-		Redundanz- und Irrelevanzreduktion, Präfixfreiheit
-		Huffman, Arithmetische Codierung, Lauflängencodierung, Lempel-Ziv
-		Überblick JPEG, MPEG (nur Ansätze)
-		Einsatzgebiete der Codierungen
-	Kanalcodierung
-		Kanalkapazität nach Shannon
-		Hamming-Distanz
-		Fehlererkennung: Parität, CRC, Checksumme
-		Fehlerkorrektur: Hamming-Code, Block-Code, Faltungscode (Überblick)
+# Information und Codierung
+-	Digitale Informationsverarbeitung & Codierung
+	-	Algorithmus-Begriff, Euklidischer Algorithmus
+	-	Digitale Grundeinheiten: Bit, Byte, Wort
+	-	Komplement-Darstellung: Einer- und Zweierkomplement
+	-	Rechnen im Zahlenkreis: Carry, Borrow, Overflow, Sign Extension
+-	Digitaltechnik
+	-	Logische Funktionen und Gatter: INV, AND, OR, NAND, NOR, XOR
+	-	Wahrheitstabellen und kombinatorische Schaltungen: Halb-/Voll-Addierer, Subtrahierer, Dekoder (z.B. BCD → 7-Segment), Komparator, Codeumwandlungen
+	-	Sequentielle Logik: Zähler, Schieberegister, einfacher Automat (z.B. Ampel)
+-	Informationstheorie
+	-	Grundlagen nach Shannon
+	-	Entropie, Informationsgehalt, Redundanz
+	-	Berechnung der Entropie
+-	Quellencodierung
+	-	Redundanz- und Irrelevanzreduktion, Präfixfreiheit
+	-	Huffman, Arithmetische Codierung, Lauflängencodierung, Lempel-Ziv
+	-	Überblick JPEG, MPEG (nur Ansätze)
+	-	Einsatzgebiete der Codierungen
+-	Kanalcodierung
+	-	Kanalkapazität nach Shannon
+	-	Hamming-Distanz
+	-	Fehlererkennung: Parität, CRC, Checksumme
+	-	Fehlerkorrektur: Hamming-Code, Block-Code, Faltungscode (Überblick)
 
-Grundlagen der Elektrotechnik und Digitaltechnik
+# Grundlagen der Elektrotechnik und Digitaltechnik
 	Grundlagen
 		Grundbegriffe: Ladung, Kraft, Energie, Leistung, Spannung
 		Strom und Widerstand: Widerstand, Strom, Ohmsches Gesetz
@@ -66,12 +74,45 @@ Grundlagen der Elektrotechnik und Digitaltechnik
 		Elektromagnetische Wellen: Frequenz, Wellenlänge, Ausbreitungsgeschwindigkeit
 		Wechselwirkung mit Medium: Brechung, Reflexion, Dispersion, Absorption (z. B. Glasfaser), Dämpfung, SNR
 
-Analysis 1
-Diskrete Mathematik
+# Analysis 1
 
-2. Semester
+- Konzepte der Differential- und Integralrechnung
+	- Ableitung
+	- Stammfunktionen und Flächeninhalte bei Polynomen
+- Folgen, Reihen (mit Summen) und Grenzwerte
+	- Folgen (direkt, rekursiv, arithmetisch/geometrisch)
+	- Grenzwertbegriff (Rechenregeln, Limes einer Funktion), Stetigkeit
+	- Reihen (arithmetisch/geometrisch)
+- Erweiterung der Differentialrechnung
+	- Ableitung elementarer Funktionen
+	- Ableitungsregeln
+	- Kurvendiskussion
+	- Gebrochen rationale Funktionen (Polstellen, hebbare Definitionslücken, Asymptoten)
+	- Extremwertaufgaben
+	- Newton-Verfahren
 
-Programmieren 2
+# Diskrete Mathematik
+- Grundbegriffe: Zahlenmengen, Aussagen, Prädikate und Quantoren
+- Mengen: Elemente, Teilmengen und Extensionalität
+- Mengen: Aussonderungs- und Ersetzungsprinzip
+- Mengenoperationen: Potenzmenge, Schnittmenge, Vereinigungsmenge
+- Mächtigkeitsbegriff: Abzählbarkeit und Überabzählbarkeit, erstes und zweites
+- Diagonalargument
+- Relationen: Tupel und Produktmengen
+- Funktionen als Relationen
+- Äquivalenzrelationen, Äquivalenzklassen und Partitionen
+- (Halb-) Ordungsrelationen, Hasse Diagramme, Satz von Marczewski-Szpilrajn
+- Rekursive Strukturen: Natürliche Zahlen, Peano Axiome und Induktion, Wohlfundierte
+- Induktion, induktive Definitionen und strukturelle Induktion.
+- Elementare Zahlentheorie: Teilbarkeit und Euklidischer Algorithmus
+- Primzahlen und Primfaktorzerlegung
+- Modulare Arithmetik und das Lemma von Bézout
+- Chinesischer Restsatz und Lösen simultaner Kongruenzen
+- Kleiner Satz von Fermat
+
+# 2. Semester
+
+# Programmieren 2
 	Erweiterte Java-Sprachkonzepte
 		Verschachtelte-, Innere- & Anonyme-Klassen
 		Funktionale Programmierung: Lambda-Ausdrücke / Funktionale Interfaces
@@ -103,17 +144,17 @@ Programmieren 2
 		Zustandstests vs. Verhaltensverifikation
 		Erstellen von Mock-Tests
 
-Software-Projekt 2
-Die Studierenden erstellen und analysieren in Teams selbstständig einfache Anwendungen
-und wenden dabei die Lerninhalte aus anderen Modulen (insbesondere Programmieren 1 &
-2) konsequent an.
+# Software-Projekt 2
+Wenden die Lerninhalte aus Programmieren 1 & 2 an.
 
-Dies beinhaltet Softwareanalyse und Refactoring, Projektplanung und
-Fortschrittstracking, Anwendung von Entwicklungswerkzeugen im Team, Ideenfindung und
-Evaluation, Reflexion von Projektverlauf und Ergebnis.
+- Softwareanalyse und Refactoring
+- Projektplanung und Fortschrittstracking
+- Anwendung von Entwicklungswerkzeugen im Team
+- Ideenfindung und Evaluation
+- Reflexion von Projektverlauf und Ergebnis
 
-Systemnahe Programmierung
-C und Unix-ähnliche Betriebssysteme sind eng verwandt und sind in der heutigen Informatik
+# Systemnahe Programmierung
+- C und Unix-ähnliche Betriebssysteme sind eng verwandt und in der heutigen Informatik
 unabdingbar.
 
 Grundlegende Programmelemente (Sprachelemente, Datentypen, Variablen, Konstanten,
@@ -125,19 +166,14 @@ Prozesse und Threads. Koordination und Kooperation,
 Prozesssynchronisation, Interprozesskommunikation. Datenhandhabung,
 Speicherverwaltung, Datei-Systeme.
 
-Kommunikationstechnik
-Ziel dieses Moduls ist es, Konzepte, Begriffe, Protokolle und Mechanismen der
-Datenkommunikation für das berufliche Umfeld zu vermitteln, so dass die Studierenden
-Datenkommunikation richtig konzipieren, einsetzen und grundlegende Probleme lösen
-können.
-	Grundlagen der Kommunikationstechnik
-	Local Area Networks (Ethernet, Bridging)
-	Internet Protokolle (IP, Routing)
-	Transport Layer (UDP, TCP)
-	Netzwerk Applikationen, Infrastrukturdienste und Protokolle (DNS, DHCP, NAT, HTTP 	etc.)
-	Schnittstelle zum Transport Layer (Socket-API)
+# Kommunikationstechnik
+- Local Area Networks (Ethernet, Bridging)
+- Internet Protokolle (IP, Routing)
+- Transport Layer (UDP, TCP)
+- Netzwerk Applikationen, Infrastrukturdienste und Protokolle (DNS, DHCP, NAT, HTTP 	etc.)
+- Schnittstelle zum Transport Layer (Socket-API)
 
-Theoretische Informatik
+# Theoretische Informatik
 Motivation der theoretischen Informatik:
 - Formale Berechnungsmodelle - Grundlegende Prinzipien erkennen, unabhängig von Hard-
 und Software - Grenzen der automatischen Berechnungen
@@ -159,13 +195,13 @@ Probleme: Halteproblem, Game-of-Life, Collatz-Zahlen - Reduktion
 exponentielle Funktionen - Klasse P, Klasse NP - NP-vollständig, NP-schwierig -
 (Polynomialzeit-Reduktion)
 
-3. Semester
-Software-Projekt 3
+# 3. Semester
+# Software-Projekt 3
 In diesem Modul entwickeln Sie eine grössere objektorientierte Softwareapplikation. Dabei
 werden die vermittelten Analyse- und Entwurfs-Kompetenzen aus dem Modul SWEN1
 angewendet (Wissenstransfer).
 
-Software-Entwicklung 1
+# Software-Entwicklung 1
 Dieses Modul vermittelt die nötigen Analyse- und Entwurfs-Kompetenzen, um grössere und komplexere Softwareapplikationen entwickeln und realisieren zu können.
 
 	Einführung und Softwareentwicklungsprozessmodelle (4 Lektionen)
@@ -186,7 +222,7 @@ Dieses Modul vermittelt die nötigen Analyse- und Entwurfs-Kompetenzen, um grös
 		Entwurf mit Design Patterns (GoF: Factory, Singleton, Adaptor, Bridge, Composite, Decorator, Facade, Proxy, Chain of Responsibility, Observer, State, Strategy, Visitor)
 		Verschiedene Vertiefungsthemen wie zum Beispiel:Verteilte Systeme, GUI-Architekturen, Persistenz, Framework-Design
 
-Web-Entwicklung
+# Web-Entwicklung
 	Einführung in JavaScript mit Node.js (12 Lektionen)
 		- JS Engines, ECMAScript- und JavaScript-Versionen und Alternativen, Transpiler
 		- Grundlagen: Variablen, Datentypen, Arrays, Funktionen
@@ -205,7 +241,7 @@ Web-Entwicklung
 		- Lebenszyklus von Komponenten
 		- Ereignisbehandlung und Routnig
 		- Zustandscontainer
-Computertechnik 1
+# Computertechnik 1
 	Organisation eines Computersystems
 		Informationsdarstellung und Übersetzung von Programmen
 		Hardware-Architektur: CPU, Memory, I/O, Bus
@@ -238,7 +274,7 @@ Computertechnik 1
 		Address Resolution und Relocation
 		Linker Map und Symbol Table
 
-Algorithmen und Datenstrukturen
+# Algorithmen und Datenstrukturen
 	Allgemeine Konzepte 
 		- Asymptotische Komplexität (O-Notation) 
 		- Analyse von Algorithmen (Laufzeit und Speicherplatz)
@@ -270,13 +306,13 @@ Algorithmen und Datenstrukturen
 		- Iterator
 
 4. Semester
-Software-Projekt 4
+# Software-Projekt 4
 	Die Studierenden führen in einem Team von etwa 7 (±2) Personen ein Software-Entwicklungsprojekt - von der Projektvision bis zur kundengerechten Software - mit SCRUM durch
 
-Software-Entwicklung 2
+# Software-Entwicklung 2
 	In dieser Vorlesung lernen die Studierenden die wichtigsten agilen Prinzipien, Praktiken und Werte von SCRUM sowie XP kennen
 
-Betriebssysteme
+# Betriebssysteme
 	Analyse und Vergleich von MBR- und UEFI-Bootprozessen in Linux-Systemen: Funktionsweise, Vor- und Nachteile.
 	Entwicklung eines minimalistischen Bootloaders zur Initialisierung eines Testsystems.
 	Vergleich verschiedener Prozess-Scheduling-Algorithmen (z. B. Round-Robin, CFS, Priority) und deren Einfluss auf Systemleistung.
@@ -288,7 +324,7 @@ Betriebssysteme
 	Implementierung und Performanceanalyse virtueller Maschinen mit KVM/QEMU und Libvirt.
 	Untersuchung von Systemaufrufen und Netzwerktreibern im Betriebssystem: Funktionsweise und Performance-Effekte.
 
-Computertechnik 2
+# Computertechnik 2
 Das Modul zeigt den Ausbau eines Prozessors zu einem vollständigen Computer System.
 	
 	Vom Prozessor zum System
@@ -314,7 +350,7 @@ Das Modul zeigt den Ausbau eines Prozessors zu einem vollständigen Computer Sys
 	Hardwarenahe Programmierpraktika
 		Arbeiten mit Cross-Compiler, Linker, Loader und Debugger
 
-IT-Sicherheit
+# IT-Sicherheit
 	- Einführung in die Kryptographie (Secret and Public Key Kryptographie, Hashfunktionen, Signaturen, Message Authentication Codes)
 	- Zertifikate und Public Key Infrastructure
 	- Sichere Protokolle (TLS, Quic, WPA2, etc.)
@@ -323,7 +359,7 @@ IT-Sicherheit
 	- Autorisierungskonzepte in Unix und Windows
 	- Rechtliche Rahmenbedingungen mit Bezug auf Cybersecurity in der Schweiz
 
-Maschinelles Lernen & Data Mining
+# Maschinelles Lernen & Data Mining
 In diesem Modul lernen Sie die Voraussetzungen für dessen Einsatz sowie verschiedene wichtige Algorithmen des maschinellen Lernens kennen.
 
 	Technische Umsetzung
@@ -340,4 +376,5 @@ In diesem Modul lernen Sie die Voraussetzungen für dessen Einsatz sowie verschi
 		Ergebnisse technisch und nicht-technisch präsentieren
 	Anwendung in der Praxis
 		Einsatz in Bereichen wie Gesundheitsprognosen, Finanzmodellierung oder Computer Vision
+
 		Portfolio-Projekte zur Demonstration der Fähigkeiten für zukünftige Arbeitgeber
