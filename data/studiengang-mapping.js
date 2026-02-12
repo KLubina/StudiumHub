@@ -6,194 +6,195 @@
     // ETH Zürich
     "Elektrotechnik und Informationstechnologie": {
       key: "eth-itet",
-      institution: "ETH Zürich"
+      institution: "ETH Zürich",
     },
     "Gesundheitswissenschaften und Technologie": {
       key: "eth-hst",
-      institution: "ETH Zürich"
+      institution: "ETH Zürich",
     },
     "Lebensmittelwissenschaften und Ernährung": {
       key: "eth-lmw",
-      institution: "ETH Zürich"
+      institution: "ETH Zürich",
     },
-    "Mathematik": {
+    Mathematik: {
       key: "eth-math",
-      institution: "ETH Zürich"
+      institution: "ETH Zürich",
     },
     "Rechnergestützte Wissenschaften": {
       key: "eth-cse",
-      institution: "ETH Zürich"
+      institution: "ETH Zürich",
     },
-    "Informatik": {
+    Informatik: {
       key: "eth-cs",
-      institution: "ETH Zürich"
+      institution: "ETH Zürich",
     },
     "Raumbezogene Ingenieurwissenschaften": {
       key: "eth-rig",
-      institution: "ETH Zürich"
+      institution: "ETH Zürich",
     },
-    "Maschineningenieurwissenschaften": {
+    Maschineningenieurwissenschaften: {
       key: "eth-masch",
-      institution: "ETH Zürich"
+      institution: "ETH Zürich",
     },
-    "Materialwissenschaft": {
+    Materialwissenschaft: {
       key: "eth-matw",
-      institution: "ETH Zürich"
+      institution: "ETH Zürich",
     },
-    "Physik": {
+    Physik: {
       key: "eth-physik",
-      institution: "ETH Zürich"
+      institution: "ETH Zürich",
     },
-    "Chemieingenieurwissenschaften": {
+    Chemieingenieurwissenschaften: {
       key: "eth-chab",
-      institution: "ETH Zürich"
+      institution: "ETH Zürich",
     },
 
     // Universität Zürich
-    "Geschichte": {
+    Geschichte: {
       key: "uzh-geschichte",
       institution: "Universität Zürich",
-      studyModel: "major-minor"
     },
-    "Politikwissenschaft": {
+    Politikwissenschaft: {
       key: "uzh-polisci",
       institution: "Universität Zürich",
-      studyModel: "major-minor"
     },
-    "Ethnologie": {
+    Ethnologie: {
       key: "uzh-ethnologie",
       institution: "Universität Zürich",
-      studyModel: "major-minor"
     },
-    "Kommunikationswissenschaft": {
+    Kommunikationswissenschaft: {
       key: "uzh-kommunikation",
       institution: "Universität Zürich",
-      studyModel: "major-minor"
     },
     "Populäre Kulturen": {
       key: "uzh-pop-kultur",
       institution: "Universität Zürich",
-      studyModel: "major-minor"
     },
-    "Soziologie": {
+    Soziologie: {
       key: "uzh-soziologie",
       institution: "Universität Zürich",
-      studyModel: "major-minor"
     },
-    "Humanmedizin": {
+    Humanmedizin: {
       key: "uzh-humanmedizin",
-      institution: "Universität Zürich"
+      institution: "Universität Zürich",
     },
-    "Rechtswissenschaft": {
+    Rechtswissenschaft: {
       key: "uzh-law",
-      institution: "Universität Zürich"
+      institution: "Universität Zürich",
     },
 
     // Universität Basel
     "Sport, Bewegung und Gesundheit": {
       key: "unibas-sbg",
-      institution: "Universität Basel"
+      institution: "Universität Basel",
     },
     "Sport, Bewegung & Gesundheit": {
       key: "unibas-sbg",
-      institution: "Universität Basel"
+      institution: "Universität Basel",
     },
 
     // Universität St.Gallen
-    "Betriebswirtschaftslehre": {
+    Betriebswirtschaftslehre: {
       key: "unisg-bwl",
-      institution: "Universität St.Gallen"
+      institution: "Universität St.Gallen",
     },
 
     // FH - Berner Fachhochschule
     "Elektrotechnik und Informationstechnologie": {
       key: "fhbern-eit",
-      institution: "Berner Fachhochschule"
+      institution: "Berner Fachhochschule",
     },
-    "Informatik": {
+    Informatik: {
       key: "fhbern-cs",
-      institution: "Berner Fachhochschule"
+      institution: "Berner Fachhochschule",
     },
 
     // FH - Fachhochschule Graubünden
     "Computational and Data Science": {
       key: "fhgr-cds",
-      institution: "FH Graubünden"
+      institution: "FH Graubünden",
     },
 
     // FH - ZHAW
-    "Informatik": {
+    Informatik: {
       key: "fhzh-cs",
-      institution: "ZHAW"
+      institution: "ZHAW",
     },
-    "Elektrotechnik": {
+    Elektrotechnik: {
       key: "fhzh-elektrotechnik",
-      institution: "ZHAW"
+      institution: "ZHAW",
     },
 
     // FH - Hochschule Luzern
     "Elektrotechnik und Informationstechnologie": {
       key: "fhlu-eit",
-      institution: "Hochschule Luzern"
+      institution: "Hochschule Luzern",
     },
-    "Informatik": {
+    Informatik: {
       key: "hslu-cs",
-      institution: "Hochschule Luzern"
+      institution: "Hochschule Luzern",
     },
 
     // FH - OST Ostschweizer Fachhochschule
     "Electrical and Computer Engineering": {
       key: "ost-eit",
-      institution: "OST Ostschweizer Fachhochschule"
+      institution: "OST Ostschweizer Fachhochschule",
     },
-    "Informatik": {
+    Informatik: {
       key: "ost-cs",
-      institution: "Ostschweizer Fachhochschule"
+      institution: "Ostschweizer Fachhochschule",
     },
 
     // FH - Fachhochschule Nordwestschweiz
     "Elektro- und Informationstechnik": {
       key: "fhnw-eit",
-      institution: "Fachhochschule Nordwestschweiz"
+      institution: "Fachhochschule Nordwestschweiz",
     },
-    "Informatik": {
+    Informatik: {
       key: "fhnw-cs",
-      institution: "Fachhochschule Nordwestschweiz"
+      institution: "Fachhochschule Nordwestschweiz",
     },
 
     // FH - FFHS (Fernfachhochschule Schweiz)
-    "Informatik": {
+    Informatik: {
       key: "ffhs-informatik",
-      institution: "FFHS"
+      institution: "FFHS",
     },
 
     // Private - Hochschulinstitut Schaffhausen
-    "IT": {
+    IT: {
       key: "hssh-it",
-      institution: "Hochschulinstitut Schaffhausen"
+      institution: "Hochschulinstitut Schaffhausen",
     },
 
     // Private - Aspira College
     "Computer Engineering": {
       key: "aspira-ce",
-      institution: "Aspira College Split"
-    }
+      institution: "Aspira College Split",
+    },
   };
 
   // Helper function to check if a study program has a visualization
-  StudiengangMapping.getVisualizationUrl = function(studiengangName, institutionName) {
+  StudiengangMapping.getVisualizationUrl = function (
+    studiengangName,
+    institutionName,
+  ) {
     // Try exact match with study program name
     let mapping = this[studiengangName];
 
-    if (mapping && (!mapping.institution || mapping.institution === institutionName)) {
-      const studyModel = mapping.studyModel || 'mono';
-      const folder = studyModel === 'major-minor' ? 'major-minor' : 'mono';
+    if (
+      mapping &&
+      (!mapping.institution || mapping.institution === institutionName)
+    ) {
+      // Simplified: always use mono model
       return `study-visualization/standard/studienplan-template.html?studiengang=${encodeURIComponent(mapping.key)}`;
     }
 
     // Special handling for EIT at different institutions
-    if (studiengangName === "Elektrotechnik und Informationstechnologie" ||
-        studiengangName === "Elektro- und Informationstechnik") {
+    if (
+      studiengangName === "Elektrotechnik und Informationstechnologie" ||
+      studiengangName === "Elektro- und Informationstechnik"
+    ) {
       if (institutionName === "Berner Fachhochschule") {
         return `study-visualization/standard/studienplan-template.html?studiengang=fhbern-eit`;
       } else if (institutionName === "Hochschule Luzern") {
@@ -217,9 +218,15 @@
         return `study-visualization/standard/studienplan-template.html?studiengang=fhbern-cs`;
       } else if (institutionName === "Fachhochschule Nordwestschweiz") {
         return `study-visualization/standard/studienplan-template.html?studiengang=fhnw-cs`;
-      } else if (institutionName === "Hochschule Luzern" || institutionName === "HSLU") {
+      } else if (
+        institutionName === "Hochschule Luzern" ||
+        institutionName === "HSLU"
+      ) {
         return `study-visualization/standard/studienplan-template.html?studiengang=hslu-cs`;
-      } else if (institutionName === "Ostschweizer Fachhochschule" || institutionName === "OST") {
+      } else if (
+        institutionName === "Ostschweizer Fachhochschule" ||
+        institutionName === "OST"
+      ) {
         return `study-visualization/standard/studienplan-template.html?studiengang=ost-cs`;
       } else if (institutionName === "FFHS") {
         return `study-visualization/standard/studienplan-template.html?studiengang=ffhs-informatik`;

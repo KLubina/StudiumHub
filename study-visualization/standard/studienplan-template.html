@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -76,15 +77,14 @@
         // NEU: Data-Attribut setzen für CSS-Variablen
         document.body.setAttribute('data-studiengang', studiengang);
 
-        // Bestimme ob major-minor oder mono Modell
-        const majorMinorPrograms = ['sozwi', 'uzh-geschichte', 'uzh-polisci', 'uzh-ethnologie',
-                                    'uzh-kommunikation', 'uzh-pop-kultur', 'uzh-soziologie'];
-        const studyModel = majorMinorPrograms.includes(studiengang) ? 'major-minor' : 'mono';
+        // Bestimme das Modell (Veraltet: studyModel wird nicht mehr für Pfade verwendet)
+        // const studyModel = 'mono';
 
         // UZH Common CSS laden (nur für UZH Programme)
         const uzhCommonCSS = document.getElementById('uzh-common-css');
         if (studiengang.startsWith('uzh-')) {
-            uzhCommonCSS.href = `../program-specific/major-minor/uzh-common/uzh-common.css`;
+            // Found in program-specific/uzh-common
+            uzhCommonCSS.href = `../program-specific/uzh-common/uzh-common.css`;
         }
 
         // Program-specific CSS laden (colors, classes, layout)
@@ -92,9 +92,9 @@
         const programClassesCSS = document.getElementById('program-classes-css');
         const programLayoutCSS = document.getElementById('program-layout-css');
 
-        programColorsCSS.href = `../program-specific/${studyModel}/${studiengang}/standard-config/colors/colors.css`;
-        programClassesCSS.href = `../program-specific/${studyModel}/${studiengang}/standard-config/colors/classes.css`;
-        programLayoutCSS.href = `../program-specific/${studyModel}/${studiengang}/individual/layout.css`;
+        programColorsCSS.href = `../program-specific/${studiengang}/standard-config/colors/colors.css`;
+        programClassesCSS.href = `../program-specific/${studiengang}/standard-config/colors/classes.css`;
+        programLayoutCSS.href = `../program-specific/${studiengang}/individual/layout.css`;
 
         // Error handling falls Dateien nicht existieren
         programColorsCSS.onerror = () => {
@@ -117,4 +117,5 @@
         });
     </script>
 </body>
+
 </html>
