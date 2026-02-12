@@ -235,20 +235,6 @@ window.StudiengangModules = [
     semester: 4,
   },
   {
-    name: "Integraltransformationen",
-    ects: 3,
-    standardcategory: "Mathematik und Naturwissenschaften",
-    year: 2,
-    semester: 4,
-  },
-  {
-    name: "Schwingungen und Wellen",
-    ects: 3,
-    standardcategory: "Mathematik und Naturwissenschaften",
-    year: 2,
-    semester: 4,
-  },
-  {
     name: "Analoge Schaltungstechnik - Grundlagen",
     ects: 3,
     standardcategory: "Electrical Engineering",
