@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studienplan Psychologie UZH</title>
+
+    <!-- Use same core styles as the main app -->
+    <link rel="stylesheet" href="../../standard/css/core/variables.css">
+    <link rel="stylesheet" href="../../standard/css/core/layout.css">
+    <link rel="stylesheet" href="../../standard/css/core/typography.css">
+    <link rel="stylesheet" href="../../standard/css/core/hub-button.css">
+
+    <style>
+        body {
+            font-family: var(--font-family-base);
+            background-color: var(--color-background);
+            color: var(--color-text);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .pdf-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .pdf-section {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .pdf-section h2 {
+            margin-top: 0;
+            color: var(--color-primary);
+            border-bottom: 2px solid var(--color-primary-light);
+            padding-bottom: 10px;
+        }
+
+        .pdf-embed {
+            width: 100%;
+            height: 800px;
+            border: 1px solid #ddd;
+            margin-top: 15px;
+        }
+
+        .pdf-link {
+            display: inline-block;
+            margin-top: 10px;
+            color: var(--color-primary);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .pdf-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Back Button -->
+    <div class="hub-button-container">
+        <a href="../../../index.html" class="hub-button">← Zurück zum Hub</a>
+    </div>
+
+    <div class="container">
+        <h1 style="text-align: center; margin-top: 20px;">Studienplan Psychologie (UZH)</h1>
+    </div>
+
+    <div class="pdf-container">
+        <div class="pdf-section">
+            <h2>1. Jahr (Propädeutikum)</h2>
+            <a href="https://www.psychologie.uzh.ch/dam/jcr:3b2c3d8b-4513-41aa-af7e-cfb8fc4aa937/Grafik_Mustercurriculum_Bachelor_Prop%C3%A4deutikum__2024-02-27.pdf"
+                target="_blank" class="pdf-link">
+                PDF in neuem Tab öffnen
+            </a>
+            <embed
+                src="https://www.psychologie.uzh.ch/dam/jcr:3b2c3d8b-4513-41aa-af7e-cfb8fc4aa937/Grafik_Mustercurriculum_Bachelor_Prop%C3%A4deutikum__2024-02-27.pdf"
+                type="application/pdf" class="pdf-embed">
+        </div>
+
+        <div class="pdf-section">
+            <h2>2. und 3. Jahr (Bachelor)</h2>
+            <a href="https://www.psychologie.uzh.ch/dam/jcr:23b9b40f-79c7-4842-b986-ced45eb8f3aa/Grafik_Mustercurriculum_Bachelor(3-6)__2024-02-27.pdf"
+                target="_blank" class="pdf-link">
+                PDF in neuem Tab öffnen
+            </a>
+            <embed
+                src="https://www.psychologie.uzh.ch/dam/jcr:23b9b40f-79c7-4842-b986-ced45eb8f3aa/Grafik_Mustercurriculum_Bachelor(3-6)__2024-02-27.pdf"
+                type="application/pdf" class="pdf-embed">
+        </div>
+    </div>
+</body>
+
+</html>

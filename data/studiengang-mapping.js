@@ -82,6 +82,12 @@
       key: "uzh-law",
       institution: "Universität Zürich",
     },
+    Psychologie: {
+      key: "uzh-psychologie",
+      institution: "Universität Zürich",
+      customUrl:
+        "study-visualization/program-specific/uzh-psychologie/index.html",
+    },
 
     // Universität Basel
     "Sport, Bewegung und Gesundheit": {
@@ -186,6 +192,9 @@
       mapping &&
       (!mapping.institution || mapping.institution === institutionName)
     ) {
+      if (mapping.customUrl) {
+        return mapping.customUrl;
+      }
       // Simplified: always use mono model
       return `study-visualization/standard/studienplan-template.html?studiengang=${encodeURIComponent(mapping.key)}`;
     }
