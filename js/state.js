@@ -1,10 +1,10 @@
 // State Management
 const State = {
   allData: [],
-  currentView: "category", // 'institution' oder 'category'
+  currentView: "institution", // 'institution' oder 'category'
   currentFilters: {
     type: "", // Standardmäßig alle Hochschultypen anzeigen
-    institution: "",
+    institution: "group_zurich",
     category: "",
   },
   showMinors: false, // Minors standardmäßig ausgeblendet
