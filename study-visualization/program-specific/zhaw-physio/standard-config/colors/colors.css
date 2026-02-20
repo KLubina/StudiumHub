@@ -1,0 +1,13 @@
+/* ==== ZHAW PHYSIOTHERAPIE - COLOR VARIABLES ==== */
+[data-studiengang="zhaw-physio"] {
+  /* Primary program color */
+  --color-primary: #0064a6; /* ZHAW Blue */
+
+  /* Category colors */
+  --color-grundlagen: #3b82f6; /* Blue */
+  --color-fach: #10b981; /* Emerald */
+  --color-kontext: #64748b; /* Slate */
+  --color-wissenschaft: #f59e0b; /* Amber */
+  --color-praxis: #ef4444; /* Red */
+  --color-kommunikation: #06b6d4; /* Cyan */
+}

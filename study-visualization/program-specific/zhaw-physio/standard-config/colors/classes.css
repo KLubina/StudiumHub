@@ -1,0 +1,30 @@
+/* ==== ZHAW PHYSIOTHERAPIE - CSS CLASSES ==== */
+[data-studiengang="zhaw-physio"] .modul.grundlagen {
+  background-color: var(--color-grundlagen);
+  color: white;
+}
+
+[data-studiengang="zhaw-physio"] .modul.fach {
+  background-color: var(--color-fach);
+  color: white;
+}
+
+[data-studiengang="zhaw-physio"] .modul.kontext {
+  background-color: var(--color-kontext);
+  color: white;
+}
+
+[data-studiengang="zhaw-physio"] .modul.wissenschaft {
+  background-color: var(--color-wissenschaft);
+  color: white;
+}
+
+[data-studiengang="zhaw-physio"] .modul.praxis {
+  background-color: var(--color-praxis);
+  color: white;
+}
+
+[data-studiengang="zhaw-physio"] .modul.kommunikation {
+  background-color: var(--color-kommunikation);
+  color: white;
+}

@@ -178,6 +178,12 @@
       key: "aspira-ce",
       institution: "Aspira College Split",
     },
+
+    // ZHAW
+    Physiotherapie: {
+      key: "zhaw-physio",
+      institution: "ZHAW",
+    },
   };
 
   // Helper function to check if a study program has a visualization
