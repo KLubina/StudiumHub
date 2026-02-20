@@ -18,14 +18,14 @@ window.StudiengangModules = [
     semester: 1,
   },
   {
-    name: "Untere Extremit�ten 1",
+    name: "Untere Extremitäten 1",
     ects: 3,
     standardcategory: "fach",
     year: 1,
     semester: 1,
   },
   {
-    name: "Untere Extremit�ten 2",
+    name: "Untere Extremitäten 2",
     ects: 6,
     standardcategory: "fach",
     year: 1,
@@ -112,7 +112,7 @@ window.StudiengangModules = [
     semester: 2,
   },
   {
-    name: "Obere Extremit�ten",
+    name: "Obere Extremitäten",
     ects: 6,
     standardcategory: "fach",
     year: 1,
@@ -129,7 +129,7 @@ window.StudiengangModules = [
 
   // #region 3. Semester
   {
-    name: "Gesundheitsf�rderung in der Physiotherapie",
+    name: "Gesundheitsförderung in der Physiotherapie",
     ects: 3,
     standardcategory: "fach",
     year: 2,
