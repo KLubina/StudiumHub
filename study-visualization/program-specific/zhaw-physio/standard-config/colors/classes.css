@@ -1,30 +1,36 @@
 /* ==== ZHAW PHYSIOTHERAPIE - CSS CLASSES ==== */
-[data-studiengang="zhaw-physio"] .modul.grundlagen {
+[data-studiengang="zhaw-physio"] .modul.grundlagen,
+[data-studiengang="zhaw-physio"] .legende-item.grundlagen {
   background-color: var(--color-grundlagen);
   color: white;
 }
 
-[data-studiengang="zhaw-physio"] .modul.fach {
+[data-studiengang="zhaw-physio"] .modul.fach,
+[data-studiengang="zhaw-physio"] .legende-item.fach {
   background-color: var(--color-fach);
   color: white;
 }
 
-[data-studiengang="zhaw-physio"] .modul.kontext {
+[data-studiengang="zhaw-physio"] .modul.kontext,
+[data-studiengang="zhaw-physio"] .legende-item.kontext {
   background-color: var(--color-kontext);
   color: white;
 }
 
-[data-studiengang="zhaw-physio"] .modul.wissenschaft {
+[data-studiengang="zhaw-physio"] .modul.wissenschaft,
+[data-studiengang="zhaw-physio"] .legende-item.wissenschaft {
   background-color: var(--color-wissenschaft);
   color: white;
 }
 
-[data-studiengang="zhaw-physio"] .modul.praxis {
+[data-studiengang="zhaw-physio"] .modul.praxis,
+[data-studiengang="zhaw-physio"] .legende-item.praxis {
   background-color: var(--color-praxis);
   color: white;
 }
 
-[data-studiengang="zhaw-physio"] .modul.kommunikation {
+[data-studiengang="zhaw-physio"] .modul.kommunikation,
+[data-studiengang="zhaw-physio"] .legende-item.kommunikation {
   background-color: var(--color-kommunikation);
   color: white;
 }
