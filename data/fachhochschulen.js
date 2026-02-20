@@ -446,6 +446,7 @@
                 studiengaenge: [
                   { name: "Architektur", grad: "BSc" },
                   { name: "Bauingenieurwesen", grad: "BSc" },
+                  { name: "Mobility Science", grad: "BSc" },
                   { name: "Umweltingenieurwesen", grad: "BSc" },
                 ],
               },
@@ -455,7 +456,6 @@
               { name: "Elektrotechnik", grad: "BSc" },
               { name: "Energie- und Umwelttechnik", grad: "BSc" },
               { name: "Maschinentechnik", grad: "BSc" },
-              { name: "Mobility Science", grad: "BSc" },
               { name: "Systemtechnik", grad: "BSc" },
             ],
           },
