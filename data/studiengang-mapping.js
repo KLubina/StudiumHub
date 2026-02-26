@@ -74,10 +74,6 @@
       key: "uzh-soziologie",
       institution: "Universität Zürich",
     },
-    Humanmedizin: {
-      key: "uzh-humanmedizin",
-      institution: "Universität Zürich",
-    },
     Rechtswissenschaft: {
       key: "uzh-law",
       institution: "Universität Zürich",
@@ -253,6 +249,15 @@
         return `study-visualization/standard/studienplan-template.html?studiengang=ost-cs`;
       } else if (institutionName === "FFHS") {
         return `study-visualization/standard/studienplan-template.html?studiengang=ffhs-informatik`;
+      }
+    }
+
+    // Special handling for Humanmedizin at different institutions
+    if (studiengangName === "Humanmedizin") {
+      if (institutionName === "ETH Zürich") {
+        return `study-visualization/standard/studienplan-template.html?studiengang=eth-humanmedizin`;
+      } else if (institutionName === "Universität Zürich") {
+        return `study-visualization/standard/studienplan-template.html?studiengang=uzh-humanmedizin`;
       }
     }
 

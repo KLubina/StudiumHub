@@ -1,0 +1,25 @@
+/* ==== ETH HUMANMEDIZIN - COLOR VARIABLES ==== */
+
+[data-studiengang="eth-humanmedizin"] {
+  /* Primary program color (ETH default or specific) */
+  --color-primary: #1f407a; /* ETH Logo Blue-ish */
+
+  /* Category colors */
+  --color-medizin-bio: #ef4444; /* red-500 */
+  --color-medizin-bio-text: white;
+
+  --color-klinik: #f97316; /* orange-500 */
+  --color-klinik-text: white;
+
+  --color-mathe-nawi: #3b82f6; /* blue-500 */
+  --color-mathe-nawi-text: white;
+
+  --color-technology: #8b5cf6; /* violet-500 */
+  --color-technology-text: white;
+
+  --color-wissenschaft: #10b981; /* emerald-500 */
+  --color-wissenschaft-text: white;
+
+  --color-kontext: #6b7280; /* gray-500 */
+  --color-kontext-text: white;
+}

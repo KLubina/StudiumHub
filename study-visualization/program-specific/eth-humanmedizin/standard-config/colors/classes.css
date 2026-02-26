@@ -1,0 +1,38 @@
+/* ==== ETH HUMANMEDIZIN - CSS CLASSES ==== */
+/* Program-specific CSS classes */
+
+[data-studiengang="eth-humanmedizin"] .modul.medizin-bio,
+[data-studiengang="eth-humanmedizin"] .legende-item.medizin-bio {
+  background-color: var(--color-medizin-bio);
+  color: var(--color-medizin-bio-text, white);
+}
+
+[data-studiengang="eth-humanmedizin"] .modul.klinik,
+[data-studiengang="eth-humanmedizin"] .legende-item.klinik {
+  background-color: var(--color-klinik);
+  color: var(--color-klinik-text, white);
+}
+
+[data-studiengang="eth-humanmedizin"] .modul.mathe-nawi,
+[data-studiengang="eth-humanmedizin"] .legende-item.mathe-nawi {
+  background-color: var(--color-mathe-nawi);
+  color: var(--color-mathe-nawi-text, white);
+}
+
+[data-studiengang="eth-humanmedizin"] .modul.technology,
+[data-studiengang="eth-humanmedizin"] .legende-item.technology {
+  background-color: var(--color-technology);
+  color: var(--color-technology-text, white);
+}
+
+[data-studiengang="eth-humanmedizin"] .modul.wissenschaft,
+[data-studiengang="eth-humanmedizin"] .legende-item.wissenschaft {
+  background-color: var(--color-wissenschaft);
+  color: var(--color-wissenschaft-text, white);
+}
+
+[data-studiengang="eth-humanmedizin"] .modul.kontext,
+[data-studiengang="eth-humanmedizin"] .legende-item.kontext {
+  background-color: var(--color-kontext);
+  color: var(--color-kontext-text, white);
+}

@@ -1,0 +1,16 @@
+/* ==== ETH HUMANMEDIZIN - LAYOUT OVERRIDES ==== */
+/* Program-specific layout customizations */
+
+/* Bereich Titel */
+[data-studiengang="eth-humanmedizin"] .bereich-titel {
+  font-size: var(--font-size-small);
+  font-weight: bold;
+  color: var(--color-text);
+  margin: var(--spacing-md) 0 var(--spacing-xs) 0;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  background-color: #f1f5f9;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-left: 3px solid var(--color-primary);
+}
