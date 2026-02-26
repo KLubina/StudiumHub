@@ -1,0 +1,16 @@
+/* ==== FHZH-SYSTEMTECHNIK - LAYOUT OVERRIDES ==== */
+/* Program-specific layout customizations */
+
+/* Bereich Titel with Systemtechnik branding */
+[data-studiengang="fhzh-systemtechnik"] .bereich-titel {
+  font-size: var(--font-size-small);
+  font-weight: bold;
+  color: var(--color-text);
+  margin: var(--spacing-md) 0 var(--spacing-xs) 0;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  background-color: #fdf2f8; /* pink-50 */
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-left: 3px solid var(--color-kontext);
+}

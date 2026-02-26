@@ -1,0 +1,28 @@
+/* ==== FHZH-SYSTEMTECHNIK - COLOR VARIABLES ==== */
+/* FH Zürich Systemtechnik Program */
+
+[data-studiengang="fhzh-systemtechnik"] {
+  /* Primary program color */
+  --color-primary: #ec4899;
+
+  /* Category colors */
+  /* Kontext: Pink based on user image */
+  --color-kontext: #f472b6; /* pink-400 */
+  --color-kontext-text: white;
+
+  /* Projekt: Yellow based on user image */
+  --color-projekt: #fbbf24; /* amber-400 */
+  --color-projekt-text: black;
+
+  /* Fach: Green based on user image */
+  --color-fach: #34d399; /* emerald-400 */
+  --color-fach-text: black;
+
+  /* Mathe-Nawi: Blue based on user image */
+  --color-mathe-nawi: #60a5fa; /* blue-400 */
+  --color-mathe-nawi-text: white;
+
+  /* Wahlpflichtmodules: Default for Wahlmodule that are not categorized yet */
+  --color-wahlpflicht: #9ca3af; /* gray-400 */
+  --color-wahlpflicht-text: white;
+}

@@ -1,0 +1,32 @@
+/* ==== FHZH-MEDIZININFORMATIK - CSS CLASSES ==== */
+/* Program-specific CSS classes */
+
+[data-studiengang="fhzh-medizininformatik"] .modul.kontext,
+[data-studiengang="fhzh-medizininformatik"] .legende-item.kontext {
+  background-color: var(--color-kontext);
+  color: var(--color-kontext-text, white);
+}
+
+[data-studiengang="fhzh-medizininformatik"] .modul.projekt,
+[data-studiengang="fhzh-medizininformatik"] .legende-item.projekt {
+  background-color: var(--color-projekt);
+  color: var(--color-projekt-text, white);
+}
+
+[data-studiengang="fhzh-medizininformatik"] .modul.fach,
+[data-studiengang="fhzh-medizininformatik"] .legende-item.fach {
+  background-color: var(--color-fach);
+  color: var(--color-fach-text, white);
+}
+
+[data-studiengang="fhzh-medizininformatik"] .modul.mathe-nawi,
+[data-studiengang="fhzh-medizininformatik"] .legende-item.mathe-nawi {
+  background-color: var(--color-mathe-nawi);
+  color: var(--color-mathe-nawi-text, white);
+}
+
+[data-studiengang="fhzh-medizininformatik"] .modul.wahlpflicht,
+[data-studiengang="fhzh-medizininformatik"] .legende-item.wahlpflicht {
+  background-color: var(--color-wahlpflicht);
+  color: var(--color-wahlpflicht-text, white);
+}

@@ -130,6 +130,14 @@
       key: "fhzh-elektrotechnik",
       institution: "ZHAW",
     },
+    Systemtechnik: {
+      key: "fhzh-systemtechnik",
+      institution: "ZHAW",
+    },
+    Medizininformatik: {
+      key: "fhzh-medizininformatik",
+      institution: "ZHAW",
+    },
 
     // FH - Hochschule Luzern
     "Elektrotechnik und Informationstechnologie": {

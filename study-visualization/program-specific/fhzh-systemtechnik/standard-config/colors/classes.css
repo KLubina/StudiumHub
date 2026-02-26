@@ -1,0 +1,32 @@
+/* ==== FHZH-SYSTEMTECHNIK - CSS CLASSES ==== */
+/* Program-specific CSS classes */
+
+[data-studiengang="fhzh-systemtechnik"] .modul.kontext,
+[data-studiengang="fhzh-systemtechnik"] .legende-item.kontext {
+  background-color: var(--color-kontext);
+  color: var(--color-kontext-text, white);
+}
+
+[data-studiengang="fhzh-systemtechnik"] .modul.projekt,
+[data-studiengang="fhzh-systemtechnik"] .legende-item.projekt {
+  background-color: var(--color-projekt);
+  color: var(--color-projekt-text, white);
+}
+
+[data-studiengang="fhzh-systemtechnik"] .modul.fach,
+[data-studiengang="fhzh-systemtechnik"] .legende-item.fach {
+  background-color: var(--color-fach);
+  color: var(--color-fach-text, white);
+}
+
+[data-studiengang="fhzh-systemtechnik"] .modul.mathe-nawi,
+[data-studiengang="fhzh-systemtechnik"] .legende-item.mathe-nawi {
+  background-color: var(--color-mathe-nawi);
+  color: var(--color-mathe-nawi-text, white);
+}
+
+[data-studiengang="fhzh-systemtechnik"] .modul.wahlpflicht,
+[data-studiengang="fhzh-systemtechnik"] .legende-item.wahlpflicht {
+  background-color: var(--color-wahlpflicht);
+  color: var(--color-wahlpflicht-text, white);
+}
