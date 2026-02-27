@@ -1,0 +1,32 @@
+/* ==== ZHAW DATA SCIENCE - CSS CLASSES ==== */
+/* Program-specific CSS classes */
+
+[data-studiengang="zhaw-data-science"] .modul.kontext,
+[data-studiengang="zhaw-data-science"] .legende-item.kontext {
+  background-color: var(--color-kontext);
+  color: white;
+}
+
+[data-studiengang="zhaw-data-science"] .modul.projekt,
+[data-studiengang="zhaw-data-science"] .legende-item.projekt {
+  background-color: var(--color-projekt);
+  color: white;
+}
+
+[data-studiengang="zhaw-data-science"] .modul.fach,
+[data-studiengang="zhaw-data-science"] .legende-item.fach {
+  background-color: var(--color-fach);
+  color: white;
+}
+
+[data-studiengang="zhaw-data-science"] .modul.mathe-nawi,
+[data-studiengang="zhaw-data-science"] .legende-item.mathe-nawi {
+  background-color: var(--color-mathe-nawi);
+  color: white;
+}
+
+[data-studiengang="zhaw-data-science"] .modul.wahlpflicht,
+[data-studiengang="zhaw-data-science"] .legende-item.wahlpflicht {
+  background-color: var(--color-wahlpflicht);
+  //color: black; /* Orange might need black text, but white is standard for now */
+}

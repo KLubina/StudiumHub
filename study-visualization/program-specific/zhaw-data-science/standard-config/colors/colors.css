@@ -1,0 +1,13 @@
+/* ==== ZHAW DATA SCIENCE - COLOR VARIABLES ==== */
+
+[data-studiengang="zhaw-data-science"] {
+  /* Primary program color */
+  --color-primary: #0064a6; /* ZHAW Blue */
+
+  /* Category colors */
+  --color-kontext: #059669;
+  --color-projekt: #7c3aed;
+  --color-fach: #0284c7;
+  --color-mathe-nawi: #dc2626;
+  --color-wahlpflicht: #ea580c;
+}

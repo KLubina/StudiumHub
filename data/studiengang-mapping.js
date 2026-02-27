@@ -118,6 +118,10 @@
     },
 
     // FH - ZHAW
+    "Data Science": {
+      key: "zhaw-data-science",
+      institution: "ZHAW",
+    },
     Informatik: {
       key: "fhzh-cs",
       institution: "ZHAW",
