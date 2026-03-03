@@ -188,6 +188,10 @@
     },
 
     // ZHAW
+    Pflege: {
+      key: "zhaw-pflege",
+      institution: "ZHAW",
+    },
     Physiotherapie: {
       key: "zhaw-physio",
       institution: "ZHAW",

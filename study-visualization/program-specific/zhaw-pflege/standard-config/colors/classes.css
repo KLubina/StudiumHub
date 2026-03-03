@@ -1,0 +1,24 @@
+/* ==== ZHAW PFLEGE - CSS CLASSES ==== */
+[data-studiengang="zhaw-pflege"] .modul.beruf,
+[data-studiengang="zhaw-pflege"] .legende-item.beruf {
+  background-color: var(--color-beruf);
+  color: black;
+}
+
+[data-studiengang="zhaw-pflege"] .modul.interprof,
+[data-studiengang="zhaw-pflege"] .legende-item.interprof {
+  background-color: var(--color-interprof);
+  color: black;
+}
+
+[data-studiengang="zhaw-pflege"] .modul.praxis,
+[data-studiengang="zhaw-pflege"] .legende-item.praxis {
+  background-color: var(--color-praxis);
+  color: black;
+}
+
+[data-studiengang="zhaw-pflege"] .modul.thesis,
+[data-studiengang="zhaw-pflege"] .legende-item.thesis {
+  background-color: var(--color-thesis);
+  color: black;
+}

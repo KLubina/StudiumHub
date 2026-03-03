@@ -1,0 +1,11 @@
+/* ==== ZHAW PFLEGE - COLOR VARIABLES ==== */
+[data-studiengang="zhaw-pflege"] {
+  /* Primary program color */
+  --color-primary: #0064a6; /* ZHAW Blue */
+
+  /* Category colors */
+  --color-beruf: #f472b6; /* Pink */
+  --color-interprof: #7dd3fc; /* Light Blue */
+  --color-praxis: #fde047; /* Yellow */
+  --color-thesis: #fb923c; /* Orange */
+}
