@@ -1,0 +1,36 @@
+/* ==== ZHAW ERGOTHERAPIE - CSS CLASSES ==== */
+[data-studiengang="zhaw-ergotherapie"] .modul.fach,
+[data-studiengang="zhaw-ergotherapie"] .legende-item.fach {
+  background-color: var(--color-fach);
+  color: white;
+}
+
+[data-studiengang="zhaw-ergotherapie"] .modul.grundlagen,
+[data-studiengang="zhaw-ergotherapie"] .legende-item.grundlagen {
+  background-color: var(--color-grundlagen);
+  color: white;
+}
+
+[data-studiengang="zhaw-ergotherapie"] .modul.wissenschaft,
+[data-studiengang="zhaw-ergotherapie"] .legende-item.wissenschaft {
+  background-color: var(--color-wissenschaft);
+  color: white;
+}
+
+[data-studiengang="zhaw-ergotherapie"] .modul.kommunikation,
+[data-studiengang="zhaw-ergotherapie"] .legende-item.kommunikation {
+  background-color: var(--color-kommunikation);
+  color: white;
+}
+
+[data-studiengang="zhaw-ergotherapie"] .modul.kontext,
+[data-studiengang="zhaw-ergotherapie"] .legende-item.kontext {
+  background-color: var(--color-kontext);
+  color: white;
+}
+
+[data-studiengang="zhaw-ergotherapie"] .modul.praxis,
+[data-studiengang="zhaw-ergotherapie"] .legende-item.praxis {
+  background-color: var(--color-praxis);
+  color: white;
+}

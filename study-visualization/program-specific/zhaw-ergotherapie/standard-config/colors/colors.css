@@ -1,0 +1,13 @@
+/* ==== ZHAW ERGOTHERAPIE - COLOR VARIABLES ==== */
+[data-studiengang="zhaw-ergotherapie"] {
+  /* Primary program color */
+  --color-primary: #0064a6; /* ZHAW Blue */
+
+  /* Category colors */
+  --color-fach: #16a34a; /* Green - Berufsspezifische Module */
+  --color-grundlagen: #3b82f6; /* Blue - Methodisches Handeln */
+  --color-wissenschaft: #f59e0b; /* Amber - Wissenschaftliches Arbeiten */
+  --color-kommunikation: #06b6d4; /* Cyan - Multi-/Interprofessionell */
+  --color-kontext: #64748b; /* Slate - Gesellschaft & Kontext */
+  --color-praxis: #ef4444; /* Red - Praktika */
+}

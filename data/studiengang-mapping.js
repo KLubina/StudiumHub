@@ -188,6 +188,14 @@
     },
 
     // ZHAW
+    Ergotherapie: {
+      key: "zhaw-ergotherapie",
+      institution: "ZHAW",
+    },
+    "Gesundheitsförderung und Prävention": {
+      key: "zhaw-gesundheitsfoerderung",
+      institution: "ZHAW",
+    },
     Pflege: {
       key: "zhaw-pflege",
       institution: "ZHAW",
