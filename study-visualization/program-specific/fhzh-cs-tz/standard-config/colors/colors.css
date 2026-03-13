@@ -1,0 +1,14 @@
+/* ==== FHZH-CS-TZ - COLOR VARIABLES ==== */
+/* FH Zürich Computer Science (Teilzeit) Program */
+
+[data-studiengang="fhzh-cs-tz"] {
+  /* Primary program color */
+  --color-primary: #1d4ed8;
+
+  /* Category colors */
+  --color-kontext: #059669;
+  --color-projekt: #7c3aed;
+  --color-fach: #0284c7;
+  --color-mathe-nawi: #dc2626;
+  --color-wahlpflicht: #ea580c;
+}

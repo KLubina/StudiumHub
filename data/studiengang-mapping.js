@@ -126,6 +126,10 @@
       key: "fhzh-cs",
       institution: "ZHAW",
     },
+    "Informatik (Teilzeit)": {
+      key: "fhzh-cs-tz",
+      institution: "ZHAW",
+    },
     Elektrotechnik: {
       key: "fhzh-elektrotechnik",
       institution: "ZHAW",
