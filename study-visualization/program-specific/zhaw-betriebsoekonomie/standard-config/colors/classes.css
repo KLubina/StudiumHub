@@ -1,0 +1,31 @@
+/* ==== ZHAW BETRIEBSOEKONOMIE - CSS CLASSES ==== */
+/* Program-specific CSS classes */
+
+[data-studiengang="zhaw-betriebsoekonomie"] .modul.kontext,
+[data-studiengang="zhaw-betriebsoekonomie"] .legende-item.kontext {
+  background-color: var(--color-kontext);
+  color: white;
+}
+
+[data-studiengang="zhaw-betriebsoekonomie"] .modul.projekt,
+[data-studiengang="zhaw-betriebsoekonomie"] .legende-item.projekt {
+  background-color: var(--color-projekt);
+  color: white;
+}
+
+[data-studiengang="zhaw-betriebsoekonomie"] .modul.fach,
+[data-studiengang="zhaw-betriebsoekonomie"] .legende-item.fach {
+  background-color: var(--color-fach);
+  color: white;
+}
+
+[data-studiengang="zhaw-betriebsoekonomie"] .modul.mathe-nawi,
+[data-studiengang="zhaw-betriebsoekonomie"] .legende-item.mathe-nawi {
+  background-color: var(--color-mathe-nawi);
+  color: white;
+}
+
+[data-studiengang="zhaw-betriebsoekonomie"] .modul.wahlpflicht,
+[data-studiengang="zhaw-betriebsoekonomie"] .legende-item.wahlpflicht {
+  background-color: var(--color-wahlpflicht);
+}

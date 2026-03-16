@@ -1,0 +1,31 @@
+/* ==== ZHAW WIN BIS TZ - CSS CLASSES ==== */
+/* Program-specific CSS classes */
+
+[data-studiengang="zhaw-win-bis-tz"] .modul.kontext,
+[data-studiengang="zhaw-win-bis-tz"] .legende-item.kontext {
+  background-color: var(--color-kontext);
+  color: white;
+}
+
+[data-studiengang="zhaw-win-bis-tz"] .modul.projekt,
+[data-studiengang="zhaw-win-bis-tz"] .legende-item.projekt {
+  background-color: var(--color-projekt);
+  color: white;
+}
+
+[data-studiengang="zhaw-win-bis-tz"] .modul.fach,
+[data-studiengang="zhaw-win-bis-tz"] .legende-item.fach {
+  background-color: var(--color-fach);
+  color: white;
+}
+
+[data-studiengang="zhaw-win-bis-tz"] .modul.mathe-nawi,
+[data-studiengang="zhaw-win-bis-tz"] .legende-item.mathe-nawi {
+  background-color: var(--color-mathe-nawi);
+  color: white;
+}
+
+[data-studiengang="zhaw-win-bis-tz"] .modul.wahlpflicht,
+[data-studiengang="zhaw-win-bis-tz"] .legende-item.wahlpflicht {
+  background-color: var(--color-wahlpflicht);
+}

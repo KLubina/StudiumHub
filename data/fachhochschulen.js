@@ -404,6 +404,14 @@
               { name: "Betriebsökonomie", grad: "BSc" },
               { name: "International Management", grad: "BSc" },
               { name: "Wirtschaftsinformatik", grad: "BSc" },
+              {
+                name: "Wirtschaftsinformatik - Business Information Systems - Teilzeit",
+                grad: "BSc",
+              },
+              {
+                name: "Wirtschaftsinformatik - Data Science - Teilzeit",
+                grad: "BSc",
+              },
               { name: "Wirtschaftsingenieurwesen", grad: "BSc" },
               { name: "Wirtschaftsrecht", grad: "BSc" },
               { name: "Facility Management", grad: "BSc" },

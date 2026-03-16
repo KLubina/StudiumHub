@@ -122,6 +122,22 @@
       key: "zhaw-data-science",
       institution: "ZHAW",
     },
+    "Wirtschaftsinformatik - Business Information Systems - Teilzeit": {
+      key: "zhaw-win-bis-tz",
+      institution: "ZHAW",
+    },
+    "Wirtschaftsinformatik - Data Science - Teilzeit": {
+      key: "zhaw-win-ds-tz",
+      institution: "ZHAW",
+    },
+    Betriebsökonomie: {
+      key: "zhaw-betriebsoekonomie",
+      institution: "ZHAW",
+    },
+    Betriebsoekonomie: {
+      key: "zhaw-betriebsoekonomie",
+      institution: "ZHAW",
+    },
     Informatik: {
       key: "fhzh-cs",
       institution: "ZHAW",
