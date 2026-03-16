@@ -403,7 +403,6 @@
               { name: "Angewandtes Recht", grad: "BA" },
               { name: "Betriebsökonomie", grad: "BSc" },
               { name: "International Management", grad: "BSc" },
-              { name: "Wirtschaftsinformatik", grad: "BSc" },
               {
                 name: "Wirtschaftsinformatik - Business Information Systems - Teilzeit",
                 grad: "BSc",
@@ -446,6 +445,7 @@
                 studiengaenge: [
                   { name: "Data Science", grad: "BSc" },
                   { name: "Informatik", grad: "BSc" },
+                  { name: "Informatik (Teilzeit)", grad: "BSc" },
                   { name: "Medizininformatik", grad: "BSc" },
                 ],
               },
