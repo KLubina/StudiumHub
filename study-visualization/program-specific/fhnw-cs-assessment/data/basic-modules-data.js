@@ -1,6 +1,7 @@
 /* ==== FHNW BSc INFORMATIK (NUR ASSESSMENT) MODULE DATA ==== */
 
 window.StudiengangModules = [
+  // Fachgrundlagen & Fachergänzungen
   {
     name: "Lineare Algebra",
     ects: 3,
@@ -12,14 +13,6 @@ window.StudiengangModules = [
   {
     name: "Mathematische Grundlagen der Informatik",
     ects: 3,
-    standardcategory: "Fachgrundlagen & Fachergänzungen",
-    year: 1,
-    semester: 1,
-    isAssessment: true,
-  },
-  {
-    name: "Programmieren 2",
-    ects: 6,
     standardcategory: "Fachgrundlagen & Fachergänzungen",
     year: 1,
     semester: 1,
@@ -42,11 +35,37 @@ window.StudiengangModules = [
     isAssessment: true,
   },
   {
+    name: "Data & AI Fundation",
+    ects: 6,
+    standardcategory: "Fachgrundlagen & Fachergänzungen",
+    year: 1,
+    semester: 2,
+    isAssessment: true,
+  },
+  {
     name: "Informationssysteme",
     ects: 6,
     standardcategory: "Fachgrundlagen & Fachergänzungen",
     year: 1,
     semester: 2,
+    isAssessment: true,
+  },
+  {
+    name: "Programmieren 2",
+    ects: 6,
+    standardcategory: "Fachgrundlagen & Fachergänzungen",
+    year: 1,
+    semester: 2,
+    isAssessment: true,
+  },
+
+  // Vertiefungen
+  {
+    name: "User Centered Design and Requirements Engineering",
+    ects: 6,
+    standardcategory: "Vertiefungen",
+    year: 1,
+    semester: 1,
     isAssessment: true,
   },
   {
@@ -57,22 +76,8 @@ window.StudiengangModules = [
     semester: 2,
     isAssessment: true,
   },
-  {
-    name: "User Centered Design and Requirements Engineering",
-    ects: 6,
-    standardcategory: "Vertiefungen",
-    year: 1,
-    semester: 2,
-    isAssessment: true,
-  },
-  {
-    name: "Data & AI Fundation",
-    ects: 6,
-    standardcategory: "Fachgrundlagen & Fachergänzungen",
-    year: 1,
-    semester: 2,
-    isAssessment: true,
-  },
+
+  // Projekte
   {
     name: "Individuelles Softwareprojekte",
     ects: 6,

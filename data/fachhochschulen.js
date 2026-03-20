@@ -61,6 +61,10 @@
                 studiengaenge: [
                   { name: "Data Engineering", grad: "Bachelor of Science" },
                   { name: "Informatik", grad: "Bachelor of Science" },
+                  {
+                    name: "Informatik - Teilzeit",
+                    grad: "Bachelor of Science",
+                  },
                   { name: "Medizininformatik", grad: "Bachelor of Science" },
                   {
                     name: "Multimedia Production",
@@ -358,6 +362,7 @@
                   { name: "Artificial Intelligence", grad: "Bachelor" },
                   { name: "Digital Design", grad: "BSc" },
                   { name: "Informatik", grad: "BSc" },
+                  { name: "Informatik - Assessment", grad: "BSc" },
                 ],
               },
               {
@@ -577,6 +582,10 @@
                   { name: "Digital Ideation", grad: "Bachelor" },
                   { name: "Immersive Technologies", grad: "Bachelor" },
                   { name: "Informatik", grad: "Bachelor" },
+                  {
+                    name: "Informatik - Teilzeit - Assessment",
+                    grad: "Bachelor",
+                  },
                   { name: "Information & Cyber Security", grad: "Bachelor" },
                 ],
               },

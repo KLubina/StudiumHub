@@ -8,17 +8,17 @@ Teilzeitstudium Data Science
 Teilzeitstudium Artificial Intelligence
 
 # 1. Sem
-Rhetorische Kommunikation
-Objektorientierte Programmierung 1
-Automat. m. Python
-Computernetze 1
-Diskrete Mathematik für Informatik
-Analysis 1 für Informatik
+Rhetorische Kommunikation - 4KP
+Objektorientierte Programmierung 1 - 4 KP
+Automat. m. Python - 2 KP
+Computernetze 1 - 6 KP
+Diskrete Mathematik für Informatik - 4 KP
+Analysis 1 für Informatik - 4 KP
 
 # 2. Sem
-Funktionale Programmierung
-Objektorientierte Programmierung 2
-Digitale Codierungen
-Cyber Security Foundations
-Automaten und Sprachen
-Analysis 2 für Informatik
+Funktionale Programmierung - 4 KP
+Objektorientierte Programmierung 2 - 4 KP
+Digitale Codierungen - 4 KP
+Cyber Security Foundations - 4 KP
+Automaten und Sprachen - 4 KP
+Analysis 2 für Informatik - 4 KP

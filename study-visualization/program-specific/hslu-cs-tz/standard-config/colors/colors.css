@@ -1,0 +1,10 @@
+/* ==== HSLU-CS-TZ - COLOR VARIABLES ==== */
+/* Hochschule Luzern - BSc Informatik Teilzeit Assessment */
+
+[data-studiengang="hslu-cs-tz"] {
+  --color-primary: #1d4ed8;
+
+  --color-kern: #0284c7;
+  --color-projekt: #7c3aed;
+  --color-erweiterung: #059669;
+}

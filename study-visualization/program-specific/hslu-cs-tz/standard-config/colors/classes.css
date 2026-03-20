@@ -1,0 +1,20 @@
+/* ==== HSLU-CS-TZ - CSS CLASSES ==== */
+/* Program-specific CSS classes */
+
+[data-studiengang="hslu-cs-tz"] .modul.kern,
+[data-studiengang="hslu-cs-tz"] .legende-item.kern {
+  background-color: var(--color-kern);
+  color: var(--color-kern-text, white);
+}
+
+[data-studiengang="hslu-cs-tz"] .modul.projekt,
+[data-studiengang="hslu-cs-tz"] .legende-item.projekt {
+  background-color: var(--color-projekt);
+  color: var(--color-projekt-text, white);
+}
+
+[data-studiengang="hslu-cs-tz"] .modul.erweiterung,
+[data-studiengang="hslu-cs-tz"] .legende-item.erweiterung {
+  background-color: var(--color-erweiterung);
+  color: var(--color-erweiterung-text, white);
+}

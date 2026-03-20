@@ -106,6 +106,10 @@
       key: "fhbern-eit",
       institution: "Berner Fachhochschule",
     },
+    "Informatik - Teilzeit": {
+      key: "fhbern-cs-tz",
+      institution: "Berner Fachhochschule",
+    },
     Informatik: {
       key: "fhbern-cs",
       institution: "Berner Fachhochschule",
@@ -172,11 +176,18 @@
       key: "hslu-cs",
       institution: "Hochschule Luzern",
     },
+    "Informatik - Teilzeit - Assessment": {
+      key: "hslu-cs-tz",
+    },
 
     // FH - OST Ostschweizer Fachhochschule
     "Electrical and Computer Engineering": {
       key: "ost-eit",
       institution: "OST Ostschweizer Fachhochschule",
+    },
+    "Informatik - Assessment": {
+      key: "ost-cs-assessment",
+      institution: "Ostschweizer Fachhochschule",
     },
     Informatik: {
       key: "ost-cs",
