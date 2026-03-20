@@ -1,0 +1,168 @@
+Moduldetails FHNW
+
+# Programmierung
+
+Objektorientierte Programmierung 1 / Programmieren 1
+Kurzbeschreibung
+In diesem Modul erlernen die Studierenden eine typische objektorientierte Programmiersprache (Java), sowie deren Möglichkeiten und Potential.
+Themen sind:
+
+Repetition in prozeduralem Programmieren (primitive Datentypen, Kontrollstrukturen, Funktionen und Parameterübergabe, Referenztypen, mehrdimensionale Arrays)
+Klassen und Objekte (Konstruktoren, Initialisiererblöcke, Methoden, Attribute, Überladen von Methoden, Listen, Kapselung, Kopieren und Vergleichen), Wrapper-Klassen, Strings und Packages.
+Einführung in objektorientierten Entwurf mit UML
+Vererbung, Polymorphismus, finale Elemente und Sichtbarkeitsregeln
+Interfaces und abstrakte Klassen
+Statische innere Klassen und Elementklassen
+Ausnahmebehandlung
+
+Objektorientierte Programmierung 2 / Programmieren 2
+Kurzbeschreibung
+Während es im Modul Objektorientierte Programmierung 1 (oopI1) vorwiegend darum geht, grundlegende Sprachelemente kennenzulernen und einzusetzen, verlagert sich der Fokus in diesem Modul in Richtung Entwicklung von Applikationen mit Benutzerschnittstelle und persistenter Datenspeicherung. Demzufolge liegt der Schwerpunkt nicht mehr in der Sprache selbst, sondern es werden einige wesentliche Pakete und Klassen der Standard-Bibliothek, grundlegende Architektur-Konzepte für Applikationen und etablierte Vorgehensweisen wie frühzeitiger Einsatz von Unit-Tests thematisiert.
+
+Verwendung grundlegender Datenstrukturen (List, Map, Set) und Iterato-ren
+Generics und ihre Besonderheiten in Java
+Collection-Streams und Lambda-Ausdrücke
+GUI-Framework (Event-Handling, Layout)
+Nebenläufigkeit mit Threads
+Strukturierung von Applikationen
+Daten-Persistenz (File-Handling, Serialisierung)
+
+# Theoretische Grundlagen und Mathematik
+
+Mathematische Grundlagen der Informatik
+Kurzbeschreibung
+Ziel des Moduls ist es einerseits die Studierenden mit den für die Informatik typischen und grundlegenden mathematischen Denk- und Argumentationsweisen vertraut zu machen und andererseits konkretes Wissen zu vermitteln, welches Grundlage für praktische Anwendungen und für weitere Module im Verlauf des Studiums ist.
+
+Inhalt
+(Die Reihenfolge der Themen und die Gewichtung sind dem Dozenten überlassen)
+
+Mengen und Operationen auf Mengen
+
+Relationen, Funktionen und Graphen
+Relationen
+Äquivalenz- und Ordnungsrelationen
+Funktionen und ihre Eigenschaften
+Eigenschaften von Graphen
+Modellierung mit Graphen
+
+Logik
+Aussagenlogik
+Existenz- und Allquantoren
+
+Sprachen, Grammatiken und Automaten
+Produktionsgrammatiken
+Chomsky-Hierarchie
+Endliche Automaten
+Endliche Automaten und reguläre Sprachen
+
+Lineare Algebra und Geometrie
+Kurzbeschreibung
+Die Lineare Algebra ist die Grundlage für die Bearbeitung von drei- und mehrdimensionalen Problemen aus diversen Gebieten wie Raumgeometrie, 3D Graphik, Astronomie, Mechanik, Elektrodynamik, PageRanking (Internet) usw. Die Technik der Linearen Algebra verwendet Vektoren, Matrizen, Glei-chungssysteme und lineare Abbildungen.
+
+Themen
+
+(Die Reihenfolge der Themen und die Gewichtung sind dem Dozenten über-lassen)
+
+A. Der n-dimensionale Vektorraum Rn
+
+B. Lineare Gleichungssysteme
+
+Matrix-Darstellung, Gauss-Algorithmus
+Stufenform und Rang, Lösungsmenge
+
+C. Matrix-Algebra
+
+Grundoperationen, Matrizenprodukt
+inverse Matrix
+
+D. Vektor-Geometrie
+
+Freie Vektoren
+Skalar- und Vektorprodukt
+Geraden und Ebenen
+Schnitt- und Abstandsprobleme
+Spatprodukt und Spatvolumen
+
+E. Lineare und affine Abildungen
+
+Abbildungsmatrizen
+Drehungen und Translationen
+Normal- und Zentralprojektion (Perspektive)
+Spiegelung an einer Ebene
+
+F. Ergänzungen
+
+Determinanten
+Einführung der komplexen Zahlen
+Ausblick auf allgemeine Vektorräume und Unterräume
+
+# Systeme
+
+System-Administration / System Engineering
+Kurzbeschreibung
+Informatiker müssen in der Lage sein, ihre eigene Infrastruktur zu beherrschen und in die Arbeitsumgebung zu integrieren In diesem Modul wird vermittelt, wie eine entsprechende Installation und Konfiguration im Detail vorgenommen wird und welche Wartungs- und Überwachungsaufgaben danach regelmässig wahrzunehmen sind.
+Die Studierenden erwerben Anwendungs- und Administrationskompetenzen
+in den Bereichen:
+
+Betriebssystem-Installation am Beispiel Linux
+Benutzeroberfläche, Shell-Bedienung
+Lokale Netzwerkkonfiguration, VPN und Drucken
+Benutzerrechte, Passworte, Zugriffsrechte
+Dateisystem
+Systemstart und -stopp, Run Levels, Boot Management
+System-Monitoring
+Kernel-Konfiguration und -Organisation
+Scripting
+Backup / Restore
+
+Betriebssysteme / Informationssysteme
+
+Kurzbeschreibung
+Jedes IT-Gerät hat ein Betriebssystem, das es Prozessen und Anwendern erlaubt, das Gerät zu nutzen und das die in der Regel knappen Ressourcen wie Rechenleistung, Hauptspeicher, Kommunikationskanäle usw. des Sys-tems optimal zu verwalten und zuzuteilen. Hierbei müssen je nach Einsatz-zweck des Systems Design-Entscheide getroffen und Konfigurationen ange-passt werden.
+Die Studierenden erwerben Anwendungs- und Analyse-Kompetenzen in den folgenden Bereichen:
+
+Internet Aufbau und Blockstruktur eines modernen Betriebssystems
+Abgrenzung zu anderen Hardware- und Software-Komponenten
+Aufbau und Funktionsweise des Dateisystems
+Aufbau und Funktionsweise des Prozess-Steuersystems
+Ressourcen und deren Zuteilung (Scheduling)
+Input/Output-System, Schnittstelle zu Peripheriegeräten
+Lokales System- und Ressourcen-Managements und Betriebsprozes-se
+Nebenläufigkeit, gegenseitiger Ausschluss, Deadlocks im Betriebssys-tem
+Verteilte versus.monolithisch strukturierte Betriebssysteme
+Sicherheitsaspekte im Betriebssystem
+Vergleich verschiedener BetriebssystemArchitekturen
+
+# Software Engineering
+
+Requirements Engineering / Software Engineering Fundamentals
+
+Kurzbeschreibung
+In Softwareprojekten ist das Einigen über die Bedürfnisse von Nutzern und anderen Stakeholdern und über das Zufriedenstellen dieser Bedürfnisse durch das Softwaresystem ein zentraler Erfolgsfaktor. Das Modul führt die Studierenden in die Ermittlung, Analyse, Validierung und Verwaltung von Anforderungen ein, um diese Einigung zu erreichen. Weiter werden die Stu-dierenden in die üblichen Anforderungsspezifikationstechniken eingewiesen.
+
+Praktiken der Anforderungstechnik (Requirements Engineering, RE):
+Begriffe und Prozess des RE
+Entwicklung der Vision eines Softwaresystems
+Business- und Kontextanalyse
+Prototyp- und Szenario-basierte Workshops
+Reviews von Anforderungsspezifikationen
+Priorisierung und Aufwandschätzungen
+Verwalten von Anforderungen und Nachverfolgbarkeit
+
+Sprachen zur Anforderungsspezifikation:
+Soll-, User Story- und Use Case-Spezifikationsschablonen
+UML Use Case-, Klassen-, Aktivitäts- und Zustandsmodelle
+BPMN Diagramme
+Quantifizierung und Operationalisierung von Qualitätsanforderungen
+
+Usability and User Interface Design / User Centered Design and Requirements Engineering
+
+Kurzbeschreibung
+Das Modul Interface Design und Usability befasst sich mit der nutzerzentrierten Entwicklung von User Interfaces für digitale Produkte und interaktive Systeme. Parallel zu den Theorieinputs werden im Rahmen der Übungen, in Einzel- und Gruppenarbeiten, Design-Prototypen gestaltet und präsentiert.
+Das Modul umfasst folgende Bereiche:
+
+Human Centered Design Nutzerzentrierte Entwicklungspresse (ISO 9241-210)
+Usability und User Experience Digitale Produkte für Menschen
+Interaction Design Verhalten wie ein hilfsbereiter Mensch
+Visual Design Zusammenspiel der gestalterischen Elemente
+Prototyping Ideen testbar machen

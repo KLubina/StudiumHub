@@ -1,0 +1,24 @@
+Assessment FH OST
+
+Profile:
+Teilzeitstudium Software Engineering
+Teilzeitstudium Cyber Security
+Teilzeitstudium Network and Cloud Infrastructure
+Teilzeitstudium Data Science
+Teilzeitstudium Artificial Intelligence
+
+# 1. Sem
+Rhetorische Kommunikation
+Objektorientierte Programmierung 1
+Automat. m. Python
+Computernetze 1
+Diskrete Mathematik für Informatik
+Analysis 1 für Informatik
+
+# 2. Sem
+Funktionale Programmierung
+Objektorientierte Programmierung 2
+Digitale Codierungen
+Cyber Security Foundations
+Automaten und Sprachen
+Analysis 2 für Informatik
