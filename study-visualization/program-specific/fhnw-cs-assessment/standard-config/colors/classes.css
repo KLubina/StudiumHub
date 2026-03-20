@@ -1,0 +1,26 @@
+/* ==== FHNW-CS-ASSESSMENT - CSS CLASSES ==== */
+/* Program-specific CSS classes */
+
+[data-studiengang="fhnw-cs-assessment"] .modul.fachgrundlagen,
+[data-studiengang="fhnw-cs-assessment"] .legende-item.fachgrundlagen {
+  background-color: var(--color-fachgrundlagen);
+  color: var(--color-fachgrundlagen-text, white);
+}
+
+[data-studiengang="fhnw-cs-assessment"] .modul.vertiefung,
+[data-studiengang="fhnw-cs-assessment"] .legende-item.vertiefung {
+  background-color: var(--color-vertiefung);
+  color: var(--color-vertiefung-text, white);
+}
+
+[data-studiengang="fhnw-cs-assessment"] .modul.projekt,
+[data-studiengang="fhnw-cs-assessment"] .legende-item.projekt {
+  background-color: var(--color-projekt);
+  color: var(--color-projekt-text, white);
+}
+
+[data-studiengang="fhnw-cs-assessment"] .modul.kontext,
+[data-studiengang="fhnw-cs-assessment"] .legende-item.kontext {
+  background-color: var(--color-kontext);
+  color: var(--color-kontext-text, white);
+}
