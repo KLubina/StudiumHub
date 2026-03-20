@@ -112,6 +112,10 @@
     },
 
     // FH - Fachhochschule Graubünden
+    "Artificial Intelligence in Software Engineering": {
+      key: "fhgr-aise",
+      institution: "FH Graubünden",
+    },
     "Computational and Data Science": {
       key: "fhgr-cds",
       institution: "FH Graubünden",

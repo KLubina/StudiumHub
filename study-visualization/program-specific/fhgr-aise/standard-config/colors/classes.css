@@ -1,0 +1,38 @@
+/* ==== FHGR-AISE - CSS CLASSES ==== */
+/* Program-specific CSS classes */
+
+[data-studiengang="fhgr-aise"] .modul.grundlagen,
+[data-studiengang="fhgr-aise"] .legende-item.grundlagen {
+  background-color: var(--color-grundlagen);
+  color: var(--color-grundlagen-text, white);
+}
+
+[data-studiengang="fhgr-aise"] .modul.ai,
+[data-studiengang="fhgr-aise"] .legende-item.ai {
+  background-color: var(--color-ai);
+  color: var(--color-ai-text, white);
+}
+
+[data-studiengang="fhgr-aise"] .modul.projektarbeit,
+[data-studiengang="fhgr-aise"] .legende-item.projektarbeit {
+  background-color: var(--color-projektarbeit);
+  color: var(--color-projektarbeit-text, white);
+}
+
+[data-studiengang="fhgr-aise"] .modul.wahlpflicht,
+[data-studiengang="fhgr-aise"] .legende-item.wahlpflicht {
+  background-color: var(--color-wahlpflicht);
+  color: var(--color-wahlpflicht-text, white);
+}
+
+[data-studiengang="fhgr-aise"] .modul.wahlmodul,
+[data-studiengang="fhgr-aise"] .legende-item.wahlmodul {
+  background-color: var(--color-wahlmodul);
+  color: var(--color-wahlmodul-text, white);
+}
+
+[data-studiengang="fhgr-aise"] .modul.thesis,
+[data-studiengang="fhgr-aise"] .legende-item.thesis {
+  background-color: var(--color-thesis);
+  color: var(--color-thesis-text, white);
+}

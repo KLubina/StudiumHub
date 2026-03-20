@@ -1,0 +1,15 @@
+/* ==== FHGR-AISE - COLOR VARIABLES ==== */
+/* FH Graubünden Artificial Intelligence in Software Engineering Program */
+
+[data-studiengang="fhgr-aise"] {
+  /* Primary program color */
+  --color-primary: #0f766e;
+
+  /* Category colors */
+  --color-grundlagen: #0f766e;
+  --color-ai: #2563eb;
+  --color-projektarbeit: #ea580c;
+  --color-wahlpflicht: #7c3aed;
+  --color-wahlmodul: #16a34a;
+  --color-thesis: #111827;
+}
