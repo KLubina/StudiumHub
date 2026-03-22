@@ -1,0 +1,11 @@
+/* ==== FERNUNI-HAGEN-CS - COLOR VARIABLES ==== */
+/* FernUniversitaet in Hagen - BSc Informatik */
+
+[data-studiengang="fernuni-hagen-cs"] {
+  --color-primary: #0a4b78;
+
+  --color-mathe: #c92a2a;
+  --color-informatik: #0b7285;
+  --color-wahlpflicht: #1c7ed6;
+  --color-sonstiges: #495057;
+}

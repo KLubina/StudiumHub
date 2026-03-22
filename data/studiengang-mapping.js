@@ -300,6 +300,11 @@
         return `study-visualization/standard/studienplan-template.html?studiengang=ost-cs`;
       } else if (institutionName === "FFHS") {
         return `study-visualization/standard/studienplan-template.html?studiengang=ffhs-informatik`;
+      } else if (
+        institutionName === "FernUniversität in Hagen" ||
+        institutionName === "FernUni Hagen"
+      ) {
+        return `study-visualization/standard/studienplan-template.html?studiengang=fernuni-hagen-cs`;
       }
     }
 

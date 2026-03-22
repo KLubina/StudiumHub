@@ -1,0 +1,26 @@
+/* ==== FERNUNI-HAGEN-CS - CSS CLASSES ==== */
+/* Program-specific CSS classes */
+
+[data-studiengang="fernuni-hagen-cs"] .modul.mathe,
+[data-studiengang="fernuni-hagen-cs"] .legende-item.mathe {
+  background-color: var(--color-mathe);
+  color: var(--color-mathe-text, white);
+}
+
+[data-studiengang="fernuni-hagen-cs"] .modul.informatik,
+[data-studiengang="fernuni-hagen-cs"] .legende-item.informatik {
+  background-color: var(--color-informatik);
+  color: var(--color-informatik-text, white);
+}
+
+[data-studiengang="fernuni-hagen-cs"] .modul.wahlpflicht,
+[data-studiengang="fernuni-hagen-cs"] .legende-item.wahlpflicht {
+  background-color: var(--color-wahlpflicht);
+  color: var(--color-wahlpflicht-text, white);
+}
+
+[data-studiengang="fernuni-hagen-cs"] .modul.sonstiges,
+[data-studiengang="fernuni-hagen-cs"] .legende-item.sonstiges {
+  background-color: var(--color-sonstiges);
+  color: var(--color-sonstiges-text, white);
+}
