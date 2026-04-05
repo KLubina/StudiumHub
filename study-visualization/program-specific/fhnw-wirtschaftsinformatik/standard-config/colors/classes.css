@@ -1,0 +1,25 @@
+/* ==== FHNW Wirtschaftsinformatik - CSS CLASSES ==== */
+
+[data-studiengang="fhnw-wirtschaftsinformatik"] .modul.foundations,
+[data-studiengang="fhnw-wirtschaftsinformatik"] .legende-item.foundations {
+  background-color: var(--color-foundations);
+  color: var(--color-foundations-text, white);
+}
+
+[data-studiengang="fhnw-wirtschaftsinformatik"] .modul.programming,
+[data-studiengang="fhnw-wirtschaftsinformatik"] .legende-item.programming {
+  background-color: var(--color-programming);
+  color: var(--color-programming-text, white);
+}
+
+[data-studiengang="fhnw-wirtschaftsinformatik"] .modul.professional,
+[data-studiengang="fhnw-wirtschaftsinformatik"] .legende-item.professional {
+  background-color: var(--color-professional);
+  color: var(--color-professional-text, white);
+}
+
+[data-studiengang="fhnw-wirtschaftsinformatik"] .modul.project,
+[data-studiengang="fhnw-wirtschaftsinformatik"] .legende-item.project {
+  background-color: var(--color-project);
+  color: var(--color-project-text, white);
+}

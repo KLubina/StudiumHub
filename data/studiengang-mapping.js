@@ -203,6 +203,10 @@
       key: "fhnw-cs",
       institution: "Fachhochschule Nordwestschweiz",
     },
+    Wirtschaftsinformatik: {
+      key: "fhnw-wirtschaftsinformatik",
+      institution: "Fachhochschule Nordwestschweiz",
+    },
 
     // FH - FFHS (Fernfachhochschule Schweiz)
     Informatik: {

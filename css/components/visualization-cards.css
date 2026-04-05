@@ -1,57 +1,71 @@
 /* Visualizations Section */
 #visualizationsSection {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 #visualizationsSection h1 {
-    color: #003366;
-    margin-bottom: 30px;
-    font-size: 1.8rem;
+  color: #003366;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
 }
 
 .category-header {
-    color: #003366;
-    font-size: 1.4rem;
-    font-weight: 600;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid #003366;
+  color: #003366;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #003366;
 }
 
 .visualizations-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
 }
 
 .visualization-card {
-    background-color: #f9f9f9;
-    border-left: 4px solid #003366;
-    border-radius: 3px;
-    padding: 20px;
-    text-decoration: none;
-    color: inherit;
-    transition: all 0.3s ease;
-    display: block;
+  background-color: #f9f9f9;
+  border-left: 4px solid #003366;
+  border-radius: 3px;
+  padding: 20px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+  display: block;
 }
 
 .visualization-card:hover {
-    background-color: #e8f4f8;
-    transform: translateY(-3px);
-    box-shadow: 0 4px 12px rgba(0, 51, 102, 0.15);
+  background-color: #e8f4f8;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 51, 102, 0.15);
 }
 
 .visualization-card-title {
-    font-size: 1.05rem;
-    font-weight: bold;
-    color: #003366;
-    margin-bottom: 8px;
-    line-height: 1.4;
+  font-size: 1.05rem;
+  font-weight: bold;
+  color: #003366;
+  margin-bottom: 8px;
+  line-height: 1.4;
 }
 
 .visualization-card-institution {
-    font-size: 0.9rem;
-    color: #666;
-    font-weight: 500;
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: 500;
+}
+
+/* FHNW accent for hub card */
+.visualization-card.fhnw {
+  --accent: #005ea5;
+  border-left-color: var(--accent);
+}
+.visualization-card.fhnw .visualization-card-title {
+  color: var(--accent);
+}
+.visualization-card.fhnw:hover {
+  background-color: #eaf6ff;
+  box-shadow: 0 6px 18px rgba(0, 94, 165, 0.12);
+  transform: translateY(-3px);
 }

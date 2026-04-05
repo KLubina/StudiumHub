@@ -1,0 +1,18 @@
+/* ==== FHNW Wirtschaftsinformatik - COLOR VARIABLES ==== */
+
+[data-studiengang="fhnw-wirtschaftsinformatik"] {
+  /* Category-specific colors (FHNW palette) */
+  --color-foundations: #005ea5; /* deep blue */
+  --color-programming: #7bb8ff; /* light blue */
+  --color-professional: #009a9a; /* teal */
+  --color-project: #f2a900; /* gold */
+
+  /* Text overrides if needed */
+  --color-foundations-text: white;
+  --color-programming-text: white;
+  --color-professional-text: white;
+  --color-project-text: white;
+
+  /* Accent for hub cards */
+  --program-accent: #005ea5;
+}
