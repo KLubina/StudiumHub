@@ -1,0 +1,11 @@
+/* ==== FHNW BETRIEBSOEKONOMIE - COLOR VARIABLES ==== */
+
+[data-studiengang="fhnw-betriebsoekonomie"] {
+  --color-primary: #004b87; /* FHNW-like blue */
+
+  --color-kontext: #0ea5a4;
+  --color-projekt: #7c3aed;
+  --color-fach: #0284c7;
+  --color-mathe-nawi: #ffb020;
+  --color-wahlpflicht: #ef4444;
+}

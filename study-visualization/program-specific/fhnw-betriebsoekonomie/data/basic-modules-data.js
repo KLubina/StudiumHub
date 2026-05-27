@@ -1,0 +1,81 @@
+/* ==== FHNW BETRIEBSOEKONOMIE MODULE DATA ==== */
+
+window.StudiengangModules = [
+  {
+    name: "Principles of Management",
+    ects: 6,
+    standardcategory: "kontext",
+    year: 1,
+    semester: 1,
+  },
+  {
+    name: "Kritisches Denken & wissenschaftliches Schreiben",
+    ects: 6,
+    standardcategory: "kontext",
+    year: 1,
+    semester: 1,
+  },
+  {
+    name: "Financial Accounting & Reporting",
+    ects: 6,
+    standardcategory: "fach",
+    year: 1,
+    semester: 2,
+  },
+  {
+    name: "Angewandte Mathematik",
+    ects: 3,
+    standardcategory: "mathe-nawi",
+    year: 1,
+    semester: 2,
+  },
+  {
+    name: "Organization Behaviour",
+    ects: 3,
+    standardcategory: "kontext",
+    year: 1,
+    semester: 2,
+  },
+  {
+    name: "Wirtschaftskommunikation",
+    ects: 3,
+    standardcategory: "kontext",
+    year: 1,
+    semester: 2,
+  },
+  {
+    name: "International Business",
+    ects: 3,
+    standardcategory: "kontext",
+    year: 1,
+    semester: 2,
+  },
+  {
+    name: "Organisation & Chance",
+    ects: 3,
+    standardcategory: "kontext",
+    year: 1,
+    semester: 2,
+  },
+  {
+    name: "Wirtschaftsethik & Nachhaltgikeit",
+    ects: 3,
+    standardcategory: "kontext",
+    year: 1,
+    semester: 2,
+  },
+  {
+    name: "Statisitik 1",
+    ects: 3,
+    standardcategory: "mathe-nawi",
+    year: 1,
+    semester: 2,
+  },
+  {
+    name: "Angewandte Mathematik 2",
+    ects: 3,
+    standardcategory: "mathe-nawi",
+    year: 1,
+    semester: 2,
+  },
+];

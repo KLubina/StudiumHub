@@ -1,0 +1,31 @@
+/* ==== FHNW BETRIEBSOEKONOMIE - CSS CLASSES ==== */
+
+[data-studiengang="fhnw-betriebsoekonomie"] .modul.kontext,
+[data-studiengang="fhnw-betriebsoekonomie"] .legende-item.kontext {
+  background-color: var(--color-kontext);
+  color: white;
+}
+
+[data-studiengang="fhnw-betriebsoekonomie"] .modul.projekt,
+[data-studiengang="fhnw-betriebsoekonomie"] .legende-item.projekt {
+  background-color: var(--color-projekt);
+  color: white;
+}
+
+[data-studiengang="fhnw-betriebsoekonomie"] .modul.fach,
+[data-studiengang="fhnw-betriebsoekonomie"] .legende-item.fach {
+  background-color: var(--color-fach);
+  color: white;
+}
+
+[data-studiengang="fhnw-betriebsoekonomie"] .modul.mathe-nawi,
+[data-studiengang="fhnw-betriebsoekonomie"] .legende-item.mathe-nawi {
+  background-color: var(--color-mathe-nawi);
+  color: black;
+}
+
+[data-studiengang="fhnw-betriebsoekonomie"] .modul.wahlpflicht,
+[data-studiengang="fhnw-betriebsoekonomie"] .legende-item.wahlpflicht {
+  background-color: var(--color-wahlpflicht);
+  color: white;
+}
