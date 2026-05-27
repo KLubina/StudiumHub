@@ -1,0 +1,11 @@
+/* ==== ZHAW WIN ASSESSMENT - COLOR VARIABLES ==== */
+
+[data-studiengang="zhaw-win-assessment"] {
+  --color-primary: #0064a6;
+
+  --color-kontext: #059669;
+  --color-projekt: #7c3aed;
+  --color-fach: #0284c7;
+  --color-mathe-nawi: #dc2626;
+  --color-wahlpflicht: #ea580c;
+}
