@@ -10,19 +10,19 @@ window.StudiengangGeneralConfig = {
   <br>
   <strong>Spezialisierungen (ab 4. Semester):</strong>
   <br>
-  <a href="https://www.zhaw.ch/de/sml/studium/bachelor/betriebsoekonomie-banking-and-finance" target="_blank" rel="noopener">Banking and Finance</a>
+  <a href="https://filestore.sml.zhaw.ch/modultafeln/bachelor/25_modultafel_gm_tz.html" target="_blank" rel="noopener">General Management - Teilzeit</a>
   <br>
-  <a href="https://www.zhaw.ch/de/sml/studium/bachelor/betriebsoekonomie-behavioral-design" target="_blank" rel="noopener">Behavioral Design</a>
+  <a href="https://filestore.sml.zhaw.ch/modultafeln/bachelor/25_modultafel_fm_tz.html" target="_blank" rel="noopener">Financial Management - Teilzeit</a>
   <br>
-  <a href="https://www.zhaw.ch/de/sml/studium/bachelor/betriebsoekonomie-financial-management" target="_blank" rel="noopener">Financial Management</a>
+  <a href="https://filestore.sml.zhaw.ch/modultafeln/bachelor/25_modultafel_bf_tz.html" target="_blank" rel="noopener">Banking and Finance - Teilzeit</a>
   <br>
-  <a href="https://www.zhaw.ch/de/sml/studium/bachelor/betriebsoekonomie-general-management" target="_blank" rel="noopener">General Management</a>
+  <a href="https://filestore.sml.zhaw.ch/modultafeln/bachelor/25_modultafel_ima_tz.html" target="_blank" rel="noopener">Insurance Management - Teilzeit</a>
   <br>
-  <a href="https://www.zhaw.ch/de/sml/studium/bachelor/betriebsoekonomie-human-centered-organization" target="_blank" rel="noopener">Human Centered Organization</a>
+  <a href="https://filestore.sml.zhaw.ch/modultafeln/bachelor/25_modultafel_hco_tz.html" target="_blank" rel="noopener">Human Centered Organization - Teilzeit</a>
   <br>
-  <a href="https://www.zhaw.ch/de/sml/studium/bachelor/betriebsoekonomie-insurance-management" target="_blank" rel="noopener">Insurance Management</a>
+  <a href="https://filestore.sml.zhaw.ch/modultafeln/bachelor/25_modultafel_ma_tz.html" target="_blank" rel="noopener">Marketing - Teilzeit</a>
   <br>
-  <a href="https://www.zhaw.ch/de/sml/studium/bachelor/betriebsoekonomie-marketing" target="_blank" rel="noopener">Marketing</a>
+  <a href="https://filestore.sml.zhaw.ch/modultafeln/bachelor/25_modultafel_pm_tz.html" target="_blank" rel="noopener">Politics and Management - Teilzeit</a>
   <br>
-  <a href="https://www.zhaw.ch/de/sml/studium/bachelor/betriebsoekonomie-politics-and-management" target="_blank" rel="noopener">Politics and Management</a>`,
+  <a href="https://filestore.sml.zhaw.ch/modultafeln/bachelor/25_modultafel_bd_vz.html" target="_blank" rel="noopener">Behavioral Design - Vollzeit</a>`,
 };
