@@ -27,7 +27,7 @@ const Filters = {
     // Option für Zürich hinzufügen
     const zurichOption = document.createElement("option");
     zurichOption.value = "group_zurich";
-    zurichOption.textContent = "📍 Zürich (ETH, UZH, ZHAW)";
+    zurichOption.textContent = "📍 Zürich (ETH, UZH, ZHAW, FHNW)";
     institutionFilter.appendChild(zurichOption);
 
     // Sammle alle Hochschulen (sortiert nach Typ und Name)
@@ -87,7 +87,12 @@ const Filters = {
     // Filter nach Hochschule
     if (currentFilters.institution) {
       if (currentFilters.institution === "group_zurich") {
-        const zurichInsts = ["ETH Zürich", "Universität Zürich", "ZHAW"];
+        const zurichInsts = [
+          "ETH Zürich",
+          "Universität Zürich",
+          "ZHAW",
+          "Fachhochschule Nordwestschweiz",
+        ];
         filtered = filtered.filter((inst) => zurichInsts.includes(inst.name));
       } else {
         filtered = filtered.filter(
