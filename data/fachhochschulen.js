@@ -218,7 +218,20 @@
           },
           {
             name: "2. Naturwissenschaften",
-            studiengaenge: [{ name: "Life Sciences", grad: "Bachelor" }],
+            studiengaenge: [
+              {
+                name: "Bioanalytik und Zellbiologie",
+                grad: "Bachelor of Science",
+              },
+              { name: "Biotechnologie", grad: "Bachelor of Science" },
+              { name: "Chemical Engineering", grad: "Bachelor of Science" },
+              { name: "Chemie", grad: "Bachelor of Science" },
+              { name: "Pharmatechnologie", grad: "Bachelor of Science" },
+              {
+                name: "Umweltwissenschaften und Technologie",
+                grad: "Bachelor of Science",
+              },
+            ],
           },
           {
             name: "1. Ingenieurwissenschaften",
@@ -240,6 +253,7 @@
                   },
                   { name: "iCompetence", grad: "Bachelor of Science" },
                   { name: "Informatik", grad: "Bachelor of Science" },
+                  { name: "Medizininformatik", grad: "Bachelor of Science" },
                   {
                     name: "Security, Platforms & DevOps",
                     grad: "Bachelor of Science",
@@ -272,9 +286,18 @@
                 name: "Energie- und Umwelttechnik",
                 grad: "Bachelor of Science",
               },
+              {
+                name: "Kreislaufwirtschaft und Ressourcenmanagement",
+                grad: "Bachelor of Science",
+              },
               { name: "Maschinenbau", grad: "Bachelor of Science" },
               { name: "Materials Engineering", grad: "Bachelor of Science" },
               { name: "Mechatronik Trinational", grad: "Bachelor of Science" },
+              { name: "Medizintechnik", grad: "Bachelor of Science" },
+              {
+                name: "Nachhaltige Gebäude und Städte",
+                grad: "Bachelor of Science",
+              },
               { name: "Optometrie", grad: "Bachelor of Science" },
               { name: "Systemtechnik", grad: "Bachelor of Science" },
             ],
