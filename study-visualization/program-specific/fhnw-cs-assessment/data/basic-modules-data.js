@@ -7,7 +7,7 @@ window.StudiengangModules = [
     ects: 3,
     standardcategory: "Fachgrundlagen & Fachergänzungen",
     year: 1,
-    semester: 1,
+    semester: 2,
     isAssessment: true,
   },
   {
@@ -31,7 +31,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "Fachgrundlagen & Fachergänzungen",
     year: 1,
-    semester: 1,
+    semester: 2,
     isAssessment: true,
   },
   {
@@ -47,7 +47,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "Fachgrundlagen & Fachergänzungen",
     year: 1,
-    semester: 2,
+    semester: 1,
     isAssessment: true,
   },
   {
@@ -73,7 +73,7 @@ window.StudiengangModules = [
     ects: 6,
     standardcategory: "Vertiefungen",
     year: 1,
-    semester: 2,
+    semester: 1,
     isAssessment: true,
   },
 
