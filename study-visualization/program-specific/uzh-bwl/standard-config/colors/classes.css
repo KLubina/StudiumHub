@@ -1,0 +1,7 @@
+/* ==== UZH BWL - CSS CLASSES ==== */
+
+[data-studiengang="uzh-bwl"] .modul.pflicht,
+[data-studiengang="uzh-bwl"] .legende-item.pflicht {
+  background-color: var(--color-pflicht);
+  color: white;
+}

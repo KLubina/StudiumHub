@@ -314,6 +314,13 @@
       }
     }
 
+    // Special handling for Betriebswirtschaftslehre at different institutions
+    if (studiengangName === "Betriebswirtschaftslehre") {
+      if (institutionName === "Universität Zürich") {
+        return `study-visualization/standard/studienplan-template.html?studiengang=uzh-bwl`;
+      }
+    }
+
     // Special handling for Humanmedizin at different institutions
     if (studiengangName === "Humanmedizin") {
       if (institutionName === "ETH Zürich") {
