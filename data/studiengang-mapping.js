@@ -135,7 +135,7 @@
       institution: "ZHAW",
     },
     "Wirtschaftsinformatik - Data Science - Teilzeit": {
-      key: "zhaw-win-ds-tz",
+      key: "zhaw-win-bis-tz",
       institution: "ZHAW",
     },
     Betriebsökonomie: {
