@@ -207,6 +207,14 @@
       key: "fhnw-wirtschaftsinformatik",
       institution: "Fachhochschule Nordwestschweiz",
     },
+    Betriebsökonomie: {
+      key: "fhnw-betriebsoekonomie",
+      institution: "Fachhochschule Nordwestschweiz",
+    },
+    Betriebsoekonomie: {
+      key: "fhnw-betriebsoekonomie",
+      institution: "Fachhochschule Nordwestschweiz",
+    },
 
     // FH - FFHS (Fernfachhochschule Schweiz)
     Informatik: {
