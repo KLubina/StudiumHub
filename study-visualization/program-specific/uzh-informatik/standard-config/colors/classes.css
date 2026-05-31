@@ -1,0 +1,7 @@
+/* ==== UZH INFORMATIK - CSS CLASSES ==== */
+
+[data-studiengang="uzh-informatik"] .modul.pflicht,
+[data-studiengang="uzh-informatik"] .legende-item.pflicht {
+  background-color: var(--color-pflicht);
+  color: white;
+}

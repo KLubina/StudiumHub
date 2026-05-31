@@ -288,6 +288,8 @@
         return `study-visualization/standard/studienplan-template.html?studiengang=fhzh-cs`;
       } else if (institutionName === "ETH Zürich") {
         return `study-visualization/standard/studienplan-template.html?studiengang=eth-cs`;
+      } else if (institutionName === "Universität Zürich") {
+        return `study-visualization/standard/studienplan-template.html?studiengang=uzh-informatik`;
       } else if (institutionName === "Berner Fachhochschule") {
         return `study-visualization/standard/studienplan-template.html?studiengang=fhbern-cs`;
       } else if (institutionName === "Fachhochschule Nordwestschweiz") {

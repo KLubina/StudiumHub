@@ -1,0 +1,81 @@
+/* ==== UZH INFORMATIK MODULE DATA ==== */
+
+window.StudiengangModules = [
+  {
+    name: "Betriebswirtschaftslehre I",
+    year: 1,
+    semester: 1,
+    standardcategory: "Pflichtmodule",
+    ects: 3,
+  },
+  {
+    name: "Informatics I",
+    year: 1,
+    semester: 1,
+    standardcategory: "Pflichtmodule",
+    ects: 6,
+  },
+  {
+    name: "Informatik und Wirtschaft",
+    year: 1,
+    semester: 1,
+    standardcategory: "Pflichtmodule",
+    ects: 3,
+  },
+  {
+    name: "Mathematik I",
+    year: 1,
+    semester: 1,
+    standardcategory: "Pflichtmodule",
+    ects: 6,
+  },
+  {
+    name: "Mikroökonomik für Informatikstudierende",
+    year: 1,
+    semester: 1,
+    standardcategory: "Pflichtmodule",
+    ects: 6,
+  },
+  {
+    name: "People-Oriented Computing",
+    year: 1,
+    semester: 1,
+    standardcategory: "Pflichtmodule",
+    ects: 6,
+  },
+  {
+    name: "Betriebswirtschaftslehre II",
+    year: 1,
+    semester: 2,
+    standardcategory: "Pflichtmodule",
+    ects: 6,
+  },
+  {
+    name: "Foundations of Computing I",
+    year: 1,
+    semester: 2,
+    standardcategory: "Pflichtmodule",
+    ects: 6,
+  },
+  {
+    name: "Informatics II",
+    year: 1,
+    semester: 2,
+    standardcategory: "Pflichtmodule",
+    ects: 6,
+  },
+  {
+    name: "Mathematik II",
+    year: 1,
+    semester: 2,
+    standardcategory: "Pflichtmodule",
+    ects: 6,
+  },
+  {
+    name: "Statistik",
+    year: 1,
+    semester: 2,
+    standardcategory: "Pflichtmodule",
+    ects: 6,
+  },
+];
