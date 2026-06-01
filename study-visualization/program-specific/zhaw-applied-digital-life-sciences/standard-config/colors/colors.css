@@ -1,0 +1,9 @@
+/* ==== ZHAW ADLS - COLOR VARIABLES ==== */
+[data-studiengang="zhaw-applied-digital-life-sciences"] {
+  --color-primary: #0064a6;
+  --color-mathe: #818cf8;
+  --color-data: #38bdf8;
+  --color-natur: #34d399;
+  --color-kontext: #f59e0b;
+  --color-projekt: #fb7185;
+}

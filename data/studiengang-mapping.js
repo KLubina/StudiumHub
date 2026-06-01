@@ -134,6 +134,14 @@
       key: "zhaw-food-science",
       institution: "ZHAW",
     },
+    "Applied Digital Life Sciences": {
+      key: "zhaw-applied-digital-life-sciences",
+      institution: "ZHAW",
+    },
+    "Applied Digital Life Science": {
+      key: "zhaw-applied-digital-life-sciences",
+      institution: "ZHAW",
+    },
     "Wirtschaftsinformatik - Business Information Systems - Teilzeit": {
       key: "zhaw-win-bis-tz",
       institution: "ZHAW",

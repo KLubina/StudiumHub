@@ -1,0 +1,30 @@
+/* ==== ZHAW ADLS - CSS CLASSES ==== */
+[data-studiengang="zhaw-applied-digital-life-sciences"] .modul.mathe,
+[data-studiengang="zhaw-applied-digital-life-sciences"] .legende-item.mathe {
+  background-color: var(--color-mathe);
+  color: black;
+}
+
+[data-studiengang="zhaw-applied-digital-life-sciences"] .modul.data,
+[data-studiengang="zhaw-applied-digital-life-sciences"] .legende-item.data {
+  background-color: var(--color-data);
+  color: black;
+}
+
+[data-studiengang="zhaw-applied-digital-life-sciences"] .modul.natur,
+[data-studiengang="zhaw-applied-digital-life-sciences"] .legende-item.natur {
+  background-color: var(--color-natur);
+  color: black;
+}
+
+[data-studiengang="zhaw-applied-digital-life-sciences"] .modul.kontext,
+[data-studiengang="zhaw-applied-digital-life-sciences"] .legende-item.kontext {
+  background-color: var(--color-kontext);
+  color: black;
+}
+
+[data-studiengang="zhaw-applied-digital-life-sciences"] .modul.projekt,
+[data-studiengang="zhaw-applied-digital-life-sciences"] .legende-item.projekt {
+  background-color: var(--color-projekt);
+  color: black;
+}
