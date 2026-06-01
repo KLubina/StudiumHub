@@ -86,6 +86,13 @@
             window.baseModulesReady.then(() => {
                 if (typeof window.loadStudiengangConfig === "function") {
                     window.loadStudiengangConfig(studiengang);
+
+                    setTimeout(() => {
+                        const loadedTitle = window.StudiengangGeneralConfig?.title || document.getElementById('specificprogram-title')?.textContent;
+                        if (loadedTitle && loadedTitle !== "Specificprogram") {
+                            document.title = loadedTitle;
+                        }
+                    }, 50);
                 }
             });
         });
