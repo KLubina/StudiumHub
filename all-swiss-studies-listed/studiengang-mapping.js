@@ -1,451 +1,273 @@
-/**
- * Combined Study Program Mapping & Loader for Swiss Studies
- * Includes:
- * 1. StudiengangMapping (studiengang-mapping.js)
- * 2. Study Program Loader (studiengaenge-loader.js)
- */
+// Only maps study program names to their visualization keys
+const StudiengangMapping = {
+  // ETH Zürich
+  "Elektrotechnik und Informationstechnologie": {
+    key: "eth-itet",
+    institution: "ETH Zürich",
+  },
+  "Gesundheitswissenschaften und Technologie": {
+    key: "eth-hst",
+    institution: "ETH Zürich",
+  },
+  "Lebensmittelwissenschaften und Ernährung": {
+    key: "eth-lmw",
+    institution: "ETH Zürich",
+  },
+  Mathematik: { key: "eth-math", institution: "ETH Zürich" },
+  "Rechnergestützte Wissenschaften": {
+    key: "eth-cse",
+    institution: "ETH Zürich",
+  },
+  Informatik: { key: "eth-cs", institution: "ETH Zürich" },
+  "Raumbezogene Ingenieurwissenschaften": {
+    key: "eth-rig",
+    institution: "ETH Zürich",
+  },
+  Maschineningenieurwissenschaften: {
+    key: "eth-masch",
+    institution: "ETH Zürich",
+  },
+  Materialwissenschaft: { key: "eth-matw", institution: "ETH Zürich" },
+  Physik: { key: "eth-physik", institution: "ETH Zürich" },
+  Chemieingenieurwissenschaften: { key: "eth-chab", institution: "ETH Zürich" },
 
-// ==========================================
-// PART 1: Studiengang-Mapping
-// ==========================================
-// Maps study program names from alle-studiengaenge to their visualization keys
-// Only includes programs that have visualizations implemented
-(function (global) {
-  const StudiengangMapping = {
-    // ETH Zürich
-    "Elektrotechnik und Informationstechnologie": {
-      key: "eth-itet",
-      institution: "ETH Zürich",
-    },
-    "Gesundheitswissenschaften und Technologie": {
-      key: "eth-hst",
-      institution: "ETH Zürich",
-    },
-    "Lebensmittelwissenschaften und Ernährung": {
-      key: "eth-lmw",
-      institution: "ETH Zürich",
-    },
-    Mathematik: {
-      key: "eth-math",
-      institution: "ETH Zürich",
-    },
-    "Rechnergestützte Wissenschaften": {
-      key: "eth-cse",
-      institution: "ETH Zürich",
-    },
-    Informatik: {
-      key: "eth-cs",
-      institution: "ETH Zürich",
-    },
-    "Raumbezogene Ingenieurwissenschaften": {
-      key: "eth-rig",
-      institution: "ETH Zürich",
-    },
-    Maschineningenieurwissenschaften: {
-      key: "eth-masch",
-      institution: "ETH Zürich",
-    },
-    Materialwissenschaft: {
-      key: "eth-matw",
-      institution: "ETH Zürich",
-    },
-    Physik: {
-      key: "eth-physik",
-      institution: "ETH Zürich",
-    },
-    Chemieingenieurwissenschaften: {
-      key: "eth-chab",
-      institution: "ETH Zürich",
-    },
+  // Universität Zürich
+  Geschichte: { key: "uzh-geschichte", institution: "Universität Zürich" },
+  Politikwissenschaft: {
+    key: "uzh-polisci",
+    institution: "Universität Zürich",
+  },
+  Ethnologie: { key: "uzh-ethnologie", institution: "Universität Zürich" },
+  Kommunikationswissenschaft: {
+    key: "uzh-kommunikation",
+    institution: "Universität Zürich",
+  },
+  "Populäre Kulturen": {
+    key: "uzh-pop-kultur",
+    institution: "Universität Zürich",
+  },
+  Soziologie: { key: "uzh-soziologie", institution: "Universität Zürich" },
+  Rechtswissenschaft: { key: "uzh-law", institution: "Universität Zürich" },
+  Psychologie: {
+    key: "uzh-psychologie",
+    institution: "Universität Zürich",
+    customUrl:
+      "study-visualization/program-specific/uzh-psychologie/index.html",
+  },
 
-    // Universität Zürich
-    Geschichte: {
-      key: "uzh-geschichte",
-      institution: "Universität Zürich",
-    },
-    Politikwissenschaft: {
-      key: "uzh-polisci",
-      institution: "Universität Zürich",
-    },
-    Ethnologie: {
-      key: "uzh-ethnologie",
-      institution: "Universität Zürich",
-    },
-    Kommunikationswissenschaft: {
-      key: "uzh-kommunikation",
-      institution: "Universität Zürich",
-    },
-    "Populäre Kulturen": {
-      key: "uzh-pop-kultur",
-      institution: "Universität Zürich",
-    },
-    Soziologie: {
-      key: "uzh-soziologie",
-      institution: "Universität Zürich",
-    },
-    Rechtswissenschaft: {
-      key: "uzh-law",
-      institution: "Universität Zürich",
-    },
-    Psychologie: {
-      key: "uzh-psychologie",
-      institution: "Universität Zürich",
-      customUrl:
-        "study-visualization/program-specific/uzh-psychologie/index.html",
-    },
+  // Universität Basel
+  "Sport, Bewegung und Gesundheit": {
+    key: "unibas-sbg",
+    institution: "Universität Basel",
+  },
+  "Sport, Bewegung & Gesundheit": {
+    key: "unibas-sbg",
+    institution: "Universität Basel",
+  },
 
-    // Universität Basel
-    "Sport, Bewegung und Gesundheit": {
-      key: "unibas-sbg",
-      institution: "Universität Basel",
-    },
-    "Sport, Bewegung & Gesundheit": {
-      key: "unibas-sbg",
-      institution: "Universität Basel",
-    },
+  // Universität St.Gallen
+  Betriebswirtschaftslehre: {
+    key: "unisg-bwl",
+    institution: "Universität St.Gallen",
+  },
 
-    // Universität St.Gallen
-    Betriebswirtschaftslehre: {
-      key: "unisg-bwl",
-      institution: "Universität St.Gallen",
-    },
+  // FH - Berner Fachhochschule
+  "Elektrotechnik und Informationstechnologie": {
+    key: "fhbern-eit",
+    institution: "Berner Fachhochschule",
+  },
+  "Informatik - Teilzeit": {
+    key: "fhbern-cs-tz",
+    institution: "Berner Fachhochschule",
+  },
+  Informatik: { key: "fhbern-cs", institution: "Berner Fachhochschule" },
 
-    // FH - Berner Fachhochschule
-    "Elektrotechnik und Informationstechnologie": {
-      key: "fhbern-eit",
-      institution: "Berner Fachhochschule",
-    },
-    "Informatik - Teilzeit": {
-      key: "fhbern-cs-tz",
-      institution: "Berner Fachhochschule",
-    },
-    Informatik: {
-      key: "fhbern-cs",
-      institution: "Berner Fachhochschule",
-    },
+  // FH - Fachhochschule Graubünden
+  "Artificial Intelligence in Software Engineering": {
+    key: "fhgr-aise",
+    institution: "FH Graubünden",
+  },
+  "Computational and Data Science": {
+    key: "fhgr-cds",
+    institution: "FH Graubünden",
+  },
 
-    // FH - Fachhochschule Graubünden
-    "Artificial Intelligence in Software Engineering": {
-      key: "fhgr-aise",
-      institution: "FH Graubünden",
-    },
-    "Computational and Data Science": {
-      key: "fhgr-cds",
-      institution: "FH Graubünden",
-    },
+  // FH - ZHAW
+  "Data Science": { key: "zhaw-data-science", institution: "ZHAW" },
+  "Food Science": { key: "zhaw-food-science", institution: "ZHAW" },
+  "Applied Digital Life Sciences": {
+    key: "zhaw-applied-digital-life-sciences",
+    institution: "ZHAW",
+  },
+  "Applied Digital Life Science": {
+    key: "zhaw-applied-digital-life-sciences",
+    institution: "ZHAW",
+  },
+  "Wirtschaftsinformatik - Business Information Systems - Teilzeit": {
+    key: "zhaw-win-bis-tz",
+    institution: "ZHAW",
+  },
+  "Wirtschaftsinformatik - Data Science - Teilzeit": {
+    key: "zhaw-win-bis-tz",
+    institution: "ZHAW",
+  },
+  Betriebsökonomie: { key: "zhaw-betriebsoekonomie", institution: "ZHAW" },
+  Betriebsoekonomie: { key: "zhaw-betriebsoekonomie", institution: "ZHAW" },
+  Informatik: { key: "fhzh-cs", institution: "ZHAW" },
+  "Informatik (Teilzeit)": { key: "fhzh-cs-tz", institution: "ZHAW" },
+  Elektrotechnik: { key: "fhzh-elektrotechnik", institution: "ZHAW" },
+  Systemtechnik: { key: "fhzh-systemtechnik", institution: "ZHAW" },
+  Medizininformatik: { key: "fhzh-medizininformatik", institution: "ZHAW" },
 
-    // FH - ZHAW
-    "Data Science": {
-      key: "zhaw-data-science",
-      institution: "ZHAW",
-    },
-    "Food Science": {
-      key: "zhaw-food-science",
-      institution: "ZHAW",
-    },
-    "Applied Digital Life Sciences": {
-      key: "zhaw-applied-digital-life-sciences",
-      institution: "ZHAW",
-    },
-    "Applied Digital Life Science": {
-      key: "zhaw-applied-digital-life-sciences",
-      institution: "ZHAW",
-    },
-    "Wirtschaftsinformatik - Business Information Systems - Teilzeit": {
-      key: "zhaw-win-bis-tz",
-      institution: "ZHAW",
-    },
-    "Wirtschaftsinformatik - Data Science - Teilzeit": {
-      key: "zhaw-win-bis-tz",
-      institution: "ZHAW",
-    },
-    Betriebsökonomie: {
-      key: "zhaw-betriebsoekonomie",
-      institution: "ZHAW",
-    },
-    Betriebsoekonomie: {
-      key: "zhaw-betriebsoekonomie",
-      institution: "ZHAW",
-    },
-    Informatik: {
-      key: "fhzh-cs",
-      institution: "ZHAW",
-    },
-    "Informatik (Teilzeit)": {
-      key: "fhzh-cs-tz",
-      institution: "ZHAW",
-    },
-    Elektrotechnik: {
-      key: "fhzh-elektrotechnik",
-      institution: "ZHAW",
-    },
-    Systemtechnik: {
-      key: "fhzh-systemtechnik",
-      institution: "ZHAW",
-    },
-    Medizininformatik: {
-      key: "fhzh-medizininformatik",
-      institution: "ZHAW",
-    },
+  // FH - Hochschule Luzern
+  "Elektrotechnik und Informationstechnologie": {
+    key: "fhlu-eit",
+    institution: "Hochschule Luzern",
+  },
+  Informatik: { key: "hslu-cs", institution: "Hochschule Luzern" },
+  "Informatik - Teilzeit - Assessment": { key: "hslu-cs-tz" },
 
-    // FH - Hochschule Luzern
-    "Elektrotechnik und Informationstechnologie": {
-      key: "fhlu-eit",
-      institution: "Hochschule Luzern",
-    },
-    Informatik: {
-      key: "hslu-cs",
-      institution: "Hochschule Luzern",
-    },
-    "Informatik - Teilzeit - Assessment": {
-      key: "hslu-cs-tz",
-    },
+  // FH - OST Ostschweizer Fachhochschule
+  "Electrical and Computer Engineering": {
+    key: "ost-eit",
+    institution: "OST Ostschweizer Fachhochschule",
+  },
+  "Informatik - Assessment": {
+    key: "ost-cs-assessment",
+    institution: "Ostschweizer Fachhochschule",
+  },
+  Informatik: { key: "ost-cs", institution: "Ostschweizer Fachhochschule" },
 
-    // FH - OST Ostschweizer Fachhochschule
-    "Electrical and Computer Engineering": {
-      key: "ost-eit",
-      institution: "OST Ostschweizer Fachhochschule",
-    },
-    "Informatik - Assessment": {
-      key: "ost-cs-assessment",
-      institution: "Ostschweizer Fachhochschule",
-    },
-    Informatik: {
-      key: "ost-cs",
-      institution: "Ostschweizer Fachhochschule",
-    },
+  // FH - Fachhochschule Nordwestschweiz
+  "Elektro- und Informationstechnik": {
+    key: "fhnw-eit",
+    institution: "Fachhochschule Nordwestschweiz",
+  },
+  Informatik: { key: "fhnw-cs", institution: "Fachhochschule Nordwestschweiz" },
+  Wirtschaftsinformatik: {
+    key: "fhnw-wirtschaftsinformatik",
+    institution: "Fachhochschule Nordwestschweiz",
+  },
+  Betriebsökonomie: {
+    key: "fhnw-betriebsoekonomie",
+    institution: "Fachhochschule Nordwestschweiz",
+  },
+  Betriebsoekonomie: {
+    key: "fhnw-betriebsoekonomie",
+    institution: "Fachhochschule Nordwestschweiz",
+  },
 
-    // FH - Fachhochschule Nordwestschweiz
-    "Elektro- und Informationstechnik": {
-      key: "fhnw-eit",
-      institution: "Fachhochschule Nordwestschweiz",
-    },
-    Informatik: {
-      key: "fhnw-cs",
-      institution: "Fachhochschule Nordwestschweiz",
-    },
-    Wirtschaftsinformatik: {
-      key: "fhnw-wirtschaftsinformatik",
-      institution: "Fachhochschule Nordwestschweiz",
-    },
-    Betriebsökonomie: {
-      key: "fhnw-betriebsoekonomie",
-      institution: "Fachhochschule Nordwestschweiz",
-    },
-    Betriebsoekonomie: {
-      key: "fhnw-betriebsoekonomie",
-      institution: "Fachhochschule Nordwestschweiz",
-    },
+  // FH - FFHS (Fernfachhochschule Schweiz)
+  Informatik: { key: "ffhs-informatik", institution: "FFHS" },
 
-    // FH - FFHS (Fernfachhochschule Schweiz)
-    Informatik: {
-      key: "ffhs-informatik",
-      institution: "FFHS",
-    },
+  // Private - Hochschulinstitut Schaffhausen
+  IT: { key: "hssh-it", institution: "Hochschulinstitut Schaffhausen" },
 
-    // Private - Hochschulinstitut Schaffhausen
-    IT: {
-      key: "hssh-it",
-      institution: "Hochschulinstitut Schaffhausen",
-    },
+  // Private - Aspira College
+  "Computer Engineering": {
+    key: "aspira-ce",
+    institution: "Aspira College Split",
+  },
 
-    // Private - Aspira College
-    "Computer Engineering": {
-      key: "aspira-ce",
-      institution: "Aspira College Split",
-    },
+  // ZHAW
+  Ergotherapie: { key: "zhaw-ergotherapie", institution: "ZHAW" },
+  "Gesundheitsförderung und Prävention": {
+    key: "zhaw-gesundheitsfoerderung",
+    institution: "ZHAW",
+  },
+  Pflege: { key: "zhaw-pflege", institution: "ZHAW" },
+  Physiotherapie: { key: "zhaw-physio", institution: "ZHAW" },
 
-    // ZHAW
-    Ergotherapie: {
-      key: "zhaw-ergotherapie",
-      institution: "ZHAW",
-    },
-    "Gesundheitsförderung und Prävention": {
-      key: "zhaw-gesundheitsfoerderung",
-      institution: "ZHAW",
-    },
-    Pflege: {
-      key: "zhaw-pflege",
-      institution: "ZHAW",
-    },
-    Physiotherapie: {
-      key: "zhaw-physio",
-      institution: "ZHAW",
-    },
-  };
-
-  // Helper function to check if a study program has a visualization
-  StudiengangMapping.getVisualizationUrl = function (
-    studiengangName,
-    institutionName,
-  ) {
-    // Try exact match with study program name
+  getVisualizationUrl(studiengangName, institutionName) {
     let mapping = this[studiengangName];
 
     if (
       mapping &&
       (!mapping.institution || mapping.institution === institutionName)
     ) {
-      if (mapping.customUrl) {
-        return mapping.customUrl;
-      }
-      // Simplified: always use mono model
+      if (mapping.customUrl) return mapping.customUrl;
       return `study-visualization/standard/specificprogram-template.html?studiengang=${encodeURIComponent(mapping.key)}`;
     }
 
-    // Special handling for EIT at different institutions
+    // Special handling for EIT
     if (
       studiengangName === "Elektrotechnik und Informationstechnologie" ||
       studiengangName === "Elektro- und Informationstechnik"
     ) {
-      if (institutionName === "Berner Fachhochschule") {
+      if (institutionName === "Berner Fachhochschule")
         return `study-visualization/standard/specificprogram-template.html?studiengang=fhbern-eit`;
-      } else if (institutionName === "Hochschule Luzern") {
+      if (institutionName === "Hochschule Luzern")
         return `study-visualization/standard/specificprogram-template.html?studiengang=fhlu-eit`;
-      } else if (institutionName === "OST Ostschweizer Fachhochschule") {
+      if (institutionName === "OST Ostschweizer Fachhochschule")
         return `study-visualization/standard/specificprogram-template.html?studiengang=fhost-eit`;
-      } else if (institutionName === "Fachhochschule Nordwestschweiz") {
+      if (institutionName === "Fachhochschule Nordwestschweiz")
         return `study-visualization/standard/specificprogram-template.html?studiengang=fhnw-eit`;
-      } else if (institutionName === "ETH Zürich") {
+      if (institutionName === "ETH Zürich")
         return `study-visualization/standard/specificprogram-template.html?studiengang=eth-itet`;
-      }
     }
 
-    // Special handling for Informatik at different institutions
+    // Special handling for Informatik
     if (studiengangName === "Informatik") {
-      if (institutionName === "ZHAW") {
+      if (institutionName === "ZHAW")
         return `study-visualization/standard/specificprogram-template.html?studiengang=fhzh-cs`;
-      } else if (institutionName === "ETH Zürich") {
+      if (institutionName === "ETH Zürich")
         return `study-visualization/standard/specificprogram-template.html?studiengang=eth-cs`;
-      } else if (institutionName === "Universität Zürich") {
+      if (institutionName === "Universität Zürich")
         return `study-visualization/standard/specificprogram-template.html?studiengang=uzh-informatik`;
-      } else if (institutionName === "Berner Fachhochschule") {
+      if (institutionName === "Berner Fachhochschule")
         return `study-visualization/standard/specificprogram-template.html?studiengang=fhbern-cs`;
-      } else if (institutionName === "Fachhochschule Nordwestschweiz") {
+      if (institutionName === "Fachhochschule Nordwestschweiz")
         return `study-visualization/standard/specificprogram-template.html?studiengang=fhnw-cs`;
-      } else if (
-        institutionName === "Hochschule Luzern" ||
-        institutionName === "HSLU"
-      ) {
+      if (institutionName === "Hochschule Luzern" || institutionName === "HSLU")
         return `study-visualization/standard/specificprogram-template.html?studiengang=hslu-cs`;
-      } else if (
+      if (
         institutionName === "Ostschweizer Fachhochschule" ||
         institutionName === "OST"
-      ) {
+      )
         return `study-visualization/standard/specificprogram-template.html?studiengang=ost-cs`;
-      } else if (institutionName === "FFHS") {
+      if (institutionName === "FFHS")
         return `study-visualization/standard/specificprogram-template.html?studiengang=ffhs-informatik`;
-      } else if (
+      if (
         institutionName === "FernUniversität in Hagen" ||
         institutionName === "FernUni Hagen"
-      ) {
+      )
         return `study-visualization/standard/specificprogram-template.html?studiengang=fernuni-hagen-cs`;
-      }
     }
 
-    // Special handling for Wirtschaftsinformatik at different institutions
+    // Special handling for Wirtschaftsinformatik
     if (studiengangName === "Wirtschaftsinformatik") {
-      if (institutionName === "ZHAW") {
+      if (institutionName === "ZHAW")
         return `study-visualization/standard/specificprogram-template.html?studiengang=zhaw-win-bis-tz`;
-      } else if (institutionName === "Fachhochschule Nordwestschweiz") {
+      if (institutionName === "Fachhochschule Nordwestschweiz")
         return `study-visualization/standard/specificprogram-template.html?studiengang=fhnw-wirtschaftsinformatik`;
-      }
     }
 
-    // Special handling for Betriebsökonomie at different institutions
+    // Special handling for Betriebsökonomie
     if (studiengangName === "Betriebsökonomie") {
-      if (institutionName === "ZHAW") {
+      if (institutionName === "ZHAW")
         return `study-visualization/standard/specificprogram-template.html?studiengang=zhaw-betriebsoekonomie`;
-      } else if (institutionName === "Fachhochschule Nordwestschweiz") {
+      if (institutionName === "Fachhochschule Nordwestschweiz")
         return `study-visualization/standard/specificprogram-template.html?studiengang=fhnw-betriebsoekonomie`;
-      }
     }
 
-    // Special handling for Betriebswirtschaftslehre at different institutions
+    // Special handling for Betriebswirtschaftslehre
     if (studiengangName === "Betriebswirtschaftslehre") {
-      if (institutionName === "Universität Zürich") {
+      if (institutionName === "Universität Zürich")
         return `study-visualization/standard/specificprogram-template.html?studiengang=uzh-bwl`;
-      }
     }
 
-    // Special handling for Humanmedizin at different institutions
+    // Special handling for Humanmedizin
     if (studiengangName === "Humanmedizin") {
-      if (institutionName === "ETH Zürich") {
+      if (institutionName === "ETH Zürich")
         return `study-visualization/standard/specificprogram-template.html?studiengang=eth-humanmedizin`;
-      } else if (institutionName === "Universität Zürich") {
+      if (institutionName === "Universität Zürich")
         return `study-visualization/standard/specificprogram-template.html?studiengang=uzh-humanmedizin`;
-      }
     }
 
     return null;
-  };
+  },
+};
 
-  // Expose to global scope (German name kept for backwards compatibility)
-  global.StudiengangMapping = StudiengangMapping;
-  // New English alias for internal use
-  global.studyProgramMapping = StudiengangMapping;
-})(window);
-
-// ==========================================
-// PART 2: Study Program Loader
-// ==========================================
-// Single entrypoint for all Swiss study program data.
-(function (global) {
-  const baseUrl = new URL(".", document.currentScript.src);
-
-  const files = [
-    "uni/universitaet-basel.js",
-    "uni/universitaet-luzern.js",
-    "uni/universitaet-st-gallen.js",
-    "uni/universitaet-bern.js",
-    "uni/universitaet-freiburg.js",
-    "uni/eth-zuerich.js",
-    "uni/universitaet-zuerich.js",
-    "uni/fernuniversitaet-in-hagen.js",
-    "fh/berner-fachhochschule.js",
-    "fh/fh-graubuenden.js",
-    "fh/fhnw.js",
-    "fh/ostschweizer-fachhochschule.js",
-    "fh/zhaw.js",
-    "fh/zhdk.js",
-    "fh/hslu.js",
-    "fh/ffhs.js",
-  ];
-
-  const scriptTags = files
-    .map(
-      (file) => `<script src="${new URL(file, baseUrl).toString()}"><\/script>`,
-    )
-    .join("");
-
-  const initScript = `
-    <script>
-      window.AlleSchweizerStudiengaenge = {
-        universitaeten: [
-          window.AlleSchweizerStudiengaengeUniversitaetBasel,
-          window.AlleSchweizerStudiengaengeUniversitaetLuzern,
-          window.AlleSchweizerStudiengaengeUniversitaetStGallen,
-          window.AlleSchweizerStudiengaengeUniversitaetBern,
-          window.AlleSchweizerStudiengaengeUniversitaetFreiburg,
-          window.AlleSchweizerStudiengaengeETHZuerich,
-          window.AlleSchweizerStudiengaengeUniversitaetZuerich,
-          window.AlleSchweizerStudiengaengeFernUniversitaetInHagen,
-        ].filter(Boolean),
-      };
-
-      window.AlleFHStudiengaenge = {
-        fachhochschulen: [
-          window.AlleFHStudiengaengeBernerFachhochschule,
-          window.AlleFHStudiengaengeFHGraubuenden,
-          window.AlleFHStudiengaengeFHNW,
-          window.AlleFHStudiengaengeOstschweizerFachhochschule,
-          window.AlleFHStudiengaengeZHAW,
-          window.AlleFHStudiengaengeZHdK,
-          window.AlleFHStudiengaengeHSLU,
-          window.AlleFHStudiengaengeFFHS,
-        ].filter(Boolean),
-      };
-    <\/script>`;
-
-  document.write(scriptTags + initScript);
-})(window);
+// Aliases for backwards compatibility with dom-builders.js
+window.StudiengangMapping = StudiengangMapping;
+window.studyProgramMapping = StudiengangMapping;

@@ -1,0 +1,235 @@
+﻿{
+  "name": "Universität Basel",
+  "website": "https://www.unibas.ch/de/Studium/Vor-dem-Studium/Studienangebot.html",
+  "kategorien": [
+    {
+      "name": "3. Wirtschaftswissenschaften",
+      "studiengaenge": [
+        { "name": "Wirtschaftswissenschaften", "ects": "180 KP/75 KP" }
+      ]
+    },
+    {
+      "name": "5. Medizin",
+      "studiengaenge": [
+        { "name": "Humanmedizin", "ects": "180 KP" },
+        { "name": "Zahnmedizin", "ects": "180 KP" }
+      ]
+    },
+    {
+      "name": "4. Rechtswissenschaften",
+      "studiengaenge": [
+        { "name": "Rechtswissenschaft", "ects": "180 KP/75 KP" }
+      ]
+    },
+    {
+      "name": "2. Naturwissenschaften",
+      "unterkategorien": [
+        {
+          "name": "Geografie",
+          "studiengaenge": [
+            {
+              "name": "Geographie",
+              "ects": "75 KP",
+              "beschreibung": "ausserfakultäres Bachelorstudienfach 75 KP"
+            },
+            { "name": "Geowissenschaften", "ects": "180 KP" }
+          ]
+        },
+        {
+          "name": "Biologie",
+          "studiengaenge": [{ "name": "Biologie", "ects": "180 KP/75 KP" }]
+        },
+        {
+          "name": "Chemie",
+          "studiengaenge": [
+            { "name": "Chemie", "ects": "180 KP/75 KP" },
+            { "name": "Nanowissenschaften", "ects": "180 KP" },
+            { "name": "Pharmazeutische Wissenschaften", "ects": "180 KP" }
+          ]
+        },
+        {
+          "name": "Physik",
+          "studiengaenge": [{ "name": "Physik", "ects": "180 KP/75 KP" }]
+        },
+        {
+          "name": "Mathematik",
+          "studiengaenge": [{ "name": "Mathematik", "ects": "180 KP/75 KP" }]
+        }
+      ]
+    },
+    {
+      "name": "1. Ingenieurwissenschaften",
+      "unterkategorien": [
+        {
+          "name": "Informatik",
+          "studiengaenge": [
+            { "name": "Computational Sciences", "ects": "180 KP" },
+            { "name": "Informatik", "ects": "180 KP/75 KP" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "6. Wissenschaften vom Menschen und seiner Kultur",
+      "unterkategorien": [
+        {
+          "name": "Sprachwissenschaften",
+          "studiengaenge": [
+            {
+              "name": "Deutsche Philologie",
+              "ects": "75 KP",
+              "beschreibung": "anderes Fach 75 KP"
+            },
+            {
+              "name": "Englisch",
+              "ects": "75 KP",
+              "beschreibung": "anderes Fach 75 KP"
+            },
+            {
+              "name": "Französistik",
+              "ects": "75 KP",
+              "beschreibung": "anderes Fach 75 KP"
+            },
+            {
+              "name": "Hispanistik",
+              "ects": "75 KP",
+              "beschreibung": "anderes Fach 75 KP"
+            },
+            {
+              "name": "Italianistik",
+              "ects": "75 KP",
+              "beschreibung": "anderes Fach 75 KP"
+            },
+            {
+              "name": "Nordistik",
+              "ects": "75 KP",
+              "beschreibung": "anderes Fach 75 KP"
+            }
+          ]
+        },
+        {
+          "name": "Geschichtswissenschaften",
+          "studiengaenge": [
+            { "name": "Altertumswissenschaften", "ects": "150 KP" },
+            {
+              "name": "Altertumswissenschaften",
+              "ects": "75 KP",
+              "beschreibung": "Studienfach 75 KP"
+            },
+            {
+              "name": "Geschichte",
+              "ects": "75 KP",
+              "beschreibung": "anderes Fach 75 KP"
+            },
+            {
+              "name": "Prähistorische und Naturwissenschaftliche Archäologie",
+              "ects": "180 KP"
+            }
+          ]
+        },
+        {
+          "name": "Philosophie",
+          "studiengaenge": [
+            {
+              "name": "Philosophie",
+              "ects": "75 KP",
+              "beschreibung": "anderes Fach 75 KP"
+            }
+          ]
+        },
+        {
+          "name": "Kunstwissenschaften",
+          "studiengaenge": [
+            {
+              "name": "Kunstgeschichte",
+              "ects": "75 KP",
+              "beschreibung": "anderes Fach 75 KP"
+            },
+            {
+              "name": "Medienwissenschaft",
+              "ects": "75 KP",
+              "beschreibung": "anderes Fach 75 KP"
+            },
+            {
+              "name": "Musikwissenschaft",
+              "ects": "75 KP",
+              "beschreibung": "anderes Fach 75 KP"
+            }
+          ]
+        },
+        {
+          "name": "Regionalstudien",
+          "studiengaenge": [
+            {
+              "name": "Nahoststudien",
+              "ects": "75 KP",
+              "beschreibung": "anderes Fach 75 KP"
+            },
+            {
+              "name": "Osteuropäische Kulturen",
+              "ects": "75 KP",
+              "beschreibung": "anderes Fach 75 KP"
+            },
+            { "name": "Osteuropa-Studien", "ects": "180 KP" }
+          ]
+        },
+        {
+          "name": "Sozialwissenschaften",
+          "studiengaenge": [
+            {
+              "name": "Ethnologie",
+              "ects": "75 KP",
+              "beschreibung": "anderes Fach 75 KP"
+            },
+            {
+              "name": "Geschlechterforschung",
+              "ects": "75 KP",
+              "beschreibung": "anderes Fach 75 KP"
+            },
+            {
+              "name": "Kulturanthropologie",
+              "ects": "75 KP",
+              "beschreibung": "anderes Fach 75 KP"
+            },
+            {
+              "name": "Politikwissenschaft",
+              "ects": "75 KP",
+              "beschreibung": "anderes Fach 75 KP"
+            },
+            {
+              "name": "Soziologie",
+              "ects": "75 KP",
+              "beschreibung": "anderes Fach 75 KP"
+            }
+          ]
+        },
+        {
+          "name": "Psychologie",
+          "studiengaenge": [{ "name": "Psychologie", "ects": "180 KP" }]
+        },
+        {
+          "name": "Theologie und Religionswissenschaften",
+          "studiengaenge": [
+            { "name": "Theologie", "ects": "180 KP/75 KP" },
+            {
+              "name": "Religionswissenschaft",
+              "ects": "75 KP",
+              "beschreibung": "anderes Fach 75 KP"
+            },
+            {
+              "name": "Jüdische Studien",
+              "ects": "75 KP",
+              "beschreibung": "anderes Fach 75 KP"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "7. Sportwissenschaften",
+      "studiengaenge": [
+        { "name": "Sport, Bewegung & Gesundheit", "ects": "180 KP/99 KP" }
+      ]
+    }
+  ]
+}
