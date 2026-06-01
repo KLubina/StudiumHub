@@ -1,0 +1,47 @@
+﻿// Auto-generated split from universitaeten.js
+(function (global) {
+  global.AlleSchweizerStudiengaengeUniversitaetStGallen = {
+        name: "Universität St. Gallen",
+        website: "https://www.unisg.ch/de/studium/programme/bachelor/",
+        kategorien: [
+          {
+            name: "3. Wirtschaftswissenschaften",
+            studiengaenge: [
+              { name: "Betriebswirtschaftslehre", ects: "180 ECTS" },
+              { name: "Volkswirtschaftslehre", ects: "180 ECTS" },
+            ],
+          },
+          {
+            name: "4. Rechtswissenschaften",
+            studiengaenge: [
+              { name: "Rechtswissenschaft", ects: "180 ECTS" },
+              {
+                name: "Rechtswissenschaft mit Wirtschaftswissenschaften",
+                ects: "180 ECTS",
+              },
+            ],
+          },
+          {
+            name: "1. Ingenieurwissenschaften",
+            unterkategorien: [
+              {
+                name: "Informatik",
+                studiengaenge: [{ name: "Informatik", ects: "180 ECTS" }],
+              },
+            ],
+          },
+          {
+            name: "6. Wissenschaften vom Menschen und seiner Kultur",
+            unterkategorien: [
+              {
+                name: "Sozialwissenschaften",
+                studiengaenge: [
+                  { name: "International Affairs", ects: "180 ECTS" },
+                ],
+              },
+            ],
+          },
+        ],
+      };
+})(window);
+
