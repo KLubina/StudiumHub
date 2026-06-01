@@ -4,8 +4,8 @@ const Filters = {
   // A minor is defined as a program where the MAXIMUM ECTS value is <= 60
   // Example: 60/30/15 ECTS → max 60 → is a minor
   // Example: 180/90/60 ECTS → max 180 → is NOT a minor
-  isMinor(studiengang) {
-    const ectsText = studiengang.ects || studiengang.grad || "";
+  isMinor(program) {
+    const ectsText = program.ects || program.degree || "";
 
     // Extract ECTS numbers from text (e.g., "60 ECTS", "120/60 ECTS", "75 KP")
     const numbers = ectsText.match(/\d+/g);
@@ -47,8 +47,8 @@ const Filters = {
     // Sammle alle Kategorien (einzigartig)
     const categories = new Set();
     allData.forEach((inst) => {
-      inst.kategorien.forEach((kat) => {
-        categories.add(kat.name);
+      inst.categories.forEach((cat) => {
+        categories.add(cat.name);
       });
     });
 
@@ -104,48 +104,45 @@ const Filters = {
     // Filter nach Kategorie
     if (currentFilters.category) {
       filtered.forEach((inst) => {
-        inst.kategorien = inst.kategorien.filter(
-          (kat) => kat.name === currentFilters.category,
+        inst.categories = inst.categories.filter(
+          (cat) => cat.name === currentFilters.category,
         );
       });
-      filtered = filtered.filter((inst) => inst.kategorien.length > 0);
+      filtered = filtered.filter((inst) => inst.categories.length > 0);
     }
 
     // Filter Minors (wenn nicht angezeigt werden sollen)
     if (!showMinors) {
       filtered.forEach((inst) => {
-        inst.kategorien.forEach((kat) => {
-          // Filter direkte Studiengänge
-          if (kat.studiengaenge) {
-            kat.studiengaenge = kat.studiengaenge.filter(
-              (sg) => !this.isMinor(sg),
-            );
+        inst.categories.forEach((cat) => {
+          // Filter direkte programmes
+          if (cat.programs) {
+            cat.programs = cat.programs.filter((p) => !this.isMinor(p));
           }
-          // Filter Studiengänge in Unterkategorien
-          if (kat.unterkategorien) {
-            kat.unterkategorien.forEach((unterkat) => {
-              if (unterkat.studiengaenge) {
-                unterkat.studiengaenge = unterkat.studiengaenge.filter(
-                  (sg) => !this.isMinor(sg),
+          // Filter programmes in subcategories
+          if (cat.subcategories) {
+            cat.subcategories.forEach((subcat) => {
+              if (subcat.programs) {
+                subcat.programs = subcat.programs.filter(
+                  (p) => !this.isMinor(p),
                 );
               }
             });
             // Entferne leere Unterkategorien
-            kat.unterkategorien = kat.unterkategorien.filter(
-              (unterkat) =>
-                unterkat.studiengaenge && unterkat.studiengaenge.length > 0,
+            cat.subcategories = cat.subcategories.filter(
+              (subcat) => subcat.programs && subcat.programs.length > 0,
             );
           }
         });
         // Entferne leere Kategorien
-        inst.kategorien = inst.kategorien.filter(
-          (kat) =>
-            (kat.studiengaenge && kat.studiengaenge.length > 0) ||
-            (kat.unterkategorien && kat.unterkategorien.length > 0),
+        inst.categories = inst.categories.filter(
+          (cat) =>
+            (cat.programs && cat.programs.length > 0) ||
+            (cat.subcategories && cat.subcategories.length > 0),
         );
       });
       // Entferne leere Institutionen
-      filtered = filtered.filter((inst) => inst.kategorien.length > 0);
+      filtered = filtered.filter((inst) => inst.categories.length > 0);
     }
 
     return filtered;

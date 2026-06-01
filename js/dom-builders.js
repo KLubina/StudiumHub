@@ -1,13 +1,13 @@
 // DOM Builder Functions
 const DOMBuilders = {
   createUniSection(uni) {
-    const section = document.createElement('div');
-    section.className = 'uni-section collapsed';
-    section.id = 'section-' + Utils.sanitizeId(uni.name);
+    const section = document.createElement("div");
+    section.className = "uni-section collapsed";
+    section.id = "section-" + Utils.sanitizeId(uni.name);
 
     // Header
-    const header = document.createElement('div');
-    header.className = 'uni-header';
+    const header = document.createElement("div");
+    header.className = "uni-header";
     header.innerHTML = `
       <div>
         <div class="uni-title">${uni.name}</div>
@@ -21,16 +21,16 @@ const DOMBuilders = {
     `;
 
     // Toggle Funktionalität
-    header.addEventListener('click', function () {
-      section.classList.toggle('collapsed');
+    header.addEventListener("click", function () {
+      section.classList.toggle("collapsed");
     });
 
     // Content
-    const content = document.createElement('div');
-    content.className = 'uni-content';
+    const content = document.createElement("div");
+    content.className = "uni-content";
 
-    uni.kategorien.forEach(kategorie => {
-      const categorySection = this.createCategorySection(kategorie, uni.name);
+    uni.categories.forEach((category) => {
+      const categorySection = this.createCategorySection(category, uni.name);
       content.appendChild(categorySection);
     });
 
@@ -40,32 +40,32 @@ const DOMBuilders = {
     return section;
   },
 
-  createCategorySection(kategorie, institutionName) {
-    const section = document.createElement('div');
-    section.className = 'category-section';
+  createCategorySection(category, institutionName) {
+    const section = document.createElement("div");
+    section.className = "category-section";
 
-    const title = document.createElement('div');
-    title.className = 'category-title';
-    title.textContent = kategorie.name;
+    const title = document.createElement("div");
+    title.className = "category-title";
+    title.textContent = category.name;
 
     section.appendChild(title);
 
     // Check if category has subcategories (unterkategorien)
-    if (kategorie.unterkategorien && kategorie.unterkategorien.length > 0) {
+    if (category.subcategories && category.subcategories.length > 0) {
       // Render subcategories
-      kategorie.unterkategorien.forEach(unterkategorie => {
-        const subSection = document.createElement('div');
-        subSection.className = 'subcategory-section';
+      category.subcategories.forEach((subcat) => {
+        const subSection = document.createElement("div");
+        subSection.className = "subcategory-section";
 
-        const subTitle = document.createElement('div');
-        subTitle.className = 'subcategory-title';
-        subTitle.textContent = unterkategorie.name;
+        const subTitle = document.createElement("div");
+        subTitle.className = "subcategory-title";
+        subTitle.textContent = subcat.name;
 
-        const list = document.createElement('div');
-        list.className = 'studiengang-list';
+        const list = document.createElement("div");
+        list.className = "studiengang-list";
 
-        unterkategorie.studiengaenge.forEach(studiengang => {
-          const item = this.createStudiengangItem(studiengang, institutionName);
+        subcat.programs.forEach((program) => {
+          const item = this.createStudiengangItem(program, institutionName);
           list.appendChild(item);
         });
 
@@ -76,12 +76,12 @@ const DOMBuilders = {
     }
 
     // Also render direct study programs if they exist (mixed structure support)
-    if (kategorie.studiengaenge && kategorie.studiengaenge.length > 0) {
-      const list = document.createElement('div');
-      list.className = 'studiengang-list';
+    if (category.programs && category.programs.length > 0) {
+      const list = document.createElement("div");
+      list.className = "studiengang-list";
 
-      kategorie.studiengaenge.forEach(studiengang => {
-        const item = this.createStudiengangItem(studiengang, institutionName);
+      category.programs.forEach((program) => {
+        const item = this.createStudiengangItem(program, institutionName);
         list.appendChild(item);
       });
 
@@ -91,38 +91,40 @@ const DOMBuilders = {
     return section;
   },
 
-  createStudiengangItem(studiengang, institutionName) {
-    const item = document.createElement('div');
-    item.className = 'studiengang-item';
+  createStudiengangItem(program, institutionName) {
+    const item = document.createElement("div");
+    item.className = "studiengang-item";
 
-    const name = document.createElement('div');
-    name.className = 'studiengang-name';
-    name.textContent = studiengang.name;
+    const name = document.createElement("div");
+    name.className = "studiengang-name";
+    name.textContent = program.name;
 
-    const info = document.createElement('div');
-    info.className = 'studiengang-ects';
-    // FH verwendet 'grad', Uni verwendet 'ects'
-    info.textContent = studiengang.ects || studiengang.grad || '';
+    const info = document.createElement("div");
+    info.className = "studiengang-ects";
+    // FH verwendet 'degree', Uni verwendet 'ects'
+    info.textContent = program.ects || program.degree || "";
 
     item.appendChild(name);
     item.appendChild(info);
 
-    if (studiengang.beschreibung) {
-      const beschreibung = document.createElement('div');
-      beschreibung.className = 'studiengang-beschreibung';
-      beschreibung.textContent = studiengang.beschreibung;
-      item.appendChild(beschreibung);
+    if (program.description) {
+      const desc = document.createElement("div");
+      desc.className = "studiengang-beschreibung";
+      desc.textContent = program.description;
+      item.appendChild(desc);
     }
 
     // Check if visualization exists and add link
-    if (window.StudiengangMapping) {
-      const vizUrl = window.StudiengangMapping.getVisualizationUrl(studiengang.name, institutionName);
+    const mapping = window.studyProgramMapping || window.StudiengangMapping;
+    if (mapping) {
+      const vizUrl = mapping.getVisualizationUrl(program.name, institutionName);
       if (vizUrl) {
-        const vizLink = document.createElement('a');
+        const vizLink = document.createElement("a");
         vizLink.href = vizUrl;
-        vizLink.className = 'viz-link';
-        vizLink.textContent = '→ Visualisierung ansehen';
-        vizLink.style.cssText = 'margin-top: 5px; display: inline-block; color: #0066cc; text-decoration: none; font-size: 0.9em;';
+        vizLink.className = "viz-link";
+        vizLink.textContent = "→ Visualisierung ansehen";
+        vizLink.style.cssText =
+          "margin-top: 5px; display: inline-block; color: #0066cc; text-decoration: none; font-size: 0.9em;";
         item.appendChild(vizLink);
       }
     }
@@ -131,13 +133,13 @@ const DOMBuilders = {
   },
 
   createParentCategorySection(mainCategoryName, subcategories, directPrograms) {
-    const section = document.createElement('div');
-    section.className = 'uni-section collapsed';
-    section.id = 'section-' + Utils.sanitizeId(mainCategoryName);
+    const section = document.createElement("div");
+    section.className = "uni-section collapsed";
+    section.id = "section-" + Utils.sanitizeId(mainCategoryName);
 
     // Main Category Header
-    const header = document.createElement('div');
-    header.className = 'uni-header';
+    const header = document.createElement("div");
+    header.className = "uni-header";
 
     header.innerHTML = `
       <div>
@@ -147,43 +149,43 @@ const DOMBuilders = {
     `;
 
     // Toggle Funktionalität
-    header.addEventListener('click', function () {
-      section.classList.toggle('collapsed');
+    header.addEventListener("click", function () {
+      section.classList.toggle("collapsed");
     });
 
     // Content
-    const content = document.createElement('div');
-    content.className = 'uni-content';
+    const content = document.createElement("div");
+    content.className = "uni-content";
 
     // Sortiere Unterkategorien
     const sortedSubcategories = Array.from(subcategories.keys()).sort();
 
     // Rendere jede Unterkategorie
-    sortedSubcategories.forEach(subcategoryName => {
+    sortedSubcategories.forEach((subcategoryName) => {
       const institutions = subcategories.get(subcategoryName);
 
       // Unterkategorie Section (nested)
-      const subcatSection = document.createElement('div');
-      subcatSection.className = 'category-section nested-category collapsed';
+      const subcatSection = document.createElement("div");
+      subcatSection.className = "category-section nested-category collapsed";
 
-      const subcatHeader = document.createElement('div');
-      subcatHeader.className = 'category-title subcategory-header';
+      const subcatHeader = document.createElement("div");
+      subcatHeader.className = "category-title subcategory-header";
       subcatHeader.innerHTML = `
         <span>${subcategoryName.trim()}</span>
         <span class="subcategory-toggle">▼</span>
       `;
 
-      const subcatContent = document.createElement('div');
-      subcatContent.className = 'subcategory-content';
+      const subcatContent = document.createElement("div");
+      subcatContent.className = "subcategory-content";
 
       // Rendere Institutionen in dieser Unterkategorie
-      institutions.forEach(inst => {
-        const instSection = document.createElement('div');
-        instSection.className = 'institution-section';
+      institutions.forEach((inst) => {
+        const instSection = document.createElement("div");
+        instSection.className = "institution-section";
 
-        const instTitle = document.createElement('div');
-        instTitle.className = 'institution-name';
-        const typeLabel = inst.type === 'uni' ? '[Uni]' : '[FH]';
+        const instTitle = document.createElement("div");
+        instTitle.className = "institution-name";
+        const typeLabel = inst.type === "uni" ? "[Uni]" : "[FH]";
         instTitle.innerHTML = `
           ${typeLabel} ${inst.institution}
           <a href="${inst.website}" target="_blank" rel="noopener noreferrer" style="margin-left: 10px; font-size: 0.85em; color: #0066cc;">
@@ -191,11 +193,11 @@ const DOMBuilders = {
           </a>
         `;
 
-        const list = document.createElement('div');
-        list.className = 'studiengang-list';
+        const list = document.createElement("div");
+        list.className = "studiengang-list";
 
-        inst.studiengaenge.forEach(studiengang => {
-          const item = this.createStudiengangItem(studiengang, inst.institution);
+        inst.programs.forEach((program) => {
+          const item = this.createStudiengangItem(program, inst.institution);
           list.appendChild(item);
         });
 
@@ -205,9 +207,9 @@ const DOMBuilders = {
       });
 
       // Toggle für Unterkategorie
-      subcatHeader.addEventListener('click', function (e) {
+      subcatHeader.addEventListener("click", function (e) {
         e.stopPropagation();
-        subcatSection.classList.toggle('collapsed');
+        subcatSection.classList.toggle("collapsed");
       });
 
       subcatSection.appendChild(subcatHeader);
@@ -217,13 +219,13 @@ const DOMBuilders = {
 
     // Rendere direkte Studiengänge (mixed structure support)
     if (directPrograms && directPrograms.length > 0) {
-      directPrograms.forEach(inst => {
-        const instSection = document.createElement('div');
-        instSection.className = 'category-section';
+      directPrograms.forEach((inst) => {
+        const instSection = document.createElement("div");
+        instSection.className = "category-section";
 
-        const instTitle = document.createElement('div');
-        instTitle.className = 'category-title';
-        const typeLabel = inst.type === 'uni' ? '[Uni]' : '[FH]';
+        const instTitle = document.createElement("div");
+        instTitle.className = "category-title";
+        const typeLabel = inst.type === "uni" ? "[Uni]" : "[FH]";
         instTitle.innerHTML = `
           ${typeLabel} ${inst.institution}
           <a href="${inst.website}" target="_blank" rel="noopener noreferrer" style="margin-left: 10px; font-size: 0.85em; color: #0066cc;">
@@ -231,11 +233,11 @@ const DOMBuilders = {
           </a>
         `;
 
-        const list = document.createElement('div');
-        list.className = 'studiengang-list';
+        const list = document.createElement("div");
+        list.className = "studiengang-list";
 
-        inst.studiengaenge.forEach(studiengang => {
-          const item = this.createStudiengangItem(studiengang, inst.institution);
+        inst.programs.forEach((program) => {
+          const item = this.createStudiengangItem(program, inst.institution);
           list.appendChild(item);
         });
 
@@ -252,13 +254,13 @@ const DOMBuilders = {
   },
 
   createCategorySectionGrouped(categoryName, institutions) {
-    const section = document.createElement('div');
-    section.className = 'uni-section collapsed';
-    section.id = 'section-' + Utils.sanitizeId(categoryName);
+    const section = document.createElement("div");
+    section.className = "uni-section collapsed";
+    section.id = "section-" + Utils.sanitizeId(categoryName);
 
     // Category Header
-    const header = document.createElement('div');
-    header.className = 'uni-header';
+    const header = document.createElement("div");
+    header.className = "uni-header";
     header.innerHTML = `
       <div>
         <div class="uni-title">${categoryName}</div>
@@ -267,22 +269,22 @@ const DOMBuilders = {
     `;
 
     // Toggle Funktionalität
-    header.addEventListener('click', function () {
-      section.classList.toggle('collapsed');
+    header.addEventListener("click", function () {
+      section.classList.toggle("collapsed");
     });
 
     // Content
-    const content = document.createElement('div');
-    content.className = 'uni-content';
+    const content = document.createElement("div");
+    content.className = "uni-content";
 
     // Rendere jede Institution
-    institutions.forEach(inst => {
-      const instSection = document.createElement('div');
-      instSection.className = 'category-section';
+    institutions.forEach((inst) => {
+      const instSection = document.createElement("div");
+      instSection.className = "category-section";
 
-      const instTitle = document.createElement('div');
-      instTitle.className = 'category-title';
-      const typeLabel = inst.type === 'uni' ? '[Uni]' : '[FH]';
+      const instTitle = document.createElement("div");
+      instTitle.className = "category-title";
+      const typeLabel = inst.type === "uni" ? "[Uni]" : "[FH]";
       instTitle.innerHTML = `
         ${typeLabel} ${inst.institution}
         <a href="${inst.website}" target="_blank" rel="noopener noreferrer" style="margin-left: 10px; font-size: 0.85em; color: #0066cc;">
@@ -290,11 +292,11 @@ const DOMBuilders = {
         </a>
       `;
 
-      const list = document.createElement('div');
-      list.className = 'studiengang-list';
+      const list = document.createElement("div");
+      list.className = "studiengang-list";
 
-      inst.studiengaenge.forEach(studiengang => {
-        const item = this.createStudiengangItem(studiengang, inst.institution);
+      inst.programs.forEach((program) => {
+        const item = this.createStudiengangItem(program, inst.institution);
         list.appendChild(item);
       });
 
@@ -307,5 +309,5 @@ const DOMBuilders = {
     section.appendChild(content);
 
     return section;
-  }
+  },
 };

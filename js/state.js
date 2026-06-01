@@ -10,18 +10,48 @@ const State = {
   showMinors: false, // Minors standardmäßig ausgeblendet
 
   initializeData() {
-    // Kombiniere Uni und FH Daten
-    const uniData = window.AlleSchweizerStudiengaenge.universitaeten.map(
-      (uni) => ({
-        ...uni,
-        type: "uni",
-      }),
-    );
+    // Kombiniere Uni und FH Daten und normalisiere deutsche Keys zu englischen internen Keys
+    function normalizeInstitution(raw, type) {
+      return {
+        name: raw.name,
+        website: raw.website,
+        type: type,
+        categories: (raw.kategorien || []).map((kat) => {
+          const category = { name: kat.name };
+          if (kat.unterkategorien) {
+            category.subcategories = kat.unterkategorien.map((uk) => ({
+              name: uk.name,
+              programs: (uk.studiengaenge || []).map((p) => ({
+                ...p,
+                description: p.beschreibung,
+                degree: p.grad,
+              })),
+            }));
+          }
+          if (kat.studiengaenge) {
+            category.programs = kat.studiengaenge.map((p) => ({
+              ...p,
+              description: p.beschreibung,
+              degree: p.grad,
+            }));
+          }
+          return category;
+        }),
+      };
+    }
 
-    const fhData = window.AlleFHStudiengaenge.fachhochschulen.map((fh) => ({
-      ...fh,
-      type: "fh",
-    }));
+    const uniData = (
+      window.AlleSchweizerStudiengaenge &&
+      window.AlleSchweizerStudiengaenge.universitaeten
+        ? window.AlleSchweizerStudiengaenge.universitaeten
+        : []
+    ).map((uni) => normalizeInstitution(uni, "uni"));
+
+    const fhData = (
+      window.AlleFHStudiengaenge && window.AlleFHStudiengaenge.fachhochschulen
+        ? window.AlleFHStudiengaenge.fachhochschulen
+        : []
+    ).map((fh) => normalizeInstitution(fh, "fh"));
 
     this.allData = [...uniData, ...fhData];
   },

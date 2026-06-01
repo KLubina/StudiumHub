@@ -371,6 +371,8 @@
     return null;
   };
 
-  // Expose to global scope
+  // Expose to global scope (German name kept for backwards compatibility)
   global.StudiengangMapping = StudiengangMapping;
+  // New English alias for internal use
+  global.studyProgramMapping = StudiengangMapping;
 })(window);
