@@ -274,6 +274,14 @@
                     grad: "Bachelor of Science",
                   },
                   { name: "Geomatik", grad: "Bachelor of Science" },
+                  {
+                    name: "Kreislaufwirtschaft und Ressourcenmanagement",
+                    grad: "Bachelor of Science",
+                  },
+                  {
+                    name: "Nachhaltige Gebäude und Städte",
+                    grad: "Bachelor of Science",
+                  },
                 ],
               },
             ],
@@ -286,19 +294,10 @@
                 name: "Energie- und Umwelttechnik",
                 grad: "Bachelor of Science",
               },
-              {
-                name: "Kreislaufwirtschaft und Ressourcenmanagement",
-                grad: "Bachelor of Science",
-              },
               { name: "Maschinenbau", grad: "Bachelor of Science" },
               { name: "Materials Engineering", grad: "Bachelor of Science" },
               { name: "Mechatronik Trinational", grad: "Bachelor of Science" },
               { name: "Medizintechnik", grad: "Bachelor of Science" },
-              {
-                name: "Nachhaltige Gebäude und Städte",
-                grad: "Bachelor of Science",
-              },
-              { name: "Optometrie", grad: "Bachelor of Science" },
               { name: "Systemtechnik", grad: "Bachelor of Science" },
             ],
           },
@@ -459,6 +458,7 @@
               { name: "Biotechnologie", grad: "BSc" },
               { name: "Chemie", grad: "BSc" },
               { name: "Food Science", grad: "BSc" },
+              { name: "Optometrie", grad: "Bachelor of Science" },
             ],
           },
           {
