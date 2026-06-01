@@ -8,66 +8,63 @@ const State = {
   },
   showMinors: false,
 
-  // Ersetze diese Methode innerhalb des State-Objekts:
   initializeData(rawUniversities = [], rawFachhochschulen = []) {
-    function normalizeInstitution(raw, type) {
-      return {
-        name: raw.name,
-        website: raw.website,
-        type: type,
-        // JSON nutzt "kategorien", die UI nutzt später ".categories"
-        categories: (raw.kategorien || []).map((kat) => {
-          const category = { name: kat.name };
-          if (kat.unterkategorien) {
-            category.subcategories = kat.unterkategorien.map((uk) => ({
-              name: uk.name,
-              // JSON nutzt "studiengaenge", die UI nutzt ".programs"
-              programs: (uk.studiengaenge || []).map((p) => ({
-                ...p,
-                description: p.beschreibung,
-                degree: p.grad,
-              })),
-            }));
-          }
-          if (kat.studiengaenge) {
-            category.programs = kat.studiengaenge.map((p) => ({
-              ...p,
-              description: p.beschreibung,
-              degree: p.grad,
-            }));
-          }
-          return category;
-        }),
-      };
-    }
-
-    // Verarbeite die direkt übergebenen JSON-Daten anstatt window-Variablen
     const uniData = rawUniversities.map((uni) =>
-      normalizeInstitution(uni, "uni"),
+      this._normalizeInstitution(uni, "uni"),
     );
     const fhData = rawFachhochschulen.map((fh) =>
-      normalizeInstitution(fh, "fh"),
+      this._normalizeInstitution(fh, "fh"),
     );
 
     this.allData = [...uniData, ...fhData];
   },
 
+  _normalizeInstitution(raw, type) {
+    const rawCategories = raw.kategorien || [];
+
+    return {
+      name: raw.name,
+      website: raw.website,
+      type: type,
+      categories: rawCategories.map((kat) => this._normalizeCategory(kat)),
+    };
+  },
+
+  _normalizeCategory(kat) {
+    const category = { name: kat.name };
+
+    if (kat.unterkategorien) {
+      category.subcategories = kat.unterkategorien.map((uk) => ({
+        name: uk.name,
+        programs: this._normalizePrograms(uk.studiengaenge),
+      }));
+    }
+
+    if (kat.studiengaenge) {
+      category.programs = this._normalizePrograms(kat.studiengaenge);
+    }
+
+    return category;
+  },
+
+  _normalizePrograms(studiengaenge = []) {
+    return studiengaenge.map((p) => ({
+      ...p,
+      description: p.beschreibung,
+      degree: p.grad,
+    }));
+  },
+
   setView(view) {
     this.currentView = view;
+  },
+  getView() {
+    return this.currentView;
   },
 
   setFilter(filterType, value) {
     this.currentFilters[filterType] = value;
   },
-
-  getData() {
-    return this.allData;
-  },
-
-  getView() {
-    return this.currentView;
-  },
-
   getFilters() {
     return this.currentFilters;
   },
@@ -75,8 +72,11 @@ const State = {
   setShowMinors(value) {
     this.showMinors = value;
   },
-
   getShowMinors() {
     return this.showMinors;
+  },
+
+  getData() {
+    return this.allData;
   },
 };

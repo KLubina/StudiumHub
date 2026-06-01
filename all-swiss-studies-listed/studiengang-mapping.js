@@ -1,6 +1,4 @@
-// Only maps study program names to their visualization keys
 const StudiengangMapping = {
-  // ETH Zürich
   "Elektrotechnik und Informationstechnologie": {
     key: "eth-itet",
     institution: "ETH Zürich",
@@ -31,7 +29,6 @@ const StudiengangMapping = {
   Physik: { key: "eth-physik", institution: "ETH Zürich" },
   Chemieingenieurwissenschaften: { key: "eth-chab", institution: "ETH Zürich" },
 
-  // Universität Zürich
   Geschichte: { key: "uzh-geschichte", institution: "Universität Zürich" },
   Politikwissenschaft: {
     key: "uzh-polisci",
@@ -55,7 +52,6 @@ const StudiengangMapping = {
       "study-visualization/program-specific/uzh-psychologie/index.html",
   },
 
-  // Universität Basel
   "Sport, Bewegung und Gesundheit": {
     key: "unibas-sbg",
     institution: "Universität Basel",
@@ -65,13 +61,11 @@ const StudiengangMapping = {
     institution: "Universität Basel",
   },
 
-  // Universität St.Gallen
   Betriebswirtschaftslehre: {
     key: "unisg-bwl",
     institution: "Universität St.Gallen",
   },
 
-  // FH - Berner Fachhochschule
   "Elektrotechnik und Informationstechnologie": {
     key: "fhbern-eit",
     institution: "Berner Fachhochschule",
@@ -82,7 +76,6 @@ const StudiengangMapping = {
   },
   Informatik: { key: "fhbern-cs", institution: "Berner Fachhochschule" },
 
-  // FH - Fachhochschule Graubünden
   "Artificial Intelligence in Software Engineering": {
     key: "fhgr-aise",
     institution: "FH Graubünden",
@@ -92,7 +85,6 @@ const StudiengangMapping = {
     institution: "FH Graubünden",
   },
 
-  // FH - ZHAW
   "Data Science": { key: "zhaw-data-science", institution: "ZHAW" },
   "Food Science": { key: "zhaw-food-science", institution: "ZHAW" },
   "Applied Digital Life Sciences": {
@@ -119,7 +111,6 @@ const StudiengangMapping = {
   Systemtechnik: { key: "fhzh-systemtechnik", institution: "ZHAW" },
   Medizininformatik: { key: "fhzh-medizininformatik", institution: "ZHAW" },
 
-  // FH - Hochschule Luzern
   "Elektrotechnik und Informationstechnologie": {
     key: "fhlu-eit",
     institution: "Hochschule Luzern",
@@ -127,7 +118,6 @@ const StudiengangMapping = {
   Informatik: { key: "hslu-cs", institution: "Hochschule Luzern" },
   "Informatik - Teilzeit - Assessment": { key: "hslu-cs-tz" },
 
-  // FH - OST Ostschweizer Fachhochschule
   "Electrical and Computer Engineering": {
     key: "ost-eit",
     institution: "OST Ostschweizer Fachhochschule",
@@ -138,7 +128,6 @@ const StudiengangMapping = {
   },
   Informatik: { key: "ost-cs", institution: "Ostschweizer Fachhochschule" },
 
-  // FH - Fachhochschule Nordwestschweiz
   "Elektro- und Informationstechnik": {
     key: "fhnw-eit",
     institution: "Fachhochschule Nordwestschweiz",
@@ -157,19 +146,15 @@ const StudiengangMapping = {
     institution: "Fachhochschule Nordwestschweiz",
   },
 
-  // FH - FFHS (Fernfachhochschule Schweiz)
   Informatik: { key: "ffhs-informatik", institution: "FFHS" },
 
-  // Private - Hochschulinstitut Schaffhausen
   IT: { key: "hssh-it", institution: "Hochschulinstitut Schaffhausen" },
 
-  // Private - Aspira College
   "Computer Engineering": {
     key: "aspira-ce",
     institution: "Aspira College Split",
   },
 
-  // ZHAW
   Ergotherapie: { key: "zhaw-ergotherapie", institution: "ZHAW" },
   "Gesundheitsförderung und Prävention": {
     key: "zhaw-gesundheitsfoerderung",
@@ -189,7 +174,6 @@ const StudiengangMapping = {
       return `study-visualization/standard/specificprogram-template.html?studiengang=${encodeURIComponent(mapping.key)}`;
     }
 
-    // Special handling for EIT
     if (
       studiengangName === "Elektrotechnik und Informationstechnologie" ||
       studiengangName === "Elektro- und Informationstechnik"
@@ -206,7 +190,6 @@ const StudiengangMapping = {
         return `study-visualization/standard/specificprogram-template.html?studiengang=eth-itet`;
     }
 
-    // Special handling for Informatik
     if (studiengangName === "Informatik") {
       if (institutionName === "ZHAW")
         return `study-visualization/standard/specificprogram-template.html?studiengang=fhzh-cs`;
@@ -234,7 +217,6 @@ const StudiengangMapping = {
         return `study-visualization/standard/specificprogram-template.html?studiengang=fernuni-hagen-cs`;
     }
 
-    // Special handling for Wirtschaftsinformatik
     if (studiengangName === "Wirtschaftsinformatik") {
       if (institutionName === "ZHAW")
         return `study-visualization/standard/specificprogram-template.html?studiengang=zhaw-win-bis-tz`;
@@ -242,7 +224,6 @@ const StudiengangMapping = {
         return `study-visualization/standard/specificprogram-template.html?studiengang=fhnw-wirtschaftsinformatik`;
     }
 
-    // Special handling for Betriebsökonomie
     if (studiengangName === "Betriebsökonomie") {
       if (institutionName === "ZHAW")
         return `study-visualization/standard/specificprogram-template.html?studiengang=zhaw-betriebsoekonomie`;
@@ -250,13 +231,11 @@ const StudiengangMapping = {
         return `study-visualization/standard/specificprogram-template.html?studiengang=fhnw-betriebsoekonomie`;
     }
 
-    // Special handling for Betriebswirtschaftslehre
     if (studiengangName === "Betriebswirtschaftslehre") {
       if (institutionName === "Universität Zürich")
         return `study-visualization/standard/specificprogram-template.html?studiengang=uzh-bwl`;
     }
 
-    // Special handling for Humanmedizin
     if (studiengangName === "Humanmedizin") {
       if (institutionName === "ETH Zürich")
         return `study-visualization/standard/specificprogram-template.html?studiengang=eth-humanmedizin`;
