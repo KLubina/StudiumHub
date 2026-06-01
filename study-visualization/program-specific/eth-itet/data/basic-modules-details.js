@@ -40,7 +40,7 @@ window.StudiengangModuleDetails = {
     vorlesungslink:
       "https://video.ethz.ch/lectures/d-math/2015/autumn/401-1151-00L/1707a212-2905-448f-b042-6eca940f6c93.html",
     pruefungen:
-      "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/1.Sem/Lineare-Algebra",
+      "https://github.com/KLubina/StudiumHub/tree/main/study-visualization/program-specific/eth-itet/old-exams/1.Sem/Lineare-Algebra",
   },
   "Analysis 1": {
     kurzbeschreibung: "Einführung in die Grundlagen der Analysis",
@@ -63,7 +63,7 @@ window.StudiengangModuleDetails = {
     vorlesungslink:
       "https://video.ethz.ch/lectures/d-math/2016/autumn/401-1261-07L/a65b10a4-c135-3bca-a4f5-c37d9f8b0913.html",
     pruefungen:
-      "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/1.Sem/Analysis-I",
+      "https://github.com/KLubina/StudiumHub/tree/main/study-visualization/program-specific/eth-itet/old-exams/1.Sem/Analysis-I",
   },
 
   Digitaltechnik: {
@@ -117,7 +117,7 @@ window.StudiengangModuleDetails = {
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=192802&semkez=2025W&ansicht=LEHRVERANSTALTUNGEN&lang=de",
     kurslink: "https://n.ethz.ch/~rsahleanu/nus1/",
     pruefungen:
-      "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/1.Sem/Netzwerk-Schaltungen-I",
+      "https://github.com/KLubina/StudiumHub/tree/main/study-visualization/program-specific/eth-itet/old-exams/1.Sem/Netzwerk-Schaltungen-I",
   },
   "Technische Mechanik": {
     kurzbeschreibung:
@@ -145,7 +145,7 @@ window.StudiengangModuleDetails = {
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193886&lang=de",
     kurslink: "https://www.n.ethz.ch/~ldewindt/TechMechHS22_PVK/index.html",
     pruefungen:
-      "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/1.Sem/Technische-Mechanik",
+      "https://github.com/KLubina/StudiumHub/tree/main/study-visualization/program-specific/eth-itet/old-exams/1.Sem/Technische-Mechanik",
   },
   "Vorkurs Informatik": {
     kurzbeschreibung:
@@ -185,7 +185,7 @@ window.StudiengangModuleDetails = {
     vorlesungslink:
       "https://video.ethz.ch/lectures/d-math/2016/spring/401-1262-07L/e9902307-e2b7-44f3-8feb-115773280c13.html",
     pruefungen:
-      "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/2.Sem/Analysis-II",
+      "https://github.com/KLubina/StudiumHub/tree/main/study-visualization/program-specific/eth-itet/old-exams/2.Sem/Analysis-II",
   },
   "Netzwerke und Schaltungen II": {
     kurzbeschreibung:
@@ -252,7 +252,7 @@ window.StudiengangModuleDetails = {
     vorlesungslink:
       "https://video.ethz.ch/lectures/d-phys/2023/autumn/402-0083-00L.html",
     pruefungen:
-      "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/2.Sem/Physik-I",
+      "https://github.com/KLubina/StudiumHub/tree/main/study-visualization/program-specific/eth-itet/old-exams/2.Sem/Physik-I",
   },
   "Informatik I": {
     kurzbeschreibung:
@@ -277,7 +277,7 @@ window.StudiengangModuleDetails = {
     vorlesungslink:
       "https://video.ethz.ch/lectures/d-infk/2016/autumn/252-0847-00L.html",
     pruefungen:
-      "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/2.Sem/Informatik-I",
+      "https://github.com/KLubina/StudiumHub/tree/main/study-visualization/program-specific/eth-itet/old-exams/2.Sem/Informatik-I",
   },
   "Mathematische Methoden": {
     kurzbeschreibung:
@@ -298,7 +298,7 @@ window.StudiengangModuleDetails = {
       "• Laplace-Transformationen",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=188879&lang=de",
     pruefungen:
-      "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/2.Sem/Mathematische-Methoden",
+      "https://github.com/KLubina/StudiumHub/tree/main/study-visualization/program-specific/eth-itet/old-exams/2.Sem/Mathematische-Methoden",
   },
   // #endregion 2 Semester
 
@@ -335,7 +335,7 @@ window.StudiengangModuleDetails = {
     vorlesungslink:
       "https://video.ethz.ch/lectures/d-math/2015/autumn/401-0363-10L/a36b37a3-3ac0-4e47-8310-b79347db3717.html",
     pruefungen:
-      "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/3.Sem/Analysis-III",
+      "https://github.com/KLubina/StudiumHub/tree/main/study-visualization/program-specific/eth-itet/old-exams/3.Sem/Analysis-III",
   },
   "Physik II": {
     kurzbeschreibung:
@@ -382,7 +382,7 @@ window.StudiengangModuleDetails = {
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025W&ansicht=KATALOGDATEN&lerneinheitId=193407&lang=de",
     kurslink: "https://www.mins.ee.ethz.ch/teaching/signal/klausuren.html",
     pruefungen:
-      "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/3.Sem/Signal-System-I",
+      "https://github.com/KLubina/StudiumHub/tree/main/study-visualization/program-specific/eth-itet/old-exams/3.Sem/Signal-System-I",
   },
   "Diskrete Mathematik": {
     kurzbeschreibung:
@@ -410,7 +410,7 @@ window.StudiengangModuleDetails = {
     kurslink:
       "https://cadmo.ethz.ch/education/lectures/HS15/DiskreteMathematik.html\nhttps://crypto.ethz.ch/teaching/DM23/",
     pruefungen:
-      "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/3.Sem/Diskrete-Mathematik",
+      "https://github.com/KLubina/StudiumHub/tree/main/study-visualization/program-specific/eth-itet/old-exams/3.Sem/Diskrete-Mathematik",
   },
   "Halbleiter-Schaltungstechnik": {
     kurzbeschreibung:
@@ -561,7 +561,7 @@ window.StudiengangModuleDetails = {
       "• Tests",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=187991&lang=de",
     pruefungen:
-      "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/4.Sem/Wahrscheinlichkeitstheorie-und-Statistik",
+      "https://github.com/KLubina/StudiumHub/tree/main/study-visualization/program-specific/eth-itet/old-exams/4.Sem/Wahrscheinlichkeitstheorie-und-Statistik",
   },
   "Elektromagnetische Felder und Wellen": {
     kurzbeschreibung:
@@ -579,7 +579,7 @@ window.StudiengangModuleDetails = {
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=188239&lang=de",
     kurslink: "https://www.n.ethz.ch/~zrene/EM/",
     pruefungen:
-      "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/4.Sem/Elektromagnetische-Felder-und-Wellen",
+      "https://github.com/KLubina/StudiumHub/tree/main/study-visualization/program-specific/eth-itet/old-exams/4.Sem/Elektromagnetische-Felder-und-Wellen",
   },
   Halbleiterelemente: {
     kurzbeschreibung:
@@ -601,7 +601,7 @@ window.StudiengangModuleDetails = {
       "• Bipolar transistor: Operation principles, modes of operation, characteristics, models, simulation",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2025S&ansicht=KATALOGDATEN&lerneinheitId=187791&lang=de",
     pruefungen:
-      "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/4.Sem/Halbleiterelemente",
+      "https://github.com/KLubina/StudiumHub/tree/main/study-visualization/program-specific/eth-itet/old-exams/4.Sem/Halbleiterelemente",
   },
   "Numerische Methoden": {
     kurzbeschreibung:
@@ -619,7 +619,7 @@ window.StudiengangModuleDetails = {
     vorlesungslink:
       "https://video.ethz.ch/lectures/d-math/2016/autumn/401-0663-00L/1e9ea34b-4fc6-4dab-8e3b-dd21bfb732df.html",
     pruefungen:
-      "https://github.com/KLubina/StudiumHub/tree/main/old-exams/ITET-old-exams/4.Sem/Numerische-Methoden",
+      "https://github.com/KLubina/StudiumHub/tree/main/study-visualization/program-specific/eth-itet/old-exams/4.Sem/Numerische-Methoden",
   },
   // #endregion 4 Semester
 

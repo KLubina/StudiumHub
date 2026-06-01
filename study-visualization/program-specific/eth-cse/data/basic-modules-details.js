@@ -17,9 +17,9 @@ window.StudiengangModuleDetails = {
     vorlesungslink:
       "https://video.ethz.ch/lectures/d-math/2016/autumn/401-1261-07L/a65b10a4-c135-3bca-a4f5-c37d9f8b0913.html",
     skript:
-      "https://github.com/KLubina/StudiumHub/tree/main/scripts/CSE-scripts/1.Sem/Analysis%20I",
+      "https://github.com/KLubina/StudiumHub/tree/main/study-visualization/program-specific/eth-cse/scripts/1.Sem/Analysis%20I",
     pruefungen:
-      "https://github.com/KLubina/StudiumHub/tree/main/old-exams/CSE-old-exams/1.Sem/Analysis%20I",
+      "https://github.com/KLubina/StudiumHub/tree/main/study-visualization/program-specific/eth-cse/old-exams/1.Sem/Analysis%20I",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=193410&semkez=2025W&ansicht=LEHRVERANSTALTUNGEN&lang=de",
   },
   "Analysis II": {
@@ -174,7 +174,7 @@ window.StudiengangModuleDetails = {
       "• Probleme der Nebenläufigkeit\n" +
       "• Prozess-Synchronisation und Kommunikation",
     pruefungen:
-      "https://github.com/KLubina/StudiumHub/tree/main/old-exams/CSE-old-exams/2.Sem/Algorithmen%20und%20Datenstrukturen",
+      "https://github.com/KLubina/StudiumHub/tree/main/study-visualization/program-specific/eth-cse/old-exams/2.Sem/Algorithmen%20und%20Datenstrukturen",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=187472&semkez=2025S&ansicht=LEHRVERANSTALTUNGEN&lang=de",
   },
   Informatik: {
@@ -221,7 +221,7 @@ window.StudiengangModuleDetails = {
       "• Aussagen- und Prädikatenlogik\n" +
       "• Beweiskalküle",
     pruefungen:
-      "https://github.com/KLubina/StudiumHub/tree/main/old-exams/CSE-old-exams/1.Sem/Diskrete%20Mathematik",
+      "https://github.com/KLubina/StudiumHub/tree/main/study-visualization/program-specific/eth-cse/old-exams/1.Sem/Diskrete%20Mathematik",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=194074&semkez=2025W&ansicht=LEHRVERANSTALTUNGEN&lang=de",
   },
   "Lineare Algebra": {
@@ -239,7 +239,7 @@ window.StudiengangModuleDetails = {
     vorlesungslink:
       "https://video.ethz.ch/lectures/d-math/2015/autumn/401-1151-00L/1707a212-2905-448f-b042-6eca940f6c93.html",
     pruefungen:
-      "https://github.com/KLubina/StudiumHub/tree/main/old-exams/CSE-old-exams/1.Sem/Lineare%20Algebra%20I",
+      "https://github.com/KLubina/StudiumHub/tree/main/study-visualization/program-specific/eth-cse/old-exams/1.Sem/Lineare%20Algebra%20I",
     link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=192867&semkez=2025W&ansicht=LEHRVERANSTALTUNGEN&lang=de",
   },
   "Numerical Methods for Partial Differential Equations": {
