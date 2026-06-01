@@ -322,6 +322,24 @@
       }
     }
 
+    // Special handling for Wirtschaftsinformatik at different institutions
+    if (studiengangName === "Wirtschaftsinformatik") {
+      if (institutionName === "ZHAW") {
+        return `study-visualization/standard/studienplan-template.html?studiengang=zhaw-win-bis-tz`;
+      } else if (institutionName === "Fachhochschule Nordwestschweiz") {
+        return `study-visualization/standard/studienplan-template.html?studiengang=fhnw-wirtschaftsinformatik`;
+      }
+    }
+
+    // Special handling for Betriebsökonomie at different institutions
+    if (studiengangName === "Betriebsökonomie") {
+      if (institutionName === "ZHAW") {
+        return `study-visualization/standard/studienplan-template.html?studiengang=zhaw-betriebsoekonomie`;
+      } else if (institutionName === "Fachhochschule Nordwestschweiz") {
+        return `study-visualization/standard/studienplan-template.html?studiengang=fhnw-betriebsoekonomie`;
+      }
+    }
+
     // Special handling for Betriebswirtschaftslehre at different institutions
     if (studiengangName === "Betriebswirtschaftslehre") {
       if (institutionName === "Universität Zürich") {
