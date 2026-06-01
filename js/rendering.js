@@ -1,145 +1,105 @@
-// Rendering Logic
 const Rendering = {
   renderStudiengaenge() {
     const container = document.getElementById("studyProgramsContainer");
     const filteredData = Filters.filterData();
 
-    // Leere Container
     container.innerHTML = "";
 
-    // Zeige "Keine Ergebnisse" wenn nichts gefunden
+    // Early Return bei leeren Daten
     if (
       filteredData.length === 0 ||
       filteredData.every((uni) => uni.categories.length === 0)
     ) {
-      container.innerHTML = `
-        <div class="no-results">
-          <p>Keine Studiengänge gefunden.</p>
-          <p>Bitte versuche es mit anderen Filterkriterien.</p>
-        </div>
-      `;
+      this._renderNoResults(container);
       Navigation.updateFloatingNav([]);
       return;
     }
 
-    // Wähle Ansicht
-    const currentView = State.getView();
-    if (currentView === "category") {
+    // Ansichts-Weiche
+    if (State.getView() === "category") {
       this.renderByCategory(filteredData, container);
     } else {
       this.renderByInstitution(filteredData, container);
     }
 
-    // Aktualisiere schwebende Navigation
     Navigation.updateFloatingNav(filteredData);
   },
 
+  _renderNoResults(container) {
+    container.innerHTML = `
+      <div class="no-results">
+        <p>Keine Studiengänge gefunden.</p>
+        <p>Bitte versuche es mit anderen Filterkriterien.</p>
+      </div>
+    `;
+  },
+
   renderByInstitution(filteredData, container) {
-    // Rendere jede Universität
     filteredData.forEach((uni) => {
       if (uni.categories.length > 0) {
-        const uniSection = DOMBuilders.createUniSection(uni);
-        container.appendChild(uniSection);
+        container.appendChild(DOMBuilders.createUniSection(uni));
       }
     });
   },
 
   renderByCategory(filteredData, container) {
-    // Gruppiere nach Kategorien
     const hierarchicalCategories = new Map();
 
+    // Daten für Kategorie-Ansicht transformieren
     filteredData.forEach((inst) => {
       inst.categories.forEach((category) => {
-        // Check if category has subcategories
-        if (category.subcategories && category.subcategories.length > 0) {
-          if (!hierarchicalCategories.has(category.name)) {
-            hierarchicalCategories.set(category.name, {
-              isParent: true,
-              subcategories: new Map(),
-              directPrograms: [],
-            });
-          }
-
-          category.subcategories.forEach((subcategory) => {
-            if (
-              !hierarchicalCategories
-                .get(category.name)
-                .subcategories.has(subcategory.name)
-            ) {
-              hierarchicalCategories
-                .get(category.name)
-                .subcategories.set(subcategory.name, []);
-            }
-            hierarchicalCategories
-              .get(category.name)
-              .subcategories.get(subcategory.name)
-              .push({
-                institution: inst.name,
-                type: inst.type,
-                website: inst.website,
-                programs: subcategory.programs,
-              });
+        if (!hierarchicalCategories.has(category.name)) {
+          hierarchicalCategories.set(category.name, {
+            isParent: !!(category.subcategories?.length > 0),
+            subcategories: new Map(),
+            directPrograms: [],
           });
+        }
 
-          if (category.programs && category.programs.length > 0) {
-            hierarchicalCategories.get(category.name).directPrograms.push({
-              institution: inst.name,
-              type: inst.type,
-              website: inst.website,
-              programs: category.programs,
-            });
-          }
-        } else {
-          if (!hierarchicalCategories.has(category.name)) {
-            hierarchicalCategories.set(category.name, {
-              isParent: false,
-              institutions: [],
-            });
-          }
-          const categoryEntry = hierarchicalCategories.get(category.name);
-          if (categoryEntry.isParent) {
-            categoryEntry.directPrograms.push({
-              institution: inst.name,
-              type: inst.type,
-              website: inst.website,
-              programs: category.programs,
-            });
-          } else {
-            categoryEntry.institutions.push({
-              institution: inst.name,
-              type: inst.type,
-              website: inst.website,
-              programs: category.programs,
-            });
-          }
+        const catEntry = hierarchicalCategories.get(category.name);
+        const instMeta = {
+          institution: inst.name,
+          type: inst.type,
+          website: inst.website,
+        };
+
+        if (catEntry.isParent && category.subcategories) {
+          category.subcategories.forEach((sub) => {
+            if (!catEntry.subcategories.has(sub.name)) {
+              catEntry.subcategories.set(sub.name, []);
+            }
+            catEntry.subcategories
+              .get(sub.name)
+              .push({ ...instMeta, programs: sub.programs });
+          });
+        }
+
+        if (category.programs?.length > 0) {
+          const programList = catEntry.isParent
+            ? catEntry.directPrograms
+            : catEntry.subcategories.get(category.name) || [];
+          programList.push({ ...instMeta, programs: category.programs });
+          if (!catEntry.isParent) catEntry.institutions = programList; // Für flache Kategorien
         }
       });
     });
 
-    // Sortiere und rendere
-    const sortedMainCategories = Array.from(
-      hierarchicalCategories.keys(),
-    ).sort();
-
-    sortedMainCategories.forEach((mainCategoryName) => {
-      const categoryData = hierarchicalCategories.get(mainCategoryName);
-
-      if (categoryData.isParent) {
-        // Rendere Obergruppe mit Unterkategorien
-        const parentSection = DOMBuilders.createParentCategorySection(
-          mainCategoryName,
-          categoryData.subcategories,
-          categoryData.directPrograms,
-        );
-        container.appendChild(parentSection);
-      } else {
-        // Rendere normale Kategorie
-        const categorySection = DOMBuilders.createCategorySectionGrouped(
-          mainCategoryName,
-          categoryData.institutions,
-        );
-        container.appendChild(categorySection);
-      }
-    });
+    // Rendern der sortierten Kategorien
+    Array.from(hierarchicalCategories.keys())
+      .sort()
+      .forEach((catName) => {
+        const data = hierarchicalCategories.get(catName);
+        const section = data.isParent
+          ? DOMBuilders.createParentCategorySection(
+              catName,
+              data.subcategories,
+              data.directPrograms,
+            )
+          : DOMBuilders.createCategorySectionGrouped(
+              catName,
+              data.institutions || [],
+            );
+        container.appendChild(section);
+      });
   },
 };

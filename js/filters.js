@@ -1,77 +1,26 @@
 const Filters = {
   isMinor(program) {
     const ectsText = program.ects || program.degree || "";
-
     const numbers = ectsText.match(/\d+/g);
+    if (!numbers) return false;
 
-    if (!numbers || numbers.length === 0) {
-      return false;
-    }
-
-    const maxValue = Math.max(...numbers.map((n) => parseInt(n)));
+    const maxValue = Math.max(...numbers.map((n) => parseInt(n, 10)));
     return maxValue <= 60;
   },
 
-  populateFilters() {
-    const institutionFilter = document.getElementById("institutionFilter");
-    const categoryFilter = document.getElementById("categoryFilter");
-    const allData = State.getData();
-
-    const zurichOption = document.createElement("option");
-    zurichOption.value = "group_zurich";
-    zurichOption.textContent = "📍 Zürich (ETH, UZH, ZHAW, FHNW)";
-    institutionFilter.appendChild(zurichOption);
-
-    const institutions = allData.map((inst) => ({
-      name: inst.name,
-      type: inst.type,
-    }));
-
-    institutions.forEach((inst) => {
-      const option = document.createElement("option");
-      option.value = inst.name;
-      const prefix = inst.type === "uni" ? "[Uni] " : "[FH] ";
-      option.textContent = prefix + inst.name;
-      institutionFilter.appendChild(option);
-    });
-
-    const categories = new Set();
-    allData.forEach((inst) => {
-      inst.categories.forEach((cat) => {
-        categories.add(cat.name);
-      });
-    });
-
-    const sortedCategories = Array.from(categories).sort();
-    sortedCategories.forEach((catName) => {
-      const option = document.createElement("option");
-      option.value = catName;
-      option.textContent = catName;
-      categoryFilter.appendChild(option);
-    });
-  },
-
-  updateFilterVisibility() {
-    const categoryFilter = document.getElementById("categoryFilter");
-    const currentView = State.getView();
-
-    if (currentView === "institution") {
-      categoryFilter.style.display = "none";
-    } else {
-      categoryFilter.style.display = "";
-    }
-  },
-
   filterData() {
-    const allData = State.getData();
     const currentFilters = State.getFilters();
     const showMinors = State.getShowMinors();
-    let filtered = JSON.parse(JSON.stringify(allData));
 
+    // Tiefen-Kopie, um das Original-Datenmodell nicht zu korrumpieren
+    let filtered = JSON.parse(JSON.stringify(State.getData()));
+
+    // 1. Nach Typ filtern (Uni / FH)
     if (currentFilters.type) {
       filtered = filtered.filter((inst) => inst.type === currentFilters.type);
     }
 
+    // 2. Nach Institution / Region filtern
     if (currentFilters.institution) {
       if (currentFilters.institution === "group_zurich") {
         const zurichInsts = [
@@ -88,6 +37,7 @@ const Filters = {
       }
     }
 
+    // 3. Nach Kategorie filtern
     if (currentFilters.category) {
       filtered.forEach((inst) => {
         inst.categories = inst.categories.filter(
@@ -97,34 +47,86 @@ const Filters = {
       filtered = filtered.filter((inst) => inst.categories.length > 0);
     }
 
+    // 4. Minors ausschließen, falls nicht gewünscht
     if (!showMinors) {
-      filtered.forEach((inst) => {
-        inst.categories.forEach((cat) => {
-          if (cat.programs) {
-            cat.programs = cat.programs.filter((p) => !this.isMinor(p));
-          }
-          if (cat.subcategories) {
-            cat.subcategories.forEach((subcat) => {
-              if (subcat.programs) {
-                subcat.programs = subcat.programs.filter(
-                  (p) => !this.isMinor(p),
-                );
-              }
-            });
-            cat.subcategories = cat.subcategories.filter(
-              (subcat) => subcat.programs && subcat.programs.length > 0,
-            );
-          }
-        });
-        inst.categories = inst.categories.filter(
-          (cat) =>
-            (cat.programs && cat.programs.length > 0) ||
-            (cat.subcategories && cat.subcategories.length > 0),
-        );
-      });
-      filtered = filtered.filter((inst) => inst.categories.length > 0);
+      filtered = this._removeMinorsFromData(filtered);
     }
 
     return filtered;
+  },
+
+  // Interne Hilfsfunktion, um die tiefe Verschachtelung lesbar zu machen
+  _removeMinorsFromData(data) {
+    data.forEach((inst) => {
+      inst.categories.forEach((cat) => {
+        if (cat.programs) {
+          cat.programs = cat.programs.filter((p) => !this.isMinor(p));
+        }
+        if (cat.subcategories) {
+          cat.subcategories.forEach((sub) => {
+            if (sub.programs)
+              sub.programs = sub.programs.filter((p) => !this.isMinor(p));
+          });
+          cat.subcategories = cat.subcategories.filter(
+            (sub) => sub.programs?.length > 0,
+          );
+        }
+      });
+
+      inst.categories = inst.categories.filter(
+        (cat) => cat.programs?.length > 0 || cat.subcategories?.length > 0,
+      );
+    });
+
+    return data.filter((inst) => inst.categories.length > 0);
+  },
+};
+
+// =========================================================================
+// 2. FORMULAR-ELEMENTE (Dropdowns befüllen und steuern)
+// =========================================================================
+const FilterUI = {
+  populateFilters() {
+    const institutionFilter = document.getElementById("institutionFilter");
+    const categoryFilter = document.getElementById("categoryFilter");
+    const allData = State.getData();
+
+    // Institutionen-Dropdown zurücksetzen & Standard-Option setzen
+    institutionFilter.innerHTML =
+      '<option value="group_zurich">📍 Zürich (ETH, UZH, ZHAW, FHNW)</option>';
+
+    // Hochschulen hinzufügen
+    allData.forEach((inst) => {
+      const prefix = inst.type === "uni" ? "[Uni] " : "[FH] ";
+      this._addOption(institutionFilter, inst.name, prefix + inst.name);
+    });
+
+    // Einzigartige Kategorien sammeln und sortieren
+    const categories = new Set();
+    allData.forEach((inst) =>
+      inst.categories.forEach((cat) => categories.add(cat.name)),
+    );
+
+    // Kategorien-Dropdown befüllen
+    categoryFilter.innerHTML =
+      '<option value="">-- Alle Kategorien --</option>'; // Falls Standardwert gewünscht
+    Array.from(categories)
+      .sort()
+      .forEach((catName) => {
+        this._addOption(categoryFilter, catName, catName);
+      });
+  },
+
+  updateFilterVisibility() {
+    const categoryFilter = document.getElementById("categoryFilter");
+    categoryFilter.style.display =
+      State.getView() === "institution" ? "none" : "";
+  },
+
+  _addOption(selectElement, value, text) {
+    const option = document.createElement("option");
+    option.value = value;
+    option.textContent = text;
+    selectElement.appendChild(option);
   },
 };

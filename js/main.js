@@ -44,13 +44,13 @@
       const universitaeten = await Promise.all(uniPromises);
       const fachhochschulen = await Promise.all(fhPromises);
 
-      // Daten an den umgebauten State übergeben
+      // 1. Daten im State initialisieren
       State.initializeData(universitaeten, fachhochschulen);
 
-      // UI Initialisierung
-      Filters.populateFilters();
-      EventHandlers.setupEventListeners();
+      // 2. UI-Filterelemente (Dropdowns) befüllen
+      FilterUI.populateFilters();
 
+      // 3. Initiale Filter-Werte aus dem State im DOM setzen
       const typeFilter = document.getElementById("typeFilter");
       if (typeFilter) typeFilter.value = State.getFilters().type;
 
@@ -58,8 +58,19 @@
       if (institutionFilter)
         institutionFilter.value = State.getFilters().institution;
 
-      Filters.updateFilterVisibility();
+      const categoryFilter = document.getElementById("categoryFilter");
+      if (categoryFilter) categoryFilter.value = State.getFilters().category;
+
+      const showMinorsCheckbox = document.getElementById("showMinors");
+      if (showMinorsCheckbox)
+        showMinorsCheckbox.checked = State.getShowMinors();
+
+      // 4. Sichtbarkeit der Filter anpassen & Studiengänge rendern
+      FilterUI.updateFilterVisibility();
       Rendering.renderStudiengaenge();
+
+      // 5. EVENT LISTENERS REGISTRIEREN
+      setupEventListeners();
     } catch (error) {
       console.error(
         "Kritischer Fehler beim Laden der Studiengangsdaten:",
@@ -67,4 +78,100 @@
       );
     }
   });
+
+  // Funktion zur Koppelung aller UI-Interaktionen mit Logik und Rendering
+  function setupEventListeners() {
+    // Typ-Filter (Alle / Uni / FH)
+    document
+      .getElementById("typeFilter")
+      ?.addEventListener("change", function (e) {
+        State.setFilter("type", e.target.value);
+        Rendering.renderStudiengaenge();
+      });
+
+    // Institutionen-Filter
+    document
+      .getElementById("institutionFilter")
+      ?.addEventListener("change", function (e) {
+        State.setFilter("institution", e.target.value);
+        Rendering.renderStudiengaenge();
+      });
+
+    // Kategorien-Filter (wird nur in der Kategorie-Ansicht angezeigt)
+    document
+      .getElementById("categoryFilter")
+      ?.addEventListener("change", function (e) {
+        State.setFilter("category", e.target.value);
+        Rendering.renderStudiengaenge();
+      });
+
+    // Minors/Nebenfach-Checkbox (ID im HTML ist "showMinors")
+    document
+      .getElementById("showMinors")
+      ?.addEventListener("change", function (e) {
+        State.setShowMinors(e.target.checked);
+        Rendering.renderStudiengaenge();
+      });
+
+    // ==========================================
+    // ANSICHTS-UMSCHALTER (EXAKT FÜR DEIN HTML)
+    // ==========================================
+
+    // 1. Nach Hochschule wechseln
+    document
+      .getElementById("viewByInstitution")
+      ?.addEventListener("click", function (e) {
+        setActiveButton(e.target);
+        toggleSections(false); // Versteckt die statischen Visualisierungen
+
+        State.setView("institution");
+        FilterUI.updateFilterVisibility();
+        Rendering.renderStudiengaenge();
+      });
+
+    // 2. Nach Kategorie wechseln
+    document
+      .getElementById("viewByCategory")
+      ?.addEventListener("click", function (e) {
+        setActiveButton(e.target);
+        toggleSections(false); // Versteckt die statischen Visualisierungen
+
+        State.setView("category");
+        FilterUI.updateFilterVisibility();
+        Rendering.renderStudiengaenge();
+      });
+
+    // 3. Alle Visualisierungen (Statische Sektion aus dem HTML einblenden)
+    document
+      .getElementById("viewAllVisualizations")
+      ?.addEventListener("click", function (e) {
+        setActiveButton(e.target);
+        toggleSections(true); // Blendet die Visualisierungen ein, versteckt dynamischen Content
+      });
+  }
+
+  // Hilfsfunktion: Setzt die CSS-Klasse "active" auf den geklickten Navigations-Button
+  function setActiveButton(activeButton) {
+    document.querySelectorAll(".view-btn").forEach((btn) => {
+      btn.classList.remove("active");
+    });
+    activeButton.classList.add("active");
+  }
+
+  // Hilfsfunktion: Schaltet zwischen dynamischem Container und statischen Visualisierungen um
+  function toggleSections(showVisualizations) {
+    const studyContainer = document.getElementById("studyProgramsContainer");
+    const vizSection = document.getElementById("visualizationsSection");
+    const filterContainer = document.querySelector(".filter-container");
+
+    if (showVisualizations) {
+      if (studyContainer) studyContainer.style.display = "none";
+      if (filterContainer) filterContainer.style.display = "none"; // Filter ausblenden, da eh inaktiv
+      if (vizSection) vizSection.style.display = "block";
+    } else {
+      if (studyContainer) studyContainer.style.display = "block";
+      if (filterContainer) filterContainer.style.display = "flex"; // Filter wieder einblenden
+      if (vizSection) vizSection.style.display = "none";
+    }
+  }
 })();
