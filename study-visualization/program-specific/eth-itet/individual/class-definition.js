@@ -1,7 +1,9 @@
 /* ==== ITET CLASS DEFINITION ==== */
-/* Hauptklasse für den ITET Studienplan */
+/* Hauptklasse für den ITET Specificprogram */
 
-window.ITETStudienplan = class ITETStudienplan extends StudienplanBase {
+window.ITETSpecificprogram = class ITETSpecificprogram extends (
+  SpecificprogramBase
+) {
   constructor(config) {
     super(config);
   }

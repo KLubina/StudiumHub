@@ -1,44 +1,51 @@
 /* ==== MTEC FACHGEBIET LAYOUT ==== */
 /* Horizontale Darstellung der Fachgebiete */
 
-if (window.MTECStudienplan) {
-    // Überschreibe die Fachgebiet-Layout-Erstellung für horizontale Darstellung
-    window.MTECStudienplan.prototype.createFachgebietLayout = function(container, modules) {
-        const fachgebiete = [...new Set(modules.map(m => m.fachgebiet).filter(f => f))];
-        
-        fachgebiete.forEach(fachgebiet => {
-            // Fachgebiet-Label
-            const fachgebietLabel = document.createElement('div');
-            fachgebietLabel.classList.add('fachgebiet');
-            fachgebietLabel.textContent = fachgebiet;
-            container.appendChild(fachgebietLabel);
-            
-            // Module horizontal in Container
-            const moduleContainer = document.createElement('div');
-            moduleContainer.classList.add('module-container');
-            moduleContainer.style.display = 'flex';
-            moduleContainer.style.flexWrap = 'wrap';
-            moduleContainer.style.gap = '5px';
-            moduleContainer.style.marginBottom = '15px';
-            
-            const fachgebietModules = modules.filter(m => m.fachgebiet === fachgebiet);
-            fachgebietModules.forEach(m => this.createModule(m, moduleContainer));
-            
-            container.appendChild(moduleContainer);
-        });
-        
-        // Module ohne Fachgebiet
-        const ohneGebiet = modules.filter(m => !m.fachgebiet);
-        if (ohneGebiet.length > 0) {
-            const moduleContainer = document.createElement('div');
-            moduleContainer.classList.add('module-container');
-            moduleContainer.style.display = 'flex';
-            moduleContainer.style.flexWrap = 'wrap';
-            moduleContainer.style.gap = '5px';
-            moduleContainer.style.marginBottom = '15px';
-            
-            ohneGebiet.forEach(m => this.createModule(m, moduleContainer));
-            container.appendChild(moduleContainer);
-        }
-    };
+if (window.MTECSpecificprogram) {
+  // Überschreibe die Fachgebiet-Layout-Erstellung für horizontale Darstellung
+  window.MTECSpecificprogram.prototype.createFachgebietLayout = function (
+    container,
+    modules,
+  ) {
+    const fachgebiete = [
+      ...new Set(modules.map((m) => m.fachgebiet).filter((f) => f)),
+    ];
+
+    fachgebiete.forEach((fachgebiet) => {
+      // Fachgebiet-Label
+      const fachgebietLabel = document.createElement("div");
+      fachgebietLabel.classList.add("fachgebiet");
+      fachgebietLabel.textContent = fachgebiet;
+      container.appendChild(fachgebietLabel);
+
+      // Module horizontal in Container
+      const moduleContainer = document.createElement("div");
+      moduleContainer.classList.add("module-container");
+      moduleContainer.style.display = "flex";
+      moduleContainer.style.flexWrap = "wrap";
+      moduleContainer.style.gap = "5px";
+      moduleContainer.style.marginBottom = "15px";
+
+      const fachgebietModules = modules.filter(
+        (m) => m.fachgebiet === fachgebiet,
+      );
+      fachgebietModules.forEach((m) => this.createModule(m, moduleContainer));
+
+      container.appendChild(moduleContainer);
+    });
+
+    // Module ohne Fachgebiet
+    const ohneGebiet = modules.filter((m) => !m.fachgebiet);
+    if (ohneGebiet.length > 0) {
+      const moduleContainer = document.createElement("div");
+      moduleContainer.classList.add("module-container");
+      moduleContainer.style.display = "flex";
+      moduleContainer.style.flexWrap = "wrap";
+      moduleContainer.style.gap = "5px";
+      moduleContainer.style.marginBottom = "15px";
+
+      ohneGebiet.forEach((m) => this.createModule(m, moduleContainer));
+      container.appendChild(moduleContainer);
+    }
+  };
 }

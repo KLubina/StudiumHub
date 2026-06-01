@@ -2,6 +2,6 @@
 /* Registriert die MSc ITET-Klasse als Custom Class für das System */
 
 // Registriere die MSc ITET-Klasse als Custom Class
-window.StudiengangCustomClass = window.MScITETStudienplan;
+window.StudiengangCustomClass = window.MScITETSpecificprogram;
 
-console.log('✅ MScITETStudienplan als Custom Class registriert');
+console.log("✅ MScITETSpecificprogram als Custom Class registriert");

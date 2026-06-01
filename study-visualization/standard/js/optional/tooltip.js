@@ -3,7 +3,7 @@
  * Click-basierte Modul-Details
  */
 
-window.StudienplanTooltip = {
+window.SpecificprogramTooltip = {
   currentTooltip: null,
 
   initialize() {
@@ -239,10 +239,10 @@ window.StudienplanTooltip = {
 // Initialisiere sofort oder wenn DOM ready
 if (document.readyState === "loading") {
   document.addEventListener("DOMContentLoaded", () => {
-    window.StudienplanTooltip.initialize();
+    window.SpecificprogramTooltip.initialize();
   });
 } else {
-  window.StudienplanTooltip.initialize();
+  window.SpecificprogramTooltip.initialize();
 }
 
 // Markiere als geladen

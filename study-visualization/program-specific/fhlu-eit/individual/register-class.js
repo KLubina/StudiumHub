@@ -4,13 +4,15 @@
  * register-class.js, das vom Loader automatisch erkannt wird.
  */
 
-// Erwartet: window.HSLUEITStudienplan wurde in einer anderen Datei definiert
+// Erwartet: window.HSLUEITSpecificprogram wurde in einer anderen Datei definiert
 // (z.B. class-definition oder zusammen mit Erweiterungen). Falls nicht vorhanden,
 // tut diese Registrierung nichts kaputt.
 
-if (window.HSLUEITStudienplan) {
-    window.StudiengangCustomClass = window.HSLUEITStudienplan;
-    console.log('[register-class] HSLU EIT Studiengang-Klasse registriert');
+if (window.HSLUEITSpecificprogram) {
+  window.StudiengangCustomClass = window.HSLUEITSpecificprogram;
+  console.log("[register-class] HSLU EIT Studiengang-Klasse registriert");
 } else {
-    console.warn('[register-class] HSLU EIT Klasse nicht gefunden – fällt auf Fallback zurück');
+  console.warn(
+    "[register-class] HSLU EIT Klasse nicht gefunden – fällt auf Fallback zurück",
+  );
 }

@@ -2,7 +2,7 @@
  * CONFIG LOADER - Lädt Studiengang-Konfiguration und Daten
  */
 
-window.StudienplanConfigLoader = {
+window.SpecificprogramConfigLoader = {
   // Lade Konfiguration für einen Studiengang
   async loadStudiengangConfig(studiengang) {
     try {
@@ -70,7 +70,7 @@ window.StudienplanConfigLoader = {
         // Details sind optional
       }
 
-      // Wenn Daten geladen, rendere den Studienplan
+      // Wenn Daten geladen, rendere den Specificprogram
       if (window.StudiengangModules) {
         this.renderStudiengang(window.StudiengangModules, studiengang);
       } else {
@@ -105,22 +105,22 @@ window.StudienplanConfigLoader = {
     }
   },
 
-  // Rendere den Studienplan
+  // Rendere den Specificprogram
   renderStudiengang(modules, studiengang) {
     // Mappe Kategorien zu CSS-Klassen
     const mappedModules = this.mapCategoriesToClasses(modules);
 
     // Gruppiere Module
     const grouped =
-      window.StudienplanUtils.groupModulesByYearAndSemester(mappedModules);
+      window.SpecificprogramUtils.groupModulesByYearAndSemester(mappedModules);
 
     // Rendere Layout
-    window.StudienplanLayout.renderLayout(grouped);
+    window.SpecificprogramLayout.renderLayout(grouped);
 
     // Rendere Legende
     const categories =
-      window.StudienplanUtils.getUniqueCategories(mappedModules);
-    window.StudienplanLegend.renderLegend(categories);
+      window.SpecificprogramUtils.getUniqueCategories(mappedModules);
+    window.SpecificprogramLegend.renderLegend(categories);
 
     // Setze Titel
     this.setTitles(studiengang);
@@ -128,25 +128,25 @@ window.StudienplanConfigLoader = {
     // Initialisiere optionale Module, falls vorhanden (z.B. wenn sie nach DOMContentLoaded geladen wurden)
     try {
       if (
-        window.StudienplanKPCounter &&
-        typeof window.StudienplanKPCounter.updateTotalKP === "function"
+        window.SpecificprogramKPCounter &&
+        typeof window.SpecificprogramKPCounter.updateTotalKP === "function"
       ) {
         // KP Counter aktualisieren (berechnet aus gerenderten Modulen)
-        window.StudienplanKPCounter.updateTotalKP();
+        window.SpecificprogramKPCounter.updateTotalKP();
       }
 
       if (
-        window.StudienplanColorManager &&
-        typeof window.StudienplanColorManager.initialize === "function"
+        window.SpecificprogramColorManager &&
+        typeof window.SpecificprogramColorManager.initialize === "function"
       ) {
         // Color Manager initialisieren (erzeugt Selector / Legendeneinträge)
-        window.StudienplanColorManager.initialize();
+        window.SpecificprogramColorManager.initialize();
       }
     } catch (e) {
       console.warn("Fehler beim Initialisieren optionaler Module:", e);
     }
 
-    console.log("Studienplan gerendert für:", studiengang);
+    console.log("Specificprogram gerendert für:", studiengang);
   },
 
   // Mappe standardcategory zu CSS-Klasse
@@ -202,8 +202,8 @@ window.StudienplanConfigLoader = {
 
   // Setze Titel und Untertitel
   setTitles(studiengang) {
-    const titleElement = document.getElementById("studienplan-title");
-    const subtitleElement = document.getElementById("studienplan-subtitle");
+    const titleElement = document.getElementById("specificprogram-title");
+    const subtitleElement = document.getElementById("specificprogram-subtitle");
 
     if (titleElement) {
       const title =
@@ -235,8 +235,8 @@ window.StudienplanConfigLoader = {
 
 // Mache Funktion global verfügbar
 window.loadStudiengangConfig =
-  window.StudienplanConfigLoader.loadStudiengangConfig.bind(
-    window.StudienplanConfigLoader,
+  window.SpecificprogramConfigLoader.loadStudiengangConfig.bind(
+    window.SpecificprogramConfigLoader,
   );
 
 // Markiere als geladen

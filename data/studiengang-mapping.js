@@ -281,7 +281,7 @@
         return mapping.customUrl;
       }
       // Simplified: always use mono model
-      return `study-visualization/standard/studienplan-template.html?studiengang=${encodeURIComponent(mapping.key)}`;
+      return `study-visualization/standard/specificprogram-template.html?studiengang=${encodeURIComponent(mapping.key)}`;
     }
 
     // Special handling for EIT at different institutions
@@ -290,81 +290,81 @@
       studiengangName === "Elektro- und Informationstechnik"
     ) {
       if (institutionName === "Berner Fachhochschule") {
-        return `study-visualization/standard/studienplan-template.html?studiengang=fhbern-eit`;
+        return `study-visualization/standard/specificprogram-template.html?studiengang=fhbern-eit`;
       } else if (institutionName === "Hochschule Luzern") {
-        return `study-visualization/standard/studienplan-template.html?studiengang=fhlu-eit`;
+        return `study-visualization/standard/specificprogram-template.html?studiengang=fhlu-eit`;
       } else if (institutionName === "OST Ostschweizer Fachhochschule") {
-        return `study-visualization/standard/studienplan-template.html?studiengang=fhost-eit`;
+        return `study-visualization/standard/specificprogram-template.html?studiengang=fhost-eit`;
       } else if (institutionName === "Fachhochschule Nordwestschweiz") {
-        return `study-visualization/standard/studienplan-template.html?studiengang=fhnw-eit`;
+        return `study-visualization/standard/specificprogram-template.html?studiengang=fhnw-eit`;
       } else if (institutionName === "ETH Zürich") {
-        return `study-visualization/standard/studienplan-template.html?studiengang=eth-itet`;
+        return `study-visualization/standard/specificprogram-template.html?studiengang=eth-itet`;
       }
     }
 
     // Special handling for Informatik at different institutions
     if (studiengangName === "Informatik") {
       if (institutionName === "ZHAW") {
-        return `study-visualization/standard/studienplan-template.html?studiengang=fhzh-cs`;
+        return `study-visualization/standard/specificprogram-template.html?studiengang=fhzh-cs`;
       } else if (institutionName === "ETH Zürich") {
-        return `study-visualization/standard/studienplan-template.html?studiengang=eth-cs`;
+        return `study-visualization/standard/specificprogram-template.html?studiengang=eth-cs`;
       } else if (institutionName === "Universität Zürich") {
-        return `study-visualization/standard/studienplan-template.html?studiengang=uzh-informatik`;
+        return `study-visualization/standard/specificprogram-template.html?studiengang=uzh-informatik`;
       } else if (institutionName === "Berner Fachhochschule") {
-        return `study-visualization/standard/studienplan-template.html?studiengang=fhbern-cs`;
+        return `study-visualization/standard/specificprogram-template.html?studiengang=fhbern-cs`;
       } else if (institutionName === "Fachhochschule Nordwestschweiz") {
-        return `study-visualization/standard/studienplan-template.html?studiengang=fhnw-cs`;
+        return `study-visualization/standard/specificprogram-template.html?studiengang=fhnw-cs`;
       } else if (
         institutionName === "Hochschule Luzern" ||
         institutionName === "HSLU"
       ) {
-        return `study-visualization/standard/studienplan-template.html?studiengang=hslu-cs`;
+        return `study-visualization/standard/specificprogram-template.html?studiengang=hslu-cs`;
       } else if (
         institutionName === "Ostschweizer Fachhochschule" ||
         institutionName === "OST"
       ) {
-        return `study-visualization/standard/studienplan-template.html?studiengang=ost-cs`;
+        return `study-visualization/standard/specificprogram-template.html?studiengang=ost-cs`;
       } else if (institutionName === "FFHS") {
-        return `study-visualization/standard/studienplan-template.html?studiengang=ffhs-informatik`;
+        return `study-visualization/standard/specificprogram-template.html?studiengang=ffhs-informatik`;
       } else if (
         institutionName === "FernUniversität in Hagen" ||
         institutionName === "FernUni Hagen"
       ) {
-        return `study-visualization/standard/studienplan-template.html?studiengang=fernuni-hagen-cs`;
+        return `study-visualization/standard/specificprogram-template.html?studiengang=fernuni-hagen-cs`;
       }
     }
 
     // Special handling for Wirtschaftsinformatik at different institutions
     if (studiengangName === "Wirtschaftsinformatik") {
       if (institutionName === "ZHAW") {
-        return `study-visualization/standard/studienplan-template.html?studiengang=zhaw-win-bis-tz`;
+        return `study-visualization/standard/specificprogram-template.html?studiengang=zhaw-win-bis-tz`;
       } else if (institutionName === "Fachhochschule Nordwestschweiz") {
-        return `study-visualization/standard/studienplan-template.html?studiengang=fhnw-wirtschaftsinformatik`;
+        return `study-visualization/standard/specificprogram-template.html?studiengang=fhnw-wirtschaftsinformatik`;
       }
     }
 
     // Special handling for Betriebsökonomie at different institutions
     if (studiengangName === "Betriebsökonomie") {
       if (institutionName === "ZHAW") {
-        return `study-visualization/standard/studienplan-template.html?studiengang=zhaw-betriebsoekonomie`;
+        return `study-visualization/standard/specificprogram-template.html?studiengang=zhaw-betriebsoekonomie`;
       } else if (institutionName === "Fachhochschule Nordwestschweiz") {
-        return `study-visualization/standard/studienplan-template.html?studiengang=fhnw-betriebsoekonomie`;
+        return `study-visualization/standard/specificprogram-template.html?studiengang=fhnw-betriebsoekonomie`;
       }
     }
 
     // Special handling for Betriebswirtschaftslehre at different institutions
     if (studiengangName === "Betriebswirtschaftslehre") {
       if (institutionName === "Universität Zürich") {
-        return `study-visualization/standard/studienplan-template.html?studiengang=uzh-bwl`;
+        return `study-visualization/standard/specificprogram-template.html?studiengang=uzh-bwl`;
       }
     }
 
     // Special handling for Humanmedizin at different institutions
     if (studiengangName === "Humanmedizin") {
       if (institutionName === "ETH Zürich") {
-        return `study-visualization/standard/studienplan-template.html?studiengang=eth-humanmedizin`;
+        return `study-visualization/standard/specificprogram-template.html?studiengang=eth-humanmedizin`;
       } else if (institutionName === "Universität Zürich") {
-        return `study-visualization/standard/studienplan-template.html?studiengang=uzh-humanmedizin`;
+        return `study-visualization/standard/specificprogram-template.html?studiengang=uzh-humanmedizin`;
       }
     }
 

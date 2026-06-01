@@ -2,7 +2,7 @@
  * WAHLMODULE - Optionale Wahlmodule-Verwaltung
  */
 
-window.StudienplanWahlmodule = {
+window.SpecificprogramWahlmodule = {
   loadedSources: {}, // Cache für geladene Modul-Daten
 
   initialize() {
@@ -17,7 +17,7 @@ window.StudienplanWahlmodule = {
         if (source) {
           e.preventDefault();
           e.stopPropagation();
-          window.StudienplanWahlmodule.openWahlmodulDialog(source, modul);
+          window.SpecificprogramWahlmodule.openWahlmodulDialog(source, modul);
         }
       }
     });
@@ -260,7 +260,7 @@ window.StudienplanWahlmodule = {
     });
   },
 
-  // Fügt ausgewählte Module zum Studienplan hinzu
+  // Fügt ausgewählte Module zum Specificprogram hinzu
   addSelectedModules(selectedModules, placeholderElement) {
     const container = placeholderElement.parentElement;
 
@@ -287,7 +287,7 @@ window.StudienplanWahlmodule = {
 
     // Füge ausgewählte Module hinzu
     selectedModules.forEach((module) => {
-      const moduleHTML = window.StudienplanModule.renderModule(module);
+      const moduleHTML = window.SpecificprogramModule.renderModule(module);
       const tempDiv = document.createElement("div");
       tempDiv.innerHTML = moduleHTML;
       const moduleElement = tempDiv.firstElementChild;
@@ -295,8 +295,8 @@ window.StudienplanWahlmodule = {
     });
 
     // Aktualisiere KP-Counter falls vorhanden
-    if (window.StudienplanKPCounter) {
-      window.StudienplanKPCounter.updateCounter();
+    if (window.SpecificprogramKPCounter) {
+      window.SpecificprogramKPCounter.updateCounter();
     }
 
     console.log(
@@ -309,11 +309,11 @@ window.StudienplanWahlmodule = {
 // Initialisiere sofort oder wenn DOM ready
 if (document.readyState === "loading") {
   document.addEventListener("DOMContentLoaded", () => {
-    window.StudienplanWahlmodule.initialize();
+    window.SpecificprogramWahlmodule.initialize();
   });
 } else {
   // DOM ist bereits ready, initialisiere sofort
-  window.StudienplanWahlmodule.initialize();
+  window.SpecificprogramWahlmodule.initialize();
 }
 
 // Markiere als geladen

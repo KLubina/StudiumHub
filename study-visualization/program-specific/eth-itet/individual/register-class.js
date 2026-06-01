@@ -3,9 +3,9 @@
  * Dateiname vereinheitlicht: register-class.js
  */
 
-if (window.ITETStudienplan) {
-    window.StudiengangCustomClass = window.ITETStudienplan;
-    console.log('[register-class] ITET Studiengang-Klasse registriert');
+if (window.ITETSpecificprogram) {
+  window.StudiengangCustomClass = window.ITETSpecificprogram;
+  console.log("[register-class] ITET Studiengang-Klasse registriert");
 } else {
-    console.warn('[register-class] ITET Klasse nicht gefunden – nutze Fallback');
+  console.warn("[register-class] ITET Klasse nicht gefunden – nutze Fallback");
 }

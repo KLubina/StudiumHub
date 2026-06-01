@@ -12,5 +12,5 @@ window.StudiengangGeneralConfig = {
       <br>
       <a href="https://www.fhgr.ch/fileadmin/studium/bachelorangebot/Artificial_Intelligence_in_SE/Moduluebersicht_Bachelorstudienrichtung_AI_in_Software_Engineering.pdf" target="_blank" rel="noopener">Moduluebersicht (PDF)</a>
       <br>
-      <a href="https://www.fhgr.ch/fileadmin/studium/bachelorangebot/Artificial_Intelligence_in_SE/FHGR-Bachelorstudienrichtung_AISE_Studienplan.pdf" target="_blank" rel="noopener">Studienplan (PDF)</a>`,
+      <a href="https://www.fhgr.ch/fileadmin/studium/bachelorangebot/Artificial_Intelligence_in_SE/FHGR-Bachelorstudienrichtung_AISE_Specificprogram.pdf" target="_blank" rel="noopener">Specificprogram (PDF)</a>`,
 };

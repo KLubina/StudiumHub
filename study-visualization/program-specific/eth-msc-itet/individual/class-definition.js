@@ -1,7 +1,9 @@
 /* ==== MSC ITET CLASS DEFINITION ==== */
-/* Hauptklasse für den MSc ITET Studienplan */
+/* Hauptklasse für den MSc ITET Specificprogram */
 
-window.MScITETStudienplan = class MScITETStudienplan extends StudienplanBase {
+window.MScITETSpecificprogram = class MScITETSpecificprogram extends (
+  SpecificprogramBase
+) {
   constructor(config) {
     super(config);
   }
@@ -30,7 +32,7 @@ window.MScITETStudienplan = class MScITETStudienplan extends StudienplanBase {
   getModuleCssClass(modul) {
     if (modul.pruefungsblock) {
       const block = this.config.pruefungsbloecke.find(
-        (b) => b.name === modul.pruefungsblock
+        (b) => b.name === modul.pruefungsblock,
       );
       return block ? block.cssClass : null;
     }
@@ -38,7 +40,7 @@ window.MScITETStudienplan = class MScITETStudienplan extends StudienplanBase {
     // Kategorie-Namen mit Leerzeichen in CSS-konforme Klassen umwandeln
     if (modul.kategorie) {
       const kategorie = this.config.kategorien.find(
-        (k) => k.name === modul.kategorie
+        (k) => k.name === modul.kategorie,
       );
       return kategorie ? kategorie.klasse : null;
     }

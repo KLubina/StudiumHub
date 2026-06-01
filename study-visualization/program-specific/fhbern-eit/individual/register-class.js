@@ -3,9 +3,11 @@
  * Standardisierter Dateiname: register-class.js
  */
 
-if (window.BFHEITStudienplan) {
-    window.StudiengangCustomClass = window.BFHEITStudienplan;
-    console.log('[register-class] BFH EIT Studiengang-Klasse registriert');
+if (window.BFHEITSpecificprogram) {
+  window.StudiengangCustomClass = window.BFHEITSpecificprogram;
+  console.log("[register-class] BFH EIT Studiengang-Klasse registriert");
 } else {
-    console.warn('[register-class] BFH EIT Klasse nicht gefunden – verwendet Fallback');
+  console.warn(
+    "[register-class] BFH EIT Klasse nicht gefunden – verwendet Fallback",
+  );
 }

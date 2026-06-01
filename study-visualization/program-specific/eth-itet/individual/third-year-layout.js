@@ -1,16 +1,16 @@
 /* ==== ITET THIRD YEAR LAYOUT ==== */
 /* Spezifisches Layout für das 3. Jahr - Kategorie-basiert */
 
-if (window.ITETStudienplan) {
+if (window.ITETSpecificprogram) {
   /* ==== 3. JAHR LAYOUT - KATEGORIE-BASIERT ==== */
-  window.ITETStudienplan.prototype.createYearSection = function(year) {
+  window.ITETSpecificprogram.prototype.createYearSection = function (year) {
     if (year === 3) {
       return this.createThirdYearSection();
     }
-    return StudienplanBase.prototype.createYearSection.call(this, year);
+    return SpecificprogramBase.prototype.createYearSection.call(this, year);
   };
 
-  window.ITETStudienplan.prototype.createThirdYearSection = function() {
+  window.ITETSpecificprogram.prototype.createThirdYearSection = function () {
     const yearDiv = document.createElement("div");
     yearDiv.classList.add("jahr");
 
@@ -27,7 +27,9 @@ if (window.ITETStudienplan) {
     return yearDiv;
   };
 
-  window.ITETStudienplan.prototype.createCategoryBasedThirdYear = function(container) {
+  window.ITETSpecificprogram.prototype.createCategoryBasedThirdYear = function (
+    container,
+  ) {
     const thirdYearModules = this.config.daten.filter((m) => m.jahr === 3);
 
     // Container leeren (außer Titel)
@@ -48,12 +50,12 @@ if (window.ITETStudienplan) {
 
     reihenfolge.forEach((kategorie) => {
       const kategorieModules = thirdYearModules.filter(
-        (m) => m.kategorie === kategorie
+        (m) => m.kategorie === kategorie,
       );
       if (kategorieModules.length === 0) return;
 
       const kategorieConfig = this.config.kategorien.find(
-        (k) => k.name === kategorie
+        (k) => k.name === kategorie,
       );
 
       // Kategorie-Titel

@@ -1,8 +1,10 @@
 /* ==== MTEC CLASS DEFINITION ==== */
-/* Hauptklasse für den MTEC Studienplan */
+/* Hauptklasse für den MTEC Specificprogram */
 
-window.MTECStudienplan = class MTECStudienplan extends StudienplanBase {
-    constructor(config) {
-        super(config);
-    }
+window.MTECSpecificprogram = class MTECSpecificprogram extends (
+  SpecificprogramBase
+) {
+  constructor(config) {
+    super(config);
+  }
 };

@@ -2,7 +2,7 @@
  * COLOR MANAGER - Optionale Farbverwaltung
  */
 
-window.StudienplanColorManager = {
+window.SpecificprogramColorManager = {
   currentMode: "standard",
 
   initialize() {
@@ -237,7 +237,7 @@ window.StudienplanColorManager = {
 
   getCategoryName(category, modeKey) {
     if (modeKey === "standard") {
-      return window.StudienplanLegend.getCategoryName(category);
+      return window.SpecificprogramLegend.getCategoryName(category);
     }
 
     const mode = window.StudiengangColorManagerModes[modeKey];
@@ -252,7 +252,7 @@ window.StudienplanColorManager = {
 
 // Initialisiere wenn DOM ready
 document.addEventListener("DOMContentLoaded", () => {
-  window.StudienplanColorManager.initialize();
+  window.SpecificprogramColorManager.initialize();
 });
 
 // Falls das Script nach dem DOMContentLoaded geladen wird, sofort initialisieren
@@ -261,7 +261,7 @@ if (
   document.readyState === "complete"
 ) {
   // Kleiner Timeout damit DOM-abhängige Elemente sicher vorhanden sind
-  setTimeout(() => window.StudienplanColorManager.initialize(), 0);
+  setTimeout(() => window.SpecificprogramColorManager.initialize(), 0);
 }
 
 // Markiere als geladen

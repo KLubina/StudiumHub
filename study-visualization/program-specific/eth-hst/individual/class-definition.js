@@ -1,7 +1,9 @@
 /* ==== HST CLASS DEFINITION ==== */
-/* Hauptklasse für den HST (Gesundheitswissenschaften und Technologie) Studienplan */
+/* Hauptklasse für den HST (Gesundheitswissenschaften und Technologie) Specificprogram */
 
-window.HSTStudienplan = class HSTStudienplan extends StudienplanBase {
+window.HSTSpecificprogram = class HSTSpecificprogram extends (
+  SpecificprogramBase
+) {
   constructor(config) {
     super(config);
   }
@@ -34,7 +36,7 @@ window.HSTStudienplan = class HSTStudienplan extends StudienplanBase {
   getModuleCssClass(modul) {
     if (modul.pruefungsblock) {
       const block = this.config.pruefungsbloecke.find(
-        (b) => b.name === modul.pruefungsblock
+        (b) => b.name === modul.pruefungsblock,
       );
       return block ? block.cssClass : null;
     }
@@ -42,7 +44,7 @@ window.HSTStudienplan = class HSTStudienplan extends StudienplanBase {
     // Kategorie-Namen mit Leerzeichen in CSS-konforme Klassen umwandeln
     if (modul.kategorie) {
       const kategorie = this.config.kategorien.find(
-        (k) => k.name === modul.kategorie
+        (k) => k.name === modul.kategorie,
       );
       return kategorie ? kategorie.klasse : null;
     }
