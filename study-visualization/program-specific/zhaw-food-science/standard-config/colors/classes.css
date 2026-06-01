@@ -1,0 +1,48 @@
+/* ==== ZHAW FOOD SCIENCE - CSS CLASSES ==== */
+[data-studiengang="zhaw-food-science"] .modul.data-science,
+[data-studiengang="zhaw-food-science"] .legende-item.data-science {
+  background-color: var(--color-data-science);
+  color: black;
+}
+
+[data-studiengang="zhaw-food-science"] .modul.herstellung,
+[data-studiengang="zhaw-food-science"] .legende-item.herstellung {
+  background-color: var(--color-herstellung);
+  color: black;
+}
+
+[data-studiengang="zhaw-food-science"] .modul.management,
+[data-studiengang="zhaw-food-science"] .legende-item.management {
+  background-color: var(--color-management);
+  color: black;
+}
+
+[data-studiengang="zhaw-food-science"] .modul.naturwissenschaften,
+[data-studiengang="zhaw-food-science"] .legende-item.naturwissenschaften {
+  background-color: var(--color-naturwissenschaften);
+  color: black;
+}
+
+[data-studiengang="zhaw-food-science"] .modul.wissenschaft,
+[data-studiengang="zhaw-food-science"] .legende-item.wissenschaft {
+  background-color: var(--color-wissenschaft);
+  color: black;
+}
+
+[data-studiengang="zhaw-food-science"] .modul.vertiefung,
+[data-studiengang="zhaw-food-science"] .legende-item.vertiefung {
+  background-color: var(--color-vertiefung);
+  color: black;
+}
+
+[data-studiengang="zhaw-food-science"] .modul.ergaenzung,
+[data-studiengang="zhaw-food-science"] .legende-item.ergaenzung {
+  background-color: var(--color-ergaenzung);
+  color: black;
+}
+
+[data-studiengang="zhaw-food-science"] .modul.abschluss,
+[data-studiengang="zhaw-food-science"] .legende-item.abschluss {
+  background-color: var(--color-abschluss);
+  color: white;
+}

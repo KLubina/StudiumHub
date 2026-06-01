@@ -1,0 +1,12 @@
+/* ==== ZHAW FOOD SCIENCE - COLOR VARIABLES ==== */
+[data-studiengang="zhaw-food-science"] {
+  --color-primary: #0064a6;
+  --color-data-science: #60a5fa;
+  --color-herstellung: #34d399;
+  --color-management: #f59e0b;
+  --color-naturwissenschaften: #a78bfa;
+  --color-wissenschaft: #22c55e;
+  --color-vertiefung: #fb7185;
+  --color-ergaenzung: #f97316;
+  --color-abschluss: #0f766e;
+}

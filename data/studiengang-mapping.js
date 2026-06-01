@@ -130,6 +130,10 @@
       key: "zhaw-data-science",
       institution: "ZHAW",
     },
+    "Food Science": {
+      key: "zhaw-food-science",
+      institution: "ZHAW",
+    },
     "Wirtschaftsinformatik - Business Information Systems - Teilzeit": {
       key: "zhaw-win-bis-tz",
       institution: "ZHAW",
