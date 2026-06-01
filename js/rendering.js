@@ -5,7 +5,6 @@ const Rendering = {
 
     container.innerHTML = "";
 
-    // Early Return bei leeren Daten
     if (
       filteredData.length === 0 ||
       filteredData.every((uni) => uni.categories.length === 0)
@@ -15,7 +14,6 @@ const Rendering = {
       return;
     }
 
-    // Ansichts-Weiche
     if (State.getView() === "category") {
       this.renderByCategory(filteredData, container);
     } else {

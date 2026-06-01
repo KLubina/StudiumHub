@@ -163,8 +163,6 @@ const DOMBuilders = {
     return section;
   },
 
-  // --- INTERNE HILFSFUNKTIONEN FÜR ELEMENT-ERSTELLUNG ---
-
   _createProgramList(programs, institutionName) {
     const list = document.createElement("div");
     list.className = "studiengang-list";

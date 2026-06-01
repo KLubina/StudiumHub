@@ -21,7 +21,6 @@
       "ffhs.json",
     ];
 
-    // Helper-Funktion um Fehler pro Datei sauber abzufangen
     async function fetchJson(path) {
       const response = await fetch(path);
       if (!response.ok) {
@@ -33,7 +32,6 @@
     }
 
     try {
-      // Parallel alle Uni und FH Daten laden
       const uniPromises = uniFiles.map((file) =>
         fetchJson(`all-swiss-studies-listed/uni/${file}`),
       );
@@ -44,13 +42,10 @@
       const universitaeten = await Promise.all(uniPromises);
       const fachhochschulen = await Promise.all(fhPromises);
 
-      // 1. Daten im State initialisieren
       State.initializeData(universitaeten, fachhochschulen);
 
-      // 2. UI-Filterelemente (Dropdowns) befüllen
       FilterUI.populateFilters();
 
-      // 3. Initiale Filter-Werte aus dem State im DOM setzen
       const typeFilter = document.getElementById("typeFilter");
       if (typeFilter) typeFilter.value = State.getFilters().type;
 
@@ -65,11 +60,9 @@
       if (showMinorsCheckbox)
         showMinorsCheckbox.checked = State.getShowMinors();
 
-      // 4. Sichtbarkeit der Filter anpassen & Studiengänge rendern
       FilterUI.updateFilterVisibility();
       Rendering.renderStudiengaenge();
 
-      // 5. EVENT LISTENERS REGISTRIEREN
       setupEventListeners();
     } catch (error) {
       console.error(
@@ -79,9 +72,7 @@
     }
   });
 
-  // Funktion zur Koppelung aller UI-Interaktionen mit Logik und Rendering
   function setupEventListeners() {
-    // Typ-Filter (Alle / Uni / FH)
     document
       .getElementById("typeFilter")
       ?.addEventListener("change", function (e) {
@@ -89,7 +80,6 @@
         Rendering.renderStudiengaenge();
       });
 
-    // Institutionen-Filter
     document
       .getElementById("institutionFilter")
       ?.addEventListener("change", function (e) {
@@ -97,7 +87,6 @@
         Rendering.renderStudiengaenge();
       });
 
-    // Kategorien-Filter (wird nur in der Kategorie-Ansicht angezeigt)
     document
       .getElementById("categoryFilter")
       ?.addEventListener("change", function (e) {
@@ -105,7 +94,6 @@
         Rendering.renderStudiengaenge();
       });
 
-    // Minors/Nebenfach-Checkbox (ID im HTML ist "showMinors")
     document
       .getElementById("showMinors")
       ?.addEventListener("change", function (e) {
@@ -113,44 +101,36 @@
         Rendering.renderStudiengaenge();
       });
 
-    // ==========================================
-    // ANSICHTS-UMSCHALTER (EXAKT FÜR DEIN HTML)
-    // ==========================================
-
-    // 1. Nach Hochschule wechseln
     document
       .getElementById("viewByInstitution")
       ?.addEventListener("click", function (e) {
         setActiveButton(e.target);
-        toggleSections(false); // Versteckt die statischen Visualisierungen
+        toggleSections(false);
 
         State.setView("institution");
         FilterUI.updateFilterVisibility();
         Rendering.renderStudiengaenge();
       });
 
-    // 2. Nach Kategorie wechseln
     document
       .getElementById("viewByCategory")
       ?.addEventListener("click", function (e) {
         setActiveButton(e.target);
-        toggleSections(false); // Versteckt die statischen Visualisierungen
+        toggleSections(false);
 
         State.setView("category");
         FilterUI.updateFilterVisibility();
         Rendering.renderStudiengaenge();
       });
 
-    // 3. Alle Visualisierungen (Statische Sektion aus dem HTML einblenden)
     document
       .getElementById("viewAllVisualizations")
       ?.addEventListener("click", function (e) {
         setActiveButton(e.target);
-        toggleSections(true); // Blendet die Visualisierungen ein, versteckt dynamischen Content
+        toggleSections(true);
       });
   }
 
-  // Hilfsfunktion: Setzt die CSS-Klasse "active" auf den geklickten Navigations-Button
   function setActiveButton(activeButton) {
     document.querySelectorAll(".view-btn").forEach((btn) => {
       btn.classList.remove("active");
@@ -158,7 +138,6 @@
     activeButton.classList.add("active");
   }
 
-  // Hilfsfunktion: Schaltet zwischen dynamischem Container und statischen Visualisierungen um
   function toggleSections(showVisualizations) {
     const studyContainer = document.getElementById("studyProgramsContainer");
     const vizSection = document.getElementById("visualizationsSection");
@@ -166,11 +145,11 @@
 
     if (showVisualizations) {
       if (studyContainer) studyContainer.style.display = "none";
-      if (filterContainer) filterContainer.style.display = "none"; // Filter ausblenden, da eh inaktiv
+      if (filterContainer) filterContainer.style.display = "none";
       if (vizSection) vizSection.style.display = "block";
     } else {
       if (studyContainer) studyContainer.style.display = "block";
-      if (filterContainer) filterContainer.style.display = "flex"; // Filter wieder einblenden
+      if (filterContainer) filterContainer.style.display = "flex";
       if (vizSection) vizSection.style.display = "none";
     }
   }

@@ -12,15 +12,12 @@ const Filters = {
     const currentFilters = State.getFilters();
     const showMinors = State.getShowMinors();
 
-    // Tiefen-Kopie, um das Original-Datenmodell nicht zu korrumpieren
     let filtered = JSON.parse(JSON.stringify(State.getData()));
 
-    // 1. Nach Typ filtern (Uni / FH)
     if (currentFilters.type) {
       filtered = filtered.filter((inst) => inst.type === currentFilters.type);
     }
 
-    // 2. Nach Institution / Region filtern
     if (currentFilters.institution) {
       if (currentFilters.institution === "group_zurich") {
         const zurichInsts = [
@@ -37,7 +34,6 @@ const Filters = {
       }
     }
 
-    // 3. Nach Kategorie filtern
     if (currentFilters.category) {
       filtered.forEach((inst) => {
         inst.categories = inst.categories.filter(
@@ -47,7 +43,6 @@ const Filters = {
       filtered = filtered.filter((inst) => inst.categories.length > 0);
     }
 
-    // 4. Minors ausschließen, falls nicht gewünscht
     if (!showMinors) {
       filtered = this._removeMinorsFromData(filtered);
     }
@@ -55,7 +50,6 @@ const Filters = {
     return filtered;
   },
 
-  // Interne Hilfsfunktion, um die tiefe Verschachtelung lesbar zu machen
   _removeMinorsFromData(data) {
     data.forEach((inst) => {
       inst.categories.forEach((cat) => {
@@ -82,34 +76,27 @@ const Filters = {
   },
 };
 
-// =========================================================================
-// 2. FORMULAR-ELEMENTE (Dropdowns befüllen und steuern)
-// =========================================================================
 const FilterUI = {
   populateFilters() {
     const institutionFilter = document.getElementById("institutionFilter");
     const categoryFilter = document.getElementById("categoryFilter");
     const allData = State.getData();
 
-    // Institutionen-Dropdown zurücksetzen & Standard-Option setzen
     institutionFilter.innerHTML =
       '<option value="group_zurich">📍 Zürich (ETH, UZH, ZHAW, FHNW)</option>';
 
-    // Hochschulen hinzufügen
     allData.forEach((inst) => {
       const prefix = inst.type === "uni" ? "[Uni] " : "[FH] ";
       this._addOption(institutionFilter, inst.name, prefix + inst.name);
     });
 
-    // Einzigartige Kategorien sammeln und sortieren
     const categories = new Set();
     allData.forEach((inst) =>
       inst.categories.forEach((cat) => categories.add(cat.name)),
     );
 
-    // Kategorien-Dropdown befüllen
     categoryFilter.innerHTML =
-      '<option value="">-- Alle Kategorien --</option>'; // Falls Standardwert gewünscht
+      '<option value="">-- Alle Kategorien --</option>';
     Array.from(categories)
       .sort()
       .forEach((catName) => {

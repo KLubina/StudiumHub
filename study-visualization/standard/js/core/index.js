@@ -1,28 +1,29 @@
-/**
- * CORE MODULES INDEX
- * Lädt alle unverzichtbaren Basismodule für den Specificprogram
- */
+(function () {
+  const path = "js/core";
+  const coreModules = [
+    "utils.js",
+    "module.js",
+    "legend.js",
+    "layout.js",
+    "configLoader.js",
+    "core.js",
+  ];
 
-// Lade alle Core-Module
-const coreModules = [
-  "utils.js",
-  "module.js",
-  "legend.js",
-  "layout.js",
-  "configLoader.js",
-  "core.js",
-];
+  const promises = coreModules.map((moduleName) => {
+    return new Promise((resolve) => {
+      const script = document.createElement("script");
+      script.src = `${path}/${moduleName}`;
+      script.onload = () => {
+        const key = moduleName.replace(".js", "");
+        window.subModulesReady[key] = Promise.resolve();
+        resolve();
+      };
+      script.onerror = () => {
+        resolve();
+      };
+      document.head.appendChild(script);
+    });
+  });
 
-// Lade jedes Modul und setze ready Promise
-coreModules.forEach((moduleName) => {
-  const script = document.createElement("script");
-  script.src = `js/core/${moduleName}`;
-  script.onload = () => {
-    console.log(`✅ Core module loaded: ${moduleName}`);
-    window.subModulesReady[moduleName.replace(".js", "")] = Promise.resolve();
-  };
-  script.onerror = () => {
-    console.error(`❌ Failed to load core module: ${moduleName}`);
-  };
-  document.head.appendChild(script);
-});
+  window.coreScriptsLoaded = Promise.all(promises);
+})();

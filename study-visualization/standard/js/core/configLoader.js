@@ -1,161 +1,92 @@
-/**
- * CONFIG LOADER - Lädt Studiengang-Konfiguration und Daten
- */
-
 window.SpecificprogramConfigLoader = {
-  // Lade Konfiguration für einen Studiengang
   async loadStudiengangConfig(studiengang) {
     try {
-      // Bestimme das Modell (JETZT NUR NOCH MONO FÜR ALLE)
-      // Lade General-Konfiguration
-      const generalConfigPath = `../program-specific/${studiengang}/standard-config/general-config.js`;
-      await this.loadScript(generalConfigPath);
+      await this.loadScript(
+        `../program-specific/${studiengang}/standard-config/general-config.js`,
+      );
+      await this.loadScript(
+        `../program-specific/${studiengang}/standard-config/standardcategories-config.js`,
+      );
+      await this.loadScript(
+        `../program-specific/${studiengang}/standard-config/color-config.js`,
+      );
+      await this.loadScript(
+        `../program-specific/${studiengang}/colormanagement/secondcategories-config.js`,
+      );
+      await this.loadScript(
+        `../program-specific/${studiengang}/colormanagement/thirdcategories-config.js`,
+      );
+      await this.loadScript(
+        `../program-specific/${studiengang}/colormanagement/fourthcategories-config.js`,
+      );
+      await this.loadScript(
+        `../program-specific/${studiengang}/data/basic-modules-data.js`,
+      );
 
-      // Lade Kategorien-Konfiguration
-      const categoriesConfigPath = `../program-specific/${studiengang}/standard-config/standardcategories-config.js`;
-      await this.loadScript(categoriesConfigPath);
-
-      // Lade Color-Config falls vorhanden (für CSE)
-      const colorConfigPath = `../program-specific/${studiengang}/standard-config/color-config.js`;
-      try {
-        await this.loadScript(colorConfigPath);
-      } catch (e) {
-        // Color-Config ist optional
-      }
-
-      // Lade Color Management Configs falls vorhanden
-      const secondCategoriesPath = `../program-specific/${studiengang}/colormanagement/secondcategories-config.js`;
-      try {
-        await this.loadScript(secondCategoriesPath);
-      } catch (e) {
-        // Optional
-      }
-      const thirdCategoriesPath = `../program-specific/${studiengang}/colormanagement/thirdcategories-config.js`;
-      try {
-        await this.loadScript(thirdCategoriesPath);
-      } catch (e) {
-        // Optional
-      }
-      const fourthCategoriesPath = `../program-specific/${studiengang}/colormanagement/fourthcategories-config.js`;
-      try {
-        await this.loadScript(fourthCategoriesPath);
-      } catch (e) {
-        // Optional
-      }
-
-      // Lade Modul-Daten
-      // Verwende das standardisierte basic-modules-data.js
-      const dataPath = `../program-specific/${studiengang}/data/basic-modules-data.js`;
-      await this.loadScript(dataPath);
-
-      // Major-Minor Legacy Handling:
-      // Check if global variable for modules is set after loading.
-      // Major-Minor files might define variables ending in 'PflichtmoduleData'.
       if (!window.StudiengangModules) {
         const anyKey = Object.keys(window).find((k) =>
           /PflichtmoduleData$/.test(k),
         );
-        if (anyKey) {
-          console.log(`Using legacy data variable: ${anyKey}`);
-          window.StudiengangModules = window[anyKey];
-        }
+        if (anyKey) window.StudiengangModules = window[anyKey];
       }
 
-      // Lade Modul-Details falls vorhanden (für Module Details Modal)
-      const detailsPath = `../program-specific/${studiengang}/data/basic-modules-details.js`;
+      await this.loadScript(
+        `../program-specific/${studiengang}/data/basic-modules-details.js`,
+      );
 
-      try {
-        await this.loadScript(detailsPath);
-      } catch (e) {
-        // Details sind optional
-      }
-
-      // Wenn Daten geladen, rendere den Specificprogram
       if (window.StudiengangModules) {
         this.renderStudiengang(window.StudiengangModules, studiengang);
-      } else {
-        console.error("Keine Modul-Daten gefunden für:", studiengang);
       }
     } catch (error) {
-      console.error("Fehler beim Laden der Konfiguration:", error);
+      console.error(error);
     }
   },
 
-  // Lade ein Script dynamisch (mit Fetch für bessere Fehlerbehandlung)
   async loadScript(src) {
     try {
       const response = await fetch(src, { method: "HEAD" });
-      if (!response.ok) {
-        // Datei existiert nicht - ignoriere
-        return;
-      }
-
-      // Lade das Script
+      if (!response.ok) return;
       const script = document.createElement("script");
       script.src = src;
       document.head.appendChild(script);
-
-      // Warte auf Laden
       await new Promise((resolve, reject) => {
         script.onload = resolve;
         script.onerror = reject;
       });
-    } catch (error) {
-      // Ignoriere Fehler bei optionalen Scripts
-    }
+    } catch (error) {}
   },
 
-  // Rendere den Specificprogram
   renderStudiengang(modules, studiengang) {
-    // Mappe Kategorien zu CSS-Klassen
     const mappedModules = this.mapCategoriesToClasses(modules);
-
-    // Gruppiere Module
     const grouped =
       window.SpecificprogramUtils.groupModulesByYearAndSemester(mappedModules);
 
-    // Rendere Layout
     window.SpecificprogramLayout.renderLayout(grouped);
 
-    // Rendere Legende
     const categories =
       window.SpecificprogramUtils.getUniqueCategories(mappedModules);
     window.SpecificprogramLegend.renderLegend(categories);
 
-    // Setze Titel
     this.setTitles(studiengang);
 
-    // Initialisiere optionale Module, falls vorhanden (z.B. wenn sie nach DOMContentLoaded geladen wurden)
     try {
       if (
         window.SpecificprogramKPCounter &&
         typeof window.SpecificprogramKPCounter.updateTotalKP === "function"
       ) {
-        // KP Counter aktualisieren (berechnet aus gerenderten Modulen)
         window.SpecificprogramKPCounter.updateTotalKP();
       }
-
       if (
         window.SpecificprogramColorManager &&
         typeof window.SpecificprogramColorManager.initialize === "function"
       ) {
-        // Color Manager initialisieren (erzeugt Selector / Legendeneinträge)
         window.SpecificprogramColorManager.initialize();
       }
-    } catch (e) {
-      console.warn("Fehler beim Initialisieren optionaler Module:", e);
-    }
-
-    console.log("Specificprogram gerendert für:", studiengang);
+    } catch (e) {}
   },
 
-  // Mappe standardcategory zu CSS-Klasse
   mapCategoriesToClasses(modules) {
-    if (
-      !window.StudiengangCategoriesConfig ||
-      !window.StudiengangCategoriesConfig.kategorien
-    ) {
-      // Fallback: verwende color-config falls vorhanden, sonst vereinfache
+    if (!window.StudiengangCategoriesConfig?.kategorien) {
       return modules.map((module) => ({
         ...module,
         standardcategory:
@@ -178,16 +109,13 @@ window.SpecificprogramConfigLoader = {
     }));
   },
 
-  // Hole Kategorie aus color-config (für CSE)
   getCategoryFromColorConfig(module) {
-    if (window.CSEColorConfig && window.CSEColorConfig.getThemenbereich) {
-      const themenbereich = window.CSEColorConfig.getThemenbereich(module.name);
-      return themenbereich;
+    if (window.CSEColorConfig?.getThemenbereich) {
+      return window.CSEColorConfig.getThemenbereich(module.name);
     }
     return null;
   },
 
-  // Vereinfache Kategorie-Name zu CSS-Klasse
   simplifyCategory(category) {
     if (!category) return "unknown";
     return category
@@ -200,44 +128,34 @@ window.SpecificprogramConfigLoader = {
       .replace(/^-|-$/g, "");
   },
 
-  // Setze Titel und Untertitel
   setTitles(studiengang) {
     const titleElement = document.getElementById("specificprogram-title");
     const subtitleElement = document.getElementById("specificprogram-subtitle");
 
     if (titleElement) {
-      const title =
+      titleElement.textContent =
         window.StudiengangGeneralConfig?.title ||
         this.getStudiengangName(studiengang);
-      titleElement.textContent = title;
     }
 
     if (subtitleElement) {
-      if (window.StudiengangGeneralConfig?.subtitleHtml) {
-        subtitleElement.innerHTML =
-          window.StudiengangGeneralConfig.subtitleHtml;
-      } else {
-        subtitleElement.textContent = "mind. 180 KP insgesamt";
-      }
+      subtitleElement.innerHTML =
+        window.StudiengangGeneralConfig?.subtitleHtml ||
+        "mind. 180 KP insgesamt";
     }
   },
 
-  // Übersetze Studiengang-Namen
   getStudiengangName(studiengang) {
     const names = {
       "eth-cs": "Informatik",
       "eth-cse": "Computer Science and Engineering",
-      // Füge weitere hinzu...
     };
     return names[studiengang] || studiengang.toUpperCase();
   },
 };
 
-// Mache Funktion global verfügbar
 window.loadStudiengangConfig =
   window.SpecificprogramConfigLoader.loadStudiengangConfig.bind(
     window.SpecificprogramConfigLoader,
   );
-
-// Markiere als geladen
 window.subModulesReady.configLoader = Promise.resolve();

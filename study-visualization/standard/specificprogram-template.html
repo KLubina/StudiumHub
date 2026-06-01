@@ -6,17 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id="page-title">Specificprogram</title>
 
-    <!-- ==== CORE CSS ==== -->
     <link rel="stylesheet" href="css/core/variables.css">
     <link rel="stylesheet" href="css/core/layout.css">
     <link rel="stylesheet" href="css/core/typography.css">
 
-    <!-- ==== CORE COMPONENTS CSS ==== -->
     <link rel="stylesheet" href="css/core/hub-button.css">
     <link rel="stylesheet" href="css/core/module.css">
     <link rel="stylesheet" href="css/core/legend.css">
 
-    <!-- ==== OPTIONAL FEATURES CSS ==== -->
     <link rel="stylesheet" href="css/optional/study-links.css">
     <link rel="stylesheet" href="css/optional/tooltip.css">
     <link rel="stylesheet" href="css/optional/kp-counter.css">
@@ -26,17 +23,14 @@
     <link rel="stylesheet" href="css/optional/color-manager.css">
     <link rel="stylesheet" href="css/optional/wahlmodule.css">
 
-    <!-- ==== SHARED CSS ==== -->
     <link rel="stylesheet" id="uzh-common-css" href="">
 
-    <!-- ==== PROGRAM-SPECIFIC CSS (loaded dynamically) ==== -->
     <link rel="stylesheet" id="program-colors-css" href="">
     <link rel="stylesheet" id="program-classes-css" href="">
     <link rel="stylesheet" id="program-layout-css" href="">
 </head>
 
 <body data-studiengang="">
-    <!-- Zurück zum Hub Button -->
     <div class="hub-button-container">
         <a href="../../index.html" class="hub-button">← Zurück zum Hub</a>
     </div>
@@ -44,50 +38,32 @@
     <h1 id="specificprogram-title">Specificprogram</h1>
     <h2 id="specificprogram-subtitle">mind. 180 KP insgesamt</h2>
 
-    <!-- Major/Minor Selector (nur für major-minor Studiengänge) -->
-    <div id="major-minor-selector" class="major-minor-selector" style="display: none;">
-        <!-- JavaScript wird hier den Selector einfügen -->
-    </div>
+    <div id="major-minor-selector" class="major-minor-selector" style="display: none;"></div>
 
     <div class="container">
-        <div class="specificprogram" id="specificprogram">
-            <!-- JavaScript wird hier die Jahre und Module einfügen -->
-        </div>
+        <div class="specificprogram" id="specificprogram"></div>
 
-        <!-- Farben-Legende -->
         <div class="farben-legende">
             <div class="legende-titel" id="legende-titel">Farben-Legende</div>
-            <div id="legende">
-                <!-- JavaScript wird hier die Legende einfügen -->
-            </div>
+            <div id="legende"></div>
         </div>
     </div>
 
-    <!-- Tooltip-Container -->
     <div id="tooltip" class="tooltip-container" style="display: none;"></div>
 
-    <!-- Base JavaScript -->
     <script src="js/specificprogram-loader.js"></script>
 
     <script>
-        // URL Parameter auslesen
         const urlParams = new URLSearchParams(window.location.search);
         const studiengang = urlParams.get('studiengang') || 'eth-cs';
 
-        // NEU: Data-Attribut setzen für CSS-Variablen
         document.body.setAttribute('data-studiengang', studiengang);
 
-        // Bestimme das Modell (Veraltet: studyModel wird nicht mehr für Pfade verwendet)
-        // const studyModel = 'mono';
-
-        // UZH Common CSS laden (nur für UZH Programme)
         const uzhCommonCSS = document.getElementById('uzh-common-css');
         if (studiengang.startsWith('uzh-')) {
-            // Found in program-specific/uzh-common
             uzhCommonCSS.href = `../program-specific/uzh-common/uzh-common.css`;
         }
 
-        // Program-specific CSS laden (colors, classes, layout)
         const programColorsCSS = document.getElementById('program-colors-css');
         const programClassesCSS = document.getElementById('program-classes-css');
         const programLayoutCSS = document.getElementById('program-layout-css');
@@ -96,7 +72,6 @@
         programClassesCSS.href = `../program-specific/${studiengang}/standard-config/colors/classes.css`;
         programLayoutCSS.href = `../program-specific/${studiengang}/individual/layout.css`;
 
-        // Error handling falls Dateien nicht existieren
         programColorsCSS.onerror = () => {
             console.log(`No colors.css found for ${studiengang}`);
         };
@@ -107,13 +82,12 @@
             console.log(`No layout.css found for ${studiengang}`);
         };
 
-        // DOM Ready
-        document.addEventListener('DOMContentLoaded', async function () {
-            // Wait for all base modules to load first
-            await window.baseModulesReady;
-
-            // ConfigLoader now handles all config and extension loading
-            window.loadStudiengangConfig(studiengang);
+        document.addEventListener('DOMContentLoaded', function () {
+            window.baseModulesReady.then(() => {
+                if (typeof window.loadStudiengangConfig === "function") {
+                    window.loadStudiengangConfig(studiengang);
+                }
+            });
         });
     </script>
 </body>
