@@ -1,6 +1,4 @@
-// Navigation Functions
 const Navigation = {
-  // Aktualisiere schwebende Navigation
   updateFloatingNav(data) {
     const navContent = document.getElementById("floatingNavContent");
     navContent.innerHTML = "";
@@ -12,7 +10,6 @@ const Navigation = {
     const currentView = State.getView();
 
     if (currentView === "category") {
-      // Nach Kategorie: Zeige Kategorien
       const categories = new Set();
       data.forEach((inst) => {
         inst.categories.forEach((cat) => {
@@ -29,7 +26,6 @@ const Navigation = {
         navContent.appendChild(item);
       });
     } else {
-      // Nach Institution: Zeige Institutionen
       data.forEach((inst) => {
         const item = document.createElement("div");
         item.className = "floating-nav-item";
@@ -41,15 +37,13 @@ const Navigation = {
     }
   },
 
-  // Scroll zu Sektion
   scrollToSection(name) {
-    const sectionId = "section-" + Utils.sanitizeId(name);
+    const sectionId = "section-" + sanitizeId(name);
     const section = document.getElementById(sectionId);
 
     if (section) {
       section.scrollIntoView({ behavior: "smooth", block: "start" });
 
-      // Öffne die Sektion falls sie collapsed ist
       if (section.classList.contains("collapsed")) {
         section.classList.remove("collapsed");
       }

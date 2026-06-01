@@ -1,11 +1,9 @@
-// DOM Builder Functions
 const DOMBuilders = {
   createUniSection(uni) {
     const section = document.createElement("div");
     section.className = "uni-section collapsed";
-    section.id = "section-" + Utils.sanitizeId(uni.name);
+    section.id = "section-" + sanitizeId(uni.name);
 
-    // Header
     const header = document.createElement("div");
     header.className = "uni-header";
     header.innerHTML = `
@@ -20,12 +18,10 @@ const DOMBuilders = {
       <span class="toggle-icon">▼</span>
     `;
 
-    // Toggle Funktionalität
     header.addEventListener("click", function () {
       section.classList.toggle("collapsed");
     });
 
-    // Content
     const content = document.createElement("div");
     content.className = "uni-content";
 
@@ -135,7 +131,8 @@ const DOMBuilders = {
   createParentCategorySection(mainCategoryName, subcategories, directPrograms) {
     const section = document.createElement("div");
     section.className = "uni-section collapsed";
-    section.id = "section-" + Utils.sanitizeId(mainCategoryName);
+    // Geändert: Utils.sanitizeId(...) -> sanitizeId(...)
+    section.id = "section-" + sanitizeId(mainCategoryName);
 
     // Main Category Header
     const header = document.createElement("div");
@@ -256,9 +253,8 @@ const DOMBuilders = {
   createCategorySectionGrouped(categoryName, institutions) {
     const section = document.createElement("div");
     section.className = "uni-section collapsed";
-    section.id = "section-" + Utils.sanitizeId(categoryName);
+    section.id = "section-" + sanitizeId(categoryName);
 
-    // Category Header
     const header = document.createElement("div");
     header.className = "uni-header";
     header.innerHTML = `
@@ -268,16 +264,13 @@ const DOMBuilders = {
       <span class="toggle-icon">▼</span>
     `;
 
-    // Toggle Funktionalität
     header.addEventListener("click", function () {
       section.classList.toggle("collapsed");
     });
 
-    // Content
     const content = document.createElement("div");
     content.className = "uni-content";
 
-    // Rendere jede Institution
     institutions.forEach((inst) => {
       const instSection = document.createElement("div");
       instSection.className = "category-section";

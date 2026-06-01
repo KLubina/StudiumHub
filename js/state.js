@@ -1,16 +1,14 @@
-// State Management
 const State = {
   allData: [],
-  currentView: "institution", // 'institution' oder 'category'
+  currentView: "institution",
   currentFilters: {
-    type: "", // Standardmäßig alle Hochschultypen anzeigen
+    type: "",
     institution: "group_zurich",
     category: "",
   },
-  showMinors: false, // Minors standardmäßig ausgeblendet
+  showMinors: false,
 
   initializeData() {
-    // Kombiniere Uni und FH Daten und normalisiere deutsche Keys zu englischen internen Keys
     function normalizeInstitution(raw, type) {
       return {
         name: raw.name,
