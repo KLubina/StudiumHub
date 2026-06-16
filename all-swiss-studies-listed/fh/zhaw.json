@@ -32,8 +32,7 @@
         { "name": "Biomedizinische Labordiagnostik", "grad": "BSc" },
         { "name": "Biotechnologie", "grad": "BSc" },
         { "name": "Chemie", "grad": "BSc" },
-        { "name": "Food Science", "grad": "BSc" },
-        { "name": "Optometrie", "grad": "Bachelor of Science" }
+        { "name": "Food Science", "grad": "BSc" }
       ]
     },
     {
