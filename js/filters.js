@@ -1,3 +1,18 @@
+// Zentrale Definition der gewünschten Reihenfolge (wird von beiden Objekten genutzt)
+const INSTITUTION_ORDER = {
+  "Fachhochschule Nordwestschweiz": 1, // FHNW
+  ZHAW: 2,
+  "Universität Zürich": 3, // UZH
+  "ETH Zürich": 4,
+};
+
+// Hilfsfunktion für die Sortierung
+function sortInstitutions(a, b) {
+  const orderA = INSTITUTION_ORDER[a.name] || 99; // 99, falls eine unbekannte Institution auftaucht
+  const orderB = INSTITUTION_ORDER[b.name] || 99;
+  return orderA - orderB;
+}
+
 const Filters = {
   isMinor(program) {
     const ectsText = program.ects || program.degree || "";
@@ -47,6 +62,9 @@ const Filters = {
       filtered = this._removeMinorsFromData(filtered);
     }
 
+    // --- ALLES NACH DER NEUEN ORDNUNG SORTIEREN ---
+    filtered.sort(sortInstitutions);
+
     return filtered;
   },
 
@@ -82,10 +100,15 @@ const FilterUI = {
     const categoryFilter = document.getElementById("categoryFilter");
     const allData = State.getData();
 
+    // Text für die Gruppe angepasst, damit es zur neuen Ordnung passt
     institutionFilter.innerHTML =
-      '<option value="group_zurich">📍 Zürich (ETH, UZH, ZHAW, FHNW)</option>';
+      '<option value="group_zurich">📍 Zürich (FHNW, ZHAW, UZH, ETH)</option>';
 
-    allData.forEach((inst) => {
+    // --- DROPDOWN NACH DER NEUEN ORDNUNG SORTIEREN ---
+    // Wir kopieren das Array mit [...allData], um die Originaldaten im State nicht zu verändern
+    const sortedData = [...allData].sort(sortInstitutions);
+
+    sortedData.forEach((inst) => {
       const prefix = inst.type === "uni" ? "[Uni] " : "[FH] ";
       this._addOption(institutionFilter, inst.name, prefix + inst.name);
     });
@@ -98,7 +121,7 @@ const FilterUI = {
     categoryFilter.innerHTML =
       '<option value="">-- Alle Kategorien --</option>';
     Array.from(categories)
-      .sort()
+      .sort() // Kategorien bleiben alphabetisch sortiert
       .forEach((catName) => {
         this._addOption(categoryFilter, catName, catName);
       });
