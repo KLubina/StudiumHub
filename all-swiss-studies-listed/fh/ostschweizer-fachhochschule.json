@@ -32,7 +32,7 @@
           ]
         },
         {
-          "name": "Bauingenieurwesen",
+          "name": "Bauwesen",
           "studiengaenge": [
             { "name": "Architektur", "grad": "BA" },
             { "name": "Bauingenieurwesen", "grad": "BSc" },

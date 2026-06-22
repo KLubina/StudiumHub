@@ -28,7 +28,7 @@
           ]
         },
         {
-          "name": "Bauingenieurwesen",
+          "name": "Bauwesen",
           "studiengaenge": [
             { "name": "Architektur", "grad": "Bachelor" },
             { "name": "Bauingenieurwesen", "grad": "Bachelor" }
