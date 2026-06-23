@@ -166,6 +166,7 @@ const StudiengangMapping = {
   },
   Pflege: { key: "zhaw-pflege", institution: "ZHAW" },
   Physiotherapie: { key: "zhaw-physio", institution: "ZHAW" },
+  "Mobility Science": { key: "zhaw-ms", institution: "ZHAW" },
 
   getVisualizationUrl(studiengangName, institutionName) {
     let mapping = this[studiengangName];
@@ -253,6 +254,9 @@ const StudiengangMapping = {
     }
     if (studiengangName === "Angewandtes Recht" && institutionName === "ZHAW") {
       return `study-visualization/standard/specificprogram-template.html?studiengang=fhzh-ar`;
+    }
+    if (studiengangName === "Mobility Science" && institutionName === "ZHAW") {
+      return `study-visualization/standard/specificprogram-template.html?studiengang=zhaw-ms`;
     }
 
     return null;

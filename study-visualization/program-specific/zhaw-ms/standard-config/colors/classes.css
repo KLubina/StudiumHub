@@ -1,0 +1,24 @@
+/* ==== ZHAW-MS - CSS CLASSES ==== */
+[data-studiengang="zhaw-ms"] .modul.kontext,
+[data-studiengang="zhaw-ms"] .legende-item.kontext {
+  background-color: var(--color-kontext);
+  color: #000000; /* Meist helles Grün, daher dunkler Text besser */
+}
+
+[data-studiengang="zhaw-ms"] .modul.fach,
+[data-studiengang="zhaw-ms"] .legende-item.fach {
+  background-color: var(--color-fach);
+  color: white;
+}
+
+[data-studiengang="zhaw-ms"] .modul.math-nat,
+[data-studiengang="zhaw-ms"] .legende-item.math-nat {
+  background-color: var(--color-math-nat);
+  color: white;
+}
+
+[data-studiengang="zhaw-ms"] .modul.projekt,
+[data-studiengang="zhaw-ms"] .legende-item.projekt {
+  background-color: var(--color-projekt);
+  color: white;
+}

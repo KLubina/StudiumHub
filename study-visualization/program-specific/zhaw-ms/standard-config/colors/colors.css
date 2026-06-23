@@ -1,0 +1,10 @@
+/* ==== ZHAW-MS - COLOR VARIABLES ==== */
+[data-studiengang="zhaw-ms"] {
+  --color-primary: #0065a3; /* ZHAW Engineering Blau */
+
+  /* Offizielle ZHAW-Lehrplan-Farben nachempfunden */
+  --color-kontext: #c2e1a5; /* Helles Grün */
+  --color-fach: #0065a3; /* Blau */
+  --color-math-nat: #5c6bc0; /* Lila/Blau */
+  --color-projekt: #ef5350; /* Soft-Rot */
+}

@@ -1,0 +1,343 @@
+/* ==== ZHAW MS MODULE DATA ==== */
+/* Alle Moduldaten für den ZHAW Mobility Science Studiengang */
+/* Profil: Teilzeit (gültig seit 15. September 2025) */
+
+window.StudiengangModules = [
+  // === 1. SEMESTER ===
+  {
+    name: "Projektmanagement",
+    ects: 2,
+    standardcategory: "Kontextmodule",
+    year: 1,
+    semester: 1,
+  },
+  {
+    name: "Raumplanung",
+    ects: 4,
+    standardcategory: "Fachmodule",
+    year: 1,
+    semester: 1,
+  },
+  {
+    name: "Verkehrssysteme – Grundlagen",
+    ects: 4,
+    standardcategory: "Fachmodule",
+    year: 1,
+    semester: 1,
+  },
+  {
+    name: "Informatik Programmieren 1",
+    ects: 4,
+    standardcategory: "Fachmodule",
+    year: 1,
+    semester: 1,
+  },
+  {
+    name: "Analysis 1",
+    ects: 4,
+    standardcategory: "Mathematisch-Naturwiss. Module",
+    year: 1,
+    semester: 1,
+  },
+  {
+    name: "Lineare Algebra 1",
+    ects: 4,
+    standardcategory: "Mathematisch-Naturwiss. Module",
+    year: 1,
+    semester: 1,
+  },
+
+  // === 2. SEMESTER ===
+  {
+    name: "Communication Competence Basic",
+    ects: 2,
+    standardcategory: "Kontextmodule",
+    year: 1,
+    semester: 2,
+  },
+  {
+    name: "Verkehrsökonomie 1",
+    ects: 4,
+    standardcategory: "Fachmodule",
+    year: 1,
+    semester: 2,
+  },
+  {
+    name: "Verkehrssysteme – Betrieb",
+    ects: 4,
+    standardcategory: "Fachmodule",
+    year: 1,
+    semester: 2,
+  },
+  {
+    name: "Informatik Programmieren 2",
+    ects: 4,
+    standardcategory: "Fachmodule",
+    year: 1,
+    semester: 2,
+  },
+  {
+    name: "Analysis 2",
+    ects: 4,
+    standardcategory: "Mathematisch-Naturwiss. Module",
+    year: 1,
+    semester: 2,
+  },
+  {
+    name: "Lineare Algebra 2",
+    ects: 4,
+    standardcategory: "Mathematisch-Naturwiss. Module",
+    year: 1,
+    semester: 2,
+  },
+
+  // === 3. SEMESTER ===
+  {
+    name: "Wahlpflichtmodul Kommunikation",
+    ects: 2,
+    standardcategory: "Kontextmodule",
+    year: 2,
+    semester: 3,
+  },
+  {
+    name: "Grundlagenprojekt 1",
+    ects: 4,
+    standardcategory: "Projektmodule",
+    year: 2,
+    semester: 3,
+  },
+  {
+    name: "Verkehrsökonomie 2",
+    ects: 4,
+    standardcategory: "Fachmodule",
+    year: 2,
+    semester: 3,
+  },
+  {
+    name: "Intermodalität und Multimodalität",
+    ects: 4,
+    standardcategory: "Fachmodule",
+    year: 2,
+    semester: 3,
+  },
+  {
+    name: "Stochastik und Statistik",
+    ects: 4,
+    standardcategory: "Mathematisch-Naturwiss. Module",
+    year: 2,
+    semester: 3,
+  },
+  {
+    name: "Physik 1",
+    ects: 4,
+    standardcategory: "Mathematisch-Naturwiss. Module",
+    year: 2,
+    semester: 3,
+  },
+
+  // === 4. SEMESTER ===
+  {
+    name: "Wahlpflichtmodul Kommunikation",
+    ects: 2,
+    standardcategory: "Kontextmodule",
+    year: 2,
+    semester: 4,
+  },
+  {
+    name: "Grundlagenprojekt 2",
+    ects: 4,
+    standardcategory: "Projektmodule",
+    year: 2,
+    semester: 4,
+  },
+  {
+    name: "Verkehrsrecht",
+    ects: 4,
+    standardcategory: "Fachmodule",
+    year: 2,
+    semester: 4,
+  },
+  {
+    name: "Instandhaltung",
+    ects: 4,
+    standardcategory: "Fachmodule",
+    year: 2,
+    semester: 4,
+  },
+  {
+    name: "Datenanalyse und Prognose",
+    ects: 4,
+    standardcategory: "Mathematisch-Naturwiss. Module",
+    year: 2,
+    semester: 4,
+  },
+  {
+    name: "Physik 2",
+    ects: 4,
+    standardcategory: "Mathematisch-Naturwiss. Module",
+    year: 2,
+    semester: 4,
+  },
+
+  // === 5. SEMESTER ===
+  {
+    name: "Wahlpflichtmodul",
+    ects: 2,
+    standardcategory: "Kontextmodule",
+    year: 3,
+    semester: 5,
+  },
+  {
+    name: "Wahlpflichtmodul",
+    ects: 2,
+    standardcategory: "Kontextmodule",
+    year: 3,
+    semester: 5,
+  },
+  {
+    name: "Praxisprojekt 1",
+    ects: 4,
+    standardcategory: "Projektmodule",
+    year: 3,
+    semester: 5,
+  },
+  {
+    name: "Operations Management Grundlagen",
+    ects: 4,
+    standardcategory: "Fachmodule",
+    year: 3,
+    semester: 5,
+  },
+  {
+    name: "Operations Research",
+    ects: 4,
+    standardcategory: "Fachmodule",
+    year: 3,
+    semester: 5,
+  },
+  {
+    name: "Physik 3",
+    ects: 4,
+    standardcategory: "Mathematisch-Naturwiss. Module",
+    year: 3,
+    semester: 5,
+  },
+  {
+    name: "Wahlpflichtmodul",
+    ects: 4,
+    standardcategory: "Fachmodule",
+    year: 3,
+    semester: 5,
+  },
+
+  // === 6. SEMESTER ===
+  {
+    name: "Wahlpflichtmodul",
+    ects: 2,
+    standardcategory: "Kontextmodule",
+    year: 3,
+    semester: 6,
+  },
+  {
+    name: "Praxisprojekt 2",
+    ects: 4,
+    standardcategory: "Projektmodule",
+    year: 3,
+    semester: 6,
+  },
+  {
+    name: "Anlagen- und Flottenmanagement",
+    ects: 4,
+    standardcategory: "Fachmodule",
+    year: 3,
+    semester: 6,
+  },
+  {
+    name: "Reliability, Availability, Maintainability and Safety",
+    ects: 4,
+    standardcategory: "Fachmodule",
+    year: 3,
+    semester: 6,
+  },
+  {
+    name: "Numerik",
+    ects: 4,
+    standardcategory: "Mathematisch-Naturwiss. Module",
+    year: 3,
+    semester: 6,
+  },
+  {
+    name: "Wahlpflichtmodul",
+    ects: 4,
+    standardcategory: "Fachmodule",
+    year: 3,
+    semester: 6,
+  },
+
+  // === 7. SEMESTER ===
+  {
+    name: "Projektarbeit Verkehrssysteme",
+    ects: 4,
+    standardcategory: "Projektmodule",
+    year: 4,
+    semester: 7,
+  },
+  {
+    name: "Wahlpflichtmodul",
+    ects: 4,
+    standardcategory: "Fachmodule",
+    year: 4,
+    semester: 7,
+  },
+  {
+    name: "Wahlpflichtmodul",
+    ects: 4,
+    standardcategory: "Fachmodule",
+    year: 4,
+    semester: 7,
+  },
+  {
+    name: "Wahlpflichtmodul",
+    ects: 4,
+    standardcategory: "Fachmodule",
+    year: 4,
+    semester: 7,
+  },
+  {
+    name: "Interdisziplinäres Wahlpflichtmodul",
+    ects: 4,
+    standardcategory: "Kontextmodule",
+    year: 4,
+    semester: 7,
+  },
+
+  // === 8. SEMESTER ===
+  {
+    name: "Bachelorarbeit",
+    ects: 12,
+    standardcategory: "Projektmodule",
+    year: 4,
+    semester: 8,
+  },
+  {
+    name: "Wahlpflichtmodul",
+    ects: 4,
+    standardcategory: "Fachmodule",
+    year: 4,
+    semester: 8,
+  },
+  {
+    name: "Wahlpflichtmodul",
+    ects: 4,
+    standardcategory: "Fachmodule",
+    year: 4,
+    semester: 8,
+  },
+  {
+    name: "Wahlpflichtmodul",
+    ects: 4,
+    standardcategory: "Fachmodule",
+    year: 4,
+    semester: 8,
+  },
+];
