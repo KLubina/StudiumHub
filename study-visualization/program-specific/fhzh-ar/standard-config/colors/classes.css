@@ -1,31 +1,31 @@
 /* ==== ZHAW-AR - CSS CLASSES ==== */
 
-[data-studiengang="zhaw-ar"] .modul.kernrecht,
-[data-studiengang="zhaw-ar"] .legende-item.kernrecht {
+[data-studiengang="fhzh-ar"] .modul.kernrecht,
+[data-studiengang="fhzh-ar"] .legende-item.kernrecht {
   background-color: var(--color-kernrecht);
-  color: var(--color-kernrecht-text, white);
+  color: white;
 }
 
-[data-studiengang="zhaw-ar"] .modul.jur-praxis,
-[data-studiengang="zhaw-ar"] .legende-item.jur-praxis {
+[data-studiengang="fhzh-ar"] .modul.jur-praxis,
+[data-studiengang="fhzh-ar"] .legende-item.jur-praxis {
   background-color: var(--color-jur-praxis);
-  color: var(--color-jur-praxis-text, white);
+  color: white;
 }
 
-[data-studiengang="zhaw-ar"] .modul.bachelorarbeit,
-[data-studiengang="zhaw-ar"] .legende-item.bachelorarbeit {
+[data-studiengang="fhzh-ar"] .modul.bachelorarbeit,
+[data-studiengang="fhzh-ar"] .legende-item.bachelorarbeit {
   background-color: var(--color-bachelorarbeit);
-  color: var(--color-bachelorarbeit-text, white);
+  color: white;
 }
 
-[data-studiengang="zhaw-ar"] .modul.wp-fk,
-[data-studiengang="zhaw-ar"] .legende-item.wp-fk {
+[data-studiengang="fhzh-ar"] .modul.wp-fk,
+[data-studiengang="fhzh-ar"] .legende-item.wp-fk {
   background-color: var(--color-wp-fk);
-  color: var(--color-wp-fk-text, white);
+  color: white;
 }
 
-[data-studiengang="zhaw-ar"] .modul.wp-smk,
-[data-studiengang="zhaw-ar"] .legende-item.wp-smk {
+[data-studiengang="fhzh-ar"] .modul.wp-smk,
+[data-studiengang="fhzh-ar"] .legende-item.wp-smk {
   background-color: var(--color-wp-smk);
-  color: var(--color-wp-smk-text, white);
+  color: white;
 }

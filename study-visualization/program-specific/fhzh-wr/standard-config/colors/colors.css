@@ -1,14 +1,13 @@
 /* ==== ZHAW-WR - COLOR VARIABLES ==== */
 
-[data-studiengang="zhaw-wr"] {
-  /* Primary program color (ZHAW Blue-ish Dark) */
-  --color-primary: #006494;
+[data-studiengang="fhzh-wr"] {
+  --color-primary: #0f172a;
 
-  /* Category colors */
-  --color-recht: #1e3a8a; /* Deep Blue for core law modules */
-  --color-wirtschaft: #0284c7; /* Sky Blue for Business/Accounting */
-  --color-sprachen: #16a34a; /* Green for Languages / Legal English */
-  --color-tools-projekte: #0f766e; /* Teal for Legal Tech, Thesis, Projects */
-  --color-wp-wirtschaft: #f97316; /* Orange for Elective Business */
-  --color-wp-recht: #3b82f6; /* Lighter Blue for Elective Law */
+  /* Farbzuteilung */
+  --color-wirtschaft: #0284c7; /* Hellblau */
+  --color-recht: #1e3a8a; /* Dunkelblau */
+  --color-sprachen: #0d9488; /* Teal */
+  --color-tools-projekte: #4b5563; /* Grau */
+  --color-wp-wi: #f97316; /* Orange */
+  --color-wp-re: #ea580c; /* Dunkelorange */
 }

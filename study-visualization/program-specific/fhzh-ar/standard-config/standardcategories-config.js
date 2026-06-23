@@ -1,4 +1,4 @@
-/* ==== CATEGORIES CONFIGURATION ==== */
+/* ==== CATEGORIES CONFIGURATION (ZHAW-AR) ==== */
 
 window.StudiengangCategoriesConfig = {
   kategorien: [
