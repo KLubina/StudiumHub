@@ -1,0 +1,13 @@
+/* ==== ZHAW-AR - COLOR VARIABLES ==== */
+
+[data-studiengang="zhaw-ar"] {
+  /* Primary program color (ZHAW Wine Red / Dark Red Accent for Law) */
+  --color-primary: #991b1b;
+
+  /* Category colors */
+  --color-kernrecht: #1e3a8a; /* Deep Blue for substantive law (OR, StGB, etc.) */
+  --color-jur-praxis: #0d9488; /* Teal for practical skills (Writing, Corresp., Legal Memo) */
+  --color-bachelorarbeit: #4b5563; /* Grey for Thesis */
+  --color-wp-fk: #ea580c; /* Orange for Elective Fachkompetenz */
+  --color-wp-smk: #b45309; /* Amber/Brown for Elective Sozial- & Methodenkompetenz */
+}

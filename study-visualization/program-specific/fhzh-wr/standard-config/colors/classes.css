@@ -1,0 +1,37 @@
+/* ==== ZHAW-WR - CSS CLASSES ==== */
+
+[data-studiengang="zhaw-wr"] .modul.recht,
+[data-studiengang="zhaw-wr"] .legende-item.recht {
+  background-color: var(--color-recht);
+  color: var(--color-recht-text, white);
+}
+
+[data-studiengang="zhaw-wr"] .modul.wirtschaft,
+[data-studiengang="zhaw-wr"] .legende-item.wirtschaft {
+  background-color: var(--color-wirtschaft);
+  color: var(--color-wirtschaft-text, white);
+}
+
+[data-studiengang="zhaw-wr"] .modul.sprachen,
+[data-studiengang="zhaw-wr"] .legende-item.sprachen {
+  background-color: var(--color-sprachen);
+  color: var(--color-sprachen-text, white);
+}
+
+[data-studiengang="zhaw-wr"] .modul.tools-projekte,
+[data-studiengang="zhaw-wr"] .legende-item.tools-projekte {
+  background-color: var(--color-tools-projekte);
+  color: var(--color-tools-projekte-text, white);
+}
+
+[data-studiengang="zhaw-wr"] .modul.wp-wirtschaft,
+[data-studiengang="zhaw-wr"] .legende-item.wp-wirtschaft {
+  background-color: var(--color-wp-wirtschaft);
+  color: var(--color-wp-wirtschaft-text, white);
+}
+
+[data-studiengang="zhaw-wr"] .modul.wp-recht,
+[data-studiengang="zhaw-wr"] .legende-item.wp-recht {
+  background-color: var(--color-wp-recht);
+  color: var(--color-wp-recht-text, white);
+}
