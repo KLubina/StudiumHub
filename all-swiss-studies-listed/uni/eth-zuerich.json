@@ -4,9 +4,7 @@
   "kategorien": [
     {
       "name": "5. Medizin",
-      "studiengaenge": [
-        { "name": "Humanmedizin", "ects": "180 ECTS" }
-      ]
+      "studiengaenge": [{ "name": "Humanmedizin", "ects": "180 ECTS" }]
     },
     {
       "name": "2. Naturwissenschaften",
@@ -24,7 +22,10 @@
             { "name": "Biologie", "ects": "180 ECTS" },
             { "name": "Biochemie", "ects": "180 ECTS" },
             { "name": "Agrarwissenschaften", "ects": "180 ECTS" },
-            { "name": "Gesundheitswissenschaften und Technologie", "ects": "180 ECTS" }
+            {
+              "name": "Gesundheitswissenschaften und Technologie",
+              "ects": "180 ECTS"
+            }
           ]
         },
         {
@@ -32,20 +33,19 @@
           "studiengaenge": [
             { "name": "Chemie", "ects": "180 ECTS" },
             { "name": "Pharmazeutische Wissenschaften", "ects": "180 ECTS" },
-            { "name": "Lebensmittelwissenschaften und Ernährung", "ects": "180 ECTS" }
+            {
+              "name": "Lebensmittelwissenschaften und Ernährung",
+              "ects": "180 ECTS"
+            }
           ]
         },
         {
           "name": "Physik",
-          "studiengaenge": [
-            { "name": "Physik", "ects": "180 ECTS" }
-          ]
+          "studiengaenge": [{ "name": "Physik", "ects": "180 ECTS" }]
         },
         {
           "name": "Mathematik",
-          "studiengaenge": [
-            { "name": "Mathematik", "ects": "180 ECTS" }
-          ]
+          "studiengaenge": [{ "name": "Mathematik", "ects": "180 ECTS" }]
         }
       ],
       "studiengaenge": [
@@ -63,17 +63,23 @@
           ]
         },
         {
-          "name": "Bauingenieurwesen",
+          "name": "Bauwesen",
           "studiengaenge": [
             { "name": "Architektur", "ects": "180 ECTS" },
             { "name": "Bauingenieurwissenschaften", "ects": "180 ECTS" },
-            { "name": "Raumbezogene Ingenieurwissenschaften", "ects": "180 ECTS" },
+            {
+              "name": "Raumbezogene Ingenieurwissenschaften",
+              "ects": "180 ECTS"
+            },
             { "name": "Umweltingenieurwissenschaften", "ects": "180 ECTS" }
           ]
         }
       ],
       "studiengaenge": [
-        { "name": "Elektrotechnik und Informationstechnologie", "ects": "180 ECTS" },
+        {
+          "name": "Elektrotechnik und Informationstechnologie",
+          "ects": "180 ECTS"
+        },
         { "name": "Maschineningenieurwissenschaften", "ects": "180 ECTS" },
         { "name": "Materialwissenschaft", "ects": "180 ECTS" },
         { "name": "Chemieingenieurwissenschaften", "ects": "180 ECTS" }
