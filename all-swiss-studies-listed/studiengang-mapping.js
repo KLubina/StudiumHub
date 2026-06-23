@@ -111,6 +111,10 @@ const StudiengangMapping = {
   Systemtechnik: { key: "fhzh-systemtechnik", institution: "ZHAW" },
   Medizininformatik: { key: "fhzh-medizininformatik", institution: "ZHAW" },
 
+  // NEU: ZHAW Rechtsstudiengänge Direkt-Lookup
+  Wirtschaftsrecht: { key: "fhzh-wr", institution: "ZHAW" },
+  "Angewandtes Recht": { key: "fhzh-ar", institution: "ZHAW" },
+
   "Elektrotechnik und Informationstechnologie": {
     key: "fhlu-eit",
     institution: "Hochschule Luzern",
@@ -241,6 +245,14 @@ const StudiengangMapping = {
         return `study-visualization/standard/specificprogram-template.html?studiengang=eth-humanmedizin`;
       if (institutionName === "Universität Zürich")
         return `study-visualization/standard/specificprogram-template.html?studiengang=uzh-humanmedizin`;
+    }
+
+    // NEU: Fallback-Weichen für ZHAW Rechtsstudiengänge
+    if (studiengangName === "Wirtschaftsrecht" && institutionName === "ZHAW") {
+      return `study-visualization/standard/specificprogram-template.html?studiengang=fhzh-wr`;
+    }
+    if (studiengangName === "Angewandtes Recht" && institutionName === "ZHAW") {
+      return `study-visualization/standard/specificprogram-template.html?studiengang=fhzh-ar`;
     }
 
     return null;
