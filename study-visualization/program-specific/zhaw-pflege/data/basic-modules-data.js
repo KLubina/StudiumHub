@@ -79,7 +79,7 @@ window.StudiengangModules = [
   {
     name: "Wissenschaftliches Arbeiten und quantitative Forschungsmethoden",
     ects: 3,
-    standardcategory: "beruf", // Based on visual position in similar curricula, could be interprof but looks grouped in pink in some diagrams. I'll stick to 'beruf' or 'interprof'? Let's go with 'beruf' to match pink if it was pink. Wait, in Sem 1 "Wissenschaftliches..." was Blue. Let's make it 'beruf' for now, or check logical grouping. Actually let's assume it's "Berufsspezifisch" if it's specific to nursing science, but "Wissenschaftliches Arbeiten" is often interprof. Let's use 'interprof' to match Sem 1 for consistency unless I see otherwise. The user text has it in the middle. Let's stick with 'beruf' for now based on the cluster.
+    standardcategory: "beruf",
     year: 1,
     semester: 2,
   },
@@ -193,7 +193,7 @@ window.StudiengangModules = [
   {
     name: "Herausfordernde Berufspraxis und Kooperation",
     ects: 6,
-    standardcategory: "interprof", // "Kooperation" suggests interprof
+    standardcategory: "interprof",
     year: 3,
     semester: 5,
   },

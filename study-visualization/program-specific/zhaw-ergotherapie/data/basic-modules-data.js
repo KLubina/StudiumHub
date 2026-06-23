@@ -5,6 +5,13 @@
 window.StudiengangModules = [
   // #region 1. Semester
   {
+    name: "Methodisches Handeln 1: Lernen",
+    ects: 3,
+    standardcategory: "grundlagen",
+    year: 1,
+    semester: 1,
+  },
+  {
     name: "Bedeutung von Betätigung",
     ects: 3,
     standardcategory: "fach",
@@ -19,14 +26,14 @@ window.StudiengangModules = [
     semester: 1,
   },
   {
-    name: "Methodisches Handeln 1: Lernen",
-    ects: 3,
-    standardcategory: "grundlagen",
+    name: "Betätigung im frühen Lebensalter",
+    ects: 6,
+    standardcategory: "fach",
     year: 1,
     semester: 1,
   },
   {
-    name: "Betätigung im frühen Lebensalter",
+    name: "Betätigung im mittleren Lebensalter",
     ects: 6,
     standardcategory: "fach",
     year: 1,
@@ -39,27 +46,20 @@ window.StudiengangModules = [
     year: 1,
     semester: 1,
   },
-  {
-    name: "Betätigung im mittleren Lebensalter",
-    ects: 6,
-    standardcategory: "fach",
-    year: 1,
-    semester: 1,
-  },
   // #endregion
 
   // #region 2. Semester
   {
-    name: "Betätigung im höheren Lebensalter",
-    ects: 6,
-    standardcategory: "fach",
+    name: "Methodisches Handeln 2: Selbstgesteuertes Lernen",
+    ects: 3,
+    standardcategory: "grundlagen",
     year: 1,
     semester: 2,
   },
   {
-    name: "Klient:innenzentrierte Kommunikation im interprofessionellen Kontext",
-    ects: 3,
-    standardcategory: "kommunikation",
+    name: "Betätigung im höheren Lebensalter",
+    ects: 6,
+    standardcategory: "fach",
     year: 1,
     semester: 2,
   },
@@ -85,9 +85,9 @@ window.StudiengangModules = [
     semester: 2,
   },
   {
-    name: "Methodisches Handeln 2: Selbstgesteuertes Lernen",
+    name: "Klient:innenzentrierte Kommunikation im interprofessionellen Kontext",
     ects: 3,
-    standardcategory: "grundlagen",
+    standardcategory: "kommunikation",
     year: 1,
     semester: 2,
   },
@@ -102,13 +102,6 @@ window.StudiengangModules = [
 
   // #region 3. Semester
   {
-    name: "Betätigung in komplexen Situationen ermöglichen",
-    ects: 6,
-    standardcategory: "fach",
-    year: 2,
-    semester: 3,
-  },
-  {
     name: "Methodisches Handeln 3: Individuelles Kompetenzprofil",
     ects: 3,
     standardcategory: "grundlagen",
@@ -116,16 +109,16 @@ window.StudiengangModules = [
     semester: 3,
   },
   {
-    name: "Betätigung ermöglichen – Best Practice gestern und heute",
+    name: "Betätigung in komplexen Situationen ermöglichen",
     ects: 6,
     standardcategory: "fach",
     year: 2,
     semester: 3,
   },
   {
-    name: "Wissenschaftskommunikation",
-    ects: 3,
-    standardcategory: "wissenschaft",
+    name: "Betätigung ermöglichen – Best Practice gestern und heute",
+    ects: 6,
+    standardcategory: "fach",
     year: 2,
     semester: 3,
   },
@@ -140,6 +133,13 @@ window.StudiengangModules = [
     name: "Gesellschaft, Kultur und Gesundheit 1",
     ects: 3,
     standardcategory: "kontext",
+    year: 2,
+    semester: 3,
+  },
+  {
+    name: "Wissenschaftskommunikation",
+    ects: 3,
+    standardcategory: "wissenschaft",
     year: 2,
     semester: 3,
   },
@@ -171,6 +171,13 @@ window.StudiengangModules = [
 
   // #region 5. Semester
   {
+    name: "Methodisches Handeln 4: Praxisbezogener Lerntransfer",
+    ects: 3,
+    standardcategory: "grundlagen",
+    year: 3,
+    semester: 5,
+  },
+  {
     name: "Fachliche Vertiefung 5",
     ects: 3,
     standardcategory: "fach",
@@ -178,9 +185,10 @@ window.StudiengangModules = [
     semester: 5,
   },
   {
-    name: "Methodisches Handeln 4: Praxisbezogener Lerntransfer",
-    ects: 3,
-    standardcategory: "grundlagen",
+    name: "Gesellschaft, Kultur und Gesundheit 1", // Entspricht "Herausfordernde Berufspraxis und Kooperation" in der Vorlage
+    name: "Herausfordernde Berufspraxis und Kooperation",
+    ects: 6,
+    standardcategory: "kontext",
     year: 3,
     semester: 5,
   },
@@ -198,20 +206,13 @@ window.StudiengangModules = [
     year: 3,
     semester: 5,
   },
-  {
-    name: "Herausfordernde Berufspraxis und Kooperation",
-    ects: 6,
-    standardcategory: "kontext",
-    year: 3,
-    semester: 5,
-  },
   // #endregion
 
   // #region 6. Semester
   {
-    name: "Gesellschaft und Ergotherapie im Wandel",
-    ects: 3,
-    standardcategory: "kontext",
+    name: "Projektwerkstatt",
+    ects: 6,
+    standardcategory: "fach",
     year: 3,
     semester: 6,
   },
@@ -219,6 +220,13 @@ window.StudiengangModules = [
     name: "Interprofessionelle Zusammenarbeit in Theorie und Praxis",
     ects: 3,
     standardcategory: "kommunikation",
+    year: 3,
+    semester: 6,
+  },
+  {
+    name: "Gesellschaft und Ergotherapie im Wandel",
+    ects: 3,
+    standardcategory: "kontext",
     year: 3,
     semester: 6,
   },
@@ -240,13 +248,6 @@ window.StudiengangModules = [
     name: "Vertiefung wissenschaftliches Arbeiten",
     ects: 3,
     standardcategory: "wissenschaft",
-    year: 3,
-    semester: 6,
-  },
-  {
-    name: "Projektwerkstatt",
-    ects: 6,
-    standardcategory: "fach",
     year: 3,
     semester: 6,
   },

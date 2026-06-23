@@ -5,6 +5,13 @@
 window.StudiengangModules = [
   // #region 1. Semester
   {
+    name: "Englisch für Gesundheitsförderung und Prävention",
+    ects: 3,
+    standardcategory: "grundlagen",
+    year: 1,
+    semester: 1,
+  },
+  {
     name: "Gesundheitsförderung und Prävention: Begriffe und Konzepte",
     ects: 6,
     standardcategory: "fach",
@@ -26,16 +33,16 @@ window.StudiengangModules = [
     semester: 1,
   },
   {
-    name: "Wissenschaftliches Arbeiten und qualitative Forschungsmethoden",
+    name: "Epidemiologie und Sozialmedizin 1",
     ects: 3,
-    standardcategory: "wissenschaft",
+    standardcategory: "fach",
     year: 1,
     semester: 1,
   },
   {
-    name: "Epidemiologie und Sozialmedizin 1",
+    name: "Wissenschaftliches Arbeiten und qualitative Forschungsmethoden",
     ects: 3,
-    standardcategory: "fach",
+    standardcategory: "wissenschaft",
     year: 1,
     semester: 1,
   },
@@ -46,13 +53,6 @@ window.StudiengangModules = [
     year: 1,
     semester: 1,
   },
-  {
-    name: "Englisch für Gesundheitsförderung und Prävention",
-    ects: 3,
-    standardcategory: "grundlagen",
-    year: 1,
-    semester: 1,
-  },
   // #endregion
 
   // #region 2. Semester
@@ -60,13 +60,6 @@ window.StudiengangModules = [
     name: "Gesundheitswissenschaften (Bio-Psycho-Sozial)",
     ects: 9,
     standardcategory: "fach",
-    year: 1,
-    semester: 2,
-  },
-  {
-    name: "Wissenschaftliches Arbeiten und quantitative Forschungsmethoden",
-    ects: 3,
-    standardcategory: "wissenschaft",
     year: 1,
     semester: 2,
   },
@@ -92,6 +85,13 @@ window.StudiengangModules = [
     semester: 2,
   },
   {
+    name: "Wissenschaftliches Arbeiten und quantitative Forschungsmethoden",
+    ects: 3,
+    standardcategory: "wissenschaft",
+    year: 1,
+    semester: 2,
+  },
+  {
     name: "Wissenschaftliches Arbeiten in der Gesundheitsförderung und Prävention 1",
     ects: 3,
     standardcategory: "wissenschaft",
@@ -101,13 +101,6 @@ window.StudiengangModules = [
   // #endregion
 
   // #region 3. Semester
-  {
-    name: "Gesundheitspolitik und Gesundheitsrecht 1",
-    ects: 4,
-    standardcategory: "kontext",
-    year: 2,
-    semester: 3,
-  },
   {
     name: "Projekt- und Qualitätsmanagement 2",
     ects: 3,
@@ -158,6 +151,13 @@ window.StudiengangModules = [
     semester: 3,
   },
   {
+    name: "Gesundheitspolitik und Gesundheitsrecht 1",
+    ects: 4,
+    standardcategory: "kontext",
+    year: 2,
+    semester: 3,
+  },
+  {
     name: "Gesellschaft, Kultur und Gesundheit 1",
     ects: 3,
     standardcategory: "kontext",
@@ -167,13 +167,6 @@ window.StudiengangModules = [
   // #endregion
 
   // #region 4. Semester
-  {
-    name: "Gesundheitsökonomie",
-    ects: 3,
-    standardcategory: "kontext",
-    year: 2,
-    semester: 4,
-  },
   {
     name: "Wirkungsmanagement und Evaluation",
     ects: 6,
@@ -199,6 +192,13 @@ window.StudiengangModules = [
     name: "Wissenschaftliches Arbeiten in der Gesundheitsförderung und Prävention 3",
     ects: 1,
     standardcategory: "wissenschaft",
+    year: 2,
+    semester: 4,
+  },
+  {
+    name: "Gesundheitsökonomie",
+    ects: 3,
+    standardcategory: "kontext",
     year: 2,
     semester: 4,
   },
@@ -230,9 +230,9 @@ window.StudiengangModules = [
 
   // #region 6. Semester
   {
-    name: "Gesundheitspolitik und Gesundheitsrecht 2",
+    name: "Vertiefung und Reflexion zu Theorie und Praxis",
     ects: 3,
-    standardcategory: "kontext",
+    standardcategory: "fach",
     year: 3,
     semester: 6,
   },
@@ -251,23 +251,23 @@ window.StudiengangModules = [
     semester: 6,
   },
   {
-    name: "Gesellschaft, Kultur und Gesundheit 2",
+    name: "Bachelorarbeit",
+    ects: 15,
+    standardcategory: "wissenschaft",
+    year: 3,
+    semester: 6,
+  },
+  {
+    name: "Gesundheitspolitik und Gesundheitsrecht 2",
     ects: 3,
     standardcategory: "kontext",
     year: 3,
     semester: 6,
   },
   {
-    name: "Vertiefung und Reflexion zu Theorie und Praxis",
+    name: "Gesellschaft, Kultur und Gesundheit 2",
     ects: 3,
-    standardcategory: "fach",
-    year: 3,
-    semester: 6,
-  },
-  {
-    name: "Bachelorarbeit",
-    ects: 15,
-    standardcategory: "wissenschaft",
+    standardcategory: "kontext",
     year: 3,
     semester: 6,
   },
