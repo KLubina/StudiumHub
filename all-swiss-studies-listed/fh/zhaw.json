@@ -17,7 +17,6 @@
     {
       "name": "5. Medizin",
       "studiengaenge": [
-        { "name": "Biomedizinische Labordiagnostik", "grad": "BSc" },
         { "name": "Ergotherapie", "grad": "BSc" },
         { "name": "Gesundheitsförderung und Prävention", "grad": "BSc" },
         { "name": "Hebamme", "grad": "BSc" },

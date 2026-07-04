@@ -1,31 +1,25 @@
-﻿/* ==== ZHAW STARTER CSS CLASSES ==== */
+﻿/* ==== ZHAW HEBAMME CSS CLASSES ==== */
 
-[data-studiengang] .modul.kontext,
-[data-studiengang] .legende-item.kontext {
-  background-color: var(--color-kontext);
+[data-studiengang="zhaw-hebamme"] .modul.beruf,
+[data-studiengang="zhaw-hebamme"] .legende-item.beruf {
+  background-color: var(--color-beruf);
   color: white;
 }
 
-[data-studiengang] .modul.projekt,
-[data-studiengang] .legende-item.projekt {
-  background-color: var(--color-projekt);
+[data-studiengang="zhaw-hebamme"] .modul.interprof,
+[data-studiengang="zhaw-hebamme"] .legende-item.interprof {
+  background-color: var(--color-interprof);
   color: white;
 }
 
-[data-studiengang] .modul.fach,
-[data-studiengang] .legende-item.fach {
-  background-color: var(--color-fach);
+[data-studiengang="zhaw-hebamme"] .modul.praktika,
+[data-studiengang="zhaw-hebamme"] .legende-item.praktika {
+  background-color: var(--color-praktika);
   color: white;
 }
 
-[data-studiengang] .modul.mathe-nawi,
-[data-studiengang] .legende-item.mathe-nawi {
-  background-color: var(--color-mathe-nawi);
-  color: white;
-}
-
-[data-studiengang] .modul.wahlpflicht,
-[data-studiengang] .legende-item.wahlpflicht {
-  background-color: var(--color-wahlpflicht);
+[data-studiengang="zhaw-hebamme"] .modul.thesis,
+[data-studiengang="zhaw-hebamme"] .legende-item.thesis {
+  background-color: var(--color-thesis);
   color: white;
 }
