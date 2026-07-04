@@ -1,1 +1,156 @@
-﻿window.StudiengangModules = [];
+﻿/* ==== ZHAW KOMMUNIKATION UND MEDIEN MODULE DATA ==== */
+
+window.StudiengangModules = [
+  // #region 1. Semester (29 ECTS)
+  {
+    name: "Multimodale Produktion 1: Audio",
+    ects: 2,
+    standardcategory: "projekt",
+    year: 1,
+    semester: 1,
+  },
+  {
+    name: "Visuelle Kommunikation 1: Bildproduktion",
+    ects: 2,
+    standardcategory: "projekt",
+    year: 1,
+    semester: 1,
+  },
+  {
+    name: "Medien und Gesellschaft 1: Media Literacy",
+    ects: 4,
+    standardcategory: "kontext",
+    year: 1,
+    semester: 1,
+  },
+  {
+    name: "Schreiben 1: Schreibprozess",
+    ects: 4,
+    standardcategory: "fach",
+    year: 1,
+    semester: 1,
+  },
+  {
+    name: "Schreiben 2: Textsorten",
+    ects: 4,
+    standardcategory: "fach",
+    year: 1,
+    semester: 1,
+  },
+  {
+    name: "Angewandte Linguistik in Sprachberufen 1",
+    ects: 2,
+    standardcategory: "fach",
+    year: 1,
+    semester: 1,
+  },
+  {
+    name: "Journalistik 1",
+    ects: 3,
+    standardcategory: "wahlpflicht",
+    year: 1,
+    semester: 1,
+  },
+  {
+    name: "Corporate Communications 1",
+    ects: 3,
+    standardcategory: "wahlpflicht",
+    year: 1,
+    semester: 1,
+  },
+  {
+    name: "Marketing 1",
+    ects: 3,
+    standardcategory: "wahlpflicht",
+    year: 1,
+    semester: 1,
+  },
+  {
+    name: "English for Communication and Media Studies 1",
+    ects: 2,
+    standardcategory: "kontext",
+    year: 1,
+    semester: 1,
+  },
+  // #endregion
+
+  // #region 2. Semester (31 ECTS)
+  {
+    name: "Multimodale Produktion 2: Video",
+    ects: 3,
+    standardcategory: "projekt",
+    year: 1,
+    semester: 2,
+  },
+  {
+    name: "Visuelle Kommunikation 2: Bilder verstehen",
+    ects: 3,
+    standardcategory: "projekt",
+    year: 1,
+    semester: 2,
+  },
+  {
+    name: "Medien und Gesellschaft 2: Social Media/Digital Society",
+    ects: 2,
+    standardcategory: "kontext",
+    year: 1,
+    semester: 2,
+  },
+  {
+    name: "Medien und Gesellschaft 3: Kritisches Denken",
+    ects: 2,
+    standardcategory: "kontext",
+    year: 1,
+    semester: 2,
+  },
+  {
+    name: "Schreiben 3: Textqualitaet",
+    ects: 4,
+    standardcategory: "fach",
+    year: 1,
+    semester: 2,
+  },
+  {
+    name: "Schreiben 4: Konzepte und Formate",
+    ects: 4,
+    standardcategory: "fach",
+    year: 1,
+    semester: 2,
+  },
+  {
+    name: "Angewandte Linguistik in Sprachberufen 2",
+    ects: 2,
+    standardcategory: "fach",
+    year: 1,
+    semester: 2,
+  },
+  {
+    name: "Journalistik 2",
+    ects: 3,
+    standardcategory: "wahlpflicht",
+    year: 1,
+    semester: 2,
+  },
+  {
+    name: "Corporate Communications 2",
+    ects: 3,
+    standardcategory: "wahlpflicht",
+    year: 1,
+    semester: 2,
+  },
+  {
+    name: "Marketing 2",
+    ects: 3,
+    standardcategory: "wahlpflicht",
+    year: 1,
+    semester: 2,
+  },
+  {
+    name: "English for Communication and Media Studies 2",
+    ects: 2,
+    standardcategory: "kontext",
+    year: 1,
+    semester: 2,
+  },
+  // #endregion
+];

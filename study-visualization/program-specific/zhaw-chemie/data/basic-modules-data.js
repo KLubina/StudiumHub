@@ -1,1 +1,222 @@
-﻿window.StudiengangModules = [];
+﻿/* ==== ZHAW CHEMIE MODULE DATA ==== */
+
+window.StudiengangModules = [
+  // #region 1. Semester (30 ECTS)
+  {
+    name: "Allgemeine Chemie 1",
+    ects: 4,
+    standardcategory: "mathe-nawi",
+    year: 1,
+    semester: 1,
+  },
+  {
+    name: "Analytische Chemie 1",
+    ects: 2,
+    standardcategory: "mathe-nawi",
+    year: 1,
+    semester: 1,
+  },
+  {
+    name: "Mathematik 1",
+    ects: 4,
+    standardcategory: "mathe-nawi",
+    year: 1,
+    semester: 1,
+  },
+  {
+    name: "Informatik 1",
+    ects: 2,
+    standardcategory: "mathe-nawi",
+    year: 1,
+    semester: 1,
+  },
+  {
+    name: "Physik 1",
+    ects: 4,
+    standardcategory: "mathe-nawi",
+    year: 1,
+    semester: 1,
+  },
+  {
+    name: "Biologie",
+    ects: 2,
+    standardcategory: "mathe-nawi",
+    year: 1,
+    semester: 1,
+  },
+  {
+    name: "Praktikum Allgemeine Chemie",
+    ects: 6,
+    standardcategory: "projekt",
+    year: 1,
+    semester: 1,
+  },
+  {
+    name: "Englisch 1",
+    ects: 2,
+    standardcategory: "kontext",
+    year: 1,
+    semester: 1,
+  },
+  {
+    name: "Gesellschaftlicher Kontext und Sprache 1",
+    ects: 2,
+    standardcategory: "kontext",
+    year: 1,
+    semester: 1,
+  },
+  {
+    name: "Digital Literacy",
+    ects: 2,
+    standardcategory: "kontext",
+    year: 1,
+    semester: 1,
+  },
+  // #endregion
+
+  // #region 2. Semester (30 ECTS)
+  {
+    name: "Allgemeine Chemie 2",
+    ects: 4,
+    standardcategory: "mathe-nawi",
+    year: 1,
+    semester: 2,
+  },
+  {
+    name: "Analytische Chemie 2",
+    ects: 2,
+    standardcategory: "mathe-nawi",
+    year: 1,
+    semester: 2,
+  },
+  {
+    name: "Organische Chemie 1",
+    ects: 2,
+    standardcategory: "mathe-nawi",
+    year: 1,
+    semester: 2,
+  },
+  {
+    name: "Mathematik 2",
+    ects: 4,
+    standardcategory: "mathe-nawi",
+    year: 1,
+    semester: 2,
+  },
+  {
+    name: "Informatik 2",
+    ects: 2,
+    standardcategory: "mathe-nawi",
+    year: 1,
+    semester: 2,
+  },
+  {
+    name: "Physik 2",
+    ects: 4,
+    standardcategory: "mathe-nawi",
+    year: 1,
+    semester: 2,
+  },
+  {
+    name: "Mikrobiologie",
+    ects: 2,
+    standardcategory: "mathe-nawi",
+    year: 1,
+    semester: 2,
+  },
+  {
+    name: "Praktikum Analytische Chemie 1",
+    ects: 6,
+    standardcategory: "projekt",
+    year: 1,
+    semester: 2,
+  },
+  {
+    name: "Englisch 2",
+    ects: 2,
+    standardcategory: "kontext",
+    year: 1,
+    semester: 2,
+  },
+  {
+    name: "Gesellschaftlicher Kontext und Sprache 2",
+    ects: 2,
+    standardcategory: "kontext",
+    year: 1,
+    semester: 2,
+  },
+  // #endregion
+
+  // #region 3. Semester (30 ECTS)
+  {
+    name: "Analytische Chemie 3",
+    ects: 2,
+    standardcategory: "fach",
+    year: 2,
+    semester: 3,
+  },
+  {
+    name: "Anorganische Chemie",
+    ects: 2,
+    standardcategory: "fach",
+    year: 2,
+    semester: 3,
+  },
+  {
+    name: "Biochemie 1",
+    ects: 2,
+    standardcategory: "fach",
+    year: 2,
+    semester: 3,
+  },
+  {
+    name: "Chemische Verfahren 1",
+    ects: 2,
+    standardcategory: "fach",
+    year: 2,
+    semester: 3,
+  },
+  {
+    name: "Organische Chemie 2",
+    ects: 2,
+    standardcategory: "fach",
+    year: 2,
+    semester: 3,
+  },
+  {
+    name: "Physikalische Chemie 1",
+    ects: 2,
+    standardcategory: "fach",
+    year: 2,
+    semester: 3,
+  },
+  {
+    name: "Zellbiologie",
+    ects: 2,
+    standardcategory: "fach",
+    year: 2,
+    semester: 3,
+  },
+  {
+    name: "Praktikum Analytische Chemie 2",
+    ects: 6,
+    standardcategory: "projekt",
+    year: 2,
+    semester: 3,
+  },
+  {
+    name: "Praktikum Organische Chemie 1",
+    ects: 6,
+    standardcategory: "projekt",
+    year: 2,
+    semester: 3,
+  },
+  {
+    name: "Englisch 3",
+    ects: 2,
+    standardcategory: "kontext",
+    year: 2,
+    semester: 3,
+  },
+  // #endregion
+];

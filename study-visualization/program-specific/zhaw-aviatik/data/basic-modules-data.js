@@ -1,1 +1,336 @@
-﻿window.StudiengangModules = [];
+﻿/* ==== ZHAW AVIATIK MODULE DATA ==== */
+
+window.StudiengangModules = [
+  // #region 1. Semester
+  {
+    name: "Intercultural Communication and Management",
+    ects: 2,
+    standardcategory: "kontext",
+    year: 1,
+    semester: 1,
+  },
+  {
+    name: "Aviation Projects 1",
+    ects: 4,
+    standardcategory: "projekt",
+    year: 1,
+    semester: 1,
+  },
+  {
+    name: "Aviation Basics",
+    ects: 4,
+    standardcategory: "fach",
+    year: 1,
+    semester: 1,
+  },
+  {
+    name: "Aviation Law",
+    ects: 4,
+    standardcategory: "fach",
+    year: 1,
+    semester: 1,
+  },
+  {
+    name: "Informatik Programmieren 1",
+    ects: 4,
+    standardcategory: "fach",
+    year: 1,
+    semester: 1,
+  },
+  {
+    name: "Analysis 1",
+    ects: 4,
+    standardcategory: "mathe-nawi",
+    year: 1,
+    semester: 1,
+  },
+  {
+    name: "Lineare Algebra 1",
+    ects: 4,
+    standardcategory: "mathe-nawi",
+    year: 1,
+    semester: 1,
+  },
+  {
+    name: "Physik 1",
+    ects: 4,
+    standardcategory: "mathe-nawi",
+    year: 1,
+    semester: 1,
+  },
+  // #endregion
+
+  // #region 2. Semester
+  {
+    name: "Communication Compet. Basic",
+    ects: 2,
+    standardcategory: "kontext",
+    year: 1,
+    semester: 2,
+  },
+  {
+    name: "Aviation Projects 2",
+    ects: 4,
+    standardcategory: "projekt",
+    year: 1,
+    semester: 2,
+  },
+  {
+    name: "Principles of Flight",
+    ects: 4,
+    standardcategory: "fach",
+    year: 1,
+    semester: 2,
+  },
+  {
+    name: "Business Administration, Informatik Tool, CAD for Aviation",
+    ects: 2,
+    standardcategory: "fach",
+    year: 1,
+    semester: 2,
+  },
+  {
+    name: "Analysis 2",
+    ects: 4,
+    standardcategory: "mathe-nawi",
+    year: 1,
+    semester: 2,
+  },
+  {
+    name: "Lineare Algebra 2",
+    ects: 4,
+    standardcategory: "mathe-nawi",
+    year: 1,
+    semester: 2,
+  },
+  {
+    name: "Physik 2",
+    ects: 4,
+    standardcategory: "mathe-nawi",
+    year: 1,
+    semester: 2,
+  },
+  // #endregion
+
+  // #region 3. Semester
+  {
+    name: "Wahlpflichtmodul Kommunikation",
+    ects: 2,
+    standardcategory: "kontext",
+    year: 2,
+    semester: 3,
+  },
+  {
+    name: "Aviation Projects 3",
+    ects: 4,
+    standardcategory: "projekt",
+    year: 2,
+    semester: 3,
+  },
+  {
+    name: "Aircraft Systems: Structure and Mechanical Systems",
+    ects: 4,
+    standardcategory: "fach",
+    year: 2,
+    semester: 3,
+  },
+  {
+    name: "Human Factors",
+    ects: 4,
+    standardcategory: "fach",
+    year: 2,
+    semester: 3,
+  },
+  {
+    name: "Safety Risk Management - Quality Management",
+    ects: 4,
+    standardcategory: "fach",
+    year: 2,
+    semester: 3,
+  },
+  {
+    name: "Infrastructure - Airspace and Air Navigation Services",
+    ects: 4,
+    standardcategory: "fach",
+    year: 2,
+    semester: 3,
+  },
+  {
+    name: "Stochastik und Statistik",
+    ects: 4,
+    standardcategory: "mathe-nawi",
+    year: 2,
+    semester: 3,
+  },
+  {
+    name: "Physics 3: Atmospheric Physics and Applied Meteorology",
+    ects: 4,
+    standardcategory: "mathe-nawi",
+    year: 2,
+    semester: 3,
+  },
+  // #endregion
+
+  // #region 4. Semester
+  {
+    name: "Wahlpflichtmodul Kommunikation",
+    ects: 2,
+    standardcategory: "kontext",
+    year: 2,
+    semester: 4,
+  },
+  {
+    name: "Aviation Projects 4",
+    ects: 4,
+    standardcategory: "projekt",
+    year: 2,
+    semester: 4,
+  },
+  {
+    name: "Aircraft Systems: Propulsion Systems and Performance",
+    ects: 4,
+    standardcategory: "fach",
+    year: 2,
+    semester: 4,
+  },
+  {
+    name: "Aircraft Systems: Electrotechnics and Electrical Systems",
+    ects: 4,
+    standardcategory: "fach",
+    year: 2,
+    semester: 4,
+  },
+  {
+    name: "Aviation Systems Engineering",
+    ects: 4,
+    standardcategory: "fach",
+    year: 2,
+    semester: 4,
+  },
+  {
+    name: "Infrastructure - Aerodromes",
+    ects: 4,
+    standardcategory: "fach",
+    year: 2,
+    semester: 4,
+  },
+  {
+    name: "Materials Technology for Aviation",
+    ects: 4,
+    standardcategory: "fach",
+    year: 2,
+    semester: 4,
+  },
+  {
+    name: "Numerik",
+    ects: 4,
+    standardcategory: "mathe-nawi",
+    year: 2,
+    semester: 4,
+  },
+  // #endregion
+
+  // #region 5. Semester
+  {
+    name: "Wahlpflichtmodul Kontext",
+    ects: 2,
+    standardcategory: "kontext",
+    year: 3,
+    semester: 5,
+  },
+  {
+    name: "Wahlpflichtmodul Kontext",
+    ects: 2,
+    standardcategory: "kontext",
+    year: 3,
+    semester: 5,
+  },
+  {
+    name: "Project Thesis: Aviation",
+    ects: 6,
+    standardcategory: "projekt",
+    year: 3,
+    semester: 5,
+  },
+  {
+    name: "Schwerpunktmodul 1",
+    ects: 4,
+    standardcategory: "fach",
+    year: 3,
+    semester: 5,
+  },
+  {
+    name: "Schwerpunktmodul 3",
+    ects: 4,
+    standardcategory: "fach",
+    year: 3,
+    semester: 5,
+  },
+  {
+    name: "Schwerpunktmodul 5",
+    ects: 4,
+    standardcategory: "fach",
+    year: 3,
+    semester: 5,
+  },
+  {
+    name: "Wahlpflichtmodul Fach 7",
+    ects: 4,
+    standardcategory: "wahlpflicht",
+    year: 3,
+    semester: 5,
+  },
+  {
+    name: "Wahlpflichtmodul Interdisziplinaer",
+    ects: 4,
+    standardcategory: "wahlpflicht",
+    year: 3,
+    semester: 5,
+  },
+  // #endregion
+
+  // #region 6. Semester
+  {
+    name: "Wahlpflichtmodul Kontext",
+    ects: 2,
+    standardcategory: "kontext",
+    year: 3,
+    semester: 6,
+  },
+  {
+    name: "Bachelor Thesis Aviation",
+    ects: 12,
+    standardcategory: "projekt",
+    year: 3,
+    semester: 6,
+  },
+  {
+    name: "Schwerpunktmodul 2",
+    ects: 4,
+    standardcategory: "fach",
+    year: 3,
+    semester: 6,
+  },
+  {
+    name: "Schwerpunktmodul 4",
+    ects: 4,
+    standardcategory: "fach",
+    year: 3,
+    semester: 6,
+  },
+  {
+    name: "Schwerpunktmodul 6",
+    ects: 4,
+    standardcategory: "fach",
+    year: 3,
+    semester: 6,
+  },
+  {
+    name: "Wahlpflichtmodul Fach 8",
+    ects: 4,
+    standardcategory: "wahlpflicht",
+    year: 3,
+    semester: 6,
+  },
+  // #endregion
+];
