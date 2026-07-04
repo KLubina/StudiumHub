@@ -91,6 +91,57 @@ const StudiengangMapping = {
     key: "zhaw-applied-digital-life-sciences",
     institution: "ZHAW",
   },
+  "International Management": {
+    key: "zhaw-international-management",
+    institution: "ZHAW",
+  },
+  Wirtschaftsingenieurwesen: {
+    key: "zhaw-wirtschaftsingenieurwesen",
+    institution: "ZHAW",
+  },
+  "Facility Management": {
+    key: "zhaw-facility-management",
+    institution: "ZHAW",
+  },
+  Hebamme: { key: "zhaw-hebamme", institution: "ZHAW" },
+  "Biomedizinische Labordiagnostik": {
+    key: "zhaw-biomedizinische-labordiagnostik",
+    institution: "ZHAW",
+  },
+  Biotechnologie: { key: "zhaw-biotechnologie", institution: "ZHAW" },
+  Chemie: { key: "zhaw-chemie", institution: "ZHAW" },
+  Architektur: { key: "zhaw-architektur", institution: "ZHAW" },
+  Bauingenieurwesen: {
+    key: "zhaw-bauingenieurwesen",
+    institution: "ZHAW",
+  },
+  Umweltingenieurwesen: {
+    key: "zhaw-umweltingenieurwesen",
+    institution: "ZHAW",
+  },
+  Aviatik: { key: "zhaw-aviatik", institution: "ZHAW" },
+  "Energie- und Umwelttechnik": {
+    key: "zhaw-energie-und-umwelttechnik",
+    institution: "ZHAW",
+  },
+  Maschinentechnik: { key: "zhaw-maschinentechnik", institution: "ZHAW" },
+  "Kommunikation und Medien": {
+    key: "zhaw-kommunikation-und-medien",
+    institution: "ZHAW",
+  },
+  "Mehrsprachige Kommunikation": {
+    key: "zhaw-mehrsprachige-kommunikation",
+    institution: "ZHAW",
+  },
+  "Angewandte Psychologie": {
+    key: "zhaw-angewandte-psychologie",
+    institution: "ZHAW",
+  },
+  "Soziale Arbeit": { key: "zhaw-soziale-arbeit", institution: "ZHAW" },
+  "Sprachliche Integration": {
+    key: "zhaw-sprachliche-integration",
+    institution: "ZHAW",
+  },
   "Applied Digital Life Science": {
     key: "zhaw-applied-digital-life-sciences",
     institution: "ZHAW",

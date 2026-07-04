@@ -7,16 +7,17 @@
       "studiengaenge": [
         { "name": "Angewandtes Recht", "grad": "BA" },
         { "name": "Betriebsökonomie", "grad": "BSc" },
+        { "name": "Facility Management", "grad": "BSc" },
         { "name": "International Management", "grad": "BSc" },
-        { "name": "Wirtschaftsinformatik", "grad": "BSc" },
         { "name": "Wirtschaftsingenieurwesen", "grad": "BSc" },
-        { "name": "Wirtschaftsrecht", "grad": "BSc" },
-        { "name": "Facility Management", "grad": "BSc" }
+        { "name": "Wirtschaftsinformatik", "grad": "BSc" },
+        { "name": "Wirtschaftsrecht", "grad": "BSc" }
       ]
     },
     {
       "name": "5. Medizin",
       "studiengaenge": [
+        { "name": "Biomedizinische Labordiagnostik", "grad": "BSc" },
         { "name": "Ergotherapie", "grad": "BSc" },
         { "name": "Gesundheitsförderung und Prävention", "grad": "BSc" },
         { "name": "Hebamme", "grad": "BSc" },
