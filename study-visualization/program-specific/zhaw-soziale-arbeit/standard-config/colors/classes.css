@@ -1,16 +1,4 @@
-﻿/* ==== ZHAW STARTER CSS CLASSES ==== */
-
-[data-studiengang] .modul.kontext,
-[data-studiengang] .legende-item.kontext {
-  background-color: var(--color-kontext);
-  color: white;
-}
-
-[data-studiengang] .modul.projekt,
-[data-studiengang] .legende-item.projekt {
-  background-color: var(--color-projekt);
-  color: white;
-}
+﻿/* ==== CSS CLASSES ==== */
 
 [data-studiengang] .modul.fach,
 [data-studiengang] .legende-item.fach {
@@ -18,14 +6,8 @@
   color: white;
 }
 
-[data-studiengang] .modul.mathe-nawi,
-[data-studiengang] .legende-item.mathe-nawi {
-  background-color: var(--color-mathe-nawi);
-  color: white;
-}
-
-[data-studiengang] .modul.wahlpflicht,
-[data-studiengang] .legende-item.wahlpflicht {
-  background-color: var(--color-wahlpflicht);
+[data-studiengang] .modul.projekt,
+[data-studiengang] .legende-item.projekt {
+  background-color: var(--color-projekt);
   color: white;
 }
