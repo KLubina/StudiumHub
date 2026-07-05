@@ -43,10 +43,6 @@
         { "name": "Chemical Engineering", "grad": "Bachelor of Science" },
         { "name": "Chemie", "grad": "Bachelor of Science" },
         { "name": "Pharmatechnologie", "grad": "Bachelor of Science" },
-        {
-          "name": "Umweltwissenschaften und Technologie",
-          "grad": "Bachelor of Science"
-        },
         { "name": "Optometrie", "grad": "Bachelor of Science" }
       ]
     },
@@ -57,28 +53,11 @@
           "name": "Informatik",
           "studiengaenge": [
             {
-              "name": "Artificial Intelligence & High Performance Computing",
-              "grad": "Bachelor of Science"
-            },
-            {
               "name": "Data Science & Artificial Intelligence",
               "grad": "Bachelor of Science"
             },
-            {
-              "name": "Game Technologies & Extended Reality",
-              "grad": "Bachelor of Science"
-            },
-            { "name": "iCompetence", "grad": "Bachelor of Science" },
             { "name": "Informatik", "grad": "Bachelor of Science" },
-            { "name": "Medizininformatik", "grad": "Bachelor of Science" },
-            {
-              "name": "Security, Platforms & DevOps",
-              "grad": "Bachelor of Science"
-            },
-            {
-              "name": "Software Engineering & Intelligent Technologies",
-              "grad": "Bachelor of Science"
-            }
+            { "name": "Medizininformatik", "grad": "Bachelor of Science" }
           ]
         },
         {
@@ -92,11 +71,7 @@
             },
             { "name": "Geomatik", "grad": "Bachelor of Science" },
             {
-              "name": "Kreislaufwirtschaft und Ressourcenmanagement",
-              "grad": "Bachelor of Science"
-            },
-            {
-              "name": "Nachhaltige Gebäude und Städte",
+              "name": "Umweltwissenschaften und Technologie",
               "grad": "Bachelor of Science"
             }
           ]
