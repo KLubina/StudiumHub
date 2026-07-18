@@ -3,24 +3,7 @@
   "website": "https://www.ost.ch/de/studium/bachelor",
   "kategorien": [
     {
-      "name": "3. Wirtschaftswissenschaften",
-      "studiengaenge": [
-        { "name": "Betriebsökonomie", "grad": "BSc" },
-        { "name": "Management und Recht", "grad": "BSc" },
-        { "name": "Wirtschaftsinformatik", "grad": "BSc" },
-        { "name": "Wirtschaftsingenieurwesen", "grad": "Bachelor" }
-      ]
-    },
-    {
-      "name": "5. Medizin",
-      "studiengaenge": [
-        { "name": "Ergotherapie", "grad": "BSc" },
-        { "name": "Pflege", "grad": "BSc" },
-        { "name": "Physiotherapie", "grad": "BSc" }
-      ]
-    },
-    {
-      "name": "1. Ingenieurwissenschaften",
+      "name": "2. Ingenieurwissenschaften",
       "unterkategorien": [
         {
           "name": "Informatik",
@@ -37,18 +20,41 @@
             { "name": "Architektur", "grad": "BA" },
             { "name": "Bauingenieurwesen", "grad": "BSc" },
             { "name": "Landschaftsarchitektur", "grad": "BSc" },
-            { "name": "Stadt-, Verkehrs- und Raumplanung", "grad": "BSc" }
+            {
+              "name": "Stadt-, Verkehrs- und Raumplanung",
+              "grad": "BSc"
+            }
           ]
         }
       ],
       "studiengaenge": [
-        { "name": "Electrical and Computer Engineering", "grad": "Bachelor" },
+        {
+          "name": "Electrical and Computer Engineering",
+          "grad": "Bachelor"
+        },
         {
           "name": "Erneuerbare Energien und Umwelttechnik",
           "grad": "Bachelor"
         },
         { "name": "Maschinentechnik", "grad": "Bachelor" },
         { "name": "Mechatronik", "grad": "Bachelor" }
+      ]
+    },
+    {
+      "name": "3. Medizin",
+      "studiengaenge": [
+        { "name": "Ergotherapie", "grad": "BSc" },
+        { "name": "Pflege", "grad": "BSc" },
+        { "name": "Physiotherapie", "grad": "BSc" }
+      ]
+    },
+    {
+      "name": "5. Wirtschaftswissenschaften",
+      "studiengaenge": [
+        { "name": "Betriebsökonomie", "grad": "BSc" },
+        { "name": "Management und Recht", "grad": "BSc" },
+        { "name": "Wirtschaftsinformatik", "grad": "BSc" },
+        { "name": "Wirtschaftsingenieurwesen", "grad": "Bachelor" }
       ]
     },
     {

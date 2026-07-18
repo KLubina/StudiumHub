@@ -3,34 +3,7 @@
   "website": "https://www.bfh.ch/de/studium/alle-studiengaenge/",
   "kategorien": [
     {
-      "name": "3. Wirtschaftswissenschaften",
-      "studiengaenge": [
-        { "name": "Digital Business & AI", "grad": "Bachelor of Science" },
-        { "name": "Betriebsökonomie", "grad": "Bachelor of Science" },
-        { "name": "Food Science & Management", "grad": "Bachelor of Science" },
-        {
-          "name": "International Business Administration",
-          "grad": "Bachelor of Science"
-        },
-        { "name": "Wirtschaftsingenieurwesen", "grad": "Bachelor of Science" }
-      ]
-    },
-    {
-      "name": "5. Medizin",
-      "studiengaenge": [
-        { "name": "Ernährung und Diätetik", "grad": "Bachelor of Science" },
-        { "name": "Hebamme", "grad": "Bachelor of Science" },
-        {
-          "name": "Hebamme für dipl. Pflegefachpersonen",
-          "grad": "Bachelor of Science"
-        },
-        { "name": "Pflege", "grad": "Bachelor of Science" },
-        { "name": "Pflege für FaGe und FaBe", "grad": "Bachelor of Science" },
-        { "name": "Physiotherapie", "grad": "Bachelor of Science" }
-      ]
-    },
-    {
-      "name": "2. Naturwissenschaften",
+      "name": "1. Naturwissenschaften",
       "studiengaenge": [
         { "name": "Agronomie", "grad": "Bachelor of Science" },
         { "name": "Waldwissenschaften", "grad": "Bachelor of Science" },
@@ -41,7 +14,7 @@
       ]
     },
     {
-      "name": "1. Ingenieurwissenschaften",
+      "name": "2. Ingenieurwissenschaften",
       "unterkategorien": [
         {
           "name": "Informatik",
@@ -76,6 +49,33 @@
           "name": "Mechatronik und Systemtechnik",
           "grad": "Bachelor of Science"
         }
+      ]
+    },
+    {
+      "name": "3. Medizin",
+      "studiengaenge": [
+        { "name": "Ernährung und Diätetik", "grad": "Bachelor of Science" },
+        { "name": "Hebamme", "grad": "Bachelor of Science" },
+        {
+          "name": "Hebamme für dipl. Pflegefachpersonen",
+          "grad": "Bachelor of Science"
+        },
+        { "name": "Pflege", "grad": "Bachelor of Science" },
+        { "name": "Pflege für FaGe und FaBe", "grad": "Bachelor of Science" },
+        { "name": "Physiotherapie", "grad": "Bachelor of Science" }
+      ]
+    },
+    {
+      "name": "5. Wirtschaftswissenschaften",
+      "studiengaenge": [
+        { "name": "Digital Business & AI", "grad": "Bachelor of Science" },
+        { "name": "Betriebsökonomie", "grad": "Bachelor of Science" },
+        { "name": "Food Science & Management", "grad": "Bachelor of Science" },
+        {
+          "name": "International Business Administration",
+          "grad": "Bachelor of Science"
+        },
+        { "name": "Wirtschaftsingenieurwesen", "grad": "Bachelor of Science" }
       ]
     },
     {

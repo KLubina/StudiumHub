@@ -3,17 +3,19 @@
   "website": "https://ethz.ch/studierende/de/studium/studiengaenge.html",
   "kategorien": [
     {
-      "name": "5. Medizin",
-      "studiengaenge": [{ "name": "Humanmedizin", "ects": "180 ECTS" }]
-    },
-    {
-      "name": "2. Naturwissenschaften",
+      "name": "1. Naturwissenschaften",
       "unterkategorien": [
         {
           "name": "Geografie",
           "studiengaenge": [
-            { "name": "Erd- und Klimawissenschaften", "ects": "180 ECTS" },
-            { "name": "Umweltnaturwissenschaften", "ects": "180 ECTS" }
+            {
+              "name": "Erd- und Klimawissenschaften",
+              "ects": "180 ECTS"
+            },
+            {
+              "name": "Umweltnaturwissenschaften",
+              "ects": "180 ECTS"
+            }
           ]
         },
         {
@@ -32,7 +34,10 @@
           "name": "Chemie",
           "studiengaenge": [
             { "name": "Chemie", "ects": "180 ECTS" },
-            { "name": "Pharmazeutische Wissenschaften", "ects": "180 ECTS" },
+            {
+              "name": "Pharmazeutische Wissenschaften",
+              "ects": "180 ECTS"
+            },
             {
               "name": "Lebensmittelwissenschaften und Ernährung",
               "ects": "180 ECTS"
@@ -49,17 +54,23 @@
         }
       ],
       "studiengaenge": [
-        { "name": "Interdisziplinäre Naturwissenschaften", "ects": "180 ECTS" }
+        {
+          "name": "Interdisziplinäre Naturwissenschaften",
+          "ects": "180 ECTS"
+        }
       ]
     },
     {
-      "name": "1. Ingenieurwissenschaften",
+      "name": "2. Ingenieurwissenschaften",
       "unterkategorien": [
         {
           "name": "Informatik",
           "studiengaenge": [
             { "name": "Informatik", "ects": "180 ECTS" },
-            { "name": "Rechnergestützte Wissenschaften", "ects": "180 ECTS" }
+            {
+              "name": "Rechnergestützte Wissenschaften",
+              "ects": "180 ECTS"
+            }
           ]
         },
         {
@@ -71,7 +82,10 @@
               "name": "Raumbezogene Ingenieurwissenschaften",
               "ects": "180 ECTS"
             },
-            { "name": "Umweltingenieurwissenschaften", "ects": "180 ECTS" }
+            {
+              "name": "Umweltingenieurwissenschaften",
+              "ects": "180 ECTS"
+            }
           ]
         }
       ],
@@ -80,10 +94,17 @@
           "name": "Elektrotechnik und Informationstechnologie",
           "ects": "180 ECTS"
         },
-        { "name": "Maschineningenieurwissenschaften", "ects": "180 ECTS" },
+        {
+          "name": "Maschineningenieurwissenschaften",
+          "ects": "180 ECTS"
+        },
         { "name": "Materialwissenschaft", "ects": "180 ECTS" },
         { "name": "Chemieingenieurwissenschaften", "ects": "180 ECTS" }
       ]
+    },
+    {
+      "name": "3. Medizin",
+      "studiengaenge": [{ "name": "Humanmedizin", "ects": "180 ECTS" }]
     }
   ]
 }

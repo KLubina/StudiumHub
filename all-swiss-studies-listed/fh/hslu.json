@@ -3,35 +3,7 @@
   "website": "https://www.hslu.ch/de-ch/hochschule-luzern/studium/#?filters=16",
   "kategorien": [
     {
-      "name": "3. Wirtschaftswissenschaften",
-      "studiengaenge": [
-        { "name": "Business Administration", "grad": "Bachelor of Science" },
-        { "name": "Business IT & Digital Transformation", "grad": "Bachelor" },
-        { "name": "Business Psychology", "grad": "Bachelor of Science" },
-        {
-          "name": "Economics and Data Science in Mobility",
-          "grad": "Bachelor of Science"
-        },
-        { "name": "Hospitality Management", "grad": "Bachelor of Science" },
-        {
-          "name": "International Business Administration",
-          "grad": "Bachelor of Science"
-        },
-        { "name": "International IT Management", "grad": "Bachelor" },
-        {
-          "name": "International Sustainable Tourism",
-          "grad": "Bachelor of Science"
-        },
-        { "name": "Wirtschaftsinformatik", "grad": "Bachelor" },
-        { "name": "Wirtschaftsingenieurwesen", "grad": "Bachelor of Science" }
-      ]
-    },
-    {
-      "name": "5. Medizin",
-      "studiengaenge": [{ "name": "Pflege", "grad": "Bachelor of Science" }]
-    },
-    {
-      "name": "1. Ingenieurwissenschaften",
+      "name": "2. Ingenieurwissenschaften",
       "unterkategorien": [
         {
           "name": "Informatik",
@@ -69,6 +41,34 @@
         { "name": "Gebäudetechnik", "grad": "Bachelor of Science" },
         { "name": "Maschinentechnik", "grad": "Bachelor" },
         { "name": "Medizintechnik", "grad": "Bachelor of Science" }
+      ]
+    },
+    {
+      "name": "3. Medizin",
+      "studiengaenge": [{ "name": "Pflege", "grad": "Bachelor of Science" }]
+    },
+    {
+      "name": "5. Wirtschaftswissenschaften",
+      "studiengaenge": [
+        { "name": "Business Administration", "grad": "Bachelor of Science" },
+        { "name": "Business IT & Digital Transformation", "grad": "Bachelor" },
+        { "name": "Business Psychology", "grad": "Bachelor of Science" },
+        {
+          "name": "Economics and Data Science in Mobility",
+          "grad": "Bachelor of Science"
+        },
+        { "name": "Hospitality Management", "grad": "Bachelor of Science" },
+        {
+          "name": "International Business Administration",
+          "grad": "Bachelor of Science"
+        },
+        { "name": "International IT Management", "grad": "Bachelor" },
+        {
+          "name": "International Sustainable Tourism",
+          "grad": "Bachelor of Science"
+        },
+        { "name": "Wirtschaftsinformatik", "grad": "Bachelor" },
+        { "name": "Wirtschaftsingenieurwesen", "grad": "Bachelor of Science" }
       ]
     },
     {

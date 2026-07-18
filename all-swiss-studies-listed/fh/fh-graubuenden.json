@@ -3,18 +3,7 @@
   "website": "https://www.fhgr.ch/studium/bachelorangebot/",
   "kategorien": [
     {
-      "name": "3. Wirtschaftswissenschaften",
-      "studiengaenge": [
-        { "name": "Betriebsökonomie", "grad": "Bachelor" },
-        { "name": "Digital Business Management", "grad": "Bachelor" },
-        { "name": "Digital Supply Chain Management", "grad": "Bachelor" },
-        { "name": "Information Science", "grad": "Bachelor" },
-        { "name": "Sport Management", "grad": "Bachelor" },
-        { "name": "Tourismus", "grad": "Bachelor" }
-      ]
-    },
-    {
-      "name": "1. Ingenieurwissenschaften",
+      "name": "2. Ingenieurwissenschaften",
       "unterkategorien": [
         {
           "name": "Informatik",
@@ -39,6 +28,17 @@
         { "name": "MedTech", "grad": "Bachelor" },
         { "name": "Mobile Robotics", "grad": "Bachelor" },
         { "name": "Optoelectronics", "grad": "Bachelor" }
+      ]
+    },
+    {
+      "name": "5. Wirtschaftswissenschaften",
+      "studiengaenge": [
+        { "name": "Betriebsökonomie", "grad": "Bachelor" },
+        { "name": "Digital Business Management", "grad": "Bachelor" },
+        { "name": "Digital Supply Chain Management", "grad": "Bachelor" },
+        { "name": "Information Science", "grad": "Bachelor" },
+        { "name": "Sport Management", "grad": "Bachelor" },
+        { "name": "Tourismus", "grad": "Bachelor" }
       ]
     }
   ]

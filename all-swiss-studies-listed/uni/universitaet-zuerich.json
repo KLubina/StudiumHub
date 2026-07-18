@@ -3,30 +3,7 @@
   "website": "https://www.uzh.ch/de/studies/programs/bachelor.html",
   "kategorien": [
     {
-      "name": "3. Wirtschaftswissenschaften",
-      "studiengaenge": [
-        { "name": "Banking and Finance", "ects": "150 ECTS" },
-        { "name": "Betriebswirtschaftslehre", "ects": "150 ECTS" },
-        { "name": "Volkswirtschaftslehre", "ects": "150 ECTS" },
-        { "name": "Wirtschaftsinformatik", "ects": "150 ECTS" },
-        { "name": "Wirtschaftschemie", "ects": "180 ECTS" }
-      ]
-    },
-    {
-      "name": "5. Medizin",
-      "studiengaenge": [
-        { "name": "Chiropraktik", "ects": "180 ECTS" },
-        { "name": "Humanmedizin", "ects": "180 ECTS" },
-        { "name": "Veterinärmedizin", "ects": "180 ECTS" },
-        { "name": "Zahnmedizin", "ects": "180 ECTS" }
-      ]
-    },
-    {
-      "name": "4. Rechtswissenschaften",
-      "studiengaenge": [{ "name": "Rechtswissenschaft", "ects": "180 ECTS" }]
-    },
-    {
-      "name": "2. Naturwissenschaften",
+      "name": "1. Naturwissenschaften",
       "unterkategorien": [
         {
           "name": "Geografie",
@@ -64,7 +41,7 @@
       ]
     },
     {
-      "name": "1. Ingenieurwissenschaften",
+      "name": "2. Ingenieurwissenschaften",
       "unterkategorien": [
         {
           "name": "Informatik",
@@ -76,6 +53,34 @@
             { "name": "Softwaresysteme", "ects": "150 ECTS" }
           ]
         }
+      ]
+    },
+    {
+      "name": "3. Medizin",
+      "studiengaenge": [
+        { "name": "Chiropraktik", "ects": "180 ECTS" },
+        { "name": "Humanmedizin", "ects": "180 ECTS" },
+        { "name": "Veterinärmedizin", "ects": "180 ECTS" },
+        { "name": "Zahnmedizin", "ects": "180 ECTS" },
+        { "name": "Psychologie", "ects": "120 ECTS" },
+        {
+          "name": "Fachwissenschaft Pädagogik und Psychologie",
+          "ects": "120 ECTS"
+        }
+      ]
+    },
+    {
+      "name": "4. Rechtswissenschaften",
+      "studiengaenge": [{ "name": "Rechtswissenschaft", "ects": "180 ECTS" }]
+    },
+    {
+      "name": "5. Wirtschaftswissenschaften",
+      "studiengaenge": [
+        { "name": "Banking and Finance", "ects": "150 ECTS" },
+        { "name": "Betriebswirtschaftslehre", "ects": "150 ECTS" },
+        { "name": "Volkswirtschaftslehre", "ects": "150 ECTS" },
+        { "name": "Wirtschaftsinformatik", "ects": "150 ECTS" },
+        { "name": "Wirtschaftschemie", "ects": "180 ECTS" }
       ]
     },
     {
@@ -167,16 +172,8 @@
         {
           "name": "Bildungswissenschaften",
           "studiengaenge": [
-            { "name": "Erziehungswissenschaft", "ects": "120 ECTS" },
-            {
-              "name": "Fachwissenschaft Pädagogik und Psychologie",
-              "ects": "120 ECTS"
-            }
+            { "name": "Erziehungswissenschaft", "ects": "120 ECTS" }
           ]
-        },
-        {
-          "name": "Psychologie",
-          "studiengaenge": [{ "name": "Psychologie", "ects": "120 ECTS" }]
         },
         {
           "name": "Theologie und Religionswissenschaften",

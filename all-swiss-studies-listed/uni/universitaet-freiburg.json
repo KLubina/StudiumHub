@@ -3,30 +3,7 @@
   "website": "https://studies.unifr.ch/de/studienangebot/courses/",
   "kategorien": [
     {
-      "name": "3. Wirtschaftswissenschaften",
-      "studiengaenge": [
-        { "name": "Betriebswirtschaftslehre", "ects": "180/60 ECTS" },
-        { "name": "Volkswirtschaftslehre", "ects": "180/60 ECTS" },
-        {
-          "name": "Wirtschafts- und Rechtswissenschaftliche Studien",
-          "ects": "120 ECTS"
-        },
-        { "name": "Wirtschaftsinformatik", "ects": "180/60 ECTS" }
-      ]
-    },
-    {
-      "name": "5. Medizin",
-      "studiengaenge": [{ "name": "Humanmedizin", "ects": "180 ECTS" }]
-    },
-    {
-      "name": "4. Rechtswissenschaften",
-      "studiengaenge": [
-        { "name": "Rechtswissenschaft", "ects": "180/60 ECTS" },
-        { "name": "Rechtswissenschaft im Teilzeitstudium", "ects": "180 ECTS" }
-      ]
-    },
-    {
-      "name": "2. Naturwissenschaften",
+      "name": "1. Naturwissenschaften",
       "unterkategorien": [
         {
           "name": "Geografie",
@@ -62,12 +39,39 @@
       ]
     },
     {
-      "name": "1. Ingenieurwissenschaften",
+      "name": "2. Ingenieurwissenschaften",
       "unterkategorien": [
         {
           "name": "Informatik",
           "studiengaenge": [{ "name": "Informatik", "ects": "120/60 ECTS" }]
         }
+      ]
+    },
+    {
+      "name": "3. Medizin",
+      "studiengaenge": [
+        { "name": "Humanmedizin", "ects": "180 ECTS" },
+        { "name": "Psychologie", "ects": "180/60 ECTS" },
+        { "name": "Pädagogik/Psychologie", "ects": "120/60 ECTS" }
+      ]
+    },
+    {
+      "name": "4. Rechtswissenschaften",
+      "studiengaenge": [
+        { "name": "Rechtswissenschaft", "ects": "180/60 ECTS" },
+        { "name": "Rechtswissenschaft im Teilzeitstudium", "ects": "180 ECTS" }
+      ]
+    },
+    {
+      "name": "5. Wirtschaftswissenschaften",
+      "studiengaenge": [
+        { "name": "Betriebswirtschaftslehre", "ects": "180/60 ECTS" },
+        { "name": "Volkswirtschaftslehre", "ects": "180/60 ECTS" },
+        {
+          "name": "Wirtschafts- und Rechtswissenschaftliche Studien",
+          "ects": "120 ECTS"
+        },
+        { "name": "Wirtschaftsinformatik", "ects": "180/60 ECTS" }
       ]
     },
     {
@@ -167,17 +171,12 @@
               "ects": "150 ECTS"
             },
             { "name": "Logopädie", "ects": "180 ECTS" },
-            { "name": "Pädagogik/Psychologie", "ects": "120/60 ECTS" },
             { "name": "Sonderpädagogik", "ects": "60 ECTS" },
             {
               "name": "Sonderpädagogik und Sozialpädagogik",
               "ects": "180 ECTS"
             }
           ]
-        },
-        {
-          "name": "Psychologie",
-          "studiengaenge": [{ "name": "Psychologie", "ects": "180/60 ECTS" }]
         },
         {
           "name": "Theologie und Religionswissenschaften",

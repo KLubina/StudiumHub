@@ -3,37 +3,7 @@
   "website": "https://www.fhnw.ch/de/studium/bachelor",
   "kategorien": [
     {
-      "name": "3. Wirtschaftswissenschaften",
-      "studiengaenge": [
-        {
-          "name": "International Business Management (trinational)",
-          "grad": "Bachelor of Science"
-        },
-        {
-          "name": "Business Administration (International Management)",
-          "grad": "Bachelor of Science"
-        },
-        { "name": "Betriebsökonomie", "grad": "Bachelor of Science" },
-        { "name": "Wirtschaftsinformatik", "grad": "Bachelor of Science" },
-        {
-          "name": "Business Information Technology",
-          "grad": "Bachelor of Science"
-        },
-        { "name": "Wirtschaftsrecht", "grad": "Bachelor of Science" },
-        {
-          "name": "Business Artificial Intelligence",
-          "grad": "Bachelor of Science"
-        },
-        {
-          "name": "Arbeits-, Organisations- und Personalpsychologie",
-          "grad": "Bachelor of Science"
-        },
-        { "name": "Wirtschaftspsychologie", "grad": "Bachelor of Science" },
-        { "name": "Wirtschaftsingenieurwesen", "grad": "Bachelor of Science" }
-      ]
-    },
-    {
-      "name": "2. Naturwissenschaften",
+      "name": "1. Naturwissenschaften",
       "studiengaenge": [
         {
           "name": "Bioanalytik und Zellbiologie",
@@ -47,7 +17,7 @@
       ]
     },
     {
-      "name": "1. Ingenieurwissenschaften",
+      "name": "2. Ingenieurwissenschaften",
       "unterkategorien": [
         {
           "name": "Informatik",
@@ -88,6 +58,41 @@
         { "name": "Mechatronik Trinational", "grad": "Bachelor of Science" },
         { "name": "Medizintechnik", "grad": "Bachelor of Science" },
         { "name": "Systemtechnik", "grad": "Bachelor of Science" }
+      ]
+    },
+    {
+      "name": "3. Medizin",
+      "studiengaenge": [
+        {
+          "name": "Arbeits-, Organisations- und Personalpsychologie",
+          "grad": "Bachelor of Science"
+        }
+      ]
+    },
+    {
+      "name": "5. Wirtschaftswissenschaften",
+      "studiengaenge": [
+        {
+          "name": "International Business Management (trinational)",
+          "grad": "Bachelor of Science"
+        },
+        {
+          "name": "Business Administration (International Management)",
+          "grad": "Bachelor of Science"
+        },
+        { "name": "Betriebsökonomie", "grad": "Bachelor of Science" },
+        { "name": "Wirtschaftsinformatik", "grad": "Bachelor of Science" },
+        {
+          "name": "Business Information Technology",
+          "grad": "Bachelor of Science"
+        },
+        { "name": "Wirtschaftsrecht", "grad": "Bachelor of Science" },
+        {
+          "name": "Business Artificial Intelligence",
+          "grad": "Bachelor of Science"
+        },
+        { "name": "Wirtschaftspsychologie", "grad": "Bachelor of Science" },
+        { "name": "Wirtschaftsingenieurwesen", "grad": "Bachelor of Science" }
       ]
     },
     {

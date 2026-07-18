@@ -3,29 +3,7 @@
   "website": "https://www.zhaw.ch/de/studium/bachelorstudiengaenge",
   "kategorien": [
     {
-      "name": "3. Wirtschaftswissenschaften",
-      "studiengaenge": [
-        { "name": "Angewandtes Recht", "grad": "BA" },
-        { "name": "Betriebsökonomie", "grad": "BSc" },
-        { "name": "Facility Management", "grad": "BSc" },
-        { "name": "International Management", "grad": "BSc" },
-        { "name": "Wirtschaftsingenieurwesen", "grad": "BSc" },
-        { "name": "Wirtschaftsinformatik", "grad": "BSc" },
-        { "name": "Wirtschaftsrecht", "grad": "BSc" }
-      ]
-    },
-    {
-      "name": "5. Medizin",
-      "studiengaenge": [
-        { "name": "Ergotherapie", "grad": "BSc" },
-        { "name": "Gesundheitsförderung und Prävention", "grad": "BSc" },
-        { "name": "Hebamme", "grad": "BSc" },
-        { "name": "Pflege", "grad": "BSc" },
-        { "name": "Physiotherapie", "grad": "BSc" }
-      ]
-    },
-    {
-      "name": "2. Naturwissenschaften",
+      "name": "1. Naturwissenschaften",
       "studiengaenge": [
         { "name": "Applied Digital Life Sciences", "grad": "BSc" },
         { "name": "Biomedizinische Labordiagnostik", "grad": "BSc" },
@@ -35,7 +13,7 @@
       ]
     },
     {
-      "name": "1. Ingenieurwissenschaften",
+      "name": "2. Ingenieurwissenschaften",
       "unterkategorien": [
         {
           "name": "Informatik",
@@ -65,6 +43,32 @@
       ]
     },
     {
+      "name": "3. Medizin",
+      "studiengaenge": [
+        { "name": "Angewandte Psychologie", "grad": "BSc" },
+        { "name": "Ergotherapie", "grad": "BSc" },
+        {
+          "name": "Gesundheitsförderung und Prävention",
+          "grad": "BSc"
+        },
+        { "name": "Hebamme", "grad": "BSc" },
+        { "name": "Pflege", "grad": "BSc" },
+        { "name": "Physiotherapie", "grad": "BSc" }
+      ]
+    },
+    {
+      "name": "5. Wirtschaftswissenschaften",
+      "studiengaenge": [
+        { "name": "Angewandtes Recht", "grad": "BA" },
+        { "name": "Betriebsökonomie", "grad": "BSc" },
+        { "name": "Facility Management", "grad": "BSc" },
+        { "name": "International Management", "grad": "BSc" },
+        { "name": "Wirtschaftsingenieurwesen", "grad": "BSc" },
+        { "name": "Wirtschaftsinformatik", "grad": "BSc" },
+        { "name": "Wirtschaftsrecht", "grad": "BSc" }
+      ]
+    },
+    {
       "name": "6. Wissenschaften vom Menschen und seiner Kultur",
       "unterkategorien": [
         {
@@ -73,10 +77,6 @@
             { "name": "Kommunikation und Medien", "grad": "BA" },
             { "name": "Mehrsprachige Kommunikation", "grad": "BA" }
           ]
-        },
-        {
-          "name": "Psychologie",
-          "studiengaenge": [{ "name": "Angewandte Psychologie", "grad": "BSc" }]
         },
         {
           "name": "Sozialwissenschaften",

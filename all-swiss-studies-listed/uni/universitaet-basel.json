@@ -3,26 +3,7 @@
   "website": "https://www.unibas.ch/de/Studium/Vor-dem-Studium/Studienangebot.html",
   "kategorien": [
     {
-      "name": "3. Wirtschaftswissenschaften",
-      "studiengaenge": [
-        { "name": "Wirtschaftswissenschaften", "ects": "180 KP/75 KP" }
-      ]
-    },
-    {
-      "name": "5. Medizin",
-      "studiengaenge": [
-        { "name": "Humanmedizin", "ects": "180 KP" },
-        { "name": "Zahnmedizin", "ects": "180 KP" }
-      ]
-    },
-    {
-      "name": "4. Rechtswissenschaften",
-      "studiengaenge": [
-        { "name": "Rechtswissenschaft", "ects": "180 KP/75 KP" }
-      ]
-    },
-    {
-      "name": "2. Naturwissenschaften",
+      "name": "1. Naturwissenschaften",
       "unterkategorien": [
         {
           "name": "Geografie",
@@ -58,7 +39,7 @@
       ]
     },
     {
-      "name": "1. Ingenieurwissenschaften",
+      "name": "2. Ingenieurwissenschaften",
       "unterkategorien": [
         {
           "name": "Informatik",
@@ -67,6 +48,26 @@
             { "name": "Informatik", "ects": "180 KP/75 KP" }
           ]
         }
+      ]
+    },
+    {
+      "name": "3. Medizin",
+      "studiengaenge": [
+        { "name": "Humanmedizin", "ects": "180 KP" },
+        { "name": "Zahnmedizin", "ects": "180 KP" },
+        { "name": "Psychologie", "ects": "180 KP" }
+      ]
+    },
+    {
+      "name": "4. Rechtswissenschaften",
+      "studiengaenge": [
+        { "name": "Rechtswissenschaft", "ects": "180 KP/75 KP" }
+      ]
+    },
+    {
+      "name": "5. Wirtschaftswissenschaften",
+      "studiengaenge": [
+        { "name": "Wirtschaftswissenschaften", "ects": "180 KP/75 KP" }
       ]
     },
     {
@@ -202,10 +203,6 @@
               "beschreibung": "anderes Fach 75 KP"
             }
           ]
-        },
-        {
-          "name": "Psychologie",
-          "studiengaenge": [{ "name": "Psychologie", "ects": "180 KP" }]
         },
         {
           "name": "Theologie und Religionswissenschaften",

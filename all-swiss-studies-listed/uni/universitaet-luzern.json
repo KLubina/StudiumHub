@@ -3,15 +3,19 @@
   "website": "https://www.unilu.ch/fileadmin/universitaet/dienste/unikomm/dokumente/Studienbroschueren/Studienprogramme_Bachelor.pdf",
   "kategorien": [
     {
-      "name": "3. Wirtschaftswissenschaften",
-      "studiengaenge": [
-        { "name": "Wirtschaftswissenschaften", "ects": "180/120/60 ECTS" },
-        { "name": "Gesundheitswissenschaften", "ects": "180 ECTS" }
-      ]
+      "name": "3. Medizin",
+      "studiengaenge": [{ "name": "Psychologie", "ects": "120/60 ECTS" }]
     },
     {
       "name": "4. Rechtswissenschaften",
       "studiengaenge": [{ "name": "Rechtswissenschaft", "ects": "180/60 ECTS" }]
+    },
+    {
+      "name": "5. Wirtschaftswissenschaften",
+      "studiengaenge": [
+        { "name": "Wirtschaftswissenschaften", "ects": "180/120/60 ECTS" },
+        { "name": "Gesundheitswissenschaften", "ects": "180 ECTS" }
+      ]
     },
     {
       "name": "6. Wissenschaften vom Menschen und seiner Kultur",
@@ -43,10 +47,6 @@
             { "name": "Politikwissenschaft", "ects": "120/60 ECTS" },
             { "name": "Soziologie", "ects": "120/60 ECTS" }
           ]
-        },
-        {
-          "name": "Psychologie",
-          "studiengaenge": [{ "name": "Psychologie", "ects": "120/60 ECTS" }]
         },
         {
           "name": "Theologie und Religionswissenschaften",

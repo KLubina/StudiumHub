@@ -3,10 +3,12 @@
   "website": "https://www.unisg.ch/de/studium/programme/bachelor/",
   "kategorien": [
     {
-      "name": "3. Wirtschaftswissenschaften",
-      "studiengaenge": [
-        { "name": "Betriebswirtschaftslehre", "ects": "180 ECTS" },
-        { "name": "Volkswirtschaftslehre", "ects": "180 ECTS" }
+      "name": "2. Ingenieurwissenschaften",
+      "unterkategorien": [
+        {
+          "name": "Informatik",
+          "studiengaenge": [{ "name": "Informatik", "ects": "180 ECTS" }]
+        }
       ]
     },
     {
@@ -20,12 +22,10 @@
       ]
     },
     {
-      "name": "1. Ingenieurwissenschaften",
-      "unterkategorien": [
-        {
-          "name": "Informatik",
-          "studiengaenge": [{ "name": "Informatik", "ects": "180 ECTS" }]
-        }
+      "name": "5. Wirtschaftswissenschaften",
+      "studiengaenge": [
+        { "name": "Betriebswirtschaftslehre", "ects": "180 ECTS" },
+        { "name": "Volkswirtschaftslehre", "ects": "180 ECTS" }
       ]
     },
     {
