@@ -2,13 +2,13 @@
 /* ETH Maschinenbau Program */
 
 [data-studiengang="eth-masch"] {
-    /* Primary program color */
-    --color-primary: #6b7280;
+  /* Primary program color */
+  --color-primary: #6b7280;
 
-    /* Category colors */
-    --color-obligatorisch: #dc2626;
-    --color-praktikum: #db2777;
-    --color-wahl: #16a34a;
-    --color-vertiefung: #0284c7;
-    --color-wissenschaft: #7c3aed;
+  /* Category colors */
+  --color-obligatorisch: #dc2626;
+  --color-praktikum: #db2777;
+  --color-wahl: #16a34a;
+  --color-vertiefung: #0284c7;
+  --color-wissenschaft: #7c3aed;
 }

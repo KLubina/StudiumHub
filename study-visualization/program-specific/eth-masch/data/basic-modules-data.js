@@ -17,6 +17,7 @@ window.StudiengangModules = [
     name: "Mechanik I",
     ects: 6,
     standardcategory: "Obligatorische Fächer",
+    secondcategory: "Kernmodule Maschinenbau",
     // KONTEXT
     year: 1,
     semester: 1,
@@ -53,6 +54,7 @@ window.StudiengangModules = [
     name: "Engineering Design and Material Selection",
     ects: 4,
     standardcategory: "Obligatorische Fächer",
+    secondcategory: "Kernmodule Maschinenbau",
     // KONTEXT
     year: 1,
     semester: 1,
@@ -75,6 +77,7 @@ window.StudiengangModules = [
     name: "Mechanik II",
     ects: 6,
     standardcategory: "Obligatorische Fächer",
+    secondcategory: "Kernmodule Maschinenbau",
     // KONTEXT
     year: 1,
     semester: 2,
@@ -84,6 +87,7 @@ window.StudiengangModules = [
     name: "Maschinenkonstruktion",
     ects: 5,
     standardcategory: "Obligatorische Fächer",
+    secondcategory: "Kernmodule Maschinenbau",
     // KONTEXT
     year: 1,
     semester: 2,
@@ -142,6 +146,7 @@ window.StudiengangModules = [
     name: "Mechanik III",
     ects: 6,
     standardcategory: "Obligatorische Fächer",
+    secondcategory: "Kernmodule Maschinenbau",
     // KONTEXT
     year: 2,
     semester: 1,
@@ -160,6 +165,7 @@ window.StudiengangModules = [
     name: "Thermodynamik I",
     ects: 4,
     standardcategory: "Obligatorische Fächer",
+    secondcategory: "Kernmodule Maschinenbau",
     // KONTEXT
     year: 2,
     semester: 1,
@@ -200,6 +206,7 @@ window.StudiengangModules = [
     name: "Fluiddynamik",
     ects: 8,
     standardcategory: "Obligatorische Fächer",
+    secondcategory: "Kernmodule Maschinenbau",
     // KONTEXT
     year: 2,
     semester: 2,
@@ -209,6 +216,7 @@ window.StudiengangModules = [
     name: "Werkstoffe und Fertigung",
     ects: 6,
     standardcategory: "Obligatorische Fächer",
+    secondcategory: "Kernmodule Maschinenbau",
     // KONTEXT
     year: 2,
     semester: 2,
@@ -227,6 +235,7 @@ window.StudiengangModules = [
     name: "Thermodynamik II",
     ects: 4,
     standardcategory: "Obligatorische Fächer",
+    secondcategory: "Kernmodule Maschinenbau",
     // KONTEXT
     year: 2,
     semester: 2,
@@ -245,6 +254,7 @@ window.StudiengangModules = [
     name: "Thermodynamik III",
     ects: 3,
     standardcategory: "Obligatorische Fächer",
+    secondcategory: "Kernmodule Maschinenbau",
     // KONTEXT
     year: 2,
     semester: 2,

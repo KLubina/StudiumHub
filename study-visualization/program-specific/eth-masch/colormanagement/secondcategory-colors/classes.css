@@ -1,0 +1,7 @@
+/* ==== ETH-MASCH - SECOND CATEGORY COLORS ==== */
+
+[data-studiengang="eth-masch"] .modul.kernmodule-maschinenbau,
+[data-studiengang="eth-masch"] .legende-item.kernmodule-maschinenbau {
+  background-color: var(--color-kernmodule-maschinenbau);
+  color: white;
+}
