@@ -35,6 +35,7 @@ window.StudiengangModuleDetails = {
       "Lineare Algebra:\n" +
       "• Lineare Gleichungssysteme\n" +
       "• Matrizen\n" +
+      "Analysis:\n" +
       "• Infinitesimalrechnung und deren Anwendung im Bauingenieurwesen, Integralrechnung\n" +
       "• Einfache Differentialgleichungen im Bauwesen\n" +
       "• Numerische Methoden zur Lösung angewandter Probleme",
