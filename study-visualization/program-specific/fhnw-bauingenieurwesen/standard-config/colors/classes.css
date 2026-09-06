@@ -5,11 +5,9 @@
   color: white;
 }
 
-[data-studiengang="fhnw-bauingenieurwesen"]
-  .modul.mathematik-naturwissenschaften,
-[data-studiengang="fhnw-bauingenieurwesen"]
-  .legende-item.mathematik-naturwissenschaften {
-  background-color: var(--color-mathematik-naturwissenschaften);
+[data-studiengang="fhnw-bauingenieurwesen"] .modul.math-phys-grundlagen,
+[data-studiengang="fhnw-bauingenieurwesen"] .legende-item.math-phys-grundlagen {
+  background-color: var(--color-math-phys-grundlagen);
   color: white;
 }
 
