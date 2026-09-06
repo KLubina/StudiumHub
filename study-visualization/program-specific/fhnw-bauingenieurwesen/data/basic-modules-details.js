@@ -15,8 +15,10 @@ window.StudiengangModuleDetails = {
     inhalt:
       "• Allgemeine Grundlagen: Mengen, Arithmetik im Bereich der reellen Zahlen\n" +
       "• Funktionen mit einer Variablen\n" +
+      "Einführung in die Lineare Algebra:\n" +
       "• Vektorgeometrie\n" +
-      "• Infinitesimalrechnung (Analysis) und deren Anwendung im Bauingenieurwesen\n" +
+      "Einführung in die Analysis:\n" +
+      "• Infinitesimalrechnung und deren Anwendung im Bauingenieurwesen\n" +
       "• Differentialrechnung",
   },
   "Bauphysik 2": {
