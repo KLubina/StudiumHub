@@ -273,6 +273,13 @@ const StudiengangMapping = {
         return `study-visualization/standard/specificprogram-template.html?studiengang=fernuni-hagen-cs`;
     }
 
+    if (studiengangName === "Bauingenieurwesen") {
+      if (institutionName === "Fachhochschule Nordwestschweiz")
+        return `study-visualization/standard/specificprogram-template.html?studiengang=fhnw-bauingenieurwesen`;
+      if (institutionName === "ZHAW")
+        return `study-visualization/standard/specificprogram-template.html?studiengang=zhaw-bauingenieurwesen`;
+    }
+
     if (studiengangName === "Wirtschaftsinformatik") {
       if (institutionName === "ZHAW")
         return `study-visualization/standard/specificprogram-template.html?studiengang=zhaw-win-bis-tz`;

@@ -1,0 +1,44 @@
+[data-studiengang="fhnw-bauingenieurwesen"] .modul.konstruktiver-ingenieurbau,
+[data-studiengang="fhnw-bauingenieurwesen"]
+  .legende-item.konstruktiver-ingenieurbau {
+  background-color: var(--color-konstruktiver-ingenieurbau);
+  color: white;
+}
+
+[data-studiengang="fhnw-bauingenieurwesen"]
+  .modul.mathematik-naturwissenschaften,
+[data-studiengang="fhnw-bauingenieurwesen"]
+  .legende-item.mathematik-naturwissenschaften {
+  background-color: var(--color-mathematik-naturwissenschaften);
+  color: white;
+}
+
+[data-studiengang="fhnw-bauingenieurwesen"] .modul.ingenieurgrundlagen,
+[data-studiengang="fhnw-bauingenieurwesen"] .legende-item.ingenieurgrundlagen {
+  background-color: var(--color-ingenieurgrundlagen);
+  color: white;
+}
+
+[data-studiengang="fhnw-bauingenieurwesen"] .modul.sprache-gesellschaft,
+[data-studiengang="fhnw-bauingenieurwesen"] .legende-item.sprache-gesellschaft {
+  background-color: var(--color-sprache-gesellschaft);
+  color: white;
+}
+
+[data-studiengang="fhnw-bauingenieurwesen"] .modul.geotechnik,
+[data-studiengang="fhnw-bauingenieurwesen"] .legende-item.geotechnik {
+  background-color: var(--color-geotechnik);
+  color: white;
+}
+
+[data-studiengang="fhnw-bauingenieurwesen"] .modul.verkehrswesen,
+[data-studiengang="fhnw-bauingenieurwesen"] .legende-item.verkehrswesen {
+  background-color: var(--color-verkehrswesen);
+  color: white;
+}
+
+[data-studiengang="fhnw-bauingenieurwesen"] .modul.wasserwesen,
+[data-studiengang="fhnw-bauingenieurwesen"] .legende-item.wasserwesen {
+  background-color: var(--color-wasserwesen);
+  color: white;
+}
