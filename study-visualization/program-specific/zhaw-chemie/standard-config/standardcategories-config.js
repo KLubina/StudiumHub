@@ -1,4 +1,5 @@
 ﻿window.StudiengangCategoriesConfig = {
+  legendOrder: ["mathe-nawi", "fach", "projekt", "kontext"],
   kategorien: [
     { name: "Kontextmodule", klasse: "kontext" },
     { name: "Praktikumsmodule", klasse: "projekt" },

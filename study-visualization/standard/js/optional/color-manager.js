@@ -100,6 +100,7 @@ window.SpecificprogramColorManager = {
 
       // Aktualisiere Legende
       this.updateLegend("standard");
+      this.reorderModules("standard");
       return;
     }
 
@@ -114,6 +115,7 @@ window.SpecificprogramColorManager = {
 
     // Update die Legende
     this.updateLegend(modeKey);
+    this.reorderModules(modeKey);
   },
 
   loadModeCSS(mode) {
@@ -193,6 +195,43 @@ window.SpecificprogramColorManager = {
     });
   },
 
+  reorderModules(modeKey) {
+    const mode =
+      modeKey === "standard"
+        ? {
+            getCategories: () =>
+              (window.StudiengangCategoriesConfig?.legendOrder || []).map(
+                (klasse) => ({ klasse }),
+              ),
+            getCategory: (moduleData) => moduleData.standardcategory,
+          }
+        : {
+            getCategories: () =>
+              window.StudiengangColorManagerModes[modeKey].getCategories(),
+            getCategory: (moduleData) => {
+              const configuredMode =
+                window.StudiengangColorManagerModes[modeKey];
+              return configuredMode.deriveClass
+                ? configuredMode.deriveClass(moduleData)
+                : moduleData[configuredMode.categoryField];
+            },
+          };
+    const order = mode.getCategories().map((category) => category.klasse);
+
+    document.querySelectorAll(".module-container").forEach((container) => {
+      [...container.children]
+        .sort((first, second) => {
+          const firstData = this.findModuleData(first);
+          const secondData = this.findModuleData(second);
+          return (
+            order.indexOf(mode.getCategory(firstData)) -
+            order.indexOf(mode.getCategory(secondData))
+          );
+        })
+        .forEach((module) => container.appendChild(module));
+    });
+  },
+
   findModuleData(modulElement) {
     // Finde die Modul-Daten basierend auf dem Namen oder so
     // Einfach: verwende den Titel
@@ -217,6 +256,19 @@ window.SpecificprogramColorManager = {
         if (category) cats.add(category);
       });
       categories = Array.from(cats);
+      const legendOrder = window.StudiengangCategoriesConfig?.legendOrder;
+      if (Array.isArray(legendOrder)) {
+        const categoriesForLegend = window.StudiengangCategoriesConfig
+          .includeEmptyLegendCategories
+          ? new Set([...categories, ...legendOrder])
+          : cats;
+        categories = [
+          ...legendOrder.filter((category) =>
+            categoriesForLegend.has(category),
+          ),
+          ...categories.filter((category) => !legendOrder.includes(category)),
+        ];
+      }
     } else {
       const mode = window.StudiengangColorManagerModes[modeKey];
       categories = mode.getCategories().map((c) => c.klasse);

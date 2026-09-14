@@ -18,6 +18,12 @@
   color: white;
 }
 
+[data-studiengang] .modul.mathematik,
+[data-studiengang] .legende-item.mathematik {
+  background-color: var(--color-mathematik);
+  color: white;
+}
+
 [data-studiengang] .modul.mathe-nawi,
 [data-studiengang] .legende-item.mathe-nawi {
   background-color: var(--color-mathe-nawi);

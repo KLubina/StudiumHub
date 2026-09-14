@@ -6,7 +6,16 @@ window.SpecificprogramUtils = {
   // Gruppiere Module nach Jahr und Semester
   groupModulesByYearAndSemester(modules) {
     const grouped = {};
-    modules.forEach((module) => {
+    const categoryOrder = window.StudiengangCategoriesConfig?.legendOrder;
+    const orderedModules = Array.isArray(categoryOrder)
+      ? [...modules].sort(
+          (a, b) =>
+            categoryOrder.indexOf(a.standardcategory) -
+            categoryOrder.indexOf(b.standardcategory),
+        )
+      : modules;
+
+    orderedModules.forEach((module) => {
       const year = module.year;
       const semester = module.semester;
       if (!grouped[year]) grouped[year] = {};
@@ -24,7 +33,21 @@ window.SpecificprogramUtils = {
         categories.add(module.standardcategory);
       }
     });
-    return Array.from(categories);
+
+    const legendOrder = window.StudiengangCategoriesConfig?.legendOrder;
+    if (!Array.isArray(legendOrder)) return Array.from(categories);
+
+    const categoriesForLegend = window.StudiengangCategoriesConfig
+      .includeEmptyLegendCategories
+      ? new Set([...categories, ...legendOrder])
+      : categories;
+
+    return [
+      ...legendOrder.filter((category) => categoriesForLegend.has(category)),
+      ...Array.from(categories).filter(
+        (category) => !legendOrder.includes(category),
+      ),
+    ];
   },
 
   // Berechne Gesamt ECTS
