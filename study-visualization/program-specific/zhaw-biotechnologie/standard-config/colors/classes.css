@@ -24,6 +24,12 @@
   color: white;
 }
 
+[data-studiengang] .modul.mathematik,
+[data-studiengang] .legende-item.mathematik {
+  background-color: var(--color-mathematik);
+  color: white;
+}
+
 [data-studiengang] .modul.wahlpflicht,
 [data-studiengang] .legende-item.wahlpflicht {
   background-color: var(--color-wahlpflicht);
