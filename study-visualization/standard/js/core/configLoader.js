@@ -35,6 +35,20 @@ window.SpecificprogramConfigLoader = {
       );
 
       if (window.StudiengangModules) {
+        const moduleDetails = window.StudiengangModuleDetails || {};
+        window.StudiengangModules.forEach((module) => {
+          if (
+            typeof module.details === "string" &&
+            module.details.trim() &&
+            !moduleDetails[module.name]?.kurslink
+          ) {
+            moduleDetails[module.name] = {
+              ...(moduleDetails[module.name] || {}),
+              kurslink: module.details,
+            };
+          }
+        });
+        window.StudiengangModuleDetails = moduleDetails;
         this.renderStudiengang(window.StudiengangModules, studiengang);
       }
     } catch (error) {

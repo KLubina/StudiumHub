@@ -9,7 +9,8 @@ window.StudiengangModules = [
     standardcategory: "pflicht",
     year: 1,
     semester: 1,
-    details: "https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/ETNPxezknV1JnIEo1r2Qca0Bx6GycvZRS6Jp6n6UHgYLzw?e=aFMrtV"
+    details:
+      "https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/IQAzT8Xs5J1dSZyBKNa9kHGtAcehsnL2UUuiaep-lB4GC88",
   },
   {
     name: "Grundlagen technische Informatik",
@@ -17,7 +18,8 @@ window.StudiengangModules = [
     standardcategory: "pflicht",
     year: 1,
     semester: 1,
-    details: "https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/ES2j-vktNL5Bp-Y3cGAx5s0BH67Dp8Xjl7SXWNHYGT6_NA"
+    details:
+      "https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/IQAto_r5LTS-QafmN3BgMebNAR-uw6fF45e0l1jR2Bk-vzQ",
   },
   {
     name: "Web-Grundlagen",
@@ -25,7 +27,8 @@ window.StudiengangModules = [
     standardcategory: "pflicht",
     year: 1,
     semester: 1,
-    details: "https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/ERD70x_F1f5EsK9uVYm9WwgBTfI5rQj6aAyCMmRWP4mvag?e=Y1J3QA"
+    details:
+      "https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/IQAQ-9MfxdX-RLCvblWJvVsIAU3yOa0I-mgMgjJkVj-Jr2o?e=2YIv4I",
   },
   {
     name: "Wissenschaftliches Arbeiten",
@@ -33,7 +36,8 @@ window.StudiengangModules = [
     standardcategory: "pflicht",
     year: 1,
     semester: 1,
-    details: "https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/EbrNyNjM_hNLnW8WkO-tVz4BhOWWJtiWyD224lHlXcxFYw?e=GWiDLF"
+    details:
+      "https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/IQCot-IubWUhSKpm1lRhwZS5AcZjGByjqcpY6qWgzeauDbI?e=voxMGF",
   },
   // #endregion 1. Semester
 
@@ -44,7 +48,8 @@ window.StudiengangModules = [
     standardcategory: "mathe",
     year: 1,
     semester: 2,
-    details: "https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/Edm6JVL92QlOjU1JpkxwO_EBFm5pNd6QyuvwZTXm3Q4zcQ"
+    details:
+      "https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/IQDZuiVS_dkJTo1NSaZMcDvxARZuaTXekMrr8GU15t0OM3E?e=jxbX9r",
   },
   {
     name: "Java Project Level (JPL)",
@@ -52,7 +57,8 @@ window.StudiengangModules = [
     standardcategory: "pflicht",
     year: 1,
     semester: 2,
-    details: "https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/EVrVe1mjoddOjCjXu60oHsoB-OB3ACMJFDNX38OEd27kTA"
+    details:
+      "https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/IQBa1XtZo6HXTowo17utKB7KAX7smFa1kJc0mU1K7Ne9RNg?e=63hE14",
   },
   {
     name: "Installation und Konfiguration Serverdienste",
@@ -60,7 +66,8 @@ window.StudiengangModules = [
     standardcategory: "pflicht",
     year: 1,
     semester: 2,
-    details: "https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/EbHAos_zt8NHjkaKvaotZ4sB-KaNqOxa68XoVDlUinbzoQ"
+    details:
+      "https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/IQCxwKLP87fDR45Gir2qLWeLAfimjajsWuvF6FQ5VIp286E?e=jfdyS5",
   },
   {
     name: "Projektmanagement Grundlagen",
@@ -68,7 +75,8 @@ window.StudiengangModules = [
     standardcategory: "pflicht",
     year: 1,
     semester: 2,
-    details: "https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/EXT2ZFu13tFHnn-3-VenNJgB5CKasgwQJBsWp2hKCKdkCw"
+    details:
+      "https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/IQBaJTtRP4X6Tpjb7sD0aBYFAQmhvv8AWZuSUi45V3KRyqg?e=ldfLzd",
   },
   // #endregion 2. Semester
 
@@ -79,7 +87,8 @@ window.StudiengangModules = [
     standardcategory: "mathe",
     year: 2,
     semester: 3,
-    details: "https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/EearQcRnfDNLkhyUyRfj7ewBD7_Qn6-dAOrsM8hkt_TIEw"
+    details:
+      "https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/IQDmq0HEZ3wzS5IclMkX4-3sAQ-_0J-vnQDq7DPIZLf0yBM",
   },
   {
     name: "Software Engineering Modellierung",
@@ -87,7 +96,8 @@ window.StudiengangModules = [
     standardcategory: "pflicht",
     year: 2,
     semester: 3,
-    details: "https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/EZ3E4Kw9ywVKnb4wV6rEkgMBwMQOiVrOpwZapGRGWu3Ang?e=heAXqu"
+    details:
+      "https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/IQCdxOCsPcsFSp2-MFeqxJIDAcDEDolazqcGWqRkRlrtwJ4?e=sqqhKa",
   },
   {
     name: "Rechnernetze",
@@ -95,7 +105,8 @@ window.StudiengangModules = [
     standardcategory: "pflicht",
     year: 2,
     semester: 3,
-    details: "https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/Ebu_Xld_84hMkj0M61-I-kIBCTyqhLFYTsq5zJj0gU8L0w"
+    details:
+      "https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/IQC7v15Xf_OITJI9DOtfiPpCAQk8qoSxWE7KucyY9IFPC9M?e=WFgVIY",
   },
   {
     name: "Datenstrukturen und Algorithmen",
@@ -103,7 +114,8 @@ window.StudiengangModules = [
     standardcategory: "pflicht",
     year: 2,
     semester: 3,
-    details: "https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/EbWdBo8VaHtGhSLt6s5USYABpf3HPELeTFtYcT9lXic4Xg"
+    details:
+      "https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/IQDA0PQE_pNvQa6_uPgLi0xgAdCnpIDrudclX8WfH-eaRko",
   },
   // #endregion 3. Semester
 
@@ -114,7 +126,8 @@ window.StudiengangModules = [
     standardcategory: "mathe",
     year: 2,
     semester: 4,
-    details: "https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/EYOMA6RSJ-JCp1wsWAS4DsEB7G8tf2S-iCnwQkLl_vTuJg"
+    details:
+      "https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/IQDmq0HEZ3wzS5IclMkX4-3sAQ-_0J-vnQDq7DPIZLf0yBM?e=PIYThx",
   },
   {
     name: "Software Engineering Architektur",
@@ -122,7 +135,8 @@ window.StudiengangModules = [
     standardcategory: "pflicht",
     year: 2,
     semester: 4,
-    details: "https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/EbfRCUbtES5Frq-a6baWCy8BzvdFBKSfhODbVoR0OmCVoQ"
+    details:
+      "https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/EbfRCUbtES5Frq-a6baWCy8BzvdFBKSfhODbVoR0OmCVoQ",
   },
   {
     name: "Datenbanksysteme",
@@ -130,7 +144,8 @@ window.StudiengangModules = [
     standardcategory: "pflicht",
     year: 2,
     semester: 4,
-    details: "https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/EbMs6ftNHkNOp_y6iTsgDooBP6VvpcaQ7M-Gq3od3K8tZg"
+    details:
+      "https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/EbMs6ftNHkNOp_y6iTsgDooBP6VvpcaQ7M-Gq3od3K8tZg",
   },
   {
     name: "Java Enterprise Application",
@@ -138,7 +153,8 @@ window.StudiengangModules = [
     standardcategory: "pflicht",
     year: 2,
     semester: 4,
-    details: "https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/EfrPwCTHhuhAqz0-SCHJE84BKFgH7ZPfT-1DB48P3DID5Q?e=yM05Tv"
+    details:
+      "https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/IQD6z8Akx4boQKs9PkghyRPOAShYB-2T30_tQwePD9wyA-U?e=GRXpd6",
   },
   // #endregion 4. Semester
 
@@ -149,7 +165,8 @@ window.StudiengangModules = [
     standardcategory: "mathe",
     year: 3,
     semester: 5,
-    details: "https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/Ee6nYdwimxhKtROQuyJOpJkBVhljGHTKPDu1vtlg9vbaAQ?e=RVO4zN"
+    details:
+      "https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/IQDup2HcIpsYSrUTkLsiTqSZAVYZYxh0yjw7tb7ZYPb22gE",
   },
   {
     name: "Informationssicherheit",
@@ -157,7 +174,8 @@ window.StudiengangModules = [
     standardcategory: "pflicht",
     year: 3,
     semester: 5,
-    details: "https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/Ec8QbYfM4HtNqV9rdKDSN3wBfWGWcfkBQCp1awdhDKFPcg"
+    details:
+      "https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/IQDPEG2HzOB7Talfa3Sg0jd8AX1hlnH5AUAqdWsHYQyhT3I?e=oI0MS5",
   },
   {
     name: "Big Data und NoSQL",
@@ -165,7 +183,8 @@ window.StudiengangModules = [
     standardcategory: "pflicht",
     year: 3,
     semester: 5,
-    details: "https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/EZGakNXji4xLtnU1RkJbDWoBKIyG8kKs1xiQBfpYye3j8w"
+    details:
+      "https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/EZGakNXji4xLtnU1RkJbDWoBKIyG8kKs1xiQBfpYye3j8w",
   },
   {
     name: "Projektarbeit",
@@ -173,18 +192,20 @@ window.StudiengangModules = [
     standardcategory: "projekt",
     year: 3,
     semester: 5,
-    details: "https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/Eehm7Tczf05DrlhDw2JQ-qIBzLndQSJNcWaMlfMNbJTZnQ?e=lX4vkd"
+    details:
+      "https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/IQDoZu03M39OQ65YQ8NiUPqiAcy53UEiTXFmjJXzDWyU2Z0?e=hb0yR5",
   },
   // #endregion 5. Semester
 
   // #region 6. Semester (20 ECTS)
-    {
+  {
     name: "Wirtschaftlichkeitsbetrachtung und Führung von Projekten",
     ects: 3,
     standardcategory: "pflicht",
     year: 3,
     semester: 6,
-    details: "https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/EZuvGKU1iIZBn8Qu_TB3WCkBIP74KChjvbgPCCBn0RFi2g"
+    details:
+      "https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/EZuvGKU1iIZBn8Qu_TB3WCkBIP74KChjvbgPCCBn0RFi2g",
   },
   {
     name: "Vertiefungsmodul",
@@ -193,7 +214,7 @@ window.StudiengangModules = [
     year: 3,
     semester: 6,
     isPlaceholder: true,
-    wahlmodulSource: "vertiefungsmodule.js"
+    wahlmodulSource: "vertiefungsmodule.js",
   },
   {
     name: "Wahlmodul",
@@ -202,7 +223,7 @@ window.StudiengangModules = [
     year: 3,
     semester: 6,
     isPlaceholder: true,
-    wahlmodulSource: "wahlmodules.js"
+    wahlmodulSource: "wahlmodules.js",
   },
   // #endregion 6. Semester
 
@@ -214,7 +235,7 @@ window.StudiengangModules = [
     year: 4,
     semester: 7,
     isPlaceholder: true,
-    wahlmodulSource: "vertiefungsmodule.js"
+    wahlmodulSource: "vertiefungsmodule.js",
   },
   {
     name: "Wahlmodul",
@@ -223,18 +244,19 @@ window.StudiengangModules = [
     year: 4,
     semester: 7,
     isPlaceholder: true,
-    wahlmodulSource: "wahlmodules.js"
+    wahlmodulSource: "wahlmodules.js",
   },
   // #endregion 7. Semester
 
   // #region 8. Semester (20 ECTS)
-    {
+  {
     name: "Seminararbeit",
     ects: 5,
     standardcategory: "thesis",
     year: 4,
     semester: 8,
-    details: "https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/EcwNhh5sL-9FkVLZixzxNkEBZcPDaaPPYIV-wjQoUS6TWQ"
+    details:
+      "https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/EcwNhh5sL-9FkVLZixzxNkEBZcPDaaPPYIV-wjQoUS6TWQ",
   },
   {
     name: "Vertiefungsmodul",
@@ -243,7 +265,7 @@ window.StudiengangModules = [
     year: 4,
     semester: 8,
     isPlaceholder: true,
-    wahlmodulSource: "vertiefungsmodule.js"
+    wahlmodulSource: "vertiefungsmodule.js",
   },
   {
     name: "Wahlmodul",
@@ -252,7 +274,7 @@ window.StudiengangModules = [
     year: 4,
     semester: 8,
     isPlaceholder: true,
-    wahlmodulSource: "wahlmodules.js"
+    wahlmodulSource: "wahlmodules.js",
   },
   // #endregion 8. Semester
 
@@ -263,7 +285,8 @@ window.StudiengangModules = [
     standardcategory: "thesis",
     year: 5,
     semester: 9,
-    details: "https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/EfeJDAM0vWVDjx3JvW0vehYBsksR0mAnnxSN0nJFLNV0fA?e=5rDgg7"
+    details:
+      "https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/EfeJDAM0vWVDjx3JvW0vehYBsksR0mAnnxSN0nJFLNV0fA?e=5rDgg7",
   },
   {
     name: "Bachelor-Thesis Kolloquium",
@@ -271,7 +294,8 @@ window.StudiengangModules = [
     standardcategory: "thesis",
     year: 5,
     semester: 9,
-    details: "https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/EZHsKgBC2SpKqBF6rzUSYPABz3pzb7n79RokXqM6pILooA?e=NRLAaw"
+    details:
+      "https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/EZHsKgBC2SpKqBF6rzUSYPABz3pzb7n79RokXqM6pILooA?e=NRLAaw",
   },
   // #endregion 9. Semester
 ];
