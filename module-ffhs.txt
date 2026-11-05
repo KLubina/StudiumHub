@@ -1,0 +1,51 @@
+1. Sem
+
+Java Fundamentals: https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/IQAzT8Xs5J1dSZyBKNa9kHGtAcehsnL2UUuiaep-lB4GC88
+
+Grundlagen technische Informatik: https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/IQAto_r5LTS-QafmN3BgMebNAR-uw6fF45e0l1jR2Bk-vzQ
+
+Web-Grundlagen: https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/IQAQ-9MfxdX-RLCvblWJvVsIAU3yOa0I-mgMgjJkVj-Jr2o?e=2YIv4I
+
+Wissenschaftliches Arbeiten: https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/IQCot-IubWUhSKpm1lRhwZS5AcZjGByjqcpY6qWgzeauDbI?e=voxMGF
+
+Online-Einführung Mathematik: https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/IQCLrGtFN1riSK9UcgueRuOkAbuiWG2RjP1-A94iEqwCOi4?e=jSjT6A
+
+2. Sem
+
+Analysis mit Python: https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/IQDZuiVS_dkJTo1NSaZMcDvxARZuaTXekMrr8GU15t0OM3E?e=jxbX9r
+
+Java Project Level (JPL): https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/IQBa1XtZo6HXTowo17utKB7KAX7smFa1kJc0mU1K7Ne9RNg?e=63hE14
+
+Installation und Konfiguration Serverdienste: https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/IQCxwKLP87fDR45Gir2qLWeLAfimjajsWuvF6FQ5VIp286E?e=jfdyS5
+
+Projektmanagement Grundlagen: https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/IQBaJTtRP4X6Tpjb7sD0aBYFAQmhvv8AWZuSUi45V3KRyqg?e=ldfLzd
+
+3. Sem
+
+Diskrete Mathematik: https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/IQDmq0HEZ3wzS5IclMkX4-3sAQ-_0J-vnQDq7DPIZLf0yBM
+
+Software Engineering Modellierung: https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/IQCdxOCsPcsFSp2-MFeqxJIDAcDEDolazqcGWqRkRlrtwJ4?e=sqqhKa
+
+Rechnernetze: https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/IQC7v15Xf_OITJI9DOtfiPpCAQk8qoSxWE7KucyY9IFPC9M?e=WFgVIY
+
+Datenstrukturen und Algorithmen: https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/IQDA0PQE_pNvQa6_uPgLi0xgAdCnpIDrudclX8WfH-eaRko
+
+4. Sem
+
+Wahrscheinlichkeitsrechnung und Statistik: https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/IQDmq0HEZ3wzS5IclMkX4-3sAQ-_0J-vnQDq7DPIZLf0yBM?e=PIYThx
+
+Software Engineering  Architektur: https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/EbfRCUbtES5Frq-a6baWCy8BzvdFBKSfhODbVoR0OmCVoQ
+
+Datenbanksysteme: https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/EbMs6ftNHkNOp_y6iTsgDooBP6VvpcaQ7M-Gq3od3K8tZg
+
+Java Enterprise Application: https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/IQD6z8Akx4boQKs9PkghyRPOAShYB-2T30_tQwePD9wyA-U?e=GRXpd6
+
+5. Sem
+
+Lineare Algebra: https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/IQDup2HcIpsYSrUTkLsiTqSZAVYZYxh0yjw7tb7ZYPb22gE
+
+Informationssicherheit: https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/IQDPEG2HzOB7Talfa3Sg0jd8AX1hlnH5AUAqdWsHYQyhT3I?e=oI0MS5
+
+Big Data und NoSQL: https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/EZGakNXji4xLtnU1RkJbDWoBKIyG8kKs1xiQBfpYye3j8w
+
+Projektarbeit: https://ffhs-my.sharepoint.com/:b:/g/personal/learningcenter_ffhs_ch/IQDoZu03M39OQ65YQ8NiUPqiAcy53UEiTXFmjJXzDWyU2Z0?e=hb0yR5
