@@ -4,7 +4,7 @@
 window.StudiengangModules = [
   // #region 1. Semester
   {
-    name: "Angewandte Mathematik 1",
+    name: "Applied Mathematics 1",
     ects: 3,
     standardcategory: "Mathematics & Foundations",
     year: 1,
@@ -12,7 +12,7 @@ window.StudiengangModules = [
     description: "Logisch denken",
   },
   {
-    name: "Statistik 1",
+    name: "Statistics 1",
     ects: 3,
     standardcategory: "Mathematics & Foundations",
     year: 1,
@@ -28,14 +28,6 @@ window.StudiengangModules = [
     description: "Organisationsstrukturen erkennen, Unternehmen gestalten",
   },
   {
-    name: "Grundlagen Programmierung",
-    ects: 6,
-    standardcategory: "Programming & Software Development",
-    year: 1,
-    semester: 1,
-    description: "Coden lernen, die Welt der 1en und 0en entdecken",
-  },
-  {
     name: "Digital Business",
     ects: 6,
     standardcategory: "Professional Skills",
@@ -43,6 +35,14 @@ window.StudiengangModules = [
     semester: 1,
     description:
       "Gesamtüberblick verschaffen, Schlüsseltechnologien kennenlernen",
+  },
+  {
+    name: "Programming Foundations",
+    ects: 6,
+    standardcategory: "Programming & Software Development",
+    year: 1,
+    semester: 1,
+    description: "Coden lernen, die Welt der 1en und 0en entdecken",
   },
   // #endregion 1. Semester
 
@@ -56,7 +56,7 @@ window.StudiengangModules = [
     description: "Inform effectively",
   },
   {
-    name: "Angewandte Mathematik 2",
+    name: "Applied Mathematics 2",
     ects: 3,
     standardcategory: "Mathematics & Foundations",
     year: 1,
@@ -64,20 +64,12 @@ window.StudiengangModules = [
     description: "Problemlösungen finden",
   },
   {
-    name: "Statistik 2",
+    name: "Statistics 2",
     ects: 3,
     standardcategory: "Mathematics & Foundations",
     year: 1,
     semester: 2,
     description: "Daten in Entscheidungen verwandeln",
-  },
-  {
-    name: "Objektorientierte Programmierung",
-    ects: 6,
-    standardcategory: "Programming & Software Development",
-    year: 1,
-    semester: 2,
-    description: "Programmierkenntnisse erweitern, Anwendungen entwickeln",
   },
   {
     name: "Requirements Engineering",
@@ -86,6 +78,14 @@ window.StudiengangModules = [
     year: 1,
     semester: 2,
     description: "Bedürfnisse verstehen, Anforderungen festhalten",
+  },
+  {
+    name: "Advanced Programming",
+    ects: 6,
+    standardcategory: "Programming & Software Development",
+    year: 1,
+    semester: 2,
+    description: "Programmierkenntnisse erweitern, Anwendungen entwickeln",
   },
 
   // #endregion 2. Semester
