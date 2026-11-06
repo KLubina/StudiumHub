@@ -192,6 +192,10 @@ const StudiengangMapping = {
     key: "fhnw-wirtschaftsinformatik",
     institution: "Fachhochschule Nordwestschweiz",
   },
+  "Business Information Technology": {
+    key: "fhnw-business-information-technology",
+    institution: "Fachhochschule Nordwestschweiz",
+  },
   Betriebsökonomie: {
     key: "fhnw-betriebsoekonomie",
     institution: "Fachhochschule Nordwestschweiz",
