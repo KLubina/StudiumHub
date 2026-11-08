@@ -1,11 +1,13 @@
 window.SpecificprogramConfigLoader = {
   async loadStudiengangConfig(studiengang) {
     try {
+      const assetVersion =
+        studiengang === "kalaidos-informatik-integrativ" ? "?v=2" : "";
       await this.loadScript(
-        `../program-specific/${studiengang}/standard-config/general-config.js`,
+        `../program-specific/${studiengang}/standard-config/general-config.js${assetVersion}`,
       );
       await this.loadScript(
-        `../program-specific/${studiengang}/standard-config/standardcategories-config.js`,
+        `../program-specific/${studiengang}/standard-config/standardcategories-config.js${assetVersion}`,
       );
       await this.loadScript(
         `../program-specific/${studiengang}/standard-config/color-config.js`,
@@ -20,7 +22,7 @@ window.SpecificprogramConfigLoader = {
         `../program-specific/${studiengang}/colormanagement/fourthcategories-config.js`,
       );
       await this.loadScript(
-        `../program-specific/${studiengang}/data/basic-modules-data.js`,
+        `../program-specific/${studiengang}/data/basic-modules-data.js${assetVersion}`,
       );
 
       if (!window.StudiengangModules) {

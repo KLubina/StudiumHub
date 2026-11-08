@@ -1,0 +1,25 @@
+/* ==== KALAIDOS FH INFORMATIK - CSS CLASSES ==== */
+
+[data-studiengang="kalaidos-informatik-integrativ"] .modul.mathematik,
+[data-studiengang="kalaidos-informatik-integrativ"] .legende-item.mathematik {
+  background-color: var(--color-mathematik);
+  color: var(--color-mathematik-text);
+}
+
+[data-studiengang="kalaidos-informatik-integrativ"] .modul.soft-skills,
+[data-studiengang="kalaidos-informatik-integrativ"] .legende-item.soft-skills {
+  background-color: var(--color-soft-skills);
+  color: var(--color-soft-skills-text);
+}
+
+[data-studiengang="kalaidos-informatik-integrativ"] .modul.projekte,
+[data-studiengang="kalaidos-informatik-integrativ"] .legende-item.projekte {
+  background-color: var(--color-projekte);
+  color: var(--color-projekte-text);
+}
+
+[data-studiengang="kalaidos-informatik-integrativ"] .modul.technical-skills,
+[data-studiengang="kalaidos-informatik-integrativ"] .legende-item.technical-skills {
+  background-color: var(--color-technical-skills);
+  color: var(--color-technical-skills-text);
+}

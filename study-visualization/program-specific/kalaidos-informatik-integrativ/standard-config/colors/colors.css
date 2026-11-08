@@ -1,0 +1,13 @@
+/* ==== KALAIDOS FH INFORMATIK - COLOR VARIABLES ==== */
+
+[data-studiengang="kalaidos-informatik-integrativ"] {
+  --color-primary: #446782;
+  --color-mathematik: #2563eb;
+  --color-soft-skills: #d97706;
+  --color-projekte: #7c3aed;
+  --color-technical-skills: #0891b2;
+  --color-soft-skills-text: white;
+  --color-projekte-text: white;
+  --color-mathematik-text: white;
+  --color-technical-skills-text: white;
+}

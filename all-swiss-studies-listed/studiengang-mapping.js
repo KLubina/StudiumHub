@@ -207,6 +207,11 @@ const StudiengangMapping = {
 
   Informatik: { key: "ffhs-informatik", institution: "FFHS" },
 
+  "Bachelor of Science FH in Informatik (integrativ mit HF Informatik)": {
+    key: "kalaidos-informatik-integrativ",
+    institution: "Kalaidos FH",
+  },
+
   IT: { key: "hssh-it", institution: "Hochschulinstitut Schaffhausen" },
 
   "Computer Engineering": {

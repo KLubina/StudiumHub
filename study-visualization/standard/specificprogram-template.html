@@ -68,8 +68,9 @@
         const programClassesCSS = document.getElementById('program-classes-css');
         const programLayoutCSS = document.getElementById('program-layout-css');
 
-        programColorsCSS.href = `../program-specific/${studiengang}/standard-config/colors/colors.css`;
-        programClassesCSS.href = `../program-specific/${studiengang}/standard-config/colors/classes.css`;
+        const assetVersion = studiengang === 'kalaidos-informatik-integrativ' ? '?v=2' : '';
+        programColorsCSS.href = `../program-specific/${studiengang}/standard-config/colors/colors.css${assetVersion}`;
+        programClassesCSS.href = `../program-specific/${studiengang}/standard-config/colors/classes.css${assetVersion}`;
         programLayoutCSS.href = `../program-specific/${studiengang}/individual/layout.css`;
 
         programColorsCSS.onerror = () => {
