@@ -64,6 +64,8 @@
       Rendering.renderStudiengaenge();
 
       setupEventListeners();
+      setActiveButton(document.getElementById("viewAllVisualizations"));
+      toggleSections(true);
     } catch (error) {
       console.error(
         "Kritischer Fehler beim Laden der Studiengangsdaten:",
